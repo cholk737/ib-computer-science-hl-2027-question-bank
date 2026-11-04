@@ -1,0 +1,176 @@
+{
+  "checkpoint": "A-RECORDS-009",
+  "reviews": [
+    {
+      "question_id": "P-SRC002-Q02-a",
+      "record_sha256": "d42fb45fe8bdc48e3e079a0fb810f861dbbb5a5c885d3168f9656fe5dbe443cd",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:57:26.452735+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.2.4",
+          "scope_bullet_id": "A3.2.4:G01",
+          "exact_guidance": "• The relationship between tables using primary keys, foreign keys, composite keys and concatenated keys",
+          "assessed_skill": "Choose and justify a unique primary key for a supplied Build table.",
+          "relevance": "partial",
+          "evidence": "BuildID only; no table construction/foreign/composite/concatenated key relationships."
+        },
+        {
+          "code": "A3.2.4",
+          "scope_bullet_id": "A3.2.4:G02",
+          "exact_guidance": "• The importance of well-defined tables in ensuring data integrity",
+          "assessed_skill": "Relate unique row identification to a suitable key.",
+          "relevance": "partial",
+          "evidence": "Uniqueness aspect supports integrity; no constraints or cross-table consistency enforcement constructed."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Uniquely numbered builds imply BuildID identifies each row; LeadID or ClientID can recur and unnecessary additional fields are not needed to ensure uniqueness."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "BuildID plus uniqueness justification answers both explicit requests."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Two1-mark criteria for key selection and justification, with equivalent naming accepted. No invented requirement to concatenate IDs."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q02-a.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q02-a.json": "d42fb45fe8bdc48e3e079a0fb810f861dbbb5a5c885d3168f9656fe5dbe443cd",
+        "question-bank/questions/P-SRC002-Q02-a.json": "26b63cee70ea30eff8698c05f1cff3bd9ec057644130d56802aefb875256d736",
+        "question-bank/markschemes/P-SRC002-Q02-a.json": "3d4da15fff742cd3e6a03d5f83b90c4ba351ce6a6dcaf9b68c3b7838abe4758a",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q02-a.json": "9a97c93721af7dc02a5a1ca7b4ce3e1a81332ebb945a119f36b1b17582ff3021"
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q02-b",
+      "record_sha256": "b683fa866a9c10096be31ec0d46a75a8294fc26470d1fb9f98203dc74d38e033",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:57:26.453418+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.2.3",
+          "scope_bullet_id": "A3.2.3:G01",
+          "exact_guidance": "• The importance of data type consistency",
+          "assessed_skill": "Choose a Boolean field for an explicitly two-state domain and outline why.",
+          "relevance": "supporting",
+          "evidence": "Assesses data-type selection under the learning statement. It does not directly explain importance of consistency across stored values or effects of wrong type; foundation evidence only."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Boolean is appropriate for an explicitly non-null yes/no domain. SQL dialects may encode BOOLEAN differently; conceptual two-state type remains valid."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Boolean plus True/False two-state representation meets Outline2. No requirement for a particular SQL storage encoding."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "One type plus one correct two-state explanation totals2. Equivalent Boolean/bit domain choices with justification should be accepted under general equivalence note."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q02-b.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• The potential effects of choosing the wrong data type"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q02-b.json": "b683fa866a9c10096be31ec0d46a75a8294fc26470d1fb9f98203dc74d38e033",
+        "question-bank/questions/P-SRC002-Q02-b.json": "7d3b40b8c4281e53c19a77c68664dea3b801af4992c1b6c13b9346c4869c5000",
+        "question-bank/markschemes/P-SRC002-Q02-b.json": "8856472da2ba2cbe377c6a5717e2d8a3931a7f1ba51f134cacd1cdb93cd9941f",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q02-b.json": "0872c23e4ee517f2e2b46a29da3e7f738f554847a6dc69c5d9f5e3be0aebd2f5"
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q02-c",
+      "record_sha256": "cdd1f2a021001c7d680ca8747b8414cc5faeb32f4d4a5effe7e5bb55f3c0cf09",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:57:26.453793+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.3.2",
+          "scope_bullet_id": "A3.3.2:G01",
+          "exact_guidance": "• Queries must include joins, relational operators, filtering, pattern matching, and ordering data",
+          "assessed_skill": "Construct a two-table joined query filtered by lead and priority.",
+          "relevance": "partial",
+          "evidence": "Join/equality/filter conditions directly assessed; no pattern matching or ordering despite broader bullet list."
+        },
+        {
+          "code": "A3.3.2",
+          "scope_bullet_id": "A3.3.2:G02",
+          "exact_guidance": "• SQL commands: SELECT, DISTINCT, FROM, WHERE, BETWEEN, ORDER BY, GROUP BY, HAVING, ASC, DESC, JOIN, LIKE with % wildcard, AND, OR, NOT (note: Syntax may vary in different database systems)",
+          "assessed_skill": "Use SELECT/FROM/JOIN/WHERE/AND and column qualification to retrieve two client fields.",
+          "relevance": "partial",
+          "evidence": "Only listed command subset assessed; no DISTINCT/grouping/HAVING/LIKE/OR/NOT or ordering requirement."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "SQLite execution passes matching/nonmatching lead/priority cases and duplicate qualifying jobs; correct join avoids cross-client Cartesian results."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Answer returns exactly the two requested fields for matching jobs; repeated rows permitted and preserved. Saved checks/P-SRC002-Q02-c-sql-check.json."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Five1-mark steps total5. Equivalent explicit/implicit inner joins and DISTINCT (if used) should be accepted as duplicates permitted rather than required; semantic correctness governs."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q02-c.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q02-c.json": "cdd1f2a021001c7d680ca8747b8414cc5faeb32f4d4a5effe7e5bb55f3c0cf09",
+        "question-bank/questions/P-SRC002-Q02-c.json": "9abee2a845f07e04e75fd16167d6ebbb517612ee21828578dbe130b11264c796",
+        "question-bank/markschemes/P-SRC002-Q02-c.json": "adaea6504c9e3d9f867e00194fd8b147e26270b97956a69863eaecbc39a150d5",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q02-c.json": "dc6119b461fa91559cc94ae922051e4eeec67136e6ef3e187ee019732bbe10a0"
+      }
+    }
+  ]
+}

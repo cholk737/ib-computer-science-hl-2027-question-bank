@@ -68,3 +68,24 @@ All current integrity/code/SQL/source-mark checks pass. Preliminary practice mar
 - **C3-BANK-01:** no saved searchable-bank feature specification was found. User was asked asynchronously for additions. Proceeding with stated assumptions: search, exact scope/topic/theme/level/difficulty/marks filters, separate answer reveal, provenance references, selected student export without answers. UI/feature verification is pending; Chunk 3 cannot be declared complete yet.
 
 - **C3-SCOPE-OVERRIDE:** later detailed user instruction replaces draft-paper work with permanent database/search infrastructure. No examination, topic-test or PDF generation is authorized this chunk. Detailed scope saved at audits/chunk-3/USER_CHUNK3_SCOPE.md; all three specialists informed. Earlier assumed feature list C3-BANK-01 is superseded by that specification. Full per-question mapping/bullet review (all 823), persistent DB, pasted-scope search and granular verification/usage metadata are now explicit gates.
+
+
+<!-- C3-REVIEW-STATE-START -->
+### Current individual-review queue and reported issues
+
+- 154/823 per-question reviews saved with valid current hashes; 27 coordinator-approved versions; 669 individual reviews remaining.
+- 31 reported issue entries, all still explicit unresolved findings unless a later repair log says otherwise. Scope approval does not clear marking/technical issues.
+- Full durable queue: `audits/chunk-3/FULL_BANK_REVIEW_QUEUE.csv`.
+- Exact question IDs, issue details, author paths and review limits: `audits/chunk-3/REVIEW_ISSUES.json` and each specialist review.
+- Historical prompts/criteria remain preserved. Do not present a reported ambiguity as an unconditional code defect; read its domain qualification.
+<!-- C3-REVIEW-STATE-END -->
+
+
+### Search-system review findings and repairs
+
+- Exact-ID keyword search originally returned all823 candidates in the first persistent UI. Coordinator reproduced in browser; developer repaired equality/keyword narrowing; coordinator retest returns exactly P-SRC001-Q03.
+- Coordinator required literal guidance validation before any verification mutation, current-review replacement with history, idempotent unchanged imports, authoritative approved-snapshot withdrawal handling, and separation of reviewer rationale that may disclose answers. Saved backend regression tests and browser checks determine final status; do not infer all feature gates passed merely from this list.
+- Legacy C2 author/batch verification remains preserved in the original index column. New C3 per-dimension statuses are separate; import defaults pending and no confidence is invented.
+- Per-record taxonomy and conceptual-query breadth remain review areas. Command-based question-type fallbacks are labelled inferred, not approved classifications. Curated concept aliases are discovery/routing aids, never evidence by themselves.
+
+- **C3-SEARCH-PRECISION-01 — repaired canonical code:** independent developer audit identified unsafe concept equivalences (encapsulation/hiding, generic for/counted, generic while/pre-test, slope-intercept/whole regression). Coordinator removed them in question-bank/search/bank_db.py and added8 precision regression cases; all8 plus23 functional tests pass. Arbitrary-phrasing semantic recall still incomplete. Developer source is a preserved pre-coordinator revision; canonical installed code is now authoritative.

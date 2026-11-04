@@ -1,0 +1,199 @@
+{
+  "checkpoint": "A-RECORDS-023",
+  "reviews": [
+    {
+      "question_id": "P-SRC004-Q12-b",
+      "record_sha256": "26a22de59f99a0ad9911d5fe170850fddd5ff4a9bed7141c0aea4af7f09334b2",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:08:04.739011+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.1.4",
+          "scope_bullet_id": "A1.1.4:G01",
+          "exact_guidance": "• Random-access memory (RAM), read only memory (ROM), cache (L1, L2, L3), registers",
+          "assessed_skill": "Explain ROM nonvolatility retaining startup instructions after power loss.",
+          "relevance": "partial",
+          "evidence": "ROM purpose only; RAM/cache levels/registers and hit/miss not tested."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "ROM is nonvolatile and can retain firmware/startup data when powered off. Explanation does not incorrectly require ROM content loaded from RAM or universally unchangeable by all means."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Property nonvolatility linked to next-startup availability correctly explains suitability."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Two1-mark property/context points total2; equivalent nonvolatile retention wording accepted."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-004/questions/H-SRC004-Q12-b.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• The interaction of the CPU with different types of memory to optimize performance",
+        "• The relevance of the terms “cache miss” and “cache hit”"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC004-Q12-b.json": "26a22de59f99a0ad9911d5fe170850fddd5ff4a9bed7141c0aea4af7f09334b2",
+        "question-bank/questions/P-SRC004-Q12-b.json": "0eca8e0df31f8d7714ecfc1be649e814401e8aa45283df8c6bcd31587e4ff262",
+        "question-bank/markschemes/P-SRC004-Q12-b.json": "541c63979d03ab4f412099712a412ea73a3a9405fdedd1ba73894152152d2c79",
+        "extraction/by-paper/SRC-004/questions/H-SRC004-Q12-b.json": "d80432eff0f5f0cd0122082e8faabe819a15f7e6c0b200fc97d676c0c0f2e265"
+      },
+      "question_type": "explanation",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Explain memory suitability for stated power-loss context."
+      }
+    },
+    {
+      "question_id": "P-SRC004-Q12-c-i",
+      "record_sha256": "6e665f7157f165727c352863c7a59fe404fb7df855d7ca910dfd715b8adfb817",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:08:04.739835+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.3.4",
+          "scope_bullet_id": "A1.3.4:G01",
+          "exact_guidance": "• Event frequency, CPU processing overheads, power source (battery or mains), event predictability, controlled latency, security concerns",
+          "assessed_skill": "Outline basic interrupt request and temporary transfer to handler.",
+          "relevance": "supporting",
+          "evidence": "Foundational mechanism only. No event-frequency/overhead/power/predictability/controlled-latency/security comparison or evaluation of polling versus interrupts."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "An interrupt requests CPU attention; at an appropriate safe point control transfers to relevant handler and interrupted execution can resume with preserved state. Not every interrupt runs instantly regardless of masking/priority."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Event signal plus temporary handler transfer/resumption correctly outlines mechanism."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Two1-mark components total2. Correct state preservation/resume can develop transfer point; no specific CPU implementation sequence required."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-004/questions/H-SRC004-Q12-c-i.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Real-world scenarios may include keyboard and mouse inputs, network communications, disk input/output operations, embedded systems, real-time systems."
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC004-Q12-c-i.json": "6e665f7157f165727c352863c7a59fe404fb7df855d7ca910dfd715b8adfb817",
+        "question-bank/questions/P-SRC004-Q12-c-i.json": "8a5ecf7964c34d6480339a6ab9860a377d0c558489bda44edb807bbc976bf7aa",
+        "question-bank/markschemes/P-SRC004-Q12-c-i.json": "8ccbee8b269f6628426fa88e8e65a58bd050fb7b23351ff44cc93f291604c20f",
+        "extraction/by-paper/SRC-004/questions/H-SRC004-Q12-c-i.json": "d976baf34715d6add6ac340af1a3ecb658f367e82ebb4cfb85c6cbbed6318a34"
+      },
+      "question_type": "explanation",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Outline interrupt mechanism, not evaluate competing approaches."
+      }
+    },
+    {
+      "question_id": "P-SRC004-Q12-c-ii",
+      "record_sha256": "21b6737abf08631da183f0a28ce25f5cf0818f8d712f1878a14e5dc83f6238b7",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:08:04.740302+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.3.4",
+          "scope_bullet_id": "A1.3.4:G01",
+          "exact_guidance": "• Event frequency, CPU processing overheads, power source (battery or mains), event predictability, controlled latency, security concerns",
+          "assessed_skill": "Explain a sensor ISR processing obstruction before continuing gate work.",
+          "relevance": "supporting",
+          "evidence": "Handler mechanism in safety context supports interrupt understanding but does not evaluate event-frequency/latency/power/security factors or compare polling."
+        },
+        {
+          "code": "A1.3.6",
+          "scope_bullet_id": "A1.3.6:G01",
+          "exact_guidance": "• The input, process, output, and feedback mechanism (open-loop, closed-loop)",
+          "assessed_skill": "Explain sensor input processed to a safe gate control output.",
+          "relevance": "partial",
+          "evidence": "Input/process/output chain assessed, not feedback/open-versus-closed loop."
+        },
+        {
+          "code": "A1.3.6",
+          "scope_bullet_id": "A1.3.6:G02",
+          "exact_guidance": "• Controller, sensors, actuators, transducers and control algorithm",
+          "assessed_skill": "Explain controller/handler signal to braking or reverse actuator.",
+          "relevance": "partial",
+          "evidence": "Controller algorithm and actuator interaction assessed; transduction and all components not independently tested."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Handler recognizes obstruction and commands motor stop/reverse before normal operation resumes. In real safety design bounded response and fail-safe hardware also matter, but prompt only asks this control response."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Transfer to handler, process obstruction and send safe actuator output form correct3-step explanation without claiming all safety achieved solely by an interrupt."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Three1-mark components total3. Equivalent safe stop action accepted; no credit for handler ignoring obstruction and resuming closing."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-004/questions/H-SRC004-Q12-c-ii.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Real-world scenarios may include keyboard and mouse inputs, network communications, disk input/output operations, embedded systems, real-time systems."
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC004-Q12-c-ii.json": "21b6737abf08631da183f0a28ce25f5cf0818f8d712f1878a14e5dc83f6238b7",
+        "question-bank/questions/P-SRC004-Q12-c-ii.json": "4e683be49802cf76f4692b33cd8844d67fac9cafa82aca78d6ca868de8cf9493",
+        "question-bank/markschemes/P-SRC004-Q12-c-ii.json": "6bf7ad14fa8b564440a833e2a905ddf1ed3b8919463a19cdaa75ca08f9c9b366",
+        "extraction/by-paper/SRC-004/questions/H-SRC004-Q12-c-ii.json": "4f1e4d008770d0d45150f1de90156006296551ad04d472d6036cb2956bad158b"
+      },
+      "question_type": "explanation",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Explain sensor-handler-actuator response, not code."
+      }
+    }
+  ]
+}

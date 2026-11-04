@@ -1,0 +1,61 @@
+{
+  "question_id": "P-SRC001-Q03",
+  "mappings": [
+    {
+      "code": "B2.2.3",
+      "guidance_index": 1,
+      "assessed_skill": "State nonempty stack pop semantics",
+      "relevance": "direct",
+      "evidence": "Prompt asks what pop does; solution removes and returns the most recently pushed item.",
+      "coverage_limit": "Only pop semantics, not the other named operations or performance/memory.",
+      "scope_bullet_id": "B2.2.3:G01",
+      "exact_guidance": "• Must include fundamental operations such as push, pop, peek and isEmpty",
+      "statement": "Explain the concept of a stack as a “last in, first out” (LIFO) data structure.",
+      "mapping_verification_status": "verified"
+    }
+  ],
+  "verification": {
+    "mapping": {
+      "status": "verified",
+      "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+    },
+    "technical": {
+      "status": "verified",
+      "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+    },
+    "answer": {
+      "status": "verified",
+      "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+    },
+    "markscheme": {
+      "status": "verified",
+      "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+    },
+    "assets": {
+      "status": "verified",
+      "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+    },
+    "provenance": {
+      "status": "pending",
+      "evidence": "pending_original_source_recheck"
+    }
+  },
+  "checks": [
+    "Nonempty precondition removes underflow ambiguity.",
+    "One independent correct statement matches one mark."
+  ],
+  "issues": [],
+  "reviewer": "/root/theme_b_coverage",
+  "reviewed_at": "2026-11-04T10:37:10.030691+00:00",
+  "record_sha256": "3538232a43892dfd8b11099a27569aad8f1278213bb5587911071e7cc8315fbc",
+  "record_path": "question-bank/records/P-SRC001-Q03.json",
+  "original_syllabus_codes": [
+    "B2.2.3"
+  ],
+  "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+  "mark_total_check": {
+    "question_marks": 1,
+    "marking_point_sum": 1,
+    "status": "pass"
+  }
+}

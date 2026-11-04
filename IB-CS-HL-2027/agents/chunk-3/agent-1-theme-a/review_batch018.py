@@ -1,0 +1,16 @@
+from checkpoint_reviews import *
+R18=[]
+R18.append(review('P-SRC004-Q02',[
+ m('A1.2.3',4,'State the two-input NAND Boolean output rule.','partial','NAND only; alarm is incidental context, no application-design reasoning or other gate definitions assessed.'),
+], 'NAND is logical NOT of AND:00,01,10 yield1;11 yields0.', 'Output false only for two true inputs and true otherwise correctly specifies all cases.', 'Single1-mark rule matches State; equivalent Boolean expression NOT(A AND B) accepted.'))
+R18.append(review('P-SRC004-Q03',[
+ m('A1.1.1',1,'Identify CU fetch/decode/control-signal coordination functions.','partial','CU only, no ALU role independently tested. Register/bus interactions and diagram not required.'),
+], 'The CU coordinates fetching, decoding and issuing control signals for execution/data movement in the stated CPU model.', 'Three distinct coordination tasks are correct; does not wrongly assign arithmetic calculation to CU.', 'Three1-mark CU functions total3; semantically distinct correct equivalents accepted, avoiding double-credit synonymous control-signal descriptions.'))
+r=review('P-SRC004-Q04',[
+ m('A2.3.3',1,'Identify addressing and reassembly control information for file transfer packets.','partial','Header/control metadata only, not packet-switching process or switch/router roles. Existing IP-specific sequence-number wording is flagged technical issue, not certified by this scoped mapping.'),
+], 'Source/destination addresses are valid IP header fields, but unqualified sequence number is not a native IP base-header field; TCP sequence numbers and IP fragmentation identification/offset differ.', 'Source/destination correct; sequence-number answer requires protocol-level correction or broader prompt. Other suitable reassembly metadata may be valid for specified IP fragmentation, but not justified by a generic sequence-number claim.', 'Three1-mark criteria include sequence number or other reassembly metadata; accepted alternatives do not resolve the mismatch between prompt IP packets and model sequence number. Coordinator repair required.', ['A-C3-TECH-001: P-SRC004-Q04 confuses IP packet fields with transport sequencing. Clarify generic packet/control information or use correct specified IP reassembly fields; preserve historical source unchanged.'])
+r['verification']['technical']=v('issue','The current prompt explicitly says IP packets but answer sequence number is not native IP base-header field; coordinator independently confirmed protocol-level mismatch in earlier coverage finding.')
+r['verification']['answer']=v('issue','Two address fields correct; generic sequence-number third answer does not match IP-specific prompt. No silent correction performed.')
+R18.append(r)
+for r,t,e in zip(R18,['conceptual recall','conceptual recall','conceptual recall'],['State one gate output rule.','Identify3 CPU-control functions.','State3 packet header/control items; technical wording issue separately flagged.']):r['question_type']=t;r['question_type_review']={'status':'verified','reviewer':'/root/theme_a_coverage','evidence':e}
+save_batch(R18,18,'Review P-SRC004-Q06, P-SRC004-Q08-a, P-SRC004-Q08-b; save batch-019.', ['review_batch018.py'])

@@ -1,0 +1,15 @@
+from checkpoint_reviews import *
+R23=[]
+R23.append(review('P-SRC004-Q12-b',[
+ m('A1.1.4',1,'Explain ROM nonvolatility retaining startup instructions after power loss.','partial','ROM purpose only; RAM/cache levels/registers and hit/miss not tested.'),
+], 'ROM is nonvolatile and can retain firmware/startup data when powered off. Explanation does not incorrectly require ROM content loaded from RAM or universally unchangeable by all means.', 'Property nonvolatility linked to next-startup availability correctly explains suitability.', 'Two1-mark property/context points total2; equivalent nonvolatile retention wording accepted.'))
+R23.append(review('P-SRC004-Q12-c-i',[
+ m('A1.3.4',1,'Outline basic interrupt request and temporary transfer to handler.','supporting','Foundational mechanism only. No event-frequency/overhead/power/predictability/controlled-latency/security comparison or evaluation of polling versus interrupts.'),
+], 'An interrupt requests CPU attention; at an appropriate safe point control transfers to relevant handler and interrupted execution can resume with preserved state. Not every interrupt runs instantly regardless of masking/priority.', 'Event signal plus temporary handler transfer/resumption correctly outlines mechanism.', 'Two1-mark components total2. Correct state preservation/resume can develop transfer point; no specific CPU implementation sequence required.'))
+R23.append(review('P-SRC004-Q12-c-ii',[
+ m('A1.3.4',1,'Explain a sensor ISR processing obstruction before continuing gate work.','supporting','Handler mechanism in safety context supports interrupt understanding but does not evaluate event-frequency/latency/power/security factors or compare polling.'),
+ m('A1.3.6',1,'Explain sensor input processed to a safe gate control output.','partial','Input/process/output chain assessed, not feedback/open-versus-closed loop.'),
+ m('A1.3.6',2,'Explain controller/handler signal to braking or reverse actuator.','partial','Controller algorithm and actuator interaction assessed; transduction and all components not independently tested.'),
+], 'Handler recognizes obstruction and commands motor stop/reverse before normal operation resumes. In real safety design bounded response and fail-safe hardware also matter, but prompt only asks this control response.', 'Transfer to handler, process obstruction and send safe actuator output form correct3-step explanation without claiming all safety achieved solely by an interrupt.', 'Three1-mark components total3. Equivalent safe stop action accepted; no credit for handler ignoring obstruction and resuming closing.'))
+for r,t,e in zip(R23,['explanation','explanation','explanation'],['Explain memory suitability for stated power-loss context.','Outline interrupt mechanism, not evaluate competing approaches.','Explain sensor-handler-actuator response, not code.']):r['question_type']=t;r['question_type_review']={'status':'verified','reviewer':'/root/theme_a_coverage','evidence':e}
+save_batch(R23,23,'Review final SRC004 A records P-SRC004-Q12-d-i and P-SRC004-Q12-d-ii; save batch-024/source004 milestone, then continue queue.', ['review_batch023.py'])

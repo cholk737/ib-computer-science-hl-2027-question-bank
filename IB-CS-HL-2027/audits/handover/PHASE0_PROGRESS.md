@@ -1,0 +1,5 @@
+# Initial repository preservation
+
+Existing Git repository and history preserved at parent workspace; most recent prior commit298bd7b. No disconnected repository created. All823 adapted records preserved, originals0.154 current specialist question reviews saved;27 versions approved; all112 statements/271 guidance paragraphs first-pass audited. Three specialists reported usage-limit failure; no background continuation assumed. Latest checkpoint C3-20261104-191432-415945. Canonical DB question-bank/database.sqlite3; installed search question-bank/search/.23 functional plus10 semantic precision tests passed. Canonical browser rerender and known source-code-typo search support remain pending.
+
+User master handover request preserved verbatim. Before any further question generation, commit this entire state. Remote must be private or remain unpublished. Official/private uploaded source copies and durable visual evidence are included. No file exceeds90MiB; no LFS required. Pattern scan found no credential-like tokens/private keys; this is a pattern check, not proof against all possible secret formats.

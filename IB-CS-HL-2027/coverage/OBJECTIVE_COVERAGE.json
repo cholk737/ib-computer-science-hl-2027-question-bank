@@ -51,6 +51,10 @@
         "P-SRC024-Q08",
         "P-SRC030-Q03"
       ],
+      "reviewed_question_ids": [
+        "P-SRC001-Q12-b-i",
+        "P-SRC001-Q12-b-iii"
+      ],
       "difficulty_distribution": {
         "medium": 6,
         "low": 4
@@ -92,21 +96,45 @@
         {
           "scope_bullet_id": "A1.1.1:G02",
           "exact_guidance": "• Registers: instruction register (IR), program counter (PC), memory address register (MAR), memory data register (MDR), accumulator (AC)",
-          "status": "no_approved_direct_aspect_evidence_yet",
+          "status": "reviewed_aspect_evidence_only",
           "direct_question_ids": [],
-          "partial_question_ids": [],
+          "partial_question_ids": [
+            "P-SRC001-Q12-b-i"
+          ],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q12-b-i",
+              "code": "A1.1.1",
+              "scope_bullet_id": "A1.1.1:G02",
+              "exact_guidance": "• Registers: instruction register (IR), program counter (PC), memory address register (MAR), memory data register (MDR), accumulator (AC)",
+              "assessed_skill": "State the MDR function in a memory-read transfer.",
+              "relevance": "partial",
+              "evidence": "One register function only: holds the returning word. No PC/MAR/IR/AC or other register operation/interactions tested."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
           "scope_bullet_id": "A1.1.1:G03",
           "exact_guidance": "• Buses: address, data, control",
-          "status": "no_approved_direct_aspect_evidence_yet",
-          "direct_question_ids": [],
+          "status": "reviewed_aspect_evidence_only",
+          "direct_question_ids": [
+            "P-SRC001-Q12-b-iii"
+          ],
           "partial_question_ids": [],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q12-b-iii",
+              "code": "A1.1.1",
+              "scope_bullet_id": "A1.1.1:G03",
+              "exact_guidance": "• Buses: address, data, control",
+              "assessed_skill": "Explain address/data/control bus roles in one CPU memory-read operation.",
+              "relevance": "direct",
+              "evidence": "All three named buses receive distinct roles and coordination; does not test processor types, all registers or a hardware diagram."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
@@ -160,6 +188,7 @@
         "P-SRC038-Q07-d",
         "P-SRC044-Q06-c"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 5
       },
@@ -224,9 +253,12 @@
         "P-SRC001-Q01",
         "P-SRC042-Q07-c"
       ],
+      "reviewed_question_ids": [
+        "P-SRC001-Q01"
+      ],
       "difficulty_distribution": {
-        "high": 1,
-        "medium": 1
+        "medium": 1,
+        "high": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -257,11 +289,23 @@
         {
           "scope_bullet_id": "A1.1.3:G02",
           "exact_guidance": "• Differences in their core architecture, processing power, memory access, power efficiency",
-          "status": "no_approved_direct_aspect_evidence_yet",
+          "status": "reviewed_aspect_evidence_only",
           "direct_question_ids": [],
-          "partial_question_ids": [],
+          "partial_question_ids": [
+            "P-SRC001-Q01"
+          ],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q01",
+              "code": "A1.1.3",
+              "scope_bullet_id": "A1.1.3:G02",
+              "exact_guidance": "• Differences in their core architecture, processing power, memory access, power efficiency",
+              "assessed_skill": "Identify three relevant CPU/GPU comparison characteristics: architecture/parallelism, workload throughput, memory or power.",
+              "relevance": "partial",
+              "evidence": "Three 1-mark criteria identify dimensions of hardware comparison; the prompt does not require explaining concrete architectural differences or all memory/power properties. It does not assess shared data or coordination."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
@@ -318,6 +362,10 @@
         "P-SRC044-Q06-b",
         "P-SRC044-Q06-c"
       ],
+      "reviewed_question_ids": [
+        "P-SRC001-Q12-a-i",
+        "P-SRC001-Q12-b-ii"
+      ],
       "difficulty_distribution": {
         "medium": 16,
         "low": 1
@@ -341,31 +389,77 @@
         {
           "scope_bullet_id": "A1.1.4:G01",
           "exact_guidance": "• Random-access memory (RAM), read only memory (ROM), cache (L1, L2, L3), registers",
-          "status": "no_approved_direct_aspect_evidence_yet",
+          "status": "reviewed_aspect_evidence_only",
           "direct_question_ids": [],
-          "partial_question_ids": [],
+          "partial_question_ids": [
+            "P-SRC001-Q12-a-i",
+            "P-SRC001-Q12-b-ii"
+          ],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q12-a-i",
+              "code": "A1.1.4",
+              "scope_bullet_id": "A1.1.4:G01",
+              "exact_guidance": "• Random-access memory (RAM), read only memory (ROM), cache (L1, L2, L3), registers",
+              "assessed_skill": "Distinguish RAM purpose, volatility and access performance from SSD secondary storage.",
+              "relevance": "partial",
+              "evidence": "Only RAM among the listed primary-memory types is assessed; ROM/cache/registers remain untested."
+            },
+            {
+              "question_id": "P-SRC001-Q12-b-ii",
+              "code": "A1.1.4",
+              "scope_bullet_id": "A1.1.4:G01",
+              "exact_guidance": "• Random-access memory (RAM), read only memory (ROM), cache (L1, L2, L3), registers",
+              "assessed_skill": "Explain cache purpose using repeated instruction access.",
+              "relevance": "partial",
+              "evidence": "Cache function tested but levels L1/L2/L3 and other primary memories not distinguished."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
           "scope_bullet_id": "A1.1.4:G02",
           "exact_guidance": "• The interaction of the CPU with different types of memory to optimize performance",
-          "status": "no_approved_direct_aspect_evidence_yet",
-          "direct_question_ids": [],
+          "status": "reviewed_aspect_evidence_only",
+          "direct_question_ids": [
+            "P-SRC001-Q12-b-ii"
+          ],
           "partial_question_ids": [],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q12-b-ii",
+              "code": "A1.1.4",
+              "scope_bullet_id": "A1.1.4:G02",
+              "exact_guidance": "• The interaction of the CPU with different types of memory to optimize performance",
+              "assessed_skill": "Explain CPU cache hits reducing slower main-RAM access waiting.",
+              "relevance": "direct",
+              "evidence": "Connects cached instruction copies, faster hits and lower CPU waiting to performance; no unsupported universal speedup guarantee."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
           "scope_bullet_id": "A1.1.4:G03",
           "exact_guidance": "• The relevance of the terms “cache miss” and “cache hit”",
-          "status": "no_approved_direct_aspect_evidence_yet",
+          "status": "reviewed_aspect_evidence_only",
           "direct_question_ids": [],
-          "partial_question_ids": [],
+          "partial_question_ids": [
+            "P-SRC001-Q12-b-ii"
+          ],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q12-b-ii",
+              "code": "A1.1.4",
+              "scope_bullet_id": "A1.1.4:G03",
+              "exact_guidance": "• The relevance of the terms “cache miss” and “cache hit”",
+              "assessed_skill": "Use cache-hit behaviour to explain repeated instruction performance.",
+              "relevance": "partial",
+              "evidence": "Hit meaning/effect assessed; cache miss is not explicitly requested or independently marked."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         }
       ],
@@ -396,6 +490,9 @@
         "P-SRC001-Q12-b-iii",
         "P-SRC009-Q12-c-iv"
       ],
+      "reviewed_question_ids": [
+        "P-SRC001-Q12-b-iii"
+      ],
       "difficulty_distribution": {
         "medium": 2
       },
@@ -424,11 +521,23 @@
         {
           "scope_bullet_id": "A1.1.5:G02",
           "exact_guidance": "• The interaction between memory and registers via the three buses: address, data, control",
-          "status": "no_approved_direct_aspect_evidence_yet",
+          "status": "reviewed_aspect_evidence_only",
           "direct_question_ids": [],
-          "partial_question_ids": [],
+          "partial_question_ids": [
+            "P-SRC001-Q12-b-iii"
+          ],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q12-b-iii",
+              "code": "A1.1.5",
+              "scope_bullet_id": "A1.1.5:G02",
+              "exact_guidance": "• The interaction between memory and registers via the three buses: address, data, control",
+              "assessed_skill": "Explain part of memory/register interaction during fetch-related memory read.",
+              "relevance": "partial",
+              "evidence": "Addresses/read signal/returned word/coordination assessed; full PC→MAR→MDR→IR register-transfer sequence and decode/execute absent."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         }
       ],
@@ -457,6 +566,7 @@
         "Entire objective: staged instruction overlap including write-back; distinguish independent parallel cores."
       ],
       "candidate_question_ids": [],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {},
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -538,6 +648,9 @@
         "P-SRC026-Q02-a",
         "P-SRC030-Q02-a"
       ],
+      "reviewed_question_ids": [
+        "P-SRC001-Q12-a-i"
+      ],
       "difficulty_distribution": {
         "low": 3,
         "medium": 4
@@ -561,11 +674,23 @@
         {
           "scope_bullet_id": "A1.1.7:G01",
           "exact_guidance": "• Internal hard drives: solid state drive (SSD), hard disk drive (HDD), embedded multimedia cards (eMMCs)",
-          "status": "no_approved_direct_aspect_evidence_yet",
+          "status": "reviewed_aspect_evidence_only",
           "direct_question_ids": [],
-          "partial_question_ids": [],
+          "partial_question_ids": [
+            "P-SRC001-Q12-a-i"
+          ],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q12-a-i",
+              "code": "A1.1.7",
+              "scope_bullet_id": "A1.1.7:G01",
+              "exact_guidance": "• Internal hard drives: solid state drive (SSD), hard disk drive (HDD), embedded multimedia cards (eMMCs)",
+              "assessed_skill": "Describe SSD persistent storage purpose by contrasting it with RAM.",
+              "relevance": "partial",
+              "evidence": "SSD use is assessed but HDD/eMMC and internal-versus-external distinctions are not."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
@@ -581,11 +706,23 @@
         {
           "scope_bullet_id": "A1.1.7:G03",
           "exact_guidance": "• The scenarios in which the various types of drive are used",
-          "status": "no_approved_direct_aspect_evidence_yet",
+          "status": "reviewed_aspect_evidence_only",
           "direct_question_ids": [],
-          "partial_question_ids": [],
+          "partial_question_ids": [
+            "P-SRC001-Q12-a-i"
+          ],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q12-a-i",
+              "code": "A1.1.7",
+              "scope_bullet_id": "A1.1.7:G03",
+              "exact_guidance": "• The scenarios in which the various types of drive are used",
+              "assessed_skill": "Distinguish active working memory from persistent program/file storage in a workstation.",
+              "relevance": "partial",
+              "evidence": "A concrete workstation program-running context supports RAM/SSD role choice; no broader storage-device scenario comparison."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         }
       ],
@@ -626,6 +763,7 @@
         "P-SRC034-Q09-e",
         "P-SRC042-Q11-a"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 11,
         "low": 1
@@ -691,9 +829,10 @@
         "P-SRC033-Q09-e",
         "P-SRC042-Q11-d"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "high": 1,
-        "medium": 2
+        "medium": 2,
+        "high": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -764,6 +903,7 @@
         "P-SRC024-Q04-c",
         "P-SRC028-Q08-a"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "low": 9,
         "medium": 1
@@ -857,9 +997,12 @@
         "P-SRC044-Q09-a",
         "P-SRC044-Q12-d"
       ],
+      "reviewed_question_ids": [
+        "P-SRC001-Q05"
+      ],
       "difficulty_distribution": {
-        "medium": 8,
-        "low": 9
+        "low": 9,
+        "medium": 8
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -876,21 +1019,45 @@
         {
           "scope_bullet_id": "A1.2.2:G01",
           "exact_guidance": "• The fundamentals of binary encoding and the impact on data storage and retrieval",
-          "status": "no_approved_direct_aspect_evidence_yet",
+          "status": "reviewed_aspect_evidence_only",
           "direct_question_ids": [],
-          "partial_question_ids": [],
+          "partial_question_ids": [
+            "P-SRC001-Q05"
+          ],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q05",
+              "code": "A1.2.2",
+              "scope_bullet_id": "A1.2.2:G01",
+              "exact_guidance": "• The fundamentals of binary encoding and the impact on data storage and retrieval",
+              "assessed_skill": "Explain a fixed bit allocation encoding pixel colour as numeric channel intensities.",
+              "relevance": "partial",
+              "evidence": "Prompt asks how 24 bits can represent a colour; does not test storage/retrieval trade-offs beyond the representation."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
           "scope_bullet_id": "A1.2.2:G02",
           "exact_guidance": "• The mechanisms by which data such as integers, strings, characters, images, audio and video are stored in binary form",
-          "status": "no_approved_direct_aspect_evidence_yet",
+          "status": "reviewed_aspect_evidence_only",
           "direct_question_ids": [],
-          "partial_question_ids": [],
+          "partial_question_ids": [
+            "P-SRC001-Q05"
+          ],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q05",
+              "code": "A1.2.2",
+              "scope_bullet_id": "A1.2.2:G02",
+              "exact_guidance": "• The mechanisms by which data such as integers, strings, characters, images, audio and video are stored in binary form",
+              "assessed_skill": "Describe one image binary-encoding mechanism using three 8-bit RGB components.",
+              "relevance": "partial",
+              "evidence": "Image pixels are directly tested; integer/text/audio/video encoding mechanisms are not. A possible RGB scheme answers can represent; it is not asserted to be the only 24-bit encoding."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         }
       ],
@@ -923,6 +1090,7 @@
         "P-SRC004-Q02",
         "P-SRC005-Q03"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "low": 2
       },
@@ -1024,6 +1192,9 @@
         "P-SRC026-Q05",
         "P-SRC030-Q05"
       ],
+      "reviewed_question_ids": [
+        "P-SRC001-Q06"
+      ],
       "difficulty_distribution": {
         "medium": 9
       },
@@ -1064,11 +1235,23 @@
         {
           "scope_bullet_id": "A1.2.4:G02",
           "exact_guidance": "• Truth tables to determine outputs from inputs for a problem description",
-          "status": "no_approved_direct_aspect_evidence_yet",
-          "direct_question_ids": [],
+          "status": "reviewed_aspect_evidence_only",
+          "direct_question_ids": [
+            "P-SRC001-Q06"
+          ],
           "partial_question_ids": [],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q06",
+              "code": "A1.2.4",
+              "scope_bullet_id": "A1.2.4:G02",
+              "exact_guidance": "• Truth tables to determine outputs from inputs for a problem description",
+              "assessed_skill": "Construct every output of a three-input truth table from an alarm problem description.",
+              "relevance": "direct",
+              "evidence": "Prompt requires complete table from exactly-two-one inputs OR numeric value>=6. Exhaustively recomputed all eight rows; this directly assesses the problem-description truth-table guidance, not Karnaugh maps or circuit simplification."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
@@ -1133,6 +1316,7 @@
         "P-SRC024-Q06",
         "P-SRC028-Q04"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 3
       },
@@ -1235,6 +1419,7 @@
         "P-SRC007-Q15-b",
         "P-SRC009-Q13-e"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 2
       },
@@ -1302,6 +1487,9 @@
         "P-SRC028-Q10-a",
         "P-SRC030-Q10-a"
       ],
+      "reviewed_question_ids": [
+        "P-SRC001-Q12-a-ii"
+      ],
       "difficulty_distribution": {
         "medium": 14,
         "low": 5,
@@ -1322,21 +1510,45 @@
         {
           "scope_bullet_id": "A1.3.2:G01",
           "exact_guidance": "• Maintaining system integrity while running operating systems’ background operations",
-          "status": "no_approved_direct_aspect_evidence_yet",
+          "status": "reviewed_aspect_evidence_only",
           "direct_question_ids": [],
-          "partial_question_ids": [],
+          "partial_question_ids": [
+            "P-SRC001-Q12-a-ii"
+          ],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q12-a-ii",
+              "code": "A1.3.2",
+              "scope_bullet_id": "A1.3.2:G01",
+              "exact_guidance": "• Maintaining system integrity while running operating systems’ background operations",
+              "assessed_skill": "Outline memory isolation/protection maintaining integrity while applications run.",
+              "relevance": "partial",
+              "evidence": "Protection against process overwrites and resulting reduced corruption tested; other integrity/background-operation aspects not required."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
           "scope_bullet_id": "A1.3.2:G02",
           "exact_guidance": "• Memory management, file system, device management, scheduling, security, accounting, graphical user interface (GUI), virtualization, networking",
-          "status": "no_approved_direct_aspect_evidence_yet",
+          "status": "reviewed_aspect_evidence_only",
           "direct_question_ids": [],
-          "partial_question_ids": [],
+          "partial_question_ids": [
+            "P-SRC001-Q12-a-ii"
+          ],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q12-a-ii",
+              "code": "A1.3.2",
+              "scope_bullet_id": "A1.3.2:G02",
+              "exact_guidance": "• Memory management, file system, device management, scheduling, security, accounting, graphical user interface (GUI), virtualization, networking",
+              "assessed_skill": "Outline two OS RAM-management functions with expansion.",
+              "relevance": "partial",
+              "evidence": "Allocation/tracking/reclaiming and memory protection tested; no accounting/GUI/networking/virtualization or other named OS functions."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         }
       ],
@@ -1364,6 +1576,7 @@
         "Entire objective: compare FCFS, round robin, multilevel queue and priority scheduling."
       ],
       "candidate_question_ids": [],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {},
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -1434,9 +1647,10 @@
         "P-SRC030-Q11-d",
         "P-SRC042-Q05-d"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "low": 4,
-        "medium": 7
+        "medium": 7,
+        "low": 4
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -1498,9 +1712,10 @@
         "P-SRC004-Q08-b",
         "P-SRC008-Q11-b"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "medium": 2,
-        "low": 1
+        "low": 1,
+        "medium": 2
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -1567,9 +1782,13 @@
         "P-SRC034-Q13-a",
         "P-SRC040-Q05-e"
       ],
+      "reviewed_question_ids": [
+        "P-SRC001-Q13-a-i",
+        "P-SRC001-Q13-a-ii"
+      ],
       "difficulty_distribution": {
-        "medium": 13,
         "low": 6,
+        "medium": 13,
         "high": 2
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
@@ -1587,21 +1806,65 @@
         {
           "scope_bullet_id": "A1.3.6:G01",
           "exact_guidance": "• The input, process, output, and feedback mechanism (open-loop, closed-loop)",
-          "status": "no_approved_direct_aspect_evidence_yet",
+          "status": "reviewed_aspect_evidence_only",
           "direct_question_ids": [],
-          "partial_question_ids": [],
+          "partial_question_ids": [
+            "P-SRC001-Q13-a-i",
+            "P-SRC001-Q13-a-ii"
+          ],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q13-a-i",
+              "code": "A1.3.6",
+              "scope_bullet_id": "A1.3.6:G01",
+              "exact_guidance": "• The input, process, output, and feedback mechanism (open-loop, closed-loop)",
+              "assessed_skill": "Identify measured feedback input and a human target-setting input to greenhouse control.",
+              "relevance": "partial",
+              "evidence": "Two input components only; input/process/output and open/closed-loop comparison not required."
+            },
+            {
+              "question_id": "P-SRC001-Q13-a-ii",
+              "code": "A1.3.6",
+              "scope_bullet_id": "A1.3.6:G01",
+              "exact_guidance": "• The input, process, output, and feedback mechanism (open-loop, closed-loop)",
+              "assessed_skill": "Describe closed-loop input/process/output feedback maintaining soil moisture.",
+              "relevance": "partial",
+              "evidence": "Reads measurement/target, compares and actuates irrigation, then uses repeated measurement to stop; no open-loop comparison."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
           "scope_bullet_id": "A1.3.6:G02",
           "exact_guidance": "• Controller, sensors, actuators, transducers and control algorithm",
-          "status": "no_approved_direct_aspect_evidence_yet",
+          "status": "reviewed_aspect_evidence_only",
           "direct_question_ids": [],
-          "partial_question_ids": [],
+          "partial_question_ids": [
+            "P-SRC001-Q13-a-i",
+            "P-SRC001-Q13-a-ii"
+          ],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q13-a-i",
+              "code": "A1.3.6",
+              "scope_bullet_id": "A1.3.6:G02",
+              "exact_guidance": "• Controller, sensors, actuators, transducers and control algorithm",
+              "assessed_skill": "Identify a soil-moisture sensor/transducer and operator input interface.",
+              "relevance": "partial",
+              "evidence": "Sensor identification assessed, but transduction mechanism/controller/actuator/control algorithm role not explained."
+            },
+            {
+              "question_id": "P-SRC001-Q13-a-ii",
+              "code": "A1.3.6",
+              "scope_bullet_id": "A1.3.6:G02",
+              "exact_guidance": "• Controller, sensors, actuators, transducers and control algorithm",
+              "assessed_skill": "Describe controller algorithm relating sensor data to irrigation-actuator decisions.",
+              "relevance": "partial",
+              "evidence": "Controller/sensor/actuator/algorithm interaction tested; transducer physical conversion not tested."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         }
       ],
@@ -1645,10 +1908,13 @@
         "P-SRC034-Q13-a",
         "P-SRC040-Q05-e"
       ],
+      "reviewed_question_ids": [
+        "P-SRC001-Q13-a-ii"
+      ],
       "difficulty_distribution": {
         "medium": 15,
-        "high": 2,
-        "low": 1
+        "low": 1,
+        "high": 2
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -1661,11 +1927,23 @@
         {
           "scope_bullet_id": "A1.3.7:G01",
           "exact_guidance": "• Examples may include autonomous vehicles, home thermostats, automatic elevator controllers, automatic washing machines, traffic signal control systems, irrigation control systems, home security systems, automatic doors.",
-          "status": "no_approved_direct_aspect_evidence_yet",
+          "status": "reviewed_aspect_evidence_only",
           "direct_question_ids": [],
-          "partial_question_ids": [],
+          "partial_question_ids": [
+            "P-SRC001-Q13-a-ii"
+          ],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q13-a-ii",
+              "code": "A1.3.7",
+              "scope_bullet_id": "A1.3.7:G01",
+              "exact_guidance": "• Examples may include autonomous vehicles, home thermostats, automatic elevator controllers, automatic washing machines, traffic signal control systems, irrigation control systems, home security systems, automatic doors.",
+              "assessed_skill": "Describe application of control-system components and feedback to greenhouse irrigation.",
+              "relevance": "partial",
+              "evidence": "One explicit listed real-world application assessed; question uses Describe3 rather than extended explanation of several applications. Non-exhaustive may-include examples not all required."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         }
       ],
@@ -1697,6 +1975,9 @@
         "P-SRC001-Q09",
         "P-SRC005-Q01"
       ],
+      "reviewed_question_ids": [
+        "P-SRC001-Q09"
+      ],
       "difficulty_distribution": {
         "low": 2
       },
@@ -1719,11 +2000,23 @@
         {
           "scope_bullet_id": "A1.4.1:G01",
           "exact_guidance": "• The mechanics and use-cases of each translation approach",
-          "status": "no_approved_direct_aspect_evidence_yet",
+          "status": "reviewed_aspect_evidence_only",
           "direct_question_ids": [],
-          "partial_question_ids": [],
+          "partial_question_ids": [
+            "P-SRC001-Q09"
+          ],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q09",
+              "code": "A1.4.1",
+              "scope_bullet_id": "A1.4.1:G01",
+              "exact_guidance": "• The mechanics and use-cases of each translation approach",
+              "assessed_skill": "Identify a compiler from whole-program-before-execution translation mechanics.",
+              "relevance": "partial",
+              "evidence": "One-mark recognition of ahead-of-time compilation; no comparison with interpreter, use-case evaluation, JIT/bytecode or required scenarios."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
@@ -1784,9 +2077,12 @@
         "P-SRC028-Q02",
         "P-SRC030-Q08"
       ],
+      "reviewed_question_ids": [
+        "P-SRC001-Q02"
+      ],
       "difficulty_distribution": {
-        "medium": 11,
-        "low": 2
+        "low": 2,
+        "medium": 11
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -1799,11 +2095,23 @@
         {
           "scope_bullet_id": "A2.1.1:G01",
           "exact_guidance": "• Networks: local area network (LAN), wide area network (WAN), personal area network (PAN), virtual private network (VPN)",
-          "status": "no_approved_direct_aspect_evidence_yet",
+          "status": "reviewed_aspect_evidence_only",
           "direct_question_ids": [],
-          "partial_question_ids": [],
+          "partial_question_ids": [
+            "P-SRC001-Q02"
+          ],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q02",
+              "code": "A2.1.1",
+              "scope_bullet_id": "A2.1.1:G01",
+              "exact_guidance": "• Networks: local area network (LAN), wide area network (WAN), personal area network (PAN), virtual private network (VPN)",
+              "assessed_skill": "Identify two resources a LAN can share among workstations.",
+              "relevance": "partial",
+              "evidence": "Prompt tests LAN purpose through shared printer/files. It does not compare LAN/WAN/PAN/VPN nor require their characteristics."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         }
       ],
@@ -1852,9 +2160,10 @@
         "P-SRC042-Q11-d",
         "P-SRC044-Q09-d"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "high": 4,
         "medium": 15,
+        "high": 4,
         "low": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
@@ -1921,9 +2230,10 @@
         "P-SRC022-Q11-a",
         "P-SRC024-Q11-a"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "medium": 2,
-        "low": 4
+        "low": 4,
+        "medium": 2
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -1996,6 +2306,7 @@
         "P-SRC040-Q07-b",
         "P-SRC042-Q09-d"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 10,
         "low": 4
@@ -2014,8 +2325,30 @@
           "status": "no_approved_direct_aspect_evidence_yet",
           "direct_question_ids": [],
           "partial_question_ids": [],
-          "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "supporting_question_ids": [
+            "P-SRC001-Q08-a",
+            "P-SRC001-Q08-b"
+          ],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q08-a",
+              "code": "A2.1.4",
+              "scope_bullet_id": "A2.1.4:G01",
+              "exact_guidance": "• Protocols: transmission control protocol (TCP), user datagram protocol (UDP), hypertext transfer protocol (HTTP), hypertext transfer protocol secure (HTTPS), dynamic host configuration protocol (DHCP)",
+              "assessed_skill": "Define the general concept of an agreed communication protocol.",
+              "relevance": "supporting",
+              "evidence": "No named TCP/UDP/HTTP/HTTPS/DHCP role or behaviour is tested. This foundation supports the statement but does not establish direct coverage of any listed protocol."
+            },
+            {
+              "question_id": "P-SRC001-Q08-b",
+              "code": "A2.1.4",
+              "scope_bullet_id": "A2.1.4:G01",
+              "exact_guidance": "• Protocols: transmission control protocol (TCP), user datagram protocol (UDP), hypertext transfer protocol (HTTP), hypertext transfer protocol secure (HTTPS), dynamic host configuration protocol (DHCP)",
+              "assessed_skill": "List general communication properties standardized by protocols.",
+              "relevance": "supporting",
+              "evidence": "Message format, timing/order and addressing/error conventions are general protocol aspects. No specific function of the five listed transport/application protocols is tested."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         }
       ],
@@ -2043,6 +2376,7 @@
         "All four layers and their interaction; do not imply all transport choices guarantee reliable delivery."
       ],
       "candidate_question_ids": [],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {},
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -2102,6 +2436,7 @@
         "Star/mesh/hybrid and reliability/speed/scalability/collisions/cost."
       ],
       "candidate_question_ids": [],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {},
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -2183,6 +2518,9 @@
         "P-SRC040-Q07-e-ii",
         "P-SRC044-Q07-d"
       ],
+      "reviewed_question_ids": [
+        "P-SRC001-Q11-c-ii"
+      ],
       "difficulty_distribution": {
         "medium": 5,
         "low": 3
@@ -2202,11 +2540,23 @@
         {
           "scope_bullet_id": "A2.2.2:G01",
           "exact_guidance": "• Types of servers: domain name server (DNS), dynamic host configuration protocol (DHCP), file server, mail server, proxy server, web server",
-          "status": "no_approved_direct_aspect_evidence_yet",
+          "status": "reviewed_aspect_evidence_only",
           "direct_question_ids": [],
-          "partial_question_ids": [],
+          "partial_question_ids": [
+            "P-SRC001-Q11-c-ii"
+          ],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q11-c-ii",
+              "code": "A2.2.2",
+              "scope_bullet_id": "A2.2.2:G01",
+              "exact_guidance": "• Types of servers: domain name server (DNS), dynamic host configuration protocol (DHCP), file server, mail server, proxy server, web server",
+              "assessed_skill": "State the function of a university mail server.",
+              "relevance": "partial",
+              "evidence": "Receiving/storing/forwarding email role directly tested; no DNS/DHCP/file/proxy/web role and no reliability/scalability/security comparison."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
@@ -2259,9 +2609,10 @@
         "P-SRC044-Q07-d",
         "P-SRC044-Q08-g"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "medium": 9,
-        "low": 4
+        "low": 4,
+        "medium": 9
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -2336,6 +2687,7 @@
       "candidate_question_ids": [
         "P-SRC030-Q10-a"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "high": 1
       },
@@ -2398,6 +2750,7 @@
         "IPv4/IPv6; public/private; static/dynamic; NAT conservation and communication."
       ],
       "candidate_question_ids": [],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {},
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -2488,6 +2841,7 @@
         "P-SRC028-Q10-b-i",
         "P-SRC030-Q10-b-i"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 8,
         "low": 8
@@ -2567,6 +2921,7 @@
         "P-SRC005-Q10-e",
         "P-SRC009-Q11-d"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 2,
         "low": 1
@@ -2629,6 +2984,7 @@
         "Static/dynamic routing process and trade-offs across configuration/maintenance/complexity/resources/convergence/scalability/network size."
       ],
       "candidate_question_ids": [],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {},
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -2710,6 +3066,7 @@
         "P-SRC030-Q10-b-ii",
         "P-SRC033-Q11-c"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 6,
         "low": 1
@@ -2796,6 +3153,9 @@
         "P-SRC033-Q11-c",
         "P-SRC034-Q11-b"
       ],
+      "reviewed_question_ids": [
+        "P-SRC001-Q11-c-i"
+      ],
       "difficulty_distribution": {
         "medium": 9,
         "low": 2
@@ -2811,11 +3171,23 @@
         {
           "scope_bullet_id": "A2.4.2:G01",
           "exact_guidance": "• Distributed denial of service (DDoS), insecure network protocols, malware, man-in-the-middle (MitM) attacks, phishing attacks, SQL injection, cross-site scripting (XSS), unpatched software, weak authentication, zero-day exploits",
-          "status": "no_approved_direct_aspect_evidence_yet",
+          "status": "reviewed_aspect_evidence_only",
           "direct_question_ids": [],
-          "partial_question_ids": [],
+          "partial_question_ids": [
+            "P-SRC001-Q11-c-i"
+          ],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q11-c-i",
+              "code": "A2.4.2",
+              "scope_bullet_id": "A2.4.2:G01",
+              "exact_guidance": "• Distributed denial of service (DDoS), insecure network protocols, malware, man-in-the-middle (MitM) attacks, phishing attacks, SQL injection, cross-site scripting (XSS), unpatched software, weak authentication, zero-day exploits",
+              "assessed_skill": "List three network vulnerabilities capable of exposing enrolment records.",
+              "relevance": "partial",
+              "evidence": "Only identification of any three exposure-relevant vulnerabilities is assessed; no mechanism explanation and no evidence all ten listed vulnerabilities are tested."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         }
       ],
@@ -2870,6 +3242,7 @@
         "P-SRC033-Q09-b",
         "P-SRC034-Q11-b"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 23,
         "low": 2
@@ -2957,6 +3330,7 @@
         "P-SRC032-Q09-c",
         "P-SRC033-Q09-c"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 7,
         "low": 2
@@ -2987,8 +3361,20 @@
           "status": "no_approved_direct_aspect_evidence_yet",
           "direct_question_ids": [],
           "partial_question_ids": [],
-          "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "supporting_question_ids": [
+            "P-SRC001-Q11-c-iv"
+          ],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q11-c-iv",
+              "code": "A2.4.4",
+              "scope_bullet_id": "A2.4.4:G01",
+              "exact_guidance": "• The difference between symmetric and asymmetric cryptography",
+              "assessed_skill": "Explain generic encryption-based confidentiality during network transfer.",
+              "relevance": "supporting",
+              "evidence": "Plaintext/ciphertext/algorithm/key and authorized decryption are tested. The exact guidance bullet requires symmetric/asymmetric differences, which this question does not assess; this is foundation only, with no digital-certificate or key-management evidence."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
@@ -3075,6 +3461,7 @@
         "P-SRC044-Q02-f",
         "P-SRC044-Q03-a-i"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 22,
         "low": 4,
@@ -3158,9 +3545,10 @@
         "P-SRC044-Q02-a",
         "P-SRC044-Q02-c"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "low": 1,
-        "medium": 5
+        "medium": 5,
+        "low": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -3228,9 +3616,10 @@
         "P-SRC042-Q01-b",
         "P-SRC042-Q02-c"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "medium": 6,
-        "low": 3
+        "low": 3,
+        "medium": 6
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -3308,6 +3697,7 @@
         "P-SRC042-Q01-e",
         "P-SRC044-Q01-e"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "low": 3,
         "medium": 3
@@ -3380,10 +3770,11 @@
         "P-SRC042-Q03-c",
         "P-SRC044-Q02-c"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 7,
-        "low": 1,
-        "high": 2
+        "high": 2,
+        "low": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -3454,6 +3845,7 @@
         "P-SRC042-Q03-b",
         "P-SRC044-Q03-b"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 8,
         "low": 2
@@ -3536,6 +3928,7 @@
         "P-SRC042-Q03-c",
         "P-SRC044-Q03-c"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 4,
         "high": 4
@@ -3584,6 +3977,7 @@
         "All objective: read-performance/simpler queries versus duplication and consistency/update cost."
       ],
       "candidate_question_ids": [],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {},
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -3661,6 +4055,7 @@
         "P-SRC042-Q02-b",
         "P-SRC044-Q02-b"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 3,
         "low": 1
@@ -3738,9 +4133,10 @@
         "P-SRC044-Q01-c",
         "P-SRC044-Q01-d"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "low": 2,
-        "medium": 13
+        "medium": 13,
+        "low": 2
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -3802,6 +4198,7 @@
         "P-SRC032-Q10-a-i",
         "P-SRC038-Q09-e-i"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 2
       },
@@ -3864,6 +4261,7 @@
       "candidate_question_ids": [
         "P-SRC038-Q09-e-i"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 1
       },
@@ -3932,6 +4330,7 @@
         "P-SRC042-Q01-f",
         "P-SRC044-Q01-f"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 6,
         "high": 1
@@ -4010,6 +4409,7 @@
         "P-SRC042-Q02-e",
         "P-SRC044-Q02-e"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 13,
         "low": 3
@@ -4075,6 +4475,7 @@
         "P-SRC034-Q04-a-ii",
         "P-SRC042-Q04-a"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "low": 3
       },
@@ -4146,6 +4547,7 @@
         "P-SRC042-Q04-d",
         "P-SRC042-Q04-e"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 8,
         "low": 3
@@ -4205,10 +4607,11 @@
         "P-SRC042-Q04-f",
         "P-SRC042-Q04-g"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "low": 1,
         "medium": 7,
-        "high": 2
+        "high": 2,
+        "low": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -4272,10 +4675,11 @@
         "P-SRC042-Q11-c",
         "P-SRC044-Q09-c"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "high": 1,
+        "medium": 1,
         "low": 1,
-        "medium": 1
+        "high": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -4358,6 +4762,7 @@
         "P-SRC042-Q08-d",
         "P-SRC042-Q08-e"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 6,
         "high": 2
@@ -4439,6 +4844,7 @@
         "P-SRC038-Q07-d",
         "P-SRC040-Q06-d"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 3,
         "high": 1
@@ -4522,9 +4928,10 @@
         "P-SRC034-Q08-f",
         "P-SRC042-Q08-e"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "medium": 3,
         "low": 1,
+        "medium": 3,
         "high": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
@@ -4598,6 +5005,7 @@
         "Feature selection purpose and filter/wrapper/embedded methods."
       ],
       "candidate_question_ids": [],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {},
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -4657,6 +5065,7 @@
         "Curse of dimensionality and preserving relevant information with fewer variables; no PCA/LDA."
       ],
       "candidate_question_ids": [],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {},
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -4732,6 +5141,7 @@
       "candidate_question_ids": [
         "P-SRC044-Q05-b"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 1
       },
@@ -4813,6 +5223,7 @@
         "P-SRC033-Q04-d",
         "P-SRC040-Q03-d"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 5
       },
@@ -4891,6 +5302,7 @@
         "P-SRC040-Q05-f",
         "P-SRC044-Q05-c"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 2
       },
@@ -4971,6 +5383,7 @@
         "P-SRC038-Q08-c",
         "P-SRC042-Q04-g"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 6,
         "high": 1
@@ -5034,6 +5447,7 @@
       "candidate_question_ids": [
         "P-SRC042-Q04-g"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "high": 1
       },
@@ -5095,9 +5509,10 @@
         "P-SRC033-Q08-c",
         "P-SRC042-Q08-c"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "high": 1,
-        "medium": 1
+        "medium": 1,
+        "high": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -5167,6 +5582,7 @@
         "P-SRC038-Q08-a",
         "P-SRC042-Q08-a"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 9,
         "low": 2
@@ -5233,6 +5649,7 @@
         "P-SRC038-Q08-e",
         "P-SRC042-Q08-b"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 2,
         "low": 1
@@ -5308,6 +5725,7 @@
         "CNN hierarchy/layer roles; kernel size/stride/layer count/activation/loss conceptual effects."
       ],
       "candidate_question_ids": [],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {},
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -5369,6 +5787,7 @@
       "candidate_question_ids": [
         "P-SRC033-Q06-b"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 1
       },
@@ -5458,6 +5877,7 @@
         "P-SRC038-Q06-f",
         "P-SRC038-Q13-b"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 11,
         "high": 2
@@ -5536,9 +5956,10 @@
         "P-SRC005-Q04-a",
         "P-SRC008-Q09-d"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "low": 1,
-        "medium": 1
+        "medium": 1,
+        "low": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -5596,6 +6017,7 @@
         "Construct a coherent specification from a concrete stakeholder scenario, including constraints, inputs/outputs and evaluable success criteria as appropriate."
       ],
       "candidate_question_ids": [],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {},
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -5643,6 +6065,7 @@
         "P-SRC044-Q04-e",
         "P-SRC044-Q10-e"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 6
       },
@@ -5691,9 +6114,10 @@
         "P-SRC040-Q05-c",
         "P-SRC044-Q10-e"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "medium": 3,
-        "low": 1
+        "low": 1,
+        "medium": 3
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -5749,6 +6173,7 @@
       "candidate_question_ids": [
         "P-SRC009-Q04"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 1
       },
@@ -5840,10 +6265,11 @@
         "P-SRC044-Q11-a-iii",
         "P-SRC044-Q12-a"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 17,
-        "low": 7,
-        "high": 2
+        "high": 2,
+        "low": 7
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -5891,6 +6317,7 @@
         "P-SRC042-Q10-f",
         "P-SRC044-Q08-f"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 6
       },
@@ -5939,6 +6366,7 @@
         "P-SRC002-Q05-d",
         "P-SRC032-Q15-d-i"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 3
       },
@@ -6015,6 +6443,9 @@
         "P-SRC038-Q16-a-i",
         "P-SRC040-Q12-a-i"
       ],
+      "reviewed_question_ids": [
+        "P-SRC001-Q10"
+      ],
       "difficulty_distribution": {
         "medium": 7,
         "high": 2,
@@ -6084,10 +6515,14 @@
         "P-SRC033-Q16-a-ii",
         "P-SRC033-Q17-b"
       ],
+      "reviewed_question_ids": [
+        "P-SRC001-Q14-a",
+        "P-SRC001-Q15-a"
+      ],
       "difficulty_distribution": {
-        "high": 1,
+        "low": 1,
         "medium": 7,
-        "low": 1
+        "high": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -6128,7 +6563,9 @@
           "direct_question_ids": [
             "P-SRC001-Q14-a"
           ],
-          "partial_question_ids": [],
+          "partial_question_ids": [
+            "P-SRC001-Q15-a"
+          ],
           "supporting_question_ids": [],
           "reviewed_assessed_skills": [
             {
@@ -6139,6 +6576,19 @@
               "relevance": "direct",
               "evidence": "Two disadvantages linked to variable delay and possible RAM-budget excess.",
               "coverage_limit": "Focus disadvantages of dynamic growth; does not evaluate every static/dynamic scenario.",
+              "scope_bullet_id": "B2.2.1:G02",
+              "exact_guidance": "• The advantages and disadvantages of each type in various scenarios, considering factors such as speed, memory usage, flexibility",
+              "statement": "Compare static and dynamic data structures.",
+              "mapping_verification_status": "verified"
+            },
+            {
+              "question_id": "P-SRC001-Q15-a",
+              "code": "B2.2.1",
+              "guidance_index": 2,
+              "assessed_skill": "Explain suitability of fixed known dimensions",
+              "relevance": "partial",
+              "evidence": "Known seat count avoids needing conceptual growth; answer discusses indexed locations and one logical slot per seat.",
+              "coverage_limit": "No direct comparison to dynamic data structures, no resize/memory-allocation mechanism; cannot count as full static/dynamic comparison.",
               "scope_bullet_id": "B2.2.1:G02",
               "exact_guidance": "• The advantages and disadvantages of each type in various scenarios, considering factors such as speed, memory usage, flexibility",
               "statement": "Compare static and dynamic data structures.",
@@ -6259,10 +6709,14 @@
         "P-SRC044-Q12-b",
         "P-SRC044-Q12-c"
       ],
+      "reviewed_question_ids": [
+        "P-SRC001-Q15-b",
+        "P-SRC001-Q15-c"
+      ],
       "difficulty_distribution": {
+        "low": 10,
         "medium": 48,
-        "high": 27,
-        "low": 10
+        "high": 27
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -6284,21 +6738,96 @@
         {
           "scope_bullet_id": "B2.2.2:G02",
           "exact_guidance": "• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python",
-          "status": "no_approved_direct_aspect_evidence_yet",
-          "direct_question_ids": [],
+          "status": "reviewed_aspect_evidence_only",
+          "direct_question_ids": [
+            "P-SRC001-Q15-b",
+            "P-SRC001-Q15-c"
+          ],
           "partial_question_ids": [],
-          "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "supporting_question_ids": [
+            "P-SRC001-Q15-a"
+          ],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q15-a",
+              "code": "B2.2.2",
+              "guidance_index": 2,
+              "assessed_skill": "Explain row/column representation in Python list",
+              "relevance": "supporting",
+              "evidence": "A two-dimensional list maps row and seat coordinates.",
+              "coverage_limit": "Question outlines suitability rather than constructs a program using lists.",
+              "scope_bullet_id": "B2.2.2:G02",
+              "exact_guidance": "• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python",
+              "statement": "Construct programs that apply arrays and Lists.",
+              "mapping_verification_status": "verified"
+            },
+            {
+              "question_id": "P-SRC001-Q15-b",
+              "code": "B2.2.2",
+              "guidance_index": 2,
+              "assessed_skill": "Access one row of a 2D list and traverse its entries",
+              "relevance": "direct",
+              "evidence": "Solution iterates bookings[row].",
+              "coverage_limit": "No list mutation or dynamic removal.",
+              "scope_bullet_id": "B2.2.2:G02",
+              "exact_guidance": "• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python",
+              "statement": "Construct programs that apply arrays and Lists.",
+              "mapping_verification_status": "verified"
+            },
+            {
+              "question_id": "P-SRC001-Q15-c",
+              "code": "B2.2.2",
+              "guidance_index": 2,
+              "assessed_skill": "Construct nested Python list traversal",
+              "relevance": "direct",
+              "evidence": "Entire rectangular2D list is traversed by row and seat.",
+              "coverage_limit": "No direct indexing, mutation or dynamic removal.",
+              "scope_bullet_id": "B2.2.2:G02",
+              "exact_guidance": "• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python",
+              "statement": "Construct programs that apply arrays and Lists.",
+              "mapping_verification_status": "verified"
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
           "scope_bullet_id": "B2.2.2:G03",
           "exact_guidance": "• Add, remove and traverse elements in a dynamic list",
-          "status": "no_approved_direct_aspect_evidence_yet",
-          "direct_question_ids": [],
+          "status": "reviewed_aspect_evidence_only",
+          "direct_question_ids": [
+            "P-SRC001-Q15-b",
+            "P-SRC001-Q15-c"
+          ],
           "partial_question_ids": [],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q15-b",
+              "code": "B2.2.2",
+              "guidance_index": 3,
+              "assessed_skill": "Traverse list elements",
+              "relevance": "direct",
+              "evidence": "Every seat in selected row inspected exactly once.",
+              "coverage_limit": "Does not add/remove elements.",
+              "scope_bullet_id": "B2.2.2:G03",
+              "exact_guidance": "• Add, remove and traverse elements in a dynamic list",
+              "statement": "Construct programs that apply arrays and Lists.",
+              "mapping_verification_status": "verified"
+            },
+            {
+              "question_id": "P-SRC001-Q15-c",
+              "code": "B2.2.2",
+              "guidance_index": 3,
+              "assessed_skill": "Traverse list entries without modifying source",
+              "relevance": "direct",
+              "evidence": "Prompt explicitly preserves bookings; code reads every element.",
+              "coverage_limit": "No add/remove operation required.",
+              "scope_bullet_id": "B2.2.2:G03",
+              "exact_guidance": "• Add, remove and traverse elements in a dynamic list",
+              "statement": "Construct programs that apply arrays and Lists.",
+              "mapping_verification_status": "verified"
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         }
       ],
@@ -6348,10 +6877,14 @@
         "P-SRC033-Q17-a",
         "P-SRC034-Q18-a"
       ],
+      "reviewed_question_ids": [
+        "P-SRC001-Q03",
+        "P-SRC001-Q04"
+      ],
       "difficulty_distribution": {
-        "high": 4,
+        "low": 4,
         "medium": 12,
-        "low": 4
+        "high": 4
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -6382,7 +6915,9 @@
               "scope_bullet_id": "B2.2.3:G01",
               "exact_guidance": "• Must include fundamental operations such as push, pop, peek and isEmpty",
               "statement": "Explain the concept of a stack as a “last in, first out” (LIFO) data structure.",
-              "mapping_verification_status": "verified"
+              "mapping_verification_status": "verified",
+              "statement_relevance": "partial",
+              "statement_evidence": "Assesses a named component skill but does not provide the whole statement command/depth."
             },
             {
               "question_id": "P-SRC001-Q04",
@@ -6395,7 +6930,9 @@
               "scope_bullet_id": "B2.2.3:G01",
               "exact_guidance": "• Must include fundamental operations such as push, pop, peek and isEmpty",
               "statement": "Explain the concept of a stack as a “last in, first out” (LIFO) data structure.",
-              "mapping_verification_status": "verified"
+              "mapping_verification_status": "verified",
+              "statement_relevance": "partial",
+              "statement_evidence": "Assesses a named component skill but does not provide the whole statement command/depth."
             }
           ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
@@ -6459,6 +6996,7 @@
         "P-SRC022-Q14-c-i",
         "P-SRC022-Q14-c-ii"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 8,
         "low": 3,
@@ -6534,6 +7072,7 @@
         "P-SRC044-Q03-a-ii",
         "P-SRC044-Q12-c"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 7
       },
@@ -6671,10 +7210,13 @@
         "P-SRC044-Q11-c",
         "P-SRC044-Q12-c"
       ],
+      "reviewed_question_ids": [
+        "P-SRC001-Q15-c"
+      ],
       "difficulty_distribution": {
         "medium": 52,
-        "low": 11,
-        "high": 21
+        "high": 21,
+        "low": 11
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -6685,21 +7227,53 @@
         {
           "scope_bullet_id": "B2.3.2:G01",
           "exact_guidance": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions",
-          "status": "no_approved_direct_aspect_evidence_yet",
-          "direct_question_ids": [],
+          "status": "reviewed_aspect_evidence_only",
+          "direct_question_ids": [
+            "P-SRC001-Q15-c"
+          ],
           "partial_question_ids": [],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q15-c",
+              "code": "B2.3.2",
+              "guidance_index": 1,
+              "assessed_skill": "Construct mutually exclusive tariff selection",
+              "relevance": "direct",
+              "evidence": "S,D,C values select distinct increments; X deliberately adds zero.",
+              "coverage_limit": "Sample uses if/elif without final else; does not assess every selection form.",
+              "scope_bullet_id": "B2.3.2:G01",
+              "exact_guidance": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions",
+              "statement": "Construct programs utilizing appropriate selection structures.",
+              "mapping_verification_status": "verified"
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
           "scope_bullet_id": "B2.3.2:G02",
           "exact_guidance": "• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
-          "status": "no_approved_direct_aspect_evidence_yet",
-          "direct_question_ids": [],
+          "status": "reviewed_aspect_evidence_only",
+          "direct_question_ids": [
+            "P-SRC001-Q15-c"
+          ],
           "partial_question_ids": [],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q15-c",
+              "code": "B2.3.2",
+              "guidance_index": 2,
+              "assessed_skill": "Equality conditions governing execution",
+              "relevance": "direct",
+              "evidence": "Character-code equality decides each tariff addition.",
+              "coverage_limit": "No compound Boolean operators required.",
+              "scope_bullet_id": "B2.3.2:G02",
+              "exact_guidance": "• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+              "statement": "Construct programs utilizing appropriate selection structures.",
+              "mapping_verification_status": "verified"
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         }
       ],
@@ -6800,9 +7374,13 @@
         "P-SRC044-Q11-c",
         "P-SRC044-Q12-c"
       ],
+      "reviewed_question_ids": [
+        "P-SRC001-Q15-b",
+        "P-SRC001-Q15-c"
+      ],
       "difficulty_distribution": {
-        "medium": 45,
         "high": 25,
+        "medium": 45,
         "low": 4
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
@@ -6814,21 +7392,81 @@
         {
           "scope_bullet_id": "B2.3.3:G01",
           "exact_guidance": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type",
-          "status": "no_approved_direct_aspect_evidence_yet",
-          "direct_question_ids": [],
+          "status": "reviewed_aspect_evidence_only",
+          "direct_question_ids": [
+            "P-SRC001-Q15-b",
+            "P-SRC001-Q15-c"
+          ],
           "partial_question_ids": [],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q15-b",
+              "code": "B2.3.3",
+              "guidance_index": 1,
+              "assessed_skill": "Construct a finite for-each loop over a row",
+              "relevance": "direct",
+              "evidence": "for kind in bookings[row] performs one iteration per item.",
+              "coverage_limit": "Not an explicitly indexed counted loop or pre/post-condition loop; do not return this as evidence of all loop forms.",
+              "scope_bullet_id": "B2.3.3:G01",
+              "exact_guidance": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type",
+              "statement": "Construct programs that utilize looping structures to perform repeated actions.",
+              "mapping_verification_status": "verified"
+            },
+            {
+              "question_id": "P-SRC001-Q15-c",
+              "code": "B2.3.3",
+              "guidance_index": 1,
+              "assessed_skill": "Construct nested finite for-each loops",
+              "relevance": "direct",
+              "evidence": "One pass across rows and inner pass across entries.",
+              "coverage_limit": "Does not demonstrate while/pre-condition/post-condition loop forms or explicit index counting.",
+              "scope_bullet_id": "B2.3.3:G01",
+              "exact_guidance": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type",
+              "statement": "Construct programs that utilize looping structures to perform repeated actions.",
+              "mapping_verification_status": "verified"
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
           "scope_bullet_id": "B2.3.3:G02",
           "exact_guidance": "• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
-          "status": "no_approved_direct_aspect_evidence_yet",
-          "direct_question_ids": [],
+          "status": "reviewed_aspect_evidence_only",
+          "direct_question_ids": [
+            "P-SRC001-Q15-b",
+            "P-SRC001-Q15-c"
+          ],
           "partial_question_ids": [],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q15-b",
+              "code": "B2.3.3",
+              "guidance_index": 2,
+              "assessed_skill": "Conditional counting inside loop",
+              "relevance": "direct",
+              "evidence": "if kind == D increments count only for matching entries.",
+              "coverage_limit": "Only equality predicate, not all Boolean/relational combinations.",
+              "scope_bullet_id": "B2.3.3:G02",
+              "exact_guidance": "• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+              "statement": "Construct programs that utilize looping structures to perform repeated actions.",
+              "mapping_verification_status": "verified"
+            },
+            {
+              "question_id": "P-SRC001-Q15-c",
+              "code": "B2.3.3",
+              "guidance_index": 2,
+              "assessed_skill": "Select inside nested loops",
+              "relevance": "direct",
+              "evidence": "Tariff selection occurs in loop body.",
+              "coverage_limit": "Only simple equality decisions.",
+              "scope_bullet_id": "B2.3.3:G02",
+              "exact_guidance": "• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+              "statement": "Construct programs that utilize looping structures to perform repeated actions.",
+              "mapping_verification_status": "verified"
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         }
       ],
@@ -6895,6 +7533,7 @@
         "P-SRC044-Q11-c",
         "P-SRC044-Q12-c"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 31,
         "low": 3,
@@ -6976,6 +7615,7 @@
         "P-SRC033-Q16-b",
         "P-SRC034-Q06-e"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 2
       },
@@ -7037,9 +7677,10 @@
         "P-SRC016-Q12-d",
         "P-SRC032-Q16-e"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "high": 2,
-        "medium": 3
+        "medium": 3,
+        "high": 2
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -7053,8 +7694,26 @@
           "status": "no_approved_direct_aspect_evidence_yet",
           "direct_question_ids": [],
           "partial_question_ids": [],
-          "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "supporting_question_ids": [
+            "P-SRC001-Q14-c"
+          ],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q14-c",
+              "code": "B2.4.2",
+              "guidance_index": 1,
+              "assessed_skill": "Use binary-search interval halving, without explicit efficiency comparison",
+              "relevance": "supporting",
+              "evidence": "Binary search implementation supplies material for an efficiency comparison, but no complexity/comparison is asked.",
+              "coverage_limit": "Does not directly assess differences in efficiency between linear and binary search.",
+              "scope_bullet_id": "B2.4.2:G01",
+              "exact_guidance": "• The differences in efficiency between different methods of linear and binary search",
+              "statement": "Construct and trace algorithms to implement a linear search and a binary search for data retrieval.",
+              "mapping_verification_status": "verified",
+              "statement_relevance": "direct",
+              "statement_evidence": "Actual prompt requires construction of iterative binary search; this directly assesses the statement construction skill but no efficiency comparison."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
@@ -7063,8 +7722,26 @@
           "status": "no_approved_direct_aspect_evidence_yet",
           "direct_question_ids": [],
           "partial_question_ids": [],
-          "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "supporting_question_ids": [
+            "P-SRC001-Q14-c"
+          ],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "P-SRC001-Q14-c",
+              "code": "B2.4.2",
+              "guidance_index": 2,
+              "assessed_skill": "Use a given binary-search choice with sorted input",
+              "relevance": "supporting",
+              "evidence": "Ascending input given, algorithm chosen by prompt.",
+              "coverage_limit": "Does not ask candidate to select or justify a technique based on efficiency.",
+              "scope_bullet_id": "B2.4.2:G02",
+              "exact_guidance": "• Use of search technique based on efficiency requirements—for example, searching a database for a sorted/indexed list of names to find a phone number, versus searching by the number to identify the name",
+              "statement": "Construct and trace algorithms to implement a linear search and a binary search for data retrieval.",
+              "mapping_verification_status": "verified",
+              "statement_relevance": "direct",
+              "statement_evidence": "Actual prompt requires construction of iterative binary search; this directly assesses the statement construction skill but no efficiency comparison."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         }
       ],
@@ -7101,6 +7778,7 @@
         "P-SRC042-Q16-b",
         "P-SRC044-Q12-b"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 4,
         "low": 1,
@@ -7171,9 +7849,10 @@
         "P-SRC042-Q17-c-i",
         "P-SRC042-Q17-c-iii"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "low": 2,
-        "medium": 8
+        "medium": 8,
+        "low": 2
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -7274,6 +7953,9 @@
         "P-SRC038-Q18-b",
         "P-SRC042-Q17-c-ii"
       ],
+      "reviewed_question_ids": [
+        "P-SRC001-Q14-b"
+      ],
       "difficulty_distribution": {
         "medium": 12,
         "low": 2,
@@ -7338,6 +8020,7 @@
         "Construct text-file code covering read/write/append and reliable closing; use self-contained format and deterministic expected results."
       ],
       "candidate_question_ids": [],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {},
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -7430,6 +8113,7 @@
         "P-SRC034-Q15-e",
         "P-SRC038-Q18-d"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 6
       },
@@ -7493,6 +8177,7 @@
         "P-SRC042-Q14-f",
         "P-SRC044-Q10-f"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 9,
         "low": 1
@@ -7555,9 +8240,10 @@
         "P-SRC033-Q15-a",
         "P-SRC034-Q14-a"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "medium": 5,
-        "low": 1
+        "low": 1,
+        "medium": 5
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -7625,6 +8311,7 @@
         "P-SRC044-Q10-b",
         "P-SRC044-Q10-c"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 10,
         "low": 4
@@ -7693,6 +8380,7 @@
         "P-SRC042-Q14-d",
         "P-SRC044-Q10-d"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 7,
         "low": 3
@@ -7793,10 +8481,11 @@
         "P-SRC044-Q11-b-i",
         "P-SRC044-Q11-b-ii"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "low": 4,
         "medium": 16,
-        "high": 1
+        "high": 1,
+        "low": 4
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -7866,6 +8555,7 @@
         "P-SRC034-Q16-a",
         "P-SRC034-Q16-c-ii"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "low": 1,
         "medium": 2,
@@ -7935,6 +8625,7 @@
       "candidate_question_ids": [
         "P-SRC002-Q16-d"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 1
       },
@@ -8002,9 +8693,10 @@
         "P-SRC042-Q14-a",
         "P-SRC044-Q10-a"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "medium": 9,
-        "low": 3
+        "low": 3,
+        "medium": 9
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -8057,6 +8749,7 @@
         "Explain purpose and contextual use of singleton, factory and observer without inventing requirements for full pattern-framework code."
       ],
       "candidate_question_ids": [],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {},
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -8110,9 +8803,10 @@
         "P-SRC020-Q06",
         "P-SRC032-Q16-a"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "medium": 2,
-        "low": 1
+        "low": 1,
+        "medium": 2
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -8170,6 +8864,9 @@
         "P-SRC033-Q17-b",
         "P-SRC034-Q18-a"
       ],
+      "reviewed_question_ids": [
+        "P-SRC001-Q07"
+      ],
       "difficulty_distribution": {
         "medium": 14
       },
@@ -8201,7 +8898,9 @@
               "scope_bullet_id": "B4.1.2:G01",
               "exact_guidance": "• Lists must include singly, doubly, circular",
               "statement": "Evaluate linked lists.",
-              "mapping_verification_status": "verified"
+              "mapping_verification_status": "verified",
+              "statement_relevance": "partial",
+              "statement_evidence": "Assesses a named component skill but does not provide the whole statement command/depth."
             }
           ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
@@ -8227,7 +8926,9 @@
               "scope_bullet_id": "B4.1.2:G02",
               "exact_guidance": "• Sketch of linked lists and implementation of basic operations diagrammatically, such as insertion, deletion, traversal, search",
               "statement": "Evaluate linked lists.",
-              "mapping_verification_status": "verified"
+              "mapping_verification_status": "verified",
+              "statement_relevance": "partial",
+              "statement_evidence": "Assesses a named component skill but does not provide the whole statement command/depth."
             }
           ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
@@ -8280,6 +8981,9 @@
         "P-SRC042-Q17-b",
         "P-SRC042-Q17-c-ii"
       ],
+      "reviewed_question_ids": [
+        "P-SRC001-Q07"
+      ],
       "difficulty_distribution": {
         "medium": 10,
         "high": 3
@@ -8310,7 +9014,9 @@
               "scope_bullet_id": "B4.1.3:G01",
               "exact_guidance": "• The basic operations on a linked list, such as insertion, deletion, traversal, search",
               "statement": "Construct and apply linked lists: singly, doubly and circular.",
-              "mapping_verification_status": "verified"
+              "mapping_verification_status": "verified",
+              "statement_relevance": "direct",
+              "statement_evidence": "Applies doubly linked insertion/deletion by sketch."
             }
           ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
@@ -8364,6 +9070,7 @@
         "P-SRC038-Q18-a-i",
         "P-SRC038-Q18-a-ii"
       ],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 17,
         "low": 4,
@@ -8432,6 +9139,7 @@
         "Construct and apply Python sets for membership and all named operations; avoid assuming display/iteration order."
       ],
       "candidate_question_ids": [],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {},
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -8497,6 +9205,7 @@
         "Explain hash/index function, collisions with a stated strategy, load factor and set membership mechanics; connect Python dict/set interfaces without asserting unsupported internal layout."
       ],
       "candidate_question_ids": [],
+      "reviewed_question_ids": [],
       "difficulty_distribution": {},
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [

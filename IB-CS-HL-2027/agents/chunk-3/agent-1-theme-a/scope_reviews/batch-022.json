@@ -1,0 +1,189 @@
+{
+  "checkpoint": "A-RECORDS-022",
+  "reviews": [
+    {
+      "question_id": "P-SRC004-Q11-e-i",
+      "record_sha256": "684d2a9e11a25b7210c58d169a1233cee917998a3973bbc34964bcb6406bdefe",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:07:39.930725+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.1.8",
+          "scope_bullet_id": "A1.1.8:G01",
+          "exact_guidance": "• The differences between lossy compression methods and lossless compression methods",
+          "assessed_skill": "Describe lossless exact reconstruction and variable compressibility for medical diagrams.",
+          "relevance": "partial",
+          "evidence": "Lossless purpose/limitations assessed; no particular RLE/transform mechanism and no full lossy/lossless method comparison."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Lossless decompression restores original data exactly. Compression exploits available structure/redundancy, and not every arbitrary input can shrink to a fixed guaranteed ratio; incompressible/already compressed content may shrink little or grow."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Exactness, redundancy and content-dependent reduction correctly address both why lossless and why size limit not guaranteed."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Three1-mark criteria total3. No unsupported assertion every file compresses; equivalent reversible encoding explanation acceptable."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-004/questions/H-SRC004-Q11-e-i.json, extraction/by-paper/SRC-016/questions/H-SRC016-Q11-e-i.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Run-length encoding and transform coding"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC004-Q11-e-i.json": "684d2a9e11a25b7210c58d169a1233cee917998a3973bbc34964bcb6406bdefe",
+        "question-bank/questions/P-SRC004-Q11-e-i.json": "ba4d40478c8e570c7381592d842bacb59893ac64205db99af42916f586d0d379",
+        "question-bank/markschemes/P-SRC004-Q11-e-i.json": "73e130581c824582fcde77674389f22b150d115ef12afec1712d4fd5804ff30f",
+        "extraction/by-paper/SRC-004/questions/H-SRC004-Q11-e-i.json": "c4402eacce19caf421a51921dbead203185fc2ec89c8eea886848c9c3d160861",
+        "extraction/by-paper/SRC-016/questions/H-SRC016-Q11-e-i.json": "c980cb32b16834e9b87eb90fa71dc7e824f7cc7356993c2c1796250799d14a72"
+      },
+      "question_type": "explanation",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Describe lossless suitability and content-dependent limit."
+      }
+    },
+    {
+      "question_id": "P-SRC004-Q12-a-i",
+      "record_sha256": "8ec5f048dc35c839d996a7479c2b40b4c4833d8f069677baf83ec1b870d29895",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:07:39.930984+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.3.6",
+          "scope_bullet_id": "A1.3.6:G02",
+          "exact_guidance": "• Controller, sensors, actuators, transducers and control algorithm",
+          "assessed_skill": "Identify two distinct vehicle-detection sensor types for a barrier.",
+          "relevance": "partial",
+          "evidence": "Sensor selection only; no sensor transduction explanation or controller/actuator/control algorithm roles."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "An inductive loop can detect vehicle metal above it; an infrared presence/beam sensor can detect crossing/approach in suitable position. Other appropriate detection devices are valid."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Two distinct feasible sensors satisfy Identify2."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Two1-mark criteria explicitly permit any suitable distinct sensors, avoiding fixed example restriction; repeated variants of same sensor not automatically distinct."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-004/questions/H-SRC004-Q12-a-i.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• The input, process, output, and feedback mechanism (open-loop, closed-loop)"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC004-Q12-a-i.json": "8ec5f048dc35c839d996a7479c2b40b4c4833d8f069677baf83ec1b870d29895",
+        "question-bank/questions/P-SRC004-Q12-a-i.json": "54c355e79d089ed932d87da6c52a891be361ea55336e2c12d603e8c1d73b7f60",
+        "question-bank/markschemes/P-SRC004-Q12-a-i.json": "543b191d0aa632678dd429a14f201059daa2452867a8d6d04bf3dcb150ff7b01",
+        "extraction/by-paper/SRC-004/questions/H-SRC004-Q12-a-i.json": "57bd84d29533c694e3d818b42181ff4bae9ca10a61484b0113505d049b32133e"
+      },
+      "question_type": "conceptual recall",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Identify2 input sensor components."
+      }
+    },
+    {
+      "question_id": "P-SRC004-Q12-a-ii",
+      "record_sha256": "d41a9f54662e7ef278accae05cef2ab63a1baa345d1d92c28a4a9cd6aee72ec5",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:07:39.931182+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.3.6",
+          "scope_bullet_id": "A1.3.6:G01",
+          "exact_guidance": "• The input, process, output, and feedback mechanism (open-loop, closed-loop)",
+          "assessed_skill": "Outline automatic vehicle-presence input feeding prompt controller response.",
+          "relevance": "partial",
+          "evidence": "Input and its use for response assessed; no complete feedback cycle or open/closed-loop distinction."
+        },
+        {
+          "code": "A1.3.6",
+          "scope_bullet_id": "A1.3.6:G02",
+          "exact_guidance": "• Controller, sensors, actuators, transducers and control algorithm",
+          "assessed_skill": "Explain sensor role replacing manual vehicle-count entry in a barrier controller.",
+          "relevance": "partial",
+          "evidence": "Sensor function only, not all component roles or physical transduction."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Automatic sensing provides measurements/events without waiting for a person to enter a count, enabling timely control based on actual detected arrivals."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Automatic measurement plus link to prompt continuous/event-driven response gives appropriate Outline2."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Two1-mark elements total2. Does not require claiming sensors never fail or always more accurate than humans."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-004/questions/H-SRC004-Q12-a-ii.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC004-Q12-a-ii.json": "d41a9f54662e7ef278accae05cef2ab63a1baa345d1d92c28a4a9cd6aee72ec5",
+        "question-bank/questions/P-SRC004-Q12-a-ii.json": "2db5e8d34de0c775c7444a644e29d480241ac9e56ae0171f5c1e823eac4f4a35",
+        "question-bank/markschemes/P-SRC004-Q12-a-ii.json": "53614ac1f6aeea4277957c70be771fb825eabc660a0aa4c34bb6a08c662d86ee",
+        "extraction/by-paper/SRC-004/questions/H-SRC004-Q12-a-ii.json": "cf09e7d32828f0e63de73045e83824bc518d428a0dc9378c69d4a5a404f52a52"
+      },
+      "question_type": "explanation",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Outline contextual sensor-use reason and consequence."
+      }
+    }
+  ]
+}

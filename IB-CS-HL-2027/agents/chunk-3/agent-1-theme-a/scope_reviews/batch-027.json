@@ -1,0 +1,210 @@
+{
+  "checkpoint": "A-RECORDS-027",
+  "reviews": [
+    {
+      "question_id": "P-SRC005-Q07",
+      "record_sha256": "380983e026236315f9ce4162bbfda09f43cd3cd15102f5a6d7c7acea3c25a775",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:11:43.284327+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.1.4",
+          "scope_bullet_id": "A1.1.4:G01",
+          "exact_guidance": "• Random-access memory (RAM), read only memory (ROM), cache (L1, L2, L3), registers",
+          "assessed_skill": "Explain generic cache capacity retaining a repeatedly accessed working set.",
+          "relevance": "partial",
+          "evidence": "Cache purpose only, no L1/L2/L3 distinction or other memory-type breadth."
+        },
+        {
+          "code": "A1.1.4",
+          "scope_bullet_id": "A1.1.4:G02",
+          "exact_guidance": "• The interaction of the CPU with different types of memory to optimize performance",
+          "assessed_skill": "Explain increased cache residency reducing slower-RAM waits and runtime.",
+          "relevance": "direct",
+          "evidence": "Explicit CPU/cache/RAM performance interaction and access-pattern qualification."
+        },
+        {
+          "code": "A1.1.4",
+          "scope_bullet_id": "A1.1.4:G03",
+          "exact_guidance": "• The relevance of the terms “cache miss” and “cache hit”",
+          "assessed_skill": "Use higher cache-hit rate to explain potential runtime benefit.",
+          "relevance": "partial",
+          "evidence": "Hit rate assessed; cache-miss term/consequence not independently required, although reduced RAM accesses imply fewer misses."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Larger cache may retain more working-set data and raise hit rate, reducing average slower-memory access waits. Not guaranteed for every access pattern/hardware design."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Three-stage retained data→hits/RAM reduction→less waiting/runtime chain is correct."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Three1-mark causal components total3, no double-credit for repeating bigger/faster without mechanism."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-005/questions/H-SRC005-Q07.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC005-Q07.json": "380983e026236315f9ce4162bbfda09f43cd3cd15102f5a6d7c7acea3c25a775",
+        "question-bank/questions/P-SRC005-Q07.json": "f1933fd07b27e176702e26473e0495d43cf84bfad578300dba80d60bdd2b4532",
+        "question-bank/markschemes/P-SRC005-Q07.json": "c466453d653a56fb6a9caf94c0fe1f66283bad4ec8b1000c8df4c107e67c82e0",
+        "extraction/by-paper/SRC-005/questions/H-SRC005-Q07.json": "b7bed5ce4ee6d8f1faf1862790f4df674e4c64b5ff7ab1c7ad83cd23a5c31810"
+      },
+      "question_type": "explanation",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Explain working-set cache performance."
+      }
+    },
+    {
+      "question_id": "P-SRC005-Q10-a",
+      "record_sha256": "1f68b95653ea7d97248a2c10b45d0972d86beeaa706a9bb4243671353c9ed462",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:11:43.284556+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A2.1.3",
+          "scope_bullet_id": "A2.1.3:G01",
+          "exact_guidance": "• Gateways, hardware firewalls, modems, network interface cards, routers, switches, wireless access points",
+          "assessed_skill": "Identify a wireless access point from its wireless-to-wired-LAN bridging function.",
+          "relevance": "partial",
+          "evidence": "Only WAP recognized; no other device functions or TCP/IP layer mapping."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "A wireless access point connects compatible wireless clients to a wired LAN; a combined wireless router may contain this function but function requested is AP."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Wireless access point is correct device identification."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Single1-mark identification criterion; integrated device answer should name its AP function rather than confuse routing with wireless bridging."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-005/questions/H-SRC005-Q10-a.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• How devices map to the layers of the TCP/IP model"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC005-Q10-a.json": "1f68b95653ea7d97248a2c10b45d0972d86beeaa706a9bb4243671353c9ed462",
+        "question-bank/questions/P-SRC005-Q10-a.json": "788b8116f1da579ae1ed1465a48ebdc7d1af8afc12ee9710ade3782404247456",
+        "question-bank/markschemes/P-SRC005-Q10-a.json": "ffb4173f5e3022645dfbf1c2404c0e44562cc51f0952b27b151cca40da7d8e6c",
+        "extraction/by-paper/SRC-005/questions/H-SRC005-Q10-a.json": "eefe23fc253577edfead7881177010533f870c0fc5f8d549f8bf7fa546ea28a7"
+      },
+      "question_type": "conceptual recall",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Identify one network device by given function."
+      }
+    },
+    {
+      "question_id": "P-SRC005-Q10-b",
+      "record_sha256": "1898e4a57e0ec860d95cf45798ac95f2a8d151392aa226b73fc51b43ad940ed3",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:11:43.284779+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A2.3.2",
+          "scope_bullet_id": "A2.3.2:G01",
+          "exact_guidance": "• Wired transmission via fibre optic cables and twisted pair cables; wireless transmission",
+          "assessed_skill": "Distinguish fibre and wireless transmission in a noisy factory.",
+          "relevance": "partial",
+          "evidence": "Two media compared; twisted pair omitted."
+        },
+        {
+          "code": "A2.3.2",
+          "scope_bullet_id": "A2.3.2:G02",
+          "exact_guidance": "• The advantages and disadvantages of these three types of data transmission",
+          "assessed_skill": "Compare contextual reliability benefits and limitations of fibre versus wireless.",
+          "relevance": "partial",
+          "evidence": "Specific reliability/interference case, not full strengths/limitations across all three media."
+        },
+        {
+          "code": "A2.3.2",
+          "scope_bullet_id": "A2.3.2:G03",
+          "exact_guidance": "• Factors to consider must include bandwidth, complexity of installation, cost, range, susceptibility to interference, attenuation, reliability, security.",
+          "assessed_skill": "Explain obstruction/interference/attenuation effects on link reliability.",
+          "relevance": "partial",
+          "evidence": "Only subset of must-include factors: interference,attenuation/reliability. No installation/cost/security/full bandwidth/range comparison."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Metal obstacles weaken radio; electrical noise can impair wireless reception. Optical fibre resists electromagnetic interference and confines light, but physical damage still causes failures."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Balanced context-specific distinction avoids saying fibre cannot fail or all wireless is unreliable."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Four1-mark contextual comparison elements total4 with both media addressed and causality. Equivalent paired contrasts accepted."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-005/questions/H-SRC005-Q10-b.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC005-Q10-b.json": "1898e4a57e0ec860d95cf45798ac95f2a8d151392aa226b73fc51b43ad940ed3",
+        "question-bank/questions/P-SRC005-Q10-b.json": "b774825487743fe4799c098882a2431a53a400a9f3eec8dcb9c5e2f8e2cf4843",
+        "question-bank/markschemes/P-SRC005-Q10-b.json": "ddc8f9a54e8c6e86906ef03899628b5548878520d8aa781d57a64fc64ee045c9",
+        "extraction/by-paper/SRC-005/questions/H-SRC005-Q10-b.json": "42dfd8162ef501a36dd6ea2675e4a82fa7d19d43f7381d7c3b7dda673b114de5"
+      },
+      "question_type": "comparison",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Distinguish two media using contextual mechanisms and reliability."
+      }
+    }
+  ]
+}

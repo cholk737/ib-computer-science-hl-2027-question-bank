@@ -1,0 +1,64 @@
+{
+  "question_id": "P-SRC005-Q09",
+  "question_type": "code tracing",
+  "question_type_evidence": "Trace recursive calls and printed values of supplied Python.",
+  "mappings": [
+    {
+      "code": "B2.4.5",
+      "guidance_index": 1,
+      "assessed_skill": "Trace simple non-branching recursion with post-call output",
+      "relevance": "direct",
+      "evidence": "Calls2→1→0;printsElm thenPine thenOak during unwinding.",
+      "coverage_limit": "No branching recursion,no code construction;only stated fixed list/call.",
+      "scope_bullet_id": "B2.4.5:G01",
+      "exact_guidance": "• Simple, non-branching recursive algorithms in programming only",
+      "statement": "Construct and trace recursive algorithms in a programming language. (HL only)",
+      "mapping_verification_status": "verified"
+    }
+  ],
+  "verification": {
+    "mapping": {
+      "status": "verified",
+      "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+    },
+    "technical": {
+      "status": "verified",
+      "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+    },
+    "answer": {
+      "status": "verified",
+      "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+    },
+    "markscheme": {
+      "status": "verified",
+      "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+    },
+    "assets": {
+      "status": "verified",
+      "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+    },
+    "provenance": {
+      "status": "pending",
+      "evidence": "pending_original_source_recheck"
+    }
+  },
+  "checks": [
+    "Actual code instrumented;calls[2,1,0],printedElm/Pine/Oak,implicitreturnNone.",
+    "Four criteria align call sequence and3printedvalues;do not confuse printed strings with return values."
+  ],
+  "execution_evidence": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_055.json",
+  "issues": [],
+  "reviewer": "/root/theme_b_coverage",
+  "reviewed_at": "2026-11-04T13:06:28.110177+00:00",
+  "record_sha256": "a86c2b6cf8a83c33f101add45c76d7a9cb46532ea1bf4128199326d60f2f0bb9",
+  "record_path": "question-bank/records/P-SRC005-Q09.json",
+  "original_syllabus_codes": [
+    "B2.4.5"
+  ],
+  "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+  "mark_total_check": {
+    "question_marks": 4,
+    "marking_point_sum": 4,
+    "status": "pass"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "question_id": "P-SRC005-Q13-a-i",
+  "question_type": "algorithm explanation",
+  "question_type_evidence": "Explicit non-code description of bubble-sort procedure preserving parallel-list pairs.",
+  "mappings": [
+    {
+      "code": "B2.4.3",
+      "guidance_index": 1,
+      "assessed_skill": "Explain paired-list bubble-sort algorithm without complexity calculation",
+      "relevance": "supporting",
+      "evidence": "Adjacent comparisons/swaps and repeated passes form a valid bubble-sort procedure.",
+      "coverage_limit": "No time/space BigO evaluation for either algorithm.",
+      "statement_relevance": "direct",
+      "statement_evidence": "Constructs/describes bubble-sort algorithmic steps,one component of statement;no selection-sort or input trace.",
+      "scope_bullet_id": "B2.4.3:G01",
+      "exact_guidance": "• The time and space complexities of each algorithm, denoted by their respective Big O notations",
+      "statement": "Construct and trace algorithms to implement bubble sort and selection sort, evaluating their time and space complexities.",
+      "mapping_verification_status": "verified"
+    },
+    {
+      "code": "B2.4.3",
+      "guidance_index": 2,
+      "assessed_skill": "Maintain paired IDs while sorting times",
+      "relevance": "supporting",
+      "evidence": "Swaps corresponding ID entries whenever times swapped.",
+      "coverage_limit": "No efficiency advantages/disadvantages across data sets.",
+      "statement_relevance": "direct",
+      "statement_evidence": "Constructs/describes bubble-sort algorithmic steps,one component of statement;no selection-sort or input trace.",
+      "scope_bullet_id": "B2.4.3:G02",
+      "exact_guidance": "• The advantages and disadvantages of each algorithm in terms of efficiency across various data sets",
+      "statement": "Construct and trace algorithms to implement bubble sort and selection sort, evaluating their time and space complexities.",
+      "mapping_verification_status": "verified"
+    },
+    {
+      "code": "B2.2.2",
+      "guidance_index": 2,
+      "assessed_skill": "Explain parallel1D list processing",
+      "relevance": "partial",
+      "evidence": "IDs and times retain corresponding indices after swaps.",
+      "coverage_limit": "No program constructed.",
+      "scope_bullet_id": "B2.2.2:G02",
+      "exact_guidance": "• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python",
+      "statement": "Construct programs that apply arrays and Lists.",
+      "mapping_verification_status": "verified"
+    },
+    {
+      "code": "B2.2.2",
+      "guidance_index": 3,
+      "assessed_skill": "Describe traversal and value swaps in lists",
+      "relevance": "partial",
+      "evidence": "Adjacent pairs visited and values moved.",
+      "coverage_limit": "No code construction or dynamic list additions/removals.",
+      "scope_bullet_id": "B2.2.2:G03",
+      "exact_guidance": "• Add, remove and traverse elements in a dynamic list",
+      "statement": "Construct programs that apply arrays and Lists.",
+      "mapping_verification_status": "verified"
+    }
+  ],
+  "verification": {
+    "mapping": {
+      "status": "verified",
+      "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+    },
+    "technical": {
+      "status": "verified",
+      "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+    },
+    "answer": {
+      "status": "verified",
+      "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+    },
+    "markscheme": {
+      "status": "verified",
+      "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+    },
+    "assets": {
+      "status": "verified",
+      "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+    },
+    "provenance": {
+      "status": "pending",
+      "evidence": "pending_original_source_recheck"
+    }
+  },
+  "checks": [
+    "Adjacent out-of-order swaps repeated to completion correctly sort ascending;pairwise IDswaps preserve associations.",
+    "Five distinct algorithm actions justify5marks;fixed pass count or no-swap termination both accepted."
+  ],
+  "issues": [],
+  "reviewer": "/root/theme_b_coverage",
+  "reviewed_at": "2026-11-04T13:06:28.110323+00:00",
+  "record_sha256": "27c9b9f2f37efdd328b1407060ed0edb5b311c0b7ac8a1b3fed52c22905d7f95",
+  "record_path": "question-bank/records/P-SRC005-Q13-a-i.json",
+  "original_syllabus_codes": [
+    "B2.4.3",
+    "B2.2.2"
+  ],
+  "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+  "mark_total_check": {
+    "question_marks": 5,
+    "marking_point_sum": 5,
+    "status": "pass"
+  }
+}

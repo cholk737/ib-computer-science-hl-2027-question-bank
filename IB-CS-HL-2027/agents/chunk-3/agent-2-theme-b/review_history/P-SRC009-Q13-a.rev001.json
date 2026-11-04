@@ -1,0 +1,102 @@
+{
+  "question_id": "P-SRC009-Q13-a",
+  "question_type": "data structure application",
+  "question_type_evidence": "Describe stack push/pop save/restore mechanism for nested interruption context.",
+  "raw_theme": "B;A",
+  "mappings": [
+    {
+      "code": "B2.2.3",
+      "guidance_index": 1,
+      "assessed_skill": "Explain push/pop LIFO restoration of saved state",
+      "relevance": "direct",
+      "evidence": "Most recently pushed interruption state popped first.",
+      "coverage_limit": "Onlypush/pop;nopeek/isEmpty/performance/memory.",
+      "scope_bullet_id": "B2.2.3:G01",
+      "exact_guidance": "• Must include fundamental operations such as push, pop, peek and isEmpty",
+      "statement": "Explain the concept of a stack as a “last in, first out” (LIFO) data structure.",
+      "mapping_verification_status": "verified"
+    },
+    {
+      "code": "B2.2.3",
+      "guidance_index": 3,
+      "assessed_skill": "Apply stack to nested interrupt state",
+      "relevance": "direct",
+      "evidence": "Nested interrupted work resumes reverse suspension order.",
+      "coverage_limit": "Specific application only.",
+      "scope_bullet_id": "B2.2.3:G03",
+      "exact_guidance": "• An appropriate stack for a specific problem",
+      "statement": "Explain the concept of a stack as a “last in, first out” (LIFO) data structure.",
+      "mapping_verification_status": "verified"
+    },
+    {
+      "code": "A1.3.4",
+      "guidance_index": 1,
+      "assessed_skill": "Nested interrupt return mechanism only",
+      "relevance": "reject",
+      "evidence": "Actual question asks LIFO save/resume,not polling comparison or any event-frequency/CPU/power/predictability/latency/security factor.",
+      "coverage_limit": "Do not count as checked direct ThemeA coverage;relationship is foundational context only.",
+      "statement_relevance": "supporting",
+      "statement_evidence": "Mechanism knowledge is background to interrupt handling,but does not Evaluate polling and interrupt handling.",
+      "scope_bullet_id": "A1.3.4:G01",
+      "exact_guidance": "• Event frequency, CPU processing overheads, power source (battery or mains), event predictability, controlled latency, security concerns",
+      "statement": "Evaluate the use of polling and interrupt handling.",
+      "mapping_verification_status": "verified"
+    }
+  ],
+  "verification": {
+    "mapping": {
+      "status": "verified",
+      "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+    },
+    "technical": {
+      "status": "verified",
+      "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+    },
+    "answer": {
+      "status": "verified",
+      "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+    },
+    "markscheme": {
+      "status": "verified",
+      "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+    },
+    "assets": {
+      "status": "verified",
+      "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+    },
+    "provenance": {
+      "status": "pending",
+      "evidence": "pending_original_source_recheck"
+    }
+  },
+  "checks": [
+    "For workA interrupted byB interrupted byC,savedA/B state popsB thenA afterCends,matchingLIFO.",
+    "Two criteria separate savingstate fromlatest-firstrestoration.",
+    "ThemeAanalyst independently compared exactA1.3.4factors and agreedmechanism-onlydoesnotcloseAcoverage."
+  ],
+  "independent_scope_advice": {
+    "reviewer": "/root/theme_a_coverage",
+    "finding": "No named A1.3.4 factor or polling-versus-interrupt evaluation tested; supporting background atmost. Reject direct bullet coverage."
+  },
+  "issues": [
+    {
+      "severity": "medium",
+      "dimension": "mapping",
+      "detail": "Historical A1.3.4 code overstates actual assessed scope if treated direct. Preserve provenance/rawtheme but exclude this record from checked direct A factor/evaluation results."
+    }
+  ],
+  "reviewer": "/root/theme_b_coverage",
+  "reviewed_at": "2026-11-04T13:06:28.110400+00:00",
+  "record_sha256": "efc250b5ae1d97493f833cf4685404351dfd3a7489ab49287107c46d2b605676",
+  "record_path": "question-bank/records/P-SRC009-Q13-a.json",
+  "original_syllabus_codes": [
+    "B2.2.3",
+    "A1.3.4"
+  ],
+  "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+  "mark_total_check": {
+    "question_marks": 2,
+    "marking_point_sum": 2,
+    "status": "pass"
+  }
+}

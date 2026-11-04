@@ -1,0 +1,191 @@
+{
+  "checkpoint": "A-RECORDS-018",
+  "reviews": [
+    {
+      "question_id": "P-SRC004-Q02",
+      "record_sha256": "733e3b20aa60ed9333cf7df1eb38c3ceb06a3de33d9a75efef0d2fa66cd3e47f",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:04:26.544326+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.2.3",
+          "scope_bullet_id": "A1.2.3:G04",
+          "exact_guidance": "• Boolean operators: AND, OR, NOT, NAND, NOR, XOR, XNOR",
+          "assessed_skill": "State the two-input NAND Boolean output rule.",
+          "relevance": "partial",
+          "evidence": "NAND only; alarm is incidental context, no application-design reasoning or other gate definitions assessed."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "NAND is logical NOT of AND:00,01,10 yield1;11 yields0."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Output false only for two true inputs and true otherwise correctly specifies all cases."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Single1-mark rule matches State; equivalent Boolean expression NOT(A AND B) accepted."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-004/questions/H-SRC004-Q02.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• The purpose and use of logic gates",
+        "• The functions and applications of logic gates in computer systems",
+        "• The role of logic gates in binary computing"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC004-Q02.json": "733e3b20aa60ed9333cf7df1eb38c3ceb06a3de33d9a75efef0d2fa66cd3e47f",
+        "question-bank/questions/P-SRC004-Q02.json": "8411526561aeba8cdfd9cec2475a61dbf8524d7ad2ef52fd5c9a377945237d9b",
+        "question-bank/markschemes/P-SRC004-Q02.json": "3ae051364a42db344bcd19cfd0a1ea06fb810c41f29a53fe81af35b7760ed7d7",
+        "extraction/by-paper/SRC-004/questions/H-SRC004-Q02.json": "976f2988c7be98b2bab3389b11139cb08f7686e16225f8cf7c61470427892e11"
+      },
+      "question_type": "conceptual recall",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "State one gate output rule."
+      }
+    },
+    {
+      "question_id": "P-SRC004-Q03",
+      "record_sha256": "0d651e96eb3eb6a6b29343b9b67829fa9d9d0c9cc05652b38edb02b63d633cdc",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:04:26.545018+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.1.1",
+          "scope_bullet_id": "A1.1.1:G01",
+          "exact_guidance": "• Units: arithmetic logic unit (ALU), control unit (CU)",
+          "assessed_skill": "Identify CU fetch/decode/control-signal coordination functions.",
+          "relevance": "partial",
+          "evidence": "CU only, no ALU role independently tested. Register/bus interactions and diagram not required."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "The CU coordinates fetching, decoding and issuing control signals for execution/data movement in the stated CPU model."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Three distinct coordination tasks are correct; does not wrongly assign arithmetic calculation to CU."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Three1-mark CU functions total3; semantically distinct correct equivalents accepted, avoiding double-credit synonymous control-signal descriptions."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-004/questions/H-SRC004-Q03.json, extraction/by-paper/SRC-016/questions/H-SRC016-Q07.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Registers: instruction register (IR), program counter (PC), memory address register (MAR), memory data register (MDR), accumulator (AC)",
+        "• Buses: address, data, control",
+        "• Processors: single core processor, multi-core processor, co-processors",
+        "• A diagrammatic representation of the relationship between the specified CPU components"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC004-Q03.json": "0d651e96eb3eb6a6b29343b9b67829fa9d9d0c9cc05652b38edb02b63d633cdc",
+        "question-bank/questions/P-SRC004-Q03.json": "33d4c963ba5e1cacf29f8cfa989233bf957bf9605bcd4e9187f4317caeca7096",
+        "question-bank/markschemes/P-SRC004-Q03.json": "03c4b5bee67f733ac376929f377ab4c66b03294c114a977b344ba1bd774ada06",
+        "extraction/by-paper/SRC-004/questions/H-SRC004-Q03.json": "10c61edcaed526b088b83c9e5a55f704810e5ebd3837e011af24b8957e319cb8",
+        "extraction/by-paper/SRC-016/questions/H-SRC016-Q07.json": "e2e255c7850f61ed0009a8e4b3948bbd187bf4cf55aae9c3beed8f081983f3b8"
+      },
+      "question_type": "conceptual recall",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Identify3 CPU-control functions."
+      }
+    },
+    {
+      "question_id": "P-SRC004-Q04",
+      "record_sha256": "862c7b2552e6e3f01fd76df68028a42186ad0e5e04aa06ab67979bed41a2a552",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:04:26.545619+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A2.3.3",
+          "scope_bullet_id": "A2.3.3:G01",
+          "exact_guidance": "• The process of segmenting data into packets with a routing header attached, and independently transmitting control information, allowing the data to be reassembled at the destination",
+          "assessed_skill": "Identify addressing and reassembly control information for file transfer packets.",
+          "relevance": "partial",
+          "evidence": "Header/control metadata only, not packet-switching process or switch/router roles. Existing IP-specific sequence-number wording is flagged technical issue, not certified by this scoped mapping."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "issue",
+          "evidence": "The current prompt explicitly says IP packets but answer sequence number is not native IP base-header field; coordinator independently confirmed protocol-level mismatch in earlier coverage finding."
+        },
+        "answer": {
+          "status": "issue",
+          "evidence": "Two address fields correct; generic sequence-number third answer does not match IP-specific prompt. No silent correction performed."
+        },
+        "markscheme": {
+          "status": "issue",
+          "evidence": "Three1-mark criteria include sequence number or other reassembly metadata; accepted alternatives do not resolve the mismatch between prompt IP packets and model sequence number. Coordinator repair required."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-004/questions/H-SRC004-Q04.json, extraction/by-paper/SRC-016/questions/H-SRC016-Q04.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• The role that switches and routers play in packet switching"
+      ],
+      "issues": [
+        "A-C3-TECH-001: P-SRC004-Q04 confuses IP packet fields with transport sequencing. Clarify generic packet/control information or use correct specified IP reassembly fields; preserve historical source unchanged."
+      ],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC004-Q04.json": "862c7b2552e6e3f01fd76df68028a42186ad0e5e04aa06ab67979bed41a2a552",
+        "question-bank/questions/P-SRC004-Q04.json": "997b7199bb862ff1f73a8d06941233d5ea3923b9e9597f4402730ca00509f9b3",
+        "question-bank/markschemes/P-SRC004-Q04.json": "b317e916365c1ff85315315f5770505fe55ddcffec1905c083762ddb1d9b217e",
+        "extraction/by-paper/SRC-004/questions/H-SRC004-Q04.json": "c1aa6a89fc7a07394f1b659c0f1100bb6a3b8d75fae5e0e7dc9d46a5323fc808",
+        "extraction/by-paper/SRC-016/questions/H-SRC016-Q04.json": "60e473ed69d09814e82521ad1f40ec4b97dcc60a5ccab3d1d388293d4f3e0fae"
+      },
+      "question_type": "conceptual recall",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "State3 packet header/control items; technical wording issue separately flagged."
+      }
+    }
+  ]
+}

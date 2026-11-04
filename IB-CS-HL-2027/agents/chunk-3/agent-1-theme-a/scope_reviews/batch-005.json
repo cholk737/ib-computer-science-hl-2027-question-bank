@@ -1,0 +1,193 @@
+{
+  "checkpoint": "A-RECORDS-005",
+  "reviews": [
+    {
+      "question_id": "P-SRC001-Q12-b-i",
+      "record_sha256": "f49de4823bec6b64a5cc82260c61b5137d5ae0889bd89dcb2f3ed95c007be8d1",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:53:32.079249+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.1.1",
+          "scope_bullet_id": "A1.1.1:G02",
+          "exact_guidance": "• Registers: instruction register (IR), program counter (PC), memory address register (MAR), memory data register (MDR), accumulator (AC)",
+          "assessed_skill": "State the MDR function in a memory-read transfer.",
+          "relevance": "partial",
+          "evidence": "One register function only: holds the returning word. No PC/MAR/IR/AC or other register operation/interactions tested."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "The MDR holds the data/instruction word read from addressed main memory before internal CPU use."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "The one-sentence answer correctly identifies temporary data holding, not the memory address (MAR)."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Single1-mark criterion matches State and accepts equivalent memory-buffer-register terminology."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q12-b-i.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Units: arithmetic logic unit (ALU), control unit (CU)",
+        "• Buses: address, data, control",
+        "• Processors: single core processor, multi-core processor, co-processors",
+        "• A diagrammatic representation of the relationship between the specified CPU components"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q12-b-i.json": "f49de4823bec6b64a5cc82260c61b5137d5ae0889bd89dcb2f3ed95c007be8d1",
+        "question-bank/questions/P-SRC001-Q12-b-i.json": "083fec5e50a10d16ab48ab57580417e32c31d1c77967fcf18050cbb421a73a14",
+        "question-bank/markschemes/P-SRC001-Q12-b-i.json": "8a2f0bde62b363680b45168fa78817b31536d85cbaf5455a436dbe874d85a26b",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q12-b-i.json": "6d4eafbac35553f1a4b44181fa8b632062e78df90ddf0efc5656061aa3812374"
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q12-b-ii",
+      "record_sha256": "c344ac3bfac0036cde9b75ae2cc8e552c512311f116170dccd759c24d82e4a24",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:53:32.079817+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.1.4",
+          "scope_bullet_id": "A1.1.4:G01",
+          "exact_guidance": "• Random-access memory (RAM), read only memory (ROM), cache (L1, L2, L3), registers",
+          "assessed_skill": "Explain cache purpose using repeated instruction access.",
+          "relevance": "partial",
+          "evidence": "Cache function tested but levels L1/L2/L3 and other primary memories not distinguished."
+        },
+        {
+          "code": "A1.1.4",
+          "scope_bullet_id": "A1.1.4:G02",
+          "exact_guidance": "• The interaction of the CPU with different types of memory to optimize performance",
+          "assessed_skill": "Explain CPU cache hits reducing slower main-RAM access waiting.",
+          "relevance": "direct",
+          "evidence": "Connects cached instruction copies, faster hits and lower CPU waiting to performance; no unsupported universal speedup guarantee."
+        },
+        {
+          "code": "A1.1.4",
+          "scope_bullet_id": "A1.1.4:G03",
+          "exact_guidance": "• The relevance of the terms “cache miss” and “cache hit”",
+          "assessed_skill": "Use cache-hit behaviour to explain repeated instruction performance.",
+          "relevance": "partial",
+          "evidence": "Hit meaning/effect assessed; cache miss is not explicitly requested or independently marked."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Temporal reuse can be served from faster cache when the relevant instruction is resident; lower access latency reduces waiting. Benefit depends on hits/access pattern."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Model answer gives retained copies, faster hit access versus RAM, and performance consequence, supporting Explain3."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Three1-mark linked explanation elements total3. Repetition of faster access alone cannot earn both mechanism and consequence without explanation."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q12-b-ii.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q12-b-ii.json": "c344ac3bfac0036cde9b75ae2cc8e552c512311f116170dccd759c24d82e4a24",
+        "question-bank/questions/P-SRC001-Q12-b-ii.json": "f2e4f786ec9c9285846ae41372ab672d719f99f2e1b9c0690f0164b2f973c1d7",
+        "question-bank/markschemes/P-SRC001-Q12-b-ii.json": "af65e8e002c3c838c031513f97fba1e3789f647fb7fa03805e838a1dc24ed36c",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q12-b-ii.json": "d37f3c6ae9791557b6a87fddf273d8c4eb99a881178d0333b0c6cf5a29543ce5"
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q12-b-iii",
+      "record_sha256": "4753c1ee64a1eafaecac6d67c15382442fdd8d320da480730935fd483820229b",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:53:32.080192+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.1.1",
+          "scope_bullet_id": "A1.1.1:G03",
+          "exact_guidance": "• Buses: address, data, control",
+          "assessed_skill": "Explain address/data/control bus roles in one CPU memory-read operation.",
+          "relevance": "direct",
+          "evidence": "All three named buses receive distinct roles and coordination; does not test processor types, all registers or a hardware diagram."
+        },
+        {
+          "code": "A1.1.5",
+          "scope_bullet_id": "A1.1.5:G02",
+          "exact_guidance": "• The interaction between memory and registers via the three buses: address, data, control",
+          "assessed_skill": "Explain part of memory/register interaction during fetch-related memory read.",
+          "relevance": "partial",
+          "evidence": "Addresses/read signal/returned word/coordination assessed; full PC→MAR→MDR→IR register-transfer sequence and decode/execute absent."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Address bus selects location; control bus requests read/coordinates; memory data is carried back by data bus to MDR. These roles are consistent in the stated simplified CPU model."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Four listed points correctly describe three bus roles plus timing/coordination; no read/write direction confusion."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Four1-mark components total4. Control command and coordination are distinguishable when each explained; avoid double-credit for repeating read signal alone."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q12-b-iii.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Units: arithmetic logic unit (ALU), control unit (CU)",
+        "• Registers: instruction register (IR), program counter (PC), memory address register (MAR), memory data register (MDR), accumulator (AC)",
+        "• Processors: single core processor, multi-core processor, co-processors",
+        "• A diagrammatic representation of the relationship between the specified CPU components",
+        "• The basic operations a CPU performs to execute a single instruction in machine language"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q12-b-iii.json": "4753c1ee64a1eafaecac6d67c15382442fdd8d320da480730935fd483820229b",
+        "question-bank/questions/P-SRC001-Q12-b-iii.json": "7c3436eb0fb57ffca603680f7d73901db67b57bc86bf60801b555e7dbec48829",
+        "question-bank/markschemes/P-SRC001-Q12-b-iii.json": "3372827928b24c80b08cb00dcf5f2e74969750488378c6f918bfe855b4fa6f89",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q12-b-iii.json": "8757a9dd6b11329db617ee4f3d2a5be864de177b94e1841f9251c331706e1426"
+      }
+    }
+  ]
+}

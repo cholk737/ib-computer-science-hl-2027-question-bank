@@ -1,23 +1,41 @@
 {
   "specialist": "/root/searchable_bank_audit",
-  "checkpoint": "C3-A3-003-DB-IMPORT",
+  "checkpoint": "C3-A3-SRC002-033",
   "completed": [
     "Read saved progress and specimen analysis; confirmed 823-question baseline schemas",
     "Built 823-question/112-scope local UI with separated lazy answer dataset",
     "11 functional data/filter/export tests pass; app syntax check passes",
     "12 data/filter/export tests pass; provenance source links resolve and source-answer summaries removed",
     "Persistent SQLite import: all 823 stable question IDs, 112 objectives, exact guidance bullets, separate answer table, 6 pending verification dimensions per question, duplicate candidates and schema for usage/selections",
-    "Second incremental import unchanged=823; SQLite integrity_check=ok"
+    "Second incremental import unchanged=823; SQLite integrity_check=ok",
+    "Persistent HTTP API and dynamic UI saved; loopback8766 live for coordinator browser QA",
+    "14 isolated SQLite functional tests pass, including all823 preservation, safe separate answers, stale/bogus review rejection, direct/partial/unmet scope, filters, all-page retrieval, independent verification/history, incremental original and changed-record stale invalidation",
+    "Approved master evidence imported16 links;0 rejected;823 unchanged",
+    "19 isolated DB functional tests pass, including atomic literal review rejection, revised-link replacement, snapshot withdrawal preserving independent checks, public rationale hidden",
+    "Independent112-code census and8 bounded full-guidance/prompt/answer samples saved independent_coverage.json; exact nonbranching recursion executed",
+    "Relocatable ROOT discovery, explicit --db, reviewed new-code/theme/topic union, explicit reviewed question type, snapshot revocation, independent mapping-objection invalidation saved",
+    "Independent A/B source-scope samples3 and121 discounted-row executions saved; protocol supporting and alias/domain issues confirmed",
+    "Consistent SQLite backup saved snapshots/C3-A3-006.sqlite3 with SHA2565a844808e668ca509c63cd327e0c7e3c5085b30a475cef0a7e87d537842b2ddd",
+    "Coordinator installed canonical question-bank/search and question-bank/database.sqlite3; relocated23-test suite passes; canonicalDB is now authority; backend/UI source frozen"
   ],
-  "current": "Review backend semantics, add HTTP API and dynamic UI, tests",
+  "current": "Independent SRC002 per-question integration review",
   "files": [
     "test_bank.js",
     "question_bank.sqlite3",
+    "independent_coverage.json",
+    "independent_review_samples.json",
+    "test_db.py",
+    "serve_bank.py",
     "build_bank.py",
+    "verify_review_samples.py",
+    "db_test_results.json",
+    "README.md",
     "bank_db.py",
     "findings.md",
     "STATUS.json",
     "test_results.json",
+    "save_independent_audit.py",
+    "snapshots/C3-A3-006.sqlite3",
     "web/index.html",
     "web/bank-core.js",
     "web/questions.js",
@@ -25,7 +43,9 @@
     "web/style.css",
     "web/answers.js",
     "web/app.js",
-    "__pycache__/bank_db.cpython-313.pyc"
+    "persistent-web/index.html",
+    "persistent-web/style.css",
+    "persistent-web/app.js"
   ],
   "checked_objective_ids": [],
   "generated_question_ids": [],
@@ -37,13 +57,32 @@
     "Browser QA"
   ],
   "integration_pending": [
-    "Coordinator installation and rebuilt data after new questions merge"
+    "Coordinator final browser QA",
+    "Full corpus question-by-question review beyond saved approvals",
+    "Arbitrary-phrasing semantic recall and reviewed type coverage remain incomplete"
   ],
-  "exact_next_action": "Implement endpoint server and dynamic UI against saved SQLite; test preserved IDs, scope evidence validation and representative search.",
-  "verification_limits": "DB legacy import deliberately leaves all 6 per-question review dimensions pending until approved evidence is supplied. No reviewed matches imported yet.",
+  "exact_next_action": "Read next SRC002 dossier: P-SRC002-Q09-c",
+  "verification_limits": "Canonical database is authority; developer database is disposable. No auto write to canonical code/DB. Independent60-record assigned batch pending, not assumed accepted.",
   "cancelled": [
     "Exam blueprint",
     "Practice case concept",
     "All exam/topic-test/PDF assembly this Chunk 3"
-  ]
+  ],
+  "database_counts": {
+    "questions": 823,
+    "objectives": 112,
+    "bullets": 271,
+    "scope_evidence": 50,
+    "review_records": 27,
+    "verification": 4938,
+    "selections": 0,
+    "usage_history": 0
+  },
+  "src002_review_counts": {
+    "reviewed": 33,
+    "accept_mapping_evidence": 33,
+    "needs_revision": 0,
+    "remaining": 27
+  },
+  "last_reviewed_question_id": "P-SRC002-Q08-d"
 }

@@ -1,0 +1,199 @@
+{
+  "checkpoint": "A-RECORDS-026",
+  "reviews": [
+    {
+      "question_id": "P-SRC005-Q04-b",
+      "record_sha256": "eb5a9619465da5fa263cf72421e0100f149b94e76665ceb531626e5ce0fbcfb5",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:11:01.735090+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A2.3.2",
+          "scope_bullet_id": "A2.3.2:G03",
+          "exact_guidance": "• Factors to consider must include bandwidth, complexity of installation, cost, range, susceptibility to interference, attenuation, reliability, security.",
+          "assessed_skill": "Outline insufficient available bandwidth causing streaming disruption.",
+          "relevance": "partial",
+          "evidence": "Bandwidth/usable-rate factor only; no fibre/twisted-pair/wireless comparison or full must-include factor set."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "If encoded video consumes bits faster than connection delivers useful data, buffering is depleted and playback pauses or adaptive quality can reduce demand. Wireless is context, not proof wireless always slower."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Arrival-versus-consumption mismatch plus buffering/pause/reduced quality consequence is correct Outline2."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Two1-mark causal points total2; no credit for unexplained wireless is bad assertion."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-005/questions/H-SRC005-Q04-b.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Wired transmission via fibre optic cables and twisted pair cables; wireless transmission",
+        "• The advantages and disadvantages of these three types of data transmission"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC005-Q04-b.json": "eb5a9619465da5fa263cf72421e0100f149b94e76665ceb531626e5ce0fbcfb5",
+        "question-bank/questions/P-SRC005-Q04-b.json": "30389e8252d0adb46ad32516cf68e626ab908fa7918091ecadeb10c1a05aae31",
+        "question-bank/markschemes/P-SRC005-Q04-b.json": "6c0449f27854ada749d82e2075f1f85ac323b0e640a135884216be22e2c2373c",
+        "extraction/by-paper/SRC-005/questions/H-SRC005-Q04-b.json": "9b609c56ad905c318ebfbe8078e69158ec8b63884f9cea78229c8459f1e5c050"
+      },
+      "question_type": "explanation",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Outline bandwidth limitation consequence."
+      }
+    },
+    {
+      "question_id": "P-SRC005-Q05-a",
+      "record_sha256": "a56d825e99e4bf7e02a20d4b408334f3186792a2f94ff0494ecf3c3975987e0f",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:11:01.735641+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.2.1",
+          "scope_bullet_id": "A1.2.1:G03",
+          "exact_guidance": "• Conversion of integers from binary to hexadecimal, and vice versa",
+          "assessed_skill": "Convert a six-digit hexadecimal integer to its fixed-width24-bit binary form.",
+          "relevance": "partial",
+          "evidence": "Hex-to-binary direction only; inverse direction not tested here."
+        },
+        {
+          "code": "A1.2.2",
+          "scope_bullet_id": "A1.2.2:G02",
+          "exact_guidance": "• The mechanisms by which data such as integers, strings, characters, images, audio and video are stored in binary form",
+          "assessed_skill": "Use an RGB binary colour representation supplied in the prompt.",
+          "relevance": "supporting",
+          "evidence": "RGB/8-bit allocation is GIVEN, not elicited. The task assesses number conversion, not explaining image-storage mechanism; image keyword cannot certify that knowledge."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Every hex digit maps to four bits;00CC33 maps to00000000 11001100 00110011 with leading zeros retained for24-bit width."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Saved independent nibble conversion matches entire24-bit answer; checks/P-SRC005-Q05-representation-check.json passes."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Single1-mark exact conversion criterion; grouped/ungrouped equivalent24-bit notation accepted, leading zero requirement follows specified width."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-005/questions/H-SRC005-Q05-a.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• The representation of integers in binary and hexadecimal",
+        "• Conversion of binary and hexadecimal integers to decimal, and vice versa",
+        "• The fundamentals of binary encoding and the impact on data storage and retrieval"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC005-Q05-a.json": "a56d825e99e4bf7e02a20d4b408334f3186792a2f94ff0494ecf3c3975987e0f",
+        "question-bank/questions/P-SRC005-Q05-a.json": "ad1089bfc3ffe0604b6583c773af4b039163db8715e7469ca0dc1c6bb8ef5fb2",
+        "question-bank/markschemes/P-SRC005-Q05-a.json": "304ff6379ea0709bac488f61a71e388f32407631349303c4cfbab3cb1cb89feb",
+        "extraction/by-paper/SRC-005/questions/H-SRC005-Q05-a.json": "f7fb6f5aa2199995a9bdb76e5427ba46f9ab49118164181dafa1ae0d09eb543f"
+      },
+      "question_type": "calculation",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Fixed-width hexadecimal-to-binary conversion."
+      }
+    },
+    {
+      "question_id": "P-SRC005-Q05-b",
+      "record_sha256": "6d34030fcbeabc8b44730ca3dd4068bc9cc61edb8934e90b07bcba588ba08d21",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:11:01.736038+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.2.2",
+          "scope_bullet_id": "A1.2.2:G01",
+          "exact_guidance": "• The fundamentals of binary encoding and the impact on data storage and retrieval",
+          "assessed_skill": "Calculate representable colour patterns from a fixed total15-bit encoding.",
+          "relevance": "partial",
+          "evidence": "Cardinality of binary encoding assessed, not storage/retrieval trade-off explanation generally."
+        },
+        {
+          "code": "A1.2.2",
+          "scope_bullet_id": "A1.2.2:G02",
+          "exact_guidance": "• The mechanisms by which data such as integers, strings, characters, images, audio and video are stored in binary form",
+          "assessed_skill": "Combine independent5-bit RGB channel values into image colour count.",
+          "relevance": "partial",
+          "evidence": "Image channel encoding capacity only, no audio/text/video mechanisms."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Five bits permit32 values per channel; independent red/green/blue choices yield32×32×32=32768 colours, equivalently2^15."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Independent product and total-bit calculation agree; saved representation check passes."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "One1-mark result criterion matches State. Correct32768 or equivalent power expression accepted."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-005/questions/H-SRC005-Q05-b.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC005-Q05-b.json": "6d34030fcbeabc8b44730ca3dd4068bc9cc61edb8934e90b07bcba588ba08d21",
+        "question-bank/questions/P-SRC005-Q05-b.json": "9fcbdfc50e1361991c50e7a8440f91b56fc33bffbd9ef1d6c5485d3c4c3946ad",
+        "question-bank/markschemes/P-SRC005-Q05-b.json": "34cc2f37e1077be091ebd2d1052b015a556a54caa6d6e00010f69e87a5cf85f6",
+        "extraction/by-paper/SRC-005/questions/H-SRC005-Q05-b.json": "a068e7167756499cb0843a3daac57b707544bda20fa833fe0db668745a88ebf3"
+      },
+      "question_type": "calculation",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Calculate colour capacity from binary bit allocation."
+      }
+    }
+  ]
+}

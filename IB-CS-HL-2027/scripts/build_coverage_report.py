@@ -54,7 +54,10 @@ def main():
         assert audit['level'] == s['level']
         assert audit.get('review_status', audit.get('manual_check_status')) not in (None, 'pending_manual_review')
         legacy = [q for q in bank.values() if s['code'] in q['syllabus_codes']]
-        difficulty = dict(collections.Counter(q['difficulty'] for q in legacy))
+        reviewed_ids = {r['question_id'] for links in by_bullet.values() for r in links
+                        if r['code'] == s['code'] and r['relevance'] in ('direct', 'partial')}
+        retrieval_ids = {q['question_id'] for q in legacy} | reviewed_ids
+        difficulty = dict(collections.Counter(bank[qid]['difficulty'] for qid in retrieval_ids))
         raw_status = audit.get('coverage_status', audit.get('status'))
         gaps = audit.get('remaining_gaps', audit.get('gaps', []))
         item = {
@@ -65,6 +68,7 @@ def main():
             'assessable_knowledge_skills': s['assessable_knowledge_skills'],
             'first_pass_status': raw_status, 'missing_or_weak_requirements': gaps,
             'candidate_question_ids': sorted(q['question_id'] for q in legacy),
+            'reviewed_question_ids': sorted(reviewed_ids),
             'difficulty_distribution': difficulty,
             'specialist_audit_path': str((a_path if s['theme'] == 'A' else b_path).relative_to(P)),
             'specialist_findings': audit.get('bullet_findings', []), 'bullets': [],

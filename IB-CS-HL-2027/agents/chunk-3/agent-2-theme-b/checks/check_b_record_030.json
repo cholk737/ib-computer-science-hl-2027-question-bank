@@ -1,0 +1,28 @@
+{
+  "results": [
+    {
+      "question_id": "P-SRC002-Q16-a-i",
+      "status": "pass",
+      "expression": "stores[1].location",
+      "actual": "Hilltop",
+      "actual_type": "str",
+      "evidence": "Full code embedded in prompt equals separate code field; executed actual setup and evaluated requested expression."
+    },
+    {
+      "question_id": "P-SRC002-Q16-a-ii",
+      "status": "pass",
+      "expression": "stores[0].bookings[0].customer_id",
+      "actual": 310,
+      "actual_type": "int",
+      "evidence": "Full code embedded in prompt equals separate code field; executed actual setup and evaluated requested expression."
+    },
+    {
+      "question_id": "P-SRC002-Q16-a-iii",
+      "status": "pass",
+      "expression": "stores[2].bookings[1].end_day",
+      "actual": "2027-04-10",
+      "actual_type": "str",
+      "evidence": "Full code embedded in prompt equals separate code field; executed actual setup and evaluated requested expression."
+    }
+  ]
+}

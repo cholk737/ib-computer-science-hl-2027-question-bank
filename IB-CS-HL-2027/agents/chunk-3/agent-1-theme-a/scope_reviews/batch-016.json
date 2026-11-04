@@ -1,0 +1,181 @@
+{
+  "checkpoint": "A-RECORDS-016",
+  "reviews": [
+    {
+      "question_id": "P-SRC002-Q09-f",
+      "record_sha256": "c8837615b34496c81c10f20e5baefaa6116ce15f0140fbe048d105b984215f84",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:02:43.731385+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A2.1.4",
+          "scope_bullet_id": "A2.1.4:G01",
+          "exact_guidance": "• Protocols: transmission control protocol (TCP), user datagram protocol (UDP), hypertext transfer protocol (HTTP), hypertext transfer protocol secure (HTTPS), dynamic host configuration protocol (DHCP)",
+          "assessed_skill": "Identify TCP connection orientation, ordered byte-stream service and acknowledgement/retransmission reliability.",
+          "relevance": "partial",
+          "evidence": "TCP properties only; no UDP/HTTP/HTTPS/DHCP roles assessed."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "TCP presents connection-oriented ordered byte-stream transport and uses acknowledgements/retransmissions for reliable delivery; does not preserve application message boundaries or guarantee finite timely success."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "All three listed characteristics are correct and relevant to message transport."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Three1-mark examples total3. Equivalent technically correct TCP characteristics are permitted by partial-credit equivalence note; do not credit application-message-boundary preservation."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q09-f.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q09-f.json": "c8837615b34496c81c10f20e5baefaa6116ce15f0140fbe048d105b984215f84",
+        "question-bank/questions/P-SRC002-Q09-f.json": "7e3169d8bbef7f46a5bc75c6a80407e497681e1496872c7882be436900700ffb",
+        "question-bank/markschemes/P-SRC002-Q09-f.json": "f6b67a46b046576484999b21682a52b599dd616ff145c8340a37a73ad4bde82d",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q09-f.json": "8ec86125337a6314cc58aca5c41d73f2bec267e10b624b64882c5e439be8115f"
+      },
+      "question_type": "conceptual recall",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Identify3 factual TCP characteristics."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q11-c",
+      "record_sha256": "0e2a94df4e01f99a457eed6fd4c12363d5f066ce443c8b34ffd9cd27a02b4f38",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:02:43.732121+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A2.1.2",
+          "scope_bullet_id": "A2.1.2:G01",
+          "exact_guidance": "• Modern digital infrastructure: the internet, cloud computing, distributed systems, edge computing, mobile networks",
+          "assessed_skill": "Explain federated independent service nodes versus centralized-provider control, communication, resilience and coordination.",
+          "relevance": "partial",
+          "evidence": "Distributed-systems infrastructure assessed in concrete messaging setting; not cloud/edge/mobile/internet distinctions generally."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Federation permits independent operators and cross-server messaging; one node failure need not halt others but can disrupt hosted accounts/cross-server routes. Logical central control is distinguished from physical server count."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Answer compares distributed accounts/data/control, cross-server communication, qualified resilience and coordination/consistency cost. Avoids guaranteed universal availability."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Six1-mark explanation components total6; administrative independence and data/workload distribution are distinct if developed, not duplicate server-count phrasing."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q11-c.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Examples where specific networks are used may include the worldwide web (WWW), cryptocurrency blockchains, smart traffic lights, a school."
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q11-c.json": "0e2a94df4e01f99a457eed6fd4c12363d5f066ce443c8b34ffd9cd27a02b4f38",
+        "question-bank/questions/P-SRC002-Q11-c.json": "fe9bd77d269851a6bf5eeb5ab0f48d58c976bf6ed1e0f55b122dab47469772b7",
+        "question-bank/markschemes/P-SRC002-Q11-c.json": "620f57345a7518c3a70d6650b2f24071685b8aeb7487cba59f0e425ed7e853b4",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q11-c.json": "21acb0c15508a919710b88feaa30a77ad051f5ee406329695dee8808a5f14550"
+      },
+      "question_type": "explanation",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Explain architectural differences and consequences with6 developed components."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q11-d",
+      "record_sha256": "d63cff84d32a59ba6077e690b3eaf177915249dec957f23c3a5323e5d2eea80e",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:02:43.732625+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A4.4.1",
+          "scope_bullet_id": "A4.4.1:G01",
+          "exact_guidance": "• Ethical issues may include accountability, algorithmic fairness, bias, consent, environmental impact, privacy, security, societal impact, transparency.",
+          "assessed_skill": "Discuss consent, attribution/control and accountability when ML training copies creative work across operators.",
+          "relevance": "partial",
+          "evidence": "One ethical challenge developed with distribution consequence and safeguards; no claim a particular copyright law or licence outcome."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Replication can make consent scope/deletion propagation/accountability harder across operators; decentralization alone is not permission or rights resolution. Technical copies do not by themselves prove a legal violation."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Model develops one coherent creator-control/consent challenge with availability context, distributed consequence and practical governance safeguards."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Four1-mark points total4 reward context, specific concern, consequence and balanced response. Legal-detail knowledge not required; equivalent ethical reasoning accepted."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q11-d.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• The challenges posed by biases in training data",
+        "• The ethics of using machine learning in online communication may include concerns about misinformation, bias, online harassment, anonymity, privacy."
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q11-d.json": "d63cff84d32a59ba6077e690b3eaf177915249dec957f23c3a5323e5d2eea80e",
+        "question-bank/questions/P-SRC002-Q11-d.json": "6aad1b0dc0c1a3803e6eae34170d757b4fddf7a03710c4968589abe0c1afaa62",
+        "question-bank/markschemes/P-SRC002-Q11-d.json": "ffd68f2f96810c39c6dc3db79653381dfb32d6850db910404681724ea6daf06d",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q11-d.json": "a7544863ffd784da1f0d30329648956f26ba87af47d85e91d7147be02484e532"
+      },
+      "question_type": "evaluation",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Discuss one contextual ethical trade-off and safeguards."
+      }
+    }
+  ]
+}

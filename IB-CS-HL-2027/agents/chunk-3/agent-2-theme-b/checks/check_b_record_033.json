@@ -1,0 +1,20 @@
+{
+  "results": [
+    {
+      "question_id": "P-SRC002-Q16-c",
+      "status": "pass",
+      "evidence": "Actual stored code:empty stores,empty bookings,zero charge,multiple stores/fractional charges checked against nested-sum oracle."
+    },
+    {
+      "question_id": "P-SRC002-Q17-a",
+      "status": "intended_unique_customer_distinct_value_cases_pass_domain_ambiguities",
+      "cases": 63,
+      "evidence": "Unique customer per node,old!=new:all63 lists length0..5 preserve links and update/count matches.",
+      "ambiguities": {
+        "two_nodes_same_customer_initially_matching_return": 1,
+        "old_equals_new_single_matching_customer_return": 1,
+        "note": "Prompt does not define whether count means matching nodes,distinct customer objects,or changed field values; add domain/meaning clarification before full correctness verification."
+      }
+    }
+  ]
+}

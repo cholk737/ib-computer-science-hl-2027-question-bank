@@ -1,0 +1,179 @@
+{
+  "checkpoint": "A-RECORDS-014",
+  "reviews": [
+    {
+      "question_id": "P-SRC002-Q07-e",
+      "record_sha256": "4424fa64bfdea3ffc95aa36a1bcf7d3130a6351b7f569e37e3d243fee5ae625e",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:00:55.336723+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.2.2",
+          "scope_bullet_id": "A1.2.2:G01",
+          "exact_guidance": "• The fundamentals of binary encoding and the impact on data storage and retrieval",
+          "assessed_skill": "Outline multiplicative effect of pixel count and bit depth on uncompressed image storage.",
+          "relevance": "partial",
+          "evidence": "Storage impact of binary pixel values directly assessed; retrieval/other data representations not required."
+        },
+        {
+          "code": "A1.2.2",
+          "scope_bullet_id": "A1.2.2:G02",
+          "exact_guidance": "• The mechanisms by which data such as integers, strings, characters, images, audio and video are stored in binary form",
+          "assessed_skill": "Explain raster representation as one encoded colour value per pixel.",
+          "relevance": "partial",
+          "evidence": "Image storage mechanism only, not integer/string/audio/video mechanisms."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Ignoring metadata/padding/compression, pixel-data size is width×height×bits per pixel. Increasing either dimension increases count; larger bit depth increases per-pixel encoded information."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Model correctly separates more pixel values from more bits per value and gives units bits."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Four1-mark elements total4 for two developed factors. Resolution (pixel count) and colour precision should remain distinct; no unsupported file-header assumptions."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q07-e.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q07-e.json": "4424fa64bfdea3ffc95aa36a1bcf7d3130a6351b7f569e37e3d243fee5ae625e",
+        "question-bank/questions/P-SRC002-Q07-e.json": "2a28266993790a8ce4c077ff51882a0e5d058a9cbb87822d26a91be5ec2724c0",
+        "question-bank/markschemes/P-SRC002-Q07-e.json": "8ab22782f5682bf402f0581d24e9036f5435c1c432eca1470fc101c2ff73d19b",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q07-e.json": "f7039f4b7c72b7a531392385d937582e9f25151f49545e8b8b34c80f52c04187"
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q08-a",
+      "record_sha256": "c0adc305cfe5a46262ec9d06c10971d2a3ccb77ee9aa83e897c0ffebf95396aa",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:00:55.336958+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A4.3.7",
+          "scope_bullet_id": "A4.3.7:G01",
+          "exact_guidance": "• For example: population, fitness function, selection, crossover, mutation, evaluation, termination",
+          "assessed_skill": "Outline two GA improvement steps after initialization and before given termination.",
+          "relevance": "partial",
+          "evidence": "Tests selected fitness/selection/crossover/mutation steps, not full process or initialization/termination construction."
+        },
+        {
+          "code": "A4.3.7",
+          "scope_bullet_id": "A4.3.7:G02",
+          "exact_guidance": "• A real-world application of genetic algorithms is seen in optimization problems, such as route planning (e.g. the “travelling salesperson problem”).",
+          "assessed_skill": "Apply genetic improvement to delivery-depot layout optimization.",
+          "relevance": "direct",
+          "evidence": "Actual objective/encoded candidate layout context supports optimization example; route-planning/TSP is illustrative, not mandatory special solver."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Contextual fitness evaluates delivery cost/access; selection and crossover/mutation vary candidate layouts. Improvement is search-guided, not guaranteed monotonic or globally optimal."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Model provides fitness evaluation with context and generation variation, valid two developed steps."
+        },
+        "markscheme": {
+          "status": "issue",
+          "evidence": "Four criteria total4 but require fitness evaluation despite prompt allowing any two other steps. A developed selection step plus developed mutation step is valid yet cannot access the fixed first2 criteria. Make any2 permitted steps ×2 marks explicit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q08-a.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [
+        "A-C3-MS-007: Outline two other GA steps permits selection+mutation/crossover without fitness; current fixed fitness2 plus other2 may under-credit valid choices."
+      ],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q08-a.json": "c0adc305cfe5a46262ec9d06c10971d2a3ccb77ee9aa83e897c0ffebf95396aa",
+        "question-bank/questions/P-SRC002-Q08-a.json": "94aaa061bb932f51682e3000b7877a7ddf277dd48727f4a8b81130d9771c9b12",
+        "question-bank/markschemes/P-SRC002-Q08-a.json": "de5cbaa3b75de908b833d1b2805e40de777c886938430406c09b17b27cd01fb0",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q08-a.json": "9ff8bcf96a8e3e56899c79d3b37350989b9414798c5a8646e573d31079b6b5f3"
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q08-b-i",
+      "record_sha256": "1c8d2d39529dc406fe9802e3c8d82cdb669a3df0565c89d24fc7003cb54671cf",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:00:55.337193+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A4.1.1",
+          "scope_bullet_id": "A4.1.1:G03",
+          "exact_guidance": "• Real-world applications of machine learning may include market basket analysis, medical imaging diagnostics, natural language processing, object detection and classification, robotics navigation, sentiment analysis.",
+          "assessed_skill": "Outline a practical NLP chatbot assistance benefit in a large support service.",
+          "relevance": "partial",
+          "evidence": "Application and contextual benefit tested; no distinction of DL/RL/supervised/TL/UL or their characteristics."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "A suitably deployed chatbot can handle routine language requests at scale and route exceptions to humans; benefit is conditional, not accuracy guarantee."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Rapid scalable routine assistance plus human workload consequence matches Outline2."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "One relevant benefit plus service-specific expansion total2; equivalent cost/availability/accessibility benefits with appropriate development can be accepted."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q08-b-i.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• The different approaches to machine learning algorithms and their unique characteristics",
+        "• Deep learning (DL), reinforcement learning (RL), supervised learning, transfer learning (TL), unsupervised learning (UL)"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q08-b-i.json": "1c8d2d39529dc406fe9802e3c8d82cdb669a3df0565c89d24fc7003cb54671cf",
+        "question-bank/questions/P-SRC002-Q08-b-i.json": "1d2544f7233a0a1f05c0a8c5432b7e1162a9688d60b45e2c1f0cf817991b984e",
+        "question-bank/markschemes/P-SRC002-Q08-b-i.json": "3b444cd8aa502044da7f87c31b6c0008c279ea619d719df16a04f2a27d4388ba",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q08-b-i.json": "9613fb9d22a43fd2bfbee39be90b25758985b62f2a45fe530c37c0c9554f1404"
+      }
+    }
+  ]
+}

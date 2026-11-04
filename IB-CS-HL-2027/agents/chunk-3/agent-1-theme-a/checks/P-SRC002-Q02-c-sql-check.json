@@ -1,0 +1,35 @@
+{
+  "question_id": "P-SRC002-Q02-c",
+  "method": "SQLite execution against matching/nonmatching lead and priority, multiple clients and repeated qualifying jobs.",
+  "query": "SELECT c.ClientName,c.ContactNumber FROM Client AS c JOIN Job AS j ON c.ClientID=j.ClientID WHERE j.LeadName='Mira Sen' AND j.Priority='High';",
+  "actual_rows": [
+    [
+      "Ada",
+      "0012"
+    ],
+    [
+      "Ada",
+      "0012"
+    ],
+    [
+      "Cy",
+      "0056"
+    ]
+  ],
+  "expected_rows": [
+    [
+      "Ada",
+      "0012"
+    ],
+    [
+      "Ada",
+      "0012"
+    ],
+    [
+      "Cy",
+      "0056"
+    ]
+  ],
+  "duplicate_rows_intentionally_allowed": true,
+  "passed": true
+}

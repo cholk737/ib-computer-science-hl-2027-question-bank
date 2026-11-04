@@ -1,0 +1,21 @@
+{
+  "results": [
+    {
+      "question_id": "P-SRC005-Q14-a",
+      "status": "pass",
+      "cases": 900,
+      "evidence": "Actual answer Boolean expression checked on positive integers1..30 against multiplication-based divisibility oracle."
+    },
+    {
+      "question_id": "P-SRC005-Q14-b",
+      "status": "pass",
+      "cases": 500,
+      "evidence": "Actual function compared against paired-divisor set oracle,including1,perfect squares,prime/perfect/deficient/abundant values."
+    },
+    {
+      "question_id": "P-SRC005-Q14-c",
+      "status": "pass",
+      "evidence": "Code and solution AST agree;instrumented helper confirms exactly one call per row-major value;independent oracle classification,duplicates,empty rows/input and no mutation."
+    }
+  ]
+}

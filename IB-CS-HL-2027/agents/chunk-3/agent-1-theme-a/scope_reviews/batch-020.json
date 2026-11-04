@@ -1,0 +1,185 @@
+{
+  "checkpoint": "A-RECORDS-020",
+  "reviews": [
+    {
+      "question_id": "P-SRC004-Q10-a",
+      "record_sha256": "90bd345944074331f975246de59482c1101f348b9400dab9abc6ae06444bfc5c",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:05:56.033869+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A2.4.3",
+          "scope_bullet_id": "A2.4.3:G01",
+          "exact_guidance": "• Content security policies, complex password policies, DDoS mitigation tools, email filtering solutions, encrypted protocols, input validation (filtering, whitelisting), intrusion detection systems (IDS), intrusion prevention systems (IPS), multifactor authentication (MFA), secure socket layer (SSL) certificate, transport layer security (TLS) certificate, update software, VPNs",
+          "assessed_skill": "Outline how an independent additional authentication factor limits stolen-password access.",
+          "relevance": "partial",
+          "evidence": "MFA only from long countermeasure list; does not assess password policy/training/IDS or other measures."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "An attacker holding only a password cannot complete properly configured MFA without an independent factor; two knowledge passwords are not two independent factor categories."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Second factor requirement and stolen-password insufficiency give correct cause/consequence pair."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Two1-mark elements total2. Correct independent factor examples accepted; no claim MFA makes all attacks impossible."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-004/questions/H-SRC004-Q10-a.json, extraction/by-paper/SRC-016/questions/H-SRC016-Q10-a.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• The importance of regular security testing and employee training",
+        "• Wireless security measures may include media access controllers (MAC), whitelists and blacklists."
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC004-Q10-a.json": "90bd345944074331f975246de59482c1101f348b9400dab9abc6ae06444bfc5c",
+        "question-bank/questions/P-SRC004-Q10-a.json": "63d189430abb2c357fc7b7cbd1b651c8043541649e6b66ab2f83f3c1d0ef741f",
+        "question-bank/markschemes/P-SRC004-Q10-a.json": "21597c86ae3c62cee07ac11fa74d32b47c92671cb77344c8151780e6843eb572",
+        "extraction/by-paper/SRC-004/questions/H-SRC004-Q10-a.json": "b6790b34f9df02adcfb679516922157295418bb2ec2e0fe0da6e8bb1654ee9e4",
+        "extraction/by-paper/SRC-016/questions/H-SRC016-Q10-a.json": "8aadfd482e959d22615ff2846cdadbbc4f7da5264ff2cd4e46524c6e1cb24d0f"
+      },
+      "question_type": "explanation",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Outline MFA mechanism and consequence."
+      }
+    },
+    {
+      "question_id": "P-SRC004-Q10-b-i",
+      "record_sha256": "fd37fc13b1463325d76116a51f8553243efdbfee0f95f452293d9fca715104da",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:05:56.034759+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A2.4.2",
+          "scope_bullet_id": "A2.4.2:G01",
+          "exact_guidance": "• Distributed denial of service (DDoS), insecure network protocols, malware, man-in-the-middle (MitM) attacks, phishing attacks, SQL injection, cross-site scripting (XSS), unpatched software, weak authentication, zero-day exploits",
+          "assessed_skill": "Identify ransomware or other file-damaging malware causing unavailable clinic files.",
+          "relevance": "partial",
+          "evidence": "One malware threat only; no other named vulnerability or detailed mechanism required for Identify1."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Unauthorized file encryption by ransomware can deny legitimate access; destructive malware is another valid unavailable-data threat."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Ransomware encrypting files meets requested single threat and effect."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "One1-mark criterion explicitly accepts file-damaging/unavailability malware alternatives; not fixed ransomware-only answer."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-004/questions/H-SRC004-Q10-b-i.json, extraction/by-paper/SRC-016/questions/H-SRC016-Q10-b-i.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC004-Q10-b-i.json": "fd37fc13b1463325d76116a51f8553243efdbfee0f95f452293d9fca715104da",
+        "question-bank/questions/P-SRC004-Q10-b-i.json": "037d0a167850024493dbe11b32273f6cf5d04b43422db40f7dbab20cb4be9d72",
+        "question-bank/markschemes/P-SRC004-Q10-b-i.json": "e6d26c79c14c64227a99eda45e82d66d0ee0d0614e742c789096ac6dc52a7ccc",
+        "extraction/by-paper/SRC-004/questions/H-SRC004-Q10-b-i.json": "45862421857d3c65881db6262d1a61a181f95a685fbcd51b666d2c5f431549dc",
+        "extraction/by-paper/SRC-016/questions/H-SRC016-Q10-b-i.json": "717d3891b3a6101bc202917f1d61910c24ab23717a7b61811232a56d92eccbd7"
+      },
+      "question_type": "conceptual recall",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Identify one malware threat."
+      }
+    },
+    {
+      "question_id": "P-SRC004-Q10-b-ii",
+      "record_sha256": "eb6d9c4cc9a7e0fe1eb032384f133bee8d5758146f12b0d55097cff68f7bca93",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:05:56.035316+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A2.4.3",
+          "scope_bullet_id": "A2.4.3:G01",
+          "exact_guidance": "• Content security policies, complex password policies, DDoS mitigation tools, email filtering solutions, encrypted protocols, input validation (filtering, whitelisting), intrusion detection systems (IDS), intrusion prevention systems (IPS), multifactor authentication (MFA), secure socket layer (SSL) certificate, transport layer security (TLS) certificate, update software, VPNs",
+          "assessed_skill": "Describe security patching closing a known exploitable flaw.",
+          "relevance": "partial",
+          "evidence": "Software updating only; no guarantee against other vulnerabilities or all malware."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Installing an applicable security fix removes the particular known exploitation path; does not make unpatched/zero-day/social-engineering attacks impossible."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Patches/security fixes plus removal of known exploit path accurately explains risk reduction."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Two1-mark components total2. Equivalent vulnerability-fix explanation accepted; merely newer features is insufficient for security mechanism."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-004/questions/H-SRC004-Q10-b-ii.json, extraction/by-paper/SRC-016/questions/H-SRC016-Q10-b-ii.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• The importance of regular security testing and employee training",
+        "• Wireless security measures may include media access controllers (MAC), whitelists and blacklists."
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC004-Q10-b-ii.json": "eb6d9c4cc9a7e0fe1eb032384f133bee8d5758146f12b0d55097cff68f7bca93",
+        "question-bank/questions/P-SRC004-Q10-b-ii.json": "49163ed9ad2edb18ff5e03e0b06486b01d72cc447ace3271835956c7e8b91986",
+        "question-bank/markschemes/P-SRC004-Q10-b-ii.json": "f2fd03a0a1b9c3e06a5490b2fb826b6e39036d33554214697638c1e31cc64b3e",
+        "extraction/by-paper/SRC-004/questions/H-SRC004-Q10-b-ii.json": "bd0db153a6847efa55fc350c22e3703186ffeb61012809d48aa44cbcd5fae88e",
+        "extraction/by-paper/SRC-016/questions/H-SRC016-Q10-b-ii.json": "de440f76d3689050426452251f1efb6bc25be2ed048c4ed6f5ac0f93c7a59989"
+      },
+      "question_type": "explanation",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Describe patching mechanism and risk reduction."
+      }
+    }
+  ]
+}

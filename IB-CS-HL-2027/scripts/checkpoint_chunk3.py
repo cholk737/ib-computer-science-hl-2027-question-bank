@@ -13,6 +13,7 @@ import csv
 import hashlib
 import json
 import os
+import sqlite3
 
 P = Path(__file__).resolve().parents[1]
 A = P / 'audits/chunk-3'
@@ -81,8 +82,40 @@ def main():
     saved_files = []
     for root in [P / 'agents/chunk-3', P / 'coverage', P / 'exams', P / 'question-bank', P / 'scripts']:
         for f in sorted(root.rglob('*')):
-            if f.is_file() and not f.name.endswith('.tmp') and '__pycache__' not in f.parts:
+            if f.is_file() and not f.name.endswith(('.tmp', '.sqlite3', '.sqlite3-wal', '.sqlite3-shm', '.sqlite3-journal')) and '__pycache__' not in f.parts:
                 saved_files.append({'path': str(f.relative_to(P)), 'bytes': f.stat().st_size, 'sha256': digest(f)})
+    # A SQLite backup is transactionally consistent even if its owner imports a
+    # new batch while checkpointing. Never hash a possibly changing live file.
+    live_db = P / 'question-bank/database.sqlite3'
+    if not live_db.exists():
+        live_db = P / 'agents/chunk-3/agent-3-bank-audit/question_bank.sqlite3'
+    database = None
+    if live_db.exists():
+        directory = A / 'database-snapshots'
+        directory.mkdir(exist_ok=True)
+        temporary_db = directory / (checkpoint + '.tmp')
+        source = sqlite3.connect(f'file:{live_db}?mode=ro', uri=True)
+        backup = sqlite3.connect(temporary_db)
+        try:
+            source.backup(backup)
+            integrity = backup.execute('PRAGMA integrity_check').fetchone()[0]
+            tables = {r[0] for r in backup.execute("SELECT name FROM sqlite_master WHERE type='table'")}
+            counts = {name: backup.execute('SELECT count(*) FROM ' + name).fetchone()[0]
+                      for name in ['questions', 'answers', 'scope_evidence', 'verification', 'usage_history', 'selections'] if name in tables}
+            verification = [list(r) for r in backup.execute('SELECT dimension,status,count(*) FROM verification GROUP BY dimension,status')] if 'verification' in tables else []
+        finally:
+            backup.close()
+            source.close()
+        backup_hash = digest(temporary_db)
+        destination = directory / (backup_hash + '.sqlite3')
+        if destination.exists():
+            temporary_db.unlink()
+        else:
+            os.replace(temporary_db, destination)
+        database = {'live_path': str(live_db.relative_to(P)), 'snapshot_path': str(destination.relative_to(P)),
+                    'sha256': backup_hash, 'integrity_check': integrity, 'table_counts': counts,
+                    'verification_counts': verification,
+                    'limits': 'Database integrity/schema/import counts do not establish completeness of search features or content verification.'}
     state = {
         'checkpoint': checkpoint, 'saved_at': now.isoformat(), 'note': args.note,
         'baseline_commit': 'dd5285c', 'initial_recovery_commit': '523d2b5',
@@ -90,6 +123,7 @@ def main():
         'specialist_objectives_checked': sorted(checked), 'total_syllabus_objectives': len(codes),
         'master_integrity_errors': errors, 'historical_record_changes_since_recovery': changed_records,
         'specialists': agents, 'saved_files': saved_files,
+        'database_snapshot': database,
         'content_verification_limit': 'Integrity pass does not verify technical content. Author status is reported separately from coordinator approval.',
         'chunk3_complete': False,
     }
@@ -108,6 +142,8 @@ def main():
         f'- Current structural bank check: {len(errors)} errors. Historical record changes: {len(changed_records)} (must be explained/reviewed if nonzero).',
         '- Initial baseline integrity passed 2,473 file hashes and all 823 record schemas/identities/codes/mark totals. See audits/chunk-3/BASELINE_INTEGRITY.json.',
         '- Existing adapted marking criteria remain unofficial/preliminary; examination-level independent audit belongs to Chunk 4.', '',
+        '## Persistent database snapshot', '',
+        '```json', json.dumps(database, indent=2), '```', '',
         '## Three actual specialist assignments and saved handoffs', '',
     ]
     for agent in agents:

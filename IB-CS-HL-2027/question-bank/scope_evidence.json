@@ -1,9 +1,136 @@
 {
   "schema_version": 1,
   "unofficial": true,
-  "updated_at": "2026-11-04T13:52:20.666761+01:00",
+  "updated_at": "2026-11-04T14:04:44.354669+01:00",
   "scope_bullet_id_rule": "CODE:GNN is the one-based exact guidance paragraph. Direct relevance certifies the described assessed skill, never every item in the paragraph.",
   "reviews": [
+    {
+      "question_id": "P-SRC001-Q01",
+      "record_sha256": "1970a08a04265cd1fe8eda7b250f07c4ee010d19f510a44296c28c7fdbe4f412",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:50:24.156265+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.1.3",
+          "scope_bullet_id": "A1.1.3:G02",
+          "exact_guidance": "• Differences in their core architecture, processing power, memory access, power efficiency",
+          "assessed_skill": "Identify three relevant CPU/GPU comparison characteristics: architecture/parallelism, workload throughput, memory or power.",
+          "relevance": "partial",
+          "evidence": "Three 1-mark criteria identify dimensions of hardware comparison; the prompt does not require explaining concrete architectural differences or all memory/power properties. It does not assess shared data or coordination."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Core organization, throughput for the defined workload, memory access/bandwidth and energy efficiency are relevant distinguishing characteristics; no universal GPU speed advantage is asserted."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Listed response gives three independent characteristics matching Identify 3 marks; memory bandwidth or power efficiency can supply the third."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Three independently capped 1-mark criteria total 3 and align with identification depth. Equivalent accurate characteristics accepted. No technical scheme defect found."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q01.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Differences in their design philosophies, usage scenarios",
+        "• CPUs and GPUs working together: task division, data sharing, coordinating execution"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q01.json": "1970a08a04265cd1fe8eda7b250f07c4ee010d19f510a44296c28c7fdbe4f412",
+        "question-bank/questions/P-SRC001-Q01.json": "552405986e5f02ba3ea3436223bfabb80fa75197f37136dca4c9238dff031eff",
+        "question-bank/markschemes/P-SRC001-Q01.json": "0f38bb8030ce8d8da9343af787b42036d59de0a7a1533269653c8ee110727e86",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q01.json": "46c059094ec1e7496ac5b351fe839de65fd42032ba789c103244db9e09c530c4"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC001-Q01",
+        "review_sha256": "1eedf15281a28333691ad3621e4b39c889a64c5e1079a6a571af3585ffe11151",
+        "record_sha256": "1970a08a04265cd1fe8eda7b250f07c4ee010d19f510a44296c28c7fdbe4f412",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-001.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T13:53:50.255053+01:00",
+        "reason": "Coordinator read all three current full prompts/answers/criteria and exact A1.1.3/A2.1.1/A1.2.2 guidance, checked RGB 3x8 and256 intensities; partial mapping correctly avoids full architecture/network/image-scope claims. LAN alternative-marking issue retained, not cleared. Source linkage hashes present, no official source markscheme invented.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q02",
+      "record_sha256": "1ec92299a3e575fd5c5652dd9b04775c480fdf811f3c64c1bff0e4de3b44b74c",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:50:24.157478+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A2.1.1",
+          "scope_bullet_id": "A2.1.1:G01",
+          "exact_guidance": "• Networks: local area network (LAN), wide area network (WAN), personal area network (PAN), virtual private network (VPN)",
+          "assessed_skill": "Identify two resources a LAN can share among workstations.",
+          "relevance": "partial",
+          "evidence": "Prompt tests LAN purpose through shared printer/files. It does not compare LAN/WAN/PAN/VPN nor require their characteristics."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "A LAN can support shared printer access and shared file/storage access via suitable network services."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Printer and files/shared storage are two distinct valid examples; no mechanism explanation is required for Identify 2."
+        },
+        "markscheme": {
+          "status": "issue",
+          "evidence": "Two 1-mark examples total 2. However the general alternatives statement does not explicitly confirm other valid shareable resources such as network applications/internet access; make award-any-two-distinct-valid-resources explicit before declaring comprehensive criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q02.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [
+        "A-C3-MS-001: Expand acceptable alternatives to any two distinct valid LAN-shared resources/services; do not restrict to only printer and files."
+      ],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q02.json": "1ec92299a3e575fd5c5652dd9b04775c480fdf811f3c64c1bff0e4de3b44b74c",
+        "question-bank/questions/P-SRC001-Q02.json": "15a24bd14c35ce27521d12ec42dfa0a80319080241622386da304e774ea9bfd3",
+        "question-bank/markschemes/P-SRC001-Q02.json": "888925b9a0a8cc391aa0909aafb05039882f4b4d36a4dfe113f72e7f54c87375",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q02.json": "df3aaaf7fc1394b29f1df3a897dfd8e0da80793a359b1bb2e6c201b12b736a9d"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC001-Q02",
+        "review_sha256": "b41cab401211a759d931cdc538e7b510c72eb861c17298460167a7f9badcf85a",
+        "record_sha256": "1ec92299a3e575fd5c5652dd9b04775c480fdf811f3c64c1bff0e4de3b44b74c",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-001.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T13:53:50.255053+01:00",
+        "reason": "Coordinator read all three current full prompts/answers/criteria and exact A1.1.3/A2.1.1/A1.2.2 guidance, checked RGB 3x8 and256 intensities; partial mapping correctly avoids full architecture/network/image-scope claims. LAN alternative-marking issue retained, not cleared. Source linkage hashes present, no official source markscheme invented.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
     {
       "question_id": "P-SRC001-Q03",
       "mappings": [
@@ -17,25 +144,27 @@
           "scope_bullet_id": "B2.2.3:G01",
           "exact_guidance": "• Must include fundamental operations such as push, pop, peek and isEmpty",
           "statement": "Explain the concept of a stack as a “last in, first out” (LIFO) data structure.",
-          "mapping_verification_status": "verified"
+          "mapping_verification_status": "verified",
+          "statement_relevance": "partial",
+          "statement_evidence": "Assesses a named component skill but does not provide the whole statement command/depth."
         }
       ],
       "verification": {
         "mapping": {
           "status": "verified",
-          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+          "evidence": "Compared actual prompt with full exact statement and guidance; direct flags apply to named operation/aspect, not entire objective."
         },
         "technical": {
           "status": "verified",
-          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+          "evidence": "Nonempty stack pop removes and returns most recently pushed item; checked directly against LIFO interface."
         },
         "answer": {
           "status": "verified",
-          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+          "evidence": "Answer states both removal and top/latest item return, correct under nonempty precondition."
         },
         "markscheme": {
           "status": "verified",
-          "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+          "evidence": "One criterion matches one State mark; no unsupported underflow behavior required."
         },
         "assets": {
           "status": "verified",
@@ -43,7 +172,7 @@
         },
         "provenance": {
           "status": "pending",
-          "evidence": "pending_original_source_recheck"
+          "evidence": "Source link retained from C2; original paper/MS pages not re-opened in this C3 per-record review."
         }
       },
       "checks": [
@@ -64,14 +193,16 @@
         "marking_point_sum": 1,
         "status": "pass"
       },
+      "revision": 2,
+      "revision_reason": "Coordinator-requested explicit dimension evidence and statement-versus-bullet relevance.",
       "coordinator_review": {
         "question_id": "P-SRC001-Q03",
-        "review_sha256": "4ee1d4dcef54a43b75ab3b3d440f4133c940d22457a9aaa6694ca84c06ac9fec",
+        "review_sha256": "f364021909a3548fc47e4f43b5b3e218bba91a67fccb19004a46f43472470fba",
         "record_sha256": "3538232a43892dfd8b11099a27569aad8f1278213bb5587911071e7cc8315fbc",
         "source_path": "agents/chunk-3/agent-2-theme-b/question_reviews.json",
         "coordinator": "/root",
-        "reviewed_at": "2026-11-04T13:51:20.311405+01:00",
-        "reason": "Coordinator read complete current prompts/solutions/mark points and exact B2.2.3/B4.1.2/B4.1.3 guidance. Confirmed pop/isEmpty and final Nia-Lena-Priya link trace; direct relevance applies only to named operations. Q07 editorial and asset issues remain explicitly pending; provenance not promoted.",
+        "reviewed_at": "2026-11-04T13:58:31.844827+01:00",
+        "reason": "Reapproved same three actual unchanged question records after reading revised specific dimension evidence and statement-relevance limits; B4.1.2 not claimed fully evaluated, Q07 editorial/render/provenance checks remain pending. Prior full coordinator prompt/solution check and linked-list trace retained.",
         "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
       }
     },
@@ -88,25 +219,27 @@
           "scope_bullet_id": "B2.2.3:G01",
           "exact_guidance": "• Must include fundamental operations such as push, pop, peek and isEmpty",
           "statement": "Explain the concept of a stack as a “last in, first out” (LIFO) data structure.",
-          "mapping_verification_status": "verified"
+          "mapping_verification_status": "verified",
+          "statement_relevance": "partial",
+          "statement_evidence": "Assesses a named component skill but does not provide the whole statement command/depth."
         }
       ],
       "verification": {
         "mapping": {
           "status": "verified",
-          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+          "evidence": "Compared actual prompt with full exact statement and guidance; direct flags apply to named operation/aspect, not entire objective."
         },
         "technical": {
           "status": "verified",
-          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+          "evidence": "isEmpty has Boolean true exactly when zero items remain; stated input is empty."
         },
         "answer": {
           "status": "verified",
-          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+          "evidence": "True is the correct Boolean result; answer does not confuse this with pop."
         },
         "markscheme": {
           "status": "verified",
-          "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+          "evidence": "Single returned value matches one mark; no extra explanation required."
         },
         "assets": {
           "status": "verified",
@@ -114,7 +247,7 @@
         },
         "provenance": {
           "status": "pending",
-          "evidence": "pending_original_source_recheck"
+          "evidence": "Source link retained from C2; original paper/MS pages not re-opened in this C3 per-record review."
         }
       },
       "checks": [
@@ -135,14 +268,151 @@
         "marking_point_sum": 1,
         "status": "pass"
       },
+      "revision": 2,
+      "revision_reason": "Coordinator-requested explicit dimension evidence and statement-versus-bullet relevance.",
       "coordinator_review": {
         "question_id": "P-SRC001-Q04",
-        "review_sha256": "18cfd7a1c28b80a5f2a996caa9884d1c8335e7b83a211f85a60862c368a4143e",
+        "review_sha256": "34f96fdfbd673641191410a096436f59d45f92c5a7d6984921b325659bff868a",
         "record_sha256": "670008c771b00cde6b7ff3545e80792150a3fb425440a7ece1b5d148d4d057a4",
         "source_path": "agents/chunk-3/agent-2-theme-b/question_reviews.json",
         "coordinator": "/root",
-        "reviewed_at": "2026-11-04T13:51:20.311405+01:00",
-        "reason": "Coordinator read complete current prompts/solutions/mark points and exact B2.2.3/B4.1.2/B4.1.3 guidance. Confirmed pop/isEmpty and final Nia-Lena-Priya link trace; direct relevance applies only to named operations. Q07 editorial and asset issues remain explicitly pending; provenance not promoted.",
+        "reviewed_at": "2026-11-04T13:58:31.844827+01:00",
+        "reason": "Reapproved same three actual unchanged question records after reading revised specific dimension evidence and statement-relevance limits; B4.1.2 not claimed fully evaluated, Q07 editorial/render/provenance checks remain pending. Prior full coordinator prompt/solution check and linked-list trace retained.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q05",
+      "record_sha256": "e57a74c83d68462a0ce1435088baf5ccb3ea3d95e966afb8f03683c26e8d4110",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:50:24.158115+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.2.2",
+          "scope_bullet_id": "A1.2.2:G01",
+          "exact_guidance": "• The fundamentals of binary encoding and the impact on data storage and retrieval",
+          "assessed_skill": "Explain a fixed bit allocation encoding pixel colour as numeric channel intensities.",
+          "relevance": "partial",
+          "evidence": "Prompt asks how 24 bits can represent a colour; does not test storage/retrieval trade-offs beyond the representation."
+        },
+        {
+          "code": "A1.2.2",
+          "scope_bullet_id": "A1.2.2:G02",
+          "exact_guidance": "• The mechanisms by which data such as integers, strings, characters, images, audio and video are stored in binary form",
+          "assessed_skill": "Describe one image binary-encoding mechanism using three 8-bit RGB components.",
+          "relevance": "partial",
+          "evidence": "Image pixels are directly tested; integer/text/audio/video encoding mechanisms are not. A possible RGB scheme answers can represent; it is not asserted to be the only 24-bit encoding."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "An RGB example allocates 8 bits to each of three intensities, giving 256 values/channel and 24 total bits. Mixing component levels describes the pixel colour representation."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Three solution components address binary values, three channels/8 bits, and combination/256 possibilities. 3×8=24 and 2^8=256 verified arithmetically."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Three independent 1-mark criteria total 3. Treat the response as a possible conventional RGB representation; equivalent technically valid representations remain permitted by the alternatives note. No code or diagram required."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q05.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q05.json": "e57a74c83d68462a0ce1435088baf5ccb3ea3d95e966afb8f03683c26e8d4110",
+        "question-bank/questions/P-SRC001-Q05.json": "0e20f13f0c603f68f347e26f463b544b56b4e0ad2a0f3f4d188fc74206faf889",
+        "question-bank/markschemes/P-SRC001-Q05.json": "5a0e7c6c6e839050a32ffcdd2cb45401f2186029b3c8cd3902a51b5e89b05624",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q05.json": "f9c48038ddcf3bf805dcf612e4224e845683a44e7050c1ba8dd2ba12137be305"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC001-Q05",
+        "review_sha256": "62538e6cd7015ed330c14e8b6d200a4e1b06af8cb08c00fb980c46633bedcc1f",
+        "record_sha256": "e57a74c83d68462a0ce1435088baf5ccb3ea3d95e966afb8f03683c26e8d4110",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-001.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T13:53:50.255053+01:00",
+        "reason": "Coordinator read all three current full prompts/answers/criteria and exact A1.1.3/A2.1.1/A1.2.2 guidance, checked RGB 3x8 and256 intensities; partial mapping correctly avoids full architecture/network/image-scope claims. LAN alternative-marking issue retained, not cleared. Source linkage hashes present, no official source markscheme invented.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q06",
+      "record_sha256": "01de0e40a7f8e2e7305dabfba8ba5d8ee9a2f6e9cbd432e71c4ce5285026290d",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:51:23.444166+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.2.4",
+          "scope_bullet_id": "A1.2.4:G02",
+          "exact_guidance": "• Truth tables to determine outputs from inputs for a problem description",
+          "assessed_skill": "Construct every output of a three-input truth table from an alarm problem description.",
+          "relevance": "direct",
+          "evidence": "Prompt requires complete table from exactly-two-one inputs OR numeric value>=6. Exhaustively recomputed all eight rows; this directly assesses the problem-description truth-table guidance, not Karnaugh maps or circuit simplification."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Evaluated all 8 triples independently. Exactly-two criterion selects 011,101,110; value>=6 selects110,111; union gives outputs0,0,0,1,0,1,1,1."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Stored exhaustive check checks/P-SRC001-Q06-truth-check.json passes against all answer rows."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Four 1-mark row-pair criteria total4, cover all8 outputs, give positive partial credit by independent pairs. Prompt row order explicit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q06.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Truth tables to predict the output of simple logic circuits",
+        "• Truth tables and their relationship to a Boolean expression, with inputs and outputs",
+        "• Truth tables derived from logic diagrams to aid the simplification of logical expressions",
+        "• Karnaugh maps and algebraic simplification to simplify output expressions"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q06.json": "01de0e40a7f8e2e7305dabfba8ba5d8ee9a2f6e9cbd432e71c4ce5285026290d",
+        "question-bank/questions/P-SRC001-Q06.json": "55d19522ad295b3db0b4e69001157c2b2c9bf38a2d38e030625d71e4e5e2b5ec",
+        "question-bank/markschemes/P-SRC001-Q06.json": "c1044ee06ba23bea03ad1ce6b25e405e325f40e67a23bd9be9285c56f1107fd9",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q06.json": "0589be6705045288031e14d0aa0015dfc79827d0e3dd07548de74977ee7a7a62"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC001-Q06",
+        "review_sha256": "66e9076908e60236f9ce163deda2460ed7ddc88fc4ab8a907e60a3f898b1346e",
+        "record_sha256": "01de0e40a7f8e2e7305dabfba8ba5d8ee9a2f6e9cbd432e71c4ce5285026290d",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-002.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T13:55:32.097616+01:00",
+        "reason": "Coordinator read complete prompts/solutions/criteria and scope reviews; independently recomputed 8 truth rows 000001010011100101110111 ->00010111. Generic protocol questions correctly supporting only for named-protocol guidance; fixed-bucket alternative under-credit issue retained.",
         "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
       }
     },
@@ -159,7 +429,9 @@
           "scope_bullet_id": "B4.1.2:G01",
           "exact_guidance": "• Lists must include singly, doubly, circular",
           "statement": "Evaluate linked lists.",
-          "mapping_verification_status": "verified"
+          "mapping_verification_status": "verified",
+          "statement_relevance": "partial",
+          "statement_evidence": "Assesses a named component skill but does not provide the whole statement command/depth."
         },
         {
           "code": "B4.1.2",
@@ -171,7 +443,9 @@
           "scope_bullet_id": "B4.1.2:G02",
           "exact_guidance": "• Sketch of linked lists and implementation of basic operations diagrammatically, such as insertion, deletion, traversal, search",
           "statement": "Evaluate linked lists.",
-          "mapping_verification_status": "verified"
+          "mapping_verification_status": "verified",
+          "statement_relevance": "partial",
+          "statement_evidence": "Assesses a named component skill but does not provide the whole statement command/depth."
         },
         {
           "code": "B4.1.3",
@@ -183,25 +457,27 @@
           "scope_bullet_id": "B4.1.3:G01",
           "exact_guidance": "• The basic operations on a linked list, such as insertion, deletion, traversal, search",
           "statement": "Construct and apply linked lists: singly, doubly and circular.",
-          "mapping_verification_status": "verified"
+          "mapping_verification_status": "verified",
+          "statement_relevance": "direct",
+          "statement_evidence": "Applies doubly linked insertion/deletion by sketch."
         }
       ],
       "verification": {
         "mapping": {
           "status": "verified",
-          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+          "evidence": "Compared actual prompt with full exact statement and guidance; direct flags apply to named operation/aspect, not entire objective."
         },
         "technical": {
           "status": "verified",
-          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+          "evidence": "Manual chain trace after Omar deletion,Theo tail deletion,Nia head insertion gives Nia↔Lena↔Priya with null exterior links."
         },
         "answer": {
           "status": "verified",
-          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+          "evidence": "Stored answer correctly gives forward/backward links,head/tail and None boundary references despite split-name typography."
         },
         "markscheme": {
           "status": "issue",
-          "evidence": "needs_editorial_repair; concrete issue recorded in review."
+          "evidence": "Four mark points sum4 and are semantically sound, but split names Pr i ya/Ni a versus Priya/Nia need consistent editorial normalization."
         },
         "assets": {
           "status": "pending",
@@ -209,7 +485,7 @@
         },
         "provenance": {
           "status": "pending",
-          "evidence": "pending_original_source_recheck"
+          "evidence": "Source link retained from C2; original paper/MS pages not re-opened in this C3 per-record review."
         }
       },
       "checks": [
@@ -242,14 +518,204 @@
         "marking_point_sum": 4,
         "status": "pass"
       },
+      "revision": 2,
+      "revision_reason": "Coordinator-requested explicit dimension evidence and statement-versus-bullet relevance.",
       "coordinator_review": {
         "question_id": "P-SRC001-Q07",
-        "review_sha256": "a446047d89acd5da5db3568032353c621f0beac076791a8c5c0408dea083974e",
+        "review_sha256": "e89b9446867324c7158fc06201f39810f3deb0f5fa69d5213ec1cd4f76a9680a",
         "record_sha256": "98197529760c13f65175c6873888a04aef479087b51feba1736b15b390ca377a",
         "source_path": "agents/chunk-3/agent-2-theme-b/question_reviews.json",
         "coordinator": "/root",
-        "reviewed_at": "2026-11-04T13:51:20.311405+01:00",
-        "reason": "Coordinator read complete current prompts/solutions/mark points and exact B2.2.3/B4.1.2/B4.1.3 guidance. Confirmed pop/isEmpty and final Nia-Lena-Priya link trace; direct relevance applies only to named operations. Q07 editorial and asset issues remain explicitly pending; provenance not promoted.",
+        "reviewed_at": "2026-11-04T13:58:31.844827+01:00",
+        "reason": "Reapproved same three actual unchanged question records after reading revised specific dimension evidence and statement-relevance limits; B4.1.2 not claimed fully evaluated, Q07 editorial/render/provenance checks remain pending. Prior full coordinator prompt/solution check and linked-list trace retained.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q08-a",
+      "record_sha256": "9c449b120e44048f5cf7f75cca122147489f78b1a6d154b0c65e4def44ddb89e",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:51:23.444455+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A2.1.4",
+          "scope_bullet_id": "A2.1.4:G01",
+          "exact_guidance": "• Protocols: transmission control protocol (TCP), user datagram protocol (UDP), hypertext transfer protocol (HTTP), hypertext transfer protocol secure (HTTPS), dynamic host configuration protocol (DHCP)",
+          "assessed_skill": "Define the general concept of an agreed communication protocol.",
+          "relevance": "supporting",
+          "evidence": "No named TCP/UDP/HTTP/HTTPS/DHCP role or behaviour is tested. This foundation supports the statement but does not establish direct coverage of any listed protocol."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "A network protocol is an agreed communication-rule set; wording does not confuse protocol with physical medium."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "One concise definition contains rules plus communication context, appropriate Define1."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Single1-mark criterion and equivalent wording allowance match demand."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q08-a.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q08-a.json": "9c449b120e44048f5cf7f75cca122147489f78b1a6d154b0c65e4def44ddb89e",
+        "question-bank/questions/P-SRC001-Q08-a.json": "1867bc3f68bd3cb23490bc04f25f8a82be36082b56b0425b220deefdbe318b97",
+        "question-bank/markschemes/P-SRC001-Q08-a.json": "1f65cd3f631fbd03fab8a980ea85f9fc6b45863df5c09de797d23152a1338693",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q08-a.json": "94dc656f3b8f893e3d251c9827c0107f28cd941c9c62d94b81c34f9c6b564ece"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC001-Q08-a",
+        "review_sha256": "77786b83dbf3e5eaf1539a278976bab7d9e8fa728e908f2b663b931d32cfea68",
+        "record_sha256": "9c449b120e44048f5cf7f75cca122147489f78b1a6d154b0c65e4def44ddb89e",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-002.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T13:55:32.097616+01:00",
+        "reason": "Coordinator read complete prompts/solutions/criteria and scope reviews; independently recomputed 8 truth rows 000001010011100101110111 ->00010111. Generic protocol questions correctly supporting only for named-protocol guidance; fixed-bucket alternative under-credit issue retained.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q08-b",
+      "record_sha256": "76487d2e4a8cdd1fb404dc9bafb06d7e76dcffb922133b3096bc0198b43fdf70",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:51:23.444716+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A2.1.4",
+          "scope_bullet_id": "A2.1.4:G01",
+          "exact_guidance": "• Protocols: transmission control protocol (TCP), user datagram protocol (UDP), hypertext transfer protocol (HTTP), hypertext transfer protocol secure (HTTPS), dynamic host configuration protocol (DHCP)",
+          "assessed_skill": "List general communication properties standardized by protocols.",
+          "relevance": "supporting",
+          "evidence": "Message format, timing/order and addressing/error conventions are general protocol aspects. No specific function of the five listed transport/application protocols is tested."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Data formats/encoding, interaction timing/order, addressing and error/acknowledgement behaviour are legitimate protocol-standardized properties."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "The model lists three valid aspects. Alternative legitimate triples also exist; no single protocol must implement every listed function."
+        },
+        "markscheme": {
+          "status": "issue",
+          "evidence": "Three1-mark categories total3, but third merges addressing/routing with error/acknowledgement. A valid answer message format,addressing,error handling could receive only2 under literal buckets. Clarify award any3 distinct valid aspects, without double-crediting synonyms."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q08-b.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [
+        "A-C3-MS-002: List3 valid protocol aspects must permit e.g. format + addressing + error handling as3 distinct answers; current fixed bucket grouping could cap at2."
+      ],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q08-b.json": "76487d2e4a8cdd1fb404dc9bafb06d7e76dcffb922133b3096bc0198b43fdf70",
+        "question-bank/questions/P-SRC001-Q08-b.json": "443ea4e6c33019d44ea471c3e29295d0a5b02350d4e9d0de0f024e34b1cb707c",
+        "question-bank/markschemes/P-SRC001-Q08-b.json": "9a9c1d29d448bc7b3165ba5f3dd09e684817891128cec8f4e3358295c6a80b3e",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q08-b.json": "06b767489f7a65c24d33fe930e855b533fabfdb541b3b779dd02a75728ec7980"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC001-Q08-b",
+        "review_sha256": "0d8d3d1a6b736de516e4d05065e6aa88fd7c1ae6136c02bbd3d10f3a69046186",
+        "record_sha256": "76487d2e4a8cdd1fb404dc9bafb06d7e76dcffb922133b3096bc0198b43fdf70",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-002.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T13:55:32.097616+01:00",
+        "reason": "Coordinator read complete prompts/solutions/criteria and scope reviews; independently recomputed 8 truth rows 000001010011100101110111 ->00010111. Generic protocol questions correctly supporting only for named-protocol guidance; fixed-bucket alternative under-credit issue retained.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q09",
+      "record_sha256": "c7f9060f01bbd450badd0727cb7c909acdce0e00fd280462e922fcda84b05b40",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:52:11.100164+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.4.1",
+          "scope_bullet_id": "A1.4.1:G01",
+          "exact_guidance": "• The mechanics and use-cases of each translation approach",
+          "assessed_skill": "Identify a compiler from whole-program-before-execution translation mechanics.",
+          "relevance": "partial",
+          "evidence": "One-mark recognition of ahead-of-time compilation; no comparison with interpreter, use-case evaluation, JIT/bytecode or required scenarios."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Within the stated educational model, translating a whole source program before execution identifies a compiler. Does not claim every real runtime uses only one translation approach."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Compiler is the correct1-mark type."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Single1-mark criterion matches State; no marks for unsupported extra runtime assertions."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q09.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• The difference in error detection, translation time, portability and applicability for different translation processes, including just-in-time compilation (JIT) and bytecode interpreters",
+        "• Example scenarios where the translation method should be considered must include rapid development and testing, performance-critical applications and cross-platform development."
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q09.json": "c7f9060f01bbd450badd0727cb7c909acdce0e00fd280462e922fcda84b05b40",
+        "question-bank/questions/P-SRC001-Q09.json": "799baaafbb45c9e21d46134c80422ad64853cac847ed31739920ff7302729e5c",
+        "question-bank/markschemes/P-SRC001-Q09.json": "03f40457d31859bf462cefaeab7d65dba84ea3d01e7d4c979727b9b0cdbf2748",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q09.json": "65a424e4257eee5af8c081ae00317fb1b16a744fa72280cff5d7bf9d88796e67"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC001-Q09",
+        "review_sha256": "dd92d2add4a09c2615842df2c33f0dbbf447598128dbdf93f0edc73144e7067c",
+        "record_sha256": "c7f9060f01bbd450badd0727cb7c909acdce0e00fd280462e922fcda84b05b40",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-003.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T13:59:46.953249+01:00",
+        "reason": "Read current complete source001 translator/vulnerability/mail-server prompts, solutions and exact scope evidence; confirmed narrowed partial aspects and educational translation model. Any-three vulnerability marking limitation retained as issue, not approved as complete criteria.",
         "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
       }
     },
@@ -321,6 +787,711 @@
         "coordinator": "/root",
         "reviewed_at": "2026-11-04T13:52:20.666761+01:00",
         "reason": "Coordinator compared actual prompts, complete criteria and exact guide B2.1.4/B2.2.1/B2.4.5 guidance; independently traced and executed suffix_product (40 and base1); confirmed conditional memory-resizing costs and breakpoint purposes. Scope limits and pending original-source provenance remain.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q11-c-i",
+      "record_sha256": "217d8b01d25eb517d9d94438171f35182e078ead2343c8b39fa3e0b7510dab26",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:52:11.101423+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A2.4.2",
+          "scope_bullet_id": "A2.4.2:G01",
+          "exact_guidance": "• Distributed denial of service (DDoS), insecure network protocols, malware, man-in-the-middle (MitM) attacks, phishing attacks, SQL injection, cross-site scripting (XSS), unpatched software, weak authentication, zero-day exploits",
+          "assessed_skill": "List three network vulnerabilities capable of exposing enrolment records.",
+          "relevance": "partial",
+          "evidence": "Only identification of any three exposure-relevant vulnerabilities is assessed; no mechanism explanation and no evidence all ten listed vulnerabilities are tested."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Phishing, unpatched exploitable flaws, SQL injection, data-stealing malware and weak authentication can expose data. The answer examples meet the exposure condition; DDoS alone is not automatically an exposure mechanism."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "The model offers valid named vulnerabilities; three independent exposure-relevant choices are appropriate for List3."
+        },
+        "markscheme": {
+          "status": "issue",
+          "evidence": "Three1-mark slots total3, but SQL injection/malware/weak authentication grouped as alternatives in one slot could under-credit a correct answer consisting of exactly those three distinct vulnerabilities. Award any3 distinct relevant vulnerabilities, not fixed response slots."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q11-c-i.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [
+        "A-C3-MS-003: Accept any3 distinct exposure-relevant vulnerabilities. SQL injection + malware + weak authentication is valid3 but literal current grouped criteria may award only1."
+      ],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q11-c-i.json": "217d8b01d25eb517d9d94438171f35182e078ead2343c8b39fa3e0b7510dab26",
+        "question-bank/questions/P-SRC001-Q11-c-i.json": "d2c0cba1e3101a1abe83fcbfd0254cd6d81459af10a05f30b84dcbf74142d010",
+        "question-bank/markschemes/P-SRC001-Q11-c-i.json": "4e443433024f309202cb114025304e93d7fa1adf10b484ec07209a909cafcc6d",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q11-c-i.json": "9bee914dbf4ee20ec89526fd0b0ef77a79e6ad501b0431e353120eb7ad881658"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC001-Q11-c-i",
+        "review_sha256": "7278960796b21f28a32473bcf9f566dc1b310d197121a454e694dc46701c8555",
+        "record_sha256": "217d8b01d25eb517d9d94438171f35182e078ead2343c8b39fa3e0b7510dab26",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-003.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T13:59:46.953249+01:00",
+        "reason": "Read current complete source001 translator/vulnerability/mail-server prompts, solutions and exact scope evidence; confirmed narrowed partial aspects and educational translation model. Any-three vulnerability marking limitation retained as issue, not approved as complete criteria.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q11-c-ii",
+      "record_sha256": "24dc42ff9dd18761d071e74f2a93efecc504e04905c49a796b880c3812bc5901",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:52:11.102715+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A2.2.2",
+          "scope_bullet_id": "A2.2.2:G01",
+          "exact_guidance": "• Types of servers: domain name server (DNS), dynamic host configuration protocol (DHCP), file server, mail server, proxy server, web server",
+          "assessed_skill": "State the function of a university mail server.",
+          "relevance": "partial",
+          "evidence": "Receiving/storing/forwarding email role directly tested; no DNS/DHCP/file/proxy/web role and no reliability/scalability/security comparison."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "A mail server receives, retains and/or relays messages for mail service users; roles may be divided across components without invalidating this description."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "One concise mail-service function earns the single State mark."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "One1-mark criterion lists valid mail-service operations and permits alternatives; does not require all operations for1 mark."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q11-c-ii.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Factors to consider must include function, scalability, reliability and security."
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q11-c-ii.json": "24dc42ff9dd18761d071e74f2a93efecc504e04905c49a796b880c3812bc5901",
+        "question-bank/questions/P-SRC001-Q11-c-ii.json": "1a772d0d7712b7ecde8101793c00b96d95ba90c2ab536de0063cca402177a862",
+        "question-bank/markschemes/P-SRC001-Q11-c-ii.json": "bdbf739e2f0a8871522788564c3e53d9fc86f22d1566d70772e6ff36b964a79f",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q11-c-ii.json": "ba9df6eb9b5f44fe9d376b76b4ae17e530741d46fe88311cd8135c9a0952ea8c"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC001-Q11-c-ii",
+        "review_sha256": "3917fcede2d04879d89949c9ab827667c294c298f914b4aa9324fa404f3f9612",
+        "record_sha256": "24dc42ff9dd18761d071e74f2a93efecc504e04905c49a796b880c3812bc5901",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-003.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T13:59:46.953249+01:00",
+        "reason": "Read current complete source001 translator/vulnerability/mail-server prompts, solutions and exact scope evidence; confirmed narrowed partial aspects and educational translation model. Any-three vulnerability marking limitation retained as issue, not approved as complete criteria.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q11-c-iv",
+      "record_sha256": "ce49f31dc12e2dd7ed119a73268a15e5bee0764f681ad41ac8211d26abd48fea",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:53:04.338756+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A2.4.4",
+          "scope_bullet_id": "A2.4.4:G01",
+          "exact_guidance": "• The difference between symmetric and asymmetric cryptography",
+          "assessed_skill": "Explain generic encryption-based confidentiality during network transfer.",
+          "relevance": "supporting",
+          "evidence": "Plaintext/ciphertext/algorithm/key and authorized decryption are tested. The exact guidance bullet requires symmetric/asymmetric differences, which this question does not assess; this is foundation only, with no digital-certificate or key-management evidence."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Correctly applied encryption protects content against a passive interceptor lacking the decryption key. No authentication/integrity/endpoint safety guarantee is inferred."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Transform to ciphertext, inability to read without key, and legitimate decryption are correct linked explanation points."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Three independent1-mark explanation elements total3. The wording appropriate key permits symmetric or asymmetric schemes and does not claim same key in all approaches."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q11-c-iv.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• The role of digital certificates in establishing secure network connections",
+        "• The use of public and private keys in asymmetric cryptography",
+        "• The significance of encryption key management"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q11-c-iv.json": "ce49f31dc12e2dd7ed119a73268a15e5bee0764f681ad41ac8211d26abd48fea",
+        "question-bank/questions/P-SRC001-Q11-c-iv.json": "b49db016530f174f9c72492b1afccfd3f6dc52518b8a53baef5b1cbebb76c361",
+        "question-bank/markschemes/P-SRC001-Q11-c-iv.json": "810d7f91ede38c0589d5d14aae2be4084b3fd59c6cd30fa9091cab003d81edc0",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q11-c-iv.json": "e7da7f3c6b051f3042c6f4e52cf70ec9781582aa8043e2e2ae4ab3f7c2b4e8d3"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC001-Q11-c-iv",
+        "review_sha256": "47d760020cdbb38430f5821f70f0bae6dc3336cf6df08b42579bf86e44524082",
+        "record_sha256": "ce49f31dc12e2dd7ed119a73268a15e5bee0764f681ad41ac8211d26abd48fea",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-004.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T14:00:15.018815+01:00",
+        "reason": "Coordinator read complete encryption, RAM/SSD and OS allocation/isolation prompts+criteria and full scope mappings. Generic encryption supports but does not assess symmetric/asymmetric comparison. RAM/SSD and memory management cover limited named aspects only. No new technical issue found.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q12-a-i",
+      "record_sha256": "e845dbc8488bcc3d441a2cd7817958932a3b5a1839b4c66c893eb35f4cf0fa38",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:53:04.339275+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.1.4",
+          "scope_bullet_id": "A1.1.4:G01",
+          "exact_guidance": "• Random-access memory (RAM), read only memory (ROM), cache (L1, L2, L3), registers",
+          "assessed_skill": "Distinguish RAM purpose, volatility and access performance from SSD secondary storage.",
+          "relevance": "partial",
+          "evidence": "Only RAM among the listed primary-memory types is assessed; ROM/cache/registers remain untested."
+        },
+        {
+          "code": "A1.1.7",
+          "scope_bullet_id": "A1.1.7:G01",
+          "exact_guidance": "• Internal hard drives: solid state drive (SSD), hard disk drive (HDD), embedded multimedia cards (eMMCs)",
+          "assessed_skill": "Describe SSD persistent storage purpose by contrasting it with RAM.",
+          "relevance": "partial",
+          "evidence": "SSD use is assessed but HDD/eMMC and internal-versus-external distinctions are not."
+        },
+        {
+          "code": "A1.1.7",
+          "scope_bullet_id": "A1.1.7:G03",
+          "exact_guidance": "• The scenarios in which the various types of drive are used",
+          "assessed_skill": "Distinguish active working memory from persistent program/file storage in a workstation.",
+          "relevance": "partial",
+          "evidence": "A concrete workstation program-running context supports RAM/SSD role choice; no broader storage-device scenario comparison."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Ordinary DRAM is volatile and provides lower-latency working memory than SSD; SSD retains programs/files. Typical per-unit cost/capacity statements are qualified generally, not universal capacities."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Purpose, volatility and qualified performance/cost comparison yield three clear distinctions."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Three1-mark distinctions total3; each must distinguish both devices, with equivalent correct distinctions accepted."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q12-a-i.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• The interaction of the CPU with different types of memory to optimize performance",
+        "• The relevance of the terms “cache miss” and “cache hit”",
+        "• External hard drives: SSD, HDD, optical drives, flash drives, memory cards, network attached storage (NAS)"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q12-a-i.json": "e845dbc8488bcc3d441a2cd7817958932a3b5a1839b4c66c893eb35f4cf0fa38",
+        "question-bank/questions/P-SRC001-Q12-a-i.json": "55c15e201afe803153816dfabe17674300102cb0e908a766cfa8186eebf80f20",
+        "question-bank/markschemes/P-SRC001-Q12-a-i.json": "c69a0d334fec91b9841bdd89e1eb4a301ba8d36fc4786a7af4bfc375f5987ae9",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q12-a-i.json": "4db7815b454b3caedfcc6f10e51a0967fb00c2ce0230c68bfdea2052d292441d"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC001-Q12-a-i",
+        "review_sha256": "d089108c81049e8c30872c5735276fcbb34d59e4d4c21e7463485d7625af76d1",
+        "record_sha256": "e845dbc8488bcc3d441a2cd7817958932a3b5a1839b4c66c893eb35f4cf0fa38",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-004.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T14:00:15.018815+01:00",
+        "reason": "Coordinator read complete encryption, RAM/SSD and OS allocation/isolation prompts+criteria and full scope mappings. Generic encryption supports but does not assess symmetric/asymmetric comparison. RAM/SSD and memory management cover limited named aspects only. No new technical issue found.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q12-a-ii",
+      "record_sha256": "c46c4850f575287ccd099cc7275420a2bfd30531c11857df3740d6675118fbd5",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:53:04.339850+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.3.2",
+          "scope_bullet_id": "A1.3.2:G01",
+          "exact_guidance": "• Maintaining system integrity while running operating systems’ background operations",
+          "assessed_skill": "Outline memory isolation/protection maintaining integrity while applications run.",
+          "relevance": "partial",
+          "evidence": "Protection against process overwrites and resulting reduced corruption tested; other integrity/background-operation aspects not required."
+        },
+        {
+          "code": "A1.3.2",
+          "scope_bullet_id": "A1.3.2:G02",
+          "exact_guidance": "• Memory management, file system, device management, scheduling, security, accounting, graphical user interface (GUI), virtualization, networking",
+          "assessed_skill": "Outline two OS RAM-management functions with expansion.",
+          "relevance": "partial",
+          "evidence": "Allocation/tracking/reclaiming and memory protection tested; no accounting/GUI/networking/virtualization or other named OS functions."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "OS allocation/tracking/reclamation and address-space protection are correct multitasking memory responsibilities. Protection is enforced through OS configuration with hardware support, not magical software isolation."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Two developed functions: allocation with tracking/reclamation, and protection with integrity consequence, give suitable Outline2×2 answer depth."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Four1-mark criteria total4. Meaningful related elaborations rather than duplicate restatement earn the two expansions; prompt requests two functions."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q12-a-ii.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q12-a-ii.json": "c46c4850f575287ccd099cc7275420a2bfd30531c11857df3740d6675118fbd5",
+        "question-bank/questions/P-SRC001-Q12-a-ii.json": "91a5873b68ee2129b4e2f5fed52047acf63c58dbdd5201de90232871ac656598",
+        "question-bank/markschemes/P-SRC001-Q12-a-ii.json": "6cf7b107ffb9ff36c5388cbcdf655b13d4baefef5a807282fadd12f4107879e6",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q12-a-ii.json": "0e91b3d91eaec846d93546f1e5af54decceae594f49c2d1fa099fd196ca3f421"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC001-Q12-a-ii",
+        "review_sha256": "7aff62bb727a13c506ca201dd86101585f075aa421fae3fa0921eb15ccd4267f",
+        "record_sha256": "c46c4850f575287ccd099cc7275420a2bfd30531c11857df3740d6675118fbd5",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-004.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T14:00:15.018815+01:00",
+        "reason": "Coordinator read complete encryption, RAM/SSD and OS allocation/isolation prompts+criteria and full scope mappings. Generic encryption supports but does not assess symmetric/asymmetric comparison. RAM/SSD and memory management cover limited named aspects only. No new technical issue found.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q12-b-i",
+      "record_sha256": "f49de4823bec6b64a5cc82260c61b5137d5ae0889bd89dcb2f3ed95c007be8d1",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:53:32.079249+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.1.1",
+          "scope_bullet_id": "A1.1.1:G02",
+          "exact_guidance": "• Registers: instruction register (IR), program counter (PC), memory address register (MAR), memory data register (MDR), accumulator (AC)",
+          "assessed_skill": "State the MDR function in a memory-read transfer.",
+          "relevance": "partial",
+          "evidence": "One register function only: holds the returning word. No PC/MAR/IR/AC or other register operation/interactions tested."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "The MDR holds the data/instruction word read from addressed main memory before internal CPU use."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "The one-sentence answer correctly identifies temporary data holding, not the memory address (MAR)."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Single1-mark criterion matches State and accepts equivalent memory-buffer-register terminology."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q12-b-i.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Units: arithmetic logic unit (ALU), control unit (CU)",
+        "• Buses: address, data, control",
+        "• Processors: single core processor, multi-core processor, co-processors",
+        "• A diagrammatic representation of the relationship between the specified CPU components"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q12-b-i.json": "f49de4823bec6b64a5cc82260c61b5137d5ae0889bd89dcb2f3ed95c007be8d1",
+        "question-bank/questions/P-SRC001-Q12-b-i.json": "083fec5e50a10d16ab48ab57580417e32c31d1c77967fcf18050cbb421a73a14",
+        "question-bank/markschemes/P-SRC001-Q12-b-i.json": "8a2f0bde62b363680b45168fa78817b31536d85cbaf5455a436dbe874d85a26b",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q12-b-i.json": "6d4eafbac35553f1a4b44181fa8b632062e78df90ddf0efc5656061aa3812374"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC001-Q12-b-i",
+        "review_sha256": "af37637aa4809424867b6c6f0a10f34b0311a3ec6fe7b4f557feeaf6d81e4b72",
+        "record_sha256": "f49de4823bec6b64a5cc82260c61b5137d5ae0889bd89dcb2f3ed95c007be8d1",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-005.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T14:02:43.907056+01:00",
+        "reason": "Coordinator read full MDR/cache/bus prompts and mark points plus exact corresponding scope; checked cached-copy/hit rationale and read address-control-data roles. Only specified cache/register/bus aspects credited, full FDE and all cache levels remain unestablished.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q12-b-ii",
+      "record_sha256": "c344ac3bfac0036cde9b75ae2cc8e552c512311f116170dccd759c24d82e4a24",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:53:32.079817+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.1.4",
+          "scope_bullet_id": "A1.1.4:G01",
+          "exact_guidance": "• Random-access memory (RAM), read only memory (ROM), cache (L1, L2, L3), registers",
+          "assessed_skill": "Explain cache purpose using repeated instruction access.",
+          "relevance": "partial",
+          "evidence": "Cache function tested but levels L1/L2/L3 and other primary memories not distinguished."
+        },
+        {
+          "code": "A1.1.4",
+          "scope_bullet_id": "A1.1.4:G02",
+          "exact_guidance": "• The interaction of the CPU with different types of memory to optimize performance",
+          "assessed_skill": "Explain CPU cache hits reducing slower main-RAM access waiting.",
+          "relevance": "direct",
+          "evidence": "Connects cached instruction copies, faster hits and lower CPU waiting to performance; no unsupported universal speedup guarantee."
+        },
+        {
+          "code": "A1.1.4",
+          "scope_bullet_id": "A1.1.4:G03",
+          "exact_guidance": "• The relevance of the terms “cache miss” and “cache hit”",
+          "assessed_skill": "Use cache-hit behaviour to explain repeated instruction performance.",
+          "relevance": "partial",
+          "evidence": "Hit meaning/effect assessed; cache miss is not explicitly requested or independently marked."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Temporal reuse can be served from faster cache when the relevant instruction is resident; lower access latency reduces waiting. Benefit depends on hits/access pattern."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Model answer gives retained copies, faster hit access versus RAM, and performance consequence, supporting Explain3."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Three1-mark linked explanation elements total3. Repetition of faster access alone cannot earn both mechanism and consequence without explanation."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q12-b-ii.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q12-b-ii.json": "c344ac3bfac0036cde9b75ae2cc8e552c512311f116170dccd759c24d82e4a24",
+        "question-bank/questions/P-SRC001-Q12-b-ii.json": "f2e4f786ec9c9285846ae41372ab672d719f99f2e1b9c0690f0164b2f973c1d7",
+        "question-bank/markschemes/P-SRC001-Q12-b-ii.json": "af65e8e002c3c838c031513f97fba1e3789f647fb7fa03805e838a1dc24ed36c",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q12-b-ii.json": "d37f3c6ae9791557b6a87fddf273d8c4eb99a881178d0333b0c6cf5a29543ce5"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC001-Q12-b-ii",
+        "review_sha256": "91561ff3d4f33c0bdbbc8336e5879e8229fade0436eb2735affe02868b796f6e",
+        "record_sha256": "c344ac3bfac0036cde9b75ae2cc8e552c512311f116170dccd759c24d82e4a24",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-005.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T14:02:43.907056+01:00",
+        "reason": "Coordinator read full MDR/cache/bus prompts and mark points plus exact corresponding scope; checked cached-copy/hit rationale and read address-control-data roles. Only specified cache/register/bus aspects credited, full FDE and all cache levels remain unestablished.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q12-b-iii",
+      "record_sha256": "4753c1ee64a1eafaecac6d67c15382442fdd8d320da480730935fd483820229b",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:53:32.080192+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.1.1",
+          "scope_bullet_id": "A1.1.1:G03",
+          "exact_guidance": "• Buses: address, data, control",
+          "assessed_skill": "Explain address/data/control bus roles in one CPU memory-read operation.",
+          "relevance": "direct",
+          "evidence": "All three named buses receive distinct roles and coordination; does not test processor types, all registers or a hardware diagram."
+        },
+        {
+          "code": "A1.1.5",
+          "scope_bullet_id": "A1.1.5:G02",
+          "exact_guidance": "• The interaction between memory and registers via the three buses: address, data, control",
+          "assessed_skill": "Explain part of memory/register interaction during fetch-related memory read.",
+          "relevance": "partial",
+          "evidence": "Addresses/read signal/returned word/coordination assessed; full PC→MAR→MDR→IR register-transfer sequence and decode/execute absent."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Address bus selects location; control bus requests read/coordinates; memory data is carried back by data bus to MDR. These roles are consistent in the stated simplified CPU model."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Four listed points correctly describe three bus roles plus timing/coordination; no read/write direction confusion."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Four1-mark components total4. Control command and coordination are distinguishable when each explained; avoid double-credit for repeating read signal alone."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q12-b-iii.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Units: arithmetic logic unit (ALU), control unit (CU)",
+        "• Registers: instruction register (IR), program counter (PC), memory address register (MAR), memory data register (MDR), accumulator (AC)",
+        "• Processors: single core processor, multi-core processor, co-processors",
+        "• A diagrammatic representation of the relationship between the specified CPU components",
+        "• The basic operations a CPU performs to execute a single instruction in machine language"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q12-b-iii.json": "4753c1ee64a1eafaecac6d67c15382442fdd8d320da480730935fd483820229b",
+        "question-bank/questions/P-SRC001-Q12-b-iii.json": "7c3436eb0fb57ffca603680f7d73901db67b57bc86bf60801b555e7dbec48829",
+        "question-bank/markschemes/P-SRC001-Q12-b-iii.json": "3372827928b24c80b08cb00dcf5f2e74969750488378c6f918bfe855b4fa6f89",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q12-b-iii.json": "8757a9dd6b11329db617ee4f3d2a5be864de177b94e1841f9251c331706e1426"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC001-Q12-b-iii",
+        "review_sha256": "91d512be1e5f7827bab87489a12e967cf554e28733364e9b6bdfbeda17ea49af",
+        "record_sha256": "4753c1ee64a1eafaecac6d67c15382442fdd8d320da480730935fd483820229b",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-005.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T14:02:43.907056+01:00",
+        "reason": "Coordinator read full MDR/cache/bus prompts and mark points plus exact corresponding scope; checked cached-copy/hit rationale and read address-control-data roles. Only specified cache/register/bus aspects credited, full FDE and all cache levels remain unestablished.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q13-a-i",
+      "record_sha256": "db24aa0b9d61d79be38eeee07582f637bb408a2cb86fdf53bdef7b36ef17e6f7",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:54:04.514946+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.3.6",
+          "scope_bullet_id": "A1.3.6:G01",
+          "exact_guidance": "• The input, process, output, and feedback mechanism (open-loop, closed-loop)",
+          "assessed_skill": "Identify measured feedback input and a human target-setting input to greenhouse control.",
+          "relevance": "partial",
+          "evidence": "Two input components only; input/process/output and open/closed-loop comparison not required."
+        },
+        {
+          "code": "A1.3.6",
+          "scope_bullet_id": "A1.3.6:G02",
+          "exact_guidance": "• Controller, sensors, actuators, transducers and control algorithm",
+          "assessed_skill": "Identify a soil-moisture sensor/transducer and operator input interface.",
+          "relevance": "partial",
+          "evidence": "Sensor identification assessed, but transduction mechanism/controller/actuator/control algorithm role not explained."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "A moisture sensor provides measured environmental input, and an operator interface supplies a setpoint. The two serve distinct input roles."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Soil-moisture sensor plus keypad/touchscreen/appropriate target-setting interface are valid independent components."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Two1-mark criteria total2; equivalent sensor and operator-interface types accepted. Not two arbitrary sensors, because target-setting requirement explicit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q13-a-i.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q13-a-i.json": "db24aa0b9d61d79be38eeee07582f637bb408a2cb86fdf53bdef7b36ef17e6f7",
+        "question-bank/questions/P-SRC001-Q13-a-i.json": "e797916db5d1ae1a019c6f021cf121dd6cf7a4db917868b813c41b937ca41240",
+        "question-bank/markschemes/P-SRC001-Q13-a-i.json": "47d45e99c156ad3ea999dc24e20970f21716df6fb4502cf6c0fca4a44a83743f",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q13-a-i.json": "eb263211b6f4d019cdbcbfc96a729517ad3936fca722aaa285cfa3b6cebfedd8"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC001-Q13-a-i",
+        "review_sha256": "8d30d4fa8520a15d63332d2ecd3b396118f9e7f4ab3a78354ade66b8db6d5d01",
+        "record_sha256": "db24aa0b9d61d79be38eeee07582f637bb408a2cb86fdf53bdef7b36ef17e6f7",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-006.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T14:02:44.391701+01:00",
+        "reason": "Coordinator read complete moisture input/controller questions, criteria and both control-system scope bullets; confirmed target/input/sensor/comparison/actuator/feedback roles. Added partial A1.3.7 irrigation evidence is valid but does not certify all applications or whole Explain statement. All17 owned source001 A records reviewed.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q13-a-ii",
+      "record_sha256": "f204e96c881941bb2a68b46a4f2e85cb9a8f14da5c9d171f47ae3af4fc33a12b",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:54:04.515351+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.3.6",
+          "scope_bullet_id": "A1.3.6:G01",
+          "exact_guidance": "• The input, process, output, and feedback mechanism (open-loop, closed-loop)",
+          "assessed_skill": "Describe closed-loop input/process/output feedback maintaining soil moisture.",
+          "relevance": "partial",
+          "evidence": "Reads measurement/target, compares and actuates irrigation, then uses repeated measurement to stop; no open-loop comparison."
+        },
+        {
+          "code": "A1.3.6",
+          "scope_bullet_id": "A1.3.6:G02",
+          "exact_guidance": "• Controller, sensors, actuators, transducers and control algorithm",
+          "assessed_skill": "Describe controller algorithm relating sensor data to irrigation-actuator decisions.",
+          "relevance": "partial",
+          "evidence": "Controller/sensor/actuator/algorithm interaction tested; transducer physical conversion not tested."
+        },
+        {
+          "code": "A1.3.7",
+          "scope_bullet_id": "A1.3.7:G01",
+          "exact_guidance": "• Examples may include autonomous vehicles, home thermostats, automatic elevator controllers, automatic washing machines, traffic signal control systems, irrigation control systems, home security systems, automatic doors.",
+          "assessed_skill": "Describe application of control-system components and feedback to greenhouse irrigation.",
+          "relevance": "partial",
+          "evidence": "One explicit listed real-world application assessed; question uses Describe3 rather than extended explanation of several applications. Non-exhaustive may-include examples not all required."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Comparing measured moisture with target and actuating water supply with repeated feedback is a coherent closed-loop irrigation model. No need for advanced control mathematics or specialized hysteresis."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Input readings/target, algorithm comparison and actuator/feedback outcome correctly describe the requested controller role."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Three1-mark components total3. Correct equivalent threshold/feedback control explanations accepted; feedback expands actuator decision but is not credited twice."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q13-a-ii.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q13-a-ii.json": "f204e96c881941bb2a68b46a4f2e85cb9a8f14da5c9d171f47ae3af4fc33a12b",
+        "question-bank/questions/P-SRC001-Q13-a-ii.json": "dd964b15609f4b063d91bad2907a9871d912fc0843bbd8dfc6ef6a0931ed21ed",
+        "question-bank/markschemes/P-SRC001-Q13-a-ii.json": "1e22cc5f843ee7a053ff20fd1342b156c433bd7545c9f41191f29f4ed9f902bf",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q13-a-ii.json": "1612acec29e37b673ea32e42bfe5be63ce1fa8f5fb526b310110ca8d2806f2d5"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC001-Q13-a-ii",
+        "review_sha256": "8f00ad2bfba55261783641a783454c76d1fb0b8f6b9ea7014cde3ec0ec6b0db0",
+        "record_sha256": "f204e96c881941bb2a68b46a4f2e85cb9a8f14da5c9d171f47ae3af4fc33a12b",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-006.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T14:02:44.391701+01:00",
+        "reason": "Coordinator read complete moisture input/controller questions, criteria and both control-system scope bullets; confirmed target/input/sensor/comparison/actuator/feedback roles. Added partial A1.3.7 irrigation evidence is valid but does not certify all applications or whole Explain statement. All17 owned source001 A records reviewed.",
         "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
       }
     },
@@ -482,6 +1653,450 @@
         "coordinator": "/root",
         "reviewed_at": "2026-11-04T13:52:20.666761+01:00",
         "reason": "Coordinator compared actual prompts, complete criteria and exact guide B2.1.4/B2.2.1/B2.4.5 guidance; independently traced and executed suffix_product (40 and base1); confirmed conditional memory-resizing costs and breakpoint purposes. Scope limits and pending original-source provenance remain.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q14-c",
+      "mappings": [
+        {
+          "code": "B2.4.2",
+          "guidance_index": 1,
+          "assessed_skill": "Use binary-search interval halving, without explicit efficiency comparison",
+          "relevance": "supporting",
+          "evidence": "Binary search implementation supplies material for an efficiency comparison, but no complexity/comparison is asked.",
+          "coverage_limit": "Does not directly assess differences in efficiency between linear and binary search.",
+          "scope_bullet_id": "B2.4.2:G01",
+          "exact_guidance": "• The differences in efficiency between different methods of linear and binary search",
+          "statement": "Construct and trace algorithms to implement a linear search and a binary search for data retrieval.",
+          "mapping_verification_status": "verified",
+          "statement_relevance": "direct",
+          "statement_evidence": "Actual prompt requires construction of iterative binary search; this directly assesses the statement construction skill but no efficiency comparison."
+        },
+        {
+          "code": "B2.4.2",
+          "guidance_index": 2,
+          "assessed_skill": "Use a given binary-search choice with sorted input",
+          "relevance": "supporting",
+          "evidence": "Ascending input given, algorithm chosen by prompt.",
+          "coverage_limit": "Does not ask candidate to select or justify a technique based on efficiency.",
+          "scope_bullet_id": "B2.4.2:G02",
+          "exact_guidance": "• Use of search technique based on efficiency requirements—for example, searching a database for a sorted/indexed list of names to find a phone number, versus searching by the number to identify the name",
+          "statement": "Construct and trace algorithms to implement a linear search and a binary search for data retrieval.",
+          "mapping_verification_status": "verified",
+          "statement_relevance": "direct",
+          "statement_evidence": "Actual prompt requires construction of iterative binary search; this directly assesses the statement construction skill but no efficiency comparison."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "Actual code passed exhaustive sorted small arrays including empty, one element, duplicates, present/missing/end targets.",
+        "Six independent criteria cover bounds, termination, middle, equality, branch update and absence return.",
+        "Alternative half-open binary search must be accepted under generic alternatives."
+      ],
+      "execution_evidence": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_009.json",
+      "issues": [],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T12:50:20.502454+00:00",
+      "record_sha256": "be0c8cb622e2704061ae021814f1bddb5d2c7402a04cb2704381e8533890bce8",
+      "record_path": "question-bank/records/P-SRC001-Q14-c.json",
+      "original_syllabus_codes": [
+        "B2.4.2"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 6,
+        "marking_point_sum": 6,
+        "status": "pass"
+      },
+      "revision": 3,
+      "revision_reason": "Explicit statement_relevance/statement_evidence fields for search importer; previous full review preserved.",
+      "previous_revision_path": "agents/chunk-3/agent-2-theme-b/review_history/P-SRC001-Q14-c.rev001.json",
+      "statement_mappings": [
+        {
+          "code": "B2.4.2",
+          "relevance": "direct",
+          "evidence": "Actual prompt requires construction of iterative binary search; this directly assesses the statement construction skill but no efficiency comparison."
+        }
+      ],
+      "coordinator_review": {
+        "question_id": "P-SRC001-Q14-c",
+        "review_sha256": "b36f6e00cc54714c10ff07853347cc72b07a80f7933dfc9a18b80b34a23c34b9",
+        "record_sha256": "be0c8cb622e2704061ae021814f1bddb5d2c7402a04cb2704381e8533890bce8",
+        "source_path": "agents/chunk-3/agent-2-theme-b/question_reviews.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T14:04:43.842660+01:00",
+        "reason": "Coordinator read actual prompts/full criteria/mappings and independently executed binary search and row counting across exhaustive small-domain oracle cases. Binary construction statement directly assessed but efficiency guidance supporting only. List suitability is not physical fixed memory; Q15-b missing explicit 2D shape remains an issue.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q15-a",
+      "mappings": [
+        {
+          "code": "B2.2.1",
+          "guidance_index": 2,
+          "assessed_skill": "Explain suitability of fixed known dimensions",
+          "relevance": "partial",
+          "evidence": "Known seat count avoids needing conceptual growth; answer discusses indexed locations and one logical slot per seat.",
+          "coverage_limit": "No direct comparison to dynamic data structures, no resize/memory-allocation mechanism; cannot count as full static/dynamic comparison.",
+          "scope_bullet_id": "B2.2.1:G02",
+          "exact_guidance": "• The advantages and disadvantages of each type in various scenarios, considering factors such as speed, memory usage, flexibility",
+          "statement": "Compare static and dynamic data structures.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.2.2",
+          "guidance_index": 2,
+          "assessed_skill": "Explain row/column representation in Python list",
+          "relevance": "supporting",
+          "evidence": "A two-dimensional list maps row and seat coordinates.",
+          "coverage_limit": "Question outlines suitability rather than constructs a program using lists.",
+          "scope_bullet_id": "B2.2.2:G02",
+          "exact_guidance": "• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python",
+          "statement": "Construct programs that apply arrays and Lists.",
+          "mapping_verification_status": "verified"
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "12×8 gives 96 logical seat entries; answer does not require fixed physical byte count or claim Python lists cannot resize.",
+        "Row/seat lookup and compact logical booking-state representation are valid two developed reasons."
+      ],
+      "issues": [
+        {
+          "severity": "low",
+          "dimension": "technical",
+          "detail": "Retain logical element wording; do not rephrase as exact physical memory allocation because Python list/object overhead is implementation dependent."
+        }
+      ],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T12:50:20.503244+00:00",
+      "record_sha256": "6ff4a7103292487227b399d10032089510a7ce0d7cf468436d2a40834aaf26af",
+      "record_path": "question-bank/records/P-SRC001-Q15-a.json",
+      "original_syllabus_codes": [
+        "B2.2.1",
+        "B2.2.2"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 4,
+        "marking_point_sum": 4,
+        "status": "pass"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC001-Q15-a",
+        "review_sha256": "93ea80f935eeb44053cacf79e06ba7911df129892b108ab195cd554733caeb75",
+        "record_sha256": "6ff4a7103292487227b399d10032089510a7ce0d7cf468436d2a40834aaf26af",
+        "source_path": "agents/chunk-3/agent-2-theme-b/question_reviews.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T14:04:43.842660+01:00",
+        "reason": "Coordinator read actual prompts/full criteria/mappings and independently executed binary search and row counting across exhaustive small-domain oracle cases. Binary construction statement directly assessed but efficiency guidance supporting only. List suitability is not physical fixed memory; Q15-b missing explicit 2D shape remains an issue.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q15-b",
+      "mappings": [
+        {
+          "code": "B2.2.2",
+          "guidance_index": 2,
+          "assessed_skill": "Access one row of a 2D list and traverse its entries",
+          "relevance": "direct",
+          "evidence": "Solution iterates bookings[row].",
+          "coverage_limit": "No list mutation or dynamic removal.",
+          "scope_bullet_id": "B2.2.2:G02",
+          "exact_guidance": "• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python",
+          "statement": "Construct programs that apply arrays and Lists.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.2.2",
+          "guidance_index": 3,
+          "assessed_skill": "Traverse list elements",
+          "relevance": "direct",
+          "evidence": "Every seat in selected row inspected exactly once.",
+          "coverage_limit": "Does not add/remove elements.",
+          "scope_bullet_id": "B2.2.2:G03",
+          "exact_guidance": "• Add, remove and traverse elements in a dynamic list",
+          "statement": "Construct programs that apply arrays and Lists.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.3.3",
+          "guidance_index": 1,
+          "assessed_skill": "Construct a finite for-each loop over a row",
+          "relevance": "direct",
+          "evidence": "for kind in bookings[row] performs one iteration per item.",
+          "coverage_limit": "Not an explicitly indexed counted loop or pre/post-condition loop; do not return this as evidence of all loop forms.",
+          "scope_bullet_id": "B2.3.3:G01",
+          "exact_guidance": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type",
+          "statement": "Construct programs that utilize looping structures to perform repeated actions.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.3.3",
+          "guidance_index": 2,
+          "assessed_skill": "Conditional counting inside loop",
+          "relevance": "direct",
+          "evidence": "if kind == D increments count only for matching entries.",
+          "coverage_limit": "Only equality predicate, not all Boolean/relational combinations.",
+          "scope_bullet_id": "B2.3.3:G02",
+          "exact_guidance": "• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "statement": "Construct programs that utilize looping structures to perform repeated actions.",
+          "mapping_verification_status": "verified"
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "issue",
+          "evidence": "needs_context_repair; concrete issue recorded in review."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "Actual code passed 364 exhaustive row cases including no matches/all matches and unchanged data.",
+        "Four mark points correctly separate initialization, traversal, selection increment and final return."
+      ],
+      "execution_evidence": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_009.json",
+      "issues": [
+        {
+          "severity": "medium",
+          "dimension": "markscheme",
+          "detail": "Self-contained database prompt should explicitly state bookings is a two-dimensional list of single-character booking codes; row-valid precondition alone refers to implied inherited context. Algorithm/criteria correct given that intended input shape."
+        }
+      ],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T12:50:20.503309+00:00",
+      "record_sha256": "5920ae66d0ea346504b4c4b17b4b155537f267b9d1feec2184e13ddcd54dd028",
+      "record_path": "question-bank/records/P-SRC001-Q15-b.json",
+      "original_syllabus_codes": [
+        "B2.2.2",
+        "B2.3.3"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 4,
+        "marking_point_sum": 4,
+        "status": "pass"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC001-Q15-b",
+        "review_sha256": "ac96e7975a90628bb707664f9398f77ea8e24c6a5b3c25404f4fa6c4c00b628a",
+        "record_sha256": "5920ae66d0ea346504b4c4b17b4b155537f267b9d1feec2184e13ddcd54dd028",
+        "source_path": "agents/chunk-3/agent-2-theme-b/question_reviews.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T14:04:43.842660+01:00",
+        "reason": "Coordinator read actual prompts/full criteria/mappings and independently executed binary search and row counting across exhaustive small-domain oracle cases. Binary construction statement directly assessed but efficiency guidance supporting only. List suitability is not physical fixed memory; Q15-b missing explicit 2D shape remains an issue.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q15-c",
+      "mappings": [
+        {
+          "code": "B2.2.2",
+          "guidance_index": 2,
+          "assessed_skill": "Construct nested Python list traversal",
+          "relevance": "direct",
+          "evidence": "Entire rectangular2D list is traversed by row and seat.",
+          "coverage_limit": "No direct indexing, mutation or dynamic removal.",
+          "scope_bullet_id": "B2.2.2:G02",
+          "exact_guidance": "• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python",
+          "statement": "Construct programs that apply arrays and Lists.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.2.2",
+          "guidance_index": 3,
+          "assessed_skill": "Traverse list entries without modifying source",
+          "relevance": "direct",
+          "evidence": "Prompt explicitly preserves bookings; code reads every element.",
+          "coverage_limit": "No add/remove operation required.",
+          "scope_bullet_id": "B2.2.2:G03",
+          "exact_guidance": "• Add, remove and traverse elements in a dynamic list",
+          "statement": "Construct programs that apply arrays and Lists.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.3.2",
+          "guidance_index": 1,
+          "assessed_skill": "Construct mutually exclusive tariff selection",
+          "relevance": "direct",
+          "evidence": "S,D,C values select distinct increments; X deliberately adds zero.",
+          "coverage_limit": "Sample uses if/elif without final else; does not assess every selection form.",
+          "scope_bullet_id": "B2.3.2:G01",
+          "exact_guidance": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions",
+          "statement": "Construct programs utilizing appropriate selection structures.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.3.2",
+          "guidance_index": 2,
+          "assessed_skill": "Equality conditions governing execution",
+          "relevance": "direct",
+          "evidence": "Character-code equality decides each tariff addition.",
+          "coverage_limit": "No compound Boolean operators required.",
+          "scope_bullet_id": "B2.3.2:G02",
+          "exact_guidance": "• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "statement": "Construct programs utilizing appropriate selection structures.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.3.3",
+          "guidance_index": 1,
+          "assessed_skill": "Construct nested finite for-each loops",
+          "relevance": "direct",
+          "evidence": "One pass across rows and inner pass across entries.",
+          "coverage_limit": "Does not demonstrate while/pre-condition/post-condition loop forms or explicit index counting.",
+          "scope_bullet_id": "B2.3.3:G01",
+          "exact_guidance": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type",
+          "statement": "Construct programs that utilize looping structures to perform repeated actions.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.3.3",
+          "guidance_index": 2,
+          "assessed_skill": "Select inside nested loops",
+          "relevance": "direct",
+          "evidence": "Tariff selection occurs in loop body.",
+          "coverage_limit": "Only simple equality decisions.",
+          "scope_bullet_id": "B2.3.3:G02",
+          "exact_guidance": "• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "statement": "Construct programs that utilize looping structures to perform repeated actions.",
+          "mapping_verification_status": "verified"
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "257 independent executable cases agree with tariff-dictionary oracle; no input mutation.",
+        "All seven marking points align with initialization,two traversals,three tariffs and final return."
+      ],
+      "execution_evidence": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_012.json",
+      "issues": [
+        {
+          "severity": "low",
+          "dimension": "editorial",
+          "detail": "Normalize split theatre spelling and2 D spacing; tariff semantics clear."
+        }
+      ],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T12:51:44.935756+00:00",
+      "record_sha256": "254f2bad1b90ade954f28e5641fe831cb9e1b884f3ea9680d3ea0be5b952ecce",
+      "record_path": "question-bank/records/P-SRC001-Q15-c.json",
+      "original_syllabus_codes": [
+        "B2.2.2",
+        "B2.3.2",
+        "B2.3.3"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 7,
+        "marking_point_sum": 7,
+        "status": "pass"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC001-Q15-c",
+        "review_sha256": "6f3c6b3157fbc55dd6621632c124f10c4bb5947ccc258a0e2b4e4b5cd1670e06",
+        "record_sha256": "254f2bad1b90ade954f28e5641fe831cb9e1b884f3ea9680d3ea0be5b952ecce",
+        "source_path": "agents/chunk-3/agent-2-theme-b/question_reviews.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T14:04:44.354669+01:00",
+        "reason": "Coordinator read complete rectangular-list tariff prompt, answer/7 criteria/all scope limits; independent exhaustive tariff oracle and no-mutation checks passed. Only for-each traversal/simple selection assessed, not all counted/pre/post loops; split-word editorial issue retained. All10 source001 B records now individually integrated.",
         "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
       }
     }

@@ -1,7 +1,18 @@
 # Local immutable source copies and rendered verification evidence are retained
 # on disk and hash-inventoried, but not duplicated into the Git checkpoint.
-sources/**/*.pdf
-**/*.png
 **/__pycache__/
 audits/GIT_CHECKPOINT.md
 audits/chunk-2/GIT_CHECKPOINT.md
+
+# Portable handover: keep all authorized source PDFs and durable image evidence.
+**/.DS_Store
+**/*.pyc
+**/*.pyo
+**/*.tmp
+**/*-journal
+**/*-wal
+**/*-shm
+**/.env
+**/.env.*
+**/.venv/
+**/node_modules/

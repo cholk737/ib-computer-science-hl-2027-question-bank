@@ -135,7 +135,8 @@ def main():
         'merged_mapping_rows': sum(len(r['mappings']) for r in merged),
     }
     atomic(A / 'SCOPE_INTEGRATION_STATUS.json', json.dumps(report, indent=2) + '\n')
-    print(json.dumps(report, indent=2))
+    print(json.dumps({**{k: v for k, v in report.items() if k != 'unapproved_ids'},
+                      'unapproved_count': len(report['unapproved_ids'])}, indent=2))
 
 
 if __name__ == '__main__':

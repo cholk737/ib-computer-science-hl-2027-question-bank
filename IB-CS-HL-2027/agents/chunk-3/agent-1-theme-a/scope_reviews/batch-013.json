@@ -1,0 +1,197 @@
+{
+  "checkpoint": "A-RECORDS-013",
+  "reviews": [
+    {
+      "question_id": "P-SRC002-Q04-e",
+      "record_sha256": "2dc138dfce33c57f4fc6275f87f83d8752e97f977965b2cf0a0bc9b3a1444b3d",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:00:11.947779+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.4.3",
+          "scope_bullet_id": "A3.4.3:G01",
+          "exact_guidance": "• Data mining techniques must include classification, clustering, regression, association rule discovery, sequential pattern discovery, anomaly detection (note: This links to “A4 Machine learning”).",
+          "assessed_skill": "Describe anomaly detection against a baseline to flag unusual changes.",
+          "relevance": "partial",
+          "evidence": "Only anomaly detection among six required mining techniques; no credit for classification/clustering/regression/association/sequential patterns."
+        },
+        {
+          "code": "A3.4.3",
+          "scope_bullet_id": "A3.4.3:G02",
+          "exact_guidance": "• The uses of the techniques in extracting meaningful information from large data sets",
+          "assessed_skill": "Interpret unusual change records as investigation leads rather than proof of infringement.",
+          "relevance": "direct",
+          "evidence": "Scenario requires interpreting information extracted from data and limits of what the flag establishes."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Anomaly detection flags departures from an expected pattern; difference from baseline does not establish legal ownership/copying. No specific law needed."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Compare with normal patterns and flag departures for review accurately answers Describe2 with explicit inferential limit."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Two1-mark criteria total2 and combine method with appropriate interpretation; no marks for claiming deviation proves misconduct."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q04-e.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q04-e.json": "2dc138dfce33c57f4fc6275f87f83d8752e97f977965b2cf0a0bc9b3a1444b3d",
+        "question-bank/questions/P-SRC002-Q04-e.json": "976517676259b16c3ca493bb01d941f597d6eee76ac93cc4453d39cde3dcf585",
+        "question-bank/markschemes/P-SRC002-Q04-e.json": "3d4646eacf91b71b6c04f527beea6302f806badb8d6226590200b66a426d0f47",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q04-e.json": "e676289267b54a9fe41afc5a915468e90589a5dc8c6a0d7eb522cb32b343d6ac"
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q04-f",
+      "record_sha256": "0f373f19aa461b269264aec9eb60b7a730035a13e886979aae63d3658ecd1d86",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:00:11.948450+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A4.3.2",
+          "scope_bullet_id": "A4.3.2:G01",
+          "exact_guidance": "• K-Nearest Neighbours (K-NN) and decision trees algorithms to categorize new data points, based on patterns learned from existing labelled data",
+          "assessed_skill": "Compare labelled supervised category prediction with unsupervised discovery.",
+          "relevance": "partial",
+          "evidence": "General labelled classification properties tested, not K-NN/decision-tree operation. No algorithm-specific coverage inferred."
+        },
+        {
+          "code": "A4.3.4",
+          "scope_bullet_id": "A4.3.4:G01",
+          "exact_guidance": "• Clustering techniques in unsupervised learning group data based on feature similarities",
+          "assessed_skill": "Explain clustering by feature similarity without target labels and contrast outputs with predefined classes.",
+          "relevance": "direct",
+          "evidence": "Clustering mechanism and interpretation explicitly assessed in support-request context; no need to force purchasing example."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Classification targets predefined labels from supervised examples; clustering groups similar feature vectors without supplied target categories. Both can analyze the same request features for different goals."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "One similarity plus label/training/output distinctions and cluster interpretation provides appropriate Compare5 depth."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Five1-mark points total5 cover similarity and meaningful paired distinctions; clustering without labels does not mean no features or no human interpretation."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q04-f.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Real-world applications of K-NN may include collaborative filtering recommendation systems.",
+        "• Real-world applications of decision trees may include medical diagnosis based on a patient’s symptoms.",
+        "• Real-world applications of clustering may include using purchasing data to segment a customer base."
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q04-f.json": "0f373f19aa461b269264aec9eb60b7a730035a13e886979aae63d3658ecd1d86",
+        "question-bank/questions/P-SRC002-Q04-f.json": "0e861c8151beb3e139ae9d393d73d2642c2154d797e369612eca2c58dadbca40",
+        "question-bank/markschemes/P-SRC002-Q04-f.json": "d94f48d77c865dac07d78cce9d8ac9dcbc9c86a39fa2fb01fd1a7490a9e37bfa",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q04-f.json": "2b15113f2837518eeb0553a226d36401777b3a093a8453ecdf1503aea11d3069"
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q07-c",
+      "record_sha256": "9984c608bd4ddfcca3caf9b3d3380ddac6d8315a2c2ea760a8a15095f0d332c5",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:00:11.949020+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.1.2",
+          "scope_bullet_id": "A1.1.2:G01",
+          "exact_guidance": "• The architecture that allows graphics processing units (GPUs) to handle specific tasks and makes them suitable for complex computations",
+          "assessed_skill": "Explain GPU parallel computation suitability for a large numerical simulation.",
+          "relevance": "direct",
+          "evidence": "Numerous similar numerical operations can run in parallel; prompt does not assert every simulation is parallelizable."
+        },
+        {
+          "code": "A1.1.2",
+          "scope_bullet_id": "A1.1.2:G02",
+          "exact_guidance": "• Real-world scenarios may include video games, artificial intelligence (AI), large simulations and other applications that require graphics rendering and machine learning.",
+          "assessed_skill": "Apply GPU architecture to a large-simulation real-world workload.",
+          "relevance": "direct",
+          "evidence": "Large simulation is a listed may-include example; evidence is assessed parallel workload, not example-name mention alone."
+        },
+        {
+          "code": "A1.1.4",
+          "scope_bullet_id": "A1.1.4:G01",
+          "exact_guidance": "• Random-access memory (RAM), read only memory (ROM), cache (L1, L2, L3), registers",
+          "assessed_skill": "Outline RAM capacity holding a large model working state.",
+          "relevance": "partial",
+          "evidence": "RAM purpose/capacity only; no ROM/cache levels/register purposes or cache hits/misses."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "RAM stores actively used simulation state; a suitable GPU accelerates parallel numerical calculations. Working-set capacity and compute throughput are distinct requirements."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Two developed roles (RAM state/model size and GPU parallel workload) appropriately answer Outline4."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Four1-mark criteria total4 with two role+context pairs; no ban on CPU participation or guarantee GPU always faster."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q07-c.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• The interaction of the CPU with different types of memory to optimize performance",
+        "• The relevance of the terms “cache miss” and “cache hit”"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q07-c.json": "9984c608bd4ddfcca3caf9b3d3380ddac6d8315a2c2ea760a8a15095f0d332c5",
+        "question-bank/questions/P-SRC002-Q07-c.json": "40edce1133a2fb55760b7d3ce0da17e78a43fe92b76f150023444a49077216a3",
+        "question-bank/markschemes/P-SRC002-Q07-c.json": "3488c6ceb32364376c52fcfb8ff0d2be12d0b64758f587d2ca5f635eab496ba3",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q07-c.json": "8ef63e672d02be715d97d887d7c18adf493123094d5d8243884cb2d1bfe72372"
+      }
+    }
+  ]
+}

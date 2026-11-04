@@ -1,0 +1,537 @@
+{
+  "reviewer": "/root/searchable_bank_audit",
+  "date": "2026-11-04",
+  "kind": "bounded independent Chunk3 mapping/review integration audit; not Chunk4 full bank certification",
+  "reviews": [
+    {
+      "question_id": "P-SRC002-Q01-a",
+      "author_review_sha256": "ff0977fccd0659a48e4f920d1c1d7202e6d94bc78ac9ffef7e0943e7268ea7dc",
+      "record_sha256": "b156144f2a2cb3498e48fd30c72653fe19fc86835e676dc9b9cbdcee7f92c1ee",
+      "author_review_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-007.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "Two independently marked ERD relationships require supervisor1→manyproduction and production1→manyeditor, with mandatory participation explicitly given. Direct relationship/cardinality aspects match A3.2.2 G02/G03; no claim of design-significance G01.",
+      "technical_issue_flags_retained": [],
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q01-b",
+      "author_review_sha256": "0543df52f5d98d996aaeb27820c8eb5dda694f11a40e0e800b707a2954c5c2c9",
+      "record_sha256": "cb71afa26ba739867ed7604b0f303e1678eb0ef399bb4e627908215c5690fad3",
+      "author_review_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-007.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "Actual2mark outline asks one benefit in change-history context. Consistent retrieval/coordination is among listed A3.1.1 benefits, so partial aspect mapping is appropriate; neither database features nor limitations are assessed.",
+      "technical_issue_flags_retained": [],
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q01-c",
+      "author_review_sha256": "763fe263d5ef98cc4a16f9a909a99dcafb0268b1259cd5df9794c373f588fd76",
+      "record_sha256": "6772c7e5154e71e62ca78d357590c6fd49198cb6eb8c20e2d3e010585cd11503",
+      "author_review_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-007.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "Version7/current8 comparison and stale rejection/retry prevent lost update, an isolation/data-integrity aspect. Supplied version mechanism is contextual scaffolding, not an added syllabus requirement. Partial A3.3.6 G01 mapping avoids certifying all ACID or TCL commands.",
+      "technical_issue_flags_retained": [],
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q01-d",
+      "author_review_sha256": "6baaa3d1001625c0587d077fe551457447de1d05c6cd3ef4671f9fc8e741c7ff",
+      "record_sha256": "2e3ead3a71dc07a8b9ea1c0514b97f2dfe707c1ee830ea4efa12093c40ece35e",
+      "author_review_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-008.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "Five criteria require lock before conflict, waiting, reading/updating current data after serialization, commit boundary and lost-update/isolation explanation. Answer correctly includes ordered read/update, avoiding the misconception that an update-only lock repairs a prior stale read. Partial ACID+COMMIT mapping is appropriately bounded.",
+      "technical_issue_flags_retained": [],
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q01-e-i",
+      "author_review_sha256": "0f7a1e58444728cb903c9a7ab55a5fd158e9c0428c6ebd4c4e8ab2163e88074a",
+      "record_sha256": "a20d7a50918d08b500162bbd7411c7fefc7e52efbeed165f0a4f0531f21d0057",
+      "author_review_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-008.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "Consistency preserves defined integrity rules; transfer conserving the two-account total is a valid contextual invariant. Two independent points match Outline2. Partial ACID-consistency aspect does not establish atomicity/isolation/durability.",
+      "technical_issue_flags_retained": [],
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q01-e-ii",
+      "author_review_sha256": "c05d7ab3567b3aedd2186af71d3b10f1fc3eea942162074e51d5ba2845c43c46",
+      "record_sha256": "e167a1990e8feee25988643f848492c096fb79629e5fa507c68871211ffe910b",
+      "author_review_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-008.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "ROLLBACK of uncommitted debit restores both prior balances, so the3points address uncommitted scope, undo and consistent restoration. Partial atomicity/consistency plus ROLLBACK criteria align; no unsupported claim about undoing an already committed transfer.",
+      "technical_issue_flags_retained": [],
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q02-a",
+      "author_review_sha256": "5f45ff39ee0adb67b0814ff62f355a21fa144595279cafd1c6253bedfad00ed6",
+      "record_sha256": "d42fb45fe8bdc48e3e079a0fb810f861dbbb5a5c885d3168f9656fe5dbe443cd",
+      "author_review_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-009.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "BuildID is explicitly unique by scenario; identifying/justifying it is a partial table-key/integrity aspect. It does not construct relationships or a complete table; partial labels must retain that limit.",
+      "technical_issue_flags_retained": [],
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q02-b",
+      "author_review_sha256": "1513a920dc96282f896536ab8c632ea569fc1d1822db2ffe3b684811ceef65a0",
+      "record_sha256": "b683fa866a9c10096be31ec0d46a75a8294fc26470d1fb9f98203dc74d38e033",
+      "author_review_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-009.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "Two-state Boolean answer is sound and2points align, but prompt does not explicitly explain type consistency or wrong-type consequences. Supporting relevance to G01 is appropriately conservative, not direct/full data-type-guidance coverage.",
+      "technical_issue_flags_retained": [],
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q02-c",
+      "author_review_sha256": "f96dfdfe79911895ddaa34cdf7de314a9d5ba728e70ba82a9b389d23302189cb",
+      "record_sha256": "cdd1f2a021001c7d680ca8747b8414cc5faeb32f4d4a5effe7e5bb55f3c0cf09",
+      "author_review_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-009.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "Actual SQL joins ClientID and AND-filters exact lead+High priority, selecting both required fields. Five criteria match construction. Partial labels correctly retain missing pattern/order/other command scope; repeated result rows explicitly permitted.",
+      "technical_issue_flags_retained": [],
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q02-d",
+      "author_review_sha256": "06ce0f2be0c212b2432e26bf67e3ade852c45d1d3241649138e83ea85663837b",
+      "record_sha256": "afa2a35f76a64db19f685a634e7b48c5662cd3e4adf6485fbe1876e502fde6bb",
+      "author_review_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-010.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "Supplied dependencies separate learner attributes, event attributes and pair-dependent completion into three relations with composite enrollmentPK and twoFKs. This removes partial-key dependencies and yields3NF under the given dependencies. Direct scenario construction is allowed by non-exhaustive may-include examples, not restricted to listed contexts.",
+      "technical_issue_flags_retained": [],
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q03-a",
+      "author_review_sha256": "f7bebc2cffff7e935e4100a3958453706662844d3d5bf5adcdc241f006a79704",
+      "record_sha256": "557111cbf2f2fb027051e757a7387606fa7255f7a496e85b1d7e894a392fda34",
+      "author_review_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-010.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "Clinic conceptual schema answer identifies entities/relationships and independence from physical implementation. Partial mappings to conceptual level/abstract organization are accurate; logical and physical schema detail/comparison is not assessed.",
+      "technical_issue_flags_retained": [],
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q03-c",
+      "author_review_sha256": "aa5e231ada65cd38a0833bb1d9a0eb24d98b5254f4d6600bcd9ad78c077a095a",
+      "record_sha256": "9fe7e3928d2deede5fbb1cb3de5aa584c0d24c0df6967ae2890cb3a417bbb6c2",
+      "author_review_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-010.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "DDL structure, typed columns and key constraints are correct implementation roles with three independent points. Partial mapping to SQL-language categories/definition is appropriate because DML and actual DDL syntax/comparison are not requested.",
+      "technical_issue_flags_retained": [],
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q03-d",
+      "author_review_sha256": "6dd1ffd91e86b8833897b0efefdb9fb65a636d43a6f8a87c904e1caa281a48a0",
+      "record_sha256": "c400965e5f77376d21e44ab16f47d20badc5345b477267cf626e73dad0dc99e3",
+      "author_review_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-011.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "Authentication, least-privilege permissions and inappropriate-rights revocation are valid distinct database-security tasks. Partial security-benefit relevance only. Retain marking issue: List3 must accept other distinct valid access controls rather than requiring exactly model categories.",
+      "technical_issue_flags_retained": "A-C3-MS-004 retained: broaden concrete alternative credit.",
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q03-e",
+      "author_review_sha256": "f50f902c3c5b1426a0a43bd29de09d2dd4bfbd6a192ccd1642ce4c2d24d24e13",
+      "record_sha256": "1e236ef7de478607d2a595f17df33385abdf9a894798c48cb72596d471ca5299",
+      "author_review_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-011.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "Restricting columns/records and read-only permissions supports confidentiality, edit prevention and simpler audit access;5criteria address these effects in context. Partial views-benefits mapping avoids unassessed virtual/materialized distinction. Protection presumes only permitted view access, not a universal property of every SQL view.",
+      "technical_issue_flags_retained": [],
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q04-a",
+      "author_review_sha256": "a0444ce1bf9f4633191844d295c6f605907f896cd7d8857839a3776b5fb6cbea",
+      "record_sha256": "83eed66b40925d68c68bc38c410d211b0d6068db01a301f4b5fafe41aad115f9",
+      "author_review_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-011.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "Aggregation, time comparisons and detail exploration are meaningful OLAP sales-analysis uses supported by the statement. Partial information-extraction relevance does not certify listed data-mining techniques. Retain alternative-marking issue: any3 distinct relevant analytical uses should count.",
+      "technical_issue_flags_retained": "A-C3-MS-005 retained: avoid rigid one-of-each model-use categories.",
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q04-b",
+      "author_review_sha256": "9eed58a5fd627aaa148a34657a2e35199ea5bd9d6d71b3f9d91c0df2c58ec21f",
+      "record_sha256": "cb14ddb6027a48f56f3d26bfc6257ff7b65f1943a944ae9dcb3edeb0610baea2",
+      "author_review_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-012.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "Historical integrated subject-oriented analysis store is an accurate concise warehouse definition. Partial objective-properties aspect is appropriate for Define1; append-only/nonvolatility/query optimization are not all examined.",
+      "technical_issue_flags_retained": [],
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q04-c",
+      "author_review_sha256": "e7f4dde05a72535b325a4be2d25fa26e805a1b7b243d67dcf48fdf61baac8f21",
+      "record_sha256": "9fb904773b0a22dd850c33b04338e93cdc80aead864356e8576276ff704d6bfa",
+      "author_review_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-012.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "Prompt explicitly asks model effects of formats, duplicates and missing observations. Answer links consistency to comparable interpretation, duplicates to weighting and justified missing treatment to valid training. Direct data-quality impact plus partial specified cleaning-technique coverage is justified; outliers/normalization/standardization remain unassessed.",
+      "technical_issue_flags_retained": [],
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q04-d",
+      "author_review_sha256": "ade23f552bacc31e7c16b6fa6463de22ff7620c4c8a27462d94823f44276a0bf",
+      "record_sha256": "575a361ff6fb5f42e78acf66d395396ed3c4dc4db60ed20b828557f7407c6e68",
+      "author_review_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-012.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "Labelled data, learned feature splits, branch traversal and leaf category directly explain decision-tree classification; partial G01 correctly leaves KNN unassessed. Retain fourth-point markscheme issue: generic evaluation must not replace the required class output mechanism.",
+      "technical_issue_flags_retained": "A-C3-MS-006 retained: leaf output versus generic evaluation credit.",
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q04-e",
+      "author_review_sha256": "f6180f6dc97b8d07b0c4689f963c370603c188443075ee0e56ef615d320bccf7",
+      "record_sha256": "2dc138dfce33c57f4fc6275f87f83d8752e97f977965b2cf0a0bc9b3a1444b3d",
+      "author_review_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-013.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "Baseline-pattern comparison and flagged deviations correctly describe anomaly detection, and explicitly distinguish an investigation lead from infringement proof. Partial named-technique list and direct interpretation/use aspect are supported, without claiming all mining techniques.",
+      "technical_issue_flags_retained": [],
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q04-f",
+      "author_review_sha256": "dfe601ab3ab2fc16f7106da8d9c461cb9749ad02e621bd8114f9f4bea5923547",
+      "record_sha256": "0f373f19aa461b269264aec9eb60b7a730035a13e886979aae63d3658ecd1d86",
+      "author_review_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-013.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "Five compare points cover shared feature use, labelled predefined categories versus unlabelled similarity groups and interpretation/discovery. Direct clustering-aspect relevance is sound; classification remains partial because noKNN/decision-tree mechanism is tested.",
+      "technical_issue_flags_retained": [],
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q05-a-ii",
+      "author_review_sha256": "6ccc155959d60ee690fce991b24f42e28b0b2955d8266cc19d8fd9f945f20589",
+      "record_sha256": "73eb2d557ec6d541bc3c614e1cd1c7a5c035bafb784b050df0bc27765a2f16d9",
+      "author_review_path": "agents/chunk-3/agent-2-theme-b/question_reviews.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "Assignment independently normalizes50/80 component scales and applies30/70 percentage weights; algebra gives0 at zero and100 at both maxima. One assignment does not assess ordering of multiple instructions, so partial statement/supporting sequencing-guidance label and explicit warning are appropriate.",
+      "technical_issue_flags_retained": "Retain low mapping caveat: arithmetic precedence is not instruction-sequencing assessment; original-source provenance pending.",
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q05-b",
+      "author_review_sha256": "90fa05edb2ed612210b10b771b26984d7aca4f83ee84ed1f173398dea814eed3",
+      "record_sha256": "3aa6b088b355869318e1753c3ed655930c76db6565d53f3dca40378c49982946",
+      "author_review_path": "agents/chunk-3/agent-2-theme-b/question_reviews.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "Ordered >=85/70/60/47 early returns partition the stated35..100 range correctly, including shared boundaries. Direct selection and numerical-condition aspects are supported without certifying allif/elif/else/Boolean forms. Retain prompt-output-method clarification issue.",
+      "technical_issue_flags_retained": "Markscheme issue retained: prompt should explicitly require returning grade string; source provenance pending.",
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q05-c",
+      "author_review_sha256": "05956f04d530bed0c61abb001d72744452a9ce8f77f3244cf84c82a300b3c174",
+      "record_sha256": "2f53934efefb47065affb96f46afe65f56b2d7a44bb18ae600e5ed76308445da",
+      "author_review_path": "agents/chunk-3/agent-2-theme-b/question_reviews.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "Isabella has no space and str.index raisesValueError rather than supplying an index. Actual demand is recognizing an input failure; supporting substring/handling-role links and direct failure-category aspect accurately avoid pretending a program/handler was constructed.",
+      "technical_issue_flags_retained": [],
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q05-d",
+      "author_review_sha256": "5b40d2584da9be8f17d09152a07b0907a167708ecd1871ff987e405caec55316",
+      "record_sha256": "ea26d2cb0963e9225db3d0e5fbfc543b755e107720b151f6ad49070f49747805",
+      "author_review_path": "agents/chunk-3/agent-2-theme-b/question_reviews.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "try returns first index, exceptValueError returnsBooleanFalse; that correctly implements both requested outcomes. Direct specific failure/handler/try-except aspects do not establish resource failures orfinally. Retain sentinel caveat: index0 andFalse compare equal but are distinct objects/types; clients must useidentity if discriminating.",
+      "technical_issue_flags_retained": "Low sentinel-use caution retained, not a defect against the explicit prompt; provenance pending.",
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q05-e",
+      "author_review_sha256": "3edb5e8488ee4d4b12a213e28366edd7b576e847ea125d1629feb6bfb0cc4342",
+      "record_sha256": "8f222044d2279d598c287e1fb6d5f009118801c67ee882f25a3f37d11f5e37d7",
+      "author_review_path": "agents/chunk-3/agent-2-theme-b/question_reviews.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "Last-space suffix extraction correctly ignores any middle tokens under the statedsingle-space first+surname format. Partial explanation-only substring mapping is accurate. Retain out-of-domain marking concern: single-token handling cannot be required when prompt promises bothfirst andsurname.",
+      "technical_issue_flags_retained": "Medium markscheme issue retained; do not require extra input-domain case for fourth mark.",
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q06-b",
+      "author_review_sha256": "424873dd058dc886af693006ca5092e0c3cd9efe5a6307d13d26ac0979e345ed",
+      "record_sha256": "3642e41760054b6d371109540bea85107222952da7e95bc6dae1649f8538c895",
+      "author_review_path": "agents/chunk-3/agent-2-theme-b/question_reviews.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "List traversal, supplied affine transform, Pythonround and append preserve order and create new output; endpoints map20→30 and80→95, with midpointPythonround62.5→62. Direct1D/list-traverse/append/finite-iteration aspects do not establish2D/removal/conditional loops. Retain omitted-return instruction issue.",
+      "technical_issue_flags_retained": "Low markscheme/prompt mismatch retained: storing a new list is explicit; returning it is only in criteria.",
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q06-d",
+      "author_review_sha256": "a5a12b0473a93d97c2e0f2b6a1bfa4de91cf0ffb0aaa8691720327f44c983b83",
+      "record_sha256": "cac3b42d817074206b9158412e8bb77ccf818c8f2b359dbeef564660a2abcc86",
+      "author_review_path": "agents/chunk-3/agent-2-theme-b/question_reviews.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "Inclusive91<=score<=100 count divided bylen(scores)*100 meets nonempty-list prompt, including zero/all qualifying cases. Direct list traversal, numerical selection and conditional count aspects are valid and bounded; no explicit counted/pre/post loop claim. Retain malformed first criterion wording.",
+      "technical_issue_flags_retained": "Low markscheme issue retained: counter initializes; scores are traversed, not the count.",
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q07-c",
+      "author_review_sha256": "6f9eb850778ccfa09631cfc201df156ebadaee79285e0173211ee25e512c7454",
+      "record_sha256": "9984c608bd4ddfcca3caf9b3d3380ddac6d8315a2c2ea760a8a15095f0d332c5",
+      "author_review_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-013.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "RAM holds model working state andGPU parallelizes suitable repeated numerical operations;4criteria distinguish capacity/workload suitability without universal speed claims. Direct GPU architecture/application and partialRAM-purpose links are accurate.",
+      "technical_issue_flags_retained": [],
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q07-e",
+      "author_review_sha256": "c2d9ef0e5157d27a7f4042cc91477ab5e0c6b66881cb56b5603274c3b706f486",
+      "record_sha256": "4424fa64bfdea3ffc95aa36a1bcf7d3130a6351b7f569e37e3d243fee5ae625e",
+      "author_review_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-014.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "More pixel values and more bitsperpixel independently enlarge an uncompressed raster; multiplicative relation describes the intended simple encoding model. Partial image/binary-storage relevance avoids claiming integer/string/audio/video mechanisms.",
+      "technical_issue_flags_retained": [],
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q08-a",
+      "author_review_sha256": "9eb80b86a21135fe89cc1fb7d3955d23cc4ff8803abfdfdc46f0146bb3316e39",
+      "record_sha256": "c0adc305cfe5a46262ec9d06c10971d2a3ccb77ee9aa83e897c0ffebf95396aa",
+      "author_review_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-014.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "Fitness/candidate improvement and depot-layout optimization are within genetic-algorithm concepts/application, so partialstep-list and direct contextual use are justified. Retain criterion rigidity issue: question permits two noninitial/nontermination steps and must not forcefitness as one.",
+      "technical_issue_flags_retained": "A-C3-MS-007 retained: legitimate selection+mutation/crossover combinations need equitable credit.",
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q08-b-i",
+      "author_review_sha256": "39633d06fec0a02f0d86d4a5d0c5e5cde5b7d629bc98fb873a1ebc1fe901c0f3",
+      "record_sha256": "1c8d2d39529dc406fe9802e3c8d82cdb669a3df0565c89d24fc7003cb54671cf",
+      "author_review_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-014.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "Routine language-question assistance is anNLP application with speed/scale benefit expanded to staff workload. Partial application mapping is accurate; no particular ML approach or model mechanics are requested.",
+      "technical_issue_flags_retained": [],
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q08-b-ii",
+      "author_review_sha256": "dd16cf429656f212c5ccaa39327c928ed74a9b6d9eb5a068e23c3aad6843aee1",
+      "record_sha256": "9f41c91d30edfaee1fcc1393e1d74aeb4018a6c8d63f4517aec81571853d10dc",
+      "author_review_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-015.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "Incorrect/biased confident guidance and user reliance are a concrete misinformation/oversight risk in ML communication.2points support partial ethical communication relevance without assuming all systems always hallucinate.",
+      "technical_issue_flags_retained": [],
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    },
+    {
+      "question_id": "P-SRC002-Q08-d",
+      "author_review_sha256": "bb952b04a90fd7028e80fed84cb15279e5e5f37fbdd886f2f7cad508709f1858",
+      "record_sha256": "41c4158c80aba9c01b781f37e09a67db309d3d8a0d0229d2fc07fff200a82af6",
+      "author_review_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-015.json",
+      "outcome": "accept_mapping_evidence",
+      "rationale": "Evaluation balances speed/consistency against biased training impacts, opacity and contestability, with human moderation and a justified sole-assessor conclusion. Partial ethics/training-bias aspects match exact guidance; conclusion credit should remain open to any defensible balanced position.",
+      "technical_issue_flags_retained": [],
+      "checked": [
+        "Full actual adapted prompt and all marking criteria/solution read",
+        "Every mapped statement and complete exact guide guidance read",
+        "Aspect relevance and direct/partial/supporting boundaries independently assessed"
+      ],
+      "limits": "Acceptance covers described mapping evidence and retained issue flags only. Original-PDF provenance and full answer correctness are not newly certified unless explicit reproduction is cited."
+    }
+  ],
+  "pending_question_ids": [
+    "P-SRC002-Q09-c",
+    "P-SRC002-Q09-f",
+    "P-SRC002-Q11-c",
+    "P-SRC002-Q11-d",
+    "P-SRC002-Q13-b",
+    "P-SRC002-Q14-a",
+    "P-SRC002-Q14-b-i",
+    "P-SRC002-Q14-b-ii",
+    "P-SRC002-Q14-c",
+    "P-SRC002-Q14-d",
+    "P-SRC002-Q14-e",
+    "P-SRC002-Q15-a",
+    "P-SRC002-Q15-b",
+    "P-SRC002-Q15-c",
+    "P-SRC002-Q15-d",
+    "P-SRC002-Q16-a-i",
+    "P-SRC002-Q16-a-ii",
+    "P-SRC002-Q16-a-iii",
+    "P-SRC002-Q16-b",
+    "P-SRC002-Q16-c",
+    "P-SRC002-Q16-d",
+    "P-SRC002-Q17-a",
+    "P-SRC002-Q17-b",
+    "P-SRC002-Q18-a",
+    "P-SRC002-Q18-b",
+    "P-SRC002-Q18-c",
+    "P-SRC002-Q18-d"
+  ],
+  "counts": {
+    "reviewed": 33,
+    "accept_mapping_evidence": 33,
+    "needs_revision": 0,
+    "remaining": 27
+  }
+}

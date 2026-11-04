@@ -1,0 +1,190 @@
+{
+  "checkpoint": "A-RECORDS-004",
+  "reviews": [
+    {
+      "question_id": "P-SRC001-Q11-c-iv",
+      "record_sha256": "ce49f31dc12e2dd7ed119a73268a15e5bee0764f681ad41ac8211d26abd48fea",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:53:04.338756+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A2.4.4",
+          "scope_bullet_id": "A2.4.4:G01",
+          "exact_guidance": "• The difference between symmetric and asymmetric cryptography",
+          "assessed_skill": "Explain generic encryption-based confidentiality during network transfer.",
+          "relevance": "supporting",
+          "evidence": "Plaintext/ciphertext/algorithm/key and authorized decryption are tested. The exact guidance bullet requires symmetric/asymmetric differences, which this question does not assess; this is foundation only, with no digital-certificate or key-management evidence."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Correctly applied encryption protects content against a passive interceptor lacking the decryption key. No authentication/integrity/endpoint safety guarantee is inferred."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Transform to ciphertext, inability to read without key, and legitimate decryption are correct linked explanation points."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Three independent1-mark explanation elements total3. The wording appropriate key permits symmetric or asymmetric schemes and does not claim same key in all approaches."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q11-c-iv.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• The role of digital certificates in establishing secure network connections",
+        "• The use of public and private keys in asymmetric cryptography",
+        "• The significance of encryption key management"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q11-c-iv.json": "ce49f31dc12e2dd7ed119a73268a15e5bee0764f681ad41ac8211d26abd48fea",
+        "question-bank/questions/P-SRC001-Q11-c-iv.json": "b49db016530f174f9c72492b1afccfd3f6dc52518b8a53baef5b1cbebb76c361",
+        "question-bank/markschemes/P-SRC001-Q11-c-iv.json": "810d7f91ede38c0589d5d14aae2be4084b3fd59c6cd30fa9091cab003d81edc0",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q11-c-iv.json": "e7da7f3c6b051f3042c6f4e52cf70ec9781582aa8043e2e2ae4ab3f7c2b4e8d3"
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q12-a-i",
+      "record_sha256": "e845dbc8488bcc3d441a2cd7817958932a3b5a1839b4c66c893eb35f4cf0fa38",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:53:04.339275+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.1.4",
+          "scope_bullet_id": "A1.1.4:G01",
+          "exact_guidance": "• Random-access memory (RAM), read only memory (ROM), cache (L1, L2, L3), registers",
+          "assessed_skill": "Distinguish RAM purpose, volatility and access performance from SSD secondary storage.",
+          "relevance": "partial",
+          "evidence": "Only RAM among the listed primary-memory types is assessed; ROM/cache/registers remain untested."
+        },
+        {
+          "code": "A1.1.7",
+          "scope_bullet_id": "A1.1.7:G01",
+          "exact_guidance": "• Internal hard drives: solid state drive (SSD), hard disk drive (HDD), embedded multimedia cards (eMMCs)",
+          "assessed_skill": "Describe SSD persistent storage purpose by contrasting it with RAM.",
+          "relevance": "partial",
+          "evidence": "SSD use is assessed but HDD/eMMC and internal-versus-external distinctions are not."
+        },
+        {
+          "code": "A1.1.7",
+          "scope_bullet_id": "A1.1.7:G03",
+          "exact_guidance": "• The scenarios in which the various types of drive are used",
+          "assessed_skill": "Distinguish active working memory from persistent program/file storage in a workstation.",
+          "relevance": "partial",
+          "evidence": "A concrete workstation program-running context supports RAM/SSD role choice; no broader storage-device scenario comparison."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Ordinary DRAM is volatile and provides lower-latency working memory than SSD; SSD retains programs/files. Typical per-unit cost/capacity statements are qualified generally, not universal capacities."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Purpose, volatility and qualified performance/cost comparison yield three clear distinctions."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Three1-mark distinctions total3; each must distinguish both devices, with equivalent correct distinctions accepted."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q12-a-i.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• The interaction of the CPU with different types of memory to optimize performance",
+        "• The relevance of the terms “cache miss” and “cache hit”",
+        "• External hard drives: SSD, HDD, optical drives, flash drives, memory cards, network attached storage (NAS)"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q12-a-i.json": "e845dbc8488bcc3d441a2cd7817958932a3b5a1839b4c66c893eb35f4cf0fa38",
+        "question-bank/questions/P-SRC001-Q12-a-i.json": "55c15e201afe803153816dfabe17674300102cb0e908a766cfa8186eebf80f20",
+        "question-bank/markschemes/P-SRC001-Q12-a-i.json": "c69a0d334fec91b9841bdd89e1eb4a301ba8d36fc4786a7af4bfc375f5987ae9",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q12-a-i.json": "4db7815b454b3caedfcc6f10e51a0967fb00c2ce0230c68bfdea2052d292441d"
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q12-a-ii",
+      "record_sha256": "c46c4850f575287ccd099cc7275420a2bfd30531c11857df3740d6675118fbd5",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:53:04.339850+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.3.2",
+          "scope_bullet_id": "A1.3.2:G01",
+          "exact_guidance": "• Maintaining system integrity while running operating systems’ background operations",
+          "assessed_skill": "Outline memory isolation/protection maintaining integrity while applications run.",
+          "relevance": "partial",
+          "evidence": "Protection against process overwrites and resulting reduced corruption tested; other integrity/background-operation aspects not required."
+        },
+        {
+          "code": "A1.3.2",
+          "scope_bullet_id": "A1.3.2:G02",
+          "exact_guidance": "• Memory management, file system, device management, scheduling, security, accounting, graphical user interface (GUI), virtualization, networking",
+          "assessed_skill": "Outline two OS RAM-management functions with expansion.",
+          "relevance": "partial",
+          "evidence": "Allocation/tracking/reclaiming and memory protection tested; no accounting/GUI/networking/virtualization or other named OS functions."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "OS allocation/tracking/reclamation and address-space protection are correct multitasking memory responsibilities. Protection is enforced through OS configuration with hardware support, not magical software isolation."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Two developed functions: allocation with tracking/reclamation, and protection with integrity consequence, give suitable Outline2×2 answer depth."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Four1-mark criteria total4. Meaningful related elaborations rather than duplicate restatement earn the two expansions; prompt requests two functions."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q12-a-ii.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q12-a-ii.json": "c46c4850f575287ccd099cc7275420a2bfd30531c11857df3740d6675118fbd5",
+        "question-bank/questions/P-SRC001-Q12-a-ii.json": "91a5873b68ee2129b4e2f5fed52047acf63c58dbdd5201de90232871ac656598",
+        "question-bank/markschemes/P-SRC001-Q12-a-ii.json": "6cf7b107ffb9ff36c5388cbcdf655b13d4baefef5a807282fadd12f4107879e6",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q12-a-ii.json": "0e91b3d91eaec846d93546f1e5af54decceae594f49c2d1fa099fd196ca3f421"
+      }
+    }
+  ]
+}

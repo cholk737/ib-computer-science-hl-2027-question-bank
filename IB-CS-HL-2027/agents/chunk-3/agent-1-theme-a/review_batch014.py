@@ -1,0 +1,14 @@
+from checkpoint_reviews import *
+R14=[]
+R14.append(review('P-SRC002-Q07-e',[
+ m('A1.2.2',1,'Outline multiplicative effect of pixel count and bit depth on uncompressed image storage.','partial','Storage impact of binary pixel values directly assessed; retrieval/other data representations not required.'),
+ m('A1.2.2',2,'Explain raster representation as one encoded colour value per pixel.','partial','Image storage mechanism only, not integer/string/audio/video mechanisms.'),
+], 'Ignoring metadata/padding/compression, pixel-data size is width×height×bits per pixel. Increasing either dimension increases count; larger bit depth increases per-pixel encoded information.', 'Model correctly separates more pixel values from more bits per value and gives units bits.', 'Four1-mark elements total4 for two developed factors. Resolution (pixel count) and colour precision should remain distinct; no unsupported file-header assumptions.'))
+R14.append(review('P-SRC002-Q08-a',[
+ m('A4.3.7',1,'Outline two GA improvement steps after initialization and before given termination.','partial','Tests selected fitness/selection/crossover/mutation steps, not full process or initialization/termination construction.'),
+ m('A4.3.7',2,'Apply genetic improvement to delivery-depot layout optimization.','direct','Actual objective/encoded candidate layout context supports optimization example; route-planning/TSP is illustrative, not mandatory special solver.'),
+], 'Contextual fitness evaluates delivery cost/access; selection and crossover/mutation vary candidate layouts. Improvement is search-guided, not guaranteed monotonic or globally optimal.', 'Model provides fitness evaluation with context and generation variation, valid two developed steps.', 'Four criteria total4 but require fitness evaluation despite prompt allowing any two other steps. A developed selection step plus developed mutation step is valid yet cannot access the fixed first2 criteria. Make any2 permitted steps ×2 marks explicit.', ['A-C3-MS-007: Outline two other GA steps permits selection+mutation/crossover without fitness; current fixed fitness2 plus other2 may under-credit valid choices.']))
+R14.append(review('P-SRC002-Q08-b-i',[
+ m('A4.1.1',3,'Outline a practical NLP chatbot assistance benefit in a large support service.','partial','Application and contextual benefit tested; no distinction of DL/RL/supervised/TL/UL or their characteristics.'),
+], 'A suitably deployed chatbot can handle routine language requests at scale and route exceptions to humans; benefit is conditional, not accuracy guarantee.', 'Rapid scalable routine assistance plus human workload consequence matches Outline2.', 'One relevant benefit plus service-specific expansion total2; equivalent cost/availability/accessibility benefits with appropriate development can be accepted.'))
+save_batch(R14,14,'Review P-SRC002-Q08-b-ii, P-SRC002-Q08-d, P-SRC002-Q09-c; save batch-015.', ['review_batch014.py'])

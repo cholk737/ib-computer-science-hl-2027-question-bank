@@ -1,0 +1,173 @@
+{
+  "checkpoint": "A-RECORDS-007",
+  "reviews": [
+    {
+      "question_id": "P-SRC002-Q01-a",
+      "record_sha256": "b156144f2a2cb3498e48fd30c72653fe19fc86835e676dc9b9cbdcee7f92c1ee",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:56:10.409487+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.2.2",
+          "scope_bullet_id": "A3.2.2:G02",
+          "exact_guidance": "• The relationships between different data entities within a database",
+          "assessed_skill": "Construct supervisor-to-production and production-to-editor one-to-many relationships.",
+          "relevance": "direct",
+          "evidence": "Two explicitly specified relationships translated into ERD, each1 mark."
+        },
+        {
+          "code": "A3.2.2",
+          "scope_bullet_id": "A3.2.2:G03",
+          "exact_guidance": "• The roles of cardinality and modality in defining relationships in ERDs",
+          "assessed_skill": "Show mandatory one-and-one-or-more participation on both ERD relationships.",
+          "relevance": "direct",
+          "evidence": "Every child exactly one parent and every parent at least one child stated. Criteria explicitly include cardinality/modality."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "The four stated minimum/maximum constraints yield Supervisor1→Production1..many and Production1→Editor1..many, with each child exactly1 parent."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Textual answer correctly describes each relation and mandatory participation; candidate expected an actual equivalent labelled ERD."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Two independently marked relationship/cardinality/modality criteria total2. Equivalent standard ERD notations accepted through partial-credit note. Output diagram required, no missing stimulus diagram."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q01-a.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• The significance of entity relationship diagrams (ERDs) in crafting organized, efficient database designs tailored for specific applications"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q01-a.json": "b156144f2a2cb3498e48fd30c72653fe19fc86835e676dc9b9cbdcee7f92c1ee",
+        "question-bank/questions/P-SRC002-Q01-a.json": "8c67a9c7984b1aa8666f1ca1bfbe963279b62b5ed8cd1b587be95f954eb0ff3b",
+        "question-bank/markschemes/P-SRC002-Q01-a.json": "9b22c99df566156d8cfe23d736b5eb8cc9288964d3efb77f82984037d987ce85",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q01-a.json": "8ae5853a134b0144653ef67e09b62082777c56f7605c73be91a47fd904d3cc80"
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q01-b",
+      "record_sha256": "cb71afa26ba739867ed7604b0f303e1678eb0ef399bb4e627908215c5690fad3",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:56:10.410016+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.1.1",
+          "scope_bullet_id": "A3.1.1:G02",
+          "exact_guidance": "• Benefits of databases: community support, concurrency control, data consistency, data integrity, data retrieval, reduced data duplication, reduced redundancy, reliable transaction processing, scalability, security features",
+          "assessed_skill": "Outline one relational database retrieval/consistency benefit for document change histories.",
+          "relevance": "partial",
+          "evidence": "Only one contextual benefit tested, not features or limitations or all listed benefits."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Shared related records support coherent queries and avoid manually joining independent change files; database use still requires correct identifiers and transactional updates."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Model gives a concrete benefit (consistent query retrieval) developed in document-history context, meeting Outline2."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "One valid retrieval/consistency/duplication benefit plus contextual development yields2. Alternatives phrased as equivalent technically valid solutions in partial-credit note."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q01-b.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Features: composite keys, foreign keys, primary keys, relationships, tables",
+        "• Limitations of databases: “big data” scalability issues, design complexity, hierarchical data handling, rigid schema, object-relational impedance mismatch, unstructured data handling"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q01-b.json": "cb71afa26ba739867ed7604b0f303e1678eb0ef399bb4e627908215c5690fad3",
+        "question-bank/questions/P-SRC002-Q01-b.json": "78777543b121138ba8e219b1b722081c931f70f897f92c565db327c4bf64ef95",
+        "question-bank/markschemes/P-SRC002-Q01-b.json": "1f60077f0ddf5b944177084609d8cbc0fa5b7245ad0d0a8e288b48b04403ad0e",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q01-b.json": "58f4446a77ad8ec007aba1701568e0b4555b613885bfc41d2d05ca23363b3bb8"
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q01-c",
+      "record_sha256": "6772c7e5154e71e62ca78d357590c6fd49198cb6eb8c20e2d3e010585cd11503",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:56:10.410300+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.3.6",
+          "scope_bullet_id": "A3.3.6:G01",
+          "exact_guidance": "• The role of atomicity, consistency, isolation and durability (ACID) to ensure reliable processing of transactions",
+          "assessed_skill": "Explain how a supplied version check avoids stale overwrite/lost update.",
+          "relevance": "partial",
+          "evidence": "Concurrency/isolation facet assessed through provided mechanism; no requirement to know timestamp protocol, full ACID definitions or transaction commands."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Optimistic concurrency can detect stale version7 after committed version8 and reject/retry that attempted update; comparing and applying must be controlled as one conditional update in a correct implementation."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "The mismatch7 versus8 and rejection/retry prevent overwriting a committed edit, appropriate two-stage outline."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "One detection point plus one prevention point total2; retry must use refreshed state rather than blindly replay stale overwrite."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q01-c.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Transaction control language (TCL) commands: BEGIN TRANSACTION, COMMIT, ROLLBACK"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q01-c.json": "6772c7e5154e71e62ca78d357590c6fd49198cb6eb8c20e2d3e010585cd11503",
+        "question-bank/questions/P-SRC002-Q01-c.json": "022650fc15e2d3096ed8f093eb5fc674bb09b03f8997a009fa6fcf46cfd6ff1c",
+        "question-bank/markschemes/P-SRC002-Q01-c.json": "1088c26de23f6c2b6044cf3711fb9446952a4fec878ea4803ddd3ed8b936c636",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q01-c.json": "e868cb5547a05122c4842b135fd5f31bef9681892f74c38752a2057d6cdd272f"
+      }
+    }
+  ]
+}

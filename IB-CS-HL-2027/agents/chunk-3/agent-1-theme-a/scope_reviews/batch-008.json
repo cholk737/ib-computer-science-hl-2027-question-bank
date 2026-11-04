@@ -1,0 +1,176 @@
+{
+  "checkpoint": "A-RECORDS-008",
+  "reviews": [
+    {
+      "question_id": "P-SRC002-Q01-d",
+      "record_sha256": "2e3ead3a71dc07a8b9ea1c0514b97f2dfe707c1ee830ea4efa12093c40ece35e",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:56:49.029815+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.3.6",
+          "scope_bullet_id": "A3.3.6:G01",
+          "exact_guidance": "• The role of atomicity, consistency, isolation and durability (ACID) to ensure reliable processing of transactions",
+          "assessed_skill": "Explain locking/serialized competing writers preventing a booking lost update.",
+          "relevance": "partial",
+          "evidence": "Isolation and integrity preservation through a supplied locking model; no full ACID catalogue required."
+        },
+        {
+          "code": "A3.3.6",
+          "scope_bullet_id": "A3.3.6:G02",
+          "exact_guidance": "• Transaction control language (TCL) commands: BEGIN TRANSACTION, COMMIT, ROLLBACK",
+          "assessed_skill": "Explain commit boundary when locks protect a conflicting update.",
+          "relevance": "partial",
+          "evidence": "Commit/release boundary assessed conceptually; no BEGIN/ROLLBACK syntax construction."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Exclusive lock before update blocks conflicting writer; reading current committed data before its own protected update avoids overwriting stale state. Lock lifetime must cover appropriate transaction boundary."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Answer gives lock, wait/retry, fresh ordered updates, commit/release, and why no lost update, all coherent."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Five1-mark components total5 and match Explain depth. Correct locking sequence—not just use a lock—needed for full marks; equivalent safe transaction behaviour acceptable."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q01-d.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q01-d.json": "2e3ead3a71dc07a8b9ea1c0514b97f2dfe707c1ee830ea4efa12093c40ece35e",
+        "question-bank/questions/P-SRC002-Q01-d.json": "71988cd189201a9d853b34f1f68efdf6098e1f0018b2bd53367d98472bf3e7ad",
+        "question-bank/markschemes/P-SRC002-Q01-d.json": "39b9204a23f8b866113238f1e25f199cc0c5d7c85596fc4af065675b8b9b51f4",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q01-d.json": "6bc8157b12227b8be7f01837da54cd1279663bd41f39575356667e51978caac8"
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q01-e-i",
+      "record_sha256": "a20d7a50918d08b500162bbd7411c7fefc7e52efbeed165f0a4f0531f21d0057",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:56:49.030461+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.3.6",
+          "scope_bullet_id": "A3.3.6:G01",
+          "exact_guidance": "• The role of atomicity, consistency, isolation and durability (ACID) to ensure reliable processing of transactions",
+          "assessed_skill": "Outline ACID consistency with a conserved total in a two-account transfer.",
+          "relevance": "partial",
+          "evidence": "Consistency/integrity invariant only; atomicity/isolation/durability not directly requested."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "A valid no-fee transfer preserves declared account constraints and combined balance. Consistency is constraint preservation, not merely every user seeing the same value."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "General constraint preservation plus debit/credit conserved total is correct contextual expansion for2."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Two1-mark criteria distinguish definition and valid invariant/example; other appropriate stated integrity rules accepted."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q01-e-i.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Transaction control language (TCL) commands: BEGIN TRANSACTION, COMMIT, ROLLBACK"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q01-e-i.json": "a20d7a50918d08b500162bbd7411c7fefc7e52efbeed165f0a4f0531f21d0057",
+        "question-bank/questions/P-SRC002-Q01-e-i.json": "82db4be75b96d89d1dff754eeb69270b516764f9dede67f97ca7e219714f10ce",
+        "question-bank/markschemes/P-SRC002-Q01-e-i.json": "a844e9356cbac9e6023f84e9f95c59419893fd93bbc26369f053287d825327b6",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q01-e-i.json": "c20ac384ab5628a17507de9c04a7a6fd96ea6f906c62616ceb8c8ba03b63bd12"
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q01-e-ii",
+      "record_sha256": "e167a1990e8feee25988643f848492c096fb79629e5fa507c68871211ffe910b",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:56:49.030860+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.3.6",
+          "scope_bullet_id": "A3.3.6:G01",
+          "exact_guidance": "• The role of atomicity, consistency, isolation and durability (ACID) to ensure reliable processing of transactions",
+          "assessed_skill": "Describe atomic all-or-none transfer restoration after partial failure.",
+          "relevance": "partial",
+          "evidence": "Partial debit rollback preserves consistency/atomicity; isolation/durability untested."
+        },
+        {
+          "code": "A3.3.6",
+          "scope_bullet_id": "A3.3.6:G02",
+          "exact_guidance": "• Transaction control language (TCL) commands: BEGIN TRANSACTION, COMMIT, ROLLBACK",
+          "assessed_skill": "Describe ROLLBACK undoing the uncommitted transaction.",
+          "relevance": "partial",
+          "evidence": "ROLLBACK behaviour only; BEGIN/COMMIT not directly required."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Rollback undoes uncommitted changes of that transaction, restoring the debit and consistent pre-transfer balances. It does not undo unrelated committed transactions."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "All answer elements correctly target incomplete transaction, undo partial changes and restore previous balances."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Three1-mark elements total3 with partial credit for mechanism and state; do not accept merely completing the credit as explanation of ROLLBACK."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q01-e-ii.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q01-e-ii.json": "e167a1990e8feee25988643f848492c096fb79629e5fa507c68871211ffe910b",
+        "question-bank/questions/P-SRC002-Q01-e-ii.json": "9ba92811e40801863bab0c7a40007039b04c27d37db72fb6970ba6e9efb333cc",
+        "question-bank/markschemes/P-SRC002-Q01-e-ii.json": "6ee9b7929bd9446cca8e3d43b157df394207834d39fa84bd88cf3a353837d790",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q01-e-ii.json": "bbe65ee5cfc392bdf411f26b7e4080787e731be3509a5fb82893dba3b779efc7"
+      }
+    }
+  ]
+}

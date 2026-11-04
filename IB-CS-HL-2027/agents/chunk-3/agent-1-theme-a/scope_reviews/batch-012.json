@@ -1,0 +1,173 @@
+{
+  "checkpoint": "A-RECORDS-012",
+  "reviews": [
+    {
+      "question_id": "P-SRC002-Q04-b",
+      "record_sha256": "cb14ddb6027a48f56f3d26bfc6257ff7b65f1943a944ae9dcb3edeb0610baea2",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:59:45.429666+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.4.2",
+          "scope_bullet_id": "A3.4.2:G01",
+          "exact_guidance": "• The roles of append-only data, subject-oriented data, integrated data, time-variant data, non-volatile data and data optimized for query performance, to ensure efficient data storage and analysis",
+          "assessed_skill": "Define an integrated subject-oriented historical analytical warehouse.",
+          "relevance": "partial",
+          "evidence": "One-mark definition identifies several named attributes, but does not explain append-only/nonvolatile/time-variant/query-optimized roles in context."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Integrated subject-oriented historical data for analysis/decision support is a valid warehouse definition; does not conflate operational transaction store with analytical warehouse."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Concise defining combination addresses Define1."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Single1-mark criterion rewards a recognizable analytical warehouse definition, not requiring every guide property for1."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q04-b.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q04-b.json": "cb14ddb6027a48f56f3d26bfc6257ff7b65f1943a944ae9dcb3edeb0610baea2",
+        "question-bank/questions/P-SRC002-Q04-b.json": "a2741cd3f16c7c775c796622666b3494204efb74dcfea4287eb91b8f8cb8a875",
+        "question-bank/markschemes/P-SRC002-Q04-b.json": "045e224b35eea57a2c444e4f4732c5a080c3765a604cecfbb3764caaca108cfd",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q04-b.json": "af5362a0bc45e04fefb5755e83572a4499a9d7f36568799690473cbb81f37c7b"
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q04-c",
+      "record_sha256": "9fb904773b0a22dd850c33b04338e93cdc80aead864356e8576276ff704d6bfa",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:59:45.430456+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A4.2.1",
+          "scope_bullet_id": "A4.2.1:G01",
+          "exact_guidance": "• The impact of data quality on model performance",
+          "assessed_skill": "Explain how format inconsistencies, duplicates and missing observations affect model training.",
+          "relevance": "direct",
+          "evidence": "Explicit why/pretraining explanation links quality defects with comparability, bias in weighting and invalid/distorted learning."
+        },
+        {
+          "code": "A4.2.1",
+          "scope_bullet_id": "A4.2.1:G02",
+          "exact_guidance": "• Techniques for handling outliers, removing or consolidating duplicate data, identifying incorrect data, filtering irrelevant data, transforming improperly formatted data, and imputation, deletion or predictive modelling for missing data",
+          "assessed_skill": "Explain cleaning formats, consolidating/removing duplicates and treating missing values.",
+          "relevance": "partial",
+          "evidence": "Only three cleaning families tested; outliers/irrelevant data/incorrect values/predictive missing-data modelling not established."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Inconsistent formats can misinterpret equivalent values; duplicate observations can overweight cases; missing values require justified handling. Removing all duplicates indiscriminately is not universally correct if repeated observations are genuine."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Answer links suitable treatment with each problem and does not conflate format standardization with numerical scaling."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Five1-mark components total5: treatment/effect for format and duplicate, plus suitable missing-value treatment with purpose. Different justified treatments accepted."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q04-c.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Normalization and standardization as crucial preprocessing steps"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q04-c.json": "9fb904773b0a22dd850c33b04338e93cdc80aead864356e8576276ff704d6bfa",
+        "question-bank/questions/P-SRC002-Q04-c.json": "7522f249dcff2968fac7e18ed07d902e10c483f43e1101b4e84d09af79254ef3",
+        "question-bank/markschemes/P-SRC002-Q04-c.json": "9a69b8a4fc9c5ea26edc3ed57313b02c7531e789cd5746f7af1a7e8d308f0bf0",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q04-c.json": "ed2fdac9e54448ff146a3f5de38e891386500445ab26f563e9659d6df75e66cd"
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q04-d",
+      "record_sha256": "575a361ff6fb5f42e78acf66d395396ed3c4dc4db60ed20b828557f7407c6e68",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:59:45.431022+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A4.3.2",
+          "scope_bullet_id": "A4.3.2:G01",
+          "exact_guidance": "• K-Nearest Neighbours (K-NN) and decision trees algorithms to categorize new data points, based on patterns learned from existing labelled data",
+          "assessed_skill": "Describe supervised decision-tree training and a new record following learned splits to a category.",
+          "relevance": "partial",
+          "evidence": "Decision tree directly assessed, K-NN not. Software pass/fail labels are a valid non-exhaustive classification application."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "A supervised tree learns feature splits from labelled examples; applying tests for a new record leads to a leaf/category. Independent labelled evaluation is useful but not itself the classification operation."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Model sequence training→splits→branch traversal→leaf class is correct, with optional evaluation detail."
+        },
+        "markscheme": {
+          "status": "issue",
+          "evidence": "Four1-mark criteria total4. Fourth currently permits appropriate evaluation detail as alternative to leaf prediction, allowing full marks without completing classification; clarify classification-output requirement or add evaluation only as supplementary credit under a justified cap."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q04-d.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Real-world applications of K-NN may include collaborative filtering recommendation systems.",
+        "• Real-world applications of decision trees may include medical diagnosis based on a patient’s symptoms."
+      ],
+      "issues": [
+        "A-C3-MS-006: Fourth criterion leaf class prediction/appropriate evaluation detail should not let generic evaluation substitute for the category output that completes the requested classification mechanism."
+      ],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q04-d.json": "575a361ff6fb5f42e78acf66d395396ed3c4dc4db60ed20b828557f7407c6e68",
+        "question-bank/questions/P-SRC002-Q04-d.json": "f42bb6448bad597d965c812cfd3500ccc7b3028afc7a098c02d9a1df4256e768",
+        "question-bank/markschemes/P-SRC002-Q04-d.json": "ec8715f59e9677feb2bd44e54284ea3e87511f8fad8fd4c548891f9c5b4e94ba",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q04-d.json": "2d21c354c056c064ee2b80bf8e17cf27663de6c8738f63f77dd4f7622155fc29"
+      }
+    }
+  ]
+}

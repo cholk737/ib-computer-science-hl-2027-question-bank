@@ -1,0 +1,69 @@
+{
+  "reviewer": "/root/searchable_bank_audit",
+  "date": "2026-11-04",
+  "scope_source_pages": {
+    "B2.2.2": [
+      {
+        "pdf_page": 45,
+        "text_path": "sources/2027-guide/text/page-045.txt",
+        "code_present": true
+      }
+    ],
+    "B2.3.3": [
+      {
+        "pdf_page": 45,
+        "text_path": "sources/2027-guide/text/page-045.txt",
+        "code_present": true
+      }
+    ],
+    "B4.1.3": [
+      {
+        "pdf_page": 48,
+        "text_path": "sources/2027-guide/text/page-048.txt",
+        "code_present": true
+      }
+    ],
+    "A2.1.4": [
+      {
+        "pdf_page": 37,
+        "text_path": "sources/2027-guide/text/page-037.txt",
+        "code_present": true
+      }
+    ]
+  },
+  "samples": [
+    {
+      "question_id": "P-SRC001-Q15-b",
+      "actual_prompt_answer_and_all_criteria_read": true,
+      "independent_execution": {
+        "status": "pass",
+        "cases": 121,
+        "domain": "2D list of S/D/X codes, selected row0, including empty row; no mutation"
+      },
+      "finding": "Agree with B: row access/traversal and conditional counting are directly assessed aspects. Finite for-each traversal is not evidence of pre/post-condition or explicitly indexed counted forms. Standalone prompt does not expressly define bookings as a2D list; keep context/criteria issue rather than full verification.",
+      "approval_limit": "Original source-PDF provenance not rechecked; no whole-loop guidance certification."
+    },
+    {
+      "question_id": "P-SRC002-Q17-a",
+      "actual_prompt_answer_and_all_criteria_read": true,
+      "independent_execution": {
+        "empty": 0,
+        "distinct_one_match": 1,
+        "two_nodes_sharing_one_customer": 1,
+        "old_equal_new": 1,
+        "status": "observations reproduced"
+      },
+      "finding": "Agree with B: traversal/update skill is relevant; returned number changed is ambiguous for repeated object references and identical replacement. Keep technical/markscheme issue and answer pending until domain/count meaning clarified.",
+      "approval_limit": "Do not call this question fully verified. Original PDF provenance not rechecked."
+    },
+    {
+      "question_id": "P-SRC001-Q08-a",
+      "actual_prompt_answer_and_all_criteria_read": true,
+      "finding": "Agree with A: generic protocol definition is sound at1mark but only supporting relevance to named TCP/UDP/HTTP/HTTPS/DHCP roles. The question supplies no named protocol and asks no function/purpose comparison. Do not promote it to direct named-protocol coverage.",
+      "approval_limit": "Checked adapted prompt/criteria and exact guide scope; no fresh original scanned-PDF transcription audit."
+    }
+  ],
+  "limitations": [
+    "Independent bounded rechecks only. No master question content was changed. Formal integration remains coordinator-only."
+  ]
+}

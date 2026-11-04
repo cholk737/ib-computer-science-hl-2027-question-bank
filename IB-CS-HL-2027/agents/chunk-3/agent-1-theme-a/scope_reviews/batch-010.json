@@ -1,0 +1,174 @@
+{
+  "checkpoint": "A-RECORDS-010",
+  "reviews": [
+    {
+      "question_id": "P-SRC002-Q02-d",
+      "record_sha256": "afa2a35f76a64db19f685a634e7b48c5662cd3e4adf6485fbe1876e502fde6bb",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:58:23.474483+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.2.6",
+          "scope_bullet_id": "A3.2.6:G01",
+          "exact_guidance": "• Examples may include library management, hospital management, e-commerce platforms, school management, employee management, inventory management, police crime reporting",
+          "assessed_skill": "Construct a three-table 3NF training-enrolment schema from supplied functional dependencies.",
+          "relevance": "direct",
+          "evidence": "Meaningful school/training management application. Dependencies assign learner facts to learner, event facts to event, and completion to the pair; source example list is non-exhaustive."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "LearnerID and EventID determine their separate entity facts; Completed depends on the combined pair. Decomposition removes both partial dependencies and leaves no stated transitive non-key dependency."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "LEARNER/EVENT/ENROLMENT with composite enrolment PK and two FKs preserves all supplied fields and dependencies. Assumes one enrolment per learner/event pair as supplied dependency."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Five1-mark components total5: both entity groups, completion association, composite key, two FKs/no partial dependence. Equivalent table/attribute naming and semantically valid surrogate-key schema with unique pair may be accepted."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q02-d.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q02-d.json": "afa2a35f76a64db19f685a634e7b48c5662cd3e4adf6485fbe1876e502fde6bb",
+        "question-bank/questions/P-SRC002-Q02-d.json": "49ada8dbbda9a8b2a8f013751a2c0d4cbfa040f07562d73ecec9bdb3a27c99b6",
+        "question-bank/markschemes/P-SRC002-Q02-d.json": "d2505518d2df5c67e130a39b23c2d0dec567015e310790c7bd52e5f93427acc8",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q02-d.json": "f490cf944dfd930983580ba53399fffe4a9c5c832950978cd6caccd048c7e705"
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q03-a",
+      "record_sha256": "557111cbf2f2fb027051e757a7387606fa7255f7a496e85b1d7e894a392fda34",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:58:23.475218+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.2.1",
+          "scope_bullet_id": "A3.2.1:G01",
+          "exact_guidance": "• Conceptual schema, logical schema, physical schema",
+          "assessed_skill": "Outline a conceptual schema for clinic entities and relationships.",
+          "relevance": "partial",
+          "evidence": "Conceptual level only; logical and physical structures not independently described."
+        },
+        {
+          "code": "A3.2.1",
+          "scope_bullet_id": "A3.2.1:G02",
+          "exact_guidance": "• Abstract definitions of the data structure and organization of the data at different levels",
+          "assessed_skill": "Explain a high-level structure independent of physical storage/DBMS.",
+          "relevance": "partial",
+          "evidence": "One abstraction level described and distinguished from implementation; no three-way schema hierarchy."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Conceptual schema captures domain entities/relationships without committing to DBMS storage design."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "High-level entities/relationships plus independence from implementation correctly outlines its planning role."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Two1-mark elements total2. Context-specific entities can illustrate but are not mandatory because prompt asks role, not construct clinic schema."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q03-a.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q03-a.json": "557111cbf2f2fb027051e757a7387606fa7255f7a496e85b1d7e894a392fda34",
+        "question-bank/questions/P-SRC002-Q03-a.json": "6f61ff3aa91b6e66e8c2edb23ede0158805c9426a3f383968f6534dae6746744",
+        "question-bank/markschemes/P-SRC002-Q03-a.json": "13a041dd40d9ef3dc2061364b53f45b87081a589a208c070c596f410bcaeaece",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q03-a.json": "527904939f191fbd78ca7125e235dc3c6268fb47c830ca53817df9edb37dd18d"
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q03-c",
+      "record_sha256": "9fe7e3928d2deede5fbb1cb3de5aa584c0d24c0df6967ae2890cb3a417bbb6c2",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:58:23.475761+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.3.1",
+          "scope_bullet_id": "A3.3.1:G01",
+          "exact_guidance": "• Data language types must include data definition language (DDL) and data manipulation language (DML)",
+          "assessed_skill": "Describe SQL DDL responsibilities when implementing a schema.",
+          "relevance": "partial",
+          "evidence": "DDL only, no DML comparison or full distinction between language categories."
+        },
+        {
+          "code": "A3.3.1",
+          "scope_bullet_id": "A3.3.1:G02",
+          "exact_guidance": "• SQL statements to define data structures or to manipulate data",
+          "assessed_skill": "Describe creating structures, typed columns and key constraints.",
+          "relevance": "partial",
+          "evidence": "Data-definition statement purposes tested; manipulation operations not assessed."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "DDL specifies tables/columns/types and structural constraints. Description correctly distinguishes structure enforcement from processing row changes."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Three concrete DDL responsibilities appropriately describe implementing a relational model."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Three1-mark criteria total3. No SQL command syntax construction required; accurate DDL examples can substantiate equivalent description."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q03-c.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q03-c.json": "9fe7e3928d2deede5fbb1cb3de5aa584c0d24c0df6967ae2890cb3a417bbb6c2",
+        "question-bank/questions/P-SRC002-Q03-c.json": "c050451844574d2f69a709d96e19080b69a66c827b895b5e8a7ba2dc4979ee1a",
+        "question-bank/markschemes/P-SRC002-Q03-c.json": "8a8065009c88f7417d94011e55f5edca16d6c00cadea39b9d353489ca74960ab",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q03-c.json": "7d9da181189137127dd42a5de25750dc2a1d76e680b73b0be0cdb5de2b6b725b"
+      }
+    }
+  ]
+}

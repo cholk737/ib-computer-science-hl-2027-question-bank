@@ -1,0 +1,44 @@
+{
+  "question_id": "P-SRC002-Q18-b",
+  "status": "pass",
+  "actual": 10,
+  "events": [
+    [
+      "call",
+      4
+    ],
+    [
+      "call",
+      3
+    ],
+    [
+      "call",
+      2
+    ],
+    [
+      "call",
+      1
+    ],
+    [
+      "return",
+      1,
+      1
+    ],
+    [
+      "return",
+      2,
+      3
+    ],
+    [
+      "return",
+      3,
+      6
+    ],
+    [
+      "return",
+      4,
+      10
+    ]
+  ],
+  "evidence": "Actual stored recursive code instrumented; one recursive invocation per non-base activation; all requested call/return values verified."
+}

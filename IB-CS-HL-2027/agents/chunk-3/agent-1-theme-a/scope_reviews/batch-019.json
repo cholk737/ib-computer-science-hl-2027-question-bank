@@ -1,0 +1,181 @@
+{
+  "checkpoint": "A-RECORDS-019",
+  "reviews": [
+    {
+      "question_id": "P-SRC004-Q06",
+      "record_sha256": "81b68e310f47d2514945c391e76f195e55223d0dc3d5c2462b47ebdfb89ded14",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:05:09.778287+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.3.2",
+          "scope_bullet_id": "A1.3.2:G02",
+          "exact_guidance": "• Memory management, file system, device management, scheduling, security, accounting, graphical user interface (GUI), virtualization, networking",
+          "assessed_skill": "Outline system virtualization supplying guest virtual hardware managed on host resources.",
+          "relevance": "partial",
+          "evidence": "Virtualization function only; other listed OS functions untested. Does not assert hypervisor must be an ordinary host-OS process."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "A system VM presents virtualized hardware to a guest OS, whose execution/resources are managed on physical host hardware. This permits guests without pretending guest uses separate physical laptop."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Virtual hardware environment plus guest resource execution correctly outlines system VM role."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Two1-mark components total2; type1/type2 hypervisor implementations both valid if conceptual role accurate."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-004/questions/H-SRC004-Q06.json, extraction/by-paper/SRC-016/questions/H-SRC016-Q06.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Maintaining system integrity while running operating systems’ background operations"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC004-Q06.json": "81b68e310f47d2514945c391e76f195e55223d0dc3d5c2462b47ebdfb89ded14",
+        "question-bank/questions/P-SRC004-Q06.json": "8256a649020de31d57a0c41674f18633a034bedde2d26e1fa4c9c5e10fb44a70",
+        "question-bank/markschemes/P-SRC004-Q06.json": "6b87494707560d60df10d66060f2d83d7409862f7cdb16e11d6b92b186939f62",
+        "extraction/by-paper/SRC-004/questions/H-SRC004-Q06.json": "c269e80ee80d05b7ee3d774e78fb97cc0cba242a4377138696ebfd61a45bfcbd",
+        "extraction/by-paper/SRC-016/questions/H-SRC016-Q06.json": "10b233969c9794ec7b294b787ccb8cd008b9957c8643d549a8809756972e17a5"
+      },
+      "question_type": "explanation",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Outline VM mechanism in2 components."
+      }
+    },
+    {
+      "question_id": "P-SRC004-Q08-a",
+      "record_sha256": "21aa5614903a094c5d6a9d6b6e9f68ea6cf0b54c6155afe89843513014e05b06",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:05:09.778565+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.3.5",
+          "scope_bullet_id": "A1.3.5:G01",
+          "exact_guidance": "• The challenges of multitasking and resource allocation, including task scheduling, resource contention and deadlock",
+          "assessed_skill": "Outline interleaved scheduling allowing concurrent editor/download progress on one core.",
+          "relevance": "partial",
+          "evidence": "Scheduling facet only; no resource contention/deadlock analysis or parallel execution across cores."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Concurrency means overlapping task lifetimes/progress; a single core interleaves execution, while download can wait for I/O. This does not require simultaneous two-thread instruction execution."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Time slicing/scheduling and both tasks making progress correctly answer Outline2."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Two1-mark components total2 for concurrency outcome and interleaving mechanism; avoid treating single-core multitasking as true simultaneous execution of both instruction streams."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-004/questions/H-SRC004-Q08-a.json, extraction/by-paper/SRC-016/questions/H-SRC016-Q08-a.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC004-Q08-a.json": "21aa5614903a094c5d6a9d6b6e9f68ea6cf0b54c6155afe89843513014e05b06",
+        "question-bank/questions/P-SRC004-Q08-a.json": "884c8d0634f2aab03d62dfb70116190a2740bb264ac00d880d0dea3e0d9a24d7",
+        "question-bank/markschemes/P-SRC004-Q08-a.json": "6e9f29c4da7afd5d1b137ffdd4be162a3b41a14f0b0c4733cd4009252cc5f230",
+        "extraction/by-paper/SRC-004/questions/H-SRC004-Q08-a.json": "3b451d498fe6433775b52b0287dfadc87ad018055e4a624614c6f7c60871b8a4",
+        "extraction/by-paper/SRC-016/questions/H-SRC016-Q08-a.json": "e56e2a816b922a9d3fa16438be9e0a7c8d7266e314818f77eca6552e454c57aa"
+      },
+      "question_type": "explanation",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Outline concurrency/scheduling mechanism on one core."
+      }
+    },
+    {
+      "question_id": "P-SRC004-Q08-b",
+      "record_sha256": "7a406307adcc89b6406109a5080755437c60afa20649a2b19302968a6b4be104",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:05:09.778836+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.3.5",
+          "scope_bullet_id": "A1.3.5:G01",
+          "exact_guidance": "• The challenges of multitasking and resource allocation, including task scheduling, resource contention and deadlock",
+          "assessed_skill": "State responsiveness/usefulness benefit while another task waits for network I/O.",
+          "relevance": "supporting",
+          "evidence": "Benefit of multitasking foundation; does not directly explain scheduling mechanism, contention or deadlock."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "While download blocked on network, editor can remain responsive and processor need not idle if runnable editor work exists."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Responsiveness or useful work during blocked I/O is valid State1."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "One1-mark criterion permits relevant benefit alternatives; no mechanism explanation required for1."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-004/questions/H-SRC004-Q08-b.json, extraction/by-paper/SRC-016/questions/H-SRC016-Q08-b.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC004-Q08-b.json": "7a406307adcc89b6406109a5080755437c60afa20649a2b19302968a6b4be104",
+        "question-bank/questions/P-SRC004-Q08-b.json": "5252aa464882b2a288ca447f15883c05d59fc0af2f96d7894e9970ad85e69b7f",
+        "question-bank/markschemes/P-SRC004-Q08-b.json": "e2f30aceff1a41c7a5de1e2ee034e10d8177e948bd8a1695b2f1f29da91b7d12",
+        "extraction/by-paper/SRC-004/questions/H-SRC004-Q08-b.json": "43613aac969655ba0655db59978f30334674be5f0c3d56847ec5e8375e030a2e",
+        "extraction/by-paper/SRC-016/questions/H-SRC016-Q08-b.json": "a2497cfd4a80688058ec88db79d4f5719883a50d83cf3cbb05837352aaf67698"
+      },
+      "question_type": "conceptual recall",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "State one benefit in given context."
+      }
+    }
+  ]
+}

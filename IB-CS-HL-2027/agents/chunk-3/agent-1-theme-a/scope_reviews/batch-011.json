@@ -1,0 +1,169 @@
+{
+  "checkpoint": "A-RECORDS-011",
+  "reviews": [
+    {
+      "question_id": "P-SRC002-Q03-d",
+      "record_sha256": "c400965e5f77376d21e44ab16f47d20badc5345b477267cf626e73dad0dc99e3",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:58:51.246504+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.1.1",
+          "scope_bullet_id": "A3.1.1:G02",
+          "exact_guidance": "• Benefits of databases: community support, concurrency control, data consistency, data integrity, data retrieval, reduced data duplication, reduced redundancy, reliable transaction processing, scalability, security features",
+          "assessed_skill": "List database access-security tasks protecting confidential records.",
+          "relevance": "partial",
+          "evidence": "Security-feature benefit only, no relational feature/other benefits/limitations. Lists tasks without requiring explained benefit."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Authentication establishes account claim evidence; permissions limit authorized operations; review/revocation removes inappropriate continuing access. These are distinct access-management tasks."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Three model tasks are valid; authentication is not the same as authorization."
+        },
+        "markscheme": {
+          "status": "issue",
+          "evidence": "Three1-mark categories total3, but prompt permits any three appropriate tasks; current fixed authentication/permissions/review categories could restrict other valid access controls. State award any3 distinct correct access-security tasks with equivalence."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q03-d.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Features: composite keys, foreign keys, primary keys, relationships, tables",
+        "• Limitations of databases: “big data” scalability issues, design complexity, hierarchical data handling, rigid schema, object-relational impedance mismatch, unstructured data handling"
+      ],
+      "issues": [
+        "A-C3-MS-004: List3 security tasks should permit other distinct valid access restrictions (e.g. configure secure authentication, enforce least privilege, encrypt confidential data/keys appropriately) instead of requiring exactly the three model categories."
+      ],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q03-d.json": "c400965e5f77376d21e44ab16f47d20badc5345b477267cf626e73dad0dc99e3",
+        "question-bank/questions/P-SRC002-Q03-d.json": "f8bd16a69571d76a1a6db43450ceb0b5861ef71b23977dec770e799320653609",
+        "question-bank/markschemes/P-SRC002-Q03-d.json": "dab9ac7f3b5a65c4cdca61a535d7d5c76c7fcd6654be346d69692edb2a654970",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q03-d.json": "2b7cc7bbac17b461b61ada5125ea8a382652bace7b4f6119a0675978a765e1c0"
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q03-e",
+      "record_sha256": "1e236ef7de478607d2a595f17df33385abdf9a894798c48cb72596d471ca5299",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:58:51.247077+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.3.5",
+          "scope_bullet_id": "A3.3.5:G02",
+          "exact_guidance": "• Hiding data complexity, data consistency, independence, performance, query simplification, read-only data or updatable data, security",
+          "assessed_skill": "Explain restricted read-only view privacy, protected edits and simpler audit access.",
+          "relevance": "partial",
+          "evidence": "Security/read-only/query simplification/data hiding directly tested; virtual/materialized distinction, independence and performance not required."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "A restricted view limits exposed rows/columns and a genuinely read-only permission/interface prevents edits through it; underlying table permissions must also deny bypass."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Model correctly links minimal disclosure, prevented edits and simpler required audit access while retaining underlying data control."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Five1-mark points total5; privacy/field restriction and read-only/update prevention remain distinct. Controlled underlying-data criterion should require permission/bypass awareness rather than assume any view itself is secure."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q03-e.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Virtual views and materialized (snapshot) views"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q03-e.json": "1e236ef7de478607d2a595f17df33385abdf9a894798c48cb72596d471ca5299",
+        "question-bank/questions/P-SRC002-Q03-e.json": "b2d55f0297554ba5c96bdfb69572d6f26b5cffaee439f0faf118b686b654574b",
+        "question-bank/markschemes/P-SRC002-Q03-e.json": "d299d7729bee5dd98dcb8d77f8c12d7203726540f6a2a7112b83668915eca43b",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q03-e.json": "08a8a327c1b5f02867dc16e4fa1a86b350da772e801922be6e9f5c633000c96c"
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q04-a",
+      "record_sha256": "83eed66b40925d68c68bc38c410d211b0d6068db01a301f4b5fafe41aad115f9",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:58:51.247484+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.4.3",
+          "scope_bullet_id": "A3.4.3:G02",
+          "exact_guidance": "• The uses of the techniques in extracting meaningful information from large data sets",
+          "assessed_skill": "List ways OLAP extracts meaningful business information from historical retail sales.",
+          "relevance": "partial",
+          "evidence": "Direct to statement OLAP business-intelligence role; examples aggregate by region, compare time, inspect category. Does not establish any of six named data-mining techniques under G01."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Multidimensional aggregation, time comparisons and more detailed category analysis are valid OLAP uses for historical retail sales."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "All three proposed examples are meaningful retailer analytical uses, not operational record updates."
+        },
+        "markscheme": {
+          "status": "issue",
+          "evidence": "Three1-mark categories total3. Prompt asks any3 ways; literal fixed category buckets may under-credit distinct correct breakdowns such as region/product/customer-type analysis if all assigned only first aggregation criterion. Clarify any3 distinct meaningful OLAP uses with no duplicated idea."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q04-a.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Data mining techniques must include classification, clustering, regression, association rule discovery, sequential pattern discovery, anomaly detection (note: This links to “A4 Machine learning”)."
+      ],
+      "issues": [
+        "A-C3-MS-005: OLAP List3 examples require any3 distinct meaningful analytical uses rather than rigid one aggregation + one time + one drill-down pattern."
+      ],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q04-a.json": "83eed66b40925d68c68bc38c410d211b0d6068db01a301f4b5fafe41aad115f9",
+        "question-bank/questions/P-SRC002-Q04-a.json": "cac12edbb84c5ddb5f8813b59d3833644317f305693bdd398f6ba6ac50e30ea5",
+        "question-bank/markschemes/P-SRC002-Q04-a.json": "821bf5648747703b3a296f0d3015d0793c94da9eb29c454d6978c156bff32990",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q04-a.json": "28e98e868e8e35296dcded59e4abc36a5eed9f0643565f225463c3a03f69da50"
+      }
+    }
+  ]
+}

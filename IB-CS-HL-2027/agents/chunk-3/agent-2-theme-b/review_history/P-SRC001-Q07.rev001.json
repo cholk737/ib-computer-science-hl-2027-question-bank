@@ -1,0 +1,97 @@
+{
+  "question_id": "P-SRC001-Q07",
+  "mappings": [
+    {
+      "code": "B4.1.2",
+      "guidance_index": 1,
+      "assessed_skill": "Recognize/apply doubly linked form",
+      "relevance": "direct",
+      "evidence": "Initial doubly linked chain includes links both ways.",
+      "coverage_limit": "One required list variant only.",
+      "scope_bullet_id": "B4.1.2:G01",
+      "exact_guidance": "• Lists must include singly, doubly, circular",
+      "statement": "Evaluate linked lists.",
+      "mapping_verification_status": "verified"
+    },
+    {
+      "code": "B4.1.2",
+      "guidance_index": 2,
+      "assessed_skill": "Sketch insertion/deletion reference changes",
+      "relevance": "direct",
+      "evidence": "Delete Omar then Theo, prepend Nia; final forward/back links and null boundaries assessed.",
+      "coverage_limit": "No traversal/search or comparison/evaluation.",
+      "scope_bullet_id": "B4.1.2:G02",
+      "exact_guidance": "• Sketch of linked lists and implementation of basic operations diagrammatically, such as insertion, deletion, traversal, search",
+      "statement": "Evaluate linked lists.",
+      "mapping_verification_status": "verified"
+    },
+    {
+      "code": "B4.1.3",
+      "guidance_index": 1,
+      "assessed_skill": "Apply insertion/deletion to a doubly linked list",
+      "relevance": "direct",
+      "evidence": "Operations produce Nia,Lena,Priya and bidirectional neighbor links.",
+      "coverage_limit": "Not Python construction; singly/circular variants absent.",
+      "scope_bullet_id": "B4.1.3:G01",
+      "exact_guidance": "• The basic operations on a linked list, such as insertion, deletion, traversal, search",
+      "statement": "Construct and apply linked lists: singly, doubly and circular.",
+      "mapping_verification_status": "verified"
+    }
+  ],
+  "verification": {
+    "mapping": {
+      "status": "verified",
+      "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+    },
+    "technical": {
+      "status": "verified",
+      "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+    },
+    "answer": {
+      "status": "verified",
+      "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+    },
+    "markscheme": {
+      "status": "issue",
+      "evidence": "needs_editorial_repair; concrete issue recorded in review."
+    },
+    "assets": {
+      "status": "pending",
+      "evidence": "inline_diagram_render_pending"
+    },
+    "provenance": {
+      "status": "pending",
+      "evidence": "pending_original_source_recheck"
+    }
+  },
+  "checks": [
+    "Independent state trace Lena,Omar,Priya,Theo → Lena,Priya,Theo → Lena,Priya → Nia,Lena,Priya.",
+    "Four distinct marking criteria cover data order, forward links, backward links and boundaries, sum four."
+  ],
+  "issues": [
+    {
+      "severity": "low",
+      "dimension": "markscheme",
+      "detail": "Prompt/answer contain split names Pr i ya and Ni a while final marking point uses Priya/Nia. Normalize these identifiers consistently in coordinator-approved editorial repair; no semantic answer change."
+    },
+    {
+      "severity": "low",
+      "dimension": "assets",
+      "detail": "Inline Unicode linked-list diagram needs browser rendering check; no external figure asset is present."
+    }
+  ],
+  "reviewer": "/root/theme_b_coverage",
+  "reviewed_at": "2026-11-04T10:37:10.031504+00:00",
+  "record_sha256": "98197529760c13f65175c6873888a04aef479087b51feba1736b15b390ca377a",
+  "record_path": "question-bank/records/P-SRC001-Q07.json",
+  "original_syllabus_codes": [
+    "B4.1.2",
+    "B4.1.3"
+  ],
+  "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+  "mark_total_check": {
+    "question_marks": 4,
+    "marking_point_sum": 4,
+    "status": "pass"
+  }
+}

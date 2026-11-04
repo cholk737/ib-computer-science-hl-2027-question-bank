@@ -1,7 +1,7 @@
 {
-  "checkpoint": "C3-20261104-135247-042728",
-  "saved_at": "2026-11-04T13:52:47.042728+01:00",
-  "note": "Coverage report integrated112 exact statements/271 guidance paragraphs; no complete statement coverage certified. Six current per-question scope reviews approved and nine mapping rows merged, with granular unresolved checks. Same three agents resumed after usage interruption. Next continue scope batches and DB API/UI tests.",
+  "checkpoint": "C3-20261104-191432-415945",
+  "saved_at": "2026-11-04T19:14:32.415945+01:00",
+  "note": "All three specialist turns reported usage-limit interruptions. Their saved files are authority; no live/background work is assumed. Canonical DB/search sources and23 functional plus10 semantic precision passing tests persist. Last source002 independent audit is partial; next inspect it before approval. New user pasted instruction pending read/application.",
   "baseline_commit": "dd5285c",
   "initial_recovery_commit": "523d2b5",
   "master_bank_records": 823,
@@ -129,7 +129,7 @@
       "directory": "agents/chunk-3/agent-1-theme-a",
       "saved_status": {
         "agent": "/root/theme_a_coverage",
-        "checkpoint": "A-RECORDS-003",
+        "checkpoint": "A-RECORDS-028",
         "status": "active",
         "objectives_checked": [
           "A1.1.1",
@@ -209,9 +209,13 @@
         ],
         "generated_question_ids": [],
         "verified_question_ids": [],
-        "last_saved_question_id": "P-SRC001-Q11-c-ii",
+        "last_saved_question_id": "P-SRC005-Q10-e",
         "completed_tasks": [
-          "All 74 Theme A objective statements and full source guidance PDF34\u201343 re-read and first-pass evidence/gaps saved."
+          "All 74 Theme A objective statements and full source guidance PDF34\u201343 re-read and first-pass evidence/gaps saved.",
+          "All17 owned Theme A records from SRC001 reviewed in6 durable batches (3+3+3+3+3+2), with3 explicit marking issues pending coordinator repair.",
+          "Self-validation passes all74 exact guidance/bullet audits,17 unique review contracts/content hashes/source linkages; saved VALIDATION.json.",
+          "All32 owned SRC002 Theme A records reviewed with exact statement/bullets, complete prompt/answer/criteria, source metadata and appropriate executable SQL check.",
+          "All20 owned SRC004 Theme A records reviewed; technical IP sequencing issue separately flagged, source MS availability retained."
         ],
         "unfinished_tasks": [
           "Review remaining Theme A records individually against exact statement/bullets in batches of2\u20133.",
@@ -220,18 +224,75 @@
         ],
         "files_created": [
           "REVIEW_QUEUE.json",
+          "SOURCE001_A_REVIEW_CHECKPOINT.json",
+          "SOURCE002_A_REVIEW_CHECKPOINT.json",
+          "SOURCE004_A_REVIEW_CHECKPOINT.json",
           "STATUS.json",
+          "VALIDATION.json",
           "checkpoint_reviews.py",
           "checks/P-SRC001-Q06-truth-check.json",
+          "checks/P-SRC002-Q02-c-sql-check.json",
+          "checks/P-SRC005-Q05-representation-check.json",
           "coverage_audit.json",
           "findings.md",
           "review_batch002.py",
           "review_batch003.py",
+          "review_batch004.py",
+          "review_batch005.py",
+          "review_batch006.py",
+          "review_batch007.py",
+          "review_batch008.py",
+          "review_batch009.py",
+          "review_batch010.py",
+          "review_batch011.py",
+          "review_batch012.py",
+          "review_batch013.py",
+          "review_batch014.py",
+          "review_batch015.py",
+          "review_batch016.py",
+          "review_batch017.py",
+          "review_batch018.py",
+          "review_batch019.py",
+          "review_batch020.py",
+          "review_batch021.py",
+          "review_batch022.py",
+          "review_batch023.py",
+          "review_batch024.py",
+          "review_batch025.py",
+          "review_batch026.py",
+          "review_batch027.py",
+          "review_batch028.py",
           "review_batches.py",
           "save_audit.py",
           "scope_reviews/batch-001.json",
           "scope_reviews/batch-002.json",
-          "scope_reviews/batch-003.json"
+          "scope_reviews/batch-003.json",
+          "scope_reviews/batch-004.json",
+          "scope_reviews/batch-005.json",
+          "scope_reviews/batch-006.json",
+          "scope_reviews/batch-007.json",
+          "scope_reviews/batch-008.json",
+          "scope_reviews/batch-009.json",
+          "scope_reviews/batch-010.json",
+          "scope_reviews/batch-011.json",
+          "scope_reviews/batch-012.json",
+          "scope_reviews/batch-013.json",
+          "scope_reviews/batch-014.json",
+          "scope_reviews/batch-015.json",
+          "scope_reviews/batch-016.json",
+          "scope_reviews/batch-017.json",
+          "scope_reviews/batch-018.json",
+          "scope_reviews/batch-019.json",
+          "scope_reviews/batch-020.json",
+          "scope_reviews/batch-021.json",
+          "scope_reviews/batch-022.json",
+          "scope_reviews/batch-023.json",
+          "scope_reviews/batch-024.json",
+          "scope_reviews/batch-025.json",
+          "scope_reviews/batch-026.json",
+          "scope_reviews/batch-027.json",
+          "scope_reviews/batch-028.json",
+          "validate_reviews.py"
         ],
         "remaining_syllabus_requirements": {
           "A1.1.1": [
@@ -433,13 +494,13 @@
             "Discuss need to revisit guidance over time and emerging technology rights/privacy/equity impacts."
           ]
         },
-        "next_action": "Review P-SRC001-Q11-c-iv, P-SRC001-Q12-a-i and P-SRC001-Q12-a-ii; save batch-004.",
+        "next_action": "Review P-SRC005-Q12-a, P-SRC005-Q12-b, P-SRC005-Q12-c-i; save batch-029.",
         "scope_override": "Database/search and all existing per-record scope review; no exams/tests/PDFs.",
-        "last_saved_reviewed_question_id": "P-SRC001-Q11-c-ii",
+        "last_saved_reviewed_question_id": "P-SRC005-Q10-e",
         "record_review_counts": {
           "total_owned": 459,
-          "reviewed": 9,
-          "pending": 450
+          "reviewed": 81,
+          "pending": 378
         },
         "reviewed_question_ids": [
           "P-SRC001-Q01",
@@ -450,14 +511,152 @@
           "P-SRC001-Q08-b",
           "P-SRC001-Q09",
           "P-SRC001-Q11-c-i",
-          "P-SRC001-Q11-c-ii"
+          "P-SRC001-Q11-c-ii",
+          "P-SRC001-Q11-c-iv",
+          "P-SRC001-Q12-a-i",
+          "P-SRC001-Q12-a-ii",
+          "P-SRC001-Q12-b-i",
+          "P-SRC001-Q12-b-ii",
+          "P-SRC001-Q12-b-iii",
+          "P-SRC001-Q13-a-i",
+          "P-SRC001-Q13-a-ii",
+          "P-SRC002-Q01-a",
+          "P-SRC002-Q01-b",
+          "P-SRC002-Q01-c",
+          "P-SRC002-Q01-d",
+          "P-SRC002-Q01-e-i",
+          "P-SRC002-Q01-e-ii",
+          "P-SRC002-Q02-a",
+          "P-SRC002-Q02-b",
+          "P-SRC002-Q02-c",
+          "P-SRC002-Q02-d",
+          "P-SRC002-Q03-a",
+          "P-SRC002-Q03-c",
+          "P-SRC002-Q03-d",
+          "P-SRC002-Q03-e",
+          "P-SRC002-Q04-a",
+          "P-SRC002-Q04-b",
+          "P-SRC002-Q04-c",
+          "P-SRC002-Q04-d",
+          "P-SRC002-Q04-e",
+          "P-SRC002-Q04-f",
+          "P-SRC002-Q07-c",
+          "P-SRC002-Q07-e",
+          "P-SRC002-Q08-a",
+          "P-SRC002-Q08-b-i",
+          "P-SRC002-Q08-b-ii",
+          "P-SRC002-Q08-d",
+          "P-SRC002-Q09-c",
+          "P-SRC002-Q09-f",
+          "P-SRC002-Q11-c",
+          "P-SRC002-Q11-d",
+          "P-SRC002-Q13-b",
+          "P-SRC002-Q16-b",
+          "P-SRC004-Q02",
+          "P-SRC004-Q03",
+          "P-SRC004-Q04",
+          "P-SRC004-Q06",
+          "P-SRC004-Q08-a",
+          "P-SRC004-Q08-b",
+          "P-SRC004-Q10-a",
+          "P-SRC004-Q10-b-i",
+          "P-SRC004-Q10-b-ii",
+          "P-SRC004-Q10-d",
+          "P-SRC004-Q10-e",
+          "P-SRC004-Q11-d",
+          "P-SRC004-Q11-e-i",
+          "P-SRC004-Q12-a-i",
+          "P-SRC004-Q12-a-ii",
+          "P-SRC004-Q12-b",
+          "P-SRC004-Q12-c-i",
+          "P-SRC004-Q12-c-ii",
+          "P-SRC004-Q12-d-i",
+          "P-SRC004-Q12-d-ii",
+          "P-SRC005-Q01",
+          "P-SRC005-Q03",
+          "P-SRC005-Q04-a",
+          "P-SRC005-Q04-b",
+          "P-SRC005-Q05-a",
+          "P-SRC005-Q05-b",
+          "P-SRC005-Q07",
+          "P-SRC005-Q10-a",
+          "P-SRC005-Q10-b",
+          "P-SRC005-Q10-c",
+          "P-SRC005-Q10-d",
+          "P-SRC005-Q10-e"
         ],
         "resume_history": [
           {
             "checkpoint": "A-RECORDS-001",
             "note": "Resumed same native identity from saved first-pass74 audit after coordinator continuation; preserved all existing outputs. No unsaved originals or assumed prior record reviews."
+          },
+          {
+            "checkpoint": "A-RECORDS-006",
+            "note": "Coordinator instructed autonomous continuation from next source002 without treating bounded milestones as stop; same identity retained."
           }
-        ]
+        ],
+        "question_type_review": {
+          "reviewed_ids": [
+            "P-SRC004-Q10-a",
+            "P-SRC004-Q10-b-i",
+            "P-SRC004-Q10-b-ii",
+            "P-SRC002-Q09-f",
+            "P-SRC002-Q11-c",
+            "P-SRC002-Q11-d",
+            "P-SRC002-Q13-b",
+            "P-SRC002-Q16-b",
+            "P-SRC004-Q10-d",
+            "P-SRC004-Q10-e",
+            "P-SRC004-Q11-d",
+            "P-SRC004-Q12-d-i",
+            "P-SRC004-Q12-d-ii",
+            "P-SRC004-Q11-e-i",
+            "P-SRC004-Q12-a-i",
+            "P-SRC004-Q12-a-ii",
+            "P-SRC004-Q02",
+            "P-SRC004-Q03",
+            "P-SRC004-Q04",
+            "P-SRC002-Q08-b-ii",
+            "P-SRC002-Q08-d",
+            "P-SRC002-Q09-c",
+            "P-SRC004-Q06",
+            "P-SRC004-Q08-a",
+            "P-SRC004-Q08-b",
+            "P-SRC004-Q12-b",
+            "P-SRC004-Q12-c-i",
+            "P-SRC004-Q12-c-ii"
+          ],
+          "earlier_records_type_pending": 41
+        },
+        "last_self_validation": {
+          "checkpoint": "A-RECORDS-024",
+          "contract_checks_passed": true,
+          "all_review_hashes_current": true,
+          "stale_review_records": [],
+          "objective_audits_checked": 74,
+          "exact_guidance_and_bullet_counts_match": true,
+          "reviewed_records": 69,
+          "pending_records": 390,
+          "source_metadata_linkages_pass": true,
+          "review_mapping_relations": {
+            "partial": 79,
+            "direct": 12,
+            "supporting": 7
+          },
+          "issue_records": [
+            "P-SRC001-Q02",
+            "P-SRC001-Q08-b",
+            "P-SRC001-Q11-c-i",
+            "P-SRC002-Q03-d",
+            "P-SRC002-Q04-a",
+            "P-SRC002-Q04-d",
+            "P-SRC002-Q08-a",
+            "P-SRC004-Q04"
+          ],
+          "question_type_reviewed": 28,
+          "question_type_pending": 41,
+          "limits": "Mechanical contract/source linkage checks supplement manual record review. No complete bank coverage or Chunk4 independent verification claimed. Old review hashes changed by coordinator repairs require re-review/approval."
+        }
       }
     },
     {
@@ -465,11 +664,12 @@
       "directory": "agents/chunk-3/agent-2-theme-b",
       "saved_status": {
         "agent": "/root/theme_b_coverage",
-        "checkpoint": "B-RECORD-015",
+        "checkpoint": "B-RECORD-073",
         "status": "active_individual_record_review",
         "completed_tasks": [
           "Read project rules, recovery progress, QA and specimen analysis",
-          "Manual objective/scope evidence audit saved for 38 of 38 Theme B statements"
+          "Manual objective/scope evidence audit saved for 38 of 38 Theme B statements",
+          "30 individual existing bank records reviewed; all38 objective first-pass audits remain distinct from full-bank review."
         ],
         "unfinished_tasks": [
           "Full individual B bank mapping review, not implied by objective first pass",
@@ -520,13 +720,59 @@
         "verified_ids": [],
         "last_saved_question_id": null,
         "files_created": [
+          "B_CHECKPOINT_MANIFEST.json",
           "STATUS.json",
+          "add_b2_audit.py",
+          "add_b3_audit.py",
+          "add_b4_audit.py",
           "audit_decisions.json",
           "audit_theme_b.py",
+          "checks/check_b_record_006.json",
+          "checks/check_b_record_006.py",
+          "checks/check_b_record_009.json",
+          "checks/check_b_record_009.py",
+          "checks/check_b_record_012.json",
+          "checks/check_b_record_012.py",
+          "checks/check_b_record_015.json",
+          "checks/check_b_record_015.py",
+          "checks/check_b_record_018.json",
+          "checks/check_b_record_018.py",
+          "checks/check_b_record_021.json",
+          "checks/check_b_record_021.py",
+          "checks/check_b_record_024.json",
+          "checks/check_b_record_024.py",
+          "checks/check_b_record_027.json",
+          "checks/check_b_record_027.py",
+          "checks/check_b_record_030.json",
+          "checks/check_b_record_030.py",
+          "checks/check_b_record_033.json",
+          "checks/check_b_record_033.py",
+          "checks/check_b_record_036.json",
+          "checks/check_b_record_036.py",
+          "checks/check_b_record_038.json",
+          "checks/check_b_record_038.py",
+          "checks/check_b_record_041.json",
+          "checks/check_b_record_041.py",
+          "checks/check_b_record_049.json",
+          "checks/check_b_record_049.py",
+          "checks/check_b_record_055.json",
+          "checks/check_b_record_055.py",
+          "checks/check_b_record_061.json",
+          "checks/check_b_record_061.py",
           "coverage_audit.json",
           "findings.md",
           "question_review_queue.json",
           "question_reviews.json",
+          "refresh_checkpoint.py",
+          "review_history/P-SRC001-Q03.rev001.json",
+          "review_history/P-SRC001-Q04.rev001.json",
+          "review_history/P-SRC001-Q07.rev001.json",
+          "review_history/P-SRC001-Q14-c.rev001.json",
+          "review_history/P-SRC001-Q14-c.rev002.json",
+          "review_history/P-SRC002-Q05-a-ii.rev001.json",
+          "review_history/P-SRC005-Q09.rev001.json",
+          "review_history/P-SRC005-Q13-a-i.rev001.json",
+          "review_history/P-SRC009-Q13-a.rev001.json",
           "save_reviews.py"
         ],
         "remaining_requirements": {
@@ -565,13 +811,41 @@
             "B4.1.6"
           ]
         },
-        "exact_next_action": "Review next queued record P-SRC002-Q06-b plus next two; save actual scope evidence and each verification dimension separately.",
+        "exact_next_action": "Review next queued record P-SRC006-Q13-b plus next two; save actual scope evidence and each verification dimension separately.",
         "scope_override": "No exam papers/topic tests/PDFs/assembly. Searchable evidence and full-bank review have priority.",
-        "individual_record_reviews_completed": 15,
+        "individual_record_reviews_completed": 73,
         "individual_record_reviews_total": 364,
-        "individual_record_reviews_remaining": 349,
-        "last_saved_review_question_id": "P-SRC002-Q05-e",
-        "next_queued_question_id": "P-SRC002-Q06-b"
+        "individual_record_reviews_remaining": 291,
+        "last_saved_review_question_id": "P-SRC006-Q13-a",
+        "next_queued_question_id": "P-SRC006-Q13-b",
+        "source_record_review_progress": {
+          "SRC001": {
+            "reviewed": 10,
+            "remaining": 0,
+            "note": "C3 mapping and stated verification dimensions only;original-PDF source verification pending."
+          },
+          "SRC002": {
+            "reviewed": 28,
+            "remaining": 0,
+            "note": "C3 mapping and stated verification dimensions only;original-PDF source verification pending."
+          },
+          "SRC004": {
+            "reviewed": 11,
+            "remaining": 0,
+            "note": "C3 mapping and stated verification dimensions only;original-PDF source verification pending."
+          },
+          "SRC005": {
+            "reviewed": 11,
+            "remaining": 0,
+            "note": "C3 mapping and stated verification dimensions only;original-PDF source verification pending."
+          },
+          "SRC009": {
+            "reviewed": 1,
+            "remaining": 16,
+            "note": "C3 mapping and stated verification dimensions only;original-PDF source verification pending."
+          }
+        },
+        "reviewed_question_type_count": 20
       }
     },
     {
@@ -579,24 +853,42 @@
       "directory": "agents/chunk-3/agent-3-bank-audit",
       "saved_status": {
         "specialist": "/root/searchable_bank_audit",
-        "checkpoint": "C3-A3-003-DB-IMPORT",
+        "checkpoint": "C3-A3-SRC002-033",
         "completed": [
           "Read saved progress and specimen analysis; confirmed 823-question baseline schemas",
           "Built 823-question/112-scope local UI with separated lazy answer dataset",
           "11 functional data/filter/export tests pass; app syntax check passes",
           "12 data/filter/export tests pass; provenance source links resolve and source-answer summaries removed",
           "Persistent SQLite import: all 823 stable question IDs, 112 objectives, exact guidance bullets, separate answer table, 6 pending verification dimensions per question, duplicate candidates and schema for usage/selections",
-          "Second incremental import unchanged=823; SQLite integrity_check=ok"
+          "Second incremental import unchanged=823; SQLite integrity_check=ok",
+          "Persistent HTTP API and dynamic UI saved; loopback8766 live for coordinator browser QA",
+          "14 isolated SQLite functional tests pass, including all823 preservation, safe separate answers, stale/bogus review rejection, direct/partial/unmet scope, filters, all-page retrieval, independent verification/history, incremental original and changed-record stale invalidation",
+          "Approved master evidence imported16 links;0 rejected;823 unchanged",
+          "19 isolated DB functional tests pass, including atomic literal review rejection, revised-link replacement, snapshot withdrawal preserving independent checks, public rationale hidden",
+          "Independent112-code census and8 bounded full-guidance/prompt/answer samples saved independent_coverage.json; exact nonbranching recursion executed",
+          "Relocatable ROOT discovery, explicit --db, reviewed new-code/theme/topic union, explicit reviewed question type, snapshot revocation, independent mapping-objection invalidation saved",
+          "Independent A/B source-scope samples3 and121 discounted-row executions saved; protocol supporting and alias/domain issues confirmed",
+          "Consistent SQLite backup saved snapshots/C3-A3-006.sqlite3 with SHA2565a844808e668ca509c63cd327e0c7e3c5085b30a475cef0a7e87d537842b2ddd",
+          "Coordinator installed canonical question-bank/search and question-bank/database.sqlite3; relocated23-test suite passes; canonicalDB is now authority; backend/UI source frozen"
         ],
-        "current": "Review backend semantics, add HTTP API and dynamic UI, tests",
+        "current": "Independent SRC002 per-question integration review",
         "files": [
           "test_bank.js",
           "question_bank.sqlite3",
+          "independent_coverage.json",
+          "independent_review_samples.json",
+          "test_db.py",
+          "serve_bank.py",
           "build_bank.py",
+          "verify_review_samples.py",
+          "db_test_results.json",
+          "README.md",
           "bank_db.py",
           "findings.md",
           "STATUS.json",
           "test_results.json",
+          "save_independent_audit.py",
+          "snapshots/C3-A3-006.sqlite3",
           "web/index.html",
           "web/bank-core.js",
           "web/questions.js",
@@ -604,7 +896,9 @@
           "web/style.css",
           "web/answers.js",
           "web/app.js",
-          "__pycache__/bank_db.cpython-313.pyc"
+          "persistent-web/index.html",
+          "persistent-web/style.css",
+          "persistent-web/app.js"
         ],
         "checked_objective_ids": [],
         "generated_question_ids": [],
@@ -616,19 +910,43 @@
           "Browser QA"
         ],
         "integration_pending": [
-          "Coordinator installation and rebuilt data after new questions merge"
+          "Coordinator final browser QA",
+          "Full corpus question-by-question review beyond saved approvals",
+          "Arbitrary-phrasing semantic recall and reviewed type coverage remain incomplete"
         ],
-        "exact_next_action": "Implement endpoint server and dynamic UI against saved SQLite; test preserved IDs, scope evidence validation and representative search.",
-        "verification_limits": "DB legacy import deliberately leaves all 6 per-question review dimensions pending until approved evidence is supplied. No reviewed matches imported yet.",
+        "exact_next_action": "Read next SRC002 dossier: P-SRC002-Q09-c",
+        "verification_limits": "Canonical database is authority; developer database is disposable. No auto write to canonical code/DB. Independent60-record assigned batch pending, not assumed accepted.",
         "cancelled": [
           "Exam blueprint",
           "Practice case concept",
           "All exam/topic-test/PDF assembly this Chunk 3"
-        ]
+        ],
+        "database_counts": {
+          "questions": 823,
+          "objectives": 112,
+          "bullets": 271,
+          "scope_evidence": 50,
+          "review_records": 27,
+          "verification": 4938,
+          "selections": 0,
+          "usage_history": 0
+        },
+        "src002_review_counts": {
+          "reviewed": 33,
+          "accept_mapping_evidence": 33,
+          "needs_revision": 0,
+          "remaining": 27
+        },
+        "last_reviewed_question_id": "P-SRC002-Q08-d"
       }
     }
   ],
   "saved_files": [
+    {
+      "path": "agents/chunk-3/.DS_Store",
+      "bytes": 6148,
+      "sha256": "b47f8061723c52986df28f4ea82b05be6d9a88e687fed06686c961a36b8826f0"
+    },
     {
       "path": "agents/chunk-3/.gitkeep",
       "bytes": 0,
@@ -636,13 +954,33 @@
     },
     {
       "path": "agents/chunk-3/agent-1-theme-a/REVIEW_QUEUE.json",
-      "bytes": 145622,
-      "sha256": "10a03d40cb335699aca69762f5ae68eb7afd48313756658ae5cefe7eb2824edd"
+      "bytes": 150735,
+      "sha256": "328e724948052b54729e4fb9d4e0f2d96290744d6d35760f7abf5a1e4678f211"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/SOURCE001_A_REVIEW_CHECKPOINT.json",
+      "bytes": 916,
+      "sha256": "961d6b754cfccd45a9bb92be33b70f14ba4b7133e7778a2b9199eb63de496b08"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/SOURCE002_A_REVIEW_CHECKPOINT.json",
+      "bytes": 1124,
+      "sha256": "a6908b1805bb173df385474ca5ea640d7d43d1508b18912b97bd9df2cef293aa"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/SOURCE004_A_REVIEW_CHECKPOINT.json",
+      "bytes": 1009,
+      "sha256": "00966f07a4b7df0513f2f7c7e9e62bf59d9631d9b4be329e17e9ed7ecffe9ba9"
     },
     {
       "path": "agents/chunk-3/agent-1-theme-a/STATUS.json",
-      "bytes": 11116,
-      "sha256": "3f2e09ee505c0b824ea84035d108c9e19c7b77aeaeb6b40e6d4322cb81bb2e8b"
+      "bytes": 17129,
+      "sha256": "15aef88317729ba53ea359bb533842336c618382b6fc73a9bc6936f3b44ed6b9"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/VALIDATION.json",
+      "bytes": 907,
+      "sha256": "34cceca2810680a8372a8c7893988fd324a216d460451cc7170479c2c87dfddf"
     },
     {
       "path": "agents/chunk-3/agent-1-theme-a/checkpoint_reviews.py",
@@ -655,14 +993,24 @@
       "sha256": "cd4f4eb444f0e3e6c5405d2b5f1a47a59c495203ff0f4800a6a9d56c44a04377"
     },
     {
+      "path": "agents/chunk-3/agent-1-theme-a/checks/P-SRC002-Q02-c-sql-check.json",
+      "bytes": 668,
+      "sha256": "e3e18a6cc87ad2c03ca022a30454abf83cecb0244176074254e7098e2b487395"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/checks/P-SRC005-Q05-representation-check.json",
+      "bytes": 333,
+      "sha256": "f8bfe3d4a8907b9e644cd26a4fc5071caa9bb7481013e6a7fbd3cc54c3b31059"
+    },
+    {
       "path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "bytes": 163863,
       "sha256": "47a9940d33708dac180d418fb25b4fd04fee7e35b841f7f7be2c7ccf7286daf2"
     },
     {
       "path": "agents/chunk-3/agent-1-theme-a/findings.md",
-      "bytes": 2601,
-      "sha256": "f3b9dfec4ba01be037a3d14448fa3f487a416a6b63bca4fdfd6c74c9e75f54a4"
+      "bytes": 8921,
+      "sha256": "ca7c86c1e5d9a2c8e24c5e83cf10991f80e3a22aef161e93ef757278cebff5af"
     },
     {
       "path": "agents/chunk-3/agent-1-theme-a/review_batch002.py",
@@ -675,9 +1023,134 @@
       "sha256": "474f73878eeca04c2f59c2b13f853db92499c3bc2f833ec75b47970fd5e4867c"
     },
     {
+      "path": "agents/chunk-3/agent-1-theme-a/review_batch004.py",
+      "bytes": 3175,
+      "sha256": "ecc461e7dbd1a4d53ecdc7d73698e091b2a6b7aac149598b63e65aa126b2f428"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/review_batch005.py",
+      "bytes": 2782,
+      "sha256": "e32709229c6a16248c151d96b066d2c956af83ca5f8c28b60462a6c598ab009e"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/review_batch006.py",
+      "bytes": 3845,
+      "sha256": "d51967975bff16a1db0a06c9250ea428e466c5f4b19273773c9f434c63b10d2d"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/review_batch007.py",
+      "bytes": 2594,
+      "sha256": "cae2dfef289001d5db6b5558ee4ee3dfc7cad41db03765372a9515813672a20d"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/review_batch008.py",
+      "bytes": 2576,
+      "sha256": "cc20323684fc76b14c6369137086ad6bb1b0c444a1538bc2614b3e7ec5536779"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/review_batch009.py",
+      "bytes": 3867,
+      "sha256": "79764e42e850fa1a3117741bc7b952ccb31940b499def50fa5547aabde3171f8"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/review_batch010.py",
+      "bytes": 2759,
+      "sha256": "a17bd33663be63115328a1486d3bd9f30ca2da9f43d4fb36245290ccf3a204cc"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/review_batch011.py",
+      "bytes": 3104,
+      "sha256": "78e26e3b5f9a754de85a0f538bb8263ddc652694f2f7cd8bde8e0dc810cc022b"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/review_batch012.py",
+      "bytes": 3013,
+      "sha256": "33fc5d1b512310958384cf056bce50f40aa8119b89979d3de703bf88bad8c6a3"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/review_batch013.py",
+      "bytes": 3173,
+      "sha256": "bc0b7283640d3e14bcb075534366ff2af8b3517066cc0bb08fe2ea8a47c23688"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/review_batch014.py",
+      "bytes": 2952,
+      "sha256": "28d69ebaab69c5615fed8f2de2a367e3a7b8380db1a0c153536f5576b938e1c2"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/review_batch015.py",
+      "bytes": 3234,
+      "sha256": "3dd758951a49acf5274feb84a902abca42084c75cd794c6729004c6bbdab8af6"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/review_batch016.py",
+      "bytes": 3106,
+      "sha256": "b62a60eef04fbf025c2f62908ae6e7bac6aae60f891c5aaf5d328f6befe3feb8"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/review_batch017.py",
+      "bytes": 3970,
+      "sha256": "dfb612f4c8d4eac4a791baf544285d2fa72b4be5b7a0e6488cc74198a256abe8"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/review_batch018.py",
+      "bytes": 3203,
+      "sha256": "b4bda3b68f3207e528d3951c04d86db201144402184c1dca3b1f5704e5b4969c"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/review_batch019.py",
+      "bytes": 2471,
+      "sha256": "3d220022d60915333cb606dc330530cbfc399b26016e717d2f23762ae0f6ab2b"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/review_batch020.py",
+      "bytes": 2347,
+      "sha256": "8c397f0adfee316e2d49609b581b629d7ccb239adf63060d15d3d4ed2a587a7f"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/review_batch021.py",
+      "bytes": 3140,
+      "sha256": "3ba0d578313ecc865fc6fe167a4949737a55185f9baf91a8125d03b26819caef"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/review_batch022.py",
+      "bytes": 2770,
+      "sha256": "dc56f59fcce8c1cfca0f3ac9a77c72a8ed5bcaba8eb4872c655796cce827f2aa"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/review_batch023.py",
+      "bytes": 3148,
+      "sha256": "a786cb5a1e03f32df544ab134ca17ddfb67fe1dea3994bf8dc23e40aabe8c460"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/review_batch024.py",
+      "bytes": 3706,
+      "sha256": "58a382ff8edd8c30d61d4253763a9bc976f18a7adca787ff089c1f7c10504226"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/review_batch025.py",
+      "bytes": 3232,
+      "sha256": "0b1c9d4b488e6c6d3fb694c2669a89aebe7b99240cbf39f4d759ec371c0e3599"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/review_batch026.py",
+      "bytes": 3311,
+      "sha256": "b743df1a67ea80ae38d30a5d947464b705deb80b4d0321761a904c039d4caa2c"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/review_batch027.py",
+      "bytes": 3145,
+      "sha256": "60ff16759af64c8ff650df83415767281d3c4ac385af41d2368a5ae80aea7ad1"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/review_batch028.py",
+      "bytes": 3194,
+      "sha256": "a44c116115caedc516567421854ea0766a9bcd90ac9aaabe9413ab9e2bba2792"
+    },
+    {
       "path": "agents/chunk-3/agent-1-theme-a/review_batches.py",
-      "bytes": 8378,
-      "sha256": "35f51115393f2c10e2c8f2f7ab6dee7f654d95f217b731a156cb30ad300789d4"
+      "bytes": 8408,
+      "sha256": "99fb793ae0ecd045c2a871e522dbaa835f20c96c8ec43664d77a34a449c46b01"
     },
     {
       "path": "agents/chunk-3/agent-1-theme-a/save_audit.py",
@@ -700,9 +1173,144 @@
       "sha256": "921c139d070645105a2f75d2bbb2bfd50660054b62343158f3997fb42516b3fc"
     },
     {
+      "path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-004.json",
+      "bytes": 11482,
+      "sha256": "f77e0b554569b522eca045ef7d5ac8bd4bfd54e6ada911bac87b2e63d9e3a296"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-005.json",
+      "bytes": 11305,
+      "sha256": "6e8ff1cdc993bc378fcacea09cf3ed8f846d06a09cca50cffd855295ca1d8717"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-006.json",
+      "bytes": 7828,
+      "sha256": "a0b16e3785a7e14b43bf8eae442c812ae7edab121eb540273879f11ff40898e0"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-007.json",
+      "bytes": 10548,
+      "sha256": "0ac57c62633a4c97a1472bb311eb291fd7b90e186db67114d42ec351a0c49d69"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-008.json",
+      "bytes": 10281,
+      "sha256": "ab70ae795cb1149181733c04d48a545b2ad360140fc52e84330687790dffd505"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-009.json",
+      "bytes": 10346,
+      "sha256": "d67a8a1e4126fde5e4d8017a8da687eccddbf7cd25c15de79e0e490834caa320"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-010.json",
+      "bytes": 10264,
+      "sha256": "0d4d7b695b5b2e63be733eab61ef5cefa5e6832d6fbc00114f7a3f80940d1f58"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-011.json",
+      "bytes": 10881,
+      "sha256": "7d6b12709162b1142d12b68779325c9fc3a4ff3326c3226fcad832e0702f7b5c"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-012.json",
+      "bytes": 10878,
+      "sha256": "d29c5983793f157bb1d109b8e8dcb5e63f6fd082da51411cec9fe2f887d55140"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-013.json",
+      "bytes": 12078,
+      "sha256": "d53fde4af0367b6b99f32c943835f1a7e031562147d495437faa3e359bc63408"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-014.json",
+      "bytes": 10980,
+      "sha256": "3e513425d45423b51c9896221043aeca7fdb18e6a77bd93af88e36a4a1327214"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-015.json",
+      "bytes": 11426,
+      "sha256": "47ef325ea8fddc402a82d8b0969cc607558f90b9fccd51e01d904cceae42a5f5"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-016.json",
+      "bytes": 10961,
+      "sha256": "785be34bbedf8c980c586d2345454ebb0756d08ae743bd41eba2b11695bfdb24"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-017.json",
+      "bytes": 7436,
+      "sha256": "15eb532e56f937cc64294da372e473b4150ddc4c2124b641c6aaff19b06705c7"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-018.json",
+      "bytes": 11059,
+      "sha256": "1ecc7b83ac6bea3644649e8140e4c3199bb0761a59c64a32a00381d77398387c"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-019.json",
+      "bytes": 10589,
+      "sha256": "ca3b202c96a35ae4c472a1303795e7f04027cbbf31da6ba600dee36bcbdb5c29"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-020.json",
+      "bytes": 11421,
+      "sha256": "519614dbf3c1b7ed2bac29a2125bf70f89e3d180d4457f0ee09f1eb0b055ba1e"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-021.json",
+      "bytes": 12409,
+      "sha256": "5741bde2c449ac170b2c60c7d7b39e41c17411b199660d7d3a780070c7d62dd9"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-022.json",
+      "bytes": 10702,
+      "sha256": "9e8f83fadcf4e18e4268e682bf422365b021bed88dd2811b0baccd9e631a2085"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-023.json",
+      "bytes": 11577,
+      "sha256": "2f3772feb15546013b43dfc6a18861e319d9f00d0af3148f16d0ba8a4b13e822"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-024.json",
+      "bytes": 7116,
+      "sha256": "b93486c0e77cf556724b5d87a83a5d43d9d3fc20b770b7ba7f2cac4f8f7dea73"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-025.json",
+      "bytes": 11270,
+      "sha256": "9f4b690319b5e1fe2d8c4b1fb4dc88f1f858797376cdb618dd56b1a9cdc12af3"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-026.json",
+      "bytes": 11188,
+      "sha256": "e178f5876a51ce7ec5298cb74d66f9f71f9b2e3a51dc71cbe10ecc7ce4c53a05"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-027.json",
+      "bytes": 11666,
+      "sha256": "df57cbe713bfd621957f7735c5c17ae49f939bfa20aba3e2bb377a498c6c5e6c"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-028.json",
+      "bytes": 11924,
+      "sha256": "59171a01e3518d97360446b2795ada75272301257ed8b5a93a6fec48fa5d2cb3"
+    },
+    {
+      "path": "agents/chunk-3/agent-1-theme-a/validate_reviews.py",
+      "bytes": 2824,
+      "sha256": "7677d097e7a09243d671333bf5393dbc110241c040d6953fcd776f45bc9ad8ce"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/B_CHECKPOINT_MANIFEST.json",
+      "bytes": 7630,
+      "sha256": "d5c6712abc039a92534ca671f927bba1177e018f6eb5edd50ea4b8ed2ce97421"
+    },
+    {
       "path": "agents/chunk-3/agent-2-theme-b/STATUS.json",
-      "bytes": 2482,
-      "sha256": "d58bb294997240841605e0fd4439a730c2479820e46fc911c9ea550453d14f86"
+      "bytes": 5321,
+      "sha256": "c233a4b6d38e18ff4e3ec4217b3ac655324700e7bacd6762dd32f69d0add5ee5"
     },
     {
       "path": "agents/chunk-3/agent-2-theme-b/add_b2_audit.py",
@@ -770,24 +1378,174 @@
       "sha256": "48b1158c905f5f1369d5c35c17f0893fa658decf44c45fd4c017037764ae7976"
     },
     {
+      "path": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_018.json",
+      "bytes": 507,
+      "sha256": "c4c170849dc621269e77f75cd9c31db8e0df5f08df7bc1a44f74aa903680155d"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_018.py",
+      "bytes": 1438,
+      "sha256": "b62e300d59405bcee0dec8f57f86efc70063c14679aaad14c0d89c2d72e71d8c"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_021.json",
+      "bytes": 447,
+      "sha256": "82b2176796fdd169823a1b0e788c69f7845cfc875ff013f7b30f9f982ee87d4f"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_021.py",
+      "bytes": 1189,
+      "sha256": "91c5209b23eca593bcd53a35c6423b73a8256decea29e0d9074889cb0ff95116"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_024.json",
+      "bytes": 468,
+      "sha256": "59841fcbca8932d65d4d55b2b36b100a3cfb2d45cb5fea35858286247c048f9f"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_024.py",
+      "bytes": 1164,
+      "sha256": "e36c80783200ad57d778ced94be33bcae8fecb22f058d8115ea638d3e1f75740"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_027.json",
+      "bytes": 489,
+      "sha256": "8c82c64ca0ce4d72e462871187381c282431e93c02b532dcc360137e22a7be82"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_027.py",
+      "bytes": 1338,
+      "sha256": "cb77aa1d22cc0c1ad0d1b3dc1b73e644840c9583111c314375ba0febb77ebd32"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_030.json",
+      "bytes": 978,
+      "sha256": "5b8533a323ea172dfaf2ad2a8db7b6ef6e4d9ea8ca1902d0be8afd5cb9d71057"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_030.py",
+      "bytes": 899,
+      "sha256": "d54c8ea938319dccf88e4e6760f305cf574244d57107712117f3271625da6ed2"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_033.json",
+      "bytes": 880,
+      "sha256": "eb1354a11d7d2a1d578a880197a453c49e801912b951f8698ab1be76c04bee50"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_033.py",
+      "bytes": 2211,
+      "sha256": "de5371db0181313a3a4e4abd3fe369c16d64a5fbb4e6e4a7927c00f70a6ca085"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_036.json",
+      "bytes": 570,
+      "sha256": "0e048241552386438da13a87d021ff1c7e1054fc38cd7e35702faa30127919fb"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_036.py",
+      "bytes": 946,
+      "sha256": "3b91f8f432982618bf75a86001e7b3675ec4dbc05ed13e13f0a39c5747b7c04f"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_038.json",
+      "bytes": 222,
+      "sha256": "0e8a480f06af50050e5a9039b343543e92db12989178ae1df8c36e1c036943b1"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_038.py",
+      "bytes": 720,
+      "sha256": "47d18fe98480c98203d512bc2529d2491fac04cd6c973a4036fe4b08203d5c2d"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_041.json",
+      "bytes": 949,
+      "sha256": "889a019c99e7687bafeb4a6897f1dece36482306a898cdd29c6220319ad61cac"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_041.py",
+      "bytes": 1220,
+      "sha256": "3b8c982beee4655b6963063cbd5d6b37c0696a9867fc368b08596e3e77b83bb5"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_049.json",
+      "bytes": 575,
+      "sha256": "0fe3f5dd7e76ad3c8386786d72b938d7366b684740dae7f77cff208a6a0d6072"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_049.py",
+      "bytes": 1566,
+      "sha256": "8c528e2ccdf94f2236c1cd1c1eab4baff52cef78d09a2367b6e0295b386bcd77"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_055.json",
+      "bytes": 294,
+      "sha256": "630963e8374bcc9c75a94f66c2a042b91893b8c7a7bd1cd85ff4d6a1bab51b87"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_055.py",
+      "bytes": 891,
+      "sha256": "964c7a4dfe0ec51b77482312067b4b928c79c43d5f8a44701ea58cc92b7989d8"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_061.json",
+      "bytes": 767,
+      "sha256": "6299b879c0bd85a36ff6f12a7a7519f1bfe33971879d8e5c6695f5b8f7b1530e"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_061.py",
+      "bytes": 2040,
+      "sha256": "6fbecfdd431bc26fc4ce3146b21946a1f89e36d81f1a7f20284f8fee360811b5"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_064.json",
+      "bytes": 267,
+      "sha256": "3cb29cfd9e4cc762bfcac2e78e55fd12e4772709782c5c22b64dc9fb1a0a711a"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_064.py",
+      "bytes": 512,
+      "sha256": "78fa5a2dbc97b12fd3e0cbe3b1450be81daed508f2e763a43dd8b794137a19a4"
+    },
+    {
       "path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "bytes": 68403,
       "sha256": "7fcb638587df0b685dc2fc86a694de7d95f1a83080c09ef3eb6e1bfeb080cf23"
     },
     {
       "path": "agents/chunk-3/agent-2-theme-b/findings.md",
-      "bytes": 1435,
-      "sha256": "7d9bc70356a3218d09b3fb8f77df57029d6940c24161aac00a3631d7463a469f"
+      "bytes": 4096,
+      "sha256": "69f11b17f7378aaad8f2d138d239754672bfa96b977a84ed3e30a6d10cfee8b8"
     },
     {
       "path": "agents/chunk-3/agent-2-theme-b/question_review_queue.json",
-      "bytes": 126081,
-      "sha256": "b35014fd2464fba4cb820bf8dfc16266825f8e95537dc1e827b9ce81c6bdc755"
+      "bytes": 129715,
+      "sha256": "1e8b1472e977a224a44e150d0ad27b0d0c3c3b7d30576e48820d43b02264f92c"
     },
     {
       "path": "agents/chunk-3/agent-2-theme-b/question_reviews.json",
-      "bytes": 62043,
-      "sha256": "0016726241d14e2f222be918a1760843ce1f87c45940ecb8e47f3a52c88df642"
+      "bytes": 291319,
+      "sha256": "b5862c2dd7017cdd4377055dbb76151d0b3e37738737d61866d790e94983c8b1"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/refresh_checkpoint.py",
+      "bytes": 1950,
+      "sha256": "b2cfffd72648c519ea42b64d5af9604cecb3f042ca38c06693cd153faffcb7af"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/review_history/P-SRC001-Q03.rev001.json",
+      "bytes": 2628,
+      "sha256": "5d13d39b766046a818eb16476c5816d719e0d6646c096df4878ba4e3366d4df2"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/review_history/P-SRC001-Q04.rev001.json",
+      "bytes": 2592,
+      "sha256": "85d5e387cfc79e097426fe9087fea0d1dd50ac27510538f9318150bb81ff8576"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/review_history/P-SRC001-Q07.rev001.json",
+      "bytes": 4153,
+      "sha256": "379c6463c192a68b79aeeffb05733e82d32e87dd79cc1e491f02f6c78f0eaab1"
     },
     {
       "path": "agents/chunk-3/agent-2-theme-b/review_history/P-SRC001-Q14-c.rev001.json",
@@ -805,19 +1563,44 @@
       "sha256": "22c03626435fea16331cda23218d89cd82c719b943af3aa001f319eac4da0b61"
     },
     {
+      "path": "agents/chunk-3/agent-2-theme-b/review_history/P-SRC005-Q09.rev001.json",
+      "bytes": 2903,
+      "sha256": "03e3a638ca80b46fd64932faac0e289b9d3b329054b5b40848cf595550979467"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/review_history/P-SRC005-Q13-a-i.rev001.json",
+      "bytes": 5143,
+      "sha256": "5620f066aa72296a24a91f64718bbad786632591bac00068624239b746048c96"
+    },
+    {
+      "path": "agents/chunk-3/agent-2-theme-b/review_history/P-SRC009-Q13-a.rev001.json",
+      "bytes": 4944,
+      "sha256": "e429cc76a58f98fafb301851d38b5d5fc7630627678ebb0b31caacc83b3103ba"
+    },
+    {
       "path": "agents/chunk-3/agent-2-theme-b/save_reviews.py",
       "bytes": 4501,
       "sha256": "4998b4d9033a68ff377be1ba915335c5b83a23cf9af2ec85fa077cf170f3c253"
     },
     {
+      "path": "agents/chunk-3/agent-3-bank-audit/README.md",
+      "bytes": 8437,
+      "sha256": "875398b9aec8139f00026d2d19e8734924588cc659dd19f230a9a2e10d610b0f"
+    },
+    {
+      "path": "agents/chunk-3/agent-3-bank-audit/SRC002_REVIEW_INPUT_SNAPSHOT.json",
+      "bytes": 752065,
+      "sha256": "f5750a1ed793d8d769907c0687722d9f5b5e80c9ed92e160885de56d44806247"
+    },
+    {
       "path": "agents/chunk-3/agent-3-bank-audit/STATUS.json",
-      "bytes": 2124,
-      "sha256": "d473d43c1926fdbc30aa066dca53b05e0b1db839142826426f20a2afbc7bab69"
+      "bytes": 4302,
+      "sha256": "0d7af830da84302cfe3fd8d215198b036c34be4ec686921b723c590f320490ca"
     },
     {
       "path": "agents/chunk-3/agent-3-bank-audit/bank_db.py",
-      "bytes": 24749,
-      "sha256": "38de06e4f4559334a4d9db8c6e495b80ac3bdb3199872d8413d046c5f38d34c6"
+      "bytes": 35660,
+      "sha256": "c44a40abf7b0cec3a6f7e17692e7ab07b0dc614d1c0ac368876b48696a773ef7"
     },
     {
       "path": "agents/chunk-3/agent-3-bank-audit/build_bank.py",
@@ -825,14 +1608,34 @@
       "sha256": "cff8626eee26639258c898d44f3d1d0d162e97d5c3d3b025317d2979d7678bba"
     },
     {
+      "path": "agents/chunk-3/agent-3-bank-audit/db_test_results.json",
+      "bytes": 4078,
+      "sha256": "65ac2f9c19c3050b45b017748febdf79dfc050151129feea7474e26bb9a1216e"
+    },
+    {
       "path": "agents/chunk-3/agent-3-bank-audit/findings.md",
-      "bytes": 706,
-      "sha256": "3fbd7c075aac9970b062dc9bb6a3e491cdeed54cf243f4c1b5147ba26a069c6e"
+      "bytes": 1177,
+      "sha256": "9df674e219720fc33de4044c7e6479791f1a552d1cf46a871149b0e2fd7f3788"
+    },
+    {
+      "path": "agents/chunk-3/agent-3-bank-audit/independent_coverage.json",
+      "bytes": 84168,
+      "sha256": "fba8d4e24a0e256d8801a34c592a143a3e9cc02f8d17b286ad5a2623b789b78b"
+    },
+    {
+      "path": "agents/chunk-3/agent-3-bank-audit/independent_review_samples.json",
+      "bytes": 2830,
+      "sha256": "9fb0ca2fe0f645f8a8e64aba0cb459211f26fe7ad1c02c9508628d217adb1484"
+    },
+    {
+      "path": "agents/chunk-3/agent-3-bank-audit/integration_review_SRC002.json",
+      "bytes": 41309,
+      "sha256": "b90d144af29c260317de365af77486234d47668f043c4cb05508e480728da92c"
     },
     {
       "path": "agents/chunk-3/agent-3-bank-audit/persistent-web/app.js",
-      "bytes": 9234,
-      "sha256": "b058f1f8ae1f6c107d25a7b800f0e16247ffd2467a001053571b499a3465163a"
+      "bytes": 9980,
+      "sha256": "2e6666609d0798302023fc68a46456a0963b217f4ba4f17c50fdd11f40461aae"
     },
     {
       "path": "agents/chunk-3/agent-3-bank-audit/persistent-web/index.html",
@@ -841,18 +1644,23 @@
     },
     {
       "path": "agents/chunk-3/agent-3-bank-audit/persistent-web/style.css",
-      "bytes": 2523,
-      "sha256": "f6baf1a531f9841766c3654a222d2c9a12d15e91707a5009f550629426a9b5d5"
+      "bytes": 3205,
+      "sha256": "3d5ce07385bd57b6acf173f82caceae1294cca93ec285dd196c2e05b8fcb9600"
     },
     {
-      "path": "agents/chunk-3/agent-3-bank-audit/question_bank.sqlite3",
-      "bytes": 13721600,
-      "sha256": "24ecb7a29c41ec354efedffe716976f6613281a56185bb8b72fac12d00473932"
+      "path": "agents/chunk-3/agent-3-bank-audit/save_independent_audit.py",
+      "bytes": 5415,
+      "sha256": "0e2ef9280c111f44ec3621b94bba6c428046e0c4efaff318b61e045cb6c83256"
     },
     {
       "path": "agents/chunk-3/agent-3-bank-audit/serve_bank.py",
-      "bytes": 6712,
-      "sha256": "acc9778152d80680a4b9129f60f6b1cc132a48dcce216b9d163fce3e1858b589"
+      "bytes": 7058,
+      "sha256": "7bef5668e386329805b3b86159611e582837f75a3a5a718e503b41aa8a0d5582"
+    },
+    {
+      "path": "agents/chunk-3/agent-3-bank-audit/src002_audit_tools.py",
+      "bytes": 4212,
+      "sha256": "b44d97a0e637ac0769d966ed5cc815d942195fabc6c44c98478f89da392ae01a"
     },
     {
       "path": "agents/chunk-3/agent-3-bank-audit/test_bank.js",
@@ -860,9 +1668,19 @@
       "sha256": "9fe7b1f27012aa62d4563c9904053a55b576ace700a7eb49e092f05b5eb07a95"
     },
     {
+      "path": "agents/chunk-3/agent-3-bank-audit/test_db.py",
+      "bytes": 18114,
+      "sha256": "f7b084d081a6826c5c68f764479a1a39b3a2127cabf546a9920a7d0cf3ff06a4"
+    },
+    {
       "path": "agents/chunk-3/agent-3-bank-audit/test_results.json",
       "bytes": 1650,
       "sha256": "34fcba82dec009e6f4e3bd3be7c1ffbe872a91d64de32bcc07a52ab54853042c"
+    },
+    {
+      "path": "agents/chunk-3/agent-3-bank-audit/verify_review_samples.py",
+      "bytes": 4014,
+      "sha256": "51296b8fb4d8f8f3fba02852ef75dad5f4e4e684412a685ae73deea203d9fd20"
     },
     {
       "path": "agents/chunk-3/agent-3-bank-audit/web/answers.js",
@@ -901,13 +1719,18 @@
     },
     {
       "path": "coverage/COVERAGE_REPORT.csv",
-      "bytes": 207518,
-      "sha256": "e984a23d79b24778479668463be12ef64f8652154f0c292f16f83dba8a7763ad"
+      "bytes": 233322,
+      "sha256": "93404461dd81c3eed344e17e505d4cf14cc42f2d02789045aac4d3646548b237"
     },
     {
       "path": "coverage/OBJECTIVE_COVERAGE.json",
-      "bytes": 445763,
-      "sha256": "4a42a359a641d31cc614580311356e834c6ec63b1ae6d9e011726ba00d79f20a"
+      "bytes": 481395,
+      "sha256": "1135dca16b6491e6ec31e05eb78ba4e8f8555d4059b6f8042b425ac84d76b36f"
+    },
+    {
+      "path": "exams/.DS_Store",
+      "bytes": 6148,
+      "sha256": "66a4ff077335adfba4425c6a11bc5a3d5ce308262baf5a94498782865d5d25cb"
     },
     {
       "path": "exams/paper-1/.gitkeep",
@@ -920,9 +1743,14 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
+      "path": "question-bank/.DS_Store",
+      "bytes": 6148,
+      "sha256": "695bf8348b34fc66c01b914012be6e071d71de1f715e0dc2a77f2690e506df9e"
+    },
+    {
       "path": "question-bank/QUESTION_BANK.csv",
-      "bytes": 262884,
-      "sha256": "c23191a193a1a86b613fc3a7da2636ac3f46df02a8ac85dd6dd5b8f1e0217ec3"
+      "bytes": 688324,
+      "sha256": "42486e7e1966506198847ac69bb54b2e965f1987a9f0b93ee5bfada18f5ae337"
     },
     {
       "path": "question-bank/README.md",
@@ -13291,13 +14119,63 @@
     },
     {
       "path": "question-bank/scope_evidence.json",
-      "bytes": 26052,
-      "sha256": "a1835ae07080c8690ed305cb56e54dd8eca931b35a02579ee699e5152a938614"
+      "bytes": 127563,
+      "sha256": "88e910f5af265980492e336c6d1eaf7ea6d6f3b80d2e792d0c11ecbbb3f3acad"
+    },
+    {
+      "path": "question-bank/search/README.md",
+      "bytes": 8437,
+      "sha256": "875398b9aec8139f00026d2d19e8734924588cc659dd19f230a9a2e10d610b0f"
+    },
+    {
+      "path": "question-bank/search/bank_db.py",
+      "bytes": 35598,
+      "sha256": "9ad59c6d7676a571475ad738105b52e963ff3e17e5a11239d87bc68f5d6c00ce"
+    },
+    {
+      "path": "question-bank/search/db_test_results.json",
+      "bytes": 4076,
+      "sha256": "e01a2cc9cf502b981e41f7105e54a892730bfb4f5b7410d11e19b0f2880485c0"
+    },
+    {
+      "path": "question-bank/search/persistent-web/app.js",
+      "bytes": 9980,
+      "sha256": "2e6666609d0798302023fc68a46456a0963b217f4ba4f17c50fdd11f40461aae"
+    },
+    {
+      "path": "question-bank/search/persistent-web/index.html",
+      "bytes": 3746,
+      "sha256": "c34ba56053408212462153956c90ed605bc3e71354784e9d66d538b3f3fbb350"
+    },
+    {
+      "path": "question-bank/search/persistent-web/style.css",
+      "bytes": 3205,
+      "sha256": "3d5ce07385bd57b6acf173f82caceae1294cca93ec285dd196c2e05b8fcb9600"
+    },
+    {
+      "path": "question-bank/search/semantic_precision_results.json",
+      "bytes": 923,
+      "sha256": "09402a58cff0a7e4c79b1eeb0fe5de69a83c93163cf5933da0640902c121d3c6"
+    },
+    {
+      "path": "question-bank/search/serve_bank.py",
+      "bytes": 7058,
+      "sha256": "7bef5668e386329805b3b86159611e582837f75a3a5a718e503b41aa8a0d5582"
+    },
+    {
+      "path": "question-bank/search/test_db.py",
+      "bytes": 18114,
+      "sha256": "f7b084d081a6826c5c68f764479a1a39b3a2127cabf546a9920a7d0cf3ff06a4"
+    },
+    {
+      "path": "question-bank/search/test_semantic_precision.py",
+      "bytes": 1353,
+      "sha256": "eee1731f97d2b4d0ccb1af1b792db52b781912573f4e7019c25a24b036dc088f"
     },
     {
       "path": "scripts/build_coverage_report.py",
-      "bytes": 7034,
-      "sha256": "49ceb4146f18522447ac8064735299aae22ca73a5bff2dcb06f5641545d0cff6"
+      "bytes": 7367,
+      "sha256": "303b281cfb1d959ed26fb32113f4799dcc5600b659a21f41550af9ef8c49635c"
     },
     {
       "path": "scripts/check_chunk2_answer_code.py",
@@ -13316,8 +14194,18 @@
     },
     {
       "path": "scripts/checkpoint_chunk3.py",
-      "bytes": 10153,
-      "sha256": "f6fdb3945bca0dfbfea55bd98ec313712a9866c4c2131e6468890a6301c278e2"
+      "bytes": 12363,
+      "sha256": "91b0e78c3438399641d9863647030c5e214dc81dc6016112c3477d875b7cbaad"
+    },
+    {
+      "path": "scripts/collect_chunk3_review_state.py",
+      "bytes": 4632,
+      "sha256": "9a164b2cac51f85f786a2e384163b14f4e08cd21d9f10136d5dc2a84314c4d3d"
+    },
+    {
+      "path": "scripts/enrich_bank_index_chunk3.py",
+      "bytes": 4952,
+      "sha256": "a45cb60676e8b035a8c86d03a1b882203c91b4f8072ad59b2717cf81f4bd404b"
     },
     {
       "path": "scripts/enrich_inventory.py",
@@ -13326,8 +14214,8 @@
     },
     {
       "path": "scripts/integrate_scope_reviews.py",
-      "bytes": 7558,
-      "sha256": "fae4cf2f29c0194011d956d6a462f27c90ad1ade5543122f4e39de18ee73ef41"
+      "bytes": 7687,
+      "sha256": "dc8644fed40de86e5b427ed79ce61ee7e1cb23ba5084571806ae90a4c72aa0cd"
     },
     {
       "path": "scripts/inventory_sources.py",
@@ -13385,6 +14273,88 @@
       "sha256": "ba0c1c25b7f49f2459e16e2ab7772b64dbadd1c48f8f2beeefa7a6fcf49dabac"
     }
   ],
+  "database_snapshot": {
+    "live_path": "question-bank/database.sqlite3",
+    "snapshot_path": "audits/chunk-3/database-snapshots/503fff078a74687ac3e90ece20e5caf8f3fae9f3333d4f6c3a77b69dbf700a3d.sqlite3",
+    "sha256": "503fff078a74687ac3e90ece20e5caf8f3fae9f3333d4f6c3a77b69dbf700a3d",
+    "integrity_check": "ok",
+    "table_counts": {
+      "questions": 823,
+      "answers": 823,
+      "scope_evidence": 50,
+      "verification": 4938,
+      "usage_history": 0,
+      "selections": 0
+    },
+    "verification_counts": [
+      [
+        "answer",
+        "pending",
+        796
+      ],
+      [
+        "answer",
+        "verified",
+        27
+      ],
+      [
+        "assets",
+        "pending",
+        797
+      ],
+      [
+        "assets",
+        "verified",
+        26
+      ],
+      [
+        "mapping",
+        "pending",
+        796
+      ],
+      [
+        "mapping",
+        "verified",
+        27
+      ],
+      [
+        "markscheme",
+        "issue",
+        5
+      ],
+      [
+        "markscheme",
+        "pending",
+        796
+      ],
+      [
+        "markscheme",
+        "verified",
+        22
+      ],
+      [
+        "provenance",
+        "pending",
+        806
+      ],
+      [
+        "provenance",
+        "verified",
+        17
+      ],
+      [
+        "technical",
+        "pending",
+        796
+      ],
+      [
+        "technical",
+        "verified",
+        27
+      ]
+    ],
+    "limits": "Database integrity/schema/import counts do not establish completeness of search features or content verification."
+  },
   "content_verification_limit": "Integrity pass does not verify technical content. Author status is reported separately from coordinator approval.",
   "chunk3_complete": false
 }

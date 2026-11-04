@@ -1,0 +1,189 @@
+{
+  "checkpoint": "A-RECORDS-025",
+  "reviews": [
+    {
+      "question_id": "P-SRC005-Q01",
+      "record_sha256": "d6703386b3773ad400a493fc05325111a9edb91bcef6c8f9b3a1791868c1a147",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:10:28.095500+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.4.1",
+          "scope_bullet_id": "A1.4.1:G01",
+          "exact_guidance": "• The mechanics and use-cases of each translation approach",
+          "assessed_skill": "Outline need to translate human-readable source into CPU-executable instructions.",
+          "relevance": "supporting",
+          "evidence": "Only basic need for translation, not interpreter/compiler mechanics comparison, use cases, JIT/bytecode or all three required scenarios."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Ordinary high-level source is not directly executed as CPU machine instructions; translation/execution machinery supplies executable operations. Source code can also be assembly, so high-level is typical context rather than definition of all source."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Model correctly explains normal high-level source versus executable instructions, with source-code context caveat. No universal runtime-speed claim."
+        },
+        "markscheme": {
+          "status": "issue",
+          "evidence": "Two1-mark explanation elements total2. The solution/first criterion contains editorial split express es; correct to expresses without changing meaning. Equivalent assembly-source explanation must not be rejected solely because source is not high-level."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-005/questions/H-SRC005-Q01.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• The difference in error detection, translation time, portability and applicability for different translation processes, including just-in-time compilation (JIT) and bytecode interpreters",
+        "• Example scenarios where the translation method should be considered must include rapid development and testing, performance-critical applications and cross-platform development."
+      ],
+      "issues": [
+        "A-C3-TEXT-001: P-SRC005-Q01 solution/first criterion has express es; polish to expresses. Clarify high-level source as course context rather than universal source-code definition."
+      ],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC005-Q01.json": "d6703386b3773ad400a493fc05325111a9edb91bcef6c8f9b3a1791868c1a147",
+        "question-bank/questions/P-SRC005-Q01.json": "84f4b2d83f13421cf0bd6f86dfebc82d37d48556267290059ae4fbf405d104a5",
+        "question-bank/markschemes/P-SRC005-Q01.json": "098bc6c5599434a775d126cb50dc0d2e5efd3ccd0fb9d856632f92c260d277c2",
+        "extraction/by-paper/SRC-005/questions/H-SRC005-Q01.json": "9a741bf4f4015a0710466e357d1d477ff368387ab729156b563dc4894d22b03f"
+      },
+      "question_type": "explanation",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Outline translation necessity, not evaluate translator types."
+      }
+    },
+    {
+      "question_id": "P-SRC005-Q03",
+      "record_sha256": "6bdff3514e49c1c8be53e692180247cd8dd606e49451def75027652a55151a36",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:10:28.095954+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.2.3",
+          "scope_bullet_id": "A1.2.3:G04",
+          "exact_guidance": "• Boolean operators: AND, OR, NOT, NAND, NOR, XOR, XNOR",
+          "assessed_skill": "Define two-input exclusive OR by differing versus equal truth values.",
+          "relevance": "partial",
+          "evidence": "XOR only, no other named operators or computer-system application."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "XOR yields1 on01/10 and0 on00/11; exactly-one-true is correct for two Boolean inputs."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Different→true and equal→false correctly exhaust four cases."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Two1-mark components total2. A precise single biconditional statement or complete truth table can communicate both components and should receive full2, not require redundant wording."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-005/questions/H-SRC005-Q03.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• The purpose and use of logic gates",
+        "• The functions and applications of logic gates in computer systems",
+        "• The role of logic gates in binary computing"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC005-Q03.json": "6bdff3514e49c1c8be53e692180247cd8dd606e49451def75027652a55151a36",
+        "question-bank/questions/P-SRC005-Q03.json": "fc68e32be5a20d52eeb63bf86290cc3bd99737624bbbd21e8ae532b13ddc5f25",
+        "question-bank/markschemes/P-SRC005-Q03.json": "a7e2e57d7d641e3d620d680566d9034055bd66743231fc27b4c3050d15d65e45",
+        "extraction/by-paper/SRC-005/questions/H-SRC005-Q03.json": "d5e2083129b70f3dc91c195bfcb3c2986d17ccd04248f885054e6d89363581fe"
+      },
+      "question_type": "conceptual recall",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Define Boolean XOR output rule."
+      }
+    },
+    {
+      "question_id": "P-SRC005-Q04-a",
+      "record_sha256": "8682bd9d1972843bf27dbaeb8464f654739fcbc43cd517470ac34377f11d7b11",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:10:28.096401+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A4.4.2",
+          "scope_bullet_id": "A4.4.2:G02",
+          "exact_guidance": "• The potential implications of emerging technologies such as quantum computing, augmented reality, virtual reality and the pervasive use of AI on society, individual rights, privacy and equity",
+          "assessed_skill": "Outline consent/privacy implications of searchable school photo publication.",
+          "relevance": "supporting",
+          "evidence": "Daily-life integration/privacy foundation; does not directly assess emerging technology examples or continual ethical-guideline reassessment. Gallery context alone does not certify those precise guidance requirements."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Searchable public photos can expose identity/activities beyond intended audience when informed consent/purpose controls absent. Ethical concern is contextual, not automatic illegality of every gallery."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Consent concern plus discoverability/copying consequence forms a valid Outline2."
+        },
+        "markscheme": {
+          "status": "issue",
+          "evidence": "Two1-mark concern/expansion points total2. Editorial split publish es in prompt and Search ability in solution require polish; no silent revision made."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-005/questions/H-SRC005-Q04-a.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• The importance of continually reassessing ethical guidelines as technology advances"
+      ],
+      "issues": [
+        "A-C3-TEXT-002: P-SRC005-Q04-a prompt publish es and solution/criterion Search ability should be publishes/searchability; mapping remains only supporting to emerging-tech guidance."
+      ],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC005-Q04-a.json": "8682bd9d1972843bf27dbaeb8464f654739fcbc43cd517470ac34377f11d7b11",
+        "question-bank/questions/P-SRC005-Q04-a.json": "48b5a5b7f7607e3a132263339fd514b13606218b894d1810c199ecc9f59cb4ce",
+        "question-bank/markschemes/P-SRC005-Q04-a.json": "3219ce4fbcbbb28f053ee6c5142320935544c90563d973604a21ca89fa6561f0",
+        "extraction/by-paper/SRC-005/questions/H-SRC005-Q04-a.json": "0e12ff9e787f652e8fe5c4294a6b4177a147e5824b23ac718a783f11840226d3"
+      },
+      "question_type": "contextual explanation",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Outline one ethical publication concern with consequence."
+      }
+    }
+  ]
+}

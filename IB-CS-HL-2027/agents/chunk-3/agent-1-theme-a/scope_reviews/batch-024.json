@@ -1,0 +1,122 @@
+{
+  "checkpoint": "A-RECORDS-024",
+  "reviews": [
+    {
+      "question_id": "P-SRC004-Q12-d-i",
+      "record_sha256": "b72b309ebb53f9eb6452848a1f78b74cbc476dcc80a5fe29a66b80fbee77e268",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:08:40.914675+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.3.7",
+          "scope_bullet_id": "A1.3.7:G01",
+          "exact_guidance": "• Examples may include autonomous vehicles, home thermostats, automatic elevator controllers, automatic washing machines, traffic signal control systems, irrigation control systems, home security systems, automatic doors.",
+          "assessed_skill": "Outline feedback-driven traffic-light timing using measured vehicle queues.",
+          "relevance": "partial",
+          "evidence": "One meaningful traffic-signal application; no range of several applications or fixed predetermined timings called feedback."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current vehicle counts provide traffic-state feedback; controller adjusts green intervals in response to demand, potentially reducing wait. Camera alone without responsive controller would not be closed-loop control."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Feedback measurement and responsive timing adjustment give correct contextual Outline2."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Two1-mark points total2. Equivalent queue/count indicators and justified timing adjustments accepted without requiring computer-vision architecture."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-004/questions/H-SRC004-Q12-d-i.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC004-Q12-d-i.json": "b72b309ebb53f9eb6452848a1f78b74cbc476dcc80a5fe29a66b80fbee77e268",
+        "question-bank/questions/P-SRC004-Q12-d-i.json": "595f3041c7ffcf4d9bbe979acff2e5d64e6f18ce0f96f4693997c8c18ae591d9",
+        "question-bank/markschemes/P-SRC004-Q12-d-i.json": "90503a2d6e7aabb22869fd0cbca7e1fcbbdc934741eb5a8cc3406a4e2b5f1d20",
+        "extraction/by-paper/SRC-004/questions/H-SRC004-Q12-d-i.json": "dccf326005f9f28f5ab4bd07189ac6ef95391aad5977884bba4ad244e651126c"
+      },
+      "question_type": "explanation",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Outline how feedback changes applied traffic controller behaviour."
+      }
+    },
+    {
+      "question_id": "P-SRC004-Q12-d-ii",
+      "record_sha256": "db3ae731a410a323ae116e197bbe428e393b29e4a2234b386eaba7aab72af9a7",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:08:40.915470+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A4.4.1",
+          "scope_bullet_id": "A4.4.1:G01",
+          "exact_guidance": "• Ethical issues may include accountability, algorithmic fairness, bias, consent, environmental impact, privacy, security, societal impact, transparency.",
+          "assessed_skill": "Outline privacy/informed-consent concern from ML identification of individual travel movements.",
+          "relevance": "partial",
+          "evidence": "Privacy/consent implications only; no training-bias or model-performance coverage just because ML used."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Identifiable roadside observations can reveal movement histories; storing/combining them can intrude on privacy beyond individuals intended/understood use."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Location/movement identifiability plus misuse/consent consequence matches Outline2."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Two1-mark elements total2; equivalent concrete privacy explanations accepted. No claim all roadside sensing is inherently illegal."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-004/questions/H-SRC004-Q12-d-ii.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• The challenges posed by biases in training data",
+        "• The ethics of using machine learning in online communication may include concerns about misinformation, bias, online harassment, anonymity, privacy."
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC004-Q12-d-ii.json": "db3ae731a410a323ae116e197bbe428e393b29e4a2234b386eaba7aab72af9a7",
+        "question-bank/questions/P-SRC004-Q12-d-ii.json": "66652163a375768a89c04913857e5f3f50a210f1cdc04025624df8096cc851f4",
+        "question-bank/markschemes/P-SRC004-Q12-d-ii.json": "fce2e0f4a3d23f364a44b30fe8a5b03ad94c9b1c585f06ae9f721313295b0182",
+        "extraction/by-paper/SRC-004/questions/H-SRC004-Q12-d-ii.json": "6f85056540eb15e625f7924bb7d32ec7a3701269f8d5be9ce693e657e3531383"
+      },
+      "question_type": "contextual explanation",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Outline one ML contextual privacy issue and consequence."
+      }
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "checkpoint": "A-RECORDS-006",
+  "reviews": [
+    {
+      "question_id": "P-SRC001-Q13-a-i",
+      "record_sha256": "db24aa0b9d61d79be38eeee07582f637bb408a2cb86fdf53bdef7b36ef17e6f7",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:54:04.514946+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.3.6",
+          "scope_bullet_id": "A1.3.6:G01",
+          "exact_guidance": "• The input, process, output, and feedback mechanism (open-loop, closed-loop)",
+          "assessed_skill": "Identify measured feedback input and a human target-setting input to greenhouse control.",
+          "relevance": "partial",
+          "evidence": "Two input components only; input/process/output and open/closed-loop comparison not required."
+        },
+        {
+          "code": "A1.3.6",
+          "scope_bullet_id": "A1.3.6:G02",
+          "exact_guidance": "• Controller, sensors, actuators, transducers and control algorithm",
+          "assessed_skill": "Identify a soil-moisture sensor/transducer and operator input interface.",
+          "relevance": "partial",
+          "evidence": "Sensor identification assessed, but transduction mechanism/controller/actuator/control algorithm role not explained."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "A moisture sensor provides measured environmental input, and an operator interface supplies a setpoint. The two serve distinct input roles."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Soil-moisture sensor plus keypad/touchscreen/appropriate target-setting interface are valid independent components."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Two1-mark criteria total2; equivalent sensor and operator-interface types accepted. Not two arbitrary sensors, because target-setting requirement explicit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q13-a-i.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q13-a-i.json": "db24aa0b9d61d79be38eeee07582f637bb408a2cb86fdf53bdef7b36ef17e6f7",
+        "question-bank/questions/P-SRC001-Q13-a-i.json": "e797916db5d1ae1a019c6f021cf121dd6cf7a4db917868b813c41b937ca41240",
+        "question-bank/markschemes/P-SRC001-Q13-a-i.json": "47d45e99c156ad3ea999dc24e20970f21716df6fb4502cf6c0fca4a44a83743f",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q13-a-i.json": "eb263211b6f4d019cdbcbfc96a729517ad3936fca722aaa285cfa3b6cebfedd8"
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q13-a-ii",
+      "record_sha256": "f204e96c881941bb2a68b46a4f2e85cb9a8f14da5c9d171f47ae3af4fc33a12b",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:54:04.515351+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.3.6",
+          "scope_bullet_id": "A1.3.6:G01",
+          "exact_guidance": "• The input, process, output, and feedback mechanism (open-loop, closed-loop)",
+          "assessed_skill": "Describe closed-loop input/process/output feedback maintaining soil moisture.",
+          "relevance": "partial",
+          "evidence": "Reads measurement/target, compares and actuates irrigation, then uses repeated measurement to stop; no open-loop comparison."
+        },
+        {
+          "code": "A1.3.6",
+          "scope_bullet_id": "A1.3.6:G02",
+          "exact_guidance": "• Controller, sensors, actuators, transducers and control algorithm",
+          "assessed_skill": "Describe controller algorithm relating sensor data to irrigation-actuator decisions.",
+          "relevance": "partial",
+          "evidence": "Controller/sensor/actuator/algorithm interaction tested; transducer physical conversion not tested."
+        },
+        {
+          "code": "A1.3.7",
+          "scope_bullet_id": "A1.3.7:G01",
+          "exact_guidance": "• Examples may include autonomous vehicles, home thermostats, automatic elevator controllers, automatic washing machines, traffic signal control systems, irrigation control systems, home security systems, automatic doors.",
+          "assessed_skill": "Describe application of control-system components and feedback to greenhouse irrigation.",
+          "relevance": "partial",
+          "evidence": "One explicit listed real-world application assessed; question uses Describe3 rather than extended explanation of several applications. Non-exhaustive may-include examples not all required."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Comparing measured moisture with target and actuating water supply with repeated feedback is a coherent closed-loop irrigation model. No need for advanced control mathematics or specialized hysteresis."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Input readings/target, algorithm comparison and actuator/feedback outcome correctly describe the requested controller role."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Three1-mark components total3. Correct equivalent threshold/feedback control explanations accepted; feedback expands actuator decision but is not credited twice."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q13-a-ii.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q13-a-ii.json": "f204e96c881941bb2a68b46a4f2e85cb9a8f14da5c9d171f47ae3af4fc33a12b",
+        "question-bank/questions/P-SRC001-Q13-a-ii.json": "dd964b15609f4b063d91bad2907a9871d912fc0843bbd8dfc6ef6a0931ed21ed",
+        "question-bank/markschemes/P-SRC001-Q13-a-ii.json": "1e22cc5f843ee7a053ff20fd1342b156c433bd7545c9f41191f29f4ed9f902bf",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q13-a-ii.json": "1612acec29e37b673ea32e42bfe5be63ce1fa8f5fb526b310110ca8d2806f2d5"
+      }
+    }
+  ]
+}

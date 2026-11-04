@@ -1,0 +1,42 @@
+{
+  "installed_from": "agents/chunk-3/agent-3-bank-audit",
+  "installed_path": "question-bank/search",
+  "database": "question-bank/database.sqlite3",
+  "sources": [
+    {
+      "path": "question-bank/search/bank_db.py",
+      "sha256": "c44a40abf7b0cec3a6f7e17692e7ab07b0dc614d1c0ac368876b48696a773ef7"
+    },
+    {
+      "path": "question-bank/search/serve_bank.py",
+      "sha256": "7bef5668e386329805b3b86159611e582837f75a3a5a718e503b41aa8a0d5582"
+    },
+    {
+      "path": "question-bank/search/test_db.py",
+      "sha256": "f7b084d081a6826c5c68f764479a1a39b3a2127cabf546a9920a7d0cf3ff06a4"
+    },
+    {
+      "path": "question-bank/search/README.md",
+      "sha256": "875398b9aec8139f00026d2d19e8734924588cc659dd19f230a9a2e10d610b0f"
+    },
+    {
+      "path": "question-bank/search/persistent-web/index.html",
+      "sha256": "c34ba56053408212462153956c90ed605bc3e71354784e9d66d538b3f3fbb350"
+    },
+    {
+      "path": "question-bank/search/persistent-web/app.js",
+      "sha256": "2e6666609d0798302023fc68a46456a0963b217f4ba4f17c50fdd11f40461aae"
+    },
+    {
+      "path": "question-bank/search/persistent-web/style.css",
+      "sha256": "3d5ce07385bd57b6acf173f82caceae1294cca93ec285dd196c2e05b8fcb9600"
+    }
+  ],
+  "status": "Installed canonical backend passed23 relocated functional tests and8 coordinator semantic precision regressions; browser checks ongoing.",
+  "coordinator_revision": {
+    "file": "question-bank/search/bank_db.py",
+    "sha256": "87cb21857cc37cbd6aab12de21d31cb304d75272c4e20c2d96365366d621e47e",
+    "reason": "Removed unsafe concept equivalences: encapsulation vs information hiding; generic for vs counted; generic while vs pre-test; slope/intercept vs whole linear regression. Narrow reviewed concept aliases only.",
+    "test_results": "question-bank/search/semantic_precision_results.json"
+  }
+}

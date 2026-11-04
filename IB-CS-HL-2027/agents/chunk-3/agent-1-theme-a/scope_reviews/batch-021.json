@@ -1,0 +1,196 @@
+{
+  "checkpoint": "A-RECORDS-021",
+  "reviews": [
+    {
+      "question_id": "P-SRC004-Q10-d",
+      "record_sha256": "42395ecd1b2a3532807dc44608b9744fcb1a4869a756bf706e19c2105b1fe252",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:06:40.677513+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A2.1.1",
+          "scope_bullet_id": "A2.1.1:G01",
+          "exact_guidance": "• Networks: local area network (LAN), wide area network (WAN), personal area network (PAN), virtual private network (VPN)",
+          "assessed_skill": "Outline VPN confidentiality and authenticated access to private resources from public Wi-Fi.",
+          "relevance": "partial",
+          "evidence": "VPN purposes/characteristics only, not LAN/WAN/PAN or arbitrary VPN trust assumptions."
+        },
+        {
+          "code": "A2.4.3",
+          "scope_bullet_id": "A2.4.3:G01",
+          "exact_guidance": "• Content security policies, complex password policies, DDoS mitigation tools, email filtering solutions, encrypted protocols, input validation (filtering, whitelisting), intrusion detection systems (IDS), intrusion prevention systems (IPS), multifactor authentication (MFA), secure socket layer (SSL) certificate, transport layer security (TLS) certificate, update software, VPNs",
+          "assessed_skill": "Explain VPN encrypted tunnel as a countermeasure on an untrusted public access path.",
+          "relevance": "partial",
+          "evidence": "VPN/encrypted protocol aspect only; does not test all countermeasures or MAC filtering just because Wi-Fi named."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Correctly configured authenticated VPN encrypts tunnel traffic from client to trusted endpoint and routes permitted access to private lab services. Traffic outside the tunnel and compromised endpoints are not magically protected."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Confidentiality plus authorized private-service reachability are two distinct developed reasons, not unsupported claim VPN always increases speed."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Four1-mark points total4 for two mechanism/context pairs; equivalent accurate reasons accepted under scoped alternatives."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-004/questions/H-SRC004-Q10-d.json, extraction/by-paper/SRC-016/questions/H-SRC016-Q10-d.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• The importance of regular security testing and employee training",
+        "• Wireless security measures may include media access controllers (MAC), whitelists and blacklists."
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC004-Q10-d.json": "42395ecd1b2a3532807dc44608b9744fcb1a4869a756bf706e19c2105b1fe252",
+        "question-bank/questions/P-SRC004-Q10-d.json": "af69a8e977a4574d9635d2c458ad605021d6a7bd15e42b5315e5c79904f42296",
+        "question-bank/markschemes/P-SRC004-Q10-d.json": "42dbd93ff51610b22e52503a7f28e675005f8d44307ac0c7cb1f23ca1dcf775f",
+        "extraction/by-paper/SRC-004/questions/H-SRC004-Q10-d.json": "4121a32c80fd7162df959e91258dcbbaea7b86f409527da6f080ff276c88d3d7",
+        "extraction/by-paper/SRC-016/questions/H-SRC016-Q10-d.json": "9d9ddd27279cdd932fc0f03f7d9ecbc9783eb0fb5af28fd326b7c5d99bdd3ec0"
+      },
+      "question_type": "explanation",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Outline two VPN reasons with contextual expansion."
+      }
+    },
+    {
+      "question_id": "P-SRC004-Q10-e",
+      "record_sha256": "7be55af76c53170233d37446e7bad25221b2d491e24469278925946eef4cfd85",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:06:40.677781+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A2.3.2",
+          "scope_bullet_id": "A2.3.2:G03",
+          "exact_guidance": "• Factors to consider must include bandwidth, complexity of installation, cost, range, susceptibility to interference, attenuation, reliability, security.",
+          "assessed_skill": "Explain attenuation/range reducing useful wireless throughput at coverage edge.",
+          "relevance": "partial",
+          "evidence": "Range, attenuation, errors/retransmissions/reduced rate tested; no full medium comparison or all eight must-include factors."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Larger path distance typically weakens received signal, which can increase errors/retries or force more robust lower-rate modulation, lowering useful throughput. May in prompt avoids universal monotonic claim."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Three-step attenuation→link performance→useful throughput chain correctly answers Explain3."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Three1-mark distinct causal components total3; interference can be relevant additional context but not replace the specified distance mechanism without explanation."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-004/questions/H-SRC004-Q10-e.json, extraction/by-paper/SRC-016/questions/H-SRC016-Q10-e.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Wired transmission via fibre optic cables and twisted pair cables; wireless transmission",
+        "• The advantages and disadvantages of these three types of data transmission"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC004-Q10-e.json": "7be55af76c53170233d37446e7bad25221b2d491e24469278925946eef4cfd85",
+        "question-bank/questions/P-SRC004-Q10-e.json": "48182782c18533305e20bdde35ed7323d3dde23dac9f2f1e5f31048eb27fd9f7",
+        "question-bank/markschemes/P-SRC004-Q10-e.json": "1432337e7f1417a8ffb8a3701c8ea5184a2f109f52e7eb4e1ef8b22746b2c58d",
+        "extraction/by-paper/SRC-004/questions/H-SRC004-Q10-e.json": "167bf2234d5bd94307e803c44e08e58596217a36d6334f10a731e67d0ab212c3",
+        "extraction/by-paper/SRC-016/questions/H-SRC016-Q10-e.json": "2ae3a4f9e6840f4781d59a3677083d353303504e0c4b92ea16c441569679fd27"
+      },
+      "question_type": "explanation",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Explain physical-medium causal throughput effect."
+      }
+    },
+    {
+      "question_id": "P-SRC004-Q11-d",
+      "record_sha256": "72ad739c923d485bc72c15bad901a713613f488af8ba599416d6ec3331c22897",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:06:40.678050+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A4.4.1",
+          "scope_bullet_id": "A4.4.1:G03",
+          "exact_guidance": "• The ethics of using machine learning in online communication may include concerns about misinformation, bias, online harassment, anonymity, privacy.",
+          "assessed_skill": "Explain misinformation/reputational harm from a realistic ML image of a false event.",
+          "relevance": "partial",
+          "evidence": "One online-communication ethical risk developed; no training-bias or entire issue-list coverage. Harm is conditional on deceptive presentation rather than all synthetic images being unethical."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "A realistic false-event image can mislead audiences if presented as authentic evidence, damaging reputation/public judgment. Disclosure/consent/context matter; creation alone does not establish a legal violation."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Model states false evidence and specific reputational/public harm with the needed if-presented condition."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Three1-mark criteria total3 for identified issue, deceptive-evidence mechanism and concrete harm; equivalent consent/privacy concern must be developed appropriately rather than blanket synthetic-media ban."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-004/questions/H-SRC004-Q11-d.json, extraction/by-paper/SRC-016/questions/H-SRC016-Q11-d.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Ethical issues may include accountability, algorithmic fairness, bias, consent, environmental impact, privacy, security, societal impact, transparency.",
+        "• The challenges posed by biases in training data"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC004-Q11-d.json": "72ad739c923d485bc72c15bad901a713613f488af8ba599416d6ec3331c22897",
+        "question-bank/questions/P-SRC004-Q11-d.json": "524458a739e43efe8681ab1eefcdc38ce7a103b489790a3d0dcbb1ee96fefbe1",
+        "question-bank/markschemes/P-SRC004-Q11-d.json": "7e19255ba874917e95b1bc02245ce26a0f3d27010c6d27e5ec2fc0f302e24e4c",
+        "extraction/by-paper/SRC-004/questions/H-SRC004-Q11-d.json": "1ba4f3d8e995181a8ac666e2eb3df334183dee45c0f6b876eaf7dfbc8d827286",
+        "extraction/by-paper/SRC-016/questions/H-SRC016-Q11-d.json": "86d3a59b342416984bf69d742c92f8c83f425dc8fdc6cb622845adf0ee8f9f2d"
+      },
+      "question_type": "contextual explanation",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Explain one contextual ethical harm mechanism."
+      }
+    }
+  ]
+}

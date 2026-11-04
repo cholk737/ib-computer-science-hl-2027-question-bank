@@ -1,10 +1,11 @@
 {
   "agent": "/root/theme_b_coverage",
-  "checkpoint": "B-RECORD-015",
+  "checkpoint": "B-RECORD-073",
   "status": "active_individual_record_review",
   "completed_tasks": [
     "Read project rules, recovery progress, QA and specimen analysis",
-    "Manual objective/scope evidence audit saved for 38 of 38 Theme B statements"
+    "Manual objective/scope evidence audit saved for 38 of 38 Theme B statements",
+    "30 individual existing bank records reviewed; all38 objective first-pass audits remain distinct from full-bank review."
   ],
   "unfinished_tasks": [
     "Full individual B bank mapping review, not implied by objective first pass",
@@ -55,13 +56,59 @@
   "verified_ids": [],
   "last_saved_question_id": null,
   "files_created": [
+    "B_CHECKPOINT_MANIFEST.json",
     "STATUS.json",
+    "add_b2_audit.py",
+    "add_b3_audit.py",
+    "add_b4_audit.py",
     "audit_decisions.json",
     "audit_theme_b.py",
+    "checks/check_b_record_006.json",
+    "checks/check_b_record_006.py",
+    "checks/check_b_record_009.json",
+    "checks/check_b_record_009.py",
+    "checks/check_b_record_012.json",
+    "checks/check_b_record_012.py",
+    "checks/check_b_record_015.json",
+    "checks/check_b_record_015.py",
+    "checks/check_b_record_018.json",
+    "checks/check_b_record_018.py",
+    "checks/check_b_record_021.json",
+    "checks/check_b_record_021.py",
+    "checks/check_b_record_024.json",
+    "checks/check_b_record_024.py",
+    "checks/check_b_record_027.json",
+    "checks/check_b_record_027.py",
+    "checks/check_b_record_030.json",
+    "checks/check_b_record_030.py",
+    "checks/check_b_record_033.json",
+    "checks/check_b_record_033.py",
+    "checks/check_b_record_036.json",
+    "checks/check_b_record_036.py",
+    "checks/check_b_record_038.json",
+    "checks/check_b_record_038.py",
+    "checks/check_b_record_041.json",
+    "checks/check_b_record_041.py",
+    "checks/check_b_record_049.json",
+    "checks/check_b_record_049.py",
+    "checks/check_b_record_055.json",
+    "checks/check_b_record_055.py",
+    "checks/check_b_record_061.json",
+    "checks/check_b_record_061.py",
     "coverage_audit.json",
     "findings.md",
     "question_review_queue.json",
     "question_reviews.json",
+    "refresh_checkpoint.py",
+    "review_history/P-SRC001-Q03.rev001.json",
+    "review_history/P-SRC001-Q04.rev001.json",
+    "review_history/P-SRC001-Q07.rev001.json",
+    "review_history/P-SRC001-Q14-c.rev001.json",
+    "review_history/P-SRC001-Q14-c.rev002.json",
+    "review_history/P-SRC002-Q05-a-ii.rev001.json",
+    "review_history/P-SRC005-Q09.rev001.json",
+    "review_history/P-SRC005-Q13-a-i.rev001.json",
+    "review_history/P-SRC009-Q13-a.rev001.json",
     "save_reviews.py"
   ],
   "remaining_requirements": {
@@ -100,11 +147,39 @@
       "B4.1.6"
     ]
   },
-  "exact_next_action": "Review next queued record P-SRC002-Q06-b plus next two; save actual scope evidence and each verification dimension separately.",
+  "exact_next_action": "Review next queued record P-SRC006-Q13-b plus next two; save actual scope evidence and each verification dimension separately.",
   "scope_override": "No exam papers/topic tests/PDFs/assembly. Searchable evidence and full-bank review have priority.",
-  "individual_record_reviews_completed": 15,
+  "individual_record_reviews_completed": 73,
   "individual_record_reviews_total": 364,
-  "individual_record_reviews_remaining": 349,
-  "last_saved_review_question_id": "P-SRC002-Q05-e",
-  "next_queued_question_id": "P-SRC002-Q06-b"
+  "individual_record_reviews_remaining": 291,
+  "last_saved_review_question_id": "P-SRC006-Q13-a",
+  "next_queued_question_id": "P-SRC006-Q13-b",
+  "source_record_review_progress": {
+    "SRC001": {
+      "reviewed": 10,
+      "remaining": 0,
+      "note": "C3 mapping and stated verification dimensions only;original-PDF source verification pending."
+    },
+    "SRC002": {
+      "reviewed": 28,
+      "remaining": 0,
+      "note": "C3 mapping and stated verification dimensions only;original-PDF source verification pending."
+    },
+    "SRC004": {
+      "reviewed": 11,
+      "remaining": 0,
+      "note": "C3 mapping and stated verification dimensions only;original-PDF source verification pending."
+    },
+    "SRC005": {
+      "reviewed": 11,
+      "remaining": 0,
+      "note": "C3 mapping and stated verification dimensions only;original-PDF source verification pending."
+    },
+    "SRC009": {
+      "reviewed": 1,
+      "remaining": 16,
+      "note": "C3 mapping and stated verification dimensions only;original-PDF source verification pending."
+    }
+  },
+  "reviewed_question_type_count": 20
 }
