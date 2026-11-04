@@ -27,3 +27,9 @@ Canonical code: question-bank/search/. Canonical DB: question-bank/database.sqli
 ## Save and stop
 
 Save new substantive records, correct index links, exact evidence, reproducible tests and atomic checkpoints after every 2–3 questions. Coordinate sequentially yourself; if retaining historical reviewer names, identify new review authorship honestly. On interruption, write the exact next ID/action and failed checks. Stop after the current chunk and report what is actually saved. Never promise background continuation.
+
+<!-- REQUIRED-ADDITIONAL-QUESTIONS-START -->
+## Required additional question creation
+
+**Create more original questions during Chunk3.** Read QUESTION_GENERATION_INSTRUCTIONS.md in the handover wrapper (also present in the working project). The826-question bank is a starting point, not the final limit. Work in small cycles of relevant scope review, genuine gap-question authoring, answer/code verification, searchable-bank integration and checkpoints. Include substantial actual Python code-writing tasks where the guide requires them. Do not stop at reviewing the existing bank or postpone every new question until unrelated reviews are finished. Preserve existing IDs; keep answers/criteria separate; save every2–3 questions. This authoring work is already part of the active Chunk3 assignment. Later Chunk5 must also generate and verify new questions when needed for more distinct examinations. Keep the single-agent rule and chunk boundaries; no examinations or PDFs in Chunk3.
+<!-- REQUIRED-ADDITIONAL-QUESTIONS-END -->

@@ -16,6 +16,46 @@ P = Path(__file__).resolve().parents[1]
 R = P.parent
 H = R / 'CLAUDE_HANDOVER'
 
+QUESTION_GENERATION_INSTRUCTIONS = """# Required: create additional original questions
+
+Creating more questions is an explicit part of the assignment. The existing826 questions and the3 original questions already added are a starting bank, not a final limit. Continue expanding it where exact2027 HL requirements lack sufficient genuine practice. Do not treat reviewing, indexing or importing the existing bank as completion of this authoring requirement.
+
+## During the active Chunk3
+
+Work as ONE AGENT, without subagents. Use small cycles: inspect a specific requirement and its existing candidates, identify a genuine gap, write and verify additional questions, integrate them, then checkpoint. Do not postpone all new questions until every unrelated historical record has been reviewed. Where a gap is uncertain, resolve that relevant mapping first; do not invent a gap or duplicate an existing assessed skill.
+
+1. Read the exact learning statement and ALL its guidance in the uploaded2027 guide. Include common SL/HL and HL-only scope; preserve must-include/may-include limits.
+2. Consult the appropriate2027 HL specimen and marking conventions. Use ThemeA style for A questions and Python ThemeB style for B questions, with appropriate IB commands, depth and marks.
+3. Search the existing bank and inspect complete relevant prompts/answers, checked scope evidence and duplicate candidates. Use CHUNK3_SCOPE_BACKLOG.csv/json and the coverage report to prioritize meaningful missing skills and weak difficulty/application coverage.
+4. Write genuinely new questions and contexts. Do not create superficial name/number substitutions or copy substantial source-question wording. Create additional questions for weakly covered requirements as well as requirements with zero links, when the evidence justifies them. Do not impose an arbitrary final question quota.
+5. Include real Python CODE-CONSTRUCTION tasks requiring students to write functions, algorithms or classes where applicable. Cover functions/parameters/returns, selection, loops, searches, sorting, simple non-branching recursive code, file processing, debugging/correction, classes/constructors/methods, encapsulation, inheritance/polymorphism and HL ADTs only within exact guide scope. Explanation/tracing alone must not stand in for a required construction skill. SQL remains appropriate for database questions.
+6. Make every question self-contained: complete prompt/subquestions, input/domain assumptions, necessary code/tables/diagrams, permanent unique ID, exact code and specific tested scope aspects, level, type, difficulty and realistic marks. Check existing IDs before reserving new ones. O-C3-B-004 and O-C3-A-001 are prospective next IDs, not permission to overwrite an existing file.
+7. Store the model answer and mark-by-mark preliminary UNOFFICIAL criteria separately from student content. Include partial credit, acceptable alternatives and scope/verification limits. Keep genuine original questions free of invented historical provenance.
+8. Execute Python reference solutions and independently check expected outputs, boundaries and relevant mutation/complexity claims. Verify conceptual answers, calculations and mark totals. Record checks honestly; author verification is not independent Chunk4 verification.
+9. Add complete records to the permanent bank, exact scope-evidence indexes, coverage report and canonical SQLite database. Make the new questions searchable and their answers separately retrievable. Preserve all existing questions, stable IDs, provenance and history.
+10. Save after every2–3 questions and meaningful milestone, update progress/QA and commit verified changes. Continue the next useful gap within the authorized chunk while resources permit. If interrupted, save completed IDs and the exact next task; do not promise background continuation.
+
+Do not generate examinations, topic tests or PDFs during Chunk3. Stop at the chunk boundary. Chunk4 later independently verifies the full bank. Chunk5, when explicitly assigned after verification, must also create, test and add new questions whenever missing suitable bank content would prevent another genuinely distinct high-quality examination; it must not stop merely because the current bank is too small. Follow the standalone Chunk5 instructions and100-point quality rubric. Do not execute either later chunk now.
+"""
+
+
+def apply_question_generation_instruction():
+    """Keep this requirement in every entry point and subsequent rebuild."""
+    put('QUESTION_GENERATION_INSTRUCTIONS.md', QUESTION_GENERATION_INSTRUCTIONS)
+    (P/'QUESTION_GENERATION_INSTRUCTIONS.md').write_text(QUESTION_GENERATION_INSTRUCTIONS.strip()+'\n')
+    start='<!-- REQUIRED-ADDITIONAL-QUESTIONS-START -->'
+    end='<!-- REQUIRED-ADDITIONAL-QUESTIONS-END -->'
+    block='\n'.join([start, '## Required additional question creation', '',
+        '**Create more original questions during Chunk3.** Read QUESTION_GENERATION_INSTRUCTIONS.md in the handover wrapper (also present in the working project). The826-question bank is a starting point, not the final limit. Work in small cycles of relevant scope review, genuine gap-question authoring, answer/code verification, searchable-bank integration and checkpoints. Include substantial actual Python code-writing tasks where the guide requires them. Do not stop at reviewing the existing bank or postpone every new question until unrelated reviews are finished. Preserve existing IDs; keep answers/criteria separate; save every2–3 questions. This authoring work is already part of the active Chunk3 assignment. Later Chunk5 must also generate and verify new questions when needed for more distinct examinations. Keep the single-agent rule and chunk boundaries; no examinations or PDFs in Chunk3.', end])
+    targets=[H/n for n in ['00_READ_FIRST.md','CLAUDE.md','RESUME_PROMPT.md','NEXT_ACTIONS.md','CHUNK_3_INSTRUCTIONS.md','CHUNK_3_REMAINING_WORK.md','CHUNK_5_INSTRUCTIONS.md']]+[R/'CLAUDE.md']
+    for path in targets:
+        text=path.read_text()
+        if start in text:
+            before,rest=text.split(start,1);_,after=rest.split(end,1);text=before+block+after
+        else:
+            text=text.rstrip()+'\n\n'+block+'\n'
+        temporary=path.with_name(path.name+'.tmp');temporary.write_text(text);os.replace(temporary,path)
+
 
 def put(name, text):
     path = H / name
@@ -312,6 +352,7 @@ Search server/import/database/functional tests and original3 reference checks us
 Older source/PDF extraction verification scripts may additionally need pypdf, pdfplumber, Pillow, Poppler pdftoppm and macOS Swift/Vision OCR. Their exact original runtime is documented in IB-CS-HL-2027/audits/RUNTIME.md; that old absolute bundled-runtime location is not portable. Existing extracted/OCR/rendered evidence is included, so those scripts need not be rerun to resume Chunk3. Reproduce optional tools in a suitable local environment if reinspection is needed. No dependency cache or credentials is included. Chunk5 PDF authoring tools must be selected/verified then; no claim a PDF generator already exists.
 """)
     db.close()
+    apply_question_generation_instruction()
     print(json.dumps({'handover_markdown_files_created':len(list(H.glob('*.md'))),'structured_backlog_rows':len(backlog),'project_snapshot_status':'not yet copied; packaging follows final commit','counts':{k:counts[k] for k in ['questions','adapted','original','explicit_Python_construction_directives']}}))
 
 

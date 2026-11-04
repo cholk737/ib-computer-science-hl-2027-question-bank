@@ -8,3 +8,9 @@
 6. Use CHUNK3_SCOPE_BACKLOG.csv/json for every objective/bullet and residual skills. Write genuinely original missing questions (especially actual Python construction), separate criteria and reproducible checks. Preserve original three IDs. Next unused reserved original ID is O-C3-B-004, after checking actual files.
 7. Finish semantic recall and source-code-typo routing, reviewed type filters and responsive browser QA. Test exact code, broad topic, exact statement, exact bullet, multi-line pasted scope, partial matches, no-match scope, year/session/theme/level/marks/types/status, hidden answers and all-page retrieval. Do not widen conceptual equivalence to manufacture matches.
 8. Refresh scope evidence, indexes, coverage, DB and checkpoints. Record remaining gaps honestly. Stop at Chunk3 completion. Chunk4/5 instructions are prepared for later explicit assignments; do not execute now.
+
+<!-- REQUIRED-ADDITIONAL-QUESTIONS-START -->
+## Required additional question creation
+
+**Create more original questions during Chunk3.** Read QUESTION_GENERATION_INSTRUCTIONS.md in the handover wrapper (also present in the working project). The826-question bank is a starting point, not the final limit. Work in small cycles of relevant scope review, genuine gap-question authoring, answer/code verification, searchable-bank integration and checkpoints. Include substantial actual Python code-writing tasks where the guide requires them. Do not stop at reviewing the existing bank or postpone every new question until unrelated reviews are finished. Preserve existing IDs; keep answers/criteria separate; save every2–3 questions. This authoring work is already part of the active Chunk3 assignment. Later Chunk5 must also generate and verify new questions when needed for more distinct examinations. Keep the single-agent rule and chunk boundaries; no examinations or PDFs in Chunk3.
+<!-- REQUIRED-ADDITIONAL-QUESTIONS-END -->
