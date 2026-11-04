@@ -1,0 +1,42 @@
+{
+  "question_id": "O-C3-B-009",
+  "unofficial": true,
+  "solution": "(i) 15 -> 1; 22 -> 2 (1 occupied); 8 -> 3 (1, 2 occupied); 29 -> 4 (1, 2, 3 occupied); 3 -> 5 (3, 4 occupied). (ii) 5 / 7 = 0.71 (approximately). (iii) Slot 1: 15, 22, 8, 29 (in insertion order); slot 3: 3. (iv) As the load factor rises, collisions become more frequent, so probe sequences / chains become longer and insertion and lookup slow down from about O(1) towards O(n); enlarging the table and rehashing keeps the load factor low so operations stay close to constant time.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "(i) 15 at 1 and 22 at 2."
+    },
+    {
+      "marks": 1,
+      "criterion": "(i) 8 at 3 and 29 at 4."
+    },
+    {
+      "marks": 1,
+      "criterion": "(i) 3 at 5."
+    },
+    {
+      "marks": 1,
+      "criterion": "(ii) 5/7 ≈ 0.71."
+    },
+    {
+      "marks": 1,
+      "criterion": "(iii) slot 1 holds 15, 22, 8, 29 and slot 3 holds 3."
+    },
+    {
+      "marks": 1,
+      "criterion": "(iv) higher load factor means more collisions/longer probes or chains, so slower operations; resizing restores near O(1)."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Follow-through for later keys in (i) from one earlier placement error. Accept chain order shown as most-recent-first if stated."
+  ],
+  "partial_credit_notes": "Award each independent point once, up to 6 marks. Accept equivalent correct wording or valid alternative code. Do not double-credit one idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed check in audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json (3 cases).",
+    "scope": "Integer keys only; string hashing is constructed in O-C3-B-008."
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

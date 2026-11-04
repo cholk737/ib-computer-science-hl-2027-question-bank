@@ -1,0 +1,50 @@
+{
+  "question_id": "O-C3-B-008",
+  "unofficial": true,
+  "solution": "class HashTable:\n    def __init__(self, capacity):\n        self.capacity = capacity\n        self.slots = [None] * capacity\n        self.count = 0\n\n    def _hash(self, key):\n        total = 0\n        for ch in key:\n            total += ord(ch)\n        return total % self.capacity\n\n    def put(self, key, value):\n        index = self._hash(key)\n        while self.slots[index] is not None:\n            if self.slots[index][0] == key:\n                self.slots[index] = (key, value)\n                return\n            index = (index + 1) % self.capacity\n        self.slots[index] = (key, value)\n        self.count += 1\n\n    def get(self, key):\n        index = self._hash(key)\n        for _ in range(self.capacity):\n            if self.slots[index] is None:\n                return None\n            if self.slots[index][0] == key:\n                return self.slots[index][1]\n            index = (index + 1) % self.capacity\n        return None\n\n    def load_factor(self):\n        return self.count / self.capacity",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Constructor creates slots of length capacity filled with None, and count = 0."
+    },
+    {
+      "marks": 1,
+      "criterion": "_hash sums ord() of every character and applies modulo capacity."
+    },
+    {
+      "marks": 1,
+      "criterion": "put starts at the hash index and probes linearly with wrap-around (modulo capacity) past occupied slots."
+    },
+    {
+      "marks": 1,
+      "criterion": "put replaces the value for an existing key without changing count."
+    },
+    {
+      "marks": 1,
+      "criterion": "put stores a new (key, value) tuple in the first empty slot and increments count."
+    },
+    {
+      "marks": 1,
+      "criterion": "get probes from the hash index, returning the value when the key is found."
+    },
+    {
+      "marks": 1,
+      "criterion": "get stops and returns None at an empty slot or after checking every slot (absent key, including a full table)."
+    },
+    {
+      "marks": 1,
+      "criterion": "load_factor returns count / capacity."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Accept the built-in sum(ord(c) for c in key). Accept storing keys and values in parallel lists if the stated slots tuple requirement is otherwise met by equivalent structure. No credit for using dict/set."
+  ],
+  "partial_credit_notes": "Award each independent point once, up to 8 marks. Accept equivalent correct wording or valid alternative code. Do not double-credit one idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed check in audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json (20245 cases).",
+    "scope": "Deletion (tombstones), resizing/rehashing and separate chaining are not constructed; chaining is traced in O-C3-B-009. The dict/set ban is a task-specific algorithm restriction, not a general built-in ban."
+  },
+  "code": "class HashTable:\n    def __init__(self, capacity):\n        self.capacity = capacity\n        self.slots = [None] * capacity\n        self.count = 0\n\n    def _hash(self, key):\n        total = 0\n        for ch in key:\n            total += ord(ch)\n        return total % self.capacity\n\n    def put(self, key, value):\n        index = self._hash(key)\n        while self.slots[index] is not None:\n            if self.slots[index][0] == key:\n                self.slots[index] = (key, value)\n                return\n            index = (index + 1) % self.capacity\n        self.slots[index] = (key, value)\n        self.count += 1\n\n    def get(self, key):\n        index = self._hash(key)\n        for _ in range(self.capacity):\n            if self.slots[index] is None:\n                return None\n            if self.slots[index][0] == key:\n                return self.slots[index][1]\n            index = (index + 1) % self.capacity\n        return None\n\n    def load_factor(self):\n        return self.count / self.capacity",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}
