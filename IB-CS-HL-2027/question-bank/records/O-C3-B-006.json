@@ -1,0 +1,66 @@
+{
+  "question_id": "O-C3-B-006",
+  "source_question_ids": [],
+  "derivation_status": "original_unofficial",
+  "unofficial": true,
+  "question_text": "Use the observer design pattern. Construct two Python classes. (a) WeatherStation has a private-by-convention list _observers and an attribute temperature, initially None. It has methods subscribe(observer), which adds the observer unless it is already subscribed; unsubscribe(observer), which removes it if present and does nothing otherwise; and set_temperature(value), which stores the value and then calls update(value) on every subscribed observer in the order they subscribed. (b) Display has an attribute readings, initially an empty list, and a method update(value) that appends value to readings. You do not need to write any other code.",
+  "syllabus_codes": [
+    "B3.2.5"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 7,
+  "command_term": "Construct",
+  "difficulty": "high",
+  "question_type": "Python code construction",
+  "adaptation_rationale": "Original question written by Claude (single-agent Chunk 3 continuation, 2026-11-04) for a syllabus statement with no linked question at handover; no historical source question or official marking status claimed.",
+  "solution": "class WeatherStation:\n    def __init__(self):\n        self._observers = []\n        self.temperature = None\n\n    def subscribe(self, observer):\n        if observer not in self._observers:\n            self._observers.append(observer)\n\n    def unsubscribe(self, observer):\n        if observer in self._observers:\n            self._observers.remove(observer)\n\n    def set_temperature(self, value):\n        self.temperature = value\n        for observer in self._observers:\n            observer.update(value)\n\n\nclass Display:\n    def __init__(self):\n        self.readings = []\n\n    def update(self, value):\n        self.readings.append(value)",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "WeatherStation constructor initialises _observers to an empty list and temperature to None."
+    },
+    {
+      "marks": 1,
+      "criterion": "subscribe adds an observer only if it is not already subscribed."
+    },
+    {
+      "marks": 1,
+      "criterion": "unsubscribe removes a subscribed observer and safely ignores one that is not subscribed."
+    },
+    {
+      "marks": 1,
+      "criterion": "set_temperature stores the new value."
+    },
+    {
+      "marks": 1,
+      "criterion": "set_temperature calls update(value) on every subscribed observer, in subscription order."
+    },
+    {
+      "marks": 1,
+      "criterion": "Display constructor initialises readings to an empty list."
+    },
+    {
+      "marks": 1,
+      "criterion": "Display.update appends the value to readings."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Accept try/except ValueError for safe removal. Accept iterating over a copy of the list. Minor syntax slips do not lose a mark if intent is unambiguous."
+  ],
+  "partial_credit_notes": "Award each independent point once, up to 7 marks. Accept equivalent correct wording or valid alternative code. Do not double-credit one idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed check in audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json (9 cases).",
+    "scope": "Singleton construction not assessed; Python has no enforced private access, so \"private by convention\" is stated."
+  },
+  "code": "class WeatherStation:\n    def __init__(self):\n        self._observers = []\n        self.temperature = None\n\n    def subscribe(self, observer):\n        if observer not in self._observers:\n            self._observers.append(observer)\n\n    def unsubscribe(self, observer):\n        if observer in self._observers:\n            self._observers.remove(observer)\n\n    def set_temperature(self, value):\n        self.temperature = value\n        for observer in self._observers:\n            observer.update(value)\n\n\nclass Display:\n    def __init__(self):\n        self.readings = []\n\n    def update(self, value):\n        self.readings.append(value)",
+  "test_code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/O-C3-B-006.json",
+  "question_path": "question-bank/questions/O-C3-B-006.json",
+  "markscheme_path": "question-bank/markschemes/O-C3-B-006.json",
+  "coordinator_status": "author_content_scope_answer_marking_checks_passed; independent_Chunk4_audit_pending",
+  "independent_verification_status": "pending"
+}

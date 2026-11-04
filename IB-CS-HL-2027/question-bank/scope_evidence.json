@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "unofficial": true,
-  "updated_at": "2026-11-04T22:15:44.846418+01:00",
+  "updated_at": "2026-11-04T22:15:46.271719+01:00",
   "scope_bullet_id_rule": "CODE:GNN is the one-based exact guidance paragraph. Direct relevance certifies the described assessed skill, never every item in the paragraph.",
   "reviews": [
     {
@@ -1403,6 +1403,225 @@
         "coordinator": "/root",
         "reviewed_at": "2026-11-04T22:15:44.846418+01:00",
         "reason": "Author read full A4.3.9/B1.1.1 statements and guidance; CNN sizes verified by sliding-window simulation; spec elements map G01.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "O-C3-B-005",
+      "record_sha256": "bfc70aab6153c2e93104d611eec60a9f63f2274ab43a216a19abaf042ab95ce3",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:46.189926+00:00",
+      "question_type": "explanation",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "6 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "B3.2.5",
+          "scope_bullet_id": "B3.2.5:G01",
+          "exact_guidance": "• The key design patterns such as singleton, factory and observer",
+          "assessed_skill": "Explain singleton, factory and observer patterns.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Implementation is assessed separately in O-C3-B-006 (observer) and O-C3-B-007 (factory).",
+          "coverage_limit": "Implementation is assessed separately in O-C3-B-006 (observer) and O-C3-B-007 (factory).",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Explain\" on the scoped content of B3.2.5."
+        },
+        {
+          "code": "B3.2.5",
+          "scope_bullet_id": "B3.2.5:G02",
+          "exact_guidance": "• The application of design patterns in solving recurring programming challenges",
+          "assessed_skill": "Apply design patterns to recurring programming challenges in context.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Implementation is assessed separately in O-C3-B-006 (observer) and O-C3-B-007 (factory).",
+          "coverage_limit": "Implementation is assessed separately in O-C3-B-006 (observer) and O-C3-B-007 (factory).",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Explain\" on the scoped content of B3.2.5."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Implementation is assessed separately in O-C3-B-006 (observer) and O-C3-B-007 (factory)."
+      ],
+      "execution_evidence": "manual",
+      "coordinator_review": {
+        "question_id": "O-C3-B-005",
+        "review_sha256": "0a086dba581628386f0fbe2ec082201f8a7ad1a663b80663bf0b377c71015238",
+        "record_sha256": "bfc70aab6153c2e93104d611eec60a9f63f2274ab43a216a19abaf042ab95ce3",
+        "source_path": "question-bank/original-review-drafts/O-C3-B-005.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T22:15:46.271719+01:00",
+        "reason": "Author read full B3.2.5 statement and guidance; observer and factory references executed against edge-case checks.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "O-C3-B-006",
+      "record_sha256": "eeab4f1bb132cd7cb68f1eea0af0c3dea48cae26e8e41538143533aee4074c28",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:46.190657+00:00",
+      "question_type": "Python code construction",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Executed check in audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json (9 cases)."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "7 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "B3.2.5",
+          "scope_bullet_id": "B3.2.5:G01",
+          "exact_guidance": "• The key design patterns such as singleton, factory and observer",
+          "assessed_skill": "Construct the observer pattern (subject maintaining and notifying observers).",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Singleton construction not assessed; Python has no enforced private access, so \"private by convention\" is stated.",
+          "coverage_limit": "Singleton construction not assessed; Python has no enforced private access, so \"private by convention\" is stated.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Construct\" on the scoped content of B3.2.5."
+        },
+        {
+          "code": "B3.2.5",
+          "scope_bullet_id": "B3.2.5:G02",
+          "exact_guidance": "• The application of design patterns in solving recurring programming challenges",
+          "assessed_skill": "Apply the observer pattern to a recurring update-notification problem.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Singleton construction not assessed; Python has no enforced private access, so \"private by convention\" is stated.",
+          "coverage_limit": "Singleton construction not assessed; Python has no enforced private access, so \"private by convention\" is stated.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Construct\" on the scoped content of B3.2.5."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Singleton construction not assessed; Python has no enforced private access, so \"private by convention\" is stated."
+      ],
+      "execution_evidence": "audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json",
+      "coordinator_review": {
+        "question_id": "O-C3-B-006",
+        "review_sha256": "d05dc28964b11d2e9d088e34625fc203876d9ac67b4103e63d61190e562eb383",
+        "record_sha256": "eeab4f1bb132cd7cb68f1eea0af0c3dea48cae26e8e41538143533aee4074c28",
+        "source_path": "question-bank/original-review-drafts/O-C3-B-006.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T22:15:46.271719+01:00",
+        "reason": "Author read full B3.2.5 statement and guidance; observer and factory references executed against edge-case checks.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "O-C3-B-007",
+      "record_sha256": "4ca61a822b7b50fa67e1ab035a49f6a00f966b6854d3b57cc548c6abe3460abd",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:46.191083+00:00",
+      "question_type": "Python code construction",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Executed check in audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json (6 cases)."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "5 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "B3.2.5",
+          "scope_bullet_id": "B3.2.5:G01",
+          "exact_guidance": "• The key design patterns such as singleton, factory and observer",
+          "assessed_skill": "Construct a factory that hides concrete class selection from the caller.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Inheritance is provided, not assessed. Does not assess singleton or observer.",
+          "coverage_limit": "Inheritance is provided, not assessed. Does not assess singleton or observer.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Construct\" on the scoped content of B3.2.5."
+        },
+        {
+          "code": "B3.2.5",
+          "scope_bullet_id": "B3.2.5:G02",
+          "exact_guidance": "• The application of design patterns in solving recurring programming challenges",
+          "assessed_skill": "Apply the factory pattern to object creation from data.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Inheritance is provided, not assessed. Does not assess singleton or observer.",
+          "coverage_limit": "Inheritance is provided, not assessed. Does not assess singleton or observer.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Construct\" on the scoped content of B3.2.5."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Inheritance is provided, not assessed. Does not assess singleton or observer."
+      ],
+      "execution_evidence": "audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json",
+      "coordinator_review": {
+        "question_id": "O-C3-B-007",
+        "review_sha256": "7108401100f298405f8f39f9b0625487134f73289adf96e98e7066aa0779f7ff",
+        "record_sha256": "4ca61a822b7b50fa67e1ab035a49f6a00f966b6854d3b57cc548c6abe3460abd",
+        "source_path": "question-bank/original-review-drafts/O-C3-B-007.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T22:15:46.271719+01:00",
+        "reason": "Author read full B3.2.5 statement and guidance; observer and factory references executed against edge-case checks.",
         "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
       }
     },

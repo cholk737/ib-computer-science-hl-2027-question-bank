@@ -1,0 +1,17 @@
+{
+  "question_id": "O-C3-B-007",
+  "source_question_ids": [],
+  "derivation_status": "original_unofficial",
+  "unofficial": true,
+  "question_text": "The following classes are already defined:\n\nclass Enemy:\n    def __init__(self, health):\n        self.health = health\n\nclass Goblin(Enemy):\n    def __init__(self):\n        super().__init__(30)\n\nclass Dragon(Enemy):\n    def __init__(self):\n        super().__init__(200)\n\nclass Bat(Enemy):\n    def __init__(self):\n        super().__init__(10)\n\nUsing the factory design pattern, construct a Python function create_enemies(names) that takes a list of type-name strings (for example [\"bat\", \"Goblin\", \"DRAGON\"]) and returns a list of new enemy objects of the matching classes, in the same order. Matching must ignore upper/lower case. If any name is not one of the three types, raise a ValueError and return no list.",
+  "syllabus_codes": [
+    "B3.2.5"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 5,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "question_type": "Python code construction",
+  "assets": []
+}

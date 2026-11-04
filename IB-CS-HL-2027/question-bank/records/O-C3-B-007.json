@@ -1,0 +1,58 @@
+{
+  "question_id": "O-C3-B-007",
+  "source_question_ids": [],
+  "derivation_status": "original_unofficial",
+  "unofficial": true,
+  "question_text": "The following classes are already defined:\n\nclass Enemy:\n    def __init__(self, health):\n        self.health = health\n\nclass Goblin(Enemy):\n    def __init__(self):\n        super().__init__(30)\n\nclass Dragon(Enemy):\n    def __init__(self):\n        super().__init__(200)\n\nclass Bat(Enemy):\n    def __init__(self):\n        super().__init__(10)\n\nUsing the factory design pattern, construct a Python function create_enemies(names) that takes a list of type-name strings (for example [\"bat\", \"Goblin\", \"DRAGON\"]) and returns a list of new enemy objects of the matching classes, in the same order. Matching must ignore upper/lower case. If any name is not one of the three types, raise a ValueError and return no list.",
+  "syllabus_codes": [
+    "B3.2.5"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 5,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "question_type": "Python code construction",
+  "adaptation_rationale": "Original question written by Claude (single-agent Chunk 3 continuation, 2026-11-04) for a syllabus statement with no linked question at handover; no historical source question or official marking status claimed.",
+  "solution": "def create_enemies(names):\n    makers = {\"goblin\": Goblin, \"dragon\": Dragon, \"bat\": Bat}\n    enemies = []\n    for name in names:\n        key = name.lower()\n        if key not in makers:\n            raise ValueError(\"Unknown enemy type: \" + name)\n        enemies.append(makers[key]())\n    return enemies",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Iterates over every name in order."
+    },
+    {
+      "marks": 1,
+      "criterion": "Normalises case before matching (e.g. lower())."
+    },
+    {
+      "marks": 1,
+      "criterion": "Selects the matching class for each of the three types (dictionary or selection)."
+    },
+    {
+      "marks": 1,
+      "criterion": "Creates a new instance and adds it to the result list, returning the list in the original order."
+    },
+    {
+      "marks": 1,
+      "criterion": "Raises ValueError for an unknown type name."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Accept if/elif selection instead of a dictionary. Accept validating all names first, then creating objects."
+  ],
+  "partial_credit_notes": "Award each independent point once, up to 5 marks. Accept equivalent correct wording or valid alternative code. Do not double-credit one idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed check in audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json (6 cases).",
+    "scope": "Inheritance is provided, not assessed. Does not assess singleton or observer."
+  },
+  "code": "def create_enemies(names):\n    makers = {\"goblin\": Goblin, \"dragon\": Dragon, \"bat\": Bat}\n    enemies = []\n    for name in names:\n        key = name.lower()\n        if key not in makers:\n            raise ValueError(\"Unknown enemy type: \" + name)\n        enemies.append(makers[key]())\n    return enemies",
+  "test_code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/O-C3-B-007.json",
+  "question_path": "question-bank/questions/O-C3-B-007.json",
+  "markscheme_path": "question-bank/markschemes/O-C3-B-007.json",
+  "coordinator_status": "author_content_scope_answer_marking_checks_passed; independent_Chunk4_audit_pending",
+  "independent_verification_status": "pending"
+}
