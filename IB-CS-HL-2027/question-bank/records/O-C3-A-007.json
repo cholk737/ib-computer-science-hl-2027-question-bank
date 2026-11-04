@@ -1,0 +1,54 @@
+{
+  "question_id": "O-C3-A-007",
+  "source_question_ids": [],
+  "derivation_status": "original_unofficial",
+  "unofficial": true,
+  "question_text": "A small dental practice has eight computers and one shared printer. Reliability is the most important requirement because patient appointments depend on the network, but the budget is limited. Compare a star topology and a full mesh topology for this practice.",
+  "syllabus_codes": [
+    "A2.2.1"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 4,
+  "command_term": "Compare",
+  "difficulty": "medium",
+  "question_type": "comparison",
+  "adaptation_rationale": "Original question written by Claude (single-agent Chunk 3 continuation, 2026-11-04) for a syllabus statement with no linked question at handover; no historical source question or official marking status claimed.",
+  "solution": "A full mesh links every device directly to every other device, so there is no single point of failure and traffic has many alternative paths, giving very high reliability; however, eight computers need 8 x 7 / 2 = 28 links and each device needs several network interfaces, so it is expensive and difficult to install and extend. A star connects every device to one central switch, so it needs only 9 cables, is cheap and easy to manage and extend, and a failed cable only affects one device; however, if the central switch fails the whole network stops. For a small practice with a limited budget a star is more appropriate, with reliability improved by keeping a spare switch rather than paying for a full mesh.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Mesh: every device directly connected, alternative paths / no single point of failure, so highly reliable."
+    },
+    {
+      "marks": 1,
+      "criterion": "Mesh: many links/interfaces (e.g. 28 links for 8 devices), so high cost and complex to scale."
+    },
+    {
+      "marks": 1,
+      "criterion": "Star: cheap/simple, one cable per device to a central switch; a cable failure affects only one device."
+    },
+    {
+      "marks": 1,
+      "criterion": "Star: central switch is a single point of failure, with a justified recommendation for the practice."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Accept a correct link-count argument without the exact number. Accept recommending a star with a backup switch, or a reasoned case for mesh if cost is addressed."
+  ],
+  "partial_credit_notes": "Award each independent point once, up to 4 marks. Accept equivalent correct wording or valid alternative code. Do not double-credit one idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component.",
+    "scope": "Data collisions and transmission speed are assessed in O-C3-A-006 rather than here."
+  },
+  "code": "",
+  "test_code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/O-C3-A-007.json",
+  "question_path": "question-bank/questions/O-C3-A-007.json",
+  "markscheme_path": "question-bank/markschemes/O-C3-A-007.json",
+  "coordinator_status": "author_content_scope_answer_marking_checks_passed; independent_Chunk4_audit_pending",
+  "independent_verification_status": "pending"
+}

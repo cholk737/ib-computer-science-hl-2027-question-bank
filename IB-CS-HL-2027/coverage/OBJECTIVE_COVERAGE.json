@@ -56,8 +56,8 @@
         "P-SRC001-Q12-b-iii"
       ],
       "difficulty_distribution": {
-        "medium": 6,
-        "low": 4
+        "low": 4,
+        "medium": 6
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -897,8 +897,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "low": 1,
-        "medium": 11
+        "medium": 11,
+        "low": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -1134,8 +1134,8 @@
         "P-SRC002-Q07-e"
       ],
       "difficulty_distribution": {
-        "low": 9,
-        "medium": 8
+        "medium": 8,
+        "low": 9
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -1868,8 +1868,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "medium": 7,
-        "low": 4
+        "low": 4,
+        "medium": 7
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -1933,8 +1933,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "low": 1,
-        "medium": 2
+        "medium": 2,
+        "low": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -2006,8 +2006,8 @@
         "P-SRC001-Q13-a-ii"
       ],
       "difficulty_distribution": {
-        "medium": 13,
         "low": 6,
+        "medium": 13,
         "high": 2
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
@@ -2381,8 +2381,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "high": 4,
         "medium": 15,
+        "high": 4,
         "low": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
@@ -2527,8 +2527,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "low": 4,
-        "medium": 10
+        "medium": 10,
+        "low": 4
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -2691,12 +2691,15 @@
         "Star/mesh/hybrid and reliability/speed/scalability/collisions/cost."
       ],
       "candidate_question_ids": [
-        "O-C3-A-006"
+        "O-C3-A-006",
+        "O-C3-A-007"
       ],
       "reviewed_question_ids": [
-        "O-C3-A-006"
+        "O-C3-A-006",
+        "O-C3-A-007"
       ],
       "difficulty_distribution": {
+        "medium": 1,
         "high": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
@@ -2720,7 +2723,8 @@
           "exact_guidance": "• Network topologies: star, mesh, hybrid",
           "status": "reviewed_aspect_evidence_only",
           "direct_question_ids": [
-            "O-C3-A-006"
+            "O-C3-A-006",
+            "O-C3-A-007"
           ],
           "partial_question_ids": [],
           "supporting_question_ids": [],
@@ -2736,6 +2740,18 @@
               "coverage_limit": "Small-office application is assessed separately in O-C3-A-007. Bus/ring topologies are not part of the 2027 guidance and are not assessed.",
               "statement_relevance": "direct",
               "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A2.2.1."
+            },
+            {
+              "question_id": "O-C3-A-007",
+              "code": "A2.2.1",
+              "scope_bullet_id": "A2.2.1:G01",
+              "exact_guidance": "• Network topologies: star, mesh, hybrid",
+              "assessed_skill": "Compare star and full mesh topologies.",
+              "relevance": "direct",
+              "evidence": "The prompt and its independent marking criteria require this aspect. Data collisions and transmission speed are assessed in O-C3-A-006 rather than here.",
+              "coverage_limit": "Data collisions and transmission speed are assessed in O-C3-A-006 rather than here.",
+              "statement_relevance": "direct",
+              "statement_evidence": "Prompt uses the command term \"Compare\" on the scoped content of A2.2.1."
             }
           ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
@@ -2747,7 +2763,9 @@
           "direct_question_ids": [
             "O-C3-A-006"
           ],
-          "partial_question_ids": [],
+          "partial_question_ids": [
+            "O-C3-A-007"
+          ],
           "supporting_question_ids": [],
           "reviewed_assessed_skills": [
             {
@@ -2761,6 +2779,18 @@
               "coverage_limit": "Small-office application is assessed separately in O-C3-A-007. Bus/ring topologies are not part of the 2027 guidance and are not assessed.",
               "statement_relevance": "direct",
               "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A2.2.1."
+            },
+            {
+              "question_id": "O-C3-A-007",
+              "code": "A2.2.1",
+              "scope_bullet_id": "A2.2.1:G02",
+              "exact_guidance": "• Factors to consider must include reliability, transmission speed, scalability, data collisions, cost.",
+              "assessed_skill": "Apply reliability and cost (and scalability) to a small setting.",
+              "relevance": "partial",
+              "evidence": "The prompt and its independent marking criteria require this aspect. Data collisions and transmission speed are assessed in O-C3-A-006 rather than here.",
+              "coverage_limit": "Data collisions and transmission speed are assessed in O-C3-A-006 rather than here.",
+              "statement_relevance": "direct",
+              "statement_evidence": "Prompt uses the command term \"Compare\" on the scoped content of A2.2.1."
             }
           ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
@@ -2770,7 +2800,8 @@
           "exact_guidance": "• Examples may include home and small office settings, where reliability is paramount, and the use of networks in larger settings (e.g. corporations, government departments, college campuses).",
           "status": "reviewed_aspect_evidence_only",
           "direct_question_ids": [
-            "O-C3-A-006"
+            "O-C3-A-006",
+            "O-C3-A-007"
           ],
           "partial_question_ids": [],
           "supporting_question_ids": [],
@@ -2786,6 +2817,18 @@
               "coverage_limit": "Small-office application is assessed separately in O-C3-A-007. Bus/ring topologies are not part of the 2027 guidance and are not assessed.",
               "statement_relevance": "direct",
               "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A2.2.1."
+            },
+            {
+              "question_id": "O-C3-A-007",
+              "code": "A2.2.1",
+              "scope_bullet_id": "A2.2.1:G03",
+              "exact_guidance": "• Examples may include home and small office settings, where reliability is paramount, and the use of networks in larger settings (e.g. corporations, government departments, college campuses).",
+              "assessed_skill": "Apply topology choice to a small office where reliability is paramount.",
+              "relevance": "direct",
+              "evidence": "The prompt and its independent marking criteria require this aspect. Data collisions and transmission speed are assessed in O-C3-A-006 rather than here.",
+              "coverage_limit": "Data collisions and transmission speed are assessed in O-C3-A-006 rather than here.",
+              "statement_relevance": "direct",
+              "statement_evidence": "Prompt uses the command term \"Compare\" on the scoped content of A2.2.1."
             }
           ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
@@ -2917,8 +2960,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "low": 4,
-        "medium": 9
+        "medium": 9,
+        "low": 4
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -3055,9 +3098,15 @@
       "missing_or_weak_requirements": [
         "IPv4/IPv6; public/private; static/dynamic; NAT conservation and communication."
       ],
-      "candidate_question_ids": [],
-      "reviewed_question_ids": [],
-      "difficulty_distribution": {},
+      "candidate_question_ids": [
+        "O-C3-A-008"
+      ],
+      "reviewed_question_ids": [
+        "O-C3-A-008"
+      ],
+      "difficulty_distribution": {
+        "medium": 1
+      },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
         {
@@ -3077,31 +3126,76 @@
         {
           "scope_bullet_id": "A2.3.1:G01",
           "exact_guidance": "• The distinction between IPv4 and IPv6 addressing",
-          "status": "no_approved_direct_aspect_evidence_yet",
-          "direct_question_ids": [],
+          "status": "reviewed_aspect_evidence_only",
+          "direct_question_ids": [
+            "O-C3-A-008"
+          ],
           "partial_question_ids": [],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "O-C3-A-008",
+              "code": "A2.3.1",
+              "scope_bullet_id": "A2.3.1:G01",
+              "exact_guidance": "• The distinction between IPv4 and IPv6 addressing",
+              "assessed_skill": "Distinguish IPv4 and IPv6 addressing.",
+              "relevance": "direct",
+              "evidence": "The prompt and its independent marking criteria require this aspect. Subnetting, address classes and specific private ranges beyond the scenario are not required.",
+              "coverage_limit": "Subnetting, address classes and specific private ranges beyond the scenario are not required.",
+              "statement_relevance": "direct",
+              "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A2.3.1."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
           "scope_bullet_id": "A2.3.1:G02",
           "exact_guidance": "• The differences between public IP addresses and private IP addresses, and between static IP addresses and dynamic IP addresses",
-          "status": "no_approved_direct_aspect_evidence_yet",
-          "direct_question_ids": [],
+          "status": "reviewed_aspect_evidence_only",
+          "direct_question_ids": [
+            "O-C3-A-008"
+          ],
           "partial_question_ids": [],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "O-C3-A-008",
+              "code": "A2.3.1",
+              "scope_bullet_id": "A2.3.1:G02",
+              "exact_guidance": "• The differences between public IP addresses and private IP addresses, and between static IP addresses and dynamic IP addresses",
+              "assessed_skill": "Distinguish public/private and static/dynamic IP addresses in context.",
+              "relevance": "direct",
+              "evidence": "The prompt and its independent marking criteria require this aspect. Subnetting, address classes and specific private ranges beyond the scenario are not required.",
+              "coverage_limit": "Subnetting, address classes and specific private ranges beyond the scenario are not required.",
+              "statement_relevance": "direct",
+              "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A2.3.1."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
           "scope_bullet_id": "A2.3.1:G03",
           "exact_guidance": "• The role of network address translation (NAT) to minimize the use of IP addresses and to facilitate communication between private internal networks and the public internet",
-          "status": "no_approved_direct_aspect_evidence_yet",
-          "direct_question_ids": [],
+          "status": "reviewed_aspect_evidence_only",
+          "direct_question_ids": [
+            "O-C3-A-008"
+          ],
           "partial_question_ids": [],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "O-C3-A-008",
+              "code": "A2.3.1",
+              "scope_bullet_id": "A2.3.1:G03",
+              "exact_guidance": "• The role of network address translation (NAT) to minimize the use of IP addresses and to facilitate communication between private internal networks and the public internet",
+              "assessed_skill": "Describe the role of NAT for private networks and the public internet.",
+              "relevance": "direct",
+              "evidence": "The prompt and its independent marking criteria require this aspect. Subnetting, address classes and specific private ranges beyond the scenario are not required.",
+              "coverage_limit": "Subnetting, address classes and specific private ranges beyond the scenario are not required.",
+              "statement_relevance": "direct",
+              "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A2.3.1."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         }
       ],
@@ -3289,9 +3383,15 @@
       "missing_or_weak_requirements": [
         "Static/dynamic routing process and trade-offs across configuration/maintenance/complexity/resources/convergence/scalability/network size."
       ],
-      "candidate_question_ids": [],
-      "reviewed_question_ids": [],
-      "difficulty_distribution": {},
+      "candidate_question_ids": [
+        "O-C3-A-009"
+      ],
+      "reviewed_question_ids": [
+        "O-C3-A-009"
+      ],
+      "difficulty_distribution": {
+        "high": 1
+      },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
         {
@@ -3311,31 +3411,76 @@
         {
           "scope_bullet_id": "A2.3.4:G01",
           "exact_guidance": "• The process of static routing, and its advantages and disadvantages",
-          "status": "no_approved_direct_aspect_evidence_yet",
-          "direct_question_ids": [],
+          "status": "reviewed_aspect_evidence_only",
+          "direct_question_ids": [
+            "O-C3-A-009"
+          ],
           "partial_question_ids": [],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "O-C3-A-009",
+              "code": "A2.3.4",
+              "scope_bullet_id": "A2.3.4:G01",
+              "exact_guidance": "• The process of static routing, and its advantages and disadvantages",
+              "assessed_skill": "Explain the static routing process and its advantages and disadvantages.",
+              "relevance": "direct",
+              "evidence": "The prompt and its independent marking criteria require this aspect. Specific routing protocol mechanics are excluded by the guide and not assessed.",
+              "coverage_limit": "Specific routing protocol mechanics are excluded by the guide and not assessed.",
+              "statement_relevance": "direct",
+              "statement_evidence": "Prompt uses the command term \"Explain\" on the scoped content of A2.3.4."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
           "scope_bullet_id": "A2.3.4:G02",
           "exact_guidance": "• The process of dynamic routing, and its advantages and disadvantages (explanation of a specific routing protocol is not required)",
-          "status": "no_approved_direct_aspect_evidence_yet",
-          "direct_question_ids": [],
+          "status": "reviewed_aspect_evidence_only",
+          "direct_question_ids": [
+            "O-C3-A-009"
+          ],
           "partial_question_ids": [],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "O-C3-A-009",
+              "code": "A2.3.4",
+              "scope_bullet_id": "A2.3.4:G02",
+              "exact_guidance": "• The process of dynamic routing, and its advantages and disadvantages (explanation of a specific routing protocol is not required)",
+              "assessed_skill": "Explain the dynamic routing process and its advantages and disadvantages.",
+              "relevance": "direct",
+              "evidence": "The prompt and its independent marking criteria require this aspect. Specific routing protocol mechanics are excluded by the guide and not assessed.",
+              "coverage_limit": "Specific routing protocol mechanics are excluded by the guide and not assessed.",
+              "statement_relevance": "direct",
+              "statement_evidence": "Prompt uses the command term \"Explain\" on the scoped content of A2.3.4."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
           "scope_bullet_id": "A2.3.4:G03",
           "exact_guidance": "• Factors to consider must include configuration, maintenance, complexity, resource usage, convergence, scalability, network size.",
-          "status": "no_approved_direct_aspect_evidence_yet",
-          "direct_question_ids": [],
+          "status": "reviewed_aspect_evidence_only",
+          "direct_question_ids": [
+            "O-C3-A-009"
+          ],
           "partial_question_ids": [],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "O-C3-A-009",
+              "code": "A2.3.4",
+              "scope_bullet_id": "A2.3.4:G03",
+              "exact_guidance": "• Factors to consider must include configuration, maintenance, complexity, resource usage, convergence, scalability, network size.",
+              "assessed_skill": "Apply configuration, maintenance, complexity, resource usage, convergence, scalability and network size.",
+              "relevance": "direct",
+              "evidence": "The prompt and its independent marking criteria require this aspect. Specific routing protocol mechanics are excluded by the guide and not assessed.",
+              "coverage_limit": "Specific routing protocol mechanics are excluded by the guide and not assessed.",
+              "statement_relevance": "direct",
+              "statement_evidence": "Prompt uses the command term \"Explain\" on the scoped content of A2.3.4."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         }
       ],
@@ -3463,8 +3608,8 @@
         "P-SRC001-Q11-c-i"
       ],
       "difficulty_distribution": {
-        "low": 2,
-        "medium": 9
+        "medium": 9,
+        "low": 2
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -3773,8 +3918,8 @@
       ],
       "difficulty_distribution": {
         "medium": 22,
-        "low": 4,
-        "high": 1
+        "high": 1,
+        "low": 4
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -3880,8 +4025,8 @@
         "P-SRC002-Q03-a"
       ],
       "difficulty_distribution": {
-        "medium": 5,
-        "low": 1
+        "low": 1,
+        "medium": 5
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -4169,9 +4314,9 @@
         "P-SRC002-Q02-a"
       ],
       "difficulty_distribution": {
+        "high": 2,
         "medium": 7,
-        "low": 1,
-        "high": 2
+        "low": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -4917,8 +5062,8 @@
         "P-SRC002-Q01-e-ii"
       ],
       "difficulty_distribution": {
-        "medium": 13,
-        "low": 3
+        "low": 3,
+        "medium": 13
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -5121,8 +5266,8 @@
         "P-SRC002-Q04-b"
       ],
       "difficulty_distribution": {
-        "low": 3,
-        "medium": 8
+        "medium": 8,
+        "low": 3
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -5196,8 +5341,8 @@
         "P-SRC002-Q04-e"
       ],
       "difficulty_distribution": {
-        "medium": 7,
         "high": 2,
+        "medium": 7,
         "low": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
@@ -5300,8 +5445,8 @@
       "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 1,
-        "low": 1,
-        "high": 1
+        "high": 1,
+        "low": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -5482,8 +5627,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "high": 1,
-        "medium": 3
+        "medium": 3,
+        "high": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -5568,8 +5713,8 @@
         "P-SRC002-Q04-c"
       ],
       "difficulty_distribution": {
-        "low": 1,
         "high": 1,
+        "low": 1,
         "medium": 3
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
@@ -6074,8 +6219,8 @@
         "P-SRC002-Q04-f"
       ],
       "difficulty_distribution": {
-        "medium": 6,
-        "high": 1
+        "high": 1,
+        "medium": 6
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -6378,8 +6523,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "low": 1,
-        "medium": 2
+        "medium": 2,
+        "low": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -6609,8 +6754,8 @@
         "P-SRC002-Q08-d"
       ],
       "difficulty_distribution": {
-        "high": 2,
-        "medium": 11
+        "medium": 11,
+        "high": 2
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -6724,8 +6869,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "low": 1,
-        "medium": 1
+        "medium": 1,
+        "low": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -7327,8 +7472,8 @@
       ],
       "difficulty_distribution": {
         "low": 4,
-        "high": 2,
-        "medium": 7
+        "medium": 7,
+        "high": 2
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -7399,8 +7544,8 @@
         "P-SRC001-Q15-a"
       ],
       "difficulty_distribution": {
-        "low": 1,
         "medium": 7,
+        "low": 1,
         "high": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
@@ -7595,9 +7740,9 @@
         "P-SRC002-Q06-d"
       ],
       "difficulty_distribution": {
-        "high": 27,
+        "low": 10,
         "medium": 48,
-        "low": 10
+        "high": 27
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -7820,8 +7965,8 @@
       ],
       "difficulty_distribution": {
         "medium": 12,
-        "low": 4,
-        "high": 4
+        "high": 4,
+        "low": 4
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -7935,8 +8080,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "low": 3,
         "medium": 8,
+        "low": 3,
         "high": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
@@ -8579,8 +8724,8 @@
       "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 31,
-        "low": 3,
-        "high": 2
+        "high": 2,
+        "low": 3
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -8823,9 +8968,9 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
+        "medium": 4,
         "high": 3,
-        "low": 1,
-        "medium": 4
+        "low": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -9000,8 +9145,8 @@
         "P-SRC001-Q14-b"
       ],
       "difficulty_distribution": {
-        "medium": 12,
         "high": 3,
+        "medium": 12,
         "low": 2
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
@@ -9351,8 +9496,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "low": 1,
-        "medium": 5
+        "medium": 5,
+        "low": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -9422,8 +9567,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "low": 4,
-        "medium": 10
+        "medium": 10,
+        "low": 4
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -9593,8 +9738,8 @@
       "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 16,
-        "high": 1,
-        "low": 4
+        "low": 4,
+        "high": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -9804,8 +9949,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "low": 3,
-        "medium": 9
+        "medium": 9,
+        "low": 3
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -9914,8 +10059,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "low": 1,
-        "medium": 2
+        "medium": 2,
+        "low": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
