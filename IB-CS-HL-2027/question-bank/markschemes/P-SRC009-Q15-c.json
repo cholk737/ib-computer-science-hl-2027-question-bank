@@ -1,0 +1,46 @@
+{
+  "question_id": "P-SRC009-Q15-c",
+  "unofficial": true,
+  "marks": 6,
+  "solution": "One solution:\ndef modes(counts):\n    greatest = counts[0]\n    for count in counts:\n        if count > greatest:\n            greatest = count\n    result = []\n    for value in range(len(counts)):\n        if counts[value] == greatest:\n            result.append(value)\n    return result",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes greatest from valid count."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses counts to find greatest."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct comparison/update."
+    },
+    {
+      "marks": 1,
+      "criterion": "Examines all candidate digit indices."
+    },
+    {
+      "marks": 1,
+      "criterion": "Selects every count equal to greatest."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns digit values and handles ties."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed unique mode, tie and all equal frequency cases.",
+    "source_comparison": [
+      17,
+      18
+    ],
+    "test_code": "def modes(counts):\n    greatest = counts[0]\n    for count in counts:\n        if count > greatest:\n            greatest = count\n    result = []\n    for value in range(len(counts)):\n        if counts[value] == greatest:\n            result.append(value)\n    return result\nassert modes([2,5,5,0])==[1,2]\nassert modes([0,4,1])==[1]\nassert modes([3,3,3])==[0,1,2]",
+    "result_file": ""
+  },
+  "code": "def modes(counts):\n    greatest = counts[0]\n    for count in counts:\n        if count > greatest:\n            greatest = count\n    result = []\n    for value in range(len(counts)):\n        if counts[value] == greatest:\n            result.append(value)\n    return result",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

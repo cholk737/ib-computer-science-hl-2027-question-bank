@@ -1,0 +1,45 @@
+                                         –   23 –            M23/4/COMSC/HP1/ENG/TZ2/XX/M
+
+
+Example 3 (single loop):
+Award [1] for initializing VAL to 0 and return VAL
+Award [1] for correct loop
+Award [1] for correct condition and change of VAL
+Award [1] for if statement after the loop
+Award [1] for correct use of row index and column index in the DICEDIAL array
+
+DuplicateNum (DICEDIAL, R)
+VAL=0
+loop K from 0 to 1
+     if (DICEDIAL[R][K]== DICEDIAL[R][K+1])
+             then
+                 VAL= DICEDIAL[R][K]// or DICEDIAL[R][K+1]
+    end if
+end loop // determines VAL
+            //comparing only DICEDIAL[R][0] with DICEDIAL[R][1]
+            // and DICEDIAL[R][1] with DICEDIAL[R][2]
+if (DICEDIAL[R][0] == DICEDIAL[R][2])
+             then
+                 VAL= DICEDIAL[R][0] //or DICEDIAL[R][2]
+end if
+return VAL
+end DuplicateNum
+
+
+
+  Example 4 (nested loops):
+ Award [1] for initializing VAL to 0 and return VAL
+  Award [1] for correct outer loop
+  Award [1] for correct inner loop
+  Award [1] for correct condition and change of VAL
+  Award [1] for correct use of indexes in the DICEDIAL array
+
+ VAL =0
+  loop K from 0 to 1
+    loop J from K + 1 to 2
+          if DICEDIAL[R][K] == DICEDIAL[R][J]
+              then VAL = DICEDIAL[R][K]
+          end if
+     end loop
+ end loop
+ return VAL

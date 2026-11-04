@@ -1,0 +1,33 @@
+– 27 – 2225 – 6423M 
+(c) Award [6 max]
+Award [1] for looping through the Artwork array up to noOfArtworks;
+Award [1] for an attempt to check if the artwork is sold;
+Award [1] for correctly using the accessor getIsSold();
+Award [1] for correctly accessing the price of the sold artwork;
+Award [1] for correctly calculating the total (summing of the prices for all the sold artwork);
+Award [1] for correctly calculating and returning the commission;
+public double commissionToPay() 
+{ 
+double total = 0;  
+double commission = 0; 
+ for (int i = 0; i < noOfArtworks; i++) 
+{ 
+ if (theArtworks[i].getIsSold()==true) 
+ { 
+ total = total + theArtworks[i].getArtworkPrice(); 
+ // accept other name for the accessor 
+ } 
+ } 
+commission = total * 0.15; 
+return commission; 
+} 
+Note: Accept any name for getters getIsSold() and getArtworkPrice() as long as they 
+return isSold and artworkPrice.  
+(d) Award [2 max]
+Award [1] for -
+has 216 (about 64,000) characters / has more bits/bytes (in compare to ASCII); 
+provides a standard encoding language and methods; 
+Award [1] for - 
+which enables characters from different alphabets/languages to be used/stored (promoting 
+internationalization); 
+making it easier to use without language barriers (promoting internationalization);  

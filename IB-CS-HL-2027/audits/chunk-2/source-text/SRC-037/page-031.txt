@@ -1,0 +1,36 @@
+                                      –   31 –                                 8823 – 7012M
+
+
+ Example 3:
+
+  public void removeMonster(Monster M)
+  {
+      int i=0;
+      while (monsters[i]!=M)
+      {
+           i++;
+      }
+      for (int j = i; j < monsters.length-1; j++)
+      {
+           monsters[j] = monsters[j+1];
+      }
+      monsters[monsters.length-1] = null;
+      monsterCount = monsterCount–1;
+  }
+
+ Example 4:
+
+  public void removeMonster(Monster M)
+  {
+      int i=0;
+      while (monsters[i]!=M)
+      {
+           i++;
+      }
+      for (int j = i; j < monsterCount-1; j++)
+      {
+           monsters[j] = monsters[j+1];
+      }
+      monsters[monster.length-1] = null;
+      monsterCount = monsterCount–1;
+ }

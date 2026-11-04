@@ -1,0 +1,46 @@
+                                              –   27 –            N20/4/COMSC/HP2/ENG/TZ0/XX/M
+
+
+(c)   Award [6 max].
+      Award [1] for correct loop;
+      Award [1] for checking if not null;
+      Award [1] for checking registration using the getRegistration().equals() method;
+      Award [1] for setting vehicles[i] to null;
+      Award [1] for returning the reference (not the null element of the array), by making another
+      variable;
+      Award [1] for returning null if it is not found;
+
+      Example 1:
+
+      public Vehicle removeVehicle(String registration) {
+       for (int i = 0; i < vehicles.length; i++) {
+            if (vehicles[i] != null &&
+      vehicles[i].getRegistration().equals(registration)) { //question                          - why
+      do it in this order?
+                  Vehicle leaving = vehicles[i];
+                  vehicles[i] = null;
+                  return leaving;
+            }
+       }
+       return null;
+      }
+
+      Example 2:
+
+      public Vehicle removeVehicle(String registration)
+        { Vehicle v = null;
+           boolean found = false;
+           int i = 0;
+           while (!found && i < Vehicles.length)
+           { found = Vehicles[i] != null &&
+                         registration.equals(Vehicles[i].getRegistration());
+              if (found)
+              { v = Vehicles[i];
+                Vehicles[i] = null;
+              }
+              else i = i + 1;
+           }
+           return v;
+        }
+
+                                                                                                       [6]

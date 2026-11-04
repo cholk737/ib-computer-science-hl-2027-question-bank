@@ -1,0 +1,57 @@
+                                             –   16 –          M21/4/COMSC/HP1/ENG/TZ0/XX/M
+
+
+  Example answer 2: (the lowest and the highest are set to the value of the first inputted number)
+
+  input NUMBER
+  loop while NUMBER<0 or NUMBER>1000 or NUMBER div 1 ≠ NUMBER/1
+       output " Your number is invalid, please try again"
+       input NUMBER
+  end loop
+  HIGHEST = NUMBER
+  LOWEST = NUMBER
+  TOTAL = 0
+  loop COUNTER FROM 0 to 998
+               input NUMBER
+               loop while NUMBER<0 or NUMBER>1000 or NUMBER div 1 ≠ NUMBER/1
+                    output " Your number is invalid, please try again"
+                    input NUMBER
+               end loop
+               if NUMBER > HIGHEST then
+                  HIGHEST = NUMBER
+               end if
+               if NUMBER < LOWEST then
+                  LOWEST = NUMBER
+               end if
+               TOTAL = TOTAL + NUMBER
+
+    end loop
+    AVERAGE = TOTAL / 1000
+    output HIGHEST, LOWEST, AVERAGE
+
+  Example answer 3
+
+  HIGHEST = -1    //any value lesser than or equal to 0
+  LOWEST = 10000  //any value greater than or equal to 1000
+  C = 0
+  TOTAL = 0
+  loop while C<1000
+      input NUMBER
+      if NUMBER>=0 and NUMBER<=1000
+            if NUMBER mod 1 == 0
+                  if NUMBER > HIGHEST then
+                        HIGHEST = NUMBER
+                   else
+                       if NUMBER < LOWEST then
+                               LOWEST = NUMBER
+                       endif
+                  end if
+                  TOTAL = TOTAL + NUMBER
+                  C=C+1
+             endif
+       else
+            output(“invalid input, enter another number”)
+      endif
+  end loop
+  output HIGHEST, LOWEST, TOTAL/1000
+                                                                                                 [8]

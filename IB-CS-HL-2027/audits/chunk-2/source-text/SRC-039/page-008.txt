@@ -1,0 +1,33 @@
+                                                                                                                                         –  8  –                                                                                                                            8825                                                                                         – 6405M
+
+
+(e)                                                 Award [5 max]
+                  Award [1] for 3 tableswith correct fields (ignorePK and FK);
+                  Award [1]for PATIENT table, key, and correct fields;
+                  Award [1]for DENTIST table, key, and correct fields;
+                  Award [1]for TREATMENT table, key, and correct fields;
+                  Award [1] for APPOINTMENT table, key, and VisitDate field;
+                  Award [1] for at least two correct foreign keys in APPOINTMENT;
+
+                  PATIENT (PatientID, PatientName)
+                  APPOINTMENT (AppointmentID, PatientID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                fk, DentistIDfk, VisitDate, TreatmentIDfk, Cost)
+                  DENTIST (DentistID, Dentist, Specialties)
+                  TREATMENT (TreatmentID, Treatment, [Cost])
+
+                  Alternative without IDs in DENTIST and TREATMENT
+
+                  PATIENT (PatientID, PatientName)
+                  APPOINTMENT (AppointmentID, PatientID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                fk, Dentistfk, VisitDate, Treatmentfk)
+                  DENTIST (Dentist, Specialties)
+                  TREATMENT (Treatment, Fee                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      )
+
+                  Alternative with 3 table:
+
+                  PATIENT (PatientID, PatientName)
+                  DENTIST (DentistID, Dentist, Specialties)
+                  APPOINTMENT (AppointmentID, PatientID, DentistID, VisitDate, Treatment, Cost)
+
+                  Note:
+                  Award the mark for FK if not explicitly indicated but the name matches the PK
+                  Accept a suitable composite key in the Appointment table.
+                  Cost can be included in APPOINTMENT and/or TREATMENT.

@@ -1,0 +1,41 @@
+{
+  "question_id": "P-SRC020-Q13-d",
+  "unofficial": true,
+  "marks": 5,
+  "solution": "One solution:\ndef reverse_stack(stack, queue):\n    while not stack.isEmpty():\n        queue.enqueue(stack.pop())\n    while not queue.isEmpty():\n        stack.push(queue.dequeue())",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "First loop empties stack."
+    },
+    {
+      "marks": 1,
+      "criterion": "Pop top item."
+    },
+    {
+      "marks": 1,
+      "criterion": "Enqueue each popped item FIFO."
+    },
+    {
+      "marks": 1,
+      "criterion": "Second loop empties queue."
+    },
+    {
+      "marks": 1,
+      "criterion": "Push dequeued items onto original stack."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Traced bottom-to-top[1,2,3]→queue3,2,1→stack[3,2,1]; also empty andsingleton.",
+    "source_comparison": [
+      19
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "def reverse_stack(stack, queue):\n    while not stack.isEmpty():\n        queue.enqueue(stack.pop())\n    while not queue.isEmpty():\n        stack.push(queue.dequeue())",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

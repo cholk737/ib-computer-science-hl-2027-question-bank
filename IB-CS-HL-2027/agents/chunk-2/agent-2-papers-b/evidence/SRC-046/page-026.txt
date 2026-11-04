@@ -1,0 +1,42 @@
+– 26 – 2225 – 6423M 
+12. (a) Award [1 max]
+0; 
+(b) Award [5 max]
+Award [1] for correctly creating a temporary and returning an array of Artwork type;
+Award [1] for correct initialising and updating of max_index;
+Award [1] for correct outer loop up to < noOfArtworks-1 (or up to 5 times);
+Award [1] for correct inner loop;
+Award [1] for correct comparison of price;
+Award [1] for correct implementation of swap;
+Award [1] for transferring the five most expensive artworks to the temporary array;
+Note: Award only MP1, MP7, and another [1] for implementing a different sorting algorithm. If
+no sorting used then only MP1 and MP3/MP7 to be awarded.
+public Artwork [] sortArt()
+{ 
+for (int i = 0; i < noOfArtworks-1; i++) 
+{ 
+int max_index = i;  
+for (int j = i+1; j < noOfArtworks; j++) // accept j=i; 
+{  
+  
+if(theArtworks[j].getArtworkPrice() > 
+theArtworks[max_index].getArtworkPrice()) 
+{  
+ max_index = j; 
+} 
+ } 
+Artwork temp = theArtworks[max_index];  
+theArtworks[max_index] = theArtworks[i]; 
+theArtworks[i] = temp;  
+}   
+Artwork [] expensive = new Artwork[5]; 
+for (int i = 0; i < 5; i++)  
+{  
+expensive[i] = theArtworks[i];  
+ } 
+return expensive; 
+} 
+Note: Accept  < theArtworks.length-1 for the outer loop. However, a condition must be 
+placed inside the loop to check for the null values in the theArtworks[] to avoid the 
+NullPointerException. Allow any name for the getter getArtworkPrice() as long as it returns the 
+artworkPrice.

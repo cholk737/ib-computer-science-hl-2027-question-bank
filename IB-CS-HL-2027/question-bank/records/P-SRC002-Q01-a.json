@@ -1,0 +1,45 @@
+{
+  "question_id": "P-SRC002-Q01-a",
+  "source_question_ids": [
+    "H-SRC002-Q01-a"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A production studio has editors, productions and supervisors. Each editor belongs to exactly one production; each production has one or more editors. Each supervisor oversees one or more productions; each production has exactly one supervisor. Construct an ERD showing the two relationships and cardinalities.",
+  "syllabus_codes": [
+    "A3.2.2"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 2,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "SUPERVISOR 1—many PRODUCTION; PRODUCTION 1—many EDITOR. Every production has one supervisor and every editor one production; minimum participation follows the stated one-or-more requirements.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Correct supervisor–production cardinality/modality."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct production–editor cardinality/modality."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC002-Q01-a.json",
+  "question_path": "question-bank/questions/P-SRC002-Q01-a.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC002-Q01-a.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

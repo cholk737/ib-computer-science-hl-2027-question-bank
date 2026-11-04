@@ -1,0 +1,55 @@
+                                                            –  5 –                                            8823 – 7012M
+
+
+(e)    Award [4 max]
+       Award [1] for selecting FirstName, Surname and OrderDate
+       Award [1] for identifying the tables Customer and Order
+       Award [1] for correctly JOIN condition (PK – FK comparison)
+       Award [1] for correct Firstname and Surname filtering condition
+
+       SELECT Customer.Firstname, Customer.Surname, Order.OrdDate
+       FROM Customer INNER JOIN Order ON Customer.CustomerID = Order.CustomerID)
+       WHERE Customer.Firstname = ‘Akemi’ AND Customer.Surname = ‘Watene’;
+
+       SELECT Customer.Firstname, Customer.Surname, Order.OrdDate
+       FROM Customer, Order
+       WHERE Customer.CustomerID = Order.CustomerID) AND
+       Customer.Firstname = ‘Akemi’ AND Customer.Surname = ‘Watene’;
+
+       Accept equivalent in Structured English
+
+
+2.     (a)    Award [3 max]
+              The user may type in the wrong amount;
+              LinePrice should be a derived field/calculated field//=[Quantiy] * [UnitPrice];
+              It is not necessary to store this data/wastes storage space;
+              The relation/table does not conform to 3NF;
+
+
+       (b)    Award [1 max]
+              A logical unit of work executed in full or not at all;
+              A change in the database state;
+
+
+       (c)    (i)    Award [1 max]
+                     Range check/accept example, >0 and <=12;
+                     Presence check/a blank field may cause a calculation error;
+                     Type check/must enter a number/ float/integer;
+
+       (c)    (ii)   Award [2 max]
+                     Proofreading/Comparing the payrate to hardcopy version;
+                     Lookup payrate in another table;
+                     Based on the selected job/jobID;
+                     double data entry/Two-pass verification;
+
+
+       (d)    Award [4 max]
+              Only allow waiters to view work hours not approve them during a                shift;
+              Writing to the table could only be open at the end of the shift/set times;
+              The database could be set to lock the record/table while it is being edited;
+              So the waiter could not approve the hours while they are edited;
+              The database could be set to block viewing while the table is being edited;
+              A message could be conveyed to the waiter that the data is being updated;
+              Two-phase locking can be applied to guarantee full isolation of the update;
+              Multi-version concurrency control (MVCC) could be used to provide the waiter the prior,
+              unmodified version of data that is being modified;

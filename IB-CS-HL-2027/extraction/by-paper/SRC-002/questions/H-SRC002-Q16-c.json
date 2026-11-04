@@ -1,0 +1,90 @@
+{
+  "source_question_id": "H-SRC002-Q16-c",
+  "source_id": "SRC-002",
+  "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+  "year": "2026",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "A/B/C",
+  "option": "D",
+  "question": 16,
+  "subquestion": "c",
+  "source_pdf_pages": [
+    23
+  ],
+  "source_printed_pages": [
+    "23"
+  ],
+  "original_marks": 5,
+  "command_term": "Construct",
+  "original_text": "Construct the code for the method getTotalIncome(). You can use any previously constructed methods.",
+  "parent_context": "- 23 -\n2226-4429\n(Option D continued)\n16. The full solution is being tested using the following code:\nRentalShop[] shops = new RentalShop[3];\nshops[0] = new RentalShop(\"Silverlake\");\nshops[1] = new RentalShop(\"Fjord View\");\nshops[2] = new RentalShop(\"Sea View\");\nshops [0].addRental (new Rental(2920393,true, 2934,\n54.0, new\nRentDate (2026, 2, 12), new RentDate(2026, 2, 22)));\nshops [0].addRental(new Rental(2929202, 2944, 64.0, new\nRentDate (2026, 2, 14), new RentDate (2026, 2, 23)));\nshops [2] .addRental(new Rental(2920393,true, 334, 52.0, new\nRentDate (2026, 2, 12), new RentDate (2026, 4, 20) )) ;\nshops [2].addRental (new Rental(2910222,true, 5645, 65.0, new\nRentDate (2026, 2, 13), new RentDate(2026, 4, 20)));\n(a) State the outcome from the following code:\n(i) IBIO.output (shops [1].getLocation ());\n[1]\n(iI) IBIO.output (shops [0].getRental(0).getCustomerID());\n[1]\n(iii) IBIO.output (shops[2].getRental(1).getEndDate ());\n[1]\nA method, getTotalIncome (), is needed to find the total costs of all rentals from all cars\nin all shops.\n(b) Outline one ethical issue programmers need consider when developing code for\nfinancial transactions.\n[2]\n(c)\nConstruct the code for the method getTotalIncome ().\nYou can use any previously constructed methods.\n[5]\nThe Rental class is dependent on the RentDate class.\n(d)\nExplain one reason why the programmers would want to reduce dependencies.\n[3]\nThe programmers have worked in a team to develop this solution.\n(e)\nDescribe one advantage of working as a team.\n[2]\n(Option D continues on the following page)",
+  "assets": [
+    {
+      "kind": "scanned_source_page",
+      "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-23.png",
+      "source_pdf_page": 23,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Construct the code for the method getTotalIncome(). You can use any previously constructed methods.",
+    "Construct total_income(stores) in Python"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "not_uploaded",
+    "source_id": "",
+    "filename": "",
+    "pdf_pages": [],
+    "question_reference": "Q16 c",
+    "marking_summary": "One solution:\ndef total_income(stores):\n    total = 0\n    for store in stores:\n        for booking in store.bookings:\n            total += booking.get_cost()\n    return total",
+    "source_issues": [],
+    "source_marking_evidence": ""
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B2.2.2",
+      "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+      "rationale": "Construct total_income(stores) in Python assesses Construct programs that apply arrays and Lists.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B2.3.3",
+      "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+      "rationale": "Construct total_income(stores) in Python assesses Construct programs that utilize looping structures to perform repeated actions.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B2.3.4",
+      "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+      "rationale": "Construct total_income(stores) in Python assesses Construct functions and modularization.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "No uploaded MS; independent unofficial answer.",
+    "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+    "technical": "Executed multiple bookings,emptystore andemptyinput."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC002-Q16-c"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

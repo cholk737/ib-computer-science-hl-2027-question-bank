@@ -1,0 +1,49 @@
+{
+  "question_id": "P-SRC002-Q05-b",
+  "source_question_ids": [
+    "H-SRC002-Q05-b"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct grade(score) in Python for an integer from35 to100. Grades are A for85–100,B for70–84,C for60–69,D for47–59 and E for35–46.",
+  "syllabus_codes": [
+    "B2.3.2"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 3,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "One solution:\ndef grade(score):\n    if score >= 85: return 'A'\n    if score >= 70: return 'B'\n    if score >= 60: return 'C'\n    if score >= 47: return 'D'\n    return 'E' ",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Correct upper thresholds in a suitable order."
+    },
+    {
+      "marks": 1,
+      "criterion": "Each band returns the specified grade without overlap."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct remaining lowest band."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "All lower/upper grade boundaries executed.",
+    "source_comparison": [],
+    "test_code": "def grade(score):\n    if score >= 85: return 'A'\n    if score >= 70: return 'B'\n    if score >= 60: return 'C'\n    if score >= 47: return 'D'\n    return 'E' \nassert [grade(x) for x in [35,46,47,59,60,69,70,84,85,100]]==[\"E\",\"E\",\"D\",\"D\",\"C\",\"C\",\"B\",\"B\",\"A\",\"A\"]",
+    "result_file": ""
+  },
+  "code": "def grade(score):\n    if score >= 85: return 'A'\n    if score >= 70: return 'B'\n    if score >= 60: return 'C'\n    if score >= 47: return 'D'\n    return 'E' ",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC002-Q05-b.json",
+  "question_path": "question-bank/questions/P-SRC002-Q05-b.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC002-Q05-b.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

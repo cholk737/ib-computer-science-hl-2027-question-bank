@@ -1,0 +1,72 @@
+{
+  "question_id": "P-SRC018-Q14-c",
+  "source_question_ids": [
+    "H-SRC018-Q14-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct smallest_row_total(grid) in Python. grid is a nonempty rectangular integer list. Return the minimum row sum together with a list of all row indices attaining it, in ascending order. Negative values and ties are possible.",
+  "syllabus_codes": [
+    "B2.2.2",
+    "B2.3.2",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 8,
+  "command_term": "Construct",
+  "difficulty": "high",
+  "adaptation_rationale": "Retains nested traversal/minimum/tie handling; new signed data prevents unsound fixed sentinel copied from dice bound.",
+  "solution": "def smallest_row_total(grid):\n    best=None\n    indices=[]\n    for r in range(len(grid)):\n        total=0\n        for value in grid[r]:\n            total+=value\n        if best is None or total < best:\n            best=total\n            indices=[r]\n        elif total == best:\n            indices.append(r)\n    return best,indices",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes best with the first complete row total or with an unset marker; a single element is not a safe row-total bound."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses every row with its index."
+    },
+    {
+      "marks": 1,
+      "criterion": "Resets row total before each row."
+    },
+    {
+      "marks": 1,
+      "criterion": "Accumulates every element in that row."
+    },
+    {
+      "marks": 1,
+      "criterion": "Compares complete total with best."
+    },
+    {
+      "marks": 1,
+      "criterion": "On a new minimum updates best and resets index list to the current row."
+    },
+    {
+      "marks": 1,
+      "criterion": "On a tie appends current index without discarding earlier ties."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns best and all correct indices after traversal."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "Executable checks saved under checks/ where applicable."
+  },
+  "code": "def smallest_row_total(grid):\n    best=None\n    indices=[]\n    for r in range(len(grid)):\n        total=0\n        for value in grid[r]:\n            total+=value\n        if best is None or total < best:\n            best=total\n            indices=[r]\n        elif total == best:\n            indices.append(r)\n    return best,indices",
+  "test_code": "assert smallest_row_total([[2,3],[1,4],[9,0]])==(5,[0,1])\nassert smallest_row_total([[-4,1],[0,-3],[5,5]])==(-3,[0,1])\nassert smallest_row_total([[1]])==(1,[0])",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC018-Q14-c.json",
+  "question_path": "question-bank/questions/P-SRC018-Q14-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC018-Q14-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

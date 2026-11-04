@@ -1,0 +1,53 @@
+                                                  –   11 –           M21/4/COMSC/HP1/ENG/TZ0/XX/M
+
+
+
+(b)  Award [5 max]
+     Correct outer loop;
+     Correct inner loop;
+     Checking of surname order;
+     Swapping surnames if necessary;
+     Swapping corresponding names;
+     Correct use of flag;
+
+     Example 1:
+
+
+        loop I from 0 to 599
+            loop C from 0 to 598-I  //accept 598
+                  if SURNAME[C] > SURNAME[C + 1] then
+                    TEMP1 = SURNAME[C]
+                    TEMP2 = FIRSTNAME[C]
+                    SURNAME[C] = SURNAME[C + 1]
+                    FIRSTNAME[C] = FIRSTNAME[C + 1]
+                    SURNAME[C + 1] = TEMP1
+                    FIRSTNAME[C + 1] = TEMP2
+                  end if
+             end loop
+        end loop
+
+
+
+
+
+
+
+
+      Example 2:
+
+        FLAG = TRUE
+        loop while FLAG = TRUE
+             FLAG = FALSE
+             loop COUNTER from 0 to 598
+                  if SURNAME[COUNTER] > SURNAME[COUNTER + 1] then
+                    TEMP1 = SURNAME[COUNTER]
+                    TEMP2 = FIRSTNAME[COUNTER]
+                    SURNAME[COUNTER] = SURNAME[COUNTER + 1]
+                    FIRSTNAME[COUNTER] = FIRSTNAME[COUNTER + 1]
+                    SURNAME[COUNTER + 1] = TEMP1
+                    FIRSTNAME[COUNTER + 1] = TEMP2
+                    FLAG = TRUE
+                  end if
+             end loop
+        end loop
+                                                                                                       [5]

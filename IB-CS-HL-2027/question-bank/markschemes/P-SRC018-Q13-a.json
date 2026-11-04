@@ -1,0 +1,36 @@
+{
+  "question_id": "P-SRC018-Q13-a",
+  "unofficial": true,
+  "marks": 4,
+  "solution": "steps(1)=1.; steps(2)=2+1=3.; steps(3)=3+3=6.; steps(4)=4+6=10.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "steps(1)=1."
+    },
+    {
+      "marks": 1,
+      "criterion": "steps(2)=2+1=3."
+    },
+    {
+      "marks": 1,
+      "criterion": "steps(3)=3+3=6."
+    },
+    {
+      "marks": 1,
+      "criterion": "steps(4)=4+6=10."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "Executable checks saved under checks/ where applicable."
+  },
+  "code": "def steps(n):\n    if n < 2:\n        return 1\n    return n + steps(n-1)",
+  "test_code": "assert steps(4)==10\nassert steps(0)==1",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

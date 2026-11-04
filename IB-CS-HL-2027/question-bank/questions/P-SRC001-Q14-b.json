@@ -1,0 +1,19 @@
+{
+  "question_id": "P-SRC001-Q14-b",
+  "source_question_ids": [
+    "H-SRC001-Q14-b"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "For values=[8, 3, 2, 5, 4], determine suffix_product(4, values). Show the recursive calls and returned values.\n\ndef suffix_product(k, values):\n    if k < 2:\n        return 1\n    return values[k] * suffix_product(k - 1, values)",
+  "syllabus_codes": [
+    "B2.4.5"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 5,
+  "command_term": "Determine",
+  "difficulty": "high",
+  "adaptation_rationale": "Preserves non branching recursive product trace; replaces pseudocode with executable Python and new data/base boundary.",
+  "assets": []
+}

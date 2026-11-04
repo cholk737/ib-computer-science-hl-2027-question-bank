@@ -1,0 +1,51 @@
+                                                  –   16 –                                        8823 – 7011M
+
+
+(c)   Award [10 max]
+
+      Example 1:
+      Award [1] for the correct row loop (every competitor!)
+      Award [1] for initialization of SUM, HIGH and LOW within the outer loop and before the inner
+      loop
+      Award [1] for the correct column loop (the competitor’s marks!)
+
+      Award [2 max] for determining the highest value:
+      Award [1] for testing the array value with it
+      Award [1] for reassignment of HIGH
+
+      Award [2 max] for determining the lowest value:
+      Award [1] for testing the array value with it
+      Award [1] mark for reassignment of LOW
+
+      Award [3 max] for calculating total correctly:
+      Award [1] for adding array values to initialized variable (SUM)
+      Award [1] for subtracting (not adding) the highest value
+      Award [1] for subtracting (not adding) the lowest value
+
+      Award [1] for calculating average (total divided by 6)
+      Award [1] for outputting the competitor's name and the final score
+
+
+      loop R from 0 to 19
+            HIGH=MARKS[R][0]  //any value <= 0
+            LOW= MARKS[R][0]  //any value >=10
+            SUM=0
+            loop C from 0 to 7
+                  SUM=SUM+ MARKS[R][C]
+                  if MARKS[R][C]>HIGH then
+                              HIGH= MARKS[R][C]
+                  else
+                      if MARKS[R][C]<LOW then
+                            LOW = MARKS[R][C]
+                      end if
+                  end if
+            end loop
+            SUM = SUM – HIGH - LOW
+            FINALSCORE = SUM / 6
+            output('Name:', NAMES[R])
+            output('Final score:', FINALSCORE)
+      end loop
+
+
+      Note: Three inner loops may be used to separately determine the highest score, the lowest
+      score, and to calculate the sum.

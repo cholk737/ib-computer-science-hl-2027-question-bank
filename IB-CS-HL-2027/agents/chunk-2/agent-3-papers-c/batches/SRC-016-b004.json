@@ -1,0 +1,543 @@
+{
+  "source_id": "SRC-016",
+  "batch_id": "SRC-016-b004",
+  "source_questions": [
+    {
+      "source_question_id": "H-SRC016-Q12-a",
+      "source_id": "SRC-016",
+      "source_filename": "Computer_science_paper_1__SL.pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "SL",
+      "paper": "1",
+      "zone": "not stated",
+      "option": "",
+      "question": "12",
+      "subquestion": "a",
+      "source_pdf_pages": [
+        7
+      ],
+      "source_printed_pages": [
+        "6"
+      ],
+      "original_marks": 1,
+      "command_term": "State",
+      "original_text": "(a) State the name of the gymnast whose score is stored in . [1]",
+      "parent_context": "12. There were 10 gymnasts who took part in a gymnastics competition. The names and the\nscores for all competitors were sorted in alphabetical order and stored in two arrays,\nand (see Figure 1).\nNAMES SCORES\nFigure 1: Data held in the array and the array\nNAMES SCORES\nNAMES SCORES\nAdams, Lana 7.8\n[0] [0]\nAllen, Mary 6.5\n[1] [1]\nBaker, Lilly 5.4\n[2] [2]\nBrown, Lea 9.2\n[3] [3]\nFox, Tea 6.2\n[4] [4]\nLabar, Tanya 8.5\n[5] [5]\nLee, Mae 8.8\n[6] [6]\nMiller, Ann 5.1\n[7] [7]\nPalmer, Ella 6.4\n[8] [8]\nWood, Sarah 9.1\n[9] [9]\nFor example, the score awarded to Mary Allen was 6.5 .\n(a) State the name of the gymnast whose score is stored in . [1]\nSCORES[5]\n(b) Construct an algorithm in pseudocode to determine the average score. [3]\nTo qualify for the next round of competition, a competitor must have a score above the\naverage score.\n(c) Construct an algorithm in pseudocode that will determine and output the number\nof gymnasts whose scores are above the average score.\nYou may assume that the average score is stored in the variable . [4]\nAVERAGE\nAn algorithm is needed that:\ny allows input of a gymnast’s name\ny searches for this name in the array using a binary search\nNAMES\ny outputs the gymnast’s score. If the inputted name does not occur in the array,\nNAMES\nit outputs an appropriate message.\nFor example, from the data given in Figure 1:\ny if “Allen, Mary” is the input name, then 6.5 should be output\ny if “Peterson, Tina” is the input name, then a message saying “this name is not found”\nshould be output.\n(d) Construct an algorithm in pseudocode as described above. [7]",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-016/renders/page-7.png",
+          "source_pdf_page": 7,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct programs that apply arrays and Lists."
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-017",
+        "filename": "Computer_science_paper_1__SL_markscheme.pdf",
+        "pdf_pages": [
+          13
+        ],
+        "question_reference": "12(a)",
+        "marking_summary": "TanyaLabar.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Parallel-list indexing explicit use of lists.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "State the name of the gymnast whose score is stored in SCORES[5].",
+      "context_synopsis": "Sorted namesNAMES and matching SCORES lists:Adams,Lana7.8;Allen,Mary6.5;Baker,Lilly5.4;Brown,Lea9.2;Fox,Tea6.2;Labar,Tanya8.5;Lee,Mae8.8;Miller,Ann5.1;Palmer,Ella6.4;Wood,Sarah9.1. Exact table in PDF7render.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-016/transcription/pdf-page-007.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC016-Q12-b",
+      "source_id": "SRC-016",
+      "source_filename": "Computer_science_paper_1__SL.pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "SL",
+      "paper": "1",
+      "zone": "not stated",
+      "option": "",
+      "question": "12",
+      "subquestion": "b",
+      "source_pdf_pages": [
+        7
+      ],
+      "source_printed_pages": [
+        "6"
+      ],
+      "original_marks": 3,
+      "command_term": "Construct",
+      "original_text": "(b) Construct an algorithm in pseudocode to determine the average score. [3]",
+      "parent_context": "12. There were 10 gymnasts who took part in a gymnastics competition. The names and the\nscores for all competitors were sorted in alphabetical order and stored in two arrays,\nand (see Figure 1).\nNAMES SCORES\nFigure 1: Data held in the array and the array\nNAMES SCORES\nNAMES SCORES\nAdams, Lana 7.8\n[0] [0]\nAllen, Mary 6.5\n[1] [1]\nBaker, Lilly 5.4\n[2] [2]\nBrown, Lea 9.2\n[3] [3]\nFox, Tea 6.2\n[4] [4]\nLabar, Tanya 8.5\n[5] [5]\nLee, Mae 8.8\n[6] [6]\nMiller, Ann 5.1\n[7] [7]\nPalmer, Ella 6.4\n[8] [8]\nWood, Sarah 9.1\n[9] [9]\nFor example, the score awarded to Mary Allen was 6.5 .\n(a) State the name of the gymnast whose score is stored in . [1]\nSCORES[5]\n(b) Construct an algorithm in pseudocode to determine the average score. [3]\nTo qualify for the next round of competition, a competitor must have a score above the\naverage score.\n(c) Construct an algorithm in pseudocode that will determine and output the number\nof gymnasts whose scores are above the average score.\nYou may assume that the average score is stored in the variable . [4]\nAVERAGE\nAn algorithm is needed that:\ny allows input of a gymnast’s name\ny searches for this name in the array using a binary search\nNAMES\ny outputs the gymnast’s score. If the inputted name does not occur in the array,\nNAMES\nit outputs an appropriate message.\nFor example, from the data given in Figure 1:\ny if “Allen, Mary” is the input name, then 6.5 should be output\ny if “Peterson, Tina” is the input name, then a message saying “this name is not found”\nshould be output.\n(d) Construct an algorithm in pseudocode as described above. [7]",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-016/renders/page-7.png",
+          "source_pdf_page": 7,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct programs that apply arrays and Lists.",
+        "Construct programs that utilize looping structures to perform repeated actions."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-017",
+        "filename": "Computer_science_paper_1__SL_markscheme.pdf",
+        "pdf_pages": [
+          13
+        ],
+        "question_reference": "12(b)",
+        "marking_summary": "Initializetotal,traverse,sum,dividecount.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Arithmetic/list-traversal algorithm converted to Python.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "Arithmetic/list-traversal algorithm converted to Python.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Construct an algorithm in pseudocode to determine the average score.",
+      "context_synopsis": "Sorted namesNAMES and matching SCORES lists:Adams,Lana7.8;Allen,Mary6.5;Baker,Lilly5.4;Brown,Lea9.2;Fox,Tea6.2;Labar,Tanya8.5;Lee,Mae8.8;Miller,Ann5.1;Palmer,Ella6.4;Wood,Sarah9.1. Exact table in PDF7render.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-016/transcription/pdf-page-007.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC016-Q12-c",
+      "source_id": "SRC-016",
+      "source_filename": "Computer_science_paper_1__SL.pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "SL",
+      "paper": "1",
+      "zone": "not stated",
+      "option": "",
+      "question": "12",
+      "subquestion": "c",
+      "source_pdf_pages": [
+        7
+      ],
+      "source_printed_pages": [
+        "6"
+      ],
+      "original_marks": 4,
+      "command_term": "Construct",
+      "original_text": "(c) Construct an algorithm in pseudocode that will determine and output the number\nof gymnasts whose scores are above the average score.\nYou may assume that the average score is stored in the variable . [4]",
+      "parent_context": "12. There were 10 gymnasts who took part in a gymnastics competition. The names and the\nscores for all competitors were sorted in alphabetical order and stored in two arrays,\nand (see Figure 1).\nNAMES SCORES\nFigure 1: Data held in the array and the array\nNAMES SCORES\nNAMES SCORES\nAdams, Lana 7.8\n[0] [0]\nAllen, Mary 6.5\n[1] [1]\nBaker, Lilly 5.4\n[2] [2]\nBrown, Lea 9.2\n[3] [3]\nFox, Tea 6.2\n[4] [4]\nLabar, Tanya 8.5\n[5] [5]\nLee, Mae 8.8\n[6] [6]\nMiller, Ann 5.1\n[7] [7]\nPalmer, Ella 6.4\n[8] [8]\nWood, Sarah 9.1\n[9] [9]\nFor example, the score awarded to Mary Allen was 6.5 .\n(a) State the name of the gymnast whose score is stored in . [1]\nSCORES[5]\n(b) Construct an algorithm in pseudocode to determine the average score. [3]\nTo qualify for the next round of competition, a competitor must have a score above the\naverage score.\n(c) Construct an algorithm in pseudocode that will determine and output the number\nof gymnasts whose scores are above the average score.\nYou may assume that the average score is stored in the variable . [4]\nAVERAGE\nAn algorithm is needed that:\ny allows input of a gymnast’s name\ny searches for this name in the array using a binary search\nNAMES\ny outputs the gymnast’s score. If the inputted name does not occur in the array,\nNAMES\nit outputs an appropriate message.\nFor example, from the data given in Figure 1:\ny if “Allen, Mary” is the input name, then 6.5 should be output\ny if “Peterson, Tina” is the input name, then a message saying “this name is not found”\nshould be output.\n(d) Construct an algorithm in pseudocode as described above. [7]",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-016/renders/page-7.png",
+          "source_pdf_page": 7,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct programs that apply arrays and Lists.",
+        "Construct programs utilizing appropriate selection structures.",
+        "Construct programs that utilize looping structures to perform repeated actions."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-017",
+        "filename": "Computer_science_paper_1__SL_markscheme.pdf",
+        "pdf_pages": [
+          13
+        ],
+        "question_reference": "12(c)",
+        "marking_summary": "Countinitialized;loop;strictgreater;outputcount.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Thresholdcount retains strictcomparison/traversal in Python.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Thresholdcount retains strictcomparison/traversal in Python.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "Thresholdcount retains strictcomparison/traversal in Python.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Construct an algorithm in pseudocode that will determine and output the number of gymnasts whose scores are above the average score. You may assume that the average score is stored in the variable AVERAGE.",
+      "context_synopsis": "Sorted namesNAMES and matching SCORES lists:Adams,Lana7.8;Allen,Mary6.5;Baker,Lilly5.4;Brown,Lea9.2;Fox,Tea6.2;Labar,Tanya8.5;Lee,Mae8.8;Miller,Ann5.1;Palmer,Ella6.4;Wood,Sarah9.1. Exact table in PDF7render.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-016/transcription/pdf-page-007.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC016-Q12-d",
+      "source_id": "SRC-016",
+      "source_filename": "Computer_science_paper_1__SL.pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "SL",
+      "paper": "1",
+      "zone": "not stated",
+      "option": "",
+      "question": "12",
+      "subquestion": "d",
+      "source_pdf_pages": [
+        7
+      ],
+      "source_printed_pages": [
+        "6"
+      ],
+      "original_marks": 7,
+      "command_term": "Construct",
+      "original_text": "(d) Construct an algorithm in pseudocode as described above. [7]",
+      "parent_context": "12. There were 10 gymnasts who took part in a gymnastics competition. The names and the\nscores for all competitors were sorted in alphabetical order and stored in two arrays,\nand (see Figure 1).\nNAMES SCORES\nFigure 1: Data held in the array and the array\nNAMES SCORES\nNAMES SCORES\nAdams, Lana 7.8\n[0] [0]\nAllen, Mary 6.5\n[1] [1]\nBaker, Lilly 5.4\n[2] [2]\nBrown, Lea 9.2\n[3] [3]\nFox, Tea 6.2\n[4] [4]\nLabar, Tanya 8.5\n[5] [5]\nLee, Mae 8.8\n[6] [6]\nMiller, Ann 5.1\n[7] [7]\nPalmer, Ella 6.4\n[8] [8]\nWood, Sarah 9.1\n[9] [9]\nFor example, the score awarded to Mary Allen was 6.5 .\n(a) State the name of the gymnast whose score is stored in . [1]\nSCORES[5]\n(b) Construct an algorithm in pseudocode to determine the average score. [3]\nTo qualify for the next round of competition, a competitor must have a score above the\naverage score.\n(c) Construct an algorithm in pseudocode that will determine and output the number\nof gymnasts whose scores are above the average score.\nYou may assume that the average score is stored in the variable . [4]\nAVERAGE\nAn algorithm is needed that:\ny allows input of a gymnast’s name\ny searches for this name in the array using a binary search\nNAMES\ny outputs the gymnast’s score. If the inputted name does not occur in the array,\nNAMES\nit outputs an appropriate message.\nFor example, from the data given in Figure 1:\ny if “Allen, Mary” is the input name, then 6.5 should be output\ny if “Peterson, Tina” is the input name, then a message saying “this name is not found”\nshould be output.\n(d) Construct an algorithm in pseudocode as described above. [7]",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-016/renders/page-7.png",
+          "source_pdf_page": 7,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct and trace algorithms to implement a linear search and a binary search for data retrieval.",
+        "Construct programs that apply arrays and Lists."
+      ],
+      "difficulty": "high",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-017",
+        "filename": "Computer_science_paper_1__SL_markscheme.pdf",
+        "pdf_pages": [
+          14
+        ],
+        "question_reference": "12(d)",
+        "marking_summary": "Initialbounds,loop,middle,comparison,bothboundupdates,andfound/missingoutput.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.4.2",
+          "scope_evidence": "• The differences in efficiency between different methods of linear and binary search\n• Use of search technique based on efficiency requirements—for example, searching a database for a sorted/indexed list of names to find a phone number, versus searching by the number to identify the name",
+          "rationale": "Preserve binarysearch andparallel-recordretrieval in Python.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Preserve binarysearch andparallel-recordretrieval in Python.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Construct an algorithm in pseudocode as described above.",
+      "context_synopsis": "Sorted namesNAMES and matching SCORES lists:Adams,Lana7.8;Allen,Mary6.5;Baker,Lilly5.4;Brown,Lea9.2;Fox,Tea6.2;Labar,Tanya8.5;Lee,Mae8.8;Miller,Ann5.1;Palmer,Ella6.4;Wood,Sarah9.1. Exact table in PDF7render.Readname;binarysearchNAMES;outputcorrespondingscoreornotfound.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-016/transcription/pdf-page-007.txt"
+      ]
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC016-Q12-a",
+      "source_question_ids": [
+        "H-SRC016-Q12-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "For names=[\"Ari\",\"Bo\",\"Cy\"] and scores=[6,9,7], state whose score is stored at scores[1].",
+      "syllabus_codes": [
+        "B2.2.2"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 1,
+      "command_term": "State",
+      "difficulty": "low",
+      "adaptation_rationale": "Parallel-list indexing explicit use of lists. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "Bo",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Correct name Bo."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 1,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC016-Q12-b",
+      "source_question_ids": [
+        "H-SRC016-Q12-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct Python function average(scores) returning the arithmetic mean of a nonempty list, using a loop to accumulate its total.",
+      "syllabus_codes": [
+        "B2.2.2",
+        "B2.3.3"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 3,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Arithmetic/list-traversal algorithm converted to Python. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "def average(scores):\n    total = 0\n    for score in scores:\n        total += score\n    return total / len(scores)",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Initializes total0."
+        },
+        {
+          "marks": 1,
+          "criterion": "Loops through all scores and accumulates correctly."
+        },
+        {
+          "marks": 1,
+          "criterion": "Divides by number of scores and returns mean."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 3,
+        "code_execution": "Executed singleton,negative,mixed and originaldata;comparedsum/length."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": [],
+      "code": "def average(scores):\n    total = 0\n    for score in scores:\n        total += score\n    return total / len(scores)"
+    },
+    {
+      "question_id": "P-SRC016-Q12-c",
+      "source_question_ids": [
+        "H-SRC016-Q12-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct Python function count_above(scores, average) returning how many list values are strictly greater than the supplied mean.",
+      "syllabus_codes": [
+        "B2.2.2",
+        "B2.3.2",
+        "B2.3.3"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 4,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Threshold count retains strict comparison/traversal in Python. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "def count_above(scores, average):\n    count = 0\n    for score in scores:\n        if score > average:\n            count += 1\n    return count",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Initializescount0."
+        },
+        {
+          "marks": 1,
+          "criterion": "Traverses all score values."
+        },
+        {
+          "marks": 1,
+          "criterion": "Uses strict greater comparison."
+        },
+        {
+          "marks": 1,
+          "criterion": "Increments matching values and returns final count."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 4,
+        "code_execution": "Executedempty/all-equal/mixedthresholddata;equalvaluesnotcounted."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": [],
+      "code": "def count_above(scores, average):\n    count = 0\n    for score in scores:\n        if score > average:\n            count += 1\n    return count"
+    },
+    {
+      "question_id": "P-SRC016-Q12-d",
+      "source_question_ids": [
+        "H-SRC016-Q12-d"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct Python function score_for(names, scores, target). names is sorted ascending with unique names; scores is a matching parallel list. Use binary search to return the target’s score, or the string \"Not found\" if absent. Empty lists are allowed. Do not use list.index or linear scanning because binary search is assessed.",
+      "syllabus_codes": [
+        "B2.4.2",
+        "B2.2.2"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 7,
+      "command_term": "Construct",
+      "difficulty": "high",
+      "adaptation_rationale": "Preserve binary search and parallel-record retrieval in Python. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "def score_for(names, scores, target):\n    low, high = 0, len(names) - 1\n    while low <= high:\n        mid = (low + high) // 2\n        if names[mid] == target:\n            return scores[mid]\n        if names[mid] < target:\n            low = mid + 1\n        else:\n            high = mid - 1\n    return \"Not found\"",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Correct initial inclusive bounds."
+        },
+        {
+          "marks": 1,
+          "criterion": "Loop while interval is nonempty."
+        },
+        {
+          "marks": 1,
+          "criterion": "Recalculates integer midpoint."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct equality comparison and matching parallel score."
+        },
+        {
+          "marks": 1,
+          "criterion": "low=mid+1whenmiddlenamebelowtarget."
+        },
+        {
+          "marks": 1,
+          "criterion": "high=mid-1whenmiddlenameabovetarget."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct not-found return after termination."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 7,
+        "code_execution": "Executedempty,singleton,first/middle/last,andmissingbefore/between/aftercases;correctscore/absenceverified."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": [],
+      "code": "def score_for(names, scores, target):\n    low, high = 0, len(names) - 1\n    while low <= high:\n        mid = (low + high) // 2\n        if names[mid] == target:\n            return scores[mid]\n        if names[mid] < target:\n            low = mid + 1\n        else:\n            high = mid - 1\n    return \"Not found\""
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "source_question_id": "H-SRC026-Q10-a",
+  "source_id": "SRC-026",
+  "source_filename": "Computer_science_paper_1_TZ2_HL.pdf",
+  "year": "2025",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "TZ2 (filename; numerical cover code)",
+  "option": "",
+  "question": 10,
+  "subquestion": "a",
+  "source_pdf_pages": [
+    4
+  ],
+  "source_printed_pages": [
+    "3"
+  ],
+  "original_marks": 6,
+  "command_term": "Explain",
+  "original_text": "Explain how the different levels of access for the users of this LAN could be implemented.",
+  "parent_context": "– 3 – 2225 – 6414\nTurn over\nSection B\nAnswer all questions.\n9. An architect uses a single computer for her business. She uses hand-drawn sketches \nto present her ideas to clients and computer-aided design (CAD) software to create \nconstruction projects, alterations, and redevelopments.\n(a) (i)   State what is meant by CAD software. [1]\n(ii) Outline two benefits for the architect of using CAD software. [4]\nThe architect often creates large graphic files that are sent via the internet.\n(b) Explain the need for data compression software in storing and transferring these \nlarge graphic files. [3]\nData loss can cause downtime, which can force the architect to pause business operations.\nThe impact on productivity depends on the amount of data lost as well as the time it takes \nfor data recovery.\n(c) (i)   Describe how the architect could minimize downtime if the disk system on her \ncomputer fails. [3]\n(ii) Outline two causes of data loss other than hardware failure. [4]\n10. A school has a local area network (LAN) with a central server that stores many files \ncontaining personal, health, and financial information.\nThe LAN is used by the following types of user: network administrators, teachers, students \nand guests.\n(a) Explain how the different levels of access for the users of this LAN could be implemented. [6]\n(b) (i)   Suggest one communications link that would provide high-speed internet access \nfor the school. [2]\n(ii) Suggest two measures to protect the school’s LAN from external network \nsecurity threats. [4]\nThe school gives students and teachers their own school email account.\n(c) List three problems that might result from providing email access to all students \nand teachers. [3]",
+  "assets": [],
+  "assessed_concepts": [
+    "Original source task: Explain how the different levels of access for the users of this LAN could be implemented.",
+    "A shared server has administrators, analysts and visitors"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-027",
+    "filename": "Computer_science_paper_1_TZ2_HL_markscheme.pdf",
+    "pdf_pages": [
+      12,
+      13
+    ],
+    "question_reference": "Q10 a",
+    "marking_summary": "Authenticate each user to an account. Assign accounts to role groups. Grant administrators management rights, analysts read/write access only to their project files, and visitors no access to confidential files. The OS checks permissions on file operations, applying least privilege rather than granting every login full access.",
+    "source_issues": [],
+    "source_marking_evidence": "– 12 – 2225 – 6414M \n(ii) Award max [4].\nAward [1] for a cause and [1] for a reasonable expansion, x2. \nHuman errors; \nData may be accidentally deleted/ entered/ altered inaccurately/ files may be wrongly \nreplaced/ files might not be saved; \nTransfer errors; \nData may be lost in transit between two systems (such as a network failure, network \ncongestion, incorrect storage destination, between two physical locations- transporting a \nbackup / storage device to another location); \nComputer viruses/ malicious acts/ malware/ hacking; \nCan steal/ alter/ destroy data; \nSoftware malfunction; \nan application used for requesting/editing data can crash resulting in data loss; \nNatural disasters (for example, floods, earthquakes, hurricanes, cyclones, fires, lightning); \nthat can damage on-premises software/hardware and lead to data loss; \nPower failures; \ncan damage operating system resulting in data loss; \nDisk full / no available space on the disk; \nprevents new (or updated) data from being saved leading to data loss; \nLossy compression; \ncompressed file is not restored/rebuilt to its original form; \n Note: Reward other reasonable responses. \n– 13 – 2225 – 6414M \n10. (a) Award max [6]. \nExample 1: \nEach user should be assigned a user role (administrator, student, teacher, guest); \nEach user must have a unique username and password; \nDifferent access levels could be implemented by using password/ authentication \n(PIN/ token/ biometrics/ two-factor authentication (2FA) before accessing a file/ through \nwhitelisting/blacklisting devices/ by verifying MAC addresses; \nUsers assigned an administrator role have full access to the system/ are allowed to perform \nmost operations on the system (such as, add, remove, edit users, groups, domains, manage \npasswords, configure services, etc.); \nUsers assigned a teacher role have read-write access to update student grades/ read-only \naccess to students’ records/ no access to other teachers’ financial records; \nA user assigned a student role has read access to their reports / no access to other students’ \n/teachers’ data; \n A user assigned a guest role has restricted/limited access to certain file/folders/information  \n/ no access to the files with sensitive or personal data/ users with guest accounts can only read \nfrom files containing general information/ guest users cannot perform any actions/ guest users \ncan only browse the internet); \nExample 2: \nCreate a Virtual Local Area Network (VLAN) that allows segmentation of different user groups; \nEach VLAN uses strong authentication/ user logins /two-factor authentication; \nEach VLAN can have specific security policies/ rules and restrictions; \nImplement Access Control Lists (ACLs) on devices/ define what resources each group of users \ncan access/ assign permissions based on user roles (RBAC); \nAdministrators have full access to all resources; \nTeachers have access to their personal records/teaching materials/authorized student data; \nStudents have access only to their own files/ assignments/ reports / no access to others' data; \nGuests have internet access only/ restricted access through firewall and ACLs / no access to \nsensitive information; \nExample 3: \nIntranet and extranet could be implemented;  \nThe intranet is restricted to group of users related to the school   \n(administrator/teachers/students);  \nEach teacher/student has login, password (and permissions);  \nAdministrators have full access to all resources (intranet and extranet);  \nTeachers have access to their personal records/teaching materials/authorized student data; \nStudents have access only to their own files/ assignments/ reports; \nExtranet is accessible to all (administrator/teacher/student/guest) / Extranet provides limited \naccess from outside the LAN for all users working remotely;  \nGuests have access to Internet; "
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "A1.3.2",
+      "scope_evidence": "• Maintaining system integrity while running operating systems’ background operations\n• Memory management, file system, device management, scheduling, security, accounting, graphical user interface (GUI), virtualization, networking",
+      "rationale": "A shared server has administrators, analysts and visitors assesses Describe the functions of an operating system.",
+      "theme": "A",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "No visual required by this leaf.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC026-Q10-a"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

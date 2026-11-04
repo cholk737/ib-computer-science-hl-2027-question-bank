@@ -1,0 +1,29 @@
+– 13 – 8823 – 7012
+(Option C, question 9 continued)
+Part of the file dogadoption.php is shown:
+<?php
+$dogname = $_POST["dogname"];
+$conn = $mysqli_connect(localhost, $username, $pass,"dogDB");
+$sql = "SELECT dname,image, price FROM Dogs WHERE dname=$dogname";
+$result = mysqli_query($conn,$sql);
+if (mysqli_num_rows($result) > 0){
+while($row= mysqli_fetch_assoc($result)){
+echo "Our ".$row["image"]." ".$row["dogname"]. " is for ".
+$row["price"].<br>;
+}
+}
+else{
+echo "not found";
+}
+mysqli_close($conn);
+?>
+The PHP code is executed on the server.
+(c) Describe the processing that takes place when this code is executed. [4]
+(d) Outline one reason why the given code is processed using server-side scripting instead
+of client-side scripting. [2]
+Potential dog owners can download and share images of the dogs they may want to adopt.
+(e) Explain why lossy compression has been used to save the image files. [3]
+The structure of the Friends for Dogs website is based on a template.
+(f) Evaluate the use of a template for developing the Friends for Dogs website. [5]
+(Option C continues on the following page)
+Turn over

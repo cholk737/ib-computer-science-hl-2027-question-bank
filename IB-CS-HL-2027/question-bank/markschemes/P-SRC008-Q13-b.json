@@ -1,0 +1,52 @@
+{
+  "question_id": "P-SRC008-Q13-b",
+  "unofficial": true,
+  "marks": 8,
+  "solution": "def is_band_matrix(a):\n    n=len(a)\n    for r in range(n):\n        for c in range(n):\n            if abs(r-c) <= 1:\n                if a[r][c] == 0:\n                    return False\n            elif a[r][c] != 0:\n                return False\n    return True",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Obtains grid size and traverses valid row indices."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses valid column indices for each row."
+    },
+    {
+      "marks": 1,
+      "criterion": "Distinguish es band cells with abs(r-c)<=1."
+    },
+    {
+      "marks": 1,
+      "criterion": "Rejects 0 inside the band."
+    },
+    {
+      "marks": 1,
+      "criterion": "Rejects non zero outside the band."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns False immediately on either violation."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns True only after all cells have been checked."
+    },
+    {
+      "marks": 1,
+      "criterion": "Uses correct 2 D indexing and handles 1×1 input."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "Executable checks saved under checks/ where applicable."
+  },
+  "code": "def is_band_matrix(a):\n    n=len(a)\n    for r in range(n):\n        for c in range(n):\n            if abs(r-c) <= 1:\n                if a[r][c] == 0:\n                    return False\n            elif a[r][c] != 0:\n                return False\n    return True",
+  "test_code": "assert is_band_matrix([[8,2,0],[4,7,3],[0,5,9]])\nassert not is_band_matrix([[8,2,1],[4,7,3],[0,5,9]])\nassert not is_band_matrix([[8,0],[2,7]])\nassert is_band_matrix([[1]])\nassert not is_band_matrix([[0]])",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

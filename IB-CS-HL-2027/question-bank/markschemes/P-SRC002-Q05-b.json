@@ -1,0 +1,31 @@
+{
+  "question_id": "P-SRC002-Q05-b",
+  "unofficial": true,
+  "marks": 3,
+  "solution": "One solution:\ndef grade(score):\n    if score >= 85: return 'A'\n    if score >= 70: return 'B'\n    if score >= 60: return 'C'\n    if score >= 47: return 'D'\n    return 'E' ",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Correct upper thresholds in a suitable order."
+    },
+    {
+      "marks": 1,
+      "criterion": "Each band returns the specified grade without overlap."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct remaining lowest band."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "All lower/upper grade boundaries executed.",
+    "source_comparison": [],
+    "test_code": "def grade(score):\n    if score >= 85: return 'A'\n    if score >= 70: return 'B'\n    if score >= 60: return 'C'\n    if score >= 47: return 'D'\n    return 'E' \nassert [grade(x) for x in [35,46,47,59,60,69,70,84,85,100]]==[\"E\",\"E\",\"D\",\"D\",\"C\",\"C\",\"B\",\"B\",\"A\",\"A\"]",
+    "result_file": ""
+  },
+  "code": "def grade(score):\n    if score >= 85: return 'A'\n    if score >= 70: return 'B'\n    if score >= 60: return 'C'\n    if score >= 47: return 'D'\n    return 'E' ",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

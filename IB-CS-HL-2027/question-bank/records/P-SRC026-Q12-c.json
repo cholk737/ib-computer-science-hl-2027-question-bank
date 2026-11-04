@@ -1,0 +1,65 @@
+{
+  "question_id": "P-SRC026-Q12-c",
+  "source_question_ids": [
+    "H-SRC026-Q12-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct retain_extremes(stack) in Python for a nonempty numeric stack. Replace its contents with exactly two entries: maximum at the bottom and minimum at the top. If all values are equal, store that value twice. Use only pop,push,isEmpty to access the stack.",
+  "syllabus_codes": [
+    "B2.2.3",
+    "B2.3.2",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 6,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "One solution:\ndef retain_extremes(stack):\n    first = stack.pop()\n    smallest = largest = first\n    while not stack.isEmpty():\n        value = stack.pop()\n        if value < smallest:\n            smallest = value\n        if value > largest:\n            largest = value\n    stack.push(largest)\n    stack.push(smallest)",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initialize both extremes from a valid item."
+    },
+    {
+      "marks": 1,
+      "criterion": "Loop until original stack empty."
+    },
+    {
+      "marks": 1,
+      "criterion": "Pop each remaining item."
+    },
+    {
+      "marks": 1,
+      "criterion": "Update minimum correctly."
+    },
+    {
+      "marks": 1,
+      "criterion": "Update maximum correctly."
+    },
+    {
+      "marks": 1,
+      "criterion": "Push maximum then minimum, including equal extremes."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed mixed negative/positive,all-negative,singleton,equal-value cases with stack harness.",
+    "source_comparison": [
+      20
+    ],
+    "test_code": "def retain_extremes(stack):\n    first = stack.pop()\n    smallest = largest = first\n    while not stack.isEmpty():\n        value = stack.pop()\n        if value < smallest:\n            smallest = value\n        if value > largest:\n            largest = value\n    stack.push(largest)\n    stack.push(smallest)\nclass S:\n def __init__(self,v):self.v=v[:]\n def pop(self):return self.v.pop()\n def push(self,x):self.v.append(x)\n def isEmpty(self):return not self.v\nfor original in [[2,-7,5],[-8,-3], [4], [6,6]]:\n s=S(original);retain_extremes(s);assert s.v==[max(original),min(original)]",
+    "result_file": ""
+  },
+  "code": "def retain_extremes(stack):\n    first = stack.pop()\n    smallest = largest = first\n    while not stack.isEmpty():\n        value = stack.pop()\n        if value < smallest:\n            smallest = value\n        if value > largest:\n            largest = value\n    stack.push(largest)\n    stack.push(smallest)",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC026-Q12-c.json",
+  "question_path": "question-bank/questions/P-SRC026-Q12-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC026-Q12-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

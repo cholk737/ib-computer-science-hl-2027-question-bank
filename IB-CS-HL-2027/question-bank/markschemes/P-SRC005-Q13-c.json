@@ -1,0 +1,44 @@
+{
+  "question_id": "P-SRC005-Q13-c",
+  "unofficial": true,
+  "marks": 6,
+  "solution": "Create a node containing the shipment weight/record with empty children.; If the tree is empty, set the new node as root.; Otherwise begin comparison at the root.; Move left when the new weight is greater and right when smaller.; Repeat at successive nodes until the required child reference is empty.; Link the new node at that empty child, retaining the ordering rule.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Create a node containing the shipment weight/record with empty children."
+    },
+    {
+      "marks": 1,
+      "criterion": "If the tree is empty, set the new node as root."
+    },
+    {
+      "marks": 1,
+      "criterion": "Otherwise begin comparison at the root."
+    },
+    {
+      "marks": 1,
+      "criterion": "Move left when the new weight is greater and right when smaller."
+    },
+    {
+      "marks": 1,
+      "criterion": "Repeat at successive nodes until the required child reference is empty."
+    },
+    {
+      "marks": 1,
+      "criterion": "Link the new node at that empty child, retaining the ordering rule."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "No executable code required; manual technical check."
+  },
+  "code": "",
+  "test_code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

@@ -1,0 +1,46 @@
+– 6 – N19/4/COMSC/HP1/ENG/TZ0/XX
+13. The following matrix has non-zero elements on the diagonal, on the super-diagonal (the first
+diagonal above the main diagonal) and on the sub-diagonal (the first diagonal below the main
+diagonal). All the rest of the elements are zeros.
+The following two-dimensional array named of dimensions 6 × 6 is an example of such
+MAT
+a matrix.
+MAT
+[0] [1] [2] [3] [4] [5]
+[0] 7 7 0 0 0 0
+[1] 1 2 1 0 0 0
+[2] 0 9 --3 5 0 0
+[3] 0 0 --5 6 4 0
+[4] 0 0 0 7 7 2
+[5] 0 0 0 0 5 1
+(a) State the value of [3][4]. [1]
+MAT
+Method accepts an integer and a two-dimensional array of
+isValidMatrix(N,A) N A
+dimensions x . It returns if all elements below the subdiagonal and all elements
+N N True
+above the superdiagonal are zeros and all elements on three diagonals are non-zeroes;
+otherwise it returns .
+False
+For example, returns for the matrix given above.
+isValidMatrix(6,MAT) True MAT
+(b) Construct an efficient algorithm for the method . [8]
+isValidMatrix()
+Given the following recursive method with two formal parameters:
+mystery()
+(a two-dimensional array) and (an integer).
+A R
+mystery(A,R)
+if R > 0 then
+return A[R][R-1] + mystery(A,R-1)
+else
+return 0
+end if
+end mystery
+(c) Determine the value of variable after execution of the following method call:
+X
+X = mystery(MAT,5)
+where is the two-dimensional array given. You must show your working. [4]
+MAT
+(d) Deduce the purpose of the method . [2]
+mystery(A,R)

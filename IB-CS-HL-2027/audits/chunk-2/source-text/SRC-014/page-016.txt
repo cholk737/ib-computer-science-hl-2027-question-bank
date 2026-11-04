@@ -1,0 +1,35 @@
+                                                          –   16 –              N19/4/COMSC/HP1/ENG/TZ0/XX/M
+
+
+13.   (a)    Award [1 max].
+             4;                                                                                                         [1]
+
+      (b)    Award [8 max].
+             Award [1] for initialization, correct changing and returning of a flag.
+             Award [1] for the nested loops.
+             Award [1] for correct initial and for correct terminal value and changing the value
+             of the control variable in outer loop.
+             Award [1] for correct initial and for correct terminal value and changing the value
+             of the control variable in inner loop.
+             Award [1] for efficiency (terminating execution when a zero or non-zero element
+             is not at the correct position).
+             Award [1] for correct condition in if statement.
+             Award [1] for checking elements in the lower/upper triangle.
+             Award [1] for checking elements on the three diagonals.
+             Award [1] for the correct logical expression.
+
+             Example 1:
+             INVALID=False
+             R=0
+             loop while R<N and not INVALID
+                C=0
+                loop while C<N and not INVALID
+                      if abs(R-C)>=2 and A[R][C]!=0 or abs(R-C)<2 and
+             A[R][C]==0 then
+                          INVALID=True
+                      endif
+                      C=C+1
+                endwhile
+                R=R+1
+             endwhile
+             return not INVALID

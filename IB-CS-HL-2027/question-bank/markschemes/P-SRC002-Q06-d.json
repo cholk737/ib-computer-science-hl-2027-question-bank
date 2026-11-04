@@ -1,0 +1,35 @@
+{
+  "question_id": "P-SRC002-Q06-d",
+  "unofficial": true,
+  "marks": 4,
+  "solution": "One solution:\ndef high_percentage(scores):\n    count = 0\n    for score in scores:\n        if 91 <= score <= 100:\n            count += 1\n    return count / len(scores) * 100",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes and traverses count."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct inclusive condition."
+    },
+    {
+      "marks": 1,
+      "criterion": "Counts qualifying entries only."
+    },
+    {
+      "marks": 1,
+      "criterion": "Divides by total and multiplies by100."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Both qualifying boundaries and adjacent values executed.",
+    "source_comparison": [],
+    "test_code": "def high_percentage(scores):\n    count = 0\n    for score in scores:\n        if 91 <= score <= 100:\n            count += 1\n    return count / len(scores) * 100\nassert high_percentage([90,91,100,101])==50\nassert high_percentage([40])==0",
+    "result_file": ""
+  },
+  "code": "def high_percentage(scores):\n    count = 0\n    for score in scores:\n        if 91 <= score <= 100:\n            count += 1\n    return count / len(scores) * 100",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

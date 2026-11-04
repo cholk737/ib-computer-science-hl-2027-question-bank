@@ -1,0 +1,65 @@
+{
+  "source_question_id": "H-SRC006-Q12-b",
+  "source_id": "SRC-006",
+  "source_filename": "Computer_science_paper_1__HL (3).pdf",
+  "year": "2021",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "TZ0",
+  "option": "",
+  "question": 12,
+  "subquestion": "b",
+  "source_pdf_pages": [
+    6
+  ],
+  "source_printed_pages": [
+    "5"
+  ],
+  "original_marks": 2,
+  "command_term": "Outline",
+  "original_text": "Outline how the last node of the circular linked list is identified.",
+  "parent_context": "– 5 –\nN21/4/COMSC/HP1/ENG/TZ0/XX\n8821 – 7011\nTurn over\n11. A rail transport company uses a global positioning system (GPS) to determine a train’s position.\n(a) Explain how GPS works. [4]\nThe GPS data is used to provide real-time arrival data on video displays in train stations.\n(b) (i)  State one data item concerning the arrival of a train that may be provided on the \nvideo display. [1]\n(ii) Outline how sensors can be used in combination with GPS to provide more \naccurate arrival data. [2]\nThe GPS data is made publicly available so that software developers can use it to build apps.\nThe mobile application ATrainAway uses the real-time train GPS data as well as the GPS \ndata from the user’s smartphone.\n(c) Outline two pieces of information that the ATrainAway application could provide to \nthe user. [4]\n(d) Discuss the advantages and disadvantages of using GPS in transportation systems. [4]\n12. Consider the following circular linked list:\n20 5 10head\nwhere head is an external pointer that points to the first node in the circular linked list.\nThree operations are performed on this circular linked list in the following order:\n1 A node containing the number 30 is inserted at the beginning of the circular linked list.\n2 The last node is deleted from the circular linked list.\n3 The first node is deleted from the beginning of the circular linked list.\n(a) Sketch a diagram showing the resulting circular linked list. [3]\n(b) Outline how the last node of the circular linked list is identified. [2]\n(c) Describe the steps required to calculate the sum of all numbers held in this circular \nlinked list. [4]\nArrays and linked lists are used to store linear data.\n(d) Compare the use of arrays and linked lists. [4]\nA linked list can be used to implement a data structure queue.\n(e) Identify two applications of a queue data structure. [2]",
+  "assets": [],
+  "assessed_concepts": [
+    "Original source task: Outline how the last node of the circular linked list is identified.",
+    "Outline how to recognize the final node of a nonempty circular singly linked list with an external head reference"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-012",
+    "filename": "Computer_science_paper_1__HL_markscheme (3).pdf",
+    "pdf_pages": [
+      12
+    ],
+    "question_reference": "Q12 b",
+    "marking_summary": "The final node is the node whose next reference points back to the same node as head; its next reference is not None.",
+    "source_issues": [],
+    "source_marking_evidence": "– 12 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \n(d) Award [4 max]\nSafer transit;\nTrains are tracked and in case of emergency the location can be reached at the earliest and\nemergency services provided;\nMore favourable view of transit/helps passenger to get punctuality status of the train/;\nGPS can provide worldwide three-dimensional positions (24 hours a day) (in any type of\nweather);\nSometimes it is too difficult to ensure reliable positioning;\nObjects, such as buildings, overpasses, and other obstructions (that shield the antenna from\na satellite) can potentially weaken a satellite's signal;\nPrivacy issues;\nKnowing the absolute position of anything, anytime, anywhere;\nMark as 2 and 2.\n12. (a) Award [3 max] \nAward [1] for the node containing number 20 is pointed to by the pointer 'head'; \nAward [1] for the diagram showing only two nodes and all the correct links; \nAward [1] for the last node containing number 5; \n(b) Award [2 max]\nThe last node is identified by its next/link pointer;\nwhich contains the address of the node at the beginning of the list / is equal to the pointer\n“head “;\n"
+  },
+  "relevance_status": "A",
+  "mappings": [
+    {
+      "syllabus_code": "B4.1.2",
+      "scope_evidence": "• Lists must include singly, doubly, circular\n• Sketch of linked lists and implementation of basic operations diagrammatically, such as insertion, deletion, traversal, search\n• The advantages and disadvantages of using linked lists over other data structures like arrays, particularly in terms of memory utilization and performance",
+      "rationale": "Outline how to recognize the final node of a nonempty circular singly linked list with an external head reference assesses Evaluate linked lists.",
+      "theme": "B",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "No visual required by this leaf.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC006-Q12-b"
+  ]
+}

@@ -1,0 +1,49 @@
+                                                              –   13 –                                              2225 – 6419M
+
+
+10.      (a)      Award max [6].
+
+              Example 1:
+
+              Each user should be assigned a user role (administrator, student, teacher, guest);
+              Each user must have a unique username and password;
+              Different access levels could be implemented by using password/ authentication
+              (PIN/ token/ biometrics/ two-factor authentication (2FA) before accessing a file/ through
+              whitelisting/blacklisting devices/ by verifying MAC             addresses);
+              Users assigned an administrator role have full access to the system/ are allowed to perform
+              most operations on the system (such as, add, remove, edit users, groups, domains, manage
+              passwords, configure services, etc.);
+              Users assigned a teacher          role have read-write access to update student grades/ read                -only
+              access to students’ records/ no access to other teachers’ financial records;
+              A user assigned a student role has read access to their reports / no access to other students’
+              /teachers’ data;
+              A user assigned a guest role has restricted/limited access to certain file/folders/information
+              / no access to the files with sensitive or personal data/ users with guest accounts can only read
+              from files containing general information/ guest users cannot perform any actions/ guest users
+              can only browse the internet);
+
+              Example 2:
+
+              Create a Virtual Local Area Network (VLAN) that allows segmentation of different user groups;
+              Each VLAN uses strong authentication/ user logins /two                 -factor authentication;
+              Each VLAN can have specific security policies/ rules and restrictions;
+              Implement Access Control Lists (ACLs) on devices/ define what resources each group of users
+              can access/ assign permissions based on user roles (RBAC);
+              Administrators have full access to all resources;
+              Teachers have access to their personal records/teaching materials/authorized student data;
+              Students have access only to their own files/ assignments/ reports / no access to others' data;
+              Guests have internet access only/ restricted             access through firewall and ACLs / no access to
+              sensitive information;
+
+              Example 3:
+
+              Intranet and extranet could be implemented;
+              The intranet is restricted to group of users related to the school
+              (administrator/teachers/students);
+              Each teacher/student has login, password (and permissions);
+              Administrators have full access to all resources (intranet and extranet);
+              Teachers have access to their personal records/teaching materials/authorized student data;
+              Students have access only to their own files/ assignments/ reports;
+              Extranet is accessible to all (administrator/teacher/student/guest)                / Extranet provides limited
+              access from outside the LAN for all users working remotely                 ;
+              Guests have access to Internet;

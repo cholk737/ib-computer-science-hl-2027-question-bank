@@ -1,0 +1,53 @@
+{
+  "question_id": "P-SRC002-Q05-e",
+  "source_question_ids": [
+    "H-SRC002-Q05-e"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Names contain a first name,zero or more middle names,and a final surname token separated by single spaces. Explain how a program can extract the final surname while ignoring middle names.",
+  "syllabus_codes": [
+    "B2.1.2"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 4,
+  "command_term": "Explain",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "Find the final space,then take the substring after it; if there is no space,the whole string is the only token. Under the stated format,the last token is the surname. Compound surnames would require different metadata or a different format.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Locates last delimiter rather than first."
+    },
+    {
+      "marks": 1,
+      "criterion": "Extracts suffix after that delimiter."
+    },
+    {
+      "marks": 1,
+      "criterion": "Ignores preceding middle-name tokens."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct handling of single token or justified format assumption."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC002-Q05-e.json",
+  "question_path": "question-bank/questions/P-SRC002-Q05-e.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC002-Q05-e.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

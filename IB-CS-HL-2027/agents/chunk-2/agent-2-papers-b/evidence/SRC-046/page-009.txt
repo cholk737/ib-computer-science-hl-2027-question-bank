@@ -1,0 +1,27 @@
+– 9 – 2225 – 6423M 
+3. (a) (i) Award [2 max]
+A derived field is calculated by using data that exists within the database; 
+That means the data does not have to be input / does not take up storage space; 
+A derived field has currency as it is calculated/derived at the time so accounts for changes in 
+date etc; 
+(ii) Award [2 max]
+Award [1] for identifying the data from the database;
+Award [1] for the correct formula to create the derived data;
+[DateOfBirth] = SELECT DateOfBirth FROM Table
+Age = YEAR ([Date]) – YEAR([DateOfBirth])
+SELECT DATEDIFF (YYYY, DateOfBirth, GetDate()) AS Age FROM Table
+SELECT TIMESTAMPDIFF(YEAR, DateOfBirth, CURDATE()) AS Age FROM Table;
+SELECT DATE_FORMAT(NOW(), '%Y') - DATE_FORMAT(DOB, '%Y')  AS age
+FROM Table
+Accept similar structure
+Accept answers in structured English example:
+Select Date of Birth from the patient table;
+Subtract the year of the birth date from the current year to get the “Age”;
+(b) Award [2 max]
+The prerequisite for 2NF is 1NF;
+1NF has no prerequisite;
+The focus of 1NF is to eliminate repeating groups, ensure atomicity of data values and ensure
+entity integrity;
+The focus of 2NF is to ensure full functional dependency (remove partial dependencies);
+1NF applies to any data table;
+2NF only applies to tables with composite keys;

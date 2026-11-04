@@ -1,0 +1,44 @@
+                                                       –   23 –             N20/4/COMSC/HP2/ENG/TZ0/XX/M
+
+
+14.   (a)    Award [6 max].
+
+             Award [1] for any correct loop (starting at 0 and while <vehicles.length);
+             Award [1] for checking if vehicles[index]==null;
+             Award [1] for adding vehicle instance to correct index, eg. vehicles[i]=v;
+             Award [1] for stopping loop at the point when vehicle is added (ie. doing it efficiently);
+             Award [1] for returning the index of the array when vehicle is added;
+             Award [1] for returning -1 if not added;
+
+             Example 1:
+
+             public int addVehicle(Vehicle v) {
+                   boolean found = false;
+                   int i = -1;
+                   while (!found && i < vehicles.length-1) {
+                          i = 0;
+                          if (vehicles[i] == null) {
+                                vehicles[i] = v;
+                                found = true;
+                          }
+                          i = i + 1
+                   }
+                   if (found) {
+                          return i;
+                   } else {
+                          return - 1;
+                   }
+             }
+
+             Example 2:
+
+             public int addVehicle(Vehicle v) {
+                   for (int i = 0; i < vehicles.length; i++) {
+                          if (vehicles[i] == null) {
+                                vehicles[i] = v;
+                                return i;
+                          }
+                   }
+                   return - 1;
+             }
+                                                                                                                  [6]

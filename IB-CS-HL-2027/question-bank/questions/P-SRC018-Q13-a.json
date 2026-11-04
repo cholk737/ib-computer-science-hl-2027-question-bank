@@ -1,0 +1,19 @@
+{
+  "question_id": "P-SRC018-Q13-a",
+  "source_question_ids": [
+    "H-SRC018-Q13-a"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Determine steps(4), showing each recursive return.\n\ndef steps(n):\n    if n < 2:\n        return 1\n    return n + steps(n-1)",
+  "syllabus_codes": [
+    "B2.4.5"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 4,
+  "command_term": "Determine",
+  "difficulty": "medium",
+  "adaptation_rationale": "Legacy branching recursive trace exceeds B2.4.5 programming limit; rewritten to non branching recursion while preserving return/unwind reasoning.",
+  "assets": []
+}

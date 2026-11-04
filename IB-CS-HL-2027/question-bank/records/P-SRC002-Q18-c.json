@@ -1,0 +1,41 @@
+{
+  "question_id": "P-SRC002-Q18-c",
+  "source_question_ids": [
+    "H-SRC002-Q18-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "For the following Python function,state the result of sum_down(-3).\ndef sum_down(n):\n    if n <= 1:\n        return n\n    return n + sum_down(n - 1)",
+  "syllabus_codes": [
+    "B2.4.5"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 1,
+  "command_term": "State",
+  "difficulty": "medium",
+  "adaptation_rationale": "Repairs false source presupposition while retaining correct base-case tracing.",
+  "solution": "-3; the base condition is immediately true.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "-3,without an invented recursion error."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed negativeinput; returnsimmediately.",
+    "source_comparison": [],
+    "test_code": "def sum_down(n):\n    if n <= 1:\n        return n\n    return n + sum_down(n - 1)\nassert sum_down(-3)==-3",
+    "result_file": ""
+  },
+  "code": "def sum_down(n):\n    if n <= 1:\n        return n\n    return n + sum_down(n - 1)",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC002-Q18-c.json",
+  "question_path": "question-bank/questions/P-SRC002-Q18-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC002-Q18-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

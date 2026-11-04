@@ -1,0 +1,44 @@
+                                                                                                                                –   16    –                                                                                                                8825                                                                                         – 6405M
+
+
+(d)                                                 Award [6 max]
+                 Award [1]for using the shuffle function outside the loop                                                                                                                                                                                                       ;
+                 Award [1] looping 10 times;
+                 Award [1]setting a variable to the loop index (LOOK = N)                                                                                                                                                                                                       ;
+                 Award[1]looping 5 times;
+                 Award [1] tes                                                                                                                                                                                                       t setting children to True if found;
+                 Award [1] else setting the                                                                                                                                                                                                                                                                                                                                                                                                                                              variable LOOK to the paper numberfound                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
+                 Award [1]for outputting CHILDREN[N] within the correct loop;
+
+                 Note: MP1 is not required by the question but it will be awarded if included.
+
+                 Example answer 1:
+                 random.shuffle(BOX)
+                 loop N from 0 to 9
+                 LOOK = N
+                 loop A from 0 to 4
+                                                    if N = BOX[LOOK]:
+                                                                     CHILDREN[N] = True
+                                                    else:
+                                                                     LOOK = BOX[LOOK]
+                                                    end if
+                 end loop
+                 output CHILDREN[N]
+                 end loop
+
+                 Example answer 2:
+                 random.shuffle(BOX)
+                 loop N from 0 to 9
+                 LOOK = N
+                 ATTEMPT = 0
+                 while ATTEMPT < 5
+                                                    if N = BOX[LOOK]:
+                                                                     CHILDREN[N] = True
+                                                                     ATTEMPT = 5
+                                                    else:
+                                                                     LOOK = BOX[LOOK]
+                                                                     ATTEMPT = ATTEMPT + 1
+                                                    end if
+                 end loop
+                 output CHILDREN[N]
+                 end loop

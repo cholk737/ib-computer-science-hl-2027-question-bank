@@ -1,0 +1,37 @@
+{
+  "question_id": "P-SRC026-Q05",
+  "unofficial": true,
+  "marks": 4,
+  "solution": "1,1,1,1,1,1,0,1.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Rows000/001 both1."
+    },
+    {
+      "marks": 1,
+      "criterion": "Rows010/011 both1."
+    },
+    {
+      "marks": 1,
+      "criterion": "Rows100/101 both1."
+    },
+    {
+      "marks": 1,
+      "criterion": "Rows110→0 and111→1."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Enumerated all8 combinations with correct precedence.",
+    "source_comparison": [
+      6
+    ],
+    "test_code": "assert [int((not a) or (b and c) or (not b)) for a in [0,1] for b in [0,1] for c in [0,1]]==[1,1,1,1,1,1,0,1]",
+    "result_file": ""
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

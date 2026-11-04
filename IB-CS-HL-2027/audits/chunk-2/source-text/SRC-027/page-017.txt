@@ -1,0 +1,26 @@
+                                                       –   17 –                                             2225 – 6414M
+
+
+
+
+(d)        Award max [2].
+
+       Interrupt can occur at any point in time (an interrupt is asynchronous);
+       processor polls the devices at regular intervals of time (polling is a synchronous activity);
+
+       Interrupt occurs only when a device requires servicing;
+       Polling occurs when processor needs to wait and check if a device needs to be serviced/
+       processor continuously checks the status of the device to find whether it requires attention;
+
+       Interrupts save the processor cycles;
+       polling wastes many of the processor cycles;
+
+       Interrupts are priority based;
+       Polling involves sequential checking with no priority;
+
+       Interrupts allow the CPU to respond quickly to a situation;
+       Response may be delayed depending on polling order / frequency;
+
+       Polling involves creating a software loop (to regularly and continuously read sensor data);
+       Interrupt is a hardware mechanism (in which the sensor notices processor that it requires its
+       attention);

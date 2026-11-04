@@ -1,0 +1,58 @@
+                                          –   17 –                                      8823 – 7011M
+
+
+Example 2:
+(A sorting algorithm used)
+
+Award [1] for correct row loop
+Award [1] for creating/using temporary 1D array
+
+Award [5 max] for sorting:
+Award [1] for correctly using a flag
+Award [1] for a correct outer loop
+Award [1] for a correct inner loop
+Award [1] for comparing DATA [I] with DATA [I+1]
+Award [1] for the correct swap
+Award [1] for correct use of array indexes
+
+Award [3 max] for calculating total correctly:
+Award [1] for adding array values to initialized variable (SUM)
+Award [1] for subtracting (not adding) the highest value
+Award [1] for subtracting (not adding) the lowest value
+
+Award [1] for calculating average
+Award [1] for outputting the competitor's name and the final score
+
+loop R from 0 to 19 //row loop
+      //fills in a temporary array DATA with the row R values
+      loop C from 0 to 7 //column loop
+             DATA[C]=MARKS[R][C]
+      end loop
+      //arranges data values
+      //from the lowest to the highest value
+      //Bubble sort(can be any other sorting algorithm)
+      F=True
+      loop while F
+            F=False
+            loop I from 0 to 7-2
+                    if DATA[I] > DATA[I + 1] then
+                           TEMP=DATA[I]
+                           DATA[I] = DATA[I + 1]
+                           DATA[I+1] = TEMP
+                           F=True
+                    end if
+            end loop
+      end loop
+
+      //HIGHEST is DATA[7]
+      //LOWEST is DATA[0]
+      //sums elements, except HIGHEST and LOWEST
+      SUM = 0
+      loop C from 1 to 6
+               SUM=SUM + DATA[C]
+      end loop
+
+      FINALSCORE = SUM / 6
+      output('Name:', NAMES[R])
+      output('Final score:', FINALSCORE)
+end loop //end row loop

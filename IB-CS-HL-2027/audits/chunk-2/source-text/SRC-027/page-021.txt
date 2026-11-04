@@ -1,0 +1,58 @@
+                                                       –   21 –                                       2225 – 6414M
+
+
+
+13.     (a)     Award max [3].
+             The (difficult) program is divided into several easier parts (sub-programs);
+             The program is better organized/ easier to understand /reduced size of code (due to several
+             sub-programs calls)/ no duplication of code;
+             Sub-programs hide implementation details;
+             Sub-programs keep specific tasks self-contained;
+             Each of the sub-programs could be written independently;
+             Each of the sub-programs is debugged/tested independently;
+             Different parts of the program can be written at the same time/concurrently;
+             Sub-programs speed up the development process (as different students can work
+             on different subprogram at the same time);
+             Each sub-program could be used many times in this program (and in other programs);
+             The maintenance/modification/change of the program will be easier/faster
+             (because only a sub-program could be changed/modified as needed);
+
+      (b)       Award max [4].
+
+             Award [1] for a correct while loop
+             Award [1] for a correct condition /validation check
+             Award [1] for input within the while loop (input repeated until input validated)
+             Award [1] for outputting appropriate messages
+             Award [1] for return statement;
+
+             Example 1:
+
+             inputInRange()
+                   K=input('Enter a number: ')
+                   loop while (K < 1) or (K > 25)
+                         output ('The number is not in the range 1 to 25. ')
+                        output(' Please try again! ')
+                         K=input('Enter a number: ')
+                   end loop
+                   output('Your number is valid. ')
+                   return K
+             end inputInRange()
+
+             Example 2:
+
+             inputInRange()
+                   F=true
+                   loop while F
+                          output('Enter a number')
+                          input(K)
+                          if(K < 1) or (K > 25)
+                               then
+                                    output ('The number is invalid. ')
+                                     output( 'Please try again! ')
+                               else
+                                     F=false
+                         end if
+                   end loop
+                   output('Your number is valid. ')
+                   return K
+             end inputInRange()

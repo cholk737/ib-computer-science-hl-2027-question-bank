@@ -1,0 +1,856 @@
+{
+  "source_id": "SRC-030",
+  "batch_id": "SRC-030-b004",
+  "source_questions": [
+    {
+      "original_assessment_context": "refnN:ifN<1return1;elseevenNreturnrefn(N-1)-N;oddNreturnrefn(N-1)+N.",
+      "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+      "source_question_id": "H-SRC030-Q12-a",
+      "source_id": "SRC-030",
+      "source_filename": "Computer_science_paper_1_TZ3_HL.pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "",
+      "question": "12",
+      "subquestion": "a",
+      "source_pdf_pages": [
+        5
+      ],
+      "source_printed_pages": [
+        "4"
+      ],
+      "original_marks": 5,
+      "command_term": "Determine",
+      "original_text": "[Source PDF page 5]\n12. (a) Consider the following recursive function:\nrefn(N)\nif N < 1\nthen\nreturn 1\nelse\nif N mod 2 = 0\nthen\nreturn refn(N-1) - N\nelse\nreturn refn(N-1) + N\nendif\nendif\nend refn\nDetermine the value of variable after execution of the following program statement:\nX\nX = refn(5)\nShow all your working. [5]",
+      "parent_context": "refnN:ifN<1return1;elseevenNreturnrefn(N-1)-N;oddNreturnrefn(N-1)+N.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "description": "Originalconditionalnonbranchingrecursion",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-030-page-05.png",
+          "source_pdf_page": 5,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Determine: Determine the value of variable X after execution X=refn(5). Show all your working."
+      ],
+      "difficulty": "high",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-031",
+        "filename": "Computer_science_paper_1_TZ3_HL_markscheme.pdf",
+        "pdf_pages": [
+          19
+        ],
+        "question_reference": "12(a)",
+        "marking_summary": "Sourcecallunwinds1+1-2+3-4+5=4.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.4.5",
+          "scope_evidence": "• Simple, non-branching recursive algorithms in programming only",
+          "rationale": "One recursivecallperpathpreserved;Python,newbasevalue andswappedsigns.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Determine the value of variable X after execution X=refn(5). Show all your working.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 5,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-030/page-005.txt"
+        }
+      ]
+    },
+    {
+      "original_assessment_context": "",
+      "source_scope_note": "Original assessed concept classified directly or excluded with reason.",
+      "source_question_id": "H-SRC030-Q12-b",
+      "source_id": "SRC-030",
+      "source_filename": "Computer_science_paper_1_TZ3_HL.pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "",
+      "question": "12",
+      "subquestion": "b",
+      "source_pdf_pages": [
+        6
+      ],
+      "source_printed_pages": [
+        "5"
+      ],
+      "original_marks": 4,
+      "command_term": "Describe",
+      "original_text": "[Source PDF page 5]\n(This question continues on the following page)\n\n[Source PDF page 6]\n(Question 12 continued)\n(b) Describe two basic stack operations. [4]",
+      "parent_context": "",
+      "assets": [],
+      "assessed_concepts": [
+        "Describe: Describe two basic stack operations."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-031",
+        "filename": "Computer_science_paper_1_TZ3_HL_markscheme.pdf",
+        "pdf_pages": [
+          19
+        ],
+        "question_reference": "12(b)",
+        "marking_summary": "Name+purpose2operationspush,pop,empty/full.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "mapping_target": "original_and_adapted",
+          "syllabus_code": "B2.2.3",
+          "scope_evidence": "• Must include fundamental operations such as push, pop, peek and isEmpty\n• How stack operations impact both performance and memory usage\n• An appropriate stack for a specific problem",
+          "rationale": "The assessed skill is explicitly named in the cited statement and its guidance; mapping does not credit unassessed scenario topics.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Describe two basic stack operations.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 6,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-030/page-006.txt"
+        }
+      ]
+    },
+    {
+      "original_assessment_context": "Stacktop53,-40,-10.4,60,15.2bottom;replaceentirestackwithsingle20=min+max.",
+      "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+      "source_question_id": "H-SRC030-Q12-c",
+      "source_id": "SRC-030",
+      "source_filename": "Computer_science_paper_1_TZ3_HL.pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "",
+      "question": "12",
+      "subquestion": "c",
+      "source_pdf_pages": [
+        6
+      ],
+      "source_printed_pages": [
+        "5"
+      ],
+      "original_marks": 6,
+      "command_term": "Construct",
+      "original_text": "[Source PDF page 6]\nThe stack stores real numbers. An algorithm should be constructed that will find\nRENUMS\nthe smallest number and the largest number stored on the stack. After execution\nRENUMS\nof the algorithm, only the sum of these two numbers should be stored on the stack\nRENUMS\n(see Figure 1).\nFigure 1: Example data held on the stack before\nRENUMS\nand after execution of the requested algorithm\nThe content on the stack The content on the stack\nRENUMS RENUMS\nbefore execution of the algorithm. after execution of the algorithm.\nThe number 53.0 is on the top of The smallest number is –40.0.\nthe stack. The largest number is 60.0.\nRENUMS\nThe sum, 20.0 (–40.0 + 60.0),\nis on the top of the stack.\nRENUMS\n53.0\n–40.0\n–10.4\n60.0\n15.2 20.0\n(c) Construct this algorithm in pseudocode.\nYou may assume that the stack already contains real numbers.\nRENUMS\nYou must use the access methods of a stack. [6]",
+      "parent_context": "Stacktop53,-40,-10.4,60,15.2bottom;replaceentirestackwithsingle20=min+max.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "description": "Stackbeforeafterextreme-sumtask",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-030-page-06.png",
+          "source_pdf_page": 6,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct: Construct this algorithm in pseudocode. You may assume the RENUMS stack already contains real numbers. You must use the access methods of a stack."
+      ],
+      "difficulty": "high",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-031",
+        "filename": "Computer_science_paper_1_TZ3_HL_markscheme.pdf",
+        "pdf_pages": [
+          20
+        ],
+        "question_reference": "12(c)",
+        "marking_summary": "Initializefrompop/peek;traversepop;trackmin/max;pushsumcap6.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.2.3",
+          "scope_evidence": "• Must include fundamental operations such as push, pop, peek and isEmpty\n• How stack operations impact both performance and memory usage\n• An appropriate stack for a specific problem",
+          "rationale": "PreservesADT-onlydestructivetraversal;safeinitializationavoidssentinelfailure.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "PreservesADT-onlydestructivetraversal;safeinitializationavoidssentinelfailure.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "PreservesADT-onlydestructivetraversal;safeinitializationavoidssentinelfailure.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Construct this algorithm in pseudocode. You may assume the RENUMS stack already contains real numbers. You must use the access methods of a stack.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 6,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-030/page-006.txt"
+        }
+      ]
+    },
+    {
+      "original_assessment_context": "Fourstudentteamcreates5×5tableprogramrequiringeachnumber1..25once.",
+      "source_scope_note": "Original assessed concept classified directly or excluded with reason.",
+      "source_question_id": "H-SRC030-Q13-a",
+      "source_id": "SRC-030",
+      "source_filename": "Computer_science_paper_1_TZ3_HL.pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "",
+      "question": "13",
+      "subquestion": "a",
+      "source_pdf_pages": [
+        7
+      ],
+      "source_printed_pages": [
+        "6"
+      ],
+      "original_marks": 3,
+      "command_term": "List",
+      "original_text": "[Source PDF page 7]\n13. A team of four high-school students decided to create a computer program for younger\nstudents to help them learn to count and recognize whole numbers from 1 to 25.\nA table partially completed with numbers from 1 to 25 is given to a younger student. The table\nconsists of five rows and five columns (see Figure 2). The younger student must enter the\nremaining numbers. Each number from 1 to 25 should be entered only once.\nFigure 2: Example table partially filled with numbers\n24 1\n7 14\n4 6 22\n10 21 3\n11 25 9\nEach of the four students is responsible for creating several sub-programs that will be\nincluded in the program.\n(a) List three advantages of using sub-programs in this situation. [3]",
+      "parent_context": "Fourstudentteamcreates5×5tableprogramrequiringeachnumber1..25once.",
+      "assets": [],
+      "assessed_concepts": [
+        "List: List three advantages of using sub-programs in this situation."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-031",
+        "filename": "Computer_science_paper_1_TZ3_HL_markscheme.pdf",
+        "pdf_pages": [
+          21
+        ],
+        "question_reference": "13(a)",
+        "marking_summary": "Decomposition,independentdevelopment/debugging,reuse,maintainability.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "mapping_target": "original_and_adapted",
+          "syllabus_code": "B2.3.4",
+          "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+          "rationale": "The assessed skill is explicitly named in the cited statement and its guidance; mapping does not credit unassessed scenario topics.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "List three advantages of using sub-programs in this situation.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 7,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-030/page-007.txt"
+        }
+      ]
+    },
+    {
+      "original_assessment_context": "Fourstudentteamcreates5×5tableprogramrequiringeachnumber1..25once.Inputrepeateduntilinteger1..25inclusive;invalidmessage,validmessage;example0,50,10returns10.",
+      "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+      "source_question_id": "H-SRC030-Q13-b",
+      "source_id": "SRC-030",
+      "source_filename": "Computer_science_paper_1_TZ3_HL.pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "",
+      "question": "13",
+      "subquestion": "b",
+      "source_pdf_pages": [
+        8
+      ],
+      "source_printed_pages": [
+        "7"
+      ],
+      "original_marks": 4,
+      "command_term": "Construct",
+      "original_text": "[Source PDF page 7]\n(This question continues on the following page)\n\n[Source PDF page 8]\n(Question 13 continued)\nThe sub-program should return a valid input number.\ninputCheck()\nThis will ensure that the younger student’s input is a number in the range 1–25 inclusive.\nIf the input number is not in this range, an appropriate message is output. The process will\nbe repeated until a valid number is input.\nFor example:\nFor the sub-program call , if the following appears on the screen:\nN = inputCheck()\nEnter a number:\n0\nThe number is not in the range from 1 to 25. Please try again.\nEnter a number:\n50\nThe number is not in the range from 1 to 25. Please try again.\nEnter a number:\n10\nYour number is valid.\nThen the value of would be 10 after execution.\nN\n(b) Construct an algorithm in pseudocode for the sub-program . [4]\ninputCheck()",
+      "parent_context": "Fourstudentteamcreates5×5tableprogramrequiringeachnumber1..25once.Inputrepeateduntilinteger1..25inclusive;invalidmessage,validmessage;example0,50,10returns10.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "description": "Originalpartiallycompletedtable",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-030-page-07.png",
+          "source_pdf_page": 7,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct: Construct an algorithm in pseudocode for the sub-program inputCheck()."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-031",
+        "filename": "Computer_science_paper_1_TZ3_HL_markscheme.pdf",
+        "pdf_pages": [
+          21,
+          22
+        ],
+        "question_reference": "13(b)",
+        "marking_summary": "Repeatedinput,rangecondition,messages,returncap4.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Retainsrangevalidation loop;newrange andexplicittypeassumption preventunrequestedexceptionrequirement.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "Retainsrangevalidation loop;newrange andexplicittypeassumption preventunrequestedexceptionrequirement.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Construct an algorithm in pseudocode for the sub-program inputCheck().",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 8,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-030/page-008.txt"
+        }
+      ]
+    },
+    {
+      "original_assessment_context": "Fourstudentteamcreates5×5tableprogramrequiringeachnumber1..25once.UseFLAGS25zeros,markFLAGS[MATvalue-1]=1,checkallflags1. Correctsamplecontains1..25;incorrectsamplemissing17,repeats12.",
+      "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+      "source_question_id": "H-SRC030-Q13-c",
+      "source_id": "SRC-030",
+      "source_filename": "Computer_science_paper_1_TZ3_HL.pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "",
+      "question": "13",
+      "subquestion": "c",
+      "source_pdf_pages": [
+        9,
+        10
+      ],
+      "source_printed_pages": [
+        "8",
+        "9"
+      ],
+      "original_marks": 8,
+      "command_term": "Construct",
+      "original_text": "[Source PDF page 8]\ninputCheck()\n(This question continues on the following page)\n\n[Source PDF page 9]\n(Question 13 continued)\nIn the program, the table is stored as a static two-dimensional array.\nFigure 3: Two examples of data\nFigure 3a: The two-dimensional Figure 3b: The two-dimensional\narray is correctly completed array is not correctly completed\nbecause each of the numbers from because the number 17 is missing\n1 to 25 appears only once. and the number 12 appears twice.\n[0] [1] [2] [3] [4] [0] [1] [2] [3] [4]\n[0] 2 24 1 8 15 [0] 12 24 1 8 15\n[1] 23 5 7 14 16 [1] 23 5 7 14 16\n[2] 4 6 13 20 22 [2] 4 6 13 20 22\n[3] 10 12 19 21 3 [3] 10 12 19 21 3\n[4] 11 18 25 17 9 [4] 11 18 25 2 9\nThe sub-program accepts the two-dimensional array\nisCorrectlyCompleted(MAT) MAT\nand outputs an appropriate message to indicate if it has been correctly filled.\nFor example:\nIf is the two-dimensional array shown in Figure 3a, then\nMAT isCorrectlyCompleted(MAT)\nshould output that the table has been correctly completed.\nIf is the two-dimensional array shown in Figure 3b then\nMAT isCorrectlyCompleted(MAT)\nshould output that the table has not been correctly completed.\n(This question continues on the following page)\n\n[Source PDF page 10]\n(Question 13 continued)\nThe description of the algorithm for the sub-program is\nisCorrectlyCompleted(MAT)\nas follows:\ny Initialize a one-dimensional array, , with zero (0) values.\nFLAGS\ny Visit all elements of the array.\nMAT\ny Use the number stored in the array to match up the index in the array.\nMAT FLAGS\ny Assign one (1) to the array at that index.\nFLAGS\ny Inspect elements of the array.\nFLAGS\ny If all the elements in the array are one (1), output a message saying that the\nFLAGS\ntable has been completed correctly; otherwise, output a message saying that the table\nhas not been completed correctly.\nFor example, the array for the array shown in Figure 3a is:\nFLAGS MAT\n]0[ ]1[ ]2[ ]3[ ]4[ ]5[ ]6[ ]7[ ]8[ ]9[\n]01[ ]11[ ]21[ ]31[ ]41[ ]51[ ]61[ ]71[ ]81[ ]91[ ]02[ ]12[ ]22[ ]32[ ]42[\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\nAnd the array for the array shown in Figure 3b is:\nFLAGS MAT\n]0[ ]1[ ]2[ ]3[ ]4[ ]5[ ]6[ ]7[ ]8[ ]9[\n]01[ ]11[ ]21[ ]31[ ]41[ ]51[ ]61[ ]71[ ]81[ ]91[ ]02[ ]12[ ]22[ ]32[ ]42[\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1\n(c) Construct the algorithm in pseudocode for the\nisCorrectlyCompleted(MAT)\nsub-program as described. [8]",
+      "parent_context": "Fourstudentteamcreates5×5tableprogramrequiringeachnumber1..25once.UseFLAGS25zeros,markFLAGS[MATvalue-1]=1,checkallflags1. Correctsamplecontains1..25;incorrectsamplemissing17,repeats12.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "description": "Correct/incorrect5×5examples",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-030-page-09.png",
+          "source_pdf_page": 9,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page",
+          "description": "ExactFLAGSalgorithm/offsetillustration",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-030-page-10.png",
+          "source_pdf_page": 10,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct: Construct the algorithm in pseudocode for the isCorrectlyCompleted(MAT) sub-program as described."
+      ],
+      "difficulty": "high",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-031",
+        "filename": "Computer_science_paper_1_TZ3_HL_markscheme.pdf",
+        "pdf_pages": [
+          23,
+          24,
+          25,
+          26
+        ],
+        "question_reference": "13(c)",
+        "marking_summary": "Initializeflags,visitmatrix,offsetindex,markpresence,inspectflagsandoutputcorrectness;cap8.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Preservesflag-indexmapping andnestedtraversal;Python4×4context,explicitsize/rangeassumptions andreasoneduniqueness.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Preservesflag-indexmapping andnestedtraversal;Python4×4context,explicitsize/rangeassumptions andreasoneduniqueness.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "Preservesflag-indexmapping andnestedtraversal;Python4×4context,explicitsize/rangeassumptions andreasoneduniqueness.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Construct the algorithm in pseudocode for the isCorrectlyCompleted(MAT) sub-program as described.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 9,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-030/page-009.txt"
+        },
+        {
+          "pdf_page": 10,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-030/page-010.txt"
+        }
+      ]
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC030-Q12-a",
+      "source_question_ids": [
+        "H-SRC030-Q12-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Determine alternating(4), showing the recursive returns. Assume n is nonnegative.\n\ndef alternating(n):\n    if n == 0:\n        return 2\n    if n % 2 == 0:\n        return alternating(n-1) + n\n    return alternating(n-1) - n",
+      "syllabus_codes": [
+        "B2.4.5"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 5,
+      "command_term": "Determine",
+      "difficulty": "high",
+      "adaptation_rationale": "One recursive call per path preserved; Python, new base value ands wapped signs.",
+      "solution": "alternating(0)=2.; alternating(1)=2-1=1.; alternating(2)=1+2=3.; alternating(3)=3-3=0.; alternating(4)=0+4=4.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "alternating(0)=2."
+        },
+        {
+          "marks": 1,
+          "criterion": "alternating(1)=2-1=1."
+        },
+        {
+          "marks": 1,
+          "criterion": "alternating(2)=1+2=3."
+        },
+        {
+          "marks": 1,
+          "criterion": "alternating(3)=3-3=0."
+        },
+        {
+          "marks": 1,
+          "criterion": "alternating(4)=0+4=4."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "Executable checks saved under checks/ where applicable."
+      },
+      "code": "def alternating(n):\n    if n == 0:\n        return 2\n    if n % 2 == 0:\n        return alternating(n-1) + n\n    return alternating(n-1) - n",
+      "test_code": "assert alternating(4)==4\nassert alternating(0)==2",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC030-Q12-b",
+      "source_question_ids": [
+        "H-SRC030-Q12-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Describe push and peek on a nonempty stack.",
+      "syllabus_codes": [
+        "B2.2.3"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 4,
+      "command_term": "Describe",
+      "difficulty": "medium",
+      "adaptation_rationale": "Original application rewritten to be self-contained; assessed reasoning retained within cited 2027 scope.",
+      "solution": "push adds a new item.; It adds at the stack top, the LIFO end.; peek returns/accesses the current top item.; peek leaves that item on the stack.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "push adds a new item."
+        },
+        {
+          "marks": 1,
+          "criterion": "It adds at the stack top, the LIFO end."
+        },
+        {
+          "marks": 1,
+          "criterion": "peek returns/accesses the current top item."
+        },
+        {
+          "marks": 1,
+          "criterion": "peek leaves that item on the stack."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "No executable code required; manual technical check."
+      },
+      "code": "",
+      "test_code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC030-Q12-c",
+      "source_question_ids": [
+        "H-SRC030-Q12-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct replace_with_extreme_sum(stack) in Python. stack is nonempty and holds real numbers. Remove all its values and leave exactly one item:the sum of its smallest and largest original values. Use only pop, push and isEmpty.",
+      "syllabus_codes": [
+        "B2.2.3",
+        "B2.3.2",
+        "B2.3.3"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 6,
+      "command_term": "Construct",
+      "difficulty": "high",
+      "adaptation_rationale": "PreservesADT-only destructive traversal; safe initialization avoids sentinel failure.",
+      "solution": "def replace_with_extreme_sum(stack):\n    first=stack.pop()\n    low=high=first\n    while not stack.isEmpty():\n        value=stack.pop()\n        if value < low:\n            low=value\n        if value > high:\n            high=value\n    stack.push(low+high)",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Initializes both extrema from an actual stack item."
+        },
+        {
+          "marks": 1,
+          "criterion": "Loops while stack is not empty."
+        },
+        {
+          "marks": 1,
+          "criterion": "Pops every remaining item."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correctly updates minimum and maximum, both handling negative values."
+        },
+        {
+          "marks": 1,
+          "criterion": "Computes the sum of the final extrema."
+        },
+        {
+          "marks": 1,
+          "criterion": "Pushes exactly that sum after all original items removed."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "Executable checks saved under checks/ where applicable."
+      },
+      "code": "def replace_with_extreme_sum(stack):\n    first=stack.pop()\n    low=high=first\n    while not stack.isEmpty():\n        value=stack.pop()\n        if value < low:\n            low=value\n        if value > high:\n            high=value\n    stack.push(low+high)",
+      "test_code": "class Stack:\n def __init__(self,v):self.v=list(v)\n def pop(self):return self.v.pop()\n def push(self,x):self.v.append(x)\n def isEmpty(self):return not self.v\nfor values,expected in [([-7,2,9],2),([-5,-2],-7),([4],8)]:\n s=Stack(values);replace_with_extreme_sum(s);assert s.v==[expected]",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC030-Q13-a",
+      "source_question_ids": [
+        "H-SRC030-Q13-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "List three benefits of decomposing a shared program into well-defined functions.",
+      "syllabus_codes": [
+        "B2.3.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 3,
+      "command_term": "List",
+      "difficulty": "medium",
+      "adaptation_rationale": "Original application rewritten to be self-contained; assessed reasoning retained within cited 2027 scope.",
+      "solution": "Different functions can be developed/tested independently.; Reusable functions avoid duplicated code.; Localized changes make maintenance easier.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Different functions can be developed/tested independently."
+        },
+        {
+          "marks": 1,
+          "criterion": "Reusable functions avoid duplicated code."
+        },
+        {
+          "marks": 1,
+          "criterion": "Localized changes make maintenance easier."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "No executable code required; manual technical check."
+      },
+      "code": "",
+      "test_code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC030-Q13-b",
+      "source_question_ids": [
+        "H-SRC030-Q13-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct read_number() in Python to repeatedly ask for an integer until it is within 1..16 inclusive. Print an appropriate message for invalid and accepted values, then return the accepted integer. Assume every input is a valid integer string.",
+      "syllabus_codes": [
+        "B2.3.2",
+        "B2.3.3"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 4,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Retains range validation loop; new range and explicit type assumption prevent unrequested exception requirement.",
+      "solution": "def read_number():\n    while True:\n        value=int(input(\"Enter an integer 1..16: \"))\n        if 1 <= value <= 16:\n            print(\"Accepted\")\n            return value\n        print(\"Outside range; try again\")",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Reads input inside a repeated loop."
+        },
+        {
+          "marks": 1,
+          "criterion": "Accepts exactly 1<=value<=16."
+        },
+        {
+          "marks": 1,
+          "criterion": "Prints rejection message and continues for out-of-range input."
+        },
+        {
+          "marks": 1,
+          "criterion": "Prints acceptance and returns valid value, terminating loop."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "Executable checks saved under checks/ where applicable."
+      },
+      "code": "def read_number():\n    while True:\n        value=int(input(\"Enter an integer 1..16: \"))\n        if 1 <= value <= 16:\n            print(\"Accepted\")\n            return value\n        print(\"Outside range; try again\")",
+      "test_code": "import builtins,io,contextlib\nseq=iter([\"0\",\"17\",\"16\"]);original=builtins.input\nbuiltins.input=lambda prompt:next(seq)\ntry:\n with contextlib.redirect_stdout(io.StringIO()):assert read_number()==16\nfinally:builtins.input=original",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC030-Q13-c",
+      "source_question_ids": [
+        "H-SRC030-Q13-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "A 4×4 integer grid must contain every integer 1..16 exactly once. Assume every value is in that range. Construct complete_grid(grid) in Python using a 16-element flag list, returning True if and only if the grid is complete. Mark the flag at value-1 while traversing, then check all flags. Do not use sets or sorting.",
+      "syllabus_codes": [
+        "B2.2.2",
+        "B2.3.2",
+        "B2.3.3"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 8,
+      "command_term": "Construct",
+      "difficulty": "high",
+      "adaptation_rationale": "Preserves flag-index mapping and nested traversal; Python 4×4 context, explicit size/range assumptions and reasoned uniqueness.",
+      "solution": "def complete_grid(grid):\n    flags=[0]*16\n    for row in grid:\n        for value in row:\n            flags[value-1]=1\n    for flag in flags:\n        if flag==0:\n            return False\n    return True",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Initializes 16 zero/False flags."
+        },
+        {
+          "marks": 1,
+          "criterion": "Traverses all four rows."
+        },
+        {
+          "marks": 1,
+          "criterion": "Traverses all elements in each row."
+        },
+        {
+          "marks": 1,
+          "criterion": "Calculates the zero-based index value-1."
+        },
+        {
+          "marks": 1,
+          "criterion": "Sets that flag to mark presence."
+        },
+        {
+          "marks": 1,
+          "criterion": "Inspects every flag or stops when missing flag found."
+        },
+        {
+          "marks": 1,
+          "criterion": "Returns False if any flag is unmarked."
+        },
+        {
+          "marks": 1,
+          "criterion": "Returns True only if all 16 flags are marked; fixed 16 input cells imply unique values."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "Executable checks saved under checks/ where applicable."
+      },
+      "code": "def complete_grid(grid):\n    flags=[0]*16\n    for row in grid:\n        for value in row:\n            flags[value-1]=1\n    for flag in flags:\n        if flag==0:\n            return False\n    return True",
+      "test_code": "good=[list(range(r*4+1,r*4+5)) for r in range(4)]\nassert complete_grid(good)\nbad=[row[:] for row in good];bad[3][3]=1;assert not complete_grid(bad)",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    }
+  ]
+}

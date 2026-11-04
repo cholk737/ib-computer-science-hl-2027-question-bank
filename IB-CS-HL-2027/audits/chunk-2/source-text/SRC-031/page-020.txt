@@ -1,0 +1,60 @@
+                                               –   20 –                                     2225 – 6419M
+
+
+
+
+
+
+
+
+
+
+
+(c)   Award max [6].
+
+      Award [1] for correct initialization (before the loop)
+      Award [1] for correct loop through the RENUMS stack using isEmpty()
+      Award [1] for taking an element from the top of the RENUMS stack using pop()(within the loop)
+      Award [1] for changing the value of SMALLEST if needed (within the loop)
+      Award [1] for changing the value of LARGEST if needed (within the loop)
+      Award [1] for summing LARGEST and SMALLEST (after the loop)
+      Award [1] for placing the sum on the stack RENUMS using push() (after the loop)
+
+
+      Example 1:
+
+      X = RENUMS.pop()   //initialization
+      SMALLEST = X
+      LARGEST = X
+      //  OR
+      //initialization
+      //   SMALEST= 999999999999 (any very large number)
+      //   LARGEST= -999999999999 (negative number!)
+      loop while not RENUMS.isEmpty()
+              //searching for the smallest and largest value
+              X=RENUMS.pop()
+              if X <= SMALLEST
+                   then SMALLEST = X
+                   else if X >= LARGEST
+                               then LARGEST = X
+                          end if
+              end if
+      end loop
+      RENUMS.push(LARGEST + SMALLEST)
+
+      Example 2:
+
+      SMALLEST = RENUMS.peek        ()   //initialization
+      LARGEST = SMALLEST
+      loop while RENUMS.isEmpty()= false
+              //searching for the smallest and largest value
+              X=RENUMS.pop()
+              if X < SMALLEST
+                   then SMALLEST = X
+              end if
+              if X > LARGEST
+                    then LARGEST = X
+              end if
+      end loop
+      SUM = LARGEST + SMALLEST
+      RENUMS.push(SUM)

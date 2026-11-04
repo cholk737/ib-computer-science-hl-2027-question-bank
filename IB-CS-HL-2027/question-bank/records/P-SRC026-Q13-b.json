@@ -1,0 +1,58 @@
+{
+  "question_id": "P-SRC026-Q13-b",
+  "source_question_ids": [
+    "H-SRC026-Q13-b"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct read_in_range(read_integer) in Python. Calling read_integer() returns an integer entered by the user. Repeatedly request a value until it lies from1 to16 inclusive; print an appropriate rejection or acceptance message and return the valid value.",
+  "syllabus_codes": [
+    "B2.3.2",
+    "B2.3.3",
+    "B2.3.4"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 4,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "One solution:\ndef read_in_range(read_integer):\n    while True:\n        value = read_integer()\n        if 1 <= value <= 16:\n            print(\"Accepted\")\n            return value\n        print(\"Enter an integer from 1 to 16\")",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Repeated input loop."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct inclusive range test."
+    },
+    {
+      "marks": 1,
+      "criterion": "Reject/retry invalid entries with message."
+    },
+    {
+      "marks": 1,
+      "criterion": "Accept and return valid entry."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed invalid low/high thenvalid and boundary1/16 inputs.",
+    "source_comparison": [
+      21,
+      22
+    ],
+    "test_code": "def read_in_range(read_integer):\n    while True:\n        value = read_integer()\n        if 1 <= value <= 16:\n            print(\"Accepted\")\n            return value\n        print(\"Enter an integer from 1 to 16\")\nimport io,contextlib\nfor values in [[0,17,9],[1],[16]]:\n it=iter(values)\n with contextlib.redirect_stdout(io.StringIO()):assert read_in_range(lambda:next(it))==values[-1]",
+    "result_file": ""
+  },
+  "code": "def read_in_range(read_integer):\n    while True:\n        value = read_integer()\n        if 1 <= value <= 16:\n            print(\"Accepted\")\n            return value\n        print(\"Enter an integer from 1 to 16\")",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC026-Q13-b.json",
+  "question_path": "question-bank/questions/P-SRC026-Q13-b.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC026-Q13-b.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

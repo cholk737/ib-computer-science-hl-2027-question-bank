@@ -1,0 +1,35 @@
+{
+  "question_id": "P-SRC002-Q18-b",
+  "unofficial": true,
+  "marks": 4,
+  "solution": "Calls4,3,2,1; return values1,3,6,10 while unwinding. Final10.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Correct decreasing call sequence."
+    },
+    {
+      "marks": 1,
+      "criterion": "Base returns1."
+    },
+    {
+      "marks": 1,
+      "criterion": "Intermediate returns3 and6."
+    },
+    {
+      "marks": 1,
+      "criterion": "Final10."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed non-branching recursion andbasecase.",
+    "source_comparison": [],
+    "test_code": "def sum_down(n):\n    if n <= 1:\n        return n\n    return n + sum_down(n - 1)\nassert sum_down(4)==10\nassert sum_down(1)==1",
+    "result_file": ""
+  },
+  "code": "def sum_down(n):\n    if n <= 1:\n        return n\n    return n + sum_down(n - 1)",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

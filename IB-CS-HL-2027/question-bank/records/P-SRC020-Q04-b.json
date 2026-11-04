@@ -1,0 +1,51 @@
+{
+  "question_id": "P-SRC020-Q04-b",
+  "source_question_ids": [
+    "H-SRC020-Q04-b"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Describe how a controller could poll several water-level sensors rather than waiting for interrupts.",
+  "syllabus_codes": [
+    "A1.3.4"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 3,
+  "command_term": "Describe",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "A program periodically checks each sensor in turn, reads its status/value, then repeats after a suitable interval. Polling frequency sets how quickly a change can be detected.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Controller actively checks sensors."
+    },
+    {
+      "marks": 1,
+      "criterion": "Repeats at intervals/in turn."
+    },
+    {
+      "marks": 1,
+      "criterion": "Relates readings/change detection to monitored water levels."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      5
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC020-Q04-b.json",
+  "question_path": "question-bank/questions/P-SRC020-Q04-b.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC020-Q04-b.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

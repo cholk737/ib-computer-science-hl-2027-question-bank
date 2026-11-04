@@ -1,0 +1,81 @@
+{
+  "question_id": "P-SRC005-Q14-c",
+  "source_question_ids": [
+    "H-SRC005-Q14-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "The function proper_sum(n) returns the sum of proper divisors of positive integer n. Construct classify_grid(grid) in Python. Return three lists(low, equal, high) containing each grid value whose proper-divisor sum is respectively less than, equal to, or greater than that value. Preserve row-major order and all repeated values. Do not modify grid; call proper_sum for each value.",
+  "syllabus_codes": [
+    "B2.2.2",
+    "B2.3.2",
+    "B2.3.3",
+    "B2.3.4"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 10,
+  "command_term": "Construct",
+  "difficulty": "high",
+  "adaptation_rationale": "Preserves nested traversal, function decomposition and three-way classification; Python dynamic outputs remove legacy fixed-array index bookkeeping while retaining 10 substantive marking points.",
+  "solution": "def proper_sum(n):\n    total=0\n    for factor in range(1,n):\n        if n % factor == 0:\n            total += factor\n    return total\n\ndef classify_grid(grid):\n    low, equal, high=[],[],[]\n    for row in grid:\n        for n in row:\n            summed=proper_sum(n)\n            if summed < n:\n                low.append(n)\n            elif summed == n:\n                equal.append(n)\n            else:\n                high.append(n)\n    return low,equal,high",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes three distinct empty output lists."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses each input row."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses every value in the row."
+    },
+    {
+      "marks": 1,
+      "criterion": "Calls proper_sum on that value."
+    },
+    {
+      "marks": 1,
+      "criterion": "Uses comparison with the original value, not an index."
+    },
+    {
+      "marks": 1,
+      "criterion": "Appends to low if summed<n."
+    },
+    {
+      "marks": 1,
+      "criterion": "Appends to equal if summed==n."
+    },
+    {
+      "marks": 1,
+      "criterion": "Appends to high if summed>n."
+    },
+    {
+      "marks": 1,
+      "criterion": "Preserves row-major order and duplicates, with each value assigned exactly once."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns the three lists in the required order after traversal."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "Executable checks saved under checks/ where applicable."
+  },
+  "code": "def proper_sum(n):\n    total=0\n    for factor in range(1,n):\n        if n % factor == 0:\n            total += factor\n    return total\n\ndef classify_grid(grid):\n    low,equal,high=[],[],[]\n    for row in grid:\n        for n in row:\n            summed=proper_sum(n)\n            if summed < n:\n                low.append(n)\n            elif summed == n:\n                equal.append(n)\n            else:\n                high.append(n)\n    return low,equal,high",
+  "test_code": "assert classify_grid([[1,6,12],[9,28,12]])==([1,9],[6,28],[12,12])\nassert classify_grid([])==([],[],[])",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC005-Q14-c.json",
+  "question_path": "question-bank/questions/P-SRC005-Q14-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC005-Q14-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

@@ -1,0 +1,35 @@
+                                                       –   35 –                                             8823 – 7012M
+
+
+(b)    Award [6 max]
+       Award [1] for testing if the requested number of turns is bigger than the size of the Linked
+       List / gameLog
+       Award [1] for giving a reason (either Linked List is front access only or the potentially invalid
+       request)
+       Award [1] for outputting an error message if the requested number of turns is bigger than the
+       size of the Linked List / gameLog
+       Award [1] for giving a valid reason (telling the user that it is an invalid request)
+       Award [1] for finding the first turn (the earliest turn) to be undone / rewinded
+       Award [1] for giving a valid reason (to have a starting point for the loop to rewind the turns)
+       Award [1] for looping through the remaining turns (of the Linked List /                  gameLog)
+       Award [1] for testing If the defender (or 'to' monster) equals / is rewinder
+       Award [1] for adding the (turn's) damage to the health of the 'to' monster / rewinder
+       Award [1] for giving a valid reason (to undo the damage only when the rewinder is the
+       defender)
+
+       Note to examiners: accept explanations that use code to support the explanation.
+
+       Example answer:
+
+       First count the number of turns in the linked List           ;
+       Because the new turns are added to the end of                gameLog and you cannot easily
+       access a Linked List from the rear;
+       Give an error message if the number of turns counted is lower than
+       numberOfTurns;
+       Because then that number of turns cannot be rewinded                  ;
+       Loop backwards to find the first turn to be undone             ;
+       In order to have a starting point for rewinding the turns            ;
+       Loop through the remaining turns in the list           ;
+       In each turn, if the defender is equal to         rewinder;
+       Then add the damage back to rewinder.health so that the turns are skipped
+       where rewinder is the attacker;

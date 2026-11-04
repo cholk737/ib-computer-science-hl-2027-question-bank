@@ -1,0 +1,39 @@
+– 33 – M23/4/COMSC/HP2/ENG/TZ0/XX/M 
+16. (a) Award [2 max]. 
+Its (behaviour) is defined by its operations [1] and the data that the operations are carried 
+out on [1]; 
+An ADT is a complex data type; 
+Each ADTs has standardised methods/operations / a specific set of methods/operations  
+(such as addToEnd. Push etc.);              // Don’t accept that “it has methods”; 
+Implementation details are hidden from the user; 
+Users only need to know how to use the operations/methods; 
+Allow ADTs can be allocated memory dynamically;  
+(b) Award [3 max].
+A new ClientNode is instantiated;
+with name "Sophie Bella" and phone "072456721";
+and it is added as the last node in the list openDay;  // must specify openDay 
+(c) Award [5 max].
+Award [1] for testing for an empty list;
+Award [1] for assigning visitor to root;
+Award [1] for declaring and initializing a new ClientNode (currentNode);
+Award [1] for correct loop;
+Award [1] for correct assignment of next node;
+Award [1] for correctly assigning visitor as the last node;
+Note: Allow follow through errors if the candidate only uses get/set once 
+Example answer 
+void enList(ClientNode visitor) 
+{ 
+  if (root==null)   // checks for empty list - allow  use of isEmpty 
+  { 
+ root = visitor; 
+  } 
+  else 
+  { 
+ ClientNode currentNode = root;   // declares cu rrentNode 
+ while (currentNode.getNext()!=null)   // finding the last node 
+ { 
+ currentNode = currentNode.getNext(); 
+ } 
+ currentNode.setNext(visitor)    ;   // set as last node 
+  } 
+}  

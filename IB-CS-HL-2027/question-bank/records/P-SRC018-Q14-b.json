@@ -1,0 +1,55 @@
+{
+  "question_id": "P-SRC018-Q14-b",
+  "source_question_ids": [
+    "H-SRC018-Q14-b"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Each row of samples has exactly three positive integers. Construct repeated_in_row(samples, r) in Python to return the value occurring at least twice in row r, or 0 if all are different.",
+  "syllabus_codes": [
+    "B2.2.2",
+    "B2.3.2"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 4,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Same three-way pair selection reasoning; positive-domain sentinel made explicit; all 27 test case combinations checked.",
+  "solution": "def repeated_in_row(grid,r):\n    a, b, c=grid[r]\n    if a==b or a==c:\n        return a\n    if b==c:\n        return b\n    return 0",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Reads the three values from specified row."
+    },
+    {
+      "marks": 1,
+      "criterion": "Handles equality of first and second or first and third."
+    },
+    {
+      "marks": 1,
+      "criterion": "Handles equality of second and third."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns repeated value correctly(including all same), otherwise 0."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "Executable checks saved under checks/ where applicable."
+  },
+  "code": "def repeated_in_row(grid,r):\n    a,b,c=grid[r]\n    if a==b or a==c:\n        return a\n    if b==c:\n        return b\n    return 0",
+  "test_code": "import itertools\nfor row in itertools.product(range(1,4),repeat=3):\n expected=next((x for x in row if row.count(x)>1),0)\n assert repeated_in_row([row],0)==expected",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC018-Q14-b.json",
+  "question_path": "question-bank/questions/P-SRC018-Q14-b.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC018-Q14-b.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

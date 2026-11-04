@@ -1,0 +1,118 @@
+{
+  "original_assessment_context": "Fourstudentteamcreates5×5tableprogramrequiringeachnumber1..25once.UseFLAGS25zeros,markFLAGS[MATvalue-1]=1,checkallflags1. Correctsamplecontains1..25;incorrectsamplemissing17,repeats12.",
+  "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+  "source_question_id": "H-SRC030-Q13-c",
+  "source_id": "SRC-030",
+  "source_filename": "Computer_science_paper_1_TZ3_HL.pdf",
+  "year": "2025",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "TZ3 (filename; numerical cover code)",
+  "option": "",
+  "question": "13",
+  "subquestion": "c",
+  "source_pdf_pages": [
+    9,
+    10
+  ],
+  "source_printed_pages": [
+    "8",
+    "9"
+  ],
+  "original_marks": 8,
+  "command_term": "Construct",
+  "original_text": "[Source PDF page 8]\ninputCheck()\n(This question continues on the following page)\n\n[Source PDF page 9]\n(Question 13 continued)\nIn the program, the table is stored as a static two-dimensional array.\nFigure 3: Two examples of data\nFigure 3a: The two-dimensional Figure 3b: The two-dimensional\narray is correctly completed array is not correctly completed\nbecause each of the numbers from because the number 17 is missing\n1 to 25 appears only once. and the number 12 appears twice.\n[0] [1] [2] [3] [4] [0] [1] [2] [3] [4]\n[0] 2 24 1 8 15 [0] 12 24 1 8 15\n[1] 23 5 7 14 16 [1] 23 5 7 14 16\n[2] 4 6 13 20 22 [2] 4 6 13 20 22\n[3] 10 12 19 21 3 [3] 10 12 19 21 3\n[4] 11 18 25 17 9 [4] 11 18 25 2 9\nThe sub-program accepts the two-dimensional array\nisCorrectlyCompleted(MAT) MAT\nand outputs an appropriate message to indicate if it has been correctly filled.\nFor example:\nIf is the two-dimensional array shown in Figure 3a, then\nMAT isCorrectlyCompleted(MAT)\nshould output that the table has been correctly completed.\nIf is the two-dimensional array shown in Figure 3b then\nMAT isCorrectlyCompleted(MAT)\nshould output that the table has not been correctly completed.\n(This question continues on the following page)\n\n[Source PDF page 10]\n(Question 13 continued)\nThe description of the algorithm for the sub-program is\nisCorrectlyCompleted(MAT)\nas follows:\ny Initialize a one-dimensional array, , with zero (0) values.\nFLAGS\ny Visit all elements of the array.\nMAT\ny Use the number stored in the array to match up the index in the array.\nMAT FLAGS\ny Assign one (1) to the array at that index.\nFLAGS\ny Inspect elements of the array.\nFLAGS\ny If all the elements in the array are one (1), output a message saying that the\nFLAGS\ntable has been completed correctly; otherwise, output a message saying that the table\nhas not been completed correctly.\nFor example, the array for the array shown in Figure 3a is:\nFLAGS MAT\n]0[ ]1[ ]2[ ]3[ ]4[ ]5[ ]6[ ]7[ ]8[ ]9[\n]01[ ]11[ ]21[ ]31[ ]41[ ]51[ ]61[ ]71[ ]81[ ]91[ ]02[ ]12[ ]22[ ]32[ ]42[\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\nAnd the array for the array shown in Figure 3b is:\nFLAGS MAT\n]0[ ]1[ ]2[ ]3[ ]4[ ]5[ ]6[ ]7[ ]8[ ]9[\n]01[ ]11[ ]21[ ]31[ ]41[ ]51[ ]61[ ]71[ ]81[ ]91[ ]02[ ]12[ ]22[ ]32[ ]42[\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1\n(c) Construct the algorithm in pseudocode for the\nisCorrectlyCompleted(MAT)\nsub-program as described. [8]",
+  "parent_context": "Fourstudentteamcreates5×5tableprogramrequiringeachnumber1..25once.UseFLAGS25zeros,markFLAGS[MATvalue-1]=1,checkallflags1. Correctsamplecontains1..25;incorrectsamplemissing17,repeats12.",
+  "assets": [
+    {
+      "kind": "source_page",
+      "description": "Correct/incorrect5×5examples",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-030-page-09.png",
+      "source_pdf_page": 9,
+      "visually_verified": true
+    },
+    {
+      "kind": "source_page",
+      "description": "ExactFLAGSalgorithm/offsetillustration",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-030-page-10.png",
+      "source_pdf_page": 10,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Construct: Construct the algorithm in pseudocode for the isCorrectlyCompleted(MAT) sub-program as described."
+  ],
+  "difficulty": "high",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-031",
+    "filename": "Computer_science_paper_1_TZ3_HL_markscheme.pdf",
+    "pdf_pages": [
+      23,
+      24,
+      25,
+      26
+    ],
+    "question_reference": "13(c)",
+    "marking_summary": "Initializeflags,visitmatrix,offsetindex,markpresence,inspectflagsandoutputcorrectness;cap8.",
+    "source_issues": []
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "mapping_target": "adapted_practice_only",
+      "syllabus_code": "B2.2.2",
+      "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+      "rationale": "Preservesflag-indexmapping andnestedtraversal;Python4×4context,explicitsize/rangeassumptions andreasoneduniqueness.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "mapping_target": "adapted_practice_only",
+      "syllabus_code": "B2.3.2",
+      "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+      "rationale": "Preservesflag-indexmapping andnestedtraversal;Python4×4context,explicitsize/rangeassumptions andreasoneduniqueness.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "mapping_target": "adapted_practice_only",
+      "syllabus_code": "B2.3.3",
+      "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+      "rationale": "Preservesflag-indexmapping andnestedtraversal;Python4×4context,explicitsize/rangeassumptions andreasoneduniqueness.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+    "marks": "Printed allocation transcribed.",
+    "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+    "official_answer_status": "See source markscheme record"
+  },
+  "original_text_manual_synopsis": "Construct the algorithm in pseudocode for the isCorrectlyCompleted(MAT) sub-program as described.",
+  "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+  "source_page_evidence": [
+    {
+      "pdf_page": 9,
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-030/page-009.txt"
+    },
+    {
+      "pdf_page": 10,
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-030/page-010.txt"
+    }
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC030-Q13-c"
+  ]
+}

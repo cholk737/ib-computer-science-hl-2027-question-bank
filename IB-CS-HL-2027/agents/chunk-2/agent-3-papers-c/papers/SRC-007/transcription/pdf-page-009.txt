@@ -1,0 +1,31 @@
+M21/4/COMSC/HP1/ENG/TZ0/XX
+– 8 – 2221 – 7011
+16. A network is set up with shared printers so that when a user wishes to print, print jobs are
+sent to a queue until the printer is available.
+(a) Outline why a queue is the appropriate data structure to manage print jobs. [2]
+(b) Draw a diagram to show how a print queue may be implemented using a linked list. [3]
+(c) Explain why a stack would not be appropriate as a data structure for managing print jobs. [3]
+The factorial of the positive integer n, which is written n!, is the product of all the positive
+integers less than or equal to n. A stack may be used to perform a factorial calculation as
+shown by the algorithm:
+//stack for factorial(NUM)
+//creates a stack of (NUM - 1) elements
+//when NUM = 6
+NUM = 6
+loop while NUM > 1
+stack.push(NUM)
+NUM = NUM – 1
+end loop
+PRODUCT = 1
+loop while not stack.isEmpty()
+NUM = stack.pop()
+PRODUCT = PRODUCT * NUM
+end loop
+output PRODUCT
+(d) Copy and complete the trace table for the algorithm shown for . [3]
+NUM = 6
+NUM PRODUCT OUTPUT
+6
+(e) Explain how a stack may be used in the implementation of a recursive function. [4]
+References:
+© International Baccalaureate Organization 2021

@@ -1,0 +1,57 @@
+                                                                                         –   32    –                                                                           2225                                                                                         – 6420M
+
+
+(c)                                                       Award [6 max]
+            Award [1]                        for using a boolean flag or similar variable to stop either of the loops;
+            Award [1]                        for correct outer loop to run through the theArtists array;
+            Award [1]                        for correctly finding the required Artist;
+            Award [1]                        for correct inner loop to run through the theArtworks array;
+            Award [1]                        for an attempt to search for the artwork;
+            Award [1]                        for correct use of appropriate accessors and .equals(); // accept ‘==’
+            Award [1]                        for an attempt to set the isSold;
+            Award [1]                        for correctly calling issold();
+
+            Example 1:
+            public void                                                                                                                     Sold( String artistName, String artworkTitle)
+            {
+
+                       for                                (int                                i = 0; i < theArtists.length; i++)
+                       {
+                                   if(theArtists[i].getName().equals(artistName))
+                                   {
+                                               for                                (int                                x = 0; x < theArtists[i].getnoOfArtworks(); x++)
+                                               {
+                                                            if(theArtists[i].getArtwork(x).getArtworkTitle().equals( artworkTitle))
+                                                            {
+                                                                       theArtists[i].getArtwork(x).isSold();
+                                                            }
+                                                }
+                                    }
+                        }
+            }
+            Example 2:
+            public void                                                                                                                     Sold(String artistName, String artworkTitle)
+            {
+                       boolean                                                                          found=false;
+                       int                                i=0;
+                        while(i<theArtists.length && found ==                                                  false)
+                        {
+                                   if(theArtists[i].getName().equals(artistName))
+                                   {
+                                               int                                j=0;
+                                               while(j<theArtists[i].getnoOfArtworks() && found == false)
+                                               {
+                                                            if(theArtists[i].getArtwork(j).getArtworkTitle().equals(
+                                                            artworkTitle))
+                                                            {
+                                                                       theArtists[i].getArtwork(j).isSold();
+                                                                       found=true;
+                                                            }
+                                                            j++;
+                                               }
+                                   }
+                                   i++;
+                       }
+            }
+           Note: Accept any name for getnoOfArtworks()as long as it returns
+           noOfArtworks.

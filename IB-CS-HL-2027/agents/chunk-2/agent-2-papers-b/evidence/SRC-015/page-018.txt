@@ -1,0 +1,34 @@
+– 18 – 8824 – 6904M 
+Example 2: 
+Award [1] for initializing MAX 
+Award [1] for a correct loop 
+Award [1] for comparing COUNT[K] with MAX and changing the value of MODE_IND[K] (if 
+they are equal) 
+Award [1] for comparing COUNT[K] with MAX and changing the value of MAX  
+(if COUNT[K] is greater than MAX)     
+Award [1] for reinitializing the MODE_IND array (the loop within if statement) 
+Award [1] for assignment MODE_IND[K]=1 
+Award [1] for outputting modes 
+//assume MODE_IND is initialized 
+//an integer array zero array in this example, a Boolean array could be 
+//used instead  
+//the MODE_IND array is used to flag modes 
+MAX = 0   // MAX = COUNT[0] 
+loop K from 0 to 9 
+if COUNT[K] == MAX 
+then MODE_IND[K] = 1   //flags mode K 
+endif 
+if COUNT[K] > MAX 
+then  
+MAX = COUNT[K] //the new largest value 
+loop I from 0 to 9 
+MODE_IND[I] = 0  //reinitializing the array 
+end loop 
+MODE_IND[K] = 1 //flags the new mode K 
+end if 
+end loop 
+loop K from 0 to 9  // outputs modes 
+if MODE_IND[K] == 1 
+then output(K) 
+end if 
+end loop 

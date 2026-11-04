@@ -1,0 +1,58 @@
+                                                                                                                                                                                                                                                                                                                              N22/4/COMSC/HP1/ENG/TZ0/XX
+
+
+
+
+                                                                                                                                                                                                                               –7–                                                                                                                                                                                                         8822–7011
+
+13.                       A list of students’ names and test scores are written in a teacher ’s notebook in alphabetical
+                          order. The teacher uses an application that allows her to input all of the names and scores
+                          in the order they appear in her notebook. The application orders the scores from highest to
+                          lowest and then outputs all the names and scores (see Figure 1).
+
+                                                                                   Figure 1: An example of the input and output of the application
+
+                                                                                                                                                                                 Input:                                                                 Output:
+
+                                                                                                                                                                                 Anna 56                                                                Zara 90
+                                                                                                                                                                                 Ava 47                                                                 Emma 87
+                                                                                                                                                                                 Baker 24                                                               Nolan 63
+                                                                                                                                                                                 Emma 87                                                                Anna 56
+                                                                                                                                                                                 Nolan 63                                                               Ava 47
+                                                                                                                                                                                 Zara 90                                                                Baker 24
+
+                          The application:
+                          y            inputs the names and scores
+                          y            stores the input data in two arrays: NAMES and SCORES (see Figure 2)
+
+                                                                                                                                             Figure 2: The NAMES and SCORES arrays
+
+                                                                                      NAMES                                              Anna                                          Ava                                   Baker                                    Emma                                        Nolan                                         Zara
+
+                                                                                                                                            [0]                                        [1]                                       [2]                                        [3]                                        [4]                                       [5]
+
+                                                                                      SCORES                                                   56                                         47                                         24                                        87                                         63                                        90
+
+                          For example, NAMES[3] holds the student’s name (Emma), and her score (87) can be found
+                          in SCORES[3].
+
+                          The application also:
+                          y            sorts the input data in order of scores from the highest to the lowest by using a bubblesort
+                                       algorithm.
+                          y            outputs the sorted data.
+
+                          (a)                       (i)                       Describe the steps in the bubble sort algorithm that sorts the input data stored in
+                                                                              the SCORES and NAMES arrays in order of scores.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                [5]
+
+                                                    (ii)                      Identify one alternative sorting algorithm.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  [1]
+
+                          A decision has been made to create a new application. It will use a binary tree as an
+                          alternative to the two arrays.
+
+                          (b)                       Identify the components of a node in a binary tree.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [3]
+
+                          The input data will be inserted into the binary tree so that an inorder traversal of the
+                          binarytree would output all the students’ names and scores, sorted from the highest
+                          tothelowest score.
+
+                          (c)                       Describe the steps in this insertion process.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [6]

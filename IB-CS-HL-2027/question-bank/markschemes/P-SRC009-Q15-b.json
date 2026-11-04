@@ -1,0 +1,41 @@
+{
+  "question_id": "P-SRC009-Q15-b",
+  "unofficial": true,
+  "marks": 5,
+  "solution": "One solution:\ndef show_absent(counts):\n    found = False\n    for value in range(10):\n        if counts[value] == 0:\n            print(value)\n            found = True\n    if not found:\n        print(\"All present\")",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initialize found flag/equivalent."
+    },
+    {
+      "marks": 1,
+      "criterion": "Visits all digit indices."
+    },
+    {
+      "marks": 1,
+      "criterion": "Tests frequency zero."
+    },
+    {
+      "marks": 1,
+      "criterion": "Prints digit indices, not zero counts."
+    },
+    {
+      "marks": 1,
+      "criterion": "Prints All present only when no absent digits."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Output checked for counts with only8 absent and all present.",
+    "source_comparison": [
+      17
+    ],
+    "test_code": "def show_absent(counts):\n    found = False\n    for value in range(10):\n        if counts[value] == 0:\n            print(value)\n            found = True\n    if not found:\n        print(\"All present\")\nimport io,contextlib\nb=io.StringIO()\nwith contextlib.redirect_stdout(b):show_absent([1]*8+[0,1])\nassert b.getvalue()==\"8\\n\"\nb=io.StringIO()\nwith contextlib.redirect_stdout(b):show_absent([1]*10)\nassert b.getvalue()==\"All present\\n\"",
+    "result_file": ""
+  },
+  "code": "def show_absent(counts):\n    found = False\n    for value in range(10):\n        if counts[value] == 0:\n            print(value)\n            found = True\n    if not found:\n        print(\"All present\")",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

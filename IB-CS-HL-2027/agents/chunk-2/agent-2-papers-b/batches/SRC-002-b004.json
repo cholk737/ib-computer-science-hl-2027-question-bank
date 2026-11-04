@@ -1,0 +1,881 @@
+{
+  "source_id": "SRC-002",
+  "batch_id": "SRC-002-b004",
+  "source_questions": [
+    {
+      "source_question_id": "H-SRC002-Q05-c",
+      "source_id": "SRC-002",
+      "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+      "year": "2026",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "A/B/C",
+      "option": "B",
+      "question": 5,
+      "subquestion": "c",
+      "source_pdf_pages": [
+        9
+      ],
+      "source_printed_pages": [
+        "9"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "Outline why cellF4 produced an error.",
+      "parent_context": "-8-\n2226-4429\nOption B - Modelling and simulation\n5.\nThe spreadsheet extract in Figure 5 shows the scores for five students at City Walk School\nfor two semesters (Sem 1 and Sem 2).\nFigure 5: Spreadsheet extract showing five students' scores for two semesters\nA\nB\nC\nD\nE\n1\nStudent name\nSem 1\nSem 2\nFinal %\nStudent grade\n2\nElaine Anaya Khan\n20\n30\n50.0\n3\nAngel Chanchikova\n32\n54\n87.5\n4\nIsabella\n26\n45\n72.5\n5\nSarah Naveneethan\n32\n38\n67.5\n6\nScott Abou Khalil\n16\n24\n40.0\n• Sem 1 scores (column B) are out of 40.\n• Sem 2 scores (column C) are out of 60.\n• Final (column D) combines the scores for both semesters, weighted 25% for semester 1\n(Sem 1) and 75 % for semester 2 (Sem 2).\n(a) (i)\nState Elaine Anaya Khan's percentage for semester 1.\n[1]\n(ii) Construct the formula to calculate the percentage for cell D2.\n[2]\nCity Walk School reports students' grades from lowest to highest (E to A), inclusively:\n• A score between 35 and 46, inclusive, returns an E grade.\n• A score between 47 and 59, inclusive, returns a D grade.\n• A score between 60 and 69, inclusive, returns a C grade\n• A score between 69 and 84, inclusive, returns a B grade.\n• A score of 85 or more returns an A grade.\n(Option B continues on the following page)\n-9-\n2226-4429\n(Option B, question 5 continued)\nThe data for these scores are stored in columns H and I (see Figure 6).\nFigure 6\nD\nE\n•**\nH\n1\nStudent name\nFinal\nStudent grade\nSchool score\nGrade\n2\nElaine Anaya Khan\n50.0\n35\nE\n3\nAngel Chanchikova\n87.5\n47\nD\n4\nIsabella\n72.5\n60\n5\nSarah Naveneethan\n67.5\n70\nB\n6\nScott Abou Khalil\n40.0\n85\nA\n(b) Construct a formula to automatically add Elaine Anaya Khan's grade (shown in\ncolumn l) to cell E2.\n[3]\nThe formula =FIND (A2,\" \") has been added to cell F2 and replicated down the rest\nof the column (see Figure 7).\nFigure 7\nA\n•.•\nF\n1\nStudent name\nFIND\n2\nElaine Anaya Khan\n7\n3\nAngel Chanchikova\n6\n4\nIsabella\n#VALUE!\n5\nSarah Naveneethan\n6\nA000\n6\nScott Abou Khalil\n6\nRow 4 produces an error.\n(c)\nOutline why cell F4 produced an error.\n(2)\n(Option B continues on page 11)\n-\n-11-\n2226-4429\n(Option B, question 5 continued)\nThe function =ISNUMBER (value) returns TRUE if the value is a number and FALSE if the\nvalue is not a number.\nFor example, the value in F2 should be 7 because 7 is an integer. The value in F4 should be\nFALSE because #VALUE! is not an integer.\n(d) Construct a formula for cell F4 as described.\n[3]\nTo fix the error in row 4, Isabella's last name has been added. Two additional columns have\nbeen inserted: Last name and First name (see Figure 8).\nFigure 8\nD\n1\nStudent name\nLast name\nFirst name\nSem 1\n2\nElaine Anaya Khan\nKhan\nElaine\n20\n3\nAngel Chanchikova\nChanchikova\nAngel\n32\n4\nIsabella Hodroge\nHodroge\nIsabella\n26\n5\nSarah Naveneethan\nNaveneethan\nSarah\n32\n6\nScott Abou Khalil\nKhalil\nScott\n16\nThe first name in cell C2 has been extracted from the full name in cell A2 using the MID\nfunction and FIND function:\n=MID(A2, 1, FIND(\" \",A2) -1)\nIn column B, last names have been extracted from the student names in column A.\nAny middle name has been ignored.\n(e) Explain how a last name could be extracted while ignoring a middle name.\n[4]\n(Option B continues on the following page)",
+      "assets": [
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-08.png",
+          "source_pdf_page": 8,
+          "visually_verified": true
+        },
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-09.png",
+          "source_pdf_page": 9,
+          "visually_verified": true
+        },
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-11.png",
+          "source_pdf_page": 11,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline why cellF4 produced an error.",
+        "A Python program evaluates full_name"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "not_uploaded",
+        "source_id": "",
+        "filename": "",
+        "pdf_pages": [],
+        "question_reference": "Q5 c",
+        "marking_summary": "The string contains no space, so index cannot find the requested substring and signals failure with ValueError.",
+        "source_issues": [
+          "Source FIND(A2,\" \") reverses the usual spreadsheet arguments; its displayed results assume FIND(\" \",A2). Rewritten Python semantics explicit."
+        ],
+        "source_marking_evidence": ""
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.1.2",
+          "scope_evidence": "• Writing of programs that accurately identify and extract substrings from given strings, demonstrating the ability to perform various manipulations, such as altering, concatenating or replacing",
+          "rationale": "A Python program evaluates full_name assesses Construct programs that can extract and manipulate substrings.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.1.3",
+          "scope_evidence": "• Potential points of failure in a program must include unexpected inputs, resource unavailability, logic errors.\n• The role of exception handling in developing programs\n• Exception handling constructs that effectively manage errors must include try/catch in Java, and try/except in Python, along with the finally block.",
+          "rationale": "A Python program evaluates full_name assesses Describe how programs use common exception handling techniques.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "No uploaded MS; independent unofficial answer.",
+        "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+        "technical": "Executed missing-space case."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC002-Q05-c"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC002-Q05-d",
+      "source_id": "SRC-002",
+      "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+      "year": "2026",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "A/B/C",
+      "option": "B",
+      "question": 5,
+      "subquestion": "d",
+      "source_pdf_pages": [
+        11
+      ],
+      "source_printed_pages": [
+        "11"
+      ],
+      "original_marks": 3,
+      "command_term": "Construct",
+      "original_text": "Construct a formula for cellF4 as described.",
+      "parent_context": "-8-\n2226-4429\nOption B - Modelling and simulation\n5.\nThe spreadsheet extract in Figure 5 shows the scores for five students at City Walk School\nfor two semesters (Sem 1 and Sem 2).\nFigure 5: Spreadsheet extract showing five students' scores for two semesters\nA\nB\nC\nD\nE\n1\nStudent name\nSem 1\nSem 2\nFinal %\nStudent grade\n2\nElaine Anaya Khan\n20\n30\n50.0\n3\nAngel Chanchikova\n32\n54\n87.5\n4\nIsabella\n26\n45\n72.5\n5\nSarah Naveneethan\n32\n38\n67.5\n6\nScott Abou Khalil\n16\n24\n40.0\n• Sem 1 scores (column B) are out of 40.\n• Sem 2 scores (column C) are out of 60.\n• Final (column D) combines the scores for both semesters, weighted 25% for semester 1\n(Sem 1) and 75 % for semester 2 (Sem 2).\n(a) (i)\nState Elaine Anaya Khan's percentage for semester 1.\n[1]\n(ii) Construct the formula to calculate the percentage for cell D2.\n[2]\nCity Walk School reports students' grades from lowest to highest (E to A), inclusively:\n• A score between 35 and 46, inclusive, returns an E grade.\n• A score between 47 and 59, inclusive, returns a D grade.\n• A score between 60 and 69, inclusive, returns a C grade\n• A score between 69 and 84, inclusive, returns a B grade.\n• A score of 85 or more returns an A grade.\n(Option B continues on the following page)\n-9-\n2226-4429\n(Option B, question 5 continued)\nThe data for these scores are stored in columns H and I (see Figure 6).\nFigure 6\nD\nE\n•**\nH\n1\nStudent name\nFinal\nStudent grade\nSchool score\nGrade\n2\nElaine Anaya Khan\n50.0\n35\nE\n3\nAngel Chanchikova\n87.5\n47\nD\n4\nIsabella\n72.5\n60\n5\nSarah Naveneethan\n67.5\n70\nB\n6\nScott Abou Khalil\n40.0\n85\nA\n(b) Construct a formula to automatically add Elaine Anaya Khan's grade (shown in\ncolumn l) to cell E2.\n[3]\nThe formula =FIND (A2,\" \") has been added to cell F2 and replicated down the rest\nof the column (see Figure 7).\nFigure 7\nA\n•.•\nF\n1\nStudent name\nFIND\n2\nElaine Anaya Khan\n7\n3\nAngel Chanchikova\n6\n4\nIsabella\n#VALUE!\n5\nSarah Naveneethan\n6\nA000\n6\nScott Abou Khalil\n6\nRow 4 produces an error.\n(c)\nOutline why cell F4 produced an error.\n(2)\n(Option B continues on page 11)\n-\n-11-\n2226-4429\n(Option B, question 5 continued)\nThe function =ISNUMBER (value) returns TRUE if the value is a number and FALSE if the\nvalue is not a number.\nFor example, the value in F2 should be 7 because 7 is an integer. The value in F4 should be\nFALSE because #VALUE! is not an integer.\n(d) Construct a formula for cell F4 as described.\n[3]\nTo fix the error in row 4, Isabella's last name has been added. Two additional columns have\nbeen inserted: Last name and First name (see Figure 8).\nFigure 8\nD\n1\nStudent name\nLast name\nFirst name\nSem 1\n2\nElaine Anaya Khan\nKhan\nElaine\n20\n3\nAngel Chanchikova\nChanchikova\nAngel\n32\n4\nIsabella Hodroge\nHodroge\nIsabella\n26\n5\nSarah Naveneethan\nNaveneethan\nSarah\n32\n6\nScott Abou Khalil\nKhalil\nScott\n16\nThe first name in cell C2 has been extracted from the full name in cell A2 using the MID\nfunction and FIND function:\n=MID(A2, 1, FIND(\" \",A2) -1)\nIn column B, last names have been extracted from the student names in column A.\nAny middle name has been ignored.\n(e) Explain how a last name could be extracted while ignoring a middle name.\n[4]\n(Option B continues on the following page)",
+      "assets": [
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-08.png",
+          "source_pdf_page": 8,
+          "visually_verified": true
+        },
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-09.png",
+          "source_pdf_page": 9,
+          "visually_verified": true
+        },
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-11.png",
+          "source_pdf_page": 11,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Construct a formula for cellF4 as described.",
+        "Construct first_space_or_false(name) in Python"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "not_uploaded",
+        "source_id": "",
+        "filename": "",
+        "pdf_pages": [],
+        "question_reference": "Q5 d",
+        "marking_summary": "One solution:\ndef first_space_or_false(name):\n    try:\n        return name.index(' ')\n    except ValueError:\n        return False",
+        "source_issues": [],
+        "source_marking_evidence": ""
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.1.3",
+          "scope_evidence": "• Potential points of failure in a program must include unexpected inputs, resource unavailability, logic errors.\n• The role of exception handling in developing programs\n• Exception handling constructs that effectively manage errors must include try/catch in Java, and try/except in Python, along with the finally block.",
+          "rationale": "Construct first_space_or_false(name) in Python assesses Describe how programs use common exception handling techniques.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "No uploaded MS; independent unofficial answer.",
+        "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+        "technical": "Both present and absent delimiters executed."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC002-Q05-d"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC002-Q05-e",
+      "source_id": "SRC-002",
+      "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+      "year": "2026",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "A/B/C",
+      "option": "B",
+      "question": 5,
+      "subquestion": "e",
+      "source_pdf_pages": [
+        11
+      ],
+      "source_printed_pages": [
+        "11"
+      ],
+      "original_marks": 4,
+      "command_term": "Explain",
+      "original_text": "Explain how a last name could be extracted while ignoring a middle name.",
+      "parent_context": "-8-\n2226-4429\nOption B - Modelling and simulation\n5.\nThe spreadsheet extract in Figure 5 shows the scores for five students at City Walk School\nfor two semesters (Sem 1 and Sem 2).\nFigure 5: Spreadsheet extract showing five students' scores for two semesters\nA\nB\nC\nD\nE\n1\nStudent name\nSem 1\nSem 2\nFinal %\nStudent grade\n2\nElaine Anaya Khan\n20\n30\n50.0\n3\nAngel Chanchikova\n32\n54\n87.5\n4\nIsabella\n26\n45\n72.5\n5\nSarah Naveneethan\n32\n38\n67.5\n6\nScott Abou Khalil\n16\n24\n40.0\n• Sem 1 scores (column B) are out of 40.\n• Sem 2 scores (column C) are out of 60.\n• Final (column D) combines the scores for both semesters, weighted 25% for semester 1\n(Sem 1) and 75 % for semester 2 (Sem 2).\n(a) (i)\nState Elaine Anaya Khan's percentage for semester 1.\n[1]\n(ii) Construct the formula to calculate the percentage for cell D2.\n[2]\nCity Walk School reports students' grades from lowest to highest (E to A), inclusively:\n• A score between 35 and 46, inclusive, returns an E grade.\n• A score between 47 and 59, inclusive, returns a D grade.\n• A score between 60 and 69, inclusive, returns a C grade\n• A score between 69 and 84, inclusive, returns a B grade.\n• A score of 85 or more returns an A grade.\n(Option B continues on the following page)\n-9-\n2226-4429\n(Option B, question 5 continued)\nThe data for these scores are stored in columns H and I (see Figure 6).\nFigure 6\nD\nE\n•**\nH\n1\nStudent name\nFinal\nStudent grade\nSchool score\nGrade\n2\nElaine Anaya Khan\n50.0\n35\nE\n3\nAngel Chanchikova\n87.5\n47\nD\n4\nIsabella\n72.5\n60\n5\nSarah Naveneethan\n67.5\n70\nB\n6\nScott Abou Khalil\n40.0\n85\nA\n(b) Construct a formula to automatically add Elaine Anaya Khan's grade (shown in\ncolumn l) to cell E2.\n[3]\nThe formula =FIND (A2,\" \") has been added to cell F2 and replicated down the rest\nof the column (see Figure 7).\nFigure 7\nA\n•.•\nF\n1\nStudent name\nFIND\n2\nElaine Anaya Khan\n7\n3\nAngel Chanchikova\n6\n4\nIsabella\n#VALUE!\n5\nSarah Naveneethan\n6\nA000\n6\nScott Abou Khalil\n6\nRow 4 produces an error.\n(c)\nOutline why cell F4 produced an error.\n(2)\n(Option B continues on page 11)\n-\n-11-\n2226-4429\n(Option B, question 5 continued)\nThe function =ISNUMBER (value) returns TRUE if the value is a number and FALSE if the\nvalue is not a number.\nFor example, the value in F2 should be 7 because 7 is an integer. The value in F4 should be\nFALSE because #VALUE! is not an integer.\n(d) Construct a formula for cell F4 as described.\n[3]\nTo fix the error in row 4, Isabella's last name has been added. Two additional columns have\nbeen inserted: Last name and First name (see Figure 8).\nFigure 8\nD\n1\nStudent name\nLast name\nFirst name\nSem 1\n2\nElaine Anaya Khan\nKhan\nElaine\n20\n3\nAngel Chanchikova\nChanchikova\nAngel\n32\n4\nIsabella Hodroge\nHodroge\nIsabella\n26\n5\nSarah Naveneethan\nNaveneethan\nSarah\n32\n6\nScott Abou Khalil\nKhalil\nScott\n16\nThe first name in cell C2 has been extracted from the full name in cell A2 using the MID\nfunction and FIND function:\n=MID(A2, 1, FIND(\" \",A2) -1)\nIn column B, last names have been extracted from the student names in column A.\nAny middle name has been ignored.\n(e) Explain how a last name could be extracted while ignoring a middle name.\n[4]\n(Option B continues on the following page)",
+      "assets": [
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-08.png",
+          "source_pdf_page": 8,
+          "visually_verified": true
+        },
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-09.png",
+          "source_pdf_page": 9,
+          "visually_verified": true
+        },
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-11.png",
+          "source_pdf_page": 11,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Explain how a last name could be extracted while ignoring a middle name.",
+        "Names contain a first name,zero or more middle names,and a final surname token separated by single spaces"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "not_uploaded",
+        "source_id": "",
+        "filename": "",
+        "pdf_pages": [],
+        "question_reference": "Q5 e",
+        "marking_summary": "Find the final space,then take the substring after it; if there is no space,the whole string is the only token. Under the stated format,the last token is the surname. Compound surnames would require different metadata or a different format.",
+        "source_issues": [],
+        "source_marking_evidence": ""
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.1.2",
+          "scope_evidence": "• Writing of programs that accurately identify and extract substrings from given strings, demonstrating the ability to perform various manipulations, such as altering, concatenating or replacing",
+          "rationale": "Names contain a first name,zero or more middle names,and a final surname token separated by single spaces assesses Construct programs that can extract and manipulate substrings.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "No uploaded MS; independent unofficial answer.",
+        "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC002-Q05-e"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC002-Q06-a",
+      "source_id": "SRC-002",
+      "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+      "year": "2026",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "A/B/C",
+      "option": "B",
+      "question": 6,
+      "subquestion": "a",
+      "source_pdf_pages": [
+        12
+      ],
+      "source_printed_pages": [
+        "12"
+      ],
+      "original_marks": 2,
+      "command_term": "See original prompt",
+      "original_text": "Calculate KS to one decimal place, where SSS=60. You must show your working.",
+      "parent_context": "-12-\n2226-4429\n(Option B continued)\nSchools in the region are required to upload student names and their scores for each\nsubject to the portal of the Ministry of Education (a governmental organization that\noversees standards for examination scores).\nCity Walk School's grade boundaries* are lower than the Ministry of Education's grade\nboundaries, as shown in Figure 9.\nFigure 9: Grade boundaries for City Walk School and the Ministry of Education\nH\nK\n1\nSchool score\nGrade\nMinistry score\nGrade\n2\n35-46\n40-51\nE\n3\n47-59\nD\n52-65\nD\n4\n60-69\n66-75\n5\n70-84\nB\n76-90\nB\n6\n85-100\nA\n91-100\nConsider the formula:\n( SSS - MinSS\nKS =\n(axs--Mmsss (91-40)+40\nwhere:\n• SSS is the student's school score.\n• MinSS is 35, the minimum score in the school's data range.\n• MaxSS is 85, the minimum score for an A grade in the school's data range.\n• 40 is the minimum score in the Ministry of Education's data range.\n• 91 is the minimum score for an A grade in the Ministry of Education's data range.\nThis formula is used to scale data from one range (e.g. school score: 35-85) to a different\nrange (Ministry score: 40-91).\n(a) Calculate KS to one decimal place, where SSS = 60.\nYou must show your working.\n[2)\n* grade boundaries: the range of marks required to achieve a specific grade\n(Ontion B continues on the following page)\n- 13 -\n2226-4429\n(Option B, question 6 continued)\nThe spreadsheet extract shown in Figure 9 has been imported into a program.\n• An array, STUDENTS, stores student's last names.\n• An array, SCORES, stores student's school scores rounded to the nearest integer.\n• An array, MINISTRY, consists of five integers of 0.\nSTUDENTS = [Khan, Chanchikova, Hodroge, Naveneethan, Khalil]\nSCORES = [50, 88, 73, 68, 40]\nMINISTRY = [0, 0, 0, 0, 0]\nA pseudocode algorithm should take each value in the SCORES array and apply the formula\nto calculate the Ministry score. The result of this calculation should be rounded to the nearest\ninteger and stored in the MINISTRY array.\n(b) Construct an algorithm in pseudocode as described.\n[3]\nWhen schools upload student names and scores, the portal only allows integers between 40\nand 100 to be entered. The Ministry of Education runs several automated checks on the data.\nDescribe one other automated check the Ministry of Education might use to ensure the\ndata is accurate.\n[3]\nFor a student to achieve a grade A, they must score between 91 and 100.\nA pseudocode algorithm should count the number of grade A students and store the result\nas a percentage of the total number of students.\n(d)\nConstruct an algorithm in pseudocode as described.\n(4]\n(Option B continues on the following page)\nA000",
+      "assets": [
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-12.png",
+          "source_pdf_page": 12,
+          "visually_verified": true
+        },
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-13.png",
+          "source_pdf_page": 13,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Calculate KS to one decimal place, where SSS=60. You must show your working.",
+        "Rescaling a supplied numerical formula by hand is not itself a coded2027 CS requirement."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "not_uploaded",
+        "source_id": "",
+        "filename": "",
+        "pdf_pages": [],
+        "question_reference": "Q6 a",
+        "marking_summary": "Excluded topic; original criteria retained in referenced MS source.",
+        "source_issues": [],
+        "source_marking_evidence": ""
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Rescaling a supplied numerical formula by hand is not itself a coded2027 CS requirement.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "No uploaded MS; independent unofficial answer.",
+        "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": []
+    },
+    {
+      "source_question_id": "H-SRC002-Q06-b",
+      "source_id": "SRC-002",
+      "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+      "year": "2026",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "A/B/C",
+      "option": "B",
+      "question": 6,
+      "subquestion": "b",
+      "source_pdf_pages": [
+        13
+      ],
+      "source_printed_pages": [
+        "13"
+      ],
+      "original_marks": 3,
+      "command_term": "Construct",
+      "original_text": "Construct an algorithm in pseudocode as described.",
+      "parent_context": "-12-\n2226-4429\n(Option B continued)\nSchools in the region are required to upload student names and their scores for each\nsubject to the portal of the Ministry of Education (a governmental organization that\noversees standards for examination scores).\nCity Walk School's grade boundaries* are lower than the Ministry of Education's grade\nboundaries, as shown in Figure 9.\nFigure 9: Grade boundaries for City Walk School and the Ministry of Education\nH\nK\n1\nSchool score\nGrade\nMinistry score\nGrade\n2\n35-46\n40-51\nE\n3\n47-59\nD\n52-65\nD\n4\n60-69\n66-75\n5\n70-84\nB\n76-90\nB\n6\n85-100\nA\n91-100\nConsider the formula:\n( SSS - MinSS\nKS =\n(axs--Mmsss (91-40)+40\nwhere:\n• SSS is the student's school score.\n• MinSS is 35, the minimum score in the school's data range.\n• MaxSS is 85, the minimum score for an A grade in the school's data range.\n• 40 is the minimum score in the Ministry of Education's data range.\n• 91 is the minimum score for an A grade in the Ministry of Education's data range.\nThis formula is used to scale data from one range (e.g. school score: 35-85) to a different\nrange (Ministry score: 40-91).\n(a) Calculate KS to one decimal place, where SSS = 60.\nYou must show your working.\n[2)\n* grade boundaries: the range of marks required to achieve a specific grade\n(Ontion B continues on the following page)\n- 13 -\n2226-4429\n(Option B, question 6 continued)\nThe spreadsheet extract shown in Figure 9 has been imported into a program.\n• An array, STUDENTS, stores student's last names.\n• An array, SCORES, stores student's school scores rounded to the nearest integer.\n• An array, MINISTRY, consists of five integers of 0.\nSTUDENTS = [Khan, Chanchikova, Hodroge, Naveneethan, Khalil]\nSCORES = [50, 88, 73, 68, 40]\nMINISTRY = [0, 0, 0, 0, 0]\nA pseudocode algorithm should take each value in the SCORES array and apply the formula\nto calculate the Ministry score. The result of this calculation should be rounded to the nearest\ninteger and stored in the MINISTRY array.\n(b) Construct an algorithm in pseudocode as described.\n[3]\nWhen schools upload student names and scores, the portal only allows integers between 40\nand 100 to be entered. The Ministry of Education runs several automated checks on the data.\nDescribe one other automated check the Ministry of Education might use to ensure the\ndata is accurate.\n[3]\nFor a student to achieve a grade A, they must score between 91 and 100.\nA pseudocode algorithm should count the number of grade A students and store the result\nas a percentage of the total number of students.\n(d)\nConstruct an algorithm in pseudocode as described.\n(4]\n(Option B continues on the following page)\nA000",
+      "assets": [
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-12.png",
+          "source_pdf_page": 12,
+          "visually_verified": true
+        },
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-13.png",
+          "source_pdf_page": 13,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Construct an algorithm in pseudocode as described.",
+        "Construct scale_scores(scores) in Python"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "not_uploaded",
+        "source_id": "",
+        "filename": "",
+        "pdf_pages": [],
+        "question_reference": "Q6 b",
+        "marking_summary": "One solution:\ndef scale_scores(scores):\n    result = []\n    for score in scores:\n        result.append(round((score-20)/(80-20)*(95-30)+30))\n    return result",
+        "source_issues": [],
+        "source_marking_evidence": ""
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Construct scale_scores(scores) in Python assesses Construct programs that apply arrays and Lists.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "Construct scale_scores(scores) in Python assesses Construct programs that utilize looping structures to perform repeated actions.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "No uploaded MS; independent unofficial answer.",
+        "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+        "technical": "Endpoints and midpoint executed; Python round tie convention explicitly specified."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC002-Q06-b"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC002-Q06-c",
+      "source_id": "SRC-002",
+      "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+      "year": "2026",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "A/B/C",
+      "option": "B",
+      "question": 6,
+      "subquestion": "c",
+      "source_pdf_pages": [
+        13
+      ],
+      "source_printed_pages": [
+        "13"
+      ],
+      "original_marks": 3,
+      "command_term": "Describe",
+      "original_text": "Describe one other automated check the Ministry of Education might use to ensure the data is accurate.",
+      "parent_context": "-12-\n2226-4429\n(Option B continued)\nSchools in the region are required to upload student names and their scores for each\nsubject to the portal of the Ministry of Education (a governmental organization that\noversees standards for examination scores).\nCity Walk School's grade boundaries* are lower than the Ministry of Education's grade\nboundaries, as shown in Figure 9.\nFigure 9: Grade boundaries for City Walk School and the Ministry of Education\nH\nK\n1\nSchool score\nGrade\nMinistry score\nGrade\n2\n35-46\n40-51\nE\n3\n47-59\nD\n52-65\nD\n4\n60-69\n66-75\n5\n70-84\nB\n76-90\nB\n6\n85-100\nA\n91-100\nConsider the formula:\n( SSS - MinSS\nKS =\n(axs--Mmsss (91-40)+40\nwhere:\n• SSS is the student's school score.\n• MinSS is 35, the minimum score in the school's data range.\n• MaxSS is 85, the minimum score for an A grade in the school's data range.\n• 40 is the minimum score in the Ministry of Education's data range.\n• 91 is the minimum score for an A grade in the Ministry of Education's data range.\nThis formula is used to scale data from one range (e.g. school score: 35-85) to a different\nrange (Ministry score: 40-91).\n(a) Calculate KS to one decimal place, where SSS = 60.\nYou must show your working.\n[2)\n* grade boundaries: the range of marks required to achieve a specific grade\n(Ontion B continues on the following page)\n- 13 -\n2226-4429\n(Option B, question 6 continued)\nThe spreadsheet extract shown in Figure 9 has been imported into a program.\n• An array, STUDENTS, stores student's last names.\n• An array, SCORES, stores student's school scores rounded to the nearest integer.\n• An array, MINISTRY, consists of five integers of 0.\nSTUDENTS = [Khan, Chanchikova, Hodroge, Naveneethan, Khalil]\nSCORES = [50, 88, 73, 68, 40]\nMINISTRY = [0, 0, 0, 0, 0]\nA pseudocode algorithm should take each value in the SCORES array and apply the formula\nto calculate the Ministry score. The result of this calculation should be rounded to the nearest\ninteger and stored in the MINISTRY array.\n(b) Construct an algorithm in pseudocode as described.\n[3]\nWhen schools upload student names and scores, the portal only allows integers between 40\nand 100 to be entered. The Ministry of Education runs several automated checks on the data.\nDescribe one other automated check the Ministry of Education might use to ensure the\ndata is accurate.\n[3]\nFor a student to achieve a grade A, they must score between 91 and 100.\nA pseudocode algorithm should count the number of grade A students and store the result\nas a percentage of the total number of students.\n(d)\nConstruct an algorithm in pseudocode as described.\n(4]\n(Option B continues on the following page)\nA000",
+      "assets": [
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-12.png",
+          "source_pdf_page": 12,
+          "visually_verified": true
+        },
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-13.png",
+          "source_pdf_page": 13,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Describe one other automated check the Ministry of Education might use to ensure the data is accurate.",
+        "General administrative checks claimed to ensure input accuracy are not a distinct2027 learning statement; no unrelated network countermeasure or ML scenario inferred."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "not_uploaded",
+        "source_id": "",
+        "filename": "",
+        "pdf_pages": [],
+        "question_reference": "Q6 c",
+        "marking_summary": "Excluded topic; original criteria retained in referenced MS source.",
+        "source_issues": [],
+        "source_marking_evidence": ""
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "General administrative checks claimed to ensure input accuracy are not a distinct2027 learning statement; no unrelated network countermeasure or ML scenario inferred.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "No uploaded MS; independent unofficial answer.",
+        "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": []
+    },
+    {
+      "source_question_id": "H-SRC002-Q06-d",
+      "source_id": "SRC-002",
+      "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+      "year": "2026",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "A/B/C",
+      "option": "B",
+      "question": 6,
+      "subquestion": "d",
+      "source_pdf_pages": [
+        13
+      ],
+      "source_printed_pages": [
+        "13"
+      ],
+      "original_marks": 4,
+      "command_term": "Construct",
+      "original_text": "Construct an algorithm in pseudocode as described.",
+      "parent_context": "-12-\n2226-4429\n(Option B continued)\nSchools in the region are required to upload student names and their scores for each\nsubject to the portal of the Ministry of Education (a governmental organization that\noversees standards for examination scores).\nCity Walk School's grade boundaries* are lower than the Ministry of Education's grade\nboundaries, as shown in Figure 9.\nFigure 9: Grade boundaries for City Walk School and the Ministry of Education\nH\nK\n1\nSchool score\nGrade\nMinistry score\nGrade\n2\n35-46\n40-51\nE\n3\n47-59\nD\n52-65\nD\n4\n60-69\n66-75\n5\n70-84\nB\n76-90\nB\n6\n85-100\nA\n91-100\nConsider the formula:\n( SSS - MinSS\nKS =\n(axs--Mmsss (91-40)+40\nwhere:\n• SSS is the student's school score.\n• MinSS is 35, the minimum score in the school's data range.\n• MaxSS is 85, the minimum score for an A grade in the school's data range.\n• 40 is the minimum score in the Ministry of Education's data range.\n• 91 is the minimum score for an A grade in the Ministry of Education's data range.\nThis formula is used to scale data from one range (e.g. school score: 35-85) to a different\nrange (Ministry score: 40-91).\n(a) Calculate KS to one decimal place, where SSS = 60.\nYou must show your working.\n[2)\n* grade boundaries: the range of marks required to achieve a specific grade\n(Ontion B continues on the following page)\n- 13 -\n2226-4429\n(Option B, question 6 continued)\nThe spreadsheet extract shown in Figure 9 has been imported into a program.\n• An array, STUDENTS, stores student's last names.\n• An array, SCORES, stores student's school scores rounded to the nearest integer.\n• An array, MINISTRY, consists of five integers of 0.\nSTUDENTS = [Khan, Chanchikova, Hodroge, Naveneethan, Khalil]\nSCORES = [50, 88, 73, 68, 40]\nMINISTRY = [0, 0, 0, 0, 0]\nA pseudocode algorithm should take each value in the SCORES array and apply the formula\nto calculate the Ministry score. The result of this calculation should be rounded to the nearest\ninteger and stored in the MINISTRY array.\n(b) Construct an algorithm in pseudocode as described.\n[3]\nWhen schools upload student names and scores, the portal only allows integers between 40\nand 100 to be entered. The Ministry of Education runs several automated checks on the data.\nDescribe one other automated check the Ministry of Education might use to ensure the\ndata is accurate.\n[3]\nFor a student to achieve a grade A, they must score between 91 and 100.\nA pseudocode algorithm should count the number of grade A students and store the result\nas a percentage of the total number of students.\n(d)\nConstruct an algorithm in pseudocode as described.\n(4]\n(Option B continues on the following page)\nA000",
+      "assets": [
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-12.png",
+          "source_pdf_page": 12,
+          "visually_verified": true
+        },
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-13.png",
+          "source_pdf_page": 13,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Construct an algorithm in pseudocode as described.",
+        "Construct high_percentage(scores) for a nonempty Python list of numerical scores"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "not_uploaded",
+        "source_id": "",
+        "filename": "",
+        "pdf_pages": [],
+        "question_reference": "Q6 d",
+        "marking_summary": "One solution:\ndef high_percentage(scores):\n    count = 0\n    for score in scores:\n        if 91 <= score <= 100:\n            count += 1\n    return count / len(scores) * 100",
+        "source_issues": [],
+        "source_marking_evidence": ""
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Construct high_percentage(scores) for a nonempty Python list of numerical scores assesses Construct programs that apply arrays and Lists.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Construct high_percentage(scores) for a nonempty Python list of numerical scores assesses Construct programs utilizing appropriate selection structures.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "Construct high_percentage(scores) for a nonempty Python list of numerical scores assesses Construct programs that utilize looping structures to perform repeated actions.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "No uploaded MS; independent unofficial answer.",
+        "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+        "technical": "Both qualifying boundaries and adjacent values executed."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC002-Q06-d"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC002-Q07-a",
+      "source_id": "SRC-002",
+      "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+      "year": "2026",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "A/B/C",
+      "option": "B",
+      "question": 7,
+      "subquestion": "a",
+      "source_pdf_pages": [
+        14
+      ],
+      "source_printed_pages": [
+        "14"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "Outline what is meant by real-time simulation.",
+      "parent_context": "-14-\n2226-4429\n(Option B continued)\n7.\nThe Ministry of Education is developing a real-time simulation model to monitor and analyse\nthe impact of student attendance on academic performance across all schools in the region.\n(a)\nOutline what is meant by real-time simulation.\n[2]\nStudent attendance rate is a variable used in the simulation.\n(b) Identify three other variables that would be required to model this simulation effectively. [3]\n(c) Outline two categories of hardware needed for this simulation.\n[4]\nThe Ministry of Education decided to use City Walk School as a test case to assess the\nsimulation model's accuracy in predicting student scores based on attendance.\n(d) Discuss one factor that could be used to judge the effectiveness of this test case for\nassessing the accuracy of the simulation model.\n[5]\nAfter completing the test case, the Ministry of Education applied the simulation to all schools\nin the region. A heat map visualization was used to show the relationship between absences\nand grades (see Figure 10).\nFigure 10: Heat map visualization showing the relationship\nbetween absences and grades in schools in the region\n100\n80\n•\n60\n40\n20\n0\nAbsences\n(e)\nOutline two factors that would affect the memory needs of a 2D visualization such as\nthe heat map shown in Figure 10.\n(4]\n(Option B continues on the following page)",
+      "assets": [
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-14.png",
+          "source_pdf_page": 14,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline what is meant by real-time simulation.",
+        "Real-time simulation terminology is outside2027 individual scope; control-system real-time response is not the same objective."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "not_uploaded",
+        "source_id": "",
+        "filename": "",
+        "pdf_pages": [],
+        "question_reference": "Q7 a",
+        "marking_summary": "Excluded topic; original criteria retained in referenced MS source.",
+        "source_issues": [],
+        "source_marking_evidence": ""
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Real-time simulation terminology is outside2027 individual scope; control-system real-time response is not the same objective.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "No uploaded MS; independent unofficial answer.",
+        "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": []
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC002-Q05-c",
+      "source_question_ids": [
+        "H-SRC002-Q05-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "A Python program evaluates full_name.index(\" \"). Outline why it raises ValueError when full_name is \"Isabella\".",
+      "syllabus_codes": [
+        "B2.1.2",
+        "B2.1.3"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "The string contains no space, so index cannot find the requested substring and signals failure with ValueError.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Requested delimiter/substring absent."
+        },
+        {
+          "marks": 1,
+          "criterion": "index raises ValueError rather than returning a valid position."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Executed missing-space case.",
+        "source_comparison": [],
+        "test_code": "try:\n \"Isabella\".index(\" \")\n raise AssertionError(\"missing ValueError\")\nexcept ValueError:pass",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC002-Q05-d",
+      "source_question_ids": [
+        "H-SRC002-Q05-d"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct first_space_or_false(name) in Python. Return the zero-based index of the first space, or the Boolean False if no space exists. Use try/except to handle the missing-space case.",
+      "syllabus_codes": [
+        "B2.1.3"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 3,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "One solution:\ndef first_space_or_false(name):\n    try:\n        return name.index(' ')\n    except ValueError:\n        return False",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Attempts index lookup in try."
+        },
+        {
+          "marks": 1,
+          "criterion": "Catches ValueError."
+        },
+        {
+          "marks": 1,
+          "criterion": "Returns index on success and False on failure."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Both present and absent delimiters executed.",
+        "source_comparison": [],
+        "test_code": "def first_space_or_false(name):\n    try:\n        return name.index(' ')\n    except ValueError:\n        return False\nassert first_space_or_false(\"Ari Moss\")==3\nassert first_space_or_false(\"Isabella\") is False",
+        "result_file": ""
+      },
+      "code": "def first_space_or_false(name):\n    try:\n        return name.index(' ')\n    except ValueError:\n        return False",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC002-Q05-e",
+      "source_question_ids": [
+        "H-SRC002-Q05-e"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Names contain a first name,zero or more middle names,and a final surname token separated by single spaces. Explain how a program can extract the final surname while ignoring middle names.",
+      "syllabus_codes": [
+        "B2.1.2"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 4,
+      "command_term": "Explain",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Find the final space,then take the substring after it; if there is no space,the whole string is the only token. Under the stated format,the last token is the surname. Compound surnames would require different metadata or a different format.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Locates last delimiter rather than first."
+        },
+        {
+          "marks": 1,
+          "criterion": "Extracts suffix after that delimiter."
+        },
+        {
+          "marks": 1,
+          "criterion": "Ignores preceding middle-name tokens."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct handling of single token or justified format assumption."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC002-Q06-b",
+      "source_question_ids": [
+        "H-SRC002-Q06-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct scale_scores(scores) in Python. For each score s,calculate (s-20)/(80-20)*(95-30)+30,round to the nearest integer using Python round,and store the result in a new list in the same order.",
+      "syllabus_codes": [
+        "B2.2.2",
+        "B2.3.3"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 3,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "One solution:\ndef scale_scores(scores):\n    result = []\n    for score in scores:\n        result.append(round((score-20)/(80-20)*(95-30)+30))\n    return result",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Loops over every input score."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct supplied calculation and rounding."
+        },
+        {
+          "marks": 1,
+          "criterion": "Builds/returns corresponding output list in order."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Endpoints and midpoint executed; Python round tie convention explicitly specified.",
+        "source_comparison": [],
+        "test_code": "def scale_scores(scores):\n    result = []\n    for score in scores:\n        result.append(round((score-20)/(80-20)*(95-30)+30))\n    return result\nassert scale_scores([20,50,80])==[30,62,95]",
+        "result_file": ""
+      },
+      "code": "def scale_scores(scores):\n    result = []\n    for score in scores:\n        result.append(round((score-20)/(80-20)*(95-30)+30))\n    return result",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC002-Q06-d",
+      "source_question_ids": [
+        "H-SRC002-Q06-d"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct high_percentage(scores) for a nonempty Python list of numerical scores. Return the percentage of entries between91 and100 inclusive.",
+      "syllabus_codes": [
+        "B2.2.2",
+        "B2.3.2",
+        "B2.3.3"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 4,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "One solution:\ndef high_percentage(scores):\n    count = 0\n    for score in scores:\n        if 91 <= score <= 100:\n            count += 1\n    return count / len(scores) * 100",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Initializes and traverses count."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct inclusive condition."
+        },
+        {
+          "marks": 1,
+          "criterion": "Counts qualifying entries only."
+        },
+        {
+          "marks": 1,
+          "criterion": "Divides by total and multiplies by100."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Both qualifying boundaries and adjacent values executed.",
+        "source_comparison": [],
+        "test_code": "def high_percentage(scores):\n    count = 0\n    for score in scores:\n        if 91 <= score <= 100:\n            count += 1\n    return count / len(scores) * 100\nassert high_percentage([90,91,100,101])==50\nassert high_percentage([40])==0",
+        "result_file": ""
+      },
+      "code": "def high_percentage(scores):\n    count = 0\n    for score in scores:\n        if 91 <= score <= 100:\n            count += 1\n    return count / len(scores) * 100",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    }
+  ]
+}

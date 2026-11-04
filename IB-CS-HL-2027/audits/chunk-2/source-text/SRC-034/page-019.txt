@@ -1,0 +1,55 @@
+                                                                                – 18 –                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    8823          –     7012
+
+Option D —                  Object-oriented programming
+
+14.                                    A company that manufactures a children’s card game, Monster Battle, wants to create a
+         software version. Figure 9 shows three sample cards from the game.
+
+                                         Figure 9: Three sample cards from Monster Battle
+
+
+
+
+
+
+
+
+
+
+
+                            NAME:        SPLASHY                                NAME:        SQUISHY                                NAME: FLAMEY
+
+               TYPE:      WATER MONSTER                           TYPE:      WATER MONSTER                           TYPE:        FIRE MONSTER
+              HEALTH POINTS:                  25                  HEALTH POINTS:                 20                  HEALTH POINTS:                 40
+
+                   SPECIAL ABILITIES:                                 SPECIAL ABILITIES:                                 SPECIAL ABILITIES:
+              1.         HEAL A   FRIEND                          1.        HEAL A   FRIEND                          1.        HEAL A   FRIEND
+              2.         PUT OUT FIRE                             2.         PUT OUT FIRE                            2.          HEAT WATER
+              3.                SOAK                              3.              CLEAN                              3.               BURN
+
+
+         Each monster begins the game with a number of health points, which are stated on the card,
+         and leaves the game when it has no remaining health points. During a battle between two
+         monsters, players take turns to roll the dice. The results determine how much each monster ’s
+         attack will reduce the defending monster ’s health points.
+
+         Some initial classes have been created to model this scenario.
+
+         public class Monster {
+             public static final int ICE_MONSTER_TYPE = 1;
+             public static final int WATER_MONSTER_TYPE = 2;
+             public static final int FIRE_MONSTER_TYPE = 3;
+             public String name = "Unknown";
+             public int health = 100;
+             public int strength = 10;
+             public int monsterType = 0;
+             public Monster(String name, int health, int monsterType) {
+                 this.name = name;
+                 this.health = health;
+                 this.monsterType = monsterType;
+             }
+             public void attack(Monster defender) {
+                 //to be written
+             }
+
+(Option D continues on the following page)

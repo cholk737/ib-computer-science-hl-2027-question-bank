@@ -1,0 +1,27 @@
+{
+  "question_id": "P-SRC002-Q05-c",
+  "unofficial": true,
+  "marks": 2,
+  "solution": "The string contains no space, so index cannot find the requested substring and signals failure with ValueError.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Requested delimiter/substring absent."
+    },
+    {
+      "marks": 1,
+      "criterion": "index raises ValueError rather than returning a valid position."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed missing-space case.",
+    "source_comparison": [],
+    "test_code": "try:\n \"Isabella\".index(\" \")\n raise AssertionError(\"missing ValueError\")\nexcept ValueError:pass",
+    "result_file": ""
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

@@ -1,0 +1,36 @@
+                                                –   23 –             M23/4/COMSC/HP1/ENG/TZ1/XX/M
+
+
+(c)   Award [8 max]
+      Example 1:
+      Award [1] for initializing LOWEST
+      Award [1] for correct row loop (I)
+      Award [1] for calculating the sum of all elements in the I    th row
+      Award [1] for using correct indexes in the DICEDIAL array
+      Award [1] for comparing the row sum with the       lowest row sum so far
+      Award [1] for and changing the value of LOWEST if needed
+      Award [1] for outputting the lowest row sum once
+      Award [1] for the second loop
+      Award [1] for comparing the row total with the     lowest row total
+      Award [1] for outputting row numbers (rows with the lowest total)
+
+      Note: The method heading may not appear in candidates’ responses.
+
+
+       lowestRT(DICEDIAL)
+           LOWEST = 19  // any number greater than 6*3 OR the first row total
+         loop I from 0 to 6
+                     SUM = DICEDIAL[I][0] + DICEDIAL[I][1] + DICEDIAL[I][2]
+                     if SUM < LOWEST
+                             then LOWEST = SUM
+                     end if
+         end loop
+         output(‘the LOWEST row total:’, LOWEST)
+         output(‘the LOWEST row total occurs in the following rows:’)
+         loop I from 0 to 6
+                     SUM = DICEDIAL[I][0] + DICEDIAL[I][1] + DICEDIAL[I][2]
+                     if SUM = LOWEST
+                             then output (I)
+                     end if
+        end loop
+      end lowestRT

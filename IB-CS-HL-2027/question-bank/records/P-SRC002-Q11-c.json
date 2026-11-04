@@ -1,0 +1,61 @@
+{
+  "question_id": "P-SRC002-Q11-c",
+  "source_question_ids": [
+    "H-SRC002-Q11-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Explain how a federated messaging service with independently operated servers differs from a service controlled by one central provider.",
+  "syllabus_codes": [
+    "A2.1.2"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 6,
+  "command_term": "Explain",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "Accounts/data are hosted across several operators rather than one provider’s infrastructure. Agreed communication lets users exchange messages across servers. This distributes administrative control and may reduce dependence on one operator,but introduces coordination and consistency challenges across nodes. If one server fails,other independent servers may continue local service,but affected accounts and cross-server exchanges can still be disrupted; this is resilience rather than universal availability.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Independent operators/nodes."
+    },
+    {
+      "marks": 1,
+      "criterion": "Data/workload distributed."
+    },
+    {
+      "marks": 1,
+      "criterion": "Cross-server communication."
+    },
+    {
+      "marks": 1,
+      "criterion": "Reduced single-provider control/dependence."
+    },
+    {
+      "marks": 1,
+      "criterion": "Develops resilience: failure of one server can leave other independent servers running,although affected accounts or cross-server messages may be unavailable."
+    },
+    {
+      "marks": 1,
+      "criterion": "Coordination/consistency tradeoff."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC002-Q11-c.json",
+  "question_path": "question-bank/questions/P-SRC002-Q11-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC002-Q11-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

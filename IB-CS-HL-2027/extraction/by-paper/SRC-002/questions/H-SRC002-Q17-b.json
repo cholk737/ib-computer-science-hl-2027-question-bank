@@ -1,0 +1,72 @@
+{
+  "source_question_id": "H-SRC002-Q17-b",
+  "source_id": "SRC-002",
+  "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+  "year": "2026",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "A/B/C",
+  "option": "D",
+  "question": 17,
+  "subquestion": "b",
+  "source_pdf_pages": [
+    24
+  ],
+  "source_printed_pages": [
+    "24"
+  ],
+  "original_marks": 4,
+  "command_term": "Outline",
+  "original_text": "Outline two benefits of using a library when developing code.",
+  "parent_context": "-24-\n2226-4429\n(Option D continued)\nThe car rental company wants to create a linked list of Customer objects. The Customer\nclass, which stores information about each customer, is partially outlined as shown.\npublic class Customer\nprivate\nint customerID;\nprivate String customerName;\nprivate String preferredshop;\npublic String getPreferredshop ()\nreturn preferredShop;\n}\npublic void setPreferredShop (String shop)\npreferredShop = shop;\n}\n// remaining\naccessor and mutator methods implemented but not shown\n}\nOne of the shops has closed. Any customer who prefers this shop requires their\npreferredShop updated\nThe method changePreferredShop () will change the preferred shop of all affected\ncustomers to the new shop given in the parameter newShop. The method should return\nthe number of customers that have been changed.\nConstruct the method public int changePreferredShop(LinkedList\ncustomers,\nString preferredShop, String newshop).\nThe programmers have used a library of objects rather than developing a custom linked list.\n(b) Outline two benefits of using a library when developing code.\n[4]\n(Option D continues on the following page)\nA000",
+  "assets": [
+    {
+      "kind": "scanned_source_page",
+      "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-24.png",
+      "source_pdf_page": 24,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Outline two benefits of using a library when developing code.",
+    "Outline two benefits of reusing a tested library function through its documented interface rather than reimplementing it at every call site"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "not_uploaded",
+    "source_id": "",
+    "filename": "",
+    "pdf_pages": [],
+    "question_reference": "Q17 b",
+    "marking_summary": "Reuse reduces repeated development effort. A well-tested shared implementation can reduce duplicated defects and can be replaced centrally through the same interface,although its suitability still needs checking.",
+    "source_issues": [],
+    "source_marking_evidence": ""
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B2.3.4",
+      "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+      "rationale": "Outline two benefits of reusing a tested library function through its documented interface rather than reimplementing it at every call site assesses Construct functions and modularization.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "No uploaded MS; independent unofficial answer.",
+    "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC002-Q17-b"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

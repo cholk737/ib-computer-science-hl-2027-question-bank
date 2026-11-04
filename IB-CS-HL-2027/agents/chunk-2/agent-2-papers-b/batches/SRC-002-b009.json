@@ -1,0 +1,1007 @@
+{
+  "source_id": "SRC-002",
+  "batch_id": "SRC-002-b009",
+  "source_questions": [
+    {
+      "source_question_id": "H-SRC002-Q14-b-i",
+      "source_id": "SRC-002",
+      "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+      "year": "2026",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "A/B/C",
+      "option": "D",
+      "question": 14,
+      "subquestion": "b-i",
+      "source_pdf_pages": [
+        21
+      ],
+      "source_printed_pages": [
+        "21"
+      ],
+      "original_marks": 3,
+      "command_term": "Outline",
+      "original_text": "Outline why having multiple constructors in the Rental class is not a problem when creating a new Rental object.",
+      "parent_context": "-20 -\n2226-4429\nOption D — Object-oriented programming\n14. A car rental company has several locations around a country. Each location has many cars\nthat are rented to customers throughout the year. The company makes use of object-oriented\nprogramming (OOP) to manage the rentals.\nThe Rental class is shown.\npublic class Rental\nprivate int customerID;\nprivate boolean priority;\nprivate int carID;\nprivate\ndouble costPerDay;\nprivate RentDate startDate;\nprivate RentDate endDate;\npublic Rental(int customerID, boolean priority, int carID, double\ncostPerDay, RentDate startDate, RentDate endDate)\nthis.customerID = customerID;\n357\nthis priority = priority;\nthis.carID = carID;\nthis.costPerDay = costPerDay;\nthis.startDate = startDate;\nthis.endDate = endDate;\npublic Rental (int customerID, int carID, double costPerDay,\nRentDate startDate, RentDate endDate)\nthis.customerID = customerID;\nthis.priority = false;\nthis.carID = carID;\nthis.costPerDay = costPerDay;\nthis.startDate = startDate;\nthis.endDate = endDate;\n}\noublic int getCustomerID() { return customerID; }\noublic boolean getPriority() { return priority;\npublic int getCarID() { return carID; }\npublic double getCostPerDay() ( return costPerday; }\npublic RentDate getStartDate() { return startDate; }\npublic RentDate getEndDate() ( return endDate; )\npablic int getDaysl\n// implementation not shown\nII returns the number of days between the start date\nI/ and the end date of the rental\n}\n(Option D continues on the following page)\n-21 -\n2226-4429\n(Option D, question 14 continued)\npublic int compareTo (RentDate thisDate)\n{\n// implementation not shown\n// returns -1 if this date is\nearlier\n// returns 0 if the dates are the same\n// returns 1 if this date is later\n}\npublic double getCost()\n{\n// code missing\n}\nPublic string tostringl)\nreturnCustomer ID\" + CustomerID + \", Priority Status: \" +\npriority + \"\n', Car Rented: \" + carID +\", cost per day: \" + costPerDay;\n}\n}\nEach time a car is rented, an instance of the Rental class is created.\n(a)\nDescribe, using the Rental class as an example, the difference between a class and\nan instance of a class.\n[3]\nThe Rental class has two constructor methods with different parameters.\n(b)\nOutline why having multiple constructors in the Rental class is not a problem\nwhen creating a new Rental object.\n[3]\n(ii)\nState the object-oriented programming (OOP) concept that allows two methods\nin the same class to share the same name but have different parameters.\n[1]\nThe Rental class makes use of a class, RentDate, to store dates.\n(c) Outline one benefit of creating the RentDate class to store the dates of car rentals.\n[2]\n(d) Outline the purpose of the tostring () method in the Rental class.\n[2]\nThe purpose of the getCost () method is to return the total cost of a car rental. The total\ncost of the rental is the number of days multiplied by the cost per day.\n(e) Construct the code for the getCost () method.\n[4]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-20.png",
+          "source_pdf_page": 20,
+          "visually_verified": true
+        },
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-21.png",
+          "source_pdf_page": 21,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline why having multiple constructors in the Rental class is not a problem when creating a new Rental object.",
+        "A Python constructor is def __init__(self,rate,priority=False)"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "not_uploaded",
+        "source_id": "",
+        "filename": "",
+        "pdf_pages": [],
+        "question_reference": "Q14 b-i",
+        "marking_summary": "a = Reservation(40); b = Reservation(40,True). The optional parameter supplies False when omitted and accepts the caller’s value when supplied.",
+        "source_issues": [],
+        "source_marking_evidence": ""
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B3.1.4",
+          "scope_evidence": "• How to define classes and create objects from those classes\n• The role of constructors in initializing an object's state, setting initial values for its attributes to define its condition or characteristics at the time of creation",
+          "rationale": "A Python constructor is def __init__(self,rate,priority=False) assesses Construct code to define classes and instantiate objects.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "No uploaded MS; independent unofficial answer.",
+        "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC002-Q14-b-i"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC002-Q14-b-ii",
+      "source_id": "SRC-002",
+      "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+      "year": "2026",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "A/B/C",
+      "option": "D",
+      "question": 14,
+      "subquestion": "b-ii",
+      "source_pdf_pages": [
+        21
+      ],
+      "source_printed_pages": [
+        "21"
+      ],
+      "original_marks": 1,
+      "command_term": "State",
+      "original_text": "State the object-oriented programming (OOP) concept that allows two methods in the same class to share the same name but have different parameters.",
+      "parent_context": "-20 -\n2226-4429\nOption D — Object-oriented programming\n14. A car rental company has several locations around a country. Each location has many cars\nthat are rented to customers throughout the year. The company makes use of object-oriented\nprogramming (OOP) to manage the rentals.\nThe Rental class is shown.\npublic class Rental\nprivate int customerID;\nprivate boolean priority;\nprivate int carID;\nprivate\ndouble costPerDay;\nprivate RentDate startDate;\nprivate RentDate endDate;\npublic Rental(int customerID, boolean priority, int carID, double\ncostPerDay, RentDate startDate, RentDate endDate)\nthis.customerID = customerID;\n357\nthis priority = priority;\nthis.carID = carID;\nthis.costPerDay = costPerDay;\nthis.startDate = startDate;\nthis.endDate = endDate;\npublic Rental (int customerID, int carID, double costPerDay,\nRentDate startDate, RentDate endDate)\nthis.customerID = customerID;\nthis.priority = false;\nthis.carID = carID;\nthis.costPerDay = costPerDay;\nthis.startDate = startDate;\nthis.endDate = endDate;\n}\noublic int getCustomerID() { return customerID; }\noublic boolean getPriority() { return priority;\npublic int getCarID() { return carID; }\npublic double getCostPerDay() ( return costPerday; }\npublic RentDate getStartDate() { return startDate; }\npublic RentDate getEndDate() ( return endDate; )\npablic int getDaysl\n// implementation not shown\nII returns the number of days between the start date\nI/ and the end date of the rental\n}\n(Option D continues on the following page)\n-21 -\n2226-4429\n(Option D, question 14 continued)\npublic int compareTo (RentDate thisDate)\n{\n// implementation not shown\n// returns -1 if this date is\nearlier\n// returns 0 if the dates are the same\n// returns 1 if this date is later\n}\npublic double getCost()\n{\n// code missing\n}\nPublic string tostringl)\nreturnCustomer ID\" + CustomerID + \", Priority Status: \" +\npriority + \"\n', Car Rented: \" + carID +\", cost per day: \" + costPerDay;\n}\n}\nEach time a car is rented, an instance of the Rental class is created.\n(a)\nDescribe, using the Rental class as an example, the difference between a class and\nan instance of a class.\n[3]\nThe Rental class has two constructor methods with different parameters.\n(b)\nOutline why having multiple constructors in the Rental class is not a problem\nwhen creating a new Rental object.\n[3]\n(ii)\nState the object-oriented programming (OOP) concept that allows two methods\nin the same class to share the same name but have different parameters.\n[1]\nThe Rental class makes use of a class, RentDate, to store dates.\n(c) Outline one benefit of creating the RentDate class to store the dates of car rentals.\n[2]\n(d) Outline the purpose of the tostring () method in the Rental class.\n[2]\nThe purpose of the getCost () method is to return the total cost of a car rental. The total\ncost of the rental is the number of days multiplied by the cost per day.\n(e) Construct the code for the getCost () method.\n[4]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-20.png",
+          "source_pdf_page": 20,
+          "visually_verified": true
+        },
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-21.png",
+          "source_pdf_page": 21,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: State the object-oriented programming (OOP) concept that allows two methods in the same class to share the same name but have different parameters.",
+        "State what happens to the first __init__ definition if a Python class body later defines another method named __init__"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "not_uploaded",
+        "source_id": "",
+        "filename": "",
+        "pdf_pages": [],
+        "question_reference": "Q14 b-ii",
+        "marking_summary": "The later definition replaces the earlier binding for that name; Python does not select between these two definitions by signature.",
+        "source_issues": [],
+        "source_marking_evidence": ""
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B3.1.4",
+          "scope_evidence": "• How to define classes and create objects from those classes\n• The role of constructors in initializing an object's state, setting initial values for its attributes to define its condition or characteristics at the time of creation",
+          "rationale": "State what happens to the first __init__ definition if a Python class body later defines another method named __init__ assesses Construct code to define classes and instantiate objects.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "No uploaded MS; independent unofficial answer.",
+        "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC002-Q14-b-ii"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC002-Q14-c",
+      "source_id": "SRC-002",
+      "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+      "year": "2026",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "A/B/C",
+      "option": "D",
+      "question": 14,
+      "subquestion": "c",
+      "source_pdf_pages": [
+        21
+      ],
+      "source_printed_pages": [
+        "21"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "Outline one benefit of creating the RentDate class to store the dates of car rentals.",
+      "parent_context": "-20 -\n2226-4429\nOption D — Object-oriented programming\n14. A car rental company has several locations around a country. Each location has many cars\nthat are rented to customers throughout the year. The company makes use of object-oriented\nprogramming (OOP) to manage the rentals.\nThe Rental class is shown.\npublic class Rental\nprivate int customerID;\nprivate boolean priority;\nprivate int carID;\nprivate\ndouble costPerDay;\nprivate RentDate startDate;\nprivate RentDate endDate;\npublic Rental(int customerID, boolean priority, int carID, double\ncostPerDay, RentDate startDate, RentDate endDate)\nthis.customerID = customerID;\n357\nthis priority = priority;\nthis.carID = carID;\nthis.costPerDay = costPerDay;\nthis.startDate = startDate;\nthis.endDate = endDate;\npublic Rental (int customerID, int carID, double costPerDay,\nRentDate startDate, RentDate endDate)\nthis.customerID = customerID;\nthis.priority = false;\nthis.carID = carID;\nthis.costPerDay = costPerDay;\nthis.startDate = startDate;\nthis.endDate = endDate;\n}\noublic int getCustomerID() { return customerID; }\noublic boolean getPriority() { return priority;\npublic int getCarID() { return carID; }\npublic double getCostPerDay() ( return costPerday; }\npublic RentDate getStartDate() { return startDate; }\npublic RentDate getEndDate() ( return endDate; )\npablic int getDaysl\n// implementation not shown\nII returns the number of days between the start date\nI/ and the end date of the rental\n}\n(Option D continues on the following page)\n-21 -\n2226-4429\n(Option D, question 14 continued)\npublic int compareTo (RentDate thisDate)\n{\n// implementation not shown\n// returns -1 if this date is\nearlier\n// returns 0 if the dates are the same\n// returns 1 if this date is later\n}\npublic double getCost()\n{\n// code missing\n}\nPublic string tostringl)\nreturnCustomer ID\" + CustomerID + \", Priority Status: \" +\npriority + \"\n', Car Rented: \" + carID +\", cost per day: \" + costPerDay;\n}\n}\nEach time a car is rented, an instance of the Rental class is created.\n(a)\nDescribe, using the Rental class as an example, the difference between a class and\nan instance of a class.\n[3]\nThe Rental class has two constructor methods with different parameters.\n(b)\nOutline why having multiple constructors in the Rental class is not a problem\nwhen creating a new Rental object.\n[3]\n(ii)\nState the object-oriented programming (OOP) concept that allows two methods\nin the same class to share the same name but have different parameters.\n[1]\nThe Rental class makes use of a class, RentDate, to store dates.\n(c) Outline one benefit of creating the RentDate class to store the dates of car rentals.\n[2]\n(d) Outline the purpose of the tostring () method in the Rental class.\n[2]\nThe purpose of the getCost () method is to return the total cost of a car rental. The total\ncost of the rental is the number of days multiplied by the cost per day.\n(e) Construct the code for the getCost () method.\n[4]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-20.png",
+          "source_pdf_page": 20,
+          "visually_verified": true
+        },
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-21.png",
+          "source_pdf_page": 21,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline one benefit of creating the RentDate class to store the dates of car rentals.",
+        "Outline one benefit of representing a booking date with a DateValue class that validates its fields, rather than unrelated unvalidated variables"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "not_uploaded",
+        "source_id": "",
+        "filename": "",
+        "pdf_pages": [],
+        "question_reference": "Q14 c",
+        "marking_summary": "The class groups the date’s data and validation rules,so callers can reuse a coherent valid-date representation instead of duplicating checks.",
+        "source_issues": [],
+        "source_marking_evidence": ""
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B3.1.1",
+          "scope_evidence": "• Model real-world entities using OOP concepts: classes, objects, inheritance, encapsulation, polymorphism\n• The advantages and disadvantages of using OOP in various programming scenarios",
+          "rationale": "Outline one benefit of representing a booking date with a DateValue class that validates its fields, rather than unrelated unvalidated variables assesses Evaluate the fundamentals of OOP.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B3.1.5",
+          "scope_evidence": "• The principles of encapsulation and information hiding\n• Apply access modifiers such as private and public\n• Controlling access to class members\n• The importance of limiting access to maintain the integrity and security of an object's state",
+          "rationale": "Outline one benefit of representing a booking date with a DateValue class that validates its fields, rather than unrelated unvalidated variables assesses Explain and apply the concepts of encapsulation and information hiding in OOP.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "No uploaded MS; independent unofficial answer.",
+        "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC002-Q14-c"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC002-Q14-d",
+      "source_id": "SRC-002",
+      "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+      "year": "2026",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "A/B/C",
+      "option": "D",
+      "question": 14,
+      "subquestion": "d",
+      "source_pdf_pages": [
+        21
+      ],
+      "source_printed_pages": [
+        "21"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "Outline the purpose of the toString() method in the Rental class.",
+      "parent_context": "-20 -\n2226-4429\nOption D — Object-oriented programming\n14. A car rental company has several locations around a country. Each location has many cars\nthat are rented to customers throughout the year. The company makes use of object-oriented\nprogramming (OOP) to manage the rentals.\nThe Rental class is shown.\npublic class Rental\nprivate int customerID;\nprivate boolean priority;\nprivate int carID;\nprivate\ndouble costPerDay;\nprivate RentDate startDate;\nprivate RentDate endDate;\npublic Rental(int customerID, boolean priority, int carID, double\ncostPerDay, RentDate startDate, RentDate endDate)\nthis.customerID = customerID;\n357\nthis priority = priority;\nthis.carID = carID;\nthis.costPerDay = costPerDay;\nthis.startDate = startDate;\nthis.endDate = endDate;\npublic Rental (int customerID, int carID, double costPerDay,\nRentDate startDate, RentDate endDate)\nthis.customerID = customerID;\nthis.priority = false;\nthis.carID = carID;\nthis.costPerDay = costPerDay;\nthis.startDate = startDate;\nthis.endDate = endDate;\n}\noublic int getCustomerID() { return customerID; }\noublic boolean getPriority() { return priority;\npublic int getCarID() { return carID; }\npublic double getCostPerDay() ( return costPerday; }\npublic RentDate getStartDate() { return startDate; }\npublic RentDate getEndDate() ( return endDate; )\npablic int getDaysl\n// implementation not shown\nII returns the number of days between the start date\nI/ and the end date of the rental\n}\n(Option D continues on the following page)\n-21 -\n2226-4429\n(Option D, question 14 continued)\npublic int compareTo (RentDate thisDate)\n{\n// implementation not shown\n// returns -1 if this date is\nearlier\n// returns 0 if the dates are the same\n// returns 1 if this date is later\n}\npublic double getCost()\n{\n// code missing\n}\nPublic string tostringl)\nreturnCustomer ID\" + CustomerID + \", Priority Status: \" +\npriority + \"\n', Car Rented: \" + carID +\", cost per day: \" + costPerDay;\n}\n}\nEach time a car is rented, an instance of the Rental class is created.\n(a)\nDescribe, using the Rental class as an example, the difference between a class and\nan instance of a class.\n[3]\nThe Rental class has two constructor methods with different parameters.\n(b)\nOutline why having multiple constructors in the Rental class is not a problem\nwhen creating a new Rental object.\n[3]\n(ii)\nState the object-oriented programming (OOP) concept that allows two methods\nin the same class to share the same name but have different parameters.\n[1]\nThe Rental class makes use of a class, RentDate, to store dates.\n(c) Outline one benefit of creating the RentDate class to store the dates of car rentals.\n[2]\n(d) Outline the purpose of the tostring () method in the Rental class.\n[2]\nThe purpose of the getCost () method is to return the total cost of a car rental. The total\ncost of the rental is the number of days multiplied by the cost per day.\n(e) Construct the code for the getCost () method.\n[4]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-20.png",
+          "source_pdf_page": 20,
+          "visually_verified": true
+        },
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-21.png",
+          "source_pdf_page": 21,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline the purpose of the toString() method in the Rental class.",
+        "A Reservation"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "not_uploaded",
+        "source_id": "",
+        "filename": "",
+        "pdf_pages": [],
+        "question_reference": "Q14 d",
+        "marking_summary": "It provides a consistent readable representation for display/logging while keeping the formatting logic within the class.",
+        "source_issues": [],
+        "source_marking_evidence": ""
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B3.1.2",
+          "scope_evidence": "• Classes and their methods, based on application requirements\n• The use of unified modelling language (UML) class diagrams to represent class relationships, attributes and methods, to aid effective software design and planning",
+          "rationale": "A Reservation assesses Construct a design of classes, their methods and behaviour.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "No uploaded MS; independent unofficial answer.",
+        "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC002-Q14-d"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC002-Q14-e",
+      "source_id": "SRC-002",
+      "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+      "year": "2026",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "A/B/C",
+      "option": "D",
+      "question": 14,
+      "subquestion": "e",
+      "source_pdf_pages": [
+        21
+      ],
+      "source_printed_pages": [
+        "21"
+      ],
+      "original_marks": 4,
+      "command_term": "Construct",
+      "original_text": "Construct the code for the getCost() method.",
+      "parent_context": "-20 -\n2226-4429\nOption D — Object-oriented programming\n14. A car rental company has several locations around a country. Each location has many cars\nthat are rented to customers throughout the year. The company makes use of object-oriented\nprogramming (OOP) to manage the rentals.\nThe Rental class is shown.\npublic class Rental\nprivate int customerID;\nprivate boolean priority;\nprivate int carID;\nprivate\ndouble costPerDay;\nprivate RentDate startDate;\nprivate RentDate endDate;\npublic Rental(int customerID, boolean priority, int carID, double\ncostPerDay, RentDate startDate, RentDate endDate)\nthis.customerID = customerID;\n357\nthis priority = priority;\nthis.carID = carID;\nthis.costPerDay = costPerDay;\nthis.startDate = startDate;\nthis.endDate = endDate;\npublic Rental (int customerID, int carID, double costPerDay,\nRentDate startDate, RentDate endDate)\nthis.customerID = customerID;\nthis.priority = false;\nthis.carID = carID;\nthis.costPerDay = costPerDay;\nthis.startDate = startDate;\nthis.endDate = endDate;\n}\noublic int getCustomerID() { return customerID; }\noublic boolean getPriority() { return priority;\npublic int getCarID() { return carID; }\npublic double getCostPerDay() ( return costPerday; }\npublic RentDate getStartDate() { return startDate; }\npublic RentDate getEndDate() ( return endDate; )\npablic int getDaysl\n// implementation not shown\nII returns the number of days between the start date\nI/ and the end date of the rental\n}\n(Option D continues on the following page)\n-21 -\n2226-4429\n(Option D, question 14 continued)\npublic int compareTo (RentDate thisDate)\n{\n// implementation not shown\n// returns -1 if this date is\nearlier\n// returns 0 if the dates are the same\n// returns 1 if this date is later\n}\npublic double getCost()\n{\n// code missing\n}\nPublic string tostringl)\nreturnCustomer ID\" + CustomerID + \", Priority Status: \" +\npriority + \"\n', Car Rented: \" + carID +\", cost per day: \" + costPerDay;\n}\n}\nEach time a car is rented, an instance of the Rental class is created.\n(a)\nDescribe, using the Rental class as an example, the difference between a class and\nan instance of a class.\n[3]\nThe Rental class has two constructor methods with different parameters.\n(b)\nOutline why having multiple constructors in the Rental class is not a problem\nwhen creating a new Rental object.\n[3]\n(ii)\nState the object-oriented programming (OOP) concept that allows two methods\nin the same class to share the same name but have different parameters.\n[1]\nThe Rental class makes use of a class, RentDate, to store dates.\n(c) Outline one benefit of creating the RentDate class to store the dates of car rentals.\n[2]\n(d) Outline the purpose of the tostring () method in the Rental class.\n[2]\nThe purpose of the getCost () method is to return the total cost of a car rental. The total\ncost of the rental is the number of days multiplied by the cost per day.\n(e) Construct the code for the getCost () method.\n[4]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-20.png",
+          "source_pdf_page": 20,
+          "visually_verified": true
+        },
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-21.png",
+          "source_pdf_page": 21,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Construct the code for the getCost() method.",
+        "Construct the Python method get_cost(self)"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "not_uploaded",
+        "source_id": "",
+        "filename": "",
+        "pdf_pages": [],
+        "question_reference": "Q14 e",
+        "marking_summary": "One solution:\ndef get_cost(self):\n    days = self.get_days()\n    return days * self.rate",
+        "source_issues": [],
+        "source_marking_evidence": ""
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.3.4",
+          "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+          "rationale": "Construct the Python method get_cost(self) assesses Construct functions and modularization.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "No uploaded MS; independent unofficial answer.",
+        "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+        "technical": "Executed duration4/rate18.5; formula also giveszero forzeroduration."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC002-Q14-e"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC002-Q15-a",
+      "source_id": "SRC-002",
+      "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+      "year": "2026",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "A/B/C",
+      "option": "D",
+      "question": 15,
+      "subquestion": "a",
+      "source_pdf_pages": [
+        22
+      ],
+      "source_printed_pages": [
+        "22"
+      ],
+      "original_marks": 3,
+      "command_term": "Construct",
+      "original_text": "Construct the code required to create this instance of the RentalShop class.",
+      "parent_context": "-22 -\n2226-4429\n(Option D continued)\n15. The RentalShop class stores information about the shop (location) to which the rental\ncars belong.\nThe RentalShop class is shown.\npublic class RentalShop {\nprivate String location;\nprivate Rental theRentals [];\nprivate int no0fRentals;\npublic RentalShop(String location) {\nthis.location\n= location;\nthis.no0fRentals = 0;\nthis.theRentals = new Rental[500];\n}\npublic String getLocation()\n{ return location; }\npublic Rental\ngetRental(int x) ( return theRentals[x]; }\npublic int getNoOfRentals ()\n( return noOfRentals; }\n357\nprotected void addRental(Rental newRental) {\ntheRentals[no0fRentals]\n= newRental;\nnoOfRentals = noOfRentals + 1;\n}\nprotected Rental [] getTodaysRentals (RentDate today) (\n// code missing\n}\nThe car rental company would like to open a new shop (location) in Beach Side.\n(a) Construct the code required to create this instance of the RentalShop class.\n[3]\n(b)\nDescribe the use of the modifier protected, with reference to methods in the\nRentalShop class.\n(2]\nA000\nAt the start of each day, the shop needs to produce a listing of all the cars that are being\nrented out that day.\n(c) Construct the method getTodaysRentals (RentDate today), which will return an\narray of all the rentals starting on that day.\nYou can use any previously constructed methods.\nThe car rental company would like to store information about customers in a separate class.\n(d)\nOutline two changes that would need to be made to the existing classes to\naccommodate this.\n[4]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-22.png",
+          "source_pdf_page": 22,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Construct the code required to create this instance of the RentalShop class.",
+        "Class Depot has constructor __init__(self,location)"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "not_uploaded",
+        "source_id": "",
+        "filename": "",
+        "pdf_pages": [],
+        "question_reference": "Q15 a",
+        "marking_summary": "depot = Depot(\"North Pier\")",
+        "source_issues": [],
+        "source_marking_evidence": ""
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B3.1.4",
+          "scope_evidence": "• How to define classes and create objects from those classes\n• The role of constructors in initializing an object's state, setting initial values for its attributes to define its condition or characteristics at the time of creation",
+          "rationale": "Class Depot has constructor __init__(self,location) assesses Construct code to define classes and instantiate objects.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "No uploaded MS; independent unofficial answer.",
+        "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC002-Q15-a"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC002-Q15-b",
+      "source_id": "SRC-002",
+      "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+      "year": "2026",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "A/B/C",
+      "option": "D",
+      "question": 15,
+      "subquestion": "b",
+      "source_pdf_pages": [
+        22
+      ],
+      "source_printed_pages": [
+        "22"
+      ],
+      "original_marks": 2,
+      "command_term": "Describe",
+      "original_text": "Describe the use of the modifier protected, with reference to methods in the RentalShop class.",
+      "parent_context": "-22 -\n2226-4429\n(Option D continued)\n15. The RentalShop class stores information about the shop (location) to which the rental\ncars belong.\nThe RentalShop class is shown.\npublic class RentalShop {\nprivate String location;\nprivate Rental theRentals [];\nprivate int no0fRentals;\npublic RentalShop(String location) {\nthis.location\n= location;\nthis.no0fRentals = 0;\nthis.theRentals = new Rental[500];\n}\npublic String getLocation()\n{ return location; }\npublic Rental\ngetRental(int x) ( return theRentals[x]; }\npublic int getNoOfRentals ()\n( return noOfRentals; }\n357\nprotected void addRental(Rental newRental) {\ntheRentals[no0fRentals]\n= newRental;\nnoOfRentals = noOfRentals + 1;\n}\nprotected Rental [] getTodaysRentals (RentDate today) (\n// code missing\n}\nThe car rental company would like to open a new shop (location) in Beach Side.\n(a) Construct the code required to create this instance of the RentalShop class.\n[3]\n(b)\nDescribe the use of the modifier protected, with reference to methods in the\nRentalShop class.\n(2]\nA000\nAt the start of each day, the shop needs to produce a listing of all the cars that are being\nrented out that day.\n(c) Construct the method getTodaysRentals (RentDate today), which will return an\narray of all the rentals starting on that day.\nYou can use any previously constructed methods.\nThe car rental company would like to store information about customers in a separate class.\n(d)\nOutline two changes that would need to be made to the existing classes to\naccommodate this.\n[4]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-22.png",
+          "source_pdf_page": 22,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Describe the use of the modifier protected, with reference to methods in the RentalShop class.",
+        "A Python class names an internal helper _add_booking"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "not_uploaded",
+        "source_id": "",
+        "filename": "",
+        "pdf_pages": [],
+        "question_reference": "Q15 b",
+        "marking_summary": "It signals a non-public implementation convention. Python does not enforce a protected access boundary merely from this underscore; outside code can still call the method.",
+        "source_issues": [],
+        "source_marking_evidence": ""
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B3.1.5",
+          "scope_evidence": "• The principles of encapsulation and information hiding\n• Apply access modifiers such as private and public\n• Controlling access to class members\n• The importance of limiting access to maintain the integrity and security of an object's state",
+          "rationale": "A Python class names an internal helper _add_booking assesses Explain and apply the concepts of encapsulation and information hiding in OOP.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "No uploaded MS; independent unofficial answer.",
+        "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC002-Q15-b"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC002-Q15-c",
+      "source_id": "SRC-002",
+      "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+      "year": "2026",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "A/B/C",
+      "option": "D",
+      "question": 15,
+      "subquestion": "c",
+      "source_pdf_pages": [
+        22
+      ],
+      "source_printed_pages": [
+        "22"
+      ],
+      "original_marks": 6,
+      "command_term": "Construct",
+      "original_text": "Construct the method getTodaysRentals(RentDate today), which will return an array of all the rentals starting on that day. You can use any previously constructed methods.",
+      "parent_context": "-22 -\n2226-4429\n(Option D continued)\n15. The RentalShop class stores information about the shop (location) to which the rental\ncars belong.\nThe RentalShop class is shown.\npublic class RentalShop {\nprivate String location;\nprivate Rental theRentals [];\nprivate int no0fRentals;\npublic RentalShop(String location) {\nthis.location\n= location;\nthis.no0fRentals = 0;\nthis.theRentals = new Rental[500];\n}\npublic String getLocation()\n{ return location; }\npublic Rental\ngetRental(int x) ( return theRentals[x]; }\npublic int getNoOfRentals ()\n( return noOfRentals; }\n357\nprotected void addRental(Rental newRental) {\ntheRentals[no0fRentals]\n= newRental;\nnoOfRentals = noOfRentals + 1;\n}\nprotected Rental [] getTodaysRentals (RentDate today) (\n// code missing\n}\nThe car rental company would like to open a new shop (location) in Beach Side.\n(a) Construct the code required to create this instance of the RentalShop class.\n[3]\n(b)\nDescribe the use of the modifier protected, with reference to methods in the\nRentalShop class.\n(2]\nA000\nAt the start of each day, the shop needs to produce a listing of all the cars that are being\nrented out that day.\n(c) Construct the method getTodaysRentals (RentDate today), which will return an\narray of all the rentals starting on that day.\nYou can use any previously constructed methods.\nThe car rental company would like to store information about customers in a separate class.\n(d)\nOutline two changes that would need to be made to the existing classes to\naccommodate this.\n[4]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-22.png",
+          "source_pdf_page": 22,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Construct the method getTodaysRentals(RentDate today), which will return an array of all the rentals starting on that day. You can use any previously constructed methods.",
+        "Construct bookings_on(self,day) in Python"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "not_uploaded",
+        "source_id": "",
+        "filename": "",
+        "pdf_pages": [],
+        "question_reference": "Q15 c",
+        "marking_summary": "One solution:\ndef bookings_on(self, day):\n    result = []\n    for i in range(self.used):\n        booking = self.bookings[i]\n        if booking.start_day == day:\n            result.append(booking)\n    return result",
+        "source_issues": [],
+        "source_marking_evidence": ""
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Construct bookings_on(self,day) in Python assesses Construct programs that apply arrays and Lists.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Construct bookings_on(self,day) in Python assesses Construct programs utilizing appropriate selection structures.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "Construct bookings_on(self,day) in Python assesses Construct programs that utilize looping structures to perform repeated actions.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.4",
+          "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+          "rationale": "Construct bookings_on(self,day) in Python assesses Construct functions and modularization.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "No uploaded MS; independent unofficial answer.",
+        "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+        "technical": "Executed matching,absent andemptyactiveprefix cases."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC002-Q15-c"
+      ]
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC002-Q14-b-i",
+      "source_question_ids": [
+        "H-SRC002-Q14-b-i"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "A Python class Reservation has constructor __init__(self,rate,priority=False). Construct two calls: one reservation at rate40 using the default priority,and another at rate40 with priorityTrue. Outline why one constructor supports both.",
+      "syllabus_codes": [
+        "B3.1.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 3,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Replaces Java constructor overloading with accurate Python optional-argument initialization.",
+      "solution": "a = Reservation(40); b = Reservation(40,True). The optional parameter supplies False when omitted and accepts the caller’s value when supplied.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Correct default-priority constructor call."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct explicit-True constructor call."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains default versus supplied parameter."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC002-Q14-b-ii",
+      "source_question_ids": [
+        "H-SRC002-Q14-b-ii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "State what happens to the first __init__ definition if a Python class body later defines another method named __init__.",
+      "syllabus_codes": [
+        "B3.1.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 1,
+      "command_term": "State",
+      "difficulty": "medium",
+      "adaptation_rationale": "Retains constructor-definition reasoning while correcting language-specific overloading assumptions.",
+      "solution": "The later definition replaces the earlier binding for that name; Python does not select between these two definitions by signature.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Later definition replaces earlier binding."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC002-Q14-c",
+      "source_question_ids": [
+        "H-SRC002-Q14-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline one benefit of representing a booking date with a DateValue class that validates its fields, rather than unrelated unvalidated variables.",
+      "syllabus_codes": [
+        "B3.1.1",
+        "B3.1.5"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "The class groups the date’s data and validation rules,so callers can reuse a coherent valid-date representation instead of duplicating checks.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Groups related state/validation."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains reuse/integrity benefit."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC002-Q14-d",
+      "source_question_ids": [
+        "H-SRC002-Q14-d"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "A Reservation.summary() method returns a readable string containing the booking ID,rate and priority. Outline why this method is useful.",
+      "syllabus_codes": [
+        "B3.1.2"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "It provides a consistent readable representation for display/logging while keeping the formatting logic within the class.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Readable display/log representation."
+        },
+        {
+          "marks": 1,
+          "criterion": "Consistent formatting/modular responsibility."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC002-Q14-e",
+      "source_question_ids": [
+        "H-SRC002-Q14-e"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct the Python method get_cost(self). The instance attribute rate is the charge per day,and self.get_days() returns the nonnegative rental duration. Return the total charge.",
+      "syllabus_codes": [
+        "B2.3.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 4,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "One solution:\ndef get_cost(self):\n    days = self.get_days()\n    return days * self.rate",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Correct method/instance reference."
+        },
+        {
+          "marks": 1,
+          "criterion": "Calls get_days()."
+        },
+        {
+          "marks": 1,
+          "criterion": "Multiplies duration by rate."
+        },
+        {
+          "marks": 1,
+          "criterion": "Returns calculated charge."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Executed duration4/rate18.5; formula also giveszero forzeroduration.",
+        "source_comparison": [],
+        "test_code": "def get_cost(self):\n    days = self.get_days()\n    return days * self.rate\nclass R:\n rate=18.5\n def get_days(self):return 4\nassert get_cost(R())==74",
+        "result_file": ""
+      },
+      "code": "def get_cost(self):\n    days = self.get_days()\n    return days * self.rate",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC002-Q15-a",
+      "source_question_ids": [
+        "H-SRC002-Q15-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Class Depot has constructor __init__(self,location). Construct a Python statement assigning a new Depot for \"North Pier\" to variable depot.",
+      "syllabus_codes": [
+        "B3.1.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 3,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "depot = Depot(\"North Pier\")",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Calls Depot constructor."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct location string argument."
+        },
+        {
+          "marks": 1,
+          "criterion": "Stores reference in depot."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC002-Q15-b",
+      "source_question_ids": [
+        "H-SRC002-Q15-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "A Python class names an internal helper _add_booking. Describe what the single underscore communicates and whether it prevents outside calls.",
+      "syllabus_codes": [
+        "B3.1.5"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Describe",
+      "difficulty": "medium",
+      "adaptation_rationale": "Replaces Java protected semantics with accurate Python naming convention; does not claim enforced privacy.",
+      "solution": "It signals a non-public implementation convention. Python does not enforce a protected access boundary merely from this underscore; outside code can still call the method.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Non-public/internal-use convention."
+        },
+        {
+          "marks": 1,
+          "criterion": "No automatic access enforcement."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC002-Q15-c",
+      "source_question_ids": [
+        "H-SRC002-Q15-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct bookings_on(self,day) in Python. self.bookings is a list whose first self.used entries are booking objects; later entries may be None. Each booking has a start_day string in YYYY-MM-DD format. Return a new list of all active bookings starting on day, in stored order.",
+      "syllabus_codes": [
+        "B2.2.2",
+        "B2.3.2",
+        "B2.3.3",
+        "B2.3.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 6,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "One solution:\ndef bookings_on(self, day):\n    result = []\n    for i in range(self.used):\n        booking = self.bookings[i]\n        if booking.start_day == day:\n            result.append(booking)\n    return result",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Initializes output list."
+        },
+        {
+          "marks": 1,
+          "criterion": "Loops only over active prefix."
+        },
+        {
+          "marks": 1,
+          "criterion": "Accesses each booking object."
+        },
+        {
+          "marks": 1,
+          "criterion": "Compares its start_day with day."
+        },
+        {
+          "marks": 1,
+          "criterion": "Appends matching objects."
+        },
+        {
+          "marks": 1,
+          "criterion": "Returns complete result,including empty list when no match."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Executed matching,absent andemptyactiveprefix cases.",
+        "source_comparison": [],
+        "test_code": "def bookings_on(self, day):\n    result = []\n    for i in range(self.used):\n        booking = self.bookings[i]\n        if booking.start_day == day:\n            result.append(booking)\n    return result\nfrom types import SimpleNamespace as N\na=N(start_day=\"2027-01-03\");b=N(start_day=\"2027-01-04\");d=N(bookings=[a,b,None],used=2)\nassert bookings_on(d,\"2027-01-03\")==[a]\nassert bookings_on(d,\"2027-02-01\")==[]\nassert bookings_on(N(bookings=[],used=0),\"2027-01-03\")==[]",
+        "result_file": ""
+      },
+      "code": "def bookings_on(self, day):\n    result = []\n    for i in range(self.used):\n        booking = self.bookings[i]\n        if booking.start_day == day:\n            result.append(booking)\n    return result",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    }
+  ]
+}

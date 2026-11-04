@@ -1,0 +1,53 @@
+{
+  "question_id": "P-SRC002-Q14-e",
+  "source_question_ids": [
+    "H-SRC002-Q14-e"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct the Python method get_cost(self). The instance attribute rate is the charge per day,and self.get_days() returns the nonnegative rental duration. Return the total charge.",
+  "syllabus_codes": [
+    "B2.3.4"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 4,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "One solution:\ndef get_cost(self):\n    days = self.get_days()\n    return days * self.rate",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Correct method/instance reference."
+    },
+    {
+      "marks": 1,
+      "criterion": "Calls get_days()."
+    },
+    {
+      "marks": 1,
+      "criterion": "Multiplies duration by rate."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns calculated charge."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed duration4/rate18.5; formula also giveszero forzeroduration.",
+    "source_comparison": [],
+    "test_code": "def get_cost(self):\n    days = self.get_days()\n    return days * self.rate\nclass R:\n rate=18.5\n def get_days(self):return 4\nassert get_cost(R())==74",
+    "result_file": ""
+  },
+  "code": "def get_cost(self):\n    days = self.get_days()\n    return days * self.rate",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC002-Q14-e.json",
+  "question_path": "question-bank/questions/P-SRC002-Q14-e.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC002-Q14-e.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

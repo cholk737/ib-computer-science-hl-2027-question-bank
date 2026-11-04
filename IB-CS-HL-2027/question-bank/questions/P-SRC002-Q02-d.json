@@ -1,0 +1,19 @@
+{
+  "question_id": "P-SRC002-Q02-d",
+  "source_question_ids": [
+    "H-SRC002-Q02-d"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A training register has fields LearnerID,LearnerName,Level,EventID,CourseTitle,Provider,EventDate,Fee,Completed. LearnerID determines LearnerName and Level; EventID determines CourseTitle,Provider,EventDate and Fee; the pair LearnerID/EventID determines Completed. Construct a3NF schema, indicating primary and foreign keys.",
+  "syllabus_codes": [
+    "A3.2.6"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 5,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Original table does not state all functional dependencies; supplied dependencies remove ambiguity about event cost and qualification/provider relationships.",
+  "assets": []
+}

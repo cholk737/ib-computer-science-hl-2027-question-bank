@@ -1,0 +1,41 @@
+– 26 – M23/4/COMSC/HP1/ENG/TZ2/XX/M 
+Example 3: 
+Award [1] for initializing MAXT 
+Award [1] for correct row loop (R) 
+Award [1] for calculating the sum of all elements in row R (using correct indexes in the 
+DICEDIAL array)  
+Award [1] for comparing the row sum with the highest row sum so far (S == MAXT), and 
+changing 
+the value FLAGMAXTIND[R] to 1 if they are equal 
+Award [1] for comparing the row sum with the highest row sum so far (S > MAXT) and 
+updating the highest row sum so far 
+Award [1] for reinitializing FLAGMAXTIND array  
+Award [1] for changing the value FLAGMAXTIND[R] to 1 
+Award [1] for outputting the highest row total only once 
+Award [2] for outputting row numbers with the highest total (1 mark for a loop, 1 mark for 
+output within if statement) 
+// assume FLAGMAXTIND - zero array initialized 
+MAXT = 0 
+loop R from 0 to 6 
+ S = DICEDIAL[R][0]+ DICEDIAL[R][1]+ DICEDIAL[R][2] 
+ if S = MAXT  
+ then 
+ FLAGMAXTIND[R]=1 
+  end if 
+  if S > MAXT 
+  then 
+ MAXT = S 
+ loop K from 0 to 6 
+  FLAGMAXTIND[K]=0 
+ end loop 
+ FLAGMAXTIND[R]=1 
+ end if 
+end loop 
+output('The highest row total is', MAXT) 
+output(' and it occurs in the following rows:') 
+loop R from 0 to 6 
+  if FLAGMAXTIND[R] == 1 // or FLAGMAXTIND[R] != 0 
+ then 
+ output(R) 
+  end if 
+end loop 

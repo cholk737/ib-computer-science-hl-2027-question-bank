@@ -1,0 +1,48 @@
+                                         –   25 –             M23/4/COMSC/HP1/ENG/TZ1/XX/M
+
+
+
+Example 3
+Award [1] for initializing MINT
+Award [1] for correct row loop (R)
+Award [1] for calculating the sum of all elements in row R     (using correct indexes in the
+DICEDIAL array )
+Award [1] for comparing the row sum with the lowest row sum so far (S = MINT) and
+changing the value FLAGMINTIND[R] to 1 if they are equal
+Award [1] for comparing the row sum with the lowest row sum so far (S < MINT) and
+updating the lowest row sum so far
+Award [1] for reinitializing FLAGMINTIND array
+Award [1] for changing the value of FLAGMINTIND[R] to 1
+Award [1] for outputting the lowest row total only once
+Award [2] for outputting row numbers with the lowest total (1 mark for a loop, 1 mark for
+output within if statement)
+
+
+// assume FLAGMINTIND - zero array initialized
+
+MINT = 19 //any number greater than 18 OR first row total
+loop R from 0 to 6
+           S = DICEDIAL[R][0]+ DICEDIAL[R][1]+ DICEDIAL[R][2]
+           if S = MINT
+                   then
+                      FLAGMINTIND[R]=1
+           end if
+           if S < MINT
+                then
+                      MINT = S
+                      loop K from 0 to 6
+                             FLAGMINTIND[K]=0
+                      end loop
+                      FLAGMINTIND[R]=1
+           end if
+end loop
+
+output('The lowest row total is', MINT)
+
+output(' and it occurs in the following rows:')
+loop R from 0 to 6
+       if FLAGMINTIND[R] != 0  // FLAGMINTIND[R] == 1
+           then
+                 output(R)
+      end if
+end loop

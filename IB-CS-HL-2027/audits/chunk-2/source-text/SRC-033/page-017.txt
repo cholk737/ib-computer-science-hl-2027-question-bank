@@ -1,0 +1,55 @@
+                                                                                                                                                                                                                                                                                                                                        N20/4/COMSC/HP2/ENG/TZ0/XX
+
+
+
+
+                                                                                                                                                                                                                             – 16 –                                                                                                                                                                                                       8820–7012
+
+(Option D continued)
+
+14.                       (a)                       Construct the method addVehicle(Vehicle v) that will add a vehicle to the first
+                                                    empty position of the array vehicles[] and return the position (ie the index of the
+                                                    array) at which it has added the car. If it is not possible to fit the vehicle into the array
+                                                    then it should return -1. [6]
+
+                          (b)                       Outline two differences between inheritance and aggregation.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        [4]
+
+                          Two further classes, Car and Motorbike, are created.
+
+                          public class Car extends Vehicle{
+                              public static double hourlyFee=3.5;
+                              public double pay(int hours) {
+                                  //code to calculate and return the complete price
+                              }
+                          }
+
+                          public class Motorbike extends Vehicle{
+                              public static double hourlyFee=2.5;
+                              public double pay(int hours) {
+                                  //code to calculate and return the complete price
+                              }
+                          }
+
+                          (c)                       Construct a UML diagram that shows the relationships between the ParkingArea,
+                                                    Vehicle, Motorbike and Car classes. There is no need to include the attributes or
+                                                    methods of each class.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [4]
+
+                          The method pay in the Vehicle class returns the administration fee (which is only part of the
+                          total price), while the method pay of the Car class calculates the total price for a car staying
+                          in the parking area.
+
+                          (d)                       (i)                       Construct the method pay in the Vehicle class that returns the admin fee
+                                                                              stored in the variable AdminFee if the vehicle has stayed for five hours or less;
+                                                                              otherwise, it returns 0.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   [2]
+
+                                                    (ii)                      Construct the method pay in the Car class, where it uses the vehicle method pay
+                                                                              but adds the charge for the amount of time spent in the parking area.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   [2]
+
+                          The array vehicles[] in the ParkingArea class is used to store instances of the Car or
+                          Motorbike class.
+
+                          (e)                       Outline why Vehicle is a valid type for this array.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  [2]
+
+
+
+(Option D continues on the following page)

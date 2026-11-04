@@ -1,0 +1,41 @@
+{
+  "question_id": "P-SRC026-Q12-a",
+  "unofficial": true,
+  "marks": 5,
+  "solution": "Values for n=0,1,2,3,4,5,6 are0,1,-1,2,-2,3,-3. Therefore balance(6)=-3.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Base value0."
+    },
+    {
+      "marks": 1,
+      "criterion": "n1→1,n2→-1."
+    },
+    {
+      "marks": 1,
+      "criterion": "n3→2,n4→-2."
+    },
+    {
+      "marks": 1,
+      "criterion": "n5→3."
+    },
+    {
+      "marks": 1,
+      "criterion": "n6→-3 and correct final result."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed all n0..6; each path has only one recursive call.",
+    "source_comparison": [
+      19
+    ],
+    "test_code": "def balance(n):\n    if n <= 0:\n        return 0\n    previous = balance(n - 1)\n    if n % 2 == 0:\n        return previous - n\n    return previous + n\nassert [balance(i) for i in range(7)]==[0,1,-1,2,-2,3,-3]",
+    "result_file": ""
+  },
+  "code": "def balance(n):\n    if n <= 0:\n        return 0\n    previous = balance(n - 1)\n    if n % 2 == 0:\n        return previous - n\n    return previous + n",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

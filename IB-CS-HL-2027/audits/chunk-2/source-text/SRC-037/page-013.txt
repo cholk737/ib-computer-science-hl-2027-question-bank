@@ -1,0 +1,53 @@
+                                              –   13 –                                    8823 – 7012M
+
+
+       Example 2:
+       function FINDHIGH(ARR):
+            HIGHEST = ARR[0]
+            if ARR[1] > HIGHEST then
+                HIGHEST = ARR[1]
+            end if
+            if ARR[2] > HIGHEST then
+                HIGHEST = ARR[2]
+            end if
+            return HIGHEST
+       end function
+
+
+(c)   Award [6 max]
+       Award [1] for looping from 0 to (FACTORIAL(8) – 1)/looping through all permutations
+       Award [1] for correctly using FINDHIGH and NEXTPERMUTATION
+       Award [1] for loop from index 3 to 7
+       Award [1] using a boolean variable (FOUND) to exit the loop
+       Award [1] testing if ARR[POS] > HIGHEST
+       Award [1] assigning CHOICE = ARR[POS]
+       Award [1] choosing the last cat if no better cat was found (CHOICE = ARR[7])
+       Award [1] for incrementing total and correctly calculating the percentage
+
+       Example 1:
+       START = 3
+       ARRLEN = 8
+       TOTAL = 0
+       loop ROW from 0 to (FACTORIAL(ARRLEN)-1)
+            HIGHEST = FINDHIGH(ARR)
+            FOUND = False
+            POS = START
+            loop while FOUND = False and POS < ARRLEN
+                 if ARR[POS] > HIGHEST then
+                       CHOICE = ARR[POS]
+                       FOUND = True
+                 end if
+                 POS = POS + 1
+            end loop
+            if FOUND = False then
+                 CHOICE = ARR[ARRLEN-1]
+            end if
+            if CHOICE = X then
+                 TOTAL = TOTAL + 1
+            end if
+            if ROW < FACTORIAL(ARRLEN)-1 then
+                 ARR = NEXTPERMUTATION(ARR)                      // accept without test
+            end if
+       end loop
+       PERCENT = TOTAL/FACTORIAL(ARRLEN)*100
+       output(PERCENT)

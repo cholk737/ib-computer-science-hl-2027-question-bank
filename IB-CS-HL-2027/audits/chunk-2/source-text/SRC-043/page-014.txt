@@ -1,0 +1,40 @@
+                                                                  –   14    –                                                 2225                                                                                         – 6420M
+
+
+
+(f)                                                                                                                Award [8 max]
+            Initialise variables for totalling temperatures and nighttime temperatures;
+            Initialise variables for MIN and MAX; // MIN to a high number or first element of TEMP array
+                                                                 // MAX to a low number or first element of TEMP array
+            Use a loop with 24 iterations;
+            Totalling all hourly temperatures from TEMP array;
+            Selection statement to test if current TEMP value is lower than MIN and if so, assign it to MIN;
+            Selection statement to test if current TEMP value is higher than MAX and if so, assign it to MAX;
+            Selection statement for adding a nighttime temperature to the nighttime total;
+            Calculation of mean temperature and mean nighttime temperature;
+            Both mean temperature calculations only carried out once, outside the loop;
+
+            Example answer (accept any form of pseudo-code)
+            // both array TEMP (used to store hourly temperatures) and array TIME
+            (used to store times in 24-hour format) are being used but do not have
+            to be declared and initialised
+
+            TOTAL = 0
+            NIGHT_TOTAL = 0
+            MIN = 1000
+            MAX = -                                                                  1000
+            loop T from 0 to 23
+            NEXT = TEMP[T]
+            TOTAL = TOTAL + NEXT
+            if TIME[T] >= 19:00 AND TIME[T] < 07:00 then
+                           TOTAL_NIGHT = TOTAL_NIGHT + NEXT
+            end if
+            if NEXT < MIN then
+                           MIN = NEXT
+            end if
+            if NEXT > MAX then
+                           MAX = NEXT
+            end if
+            end loop
+            MEAN_TEMP = TOTAL / 24
+            MEAN_TOTAL_NIGHT = TOTAL_NIGHT / 12

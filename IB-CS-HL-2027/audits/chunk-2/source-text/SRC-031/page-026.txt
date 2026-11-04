@@ -1,0 +1,51 @@
+                                           –   26 –                                       2225 – 6419M
+
+
+
+ Example 3 (alternative):
+
+ Award max [8].
+
+ Award max [2] for initializing the FLAGS array: [1] for correct loop and      [1] for assignment
+ statement.
+ Award max [6] for matching up the values in the       MAT array with indexes in the    FLAGS array,
+ assigning values to elements of the FLAGS array and for terminating the algorithm early:
+  [1] for correct row loop
+  [1] for correct column loop
+  [1] for calculating correctly index in the FLAGS array (index is MAT[R][C]-1)
+  [1] for checking if the value of the FLAGS element at that index is 1
+  [1] for outputting that the table has not been filled in correctly (within the inner loop)
+  [1] for terminating early the execution of the algorithm (return within the inner loop)
+  [1] for assignment FLAGS [MAT[R][C]-1] = 1 (if the FLAGS element at that index is 0)
+  [1] for output after the nested loops (outputting that the table has been filled in correctly)
+
+
+ // the FLAGS array holds 25 values indexed from 0 to 24
+ // initializing the FLAGS array
+
+ loop K from 0 to 24
+    FLAGS [K] = 0
+ end loop
+
+ // matching up the values in the MAT array with
+ // indexes in the FLAGS array
+ // and assigning values to elements of the FLAGS array
+ // this algorithm outputs message and terminates immediately
+ // in case that a number (MAT[R][C]-1) appears for the second
+ // time in the FLAGS array (when FLAGS [MAT[R][C]-1] == 1)
+
+ loop R from 0 to 4
+       loop C from 0 to 4
+                if FLAGS [MAT[R][C]-1] == 1
+                    then
+                         output('the table has not been completed correctly ')
+                         return
+                      else
+                             FLAGS [MAT[R][C]-1] = 1
+                 endif
+          end loop
+ end loop
+
+ // MAT completed correctly, displaying an appropriate message
+
+ output('the table has been completed correctly ')

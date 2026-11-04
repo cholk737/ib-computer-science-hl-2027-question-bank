@@ -1,0 +1,47 @@
+{
+  "question_id": "P-SRC006-Q04",
+  "source_question_ids": [
+    "H-SRC006-Q04"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Given x=4, y=7 and ready=True, determine the value of ((x > 4) != ready) and (y - 2 > 4). Show intermediate Boolean values.",
+  "syllabus_codes": [
+    "B2.3.2"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 2,
+  "command_term": "Determine",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "(False != True) and True = True and True = True.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "First operand evaluates True from False != True."
+    },
+    {
+      "marks": 1,
+      "criterion": "Second operand True and final True."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Python execution verifies the result.",
+    "source_comparison": [
+      5
+    ],
+    "test_code": "assert (((4>4)!=True) and (7-2>4)) is True",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC006-Q04.json",
+  "question_path": "question-bank/questions/P-SRC006-Q04.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC006-Q04.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

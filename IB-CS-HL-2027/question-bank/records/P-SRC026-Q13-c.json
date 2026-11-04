@@ -1,0 +1,76 @@
+{
+  "question_id": "P-SRC026-Q13-c",
+  "source_question_ids": [
+    "H-SRC026-Q13-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A4×4 grid contains16 integer entries, each from1 to16. Construct correctly_completed(grid) in Python to return True exactly when every integer1 to16 occurs once. Use a16-element flags list initialized False, mark each encountered value at index value-1, then inspect all flags.",
+  "syllabus_codes": [
+    "B2.2.2",
+    "B2.3.2",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 8,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "One solution:\ndef correctly_completed(grid):\n    flags = [False] * 16\n    for row in grid:\n        for value in row:\n            flags[value - 1] = True\n    for flag in flags:\n        if not flag:\n            return False\n    return True\nSince there are exactly16 entries, seeing all16 possible values implies there are no duplicates.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Allocates16 flags."
+    },
+    {
+      "marks": 1,
+      "criterion": "Initializes every flag False."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses every row."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses every value."
+    },
+    {
+      "marks": 1,
+      "criterion": "Maps value to value-1."
+    },
+    {
+      "marks": 1,
+      "criterion": "Marks encountered index True."
+    },
+    {
+      "marks": 1,
+      "criterion": "Detects any unmarked flag."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns True only when all required values occur."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed permutation,duplicate/missing value cases; correctness relies on stated16 entries/range.",
+    "source_comparison": [
+      23,
+      24,
+      25,
+      26
+    ],
+    "test_code": "def correctly_completed(grid):\n    flags = [False] * 16\n    for row in grid:\n        for value in row:\n            flags[value - 1] = True\n    for flag in flags:\n        if not flag:\n            return False\n    return True\ng=[list(range(1+4*r,5+4*r)) for r in range(4)]\nassert correctly_completed(g)\nb=[row[:] for row in g];b[3][3]=1\nassert not correctly_completed(b)",
+    "result_file": ""
+  },
+  "code": "def correctly_completed(grid):\n    flags = [False] * 16\n    for row in grid:\n        for value in row:\n            flags[value - 1] = True\n    for flag in flags:\n        if not flag:\n            return False\n    return True",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC026-Q13-c.json",
+  "question_path": "question-bank/questions/P-SRC026-Q13-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC026-Q13-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

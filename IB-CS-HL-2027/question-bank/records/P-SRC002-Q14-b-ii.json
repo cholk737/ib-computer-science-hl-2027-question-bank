@@ -1,0 +1,41 @@
+{
+  "question_id": "P-SRC002-Q14-b-ii",
+  "source_question_ids": [
+    "H-SRC002-Q14-b-ii"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "State what happens to the first __init__ definition if a Python class body later defines another method named __init__.",
+  "syllabus_codes": [
+    "B3.1.4"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 1,
+  "command_term": "State",
+  "difficulty": "medium",
+  "adaptation_rationale": "Retains constructor-definition reasoning while correcting language-specific overloading assumptions.",
+  "solution": "The later definition replaces the earlier binding for that name; Python does not select between these two definitions by signature.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Later definition replaces earlier binding."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC002-Q14-b-ii.json",
+  "question_path": "question-bank/questions/P-SRC002-Q14-b-ii.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC002-Q14-b-ii.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

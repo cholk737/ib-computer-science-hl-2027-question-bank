@@ -1,0 +1,49 @@
+                                                                               –22–                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            8825–6405
+
+Option D —                  Object-oriented programming
+
+14.                                                                                           A law firm has 20 lawyers. They can be categorized into three groups: civil lawyers, criminal
+         lawyers, and company lawyers.
+
+         A lawyer can have a maximum of 15 cases at a time.
+
+         The following shows part of the code for the Lawyer class, which keeps details of a lawyer:
+
+         public class Lawyer
+         {
+             private int lawyerID;      // id of the lawyer
+             private String lawyerName;
+             private String lawyerType;  // category of lawyer
+             private int lawyerRank;     // 0 or 1, default is 0
+             private int casesWon;       // total number of cases won by the lawyer
+             private Case lawyerCases[] = new Case[15];// lawyer’s array of cases
+             public Lawyer(int lawyerID, String lawyerName, String lawyerType,
+         Case[] lawyerCases)
+             {
+                 this.lawyerID = lawyerID;
+                 this.lawyerName = lawyerName;
+                 this.lawyerType = lawyerType;
+                 this.lawyerRank = 0;
+                 this.casesWon = 0;
+                 this.lawyerCases = lawyerCases;
+             }
+             public String getlawyerName()
+             {
+                 return lawyerName;
+             }
+             public String getlawyerType()
+             {
+                 return lawyerType;
+             }
+             public int getlawyerRank()
+             {
+                 return lawyerRank;
+             }
+             public void setlawyerRank(int lawyerRank)
+             {
+                 this.lawyerRank = lawyerRank;
+             }
+             // all accessor and mutator methods are present but not shown
+         } // end of Lawyer class
+
+(Option D continues on the following page)

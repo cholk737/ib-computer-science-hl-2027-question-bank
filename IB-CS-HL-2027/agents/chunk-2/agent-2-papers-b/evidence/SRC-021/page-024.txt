@@ -1,0 +1,33 @@
+– 24 – M23/4/COMSC/HP1/ENG/TZ2/XX/M 
+(c) Award [8 max]
+Example 1:
+Award [1] for initializing HIGHEST
+Award [1] for correct row loop (I)
+Award [1] for calculating the sum of all elements in the Ith row
+Award [1] for using correct indexes in the DICEDIAL array
+Award [1] for comparing the row sum with the highest row sum so far
+Award [1] for and changing the value of HIGHEST if needed
+Award [1] for outputting the highest row sum once
+Award [1] for the second loop
+Award [1] for comparing the row total with the highest row total
+Award [1] for outputting row numbers (rows with the highest total)
+Note: The method heading may not appear in candidates’ responses.
+highestRT(DICEDIAL)
+HIGHEST = 0  // any number <= 0 OR the first-row total 
+  loop I from 0 to 6 
+SUM = DICEDIAL[I][0] + DICEDIAL[I][1] + DICEDIAL[I][2] 
+ //inner loop may be used instead of this statement 
+  //(see Example 2)- to calculate SUM of values in row I 
+ if SUM > HIGHEST // or >= 
+  then HIGHEST = SUM 
+  end if 
+ end loop 
+ output(‘the highest row total:’, HIGHEST) 
+ output(‘the highest row total occurs in the following rows:’) 
+ loop I from 0 to 6 
+ SUM = DICEDIAL[I][0] + DICEDIAL[I][1] + DICEDIAL[I][2] 
+ if SUM = HIGHEST 
+  then output (I) 
+  end if 
+  end loop 
+end highestRT

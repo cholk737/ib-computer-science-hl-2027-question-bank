@@ -1,0 +1,48 @@
+                                     –   22 –                                 8825 – 6404M
+
+
+
+Example 2:
+
+
+[1]for nested loops
+[1]for correct outer loop (correct initial and final value of control variable- ROW)
+[1]for correct inner loop (correct initial and final value of control variable- COL)
+[1]for correct use of row index and column index in the MAT array
+[1]for checking if MAT[ROW][COL]is a non-zero element
+[1]for early return (return False if MAT[ROW][COL] is a non-zero element)
+[1]for returning True after nested loops
+
+
+isUpper(MAT,N)  //sub-program heading may not appear
+     loop ROW from 1 to N-1
+          loop COL from 0 to ROW-1
+               if MAT[ROW][COL] != 0
+                        then return False
+               end if
+           end loop
+      end loop
+      return True
+    end isUpper
+
+Example 3:
+
+
+[1]for correctly initializing and changing (if needed) the value of flag
+1]for correct row loop (correct initial and final value of control variable - I)
+[1]for correct column loop (correct initial and final value of control variable - J)
+[1]for checking if MAT[I][J]is below the main diagonal (I > J)
+[1] for correct use of row index and column index in the MAT array
+[1]for checking if MAT[I][J]is a non-zero element
+[1]for correct return
+
+A = TRUE
+loop I from 0 to N-1
+      loop J from 0 to N-1
+             if (I > J) AND (MAT[I][J] != 0)
+                               //I-row index, J-column index
+                   then A = FALSE //or return False
+             end if
+      end loop
+end loop
+return A

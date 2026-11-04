@@ -1,0 +1,73 @@
+{
+  "source_question_id": "H-SRC009-Q12-b",
+  "source_id": "SRC-009",
+  "source_filename": "Computer_science_paper_1__HL.pdf",
+  "year": "2024",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "not stated",
+  "option": "",
+  "question": 12,
+  "subquestion": "b",
+  "source_pdf_pages": [
+    6
+  ],
+  "source_printed_pages": [
+    "5"
+  ],
+  "original_marks": 4,
+  "command_term": "See original prompt",
+  "original_text": "Copy and complete the truth table for this alarm system.",
+  "parent_context": "– 4 – 8824 – 6904\nSection B\nAnswer all questions.\n11. Laptops are used daily for data storage, web browsing, gaming, and email.\n(a) State one precaution a user can take to secure their data in case their laptop is stolen. [1]\n(b) Outline one feature of the operating system that is required when running a program \non a laptop. [2]\n(c) Justify the decision of the laptop manufacturer to include both wired and wireless \nnetwork connection capability. [4]\nA data packet is a basic unit of communication over a computer network.\n(d) Describe the structure of a data packet. [2]\n(e) Outline three reasons why protocols are necessary on a computer network. [6]\n12. (a)   Consider the following expression:\n(X > 6) or (Y > 3) and ((X + Y) < 20)\n(i) State all the Boolean operators in this expression. [1]\n(ii) State all the constants in this expression. [1]\n(iii) Determine the value of this expression when X is 6 and Y is 6. Show all \nyour working. [2]\nA student plans to create an alarm system for their room. The room has one door and  \none window.\nThree sensors will be used in the system:\n y A sensor to detect movement in the room.\n y A sensor to detect if the door is locked or unlocked.\n y A sensor to detect if the window is open or closed.\nThe student knows that this practical problem can be expressed in terms of Boolean logic \nand presented in a truth table.\nThe student considers the following three inputs:\n1. MOTION, where true (1), represents that movement is detected in the room and false (0) \nrepresents no movement is detected.\n2. DOOR, where true (1), represents that the door is locked and false (0) represents \nan unlocked door.\n3. WINDOW, where true (1), represents that the window is open and false (0) represents \na closed window.\n(This question continues on the following page)\n– 5 – 8824 – 6904\nTurn over\n(Question 12 continued)\nA siren will make a warning noise when the door is locked and either of the following occur:\n y Movement is detected.\n y The window is open.\n(b) Copy and complete the truth table for this alarm system. [4]\nMOTION DOOR WINDOW SIREN\n0 0 0\nThe central processing unit (CPU) executes a program that is stored as a sequence of \nmachine language instructions in primary memory. It does this by repeatedly fetching an \ninstruction from primary memory, decoding that instruction, executing and storing the result.\n(c) (i)   Identify the CPU register that holds data to be transferred to primary memory. [1]\n(ii) Identify the part of the CPU that performs decoding. [1]\n(iii) State where the calculations will be executed. [1]\n(iv) Explain the role of buses in the execution of a machine language instruction. [4]\n13. Cell phones are used to make phone calls and send text messages. They can also browse \nthe internet and run apps.\nAn incoming call will interrupt an app being executed.\n(a) Describe how a stack data structure can be used to resume the app that was \ninitially running. [2]\n(b) Describe one way a cell phone app can help the user improve their health. [2]\n(c) Outline why a higher screen resolution leads to higher quality images on a cell \nphone screen. [2]\n(d) (i)   Explain what is meant by GPS (global positioning system). [4]\n(ii) Outline one concern of cell phone apps sharing the location of the user. [2]\n(e) Explain one advantage of using a dedicated operating system on a cell phone instead \nof a generic operating system. [3]",
+  "assets": [
+    {
+      "kind": "source_truth_table",
+      "description": "Original alarm truth-table structure",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-009/renders/page-6.png",
+      "source_pdf_page": 6,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Copy and complete the truth table for this alarm system.",
+    "A lab alert operates when armed=1 and either smoke=1 or heat=1"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-015",
+    "filename": "Computer_science_paper_1__HL_markscheme.pdf",
+    "pdf_pages": [
+      11
+    ],
+    "question_reference": "Q12 b",
+    "marking_summary": "Original MOTION,DOOR,WINDOW ordered outputs0,0,0,1,0,0,1,1.",
+    "source_issues": [],
+    "source_marking_evidence": "– 11 – 8824 – 6904M \n12. (a)    (i)  Award [1 max]\nOR, AND; \n(ii) Award [1 max]\n6, 3, 20;\n(iii) Award [2 max]\nAward [1] for the correct result (True) and award [1] for working.\n(6 > 6) OR  (6 > 3) AND (6 + 6 < 20) \nFalse  OR True AND True \nFalse  OR True \nTrue \n(b) Award [4 max]\nAward [1] for every two correct rows.\nMOTION DOOR WINDOW SIREN \n0 0 0 0 \n0 0 1 0 \n0 1 0 0 \n0 1 1 1 \n1 0 0 0 \n1 0 1 0 \n1 1 0 1 \n1 1 1 1 \n(c) (i) Award [1 max] \nMemory Data Register/ MDR; \n(ii) Award [1 max]\nControl Unit/ CU;\n(iii) Award [1 max]\nArithmetic and Logic Unit/ ALU;\n(iv) Award [4 max]\nBuses connect hardware components/ transfer information/signals between different\ncomponents (CU, ALU, RAM, registers);\nAddress bus carries the address of the memory location from where data should be\nread/ written:\nData bus carries the actual data which need to be stored on/ written to the primary\nmemory;\nControl bus carries control/ timing signals from CU to other components;\nBuses carry power supply to all components;"
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "A1.2.4",
+      "scope_evidence": "• Truth tables to predict the output of simple logic circuits\n• Truth tables to determine outputs from inputs for a problem description\n• Truth tables and their relationship to a Boolean expression, with inputs and outputs\n• Truth tables derived from logic diagrams to aid the simplification of logical expressions\n• Karnaugh maps and algebraic simplification to simplify output expressions",
+      "rationale": "A lab alert operates when armed=1 and either smoke=1 or heat=1 assesses Construct and analyse truth tables.",
+      "theme": "A",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "No visual required by this leaf.",
+    "technical": "All8 combinations enumerated for armed and(smoke or heat)."
+  },
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC009-Q12-b"
+  ]
+}

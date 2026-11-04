@@ -1,0 +1,75 @@
+{
+  "source_question_id": "H-SRC020-Q13-a",
+  "source_id": "SRC-020",
+  "source_filename": "Computer_science_paper_1__TZ2_HL.pdf",
+  "year": "2023",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "TZ2",
+  "option": "",
+  "question": 13,
+  "subquestion": "a",
+  "source_pdf_pages": [
+    7
+  ],
+  "source_printed_pages": [
+    "6"
+  ],
+  "original_marks": 4,
+  "command_term": "Determine",
+  "original_text": "Determine the value of func(5) (show all your working).",
+  "parent_context": "– 6 – 2223 – 7011\n13. Consider the following recursive method:\nfunc(X)\n    if X>1\n        then\n            return func(X-1) + func(X-2)\n        else\n            return X\n    end if\nend func\n(a) Determine the value of func(5) (show all your working). [4]\n(b) Outline two disadvantages of recursive methods. [4]\nA stack is a data structure that is used in the implementation of a recursive method.\n(c) Outline the purpose of the stack access method isEmpty(). [2]\nThe stack TOWNS holds several town names, and the name “Cardiff” is on the top of the \nTOWNS stack (see Figure 1a).\nAn algorithm is needed that will reverse the contents of the TOWNS stack. The name “Geneva” \nshould be on top of the TOWNS stack after reversing its contents (see Figure 1b).\nFigure 1: Example data held on the TOWNS stack before \nand after execution of the requested algorithm\na. The content in the TOWNS stack \nbefore it is reversed\nCardiff\nWashington DC\nThe Hague\nSingapore\nGeneva\nb. The content in the TOWNS stack \nafter it is reversed\nGeneva\nSingapore\nThe Hague\nWashington DC\nCardiff\n(d) Construct an algorithm that will reverse the TOWNS stack using an empty queue. \nYou may assume that the TOWNS stack is inputted and a new empty queue named \nTEMP is initialized.\nYou must use stack access methods and queue access methods in your response. [5]",
+  "assets": [],
+  "assessed_concepts": [
+    "Original source task: Determine the value of func(5) (show all your working).",
+    "Trace total_to(4), showing all calls and the final value"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-021",
+    "filename": "Computer_science_paper_1__TZ2_HL_markscheme.pdf",
+    "pdf_pages": [
+      18
+    ],
+    "question_reference": "Q13 a",
+    "marking_summary": "Original func(5) Fibonacci trace returns5.",
+    "source_issues": [],
+    "source_marking_evidence": "– 18 – M23/4/COMSC/HP1/ENG/TZ2/XX/M \n13. (a) Award [4 max] \n The working may be differently represented. If only the final result (5) is shown, then award \n only one mark. \nfunc(5) \n= func(4) +  func(3)      ; \n= func(3) +  func(2) +  func(2) +  func(1) =   func(3)  + 2 * func(2) + 1  ;  \n= func(2) +  func(1) +  2 (func(1) +  func(0) )+ 1 =  func(2) +1 + 2+1    ;  \n= func(1) +  func(0) + 4  = 1  +0 +  4  =5      ; \n(b) Award [4 max]\nAward [1] for a disadvantage and [1] for the elaboration, x2.\nrecursion is memory intensive;\nbecause memory (call stack) is used to store all the intermediate arguments and\nreturn values/ could lead to stack overflow (if there is a large amount of data);\nrecursion can be slow;\nif not implemented correctly/if too many recursive calls occur;\ndifficult to think of the logic of a recursive function/ complexity of the paradigm;\nhard to construct/ analyse /understand the code;\n(c) Award [2 max]\nisEmpty() returns a Boolean value True if the stack size is 0, else it returns False/ checks if\nstack is empty or not;\nit is used/called in conditions in if/while statements/ it is called before an attempt is made to\nremove the value from the stack;\nto prevent performing operations on an empty stack/ to prevent stack underflow error;"
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B2.4.4",
+      "scope_evidence": "• The fundamentals of recursion and its advantages and limitations\n• The utility of recursion in solving problems that can be broken down into smaller, similar sub-problems\n• Recursive algorithms, including but not limited to quicksort\n• The limitations of recursion, including complexity and memory usage\n• Situations that best suit the use of recursion, including fractal image creation, traversing binary trees, sorting algorithms",
+      "rationale": "Original recursion concept relevant toB2.4.4; original branching trace not permitted underB2.4.5. Conversion explicitly replaces it with non-branching recursion.",
+      "theme": "B",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B2.4.5",
+      "scope_evidence": "• Simple, non-branching recursive algorithms in programming only",
+      "rationale": "Original recursion concept relevant toB2.4.4; original branching trace not permitted underB2.4.5. Conversion explicitly replaces it with non-branching recursion.",
+      "theme": "B",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "No visual required by this leaf.",
+    "technical": "Executed total_to4 and zero/negativebasecases."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC020-Q13-a"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

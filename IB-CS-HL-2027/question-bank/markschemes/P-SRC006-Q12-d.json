@@ -1,0 +1,37 @@
+{
+  "question_id": "P-SRC006-Q12-d",
+  "unofficial": true,
+  "marks": 4,
+  "solution": "An array offers constant-time indexed access, whereas a linked list requires traversal. An array reserves fixed capacity; a linked list can grow node by node but stores an extra next reference. Inserting after a known list node can relink references, whereas insertion within an array may require shifting later records.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Array direct access versus linked traversal."
+    },
+    {
+      "marks": 1,
+      "criterion": "Fixed reserved capacity versus dynamic nodes."
+    },
+    {
+      "marks": 1,
+      "criterion": "Linked nodes require reference overhead."
+    },
+    {
+      "marks": 1,
+      "criterion": "Known-position insertion relinks list versus array shifts."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      13
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

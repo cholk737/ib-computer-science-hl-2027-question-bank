@@ -1,0 +1,46 @@
+– 20 – 2225 – 6414M 
+(c) Award max [6].
+Award [1] for correct initialization (before the loop)
+Award [1] for correct loop through the NUMBERS stack using isEmpty()
+Award [1] for taking an element from the top of the NUMBERS stack using pop()(within the loop)
+Award [1] for changing the value of SMALLEST if needed
+Award [1] for changing the value of LARGEST if needed
+Award [1] for placing SMALLEST and LARGEST on the stack NUMBERS using push() (after the
+loop)
+Award [1] for the order of push operations: first push LARGEST onto the stack then SMALLEST
+(so that SMALLEST will be on the top of stack NUMBERS)
+Example 1: 
+X = NUMBERS.pop()
+SMALLEST = X
+LARGEST = X   
+//  OR 
+//   initialization 
+//   SMALEST= 999999999999 (any very large number) 
+//   LARGEST= -999999999999 (negative number!) 
+loop while not NUMBERS.isEmpty() 
+//searching for the smallest and largest value 
+X=NUMBERS.pop() 
+if X <= SMALLEST 
+then SMALLEST = X 
+else if X >= LARGEST 
+then LARGEST = X 
+end if 
+end if  
+end loop 
+NUMBERS.push(LARGEST) 
+NUMBERS.push(SMALLEST) 
+Example 2: 
+SMALLEST = NUMBERS.peek()   //initialization
+LARGEST = SMALLEST
+loop while NUMBERS.isEmpty()= false 
+//searching for the smallest and largest value 
+X=NUMBERS.pop() 
+if X < SMALLEST 
+then SMALLEST = X 
+end if 
+if X > LARGEST 
+then LARGEST = X 
+end if 
+end loop  
+NUMBERS.push( LARGEST) 
+NUMBERS.push(SMALLEST) 

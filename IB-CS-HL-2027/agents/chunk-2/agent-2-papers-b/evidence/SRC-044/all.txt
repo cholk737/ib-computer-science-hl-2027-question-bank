@@ -1,0 +1,507 @@
+=== PDF PAGE 1 ===
+© International Baccalaureate Organization 2025
+All rights reserved. No part of this product may be reproduced in any form or by any 
+electronic or mechanical means, including information storage and retrieval systems, 
+without the prior written permission from the IB. Additionally, the license tied with this 
+product prohibits use of any selected files or extracts from this product. Use by third 
+parties, including but not limited to publishers, private teachers, tutoring or study services, 
+preparatory schools, vendors operating curriculum mapping services or teacher resource 
+digital platforms and app developers, whether fee-covered or not, is prohibited and is a 
+criminal offense.
+More information on how to request written permission in the form of a license can be 
+obtained from https://ibo.org/become-an-ib-school/ib-publishing/licensing/applying-for-a-
+license/.
+© Organisation du Baccalauréat International 2025
+Tous droits réservés. Aucune partie de ce produit ne peut être reproduite sous quelque 
+forme ni par quelque moyen que ce soit, électronique ou mécanique, y compris des 
+systèmes de stockage et de récupération d’informations, sans l’autorisation écrite 
+préalable de l’IB. De plus, la licence associée à ce produit interdit toute utilisation de tout 
+fichier ou extrait sélectionné dans ce produit. L’utilisation par des tiers, y compris, sans 
+toutefois s’y limiter, des éditeurs, des professeurs particuliers, des services de tutorat ou 
+d’aide aux études, des établissements de préparation à l’enseignement supérieur, des 
+fournisseurs de services de planification des programmes d’études, des gestionnaires de 
+plateformes pédagogiques en ligne, et des développeurs d’applications, moyennant 
+paiement ou non, est interdite et constitue une infraction pénale.
+Pour plus d’informations sur la procédure à suivre pour obtenir une autorisation écrite 
+sous la forme d’une licence, rendez-vous à l’adresse https://ibo.org/become-an-ib-school/
+ib-publishing/licensing/applying-for-a-license/.
+© Organización del Bachillerato Internacional, 2025
+Todos los derechos reservados. No se podrá reproducir ninguna parte de este producto 
+de ninguna forma ni por ningún medio electrónico o mecánico, incluidos los sistemas de 
+almacenamiento y recuperación de información, sin la previa autorización por escrito del 
+IB. Además, la licencia vinculada a este producto prohíbe el uso de todo archivo o 
+fragmento seleccionado de este producto. El uso por parte de terceros —lo que incluye, 
+a título enunciativo, editoriales, profesores particulares, servicios de apoyo académico o 
+ayuda para el estudio, c olegios preparatorios, desarrolladores de aplicaciones y 
+entidades que presten servicios de planificación curricular u ofrezcan recursos para 
+docentes mediante plataformas digitales—, ya sea incluido en tasas o no, está prohibido 
+y constituye un delito.
+En este enlace encontrará más información sobre cómo solicitar una autorización por 
+escrito en forma de licencia: https://ibo.org/become-an-ib-school/ib-publishing/licensing/
+applying-for-a-license/.
+=== PDF PAGE 2 ===
+2225 – 6423
+© International Baccalaureate Organization 2025
+19 pages
+5 May 2025
+Zone A morning Zone B morning Zone C morning
+1 hour
+Computer science
+Standard level
+Paper 2
+Instructions to candidates
+ y Do not open this examination paper until instructed to do so.
+ y Answer all of the questions from one of the options.
+ y The maximum mark for this examination paper is [45 marks].
+Option Questions
+Option A —  Databases 1 – 3
+Option B —  Modelling and simulation 4 – 6
+Option C —  Web science 7 – 9
+Option D —  Object-oriented programming 10 – 12
+=== PDF PAGE 3 ===
+– 2 – 2225 – 6423
+Option A — Databases
+1. Alpha Hospital is situated in a large city and has over 1000 staff. It stores its data in a 
+relational database.
+Some of the tables in this relational database contain data about the hospital staff, their roles, 
+and the hospital departments.
+Staff roles include doctor, nurse, pharmacist, radiologist, and support staff. Staff can only 
+hold one role.
+Departments include Accident and Emergency, Critical Care, Medical, General Surgery, 
+Orthopaedics, and Ophthalmology. Staff can work in several departments.
+The ROLE table, STAFF table, and DEPARTMENT table are shown in Figure 1.
+Figure 1: Diagrammatic relationship for the ROLE table, 
+STAFF table and DEPARTMENT table
+ROLE STAFF DEPARTMENT
+RoleID StaffID DepartmentID
+PayGrade RoleID ManagerID
+DepartmentID Building
+FirstName
+Surname
+DateOfBirth
+(a) (i)   State the primary key in the STAFF table. [1]
+(ii) State a foreign key in the STAFF table. [1]
+(b) Describe the relationships between the three tables in Figure 1. [2]
+(c) Outline what a query is used for in a database. [2]
+(d) Identify the steps to create a query to list the staff with the surname Waters who are on 
+pay grade 17. The query must display only FirstName, Surname, and PayGrade. [4]
+(e) Outline why an integer is an appropriate data type for the PayGrade field. [2]
+(f) Explain two ways in which the database administrator can ensure the privacy of the 
+hospital’s staff data. [6]
+(Option A continues on the following page)
+=== PDF PAGE 4 ===
+– 3 – 2225 – 6423
+Turn over
+(Option A continued)
+2. Database design is a complex process that takes place in a range of phases. Different phases 
+of database design use different schema.
+(a) Describe the difference between a conceptual schema and a logical schema. [2]
+(b) Explain the importance of a data definition language in implementing a data model. [2]
+(c) Explain why data modelling is used during the development of a database. [4]
+(d) Explain why both data validation and data verification are required to ensure the 
+correctness of the data within a database. [3]
+(e) Outline how data integrity is maintained during a database transaction. [2]
+(f) Outline the role of relational integrity in maintaining data consistency within a database. [2]
+(Option A continues on page 5)
+=== PDF PAGE 5 ===
+– 4 – 2225 – 6423
+Blank page
+=== PDF PAGE 6 ===
+– 5 – 2225 – 6423
+Turn over
+(Option A continued)
+3. Alpha Hospital uses a database application to book appointments. Information can be shown 
+in different formats.
+Figure 2 shows an example of a patient’s appointments displayed in the application.
+Figure 2: A patient’s appointments
+Back
+Patient appointments
+List
+Select the appointment for 
+details and directions to the 
+building and room.
+24 Jan 2024   09:30   Dr L. Ross
+General Surgery
+26 Jan 2024   10:00   Dr N. Friend
+Radiology
+28 Jan 2024   09:30   Dr L. Ross
+General Surgery
+Patient number
+First name
+Preferred name
+Surname
+Date of birth
+Age
+Form
+The Age field is a derived field.
+(a) (i)   Outline one reason why a derived field would be used in a database. [2]
+(ii) Describe how the derived field Age would be calculated. [2]
+Patient information can be represented in the following format:
+PATIENT (PatientID, FirstName, Surname, PreferredName, DateOfBirth)
+(b) Outline the difference between first normal form (1NF) and second normal form (2NF). [2]
+(c) Construct a database in third normal form (3NF) for all of the data shown in Figure 2. 
+You should use database notation as shown in the PATIENT table. [6]
+End of Option A
+=== PDF PAGE 7 ===
+– 6 – 2225 – 6423
+Option B — Modelling and simulation
+4. Global warming can be measured over time using mean temperatures. Figure 3 shows the 
+mean daily maximum temperatures from 1970 to 2020 for Nauru, an island in the Pacific Ocean.
+Figure 3: Mean daily maximum temperatures for Nauru, 1970–2020
+1970 1975 1980 1985 1990 1995 2000 2005 2010 2015 2020
+27
+28
+29
+30
+Temperature (°C)
+Year
+(a) State two variables that are necessary for the mean daily maximum temperature to 
+be calculated. [1]
+(b) Identify the steps that would be used to create the diagram exactly as shown in 
+Figure 3 using the data in a spreadsheet. [3]
+(c) Identify two reasons why the mean daily maximum temperature data is presented in 
+graphical form. [2]
+An automated system is used to collect the temperature data for Nauru once an hour for  
+one year.
+(d) Outline one reason why the temperature data is collected once an hour rather than 
+at shorter intervals, such as once a minute. [2]
+(e) Describe the steps that should be used to store the data collected for one day 
+(24 hours) in suitable parallel one-dimensional (1D) arrays.
+The time the data was collected must be easy to identify. Do not write a 
+pseudocode algorithm. [5]
+(Option B continues on the following page)
+=== PDF PAGE 8 ===
+– 7 – 2225 – 6423
+Turn over
+(Option B, question 4 continued)
+The temperature data is downloaded every day and collated into a master file.
+The data from the master file is loaded into a suitable array for that 24-hour period. 
+The following statistics are calculated:
+	y Maximum temperature
+	y Minimum temperature
+	y Mean temperature
+As Nauru is very close to the equator, the length of the day changes very little throughout 
+the year. For the purposes of part (f), the lengths of its day and night are:
+	y Day: 07:00 to 18:59 inclusive (12 hours)
+	y Night: 19:00 to 06:59 inclusive (12 hours)
+(f) Construct a pseudocode algorithm to calculate the:
+	y maximum temperature
+	y minimum temperature
+	y mean temperature
+	y mean night-time temperature.
+Assume the arrays for the time of day of the reading and hourly temperature readings 
+have already been set up and populated as parallel 1D arrays. [8]
+(Option B continues on the following page)
+=== PDF PAGE 9 ===
+– 8 – 2225 – 6423
+(Option B continued)
+5. The global increase in mean temperatures is causing concern, and governments are using 
+computer models to determine potential future changes.
+Many islands in the Pacific Ocean are close to or below sea level and have observed an 
+increased incidence of coastal flooding. This suggests there is a relationship between the 
+increase in mean temperatures and the increase in mean sea levels.
+Figure 4 shows the mean sea level of Nauru from 1994 to 2015.
+Figure 4: Mean sea level of Nauru, 1994–2015
+1993
+1997
+2001
+2005
+2009
+2013
+−0.4
+−0.3
+−0.2
+−0.1
+0
+0.1
+0.2
+0.3
+0.4
+Sea level (metres)
+Year
+If the mean sea level rises, the probability of coastal flooding will also increase. This will put 
+many of the inhabitants of Nauru at risk.
+It has been proposed that a simulation be developed to show the effects of rising 
+temperatures on the extent and frequency of coastal flooding.
+(a) Distinguish between a model and a simulation. [2]
+(b) Describe how to identify the rules required to create a simulation from the mean 
+temperature and mean sea level data. [3]
+(c) Evaluate how test cases could be used to effectively validate the accuracy of this 
+proposed simulation. [6]
+(d) Discuss the advantages and disadvantages of using a simulation for decision making 
+in the coastal areas of islands in the Pacific Ocean. [5]
+(Option B continues on the following page)
+=== PDF PAGE 10 ===
+– 9 – 2225 – 6423
+Turn over
+(Option B continued)
+6. Organizations such as Earth.Org have raised concerns about the rate of sea level increase 
+for Nauru. They stated, “Sea level rise is 2 to 3 times faster around Nauru than the 
+global average, putting its freshwater supplies and crops at risk of saltwater contamination. 
+Already reliant on economic aid, Nauru’s basic resource needs may have to be acquired 
+externally for life to be sustained on the island.”
+The 2D visualisation in Figure 5 shows the projected impact of mild and extreme sea level 
+increases on Nauru by 2100.
+Figure 5: Projected impact of mild and extreme sea level increases on Nauru by 2100
+Yaren
+Nauru
+23%*
+*2000 population
+Population displaced
+(percentage and total)
+Key:
+Mild (2 metres)
+Extreme (4 metres)
+[Source: https://earth.org/data_visualization/sea-level-rise-by-2100-nauru/.]
+(a) Define the term visualization. [1]
+There are proposals to develop a 3D visualization of the impact of rising sea levels on Nauru.
+(b) Outline the relationship between images stored in memory and 3D visualizations. [2]
+(c) Discuss the time and memory considerations of 3D animation in the proposed 3D 
+visualization for Nauru. [5]
+End of Option B
+=== PDF PAGE 11 ===
+– 10 – 2225 – 6423
+Blank page
+=== PDF PAGE 12 ===
+– 11 – 2225 – 6423
+Turn over
+Option C — Web science
+7. Alexia and Jay are discussing their use of online resources to prepare for their IB examinations. 
+They often visit websites such as BBC Bitesize.
+Alexia refers to accessing the websites as “surfing the internet” and Jay refers to the 
+resources as being “on the web”.
+(a) Distinguish between the internet and the World Wide Web. [2]
+The uniform resource locator (URL) for the BBC Bitesize website is as follows:
+https://www.bbc.co.uk/bytesize/index.htm
+(b) Identify two characteristics of a URL. [2]
+Jay wants to transfer a file to Alexia and suggests they use file transfer protocol (FTP).
+(c) Identify two characteristics of file transfer protocol. [2]
+(d) Explain how a web browser functions. [3]
+(Option C continues on the following page)
+=== PDF PAGE 13 ===
+– 12 – 2225    – 6423
+(Option C continued)
+8. Alexia and Jay are researching the web development language PHP.
+They type the phrase “PHP” directly into a web browser (see Figure 6).
+Figure 6: “PHP” typed into a web browser and redirected to a search engine
+php
+NewsAll Images Video
+About 12 260 000 000 results (0.36 seconds)
+https://one2seven.org/search?q=php
+The web browser redirects them to a popular search engine, which executes a search.
+(a) Define the term search engine. [1]
+The operation of a search engine can be divided into three steps (see Figure 7).
+Figure 7: The three steps in the operation of a search engine
+Crawling Indexing Ranking
+(b) Describe how a web crawler functions. [2]
+(c) Outline why keywords are important for web indexing. [2]
+(d) Discuss whether an organization should use black hat search engine optimization 
+(SEO) techniques to improve the ranking of its website. [6]
+Search engines return a very large number of results, but many of the web pages are 
+not useful. The search needs to be refined.
+Alexia and Jay’s teacher recommended that they use an online database that accesses 
+the deep web.
+(e) Distinguish between the surface web and the deep web. [2]
+(Option C continues on the following page)
+=== PDF PAGE 14 ===
+– 13 – 2225 – 6423
+Turn over
+(Option C, question 8 continued)
+One of the online databases provides Alexia and Jay with the following code:
+<?php
+    if(isset($_FILES['CV'])){
+        $errors= array();
+        $file_name = $_FILES['CV']['name'];
+        $file_size =$_FILES['CV']['size'];
+        $file_tmp =$_FILES['CV']['tmp_name'];
+        $file_type=$_FILES['CV']['type'];
+        $file_ext=strtolower(end(explode('.',$_FILES['CV']['name'])));
+        $extensions= array("pdf","doc","docx");
+        if(in_array($file_ext,$extensions)=== false){
+            $errors[]="This file extension not allowed";
+        }
+        if($file_size > 2097152){
+            $errors[]="File size must be under 2 Mb";
+        }
+        if(empty($errors)==true){
+            move_uploaded_file($file_tmp,"CV/".$file_name);
+            echo "Success";
+        }else{
+            print_r($errors);
+        }
+    }
+?>
+<html>
+<body>
+    <h1>Curriculum Vitae</h1>
+    <form action="" method="POST" enctype="multipart/form-data">
+        <input type="file" name="CV" />
+        <input type="submit"/>
+    </form>
+</body>
+</html>
+(f) Identify four steps that take place during the processing of this PHP code. [4]
+The PHP code is processed on the server.
+(g) Explain why an organization would choose to use server-side processing rather than 
+client-side processing when delivering content to the client. [3]
+(Option C continues on page 15)
+=== PDF PAGE 15 ===
+– 14 – 2225 – 6423
+Blank page
+=== PDF PAGE 16 ===
+– 15 – 2225 – 6423
+Turn over
+(Option C continued)
+9. A social media file-sharing website allows users to upload their original video content.
+The site provides an upload module that uses lossless compression.
+(a) Outline how lossless compression maintains the quality of a media file. [2]
+When a file is decompressed, the content is rendered to fit a standard set of sizes, 
+aspect ratios, and frame rates. Standard video formats, such as MP4, are used for 
+the output of media.
+The file format MP4 or MPEG-4 is an open standard for media files.
+(b) Identify two characteristics of an open standard. [2]
+Social media sites use a distributed system where the data is stored in many countries.
+In the European Union, Argentina, and the Philippines the right to be forgotten has 
+been established as law. The right to be forgotten means a person has the right to have 
+private information removed from databases and applications so it cannot be found in an 
+internet search.
+(c) Discuss the impact of the decentralized web on an individual’s right to privacy. [6]
+Xero, a small software company, was established in 2006 in Wellington, New Zealand. 
+It produced an easy-to-use accountancy service for small to medium enterprises. 
+This product was based on the software-as-a-service (SaaS) model and is sold in a 
+subscription format all over the world. Customer data is securely stored online as part 
+of the subscription cost.
+(d) Explain how developments in the web have enabled small companies such as Xero 
+to have a global reach. [6]
+End of Option C
+=== PDF PAGE 17 ===
+– 16 – 2225 – 6423
+Option D — Object-oriented programming
+10. An art shop sells the work of several artists. Each artist has many artworks for sale. A system 
+is designed to manage artworks, sales and customers.
+The following shows part of the code for the two classes, Artist and Artwork:
+public class Artist {
+    private String artistName;      // name of the artist
+    private String artistLocation;  // current location of the artist
+    private int noOfArtworks;       // number of works of art the artist has 
+                                    // stored in the array theArtworks
+    private Artwork [] theArtworks; // details of the works of art produced 
+                                    // by the artist
+    public Artist(String artistName, String artistLocation){
+        this.artistName = artistName;
+        this.artistLocation = artistLocation;
+        noOfArtworks = 0;
+        theArtworks = new Artwork [100]; // an artist has a maximum of 100
+                                         // artworks
+    }
+    public String getName() {
+        return artistName;
+    }
+    public String getLocation() {
+        return artistLocation;
+    }
+    public Artwork getArtwork(int x) {
+        return theArtworks[x];
+    }
+    public void addArtwork(Artwork x) {
+        theArtworks[noOfArtworks] = x;
+        noOfArtworks = noOfArtworks + 1;
+    }
+    public double commissionToPay() {
+        // code missing
+    }
+ 
+    public Artwork[] sortArt() {
+        // code missing
+    }
+} // end of class Artist
+(Option D continues on the following page)
+=== PDF PAGE 18 ===
+– 17 – 2225 – 6423
+Turn over
+(Option D, question 10 continued)
+public class Artwork {
+    private String artworkTitle; // name of the artwork
+    private int artworkPrice;    // price of artwork
+    private boolean isSold;      // if the artwork has been sold or not
+    public Artwork(String artworkTitle, int artworkPrice) {
+        this.artworkTitle = artworkTitle;
+        this.artworkPrice = artworkPrice;
+        isSold = false; // default value is not sold
+    }
+    public String getArtworkTitle(){
+        return artworkTitle;
+    }
+    public void isSold(){
+        isSold = true;
+    }
+} // end of class Artwork
+(a) State the relationship between the Artist class and Artwork class. [1]
+(b) Outline what is meant by instantiation of an object. [2]
+(c) Construct the code required to instantiate the artist “Thomas Lucas” from “Ireland”. [3]
+(d) With reference to the Artist and Artwork classes, outline the use of the 
+modifier private. [2]
+(e) Outline two advantages of modularity in program development. [4]
+(f) Construct a UML diagram to represent the Artist class. [3]
+(Option D continues on the following page)
+=== PDF PAGE 19 ===
+– 18 – 2225 – 6423
+(Option D continued)
+11. The owner of the art shop would like the artworks separated into three different categories: 
+paintings, sculptures, and performances.
+Three classes, Painting, Sculpture, and Performance, are created for the three different 
+categories of artwork.
+The variable typeOfPaint belongs to Painting. It holds the name of the type of paint used.
+The variable weight belongs to Sculpture. It holds the weight of a sculpture.
+The variable needForSound belongs to Performance. It states whether sound is needed for 
+the performance.
+The other variables are common to all three classes.
+(a) State a suitable data type for:
+(i) the variable typeOfPaint; [1]
+(ii) the variable weight; [1]
+(iii) the variable needForSound. [1]
+(b) (i)   Outline two advantages of using inheritance. [4]
+(ii) Explain how inheritance could be used to develop the three classes described 
+(Painting, Sculpture, and Performance). [3]
+An array of type Artist has been declared in the main class, and objects are added using 
+the following code:
+theArtists[0] = new Artist("Nishan Nathan", "Italy");
+theArtists[1] = new Artist("Saskia Anna", "Egypt");
+theArtists[2] = new Artist("Kate Matherson", "USA");
+The variable isSold in the Artwork object needs to be set to true when an artwork has 
+been sold.
+(c) Construct a method, Sold(String artistName, String artworkTitle), that will 
+loop through the array theArtists array and set the isSold variable to true.
+You can assume the artwork exists in theArtworks array. [6]
+(Option D continues on the following page)
+=== PDF PAGE 20 ===
+– 19 – 2225 – 6423
+(Option D continued)
+12. The system, which is designed to manage artworks, sales and customers, should have 
+methods to find artworks that match a specific request made by a customer.
+For example, a customer may want to find all artworks by Sebastián Müller.
+(a) State the initial value of noOfArtworks for an artist. [1]
+(b) Construct the method sortArt() in the Artist class that will find the five most 
+expensive artworks for a given artist.
+You must make use of the selection sort algorithm. [5]
+Artists must pay a 15 % commission to the shop for each of their artworks sold there.
+The method commissionToPay calculates the commission to be paid by an artist on all 
+sold artworks.
+(c) Construct the method commissionToPay that will calculate and return the amount 
+of commission to be paid by the artist to the shop. [6]
+(d) Outline why Unicode enables internationalization. [2]
+End of Option D
+ 
+=== PDF PAGE 21 ===
+Disclaimer:
+Content used in IB assessments is taken from authentic, third-party sources. The views expressed within them belong to their 
+individual authors and/or publishers and do not necessarily reflect the views of the IB.
+References:
+Figure 4 ClimateDataInfo, n.d. Sea Levels - Pacific Islands. [online] Available at:  
+http://www.climatedata.info/impacts/sea-levels/pacific-islands/ [Accessed 13 August 2024]. Source adapted.
+Question 6 [Figure 5] Mulhern, O., 2020. Sea Level Rise Projection Map – Nauru. [online] Available at: https://earth.org/data_
+visualization/sea-level-rise-by-2100-nauru/ [Accessed 13 August 2024]. Source adapted.
+  [Quotation] Mulhern, O., 2020. Sea Level Rise Projection Map – Nauru. [online] Available at: https://earth.org/
+data_visualization/sea-level-rise-by-2100-nauru/ [Accessed 13 August 2024].
+Figure 6 Copyright © Tailwind Labs, Inc.
+All other texts, graphics and illustrations © International Baccalaureate Organization 2025

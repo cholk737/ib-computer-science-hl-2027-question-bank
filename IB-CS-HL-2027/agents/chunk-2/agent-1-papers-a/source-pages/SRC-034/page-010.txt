@@ -1,0 +1,47 @@
+– 9 – 8823 – 7012
+(Option B continued)
+6. You are going to visit Cattery5S, where you will have the opportunity to see eight cats.
+You realize that the number of permutations for eight cats is 8! (8 × 7 × 6 × 5 × 4 × 3 × 2 × 1)
+or 40 320.
+You need to create a function, , that accepts the number of cats, , and returns
+FACTORIAL N
+the factorial of that number.
+(a) Construct an algorithm for the function . [2]
+FACTORIAL(N)
+The following rules apply when there is an unknown number of cats at Cattery5S:
+y Never choose the first three cats.
+y Choose the fourth cat if it is rated higher than the best of the first three cats.
+y If not, compare the fifth cat with the highest-rated cat from the first three cats.
+y Choose the fifth cat if it is rated higher than the best of the first three cats.
+y If not, compare the next cat with the highest-rated cat from the first three cats.
+y Continue until you have chosen a cat or you have reached the last cat.
+y If you reach the last cat, you must choose it.
+You need to create a function, , that accepts an array, , that contains the
+FINDHIGH ARR
+ratings of eight cats and returns the highest value from the first three.
+For example, if contained 1, 3, 2, 5, 4, 7, 8, 6, the value 3 would be returned.
+ARR
+(b) Construct an algorithm for the function . [2]
+FINDHIGH(ARR)
+A function has been constructed that passes the last permutation
+NEXTPERMUTATION(ARR)
+and returns the next permutation.
+For example, if the first permutation order of is 1, 2, 3, 4, 5, 6, 7, 8, the
+ARR
+function would return an array ordered 1, 2, 3, 4, 5, 6, 8, 7.
+NEXTPERMUTATION(ARR)
+Each call of the function would give the next permutation.
+NEXTPERMUTATION(ARR)
+So, the second call of the function would return 1, 2, 3, 4, 5, 7, 6, 8.
+(c) Construct an algorithm that uses the functions , and
+FACTORIAL(N) FINDHIGH(ARR)
+to output the probability of choosing the best cat. [6]
+NEXTPERMUTATION(ARR)
+You are unsure if your strategy will give you the highest probability of finding the best cat.
+(d) Outline one change you could make to the algorithm to test if it will produce the highest
+best-match probability. [2]
+When you arrive at Cattery5S, you are informed that there are 20 cats to choose from. This is
+approximately 2.4 × 1018 permutations.
+(e) Describe the hardware requirements needed by the algorithm when there are 20 cats. [4]
+(Option B continues on the following page)
+Turn over

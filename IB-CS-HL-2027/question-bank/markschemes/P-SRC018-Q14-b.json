@@ -1,0 +1,36 @@
+{
+  "question_id": "P-SRC018-Q14-b",
+  "unofficial": true,
+  "marks": 4,
+  "solution": "def repeated_in_row(grid,r):\n    a, b, c=grid[r]\n    if a==b or a==c:\n        return a\n    if b==c:\n        return b\n    return 0",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Reads the three values from specified row."
+    },
+    {
+      "marks": 1,
+      "criterion": "Handles equality of first and second or first and third."
+    },
+    {
+      "marks": 1,
+      "criterion": "Handles equality of second and third."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns repeated value correctly(including all same), otherwise 0."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "Executable checks saved under checks/ where applicable."
+  },
+  "code": "def repeated_in_row(grid,r):\n    a,b,c=grid[r]\n    if a==b or a==c:\n        return a\n    if b==c:\n        return b\n    return 0",
+  "test_code": "import itertools\nfor row in itertools.product(range(1,4),repeat=3):\n expected=next((x for x in row if row.count(x)>1),0)\n assert repeated_in_row([row],0)==expected",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

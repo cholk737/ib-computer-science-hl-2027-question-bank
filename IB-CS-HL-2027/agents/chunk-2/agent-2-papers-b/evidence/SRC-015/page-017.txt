@@ -1,0 +1,41 @@
+– 17 – 8824 – 6904M 
+(b) Award [5 max]
+Award [1] for using a flag
+Award [1] for a correct loop (for, while, loop until)
+Award [1] for the correct condition in if statement and changing the flag (if needed)
+Award [1] for outputting all numbers that do not appear in MAT
+Award [1] for checking the flag (if statement) after the loop
+Award [1] for outputting an appropriate message
+F=0 
+loop K from 0 to 9 //accept 9 or COUNT.length-1 
+if COUNT[K]=0 
+then 
+F = 1 
+output(K) 
+end if 
+end loop 
+if F = 0 
+then output (‘all the numbers from 0 to 9 are present ‘) 
+end if 
+(c) Award [6 max]
+Example 1: 
+Award [1] for initializing HV 
+Award [1] for a correct loop 
+Award [1] for comparing COUNT[K] with HV 
+Award [1] for changing the value of HV (if needed) 
+Award [1] for the second loop (loop after the first one) 
+Award [1] for checking if HV is equal to COUNT[K] 
+Award [1] for outputting values that occur most frequently 
+//searches for the highest value in the COUNT array 
+HV=0    // or HV = COUNT[0] 
+loop K from 0 to 9 
+    if COUNT[K] > HV 
+then HV = COUNT[K] 
+end if   
+end loop 
+//outputs the mode(s) 
+loop K from 0 to 9 
+    if COUNT[K] = HV 
+then output(K) 
+    end if 
+end loop 

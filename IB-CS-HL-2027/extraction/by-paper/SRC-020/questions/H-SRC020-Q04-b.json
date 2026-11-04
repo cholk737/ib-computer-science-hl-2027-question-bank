@@ -1,0 +1,66 @@
+{
+  "source_question_id": "H-SRC020-Q04-b",
+  "source_id": "SRC-020",
+  "source_filename": "Computer_science_paper_1__TZ2_HL.pdf",
+  "year": "2023",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "TZ2",
+  "option": "",
+  "question": 4,
+  "subquestion": "b",
+  "source_pdf_pages": [
+    3
+  ],
+  "source_printed_pages": [
+    "2"
+  ],
+  "original_marks": 3,
+  "command_term": "Describe",
+  "original_text": "Describe how polling could be used in this situation.",
+  "parent_context": "– 2 – 2223 – 7011\nSection A\nAnswer all questions.\n1. Outline the function of a web browser. [2]\n2. Identify two applications of queues in computing. [2]\n3. Outline one reason for using Unicode to represent data in a computer system. [2]\n4. Sensors that take readings of the levels of different pollutants have been installed at \na number of sites along a river. Each reading is sent to a central computer, where it is \nprocessed and analysed.\n(a) Define the term interrupt. [1]\n(b) Describe how polling could be used in this situation. [3]\n5. Construct a truth table for the logic expression [4]\n(A nand B) nor C\n6. Outline what is meant by a collection. [2]\n7. Distinguish between random access memory (RAM) and read-only memory (ROM). [2]",
+  "assets": [],
+  "assessed_concepts": [
+    "Original source task: Describe how polling could be used in this situation.",
+    "Describe how a controller could poll several water-level sensors rather than waiting for interrupts"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-021",
+    "filename": "Computer_science_paper_1__TZ2_HL_markscheme.pdf",
+    "pdf_pages": [
+      5
+    ],
+    "question_reference": "Q4 b",
+    "marking_summary": "A program periodically checks each sensor in turn, reads its status/value, then repeats after a suitable interval. Polling frequency sets how quickly a change can be detected.",
+    "source_issues": [],
+    "source_marking_evidence": "– 5 – M23/4/COMSC/HP1/ENG/TZ2/XX/M \n4. (a) Award [1 max] \n(Software) interrupt is a signal emitted by software (when an application program terminates/ \nrequests certain services from the OS/ a process (or an event) needs immediate attention; \n(Hardware) interrupt is a signal created by some action taken by a hardware device and sent \nto the CPU to stop its current activity; \n(b) Award [3 max]\nAward [1] for CPU checking status of each sensor to see if it needs attention\nAward [1] for identifying/ sampling their status by a program (running on the computer)\nAward [1] for operating at the same periods of time\nAward [1] for relation to given situation\n  The computer could continually interrogate all connected sensors along the river; \n to identify if their status has changed/ they require to transmit data; \nthe readings from each sensor along the river could be taken at regular intervals; \n in an order determined by the program running on the computer/ at a frequency  \n determined by the program running on the computer; \n ensuring that the frequency of polling increases in the parts of the river where the \n measurements are deemed to be higher/ in specific times when the quality of the water \n is known to be worse/ in times of lower use of the (central computer) processing units; \n5. Award [4 max]\nAward [1] for every 2 correct rows in the truth table.\nA B C (A NAND  B) NOR C \n0 0 0 0 \n0 0 1 0 \n0 1 0 0 \n0 1 1 0 \n1 0 0 0 \n1 0 1 0 \n1 1 0 1 \n1 1 1 0 \n6. Award [2 max]\nAward [1] for structure and [1] for methods/properties.\nA collection is a grouping of a variable number of data items into a single unit; \nthat need to be operated upon together; \nA collection is a term used to describe a data structure designed to contain multiple elements of \nany type; \nand methods which make this data useful; Accept example methods, such as methods given in IB \npseudocode:  hasNext(), getNext(), resetNext(), etc. ; \nA collection is a class used to represent a set of similar data type items as a single unit (such as an \narray list, linked list, stack, queue); \nand methods used for efficient data manipulation/ and the set of methods that are common to all \ndata items; "
+  },
+  "relevance_status": "A",
+  "mappings": [
+    {
+      "syllabus_code": "A1.3.4",
+      "scope_evidence": "• Event frequency, CPU processing overheads, power source (battery or mains), event predictability, controlled latency, security concerns\n• Real-world scenarios may include keyboard and mouse inputs, network communications, disk input/output operations, embedded systems, real-time systems.",
+      "rationale": "Describe how a controller could poll several water-level sensors rather than waiting for interrupts assesses Evaluate the use of polling and interrupt handling.",
+      "theme": "A",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "No visual required by this leaf.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC020-Q04-b"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

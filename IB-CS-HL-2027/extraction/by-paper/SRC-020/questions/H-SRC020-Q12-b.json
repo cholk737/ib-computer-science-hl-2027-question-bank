@@ -1,0 +1,66 @@
+{
+  "source_question_id": "H-SRC020-Q12-b",
+  "source_id": "SRC-020",
+  "source_filename": "Computer_science_paper_1__TZ2_HL.pdf",
+  "year": "2023",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "TZ2",
+  "option": "",
+  "question": 12,
+  "subquestion": "b",
+  "source_pdf_pages": [
+    6
+  ],
+  "source_printed_pages": [
+    "5"
+  ],
+  "original_marks": 2,
+  "command_term": "Describe",
+  "original_text": "Describe the role of feedback in this control system.",
+  "parent_context": "– 5 – 2223 – 7011\nTurn over\n12. Smart control systems can manage the temperature within a house.\n(a) Outline the steps involving the sensor, processor and output transducer to manage \nthe temperature in the house. [5]\n(b) Describe the role of feedback in this control system. [2]\n(c) The smart control system is managed by an operating system.\n(i) Describe one function of an operating system. [2]\n(ii) Outline one reason why a dedicated operating system would be used. [2]\n(d) Compare and contrast a centralized control system with a distributed control system \nfor managing the temperature of a house. [4]",
+  "assets": [],
+  "assessed_concepts": [
+    "Original source task: Describe the role of feedback in this control system.",
+    "Describe the role of feedback in the aquarium temperature controller"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-021",
+    "filename": "Computer_science_paper_1__TZ2_HL_markscheme.pdf",
+    "pdf_pages": [
+      15
+    ],
+    "question_reference": "Q12 b",
+    "marking_summary": "The measured temperature after the heater acts is returned as input. Comparing it with the target lets the next heater decision correct the remaining difference rather than applying heat blindly.",
+    "source_issues": [],
+    "source_marking_evidence": "– 15 – M23/4/COMSC/HP1/ENG/TZ2/XX/M \n12. (a) Award [5 max] \na pre-set value of temperature stored/ user inputs a desired temperature; \nsensor measures/detects temperature; \nand it (regularly) sends the temperature readings to the microprocessor; \nmicroprocessor compares the actual readings with the pre-set/inputted temperature; \nif the temperature is above or below the pre-set temperature/ too hot or too cold; \nthen the microprocessor sends signal to output transducer to adjust temperature accordingly; \nThese steps are (continuously) repeated in a cycle; \nNote: Award [1 max] for AD or/and DA conversion, if explained in the response. \n(b) Award [2 max]\nA feedback system samples the output signals (temperature) then a sample (a fraction of the\noutput signal) is fed back to the input;\nto change/modify the input signal;\nin such a way as to produce an output signal that differs substantially from the output signal\nproduced in the absence of such feedback / as to increase or decrease the temperature in\nthe house;\nThe output value is (continuously) compared to the desired value to produce an error value/ \ndifference/ adjusting factor;  \nthe error value/ difference/ adjusting factor is fed to input; \nto determine the next action/ to achieve a desired outcome/pre-set temperature in the room; "
+  },
+  "relevance_status": "A",
+  "mappings": [
+    {
+      "syllabus_code": "A1.3.6",
+      "scope_evidence": "• The input, process, output, and feedback mechanism (open-loop, closed-loop)\n• Controller, sensors, actuators, transducers and control algorithm",
+      "rationale": "Describe the role of feedback in the aquarium temperature controller assesses Describe the use of the control system components. (HL only)",
+      "theme": "A",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "No visual required by this leaf.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC020-Q12-b"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

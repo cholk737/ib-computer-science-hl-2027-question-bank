@@ -1,0 +1,35 @@
+                                                                                –19–                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            8825–6408
+
+(Option D, question 10 continued)
+
+         The following shows part of the code for the Case class, which keeps details of a case:
+
+         public class Case
+         {
+             private int caseId;        // unique id of the case
+             private String caseClient; // name of the client
+             private String caseTitle;  // e.g. 'property dispute', 'tax evasion' etc
+             private int daysFromStart; // number of days elapsed from start of case
+             private char judgmentGiven; // 'N'=no, 'F'=favorable, 'A'=against
+             private String caseStatus;  // open/ won/ lost
+             public Case(int caseID, String caseClient, String casesTitle)
+             {
+                 this.caseId = caseId;
+                 this.caseClient = caseClient;
+                 this.casesTitle = casesTitle;
+                 this.daysFromStart = 0;
+                 this.judgmentGiven = 'N';
+                 this.caseStatus = "open";
+             }
+             public void setCaseStatus(String caseStatus)
+             {
+                 this.caseStatus = caseStatus;
+             }
+             // all accessor and mutator methods are present but not shown
+             public void changeCaseStatus(char judgmentGiven)
+             {
+                 /*Code missing*/
+             }
+         } // end of Case class
+
+(Option D continues on the following page)

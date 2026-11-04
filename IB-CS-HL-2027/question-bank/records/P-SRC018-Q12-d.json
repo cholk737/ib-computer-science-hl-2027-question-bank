@@ -1,0 +1,54 @@
+{
+  "question_id": "P-SRC018-Q12-d",
+  "source_question_ids": [
+    "H-SRC018-Q12-d"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Compare a single central networked controller with distributed room controllers for climate control across a large campus.",
+  "syllabus_codes": [
+    "A2.1.2"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 4,
+  "command_term": "Compare",
+  "difficulty": "medium",
+  "adaptation_rationale": "Retains architecture/fault-tolerance reasoning under required distributed digital infrastructure; does not invent separate mandatory control-system categories.",
+  "solution": "Central design makes one controller responsible for decisions; distributed design shares work among room controllers.; A central controller can simplify administration but becomes a single failure point.; Distributed controllers can keep local rooms operating if one controller fails.; Distributed operation adds coordination/consistency/management complexity, while central failure can affect all rooms.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Central design makes one controller responsible for decisions; distributed design shares work among room controllers."
+    },
+    {
+      "marks": 1,
+      "criterion": "A central controller can simplify administration but becomes a single failure point."
+    },
+    {
+      "marks": 1,
+      "criterion": "Distributed controllers can keep local rooms operating if one controller fails."
+    },
+    {
+      "marks": 1,
+      "criterion": "Distributed operation adds coordination/consistency/management complexity, while central failure can affect all rooms."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "No executable code required; manual technical check."
+  },
+  "code": "",
+  "test_code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC018-Q12-d.json",
+  "question_path": "question-bank/questions/P-SRC018-Q12-d.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC018-Q12-d.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

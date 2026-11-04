@@ -1,0 +1,53 @@
+                                                 –   34 –             M23/4/COMSC/HP2/ENG/TZ0/XX/M
+
+
+
+
+(d)   Award [4 max].
+      Declare/create/instantiate  hasAttended and notAttended of type ClientList;  // allow
+      lists for ClientList
+      Iterate through the list openDay (inspecting the nodes);
+      If the variable attended in a node equals true;
+      Then insert that node into    hasAttended else into notAttended;  // must imply that it is a
+      node
+
+
+
+(e)   Award [6 max].
+      Award [1] for testing high<low and returning null if name is not found;
+      Award [1] for declaring and assigning middle;
+      Award [1] for accessing the middle node using .get(middle);
+      Award [1] for testing for the base case where name is found and returned;   // allow  '==' or '='
+      Award [1] for correct use of if condition(s);       // with or without the 'high<low' part
+      Award [1] for correctly testing which range contains the search term;
+      Award [1] for an attempt at a recursive call for both cases;
+      Award [1] for correct boundaries in both recursive calls;
+
+      Example answer:
+      public Owner binSearch(String name, int low, int high)
+      {
+        if (high<low)           // allow (low>high)
+        {
+           return null;
+        }
+        else
+        {
+            int middle = (low+high)/2;
+            Owner current = contacts.get(middle);
+            if (current.getName().equals(name))     // allow  '==' or '='
+            {
+               return current;
+            }
+            else
+            {
+               if (name.compareTo(current.getName())<0)   // allow < or >
+               {
+                  return binSearch(name, low, middle-1); // do not allow middle
+               }
+               else
+               {
+                 return binSearch(name, middle+1, high); // do not allow middle
+               }
+            }
+         }
+       }

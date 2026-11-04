@@ -1,0 +1,41 @@
+– 21 – 8823 – 7012
+(Option D, question 15 continued)
+(c) Construct a simple UML class diagram showing the relationships between ,
+FireMonster
+and . You do not need to include variables and methods. [2]
+Monster Arena
+The method does the following:
+addMonster(Monster M)
+y If the array is not full and is not in the array, it adds to the array and
+monster M M
+increases the variable .
+monsterCount
+y Otherwise, a message is output stating the reason why.
+(d) Construct the method . [5]
+addMonster(Monster M)
+(e) Outline two disadvantages of using object-oriented programming (OOP) in the
+development of software. [4]
+16. (a) Define the term polymorphism. [2]
+The method in the class removes from
+removeMonster(Monster M) Arena Monster M
+the array without leaving any gaps. It also updates the variable. You may
+monsterCount
+assume that already exists in the Arena.
+Monster M
+(b) Construct the method [6]
+removeMonster(Monster M)
+Monsters have three special abilities that may be used on other monsters:
+y The ability “Heal”, which can be used on another monster
+y An ability specific to the monster type (eg, all water-type monsters have the ability
+“Put out fire”)
+y An ability specific to the monster (eg, only instances of Squishy have the ability “Clean”).
+The methods , and
+ability1(Monster defender) ability2(Monster defender)
+will be created to enable the monsters to perform their
+ability3(Monster defender)
+abilities. A class for each individual monster card, eg “Squishy”, will be created.
+(c) (i) Define the term inheritance. [2]
+(ii) Explain how inheritance and polymorphism could be used to maximize code
+reuse in these three methods. [5]
+(Option D continues on the following page)
+Turn over

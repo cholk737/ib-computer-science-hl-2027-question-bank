@@ -1,0 +1,72 @@
+{
+  "source_question_id": "H-SRC002-Q16-d",
+  "source_id": "SRC-002",
+  "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+  "year": "2026",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "A/B/C",
+  "option": "D",
+  "question": 16,
+  "subquestion": "d",
+  "source_pdf_pages": [
+    23
+  ],
+  "source_printed_pages": [
+    "23"
+  ],
+  "original_marks": 3,
+  "command_term": "Explain",
+  "original_text": "Explain one reason why the programmers would want to reduce dependencies.",
+  "parent_context": "- 23 -\n2226-4429\n(Option D continued)\n16. The full solution is being tested using the following code:\nRentalShop[] shops = new RentalShop[3];\nshops[0] = new RentalShop(\"Silverlake\");\nshops[1] = new RentalShop(\"Fjord View\");\nshops[2] = new RentalShop(\"Sea View\");\nshops [0].addRental (new Rental(2920393,true, 2934,\n54.0, new\nRentDate (2026, 2, 12), new RentDate(2026, 2, 22)));\nshops [0].addRental(new Rental(2929202, 2944, 64.0, new\nRentDate (2026, 2, 14), new RentDate (2026, 2, 23)));\nshops [2] .addRental(new Rental(2920393,true, 334, 52.0, new\nRentDate (2026, 2, 12), new RentDate (2026, 4, 20) )) ;\nshops [2].addRental (new Rental(2910222,true, 5645, 65.0, new\nRentDate (2026, 2, 13), new RentDate(2026, 4, 20)));\n(a) State the outcome from the following code:\n(i) IBIO.output (shops [1].getLocation ());\n[1]\n(iI) IBIO.output (shops [0].getRental(0).getCustomerID());\n[1]\n(iii) IBIO.output (shops[2].getRental(1).getEndDate ());\n[1]\nA method, getTotalIncome (), is needed to find the total costs of all rentals from all cars\nin all shops.\n(b) Outline one ethical issue programmers need consider when developing code for\nfinancial transactions.\n[2]\n(c)\nConstruct the code for the method getTotalIncome ().\nYou can use any previously constructed methods.\n[5]\nThe Rental class is dependent on the RentDate class.\n(d)\nExplain one reason why the programmers would want to reduce dependencies.\n[3]\nThe programmers have worked in a team to develop this solution.\n(e)\nDescribe one advantage of working as a team.\n[2]\n(Option D continues on the following page)",
+  "assets": [
+    {
+      "kind": "scanned_source_page",
+      "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-23.png",
+      "source_pdf_page": 23,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Explain one reason why the programmers would want to reduce dependencies.",
+    "Explain why depending on a small abstract interface rather than the internal fields of another class can improve maintainability"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "not_uploaded",
+    "source_id": "",
+    "filename": "",
+    "pdf_pages": [],
+    "question_reference": "Q16 d",
+    "marking_summary": "Client code uses a stable set of operations. The other class can change its internal representation without forcing changes throughout clients,provided the interface remains consistent. This localizes modifications and reduces error risk.",
+    "source_issues": [],
+    "source_marking_evidence": ""
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B3.2.3",
+      "scope_evidence": "• The significance of abstraction in the development of modular code fragments\n• The use of abstract classes to establish common interfaces for sub-classes",
+      "rationale": "Explain why depending on a small abstract interface rather than the internal fields of another class can improve maintainability assesses Explain the concept of abstraction in OOP.",
+      "theme": "B",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "No uploaded MS; independent unofficial answer.",
+    "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC002-Q16-d"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

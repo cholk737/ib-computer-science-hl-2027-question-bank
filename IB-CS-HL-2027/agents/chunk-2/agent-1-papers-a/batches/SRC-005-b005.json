@@ -1,0 +1,457 @@
+{
+  "source_id": "SRC-005",
+  "batch_id": "SRC-005-b005",
+  "source_questions": [
+    {
+      "original_assessment_context": "Positive integersX,Y; proper divisor ofY is positive divisor other thanY.",
+      "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+      "source_question_id": "H-SRC005-Q14-a",
+      "source_id": "SRC-005",
+      "source_filename": "Computer_science_paper_1__HL (2).pdf",
+      "year": "2022",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ0",
+      "option": "",
+      "question": "14",
+      "subquestion": "a",
+      "source_pdf_pages": [
+        9
+      ],
+      "source_printed_pages": [
+        "8"
+      ],
+      "original_marks": 2,
+      "command_term": "Construct",
+      "original_text": "[Source PDF page 9]\n14. An integer divisor of an integer, , is an integer greater than zero that divides without\nN(N>0) N\nleaving a remainder. The proper divisors of are divisors of other than itself.\nN N N\nFor example:\ny The divisors of 10 are 1, 2, 5 and 10.\ny The proper divisors of 10 are 1, 2 and 5.\nand are two integers.\nX(X>0) Y(Y>0)\n(a) Construct a logic expression that evaluates to if is a proper divisor of and to\nTrue X Y\notherwise. [2]\nFalse",
+      "parent_context": "Positive integersX,Y; proper divisor ofY is positive divisor other thanY.",
+      "assets": [],
+      "assessed_concepts": [
+        "Construct: Construct a logic expression that evaluates to True if X is a proper divisor of Y and to False otherwise."
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-011",
+        "filename": "Computer_science_paper_1__HL_markscheme (2).pdf",
+        "pdf_pages": [
+          15
+        ],
+        "question_reference": "14(a)",
+        "marking_summary": "Remainder zero AND unequal operands.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Preserves arithmetic/relational conjunction reasoning using Python; positive domain removes divide-by-zero ambiguity.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Construct a logic expression that evaluates to True if X is a proper divisor of Y and to False otherwise.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 9,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-005/page-009.txt"
+        }
+      ]
+    },
+    {
+      "original_assessment_context": "N>1; sum proper divisors; sumPD16=15.",
+      "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+      "source_question_id": "H-SRC005-Q14-b",
+      "source_id": "SRC-005",
+      "source_filename": "Computer_science_paper_1__HL (2).pdf",
+      "year": "2022",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ0",
+      "option": "",
+      "question": "14",
+      "subquestion": "b",
+      "source_pdf_pages": [
+        9
+      ],
+      "source_printed_pages": [
+        "8"
+      ],
+      "original_marks": 3,
+      "command_term": "Construct",
+      "original_text": "[Source PDF page 9]\nFalse\nThe subprogram accepts an integer, , and returns the sum of all proper\nsumPD(N) N(N>1)\ndivisors of . For example, returns 15 (1 + 2 + 4 + 8 = 15).\nN sumPD(16)\n(b) Construct an algorithm in pseudocode for the subprogram . [3]\nsumPD(N)",
+      "parent_context": "N>1; sum proper divisors; sumPD16=15.",
+      "assets": [],
+      "assessed_concepts": [
+        "Construct: Construct an algorithm in pseudocode for the subprogram sumPD(N)."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-011",
+        "filename": "Computer_science_paper_1__HL_markscheme (2).pdf",
+        "pdf_pages": [
+          15
+        ],
+        "question_reference": "14(b)",
+        "marking_summary": "Initialize sum,loop eligible divisors,add when remainder0; old sqrt-bound alternative without paired factor is a sourceMS weakness.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Preserves conditional accumulation; Python conversion explicitly includes n=1. Do not use sourceMS sqrt-bound suggestion without correctly adding paired divisors.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "Preserves conditional accumulation; Python conversion explicitly includes n=1. Do not use sourceMS sqrt-bound suggestion without correctly adding paired divisors.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.3.4",
+          "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+          "rationale": "Preserves conditional accumulation; Python conversion explicitly includes n=1. Do not use sourceMS sqrt-bound suggestion without correctly adding paired divisors.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Construct an algorithm in pseudocode for the subprogram sumPD(N).",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 9,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-005/page-009.txt"
+        }
+      ]
+    },
+    {
+      "original_assessment_context": "Grid4×6 [6,12,20,42,3,48],[78,28,70,80,2,16],[60,72,10,56,9,54],[30,13,7,11,15,17]. Classify by proper-divisor sum relative to original.",
+      "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+      "source_question_id": "H-SRC005-Q14-c",
+      "source_id": "SRC-005",
+      "source_filename": "Computer_science_paper_1__HL (2).pdf",
+      "year": "2022",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ0",
+      "option": "",
+      "question": "14",
+      "subquestion": "c",
+      "source_pdf_pages": [
+        9,
+        10
+      ],
+      "source_printed_pages": [
+        "8",
+        "9"
+      ],
+      "original_marks": 10,
+      "command_term": "Construct",
+      "original_text": "[Source PDF page 9]\nsumPD(N)\nEvery number can be classified as abundant, deficient, or perfect according to the\nfollowing definitions:\nA number is an abundant number if it is less than the sum of its proper divisors.\nFor example, 12 is an abundant number because 1 + 2 + 3 + 4 + 6 = 16, and 16 > 12.\nA number is a deficient number if it is greater than the sum of its proper divisors.\nFor example, 9 is a deficient number because 1 + 3 = 4, and 4 < 9.\nA number is a perfect number if it is equal to the sum of its proper divisors. For example,\n28 is a perfect number because 1 + 2 + 4 + 7 + 14 = 28, and 28 = 28.\nAssume that the two-dimensional array holds positive integers.\nMAT\nAn algorithm should be written that creates three one-dimensional arrays, named ,\nABUNDANT\nand , so that\nDEFICIENT PERFECT\ny the array holds all the abundant numbers of the two-dimensional array\nABUNDANT MAT\ny the array holds all the deficient numbers of the two-dimensional array\nDEFICIENT MAT\ny the array holds all the perfect numbers of the two-dimensional array .\nPERFECT MAT\n(This question continues on the following page)\n\n[Source PDF page 10]\n(Question 14 continued)\nFor example, if the 4 × 6 two-dimensional array holds 24 positive integers, as follows:\nMAT\n[0] [1] [2] [3] [4] [5]\n[0] 6 12 20 42 3 48\n[1] 78 28 70 80 2 16\n[2] 60 72 10 56 9 54\n[3] 30 13 7 11 15 17\nthen the three arrays should be:\n[0] [1]\nPERFECT 6 28\n[0] [1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11]\nABUNDANT 12 20 42 48 78 70 80 60 72 56 54 30\n[0] [1] [2] [3] [4] [5] [6] [7] [8] [9]\nDEFICIENT 3 2 16 10 9 13 7 11 15 17\n(c) Construct an algorithm in pseudocode to create the three one-dimensional arrays,\n, and , as described.\nABUNDANT DEFICIENT PERFECT\nYou may assume that the two-dimensional array is inputted and three\nMAT\none-dimensional arrays of sufficient size are initialized.\nYou should call the subprogram in your algorithm. [10]\nsumPD()",
+      "parent_context": "Grid4×6 [6,12,20,42,3,48],[78,28,70,80,2,16],[60,72,10,56,9,54],[30,13,7,11,15,17]. Classify by proper-divisor sum relative to original.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "description": "Definitions",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-005-page-09.png",
+          "source_pdf_page": 9,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page",
+          "description": "Original full matrix and output arrays",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-005-page-10.png",
+          "source_pdf_page": 10,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct: Construct an algorithm in pseudocode to create the three one-dimensional arrays,ABUNDANT,DEFICIENT and PERFECT,as described. You may assume MAT is inputted and three arrays of sufficient size initialized. You should call sumPD() in your algorithm."
+      ],
+      "difficulty": "high",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-011",
+        "filename": "Computer_science_paper_1__HL_markscheme (2).pdf",
+        "pdf_pages": [
+          16,
+          17
+        ],
+        "question_reference": "14(c)",
+        "marking_summary": "Traverse both dimensions;call sumPD;compare to input;append each value to correct one-dimensional output;more than10 alternative criteria capped.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Preserves nested traversal,function decomposition and three-way classification; Python dynamic outputs remove legacy fixed-array index bookkeeping while retaining10 substantive marking points.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Preserves nested traversal,function decomposition and three-way classification; Python dynamic outputs remove legacy fixed-array index bookkeeping while retaining10 substantive marking points.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "Preserves nested traversal,function decomposition and three-way classification; Python dynamic outputs remove legacy fixed-array index bookkeeping while retaining10 substantive marking points.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.3.4",
+          "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+          "rationale": "Preserves nested traversal,function decomposition and three-way classification; Python dynamic outputs remove legacy fixed-array index bookkeeping while retaining10 substantive marking points.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Construct an algorithm in pseudocode to create the three one-dimensional arrays,ABUNDANT,DEFICIENT and PERFECT,as described. You may assume MAT is inputted and three arrays of sufficient size initialized. You should call sumPD() in your algorithm.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 9,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-005/page-009.txt"
+        },
+        {
+          "pdf_page": 10,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-005/page-010.txt"
+        }
+      ]
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC005-Q14-a",
+      "source_question_ids": [
+        "H-SRC005-Q14-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "For positive integers a and b, construct a Python Boolean expression that is True exactly when a divides b with no remainder and a is smaller than b.",
+      "syllabus_codes": [
+        "B2.3.2"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Construct",
+      "difficulty": "low",
+      "adaptation_rationale": "Preserves arithmetic/relational conjunction reasoning using Python; positive domain removes divide-by-zero ambiguity.",
+      "solution": "b % a == 0 and a < b",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "b % a ==0."
+        },
+        {
+          "marks": 1,
+          "criterion": "Combined using and with a < b."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "No executable code required; manual technical check."
+      },
+      "code": "",
+      "test_code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC005-Q14-b",
+      "source_question_ids": [
+        "H-SRC005-Q14-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct proper_sum(n) in Python to return the sum of positive divisors smaller than n. Assume n is a positive integer; proper_sum(1) must return 0.",
+      "syllabus_codes": [
+        "B2.3.2",
+        "B2.3.3",
+        "B2.3.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 3,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Preserves conditional accumulation; Python conversion explicitly includes n=1. Do not use source MS sqrt-bound suggestion without correctly adding paired divisors.",
+      "solution": "def proper_sum(n):\n    total=0\n    for factor in range(1,n):\n        if n % factor == 0:\n            total += factor\n    return total",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Initializes total to 0 and returns it after processing."
+        },
+        {
+          "marks": 1,
+          "criterion": "Loops over all possible proper divisors 1..n-1 (or a valid optimized equivalent)."
+        },
+        {
+          "marks": 1,
+          "criterion": "Adds a candidate only when n % candidate ==0."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "Executable checks saved under checks/ where applicable."
+      },
+      "code": "def proper_sum(n):\n    total=0\n    for factor in range(1,n):\n        if n % factor == 0:\n            total += factor\n    return total",
+      "test_code": "assert [proper_sum(n) for n in [1,6,9,12,28]]==[0,6,4,16,28]",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC005-Q14-c",
+      "source_question_ids": [
+        "H-SRC005-Q14-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "The function proper_sum(n) returns the sum of proper divisors of positive integer n. Construct classify_grid(grid) in Python. Return three lists(low, equal, high) containing each grid value whose proper-divisor sum is respectively less than, equal to, or greater than that value. Preserve row-major order and all repeated values. Do not modify grid; call proper_sum for each value.",
+      "syllabus_codes": [
+        "B2.2.2",
+        "B2.3.2",
+        "B2.3.3",
+        "B2.3.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 10,
+      "command_term": "Construct",
+      "difficulty": "high",
+      "adaptation_rationale": "Preserves nested traversal, function decomposition and three-way classification; Python dynamic outputs remove legacy fixed-array index bookkeeping while retaining 10 substantive marking points.",
+      "solution": "def proper_sum(n):\n    total=0\n    for factor in range(1,n):\n        if n % factor == 0:\n            total += factor\n    return total\n\ndef classify_grid(grid):\n    low, equal, high=[],[],[]\n    for row in grid:\n        for n in row:\n            summed=proper_sum(n)\n            if summed < n:\n                low.append(n)\n            elif summed == n:\n                equal.append(n)\n            else:\n                high.append(n)\n    return low,equal,high",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Initializes three distinct empty output lists."
+        },
+        {
+          "marks": 1,
+          "criterion": "Traverses each input row."
+        },
+        {
+          "marks": 1,
+          "criterion": "Traverses every value in the row."
+        },
+        {
+          "marks": 1,
+          "criterion": "Calls proper_sum on that value."
+        },
+        {
+          "marks": 1,
+          "criterion": "Uses comparison with the original value, not an index."
+        },
+        {
+          "marks": 1,
+          "criterion": "Appends to low if summed<n."
+        },
+        {
+          "marks": 1,
+          "criterion": "Appends to equal if summed==n."
+        },
+        {
+          "marks": 1,
+          "criterion": "Appends to high if summed>n."
+        },
+        {
+          "marks": 1,
+          "criterion": "Preserves row-major order and duplicates, with each value assigned exactly once."
+        },
+        {
+          "marks": 1,
+          "criterion": "Returns the three lists in the required order after traversal."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "Executable checks saved under checks/ where applicable."
+      },
+      "code": "def proper_sum(n):\n    total=0\n    for factor in range(1,n):\n        if n % factor == 0:\n            total += factor\n    return total\n\ndef classify_grid(grid):\n    low,equal,high=[],[],[]\n    for row in grid:\n        for n in row:\n            summed=proper_sum(n)\n            if summed < n:\n                low.append(n)\n            elif summed == n:\n                equal.append(n)\n            else:\n                high.append(n)\n    return low,equal,high",
+      "test_code": "assert classify_grid([[1,6,12],[9,28,12]])==([1,9],[6,28],[12,12])\nassert classify_grid([])==([],[],[])",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    }
+  ]
+}

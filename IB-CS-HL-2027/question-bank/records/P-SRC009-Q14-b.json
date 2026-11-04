@@ -1,0 +1,59 @@
+{
+  "question_id": "P-SRC009-Q14-b",
+  "source_question_ids": [
+    "H-SRC009-Q14-b"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Explain how to search a singly linked list for a specified product code and report failure if absent.",
+  "syllabus_codes": [
+    "B4.1.3"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 5,
+  "command_term": "Explain",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "Set current=head. While current is not None, compare its code with the target; return/report found on equality, otherwise follow current.next. If current becomes None, report absent.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Temporary pointer starts at head."
+    },
+    {
+      "marks": 1,
+      "criterion": "Loop while node exists."
+    },
+    {
+      "marks": 1,
+      "criterion": "Compare node data with target."
+    },
+    {
+      "marks": 1,
+      "criterion": "Stop correctly on match."
+    },
+    {
+      "marks": 1,
+      "criterion": "Advance and report failure at end."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      15
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC009-Q14-b.json",
+  "question_path": "question-bank/questions/P-SRC009-Q14-b.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC009-Q14-b.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

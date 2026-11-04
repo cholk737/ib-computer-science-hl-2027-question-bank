@@ -1,0 +1,72 @@
+{
+  "source_question_id": "H-SRC002-Q18-d",
+  "source_id": "SRC-002",
+  "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+  "year": "2026",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "A/B/C",
+  "option": "D",
+  "question": 18,
+  "subquestion": "d",
+  "source_pdf_pages": [
+    25
+  ],
+  "source_printed_pages": [
+    "25"
+  ],
+  "original_marks": 3,
+  "command_term": "Explain",
+  "original_text": "Explain one action a programmer could take to improve the readability of code.",
+  "parent_context": "- 25-\n2226-4429\n(Option D continued)\n18. A programmer has produced the following recursive algorithm:\nint X (int Y){\nif (Y <= 1){\nreturn Y;\n}\nelsel\nreturn Y + X(Y-1);\n}\n}\n(a)\n•Outline one benefit of recursion.\n[2]\n(b) Copy and trace the recursive algorithm when called with the following statement.\nX(5);\n[4]\nY <1\nReturn call\nReturn value\n(c) Identify why calling the algorithm with the following statement would cause an error.\nX(-3) ;\n[1]\n(d) Explain one action a programmer could take to improve the readability of code.\n(3]\nEnd of Option D\nA000",
+  "assets": [
+    {
+      "kind": "scanned_source_page",
+      "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-25.png",
+      "source_pdf_page": 25,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Explain one action a programmer could take to improve the readability of code.",
+    "Explain how replacing a repeated block with a clearly named function can improve the readability of a program"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "not_uploaded",
+    "source_id": "",
+    "filename": "",
+    "pdf_pages": [],
+    "question_reference": "Q18 d",
+    "marking_summary": "The name summarizes the task at each call site,while detailed implementation is grouped in one place. Readers can follow the main flow without repeatedly scanning the same low-level operations.",
+    "source_issues": [],
+    "source_marking_evidence": ""
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B2.3.4",
+      "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+      "rationale": "Explain how replacing a repeated block with a clearly named function can improve the readability of a program assesses Construct functions and modularization.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "No uploaded MS; independent unofficial answer.",
+    "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC002-Q18-d"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

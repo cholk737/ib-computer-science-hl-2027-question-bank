@@ -1,0 +1,60 @@
+                                                –  28 –                                        8823 – 7012M
+
+
+
+(c)   Award [2 max]
+      Award [1] for connector between Arena and Monster indicating aggregation (has a)
+      Award [1] for connector between FireMonster and Monster indicating inheritance (is a)
+
+      Example:
+
+
+
+
+
+
+
+
+
+
+(d)   Award [5 max]
+      Award [1] for checking if monsterCount<10 /  monsterCount < monsters.length;
+      Award [1] for checking if that instance already exists   (ie. using monsters[i]==M
+      or .equals(M) or monsters[i].name==M.name                ) or .equals(M.name);
+      Award [1] for adding monster in correct position and increasing        monsterCount;
+      Award [1] for correctly located error message if      Arena is full;
+      Award [1] for correctly located  error message if monster already exists       ;
+
+      Note: Candidates are not expected to cater for a situation in which the Arena is full
+      AND the monster is already there. They may give either or both error messages if
+      this is the case.
+
+      Example:
+
+      public void addMonster(Monster M)
+      {
+            if (monsterCount < monsters.length)
+            {
+                     boolean alreadyEntered = false;
+                     for (int i = 0; i < monsterCount; i++)
+                     {
+                              if (monsters[i]==M)
+                              {
+                                    alreadyEntered = true;
+                                }
+                     }
+                     if (!alreadyEntered)
+                     {
+                           monsters[monsterCount] = M;
+                           monsterCount++;
+                     }
+                     else
+                     {
+                             output(M.name + " has already entered");
+                     }
+            }
+            else
+            {
+                       output("Sorry the Arena is full");
+            }
+      }

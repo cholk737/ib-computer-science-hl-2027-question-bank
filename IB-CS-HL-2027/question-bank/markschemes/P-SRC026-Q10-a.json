@@ -1,0 +1,46 @@
+{
+  "question_id": "P-SRC026-Q10-a",
+  "unofficial": true,
+  "marks": 6,
+  "solution": "Authenticate each user to an account. Assign accounts to role groups. Grant administrators management rights, analysts read/write access only to their project files, and visitors no access to confidential files. The OS checks permissions on file operations, applying least privilege rather than granting every login full access.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Authenticated user identities."
+    },
+    {
+      "marks": 1,
+      "criterion": "Role/group membership."
+    },
+    {
+      "marks": 1,
+      "criterion": "Appropriate administrator rights."
+    },
+    {
+      "marks": 1,
+      "criterion": "Restricted analyst project rights."
+    },
+    {
+      "marks": 1,
+      "criterion": "Visitors denied sensitive files."
+    },
+    {
+      "marks": 1,
+      "criterion": "OS permission enforcement/least-privilege reasoning."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      12,
+      13
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

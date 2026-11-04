@@ -1,0 +1,18 @@
+                                                       – 6 –                                               8823 – 7012M
+
+
+(e)    Award [4 max]
+       Instant recovery/Recovery in place;
+       A snapshot is created so the backup remains in a correct state;
+       All user write operations are redirected to that snapshot;
+       Users then work off the backup virtual machine (VM);
+       The recovery process begins in the background/Users are unaware of the recovery;
+       When the recovery is complete the workload is directed back to the original VM;
+
+       Crash recovery;
+       If a crash occurs mid-transaction;
+       The system follows a protocol/algorithm to recover lost data;
+       A check is made of the states of the transactions that were being executed;
+       If the transaction can be completed it should do so;
+       If not the transactions that were interrupted during the crash are rolled back;
+       No transaction can be allowed to leave in an inconsistent state;

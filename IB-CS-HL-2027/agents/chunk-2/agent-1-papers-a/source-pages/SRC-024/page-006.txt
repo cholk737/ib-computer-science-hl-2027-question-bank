@@ -1,0 +1,26 @@
+– 5 – 8825 – 6407
+13. The concentration of an air pollutant has been measured periodically, and the measurements
+are stored in a collection.
+(a) Outline what is meant by the term collection. [2]
+The collection holds the following pollutant concentration values:
+PLTNT
+100 30 10 20 50 100 250 50
+The range of pollutant concentration values is from 0 to 500.
+The following algorithm in pseudocode is intended to output all elements stored in the
+collection :
+PLTNT
+PLTNT.resetNext()
+while PLTNT.hasNext()
+X = PLTNT.getNext()
+output (PLTNT.getNext())
+end loop
+(b) (i) Describe why this algorithm does not work as intended. [2]
+(ii) Construct the correct algorithm in pseudocode. [2]
+(c) Construct an algorithm in pseudocode that outputs the maximum, minimum, and
+average pollutant concentrations stored in the collection .
+PLTNT
+For example, using the data stored in the collection , the algorithm should output:
+PLTNT
+y Maximum pollutant concentration: 250
+y Minimum pollutant concentration: 10
+y Average pollutant concentration: 76.25 [9]

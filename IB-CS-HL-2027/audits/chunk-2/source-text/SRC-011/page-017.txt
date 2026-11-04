@@ -1,0 +1,27 @@
+                                     –   17 –           N22/4/COMSC/HP1/ENG/TZ0/XX/M
+
+
+Example 2
+
+IP=0
+ID=0
+IA=0
+loop R from 0 to 3
+  loop C from 0 to 5
+        if sumPD(MAT[R][C])== MAT[R][C]
+              then
+                   PERFECT[IP]= MAT[R][C]
+                   IP=IP+1
+        end if
+        if sumPD( MAT[R][C])> MAT[R][C]
+               then
+                    ABUNDANT[IA]= MAT[R][C]
+                    IA=IA+1
+        end if
+        if sumPD( MAT[R][C])<  MAT[R][C]
+                then
+                     DEFICIENT[ID]= MAT[R][C]
+                     ID=ID+1
+        end if
+  end loop
+ end loop

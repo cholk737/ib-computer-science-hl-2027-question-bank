@@ -1,0 +1,52 @@
+{
+  "question_id": "P-SRC030-Q13-c",
+  "unofficial": true,
+  "marks": 8,
+  "solution": "def complete_grid(grid):\n    flags=[0]*16\n    for row in grid:\n        for value in row:\n            flags[value-1]=1\n    for flag in flags:\n        if flag==0:\n            return False\n    return True",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes 16 zero/False flags."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses all four rows."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses all elements in each row."
+    },
+    {
+      "marks": 1,
+      "criterion": "Calculates the zero-based index value-1."
+    },
+    {
+      "marks": 1,
+      "criterion": "Sets that flag to mark presence."
+    },
+    {
+      "marks": 1,
+      "criterion": "Inspects every flag or stops when missing flag found."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns False if any flag is unmarked."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns True only if all 16 flags are marked; fixed 16 input cells imply unique values."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "Executable checks saved under checks/ where applicable."
+  },
+  "code": "def complete_grid(grid):\n    flags=[0]*16\n    for row in grid:\n        for value in row:\n            flags[value-1]=1\n    for flag in flags:\n        if flag==0:\n            return False\n    return True",
+  "test_code": "good=[list(range(r*4+1,r*4+5)) for r in range(4)]\nassert complete_grid(good)\nbad=[row[:] for row in good];bad[3][3]=1;assert not complete_grid(bad)",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

@@ -1,0 +1,50 @@
+                                                                                                                                                                                   –   30    –                                                                                                                                            8825                                                                                         – 6408                                                                 M
+
+
+Option D —           Object-oriented programming
+
+10.                                              (a)                                           Award [1 max]
+                                          a constructor is a (special) method used to initialize objects;
+                                          creates an instance of a class;
+                                          assigns values to the instance variables;
+
+                     (b)                                            Award [2 max]
+
+                                          Award [1]                        for checking the parameter’s (judgementGiven)                                                                                                                                                                                                                                                                                                                                                                       value;
+                                          Award [1]                        for changing the value of caseStatus                                                                                                                                                                                                                                               to “won” if the judgementGiven is ‘F’;
+                                          Award [1]                        for changing the value of caseStatus                                                                                                                                                                                                                                               to “lost” if the judgementGiven is ‘A’;
+
+                                          Note: Allow either calling the setCaseStatus()                                                                                                                                                                                                                                                                                                                                                                       or directly accessing the              caseStatus                                                                                                                                                                                                                                               to
+                                          change the status of the case.
+
+                     (c)                                              Award [          4 max]
+
+                                          Award [1]                        for a                         correct loop to navigate through allL                                 awyers[];
+                                          Award [          1] for correctly checking                                                                                                        lawyerT                                                                  ype                                                                        is “civil” (accept both .equals()                                                                                                                                                                                                or “==”)             ;
+                                          Award [1]                        for correctly checking casesW                                                       on                                                >30, (accept >=31)                                                                                         ;
+                                          Award [1]                        for correctly displaying the lawyer’s name;
+                                                                                                        Example Answer               :
+                                          public                                                                   static                                                                   void                                             displayLawyerNames()
+                                          {
+                                          for(                                                                             int                                  i=0; i<20; i++)
+                                          {
+                                                                                 if((allLawyers[i].getLawyerType().equals("civil"))&&
+                                                                                                         (allLawyers[i].getCasesWon()>30))
+                                                                                                                                   System.out.println(                                                                                                                                                                                                      allLawyers[i].getLawyerName());
+
+                                          }
+                                          }
+                                          Note: Allow writing “civil” in any case.
+
+                     (d)                                                     (i)                                                         Award [1 max]
+                                                               a return statement is used to send                                                                a value back (to the calling method when the execution
+                                                               of a method is complete);
+                                                               a return statement transfers the program control back to the calling method;
+
+                                          (ii)                                                                            Award [2 max]
+                                                               Award [1]                        for correct return type ‘int’                        (as intended in the question);
+                                                               Award [          1] for correct int parameter;
+
+                                                               Example:      (public) int                                                                                                                          countDelayedCases(int                                                                                                                                                                                                                                        id)
+
+                                                               Note: Award [2]                         for a signature with or without the access specifier and the return type                     .

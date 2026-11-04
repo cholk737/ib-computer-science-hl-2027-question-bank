@@ -1,0 +1,40 @@
+                                                           –   14 –                                          8825 – 6407M
+
+
+13.  (a)      Award [2 max].
+
+              A collection is a term used to describe a data structure designed to contain multiple elements of
+              any type;
+              and the set of methods that are common to all elements;
+
+       (b)    (i)    Award [2 max].
+
+                     Because of the second use of getNext() (inside the while loop);
+                     The algorithm outputs every other element starting from the second element instead of
+                     outputting every element in the collection/ outputs 30  20  100  50  instead of
+                     100  30  10  20  50  100  250  50 / logical error  ;
+
+                     when the number of elements in the collection PLTNT is an odd number and the last
+                     element in the collection have been accessed;
+                     then the next use of getNext() will not return a valid element/ the algorithm will crash/ run-
+                     time error;
+
+              (ii)   Award [2 max].
+
+                     Example 1:
+                     Award [1] for deleting X = PLTNT.getNext(), and award [1] for the correct remaining
+                     part of the algorithm/ not making any other changes.
+                     PLTNT.resetNext()
+                     while PLTNT.hasNext()
+                           output (PLTNT.getNext())
+                     end loop
+
+                     Example 2:
+                     Award [1] for replacing PLTNT.getNext() with X in the output statement, and award [1]
+                     for the correct remaining part of the algorithm/ not making any other changes.
+
+                     PLTNT.resetNext()
+                     while PLTNT.hasNext()
+                           X = PLTNT.getNext()
+                           output (X)
+                     end loop

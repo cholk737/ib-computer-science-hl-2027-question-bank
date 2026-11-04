@@ -1,0 +1,39 @@
+– 8 – 2225 – 6423M 
+(d) Award [3 max]
+Data validation is an automated process that ensures input meets the data entry rules) / Data
+validation is an automated process that ensures input data is reasonable/valid;
+Data verification is the checking of data to ensure it is the input intended;
+Using both techniques will provide the optimal solution, data validation can be applied to fields
+where the values can be easily determined (for example, no date of birth before a specified
+date), then data verification allows checking where data validation is not possible/appropriate
+(for example, a person’s surname);
+Award one mark for each definition [max 2] and one mark for linkage [1]
+(e) Award [2 max]
+Integrity is maintained by no changes being made until the transaction is complete;
+If the transaction cannot be completed it is rolled back (to the original state);
+Atomicity (all or nothing): change made or no changes made;
+Consistency ensures a transaction does not put the database in an invalid state;
+Rules and integrity constraints (validation, entity and referential integrity) are automatically
+enforced before a transaction is committed;
+Preventing anomalies like orphan records and erroneous data;
+Isolation prevents interference between concurrent transactions;
+Which ensures intermediate/uncommitted values of one transaction are not visible to other
+transactions;
+Through the use of locks and other concurrency control measures;
+Preventing errors like the lost update, dirty reads, phantom reads etc;
+Durability ensures that the effects of a committed transaction are permanent (irrespective of a
+subsequent system failure);
+Transaction logs record all the changes made during transactions;
+If a system failure occurs, the committed transactions in the log are reapplied to the database
+during recovery;
+Data integrity is ensured by preventing data loss;
+Note: Award 1 mark if a student only refers to ACID properties without any expansion
+(f) Award [2 max]
+Referential integrity refers to relationships between tables in a database;
+Referential integrity is maintained by the connection between the primary key in one table 
+and
+the foreign key in another;
+Which ensures records are appropriately updated (e.g. FK value cannot be changed to a value
+that does not exist as a PK);
+It cascades updates and deletes from the PK table to the FK table;
+To prevent update anomalies and orphan records;

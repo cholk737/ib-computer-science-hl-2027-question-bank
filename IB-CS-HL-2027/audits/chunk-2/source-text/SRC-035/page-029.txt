@@ -1,0 +1,59 @@
+                                        –  29 –             M23/4/COMSC/HP2/ENG/TZ0/XX/M
+
+
+(e)   Award [5 max].
+      Award [1] for correctly declaring a swap variable;
+      Award [1] for correct outer loop;
+      Award [1] for correct inner loop;
+      Award [1] for correctly testing prices (allow .price);
+      Award [1] for correct swap statements (ignore here any incorrect declaration of swap
+      variable);
+
+      Notes to examiners.
+      •   As there are many variations on sort routines you will need to carefully read
+          through each response. You can ignore minor syntax errors in every algorithm
+          answer.
+      •   Note that is the House objects that are being swapped, not the prices. However, if
+          prices are being swapped, allow FT for ta swap variable declared as a numeric
+          type.
+
+      Example answer 1
+      public void houseSort()                         // basic bubblesort 1
+      {
+        House swapHouse;
+        for (int i=0; i< allHouses.length-1; i++ //accept
+                                                                 //allHouses.length
+        {
+           for (int j=0; j< allHouses.length-1; j++)
+           {
+              if (allHouses[j].getPrice()>allHouses[j+1].getPrice())
+              {
+                 swapHouse = allHouses[j];
+                 allHouses[j] = allHouses[j+1];
+                 allHouses[j+1] = swapHouse;
+              }
+           }
+        }
+      }
+
+
+      Example answer 2
+      public void houseSort()             // basic bubblesort 2
+      {
+        boolean isSorted = false;
+        House houseTemp;
+        while(!isSorted)
+        {
+           isSorted = true;
+           for(int j=0;j<allHouses.length-1;j++)
+           {
+              if(allHouses[j].getPrice()>allHouses[j+1].getPrice())
+              {
+                  houseTemp = allHouses[j];
+                  allHouses[j] = allHouses[j+1];
+                  allHouses[j+1] = houseTemp;
+                  isSorted=false;
+               }
+            }
+         }
+       }

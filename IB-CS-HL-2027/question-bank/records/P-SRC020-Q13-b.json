@@ -1,0 +1,55 @@
+{
+  "question_id": "P-SRC020-Q13-b",
+  "source_question_ids": [
+    "H-SRC020-Q13-b"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Outline two possible disadvantages of a recursive solution compared with an equivalent loop.",
+  "syllabus_codes": [
+    "B2.4.4"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 4,
+  "command_term": "Outline",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "Each active call needs a stack frame, so deep recursion uses memory and may exceed the call-depth limit. Repeated calls add overhead, and a poorly chosen branching recurrence may repeat the same subproblems.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Call-stack memory overhead."
+    },
+    {
+      "marks": 1,
+      "criterion": "Depth/resource failure explained."
+    },
+    {
+      "marks": 1,
+      "criterion": "Call/repeated-work overhead."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains performance impact without claiming all recursion is exponential."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      18
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC020-Q13-b.json",
+  "question_path": "question-bank/questions/P-SRC020-Q13-b.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC020-Q13-b.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

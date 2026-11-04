@@ -1,0 +1,42 @@
+– 23 – 8823 – 7012
+(Option D continued)
+18. The arena will maintain a linked list of the battles that take place between monsters,
+called .
+gameLog
+Each time a player takes a turn and one monster attacks another, a new instance of the
+class is created and added to the linked list:
+Turn gameLog
+public class Turn {
+long timestamp;
+Monster from;
+Monster to;
+int damage;
+}
+The developer wants to add a method in the class, which restores
+rewindTurns Arena
+health points taken from a particular monster during a specified number of turns. This method
+can be called at any time and will leave the linked list unchanged (see Figure 10).
+gameLog
+Figure 10: The linked list
+gameLog
+Timestamp: 01 Timestamp: 02 Timestamp: 03 Timestamp: 04
+From: Windy From: Flamey From: Windy From: Flamey
+H
+To: Flamey To: Windy To: Flamey To: Windy
+Damage: 11 Damage: 4 Damage: 1 Damage: 4
+The variable is a reference to a monster named Windy, which is battling another
+rewinder
+monster, Flamey. The game has had four attacks so far, each of which are entered in the
+linked list. In this example, the code would restore
+gameLog rewindTurns(2, rewinder)
+4 health points to Windy, and the code would restore 8 health
+rewindTurns(3, rewinder)
+points to Windy.
+(a) Outline two differences between the use of a linked list and a stack when using the
+method. [4]
+rewindTurns
+(b) Explain how to implement the
+rewindTurns(int numberOfTurns, Monster
+method using the linked list . [6]
+rewinder) gameLog
+End of Option D

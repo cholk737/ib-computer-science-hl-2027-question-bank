@@ -1,0 +1,28 @@
+                                                    –   15 –                                     8823 – 7011M
+
+
+
+14.   (a)   Award [1 max].
+            (Judge #)3;
+      (b)   Award [4 max].
+            Award [1] for a correct row loop
+            Award [1] for a correct column loop
+            Award [1] for correctly testing the array value
+            Award [1] for increasing COUNT
+            Award [1] for initializing and outputting COUNT
+
+            COUNT=0
+            loop R from 0 to 19
+                   //accept MARKS.length -1
+                   // or len(MARKS)-1 instead of 19
+
+                  loop C from 0 to 7
+                          //accept MARKS[R].length-1
+                          // or len(MARKS[R])-1 instead of 7
+
+                         if MARKS[R][C]=10 then
+                                 COUNT=COUNT + 1
+                         end if
+                  end loop
+            end loop
+            output ('The number of times the 10 score was awarded:', COUNT)

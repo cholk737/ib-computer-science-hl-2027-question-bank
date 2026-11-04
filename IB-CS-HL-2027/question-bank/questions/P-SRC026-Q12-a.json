@@ -1,0 +1,19 @@
+{
+  "question_id": "P-SRC026-Q12-a",
+  "source_question_ids": [
+    "H-SRC026-Q12-a"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Trace balance(6), showing the returned value for each n from0 through6.\ndef balance(n):\n    if n <= 0:\n        return 0\n    previous = balance(n - 1)\n    if n % 2 == 0:\n        return previous - n\n    return previous + n",
+  "syllabus_codes": [
+    "B2.4.5"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 5,
+  "command_term": "Trace",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "assets": []
+}

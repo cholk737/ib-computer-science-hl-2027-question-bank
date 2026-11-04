@@ -1,0 +1,51 @@
+{
+  "question_id": "P-SRC018-Q14-a",
+  "source_question_ids": [
+    "H-SRC018-Q14-a"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct grid_product(grid) in Python to multiply every value in a rectangular list of lists and return the result.",
+  "syllabus_codes": [
+    "B2.2.2",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 3,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Preserves 2 Daccumulation; new generic numeric grid in Python.",
+  "solution": "def grid_product(grid):\n    product=1\n    for row in grid:\n        for value in row:\n            product *= value\n    return product",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes product to 1."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses all rows and all values with nested loops."
+    },
+    {
+      "marks": 1,
+      "criterion": "Multiplies each value exactly once and returns product."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "Executable checks saved under checks/ where applicable."
+  },
+  "code": "def grid_product(grid):\n    product=1\n    for row in grid:\n        for value in row:\n            product *= value\n    return product",
+  "test_code": "assert grid_product([[2,3],[4,5]])==120\nassert grid_product([[2,0],[4,5]])==0",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC018-Q14-a.json",
+  "question_path": "question-bank/questions/P-SRC018-Q14-a.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC018-Q14-a.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

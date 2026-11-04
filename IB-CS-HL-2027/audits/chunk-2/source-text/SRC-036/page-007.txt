@@ -1,0 +1,38 @@
+                                                            –  7 –                N20/4/COMSC/HP2/ENG/TZ0/XX/M
+
+
+3.     (a)    Award [1 max].
+              A record is one row in a table;
+              All of the fields relating to item of information;
+
+       (b)    Award [3 max].
+              Fields and Table: Vineyard and NameOfWine FROM Wine;
+              Criteria: StockQty >= 25 AND StockQty <= 35;    note: allow >25, <35
+              Description: Fruit is extracted from the field.
+              (Do not award the mark if Description = Fruity)
+
+              SELECT Vineyard, NameOfWine FROM Wine
+              WHERE (StockQty >= 25 AND StockQty <= 35)
+              AND Description LIKE ‘*Fruity*’;
+
+              Accept other versions including:
+
+              SELECT Vineyard, NameOfWine FROM Wine
+              WHERE (StockQty BETWEEN 25 AND 35)
+              AND Description LIKE ‘*Fruity*’;
+
+       (c)    (i)    Award [2 max].
+                     All three points needed for [2]. Two points needed for [1].
+                     UnitPrice * StockQty;
+                     Totalprice named;
+                     WINE table named;
+
+                     Accept versions similar to the one shown below:
+
+                     SELECT UnitPrice * StockQty AS totalprice
+                     FROM Wine;
+
+       (c)    (ii)   Award [2 max].
+                     A derived field is created / does not exist in the table/ is temporary;
+                     So the rules of normalization do not apply / is not affected by duplication / redundancy;
+                     No new dependencies are created;

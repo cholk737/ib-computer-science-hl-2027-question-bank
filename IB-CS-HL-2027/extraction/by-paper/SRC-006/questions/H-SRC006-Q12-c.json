@@ -1,0 +1,65 @@
+{
+  "source_question_id": "H-SRC006-Q12-c",
+  "source_id": "SRC-006",
+  "source_filename": "Computer_science_paper_1__HL (3).pdf",
+  "year": "2021",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "TZ0",
+  "option": "",
+  "question": 12,
+  "subquestion": "c",
+  "source_pdf_pages": [
+    6
+  ],
+  "source_printed_pages": [
+    "5"
+  ],
+  "original_marks": 4,
+  "command_term": "Describe",
+  "original_text": "Describe the steps required to calculate the sum of all numbers held in this circular linked list.",
+  "parent_context": "– 5 –\nN21/4/COMSC/HP1/ENG/TZ0/XX\n8821 – 7011\nTurn over\n11. A rail transport company uses a global positioning system (GPS) to determine a train’s position.\n(a) Explain how GPS works. [4]\nThe GPS data is used to provide real-time arrival data on video displays in train stations.\n(b) (i)  State one data item concerning the arrival of a train that may be provided on the \nvideo display. [1]\n(ii) Outline how sensors can be used in combination with GPS to provide more \naccurate arrival data. [2]\nThe GPS data is made publicly available so that software developers can use it to build apps.\nThe mobile application ATrainAway uses the real-time train GPS data as well as the GPS \ndata from the user’s smartphone.\n(c) Outline two pieces of information that the ATrainAway application could provide to \nthe user. [4]\n(d) Discuss the advantages and disadvantages of using GPS in transportation systems. [4]\n12. Consider the following circular linked list:\n20 5 10head\nwhere head is an external pointer that points to the first node in the circular linked list.\nThree operations are performed on this circular linked list in the following order:\n1 A node containing the number 30 is inserted at the beginning of the circular linked list.\n2 The last node is deleted from the circular linked list.\n3 The first node is deleted from the beginning of the circular linked list.\n(a) Sketch a diagram showing the resulting circular linked list. [3]\n(b) Outline how the last node of the circular linked list is identified. [2]\n(c) Describe the steps required to calculate the sum of all numbers held in this circular \nlinked list. [4]\nArrays and linked lists are used to store linear data.\n(d) Compare the use of arrays and linked lists. [4]\nA linked list can be used to implement a data structure queue.\n(e) Identify two applications of a queue data structure. [2]",
+  "assets": [],
+  "assessed_concepts": [
+    "Original source task: Describe the steps required to calculate the sum of all numbers held in this circular linked list.",
+    "Describe an algorithm to total all values in a nonempty circular singly linked list exactly once"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-012",
+    "filename": "Computer_science_paper_1__HL_markscheme (3).pdf",
+    "pdf_pages": [
+      13
+    ],
+    "question_reference": "Q12 c",
+    "marking_summary": "Set total=0 and current=head. Add current.value to total, then advance current=current.next. Repeat until current is head again, and report total.",
+    "source_issues": [],
+    "source_marking_evidence": "– 13 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \n(c) Award [4 max]\nInitialize (a temporary pointer with the head and) a variable sum with 0 (zero); \nLoop from the beginning to the end of the circular linked list / until all the nodes get \ntraversed); \nAdd the value (of the data field) (of the current node) to the sum; \nChange the temporary pointer so it points the next node of circular linked list; \nNote: Answers written in pseudocode are acceptable. \nFor example, \nsum = 0 \ncurr = head \nloop \n  sum = sum + curr.data \n  curr = curr.next \nuntil curr == head \n(d) Award [4 max]\nIn an array, memory is assigned during compile time(predetermined) whilst in a linked list it is \nallocated during execution/runtime; \nArrays are of fixed size whilst linked lists are flexible and can expand and contract its size; \nArray requires less memory (due to actual data being stored within the index in the array) \nwhilst there is a need for more memory in linked list (due to storage of additional next and \nprevious pointers/references); \nElements are stored consecutively in array whereas elements are stored randomly in linked \nlists; \nMemory utilization is inefficient in the array whilst memory utilization is efficient in the linked \nlist; \nAccessing an element in an array is direct (fast) while accessing an element in linked list is \nsequential/linear (slower) /to get into the nth element only the array name with index within \nthe square bracket should be written whilst a linked list (to get the nth element) should be \ntraversed starting from the beginning of the list, and traversing through the list until found/ ; \nOperations like insertion and deletion in arrays consume a lot of time whilst the performance \nof these operations in linked lists is fast; "
+  },
+  "relevance_status": "A",
+  "mappings": [
+    {
+      "syllabus_code": "B4.1.3",
+      "scope_evidence": "• The basic operations on a linked list, such as insertion, deletion, traversal, search",
+      "rationale": "Describe an algorithm to total all values in a nonempty circular singly linked list exactly once assesses Construct and apply linked lists: singly, doubly and circular.",
+      "theme": "B",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "No visual required by this leaf.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC006-Q12-c"
+  ]
+}

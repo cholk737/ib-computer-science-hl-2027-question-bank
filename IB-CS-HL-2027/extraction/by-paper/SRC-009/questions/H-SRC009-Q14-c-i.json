@@ -1,0 +1,65 @@
+{
+  "source_question_id": "H-SRC009-Q14-c-i",
+  "source_id": "SRC-009",
+  "source_filename": "Computer_science_paper_1__HL.pdf",
+  "year": "2024",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "not stated",
+  "option": "",
+  "question": 14,
+  "subquestion": "c-i",
+  "source_pdf_pages": [
+    7
+  ],
+  "source_printed_pages": [
+    "6"
+  ],
+  "original_marks": 4,
+  "command_term": "Describe",
+  "original_text": "Describe the structure of a double linked list.",
+  "parent_context": "– 6 – 8824 – 6904\n14. An application requires a list of students’ names to be held in alphabetical order, from A to Z, \nin the primary memory.\nThe application must allow for insertion and deletion of names.\n(a) Outline two advantages of using a linked list rather than a static array in this scenario. [4]\n(b) Explain how a specified student’s name could be found in a linked list. [5]\nA double linked list would be preferred over a single linked list for applications that require the \nability to move forward (from A to Z) and backward (from Z to A) through the list of names.\n(c) (i)   Describe the structure of a double linked list. [4]\n(ii) State two applications of double linked lists in computing. [2]\n15. The two-dimensional array MAT is used to store randomly generated integers in the range \nfrom 0 to 9.\nIn the MAT array, some numbers can be repeated multiple times and other numbers may \nnot appear at all (see Figure 1).\nFigure 1: Example data stored in the MAT array\n[0] [1] [2] [3] [4] [5] [6]\n[0] 0 2 5 9 3 6 1\n[1] 0 2 9 0 7 0 0\n[2] 4 2 7 9 5 7 1\n[3] 7 2 3 1 5 4 0\n[4] 3 6 3 9 9 6 0\n[5] 7 4 3 1 7 9 3\n[6] 3 9 6 4 2 2 4\n(This question continues on the following page)",
+  "assets": [],
+  "assessed_concepts": [
+    "Original source task: Describe the structure of a double linked list.",
+    "Describe the structure of a noncircular doubly linked list, including its boundary links"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-015",
+    "filename": "Computer_science_paper_1__HL_markscheme.pdf",
+    "pdf_pages": [
+      15
+    ],
+    "question_reference": "Q14 c-i",
+    "marking_summary": "Each node contains data, a next reference and a previous reference. Adjacent nodes link both ways. The first node’s previous reference and the last node’s next reference are None. A head reference identifies the first node; a tail reference may provide direct access to the last.",
+    "source_issues": [],
+    "source_marking_evidence": "– 15 – 8824 – 6904M \n14. (a) Award [4 max] \nAward [1] for an advantage and [1] mark for an expansion, x2. \nNames can be inserted/deleted quickly/easy just by manipulating the pointers/ by updating \nthe address; \nwithout resorting/shuffling (as in an array);  \nBetter use of memory/ the number of names (size of the list) is not fixed (as in an array); \nso, no wasted space / linked list can shrink and grow at the runtime (by deallocating or \nallocating memory);  \nNo need for an initial size/ predetermined size in linked list (as in an array); \nwhich allocate space that may or may not be fully in use; \n(b) Award [5 max]\nTemporary pointer should be used;\nand initially set to point to the beginning of the list;\nloop through the list;\nfollow the internal pointers;\ncompare the name in the node pointed to by the temporary pointer with the searched name;\nIf they are same (the name is found) then stop searching;\nIf the end of the list is reached / temporary pointer equals null then the searched name is not\non the list;\n(c) (i) Award [4 max] \nDouble linked list DLL has two external pointers, one pointer points to the first element \nof the DLL, and other points to the last element in the DLL; \nEach node consists of a data field(s); \nand two pointers (for example, called NEXT and PREV); \nEach node is linked with its next node (using its pointer NEXT) and previous node \n(using its pointer PREV); \nThe NEXT pointer of the last node is null (to mark the end of the list - forward traversal) \nand the PREV pointer of the first node is null (to mark the end of list - backward \ntraversal); \n Note: Accept diagrams. \n(ii) Award [2 max]\nStoring the browsing history which allow going forward and backwards in browsing\nhistory;\nA music player which has next and previous buttons;\nIn LRU caching/ cache that is employed in cases which uses most/least recently\naccessed items/ examples like in the case of android phone home screen to save the\nmost recently used apps;\nAn application that has a ‘Most Recently Used’ element / for example, list of file names;\nIn games, to represent anything that requires an order in a game / A DLL can be used\nto represent a deck of cards;\nUndo-Redo functionality (for example, in word processing);\nNote: Accept any application where front and back navigation is required. "
+  },
+  "relevance_status": "A",
+  "mappings": [
+    {
+      "syllabus_code": "B4.1.2",
+      "scope_evidence": "• Lists must include singly, doubly, circular\n• Sketch of linked lists and implementation of basic operations diagrammatically, such as insertion, deletion, traversal, search\n• The advantages and disadvantages of using linked lists over other data structures like arrays, particularly in terms of memory utilization and performance",
+      "rationale": "Describe the structure of a noncircular doubly linked list, including its boundary links assesses Evaluate linked lists.",
+      "theme": "B",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "No visual required by this leaf.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC009-Q14-c-i"
+  ]
+}

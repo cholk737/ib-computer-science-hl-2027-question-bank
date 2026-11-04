@@ -1,0 +1,20 @@
+{
+  "question_id": "P-SRC008-Q12-b",
+  "source_question_ids": [
+    "H-SRC008-Q12-b"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A stack uses a pre allocated Python list buffer of capacity 5 and top=-1, where top is the index of the latest stored item. Explain push, pop and the conditions for empty/full; the list must not grow.",
+  "syllabus_codes": [
+    "B2.2.1",
+    "B2.2.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 6,
+  "command_term": "Explain",
+  "difficulty": "high",
+  "adaptation_rationale": "Corrects source full-boundary bug; retains static-storage/stack reasoning without treating Python list growth as static allocation.",
+  "assets": []
+}

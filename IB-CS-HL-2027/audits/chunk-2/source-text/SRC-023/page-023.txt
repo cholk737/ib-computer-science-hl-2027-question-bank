@@ -1,0 +1,43 @@
+                                          –   23 –                            8825 – 6404M
+
+
+
+(d)    Award max [5].
+           [1]for correct use/call of subprograms isLower(MAT,N)and isUpper(MAT,N)
+           [1]for correct condition and output, x4.
+
+           Example 1:
+
+           if isUpper(MAT,N)
+                then
+                      if isLower(MAT,N)
+                           then output(' BOTH ')
+                           else output(' UPPER ')
+                      endif
+                else
+                      if isLower(MAT,N)
+                           then output(' LOWER ')
+                           else output(' NONE ')
+                      endif
+           end if
+
+           Example 2:
+
+           identify (MAT, N) //sub-program heading may not appear
+
+                A = isUpper(MAT,N)
+                B = isLower(MAT,N)
+
+                if A and B
+                      then output(' BOTH ')
+                endif
+                if A and not B
+                      then output(' UPPER ')
+                endif
+                if not A and B
+                      then output(' LOWER ')
+                endif
+                if not A and not B
+                      then output(' NONE ')
+                endif
+           end identify

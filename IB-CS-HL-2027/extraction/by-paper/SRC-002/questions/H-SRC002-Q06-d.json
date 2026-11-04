@@ -1,0 +1,97 @@
+{
+  "source_question_id": "H-SRC002-Q06-d",
+  "source_id": "SRC-002",
+  "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+  "year": "2026",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "A/B/C",
+  "option": "B",
+  "question": 6,
+  "subquestion": "d",
+  "source_pdf_pages": [
+    13
+  ],
+  "source_printed_pages": [
+    "13"
+  ],
+  "original_marks": 4,
+  "command_term": "Construct",
+  "original_text": "Construct an algorithm in pseudocode as described.",
+  "parent_context": "-12-\n2226-4429\n(Option B continued)\nSchools in the region are required to upload student names and their scores for each\nsubject to the portal of the Ministry of Education (a governmental organization that\noversees standards for examination scores).\nCity Walk School's grade boundaries* are lower than the Ministry of Education's grade\nboundaries, as shown in Figure 9.\nFigure 9: Grade boundaries for City Walk School and the Ministry of Education\nH\nK\n1\nSchool score\nGrade\nMinistry score\nGrade\n2\n35-46\n40-51\nE\n3\n47-59\nD\n52-65\nD\n4\n60-69\n66-75\n5\n70-84\nB\n76-90\nB\n6\n85-100\nA\n91-100\nConsider the formula:\n( SSS - MinSS\nKS =\n(axs--Mmsss (91-40)+40\nwhere:\n• SSS is the student's school score.\n• MinSS is 35, the minimum score in the school's data range.\n• MaxSS is 85, the minimum score for an A grade in the school's data range.\n• 40 is the minimum score in the Ministry of Education's data range.\n• 91 is the minimum score for an A grade in the Ministry of Education's data range.\nThis formula is used to scale data from one range (e.g. school score: 35-85) to a different\nrange (Ministry score: 40-91).\n(a) Calculate KS to one decimal place, where SSS = 60.\nYou must show your working.\n[2)\n* grade boundaries: the range of marks required to achieve a specific grade\n(Ontion B continues on the following page)\n- 13 -\n2226-4429\n(Option B, question 6 continued)\nThe spreadsheet extract shown in Figure 9 has been imported into a program.\n• An array, STUDENTS, stores student's last names.\n• An array, SCORES, stores student's school scores rounded to the nearest integer.\n• An array, MINISTRY, consists of five integers of 0.\nSTUDENTS = [Khan, Chanchikova, Hodroge, Naveneethan, Khalil]\nSCORES = [50, 88, 73, 68, 40]\nMINISTRY = [0, 0, 0, 0, 0]\nA pseudocode algorithm should take each value in the SCORES array and apply the formula\nto calculate the Ministry score. The result of this calculation should be rounded to the nearest\ninteger and stored in the MINISTRY array.\n(b) Construct an algorithm in pseudocode as described.\n[3]\nWhen schools upload student names and scores, the portal only allows integers between 40\nand 100 to be entered. The Ministry of Education runs several automated checks on the data.\nDescribe one other automated check the Ministry of Education might use to ensure the\ndata is accurate.\n[3]\nFor a student to achieve a grade A, they must score between 91 and 100.\nA pseudocode algorithm should count the number of grade A students and store the result\nas a percentage of the total number of students.\n(d)\nConstruct an algorithm in pseudocode as described.\n(4]\n(Option B continues on the following page)\nA000",
+  "assets": [
+    {
+      "kind": "scanned_source_page",
+      "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-12.png",
+      "source_pdf_page": 12,
+      "visually_verified": true
+    },
+    {
+      "kind": "scanned_source_page",
+      "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-13.png",
+      "source_pdf_page": 13,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Construct an algorithm in pseudocode as described.",
+    "Construct high_percentage(scores) for a nonempty Python list of numerical scores"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "not_uploaded",
+    "source_id": "",
+    "filename": "",
+    "pdf_pages": [],
+    "question_reference": "Q6 d",
+    "marking_summary": "One solution:\ndef high_percentage(scores):\n    count = 0\n    for score in scores:\n        if 91 <= score <= 100:\n            count += 1\n    return count / len(scores) * 100",
+    "source_issues": [],
+    "source_marking_evidence": ""
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B2.2.2",
+      "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+      "rationale": "Construct high_percentage(scores) for a nonempty Python list of numerical scores assesses Construct programs that apply arrays and Lists.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B2.3.2",
+      "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+      "rationale": "Construct high_percentage(scores) for a nonempty Python list of numerical scores assesses Construct programs utilizing appropriate selection structures.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B2.3.3",
+      "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+      "rationale": "Construct high_percentage(scores) for a nonempty Python list of numerical scores assesses Construct programs that utilize looping structures to perform repeated actions.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "No uploaded MS; independent unofficial answer.",
+    "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+    "technical": "Both qualifying boundaries and adjacent values executed."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC002-Q06-d"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

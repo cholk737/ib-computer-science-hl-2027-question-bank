@@ -1,0 +1,52 @@
+- 17 -
+2226-4429
+(Option C, question 9 continued)
+Class_style.xsl
+<?xml version="1.0" encoding="UTF-8"?>
+<xs1:stylesheet
+version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/
+Transform">
+<xsl:template match="/">
+<htm1>
+<body>
+<h1>Class Members</h1>
+‹table>
+<tr>
+<th>First Name</th>
+<th>Surname</th>
+<th>Class</th>
+</tr>
+<xs1:for-each select="class/student">
+<tr>
+<td><xsl:value-of select="firstname"/></td>
+<td><xsl:value-of select="surname"/></td>
+<td><xs1:value-of select="classname"/></td>
+</tr>
+</xsl: for-each>
+</table>
+</body>
+</html>
+</xs1:template>
+</xs1:stylesheet>
+(e)
+With reference to Class.xml and Class_style.xsl, describe how a page connects to
+the underlying data source.
+[2]
+(f)
+Identify three characteristics of transmission control protocol (TCP).
+[3]
+10.
+It is estimated that the deep web is 500 times larger than the surface web.
+(a) Outline one difference between the deep web and the surface web.
+(2]
+(b) Define the term web crawler.
+[1]
+(c) Outline the web crawling process.
+[3]
+(d) Describe two advantages of parallel web crawling.
+(4]
+Developers attempt to have their site rank higher in the search engine result.
+(e)
+Evaluate two white hat techniques that may be used in search engine optimization.
+[5]
+(Option C continues on the following page)

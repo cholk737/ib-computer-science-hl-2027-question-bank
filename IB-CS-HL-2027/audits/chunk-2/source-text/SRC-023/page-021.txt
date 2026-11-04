@@ -1,0 +1,39 @@
+                                                  –   21 –                                  8825 – 6404M
+
+
+
+15.     (a)      Award max [1].
+
+             1,  6,  7,  0 ;
+
+      (b)        Award max [2].
+             compare the row and column indexes of the matrix element;
+             if row index is equal to column index, it is diagonal element;
+             if not, it is not a diagonal element;
+
+      (c)        Award max [7].
+
+             Example 1:
+
+             [1] for correctly initializing and changing (if needed) the value of flag (F)
+             [1]for nested loops
+             [1]for correct outer loop (correct initial and final value of control variable- ROW)
+             [1]for correct inner loop (correct initial and final value of control variable      - COL)
+             [1] for correct use of row index and column index in the MAT array
+             [1]for checking if MAT[ROW][COL]is a non-zero element
+             [1]for correct return
+
+             isUpper(MAT,N)  //sub-program heading may not appear
+                   F = 1
+                   loop ROW from 1 to N-1
+                          loop COL from 0 to ROW-1
+                                if MAT[ROW][COL] != 0
+                                      then F = 0  // or return False
+                                end if
+                          end loop
+                   end loop
+                   if F == 0
+                          then return False
+                          else return True
+                   end if
+             end isUpper

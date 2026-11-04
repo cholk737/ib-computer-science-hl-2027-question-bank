@@ -1,0 +1,21 @@
+– 5 – 2225 – 6423M 
+(d) Award [4 max]
+Award [1] for selecting FirstName, Surname and PayGrade 
+Award [1] for correct JOIN (or mentioning the joining of) the tables STAFF and ROLE) 
+Award [1] for the correct JOIN condition (STAFF.RoleID = ROLE.RoleID) 
+Award [1] for identifying both conditions (Surname and PayGrade condition) 
+Example 1 
+SELECT STAFF.Firstname, STAFF.Surname, Role.PayGrade 
+FROM STAFF INNER JOIN Roles ON STAFF.RoleID = ROLE. RoleID 
+WHERE STAFF.Surname = ‘Waters’ AND ROLE.PayGrade = 17; 
+Example 2  
+SELECT STAFF.Firstname, STAFF.Surname, ROLE.PayGrade 
+FROM STAFF, ROLE  
+WHERE STAFF.RoleID = ROLE. RoleID    
+AND STAFF.Surname = 'Waters' AND ROLE.PayGrade = 17; 
+Note: Accept equivalent in Structured English 
+(e) Award [2 max]
+The pay grade values are whole numbers;
+The use of an integer reduces the size of the field;
+Listing/sorting the staff in order of the PayGrade / increasing or decreasing of PayGrade;
+Allows calculation and mathematical functions;

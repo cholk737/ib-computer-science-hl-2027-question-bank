@@ -1,0 +1,52 @@
+                                                                                                                                       –   31    –                                                                                                                                          8825                                                                                         – 6408                                                                 M
+
+
+(iii)                                                                            Award [          5 max]
+                    Award [1]                        for                          initialising and returning the count;                                                                                               .
+                    Award [1]                        for a correct loop to navigate through the allLawyers[];
+                    Award [1]                        for correctly matching lawyerID                                                                                                                                                                                                with the parameter passed.
+                    Award [1]                        for correct ‘for’                                                                        loop for all cases of the lawyer.
+                    Award [1] for checking ‘                null’ in                                             lawyerCases[];
+                    Award [1]                        for correctly checking daysFromStart >                                                                                                                                                                                                                                                                                                                                                                                                   45;
+                    Award [1]                        for correctly checking judgementG                                                                                                                            iven                                                                                                equals N;
+                    Example 1:
+                    public int                                                                                                               countDelayedCases(int id)
+                    {
+                               int                                  count = 0;
+                    for(                                                                  int                                  i=0; i<20; i++)
+                    {
+                                              if(allLawyers[i].getL                                                                                                                                                                                                                            awyerId()== id)
+                                              {
+                                                            for(                                                       int                                  j=0; j<15; j++)
+                                                             {
+                                                                  if(allLawyers[i].getLawyerCases()[j]!= null)
+                                                                          {
+                                                                                           Case C = allLawyers[i].getLawyerCases()[j];
+                                                                                           if(C.getDaysFromStart()>45 && C                            .getJ                                      udgementGiven()=='N')
+                                                                                                                                     count++;
+                                                           }
+                                                  }
+                                        }
+                    }
+                    return                                                                                                               count;
+                    }
+                    Example 2:
+                    int                                  countDelayedCases(int                                                                                                                                                                                                                                        lawyerID)
+                    {
+                    int                                                        count = 0;
+                          for(                                 int                                  i = 0; i < 20; i++)
+                    {
+                    if(allLawyers[i].getLawyerID() == lawyerID)
+                    {
+                                                  Case[] temp = allLawyers[i].getLawyerCases();
+                                                  for(                                 int                                  j = 0; j < temp.length; j++)
+                                                  {
+                                                           if(temp[j] != null)
+                                                           {
+                                                                     if(                  temp[j].getDaysFromStart()>45 &&                                                                                                                                                                                                                                                                                                    temp[j].getJudgmentGiven()=='N')
+                                                                                    count++;
+                                                           }
+                                                  }
+                    }
+                    }
+                    }

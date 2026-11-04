@@ -1,0 +1,64 @@
+{
+  "question_id": "P-SRC030-Q12-c",
+  "source_question_ids": [
+    "H-SRC030-Q12-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct replace_with_extreme_sum(stack) in Python. stack is nonempty and holds real numbers. Remove all its values and leave exactly one item:the sum of its smallest and largest original values. Use only pop, push and isEmpty.",
+  "syllabus_codes": [
+    "B2.2.3",
+    "B2.3.2",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 6,
+  "command_term": "Construct",
+  "difficulty": "high",
+  "adaptation_rationale": "PreservesADT-only destructive traversal; safe initialization avoids sentinel failure.",
+  "solution": "def replace_with_extreme_sum(stack):\n    first=stack.pop()\n    low=high=first\n    while not stack.isEmpty():\n        value=stack.pop()\n        if value < low:\n            low=value\n        if value > high:\n            high=value\n    stack.push(low+high)",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes both extrema from an actual stack item."
+    },
+    {
+      "marks": 1,
+      "criterion": "Loops while stack is not empty."
+    },
+    {
+      "marks": 1,
+      "criterion": "Pops every remaining item."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correctly updates minimum and maximum, both handling negative values."
+    },
+    {
+      "marks": 1,
+      "criterion": "Computes the sum of the final extrema."
+    },
+    {
+      "marks": 1,
+      "criterion": "Pushes exactly that sum after all original items removed."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "Executable checks saved under checks/ where applicable."
+  },
+  "code": "def replace_with_extreme_sum(stack):\n    first=stack.pop()\n    low=high=first\n    while not stack.isEmpty():\n        value=stack.pop()\n        if value < low:\n            low=value\n        if value > high:\n            high=value\n    stack.push(low+high)",
+  "test_code": "class Stack:\n def __init__(self,v):self.v=list(v)\n def pop(self):return self.v.pop()\n def push(self,x):self.v.append(x)\n def isEmpty(self):return not self.v\nfor values,expected in [([-7,2,9],2),([-5,-2],-7),([4],8)]:\n s=Stack(values);replace_with_extreme_sum(s);assert s.v==[expected]",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC030-Q12-c.json",
+  "question_path": "question-bank/questions/P-SRC030-Q12-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC030-Q12-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

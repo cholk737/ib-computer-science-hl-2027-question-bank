@@ -1,0 +1,79 @@
+{
+  "source_question_id": "H-SRC002-Q14-e",
+  "source_id": "SRC-002",
+  "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+  "year": "2026",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "A/B/C",
+  "option": "D",
+  "question": 14,
+  "subquestion": "e",
+  "source_pdf_pages": [
+    21
+  ],
+  "source_printed_pages": [
+    "21"
+  ],
+  "original_marks": 4,
+  "command_term": "Construct",
+  "original_text": "Construct the code for the getCost() method.",
+  "parent_context": "-20 -\n2226-4429\nOption D — Object-oriented programming\n14. A car rental company has several locations around a country. Each location has many cars\nthat are rented to customers throughout the year. The company makes use of object-oriented\nprogramming (OOP) to manage the rentals.\nThe Rental class is shown.\npublic class Rental\nprivate int customerID;\nprivate boolean priority;\nprivate int carID;\nprivate\ndouble costPerDay;\nprivate RentDate startDate;\nprivate RentDate endDate;\npublic Rental(int customerID, boolean priority, int carID, double\ncostPerDay, RentDate startDate, RentDate endDate)\nthis.customerID = customerID;\n357\nthis priority = priority;\nthis.carID = carID;\nthis.costPerDay = costPerDay;\nthis.startDate = startDate;\nthis.endDate = endDate;\npublic Rental (int customerID, int carID, double costPerDay,\nRentDate startDate, RentDate endDate)\nthis.customerID = customerID;\nthis.priority = false;\nthis.carID = carID;\nthis.costPerDay = costPerDay;\nthis.startDate = startDate;\nthis.endDate = endDate;\n}\noublic int getCustomerID() { return customerID; }\noublic boolean getPriority() { return priority;\npublic int getCarID() { return carID; }\npublic double getCostPerDay() ( return costPerday; }\npublic RentDate getStartDate() { return startDate; }\npublic RentDate getEndDate() ( return endDate; )\npablic int getDaysl\n// implementation not shown\nII returns the number of days between the start date\nI/ and the end date of the rental\n}\n(Option D continues on the following page)\n-21 -\n2226-4429\n(Option D, question 14 continued)\npublic int compareTo (RentDate thisDate)\n{\n// implementation not shown\n// returns -1 if this date is\nearlier\n// returns 0 if the dates are the same\n// returns 1 if this date is later\n}\npublic double getCost()\n{\n// code missing\n}\nPublic string tostringl)\nreturnCustomer ID\" + CustomerID + \", Priority Status: \" +\npriority + \"\n', Car Rented: \" + carID +\", cost per day: \" + costPerDay;\n}\n}\nEach time a car is rented, an instance of the Rental class is created.\n(a)\nDescribe, using the Rental class as an example, the difference between a class and\nan instance of a class.\n[3]\nThe Rental class has two constructor methods with different parameters.\n(b)\nOutline why having multiple constructors in the Rental class is not a problem\nwhen creating a new Rental object.\n[3]\n(ii)\nState the object-oriented programming (OOP) concept that allows two methods\nin the same class to share the same name but have different parameters.\n[1]\nThe Rental class makes use of a class, RentDate, to store dates.\n(c) Outline one benefit of creating the RentDate class to store the dates of car rentals.\n[2]\n(d) Outline the purpose of the tostring () method in the Rental class.\n[2]\nThe purpose of the getCost () method is to return the total cost of a car rental. The total\ncost of the rental is the number of days multiplied by the cost per day.\n(e) Construct the code for the getCost () method.\n[4]\n(Option D continues on the following page)",
+  "assets": [
+    {
+      "kind": "scanned_source_page",
+      "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-20.png",
+      "source_pdf_page": 20,
+      "visually_verified": true
+    },
+    {
+      "kind": "scanned_source_page",
+      "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-21.png",
+      "source_pdf_page": 21,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Construct the code for the getCost() method.",
+    "Construct the Python method get_cost(self)"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "not_uploaded",
+    "source_id": "",
+    "filename": "",
+    "pdf_pages": [],
+    "question_reference": "Q14 e",
+    "marking_summary": "One solution:\ndef get_cost(self):\n    days = self.get_days()\n    return days * self.rate",
+    "source_issues": [],
+    "source_marking_evidence": ""
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B2.3.4",
+      "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+      "rationale": "Construct the Python method get_cost(self) assesses Construct functions and modularization.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "No uploaded MS; independent unofficial answer.",
+    "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+    "technical": "Executed duration4/rate18.5; formula also giveszero forzeroduration."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC002-Q14-e"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

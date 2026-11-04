@@ -1,0 +1,42 @@
+                                                 –   12 –             N20/4/COMSC/HP2/ENG/TZ0/XX/M
+
+
+(c)   Award [4 max].
+
+      Award [2 max] for each variable tested.
+      Award [1] for the type of test and [1] for example test data.
+
+      Type test for HOUSE_TYPE
+      Normal: s or l / small or large; Abnormal: m /     medium.
+      If Boolean has been used Normal: True or False; Abnormal: “small”
+
+      Range test for NUM_HOUSES
+      Normal HOUSE_NUM = 5 / Abnormal HOUSE_NUM = 12 / Extreme HOUSE_NUM = 6 or
+      HOUSE_NUM = 10
+
+      Accept any testing that relates to:
+      •  normal data // Note: an example will get this mark
+      •  extreme data
+      •  abnormal data.
+
+(d)   Award [5 max].
+      Award [1] for reading the profit, number of days from csv file / cell range.
+      Award [1] for adding the number of days to the date.
+      Award [1] for extracting the month from the date.
+      Award [1] for calculating interest and rates.
+      Award [1] for deducting the costs from the profit and displaying result.
+
+      Example pseudocode:
+      import FILE.CSV As SS
+      read PROFIT, NUM_DAYS from SS
+      END_DATE = #01/01/2021 + NUM_DAYS
+      NUM_MONTHS = MONTH(END_DATE)
+      COSTS = (NUM_MONTHS * 500) + (NUM_MONTHS * (400000 * .01))
+      output (PROFIT – COSTS)
+
+      Alternative pseudocode:
+      input Profit, NumDays from spreadsheet
+      endDate = date(dateval("1/1/21") + NumDays)
+      monthsTaken = month(endDate)
+      interest = 400000 * 0.01 * monthsTaken
+      output "Net profit = $", (Profit – interest)

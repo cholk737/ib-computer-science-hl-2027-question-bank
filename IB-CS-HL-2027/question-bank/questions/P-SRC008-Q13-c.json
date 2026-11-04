@@ -1,0 +1,19 @@
+{
+  "question_id": "P-SRC008-Q13-c",
+  "source_question_ids": [
+    "H-SRC008-Q13-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "For a=[[6, 2, 0, 0],[3, 7, 4, 0],[0,-2, 5, 8],[0, 0, 9, 1]], determine lower_sum(a, 3), showing all recursive returns.\n\ndef lower_sum(a,r):\n    if r == 0:\n        return 0\n    return a[r][r-1] + lower_sum(a,r-1)",
+  "syllabus_codes": [
+    "B2.4.5"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 4,
+  "command_term": "Determine",
+  "difficulty": "medium",
+  "adaptation_rationale": "Preserves non branching recursive subdiagonal summation; Python and new signed inputs.",
+  "assets": []
+}

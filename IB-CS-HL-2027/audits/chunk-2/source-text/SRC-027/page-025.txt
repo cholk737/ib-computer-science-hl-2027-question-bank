@@ -1,0 +1,54 @@
+                                          –   25 –                                     2225 – 6414M
+
+
+
+
+
+
+ Example 2:
+
+ Award max [8]
+
+Award max [2] for initializing the FLAGS array. Award [1] for correct       loop and [1] for correct
+assignment statement.
+
+Award max [4] for matching up the values in the MAT array with indexes in the FLAGS array
+and assigning values to elements of the FLAGS array. Award [         1] for correct row loop,  [1] for
+correct column loop,   [1] for calculating index, [1] for assignment statement.
+
+Award max [4] for inspecting all elements in the FLAGS array and displaying appropriate
+messages. Award [1] for initializing counter, [1] for correct loop through the array FLAGS, [1] for
+increasing counter (if needed), [1] for correct test and appropriate output (after the loop)
+
+
+ // the FLAGS array indexed from 0 to 24
+ // initializing the FLAGS array
+
+ loop K from 0 to 24
+          FLAGS [K] = 0
+ end loop
+
+ // matching up the values in the MAT array with
+ //indexes in the FLAGS array
+ // and assigning values to elements of the FLAGS array
+
+    loop R from 0 to 4
+          loop C from 0 to 4
+                FLAGS [MAT[R][C]-1] = 1
+          end loop
+    end loop
+
+ //inspecting all elements in the FLAGS array (counting 1s)
+ //and displaying appropriate messages
+
+ COUNTER = 0  //counting 1s in the FLAG array
+ loop I from 0 to 24
+         if FLAGS [I]== 1
+                 then COUNTER = COUNTER + 1
+         end if
+ end loop
+
+ if COUNTER == 25     // all 1s in the FLAGS array
+        then output('the table has been completed correctly ')
+       else output('the table has not been completed correctly                         ')
+ end if

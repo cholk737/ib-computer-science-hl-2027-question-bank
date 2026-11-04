@@ -1,0 +1,51 @@
+                                               –   31 –            M23/4/COMSC/HP2/ENG/TZ0/XX/M
+
+
+(f)   Award [7 max].
+      Award [1] for correct return type and return;
+      Award [1] for correct parameter, budget (allow allHouses to be passed as well);
+      Award [1] for correctly instantiating a result array;
+      Award [1] for correctly using houseSort;
+      Award [1] for while loop with one correct condition; // other loops could be used
+      Award [1] for while loop with two correct conditions in the right order; // note that some of
+      these conditions may be implemented as IF statements;
+      Award [2] for assigning all 3 House objects in the correct order (award [1] for good attempt at
+      identifying the 3 objects);
+
+      Example answer 1
+      public House[] selectThree(int budget)
+      {
+        House[] result = new House[3];
+        houseSort();                   // allow allHouses.houseSort()
+        int i=0;
+        while ((i<allHouses.length)&&(allHouses[i]!=null)
+                                              &&(allHouses[i].getPrice()<=budget))
+        {
+           i++;
+        }
+        i--;
+        for (int a=0; a<=2; a++)
+        {
+           result[a] = allHouses[i-2+a];
+        }
+        return result;
+      }
+
+
+      Example answer 2
+      public House[] selectThree(int budget)
+      {
+        House[] result = new House[3];
+        houseSort();
+        int i=0;
+        while ((i<allHouses.length)&&(allHouses[i]!=null)
+                                              &&(allHouses[i].getPrice()<=budget))
+        {
+           i++;
+        }
+        i--;
+        result[0] = allHouses[i-2];
+        result[1] = allHouses[i-1];
+        result[2] = allHouses[i];
+        return result;
+      }

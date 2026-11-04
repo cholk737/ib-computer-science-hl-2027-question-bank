@@ -1,0 +1,61 @@
+                                               –   17 –             N21/4/COMSC/HP1/ENG/TZ0/XX/M
+
+
+(c)   Award [6 max]
+      Award [1] for all variables correctly declared and initialized;
+      Award [1] for looping through the array ROUTE_X_NAMES;
+      Award [1] for determining positions of the first name in the array;
+      Award [1] for determining positions of the second name in the array;
+      Award [1] for outputting a message if one or other not present;
+      Award [1] for a comparison of positions to find largest;
+      Award [1] for the correct output of distance from ROUTE_X_DISTANCES;
+
+      Example 1:
+
+      NAME1=input()
+      NAME2=input()
+      POS1=-1
+      POS2=-1
+      K=0
+      loop while  K<=9 and (POS1==-1 or POS2==-1)
+              if ROUTE_X_NAMES [K].equals(NAME1) //accept '==' instead of equals()
+                 then POS1=K
+              end if
+              if ROUTE_X_NAMES [K].equals(NAME2)
+                  then POS2=K
+              end if
+              K=K+1
+      end while
+      if POS1==-1 OR POS2==-1
+         then output('stations are not found')
+         else
+              if POS1 > POS2
+                  then output(ROUTE_X_DISTANCES [POS1][POS2])
+                  else output(ROUTE_X_DISTANCES [POS2][POS1])
+              end if
+      end if
+
+      Example 2:
+
+      ST1=input()
+      ST2=input()
+      PS1=-1
+      PS2=-1
+      loop K from 0 to 9
+              if ROUTE_X_NAMES [K]==ST1
+                 then PS1=K
+              end if
+              if ROUTE_X_NAMES [K]==ST2
+                  then PS2=K
+              end if
+      end loop
+      if PS1!=-1 AND PS2!=-1
+        then   if PS1 < PS2
+                  then T=PS1
+                         PS1=PS2
+                         PS2=T
+                  end if
+                  output(ROUTE_X_DISTANCES [PS1][PS2])
+         else
+                  output('stations not found')
+      end if

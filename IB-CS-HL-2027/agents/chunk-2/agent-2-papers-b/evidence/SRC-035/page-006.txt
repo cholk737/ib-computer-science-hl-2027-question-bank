@@ -1,0 +1,35 @@
+– 6 – M23/4/COMSC/HP2/ENG/TZ0/XX/M 
+2. (a) Award [1 max] 
+Amount of acceptable data loss; 
+Time to full recovery/Recovery Time Objective(RTO); 
+Cost (Instant recovery requires failover systems); 
+Resources/Architecture; (volume of data) // size of database not accepted; 
+Legal regulations/sensitivity of data; 
+(b) Award [4 max]
+Backup and Restore/The DBA restores the database from backup;
+Using BACKUP and RESTORE SQL commands;
+After making periodic backups of the database (may be full or incremental);
+Log Recovery/ Point in time recovery/rollback;
+Backup is recorded in the log files and restored at that point;
+Transaction after that point are added back in;
+If the failure was due to an error in a transaction, the DBA can also "undo" the transaction to
+revert the database to a consistent
+Instant Recovery/database mirroring/recovery in place;
+Redirects user workloads to the backup server/backup database is brought online;
+When recovery is completd the original system is used with the interim transactions added;
+Deferred update (NO-UNDO/REDO or write-ahead logging);
+The system consults the transaction log and any transactions that were not fully written to the
+database (deferred) are redone;
+Mark as [2] and [2].
+(c) Award [4 max]
+Access control levels;
+same as in a school, admistrators can see everything, teachers can see some, students can
+see very little;
+Any example to explain the access control can be accepted;
+Maintaining data anonymity;
+for example the personally identifiable information (PII) that could potentially identify a person
+in the database is located in a separate table;
+and the person is given a unique identifier like PER0001 so the anonymity of the person
+can be ensured;
+Note: password alone not accepted, encryption not accepted
+Mark as [2] and [2].

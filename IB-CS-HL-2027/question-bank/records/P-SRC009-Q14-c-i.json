@@ -1,0 +1,55 @@
+{
+  "question_id": "P-SRC009-Q14-c-i",
+  "source_question_ids": [
+    "H-SRC009-Q14-c-i"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Describe the structure of a noncircular doubly linked list, including its boundary links.",
+  "syllabus_codes": [
+    "B4.1.2"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 4,
+  "command_term": "Describe",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "Each node contains data, a next reference and a previous reference. Adjacent nodes link both ways. The first node’s previous reference and the last node’s next reference are None. A head reference identifies the first node; a tail reference may provide direct access to the last.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Data stored in nodes."
+    },
+    {
+      "marks": 1,
+      "criterion": "Both next and previous references."
+    },
+    {
+      "marks": 1,
+      "criterion": "Bidirectional adjacent links."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct None boundary links/head identification."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      15
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC009-Q14-c-i.json",
+  "question_path": "question-bank/questions/P-SRC009-Q14-c-i.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC009-Q14-c-i.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

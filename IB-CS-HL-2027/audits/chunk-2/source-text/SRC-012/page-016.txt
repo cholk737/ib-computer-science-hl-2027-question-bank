@@ -1,0 +1,36 @@
+                                           –   16 –              N21/4/COMSC/HP1/ENG/TZ0/XX/M
+
+
+Example 3:
+
+Note: Marks should also be awarded if a candidate wrote the algorithm in
+Java/Python/Javascript.
+
+Award [1] for correct outer/row loop
+Award [1] for correct inner/column loop
+Award [1] for stopping as soon as an incorrect value is found
+Award [1] for checking whether elements on and above the main diagonal are zero
+Award [1] for checking elements below the main diagonal (they all should be positive
+numbers)
+Award [1] for outputting the appropriate message
+
+
+
+
+
+
+function check()
+
+{ for (var i=0; i<10; i++)
+  { for (var j=0; j<10; j++)
+     { if (i>j)
+        { if (ROUTE_X_DISTANCES[i][j] <= 0.0) return "invalid";
+        }
+        else if (ROUTE_X_DISTANCES[i][j] != 0.0 ) return "invalid";
+     }
+  }
+  return "valid";
+}
+
+
+output("ROUTE_X_DISTANCES is "+check());

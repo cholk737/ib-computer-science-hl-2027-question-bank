@@ -1,0 +1,66 @@
+{
+  "source_question_id": "H-SRC026-Q11-c",
+  "source_id": "SRC-026",
+  "source_filename": "Computer_science_paper_1_TZ2_HL.pdf",
+  "year": "2025",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "TZ2 (filename; numerical cover code)",
+  "option": "",
+  "question": 11,
+  "subquestion": "c",
+  "source_pdf_pages": [
+    5
+  ],
+  "source_printed_pages": [
+    "4"
+  ],
+  "original_marks": 2,
+  "command_term": "See original prompt",
+  "original_text": "List two types of sensor that could be used to collect data on the number of vehicles.",
+  "parent_context": "– 4 – 2225 – 6414\n11. Each set of traffic lights in a city is controlled by a separate embedded system.\n(a) (i)   Describe what is meant by an embedded system. [2]\n(ii) State two other examples of embedded systems in daily life. [2]\nIt has been proposed that all the traffic lights in the city should be controlled from a \ncentral computer.\n(b) Discuss the advantages and disadvantages of using one central computer to manage \nthe city’s traffic light system. [4]\nVehicle counts provide the city’s traffic control centre with information regarding the number \nof vehicles on the city’s roads.\n(c) List two types of sensor that could be used to collect data on the number of vehicles. [2]\n(d) Describe one difference between interrupts and polling. [2]\nThe data about traffic and road conditions will be shared with application (app) developers. \nTheir apps can provide real-time information about traffic conditions.\n(e) Explain the benefit for drivers of having access to real-time information about traffic \nand road conditions. [3]\n12. (a)   Consider the following recursive function:\nrecfn(N)\n    if N <= 0\n        then\n            return 0\n        else\n            if N mod 2 = 0\n                then\n                    return recfn(N-1) - N\n                else\n                    return recfn(N-1) + N\n            endif\n    endif\nend recfn\nDetermine the value of variable X after execution of the following program statement:\nX = recfn(5)\nShow all your working. [5]\n(This question continues on the following page)",
+  "assets": [],
+  "assessed_concepts": [
+    "Original source task: List two types of sensor that could be used to collect data on the number of vehicles.",
+    "List two sensors that could provide input when counting vehicles at a junction"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-027",
+    "filename": "Computer_science_paper_1_TZ2_HL_markscheme.pdf",
+    "pdf_pages": [
+      16
+    ],
+    "question_reference": "Q11 c",
+    "marking_summary": "An inductive-loop sensor and an infrared beam sensor.",
+    "source_issues": [],
+    "source_marking_evidence": "– 16 – 2225 – 6414M \n(b) Award max [4].\nAward max [2] for pros and max [2] for cons.\nPros: \nBetter control over traffic flow/ any problem appearing at one traffic light is known immediately/ \ncan be dealt with immediately; \nTraffic lights can be quickly adapted to avoid traffic blocks/ when levels of traffic flow change; \nAll traffic lights can be synchronized efficiently, allowing smooth traffic flow across the city (e.g., \ncreating green waves on main roads); \nEasier to add additional hardware/ inputs such as sensors; \nCheaper-reduces the need for separate hardware (controllers or advanced systems) at each \nintersection/ cheaper maintenance; \nCentralised data collection (accidents, traffic) that could help with future planning; \nControl program can be done at one place, with different programs for different times of day and \nrelated traffic patterns; \neasier maintenance/software updates can be performed centrally without having to make \nadjustments at every intersection; \nCons: \nsingle point of failure - failure of the central computer stops the entire city's traffic \nsystem; \nsystem depends on high-speed communication links, network failure can disrupt activity; \nthe capacity/speed of the central computer can be limited/cannot provide the desired levels of \nservice (many inputs with differing priorities which could take time); \nhigh initial cost of communication system/central control system/software; \nsecurity risks/cyberattacks on the central computer affects the entire city; \nreduced local autonomy/ individual intersections cannot make local decisions like dealing with \nan unexpected blockage/ emergency; \ndifficult to scale up as the city expands (system may struggle to handle increased load) / \ndisruption in service/ increased complexity in decision-making and processing; \nNote: Reward other reasonable benefits and drawbacks. \n(c) Award max [2].\nMotion sensors; \nPneumatic tubes;  \nPiezoelectric sensor; \nInductive loop;  \nMagnetic sensors; \nAcoustic detectors; \nInfrared detectors/sensors; \nDoppler sensors; \nRadar/microwave/ultrasonic sensors; \nPressure sensors; \nImage sensors; \nRadio frequency sensors; \nProximity sensors; \nNote: Reward other correct answers. "
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "A1.3.6",
+      "scope_evidence": "• The input, process, output, and feedback mechanism (open-loop, closed-loop)\n• Controller, sensors, actuators, transducers and control algorithm",
+      "rationale": "List two sensors that could provide input when counting vehicles at a junction assesses Describe the use of the control system components. (HL only)",
+      "theme": "A",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "No visual required by this leaf.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC026-Q11-c"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

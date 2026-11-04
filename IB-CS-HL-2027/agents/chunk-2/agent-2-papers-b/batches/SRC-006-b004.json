@@ -1,0 +1,838 @@
+{
+  "source_id": "SRC-006",
+  "batch_id": "SRC-006-b004",
+  "source_questions": [
+    {
+      "source_question_id": "H-SRC006-Q11-b-ii",
+      "source_id": "SRC-006",
+      "source_filename": "Computer_science_paper_1__HL (3).pdf",
+      "year": "2021",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ0",
+      "option": "",
+      "question": 11,
+      "subquestion": "b-ii",
+      "source_pdf_pages": [
+        6
+      ],
+      "source_printed_pages": [
+        "5"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "Outline how sensors can be used in combination with GPS to provide more accurate arrival data.",
+      "parent_context": "– 5 –\nN21/4/COMSC/HP1/ENG/TZ0/XX\n8821 – 7011\nTurn over\n11. A rail transport company uses a global positioning system (GPS) to determine a train’s position.\n(a) Explain how GPS works. [4]\nThe GPS data is used to provide real-time arrival data on video displays in train stations.\n(b) (i)  State one data item concerning the arrival of a train that may be provided on the \nvideo display. [1]\n(ii) Outline how sensors can be used in combination with GPS to provide more \naccurate arrival data. [2]\nThe GPS data is made publicly available so that software developers can use it to build apps.\nThe mobile application ATrainAway uses the real-time train GPS data as well as the GPS \ndata from the user’s smartphone.\n(c) Outline two pieces of information that the ATrainAway application could provide to \nthe user. [4]\n(d) Discuss the advantages and disadvantages of using GPS in transportation systems. [4]\n12. Consider the following circular linked list:\n20 5 10head\nwhere head is an external pointer that points to the first node in the circular linked list.\nThree operations are performed on this circular linked list in the following order:\n1 A node containing the number 30 is inserted at the beginning of the circular linked list.\n2 The last node is deleted from the circular linked list.\n3 The first node is deleted from the beginning of the circular linked list.\n(a) Sketch a diagram showing the resulting circular linked list. [3]\n(b) Outline how the last node of the circular linked list is identified. [2]\n(c) Describe the steps required to calculate the sum of all numbers held in this circular \nlinked list. [4]\nArrays and linked lists are used to store linear data.\n(d) Compare the use of arrays and linked lists. [4]\nA linked list can be used to implement a data structure queue.\n(e) Identify two applications of a queue data structure. [2]",
+      "assets": [],
+      "assessed_concepts": [
+        "Original source task: Outline how sensors can be used in combination with GPS to provide more accurate arrival data.",
+        "Outline how a track sensor and processor can update a station display when a train passes the sensor"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-012",
+        "filename": "Computer_science_paper_1__HL_markscheme (3).pdf",
+        "pdf_pages": [
+          11
+        ],
+        "question_reference": "Q11 b-ii",
+        "marking_summary": "The sensor produces input indicating passage at a known position. The processor uses that new input to revise the predicted arrival time and sends the result to the display.",
+        "source_issues": [],
+        "source_marking_evidence": "– 11 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \n11. (a) Award [4 max] \nThe GPS receiver in a train takes the information from the satellite/ picks up the signals from \n(at least) 3 satellites; \nThe signals transmitted are: time of transmission, coordinates of the satellite; \nThe difference between the (atomic) time of transmission and (atomic) time of receiving the \nsignal is used to calculate the distance; \nThe method of trilateration is used to determine position from the distance to satellites/ is \nused to determine the train’s exact position/ is used to calculate position of the train through \nequation resolution on a sphere; \n(b) (i) Award [1 max]. \nTrain number/ route / direction; \nStatus (on time / delayed / cancelled); \nTime train / next train are due;  \n(ii) Award [2 max]\nMotion sensors/vibration sensors (can be placed on track rail);\n(Accept any sensors which detect trains that pass them!)\n(Sensing devices are placed) at a distance from each side of a train station/junction\nOR\nat some fixed points where obstacles (like tunnels) prevent GPS from working properly;\nData from each sensor can be logged continuously and used in calculations/\ndeterminations (of expected arrival times/ delays / rerouting during disruption, etc.);\n(c) Award [4 max]\nReal-time information (train number/ route / direction and status (on time / delayed /\ncancelled);\nrelating to the arrival / departure of a particular train;\nThe time next train is due (the next 2/3 times a train will arrive at the station);\nhelps passenger to spend less time waiting on trains;\nShould save user's (passenger) most frequented stops and routes;\nfor quick access to get the next rail trip;\nAlerts (set);\nto let you know when a train is nearing the station;\nTrip planning (conducted);\nthrough Google trip planner within the app;\nInformation on the nearest station, distance to station/ next train arrival/ next train departure;\nto help passenger to spend less time travelling/ save time;\nMark as 2 and 2."
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "A1.3.6",
+          "scope_evidence": "• The input, process, output, and feedback mechanism (open-loop, closed-loop)\n• Controller, sensors, actuators, transducers and control algorithm",
+          "rationale": "Outline how a track sensor and processor can update a station display when a train passes the sensor assesses Describe the use of the control system components. (HL only)",
+          "theme": "A",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "No visual required by this leaf.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      }
+    },
+    {
+      "source_question_id": "H-SRC006-Q11-c",
+      "source_id": "SRC-006",
+      "source_filename": "Computer_science_paper_1__HL (3).pdf",
+      "year": "2021",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ0",
+      "option": "",
+      "question": 11,
+      "subquestion": "c",
+      "source_pdf_pages": [
+        6
+      ],
+      "source_printed_pages": [
+        "5"
+      ],
+      "original_marks": 4,
+      "command_term": "Outline",
+      "original_text": "Outline two pieces of information that the ATrainAway application could provide to the user.",
+      "parent_context": "– 5 –\nN21/4/COMSC/HP1/ENG/TZ0/XX\n8821 – 7011\nTurn over\n11. A rail transport company uses a global positioning system (GPS) to determine a train’s position.\n(a) Explain how GPS works. [4]\nThe GPS data is used to provide real-time arrival data on video displays in train stations.\n(b) (i)  State one data item concerning the arrival of a train that may be provided on the \nvideo display. [1]\n(ii) Outline how sensors can be used in combination with GPS to provide more \naccurate arrival data. [2]\nThe GPS data is made publicly available so that software developers can use it to build apps.\nThe mobile application ATrainAway uses the real-time train GPS data as well as the GPS \ndata from the user’s smartphone.\n(c) Outline two pieces of information that the ATrainAway application could provide to \nthe user. [4]\n(d) Discuss the advantages and disadvantages of using GPS in transportation systems. [4]\n12. Consider the following circular linked list:\n20 5 10head\nwhere head is an external pointer that points to the first node in the circular linked list.\nThree operations are performed on this circular linked list in the following order:\n1 A node containing the number 30 is inserted at the beginning of the circular linked list.\n2 The last node is deleted from the circular linked list.\n3 The first node is deleted from the beginning of the circular linked list.\n(a) Sketch a diagram showing the resulting circular linked list. [3]\n(b) Outline how the last node of the circular linked list is identified. [2]\n(c) Describe the steps required to calculate the sum of all numbers held in this circular \nlinked list. [4]\nArrays and linked lists are used to store linear data.\n(d) Compare the use of arrays and linked lists. [4]\nA linked list can be used to implement a data structure queue.\n(e) Identify two applications of a queue data structure. [2]",
+      "assets": [],
+      "assessed_concepts": [
+        "Original source task: Outline two pieces of information that the ATrainAway application could provide to the user.",
+        "Brainstorming GPS-based application features is not itself a coded2027 objective; no unsupported app-design requirement inferred."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-012",
+        "filename": "Computer_science_paper_1__HL_markscheme (3).pdf",
+        "pdf_pages": [
+          11
+        ],
+        "question_reference": "Q11 c",
+        "marking_summary": "Original criteria concern Brainstorming GPS-based application features is not itself a coded2027 objective; no unsupported app-design requirement inferred.",
+        "source_issues": [],
+        "source_marking_evidence": "– 11 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \n11. (a) Award [4 max] \nThe GPS receiver in a train takes the information from the satellite/ picks up the signals from \n(at least) 3 satellites; \nThe signals transmitted are: time of transmission, coordinates of the satellite; \nThe difference between the (atomic) time of transmission and (atomic) time of receiving the \nsignal is used to calculate the distance; \nThe method of trilateration is used to determine position from the distance to satellites/ is \nused to determine the train’s exact position/ is used to calculate position of the train through \nequation resolution on a sphere; \n(b) (i) Award [1 max]. \nTrain number/ route / direction; \nStatus (on time / delayed / cancelled); \nTime train / next train are due;  \n(ii) Award [2 max]\nMotion sensors/vibration sensors (can be placed on track rail);\n(Accept any sensors which detect trains that pass them!)\n(Sensing devices are placed) at a distance from each side of a train station/junction\nOR\nat some fixed points where obstacles (like tunnels) prevent GPS from working properly;\nData from each sensor can be logged continuously and used in calculations/\ndeterminations (of expected arrival times/ delays / rerouting during disruption, etc.);\n(c) Award [4 max]\nReal-time information (train number/ route / direction and status (on time / delayed /\ncancelled);\nrelating to the arrival / departure of a particular train;\nThe time next train is due (the next 2/3 times a train will arrive at the station);\nhelps passenger to spend less time waiting on trains;\nShould save user's (passenger) most frequented stops and routes;\nfor quick access to get the next rail trip;\nAlerts (set);\nto let you know when a train is nearing the station;\nTrip planning (conducted);\nthrough Google trip planner within the app;\nInformation on the nearest station, distance to station/ next train arrival/ next train departure;\nto help passenger to spend less time travelling/ save time;\nMark as 2 and 2."
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Brainstorming GPS-based application features is not itself a coded2027 objective; no unsupported app-design requirement inferred.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "No visual required by this leaf.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      }
+    },
+    {
+      "source_question_id": "H-SRC006-Q11-d",
+      "source_id": "SRC-006",
+      "source_filename": "Computer_science_paper_1__HL (3).pdf",
+      "year": "2021",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ0",
+      "option": "",
+      "question": 11,
+      "subquestion": "d",
+      "source_pdf_pages": [
+        6
+      ],
+      "source_printed_pages": [
+        "5"
+      ],
+      "original_marks": 4,
+      "command_term": "Discuss",
+      "original_text": "Discuss the advantages and disadvantages of using GPS in transportation systems.",
+      "parent_context": "– 5 –\nN21/4/COMSC/HP1/ENG/TZ0/XX\n8821 – 7011\nTurn over\n11. A rail transport company uses a global positioning system (GPS) to determine a train’s position.\n(a) Explain how GPS works. [4]\nThe GPS data is used to provide real-time arrival data on video displays in train stations.\n(b) (i)  State one data item concerning the arrival of a train that may be provided on the \nvideo display. [1]\n(ii) Outline how sensors can be used in combination with GPS to provide more \naccurate arrival data. [2]\nThe GPS data is made publicly available so that software developers can use it to build apps.\nThe mobile application ATrainAway uses the real-time train GPS data as well as the GPS \ndata from the user’s smartphone.\n(c) Outline two pieces of information that the ATrainAway application could provide to \nthe user. [4]\n(d) Discuss the advantages and disadvantages of using GPS in transportation systems. [4]\n12. Consider the following circular linked list:\n20 5 10head\nwhere head is an external pointer that points to the first node in the circular linked list.\nThree operations are performed on this circular linked list in the following order:\n1 A node containing the number 30 is inserted at the beginning of the circular linked list.\n2 The last node is deleted from the circular linked list.\n3 The first node is deleted from the beginning of the circular linked list.\n(a) Sketch a diagram showing the resulting circular linked list. [3]\n(b) Outline how the last node of the circular linked list is identified. [2]\n(c) Describe the steps required to calculate the sum of all numbers held in this circular \nlinked list. [4]\nArrays and linked lists are used to store linear data.\n(d) Compare the use of arrays and linked lists. [4]\nA linked list can be used to implement a data structure queue.\n(e) Identify two applications of a queue data structure. [2]",
+      "assets": [],
+      "assessed_concepts": [
+        "Original source task: Discuss the advantages and disadvantages of using GPS in transportation systems.",
+        "A transit operator records vehicle locations and links journeys to drivers"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-012",
+        "filename": "Computer_science_paper_1__HL_markscheme (3).pdf",
+        "pdf_pages": [
+          12
+        ],
+        "question_reference": "Q11 d",
+        "marking_summary": "Histories may reveal delays and improve scheduling, making service more reliable. However, identifiable histories enable monitoring of drivers beyond what is necessary. Retention limits and purpose restrictions can preserve operational benefits while reducing privacy intrusion.",
+        "source_issues": [],
+        "source_marking_evidence": "– 12 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \n(d) Award [4 max]\nSafer transit;\nTrains are tracked and in case of emergency the location can be reached at the earliest and\nemergency services provided;\nMore favourable view of transit/helps passenger to get punctuality status of the train/;\nGPS can provide worldwide three-dimensional positions (24 hours a day) (in any type of\nweather);\nSometimes it is too difficult to ensure reliable positioning;\nObjects, such as buildings, overpasses, and other obstructions (that shield the antenna from\na satellite) can potentially weaken a satellite's signal;\nPrivacy issues;\nKnowing the absolute position of anything, anytime, anywhere;\nMark as 2 and 2.\n12. (a) Award [3 max] \nAward [1] for the node containing number 20 is pointed to by the pointer 'head'; \nAward [1] for the diagram showing only two nodes and all the correct links; \nAward [1] for the last node containing number 5; \n(b) Award [2 max]\nThe last node is identified by its next/link pointer;\nwhich contains the address of the node at the beginning of the list / is equal to the pointer\n“head “;\n"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "A4.4.2",
+          "scope_evidence": "• The importance of continually reassessing ethical guidelines as technology advances\n• The potential implications of emerging technologies such as quantum computing, augmented reality, virtual reality and the pervasive use of AI on society, individual rights, privacy and equity",
+          "rationale": "A transit operator records vehicle locations and links journeys to drivers assesses Discuss ethical aspects of the increasing integration of computer technologies into daily life.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "No visual required by this leaf.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      }
+    },
+    {
+      "source_question_id": "H-SRC006-Q12-a",
+      "source_id": "SRC-006",
+      "source_filename": "Computer_science_paper_1__HL (3).pdf",
+      "year": "2021",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ0",
+      "option": "",
+      "question": 12,
+      "subquestion": "a",
+      "source_pdf_pages": [
+        6
+      ],
+      "source_printed_pages": [
+        "5"
+      ],
+      "original_marks": 3,
+      "command_term": "Sketch",
+      "original_text": "Sketch a diagram showing the resulting circular linked list.",
+      "parent_context": "– 5 –\nN21/4/COMSC/HP1/ENG/TZ0/XX\n8821 – 7011\nTurn over\n11. A rail transport company uses a global positioning system (GPS) to determine a train’s position.\n(a) Explain how GPS works. [4]\nThe GPS data is used to provide real-time arrival data on video displays in train stations.\n(b) (i)  State one data item concerning the arrival of a train that may be provided on the \nvideo display. [1]\n(ii) Outline how sensors can be used in combination with GPS to provide more \naccurate arrival data. [2]\nThe GPS data is made publicly available so that software developers can use it to build apps.\nThe mobile application ATrainAway uses the real-time train GPS data as well as the GPS \ndata from the user’s smartphone.\n(c) Outline two pieces of information that the ATrainAway application could provide to \nthe user. [4]\n(d) Discuss the advantages and disadvantages of using GPS in transportation systems. [4]\n12. Consider the following circular linked list:\n20 5 10head\nwhere head is an external pointer that points to the first node in the circular linked list.\nThree operations are performed on this circular linked list in the following order:\n1 A node containing the number 30 is inserted at the beginning of the circular linked list.\n2 The last node is deleted from the circular linked list.\n3 The first node is deleted from the beginning of the circular linked list.\n(a) Sketch a diagram showing the resulting circular linked list. [3]\n(b) Outline how the last node of the circular linked list is identified. [2]\n(c) Describe the steps required to calculate the sum of all numbers held in this circular \nlinked list. [4]\nArrays and linked lists are used to store linear data.\n(d) Compare the use of arrays and linked lists. [4]\nA linked list can be used to implement a data structure queue.\n(e) Identify two applications of a queue data structure. [2]",
+      "assets": [
+        {
+          "kind": "source_diagram",
+          "description": "Original circular linked list20→5→10→head",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-006/renders/page-6.png",
+          "source_pdf_page": 6,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Sketch a diagram showing the resulting circular linked list.",
+        "A circular singly linked list is head → 7 → 14 → 21 → head"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-012",
+        "filename": "Computer_science_paper_1__HL_markscheme (3).pdf",
+        "pdf_pages": [
+          12
+        ],
+        "question_reference": "Q12 a",
+        "marking_summary": "Head at20; only nodes20 and5 remain, with5.next returning to20.",
+        "source_issues": [],
+        "source_marking_evidence": "– 12 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \n(d) Award [4 max]\nSafer transit;\nTrains are tracked and in case of emergency the location can be reached at the earliest and\nemergency services provided;\nMore favourable view of transit/helps passenger to get punctuality status of the train/;\nGPS can provide worldwide three-dimensional positions (24 hours a day) (in any type of\nweather);\nSometimes it is too difficult to ensure reliable positioning;\nObjects, such as buildings, overpasses, and other obstructions (that shield the antenna from\na satellite) can potentially weaken a satellite's signal;\nPrivacy issues;\nKnowing the absolute position of anything, anytime, anywhere;\nMark as 2 and 2.\n12. (a) Award [3 max] \nAward [1] for the node containing number 20 is pointed to by the pointer 'head'; \nAward [1] for the diagram showing only two nodes and all the correct links; \nAward [1] for the last node containing number 5; \n(b) Award [2 max]\nThe last node is identified by its next/link pointer;\nwhich contains the address of the node at the beginning of the list / is equal to the pointer\n“head “;\n"
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B4.1.2",
+          "scope_evidence": "• Lists must include singly, doubly, circular\n• Sketch of linked lists and implementation of basic operations diagrammatically, such as insertion, deletion, traversal, search\n• The advantages and disadvantages of using linked lists over other data structures like arrays, particularly in terms of memory utilization and performance",
+          "rationale": "A circular singly linked list is head → 7 → 14 → 21 → head assesses Evaluate linked lists.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B4.1.3",
+          "scope_evidence": "• The basic operations on a linked list, such as insertion, deletion, traversal, search",
+          "rationale": "A circular singly linked list is head → 7 → 14 → 21 → head assesses Construct and apply linked lists: singly, doubly and circular.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Source links and operation order inspected.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      }
+    },
+    {
+      "source_question_id": "H-SRC006-Q12-b",
+      "source_id": "SRC-006",
+      "source_filename": "Computer_science_paper_1__HL (3).pdf",
+      "year": "2021",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ0",
+      "option": "",
+      "question": 12,
+      "subquestion": "b",
+      "source_pdf_pages": [
+        6
+      ],
+      "source_printed_pages": [
+        "5"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "Outline how the last node of the circular linked list is identified.",
+      "parent_context": "– 5 –\nN21/4/COMSC/HP1/ENG/TZ0/XX\n8821 – 7011\nTurn over\n11. A rail transport company uses a global positioning system (GPS) to determine a train’s position.\n(a) Explain how GPS works. [4]\nThe GPS data is used to provide real-time arrival data on video displays in train stations.\n(b) (i)  State one data item concerning the arrival of a train that may be provided on the \nvideo display. [1]\n(ii) Outline how sensors can be used in combination with GPS to provide more \naccurate arrival data. [2]\nThe GPS data is made publicly available so that software developers can use it to build apps.\nThe mobile application ATrainAway uses the real-time train GPS data as well as the GPS \ndata from the user’s smartphone.\n(c) Outline two pieces of information that the ATrainAway application could provide to \nthe user. [4]\n(d) Discuss the advantages and disadvantages of using GPS in transportation systems. [4]\n12. Consider the following circular linked list:\n20 5 10head\nwhere head is an external pointer that points to the first node in the circular linked list.\nThree operations are performed on this circular linked list in the following order:\n1 A node containing the number 30 is inserted at the beginning of the circular linked list.\n2 The last node is deleted from the circular linked list.\n3 The first node is deleted from the beginning of the circular linked list.\n(a) Sketch a diagram showing the resulting circular linked list. [3]\n(b) Outline how the last node of the circular linked list is identified. [2]\n(c) Describe the steps required to calculate the sum of all numbers held in this circular \nlinked list. [4]\nArrays and linked lists are used to store linear data.\n(d) Compare the use of arrays and linked lists. [4]\nA linked list can be used to implement a data structure queue.\n(e) Identify two applications of a queue data structure. [2]",
+      "assets": [],
+      "assessed_concepts": [
+        "Original source task: Outline how the last node of the circular linked list is identified.",
+        "Outline how to recognize the final node of a nonempty circular singly linked list with an external head reference"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-012",
+        "filename": "Computer_science_paper_1__HL_markscheme (3).pdf",
+        "pdf_pages": [
+          12
+        ],
+        "question_reference": "Q12 b",
+        "marking_summary": "The final node is the node whose next reference points back to the same node as head; its next reference is not None.",
+        "source_issues": [],
+        "source_marking_evidence": "– 12 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \n(d) Award [4 max]\nSafer transit;\nTrains are tracked and in case of emergency the location can be reached at the earliest and\nemergency services provided;\nMore favourable view of transit/helps passenger to get punctuality status of the train/;\nGPS can provide worldwide three-dimensional positions (24 hours a day) (in any type of\nweather);\nSometimes it is too difficult to ensure reliable positioning;\nObjects, such as buildings, overpasses, and other obstructions (that shield the antenna from\na satellite) can potentially weaken a satellite's signal;\nPrivacy issues;\nKnowing the absolute position of anything, anytime, anywhere;\nMark as 2 and 2.\n12. (a) Award [3 max] \nAward [1] for the node containing number 20 is pointed to by the pointer 'head'; \nAward [1] for the diagram showing only two nodes and all the correct links; \nAward [1] for the last node containing number 5; \n(b) Award [2 max]\nThe last node is identified by its next/link pointer;\nwhich contains the address of the node at the beginning of the list / is equal to the pointer\n“head “;\n"
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B4.1.2",
+          "scope_evidence": "• Lists must include singly, doubly, circular\n• Sketch of linked lists and implementation of basic operations diagrammatically, such as insertion, deletion, traversal, search\n• The advantages and disadvantages of using linked lists over other data structures like arrays, particularly in terms of memory utilization and performance",
+          "rationale": "Outline how to recognize the final node of a nonempty circular singly linked list with an external head reference assesses Evaluate linked lists.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "No visual required by this leaf.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      }
+    },
+    {
+      "source_question_id": "H-SRC006-Q12-c",
+      "source_id": "SRC-006",
+      "source_filename": "Computer_science_paper_1__HL (3).pdf",
+      "year": "2021",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ0",
+      "option": "",
+      "question": 12,
+      "subquestion": "c",
+      "source_pdf_pages": [
+        6
+      ],
+      "source_printed_pages": [
+        "5"
+      ],
+      "original_marks": 4,
+      "command_term": "Describe",
+      "original_text": "Describe the steps required to calculate the sum of all numbers held in this circular linked list.",
+      "parent_context": "– 5 –\nN21/4/COMSC/HP1/ENG/TZ0/XX\n8821 – 7011\nTurn over\n11. A rail transport company uses a global positioning system (GPS) to determine a train’s position.\n(a) Explain how GPS works. [4]\nThe GPS data is used to provide real-time arrival data on video displays in train stations.\n(b) (i)  State one data item concerning the arrival of a train that may be provided on the \nvideo display. [1]\n(ii) Outline how sensors can be used in combination with GPS to provide more \naccurate arrival data. [2]\nThe GPS data is made publicly available so that software developers can use it to build apps.\nThe mobile application ATrainAway uses the real-time train GPS data as well as the GPS \ndata from the user’s smartphone.\n(c) Outline two pieces of information that the ATrainAway application could provide to \nthe user. [4]\n(d) Discuss the advantages and disadvantages of using GPS in transportation systems. [4]\n12. Consider the following circular linked list:\n20 5 10head\nwhere head is an external pointer that points to the first node in the circular linked list.\nThree operations are performed on this circular linked list in the following order:\n1 A node containing the number 30 is inserted at the beginning of the circular linked list.\n2 The last node is deleted from the circular linked list.\n3 The first node is deleted from the beginning of the circular linked list.\n(a) Sketch a diagram showing the resulting circular linked list. [3]\n(b) Outline how the last node of the circular linked list is identified. [2]\n(c) Describe the steps required to calculate the sum of all numbers held in this circular \nlinked list. [4]\nArrays and linked lists are used to store linear data.\n(d) Compare the use of arrays and linked lists. [4]\nA linked list can be used to implement a data structure queue.\n(e) Identify two applications of a queue data structure. [2]",
+      "assets": [],
+      "assessed_concepts": [
+        "Original source task: Describe the steps required to calculate the sum of all numbers held in this circular linked list.",
+        "Describe an algorithm to total all values in a nonempty circular singly linked list exactly once"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-012",
+        "filename": "Computer_science_paper_1__HL_markscheme (3).pdf",
+        "pdf_pages": [
+          13
+        ],
+        "question_reference": "Q12 c",
+        "marking_summary": "Set total=0 and current=head. Add current.value to total, then advance current=current.next. Repeat until current is head again, and report total.",
+        "source_issues": [],
+        "source_marking_evidence": "– 13 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \n(c) Award [4 max]\nInitialize (a temporary pointer with the head and) a variable sum with 0 (zero); \nLoop from the beginning to the end of the circular linked list / until all the nodes get \ntraversed); \nAdd the value (of the data field) (of the current node) to the sum; \nChange the temporary pointer so it points the next node of circular linked list; \nNote: Answers written in pseudocode are acceptable. \nFor example, \nsum = 0 \ncurr = head \nloop \n  sum = sum + curr.data \n  curr = curr.next \nuntil curr == head \n(d) Award [4 max]\nIn an array, memory is assigned during compile time(predetermined) whilst in a linked list it is \nallocated during execution/runtime; \nArrays are of fixed size whilst linked lists are flexible and can expand and contract its size; \nArray requires less memory (due to actual data being stored within the index in the array) \nwhilst there is a need for more memory in linked list (due to storage of additional next and \nprevious pointers/references); \nElements are stored consecutively in array whereas elements are stored randomly in linked \nlists; \nMemory utilization is inefficient in the array whilst memory utilization is efficient in the linked \nlist; \nAccessing an element in an array is direct (fast) while accessing an element in linked list is \nsequential/linear (slower) /to get into the nth element only the array name with index within \nthe square bracket should be written whilst a linked list (to get the nth element) should be \ntraversed starting from the beginning of the list, and traversing through the list until found/ ; \nOperations like insertion and deletion in arrays consume a lot of time whilst the performance \nof these operations in linked lists is fast; "
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B4.1.3",
+          "scope_evidence": "• The basic operations on a linked list, such as insertion, deletion, traversal, search",
+          "rationale": "Describe an algorithm to total all values in a nonempty circular singly linked list exactly once assesses Construct and apply linked lists: singly, doubly and circular.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "No visual required by this leaf.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      }
+    },
+    {
+      "source_question_id": "H-SRC006-Q12-d",
+      "source_id": "SRC-006",
+      "source_filename": "Computer_science_paper_1__HL (3).pdf",
+      "year": "2021",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ0",
+      "option": "",
+      "question": 12,
+      "subquestion": "d",
+      "source_pdf_pages": [
+        6
+      ],
+      "source_printed_pages": [
+        "5"
+      ],
+      "original_marks": 4,
+      "command_term": "Compare",
+      "original_text": "Compare the use of arrays and linked lists.",
+      "parent_context": "– 5 –\nN21/4/COMSC/HP1/ENG/TZ0/XX\n8821 – 7011\nTurn over\n11. A rail transport company uses a global positioning system (GPS) to determine a train’s position.\n(a) Explain how GPS works. [4]\nThe GPS data is used to provide real-time arrival data on video displays in train stations.\n(b) (i)  State one data item concerning the arrival of a train that may be provided on the \nvideo display. [1]\n(ii) Outline how sensors can be used in combination with GPS to provide more \naccurate arrival data. [2]\nThe GPS data is made publicly available so that software developers can use it to build apps.\nThe mobile application ATrainAway uses the real-time train GPS data as well as the GPS \ndata from the user’s smartphone.\n(c) Outline two pieces of information that the ATrainAway application could provide to \nthe user. [4]\n(d) Discuss the advantages and disadvantages of using GPS in transportation systems. [4]\n12. Consider the following circular linked list:\n20 5 10head\nwhere head is an external pointer that points to the first node in the circular linked list.\nThree operations are performed on this circular linked list in the following order:\n1 A node containing the number 30 is inserted at the beginning of the circular linked list.\n2 The last node is deleted from the circular linked list.\n3 The first node is deleted from the beginning of the circular linked list.\n(a) Sketch a diagram showing the resulting circular linked list. [3]\n(b) Outline how the last node of the circular linked list is identified. [2]\n(c) Describe the steps required to calculate the sum of all numbers held in this circular \nlinked list. [4]\nArrays and linked lists are used to store linear data.\n(d) Compare the use of arrays and linked lists. [4]\nA linked list can be used to implement a data structure queue.\n(e) Identify two applications of a queue data structure. [2]",
+      "assets": [],
+      "assessed_concepts": [
+        "Original source task: Compare the use of arrays and linked lists.",
+        "Compare a static contiguous array and a singly linked list for storing a changing collection of records"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-012",
+        "filename": "Computer_science_paper_1__HL_markscheme (3).pdf",
+        "pdf_pages": [
+          13
+        ],
+        "question_reference": "Q12 d",
+        "marking_summary": "An array offers constant-time indexed access, whereas a linked list requires traversal. An array reserves fixed capacity; a linked list can grow node by node but stores an extra next reference. Inserting after a known list node can relink references, whereas insertion within an array may require shifting later records.",
+        "source_issues": [
+          "Source MS uses compile-time allocation as a universal array property; rewritten comparison explicitly states static array and avoids that generalization."
+        ],
+        "source_marking_evidence": "– 13 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \n(c) Award [4 max]\nInitialize (a temporary pointer with the head and) a variable sum with 0 (zero); \nLoop from the beginning to the end of the circular linked list / until all the nodes get \ntraversed); \nAdd the value (of the data field) (of the current node) to the sum; \nChange the temporary pointer so it points the next node of circular linked list; \nNote: Answers written in pseudocode are acceptable. \nFor example, \nsum = 0 \ncurr = head \nloop \n  sum = sum + curr.data \n  curr = curr.next \nuntil curr == head \n(d) Award [4 max]\nIn an array, memory is assigned during compile time(predetermined) whilst in a linked list it is \nallocated during execution/runtime; \nArrays are of fixed size whilst linked lists are flexible and can expand and contract its size; \nArray requires less memory (due to actual data being stored within the index in the array) \nwhilst there is a need for more memory in linked list (due to storage of additional next and \nprevious pointers/references); \nElements are stored consecutively in array whereas elements are stored randomly in linked \nlists; \nMemory utilization is inefficient in the array whilst memory utilization is efficient in the linked \nlist; \nAccessing an element in an array is direct (fast) while accessing an element in linked list is \nsequential/linear (slower) /to get into the nth element only the array name with index within \nthe square bracket should be written whilst a linked list (to get the nth element) should be \ntraversed starting from the beginning of the list, and traversing through the list until found/ ; \nOperations like insertion and deletion in arrays consume a lot of time whilst the performance \nof these operations in linked lists is fast; "
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B4.1.2",
+          "scope_evidence": "• Lists must include singly, doubly, circular\n• Sketch of linked lists and implementation of basic operations diagrammatically, such as insertion, deletion, traversal, search\n• The advantages and disadvantages of using linked lists over other data structures like arrays, particularly in terms of memory utilization and performance",
+          "rationale": "Compare a static contiguous array and a singly linked list for storing a changing collection of records assesses Evaluate linked lists.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "No visual required by this leaf.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      }
+    },
+    {
+      "source_question_id": "H-SRC006-Q12-e",
+      "source_id": "SRC-006",
+      "source_filename": "Computer_science_paper_1__HL (3).pdf",
+      "year": "2021",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ0",
+      "option": "",
+      "question": 12,
+      "subquestion": "e",
+      "source_pdf_pages": [
+        6
+      ],
+      "source_printed_pages": [
+        "5"
+      ],
+      "original_marks": 2,
+      "command_term": "Identify",
+      "original_text": "Identify two applications of a queue data structure.",
+      "parent_context": "– 5 –\nN21/4/COMSC/HP1/ENG/TZ0/XX\n8821 – 7011\nTurn over\n11. A rail transport company uses a global positioning system (GPS) to determine a train’s position.\n(a) Explain how GPS works. [4]\nThe GPS data is used to provide real-time arrival data on video displays in train stations.\n(b) (i)  State one data item concerning the arrival of a train that may be provided on the \nvideo display. [1]\n(ii) Outline how sensors can be used in combination with GPS to provide more \naccurate arrival data. [2]\nThe GPS data is made publicly available so that software developers can use it to build apps.\nThe mobile application ATrainAway uses the real-time train GPS data as well as the GPS \ndata from the user’s smartphone.\n(c) Outline two pieces of information that the ATrainAway application could provide to \nthe user. [4]\n(d) Discuss the advantages and disadvantages of using GPS in transportation systems. [4]\n12. Consider the following circular linked list:\n20 5 10head\nwhere head is an external pointer that points to the first node in the circular linked list.\nThree operations are performed on this circular linked list in the following order:\n1 A node containing the number 30 is inserted at the beginning of the circular linked list.\n2 The last node is deleted from the circular linked list.\n3 The first node is deleted from the beginning of the circular linked list.\n(a) Sketch a diagram showing the resulting circular linked list. [3]\n(b) Outline how the last node of the circular linked list is identified. [2]\n(c) Describe the steps required to calculate the sum of all numbers held in this circular \nlinked list. [4]\nArrays and linked lists are used to store linear data.\n(d) Compare the use of arrays and linked lists. [4]\nA linked list can be used to implement a data structure queue.\n(e) Identify two applications of a queue data structure. [2]",
+      "assets": [],
+      "assessed_concepts": [
+        "Original source task: Identify two applications of a queue data structure.",
+        "Identify two computing tasks that can appropriately use a FIFO queue"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-012",
+        "filename": "Computer_science_paper_1__HL_markscheme (3).pdf",
+        "pdf_pages": [
+          14
+        ],
+        "question_reference": "Q12 e",
+        "marking_summary": "A printer job queue and a first-come-first-served service-request queue.",
+        "source_issues": [],
+        "source_marking_evidence": "– 14 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \n(e) Award [2 max]\nPrint queues (a number of print jobs on a queue instead of waiting for each one to finish \nbefore specifying the next one); \nQueue is used for synchronization when data is transferred asynchronously between two \nprocesses (for example IO Buffers, file IO); \nQueues are used in CPU scheduling algorithms; \nHandling of interrupts in real-time systems (the interrupts are handled in the same order as \nthey arrive, first come first served); \nComputer modelling of physical queues (supermarket checkouts) (call centre phone systems \nuse queues to hold people calling them in an order, until a service representative is free); "
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.4",
+          "scope_evidence": "• Must include fundamental operations such as enqueue, dequeue, front and isEmpty\n• How queue operations impact both performance and memory usage\n• An appropriate queue for a specific problem",
+          "rationale": "Identify two computing tasks that can appropriately use a FIFO queue assesses Explain the concept of a queue as a “first in, first out” (FIFO) data structure.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "No visual required by this leaf.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      }
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC006-Q11-b-ii",
+      "source_question_ids": [
+        "H-SRC006-Q11-b-ii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline how a track sensor and processor can update a station display when a train passes the sensor.",
+      "syllabus_codes": [
+        "A1.3.6"
+      ],
+      "theme": "A",
+      "level": "HL-only",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Removes unsupported GPS technical requirements; retains input–process–output reasoning from the original sensor part.",
+      "solution": "The sensor produces input indicating passage at a known position. The processor uses that new input to revise the predicted arrival time and sends the result to the display.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Sensor supplies passage/position input."
+        },
+        {
+          "marks": 1,
+          "criterion": "Processor updates output from the new sensor data."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          11
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC006-Q11-d",
+      "source_question_ids": [
+        "H-SRC006-Q11-d"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "A transit operator records vehicle locations and links journeys to drivers. Discuss one benefit and one ethical risk of keeping detailed location histories.",
+      "syllabus_codes": [
+        "A4.4.2"
+      ],
+      "theme": "A",
+      "level": "SL/HL common",
+      "marks": 4,
+      "command_term": "Discuss",
+      "difficulty": "medium",
+      "adaptation_rationale": "Retains evaluation of tracking while replacing GPS engineering limitations with the2027 ethical implications of daily technology.",
+      "solution": "Histories may reveal delays and improve scheduling, making service more reliable. However, identifiable histories enable monitoring of drivers beyond what is necessary. Retention limits and purpose restrictions can preserve operational benefits while reducing privacy intrusion.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Concrete service/operational benefit."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains effect on people/service."
+        },
+        {
+          "marks": 1,
+          "criterion": "Concrete privacy or misuse risk."
+        },
+        {
+          "marks": 1,
+          "criterion": "Balanced contextual conclusion/appropriate safeguard."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          12
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC006-Q12-a",
+      "source_question_ids": [
+        "H-SRC006-Q12-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "A circular singly linked list is head → 7 → 14 → 21 → head. Insert 4 at the beginning, delete the last node, then delete the first node. Sketch the final list with all links.",
+      "syllabus_codes": [
+        "B4.1.2",
+        "B4.1.3"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 3,
+      "command_term": "Sketch",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "head → 7 → 14 → 7 (the link from14 returns to the node7).",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Head points to7."
+        },
+        {
+          "marks": 1,
+          "criterion": "Only nodes7 and14 remain."
+        },
+        {
+          "marks": 1,
+          "criterion": "7.next=14 and14.next=head."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          12
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC006-Q12-b",
+      "source_question_ids": [
+        "H-SRC006-Q12-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline how to recognize the final node of a nonempty circular singly linked list with an external head reference.",
+      "syllabus_codes": [
+        "B4.1.2"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "The final node is the node whose next reference points back to the same node as head; its next reference is not None.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Inspect next reference."
+        },
+        {
+          "marks": 1,
+          "criterion": "It equals head (identity), not None."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          12
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC006-Q12-c",
+      "source_question_ids": [
+        "H-SRC006-Q12-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Describe an algorithm to total all values in a nonempty circular singly linked list exactly once.",
+      "syllabus_codes": [
+        "B4.1.3"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 4,
+      "command_term": "Describe",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Set total=0 and current=head. Add current.value to total, then advance current=current.next. Repeat until current is head again, and report total.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Initialize total/current."
+        },
+        {
+          "marks": 1,
+          "criterion": "Add current value."
+        },
+        {
+          "marks": 1,
+          "criterion": "Advance reference."
+        },
+        {
+          "marks": 1,
+          "criterion": "Stop on return to head, after processing it once."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          13
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC006-Q12-d",
+      "source_question_ids": [
+        "H-SRC006-Q12-d"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Compare a static contiguous array and a singly linked list for storing a changing collection of records.",
+      "syllabus_codes": [
+        "B4.1.2"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 4,
+      "command_term": "Compare",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "An array offers constant-time indexed access, whereas a linked list requires traversal. An array reserves fixed capacity; a linked list can grow node by node but stores an extra next reference. Inserting after a known list node can relink references, whereas insertion within an array may require shifting later records.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Array direct access versus linked traversal."
+        },
+        {
+          "marks": 1,
+          "criterion": "Fixed reserved capacity versus dynamic nodes."
+        },
+        {
+          "marks": 1,
+          "criterion": "Linked nodes require reference overhead."
+        },
+        {
+          "marks": 1,
+          "criterion": "Known-position insertion relinks list versus array shifts."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          13
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC006-Q12-e",
+      "source_question_ids": [
+        "H-SRC006-Q12-e"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Identify two computing tasks that can appropriately use a FIFO queue.",
+      "syllabus_codes": [
+        "B2.2.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Identify",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "A printer job queue and a first-come-first-served service-request queue.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Printer/spool job queue."
+        },
+        {
+          "marks": 1,
+          "criterion": "Another distinct appropriate FIFO task."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Network packet buffering where FIFO order is appropriate.",
+        "FCFS process scheduling."
+      ],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          14
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    }
+  ]
+}

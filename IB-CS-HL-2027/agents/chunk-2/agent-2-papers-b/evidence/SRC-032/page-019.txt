@@ -1,0 +1,34 @@
+– 18 – 2223 – 7012
+(Option D, question 16 continued)
+A new class ClientList is implemented as outlined below.
+public class ClientList
+{
+  ClientNode root;
+  // default constructor
+  void enList(ClientNode visitor)
+  { 
+    … adds visitor to the end of the list – missing code …
+  }
+  boolean isEmpty()
+  { 
+    return (root==null);
+  }
+  … more methods …
+}
+A list openDay has been instantiated of the type ClientList.
+openDay John Belaka
+071112223
+Emma Kim
+071135322
+(b) Describe the meaning of the following statement. [3]
+openDay.enList(new ClientNode("Sophie Bella", "072456721"));
+(c) By using object references, construct the method enList that allows a client to be 
+added to the end of the list openDay. [5]
+The attendance of potential buyers is tracked during the open day by changing the attended 
+variable to true when a potential buyer arrives.
+At the end of the day, the list openDay is processed so that every potential buyer that 
+attended is added to new list hasAttended and every potential buyer that did not attend is 
+added to a new list notAttended.
+(d) Without writing code, outline the steps involved in splitting the list openDay into a list 
+hasAttended and a list notAttended. [4]
+(Option D continues on the following page)

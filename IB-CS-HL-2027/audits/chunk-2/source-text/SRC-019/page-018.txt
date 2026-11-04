@@ -1,0 +1,22 @@
+                                               –  18 –             M23/4/COMSC/HP1/ENG/TZ1/XX/M
+
+
+(d)   Award [5 max]
+      Award [1] for correct use of the stack and queue access methods (isEmpty(), push(),  pop(),
+      enqueue(), dequeue())
+      Award [1] for loop through the TOWNS stack
+      Award [1] for taking an element from the top of the TOWNS stack
+      Award [1] for enqueuing the value popped from the TOWNS stack to the TEMP queue
+      Award [1] for loop through the TEMP queue
+      Award [1] for pushing the value dequeued from the TEMP queue onto the TOWNS stack
+
+      Example:
+      loop while not TOWNS.isEmpty()
+           X=TOWNS.pop()
+           TEMP.enqueue(X)  //TEMP is an empty queue
+      end while
+      loop while not TEMP.isEmpty()
+           Y=TEMP.dequeue()    //instead of these 2 statements
+           TOWNS.push(Y)       //TOWNS.push(TEMP.dequeue())
+                                          //can be written
+      end while

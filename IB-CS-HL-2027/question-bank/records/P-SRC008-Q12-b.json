@@ -1,0 +1,63 @@
+{
+  "question_id": "P-SRC008-Q12-b",
+  "source_question_ids": [
+    "H-SRC008-Q12-b"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A stack uses a pre allocated Python list buffer of capacity 5 and top=-1, where top is the index of the latest stored item. Explain push, pop and the conditions for empty/full; the list must not grow.",
+  "syllabus_codes": [
+    "B2.2.1",
+    "B2.2.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 6,
+  "command_term": "Explain",
+  "difficulty": "high",
+  "adaptation_rationale": "Corrects source full-boundary bug; retains static-storage/stack reasoning without treating Python list growth as static allocation.",
+  "solution": "Only indices 0..4 are available and top tracks the occupied top position.; push checks space, then increments top and stores at buffer[top].; pop checks nonempty, returns buffer[top] and decrements top.; Operations occur at one end, giving LIFO behaviour.; Empty i ff top==-1.; Full i ff top==4; reject another push before writing.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Only indices 0..4 are available and top tracks the occupied top position."
+    },
+    {
+      "marks": 1,
+      "criterion": "push checks space, then increments top and stores at buffer[top]."
+    },
+    {
+      "marks": 1,
+      "criterion": "pop checks nonempty, returns buffer[top] and decrements top."
+    },
+    {
+      "marks": 1,
+      "criterion": "Operations occur at one end, giving LIFO behaviour."
+    },
+    {
+      "marks": 1,
+      "criterion": "Empty i ff top==-1."
+    },
+    {
+      "marks": 1,
+      "criterion": "Full i ff top==4; reject another push before writing."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "No executable code required; manual technical check."
+  },
+  "code": "",
+  "test_code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC008-Q12-b.json",
+  "question_path": "question-bank/questions/P-SRC008-Q12-b.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC008-Q12-b.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

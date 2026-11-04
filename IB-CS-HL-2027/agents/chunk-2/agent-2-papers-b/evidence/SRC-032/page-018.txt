@@ -1,0 +1,42 @@
+– 17 – 2223 – 7012
+Turn over
+(Option D continued)
+16. Once a month the real estate business organizes an open day for a particular house.
+Interested clients can sign up by giving their name and phone number to the real estate business.
+This information is stored in a list node ClientNode as follows.
+public class ClientNode
+{
+  private String name;
+  private String phone;
+  private boolean attended;
+  private ClientNode next;
+  public ClientNode (String aName, String aPhone)
+      {
+    this.name = aName;
+    this.phone = aPhone;
+    this.attended = false;
+    this.next = null;
+  }
+  public String getName()
+  {
+    return this.name;
+  }
+  public String getClient()
+  {
+    return this.name+" "+this.phone;
+  }
+  public void setAttended()
+  {
+    attended = true;
+  }
+  public ClientNode getNext()
+  {
+    return this.next;
+  }
+  public void setNext(ClientNode nextNode)
+  {
+    this.next = nextNode;
+  }
+}
+(a) Identify two features of an abstract data type (ADT). [2]
+(Option D continues on the following page)

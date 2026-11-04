@@ -1,0 +1,82 @@
+{
+  "original_assessment_context": "NAMES=[Zixan,Murali,Eli,Kim]; mystery(A,N): if N>0 call mystery(A,N-1); output A[3-N] after recursive call. Invoke mystery(NAMES,3).",
+  "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+  "source_question_id": "H-SRC005-Q09",
+  "source_id": "SRC-005",
+  "source_filename": "Computer_science_paper_1__HL (2).pdf",
+  "year": "2022",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "TZ0",
+  "option": "",
+  "question": "9",
+  "subquestion": "",
+  "source_pdf_pages": [
+    4
+  ],
+  "source_printed_pages": [
+    "3"
+  ],
+  "original_marks": 4,
+  "command_term": "Determine",
+  "original_text": "[Source PDF page 4]\n9. Given the one-dimensional array :\nNAMES\n[0] Zixan\n[1] Murali\n[2] Eli\n[3] Kim\nand the following recursive algorithm:\nmystery(A, N) // A is a one-dimensional array, N is an integer\n>\nif N 0 then\nmystery(A, N-1)\nend if\noutput(A[3-N])\nend mystery\ndetermine the output produced after execution of the following statement:\nmystery(NAMES, 3)\nShow all your working. [4]",
+  "parent_context": "NAMES=[Zixan,Murali,Eli,Kim]; mystery(A,N): if N>0 call mystery(A,N-1); output A[3-N] after recursive call. Invoke mystery(NAMES,3).",
+  "assets": [
+    {
+      "kind": "source_page",
+      "description": "Source name array and recursive pseudocode",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-005-page-04.png",
+      "source_pdf_page": 4,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Determine: Determine the output produced after execution of mystery(NAMES,3). Show all your working."
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-011",
+    "filename": "Computer_science_paper_1__HL_markscheme (2).pdf",
+    "pdf_pages": [
+      6
+    ],
+    "question_reference": "9()",
+    "marking_summary": "Call chain3,2,1,0 then prints Kim,Eli,Murali,Zixan; working required for full4.",
+    "source_issues": []
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "mapping_target": "adapted_practice_only",
+      "syllabus_code": "B2.4.5",
+      "scope_evidence": "• Simple, non-branching recursive algorithms in programming only",
+      "rationale": "Nonbranching recursion and post-call output retained; Python and different list/index boundary replace old pseudocode.",
+      "theme": "B",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+    "marks": "Printed allocation transcribed.",
+    "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+    "official_answer_status": "See source markscheme record"
+  },
+  "original_text_manual_synopsis": "Determine the output produced after execution of mystery(NAMES,3). Show all your working.",
+  "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+  "source_page_evidence": [
+    {
+      "pdf_page": 4,
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-005/page-004.txt"
+    }
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC005-Q09"
+  ]
+}

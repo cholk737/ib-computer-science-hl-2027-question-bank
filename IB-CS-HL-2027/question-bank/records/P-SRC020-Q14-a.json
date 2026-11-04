@@ -1,0 +1,52 @@
+{
+  "question_id": "P-SRC020-Q14-a",
+  "source_question_ids": [
+    "H-SRC020-Q14-a"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct a Python function total_values(readings) that totals all values in a rectangular nested list. To assess traversal, do not use sum.",
+  "syllabus_codes": [
+    "B2.2.2",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 3,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "One solution:\ndef total_values(readings):\n    total = 0\n    for row in readings:\n        for value in row:\n            total += value\n    return total",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Traverses rows."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses each row’s values."
+    },
+    {
+      "marks": 1,
+      "criterion": "Initializes,accumulates andreturns correct total."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed matrix total andemptyrows.",
+    "source_comparison": [
+      20
+    ],
+    "test_code": "def total_values(readings):\n    total = 0\n    for row in readings:\n        for value in row:\n            total += value\n    return total\nassert total_values([[2,4],[1,5]])==12\nassert total_values([[]])==0",
+    "result_file": ""
+  },
+  "code": "def total_values(readings):\n    total = 0\n    for row in readings:\n        for value in row:\n            total += value\n    return total",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC020-Q14-a.json",
+  "question_path": "question-bank/questions/P-SRC020-Q14-a.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC020-Q14-a.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

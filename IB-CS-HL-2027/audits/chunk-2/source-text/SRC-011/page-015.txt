@@ -1,0 +1,36 @@
+                                                        –   15 –              N22/4/COMSC/HP1/ENG/TZ0/XX/M
+
+
+14.   (a)    Award [2] max.
+
+             Award [1] for checking that the remainder in integer division is equal to zero
+             Award [1] for also checking that X is not equal to Y.
+
+             Example:
+
+             (Y mod X == 0) and (X != Y)
+
+             Note: Accept % instead of mod. Accept && instead of and.
+                    Accept other correct expressions such as (X ≠ Y) and (trunc(Y/X)*X = Y).
+
+
+      (b)   Award [3] max.
+
+             Award [1] for initializing SUM and correct increment
+             Award [1] for the correct loop
+             Award [1] for checking the remainder in integer division
+
+             sumPD(N)
+                SUM=0
+                loop I from 1 to N div 2
+                       //  Accept as upper boundary  N//2 OR N-1
+                       //   OR a java expression:(int)Math.round(Math.sqrt(N))
+                    if N mod I==0
+                       then SUM=SUM+I
+                    end if
+                end loop
+                return SUM
+               end sumPD
+
+               Note: the subprogram heading and the return statement may not appear in the candidate's
+               response.

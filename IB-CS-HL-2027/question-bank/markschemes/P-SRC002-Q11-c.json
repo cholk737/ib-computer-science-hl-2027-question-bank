@@ -1,0 +1,43 @@
+{
+  "question_id": "P-SRC002-Q11-c",
+  "unofficial": true,
+  "marks": 6,
+  "solution": "Accounts/data are hosted across several operators rather than one provider’s infrastructure. Agreed communication lets users exchange messages across servers. This distributes administrative control and may reduce dependence on one operator,but introduces coordination and consistency challenges across nodes. If one server fails,other independent servers may continue local service,but affected accounts and cross-server exchanges can still be disrupted; this is resilience rather than universal availability.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Independent operators/nodes."
+    },
+    {
+      "marks": 1,
+      "criterion": "Data/workload distributed."
+    },
+    {
+      "marks": 1,
+      "criterion": "Cross-server communication."
+    },
+    {
+      "marks": 1,
+      "criterion": "Reduced single-provider control/dependence."
+    },
+    {
+      "marks": 1,
+      "criterion": "Develops resilience: failure of one server can leave other independent servers running,although affected accounts or cross-server messages may be unavailable."
+    },
+    {
+      "marks": 1,
+      "criterion": "Coordination/consistency tradeoff."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

@@ -1,0 +1,37 @@
+{
+  "question_id": "P-SRC020-Q05",
+  "unofficial": true,
+  "marks": 4,
+  "solution": "Outputs:0,0,0,0,0,0,1,0.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Rows000/001 correct."
+    },
+    {
+      "marks": 1,
+      "criterion": "Rows010/011 correct."
+    },
+    {
+      "marks": 1,
+      "criterion": "Rows100/101 correct."
+    },
+    {
+      "marks": 1,
+      "criterion": "Rows110/111 correct."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "All8 NAND/NOR cases evaluated.",
+    "source_comparison": [
+      5
+    ],
+    "test_code": "assert [int(not((not(a and b)) or c)) for a in [0,1] for b in [0,1] for c in [0,1]]==[0,0,0,0,0,0,1,0]",
+    "result_file": ""
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

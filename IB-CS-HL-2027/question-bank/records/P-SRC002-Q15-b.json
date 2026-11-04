@@ -1,0 +1,45 @@
+{
+  "question_id": "P-SRC002-Q15-b",
+  "source_question_ids": [
+    "H-SRC002-Q15-b"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A Python class names an internal helper _add_booking. Describe what the single underscore communicates and whether it prevents outside calls.",
+  "syllabus_codes": [
+    "B3.1.5"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 2,
+  "command_term": "Describe",
+  "difficulty": "medium",
+  "adaptation_rationale": "Replaces Java protected semantics with accurate Python naming convention; does not claim enforced privacy.",
+  "solution": "It signals a non-public implementation convention. Python does not enforce a protected access boundary merely from this underscore; outside code can still call the method.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Non-public/internal-use convention."
+    },
+    {
+      "marks": 1,
+      "criterion": "No automatic access enforcement."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC002-Q15-b.json",
+  "question_path": "question-bank/questions/P-SRC002-Q15-b.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC002-Q15-b.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

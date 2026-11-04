@@ -1,0 +1,45 @@
+                                                                                                                                                       N22/4/COMSC/HP1/ENG/TZ0/XX
+
+
+
+
+                                                                                                          –8–                                                                                              8822–7011
+
+14.         An integer divisor of an integer, N(N>0), is an integer greater than zero that divides N without
+            leaving a remainder. The proper divisors of N are divisors of N other than N itself.
+
+            For example:
+            y     The divisors of 10 are 1, 2, 5 and 10.
+            y     The proper divisors of 10 are 1, 2 and 5.
+
+            X(X>0) and Y(Y>0) are two integers.
+
+            (a)         Construct a logic expression that evaluates to True if X is a proper divisor of Y and to
+                        False otherwise.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        [2]
+
+            The subprogram sumPD(N) accepts an integer, N(N>1), and returns the sum of all proper
+            divisors of N. For example, sumPD(16) returns 15(1                                                               +2      +4      +8       =15).
+
+            (b)         Construct an algorithm in pseudocode for the subprogram sumPD(N). [3]
+
+            Every number can be classified as abundant, deficient, or perfect according to the
+            followingdefinitions:
+
+            A number is an abundant number if it is less than the sum of its proper divisors.
+            Forexample, 12 is an abundant number because 1                                                                 +2      +3      +4      +6       =16, and 16                 >12.
+
+            A number is a deficient number if it is greater than the sum of its proper divisors.
+            Forexample, 9 is a deficient number because 1                                                          +3      =4, and 4              <9.
+
+            A number is a perfect number if it is equal to the sum of its proper divisors. Forexample,
+            28is a perfect number because 1                                          +2      +4      +7       +14        =28, and 28                 =28.
+
+            Assume that the two-dimensional array MAT holds positive integers.
+
+            An algorithm should be written that creates three one-dimensional arrays, named ABUNDANT,
+            DEFICIENT and PERFECT, so that
+            y     the array ABUNDANT holds all the abundant numbers of the two-dimensional array MAT
+            y     the array DEFICIENT holds all the deficient numbers of the two-dimensional array MAT
+            y     the array PERFECT holds all the perfect numbers of the two-dimensional array MAT.
+
+(This question continues on the following page)

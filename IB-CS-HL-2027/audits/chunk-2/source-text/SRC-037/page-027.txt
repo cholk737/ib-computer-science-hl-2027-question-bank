@@ -1,0 +1,58 @@
+                                                      –   27 –                                      8823 – 7012M
+
+
+15.   (a)   Award [4 max]
+            Award [1] for correctly using both methods rollDice() and output()
+            Award [1] for correctly re-calculating the attacked monster’s health (ie subtracting
+            the damage)
+            Award [1] for outputting any correct message if health > 0
+            Award [1] for outputting the correct message if health <=       0 (“must leave the game”)
+            Award [1] for setting health to 0, if it is <0
+
+            Example:
+
+            public void attack(Monster defender)
+            {
+                   int damage =  rollDice();
+                   defender.health = defender.health - damage;
+                   if (defender.health > 0)
+                   {
+                        output(defender.name+" has sustained "+damage+" damage
+                                   and now has "+defender.health+" health left");
+                    }
+                    else
+                    {
+                        output(defender.name+" must leave the game");
+                        defender.health = 0;
+                    }
+            }
+
+            Example without int damage        :
+
+            public void attack(Monster defender)
+            {
+                  int oldHealth = defender.health;
+                  defender.health = defender.health - rollDice();
+                  if (defender.health > 0)
+                  {
+                       output(defender.name+" damage: "+(oldHealth                   -defender.health)+
+                                 " health "+defender.health);
+                  }
+                  else
+                  {
+                       defender.health = 0;
+                       output(defender.name+" must leave the game");
+                  }
+            }
+
+      (b)   Award [4 max]
+            Class is a code definition / template / blueprint;
+            Whereas Object is the actual / customizable instance variable;
+
+            Memory use of a class is only for static elements;
+            whereas an object uses memory for non-static parts;
+
+            There is only 1 class;
+            however there could (potentially) be multiple objects / instances of that class;
+
+            Mark as [2] and [2]

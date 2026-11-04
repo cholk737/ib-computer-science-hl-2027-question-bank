@@ -1,0 +1,44 @@
+                                              –   15 –            M21/4/COMSC/HP1/ENG/TZ0/XX/M
+
+
+(c)   Award [8 max]:
+
+      Correct initialization of HIGHEST, LOWEST and TOTAL;
+      Correct use of loop for 1000 inputs (doesn’t have to be while loop);
+      Checking if NUMBER is between 0 to 1000(accept inclusive or exclusive range);
+      Checking if NUMBER is a whole number;
+      Running total of numbers (for average calculation);
+      Correct comparison and changing the value of HIGHEST if needed;
+      Correct comparison and changing the value of LOWEST if needed;
+      Appropriate calculation of AVERAGE;
+      Output of AVERAGE, HIGHEST and LOWEST (outside loop);
+
+
+
+
+Example answer 1
+
+HIGHEST = -1    //any value lesser than or equal to 0
+LOWEST = 10000  //any value greater than or equal to 1000
+COUNTER = 0
+TOTAL = 0
+loop while COUNTER < 1000 // allow COUNTER <= 999
+     input NUMBER
+     if NUMBER<0 or NUMBER>1000 or NUMBER div 1 ≠ NUMBER/1
+                        //accept NUMBER<1 or NUMBER>999 or NUMBER mod 1 ≠ 0
+                   output " Your number is invalid, please try again"
+     else
+              if NUMBER > HIGHEST then
+                 HIGHEST = NUMBER
+              end if
+              if NUMBER < LOWEST then
+                 LOWEST = NUMBER
+              end if
+              TOTAL = TOTAL + NUMBER
+              COUNTER = COUNTER + 1
+      endif
+end loop
+AVERAGE = TOTAL / COUNTER      // allow TOTAL / 1000
+output HIGHEST
+output LOWEST
+output AVERAGE

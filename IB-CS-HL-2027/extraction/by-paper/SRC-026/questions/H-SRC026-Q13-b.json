@@ -1,0 +1,85 @@
+{
+  "source_question_id": "H-SRC026-Q13-b",
+  "source_id": "SRC-026",
+  "source_filename": "Computer_science_paper_1_TZ2_HL.pdf",
+  "year": "2025",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "TZ2 (filename; numerical cover code)",
+  "option": "",
+  "question": 13,
+  "subquestion": "b",
+  "source_pdf_pages": [
+    8
+  ],
+  "source_printed_pages": [
+    "7"
+  ],
+  "original_marks": 4,
+  "command_term": "Construct",
+  "original_text": "Construct an algorithm in pseudocode for the sub-program inputInRange().",
+  "parent_context": "– 6 – 2225 – 6414\n13. A team of four high-school students decided to create a computer program for younger \nstudents to help them learn to count and recognize whole numbers from 1 to 25.\nA table partially completed with numbers from 1 to 25 is given to a younger student. The table \nconsists of five rows and five columns (see Figure 2). The younger student must enter the \nremaining numbers. Each number from 1 to 25 should be entered only once.\nFigure 2: Example table partially filled with numbers\n24 1\n7 14\n4 6 22\n10 21 3\n11 25 9\nEach of the four students is responsible for creating several sub-programs that will be \nincluded in the program.\n(a) List three advantages of using sub-programs in this situation. [3]\n(This question continues on the following page)\n– 7 – 2225 – 6414\nTurn over\n(Question 13 continued)\nThe sub-program inputInRange() should return a valid input number.\nThis will ensure that the younger student’s input is a number in the range 1–25 inclusive. \nIf the input number is not in this range, an appropriate message is output. The process will \nbe repeated until a valid number is input.\nFor example:\nFor the sub-program call N = inputInRange(), if the following appears on the screen:\nEnter a number:\nThe number is not in the range from 1 to 25. Please try again.\nEnter a number:\nThe number is not in the range from 1 to 25. Please try again.\nEnter a number:\nYour number is valid.\n32\n0\n15\nThen the value of N would be 15 after execution.\n(b) Construct an algorithm in pseudocode for the sub-program inputInRange(). [4]\n(This question continues on the following page)",
+  "assets": [],
+  "assessed_concepts": [
+    "Original source task: Construct an algorithm in pseudocode for the sub-program inputInRange().",
+    "Construct read_in_range(read_integer) in Python"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-027",
+    "filename": "Computer_science_paper_1_TZ2_HL_markscheme.pdf",
+    "pdf_pages": [
+      21,
+      22
+    ],
+    "question_reference": "Q13 b",
+    "marking_summary": "One solution:\ndef read_in_range(read_integer):\n    while True:\n        value = read_integer()\n        if 1 <= value <= 16:\n            print(\"Accepted\")\n            return value\n        print(\"Enter an integer from 1 to 16\")",
+    "source_issues": [],
+    "source_marking_evidence": "– 21 – 2225 – 6414M \n13. (a) Award max [3]. \nThe (difficult) program is divided into several easier parts (sub-programs); \nThe program is better organized/ easier to understand /reduced size of code (due to several \nsub-programs calls)/ no duplication of code; \n  Sub-programs hide implementation details; \nSub-programs keep specific tasks self-contained; \n Each of the sub-programs could be written independently; \nEach of the sub-programs is debugged/tested independently; \nDifferent parts of the program can be written at the same time/concurrently; \nSub-programs speed up the development process (as different students can work  \non different subprogram at the same time); \nEach sub-program could be used many times in this program (and in other programs); \n The maintenance/modification/change of the program will be easier/faster \n (because only a sub-program could be changed/modified as needed); \n(b) Award max [4].\nAward [1] for a correct while loop \nAward [1] for a correct condition /validation check \nAward [1] for input within the while loop (input repeated until input validated) \nAward [1] for outputting appropriate messages \nAward [1] for return statement; \nExample 1: \ninputInRange()\nK=input('Enter a number: ') \nloop while (K < 1) or (K > 25) \noutput ('The number is not in the range 1 to 25. ') \n   output(' Please try again! ')  \nK=input('Enter a number: ') \nend loop \noutput('Your number is valid. ') \nreturn K \nend inputInRange() \nExample 2: \ninputInRange() \nF=true \nloop while F \noutput('Enter a number') \ninput(K) \nif(K < 1) or (K > 25) \nthen \n   output ('The number is invalid. ') \noutput( 'Please try again! ') \nelse \nF=false  \nend if \nend loop \noutput('Your number is valid. ') \nreturn K \nend inputInRange() \n– 22 – 2225 – 6414M \nExample 3: \ninputInRange() \nloop while True \nK=input('Enter a number: ') \nif(K >= 1) and (K <= 25) \nthen \noutput('Your number is valid. ') \nreturn K  \nelse \noutput('The number is not in the range1 to 25. ') \noutput('Please try again! ') \nend if \nend loop \nend inputInRange() "
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B2.3.2",
+      "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+      "rationale": "Construct read_in_range(read_integer) in Python assesses Construct programs utilizing appropriate selection structures.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B2.3.3",
+      "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+      "rationale": "Construct read_in_range(read_integer) in Python assesses Construct programs that utilize looping structures to perform repeated actions.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B2.3.4",
+      "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+      "rationale": "Construct read_in_range(read_integer) in Python assesses Construct functions and modularization.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "No visual required by this leaf.",
+    "technical": "Executed invalid low/high thenvalid and boundary1/16 inputs."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC026-Q13-b"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

@@ -1,0 +1,39 @@
+{
+  "question_id": "P-SRC002-Q16-c",
+  "unofficial": true,
+  "marks": 5,
+  "solution": "One solution:\ndef total_income(stores):\n    total = 0\n    for store in stores:\n        for booking in store.bookings:\n            total += booking.get_cost()\n    return total",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes total."
+    },
+    {
+      "marks": 1,
+      "criterion": "Visits every store."
+    },
+    {
+      "marks": 1,
+      "criterion": "Visits every booking in the store."
+    },
+    {
+      "marks": 1,
+      "criterion": "Calls cost method and accumulates charge."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns complete total,includingzero whenempty."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed multiple bookings,emptystore andemptyinput.",
+    "source_comparison": [],
+    "test_code": "def total_income(stores):\n    total = 0\n    for store in stores:\n        for booking in store.bookings:\n            total += booking.get_cost()\n    return total\nfrom types import SimpleNamespace as N\ns=[N(bookings=[N(get_cost=lambda:12),N(get_cost=lambda:8)]),N(bookings=[])]\nassert total_income(s)==20\nassert total_income([])==0",
+    "result_file": ""
+  },
+  "code": "def total_income(stores):\n    total = 0\n    for store in stores:\n        for booking in store.bookings:\n            total += booking.get_cost()\n    return total",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

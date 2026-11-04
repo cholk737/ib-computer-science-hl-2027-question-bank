@@ -1,0 +1,21 @@
+{
+  "question_id": "P-SRC024-Q05",
+  "source_question_ids": [
+    "H-SRC024-Q05"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct a trace table for this Python code, showing k and all four list values initially, after each loop body, and after the final assignment.\n\nvalues=[3,2,6,1]\nk=0\nwhile k < 3:\n    k+=1\n    values[k]=values[k-1]+values[k]\nvalues[0]=values[k]-values[0]",
+  "syllabus_codes": [
+    "B2.1.1",
+    "B2.2.2",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 5,
+  "command_term": "Construct",
+  "difficulty": "high",
+  "adaptation_rationale": "Preserves dependent in-place updates and post-loop assignment; different list and final operation in Python.",
+  "assets": []
+}

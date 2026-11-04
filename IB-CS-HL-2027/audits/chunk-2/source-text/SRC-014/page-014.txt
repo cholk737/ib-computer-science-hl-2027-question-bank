@@ -1,0 +1,43 @@
+                                                              –   14 –                N19/4/COMSC/HP1/ENG/TZ0/XX/M
+
+
+12.    (a)    Award [2 max].
+              Holding all data of a function/method call; simulation of recursion;
+              Conversion of expressions (infix to postfix, infix to prefix, etc)
+              Evaluating expression;
+              Parsing;                                                                                                    [2 max]
+
+       (b)    Award [6 max].
+              Award [3 max] for the following:
+              An array A of N elements should be initialized (fixed, predetermined size);
+
+                          [0]         [1]         [2]      . . .                                       [N-1]
+                       Value0      Value1      Value2       ...
+
+              keep track of the top of the stack since not all of the array holds stack elements
+              (in an integer variable, for example, named TOP);
+
+              the main property of a stack is that stack values/objects go on and come off of
+              the one end of the stack (LIFO data structure);
+
+              Award [1] for each stack method outlined.
+
+              Push
+              Places a value (object) on the top of the stack;
+              Increase TOP by one and set A[TOP]= value;
+
+              Pop
+              Returns a value from the top of the stack and removes that value from the top of
+              the stack;
+              Returns A[TOP] and decreases TOP by 1;
+
+              IsEmpty
+              Reports whether the stack is empty or not / returns True if the stack is empty,
+              False otherwise;
+              Returns True if TOP is less than 0, False otherwise;
+
+              IsFull
+              Reports whether the stack is full or not/ returns True is stack is full,
+              False otherwise;
+              Returns True if TOP is greater than N-1 (where N is size of the array),
+              False otherwise;                                                                                            [6 max]

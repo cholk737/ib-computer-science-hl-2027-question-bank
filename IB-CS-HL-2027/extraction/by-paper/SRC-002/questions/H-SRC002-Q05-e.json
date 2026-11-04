@@ -1,0 +1,86 @@
+{
+  "source_question_id": "H-SRC002-Q05-e",
+  "source_id": "SRC-002",
+  "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+  "year": "2026",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "A/B/C",
+  "option": "B",
+  "question": 5,
+  "subquestion": "e",
+  "source_pdf_pages": [
+    11
+  ],
+  "source_printed_pages": [
+    "11"
+  ],
+  "original_marks": 4,
+  "command_term": "Explain",
+  "original_text": "Explain how a last name could be extracted while ignoring a middle name.",
+  "parent_context": "-8-\n2226-4429\nOption B - Modelling and simulation\n5.\nThe spreadsheet extract in Figure 5 shows the scores for five students at City Walk School\nfor two semesters (Sem 1 and Sem 2).\nFigure 5: Spreadsheet extract showing five students' scores for two semesters\nA\nB\nC\nD\nE\n1\nStudent name\nSem 1\nSem 2\nFinal %\nStudent grade\n2\nElaine Anaya Khan\n20\n30\n50.0\n3\nAngel Chanchikova\n32\n54\n87.5\n4\nIsabella\n26\n45\n72.5\n5\nSarah Naveneethan\n32\n38\n67.5\n6\nScott Abou Khalil\n16\n24\n40.0\n• Sem 1 scores (column B) are out of 40.\n• Sem 2 scores (column C) are out of 60.\n• Final (column D) combines the scores for both semesters, weighted 25% for semester 1\n(Sem 1) and 75 % for semester 2 (Sem 2).\n(a) (i)\nState Elaine Anaya Khan's percentage for semester 1.\n[1]\n(ii) Construct the formula to calculate the percentage for cell D2.\n[2]\nCity Walk School reports students' grades from lowest to highest (E to A), inclusively:\n• A score between 35 and 46, inclusive, returns an E grade.\n• A score between 47 and 59, inclusive, returns a D grade.\n• A score between 60 and 69, inclusive, returns a C grade\n• A score between 69 and 84, inclusive, returns a B grade.\n• A score of 85 or more returns an A grade.\n(Option B continues on the following page)\n-9-\n2226-4429\n(Option B, question 5 continued)\nThe data for these scores are stored in columns H and I (see Figure 6).\nFigure 6\nD\nE\n•**\nH\n1\nStudent name\nFinal\nStudent grade\nSchool score\nGrade\n2\nElaine Anaya Khan\n50.0\n35\nE\n3\nAngel Chanchikova\n87.5\n47\nD\n4\nIsabella\n72.5\n60\n5\nSarah Naveneethan\n67.5\n70\nB\n6\nScott Abou Khalil\n40.0\n85\nA\n(b) Construct a formula to automatically add Elaine Anaya Khan's grade (shown in\ncolumn l) to cell E2.\n[3]\nThe formula =FIND (A2,\" \") has been added to cell F2 and replicated down the rest\nof the column (see Figure 7).\nFigure 7\nA\n•.•\nF\n1\nStudent name\nFIND\n2\nElaine Anaya Khan\n7\n3\nAngel Chanchikova\n6\n4\nIsabella\n#VALUE!\n5\nSarah Naveneethan\n6\nA000\n6\nScott Abou Khalil\n6\nRow 4 produces an error.\n(c)\nOutline why cell F4 produced an error.\n(2)\n(Option B continues on page 11)\n-\n-11-\n2226-4429\n(Option B, question 5 continued)\nThe function =ISNUMBER (value) returns TRUE if the value is a number and FALSE if the\nvalue is not a number.\nFor example, the value in F2 should be 7 because 7 is an integer. The value in F4 should be\nFALSE because #VALUE! is not an integer.\n(d) Construct a formula for cell F4 as described.\n[3]\nTo fix the error in row 4, Isabella's last name has been added. Two additional columns have\nbeen inserted: Last name and First name (see Figure 8).\nFigure 8\nD\n1\nStudent name\nLast name\nFirst name\nSem 1\n2\nElaine Anaya Khan\nKhan\nElaine\n20\n3\nAngel Chanchikova\nChanchikova\nAngel\n32\n4\nIsabella Hodroge\nHodroge\nIsabella\n26\n5\nSarah Naveneethan\nNaveneethan\nSarah\n32\n6\nScott Abou Khalil\nKhalil\nScott\n16\nThe first name in cell C2 has been extracted from the full name in cell A2 using the MID\nfunction and FIND function:\n=MID(A2, 1, FIND(\" \",A2) -1)\nIn column B, last names have been extracted from the student names in column A.\nAny middle name has been ignored.\n(e) Explain how a last name could be extracted while ignoring a middle name.\n[4]\n(Option B continues on the following page)",
+  "assets": [
+    {
+      "kind": "scanned_source_page",
+      "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-08.png",
+      "source_pdf_page": 8,
+      "visually_verified": true
+    },
+    {
+      "kind": "scanned_source_page",
+      "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-09.png",
+      "source_pdf_page": 9,
+      "visually_verified": true
+    },
+    {
+      "kind": "scanned_source_page",
+      "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-11.png",
+      "source_pdf_page": 11,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Explain how a last name could be extracted while ignoring a middle name.",
+    "Names contain a first name,zero or more middle names,and a final surname token separated by single spaces"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "not_uploaded",
+    "source_id": "",
+    "filename": "",
+    "pdf_pages": [],
+    "question_reference": "Q5 e",
+    "marking_summary": "Find the final space,then take the substring after it; if there is no space,the whole string is the only token. Under the stated format,the last token is the surname. Compound surnames would require different metadata or a different format.",
+    "source_issues": [],
+    "source_marking_evidence": ""
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B2.1.2",
+      "scope_evidence": "• Writing of programs that accurately identify and extract substrings from given strings, demonstrating the ability to perform various manipulations, such as altering, concatenating or replacing",
+      "rationale": "Names contain a first name,zero or more middle names,and a final surname token separated by single spaces assesses Construct programs that can extract and manipulate substrings.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "No uploaded MS; independent unofficial answer.",
+    "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC002-Q05-e"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

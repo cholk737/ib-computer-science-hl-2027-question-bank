@@ -1,0 +1,33 @@
+                                                                                                                                                                                          –17–                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            8825–6405
+
+(Option C, question 9 continued)
+
+                      The following is part of the code that is run on the server when a customer (the user)
+                      submitsa rating.
+
+                      <?php
+                      $work_category = $_POST["work_category"];
+                      $rating = $_POST["rating"];
+                      $conn = mysqli_connect("localhost", $username, $password, "sales");
+                      $sql = "SELECT AVG(rating) as averageRating FROM ratings WHERE work_
+                      category = '$work_category'";
+                      $result = mysqli_query($conn, $sql);
+                      $row = mysqli_fetch_assoc($result);
+                      $averageRating = $row["averageRating"];
+                      $sql = "INSERT INTO ratings (work_category, rating) VALUES ('$work_
+                      category', $rating)";
+                      mysqli_query($conn, $sql);
+                      if ($rating >= $averageRating) {
+                          echo "Thank you for the good review.";
+                      } else {
+                          echo "Sorry, we will try to do better next time.";
+                      }
+                      mysqli_close($conn);
+                      ?>
+
+                      (e)                                                                                           (i)Describe the processing that takes place when this code is executed.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      [4]
+
+                                            (ii)                                                                                           Outline one advantage of executing this code on a server rather than in
+                                                                  the browser.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      [3]
+
+(Option C continues on the following page)

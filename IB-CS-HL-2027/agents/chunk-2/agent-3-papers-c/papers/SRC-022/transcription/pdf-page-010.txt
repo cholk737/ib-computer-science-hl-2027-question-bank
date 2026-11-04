@@ -1,0 +1,45 @@
+– 9 – 8825 – 6404
+(Question 15 continued)
+For example, from Figure 1:
+returns
+isUpper(AMAT,5) TRUE
+returns
+isUpper(CMAT,3) TRUE
+returns
+isUpper(DMAT,4) FALSE
+returns
+isUpper(BMAT,4) FALSE
+(c) Construct an algorithm in pseudocode for the sub-program
+isUpper(MAT,N)
+as described. [7]
+In a lower triangular matrix, all entries above the main diagonal are 0.
+The sub-program accepts a square matrix and an integer
+isLower(MAT,N) MAT N
+that represents the number of rows and columns.
+It returns if is a lower triangular matrix; otherwise it returns .
+TRUE MAT FALSE
+For example, from Figure 1:
+returns
+isLower(AMAT,5) FALSE
+returns
+isLower(CMAT,3) TRUE
+The sub-program calls sub-programs and
+identify(MAT,N) isLower(MAT,N)
+to determine and output whether the square matrix is:
+isUpper(MAT,N) MAT
+y upper triangular
+y lower triangular
+y both upper and lower triangular
+y none of the above.
+For example, from Figure 1:
+should output ‘ UPPER ’
+identify(AMAT,5)
+should output ‘ LOWER ’
+identify(BMAT,4)
+should output ‘ BOTH ’
+identify(CMAT,3)
+should output ‘ NONE ’
+identify(DMAT,4)
+(d) Construct an algorithm in pseudocode for the sub-program
+identify(MAT,N)
+as described. [5]

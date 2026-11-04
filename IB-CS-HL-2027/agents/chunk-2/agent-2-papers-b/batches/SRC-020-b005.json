@@ -1,0 +1,696 @@
+{
+  "source_id": "SRC-020",
+  "batch_id": "SRC-020-b005",
+  "source_questions": [
+    {
+      "source_question_id": "H-SRC020-Q13-c",
+      "source_id": "SRC-020",
+      "source_filename": "Computer_science_paper_1__TZ2_HL.pdf",
+      "year": "2023",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ2",
+      "option": "",
+      "question": 13,
+      "subquestion": "c",
+      "source_pdf_pages": [
+        7
+      ],
+      "source_printed_pages": [
+        "6"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "Outline the purpose of the stack access method isEmpty().",
+      "parent_context": "– 6 – 2223 – 7011\n13. Consider the following recursive method:\nfunc(X)\n    if X>1\n        then\n            return func(X-1) + func(X-2)\n        else\n            return X\n    end if\nend func\n(a) Determine the value of func(5) (show all your working). [4]\n(b) Outline two disadvantages of recursive methods. [4]\nA stack is a data structure that is used in the implementation of a recursive method.\n(c) Outline the purpose of the stack access method isEmpty(). [2]\nThe stack TOWNS holds several town names, and the name “Cardiff” is on the top of the \nTOWNS stack (see Figure 1a).\nAn algorithm is needed that will reverse the contents of the TOWNS stack. The name “Geneva” \nshould be on top of the TOWNS stack after reversing its contents (see Figure 1b).\nFigure 1: Example data held on the TOWNS stack before \nand after execution of the requested algorithm\na. The content in the TOWNS stack \nbefore it is reversed\nCardiff\nWashington DC\nThe Hague\nSingapore\nGeneva\nb. The content in the TOWNS stack \nafter it is reversed\nGeneva\nSingapore\nThe Hague\nWashington DC\nCardiff\n(d) Construct an algorithm that will reverse the TOWNS stack using an empty queue. \nYou may assume that the TOWNS stack is inputted and a new empty queue named \nTEMP is initialized.\nYou must use stack access methods and queue access methods in your response. [5]",
+      "assets": [],
+      "assessed_concepts": [
+        "Original source task: Outline the purpose of the stack access method isEmpty().",
+        "Outline what a stack’s isEmpty operation returns and why a pop operation may first check it"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-021",
+        "filename": "Computer_science_paper_1__TZ2_HL_markscheme.pdf",
+        "pdf_pages": [
+          18
+        ],
+        "question_reference": "Q13 c",
+        "marking_summary": "isEmpty returns True exactly when no items remain. Checking before pop avoids attempting to remove an item from an empty stack.",
+        "source_issues": [],
+        "source_marking_evidence": "– 18 – M23/4/COMSC/HP1/ENG/TZ2/XX/M \n13. (a) Award [4 max] \n The working may be differently represented. If only the final result (5) is shown, then award \n only one mark. \nfunc(5) \n= func(4) +  func(3)      ; \n= func(3) +  func(2) +  func(2) +  func(1) =   func(3)  + 2 * func(2) + 1  ;  \n= func(2) +  func(1) +  2 (func(1) +  func(0) )+ 1 =  func(2) +1 + 2+1    ;  \n= func(1) +  func(0) + 4  = 1  +0 +  4  =5      ; \n(b) Award [4 max]\nAward [1] for a disadvantage and [1] for the elaboration, x2.\nrecursion is memory intensive;\nbecause memory (call stack) is used to store all the intermediate arguments and\nreturn values/ could lead to stack overflow (if there is a large amount of data);\nrecursion can be slow;\nif not implemented correctly/if too many recursive calls occur;\ndifficult to think of the logic of a recursive function/ complexity of the paradigm;\nhard to construct/ analyse /understand the code;\n(c) Award [2 max]\nisEmpty() returns a Boolean value True if the stack size is 0, else it returns False/ checks if\nstack is empty or not;\nit is used/called in conditions in if/while statements/ it is called before an attempt is made to\nremove the value from the stack;\nto prevent performing operations on an empty stack/ to prevent stack underflow error;"
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.3",
+          "scope_evidence": "• Must include fundamental operations such as push, pop, peek and isEmpty\n• How stack operations impact both performance and memory usage\n• An appropriate stack for a specific problem",
+          "rationale": "Outline what a stack’s isEmpty operation returns and why a pop operation may first check it assesses Explain the concept of a stack as a “last in, first out” (LIFO) data structure.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "No visual required by this leaf.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC020-Q13-c"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC020-Q13-d",
+      "source_id": "SRC-020",
+      "source_filename": "Computer_science_paper_1__TZ2_HL.pdf",
+      "year": "2023",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ2",
+      "option": "",
+      "question": 13,
+      "subquestion": "d",
+      "source_pdf_pages": [
+        7
+      ],
+      "source_printed_pages": [
+        "6"
+      ],
+      "original_marks": 5,
+      "command_term": "Construct",
+      "original_text": "Construct an algorithm that will reverse the TOWNS stack using an empty queue. You may assume that the TOWNS stack is inputted and a new empty queue named TEMP is initialized. You must use stack access methods and queue access methods in your response.",
+      "parent_context": "– 6 – 2223 – 7011\n13. Consider the following recursive method:\nfunc(X)\n    if X>1\n        then\n            return func(X-1) + func(X-2)\n        else\n            return X\n    end if\nend func\n(a) Determine the value of func(5) (show all your working). [4]\n(b) Outline two disadvantages of recursive methods. [4]\nA stack is a data structure that is used in the implementation of a recursive method.\n(c) Outline the purpose of the stack access method isEmpty(). [2]\nThe stack TOWNS holds several town names, and the name “Cardiff” is on the top of the \nTOWNS stack (see Figure 1a).\nAn algorithm is needed that will reverse the contents of the TOWNS stack. The name “Geneva” \nshould be on top of the TOWNS stack after reversing its contents (see Figure 1b).\nFigure 1: Example data held on the TOWNS stack before \nand after execution of the requested algorithm\na. The content in the TOWNS stack \nbefore it is reversed\nCardiff\nWashington DC\nThe Hague\nSingapore\nGeneva\nb. The content in the TOWNS stack \nafter it is reversed\nGeneva\nSingapore\nThe Hague\nWashington DC\nCardiff\n(d) Construct an algorithm that will reverse the TOWNS stack using an empty queue. \nYou may assume that the TOWNS stack is inputted and a new empty queue named \nTEMP is initialized.\nYou must use stack access methods and queue access methods in your response. [5]",
+      "assets": [
+        {
+          "kind": "source_diagram",
+          "description": "Source before/after stack withCardiff on top before reversal",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-020/renders/page-7.png",
+          "source_pdf_page": 7,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Construct an algorithm that will reverse the TOWNS stack using an empty queue. You may assume that the TOWNS stack is inputted and a new empty queue named TEMP is initialized. You must use stack access methods and queue access methods in your response.",
+        "Construct Python reverse_stack(stack,queue), where queue starts empty"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-021",
+        "filename": "Computer_science_paper_1__TZ2_HL_markscheme.pdf",
+        "pdf_pages": [
+          19
+        ],
+        "question_reference": "Q13 d",
+        "marking_summary": "One solution:\ndef reverse_stack(stack, queue):\n    while not stack.isEmpty():\n        queue.enqueue(stack.pop())\n    while not queue.isEmpty():\n        stack.push(queue.dequeue())",
+        "source_issues": [],
+        "source_marking_evidence": "– 19 – M23/4/COMSC/HP1/ENG/TZ2/XX/M \n(d) Award [5 max]\nAward [1] for correct use of the stack and queue access methods (isEmpty(), push(),  pop(),\nenqueue(), dequeue())\nAward [1] for loop through the TOWNS stack\nAward [1] for taking an element from the top of the TOWNS stack\nAward [1] for enqueuing the value popped from the TOWNS stack to the TEMP queue\nAward [1] for loop through the TEMP queue\nAward [1] for pushing the value dequeued from the TEMP queue onto the TOWNS stack\nExample: \nloop while not TOWNS.isEmpty() \n X=TOWNS.pop() \n TEMP.enqueue(X)  //TEMP is an empty queue \nend while \nloop while not TEMP.isEmpty() \n Y=TEMP.dequeue()  //instead of these 2 statements \n TOWNS.push(Y)   //TOWNS.push(TEMP.dequeue())  \n  //can be written \nend while "
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.3",
+          "scope_evidence": "• Must include fundamental operations such as push, pop, peek and isEmpty\n• How stack operations impact both performance and memory usage\n• An appropriate stack for a specific problem",
+          "rationale": "Construct Python reverse_stack(stack,queue), where queue starts empty assesses Explain the concept of a stack as a “last in, first out” (LIFO) data structure.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.2.4",
+          "scope_evidence": "• Must include fundamental operations such as enqueue, dequeue, front and isEmpty\n• How queue operations impact both performance and memory usage\n• An appropriate queue for a specific problem",
+          "rationale": "Construct Python reverse_stack(stack,queue), where queue starts empty assesses Explain the concept of a queue as a “first in, first out” (FIFO) data structure.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "Construct Python reverse_stack(stack,queue), where queue starts empty assesses Construct programs that utilize looping structures to perform repeated actions.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "No visual required by this leaf.",
+        "technical": "Traced bottom-to-top[1,2,3]→queue3,2,1→stack[3,2,1]; also empty andsingleton."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC020-Q13-d"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC020-Q14-a",
+      "source_id": "SRC-020",
+      "source_filename": "Computer_science_paper_1__TZ2_HL.pdf",
+      "year": "2023",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ2",
+      "option": "",
+      "question": 14,
+      "subquestion": "a",
+      "source_pdf_pages": [
+        8
+      ],
+      "source_printed_pages": [
+        "7"
+      ],
+      "original_marks": 3,
+      "command_term": "Construct",
+      "original_text": "Construct an algorithm in pseudocode to calculate the sum of all values stored in the DICEDIAL array.",
+      "parent_context": "– 7 – 2223 – 7011\n14. A program is developed to simulate the roll of dice in a game.\nThree dice are thrown, with faces that have numbers from 1 to 6.\nThe dice are thrown seven times, and the data are stored in a two-dimensional array called \nDICEDIAL (see Figure 2).\nFigure 2: The example data stored in the DICEDIAL array\n[0] [1] [2]\n[0] 4 2 2\n[1] 4 4 4\n[2] 5 2 3\n[3] 6 5 5\n[4] 5 5 6\n[5] 1 1 4\n[6] 3 2 1\n(a) Construct an algorithm in pseudocode to calculate the sum of all values stored in the \nDICEDIAL array. [3]\nThe sub-program DuplicateNum(DICEDIAL,R) checks whether there are repeated \nnumbers in row R. If the numbers are not repeated, it returns 0, otherwise it returns the \nrepeated number.\nThe DuplicateNum() sub-program will produce the following from the values used in Figure 2:\nDuplicateNum(DICEDIAL,0) returns 2\nDuplicateNum (DICEDIAL,1) returns 4\nDuplicateNum(DICEDIAL,2) returns 0\n(b) Construct an algorithm in pseudocode for the sub-program DuplicateNum(DICEDIAL,R). [4]\nThe sub-program highestRT(DICEDIAL) accepts the DICEDIAL array and outputs the \nhighest row total and the indexes of all the rows with that total.\nFrom the example data given in Figure 2, highestRT(DICEDIAL) would output that the \nhighest row total is 16, and it occurs in the rows with indexes 3 and 4.\n(c) Construct an algorithm in pseudocode for the sub-program highestRT(DICEDIAL). [8]\n ",
+      "assets": [
+        {
+          "kind": "source_table",
+          "description": "Original7x3dice data, all values read",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-020/renders/page-8.png",
+          "source_pdf_page": 8,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Construct an algorithm in pseudocode to calculate the sum of all values stored in the DICEDIAL array.",
+        "Construct a Python function total_values(readings) that totals all values in a rectangular nested list"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-021",
+        "filename": "Computer_science_paper_1__TZ2_HL_markscheme.pdf",
+        "pdf_pages": [
+          20
+        ],
+        "question_reference": "Q14 a",
+        "marking_summary": "One solution:\ndef total_values(readings):\n    total = 0\n    for row in readings:\n        for value in row:\n            total += value\n    return total",
+        "source_issues": [],
+        "source_marking_evidence": "– 20 – M23/4/COMSC/HP1/ENG/TZ2/XX/M \n14. (a) Award [3 max] \nAward [1] for a correct row loop \nAward [1] for a correct column loop \nAward [1] for initializing SUM and summing inside the loop using correct array indexes \n Example 1: \nSUM=0 \nloop I from 0 to 6 \n  //accept DICEDIAL.length-1 \n  // or len(DICEDIAL)-1 instead of 6 \n   loop J from 0 to 2 \n //accept DICEDIAL[I].length-1  \n  // or len(DICEDIAL[I])-1 instead of 2 \n SUM = SUM + DICEDIAL[I][J] \n   end loop \nend loop \n Example 2: \nI =0 \nSUM=0 \nloop while I <= 6 \n j=0 \n loop while J <= 2 \n  SUM =SUM + DICEDIAL[I][J] \n  J = J + 1 \n end loop \n I = I + 1 \nend loop "
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Construct a Python function total_values(readings) that totals all values in a rectangular nested list assesses Construct programs that apply arrays and Lists.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "Construct a Python function total_values(readings) that totals all values in a rectangular nested list assesses Construct programs that utilize looping structures to perform repeated actions.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "No visual required by this leaf.",
+        "technical": "Executed matrix total andemptyrows."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC020-Q14-a"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC020-Q14-b",
+      "source_id": "SRC-020",
+      "source_filename": "Computer_science_paper_1__TZ2_HL.pdf",
+      "year": "2023",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ2",
+      "option": "",
+      "question": 14,
+      "subquestion": "b",
+      "source_pdf_pages": [
+        8
+      ],
+      "source_printed_pages": [
+        "7"
+      ],
+      "original_marks": 4,
+      "command_term": "Construct",
+      "original_text": "Construct an algorithm in pseudocode for the sub-program DuplicateNum(DICEDIAL,R).",
+      "parent_context": "– 7 – 2223 – 7011\n14. A program is developed to simulate the roll of dice in a game.\nThree dice are thrown, with faces that have numbers from 1 to 6.\nThe dice are thrown seven times, and the data are stored in a two-dimensional array called \nDICEDIAL (see Figure 2).\nFigure 2: The example data stored in the DICEDIAL array\n[0] [1] [2]\n[0] 4 2 2\n[1] 4 4 4\n[2] 5 2 3\n[3] 6 5 5\n[4] 5 5 6\n[5] 1 1 4\n[6] 3 2 1\n(a) Construct an algorithm in pseudocode to calculate the sum of all values stored in the \nDICEDIAL array. [3]\nThe sub-program DuplicateNum(DICEDIAL,R) checks whether there are repeated \nnumbers in row R. If the numbers are not repeated, it returns 0, otherwise it returns the \nrepeated number.\nThe DuplicateNum() sub-program will produce the following from the values used in Figure 2:\nDuplicateNum(DICEDIAL,0) returns 2\nDuplicateNum (DICEDIAL,1) returns 4\nDuplicateNum(DICEDIAL,2) returns 0\n(b) Construct an algorithm in pseudocode for the sub-program DuplicateNum(DICEDIAL,R). [4]\nThe sub-program highestRT(DICEDIAL) accepts the DICEDIAL array and outputs the \nhighest row total and the indexes of all the rows with that total.\nFrom the example data given in Figure 2, highestRT(DICEDIAL) would output that the \nhighest row total is 16, and it occurs in the rows with indexes 3 and 4.\n(c) Construct an algorithm in pseudocode for the sub-program highestRT(DICEDIAL). [8]\n ",
+      "assets": [
+        {
+          "kind": "source_table",
+          "description": "Original7x3dice data, all values read",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-020/renders/page-8.png",
+          "source_pdf_page": 8,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Construct an algorithm in pseudocode for the sub-program DuplicateNum(DICEDIAL,R).",
+        "Construct repeated_value(readings,r) in Python"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-021",
+        "filename": "Computer_science_paper_1__TZ2_HL_markscheme.pdf",
+        "pdf_pages": [
+          21,
+          22,
+          23
+        ],
+        "question_reference": "Q14 b",
+        "marking_summary": "One solution:\ndef repeated_value(readings, r):\n    a, b, c = readings[r]\n    if a == b or a == c:\n        return a\n    if b == c:\n        return b\n    return 0",
+        "source_issues": [],
+        "source_marking_evidence": "– 21 – M23/4/COMSC/HP1/ENG/TZ2/XX/M \n(b) Award [4 max]\nExample 1 (if-else statement):\nAward [1] for initializing VAL to 0 and return VAL / return 0 (in case no duplicates)\nAward [3 max] for determining a correct value (1 mark for each correct condition and change\nof the value of VAL if needed)\nNote: Award marks for determining a correct return value in each of possible cases: three\ndifferent values in row R- no duplicates, any two numbers/values in row R are the same and\nall three values in row R are the same.\nAward [1] for correct use of row index and column index in the DICEDIAL array\nNote: the method heading may not appear in a candidate’s response.\nDuplicateNum (DICEDIAL, R)\n VAL=0 \n if DICEDIAL[R][0] = DICEDIAL[R][1] \n then \n VAL= DICEDIAL[R][0] // or VAL= DICEDIAL[R][1] \n else \n  if DICEDIAL[R][0] = DICEDIAL[R][2] \n  then VAL= DICEDIAL[R][0] \n  else \n if DICEDIAL[R][1] = DICEDIAL[R][2] \n  then VAL= DICEDIAL[R][1] \n  end if \n  end if \n  end if \nreturn VAL \nend DuplicateNum \n– 22 – M23/4/COMSC/HP1/ENG/TZ2/XX/M \nExample 2 (several if statements- inefficient, but it outputs a correct value): \nAward [1] for each correct if statement, x4 \n Award [1] for correct use of row index and column index in the DICEDIAL array \nif //three different numbers \n  DICEDIAL[R][0]!=DICEDIAL[R][1] \n  and DICEDIAL[R][0]!=DICEDIAL[R][2] \n  and DICEDIAL[R][1]!=DICEDIAL[R][2] \n  then \n RESULT=0 \nend if \nif DICEDIAL[R][0]=DICEDIAL[R][1] and DICEDIAL[R][0]=DICEDIAL[R][2] \n  then //three same numbers \n RESULT = DICEDIAL[R][0] \nend if \n//any two same \nif DICEDIAL[R][0]=DICEDIAL[R][1] or DICEDIAL[R][0]=DICEDIAL[R][2] \n  then \n RESULT = DICEDIAL[R][0] \nend if \nif DICEDIAL[R][1]=DICEDIAL[R][2] \n  then \n RESULT = DICEDIAL[R][1] \nend if \nreturn RESULT \nNote: Accept answers written in Java/ Python. The following example answer is written in \nJava.   \npublic int DuplicateNum (int[][] DiceDial, int row) \n{ \nif(DiceDial[row][0] == DiceDial[row][1]  || DiceDial[row][0] == \nDiceDial[row][2]) \n  { \n  return DiceDial[row][0]; \n  }  \n else if(DiceDial[row][1] == DiceDial[row][2]) \n { \n  return DiceDial[row][1]; \n } \n  else return 0; \n} \n– 23 – M23/4/COMSC/HP1/ENG/TZ2/XX/M \nExample 3 (single loop): \nAward [1] for initializing VAL to 0 and return VAL  \nAward [1] for correct loop \nAward [1] for correct condition and change of VAL \nAward [1] for if statement after the loop \nAward [1] for correct use of row index and column index in the DICEDIAL array \nDuplicateNum (DICEDIAL, R) \nVAL=0 \nloop K from 0 to 1 \n if (DICEDIAL[R][K]== DICEDIAL[R][K+1]) \n then \n  VAL= DICEDIAL[R][K]// or DICEDIAL[R][K+1] \n  end if \nend loop // determines VAL \n  //comparing only DICEDIAL[R][0] with DICEDIAL[R][1] \n  // and DICEDIAL[R][1] with DICEDIAL[R][2] \nif (DICEDIAL[R][0] == DICEDIAL[R][2]) \n then \n  VAL= DICEDIAL[R][0] //or DICEDIAL[R][2] \nend if \nreturn VAL \nend DuplicateNum \n  Example 4 (nested loops): \n Award [1] for initializing VAL to 0 and return VAL  \n  Award [1] for correct outer loop \n  Award [1] for correct inner loop \n  Award [1] for correct condition and change of VAL \n  Award [1] for correct use of indexes in the DICEDIAL array \n VAL =0 \n  loop K from 0 to 1 \n  loop J from K + 1 to 2 \n if DICEDIAL[R][K] == DICEDIAL[R][J] \n  then VAL = DICEDIAL[R][K] \n  end if \n end loop \n end loop  \n return VAL "
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Construct repeated_value(readings,r) in Python assesses Construct programs that apply arrays and Lists.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Construct repeated_value(readings,r) in Python assesses Construct programs utilizing appropriate selection structures.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "No visual required by this leaf.",
+        "technical": "Exhaustively checked all216 possible triples against independent frequency criterion."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC020-Q14-b"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC020-Q14-c",
+      "source_id": "SRC-020",
+      "source_filename": "Computer_science_paper_1__TZ2_HL.pdf",
+      "year": "2023",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ2",
+      "option": "",
+      "question": 14,
+      "subquestion": "c",
+      "source_pdf_pages": [
+        8
+      ],
+      "source_printed_pages": [
+        "7"
+      ],
+      "original_marks": 8,
+      "command_term": "Construct",
+      "original_text": "Construct an algorithm in pseudocode for the sub-program highestRT(DICEDIAL).",
+      "parent_context": "– 7 – 2223 – 7011\n14. A program is developed to simulate the roll of dice in a game.\nThree dice are thrown, with faces that have numbers from 1 to 6.\nThe dice are thrown seven times, and the data are stored in a two-dimensional array called \nDICEDIAL (see Figure 2).\nFigure 2: The example data stored in the DICEDIAL array\n[0] [1] [2]\n[0] 4 2 2\n[1] 4 4 4\n[2] 5 2 3\n[3] 6 5 5\n[4] 5 5 6\n[5] 1 1 4\n[6] 3 2 1\n(a) Construct an algorithm in pseudocode to calculate the sum of all values stored in the \nDICEDIAL array. [3]\nThe sub-program DuplicateNum(DICEDIAL,R) checks whether there are repeated \nnumbers in row R. If the numbers are not repeated, it returns 0, otherwise it returns the \nrepeated number.\nThe DuplicateNum() sub-program will produce the following from the values used in Figure 2:\nDuplicateNum(DICEDIAL,0) returns 2\nDuplicateNum (DICEDIAL,1) returns 4\nDuplicateNum(DICEDIAL,2) returns 0\n(b) Construct an algorithm in pseudocode for the sub-program DuplicateNum(DICEDIAL,R). [4]\nThe sub-program highestRT(DICEDIAL) accepts the DICEDIAL array and outputs the \nhighest row total and the indexes of all the rows with that total.\nFrom the example data given in Figure 2, highestRT(DICEDIAL) would output that the \nhighest row total is 16, and it occurs in the rows with indexes 3 and 4.\n(c) Construct an algorithm in pseudocode for the sub-program highestRT(DICEDIAL). [8]\n ",
+      "assets": [
+        {
+          "kind": "source_table",
+          "description": "Original7x3dice data, all values read",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-020/renders/page-8.png",
+          "source_pdf_page": 8,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Construct an algorithm in pseudocode for the sub-program highestRT(DICEDIAL).",
+        "Construct greatest_rows(readings) in Python for a nonempty rectangular integer nested list"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-021",
+        "filename": "Computer_science_paper_1__TZ2_HL_markscheme.pdf",
+        "pdf_pages": [
+          24,
+          25,
+          26
+        ],
+        "question_reference": "Q14 c",
+        "marking_summary": "One solution:\ndef greatest_rows(readings):\n    best = None\n    winners = []\n    for i in range(len(readings)):\n        total = 0\n        for value in readings[i]:\n            total += value\n        if best is None or total > best:\n            best = total\n            winners = [i]\n        elif total == best:\n            winners.append(i)\n    return best, winners",
+        "source_issues": [],
+        "source_marking_evidence": "– 24 – M23/4/COMSC/HP1/ENG/TZ2/XX/M \n(c) Award [8 max]\nExample 1:\nAward [1] for initializing HIGHEST\nAward [1] for correct row loop (I)\nAward [1] for calculating the sum of all elements in the Ith row\nAward [1] for using correct indexes in the DICEDIAL array\nAward [1] for comparing the row sum with the highest row sum so far\nAward [1] for and changing the value of HIGHEST if needed\nAward [1] for outputting the highest row sum once\nAward [1] for the second loop\nAward [1] for comparing the row total with the highest row total\nAward [1] for outputting row numbers (rows with the highest total)\nNote: The method heading may not appear in candidates’ responses.\nhighestRT(DICEDIAL)\nHIGHEST = 0  // any number <= 0 OR the first-row total \n  loop I from 0 to 6 \nSUM = DICEDIAL[I][0] + DICEDIAL[I][1] + DICEDIAL[I][2] \n //inner loop may be used instead of this statement \n  //(see Example 2)- to calculate SUM of values in row I \n if SUM > HIGHEST // or >= \n  then HIGHEST = SUM \n  end if \n end loop \n output(‘the highest row total:’, HIGHEST) \n output(‘the highest row total occurs in the following rows:’) \n loop I from 0 to 6 \n SUM = DICEDIAL[I][0] + DICEDIAL[I][1] + DICEDIAL[I][2] \n if SUM = HIGHEST \n  then output (I) \n  end if \n  end loop \nend highestRT\n– 25 – M23/4/COMSC/HP1/ENG/TZ2/XX/M \nExample 2: \nAward [2 max] for defining the ROWTOTALS array (1 mark for correct row loop (I) and 1 \nmark for calculating the sum of all elements in the Ith row of the DICEDIAL array) \nAward [1] for initializing HIGHEST \nAward [3 max] for searching for the highest (1 mark for the correct loop, 1 mark for \ncomparing the row sum with the highest row sum so far and 1 mark for and changing the \nvalue of HIGHEST if needed) \nAward [1] for outputting the highest row sum once \nAward [3 max] outputting the numbers of rows with the highest total (1 mark for a loop, 1 \nmark for comparing the row total with the highest total and 1 mark for outputting the \ncorresponding index in the ROWTOTALS array) \nloop I from 0 to 6 \n S = 0 \n loop K from 0 to 2 \n  S = S + DICEDIAL[I][K] \n end loop \n  ROWTOTALS[I] = S \n end loop \n  //ROWTOTALS[R] holds the sum of all  \n  //numbers in row R of the DICEDIAL array \n  HIGHEST = 0  //any number <= 0 OR ROWTOTALS[0] \n loop I from 0 to 6 \n if ROWTOTALS[I] > HIGHEST \n then   HIGHEST = ROWTOTALS[I] \n  end if \n end loop  //searching for the highest row total \n  output(‘the highest row total:’, HIGHEST) \n output(‘the highest row total occurs in the following rows:’) \n loop I from 0 to 6 \n if ROWTOTALS[I] = HIGHEST \n  then output(I) \n  end if \n end loop \n– 26 – M23/4/COMSC/HP1/ENG/TZ2/XX/M \nExample 3: \nAward [1] for initializing MAXT \nAward [1] for correct row loop (R) \nAward [1] for calculating the sum of all elements in row R (using correct indexes in the \nDICEDIAL array)  \nAward [1] for comparing the row sum with the highest row sum so far (S == MAXT), and \nchanging \nthe value FLAGMAXTIND[R] to 1 if they are equal \nAward [1] for comparing the row sum with the highest row sum so far (S > MAXT) and \nupdating the highest row sum so far \nAward [1] for reinitializing FLAGMAXTIND array  \nAward [1] for changing the value FLAGMAXTIND[R] to 1 \nAward [1] for outputting the highest row total only once \nAward [2] for outputting row numbers with the highest total (1 mark for a loop, 1 mark for \noutput within if statement) \n// assume FLAGMAXTIND - zero array initialized \nMAXT = 0 \nloop R from 0 to 6 \n S = DICEDIAL[R][0]+ DICEDIAL[R][1]+ DICEDIAL[R][2] \n if S = MAXT  \n then \n FLAGMAXTIND[R]=1 \n  end if \n  if S > MAXT \n  then \n MAXT = S \n loop K from 0 to 6 \n  FLAGMAXTIND[K]=0 \n end loop \n FLAGMAXTIND[R]=1 \n end if \nend loop \noutput('The highest row total is', MAXT) \noutput(' and it occurs in the following rows:') \nloop R from 0 to 6 \n  if FLAGMAXTIND[R] == 1 // or FLAGMAXTIND[R] != 0 \n then \n output(R) \n  end if \nend loop "
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Construct greatest_rows(readings) in Python for a nonempty rectangular integer nested list assesses Construct programs that apply arrays and Lists.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Construct greatest_rows(readings) in Python for a nonempty rectangular integer nested list assesses Construct programs utilizing appropriate selection structures.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "Construct greatest_rows(readings) in Python for a nonempty rectangular integer nested list assesses Construct programs that utilize looping structures to perform repeated actions.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "No visual required by this leaf.",
+        "technical": "Executed unique best,tied rows,negative totals andsingle row."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC020-Q14-c"
+      ]
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC020-Q13-c",
+      "source_question_ids": [
+        "H-SRC020-Q13-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline what a stack’s isEmpty operation returns and why a pop operation may first check it.",
+      "syllabus_codes": [
+        "B2.2.3"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "isEmpty returns True exactly when no items remain. Checking before pop avoids attempting to remove an item from an empty stack.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Correct Boolean condition."
+        },
+        {
+          "marks": 1,
+          "criterion": "Avoids empty-stack removal/underflow."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          18
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC020-Q13-d",
+      "source_question_ids": [
+        "H-SRC020-Q13-d"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct Python reverse_stack(stack,queue), where queue starts empty. Use only stack.push,stack.pop,stack.isEmpty and queue.enqueue,queue.dequeue,queue.isEmpty to reverse stack in place.",
+      "syllabus_codes": [
+        "B2.2.3",
+        "B2.2.4",
+        "B2.3.3"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 5,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "One solution:\ndef reverse_stack(stack, queue):\n    while not stack.isEmpty():\n        queue.enqueue(stack.pop())\n    while not queue.isEmpty():\n        stack.push(queue.dequeue())",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "First loop empties stack."
+        },
+        {
+          "marks": 1,
+          "criterion": "Pop top item."
+        },
+        {
+          "marks": 1,
+          "criterion": "Enqueue each popped item FIFO."
+        },
+        {
+          "marks": 1,
+          "criterion": "Second loop empties queue."
+        },
+        {
+          "marks": 1,
+          "criterion": "Push dequeued items onto original stack."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Traced bottom-to-top[1,2,3]→queue3,2,1→stack[3,2,1]; also empty andsingleton.",
+        "source_comparison": [
+          19
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "def reverse_stack(stack, queue):\n    while not stack.isEmpty():\n        queue.enqueue(stack.pop())\n    while not queue.isEmpty():\n        stack.push(queue.dequeue())",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC020-Q14-a",
+      "source_question_ids": [
+        "H-SRC020-Q14-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct a Python function total_values(readings) that totals all values in a rectangular nested list. To assess traversal, do not use sum.",
+      "syllabus_codes": [
+        "B2.2.2",
+        "B2.3.3"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 3,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "One solution:\ndef total_values(readings):\n    total = 0\n    for row in readings:\n        for value in row:\n            total += value\n    return total",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Traverses rows."
+        },
+        {
+          "marks": 1,
+          "criterion": "Traverses each row’s values."
+        },
+        {
+          "marks": 1,
+          "criterion": "Initializes,accumulates andreturns correct total."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Executed matrix total andemptyrows.",
+        "source_comparison": [
+          20
+        ],
+        "test_code": "def total_values(readings):\n    total = 0\n    for row in readings:\n        for value in row:\n            total += value\n    return total\nassert total_values([[2,4],[1,5]])==12\nassert total_values([[]])==0",
+        "result_file": ""
+      },
+      "code": "def total_values(readings):\n    total = 0\n    for row in readings:\n        for value in row:\n            total += value\n    return total",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC020-Q14-b",
+      "source_question_ids": [
+        "H-SRC020-Q14-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct repeated_value(readings,r) in Python. Each row contains exactly three integers from1 to6. Return the repeated value if at least two are equal; return0 if all differ.",
+      "syllabus_codes": [
+        "B2.2.2",
+        "B2.3.2"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 4,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "One solution:\ndef repeated_value(readings, r):\n    a, b, c = readings[r]\n    if a == b or a == c:\n        return a\n    if b == c:\n        return b\n    return 0",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Uses correct row/threevalues."
+        },
+        {
+          "marks": 1,
+          "criterion": "Tests first value against both others."
+        },
+        {
+          "marks": 1,
+          "criterion": "Tests remainingpair."
+        },
+        {
+          "marks": 1,
+          "criterion": "Returns repeated value or0 correctly, includingall equal."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Exhaustively checked all216 possible triples against independent frequency criterion.",
+        "source_comparison": [
+          21,
+          22,
+          23
+        ],
+        "test_code": "def repeated_value(readings, r):\n    a, b, c = readings[r]\n    if a == b or a == c:\n        return a\n    if b == c:\n        return b\n    return 0\nfrom itertools import product\nfor t in product(range(1,7),repeat=3):\n expected=next((v for v in t if t.count(v)>1),0)\n assert repeated_value([list(t)],0)==expected",
+        "result_file": ""
+      },
+      "code": "def repeated_value(readings, r):\n    a, b, c = readings[r]\n    if a == b or a == c:\n        return a\n    if b == c:\n        return b\n    return 0",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC020-Q14-c",
+      "source_question_ids": [
+        "H-SRC020-Q14-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct greatest_rows(readings) in Python for a nonempty rectangular integer nested list. Return a tuple containing the largest row total and a list of every row index tied for it. Do not use sum or max; the task assesses accumulation and comparison.",
+      "syllabus_codes": [
+        "B2.2.2",
+        "B2.3.2",
+        "B2.3.3"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 8,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "One solution:\ndef greatest_rows(readings):\n    best = None\n    winners = []\n    for i in range(len(readings)):\n        total = 0\n        for value in readings[i]:\n            total += value\n        if best is None or total > best:\n            best = total\n            winners = [i]\n        elif total == best:\n            winners.append(i)\n    return best, winners",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Initializes best/winner state."
+        },
+        {
+          "marks": 1,
+          "criterion": "Visits all rows."
+        },
+        {
+          "marks": 1,
+          "criterion": "Initializes row total for eachrow."
+        },
+        {
+          "marks": 1,
+          "criterion": "Accumulates all values in correctrow."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct greater-total comparison."
+        },
+        {
+          "marks": 1,
+          "criterion": "Updates best and replaces winnerlist on newbest."
+        },
+        {
+          "marks": 1,
+          "criterion": "Appends ties without discarding earlier tiedrows."
+        },
+        {
+          "marks": 1,
+          "criterion": "Returns greatest total andall correct indices."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Executed unique best,tied rows,negative totals andsingle row.",
+        "source_comparison": [
+          24,
+          25,
+          26
+        ],
+        "test_code": "def greatest_rows(readings):\n    best = None\n    winners = []\n    for i in range(len(readings)):\n        total = 0\n        for value in readings[i]:\n            total += value\n        if best is None or total > best:\n            best = total\n            winners = [i]\n        elif total == best:\n            winners.append(i)\n    return best, winners\nassert greatest_rows([[3,4],[6,1],[2,2]])==(7,[0,1])\nassert greatest_rows([[-5,-1],[-2,-1]])==(-3,[1])\nassert greatest_rows([[4]])==(4,[0])",
+        "result_file": ""
+      },
+      "code": "def greatest_rows(readings):\n    best = None\n    winners = []\n    for i in range(len(readings)):\n        total = 0\n        for value in readings[i]:\n            total += value\n        if best is None or total > best:\n            best = total\n            winners = [i]\n        elif total == best:\n            winners.append(i)\n    return best, winners",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    }
+  ]
+}

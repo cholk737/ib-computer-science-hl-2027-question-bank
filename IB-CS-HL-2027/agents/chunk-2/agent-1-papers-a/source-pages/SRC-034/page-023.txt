@@ -1,0 +1,42 @@
+– 22 – 8823 – 7012
+(Option D continued)
+17. A programmer is considering the way in which an arena holds object references to the
+monsters and decides to use a library collection.
+(a) Identify two advantages of using an existing library collection rather than creating one. [2]
+Some types of monsters cause more damage when attacking other types of monsters. The
+game will change the damage of each attack by a factor between –8 and +6 depending on
+the types of the two monsters involved in the battle.
+In Table 1, the attacking monster is indicated by the row and the defending monster by the
+column. For example, if a fire-type monster attacks an ice-type monster, the damage will be
+increased by 6.
+Table 1: The effectiveness of different monster types in a battle
+Defending monster
+Ice Water Fire
+gnikcattA
+retsnom
+Ice 0 −4 +2
+Water −8 0 +5
+Fire +6 −3 0
+This is implemented as a static array in the class as follows:
+Monster int[][]
+effectiveness = {{0, -4, 2},{-8, 0, 5},{6, -3, 0}};
+The following method will be written to return the corresponding value from the
+effectiveness array:
+public static int getAttackingWeight(Monster attacker, Monster defender){
+return // ... to be completed
+}
+(b) Construct the return statement. [2]
+The method in the class
+recommendAttackingMonster(Monster defender) Arena
+recommends the best monster in the array to use in a battle based on its
+monster
+effectiveness against the defending monster.
+If there is more than one monster with the same effectiveness and health points, the first of
+them will be selected.
+(c) Construct the method . You can
+recommendAttackingMonster(Monster defender)
+assume that there is at least one monster in the monsters array, that the attacking
+monster is not in the monsters array, and that the method
+getAttackingWeight
+is available. [6]
+(Option D continues on the following page)

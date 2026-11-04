@@ -1,0 +1,40 @@
+                                                –   15 –                                      8825 – 6407M
+
+
+(c)   Award [9 max]
+
+      Award [1] for starting from the first element in the collection
+      Award [1] for initializing MINC and MAXC
+      Award [1] for the correct loop
+      Award [1] for getting a value from the collection
+      Award [1] for initializing and increasing sum
+      Award [1] for initializing and increasing counter
+      Award [1] for correct comparison and change of MAXC (if needed)
+      Award [1] for correct comparison and change of MINC (if needed)
+      Award [1] for calculating and outputting the average
+      Award [1] outputting MINC and MAXC
+
+      Example 1:
+
+      PLTNT.resetNext()
+      MINC = 500  //or any value greater than 500
+      MAXC = 0    //or any value smaller than 0
+      C = 0  // counter
+      S = 0  // sum
+      while PLTNT.hasNext()
+           X = PLTNT.getNext()
+           S = S + X
+           C = C + 1
+           if MAXC < X
+                 then
+                       MAXC = X
+                 else
+                       if MINC > X
+                            then
+                                  MINC = X
+                       endif
+           endif
+      end loop
+      output ('The maximum pollutant concentration: ', MAXC)
+      output (('The minimum pollutant concentration: ', MINC)
+      output ('The average pollutant concentration: ', S/C)//Accept S DIV C

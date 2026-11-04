@@ -1,0 +1,66 @@
+{
+  "source_question_id": "H-SRC020-Q12-d",
+  "source_id": "SRC-020",
+  "source_filename": "Computer_science_paper_1__TZ2_HL.pdf",
+  "year": "2023",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "TZ2",
+  "option": "",
+  "question": 12,
+  "subquestion": "d",
+  "source_pdf_pages": [
+    6
+  ],
+  "source_printed_pages": [
+    "5"
+  ],
+  "original_marks": 4,
+  "command_term": "Compare",
+  "original_text": "Compare and contrast a centralized control system with a distributed control system for managing the temperature of a house.",
+  "parent_context": "– 5 – 2223 – 7011\nTurn over\n12. Smart control systems can manage the temperature within a house.\n(a) Outline the steps involving the sensor, processor and output transducer to manage \nthe temperature in the house. [5]\n(b) Describe the role of feedback in this control system. [2]\n(c) The smart control system is managed by an operating system.\n(i) Describe one function of an operating system. [2]\n(ii) Outline one reason why a dedicated operating system would be used. [2]\n(d) Compare and contrast a centralized control system with a distributed control system \nfor managing the temperature of a house. [4]",
+  "assets": [],
+  "assessed_concepts": [
+    "Original source task: Compare and contrast a centralized control system with a distributed control system for managing the temperature of a house.",
+    "Compare a single central controller with a distributed set of room controllers managing a building"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-021",
+    "filename": "Computer_science_paper_1__TZ2_HL_markscheme.pdf",
+    "pdf_pages": [
+      17
+    ],
+    "question_reference": "Q12 d",
+    "marking_summary": "Both process sensor inputs to control room conditions. A central controller simplifies coordinated changes but its failure may affect all rooms. Distributed controllers can continue local operation after another controller fails but require coordination/configuration across several nodes.",
+    "source_issues": [],
+    "source_marking_evidence": "– 17 – M23/4/COMSC/HP1/ENG/TZ2/XX/M \n(d) Award [4 max]\nAward marks for giving an account of similarities and differences between centralized\nsystem and distributed system.\nAward [2 max] for centralized system. \nEasier to use- it allows control at a central point; \n  Controlled by a single processor; \nCentralized system is easy to physically secure; \nMore cost-efficient for small systems (such as a house); \nLarge systems are usually more expensive to install due to the connectivity required between \nthe various components; \nHighly dependent on the network connectivity (the system can fail if the nodes lose \nconnectivity as there is only one central node). \nIf it must be expanded (new equipment and processes added) downtime is usually required; \nWhen the software program must be modified it requires downtime/ can have inadvertent \neffects on the existing control scheme; \nWhen the central server is down, no other entity is there to send/receive responses/requests; \nIn case of a local failure (usually) the whole system stops working; \nAward [2 max] for distributed system. \nNot beneficial to build and operate small distributed systems because of the low cost/benefit \nratio; \n Controlled by a collection of independent processors; \nDistributed system is usually easier to install due to fewer connection issues; \nEasier to modify/upgrade without disturbing other processes; \nAllows individual control of settings at each unit or room, so it is more flexible; \nMore complicated to control remotely; \nDifficult to know which node failed/ which node responded; \nIn case of a local failure, all other processes continue to work; "
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "A2.1.2",
+      "scope_evidence": "• Modern digital infrastructure: the internet, cloud computing, distributed systems, edge computing, mobile networks\n• Examples where specific networks are used may include the worldwide web (WWW), cryptocurrency blockchains, smart traffic lights, a school.",
+      "rationale": "Compare a single central controller with a distributed set of room controllers managing a building assesses Describe the purpose, benefits and limitations of modern digital infrastructures.",
+      "theme": "A",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "No visual required by this leaf.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC020-Q12-d"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

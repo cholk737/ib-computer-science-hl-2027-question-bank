@@ -1,0 +1,780 @@
+{
+  "source_id": "SRC-009",
+  "batch_id": "SRC-009-b004",
+  "source_questions": [
+    {
+      "source_question_id": "H-SRC009-Q13-a",
+      "source_id": "SRC-009",
+      "source_filename": "Computer_science_paper_1__HL.pdf",
+      "year": "2024",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "not stated",
+      "option": "",
+      "question": 13,
+      "subquestion": "a",
+      "source_pdf_pages": [
+        6
+      ],
+      "source_printed_pages": [
+        "5"
+      ],
+      "original_marks": 2,
+      "command_term": "Describe",
+      "original_text": "Describe how a stack data structure can be used to resume the app that was initially running.",
+      "parent_context": "– 5 – 8824 – 6904\nTurn over\n(Question 12 continued)\nA siren will make a warning noise when the door is locked and either of the following occur:\n y Movement is detected.\n y The window is open.\n(b) Copy and complete the truth table for this alarm system. [4]\nMOTION DOOR WINDOW SIREN\n0 0 0\nThe central processing unit (CPU) executes a program that is stored as a sequence of \nmachine language instructions in primary memory. It does this by repeatedly fetching an \ninstruction from primary memory, decoding that instruction, executing and storing the result.\n(c) (i)   Identify the CPU register that holds data to be transferred to primary memory. [1]\n(ii) Identify the part of the CPU that performs decoding. [1]\n(iii) State where the calculations will be executed. [1]\n(iv) Explain the role of buses in the execution of a machine language instruction. [4]\n13. Cell phones are used to make phone calls and send text messages. They can also browse \nthe internet and run apps.\nAn incoming call will interrupt an app being executed.\n(a) Describe how a stack data structure can be used to resume the app that was \ninitially running. [2]\n(b) Describe one way a cell phone app can help the user improve their health. [2]\n(c) Outline why a higher screen resolution leads to higher quality images on a cell \nphone screen. [2]\n(d) (i)   Explain what is meant by GPS (global positioning system). [4]\n(ii) Outline one concern of cell phone apps sharing the location of the user. [2]\n(e) Explain one advantage of using a dedicated operating system on a cell phone instead \nof a generic operating system. [3]",
+      "assets": [],
+      "assessed_concepts": [
+        "Original source task: Describe how a stack data structure can be used to resume the app that was initially running.",
+        "Describe how a LIFO stack supports returning to interrupted work when nested interrupt handling has completed"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-015",
+        "filename": "Computer_science_paper_1__HL_markscheme.pdf",
+        "pdf_pages": [
+          12
+        ],
+        "question_reference": "Q13 a",
+        "marking_summary": "The saved return information/state for each interruption is pushed. Popping the most recently saved state first resumes the most recently interrupted work in the reverse order of suspension.",
+        "source_issues": [],
+        "source_marking_evidence": "– 12 – 8824 – 6904M \n13. (a) Award [2 max] \nall parameters from the application will be pushed onto a stack; \nand popped off back (into the CPU) when the call is over; \n when the incoming call arrives, the OS saves the current state of the app and pushes it \n onto the stack; \n once the call is ended the OS pops the most recent state (the state of the app right \n before the call) from the stack and restores it; \n(b) Award [2 max]\nAward [1] for identifying a way and award [1] for an expansion.\nDifferent health cell phone apps can track/record data; \nTo detect unhealthy conditions; \nNote: Accept examples of cell phone apps that can monitor any vital signs \nand be used in diagnostic, such as sleep tracking functionality in prenatal care, etc. \nCell phone apps can access nutrition information/guide; \nSo, users can eat healthier food; \nCell phone apps to monitor/track exercise (track distance, time, speed, and calories burned); \nAnd serve a role as motivator to do more of it; \nNote: Accept other reasonable answers. \n(c) Award [2 max]\nby increasing screen resolution more elements can be addressed on the same area of\nscreen;\nso, more data from an image can be displayed (in the same area);\nhigher screen resolution means finer colour transition/ better colour gradients;\nespecially in areas where colours shift gradually;\nhigher screen resolution increases text clarity;\nso even smaller font sizes can be read as the letters appear better defined;\nhigher resolutions indicate more pixels;\nso, more details can be captured;"
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.3",
+          "scope_evidence": "• Must include fundamental operations such as push, pop, peek and isEmpty\n• How stack operations impact both performance and memory usage\n• An appropriate stack for a specific problem",
+          "rationale": "Describe how a LIFO stack supports returning to interrupted work when nested interrupt handling has completed assesses Explain the concept of a stack as a “last in, first out” (LIFO) data structure.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "A1.3.4",
+          "scope_evidence": "• Event frequency, CPU processing overheads, power source (battery or mains), event predictability, controlled latency, security concerns\n• Real-world scenarios may include keyboard and mouse inputs, network communications, disk input/output operations, embedded systems, real-time systems.",
+          "rationale": "Describe how a LIFO stack supports returning to interrupted work when nested interrupt handling has completed assesses Evaluate the use of polling and interrupt handling.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "No visual required by this leaf.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      }
+    },
+    {
+      "source_question_id": "H-SRC009-Q13-b",
+      "source_id": "SRC-009",
+      "source_filename": "Computer_science_paper_1__HL.pdf",
+      "year": "2024",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "not stated",
+      "option": "",
+      "question": 13,
+      "subquestion": "b",
+      "source_pdf_pages": [
+        6
+      ],
+      "source_printed_pages": [
+        "5"
+      ],
+      "original_marks": 2,
+      "command_term": "Describe",
+      "original_text": "Describe one way a cell phone app can help the user improve their health.",
+      "parent_context": "– 5 – 8824 – 6904\nTurn over\n(Question 12 continued)\nA siren will make a warning noise when the door is locked and either of the following occur:\n y Movement is detected.\n y The window is open.\n(b) Copy and complete the truth table for this alarm system. [4]\nMOTION DOOR WINDOW SIREN\n0 0 0\nThe central processing unit (CPU) executes a program that is stored as a sequence of \nmachine language instructions in primary memory. It does this by repeatedly fetching an \ninstruction from primary memory, decoding that instruction, executing and storing the result.\n(c) (i)   Identify the CPU register that holds data to be transferred to primary memory. [1]\n(ii) Identify the part of the CPU that performs decoding. [1]\n(iii) State where the calculations will be executed. [1]\n(iv) Explain the role of buses in the execution of a machine language instruction. [4]\n13. Cell phones are used to make phone calls and send text messages. They can also browse \nthe internet and run apps.\nAn incoming call will interrupt an app being executed.\n(a) Describe how a stack data structure can be used to resume the app that was \ninitially running. [2]\n(b) Describe one way a cell phone app can help the user improve their health. [2]\n(c) Outline why a higher screen resolution leads to higher quality images on a cell \nphone screen. [2]\n(d) (i)   Explain what is meant by GPS (global positioning system). [4]\n(ii) Outline one concern of cell phone apps sharing the location of the user. [2]\n(e) Explain one advantage of using a dedicated operating system on a cell phone instead \nof a generic operating system. [3]",
+      "assets": [],
+      "assessed_concepts": [
+        "Original source task: Describe one way a cell phone app can help the user improve their health.",
+        "Naming health-app benefits is not itself an explicit2027 computer-science objective."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-015",
+        "filename": "Computer_science_paper_1__HL_markscheme.pdf",
+        "pdf_pages": [
+          12
+        ],
+        "question_reference": "Q13 b",
+        "marking_summary": "Excluded topic; original criteria retained in referenced MS source.",
+        "source_issues": [],
+        "source_marking_evidence": "– 12 – 8824 – 6904M \n13. (a) Award [2 max] \nall parameters from the application will be pushed onto a stack; \nand popped off back (into the CPU) when the call is over; \n when the incoming call arrives, the OS saves the current state of the app and pushes it \n onto the stack; \n once the call is ended the OS pops the most recent state (the state of the app right \n before the call) from the stack and restores it; \n(b) Award [2 max]\nAward [1] for identifying a way and award [1] for an expansion.\nDifferent health cell phone apps can track/record data; \nTo detect unhealthy conditions; \nNote: Accept examples of cell phone apps that can monitor any vital signs \nand be used in diagnostic, such as sleep tracking functionality in prenatal care, etc. \nCell phone apps can access nutrition information/guide; \nSo, users can eat healthier food; \nCell phone apps to monitor/track exercise (track distance, time, speed, and calories burned); \nAnd serve a role as motivator to do more of it; \nNote: Accept other reasonable answers. \n(c) Award [2 max]\nby increasing screen resolution more elements can be addressed on the same area of\nscreen;\nso, more data from an image can be displayed (in the same area);\nhigher screen resolution means finer colour transition/ better colour gradients;\nespecially in areas where colours shift gradually;\nhigher screen resolution increases text clarity;\nso even smaller font sizes can be read as the letters appear better defined;\nhigher resolutions indicate more pixels;\nso, more details can be captured;"
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Naming health-app benefits is not itself an explicit2027 computer-science objective.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "No visual required by this leaf.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      }
+    },
+    {
+      "source_question_id": "H-SRC009-Q13-c",
+      "source_id": "SRC-009",
+      "source_filename": "Computer_science_paper_1__HL.pdf",
+      "year": "2024",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "not stated",
+      "option": "",
+      "question": 13,
+      "subquestion": "c",
+      "source_pdf_pages": [
+        6
+      ],
+      "source_printed_pages": [
+        "5"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "Outline why a higher screen resolution leads to higher quality images on a cell phone screen.",
+      "parent_context": "– 5 – 8824 – 6904\nTurn over\n(Question 12 continued)\nA siren will make a warning noise when the door is locked and either of the following occur:\n y Movement is detected.\n y The window is open.\n(b) Copy and complete the truth table for this alarm system. [4]\nMOTION DOOR WINDOW SIREN\n0 0 0\nThe central processing unit (CPU) executes a program that is stored as a sequence of \nmachine language instructions in primary memory. It does this by repeatedly fetching an \ninstruction from primary memory, decoding that instruction, executing and storing the result.\n(c) (i)   Identify the CPU register that holds data to be transferred to primary memory. [1]\n(ii) Identify the part of the CPU that performs decoding. [1]\n(iii) State where the calculations will be executed. [1]\n(iv) Explain the role of buses in the execution of a machine language instruction. [4]\n13. Cell phones are used to make phone calls and send text messages. They can also browse \nthe internet and run apps.\nAn incoming call will interrupt an app being executed.\n(a) Describe how a stack data structure can be used to resume the app that was \ninitially running. [2]\n(b) Describe one way a cell phone app can help the user improve their health. [2]\n(c) Outline why a higher screen resolution leads to higher quality images on a cell \nphone screen. [2]\n(d) (i)   Explain what is meant by GPS (global positioning system). [4]\n(ii) Outline one concern of cell phone apps sharing the location of the user. [2]\n(e) Explain one advantage of using a dedicated operating system on a cell phone instead \nof a generic operating system. [3]",
+      "assets": [],
+      "assessed_concepts": [
+        "Original source task: Outline why a higher screen resolution leads to higher quality images on a cell phone screen.",
+        "Outline why representing an image using a larger pixel grid can retain more spatial detail, assuming an unchanged field of view and adequate source image quality"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-015",
+        "filename": "Computer_science_paper_1__HL_markscheme.pdf",
+        "pdf_pages": [
+          12
+        ],
+        "question_reference": "Q13 c",
+        "marking_summary": "The image is sampled at more positions; smaller features can be represented by separate pixels rather than merging into one.",
+        "source_issues": [],
+        "source_marking_evidence": "– 12 – 8824 – 6904M \n13. (a) Award [2 max] \nall parameters from the application will be pushed onto a stack; \nand popped off back (into the CPU) when the call is over; \n when the incoming call arrives, the OS saves the current state of the app and pushes it \n onto the stack; \n once the call is ended the OS pops the most recent state (the state of the app right \n before the call) from the stack and restores it; \n(b) Award [2 max]\nAward [1] for identifying a way and award [1] for an expansion.\nDifferent health cell phone apps can track/record data; \nTo detect unhealthy conditions; \nNote: Accept examples of cell phone apps that can monitor any vital signs \nand be used in diagnostic, such as sleep tracking functionality in prenatal care, etc. \nCell phone apps can access nutrition information/guide; \nSo, users can eat healthier food; \nCell phone apps to monitor/track exercise (track distance, time, speed, and calories burned); \nAnd serve a role as motivator to do more of it; \nNote: Accept other reasonable answers. \n(c) Award [2 max]\nby increasing screen resolution more elements can be addressed on the same area of\nscreen;\nso, more data from an image can be displayed (in the same area);\nhigher screen resolution means finer colour transition/ better colour gradients;\nespecially in areas where colours shift gradually;\nhigher screen resolution increases text clarity;\nso even smaller font sizes can be read as the letters appear better defined;\nhigher resolutions indicate more pixels;\nso, more details can be captured;"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "A1.2.2",
+          "scope_evidence": "• The fundamentals of binary encoding and the impact on data storage and retrieval\n• The mechanisms by which data such as integers, strings, characters, images, audio and video are stored in binary form",
+          "rationale": "Outline why representing an image using a larger pixel grid can retain more spatial detail, assuming an unchanged field of view and adequate source image quality assesses Explain how binary is used to store data.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "No visual required by this leaf.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      }
+    },
+    {
+      "source_question_id": "H-SRC009-Q13-d-i",
+      "source_id": "SRC-009",
+      "source_filename": "Computer_science_paper_1__HL.pdf",
+      "year": "2024",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "not stated",
+      "option": "",
+      "question": 13,
+      "subquestion": "d-i",
+      "source_pdf_pages": [
+        6
+      ],
+      "source_printed_pages": [
+        "5"
+      ],
+      "original_marks": 4,
+      "command_term": "Explain",
+      "original_text": "Explain what is meant by GPS (global positioning system).",
+      "parent_context": "– 5 – 8824 – 6904\nTurn over\n(Question 12 continued)\nA siren will make a warning noise when the door is locked and either of the following occur:\n y Movement is detected.\n y The window is open.\n(b) Copy and complete the truth table for this alarm system. [4]\nMOTION DOOR WINDOW SIREN\n0 0 0\nThe central processing unit (CPU) executes a program that is stored as a sequence of \nmachine language instructions in primary memory. It does this by repeatedly fetching an \ninstruction from primary memory, decoding that instruction, executing and storing the result.\n(c) (i)   Identify the CPU register that holds data to be transferred to primary memory. [1]\n(ii) Identify the part of the CPU that performs decoding. [1]\n(iii) State where the calculations will be executed. [1]\n(iv) Explain the role of buses in the execution of a machine language instruction. [4]\n13. Cell phones are used to make phone calls and send text messages. They can also browse \nthe internet and run apps.\nAn incoming call will interrupt an app being executed.\n(a) Describe how a stack data structure can be used to resume the app that was \ninitially running. [2]\n(b) Describe one way a cell phone app can help the user improve their health. [2]\n(c) Outline why a higher screen resolution leads to higher quality images on a cell \nphone screen. [2]\n(d) (i)   Explain what is meant by GPS (global positioning system). [4]\n(ii) Outline one concern of cell phone apps sharing the location of the user. [2]\n(e) Explain one advantage of using a dedicated operating system on a cell phone instead \nof a generic operating system. [3]",
+      "assets": [],
+      "assessed_concepts": [
+        "Original source task: Explain what is meant by GPS (global positioning system).",
+        "GPS satellite/trilateration mechanism is not an individual2027 learning requirement."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-015",
+        "filename": "Computer_science_paper_1__HL_markscheme.pdf",
+        "pdf_pages": [
+          13
+        ],
+        "question_reference": "Q13 d-i",
+        "marking_summary": "Excluded topic; original criteria retained in referenced MS source.",
+        "source_issues": [],
+        "source_marking_evidence": "– 13 – 8824 – 6904M \n(d) (i)Award [4 max]\nThe Global Positioning System (GPS) is a navigation system/ a system used to determine\nthe ground position of an object;\nIt consists of three segments: satellites, control (made up of Earth-based monitor stations),\nand GPS receivers (user equipment);\nA number of satellites continuously send out signals containing their position and\nthe exact time the signal was sent;\nGPS receiver (accept mobile phones) picks up the signal and determines the distance\nto each satellite (by calculating the time required to receive the signal);\nBy using trilateration, it determines the exact location (by knowing the distance to at\nleast four satellites);\n(ii) Award [2 max]\nAward [1] for a concern and [1] for an expansion.\nPrivacy concerns;\nAll the time and at all locations/ in a place and time when a user has a reasonable\nexpectation of privacy;\nSafety concerns;\nsurveillance is possible/ possible sharing the user’s whereabouts with stalkers;\nAdvertisers could profile;\nUser’s physical/online habits;\nErroneous data could be created;\nBecause of missing/incorrect location information;"
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "GPS satellite/trilateration mechanism is not an individual2027 learning requirement.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "No visual required by this leaf.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      }
+    },
+    {
+      "source_question_id": "H-SRC009-Q13-d-ii",
+      "source_id": "SRC-009",
+      "source_filename": "Computer_science_paper_1__HL.pdf",
+      "year": "2024",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "not stated",
+      "option": "",
+      "question": 13,
+      "subquestion": "d-ii",
+      "source_pdf_pages": [
+        6
+      ],
+      "source_printed_pages": [
+        "5"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "Outline one concern of cell phone apps sharing the location of the user.",
+      "parent_context": "– 5 – 8824 – 6904\nTurn over\n(Question 12 continued)\nA siren will make a warning noise when the door is locked and either of the following occur:\n y Movement is detected.\n y The window is open.\n(b) Copy and complete the truth table for this alarm system. [4]\nMOTION DOOR WINDOW SIREN\n0 0 0\nThe central processing unit (CPU) executes a program that is stored as a sequence of \nmachine language instructions in primary memory. It does this by repeatedly fetching an \ninstruction from primary memory, decoding that instruction, executing and storing the result.\n(c) (i)   Identify the CPU register that holds data to be transferred to primary memory. [1]\n(ii) Identify the part of the CPU that performs decoding. [1]\n(iii) State where the calculations will be executed. [1]\n(iv) Explain the role of buses in the execution of a machine language instruction. [4]\n13. Cell phones are used to make phone calls and send text messages. They can also browse \nthe internet and run apps.\nAn incoming call will interrupt an app being executed.\n(a) Describe how a stack data structure can be used to resume the app that was \ninitially running. [2]\n(b) Describe one way a cell phone app can help the user improve their health. [2]\n(c) Outline why a higher screen resolution leads to higher quality images on a cell \nphone screen. [2]\n(d) (i)   Explain what is meant by GPS (global positioning system). [4]\n(ii) Outline one concern of cell phone apps sharing the location of the user. [2]\n(e) Explain one advantage of using a dedicated operating system on a cell phone instead \nof a generic operating system. [3]",
+      "assets": [],
+      "assessed_concepts": [
+        "Original source task: Outline one concern of cell phone apps sharing the location of the user.",
+        "Outline one privacy concern if a navigation provider sells identifiable journey histories"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-015",
+        "filename": "Computer_science_paper_1__HL_markscheme.pdf",
+        "pdf_pages": [
+          13
+        ],
+        "question_reference": "Q13 d-ii",
+        "marking_summary": "The histories reveal a person’s routines or sensitive destinations; others can infer home/work or visits the person expected to keep private.",
+        "source_issues": [],
+        "source_marking_evidence": "– 13 – 8824 – 6904M \n(d) (i)Award [4 max]\nThe Global Positioning System (GPS) is a navigation system/ a system used to determine\nthe ground position of an object;\nIt consists of three segments: satellites, control (made up of Earth-based monitor stations),\nand GPS receivers (user equipment);\nA number of satellites continuously send out signals containing their position and\nthe exact time the signal was sent;\nGPS receiver (accept mobile phones) picks up the signal and determines the distance\nto each satellite (by calculating the time required to receive the signal);\nBy using trilateration, it determines the exact location (by knowing the distance to at\nleast four satellites);\n(ii) Award [2 max]\nAward [1] for a concern and [1] for an expansion.\nPrivacy concerns;\nAll the time and at all locations/ in a place and time when a user has a reasonable\nexpectation of privacy;\nSafety concerns;\nsurveillance is possible/ possible sharing the user’s whereabouts with stalkers;\nAdvertisers could profile;\nUser’s physical/online habits;\nErroneous data could be created;\nBecause of missing/incorrect location information;"
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "A4.4.2",
+          "scope_evidence": "• The importance of continually reassessing ethical guidelines as technology advances\n• The potential implications of emerging technologies such as quantum computing, augmented reality, virtual reality and the pervasive use of AI on society, individual rights, privacy and equity",
+          "rationale": "Outline one privacy concern if a navigation provider sells identifiable journey histories assesses Discuss ethical aspects of the increasing integration of computer technologies into daily life.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "No visual required by this leaf.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      }
+    },
+    {
+      "source_question_id": "H-SRC009-Q13-e",
+      "source_id": "SRC-009",
+      "source_filename": "Computer_science_paper_1__HL.pdf",
+      "year": "2024",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "not stated",
+      "option": "",
+      "question": 13,
+      "subquestion": "e",
+      "source_pdf_pages": [
+        6
+      ],
+      "source_printed_pages": [
+        "5"
+      ],
+      "original_marks": 3,
+      "command_term": "Explain",
+      "original_text": "Explain one advantage of using a dedicated operating system on a cell phone instead of a generic operating system.",
+      "parent_context": "– 5 – 8824 – 6904\nTurn over\n(Question 12 continued)\nA siren will make a warning noise when the door is locked and either of the following occur:\n y Movement is detected.\n y The window is open.\n(b) Copy and complete the truth table for this alarm system. [4]\nMOTION DOOR WINDOW SIREN\n0 0 0\nThe central processing unit (CPU) executes a program that is stored as a sequence of \nmachine language instructions in primary memory. It does this by repeatedly fetching an \ninstruction from primary memory, decoding that instruction, executing and storing the result.\n(c) (i)   Identify the CPU register that holds data to be transferred to primary memory. [1]\n(ii) Identify the part of the CPU that performs decoding. [1]\n(iii) State where the calculations will be executed. [1]\n(iv) Explain the role of buses in the execution of a machine language instruction. [4]\n13. Cell phones are used to make phone calls and send text messages. They can also browse \nthe internet and run apps.\nAn incoming call will interrupt an app being executed.\n(a) Describe how a stack data structure can be used to resume the app that was \ninitially running. [2]\n(b) Describe one way a cell phone app can help the user improve their health. [2]\n(c) Outline why a higher screen resolution leads to higher quality images on a cell \nphone screen. [2]\n(d) (i)   Explain what is meant by GPS (global positioning system). [4]\n(ii) Outline one concern of cell phone apps sharing the location of the user. [2]\n(e) Explain one advantage of using a dedicated operating system on a cell phone instead \nof a generic operating system. [3]",
+      "assets": [],
+      "assessed_concepts": [
+        "Original source task: Explain one advantage of using a dedicated operating system on a cell phone instead of a generic operating system.",
+        "Explain one reason a portable measuring device may use an OS configured only for its required hardware and tasks"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-015",
+        "filename": "Computer_science_paper_1__HL_markscheme.pdf",
+        "pdf_pages": [
+          14
+        ],
+        "question_reference": "Q13 e",
+        "marking_summary": "The OS can omit unused services, reducing memory and processing overhead. This leaves limited resources available for measurement/control tasks, helping the device meet its performance needs.",
+        "source_issues": [
+          "Original MS suggests prohibiting updates improves security; this is not copied."
+        ],
+        "source_marking_evidence": "– 14 – 8824 – 6904M \n(e) Award [3 max]\nA dedicated operating system for a mobile phone will take up less storage space than a full-\nsized operating system; \nthis will allow the device to function more quickly; \nbecause it doesn’t contain features that aren’t needed; \nThe operating system is optimized for speed/ made to be as fast as possible; \nuses resources effectively; \nbecause it is created for a specific hardware; \nSecurity is improved; \nby prohibiting services that would run on a generic operating system/ prohibiting software \nupdate; \nonly allowing very specific range of IP addresses or keys allowed; \nTo suit a particular individual or task / customization; \nonly a minimal/ basic modification can be made; \nin user interface/ the network connections/ and virtually anything else; \n A dedicated OS is designed specifically for a task;  \n makes the most efficient use of hardware available; \n does not include unnecessary features; \nNote: Accept other reasonable answers on customization/ security/ speed/ optimization. "
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "A1.3.1",
+          "scope_evidence": "• Operating systems abstract hardware complexities to manage system resources",
+          "rationale": "Explain one reason a portable measuring device may use an OS configured only for its required hardware and tasks assesses Describe the role of operating systems.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "A1.3.2",
+          "scope_evidence": "• Maintaining system integrity while running operating systems’ background operations\n• Memory management, file system, device management, scheduling, security, accounting, graphical user interface (GUI), virtualization, networking",
+          "rationale": "Explain one reason a portable measuring device may use an OS configured only for its required hardware and tasks assesses Describe the functions of an operating system.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "No visual required by this leaf.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      }
+    },
+    {
+      "source_question_id": "H-SRC009-Q14-a",
+      "source_id": "SRC-009",
+      "source_filename": "Computer_science_paper_1__HL.pdf",
+      "year": "2024",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "not stated",
+      "option": "",
+      "question": 14,
+      "subquestion": "a",
+      "source_pdf_pages": [
+        7
+      ],
+      "source_printed_pages": [
+        "6"
+      ],
+      "original_marks": 4,
+      "command_term": "Outline",
+      "original_text": "Outline two advantages of using a linked list rather than a static array in this scenario.",
+      "parent_context": "– 6 – 8824 – 6904\n14. An application requires a list of students’ names to be held in alphabetical order, from A to Z, \nin the primary memory.\nThe application must allow for insertion and deletion of names.\n(a) Outline two advantages of using a linked list rather than a static array in this scenario. [4]\n(b) Explain how a specified student’s name could be found in a linked list. [5]\nA double linked list would be preferred over a single linked list for applications that require the \nability to move forward (from A to Z) and backward (from Z to A) through the list of names.\n(c) (i)   Describe the structure of a double linked list. [4]\n(ii) State two applications of double linked lists in computing. [2]\n15. The two-dimensional array MAT is used to store randomly generated integers in the range \nfrom 0 to 9.\nIn the MAT array, some numbers can be repeated multiple times and other numbers may \nnot appear at all (see Figure 1).\nFigure 1: Example data stored in the MAT array\n[0] [1] [2] [3] [4] [5] [6]\n[0] 0 2 5 9 3 6 1\n[1] 0 2 9 0 7 0 0\n[2] 4 2 7 9 5 7 1\n[3] 7 2 3 1 5 4 0\n[4] 3 6 3 9 9 6 0\n[5] 7 4 3 1 7 9 3\n[6] 3 9 6 4 2 2 4\n(This question continues on the following page)",
+      "assets": [],
+      "assessed_concepts": [
+        "Original source task: Outline two advantages of using a linked list rather than a static array in this scenario.",
+        "Outline two advantages of a linked list over a fixed-size array for an ordered register with frequent additions and deletions"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-015",
+        "filename": "Computer_science_paper_1__HL_markscheme.pdf",
+        "pdf_pages": [
+          15
+        ],
+        "question_reference": "Q14 a",
+        "marking_summary": "A node can be inserted/deleted by changing links once the position is known, avoiding shifts of later items. Nodes can be allocated as needed, avoiding a predetermined array capacity.",
+        "source_issues": [],
+        "source_marking_evidence": "– 15 – 8824 – 6904M \n14. (a) Award [4 max] \nAward [1] for an advantage and [1] mark for an expansion, x2. \nNames can be inserted/deleted quickly/easy just by manipulating the pointers/ by updating \nthe address; \nwithout resorting/shuffling (as in an array);  \nBetter use of memory/ the number of names (size of the list) is not fixed (as in an array); \nso, no wasted space / linked list can shrink and grow at the runtime (by deallocating or \nallocating memory);  \nNo need for an initial size/ predetermined size in linked list (as in an array); \nwhich allocate space that may or may not be fully in use; \n(b) Award [5 max]\nTemporary pointer should be used;\nand initially set to point to the beginning of the list;\nloop through the list;\nfollow the internal pointers;\ncompare the name in the node pointed to by the temporary pointer with the searched name;\nIf they are same (the name is found) then stop searching;\nIf the end of the list is reached / temporary pointer equals null then the searched name is not\non the list;\n(c) (i) Award [4 max] \nDouble linked list DLL has two external pointers, one pointer points to the first element \nof the DLL, and other points to the last element in the DLL; \nEach node consists of a data field(s); \nand two pointers (for example, called NEXT and PREV); \nEach node is linked with its next node (using its pointer NEXT) and previous node \n(using its pointer PREV); \nThe NEXT pointer of the last node is null (to mark the end of the list - forward traversal) \nand the PREV pointer of the first node is null (to mark the end of list - backward \ntraversal); \n Note: Accept diagrams. \n(ii) Award [2 max]\nStoring the browsing history which allow going forward and backwards in browsing\nhistory;\nA music player which has next and previous buttons;\nIn LRU caching/ cache that is employed in cases which uses most/least recently\naccessed items/ examples like in the case of android phone home screen to save the\nmost recently used apps;\nAn application that has a ‘Most Recently Used’ element / for example, list of file names;\nIn games, to represent anything that requires an order in a game / A DLL can be used\nto represent a deck of cards;\nUndo-Redo functionality (for example, in word processing);\nNote: Accept any application where front and back navigation is required. "
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B4.1.2",
+          "scope_evidence": "• Lists must include singly, doubly, circular\n• Sketch of linked lists and implementation of basic operations diagrammatically, such as insertion, deletion, traversal, search\n• The advantages and disadvantages of using linked lists over other data structures like arrays, particularly in terms of memory utilization and performance",
+          "rationale": "Outline two advantages of a linked list over a fixed-size array for an ordered register with frequent additions and deletions assesses Evaluate linked lists.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "No visual required by this leaf.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      }
+    },
+    {
+      "source_question_id": "H-SRC009-Q14-b",
+      "source_id": "SRC-009",
+      "source_filename": "Computer_science_paper_1__HL.pdf",
+      "year": "2024",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "not stated",
+      "option": "",
+      "question": 14,
+      "subquestion": "b",
+      "source_pdf_pages": [
+        7
+      ],
+      "source_printed_pages": [
+        "6"
+      ],
+      "original_marks": 5,
+      "command_term": "Explain",
+      "original_text": "Explain how a specified student’s name could be found in a linked list.",
+      "parent_context": "– 6 – 8824 – 6904\n14. An application requires a list of students’ names to be held in alphabetical order, from A to Z, \nin the primary memory.\nThe application must allow for insertion and deletion of names.\n(a) Outline two advantages of using a linked list rather than a static array in this scenario. [4]\n(b) Explain how a specified student’s name could be found in a linked list. [5]\nA double linked list would be preferred over a single linked list for applications that require the \nability to move forward (from A to Z) and backward (from Z to A) through the list of names.\n(c) (i)   Describe the structure of a double linked list. [4]\n(ii) State two applications of double linked lists in computing. [2]\n15. The two-dimensional array MAT is used to store randomly generated integers in the range \nfrom 0 to 9.\nIn the MAT array, some numbers can be repeated multiple times and other numbers may \nnot appear at all (see Figure 1).\nFigure 1: Example data stored in the MAT array\n[0] [1] [2] [3] [4] [5] [6]\n[0] 0 2 5 9 3 6 1\n[1] 0 2 9 0 7 0 0\n[2] 4 2 7 9 5 7 1\n[3] 7 2 3 1 5 4 0\n[4] 3 6 3 9 9 6 0\n[5] 7 4 3 1 7 9 3\n[6] 3 9 6 4 2 2 4\n(This question continues on the following page)",
+      "assets": [],
+      "assessed_concepts": [
+        "Original source task: Explain how a specified student’s name could be found in a linked list.",
+        "Explain how to search a singly linked list for a specified product code and report failure if absent"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-015",
+        "filename": "Computer_science_paper_1__HL_markscheme.pdf",
+        "pdf_pages": [
+          15
+        ],
+        "question_reference": "Q14 b",
+        "marking_summary": "Set current=head. While current is not None, compare its code with the target; return/report found on equality, otherwise follow current.next. If current becomes None, report absent.",
+        "source_issues": [],
+        "source_marking_evidence": "– 15 – 8824 – 6904M \n14. (a) Award [4 max] \nAward [1] for an advantage and [1] mark for an expansion, x2. \nNames can be inserted/deleted quickly/easy just by manipulating the pointers/ by updating \nthe address; \nwithout resorting/shuffling (as in an array);  \nBetter use of memory/ the number of names (size of the list) is not fixed (as in an array); \nso, no wasted space / linked list can shrink and grow at the runtime (by deallocating or \nallocating memory);  \nNo need for an initial size/ predetermined size in linked list (as in an array); \nwhich allocate space that may or may not be fully in use; \n(b) Award [5 max]\nTemporary pointer should be used;\nand initially set to point to the beginning of the list;\nloop through the list;\nfollow the internal pointers;\ncompare the name in the node pointed to by the temporary pointer with the searched name;\nIf they are same (the name is found) then stop searching;\nIf the end of the list is reached / temporary pointer equals null then the searched name is not\non the list;\n(c) (i) Award [4 max] \nDouble linked list DLL has two external pointers, one pointer points to the first element \nof the DLL, and other points to the last element in the DLL; \nEach node consists of a data field(s); \nand two pointers (for example, called NEXT and PREV); \nEach node is linked with its next node (using its pointer NEXT) and previous node \n(using its pointer PREV); \nThe NEXT pointer of the last node is null (to mark the end of the list - forward traversal) \nand the PREV pointer of the first node is null (to mark the end of list - backward \ntraversal); \n Note: Accept diagrams. \n(ii) Award [2 max]\nStoring the browsing history which allow going forward and backwards in browsing\nhistory;\nA music player which has next and previous buttons;\nIn LRU caching/ cache that is employed in cases which uses most/least recently\naccessed items/ examples like in the case of android phone home screen to save the\nmost recently used apps;\nAn application that has a ‘Most Recently Used’ element / for example, list of file names;\nIn games, to represent anything that requires an order in a game / A DLL can be used\nto represent a deck of cards;\nUndo-Redo functionality (for example, in word processing);\nNote: Accept any application where front and back navigation is required. "
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B4.1.3",
+          "scope_evidence": "• The basic operations on a linked list, such as insertion, deletion, traversal, search",
+          "rationale": "Explain how to search a singly linked list for a specified product code and report failure if absent assesses Construct and apply linked lists: singly, doubly and circular.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "No visual required by this leaf.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      }
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC009-Q13-a",
+      "source_question_ids": [
+        "H-SRC009-Q13-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Describe how a LIFO stack supports returning to interrupted work when nested interrupt handling has completed.",
+      "syllabus_codes": [
+        "B2.2.3",
+        "A1.3.4"
+      ],
+      "theme": "B;A",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Describe",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "The saved return information/state for each interruption is pushed. Popping the most recently saved state first resumes the most recently interrupted work in the reverse order of suspension.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Save return information/state by push."
+        },
+        {
+          "marks": 1,
+          "criterion": "Pop latest state first to resume in reverse order."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          12
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC009-Q13-c",
+      "source_question_ids": [
+        "H-SRC009-Q13-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline why representing an image using a larger pixel grid can retain more spatial detail, assuming an unchanged field of view and adequate source image quality.",
+      "syllabus_codes": [
+        "A1.2.2"
+      ],
+      "theme": "A",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Moves from display marketing to image representation in binary, without asserting resolution guarantees colour quality.",
+      "solution": "The image is sampled at more positions; smaller features can be represented by separate pixels rather than merging into one.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "More spatial samples/pixels."
+        },
+        {
+          "marks": 1,
+          "criterion": "Finer features can be separately encoded."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          12
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC009-Q13-d-ii",
+      "source_question_ids": [
+        "H-SRC009-Q13-d-ii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline one privacy concern if a navigation provider sells identifiable journey histories.",
+      "syllabus_codes": [
+        "A4.4.2"
+      ],
+      "theme": "A",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "The histories reveal a person’s routines or sensitive destinations; others can infer home/work or visits the person expected to keep private.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Identifies privacy disclosure/profiling concern."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains contextual consequence of identifiable journeys."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          13
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC009-Q13-e",
+      "source_question_ids": [
+        "H-SRC009-Q13-e"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Explain one reason a portable measuring device may use an OS configured only for its required hardware and tasks.",
+      "syllabus_codes": [
+        "A1.3.1",
+        "A1.3.2"
+      ],
+      "theme": "A",
+      "level": "SL/HL common",
+      "marks": 3,
+      "command_term": "Explain",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "The OS can omit unused services, reducing memory and processing overhead. This leaves limited resources available for measurement/control tasks, helping the device meet its performance needs.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Omits unneeded services/components."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains reduced resource demand."
+        },
+        {
+          "marks": 1,
+          "criterion": "Links to limited device resources/task performance."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          14
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC009-Q14-a",
+      "source_question_ids": [
+        "H-SRC009-Q14-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline two advantages of a linked list over a fixed-size array for an ordered register with frequent additions and deletions.",
+      "syllabus_codes": [
+        "B4.1.2"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 4,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "A node can be inserted/deleted by changing links once the position is known, avoiding shifts of later items. Nodes can be allocated as needed, avoiding a predetermined array capacity.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Relinking insertion/deletion."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains avoiding shifts once located."
+        },
+        {
+          "marks": 1,
+          "criterion": "Dynamic node allocation."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains capacity flexibility without claiming zero memory overhead."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          15
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC009-Q14-b",
+      "source_question_ids": [
+        "H-SRC009-Q14-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Explain how to search a singly linked list for a specified product code and report failure if absent.",
+      "syllabus_codes": [
+        "B4.1.3"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 5,
+      "command_term": "Explain",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Set current=head. While current is not None, compare its code with the target; return/report found on equality, otherwise follow current.next. If current becomes None, report absent.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Temporary pointer starts at head."
+        },
+        {
+          "marks": 1,
+          "criterion": "Loop while node exists."
+        },
+        {
+          "marks": 1,
+          "criterion": "Compare node data with target."
+        },
+        {
+          "marks": 1,
+          "criterion": "Stop correctly on match."
+        },
+        {
+          "marks": 1,
+          "criterion": "Advance and report failure at end."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          15
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    }
+  ]
+}

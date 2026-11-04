@@ -1,0 +1,37 @@
+{
+  "question_id": "P-SRC009-Q12-b",
+  "unofficial": true,
+  "marks": 4,
+  "solution": "000→0,001→0,010→0,011→0,100→0,101→1,110→1,111→1.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Rows000/001 both0."
+    },
+    {
+      "marks": 1,
+      "criterion": "Rows010/011 both0."
+    },
+    {
+      "marks": 1,
+      "criterion": "Rows100→0 and101→1."
+    },
+    {
+      "marks": 1,
+      "criterion": "Rows110/111 both1."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "All8 combinations enumerated for armed and(smoke or heat).",
+    "source_comparison": [
+      11
+    ],
+    "test_code": "assert [int(a and(s or h)) for a in [0,1] for s in [0,1] for h in [0,1]]==[0,0,0,0,0,1,1,1]",
+    "result_file": ""
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

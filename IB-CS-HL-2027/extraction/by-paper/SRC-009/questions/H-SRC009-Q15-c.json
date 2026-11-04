@@ -1,0 +1,99 @@
+{
+  "source_question_id": "H-SRC009-Q15-c",
+  "source_id": "SRC-009",
+  "source_filename": "Computer_science_paper_1__HL.pdf",
+  "year": "2024",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "not stated",
+  "option": "",
+  "question": 15,
+  "subquestion": "c",
+  "source_pdf_pages": [
+    8
+  ],
+  "source_printed_pages": [
+    "7"
+  ],
+  "original_marks": 6,
+  "command_term": "Construct",
+  "original_text": "Construct an algorithm in pseudocode that uses the COUNT array to output the mode(s) of the numbers stored in the MAT array.",
+  "parent_context": "– 6 – 8824 – 6904\n14. An application requires a list of students’ names to be held in alphabetical order, from A to Z, \nin the primary memory.\nThe application must allow for insertion and deletion of names.\n(a) Outline two advantages of using a linked list rather than a static array in this scenario. [4]\n(b) Explain how a specified student’s name could be found in a linked list. [5]\nA double linked list would be preferred over a single linked list for applications that require the \nability to move forward (from A to Z) and backward (from Z to A) through the list of names.\n(c) (i)   Describe the structure of a double linked list. [4]\n(ii) State two applications of double linked lists in computing. [2]\n15. The two-dimensional array MAT is used to store randomly generated integers in the range \nfrom 0 to 9.\nIn the MAT array, some numbers can be repeated multiple times and other numbers may \nnot appear at all (see Figure 1).\nFigure 1: Example data stored in the MAT array\n[0] [1] [2] [3] [4] [5] [6]\n[0] 0 2 5 9 3 6 1\n[1] 0 2 9 0 7 0 0\n[2] 4 2 7 9 5 7 1\n[3] 7 2 3 1 5 4 0\n[4] 3 6 3 9 9 6 0\n[5] 7 4 3 1 7 9 3\n[6] 3 9 6 4 2 2 4\n(This question continues on the following page)\n– 7 – 8824 – 6904\n(Question 15 continued)\nThe one-dimensional COUNT array will show how many times each of the randomly \ngenerated numbers is found in the MAT array (see Figure 2).\nFigure 2: The content of the COUNT array\n[0] [1] [2] [3] [4] [5] [6] [7] [8] [9]\n7 4 6 7 5 3 4 6 0 7\nFigure 2 shows that number 4 occurs 5 times (COUNT[4]=5) in the MAT array.\n(a) Construct an algorithm in pseudocode to create the COUNT array as described. \nYou may assume that the MAT array is created and the COUNT array is initialized \nwith zero values. [4]\nIn Figure 2, COUNT[8]=0 because the number 8 does not appear in the MAT array.\n(b) Construct an algorithm in pseudocode that uses the COUNT array to output the \nnumbers that do not appear in the MAT array. If all of the numbers from 0 to 9 \nare present, then it will output an appropriate message. [5]\nThe mode is the number that appears most often in the MAT array. There can be more \nthan one mode.\n0, 3 and 9 are the modes of the numbers stored in the MAT array (see Figure 2).\n(c) Construct an algorithm in pseudocode that uses the COUNT array to output the mode(s) \nof the numbers stored in the MAT array. [6]\n ",
+  "assets": [
+    {
+      "kind": "source_table",
+      "description": "Original7x7matrix and frequency list checked",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-009/renders/page-7.png",
+      "source_pdf_page": 7,
+      "visually_verified": true
+    },
+    {
+      "kind": "source_table",
+      "description": "Original count vector7,4,6,7,5,3,4,6,0,7",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-009/renders/page-8.png",
+      "source_pdf_page": 8,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Construct an algorithm in pseudocode that uses the COUNT array to output the mode(s) of the numbers stored in the MAT array.",
+    "Construct modes(counts) in Python"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-015",
+    "filename": "Computer_science_paper_1__HL_markscheme.pdf",
+    "pdf_pages": [
+      17,
+      18
+    ],
+    "question_reference": "Q15 c",
+    "marking_summary": "One solution:\ndef modes(counts):\n    greatest = counts[0]\n    for count in counts:\n        if count > greatest:\n            greatest = count\n    result = []\n    for value in range(len(counts)):\n        if counts[value] == greatest:\n            result.append(value)\n    return result",
+    "source_issues": [],
+    "source_marking_evidence": "– 17 – 8824 – 6904M \n(b) Award [5 max]\nAward [1] for using a flag\nAward [1] for a correct loop (for, while, loop until)\nAward [1] for the correct condition in if statement and changing the flag (if needed)\nAward [1] for outputting all numbers that do not appear in MAT\nAward [1] for checking the flag (if statement) after the loop\nAward [1] for outputting an appropriate message\nF=0 \nloop K from 0 to 9 //accept 9 or COUNT.length-1 \nif COUNT[K]=0 \nthen \nF = 1 \noutput(K) \nend if \nend loop \nif F = 0 \nthen output (‘all the numbers from 0 to 9 are present ‘) \nend if \n(c) Award [6 max]\nExample 1: \nAward [1] for initializing HV \nAward [1] for a correct loop \nAward [1] for comparing COUNT[K] with HV \nAward [1] for changing the value of HV (if needed) \nAward [1] for the second loop (loop after the first one) \nAward [1] for checking if HV is equal to COUNT[K] \nAward [1] for outputting values that occur most frequently \n//searches for the highest value in the COUNT array \nHV=0    // or HV = COUNT[0] \nloop K from 0 to 9 \n    if COUNT[K] > HV \nthen HV = COUNT[K] \nend if   \nend loop \n//outputs the mode(s) \nloop K from 0 to 9 \n    if COUNT[K] = HV \nthen output(K) \n    end if \nend loop \n– 18 – 8824 – 6904M \nExample 2: \nAward [1] for initializing MAX \nAward [1] for a correct loop \nAward [1] for comparing COUNT[K] with MAX and changing the value of MODE_IND[K] (if \nthey are equal) \nAward [1] for comparing COUNT[K] with MAX and changing the value of MAX  \n(if COUNT[K] is greater than MAX)     \nAward [1] for reinitializing the MODE_IND array (the loop within if statement) \nAward [1] for assignment MODE_IND[K]=1 \nAward [1] for outputting modes \n//assume MODE_IND is initialized \n//an integer array zero array in this example, a Boolean array could be \n//used instead  \n//the MODE_IND array is used to flag modes \nMAX = 0   // MAX = COUNT[0] \nloop K from 0 to 9 \nif COUNT[K] == MAX \nthen MODE_IND[K] = 1   //flags mode K \nendif \nif COUNT[K] > MAX \nthen  \nMAX = COUNT[K] //the new largest value \nloop I from 0 to 9 \nMODE_IND[I] = 0  //reinitializing the array \nend loop \nMODE_IND[K] = 1 //flags the new mode K \nend if \nend loop \nloop K from 0 to 9  // outputs modes \nif MODE_IND[K] == 1 \nthen output(K) \nend if \nend loop "
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B2.2.2",
+      "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+      "rationale": "Construct modes(counts) in Python assesses Construct programs that apply arrays and Lists.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B2.3.2",
+      "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+      "rationale": "Construct modes(counts) in Python assesses Construct programs utilizing appropriate selection structures.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B2.3.3",
+      "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+      "rationale": "Construct modes(counts) in Python assesses Construct programs that utilize looping structures to perform repeated actions.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "No visual required by this leaf.",
+    "technical": "Executed unique mode, tie and all equal frequency cases."
+  },
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC009-Q15-c"
+  ]
+}

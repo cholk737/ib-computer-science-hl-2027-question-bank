@@ -1,0 +1,38 @@
+– 6 – 2223 – 7011
+13. Consider the following recursive method:
+func(X)
+    if X>1
+        then
+            return func(X-1) + func(X-2)
+        else
+            return X
+    end if
+end func
+(a) Determine the value of func(5) (show all your working). [4]
+(b) Outline two disadvantages of recursive methods. [4]
+A stack is a data structure that is used in the implementation of a recursive method.
+(c) Outline the purpose of the stack access method isEmpty(). [2]
+The stack TOWNS holds several town names, and the name “Cardiff” is on the top of the 
+TOWNS stack (see Figure 1a).
+An algorithm is needed that will reverse the contents of the TOWNS stack. The name “Geneva” 
+should be on top of the TOWNS stack after reversing its contents (see Figure 1b).
+Figure 1: Example data held on the TOWNS stack before 
+and after execution of the requested algorithm
+a. The content in the TOWNS stack 
+before it is reversed
+Cardiff
+Washington DC
+The Hague
+Singapore
+Geneva
+b. The content in the TOWNS stack 
+after it is reversed
+Geneva
+Singapore
+The Hague
+Washington DC
+Cardiff
+(d) Construct an algorithm that will reverse the TOWNS stack using an empty queue. 
+You may assume that the TOWNS stack is inputted and a new empty queue named 
+TEMP is initialized.
+You must use stack access methods and queue access methods in your response. [5]

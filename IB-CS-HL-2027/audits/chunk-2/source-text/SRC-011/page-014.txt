@@ -1,0 +1,53 @@
+                                                        –   14 –                 N22/4/COMSC/HP1/ENG/TZ0/XX/M
+
+
+(c)    Award [6] max.
+       Award [1] for a loop (to input all the data)
+       Award [1] for placing the inputted data into a newly created node
+       Award [1] for setting the root node to the new node(if the tree                  is empty/ no root node)
+       Award [1] for start searching from the root node
+       Award [1] for searching for the empty location in the left subtree if the input score is higher
+       than the current value
+       Award [1] for inserting the new node in the left subtree when the proper location is found
+       Award [1] for searching for the empty location in the right subtree if the input score is                      lower
+       than the current value
+       Award [1] for inserting the new node in the right subtree when the proper location is found
+
+       Example 1:
+       Repeat the following steps (until all the names and scores are inputted);
+                input the values (name and score of one student), create a new node and
+                place the input values into the newly created node;
+                If the tree is empty, set the root to a new node;
+                Else (if the tree is not empty)
+                       repeat the following until a leaf node is reached;
+                             If a new node is smaller than or equal to the node (here it is a root node)
+                             move to its right child;
+                             If a new node is larger than the node, move to its left child:
+                        insert the new node (as a right or left child of the leaf node based on node
+                        is  less or greater  than the leaf node);
+
+       Example 2:
+       Repeat the following steps (until all the names and scores are inputted);
+       Create a new node (for example, named ITEM); input the values (name and score of one
+       student) and place them into the new node (ITEM) ( and set its left and right to NULL);
+       If there isn't a root node, set the root node to ITEM;
+       If there is a root node, start searching from the root node (to find ITEM's  proper location),
+                if the score in ITEM is greater than the score in the root               search for the empty
+                 location in the left subtree;
+       otherwise (if the score in ITEM is lesser than the score in the root                 ), search for the empty
+       location in the right subtree;
+       insert ITEM into empty location;
+
+       Example 3:
+       While the end of the input list is not reached do the following;
+            input the values (name and score of one student), create a new node
+            and place the input values into the newly created node;
+            if there is no root node, set the root to the new node;
+            if there is a root node
+                    start from the root node and if the score in the node to insert is less than
+                     the root, go to right child;
+                     otherwise go to the left child of the root;
+                     continue this process (Note: each node is a root for some subtree) until
+                       a null pointer (or leaf node) is found ( where it is not possible              to go any further);
+             when the leaf node is found, insert the node as a right or left child of the leaf node
+             ( based on node is less or greater than the leaf node);

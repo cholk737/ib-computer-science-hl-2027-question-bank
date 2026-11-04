@@ -1,0 +1,102 @@
+{
+  "original_assessment_context": "Stacktop53,-40,-10.4,60,15.2bottom;replaceentirestackwithsingle20=min+max.",
+  "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+  "source_question_id": "H-SRC030-Q12-c",
+  "source_id": "SRC-030",
+  "source_filename": "Computer_science_paper_1_TZ3_HL.pdf",
+  "year": "2025",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "TZ3 (filename; numerical cover code)",
+  "option": "",
+  "question": "12",
+  "subquestion": "c",
+  "source_pdf_pages": [
+    6
+  ],
+  "source_printed_pages": [
+    "5"
+  ],
+  "original_marks": 6,
+  "command_term": "Construct",
+  "original_text": "[Source PDF page 6]\nThe stack stores real numbers. An algorithm should be constructed that will find\nRENUMS\nthe smallest number and the largest number stored on the stack. After execution\nRENUMS\nof the algorithm, only the sum of these two numbers should be stored on the stack\nRENUMS\n(see Figure 1).\nFigure 1: Example data held on the stack before\nRENUMS\nand after execution of the requested algorithm\nThe content on the stack The content on the stack\nRENUMS RENUMS\nbefore execution of the algorithm. after execution of the algorithm.\nThe number 53.0 is on the top of The smallest number is –40.0.\nthe stack. The largest number is 60.0.\nRENUMS\nThe sum, 20.0 (–40.0 + 60.0),\nis on the top of the stack.\nRENUMS\n53.0\n–40.0\n–10.4\n60.0\n15.2 20.0\n(c) Construct this algorithm in pseudocode.\nYou may assume that the stack already contains real numbers.\nRENUMS\nYou must use the access methods of a stack. [6]",
+  "parent_context": "Stacktop53,-40,-10.4,60,15.2bottom;replaceentirestackwithsingle20=min+max.",
+  "assets": [
+    {
+      "kind": "source_page",
+      "description": "Stackbeforeafterextreme-sumtask",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-030-page-06.png",
+      "source_pdf_page": 6,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Construct: Construct this algorithm in pseudocode. You may assume the RENUMS stack already contains real numbers. You must use the access methods of a stack."
+  ],
+  "difficulty": "high",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-031",
+    "filename": "Computer_science_paper_1_TZ3_HL_markscheme.pdf",
+    "pdf_pages": [
+      20
+    ],
+    "question_reference": "12(c)",
+    "marking_summary": "Initializefrompop/peek;traversepop;trackmin/max;pushsumcap6.",
+    "source_issues": []
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "mapping_target": "adapted_practice_only",
+      "syllabus_code": "B2.2.3",
+      "scope_evidence": "• Must include fundamental operations such as push, pop, peek and isEmpty\n• How stack operations impact both performance and memory usage\n• An appropriate stack for a specific problem",
+      "rationale": "PreservesADT-onlydestructivetraversal;safeinitializationavoidssentinelfailure.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "mapping_target": "adapted_practice_only",
+      "syllabus_code": "B2.3.2",
+      "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+      "rationale": "PreservesADT-onlydestructivetraversal;safeinitializationavoidssentinelfailure.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "mapping_target": "adapted_practice_only",
+      "syllabus_code": "B2.3.3",
+      "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+      "rationale": "PreservesADT-onlydestructivetraversal;safeinitializationavoidssentinelfailure.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+    "marks": "Printed allocation transcribed.",
+    "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+    "official_answer_status": "See source markscheme record"
+  },
+  "original_text_manual_synopsis": "Construct this algorithm in pseudocode. You may assume the RENUMS stack already contains real numbers. You must use the access methods of a stack.",
+  "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+  "source_page_evidence": [
+    {
+      "pdf_page": 6,
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-030/page-006.txt"
+    }
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC030-Q12-c"
+  ]
+}

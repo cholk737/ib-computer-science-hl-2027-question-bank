@@ -1,0 +1,56 @@
+                                                        –   34 –                                        8823 – 7012M
+
+
+      (c)    Award [6 max]
+             Award [1] Defining 3 variables for: most effective, healthiest and current best choice
+             Award [1] Initialise chosen monster to first element (although not strictly necessary)
+             Award [1] Initialise most effective variable to lower than least effective combination (-8)
+             Award [1] Correct loop through array of monsters using          monsterCount
+             Award [1] Call Monsters.getAttackingWeight                correctly
+             Award [1] Selection based on attacking Weight (effectiveness)
+             Award [1] Selection inside effectiveness, based on health
+             Award [1] appropriately updating 3 variables (most effective, healthiest and current best
+             choice)
+             Award [1] Returning chosen instance of        Monster/Providing a monster recommendation
+             aligned with method signature
+
+             Example:
+
+             public Monster recommendAttackingMonster(Monster defender)
+             {
+                  Monster chosen=monsters[0];                   //ie. Default to first element
+                  int effectiveness;
+                  int mostEffective=-9;   //as valid effectiveness can be as low as -8
+                  int healthiest=0;
+                  for (int i=0;i<monsterCount;i++)
+                  {
+                        effectiveness=Monster.getAttackingWeight(monsters[i],defender);
+
+                        if (effectiveness>mostEffective)
+                        {
+                              if (monsters[i].health>healthiest)
+                              {
+                                    chosen=monsters[i];
+                                    healthiest=monsters[i].health;
+                                    mostEffective=effectiveness;
+                              }
+                        }
+                  }
+                  return chosen;
+             }
+
+
+18.   (a)    Award [4 max]
+
+             Speed/order of access:
+             A stack is accessed in LIFO order whereas a Linked List is traversed starting from
+             the first node;
+             Therefore, a stack would allow faster access to the most recent turns to ‘rewind’;
+
+             Method of access:
+             To access an element, it must be removed (popped) from stack, whereas a Linked
+             List can be read without removal;
+             Therefore, if a stack is used the removed items would have to be added again in the
+             correct order to gameLog;
+
+             Mark as [2] and [2]

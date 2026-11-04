@@ -1,0 +1,65 @@
+{
+  "source_question_id": "H-SRC006-Q03-b",
+  "source_id": "SRC-006",
+  "source_filename": "Computer_science_paper_1__HL (3).pdf",
+  "year": "2021",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "TZ0",
+  "option": "",
+  "question": 3,
+  "subquestion": "b",
+  "source_pdf_pages": [
+    3
+  ],
+  "source_printed_pages": [
+    "2"
+  ],
+  "original_marks": 2,
+  "command_term": "Outline",
+  "original_text": "Outline one difference between a bubble sort algorithm and a selection sort algorithm.",
+  "parent_context": "– 2 –\nN21/4/COMSC/HP1/ENG/TZ0/XX\n8821 – 7011\nSection A\nAnswer all questions.\n1. State two differences between primary storage and secondary storage. [2]\n2. State the hexadecimal representation of the binary number 10001010. [1]\n3. (a)  Outline what is meant by a sorting algorithm. [2]\n(b) Outline one difference between a bubble sort algorithm and a selection sort algorithm. [2]\n4. Assume X = 5, Y = 3 and A = TRUE.\nDetermine the value of the following expression:\n((X > 5) xor A) and (Y + 2 > 4)\nShow all your working. [2]\n5. (a)  Identify one difference between a binary tree and a non-binary tree. [1]\n(b) Given the following binary search tree (BST), draw the resulting BST after the deletion \nof the root node. [2]\n3\n51\n4\n6. Explain why compression of data is beneficial when transmitting data files across a network. [3]",
+  "assets": [],
+  "assessed_concepts": [
+    "Original source task: Outline one difference between a bubble sort algorithm and a selection sort algorithm.",
+    "Outline one difference between the movements of values in bubble sort and selection sort"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-012",
+    "filename": "Computer_science_paper_1__HL_markscheme (3).pdf",
+    "pdf_pages": [
+      4
+    ],
+    "question_reference": "Q3 b",
+    "marking_summary": "Bubble sort repeatedly compares and swaps neighbouring values. Selection sort finds the smallest remaining value and swaps it into the next sorted position.",
+    "source_issues": [],
+    "source_marking_evidence": "– 4 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \nSection A \n1. Award [2 max]\nPrimary storage is accessed by a computer's central processing unit (CPU) and secondary storage\nis not accessed directly by the CPU;\nPrimary storage has lower access time / has smaller capacity/ more expensive type of memory\nthan secondary storage (which is slower than primary storage, with larger capacity but it is\ncheaper);\nPrimary storage is volatile (uses random-access memory (RAM), cache memory, or some other\nspecialized hardware to store data while the computer is powered on/ volatile devices), whilst\nsecondary storage on a computer is provided by non-volatile devices (such as SSD or HDD);\nPrimary storage holds data temporarily whilst data is kept permanently/ for a long time in\nsecondary storage;\nPrimary storage holds currently running programs/data/operating system, secondary storage\ndoes not;\n2. Award [1 max]\n8A;\n3. (a) Award [2 max] \nA sorting algorithm is a method for reorganizing a number of items; \ninto a specific order (such as alphabetical order, highest-to-lowest value); \nSorting algorithm performs specific operations on the input list/array; \nIn order to deliver ordered list/array as output; \n(b) Award [2 max]\nBubble sort swaps adjacent items;\nSelection sort finds the next smallest (each time it goes through the list);\nBubble sort can exit early/ is faster if already the list is sorted;\nSelection sort will need to complete the procedure for the entire list every time;\n(The efficiency of Bubble and selection sort is different when applied on already sorted list)\nin the best-case bubble sort takes an order of N time;\nwhereas selection sort consumes an order of N2 time (where N is the number of items on the\nlist));\nNote: To award marks for such an answer it should be evident that the list is already sorted\nOR the term 'the best-case' should appear because the worst-case /average-case\ncomplexity/efficiency is same in both algorithms (O(N2))."
+  },
+  "relevance_status": "A",
+  "mappings": [
+    {
+      "syllabus_code": "B2.4.3",
+      "scope_evidence": "• The time and space complexities of each algorithm, denoted by their respective Big O notations\n• The advantages and disadvantages of each algorithm in terms of efficiency across various data sets",
+      "rationale": "Outline one difference between the movements of values in bubble sort and selection sort assesses Construct and trace algorithms to implement bubble sort and selection sort, evaluating their time and space complexities.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "No visual required by this leaf.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC006-Q03-b"
+  ]
+}

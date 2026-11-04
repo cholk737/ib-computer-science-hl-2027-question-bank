@@ -1,0 +1,44 @@
+                                                     –  28 –                M23/4/COMSC/HP2/ENG/TZ0/XX/M
+
+
+15.    (a)    Award [2 max].
+              The signature defines the parameters (and their types);
+              The method name / identifier;
+              Allow either the return type or access modifier for a mark;
+
+
+       (b)    Award [2 max].
+              String is an immutable object / Java uses pass-by-value / does not use pass                  -by-
+              reference;
+              It cannot simply have its value reassigned inside the method;
+              The method type must be String;
+              To return the new value for that String variable;
+
+       (c)    Award [1 max].
+              To output the addresses of all houses in a given city;
+
+              Note to examiners. Must imply all the houses that match, not just one.
+
+       (d)    (i)    Award [2 max]
+                     The length of the array may not correspond to the number of houses stored;
+                     Causing a null pointer error/exception;
+                     Since the loop may try to access the getCity method for a null entry;
+
+            (ii)     Award [2 max.]
+                     Declare a variable count that stores the number of objects in allHouses;
+                     Change loop condition to j<count;
+
+                     Add a test if(allHouses[i]!=null);
+                     Before testing allHouses[i].getCity().equals(x) ;
+
+
+                     Use a while loop with a double condition;
+                     (i<allHouses.length)&&(allHouses[i]!=null) ;
+
+
+                     Initially fill the array with dummy objects;
+                     So that no null entries will be encountered;
+
+                     Change the array to an arrayList;
+                     So that no null entries will be encountered / so that the array has the exact
+                     number of valid objects in it;

@@ -1,0 +1,23 @@
+{
+  "question_id": "P-SRC002-Q16-a-i",
+  "unofficial": true,
+  "marks": 1,
+  "solution": "Hilltop",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Correct value Hilltop."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed supplied object/list expression.",
+    "source_comparison": [],
+    "test_code": "from types import SimpleNamespace as N\nstores = [N(location=\"West Bay\", bookings=[N(customer_id=310,end_day=\"2027-02-08\")]),\n          N(location=\"Hilltop\", bookings=[]),\n          N(location=\"Canal\", bookings=[N(customer_id=520,end_day=\"2027-04-03\"),\n                                       N(customer_id=610,end_day=\"2027-04-10\")])]\nassert stores[1].location=='Hilltop'",
+    "result_file": ""
+  },
+  "code": "from types import SimpleNamespace as N\nstores = [N(location=\"West Bay\", bookings=[N(customer_id=310,end_day=\"2027-02-08\")]),\n          N(location=\"Hilltop\", bookings=[]),\n          N(location=\"Canal\", bookings=[N(customer_id=520,end_day=\"2027-04-03\"),\n                                       N(customer_id=610,end_day=\"2027-04-10\")])]",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

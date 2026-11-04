@@ -1,0 +1,43 @@
+– 15 – 8824 – 6904M 
+14. (a) Award [4 max] 
+Award [1] for an advantage and [1] mark for an expansion, x2. 
+Names can be inserted/deleted quickly/easy just by manipulating the pointers/ by updating 
+the address; 
+without resorting/shuffling (as in an array);  
+Better use of memory/ the number of names (size of the list) is not fixed (as in an array); 
+so, no wasted space / linked list can shrink and grow at the runtime (by deallocating or 
+allocating memory);  
+No need for an initial size/ predetermined size in linked list (as in an array); 
+which allocate space that may or may not be fully in use; 
+(b) Award [5 max]
+Temporary pointer should be used;
+and initially set to point to the beginning of the list;
+loop through the list;
+follow the internal pointers;
+compare the name in the node pointed to by the temporary pointer with the searched name;
+If they are same (the name is found) then stop searching;
+If the end of the list is reached / temporary pointer equals null then the searched name is not
+on the list;
+(c) (i) Award [4 max] 
+Double linked list DLL has two external pointers, one pointer points to the first element 
+of the DLL, and other points to the last element in the DLL; 
+Each node consists of a data field(s); 
+and two pointers (for example, called NEXT and PREV); 
+Each node is linked with its next node (using its pointer NEXT) and previous node 
+(using its pointer PREV); 
+The NEXT pointer of the last node is null (to mark the end of the list - forward traversal) 
+and the PREV pointer of the first node is null (to mark the end of list - backward 
+traversal); 
+ Note: Accept diagrams. 
+(ii) Award [2 max]
+Storing the browsing history which allow going forward and backwards in browsing
+history;
+A music player which has next and previous buttons;
+In LRU caching/ cache that is employed in cases which uses most/least recently
+accessed items/ examples like in the case of android phone home screen to save the
+most recently used apps;
+An application that has a ‘Most Recently Used’ element / for example, list of file names;
+In games, to represent anything that requires an order in a game / A DLL can be used
+to represent a deck of cards;
+Undo-Redo functionality (for example, in word processing);
+Note: Accept any application where front and back navigation is required. 

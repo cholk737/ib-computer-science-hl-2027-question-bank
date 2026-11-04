@@ -1,0 +1,19 @@
+{
+  "question_id": "P-SRC008-Q13-d",
+  "source_question_ids": [
+    "H-SRC008-Q13-d"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Deduce the purpose of lower_sum(a, r) for a square grid and 0<=r<len(a).\n\ndef lower_sum(a,r):\n    if r == 0:\n        return 0\n    return a[r][r-1] + lower_sum(a,r-1)",
+  "syllabus_codes": [
+    "B2.4.5"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 2,
+  "command_term": "Deduce",
+  "difficulty": "low",
+  "adaptation_rationale": "Exact recursive purpose retained in Python; non branching scope respected.",
+  "assets": []
+}

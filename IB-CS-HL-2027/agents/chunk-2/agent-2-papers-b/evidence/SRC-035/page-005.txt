@@ -1,0 +1,34 @@
+– 5 – M23/4/COMSC/HP2/ENG/TZ0/XX/M 
+(e) Award [3 max]
+Used to save frequently used, complex queries;
+Though a view doesn’t store data, we refer to a views as “virtual tables,”
+you can query a view like you can a table;
+A view can combine data from two or more tables, using joins, and also just contain
+a subset of information;
+Views don’t store data directly/draw data from tables;
+This makes them convenient to abstract, or hide, complicated queries;
+Views automatically update (dynamic) as the data in tables change;
+(Static/materialised) views capture the query at that moment in time/to allow for faster
+retrieval with large datasets;
+Views improve security because you can give access to a view without access to the
+underlying database;
+Some types of views allow you to insert / update / delete multiple tables within the one view;
+Note: must be related to views of queries not queries themselves 
+(f) Award [3 max]
+A DDL is used to specify the schema of a database / defines parameters and data
+A DDL allows you to define the tables, fields, datatypes e.g CREATE TABLE;
+A DDL allows you to specify keys/create relationships;
+A DDL allows you to modify schema (e.g. DROP, ALTER);
+(g) Award [3 max]
+Data about the rents given out will be accurate at any point in time;
+data written to the database must be valid according to all defined rules, including
+constraints, cascades, triggers;
+Consistency allows user to trust the data for decision making;
+Consistency is need for transactional operations to be carried out correctly/ACID;
+Consistency allows data to be transferred (to other systems) with confidence;
+Consistency allows data to be analysed using algorithmic tools/multiple formats cannot be
+analysed accurately;
+Consistency is important or it leads to integrity issues (e.g. foreign keys unlinked to primary
+keys);
+Without consistency it leads to confusion and misinterpretation of the data/ need of accuracy;
+Compliance with the car industry may be a legal requirement;

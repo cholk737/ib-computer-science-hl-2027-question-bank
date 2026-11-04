@@ -1,0 +1,210 @@
+[
+  {
+    "old": "A repair centre stores clients,jobs and replacement parts. Outline two advantages of a relational database over separate spreadsheets for this information.",
+    "new": "A repair centre stores clients, jobs and replacement parts. Outline two advantages of a relational database over separate spread sheets for this information."
+  },
+  {
+    "old": "A consistent representation avoids interpreting a day as a month or vice versa.; This improves comparison,sorting and data integrity when records are combined.",
+    "new": "A consistent representation avoids interpreting a day as a month or vice versa.; This improves comparison, sorting and data integrity when records are combined."
+  },
+  {
+    "old": "This improves comparison,sorting and data integrity when records are combined.",
+    "new": "This improves comparison, sorting and data integrity when records are combined."
+  },
+  {
+    "old": "A ticket sale has SaleID and ProductID. Each product may occur only once in a sale,with quantity stored separately. Outline why (SaleID,ProductID) can be a suitable composite primary key.",
+    "new": "A ticket sale has SaleID and ProductID. Each product may occur only once in a sale, with quantity stored separately. Outline why (SaleID, ProductID) can be a suitable composite primary key."
+  },
+  {
+    "old": "Two joined tables InvoiceLine and Product both contain UnitPrice. Outline why SELECT UnitPrice may fail and how to remove the ambiguity.",
+    "new": "Two joined tables Invoice Line and Product both contain Unit Price. Outline why SELECT Unit Price may fail and how to remove the ambiguity."
+  },
+  {
+    "old": "The unqualified column name does not identify which table\u2019s price is required.; Qualify it,e.g.InvoiceLine.UnitPrice,or use a table alias.",
+    "new": "The unqualified column name does not identify which table\u2019s price is required.; Qualify it, e.g.Invoice Line.Unit Price, or use a table alias."
+  },
+  {
+    "old": "Qualify it,e.g.InvoiceLine.UnitPrice,or use a table alias.",
+    "new": "Qualify it, e.g.Invoice Line.Unit Price, or use a table alias."
+  },
+  {
+    "old": "Construct an SQL query using Buyer(BuyerID,FirstName,Surname) and Invoice(InvoiceID,BuyerID,InvoiceDate). Return first name,surname and invoice date for buyer Mira Shah.",
+    "new": "Construct an SQL query using Buyer(BuyerID, First Name, Surname) and Invoice(InvoiceID, BuyerID, Invoice Date). Return first name, surname and invoice date for buyer Mira Shah."
+  },
+  {
+    "old": "Preserves two-table join/filter reasoning;new schema avoids reserved ORDER identifier and source sample\u2019s OrdDate/OrderDate mismatch.",
+    "new": "Preserves two-table join/filter reasoning; new schema avoids reserved ORDER identifier and source sample\u2019s Ord Date/Order Date mismatch."
+  },
+  {
+    "old": "SELECT b.FirstName,b.Surname,i.InvoiceDate FROM Buyer AS b JOIN Invoice AS i ON b.BuyerID=i.BuyerID WHERE b.FirstName='Mira' AND b.Surname='Shah';",
+    "new": "SELECT b.First Name, b.Surname, i.Invoice Date FROM Buyer AS b JOIN Invoice AS i ON b.BuyerID=i.BuyerID WHERE b.First Name='Mira' AND b.Surname='Shah';"
+  },
+  {
+    "old": "Filters both FirstName=Mira and Surname=Shah using AND.",
+    "new": "Filters both First Name=Mira and Surname=Shah using AND."
+  },
+  {
+    "old": "An invoice line stores Quantity,PriceEach and LineTotal=Quantity\u00d7PriceEach. Explain why storing LineTotal can create a consistency problem.",
+    "new": "An invoice line stores Quantity, Price Each and Line Total=Quantity\u00d7Price Each. Explain why storing Line Total can create a consistency problem."
+  },
+  {
+    "old": "LineTotal can be calculated from the other two stored values.; If either input changes but LineTotal is not updated,the row contains contradictory values.; Calculating it when needed avoids that redundant update obligation.",
+    "new": "Line Total can be calculated from the other two stored values.; If either input changes but Line Total is not updated, the row contains contradictory values.; Calculating it when needed avoids that redundant update obligation."
+  },
+  {
+    "old": "LineTotal can be calculated from the other two stored values.",
+    "new": "Line Total can be calculated from the other two stored values."
+  },
+  {
+    "old": "If either input changes but LineTotal is not updated,the row contains contradictory values.",
+    "new": "If either input changes but Line Total is not updated, the row contains contradictory values."
+  },
+  {
+    "old": "State a suitable data type for a field storing hours worked,including fractional hours.",
+    "new": "State a suitable data type for a field storing hours worked, including fractional hours."
+  },
+  {
+    "old": "Retains data-type suitability subset;generic catalogue of validation checks is not imported as database scope.",
+    "new": "Retains data-type suitability subset; generic catalogue of validation checks is not imported as database scope."
+  },
+  {
+    "old": "The update is performed within a transaction.; Other users must not see a partially applied update.; A suitable locking/version mechanism presents a consistent record or delays access.; Commit exposes the completed state;rollback restores the previous valid state after failure.",
+    "new": "The update is performed within a transaction.; Other users must not see a partially applied update.; A suitable locking/version mechanism presents a consistent record or delays access.; Commit exposes the completed state; rollback restores the previous valid state after failure."
+  },
+  {
+    "old": "Commit exposes the completed state;rollback restores the previous valid state after failure.",
+    "new": "Commit exposes the completed state; rollback restores the previous valid state after failure."
+  },
+  {
+    "old": "Describe what should happen to an uncommitted transaction interrupted by a database failure,using a transfer that debits one account and credits another.",
+    "new": "Describe what should happen to an uncommitted transaction interrupted by a database failure, using a transfer that debits one account and credits another."
+  },
+  {
+    "old": "Narrows detailed backup/recovery-method taxonomy to explicit ACID atomicity,durability and rollback.",
+    "new": "Narrows detailed backup/recovery-method taxonomy to explicit ACID atomicity, durability and rollback."
+  },
+  {
+    "old": "Treat both changes as one transaction.; If the transaction was not committed,undo its partial changes.; Restore balances to the consistent pre-transaction state.; A completed committed transfer must remain durable rather than losing one side of the transfer.",
+    "new": "Treat both changes as one transaction.; If the transaction was not committed, undo its partial changes.; Restore balances to the consistent pre-transaction state.; A completed committed transfer must remain durable rather than losing one side of the transfer."
+  },
+  {
+    "old": "If the transaction was not committed,undo its partial changes.",
+    "new": "If the transaction was not committed, undo its partial changes."
+  },
+  {
+    "old": "Construct an ERD for a fleet where one depot owns many vehicles,each vehicle belongs to one depot,and each vehicle has exactly one current registration record.",
+    "new": "Construct an ERD for a fleet where one depot owns many vehicles, each vehicle belongs to one depot, and each vehicle has exactly one current registration record."
+  },
+  {
+    "old": "Depot1:manyVehicle relationship,with each Vehicle belonging to one Depot.; Vehicle1:1Registration relationship.",
+    "new": "Depot 1:many Vehicle relationship, with each Vehicle belonging to one Depot.; Vehicle 1:1 Registration relationship."
+  },
+  {
+    "old": "Depot1:manyVehicle relationship,with each Vehicle belonging to one Depot.",
+    "new": "Depot 1:many Vehicle relationship, with each Vehicle belonging to one Depot."
+  },
+  {
+    "old": "Vehicle1:1Registration relationship.",
+    "new": "Vehicle 1:1 Registration relationship."
+  },
+  {
+    "old": "Construct a3NF schema for these facts. Each asset has AssetID,label andmodel,and one current certificate recording issue date and issuing technician. Each technician has TechID,name andphone. An asset can have many inspections. Each inspection has InspectionID,date,valid-until date,inspecting technician andone standard. A standard has StandardID,title andauthority. Show primary andforeign keys.",
+    "new": "Construct a 3 NF schema for these facts. Each asset has AssetID, label and model, and one current certificate recording issue date and issuing technician. Each technician has TechID, name and phone. An asset can have many inspections. Each inspection has InspectionID, date, valid-until date, inspecting technician and one standard. A standard has StandardID, title and authority. Show primary and foreign keys."
+  },
+  {
+    "old": "TECH(TechID PK,Name,Phone);ASSET(AssetID PK,Label,Model);CERTIFICATE(AssetID PK/FK\u2192ASSET,IssueDate,IssuerID FK\u2192TECH);STANDARD(StandardID PK,Title,Authority);INSPECTION(InspectionID PK,AssetID FK\u2192ASSET,InspectorID FK\u2192TECH,StandardID FK\u2192STANDARD,InspectionDate,ValidUntil).",
+    "new": "TECH(TechID PK, Name, Phone); ASSET(AssetID PK, Label, Model); CERTIFICATE(AssetID PK/FK\u2192ASSET, Issue Date, IssuerID FK\u2192TECH); STANDARD(StandardID PK, Title, Authority); INSPECTION(InspectionID PK, AssetID FK\u2192ASSET, InspectorID FK\u2192TECH, StandardID FK\u2192STANDARD, Inspection Date, Valid Until)."
+  },
+  {
+    "old": "Separate TECH andASSET tables with their own descriptive attributes.",
+    "new": "Separate TECH and ASSET tables with their own descriptive attributes."
+  },
+  {
+    "old": "Separate STANDARD table storing title andauthority once.",
+    "new": "Separate STANDARD table storing title and authority once."
+  },
+  {
+    "old": "Correct stable primary keys,including one certificate perasset.",
+    "new": "Correct stable primary keys, including one certificate per asset."
+  },
+  {
+    "old": "Correct certificate\u2192asset andissuer\u2192TECH foreign keys.",
+    "new": "Correct certificate\u2192asset and issuer\u2192TECH foreign keys."
+  },
+  {
+    "old": "Correct inspection\u2192asset,TECH andSTANDARD foreign keys.",
+    "new": "Correct inspection\u2192asset, TECH and STANDARD foreign keys."
+  },
+  {
+    "old": "Event dates belong to inspections;no repeated groups or duplicated technician/standard descriptions.",
+    "new": "Event dates belong to inspections; no repeated groups or duplicated technician/standard descriptions."
+  },
+  {
+    "old": "Points,for individual locations.; Lines orpolygons,for roads/areas.",
+    "new": "Points, for individual locations.; Lines or polygons, for roads/areas."
+  },
+  {
+    "old": "Points,for individual locations.",
+    "new": "Points, for individual locations."
+  },
+  {
+    "old": "Lines orpolygons,for roads/areas.",
+    "new": "Lines or polygons, for roads/areas."
+  },
+  {
+    "old": "Each uniquely identified sensor location has many measurement rows,each measurement belonging to one location. State the relationship cardinality.",
+    "new": "Each uniquely identified sensor location has many measurement rows, each measurement belonging to one location. State the relationship cardinality."
+  },
+  {
+    "old": "Replaces underdetermined source linkcardinality with explicit entities and cardinalityconstraint.",
+    "new": "Replaces under determined source link cardinality with explicit entities and cardinality constraint."
+  },
+  {
+    "old": "Explain how clustering andclassification could each support analysis of emergency-call records containing location,time andincident attributes.",
+    "new": "Explain how clustering and classification could each support analysis of emergency-call records containing location, time and incident attributes."
+  },
+  {
+    "old": "Retains analytical application reasoning;substitutes exact2027required clustering/classification for sourceMS visual-filter examples.",
+    "new": "Retains analytical application reasoning; substitutes exact 2027 required clustering/classification for source MS visual-filter examples."
+  },
+  {
+    "old": "Clustering groups records with similar features without requiring preassigned class labels.; It can reveal geographically/time-related groups of incidents.; Those groups may inform resource placement but require contextual interpretation.; Classification learns relationships from labelled example incidents.; It predicts a discrete category for a new record,e.g.incident priority.; Predictions must be evaluated against known outcomes rather than treating a map filter as a learned classifier.",
+    "new": "Clustering groups records with similar features without requiring preassigned class labels.; It can reveal geographically/time-related groups of incidents.; Those groups may inform resource placement but require contextual interpretation.; Classification learns relationships from labelled example incidents.; It predicts a discrete category for a new record, e.g.incident priority.; Predictions must be evaluated against known outcomes rather than treating a map filter as a learned classifier."
+  },
+  {
+    "old": "It predicts a discrete category for a new record,e.g.incident priority.",
+    "new": "It predicts a discrete category for a new record, e.g.incident priority."
+  },
+  {
+    "old": "Discuss ethical concerns when a city publishes an AI-generated crime-risk map that influences police deployment.",
+    "new": "Discuss ethical concerns when a city publish es an AI-generated crime-risk map that influences police deployment."
+  },
+  {
+    "old": "Retains selective-analysis/ethicaljudgment but explicitly ties it torequiredMLfairness,transparency andaccountability.",
+    "new": "Retains selective-analysis/ethical judgment but explicitly ties it torequiredMLfairness, transparency and accountability."
+  },
+  {
+    "old": "Biased historical reporting can produce unfair risk estimates.; Feedback from deployment can reinforce unequal scrutiny of communities.; Transparent labels,uncertainty anddata limitations help users interpret the map.; Accountability andhuman review are needed when decisions affect people.; Balanced conclusion weighs public-safety benefits against fairness/privacy risks in this context.",
+    "new": "Biased historical reporting can produce unfair risk estimates.; Feedback from deployment can reinforce unequal scrutiny of communities.; Transparent labels, uncertainty and data limitations help users interpret the map.; Accountability and human review are needed when decisions affect people.; Balanced conclusion weighs public-safety benefits against fairness/privacy risks in this context."
+  },
+  {
+    "old": "Transparent labels,uncertainty anddata limitations help users interpret the map.",
+    "new": "Transparent labels, uncertainty and data limitations help users interpret the map."
+  },
+  {
+    "old": "Accountability andhuman review are needed when decisions affect people.",
+    "new": "Accountability and human review are needed when decisions affect people."
+  },
+  {
+    "old": "Establishes an expected pattern/baseline from relevant historical records.; Compares new records with that pattern.; Flags substantial departures,e.g.unusual temperature/smoke combinations,for investigation.; Noise andfalse alarms must be considered;an anomaly alone does not prove a future incident.",
+    "new": "Establishes an expected pattern/baseline from relevant historical records.; Compares new records with that pattern.; Flags substantial departures, e.g.unusual temperature/smoke combinations, for investigation.; Noise and false alarms must be considered; an anomaly alone does not prove a future incident."
+  },
+  {
+    "old": "Flags substantial departures,e.g.unusual temperature/smoke combinations,for investigation.",
+    "new": "Flags substantial departures, e.g.unusual temperature/smoke combinations, for investigation."
+  },
+  {
+    "old": "Noise andfalse alarms must be considered;an anomaly alone does not prove a future incident.",
+    "new": "Noise and false alarms must be considered; an anomaly alone does not prove a future incident."
+  }
+]

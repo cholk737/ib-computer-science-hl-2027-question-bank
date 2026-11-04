@@ -1,0 +1,57 @@
+                                                                                                         –   14    –                                                                              2225                                                                                         – 6417M
+
+
+
+11.                                               (a)                                                        (i)                                                                      Award max           [1].
+                                     1;
+
+                        (ii)                                                          Award max           [1].
+                                     7;
+
+                        (iii)                                                 Award max           [1].
+                                     5;
+
+                        (iv)                                               Award max           [1].
+                                     60;
+
+            (b)                                                        Award max           [4].
+
+                        Award [1] for a correct           loop;
+                        Award [1] for checking if a failing           grade;
+                        Award [1] correct indexing used to access values in at least two arrays          ;
+                        Award [1] for initializing and incrementing (if needed) the index (    I) in the array RESIT;
+                        Award [1] for correctly assigning the name from the array     STUDENTS                                                                                                                                                                                               to the array RESIT;
+
+
+                        Example 1 (uses the MARKS                                                                                                                        array):
+
+                        //                       assume:  the array RESIT of sufficient size is initialized
+                        //                       the minimum mark for grade 2 (passing grade) is 10
+                        I = 0
+                        loop K from 0 to 199  //Accept len(STUDENTS)                     -1 or STUDENTS.length()-1
+                                  //accept any correct loop through the array MARKS
+                                  if MARKS[K] < 10
+                                              then
+                                                         RESIT[I] = STUDENTS[K]// Accept RESIT.append(STUDENTS[K])
+                                                         I = I + 1
+                                                          end if
+                        end loop
+
+
+                        Example 2 (uses the GRADES                                                                                                                                                array defined in part(a)):
+
+                        // assume: the array RESIT of sufficient size is initialized
+                        //                       grade 1 is a failing grade
+                        I = -                                           1
+                        loop K from 0 to 199 //Accept len(STUDENTS)-1
+                                  //accept any correct loop through the array GRADES
+                                  if GRADES[K] = 1
+                                              then
+                                                         I = I + 1
+                                                         RESIT[I] = STUDENTS[K]// Accept RESIT.append(STUDENTS[K])
+                                                          end if
+                        end loop
+
+
+
+Note : Collection                      methods not accepted.

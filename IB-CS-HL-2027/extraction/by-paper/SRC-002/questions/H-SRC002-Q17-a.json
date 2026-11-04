@@ -1,0 +1,72 @@
+{
+  "source_question_id": "H-SRC002-Q17-a",
+  "source_id": "SRC-002",
+  "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+  "year": "2026",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "A/B/C",
+  "option": "D",
+  "question": 17,
+  "subquestion": "a",
+  "source_pdf_pages": [
+    24
+  ],
+  "source_printed_pages": [
+    "24"
+  ],
+  "original_marks": 6,
+  "command_term": "Construct",
+  "original_text": "Construct the method public int changePreferredShop(LinkedList customers,String preferredShop,String newShop).",
+  "parent_context": "-24-\n2226-4429\n(Option D continued)\nThe car rental company wants to create a linked list of Customer objects. The Customer\nclass, which stores information about each customer, is partially outlined as shown.\npublic class Customer\nprivate\nint customerID;\nprivate String customerName;\nprivate String preferredshop;\npublic String getPreferredshop ()\nreturn preferredShop;\n}\npublic void setPreferredShop (String shop)\npreferredShop = shop;\n}\n// remaining\naccessor and mutator methods implemented but not shown\n}\nOne of the shops has closed. Any customer who prefers this shop requires their\npreferredShop updated\nThe method changePreferredShop () will change the preferred shop of all affected\ncustomers to the new shop given in the parameter newShop. The method should return\nthe number of customers that have been changed.\nConstruct the method public int changePreferredShop(LinkedList\ncustomers,\nString preferredShop, String newshop).\nThe programmers have used a library of objects rather than developing a custom linked list.\n(b) Outline two benefits of using a library when developing code.\n[4]\n(Option D continues on the following page)\nA000",
+  "assets": [
+    {
+      "kind": "scanned_source_page",
+      "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-24.png",
+      "source_pdf_page": 24,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Construct the method public int changePreferredShop(LinkedList customers,String preferredShop,String newShop).",
+    "Construct change_preference(head,old,new) in Python"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "not_uploaded",
+    "source_id": "",
+    "filename": "",
+    "pdf_pages": [],
+    "question_reference": "Q17 a",
+    "marking_summary": "One solution:\ndef change_preference(head, old, new):\n    changed = 0\n    current = head\n    while current is not None:\n        if current.customer.preferred_shop == old:\n            current.customer.preferred_shop = new\n            changed += 1\n        current = current.next\n    return changed",
+    "source_issues": [],
+    "source_marking_evidence": ""
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B4.1.3",
+      "scope_evidence": "• The basic operations on a linked list, such as insertion, deletion, traversal, search",
+      "rationale": "Construct change_preference(head,old,new) in Python assesses Construct and apply linked lists: singly, doubly and circular.",
+      "theme": "B",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "No uploaded MS; independent unofficial answer.",
+    "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+    "technical": "Executed multiple matches,nonmatch andemptylist."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC002-Q17-a"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

@@ -1,0 +1,46 @@
+{
+  "question_id": "P-SRC006-Q13-c",
+  "unofficial": true,
+  "marks": 6,
+  "solution": "One valid solution:\ndef distance(names, d, a, b):\n    ia = ib = -1\n    for i in range(len(names)):\n        if names[i] == a: ia = i\n        if names[i] == b: ib = i\n    if ia == -1 or ib == -1:\n        return None\n    if ia < ib:\n        ia, ib = ib, ia\n    return d[ia][ib]",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initialize/search positions for both names."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverse names correctly."
+    },
+    {
+      "marks": 1,
+      "criterion": "Find both matching indices."
+    },
+    {
+      "marks": 1,
+      "criterion": "Handle either missing name with None."
+    },
+    {
+      "marks": 1,
+      "criterion": "Choose larger index as row and smaller as column."
+    },
+    {
+      "marks": 1,
+      "criterion": "Return correct nested-list entry, including identical-location zero."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed both input orders, same location, missing first/second names.",
+    "source_comparison": [
+      17,
+      18
+    ],
+    "test_code": "def distance(names, d, a, b):\n    ia = ib = -1\n    for i in range(len(names)):\n        if names[i] == a: ia = i\n        if names[i] == b: ib = i\n    if ia == -1 or ib == -1:\n        return None\n    if ia < ib:\n        ia, ib = ib, ia\n    return d[ia][ib]\nn=[\"Elm\",\"Oak\",\"Pine\"];d=[[0,0,0],[2,0,0],[5,3,0]]\nassert distance(n,d,\"Elm\",\"Pine\")==5\nassert distance(n,d,\"Pine\",\"Elm\")==5\nassert distance(n,d,\"Elm\",\"Elm\")==0\nassert distance(n,d,\"X\",\"Pine\") is None\nassert distance(n,d,\"Elm\",\"X\") is None",
+    "result_file": ""
+  },
+  "code": "def distance(names, d, a, b):\n    ia = ib = -1\n    for i in range(len(names)):\n        if names[i] == a: ia = i\n        if names[i] == b: ib = i\n    if ia == -1 or ib == -1:\n        return None\n    if ia < ib:\n        ia, ib = ib, ia\n    return d[ia][ib]",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

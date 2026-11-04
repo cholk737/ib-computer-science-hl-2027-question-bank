@@ -1,0 +1,53 @@
+{
+  "question_id": "P-SRC002-Q18-b",
+  "source_question_ids": [
+    "H-SRC002-Q18-b"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Trace sum_down(4),showing call arguments and returned values.\ndef sum_down(n):\n    if n <= 1:\n        return n\n    return n + sum_down(n - 1)",
+  "syllabus_codes": [
+    "B2.4.5"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 4,
+  "command_term": "Trace",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "Calls4,3,2,1; return values1,3,6,10 while unwinding. Final10.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Correct decreasing call sequence."
+    },
+    {
+      "marks": 1,
+      "criterion": "Base returns1."
+    },
+    {
+      "marks": 1,
+      "criterion": "Intermediate returns3 and6."
+    },
+    {
+      "marks": 1,
+      "criterion": "Final10."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed non-branching recursion andbasecase.",
+    "source_comparison": [],
+    "test_code": "def sum_down(n):\n    if n <= 1:\n        return n\n    return n + sum_down(n - 1)\nassert sum_down(4)==10\nassert sum_down(1)==1",
+    "result_file": ""
+  },
+  "code": "def sum_down(n):\n    if n <= 1:\n        return n\n    return n + sum_down(n - 1)",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC002-Q18-b.json",
+  "question_path": "question-bank/questions/P-SRC002-Q18-b.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC002-Q18-b.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

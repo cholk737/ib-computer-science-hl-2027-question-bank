@@ -1,0 +1,99 @@
+{
+  "source_question_id": "H-SRC002-Q15-c",
+  "source_id": "SRC-002",
+  "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+  "year": "2026",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "A/B/C",
+  "option": "D",
+  "question": 15,
+  "subquestion": "c",
+  "source_pdf_pages": [
+    22
+  ],
+  "source_printed_pages": [
+    "22"
+  ],
+  "original_marks": 6,
+  "command_term": "Construct",
+  "original_text": "Construct the method getTodaysRentals(RentDate today), which will return an array of all the rentals starting on that day. You can use any previously constructed methods.",
+  "parent_context": "-22 -\n2226-4429\n(Option D continued)\n15. The RentalShop class stores information about the shop (location) to which the rental\ncars belong.\nThe RentalShop class is shown.\npublic class RentalShop {\nprivate String location;\nprivate Rental theRentals [];\nprivate int no0fRentals;\npublic RentalShop(String location) {\nthis.location\n= location;\nthis.no0fRentals = 0;\nthis.theRentals = new Rental[500];\n}\npublic String getLocation()\n{ return location; }\npublic Rental\ngetRental(int x) ( return theRentals[x]; }\npublic int getNoOfRentals ()\n( return noOfRentals; }\n357\nprotected void addRental(Rental newRental) {\ntheRentals[no0fRentals]\n= newRental;\nnoOfRentals = noOfRentals + 1;\n}\nprotected Rental [] getTodaysRentals (RentDate today) (\n// code missing\n}\nThe car rental company would like to open a new shop (location) in Beach Side.\n(a) Construct the code required to create this instance of the RentalShop class.\n[3]\n(b)\nDescribe the use of the modifier protected, with reference to methods in the\nRentalShop class.\n(2]\nA000\nAt the start of each day, the shop needs to produce a listing of all the cars that are being\nrented out that day.\n(c) Construct the method getTodaysRentals (RentDate today), which will return an\narray of all the rentals starting on that day.\nYou can use any previously constructed methods.\nThe car rental company would like to store information about customers in a separate class.\n(d)\nOutline two changes that would need to be made to the existing classes to\naccommodate this.\n[4]\n(Option D continues on the following page)",
+  "assets": [
+    {
+      "kind": "scanned_source_page",
+      "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-22.png",
+      "source_pdf_page": 22,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Construct the method getTodaysRentals(RentDate today), which will return an array of all the rentals starting on that day. You can use any previously constructed methods.",
+    "Construct bookings_on(self,day) in Python"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "not_uploaded",
+    "source_id": "",
+    "filename": "",
+    "pdf_pages": [],
+    "question_reference": "Q15 c",
+    "marking_summary": "One solution:\ndef bookings_on(self, day):\n    result = []\n    for i in range(self.used):\n        booking = self.bookings[i]\n        if booking.start_day == day:\n            result.append(booking)\n    return result",
+    "source_issues": [],
+    "source_marking_evidence": ""
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B2.2.2",
+      "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+      "rationale": "Construct bookings_on(self,day) in Python assesses Construct programs that apply arrays and Lists.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B2.3.2",
+      "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+      "rationale": "Construct bookings_on(self,day) in Python assesses Construct programs utilizing appropriate selection structures.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B2.3.3",
+      "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+      "rationale": "Construct bookings_on(self,day) in Python assesses Construct programs that utilize looping structures to perform repeated actions.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B2.3.4",
+      "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+      "rationale": "Construct bookings_on(self,day) in Python assesses Construct functions and modularization.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "No uploaded MS; independent unofficial answer.",
+    "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+    "technical": "Executed matching,absent andemptyactiveprefix cases."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC002-Q15-c"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

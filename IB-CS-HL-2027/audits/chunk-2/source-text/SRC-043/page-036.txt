@@ -1,0 +1,60 @@
+                                                                                        –   36    –                                                                         2225                                                                                         – 6420M
+
+
+(c)                                                          (i)                                                                        Award [2 max]
+                       is a technique/process where a method calls itself;
+                       each call involves updated parameters;
+                       until it reaches the base case;
+
+           (ii)                                                            Award [5 max]
+
+                       Award [1]                        for correctly checking base case and returning 0;
+                       Award [1]                        for comparing the max with customer’s maximum budget;
+                       Award [1]                        to return 1 + the subsequent recursive call;
+                       Award [1]                        to return the subsequent recursive call, when comparison results in the budget
+                       is not enough;
+                       Award [1]                        for decreasing n for each recursive call;
+
+                       public int                                                                                                          countRecursive(LinkedList <Customer> customerList, int
+                       max, int                                                                                     n)
+                       {
+
+                                // Base case: size of list = 0
+                                if                      (n==0)
+                                   {
+                                           return                                                                0;
+                                }
+                                else if                                                                          (customerList.get(n-                                                                                                                                                                                                        1).getMaximumBudget() > max)
+                                   {
+                                           return                                                                1+ countRecursive(customerList, max, n-1);
+                                }
+                                else
+                                   {
+                                           return                                                                countRecursive(customerList, max, n-1);
+                                }
+                       }
+
+            (iii)                                                 Award [4 max]
+
+                       Award [1]                        for identifying the reason, [1]                                    for expansion
+
+                       Memory Usage
+                       recursive algorithms use the call stack for each call, leading to excessive memory usage;
+                       this is inefficient for simple tasks like counting through a list, especially when the list is
+                       large;
+
+                       Processing Overhead
+                       each recursive call adds overhead due to repeated function calls and return handling;
+                       an iterative loop processes the same task more efficiently with lower runtime cost;
+
+                       Complexity
+                       the task of counting elements based on a simple condition does not require backtracking
+                       or divide-                                            and-                                                                  conquer.;
+                       linear loop with a counter is easier to write, read, and debug for this scenario;
+
+                       Stack Overflow
+                       extensive recursion can exceed the maximum call stack size, especially with a large linked
+                       lists;
+                       this can cause runtime errors, which are avoidable with iteration;
+
+                       Mark as [2]              and [2]

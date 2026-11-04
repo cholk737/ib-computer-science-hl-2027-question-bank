@@ -1,0 +1,47 @@
+                                                                                                                                             – 23 –                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    8823–7012
+
+(Option D continued)
+
+18.                                                                                           The arena will maintain a linked list of the battles that take place between monsters,
+                called                                                gameLog.
+
+                Each time a player takes a turn and one monster attacks another, a new instance of the
+                Turn class is created and added to the      gameLog linked list:
+
+                public class Turn {
+                    long timestamp;
+                    Monster from;
+                    Monster to;
+                    int damage;
+                }
+
+                The developer wants to add a rewindTurns method in the Arena class, which restores
+                health points taken from a particular monster during a specified number of turns. This method
+                can be called at any time and will leave the gameLog linked list unchanged (see Figure 10).
+
+                                                                                                  Figure 10: The                                                                                                                                                                                          gameLog linked list
+
+
+                                                    Timestamp: 01                                                 Timestamp: 02                                                 Timestamp: 03                                                 Timestamp: 04
+                     H                              From: Windy                                                   From: Flamey                                                  From: Windy                                                   From: Flamey
+                                                    To: Flamey                                                    To: Windy                                                     To: Flamey                                                    To: Windy
+                                                    Damage: 11                                                    Damage: 4                                                     Damage: 1                                                     Damage: 4
+
+
+                The variable rewinder is a reference to a monster named Windy, which is battling another
+                monster, Flamey. The game has had four attacks so far, each of which are entered in the
+                gameLog linked list. In this example, the code rewindTurns(2, rewinder) would restore
+                4 health points to Windy, and the code rewindTurns(3, rewinder) would restore 8 health
+                points to Windy.
+
+                (a)                                                                                           Outline two differences between the use of a linked list and a stack when using the
+                                 rewindTurns method.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                [4]
+
+                (b)                                                                                           Explain how to implement the rewindTurns(int numberOfTurns, Monster
+                                 rewinder) method using the linked list gameLog. [6]
+
+
+                                                                                                                 End of Option D
+
+
+

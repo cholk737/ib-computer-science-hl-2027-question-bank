@@ -1,0 +1,52 @@
+                                                        –   11 –              N20/4/COMSC/HP2/ENG/TZ0/XX/M
+
+
+Option B — Modelling and simulation
+
+5.    (a)    Award [3 max].
+             House_Type: char/string/Boolean;
+             House_Num: integer;
+             Profit: fixed-point decimal/currency/float/double;
+
+      (b)    Award [6 max].
+             Award [1] for including HOUSE_TYPE and HOUSE_NUM as input
+             Award [1] for calculating total revenue;
+             Award [1] for calculating the number of days for each project
+             Award [1] for calculating the labour costs
+             Award [1] for calculating material costs
+             Award [1] for calculating the profit
+
+             REVENUE: Award [1] for Sales_price * House_Num based on the If statement
+             NUM_DAYS: Award [1] for the correct number of days * house_num              .
+             LABOUR_COSTS: Award [1] for NUM_DAYS * 2500
+             MATERIAL_COSTS: Award [1] for checking the HOUSE_TYPE and then multiplying
+              HOUSE_NUM by the correct material cost.
+             PROFIT: Award [1] for deducting all of the costs from the revenue.
+
+             Example answer:
+
+                   A                    B                                      C
+       2    HOUSE_TYPE          HOUSE_NUM           REVENUE
+       3    s                   10                  =IF(A3="s",220000*B3,IF(A3="l",400000*B3, 0))
+
+                   D                                E                                  F
+       2    LAND_COST          NUM_DAYS                                      LABOUR_COSTS
+       3    500000             =IF(A3="s",17*B3,IF(A3="l",23*B3,0))          =2500*E3
+
+                                        G                                       H
+       2    MATERIAL_COSTS                                              PROFIT
+       3    =IF(A3="s",100000 *B3,IF(A3="l",190000 * B3,0))             =C3-D3-F3-G3
+
+             Alternative solution:
+
+                            A                                        B
+       1    House_Type is small                 TRUE
+       2    House_Num                           10
+       3                                        $/1000
+       4    Total_revenue                       =IF(B1,220,400)*B2
+       5    Land_cost                           500
+       6    Total_labour_cost                   =IF(B1,17*2.5,23*2.5)*B2
+       7    Total_material_cost                 =IF(B1,100,190)*B2
+       8    Total_profit                        =B4-B5-B6-B7
+
+             Note: accept cell references such as B3 instead of variables.

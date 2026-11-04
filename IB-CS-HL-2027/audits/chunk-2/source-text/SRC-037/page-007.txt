@@ -1,0 +1,50 @@
+                                                             –  7 –                                            8823 – 7012M
+
+
+3.     (a)    Award [2 max]
+
+
+
+
+
+
+
+              Accept variations of this diagram. Owner, Pet, and Passport correctly positioned.
+
+              Award [1] for 1 to m;
+              Award [1] for 1 to 1;
+
+
+       (b)    Award [1 max]
+              A secondary key is a non-identifying field used to find row in a table;
+
+
+       (c)    Award [8 max]
+              Award [3] for all 4 entities/[2] if there are only 3 entities/[1] if there are 2 correct entities.
+              Award [1] for correct primary keys
+              Award [1] for correct foreign keys
+              Award [1] for all correct fields in VACCINE
+              Award [1] for all correct fields in PETVACCINATION
+              Award [1] for all correct fields in PET
+              Award [1] for all correct fields in PASSPORT
+              PASSPORT(TransponderCode, VetID(fk), DateOfIssue)
+              PET (TransponderCode, PetName, Species, Breed, Sex, DOB)
+              PETVACCINATION (VaccinationID, vaccineID, VetID(fk), TransponderCode(fk), VaccineDate,
+              ValidFrom, ValidTo)
+              VACCINE (vaccineID, VaccineName, Manufacturer, BatchNumber)
+
+              Accept PassportID instead of TransponderCode in the Passport table.
+              Accept OwnerID in PASSPORT.
+
+
+       (d)    Award [4 max]
+              Data should only be used for the reason that it was collected;
+              Data should not be transferred to another country unless it has equal or better data
+              protection law;
+              Data should not be shared without permission;
+              Data should be registered with the data protection governing body;
+              Data should be used in accordance with the law;
+              Data should be adequate and relevant;
+              Data should not be kept longer than necessary;
+              Data should be accurate and up-to-date;
+              The pet owner has the right to see the data stored about them;

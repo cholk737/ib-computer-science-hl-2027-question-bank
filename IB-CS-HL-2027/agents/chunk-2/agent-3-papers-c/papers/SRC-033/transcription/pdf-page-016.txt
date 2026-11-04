@@ -1,0 +1,63 @@
+N20/4/COMSC/HP2/ENG/TZ0/XX
+– 15 – 8820 – 7012
+(Option D, question 13 continued)
+public class Vehicle {
+private String registration;
+private byte colour;
+private boolean broken;
+=
+public final static byte BLACK 1;
+=
+public final static byte WHITE 2;
+=
+public final static byte BLUE 3;
+=
+public final static byte RED 4;
+=
+public final static byte GREEN 5;
+=
+private final static double ADMIN_FEE 3;
+public Vehicle() {}
+public Vehicle(String registration) {
+=
+this.registration registration;
+}
+public Vehicle(String registration, byte colour) {
+=
+this.registration registration;
+=
+this.colour colour;
+}
+public void setBroken(boolean broken) {
+=
+this.broken broken;
+}
+public void setColour(byte colour) {
+=
+this.colour colour;
+}
+public boolean getBroken() {
+return broken;
+}
+public String getRegistration() {
+return registration;
+}
+public double pay(int hours) {
+// code to return admin fee - only if applicable
+}
+}
+(a) Outline one effect of using the modifier when declaring a variable. [2]
+static
+(b) Describe the relationship between the classes and . [3]
+Vehicle ParkingArea
+(c) Outline why it is necessary to use the keyword in the method of the
+this setBroken
+class. [2]
+Vehicle
+(d) (i) Construct code to create an instance of the class that has a registration
+Vehicle
+of . [2]
+X1234567
+(ii) Construct code that sets the colour of the object created in part (i) as black. [2]
+(Option D continues on the following page)
+Turn over

@@ -1,0 +1,17 @@
+                                     –   32 –          M23/4/COMSC/HP2/ENG/TZ0/XX/M
+
+
+
+Example answer 3
+public House[] selectThree(int budget)
+{
+  House[] result = new House[3];
+  houseSort();
+  int index = 2;
+  for(int i=allHouses.length-1; i>=0 && index>=0; i--)
+  {
+    if(allHouses[i]!=null && allHouses[i].getPrice()<=budget)
+          result[index--] = allHouses[i];
+  }
+  return result;
+}

@@ -1,0 +1,27 @@
+{
+  "question_id": "P-SRC002-Q05-a-ii",
+  "unofficial": true,
+  "marks": 2,
+  "solution": "percentage = (test_score/50)*30 + (project_score/80)*70",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Normalizes both component scores by their maxima."
+    },
+    {
+      "marks": 1,
+      "criterion": "Applies30/70 weights and combines into percentage."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Full scores produce100; half scores50.",
+    "source_comparison": [],
+    "test_code": "test_score=25;project_score=40\npercentage=(test_score/50)*30+(project_score/80)*70\nassert percentage==50",
+    "result_file": ""
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

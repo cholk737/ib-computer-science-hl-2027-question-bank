@@ -1,0 +1,45 @@
+                                                 –   14 –                                      8823 – 7012M
+
+
+       Example 2 (simplified):
+       TOTAL = 0
+       loop ROW from 0 to (FACTORIAL(8)-1)
+             HIGHEST = FINDHIGH(ARR)
+             FOUND = False
+             POS = 3
+             loop while FOUND = False and POS < 8
+                  if ARR[POS] > HIGHEST then
+                        CHOICE = ARR[POS]
+                        FOUND = True
+                  end if
+                  POS = POS + 1
+             end loop
+             if FOUND = False then
+                  CHOICE = ARR[7]
+             end if
+             if CHOICE = X  then
+                  TOTAL = TOTAL + 1
+             end if
+            ARR = NEXTPERMUTATION(ARR)
+       end loop
+       PERCENT = TOTAL/FACTORIAL(ARRLEN)*100
+       output(PERCENT)
+
+
+(d)    Award [2 max]
+       Change the number of cats to reject at the beginning;
+       From 3 cats to 2 cats and/or from 3 cats to 4 cats;
+       Compare the probabilities with the first solution;
+
+
+(e)    Award [4 max]
+       The program with 20 values will not run well on a standard laptop/This is a NP-type problem;
+       Fast CPU required;
+       Maths co-processing/ASIC may be needed;
+       Program could be adapted to run with parallel processors;
+       Program adapted to run with GPU;
+
+       Allow 1 mark for a generic statement such as:
+       Needs a lot of RAM;
+
+       Do not award marks for ‘using a GPU’ since this won’t be useful on its own.

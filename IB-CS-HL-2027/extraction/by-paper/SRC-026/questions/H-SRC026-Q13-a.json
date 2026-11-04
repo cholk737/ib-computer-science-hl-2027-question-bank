@@ -1,0 +1,66 @@
+{
+  "source_question_id": "H-SRC026-Q13-a",
+  "source_id": "SRC-026",
+  "source_filename": "Computer_science_paper_1_TZ2_HL.pdf",
+  "year": "2025",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "TZ2 (filename; numerical cover code)",
+  "option": "",
+  "question": 13,
+  "subquestion": "a",
+  "source_pdf_pages": [
+    7
+  ],
+  "source_printed_pages": [
+    "6"
+  ],
+  "original_marks": 3,
+  "command_term": "See original prompt",
+  "original_text": "List three advantages of using sub-programs in this situation.",
+  "parent_context": "– 6 – 2225 – 6414\n13. A team of four high-school students decided to create a computer program for younger \nstudents to help them learn to count and recognize whole numbers from 1 to 25.\nA table partially completed with numbers from 1 to 25 is given to a younger student. The table \nconsists of five rows and five columns (see Figure 2). The younger student must enter the \nremaining numbers. Each number from 1 to 25 should be entered only once.\nFigure 2: Example table partially filled with numbers\n24 1\n7 14\n4 6 22\n10 21 3\n11 25 9\nEach of the four students is responsible for creating several sub-programs that will be \nincluded in the program.\n(a) List three advantages of using sub-programs in this situation. [3]\n(This question continues on the following page)",
+  "assets": [],
+  "assessed_concepts": [
+    "Original source task: List three advantages of using sub-programs in this situation.",
+    "List three benefits of dividing a quiz program into functions with clear inputs and outputs"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-027",
+    "filename": "Computer_science_paper_1_TZ2_HL_markscheme.pdf",
+    "pdf_pages": [
+      21
+    ],
+    "question_reference": "Q13 a",
+    "marking_summary": "Reuse of validation logic; independent debugging/testing; localized maintenance of one task.",
+    "source_issues": [],
+    "source_marking_evidence": "– 21 – 2225 – 6414M \n13. (a) Award max [3]. \nThe (difficult) program is divided into several easier parts (sub-programs); \nThe program is better organized/ easier to understand /reduced size of code (due to several \nsub-programs calls)/ no duplication of code; \n  Sub-programs hide implementation details; \nSub-programs keep specific tasks self-contained; \n Each of the sub-programs could be written independently; \nEach of the sub-programs is debugged/tested independently; \nDifferent parts of the program can be written at the same time/concurrently; \nSub-programs speed up the development process (as different students can work  \non different subprogram at the same time); \nEach sub-program could be used many times in this program (and in other programs); \n The maintenance/modification/change of the program will be easier/faster \n (because only a sub-program could be changed/modified as needed); \n(b) Award max [4].\nAward [1] for a correct while loop \nAward [1] for a correct condition /validation check \nAward [1] for input within the while loop (input repeated until input validated) \nAward [1] for outputting appropriate messages \nAward [1] for return statement; \nExample 1: \ninputInRange()\nK=input('Enter a number: ') \nloop while (K < 1) or (K > 25) \noutput ('The number is not in the range 1 to 25. ') \n   output(' Please try again! ')  \nK=input('Enter a number: ') \nend loop \noutput('Your number is valid. ') \nreturn K \nend inputInRange() \nExample 2: \ninputInRange() \nF=true \nloop while F \noutput('Enter a number') \ninput(K) \nif(K < 1) or (K > 25) \nthen \n   output ('The number is invalid. ') \noutput( 'Please try again! ') \nelse \nF=false  \nend if \nend loop \noutput('Your number is valid. ') \nreturn K \nend inputInRange() "
+  },
+  "relevance_status": "A",
+  "mappings": [
+    {
+      "syllabus_code": "B2.3.4",
+      "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+      "rationale": "List three benefits of dividing a quiz program into functions with clear inputs and outputs assesses Construct functions and modularization.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "No visual required by this leaf.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC026-Q13-a"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

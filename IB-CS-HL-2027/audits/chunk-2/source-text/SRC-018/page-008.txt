@@ -1,0 +1,54 @@
+                                                                                                            – 7 –                                                                                             2223–9240
+
+14.         A program is developed to simulate the roll of dice in a game.
+
+            Three dice are thrown, with faces that have numbers from 1 to 6.
+
+            The dice are thrown seven times, and the data are stored in a two-dimensional array called
+            DICEDIAL (see Figure 2).
+
+                                                Figure 2: The example data stored in the DICEDIAL array
+
+                                                                                                    [0]            [1]            [2]
+
+                                                                                     [0]               4              2              2
+
+                                                                                     [1]               4              4              4
+
+                                                                                     [2]               5              2              3
+
+                                                                                     [3]               6              5              5
+
+                                                                                     [4]               5              5              6
+
+                                                                                     [5]               1              1              4
+
+                                                                                     [6]               3              2              1
+
+            (a)          Construct an algorithm in pseudocode to calculate the product of all values stored in
+                         the DICEDIAL array.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               [3]
+
+            The sub-program DuplicateNum(DICEDIAL,R) checks whether there are repeated
+            numbers in row R. If the numbers are not repeated, it returns 0, otherwise it returns the
+            repeated number.
+
+            The DuplicateNum() sub-program will produce the following from the values used in Figure 2:
+
+                                                                     DuplicateNum(DICEDIAL,0) returns 2
+
+                                                                    DuplicateNum (DICEDIAL,1) returns 4
+
+                                                                     DuplicateNum(DICEDIAL,2) returns 0
+
+            (b)          Construct an algorithm in pseudocode for the sub-program DuplicateNum(DICEDIAL,R).     [4]
+
+            The sub-program lowestRT(DICEDIAL) accepts the DICEDIAL array and outputs the
+            lowest row total and the indexes of all the rows with that total.
+
+            From the example data given in Figure 2, lowestRT(DICEDIAL) would output that the
+            lowest row total is 6, and it occurs in the rows with indexes 5 and 6.
+
+            (c)          Construct an algorithm in pseudocode for the sub-program lowestRT(DICEDIAL). [8]
+
+
+

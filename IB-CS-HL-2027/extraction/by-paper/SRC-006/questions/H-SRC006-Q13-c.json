@@ -1,0 +1,108 @@
+{
+  "source_question_id": "H-SRC006-Q13-c",
+  "source_id": "SRC-006",
+  "source_filename": "Computer_science_paper_1__HL (3).pdf",
+  "year": "2021",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "TZ0",
+  "option": "",
+  "question": 13,
+  "subquestion": "c",
+  "source_pdf_pages": [
+    8
+  ],
+  "source_printed_pages": [
+    "7"
+  ],
+  "original_marks": 6,
+  "command_term": "Construct",
+  "original_text": "Construct an algorithm in pseudocode that inputs the names of two bus stations and outputs the distance between them. If any of the inputted names are not found, the method should output an appropriate message.",
+  "parent_context": "– 6 –\nN21/4/COMSC/HP1/ENG/TZ0/XX\n8821 – 7011\n13. A bus company provides services within a city. Passengers can look up the distance between \nany two bus stations on any of its routes.\nFor each route, a one-dimensional string array is used to store the names of all bus stations \non the route and a two-dimensional array is used to store the distances between the bus \nstations (in kilometres). Only the lower triangle of the two-dimensional array is used to store \nthe distances.\nFigure 1 shows data about Route X, a bus route between Oppox and Dovely.\nFigure 1: One-dimensional string array, ROUTE_X_NAMES, and  \ntwo-dimensional array, ROUTE_X_DISTANCES, for Route X\nROUTE_X_NAMES ROUTE_X_DISTANCES\n[0] [1] [2] [3] [4] [5] [6] [7] [8] [9]\n[0]  Oppox [0] 0 0 0 0 0 0 0 0 0 0\n[1]  Thamesley [1] 1.2 0 0 0 0 0 0 0 0 0\n[2]  Brinkley [2] 2.2 1.0 0 0 0 0 0 0 0 0\n[3]  Kiko [3] 6.6 3.4 2.2 0 0 0 0 0 0 0\n[4]  Endsley [4] 5.7 4.5 3.5 1.3 0 0 0 0 0 0\n[5]  Kingsley [5] 7.1 5.9 4.9 2.7 1.4 0 0 0 0 0\n[6]  Allapay [6] 8.0 6.8 5.8 3.6 2.3 0.9 0 0 0 0\n[7]  Kronos [7] 10.1 9.1 6.9 4.7 3.4 2.0 1.1 0 0 0\n[8]  Longlines [8] 10.5 9.3 8.1 5.9 4.6 3.2 2.3 1.2 0 0\n[9]  Dovely [9] 11.3 10.1 9.1 6.9 5.6 4.2 3.3 2.1 0.9 0\nFor example, the distance between Kingsley and Kronos (2.0 kilometres) can be found in \nROUTE_X_DISTANCES [7][5].\n(This question continues on the following page)\n– 7 –\nN21/4/COMSC/HP1/ENG/TZ0/XX\n8821 – 7011\n(Question 13 continued)\n(a) State the distance between Kiko and Longlines. [1]\nThe two-dimensional array ROUTE_X_DISTANCES is valid if all the entries on and above the \nmain diagonal are zero and all the entries below the main diagonal are greater than zero.\nFigure 2 shows an invalid form of ROUTE_X_DISTANCES.\nFigure 2: Invalid form of two-dimensional array ROUTE_X_DISTANCES\n[0] [1] [2] [3] [4] [5] [6] [7] [8] [9]\n[0] 0 0 0 0 0 0 0 0 0 0\n[1] 1.2 0 0 0 0 5.9 0 0 0 0\n[2] 2.2 1.0 0 0 0 0 0 0 0 0\n[3] 6.6 3.4 2.2 0 0 0 0 0 0 0\n[4] 5.7 4.5 3.5 1.3 0 0 0 0 0 0\n[5] 7.1 0 4.9 2.7 1.4 0 0 0 0 0\n[6] 8.0 6.8 5.8 3.6 2.3 0.9 0 0 0 0\n[7] 10.1 9.1 6.9 4.7 3.4 2.0 1.1 0 0 0\n[8] 10.5 9.3 8.1 5.9 4.6 3.2 2.3 1.2 0 0\n[9] 11.3 10.1 9.1 6.9 5.6 4.2 3.3 2.1 0.9 0\n(b) Construct an algorithm in pseudocode that checks the elements of the array  \nROUTE_X_DISTANCES and outputs whether the array is valid or not. [5]\n(c) Construct an algorithm in pseudocode that inputs the names of two bus stations and \noutputs the distance between them. If any of the inputted names are not found, the \nmethod should output an appropriate message. [6]\nThe array ROUTE_X_TIMES (Figure 3) stores the approximate number of minutes it takes for \na bus to travel to a bus station from the previous one. For example, ROUTE_X_TIMES [6] \nstores the number of minutes it takes for a bus to travel from Kingsley to Allapay: 7 minutes.\nFigure 3: The array ROUTE_X_TIMES\n[0] [1] [2] [3] [4] [5] [6] [7] [8] [9]\n0 5 6 6 8 4 7 5 6 6\n(d) Explain how this data could be used to determine the number of minutes it takes for a \nbus to travel between any two bus stations. [3]\n \nReferences:\n© International Baccalaureate Organization 2021",
+  "assets": [
+    {
+      "kind": "source_table",
+      "description": "Original lower-triangular matrix and route context",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-006/renders/page-7.png",
+      "source_pdf_page": 7,
+      "visually_verified": true
+    },
+    {
+      "kind": "source_table",
+      "description": "Invalid matrix and time array",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-006/renders/page-8.png",
+      "source_pdf_page": 8,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Construct an algorithm in pseudocode that inputs the names of two bus stations and outputs the distance between them. If any of the inputted names are not found, the method should output an appropriate message.",
+    "Construct a Python function distance(names,d,a,b)"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-012",
+    "filename": "Computer_science_paper_1__HL_markscheme (3).pdf",
+    "pdf_pages": [
+      17,
+      18
+    ],
+    "question_reference": "Q13 c",
+    "marking_summary": "One valid solution:\ndef distance(names, d, a, b):\n    ia = ib = -1\n    for i in range(len(names)):\n        if names[i] == a: ia = i\n        if names[i] == b: ib = i\n    if ia == -1 or ib == -1:\n        return None\n    if ia < ib:\n        ia, ib = ib, ia\n    return d[ia][ib]",
+    "source_issues": [],
+    "source_marking_evidence": "– 17 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \n(c) Award [6 max]\nAward [1] for all variables correctly declared and initialized;\nAward [1] for looping through the array ROUTE_X_NAMES;\nAward [1] for determining positions of the first name in the array;\nAward [1] for determining positions of the second name in the array;\nAward [1] for outputting a message if one or other not present;\nAward [1] for a comparison of positions to find largest;\nAward [1] for the correct output of distance from ROUTE_X_DISTANCES;\nExample 1: \nNAME1=input() \nNAME2=input() \nPOS1=-1 \nPOS2=-1 \nK=0 \nloop while  K<=9 and (POS1==-1 or POS2==-1) \nif ROUTE_X_NAMES [K].equals(NAME1) //accept '==' instead of equals() \nthen POS1=K \nend if \nif ROUTE_X_NAMES [K].equals(NAME2) \nthen POS2=K \nend if \nK=K+1 \nend while \nif POS1==-1 OR POS2==-1 \n   then output('stations are not found') \n   else \nif POS1 > POS2 \nthen output(ROUTE_X_DISTANCES [POS1][POS2]) \nelse output(ROUTE_X_DISTANCES [POS2][POS1]) \nend if \nend if \nExample 2: \nST1=input() \nST2=input() \nPS1=-1 \nPS2=-1 \nloop K from 0 to 9 \nif ROUTE_X_NAMES [K]==ST1 \nthen PS1=K \nend if \nif ROUTE_X_NAMES [K]==ST2 \nthen PS2=K \nend if \nend loop \nif PS1!=-1 AND PS2!=-1 \n  then   if PS1 < PS2 \nthen T=PS1 \nPS1=PS2 \nPS2=T \nend if  \noutput(ROUTE_X_DISTANCES [PS1][PS2]) \n   else \noutput('stations not found') \nend if \n– 18 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \nExample 3: \nNote: Award marks if algorithm is presented in a Java/Python/Javascript/any other program \nrather than IB pseudocode.  \nFor example, please see the following Javascript program \nfunction findStation(station) \n{ var found = false; \n  var i = 0; \n  do \n  { found = (ROUTE_X_NAMES[i] == station); \nif (!found) i = i + 1; \n  } while (!found && i < 10); \n  if (found) return i; \n  else \n  { output(\"No such bus station as \"+station); \nreturn -1; \n  } \n} \nvar station1 = input(); \nvar station2 = input(); \noutput(\"Finding the distance between \"+station1+\" and \"+station2); \nvar station1index = findStation(station1); \nvar station2index = findStation(station2); \nif (station1index >=0 && station2index >= 0) \n   { if (station1index >= station2index) \noutput(\"Distance \"+ROUTE_X_DISTANCES[station1index][station2index]); \n   else \noutput (\"Distance = \"+ROUTE_X_DISTANCES[station2index][station1index]); \n   } \n(d) Award [3 max]\nDetermine positions/indexes/subscripts of both bus stations in array ROUTE_X_NAMES;\nCalculate the sum of the elements of array   ROUTE_X_TIMES (calculate the number of\nminutes as the sum of the array elements);\nBetween (lower +1) index and higher index;"
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B2.2.2",
+      "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+      "rationale": "Construct a Python function distance(names,d,a,b) assesses Construct programs that apply arrays and Lists.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B2.3.2",
+      "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+      "rationale": "Construct a Python function distance(names,d,a,b) assesses Construct programs utilizing appropriate selection structures.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B2.3.3",
+      "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+      "rationale": "Construct a Python function distance(names,d,a,b) assesses Construct programs that utilize looping structures to perform repeated actions.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B2.4.2",
+      "scope_evidence": "• The differences in efficiency between different methods of linear and binary search\n• Use of search technique based on efficiency requirements—for example, searching a database for a sorted/indexed list of names to find a phone number, versus searching by the number to identify the name",
+      "rationale": "Construct a Python function distance(names,d,a,b) assesses Construct and trace algorithms to implement a linear search and a binary search for data retrieval.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "No visual required by this leaf.",
+    "technical": "Executed both input orders, same location, missing first/second names."
+  },
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC006-Q13-c"
+  ]
+}

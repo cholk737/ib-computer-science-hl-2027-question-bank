@@ -1,0 +1,42 @@
+{
+  "question_id": "P-SRC006-Q13-b",
+  "unofficial": true,
+  "marks": 5,
+  "solution": "One valid solution:\ndef valid_distances(d):\n    for r in range(len(d)):\n        for c in range(len(d)):\n            if r <= c and d[r][c] != 0:\n                return False\n            if r > c and d[r][c] <= 0:\n                return False\n    return True",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Visits all rows."
+    },
+    {
+      "marks": 1,
+      "criterion": "Visits all columns in each row."
+    },
+    {
+      "marks": 1,
+      "criterion": "Rejects nonzero entries when r<=c."
+    },
+    {
+      "marks": 1,
+      "criterion": "Rejects nonpositive entries when r>c."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns True only after every required check passes."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed valid3x3, wrong upper entry, zero lower entry and1x1 cases.",
+    "source_comparison": [
+      15,
+      16
+    ],
+    "test_code": "def valid_distances(d):\n    for r in range(len(d)):\n        for c in range(len(d)):\n            if r <= c and d[r][c] != 0:\n                return False\n            if r > c and d[r][c] <= 0:\n                return False\n    return True\nassert valid_distances([[0,0,0],[2,0,0],[3,4,0]])\nassert not valid_distances([[0,1],[2,0]])\nassert not valid_distances([[0,0],[0,0]])\nassert valid_distances([[0]])",
+    "result_file": ""
+  },
+  "code": "def valid_distances(d):\n    for r in range(len(d)):\n        for c in range(len(d)):\n            if r <= c and d[r][c] != 0:\n                return False\n            if r > c and d[r][c] <= 0:\n                return False\n    return True",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

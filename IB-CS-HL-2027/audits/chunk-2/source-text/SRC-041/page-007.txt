@@ -1,0 +1,42 @@
+                                                                                                                                                                                             –  7   –                                                                                                                                                    8825                                                                                         – 6408                                                                 M
+
+
+2.                                                                 (a)                                                                                          Award [2]max
+                                            Award [1]per point;
+                                            including DateTime in the key ensures each record is unique;
+                                            PatientID/NurseID only would create duplicates;
+                                            since a nurse canperforma test on the same patient multiple times;
+
+                                            without DateTime, each patient is limited to one test per nurse;
+                                            including DateTime (PatientID/NurseID/DateTime) allows multiple tests.
+
+                      (b)                                                 Award [2 max]
+                                            there is a partial key dependency;
+                                            PatientName is dependent on PatientID and not NurseID.
+
+                      (c)                                                   Award[2 max                                                                                                                                                              ]
+                                            Award [1]per correct name;
+                                            Simon Moore
+                                            Scottie Ngatai
+
+                      (d)                                                 Award [4] max
+                                            Award [1] for selecting PatientID and/or PatientName;
+                                            Award [1]for                                                                                                                                                                                                        correct tablesand                                                                                                                                                                                                                                                                                            JOIN on NurseID;
+                                            Award [1] for WHERE NurseName = “Anya Svetlana”;
+                                            Award [1]for DateTime on 2024/11/19 between 00:00 and 23:59                                                                                                                                                                                                       ;
+
+                                            SELECT TEST.PatientName
+                                            FROM TESTINNER JOIN NURSE ON TEST.NurseID = NURSE.NurseID
+                                            WHERE NURSE.NurseName = 'Anya Svetlana'
+                                            AND TEST.DateTime >= ‘2024-11-19 00:00’ and <= '2024-11-19
+                                            23:59';
+
+                                            Accept Date conditions:DateTime LIKE ‘2024-11-19*’                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          /DateTime LIKE ‘2024-11-19%’
+
+
+                                            Note:Accept answers that aren’t written in SQL.                                                                                                                           For example:
+
+                                            Select the PatientName and/or PatientID;
+                                            Combine the data from the TEST andNURSE tablesbased onthe                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          NurseID;
+                                            Filter the results when the NurseName is 'Anya Svetlana';
+                                            and where DateTime on 2024/11/19 between 00:00 and 23:59

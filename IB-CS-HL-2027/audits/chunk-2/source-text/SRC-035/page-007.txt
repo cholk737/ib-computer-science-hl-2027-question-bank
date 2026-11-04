@@ -1,0 +1,59 @@
+                                                         –  7 –               M23/4/COMSC/HP2/ENG/TZ0/XX/M
+
+
+3.    (a)    Award [2 max]
+             1NF requires atomic values;
+             CourseNum, CourseName all have multiple values in the cells in their columns;
+
+             Repeating data;
+             For example, Student 2907 has three courses so is repeated each time;
+
+
+      (b)    Award [8 max]
+             Award [1] for each correct table with the correct attributes (x4)
+             Award [1] for each correct primary key (x4)
+
+             3NF
+             STUDENT (StudentID, FName, SName, MajorID)
+             MAJOR (MajorID, Major)
+             COURSE (CourseNum, CourseName)
+             ENROLLMENT (StudentID, CourseNum) or ENROLLMENT (EnrollmentID, StudentID,
+             CourseNum)
+
+             3NF
+             STUDENT (StudentID, FName, SName, MajorID)
+             MAJOR (MajorID, Major)
+             REGISTER (StudentID, CourseNum)
+             COURSE (CourseNum, CourseName)
+
+             3NF
+             STUDENT (StudentID, FName, SName)
+             ENROLL (StudentID, CourseNum)
+             MAJOR (MajorID, Major)
+             COURSE (CourseNum, CourseName, MajorID)
+
+             Example using 2NF
+             STUDENT (StudentID, FName, SName, MajorID, Major)
+             COURSE (CourseNum, CourseName)
+             ENROLLMENT (StudentID, CourseNum) or ENROLLMENT (EnrollmentID, StudentID,
+             CourseNum)
+
+           Note: this normalisation to 2NF would be awarded 5 marks as follows:
+           Award [1] for PK in STUDENT
+           Award [1] for PK in COURSE
+           Award [1] for correct attributes in COURSE
+           Award [1] for PK in ENROLLMENT
+           Award [1] for attributes in ENROLLMENT.
+
+
+      (c)    Award [5 max]
+             Data must be modelled knowing the purpose otherwise the data will not do what is required;
+             Identify the entities/tables;
+             If incorrect they will not support the purpose of the DB;
+             The attributes of the tables should be necessary and sufficient for purpose;
+             Otherwise may get inefficiencies;
+             The keys for accessing the tables need to be identified;
+             Otherwise the user cannot access the data;
+             Identify the relationships among tables;
+             Otherwise the user cannot perform complex queries across several tables;
+             Identify relationships and normalization that reduces data duplication;

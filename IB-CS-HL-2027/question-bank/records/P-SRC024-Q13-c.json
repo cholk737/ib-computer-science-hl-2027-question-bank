@@ -1,0 +1,76 @@
+{
+  "question_id": "P-SRC024-Q13-c",
+  "source_question_ids": [
+    "H-SRC024-Q13-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct summary(readings) in Python to return(maximum, minimum, arithmetic mean) for a nonempty list of integer measurements. Use explicit comparisons and accumulation; do not use min, max, sum or statistics helpers.",
+  "syllabus_codes": [
+    "B2.2.2",
+    "B2.3.2",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 9,
+  "command_term": "Construct",
+  "difficulty": "high",
+  "adaptation_rationale": "Retains single pass statistics; explicit helper restriction assess algorithm; fix es source example else-if bug and preserves fractional mean.",
+  "solution": "def summary(readings):\n    low=high=readings[0]\n    total=0\n    count=0\n    for value in readings:\n        total+=value\n        count+=1\n        if value < low:\n            low=value\n        if value > high:\n            high=value\n    return high,low,total/count",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes low and high from a valid reading."
+    },
+    {
+      "marks": 1,
+      "criterion": "Initializes total and count."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses all readings exactly once."
+    },
+    {
+      "marks": 1,
+      "criterion": "Adds each value to total."
+    },
+    {
+      "marks": 1,
+      "criterion": "Increments count for each reading."
+    },
+    {
+      "marks": 1,
+      "criterion": "Updates low when value<low."
+    },
+    {
+      "marks": 1,
+      "criterion": "Updates high when value>high independently of low update."
+    },
+    {
+      "marks": 1,
+      "criterion": "Computes total/count using true division."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns maximum, minimum, mean in required order."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "Executable checks saved under checks/ where applicable."
+  },
+  "code": "def summary(readings):\n    low=high=readings[0]\n    total=0\n    count=0\n    for value in readings:\n        total+=value\n        count+=1\n        if value < low:\n            low=value\n        if value > high:\n            high=value\n    return high,low,total/count",
+  "test_code": "assert summary([100,30,10,20,50,100,250,50])==(250,10,76.25)\nassert summary([1,2,3])==(3,1,2)\nassert summary([3,2,1])==(3,1,2)\nassert summary([7])==(7,7,7)\nassert summary([-4,-1])==(-1,-4,-2.5)",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC024-Q13-c.json",
+  "question_path": "question-bank/questions/P-SRC024-Q13-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC024-Q13-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

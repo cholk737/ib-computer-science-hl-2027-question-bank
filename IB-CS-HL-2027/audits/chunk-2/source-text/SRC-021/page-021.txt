@@ -1,0 +1,33 @@
+                                                 –   21 –             M23/4/COMSC/HP1/ENG/TZ2/XX/M
+
+
+(b)   Award [4 max]
+
+      Example 1 (if-else statement):
+      Award [1] for initializing VAL to 0 and return VAL / return 0 (in case no duplicates)
+      Award [3 max] for determining a correct value (1 mark for each correct condition and change
+      of the value of VAL if needed)
+
+      Note: Award marks for determining a correct return value in each of possible cases: three
+      different values in row R- no duplicates, any two numbers/values in row R are the same and
+      all three values in row R are the same.
+      Award [1] for correct use of row index and column index in the DICEDIAL array
+
+      Note: the method heading may not appear in a candidate’s response.
+
+      DuplicateNum (DICEDIAL, R)
+            VAL=0
+            if DICEDIAL[R][0] = DICEDIAL[R][1]
+                 then
+                       VAL= DICEDIAL[R][0] // or VAL= DICEDIAL[R][1]
+                 else
+                     if DICEDIAL[R][0] = DICEDIAL[R][2]
+                           then VAL= DICEDIAL[R][0]
+                           else
+                                   if DICEDIAL[R][1] = DICEDIAL[R][2]
+                                           then VAL= DICEDIAL[R][1]
+                                    end if
+                        end if
+             end if
+      return VAL
+      end DuplicateNum

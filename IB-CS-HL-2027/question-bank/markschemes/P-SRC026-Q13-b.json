@@ -1,0 +1,38 @@
+{
+  "question_id": "P-SRC026-Q13-b",
+  "unofficial": true,
+  "marks": 4,
+  "solution": "One solution:\ndef read_in_range(read_integer):\n    while True:\n        value = read_integer()\n        if 1 <= value <= 16:\n            print(\"Accepted\")\n            return value\n        print(\"Enter an integer from 1 to 16\")",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Repeated input loop."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct inclusive range test."
+    },
+    {
+      "marks": 1,
+      "criterion": "Reject/retry invalid entries with message."
+    },
+    {
+      "marks": 1,
+      "criterion": "Accept and return valid entry."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed invalid low/high thenvalid and boundary1/16 inputs.",
+    "source_comparison": [
+      21,
+      22
+    ],
+    "test_code": "def read_in_range(read_integer):\n    while True:\n        value = read_integer()\n        if 1 <= value <= 16:\n            print(\"Accepted\")\n            return value\n        print(\"Enter an integer from 1 to 16\")\nimport io,contextlib\nfor values in [[0,17,9],[1],[16]]:\n it=iter(values)\n with contextlib.redirect_stdout(io.StringIO()):assert read_in_range(lambda:next(it))==values[-1]",
+    "result_file": ""
+  },
+  "code": "def read_in_range(read_integer):\n    while True:\n        value = read_integer()\n        if 1 <= value <= 16:\n            print(\"Accepted\")\n            return value\n        print(\"Enter an integer from 1 to 16\")",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

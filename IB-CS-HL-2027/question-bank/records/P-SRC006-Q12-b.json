@@ -1,0 +1,47 @@
+{
+  "question_id": "P-SRC006-Q12-b",
+  "source_question_ids": [
+    "H-SRC006-Q12-b"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Outline how to recognize the final node of a nonempty circular singly linked list with an external head reference.",
+  "syllabus_codes": [
+    "B4.1.2"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 2,
+  "command_term": "Outline",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "The final node is the node whose next reference points back to the same node as head; its next reference is not None.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Inspect next reference."
+    },
+    {
+      "marks": 1,
+      "criterion": "It equals head (identity), not None."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      12
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC006-Q12-b.json",
+  "question_path": "question-bank/questions/P-SRC006-Q12-b.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC006-Q12-b.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

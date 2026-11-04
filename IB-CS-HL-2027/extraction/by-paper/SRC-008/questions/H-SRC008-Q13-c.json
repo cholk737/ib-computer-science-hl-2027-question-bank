@@ -1,0 +1,82 @@
+{
+  "original_assessment_context": "MAT=[[7,7,0,0,0,0],[1,2,1,0,0,0],[0,9,-3,5,0,0],[0,0,-5,6,4,0],[0,0,0,7,7,2],[0,0,0,0,5,1]]. Nonzero iff within one position of main diagonal.mystery(A,R): ifR>0 returnA[R][R-1]+mystery(A,R-1),else0;X=mystery(MAT,5).",
+  "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+  "source_question_id": "H-SRC008-Q13-c",
+  "source_id": "SRC-008",
+  "source_filename": "Computer_science_paper_1__HL (5).pdf",
+  "year": "2019",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "TZ0",
+  "option": "",
+  "question": "13",
+  "subquestion": "c",
+  "source_pdf_pages": [
+    7
+  ],
+  "source_printed_pages": [
+    "6"
+  ],
+  "original_marks": 4,
+  "command_term": "Determine",
+  "original_text": "[Source PDF page 7]\nisValidMatrix()\nGiven the following recursive method with two formal parameters:\nmystery()\n(a two-dimensional array) and (an integer).\nA R\nmystery(A,R)\nif R > 0 then\nreturn A[R][R-1] + mystery(A,R-1)\nelse\nreturn 0\nend if\nend mystery\n(c) Determine the value of variable after execution of the following method call:\nX\nX = mystery(MAT,5)\nwhere is the two-dimensional array given. You must show your working. [4]\nMAT",
+  "parent_context": "MAT=[[7,7,0,0,0,0],[1,2,1,0,0,0],[0,9,-3,5,0,0],[0,0,-5,6,4,0],[0,0,0,7,7,2],[0,0,0,0,5,1]]. Nonzero iff within one position of main diagonal.mystery(A,R): ifR>0 returnA[R][R-1]+mystery(A,R-1),else0;X=mystery(MAT,5).",
+  "assets": [
+    {
+      "kind": "source_page",
+      "description": "Original nonbranching recursion and matrix",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-008-page-7.png",
+      "source_pdf_page": 7,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Determine: Determine the value of variable X after execution of the method call X=mystery(MAT,5). You must show your working."
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-014",
+    "filename": "Computer_science_paper_1__HL_markscheme (5).pdf",
+    "pdf_pages": [
+      18
+    ],
+    "question_reference": "13(c)",
+    "marking_summary": "5+7-5+9+1+0=17 withrecursiveexpansion.",
+    "source_issues": []
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "mapping_target": "adapted_practice_only",
+      "syllabus_code": "B2.4.5",
+      "scope_evidence": "• Simple, non-branching recursive algorithms in programming only",
+      "rationale": "Preserves nonbranching recursive subdiagonal summation;Python and new signed inputs.",
+      "theme": "B",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+    "marks": "Printed allocation transcribed.",
+    "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+    "official_answer_status": "See source markscheme record"
+  },
+  "original_text_manual_synopsis": "Determine the value of variable X after execution of the method call X=mystery(MAT,5). You must show your working.",
+  "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+  "source_page_evidence": [
+    {
+      "pdf_page": 7,
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-008/page-007.txt"
+    }
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC008-Q13-c"
+  ]
+}

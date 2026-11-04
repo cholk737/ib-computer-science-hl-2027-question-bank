@@ -1,0 +1,57 @@
+{
+  "question_id": "P-SRC002-Q04-c",
+  "source_question_ids": [
+    "H-SRC002-Q04-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Explain why inconsistent formats, duplicated observations and missing values should be addressed before a dataset is used to train a prediction model.",
+  "syllabus_codes": [
+    "A4.2.1"
+  ],
+  "theme": "A",
+  "level": "HL-only",
+  "marks": 5,
+  "command_term": "Explain",
+  "difficulty": "medium",
+  "adaptation_rationale": "Retains transformation/cleaning reasoning while replacing ETL implementation detail with required ML data preparation.",
+  "solution": "Formats must be made consistent so equivalent values are interpreted alike. Duplicate observations can over-weight repeated cases and should be consolidated or removed. Missing values need a justified treatment, such as imputation or deletion, so they do not distort training or cause invalid processing.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Consistent-format treatment."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains comparability/model effect."
+    },
+    {
+      "marks": 1,
+      "criterion": "Duplicate handling."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains distorted weighting."
+    },
+    {
+      "marks": 1,
+      "criterion": "Suitable missing-value treatment with relevant purpose."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC002-Q04-c.json",
+  "question_path": "question-bank/questions/P-SRC002-Q04-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC002-Q04-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

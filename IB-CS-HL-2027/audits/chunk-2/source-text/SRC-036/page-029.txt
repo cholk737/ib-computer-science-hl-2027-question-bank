@@ -1,0 +1,40 @@
+                                                    –  29 –             N20/4/COMSC/HP2/ENG/TZ0/XX/M
+
+
+17.   (a)   Award [6 max]
+            Award [1] for looping around the main stack using isEmpty() method;
+            Award [1] for using "while" loop in both loops (note: not a "do while"!);
+            Award [1] for breaking out of outer loop when car is removed and other cars are replaced;
+            Award [1] for correctly removing cars before target car is found;
+            Award [2] for replacing cars in same order by popping off temporary stack;
+
+            Example 2:
+
+            public void staffRemoveCar(Stack stack, String reg) {
+             Stack temp = new Stack();
+             while (!stack.isEmpty()) {
+                  Vehicle v = (Vehicle) stack.pop();
+                  if (v.getRegistration().equals(reg)) {
+                       // correct car is now removed
+                        // return others
+                        while (!temp.isEmpty()) {
+                              stack.push(temp.pop());
+                        }
+                        break; // don't keep repeating
+                  }
+                  temp.push(v);
+             }
+            }
+                                                                                                            [6]
+            Example 2:
+
+              public static void staffRemoveCar(Stack<Vehicle> stack, String reg)
+              { Stack<Vehicle> temp = new Stack<Vehicle>();
+                 boolean found = false;
+                 while (!found && !stack.isEmpty())
+                 { Vehicle curr = stack.pop();
+                    found = curr.getRegistration().equals(reg);
+                    if (!found) temp.push(curr);
+                 }
+                 while (!temp.isEmpty()) stack.push(temp.pop());
+              }

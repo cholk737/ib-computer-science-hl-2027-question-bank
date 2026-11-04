@@ -1,0 +1,1032 @@
+
+=== PDF 1 ===
+No     part       of    this      product          may        be reproduced in any form or by any electronic or
+mechanical means, including information storage and retrieval systems, without written
+permission from the IB.
+
+Additionally, the license tied with this product prohibits commercial use of any selected
+files       or    extracts             from        this      product.   Use       by     third        parties,             including but      not limited           to
+publishers,         private            teachers, tutoring             or study         services,               preparatory                   schools,  vendors
+operating                curriculum                 mapping               services              or    teacher             resource              digital          platforms                and       app
+developers, is not permitted and is subject to the IB’s prior written consent via a license.
+More         information                   on     how       to    request  a   license            can       be     obtained               from
+https://ibo.org/become-an-ib-school/ib-publishing/licensing/applying-for-a-license/.
+
+Aucune partie de ce produit ne peut être reproduite sous quelque forme ni par quelque
+moyen que ce soit, électronique ou mécanique, y compris des systèmes de stockage et
+de récupération d’informations, sans l’autorisation écrite de l’IB.
+
+De      plus,         la    licence             associée                à   ce   produit            interdit            toute         utilisation                commerciale                    de
+tout fichier ou extrait sélectionné dans ce produit. L’utilisation par des tiers, y compris,
+sans toutefois               s’y    limiter,  des       éditeurs,    des       professeurs                    particuliers,                   des       services            de
+tutorat ou     d’aide           aux       études,             des       établissements               de     préparation         à   l’enseignement
+supérieur,  des        fournisseurs                      de      services              de      planification                     des        programmes
+d’études,                des gestionnaires de     plateformes                    pédagogiques en     ligne,          et    des
+développeurs d’applications,           n’est        pas autorisée                et est      soumise            au     consentement                      écrit
+préalable                 de  l’IB  par  l’intermédiaire  d’une  licence.  Pour  plus  d’informations  sur  la
+procédure à suivre pour demander                  une       licence,              rendez-vous          à   l’adresse suivante :
+https://ibo.org/become-an-ib-school/ib-publishing/licensing/applying-for-a-license/.
+
+No se podrá reproducir ninguna parte de este producto de ninguna forma ni por ningún
+medio        electrónico                  o   mecánico,                 incluidos los     sistemas             de     almacenamiento         y
+recuperación de información, sin que medie la autorización escrita del IB.
+
+Además,     la    licencia    vinculada a   este    producto prohíbe           el uso con fines comerciales de
+todo      archivo o   fragmento  seleccionado de este producto. El uso por parte de terceros
+—lo    que       incluye,              a   título    enunciativo,                  editoriales,           profesores                  particulares,               servicios
+de apoyo académico     o ayuda         para     el    estudio,             colegios            preparatorios,                       desarrolladores
+de  aplicaciones         y  entidades  que  presten  servicios  de  planificación  curricular u
+ofrezcan recursos para     docentes mediante plataformas digitales— no está permitido
+y estará sujeto          al   otorgamiento               previo   de     una       licencia             escrita por        parte     del IB.    En este
+enlace   encontrará   más   información    sobre   cómo  solicitar   una    licencia:
+https://ibo.org/become-an-ib-school/ib-publishing/licensing/applying-for-a-license/.
+
+=== PDF 2 ===
+  N20/4/COMSC/HP2/ENG/TZ0/XX
+
+
+
+
+
+
+Computer science
+Higher level
+Paper 2
+
+
+Monday 2 November 2020 (morning)
+
+
+1 hour 20 minutes
+
+
+Instructions to candidates
+y	Do not open this examination paper until instructed to do so.
+y	Answer all of the questions from one of the options.
+y	The maximum mark for this examination paper is [65marks]                  .
+
+
+                        Option                                Questions
+   Option A —                              Databases             1 – 4
+   Option B —     Modelling and simulation                       5 – 8
+   Option C —     Web science                                    9 – 12
+   Option D —     Object-oriented programming                   13 – 17
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                           8820–7012
+       19 pages
+
+=== PDF 3 ===
+                                                                                                                                                                                                                                                                                  N20/4/COMSC/HP2/ENG/TZ0/XX
+
+
+
+
+                                                                                                                                                                                           – 2 –                                                                                                                                                                    8820–7012
+
+Option A  —                                     Databases
+
+1.                   The Driving  Licensing Agency stores information about individuals who hold a driving license
+                     and/or own vehicles.
+
+                     The following rules apply:
+                     y          Each individual may only hold one driving license.
+                     y          Each individual may own more than one vehicle.
+                     y          Each vehicle may be owned by one individual only.
+
+                     (a)                   Construct the entity-relationship diagram (ERD) that shows the relationship between
+                                           the individual, their driving license, and their vehicle(s).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [2]
+
+                     When an individual applies for a driving license, they have to complete a license application form.
+                     The following is an extract from that form:
+
+                                                                                       Figure 1: Extract from driving license application form
+
+
+                                                                                               Surname
+
+                                                                                               First name(s)
+
+                                                                                               Mr                                                                                                                                                                                                                                                                                                                                                                                                                                                              MsMrs                                                                                                    Miss
+
+                                                                                               Other title                                                                                                           Male                                      Female
+                                                                                                                                                         Day                                                                                                                                                                                                                                                                                                                        YearMonth
+                                                                                               Date of birth
+
+
+                     (b)                   Explain why Date of birth has been separated into three fields.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   [3]
+
+                     The data in the form shown above is stored in the Person table. The license application form
+                     also requires an individual’s medical information. This is stored in a table called PersonMedical.
+
+                     The following extract is a sample of the medical questions that are asked.
+
+                               Figure 2: A sample of the medical questions asked on the license application form
+
+
+                                                                                               Have you ever had any of the                                                                                                            No                                   Ye   s
+                                                                                               following conditions?
+
+                                                                                               If you have answered “Yes”, please tick all the appropriates boxes.
+                                                                                               Epilepsy
+                                                                                               Fits or blackouts
+                                                                                               Repeated attacks of sudden disabling giddiness
+                                                                                               Diabetes controlled by insulin
+
+
+
+(Option A continues on the following page)
+
+=== PDF 4 ===
+                                                                                                                                                                                                                                                                                                                                                                                                                       N20/4/COMSC/HP2/ENG/TZ0/XX
+
+
+
+
+                                                                                                                                                                                                                                                                                     – 3 –                                                                                                                                                                                                                                                       8820–7012
+
+(Option A, question 1 continued)
+
+                                (c)                             Explain two reasons why medical information should not be stored in the Person table.                                                                                                                                                              [6]
+
+                                (d)                             Outline two issues caused by storing redundant data.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            [4]
+
+                                (e)                             Outline two situations where data stored by the Driving  Licensing Agency may need to
+                                                                be open to interrogation by other parties.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [4]
+
+
+2.                              Billetmania is an online company that sells tickets for theatre performances and musicconcerts.
+                                After a customer has chosen their seats, they can pay for the tickets through a secure online
+                                payment system. Once the transaction has been completed, the customer receives an
+                                emailreceipt.
+
+                                (a)                             Define the term database transaction. [1]
+
+                                An information system and a database are used for Billetmania’s day-to-day operations.
+
+                                (b)                             Outline how the Billetmania information system would utilize a database.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [2]
+
+                                (c)                             Explain the importance of transaction durability to Billetmania when clients book tickets.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            [3]
+
+                                (d)                             Explain how the Billetmania database management system ensures that a seat is not
+                                                                booked by two people simultaneously.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          [4]
+
+
+
+(Option A continues on the following page)
+
+=== PDF 5 ===
+                                                                                  N20/4/COMSC/HP2/ENG/TZ0/XX
+
+
+
+
+                                                        – 4 –                                              8820–7012
+
+(Option A  continued)
+
+3.    WineForAll is a retailer that sells wine in its stores. Each store sells wine from a number
+      ofvineyards.
+
+      The following extract from the Wine file contains unnormalized data.
+
+
+    NameOfWine           Vineyard      Description        UnitPrice         Region        StoreID      StockQty
+
+     Chardonnay         Stormy Bay       2015, Dry,        $19.99          Gisborne           1            45
+                                            13%
+
+      Sauvignon         Stormy Bay       2017, Dry,        $29.99          Gisborne           2            20
+         Blanc                              12%
+
+      Sauvignon         Stormy Bay       2017, Dry,        $29.99          Gisborne           1            45
+         Blanc                              12%
+
+        Pelorus         Stormy Bay      2016, Brut,        $34.99          Gisborne           1            10
+                                            14%
+
+      Pinot Noir           Pecan       2016, Fruity,       $29.99          Gisborne           3            32
+                           Block            14%
+
+      Sauvignon            Pecan           2017,           $29.99          Gisborne           4            25
+         Blanc             Block          Dry,13%
+
+        Shiraz         James Tree      2013, Fruity,       $25.99        Hawkes Bay           3            15
+                                           13.5%
+
+        Shiraz         James Tree      2013, Fruity,       $25.99        Hawkes Bay           2            40
+                                           13.5%
+
+        Merlot         James Tree      2014, Fruity,       $29.99        Hawkes Bay           1            25
+                                            14%
+
+      Sauvignon         John Glad        2016, Dry,        $19.99         Gladstone           4            30
+         Blanc                             12.5%
+
+     Chardonnay         John Glad        2017, Dry,        $15.99         Gladstone           2            28
+                                           13.5%
+
+
+
+
+
+
+
+(Option A continues on the following page)
+
+=== PDF 6 ===
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     N20/4/COMSC/HP2/ENG/TZ0/XX
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                – 5 –                                                                                                                                                                                                                                                                                                                                                        8820–7012
+
+(Option A, question 3 continued)
+
+                                            (a)                                          Define the term record. [1]
+
+                                            (b)                                          Identify the steps to create a query to find the vineyards and names of fruity wines
+                                                                                         where the quantity in stock is between 25 and 35 bottles.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [3]
+
+                                            (c)                                          (i)                                          Identify the steps to create a non-persistent derived field called TotalPrice,
+                                                                                                                                      which would hold the total value of wine stored for each record.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   [2]
+
+                                                                                         (ii)                                         Outline why the inclusion of a derived field will not affect the normalization of
+                                                                                                                                      adatabase.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   [2]
+
+                                            (d)                                          Construct the 3rd Normal Form (3NF) of the unnormalized Wine file.                                                                                                                                                                                                                                                                                                                                                                                                                                                                        [6]
+
+                                            (e)                                          Outline why a single-field primary key is not always an appropriate solution for
+                                                                                         normalized databases.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          [2]
+
+
+4.                                          The Criminal Information Support System (CISS) project is being developed to provide the
+                                            Puerto Rico Police (PRP) with countrywide access to a centralized data warehouse. The data
+                                            warehouse will be created from the databases of several police departments.
+
+                                            (a)                                          Identify two differences between a data warehouse and a database.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      [2]
+
+                                            (b)                                          Outline two advantages that the PRP will gain from using a data warehouse.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          [4]
+
+                                            (c)                                          Describe how data in the CISS data warehouse could be updated in real time from the
+                                                                                         police department databases.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [4]
+
+                                            Data mining techniques are being used with the new PRP data warehouse to assist the
+                                            detection of patterns in crime data. Pattern detection approaches include cluster analysis
+                                            andclassifications.
+
+                                            (d)                                          Compare cluster analysis and classifications as pattern detection techniques.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [5]
+
+                                            (e)                                          Explain how link analysis could be used to detect patterns in crime data.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [5]
+
+
+                                                                                                                                                                                                                                                                                                                End of Option A
+
+=== PDF 7 ===
+                                                                                                                                                                                                                                                                                                                          N20/4/COMSC/HP2/ENG/TZ0/XX
+
+
+
+
+                                                                                                                                                                                                                      – 6 –                                                                                                                                                                                             8820–7012
+
+Option B —                                              Modelling and simulation
+
+5.                      EnviroBuild is a construction company that recently purchased land. It has permission to
+                        build either small houses or large houses but not both types of house. The maximum number
+                        of small houses that can be built is 10. The maximum number of large houses that can be
+                        built is five.
+
+                        The cost of building the houses is calculated using a model with the following three variables:
+
+                        House_Type:                                                            The type of house (small or large).
+
+                        House_Num:                                                                                   The number of houses to be built.
+
+                        Profit:                                                                                                                                                                             The total sales revenue minus the land costs, labour costs and material costs.
+
+                        (a)                      Identify the data types for the House_Type, House_Num and Profit variables.                                                                                                                                                                                                                                                                                                                                                                                                                  [3]
+
+                        The decision whether to build small houses or large houses is a purely financial one and is
+                        based on the following information:
+                        y            A single payment of $500                                                                                                                                                                                                                                                                                                                                                                                                                               000 for the land, regardless of whether 10 small houses or five
+                                      largehouses are to be built.
+                        y           The revenue from each house sale will be $220                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          000 for a small house and $400                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     000 for a
+                                      largehouse.
+                        y           The labour costs will be $2500 per day, regardless of the type of house built.
+                        y            It will take 17 days to build each small house and 23 days to build each large house.
+                                     Houses are built sequentially so that they can be sold as soon as they are completed.
+                        y           The material costs will be $100                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          000 for each small house and $190                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     000 for each large house.
+
+                        (b)                      Construct a spreadsheet model that shows the total profit for the chosen type of house.
+                                                 Theuser must input the                                                                                   House_Type and House_Num to calculate the total profit.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        [6]
+
+                        (c)                      Outline two validation tests that should be included in the test plan for this
+                                                 spreadsheetmodel.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [4]
+
+                        To finance this project, EnviroBuild took out a bank loan of $400                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         000 and will be required to
+                        pay interest on this loan. The project starts on 1 January 2021.
+
+                        The following steps are used to calculate the total profit:
+                        y            Read the Profit variable and the No_of_Days variable from the spreadsheet model in (b).
+                        y            Calculate the number of months that the project will take.
+                                     ◦             There are no partial months.
+                                     ◦              For example, if a project finished on 1 July 2021, the loan interest rates will include
+                                                   July: the project will last for 7 months.
+                        y           The rate of interest on the bank loan of $400                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     000 is 1                                                                                                                                     % per month.
+                        y           The land tax is $500 per month.
+
+                        (d)                      Construct the pseudocode that will calculate the profit after these additional costs have
+                                                 been considered. You can introduce any new variables, if necessary.                                                                                                                                                                                                                                                                                                                                                                                                      [5]
+
+
+
+(Option B continues on the following page)
+
+=== PDF 8 ===
+                                                                                                                                                                                                                                                                                                                                                                       N20/4/COMSC/HP2/ENG/TZ0/XX
+
+
+
+
+                                                                                                                                                                                                                                                     – 7 –                                                                                                                                                                                                                         8820–7012
+
+(Option B continued)
+
+6.                          Global warming is a term used to describe the increase in mean global temperatures.
+
+                            There have been numerous computer simulations developed to predict the effects of
+                            globalwarming. One simulation is NASA’s Virtual Earth System Laboratory (VESL), which
+                            allows users to see how climate change affects glacier size, global sea level andchanges to
+                            the coastline.
+
+                            The VESL runs simulations in real time and is an abstraction of reality.
+
+                            (a)                          (i)                         Outline what is meant by a real-time simulation in the context of a glacier size
+                                                                                     simulation. [2]
+
+                                                         (ii)                        Outline what is meant by the statement “the VESL simulation is an abstraction
+                                                                                     ofreality”.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   [2]
+
+                            A recent study reported that previous simulations of predicted global sea levels for 2100 were
+                            highly inaccurate.
+
+                            (b)                          Outline two reasons why predictions of global sea levels from simulations may not
+                                                         beaccurate.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [4]
+
+                            (c)                          NASA has decided to make its simulation software available for other scientists as well
+                                                         as members of the public.
+
+                                                         Evaluate the social and ethical implications of this decision.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [6]
+
+
+
+(Option B continues on the following page)
+
+=== PDF 9 ===
+                                                                                                                                                                                                                                                                                                                                                                                                                                                      N20/4/COMSC/HP2/ENG/TZ0/XX
+
+
+
+
+                                                                                                                                                                                                                                                                                                          – 8 –                                                                                                                                                                                                                                                                         8820–7012
+
+(Option B continued)
+
+7.                                Simulation software can be used to produce a 3D visualization of rising sea levels that
+                                  change as the user alters the percentage of ice that has melted.
+
+                                                                                                                                                                         Figure 3: 3D visualization of rising sea levels
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  (a)                                (i)                                Define the term visualization. [1]
+
+                                                                     (ii)                               Identify how a 2D visualization could be used in this scenario.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   [1]
+
+                                  (b)                                Explain the benefits of using visualization when simulating rising sea levels.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [5]
+
+                                  Once the 3D visualization has been rendered, when the user drags a slider bar to simulate
+                                  the amount of ice that has melted, the visualization is re-rendered without any delay.
+
+                                                                                                               Figure 4: Slider bar to simulate different percentages of sea ice
+
+                                                                                                                                                                     Remove Ice
+                                                                                                                                                                              10                          %
+
+
+                                  (c)                                Describe how this 3D visualization is rendered.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [6]
+
+
+
+(Option B continues on the following page)
+
+=== PDF 10 ===
+                                                                                                                                                                                                                                                                                                                                                                                                           N20/4/COMSC/HP2/ENG/TZ0/XX
+
+
+
+
+                                                                                                                                                                                                                                                                             – 9 –                                                                                                                                                                                                                                               8820–7012
+
+(Option B continued)
+
+8.                             Genetic algorithms are used to influence the behaviour of non-playing characters (NPCs)
+                               in role-playing games (RPGs). NPCs are computer-controlled characters that the player
+                               interacts with but does not control.
+
+                               (a)                            Outline two advantages of developing NPCs using genetic algorithms.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            [4]
+
+                               A series of generic NPCs are being developed for use in any multi-player RPG. The environmental
+                               and social interactions of these NPCs are being developed using supervised learning and will
+                               continue to develop as the game is played.
+
+                               (b)                            Explain how supervised learning of a genetic algorithm could be used to support the
+                                                              way NPCs learn.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [6]
+
+                               Once NPCs have completed their supervised training, they are placed in a dynamic game
+                               environment. Each NPC learns to adapt its behaviour to its environment.
+
+                               At this stage of the training, NPCs will not be verbally communicating with other characters in
+                               their environment.
+
+                               (c)                            Describe the way an NPC in a game could adapt its behaviour when moving and
+                                                              interacting with its environment.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [6]
+
+                               The last stage of NPC development is verbal communication with player characters and other
+                               NPCs. To assist with this process, it was decided to explore research related to chatbots.
+
+                               (d)                            Explain the benefits of giving NPCs the functionality of chatbots.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [4]
+
+
+                                                                                                                                                                                                                    End of Option B
+
+=== PDF 11 ===
+                           N20/4/COMSC/HP2/ENG/TZ0/XX
+
+
+
+
+  – 10 –                                          8820–7012
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Blank page
+
+=== PDF 12 ===
+                                                                                                                                                                                                                                                                                                                                          N20/4/COMSC/HP2/ENG/TZ0/XX
+
+
+
+
+                                                                                                                                                                                                                              – 11 –                                                                                                                                                                                                        8820–7012
+
+Option C —                                                Web science
+
+9.                        Pugh University has a website that allows computer science students to enter their name and
+                          customize the web pages.
+
+                          Consider the section of HTML and CSS code shown below.
+
+                          File name: index.html
+                          <!DOCTYPE html>
+                          <html>
+                          <body>
+                          <script>
+                              function setVar(){
+                              var subject=document.getElementById("kippers").value;
+                              document.getElementById("subj").innerHTML = subject;
+                              }
+                          </script>
+                          <h2>My First Page</h2>
+                          <p>Welcome to the <span id="subj"></span> Faculty</p>
+
+                          <input type="text" id="kippers"/>
+                          <button onclick="setVar();"/>clickme</button>
+                          </body>
+                          </html>
+
+                          (a)                       (i)                       State the output of the index.html file in the web browser.                                                                                                                                                                                                                                                                                                                                                                                                                                                             [2]
+
+                                                    (ii)                      Describe the processing that takes place when the user inputs “Pugh” into the
+                                                                              text box and then uses the clickme button.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [3]
+
+                          When a student enrolls, they must enter their name on a web page. Before being added to
+                          the database, the system should check that the name typed is not blank and that it has not
+                          already been added to the database.
+
+                          (b)                       Explain why these two validation checks occur on different computer systems.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            [4]
+
+                          Consider the following URL:
+
+                                                                                                                                                                          https://www.follettibstore.com
+
+                          (c)                       Explain how website certificates are used to authenticate a user ’s browser through
+                                                    secure protocol communications like HTTPS.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [3]
+
+                          The common gateway interface (CGI) offers a standard protocol for web servers.
+
+                          (d)                       Describe the working of the common gateway interface (CGI).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [4]
+
+                          Pugh University uses cloud computing services, such as Google Docs or Office 365.
+
+                          (e)                       Describe how cloud computing is different to a client–server architecture.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  [4]
+
+
+
+(Option C continues on the following page)
+
+=== PDF 13 ===
+                                                                                                                                                                                                                                                                                                                                                                                                                                            N20/4/COMSC/HP2/ENG/TZ0/XX
+
+
+
+
+                                                                                                                                                                                                                                                                                                – 12 –                                                                                                                                                                                                                                                                      8820–7012
+
+(Option C continued)
+
+10.                               The internet and World Wide Web are often considered to be the same, or the terms are
+                                  used in the wrong context.
+
+                                  (a)                               Distinguish between the internet and the World Wide Web.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                [2]
+
+                                  Many organizations produce computer-based solutions that implement open standards.
+
+                                  (b)                               Outline two advantages of using open standards.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  [4]
+
+                                  A search engine is software that allows a user to search for information. The most commonly
+                                  used search algorithms are the PageRank and HITS algorithms.
+
+                                  (c)                               Outline why a search engine using the HITS algorithm might produce different page
+                                                                    ranking from one using the PageRank algorithm.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          [2]
+
+                                  Web crawlers browse the World Wide Web.
+
+                                  (d)                               Explain how data stored in a meta-tag is used by a web crawler.                                                                                                                                                                                                                                                                                                                                                                                                                                                                             [3]
+
+
+11.                               The World Wide Web can be divided into three categories: the surface web, the dark web
+                                  and the deep web.
+
+                                  (a)                               Distinguish between the surface web and the deep web.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [2]
+
+                                  The dark web is only accessible by using specialist software, such as TOR and I2P. Many users
+                                  of the dark web use it to protect their anonymity.
+
+                                  (b)                               Explain how a user ’s anonymity can be maintained while accessing the dark web.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    [3]
+
+                                  Many users of the dark web use peer-2-peer (P2P) networks for activities like torrent
+                                  streaming. This opens up ports on the computer to upload and download data.
+
+                                  (c)                               Explain why users have concerns about opening up ports to upload and download data.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [3]
+
+                                  (d)                               The founders of the World Wide Web intended it to be a decentralized and democratic
+                                                                    environment.
+
+                                                                    To what extent have the aspirations of the founders of the World Wide Web been met?                                                                                                                                                                                                                                                                                                                     [6]
+
+
+
+(Option C continues on the following page)
+
+=== PDF 14 ===
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              N20/4/COMSC/HP2/ENG/TZ0/XX
+
+
+
+
+                                                                                                                                                                                                                                                                                                                                            – 13 –                                                                                                                                                                                                                                                                                                                8820–7012
+
+(Option C continued)
+
+12.                                    The World Wide Web can be represented as a web graph.
+
+                                       (a)                                    Describe how a web graph can be used to represent the connectivity of the
+                                                                              WorldWideWeb.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 [4]
+
+                                       The World Wide Web has expanded significantly over the last 10 years. In June 2018, there
+                                       were an estimated 1600 million websites and 4100 million users. This is approximately twice
+                                       the figures of January 2014.
+
+                                       (b)                                    Explain why a user can still navigate from one web page to another web page in
+                                                                              the same amount of time as previously, even though the number of web pages is
+                                                                              significantly larger.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              [4]
+
+                                       The World Wide Web can be divided into the text web and the semantic web.
+
+                                       (c)                                    Outline two reasons why there needs to be a balance between expressivity and
+                                                                              usability on the semantic web.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               [4]
+
+                                       The development of technologies that underpin the World Wide Web has led to the growth of
+                                       ambient intelligence and collective intelligence.
+
+                                       (d)                                    Identify two features of ambient intelligence.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          [2]
+
+                                       (e)                                    Evaluate the role of collective intelligence in the advancement of human knowledge.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [6]
+
+
+                                                                                                                                                                                                                                                                          End of Option C
+
+=== PDF 15 ===
+                                                                                N20/4/COMSC/HP2/ENG/TZ0/XX
+
+
+
+
+                                                      – 14 –                                            8820–7012
+
+Option D —    Object-oriented programming
+
+13.   A company provides car parking services in large cities and needs a computer system to
+      keep track of the number of vehicles using its parking areas.
+
+      When a vehicle arrives, its registration plate is recorded on the system and it is allocated a
+      number that identifies where it should park. When the vehicle leaves, that space is made
+      available for other vehicles to use.
+
+      Vehicles are identified by their unique registration plate, which is an alphanumeric code of
+      eight characters (eg X1234567). This is clearly displayed on the vehicle.
+
+      A programmer created the classes ParkingArea and Vehicle to model the above situation.
+
+      public class ParkingArea {
+          private Vehicle vehicles[];
+          private String name;
+
+          ParkingArea(String name, int capacity) {
+              this.name = name;
+              if (capacity > 300) capacity = 300;
+              this.vehicles = new Vehicle[capacity];
+          }
+
+          String getName() {
+              return name;
+          }
+
+          public int getCapacity() {
+              return vehicles.length;
+          }
+
+          public int findVehicle(String reg) {
+              //find where the vehicle is located in the array and
+              //return the index not yet written
+          }
+      }
+
+
+
+
+(Option D continues on the following page)
+
+=== PDF 16 ===
+                                                                                                                                                                                                                                N20/4/COMSC/HP2/ENG/TZ0/XX
+
+
+
+
+                                                                                                                                                      – 15 –                                                                                                                                      8820–7012
+
+(Option D, question 13 continued)
+
+                 public  class Vehicle {
+                     private String registration;
+                     private byte colour;
+                     private boolean broken;
+
+                     public final static byte BLACK=1;
+                     public final static byte WHITE=2;
+                     public final static byte BLUE=3;
+                     public final static byte RED=4;
+                     public final static byte GREEN=5;
+                     private final static double ADMIN_FEE = 3;
+
+                     public Vehicle() {}
+
+                     public Vehicle(String registration) {
+                         this.registration = registration;
+                     }
+                     public Vehicle(String registration, byte colour) {
+                         this.registration = registration;
+                         this.colour=colour;
+                     }
+                     public void setBroken(boolean broken) {
+                         this.broken=broken;
+                     }
+                     public void setColour(byte colour) {
+                         this.colour=colour;
+                     }
+                     public boolean getBroken() {
+                         return broken;
+                     }
+                     public String getRegistration() {
+                         return registration;
+                     }
+                     public double pay(int hours) {
+                         // code to return admin fee - only if applicable
+                     }
+                 }
+
+                 (a)               Outline one effect of using the modifier static when declaring a variable.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             [2]
+
+                 (b)               Describe the relationship between the classes Vehicle and ParkingArea. [3]
+
+                 (c)               Outline why it is necessary to use the keyword this in the setBroken method of the
+                                   Vehicle class.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          [2]
+
+                 (d)               (i)               Construct code to create an instance of the Vehicle class that has a registration
+                                                     of X1234567. [2]
+
+                                   (ii)              Construct code that sets the colour of the object created in part (i) as black.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   [2]
+
+
+
+(Option D continues on the following page)
+
+=== PDF 17 ===
+                                                                                                                                                                                                                                                                                                                                        N20/4/COMSC/HP2/ENG/TZ0/XX
+
+
+
+
+                                                                                                                                                                                                                             – 16 –                                                                                                                                                                                                       8820–7012
+
+(Option D continued)
+
+14.                       (a)                       Construct the method addVehicle(Vehicle v) that will add a vehicle to the first
+                                                    empty position of the array vehicles[] and return the position (ie the index of the
+                                                    array) at which it has added the car. If it is not possible to fit the vehicle into the array
+                                                    then it should return -1. [6]
+
+                          (b)                       Outline two differences between inheritance and aggregation.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        [4]
+
+                          Two further classes, Car and Motorbike, are created.
+
+                          public class Car extends Vehicle{
+                              public static double hourlyFee=3.5;
+                              public double pay(int hours) {
+                                  //code to calculate and return the complete price
+                              }
+                          }
+
+                          public class Motorbike extends Vehicle{
+                              public static double hourlyFee=2.5;
+                              public double pay(int hours) {
+                                  //code to calculate and return the complete price
+                              }
+                          }
+
+                          (c)                       Construct a UML diagram that shows the relationships between the ParkingArea,
+                                                    Vehicle, Motorbike and Car classes. There is no need to include the attributes or
+                                                    methods of each class.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [4]
+
+                          The method pay in the Vehicle class returns the administration fee (which is only part of the
+                          total price), while the method pay of the Car class calculates the total price for a car staying
+                          in the parking area.
+
+                          (d)                       (i)                       Construct the method pay in the Vehicle class that returns the admin fee
+                                                                              stored in the variable AdminFee if the vehicle has stayed for five hours or less;
+                                                                              otherwise, it returns 0.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   [2]
+
+                                                    (ii)                      Construct the method pay in the Car class, where it uses the vehicle method pay
+                                                                              but adds the charge for the amount of time spent in the parking area.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   [2]
+
+                          The array vehicles[] in the ParkingArea class is used to store instances of the Car or
+                          Motorbike class.
+
+                          (e)                       Outline why Vehicle is a valid type for this array.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  [2]
+
+
+
+(Option D continues on the following page)
+
+=== PDF 18 ===
+                                                                                                                                                                                                                                                                                              N20/4/COMSC/HP2/ENG/TZ0/XX
+
+
+
+
+                                                                                                                                                                                                – 17 –                                                                                                                                                                              8820–7012
+
+(Option D continued)
+
+15.                   The management of the company will launch a new scheme to give every 50th car driver and
+                      every 60th motorcyclist a free coffee voucher. The code for printing this voucher has already
+                      been created and is activated by calling the static method Vouchers.printCoffeeVoucher().
+
+                      A getKind() method has already been added to the Vehicle class, which returns a char
+                      value indicating whether it is a car (c) or a motorbike (m).
+
+                      (a)                    Describe, without writing code, any changes required to the addVehicle method
+                                             and the ParkingArea class to make the new voucher scheme work.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 [5]
+
+                      One test performed on the finished code was defined as follows:
+
+
+                                                                                                                                    Test data                                                                Vouchers printed
+
+                                                                                                                                    29 cars                                                                                                   0
+
+                                                                                                                                    130 motorbikes                                                                                            2
+
+                      (b)                    Identify three other tests you might perform on the completed code to prove that it
+                                             functions correctly.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             [3]
+
+                      The removeVehicle method of the ParkingArea class searches in the array for a Vehicle
+                      object with a specified registration plate, then removes it by setting that array index to null.
+
+                      The method returns a reference to the Vehicle object that has been removed from the array,
+                      or null if no matching registration plate was found.
+
+                      (c)                    Construct the removeVehicle method.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            [6]
+
+
+
+(Option D continues on the following page)
+
+=== PDF 19 ===
+                                                                                                                                                                                                                                                                                                                                                                               N20/4/COMSC/HP2/ENG/TZ0/XX
+
+
+
+
+                                                                                                                                                                                                                                                       – 18 –                                                                                                                                                                                                                                8820–7012
+
+(Option D continued)
+
+16.                          A single parking space that holds one car can be used to hold two motorbikes. The programmer
+                             has decided to use a two-dimensional array to create a map of the parking area.
+
+                             Vehicle parkingSpaces[][] = new Vehicle[2][200];
+
+                                 [0]                        [1]                         [2]                         [3]                        [4]                         [5]                         [6]                        [7]                         [8]                         [9]                     [10]                        [11]                        [12]                       [13]                                    etc                         [198][199]
+
+  [0]                                  c                           m                          c                           m                           c                           c                          m                           c                           c                          m                                                       c                          c                                                                                                  c
+
+  [1]                                                              m                                                                                                                                                                                                                            m                           m                                                                                                                                                                                          m
+
+                             Note: m and c have been used to show where motorbikes and cars are parked.
+
+                             (a)                          (i)                                                                    Identify one advantage of using a two-dimensional array for this purpose.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    [1]
+
+                                                          (ii)                         Identify one disadvantage of using a two-dimensional array for this purpose.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  [1]
+
+                             Police have requested a way of searching the parking area for vehicles with a specified
+                             registration plate, and a binary tree has been suggested.
+
+                             (b)                          Outline why searching for the registration plate in a binary tree would be faster than
+                                                          looking for it in the two-dimensional array.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             [3]
+
+                             (c)                          Identify the steps that would be involved in taking the data from this two-dimensional
+                                                          array and creating a binary search tree.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [5]
+
+
+
+(Option D continues on the following page)
+
+=== PDF 20 ===
+                                                                                                                                                                                                                                    N20/4/COMSC/HP2/ENG/TZ0/XX
+
+
+
+
+                                                                                                                                                         – 19 –                                                                                                                                          8820–7012
+
+(Option D continued)
+
+17.               A new parking service has been introduced: staff will park the car for the driver and then return
+                  it later when the driver wants to leave. This service will use a narrow parking area surrounded
+                  on three sides by walls, where any cars behind the required car must be reversed out. For
+                  example, car X00000011 was the first vehicle to be parked, so to remove it from the parking
+                  area, the other five cars, starting with X00000123, will need to be removed. The cars are then
+                  returned starting with car X00000010.
+
+                                                                                               Figure 5: Cars parked in the parking area
+
+
+
+
+                                   X00000011                     X00000010                     X00000051                     X00000022                     X00000050                     X00000123
+
+
+                  The class Stack, which contains the Vehicle objects, has the following methods:
+
+                                             Method signature                                                      Returns
+
+                                             isEmpty()                                                             Returns true if the stack is empty, otherwise false.
+
+                                             push(Vehiclev)                                                        Adds a vehicle to the stack.
+
+                                             pop()                                                                 Removes and returns a Vehicle object.
+
+                  The method staffRemoveCar will remove a vehicle with a specified registration plate from
+                  the parking area (you can assume the vehicle is in the parking area):
+
+                  public static void staffRemoveCar(Stack stack, String reg){
+                      Stack temp = new Stack();
+                      //add code here
+                  }
+
+                  (a)               Construct the staffRemoveCar method.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            [6]
+
+                  A stack can be implemented using an array or a singly linked list.
+
+                  (b)               Compare the use of these two data structures for creating a stack.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [4]
+
+
+                                                                                                                           End of Option D
+
+
+
+
+
+=== PDF 21 ===
+References:
+
+4.                                                                                                                                                Text adapted from: Rivera-Vázquez, J. C., Ortiz-Fournier, L. V. and Ramaswamy, M. (2011). Designing data
+                               warehouses to support criminal investigation. Issues in Information Systems, 12(1), pp. 445–54.
+
+6.                                                                                                                                                © International Baccalaureate Organization 2020.
+
+Figure 3                                                                                                                                                Courtesy NASA/JPL-Caltech.
+
+Figure 4                                                                                                                                                Courtesy NASA/JPL-Caltech.

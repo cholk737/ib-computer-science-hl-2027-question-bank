@@ -1,0 +1,56 @@
+{
+  "question_id": "P-SRC020-Q13-a",
+  "source_question_ids": [
+    "H-SRC020-Q13-a"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Trace total_to(4), showing all calls and the final value.\ndef total_to(n):\n    if n <= 0:\n        return 0\n    return n + total_to(n - 1)",
+  "syllabus_codes": [
+    "B2.4.4",
+    "B2.4.5"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 4,
+  "command_term": "Trace",
+  "difficulty": "medium",
+  "adaptation_rationale": "Original Fibonacci-style branching trace exceedsB2.4.5 programming limit. Retains recursion reasoning but changes to simple one-call recursion, with explicit scope separation.",
+  "solution": "total_to(4)→4+total_to(3)→4+3+total_to(2)→4+3+2+total_to(1)→4+3+2+1+total_to(0)→10.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Calls reduce n by1."
+    },
+    {
+      "marks": 1,
+      "criterion": "Base case n=0 returns0."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct return accumulation."
+    },
+    {
+      "marks": 1,
+      "criterion": "Final10."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed total_to4 and zero/negativebasecases.",
+    "source_comparison": [
+      18
+    ],
+    "test_code": "def total_to(n):\n    if n <= 0:\n        return 0\n    return n + total_to(n - 1)\nassert total_to(4)==10\nassert total_to(0)==0\nassert total_to(-3)==0",
+    "result_file": ""
+  },
+  "code": "def total_to(n):\n    if n <= 0:\n        return 0\n    return n + total_to(n - 1)",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC020-Q13-a.json",
+  "question_path": "question-bank/questions/P-SRC020-Q13-a.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC020-Q13-a.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

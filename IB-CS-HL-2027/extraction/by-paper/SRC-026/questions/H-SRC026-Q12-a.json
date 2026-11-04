@@ -1,0 +1,66 @@
+{
+  "source_question_id": "H-SRC026-Q12-a",
+  "source_id": "SRC-026",
+  "source_filename": "Computer_science_paper_1_TZ2_HL.pdf",
+  "year": "2025",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "TZ2 (filename; numerical cover code)",
+  "option": "",
+  "question": 12,
+  "subquestion": "a",
+  "source_pdf_pages": [
+    5
+  ],
+  "source_printed_pages": [
+    "4"
+  ],
+  "original_marks": 5,
+  "command_term": "Determine",
+  "original_text": "Consider the following recursive function: recfn(N) if N <= 0 then return 0 else if N mod 2 = 0 then return recfn(N-1) - N else return recfn(N-1) + N endif endif end recfn Determine the value of variable X after execution of the following program statement: X = recfn(5) Show all your working.",
+  "parent_context": "– 4 – 2225 – 6414\n11. Each set of traffic lights in a city is controlled by a separate embedded system.\n(a) (i)   Describe what is meant by an embedded system. [2]\n(ii) State two other examples of embedded systems in daily life. [2]\nIt has been proposed that all the traffic lights in the city should be controlled from a \ncentral computer.\n(b) Discuss the advantages and disadvantages of using one central computer to manage \nthe city’s traffic light system. [4]\nVehicle counts provide the city’s traffic control centre with information regarding the number \nof vehicles on the city’s roads.\n(c) List two types of sensor that could be used to collect data on the number of vehicles. [2]\n(d) Describe one difference between interrupts and polling. [2]\nThe data about traffic and road conditions will be shared with application (app) developers. \nTheir apps can provide real-time information about traffic conditions.\n(e) Explain the benefit for drivers of having access to real-time information about traffic \nand road conditions. [3]\n12. (a)   Consider the following recursive function:\nrecfn(N)\n    if N <= 0\n        then\n            return 0\n        else\n            if N mod 2 = 0\n                then\n                    return recfn(N-1) - N\n                else\n                    return recfn(N-1) + N\n            endif\n    endif\nend recfn\nDetermine the value of variable X after execution of the following program statement:\nX = recfn(5)\nShow all your working. [5]\n(This question continues on the following page)",
+  "assets": [],
+  "assessed_concepts": [
+    "Original source task: Consider the following recursive function: recfn(N) if N <= 0 then return 0 else if N mod 2 = 0 then return recfn(N-1) - N else return recfn(N-1) + N endif endif end recfn Determine the value of variable X after execution of the following program statement: X = recfn(5) Show all your working.",
+    "Trace balance(6), showing the returned value for each n from0 through6"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-027",
+    "filename": "Computer_science_paper_1_TZ2_HL_markscheme.pdf",
+    "pdf_pages": [
+      19
+    ],
+    "question_reference": "Q12 a",
+    "marking_summary": "Original recfn(5) returns3 with alternating +odd/-even unwind.",
+    "source_issues": [],
+    "source_marking_evidence": "– 19 – 2225 – 6414M \n12. (a) Award max [5]. \nAward [1] for each correct recursive call shown, x5. \nAward [1] for the correct result. \nX = recfn(5) = recfn(4) + 5 ; \n  = recfn(3) - 4 + 5  =   recfn(3) + 1 ; \n  = recfn(2) + 3 - 4 + 5 = recfn(2) + 4 ; \n  = recfn(1)  - 2 + 3 - 4 + 5 =  recfn(1)   + 2  ; \n  = recfn(0)  + 1  - 2 + 3 - 4 + 5  = recfn(0)  + 3 ; \n  = 0 + 1 - 2 + 3 - 4 + 5 = 0 + 3 = 3 ; \nNote: The working may be shown differently. \n(b) Award max [4].\nAward [1] for name and [1] for description of operation, x2.\nPush; \nAdd an element to the top of a stack; \nPop; \nRemove an element from the top of a stack; \nIsEmpty; \nCheck if the stack contains no elements/ returns True when a stack is empty, returns False \notherwise; \nIsFull; \nCheck if the stack has reached maximum capacity/ returns True when a stack is full, returns \nFalse otherwise; "
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B2.4.5",
+      "scope_evidence": "• Simple, non-branching recursive algorithms in programming only",
+      "rationale": "Trace balance(6), showing the returned value for each n from0 through6 assesses Construct and trace recursive algorithms in a programming language. (HL only)",
+      "theme": "B",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "No visual required by this leaf.",
+    "technical": "Executed all n0..6; each path has only one recursive call."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC026-Q12-a"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

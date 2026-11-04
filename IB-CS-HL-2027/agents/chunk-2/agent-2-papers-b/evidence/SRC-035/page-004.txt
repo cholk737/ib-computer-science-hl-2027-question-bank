@@ -1,0 +1,37 @@
+– 4 – M23/4/COMSC/HP2/ENG/TZ0/XX/M 
+Option A — Databases 
+1. (a) (i) Award [1 max]
+One – many;
+One – one;
+(ii) Award [1 max]
+CustID;
+RentalNum;
+CarID;
+(iii) Award [1 max]
+Rental;
+(b) Award [1 max]
+EF475;
+(c) Award [4 max]
+Length Check;
+Character count is 7;
+Input mask/Format check;
+LLL0000/3 STRING/TEXT following by 4 INTEGER/NUMBER;
+Data Type Check;
+STRING data type/only alphanumeric and no special characters;
+Uniqueness Check
+Data is not duplicated
+Presence check;
+Certain attributes must be present/ Data exists;
+Mark as [2] and [2]
+(d) Award [4 max]
+Award [1] for selecting the SName from Customer;
+Award [1] for correct tables(both) identified;
+Award [1] for making the CustID comparison;
+Award [1] for writing the correct DateOut and DateRet;
+SELECT SName FROM CUSTOMER
+INNER JOIN RENTAL ON “CUSTOMER.CustID” =
+“RENTAL.CustID”
+WHERE DateOut = “22/01/2020” AND
+DateRet = “26/01/2020”;
+Note: candidates who have used 2 separate queries can be awarded up to 3 marks
+Note: the mark for using both tables cannot be awarded

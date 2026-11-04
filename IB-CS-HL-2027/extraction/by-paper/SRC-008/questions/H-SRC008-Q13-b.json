@@ -1,0 +1,103 @@
+{
+  "original_assessment_context": "MAT=[[7,7,0,0,0,0],[1,2,1,0,0,0],[0,9,-3,5,0,0],[0,0,-5,6,4,0],[0,0,0,7,7,2],[0,0,0,0,5,1]]. Nonzero iff within one position of main diagonal.InputN andNxN grid;returnTrue iff all three central diagonals nonzero and all other cells0.",
+  "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+  "source_question_id": "H-SRC008-Q13-b",
+  "source_id": "SRC-008",
+  "source_filename": "Computer_science_paper_1__HL (5).pdf",
+  "year": "2019",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "TZ0",
+  "option": "",
+  "question": "13",
+  "subquestion": "b",
+  "source_pdf_pages": [
+    7
+  ],
+  "source_printed_pages": [
+    "6"
+  ],
+  "original_marks": 8,
+  "command_term": "Construct",
+  "original_text": "[Source PDF page 7]\nMAT\nMethod accepts an integer and a two-dimensional array of\nisValidMatrix(N,A) N A\ndimensions x . It returns if all elements below the subdiagonal and all elements\nN N True\nabove the superdiagonal are zeros and all elements on three diagonals are non-zeroes;\notherwise it returns .\nFalse\nFor example, returns for the matrix given above.\nisValidMatrix(6,MAT) True MAT\n(b) Construct an efficient algorithm for the method . [8]\nisValidMatrix()",
+  "parent_context": "MAT=[[7,7,0,0,0,0],[1,2,1,0,0,0],[0,9,-3,5,0,0],[0,0,-5,6,4,0],[0,0,0,7,7,2],[0,0,0,0,5,1]]. Nonzero iff within one position of main diagonal.InputN andNxN grid;returnTrue iff all three central diagonals nonzero and all other cells0.",
+  "assets": [
+    {
+      "kind": "source_page",
+      "description": "Source algorithm specification",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-008-page-7.png",
+      "source_pdf_page": 7,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Construct: Construct an efficient algorithm for the method isValidMatrix()."
+  ],
+  "difficulty": "high",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-014",
+    "filename": "Computer_science_paper_1__HL_markscheme (5).pdf",
+    "pdf_pages": [
+      16,
+      17
+    ],
+    "question_reference": "13(b)",
+    "marking_summary": "Nestedloops;correctbounds;inside/outside-band tests;earlyexit on invalid item;true if all pass.",
+    "source_issues": []
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "mapping_target": "adapted_practice_only",
+      "syllabus_code": "B2.2.2",
+      "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+      "rationale": "Keeps diagonal-index reasoning,nestedloops and early-exit efficiency;converts toPython.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "mapping_target": "adapted_practice_only",
+      "syllabus_code": "B2.3.2",
+      "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+      "rationale": "Keeps diagonal-index reasoning,nestedloops and early-exit efficiency;converts toPython.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "mapping_target": "adapted_practice_only",
+      "syllabus_code": "B2.3.3",
+      "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+      "rationale": "Keeps diagonal-index reasoning,nestedloops and early-exit efficiency;converts toPython.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+    "marks": "Printed allocation transcribed.",
+    "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+    "official_answer_status": "See source markscheme record"
+  },
+  "original_text_manual_synopsis": "Construct an efficient algorithm for the method isValidMatrix().",
+  "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+  "source_page_evidence": [
+    {
+      "pdf_page": 7,
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-008/page-007.txt"
+    }
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC008-Q13-b"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "question_id": "P-SRC006-Q04",
+  "unofficial": true,
+  "marks": 2,
+  "solution": "(False != True) and True = True and True = True.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "First operand evaluates True from False != True."
+    },
+    {
+      "marks": 1,
+      "criterion": "Second operand True and final True."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Python execution verifies the result.",
+    "source_comparison": [
+      5
+    ],
+    "test_code": "assert (((4>4)!=True) and (7-2>4)) is True",
+    "result_file": ""
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

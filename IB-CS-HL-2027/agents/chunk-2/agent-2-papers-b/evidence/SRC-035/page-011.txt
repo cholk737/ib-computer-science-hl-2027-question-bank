@@ -1,0 +1,32 @@
+– 11 – M23/4/COMSC/HP2/ENG/TZ0/XX/M 
+(f) Award [8 max]
+Award [1] for initialization of MIN/MAX  or  arrays MONTHS/USAGE
+Award [1] for declaring HIGHMONTH/LOWMONTH  or  TEMP/TEMPMONTH
+Award [1] for appropriate loop / double loop
+Award [1] for use of parallel arrays                       // Do not accept a 2D array
+Award [1] for finding and recording data for highest month / sorting the usage;
+Award [1] for finding and recording data for lowest month / sorting the month;
+Award [1] for Outputting *month* for highest usage;
+Award [1] for outputting *month* for lowest usage;
+// allow for finding months with highest and lowest bill
+Example algorithm
+MAX = 0
+MIN = 9999999    (or similar)
+COUNTER = 0
+HIGHMONTH = ""
+LOWMONTH = ""
+loop while COUNTER < 12
+ input "units used this month? ", ELECMONTH[COUNTER] 
+ input "name of month? ", MONTH[COUNTER] 
+ if ELECMONTH[COUNTER] > MAX then 
+ MAX = ELECMONTH[COUNTER] 
+ HIGHMONTH = MONTH[COUNTER] 
+ end if 
+ if ELECMONTH[COUNTER] < MIN then 
+ MIN = ELECMONTH[COUNTER] 
+ LOWMONTH = MONTH[COUNTER] 
+ end if 
+  COUNTER = COUNTER + 1 
+end loop 
+output "The highest usage was in ", HIGHMONTH 
+output "The lowest usage was in ", LOWMONTH

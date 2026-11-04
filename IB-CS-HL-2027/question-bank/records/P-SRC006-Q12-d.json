@@ -1,0 +1,55 @@
+{
+  "question_id": "P-SRC006-Q12-d",
+  "source_question_ids": [
+    "H-SRC006-Q12-d"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Compare a static contiguous array and a singly linked list for storing a changing collection of records.",
+  "syllabus_codes": [
+    "B4.1.2"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 4,
+  "command_term": "Compare",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "An array offers constant-time indexed access, whereas a linked list requires traversal. An array reserves fixed capacity; a linked list can grow node by node but stores an extra next reference. Inserting after a known list node can relink references, whereas insertion within an array may require shifting later records.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Array direct access versus linked traversal."
+    },
+    {
+      "marks": 1,
+      "criterion": "Fixed reserved capacity versus dynamic nodes."
+    },
+    {
+      "marks": 1,
+      "criterion": "Linked nodes require reference overhead."
+    },
+    {
+      "marks": 1,
+      "criterion": "Known-position insertion relinks list versus array shifts."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      13
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC006-Q12-d.json",
+  "question_path": "question-bank/questions/P-SRC006-Q12-d.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC006-Q12-d.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

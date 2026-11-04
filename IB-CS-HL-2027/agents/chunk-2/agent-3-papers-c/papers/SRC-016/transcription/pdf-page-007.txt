@@ -1,0 +1,50 @@
+– 6 – 8823 – 7014
+12. There were 10 gymnasts who took part in a gymnastics competition. The names and the
+scores for all competitors were sorted in alphabetical order and stored in two arrays,
+and (see Figure 1).
+NAMES SCORES
+Figure 1: Data held in the array and the array
+NAMES SCORES
+NAMES SCORES
+Adams, Lana 7.8
+[0] [0]
+Allen, Mary 6.5
+[1] [1]
+Baker, Lilly 5.4
+[2] [2]
+Brown, Lea 9.2
+[3] [3]
+Fox, Tea 6.2
+[4] [4]
+Labar, Tanya 8.5
+[5] [5]
+Lee, Mae 8.8
+[6] [6]
+Miller, Ann 5.1
+[7] [7]
+Palmer, Ella 6.4
+[8] [8]
+Wood, Sarah 9.1
+[9] [9]
+For example, the score awarded to Mary Allen was 6.5 .
+(a) State the name of the gymnast whose score is stored in . [1]
+SCORES[5]
+(b) Construct an algorithm in pseudocode to determine the average score. [3]
+To qualify for the next round of competition, a competitor must have a score above the
+average score.
+(c) Construct an algorithm in pseudocode that will determine and output the number
+of gymnasts whose scores are above the average score.
+You may assume that the average score is stored in the variable . [4]
+AVERAGE
+An algorithm is needed that:
+y allows input of a gymnast’s name
+y searches for this name in the array using a binary search
+NAMES
+y outputs the gymnast’s score. If the inputted name does not occur in the array,
+NAMES
+it outputs an appropriate message.
+For example, from the data given in Figure 1:
+y if “Allen, Mary” is the input name, then 6.5 should be output
+y if “Peterson, Tina” is the input name, then a message saying “this name is not found”
+should be output.
+(d) Construct an algorithm in pseudocode as described above. [7]

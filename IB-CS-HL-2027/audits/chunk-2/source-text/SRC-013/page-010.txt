@@ -1,0 +1,48 @@
+                                                     –   10 –            M21/4/COMSC/HP1/ENG/TZ0/XX/M
+
+
+13.   (a)   Award [4 max]
+            Collection method NAMES.getNext() / NAMES.getData() correctly used;
+            Correct loop;
+            Correct use of index (in both arrays);
+            Correct assignment in array for surnames;
+            Correct assignment in array for first names;
+
+            Note:
+            Award 1 mark in case that string methods are used to separate ‘name’ and ‘surname’ in the
+            data item.
+
+
+            Example answer 1:
+
+            NAMES.resetNext() // reset and
+            SURNAME[600]     //initialization of arrays
+            FIRSTNAME[600]   //may not appear in candidates’ responses
+            COUNTER = 0
+            loop while NAMES.hasNext()
+                 SURNAME[COUNTER] = NAMES.getNext()
+                 FIRSTNAME[COUNTER] = NAMES.getNext()
+            COUNTER = COUNTER + 1
+            end loop
+
+         Example answer 2
+
+        NAMES.resetNext()
+        loop COUNTER from 0 to 599
+              SURNAME[COUNTER] = NAMES.getNext()
+              FIRSTNAME[COUNTER] = NAMES.getNext()
+        end loop
+
+         Example answer 3 (assumes that items in the collection are objects- two attributes: surname
+         and firstname)
+
+         I = 0
+         loop while NAMES.hasNext()
+                    X= NAMES.getNext()
+                    SURNAME[I] = X.surname
+                    FIRSTNAME[I] = X.firstname
+                    I = I + 1
+         end loop
+
+
+                                                                                                              [4]

@@ -1,0 +1,27 @@
+– 10 – 2225 – 6423M 
+(c) Award [6 max]
+Award [1] for identifying three tables with correct fields (without PK and FK)
+Award [1] for the DEPARTMENT table (correct fields and PK identified)
+Award [1] for the DOCTOR table (correct fields and PK identified, without FK)
+Award [1] for including FK (DepartmentID) in DOCTOR/APPOINTMENT table but not both
+Award [1] for identifying the PK in the APPOINTMENT table
+Award [1] for including FK (PatientID, DoctorID) in APPOINTMENT table
+Award [1] for all fields correct in APPOINTMENT table
+Example 1
+PATIENT (PatientID, FirstName, Surname, PreferredName, DateOfBirth)
+DEPARTMENT (DepartmentID, departmentName)
+DOCTOR (DoctorID, FirstName, Surname, DepartmentID*) //accept DoctorName
+APPOINTMENT (PatientID*, DoctorID*, date, time)
+Example 2
+PATIENT (PatientID, FirstName, Surname, PreferredName, DateOfBirth)
+DEPARTMENT (DepartmentID, departmentName)
+DOCTOR (DoctorID, FirstName, Surname) //accept DoctorName
+APPOINTMENT (PatientID*, DoctorID*, date, time, DepartmentID*)
+Award the mark for FK if not explicitly indicated as long as the name matches the PK
+Accept an additional field as PK in APPOINTMENT:
+APPOINTMENT (AppointmentID, PatientID*, DoctorID*, date, time)
+Accept a dateTime field in APPOINTMENT instead of date and time separately.  
+Accept LOCATION in place of DEPARTMENT (and LocationID in place of DepartmentID): 
+LOCATION (LocationID, LocationName)  
+Note: Apply the MS according to example 1 or example 2 
+Note: The relation names do not matter; check the fields used 

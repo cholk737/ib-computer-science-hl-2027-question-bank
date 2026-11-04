@@ -1,0 +1,57 @@
+{
+  "question_id": "P-SRC002-Q03-e",
+  "source_question_ids": [
+    "H-SRC002-Q03-e"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Explain why an organization could give an external auditor a read-only database view containing only the fields needed for an audit.",
+  "syllabus_codes": [
+    "A3.3.5"
+  ],
+  "theme": "A",
+  "level": "HL-only",
+  "marks": 5,
+  "command_term": "Explain",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "A view hides unnecessary details and exposes only relevant records/fields, reducing disclosure of personal data. A read-only view prevents the auditor from changing operational records. It can simplify the query interface while the organization retains control of underlying tables.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Limited field/row exposure."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains privacy/security benefit."
+    },
+    {
+      "marks": 1,
+      "criterion": "Read-only prevents edits."
+    },
+    {
+      "marks": 1,
+      "criterion": "Simplifies relevant audit access."
+    },
+    {
+      "marks": 1,
+      "criterion": "Links controlled view to protected underlying data."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC002-Q03-e.json",
+  "question_path": "question-bank/questions/P-SRC002-Q03-e.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC002-Q03-e.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

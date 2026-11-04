@@ -1,0 +1,49 @@
+– 7 – 2223 – 9240
+14. A program is developed to simulate the roll of dice in a game.
+Three dice are thrown, with faces that have numbers from 1 to 6.
+The dice are thrown seven times, and the data are stored in a two-dimensional array called
+(see Figure 2).
+DICEDIAL
+Figure 2: The example data stored in the array
+DICEDIAL
+[0] [1] [2]
+4 2 2
+[0]
+4 4 4
+[1]
+5 2 3
+[2]
+6 5 5
+[3]
+5 5 6
+[4]
+1 1 4
+[5]
+3 2 1
+[6]
+(a) Construct an algorithm in pseudocode to calculate the product of all values stored in
+the array. [3]
+DICEDIAL
+The sub-program checks whether there are repeated
+DuplicateNum(DICEDIAL,R)
+numbers in row . If the numbers are not repeated, it returns 0, otherwise it returns the
+R
+repeated number.
+The sub-program will produce the following from the values used in Figure 2:
+DuplicateNum()
+returns 2
+DuplicateNum(DICEDIAL,0)
+returns 4
+DuplicateNum (DICEDIAL,1)
+returns 0
+DuplicateNum(DICEDIAL,2)
+(b) Construct an algorithm in pseudocode for the sub-program . [4]
+DuplicateNum(DICEDIAL,R)
+The sub-program accepts the array and outputs the
+lowestRT(DICEDIAL) DICEDIAL
+lowest row total and the indexes of all the rows with that total.
+From the example data given in Figure 2, would output that the
+lowestRT(DICEDIAL)
+lowest row total is 6, and it occurs in the rows with indexes 5 and 6.
+(c) Construct an algorithm in pseudocode for the sub-program . [8]
+lowestRT(DICEDIAL)

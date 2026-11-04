@@ -1,0 +1,56 @@
+                                                                                                                 –20–                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            8823–7012
+
+(Option D continued)
+
+15.                                                                                           The Monster class contains the method attack(Monster defender). This is used when
+             a monster attacks another monster (the defender).
+
+             This method:
+             y                                decreases the health variable of the defending monster by the amount returned by the
+                    rollDice method
+             y                                uses the output method to display a defending monster ’s name, damage and health
+                    points if its health variable is greater than zero
+             y                                sets the defending monster ’s health variable to zero if it is less than zero
+             y                                outputs the defending monster ’s name followed by “must leave the game” if its health
+                    variable is zero.
+
+             (a)                                                                                           Construct the method attack(Monster defender), using any existing static
+                          methods in the Monster class that might be useful.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            [4]
+
+             (b)                                                                                           Outline two differences between the                                                                                               FireMonster class and an instance of
+                          FireMonster. [4]
+
+             The programmer has created a class named Arena to model the place in which the
+             monsterswill battle.
+
+             public class Arena {
+                 public Monster[] monsters = new Monster[10];
+                 int monsterCount = 0; //the number of monsters currently
+                 in array
+                 public void addMonster(Monster M) {
+                     // to be written
+                 }
+                 public void removeMonster(Monster M) {
+                     //to be written
+                 }
+                 public void doOneOnOneBattle(Monster A, Monster B) {
+                     while (A.health > 0 && B.health > 0) {
+                         gameLog(A.attack(B));
+                         gameLog(B.attack(A));
+                     }
+                     if (A.health > B.health) {
+                         output(A.name + " WINS!");
+                         removeMonster(B);
+                     } else if (B.health > A.health) {
+                         output(B.name + " WINS!");
+                         removeMonster(A);
+                     } else {
+                         output("IT IS A DRAW!");
+                     }
+                 }
+                 public static void output(String message) {
+                     System.out.println(message);
+                 }
+             }
+
+(Option D continues on the following page)

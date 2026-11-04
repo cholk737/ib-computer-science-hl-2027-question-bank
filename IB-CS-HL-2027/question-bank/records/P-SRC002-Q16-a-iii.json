@@ -1,0 +1,42 @@
+{
+  "question_id": "P-SRC002-Q16-a-iii",
+  "source_question_ids": [
+    "H-SRC002-Q16-a-iii"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Given the following Python setup,state the value of stores[2].bookings[1].end_day.\nfrom types import SimpleNamespace as N\nstores = [N(location=\"West Bay\", bookings=[N(customer_id=310,end_day=\"2027-02-08\")]),\n          N(location=\"Hilltop\", bookings=[]),\n          N(location=\"Canal\", bookings=[N(customer_id=520,end_day=\"2027-04-03\"),\n                                       N(customer_id=610,end_day=\"2027-04-10\")])]",
+  "syllabus_codes": [
+    "B2.1.1",
+    "B2.2.2"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 1,
+  "command_term": "State",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "2027-04-10",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Correct value 2027-04-10."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed supplied object/list expression.",
+    "source_comparison": [],
+    "test_code": "from types import SimpleNamespace as N\nstores = [N(location=\"West Bay\", bookings=[N(customer_id=310,end_day=\"2027-02-08\")]),\n          N(location=\"Hilltop\", bookings=[]),\n          N(location=\"Canal\", bookings=[N(customer_id=520,end_day=\"2027-04-03\"),\n                                       N(customer_id=610,end_day=\"2027-04-10\")])]\nassert stores[2].bookings[1].end_day=='2027-04-10'",
+    "result_file": ""
+  },
+  "code": "from types import SimpleNamespace as N\nstores = [N(location=\"West Bay\", bookings=[N(customer_id=310,end_day=\"2027-02-08\")]),\n          N(location=\"Hilltop\", bookings=[]),\n          N(location=\"Canal\", bookings=[N(customer_id=520,end_day=\"2027-04-03\"),\n                                       N(customer_id=610,end_day=\"2027-04-10\")])]",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC002-Q16-a-iii.json",
+  "question_path": "question-bank/questions/P-SRC002-Q16-a-iii.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC002-Q16-a-iii.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

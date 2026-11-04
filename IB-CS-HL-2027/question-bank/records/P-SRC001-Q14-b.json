@@ -1,0 +1,58 @@
+{
+  "question_id": "P-SRC001-Q14-b",
+  "source_question_ids": [
+    "H-SRC001-Q14-b"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "For values=[8, 3, 2, 5, 4], determine suffix_product(4, values). Show the recursive calls and returned values.\n\ndef suffix_product(k, values):\n    if k < 2:\n        return 1\n    return values[k] * suffix_product(k - 1, values)",
+  "syllabus_codes": [
+    "B2.4.5"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 5,
+  "command_term": "Determine",
+  "difficulty": "high",
+  "adaptation_rationale": "Preserves non branching recursive product trace; replaces pseudocode with executable Python and new data/base boundary.",
+  "solution": "Calls use indices 4, 3, 2, 1.; Base call at 1 returns 1.; Index 2 returns 2×1=2.; Index 3 returns 5×2=10.; Index 4 returns 4×10=40.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Calls use indices 4, 3, 2, 1."
+    },
+    {
+      "marks": 1,
+      "criterion": "Base call at 1 returns 1."
+    },
+    {
+      "marks": 1,
+      "criterion": "Index 2 returns 2×1=2."
+    },
+    {
+      "marks": 1,
+      "criterion": "Index 3 returns 5×2=10."
+    },
+    {
+      "marks": 1,
+      "criterion": "Index 4 returns 4×10=40."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "Executable checks saved under checks/ where applicable."
+  },
+  "code": "def suffix_product(k, values):\n    if k < 2:\n        return 1\n    return values[k] * suffix_product(k - 1, values)",
+  "test_code": "assert suffix_product(4,[8,3,2,5,4]) == 40\nassert suffix_product(1,[8,3]) == 1",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC001-Q14-b.json",
+  "question_path": "question-bank/questions/P-SRC001-Q14-b.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC001-Q14-b.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

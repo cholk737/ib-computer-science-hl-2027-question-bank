@@ -1,0 +1,35 @@
+{
+  "question_id": "P-SRC002-Q15-d",
+  "unofficial": true,
+  "marks": 4,
+  "solution": "Add a customer reference attribute to Reservation and accept/store it during initialization. Update methods that need customer details to call that referenced object’s interface. Customers can exist independently and be referenced by several reservations,an aggregation relationship.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Reference attribute replaces/augments ID as specified."
+    },
+    {
+      "marks": 1,
+      "criterion": "Constructor accepts/stores Customer object."
+    },
+    {
+      "marks": 1,
+      "criterion": "Methods use the referenced object’s interface."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains independent lifetime/shared references or consistent updating of callers."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

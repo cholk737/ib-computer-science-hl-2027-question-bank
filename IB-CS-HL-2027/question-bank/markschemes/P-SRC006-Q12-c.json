@@ -1,0 +1,37 @@
+{
+  "question_id": "P-SRC006-Q12-c",
+  "unofficial": true,
+  "marks": 4,
+  "solution": "Set total=0 and current=head. Add current.value to total, then advance current=current.next. Repeat until current is head again, and report total.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initialize total/current."
+    },
+    {
+      "marks": 1,
+      "criterion": "Add current value."
+    },
+    {
+      "marks": 1,
+      "criterion": "Advance reference."
+    },
+    {
+      "marks": 1,
+      "criterion": "Stop on return to head, after processing it once."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      13
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

@@ -1,0 +1,985 @@
+{
+  "source_id": "SRC-007",
+  "batch_id": "SRC-007-b003",
+  "source_questions": [
+    {
+      "source_question_id": "H-SRC007-Q12-e",
+      "source_id": "SRC-007",
+      "source_filename": "Computer_science_paper_1__HL (4).pdf",
+      "year": "2021",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ0",
+      "option": "",
+      "question": "12",
+      "subquestion": "e",
+      "source_pdf_pages": [
+        6
+      ],
+      "source_printed_pages": [
+        "5"
+      ],
+      "original_marks": 3,
+      "command_term": "Explain",
+      "original_text": "(e) Explain one benefit to the staff of using a VPN to remotely access the school network. [3]",
+      "parent_context": "12. A school currently has a cabled network but wants to add wireless networking across\nthe whole campus.\n(a) Describe two hardware components the school will need to implement the\nwireless network. [4]\n(b) Identify two advantages to the students of the new wireless network. [2]\nThere are concerns that unauthorized people could access the data on the wireless network.\n(c) Outline two methods the school could employ to prevent network data from being\naccessed over their wireless system. [4]\nThe school has decided to implement a virtual private network (VPN) to provide access\nto its network.\n(d) Identify two technologies the school would require to provide a VPN. [2]\n(e) Explain one benefit to the staff of using a VPN to remotely access the school network. [3]\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-007/renders/page-6.png",
+          "source_pdf_page": 6,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Describe common network countermeasures. (HL only)"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-013",
+        "filename": "Computer_science_paper_1__HL_markscheme (4).pdf",
+        "pdf_pages": [
+          9
+        ],
+        "question_reference": "12(e)",
+        "marking_summary": "Private resource access/security via encrypted remoteconnection.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "A2.4.3",
+          "scope_evidence": "• Content security policies, complex password policies, DDoS mitigation tools, email filtering solutions, encrypted protocols, input validation (filtering, whitelisting), intrusion detection systems (IDS), intrusion prevention systems (IPS), multifactor authentication (MFA), secure socket layer (SSL) certificate, transport layer security (TLS) certificate, update software, VPNs\n• The importance of regular security testing and employee training\n• Wireless security measures may include media access controllers (MAC), whitelists and blacklists.",
+          "rationale": "VPN is explicitly listed countermeasure; explain protection and its limit.",
+          "theme": "A",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Explain one benefit to the staff of using a VPN to remotely access the school network.",
+      "context_synopsis": "School extends cabled network with campus wireless; wants authorized access and remoteVPN.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-007/transcription/pdf-page-006.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC007-Q13-a",
+      "source_id": "SRC-007",
+      "source_filename": "Computer_science_paper_1__HL (4).pdf",
+      "year": "2021",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ0",
+      "option": "",
+      "question": "13",
+      "subquestion": "a",
+      "source_pdf_pages": [
+        6
+      ],
+      "source_printed_pages": [
+        "5"
+      ],
+      "original_marks": 4,
+      "command_term": "Construct",
+      "original_text": "(a) Construct a pseudocode algorithm that will store the surnames in one array and\nfirst names in another. [4]",
+      "parent_context": "13. A company has 600 employees whose names are currently stored using a collection\ncalled . The names are stored as surname, first name. For example: Smith, Jane,\nNAMES\nUysal, Rafael, Ahmed, Ishmael, Jonsonn, Sara, …\n(a) Construct a pseudocode algorithm that will store the surnames in one array and\nfirst names in another. [4]\nThe names in the collection are kept in a random order. However, it would be more useful\nif they were kept in alphabetical order.\n(b) Construct a pseudocode algorithm that will sort the surnames into alphabetical order\nusing the bubble sort method. The order of the first names must also be changed so\nthat they keep the same index as their corresponding surname. [5]\nThe company’s staff list is now organized in the arrays in alphabetical order.\nA binary search was used to find a specific name in the array.\n(c) Describe the process a binary search would follow to find a record in the surname array. [4]\n(d) Outline one benefit of using sub-programmes to implement your algorithms from parts\n(a) and (b). [2]\nTurn over\nM21/4/COMSC/HP1/ENG/TZ0/XX\n– 6 – 2221 – 7011\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-007/renders/page-6.png",
+          "source_pdf_page": 6,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct programs that can extract and manipulate substrings.",
+        "Construct programs that apply arrays and Lists."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-013",
+        "filename": "Computer_science_paper_1__HL_markscheme (4).pdf",
+        "pdf_pages": [
+          10
+        ],
+        "question_reference": "13(a)",
+        "marking_summary": "Loopcollection,split/extractfields,correctparallelassignments; source ambiguous collection representation.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.1.2",
+          "scope_evidence": "• Writing of programs that accurately identify and extract substrings from given strings, demonstrating the ability to perform various manipulations, such as altering, concatenating or replacing",
+          "rationale": "Replace old collection API with explicitly formatted Python strings.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Replace old collection API with explicitly formatted Python strings.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Construct a pseudocode algorithm that will store the surnames in one array and first names in another.",
+      "context_synopsis": "600 employee names in collectionNAMES, formatted surname, first name; split then bubble-sort parallel arrays and binary-search surnames.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-007/transcription/pdf-page-006.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC007-Q13-b",
+      "source_id": "SRC-007",
+      "source_filename": "Computer_science_paper_1__HL (4).pdf",
+      "year": "2021",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ0",
+      "option": "",
+      "question": "13",
+      "subquestion": "b",
+      "source_pdf_pages": [
+        6
+      ],
+      "source_printed_pages": [
+        "5"
+      ],
+      "original_marks": 5,
+      "command_term": "Construct",
+      "original_text": "(b) Construct a pseudocode algorithm that will sort the surnames into alphabetical order\nusing the bubble sort method. The order of the first names must also be changed so\nthat they keep the same index as their corresponding surname. [5]",
+      "parent_context": "13. A company has 600 employees whose names are currently stored using a collection\ncalled . The names are stored as surname, first name. For example: Smith, Jane,\nNAMES\nUysal, Rafael, Ahmed, Ishmael, Jonsonn, Sara, …\n(a) Construct a pseudocode algorithm that will store the surnames in one array and\nfirst names in another. [4]\nThe names in the collection are kept in a random order. However, it would be more useful\nif they were kept in alphabetical order.\n(b) Construct a pseudocode algorithm that will sort the surnames into alphabetical order\nusing the bubble sort method. The order of the first names must also be changed so\nthat they keep the same index as their corresponding surname. [5]\nThe company’s staff list is now organized in the arrays in alphabetical order.\nA binary search was used to find a specific name in the array.\n(c) Describe the process a binary search would follow to find a record in the surname array. [4]\n(d) Outline one benefit of using sub-programmes to implement your algorithms from parts\n(a) and (b). [2]\nTurn over\nM21/4/COMSC/HP1/ENG/TZ0/XX\n– 6 – 2221 – 7011\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-007/renders/page-6.png",
+          "source_pdf_page": 6,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct and trace algorithms to implement bubble sort and selection sort, evaluating their time and space complexities.",
+        "Construct programs that apply arrays and Lists."
+      ],
+      "difficulty": "high",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-013",
+        "filename": "Computer_science_paper_1__HL_markscheme (4).pdf",
+        "pdf_pages": [
+          11
+        ],
+        "question_reference": "13(b)",
+        "marking_summary": "Passes,adjacentcomparison,surnameswap,paired firstnameswap.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.4.3",
+          "scope_evidence": "• The time and space complexities of each algorithm, denoted by their respective Big O notations\n• The advantages and disadvantages of each algorithm in terms of efficiency across various data sets",
+          "rationale": "Bubble-sort parallel lists directly matches listed sort; translate to Python.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Bubble-sort parallel lists directly matches listed sort; translate to Python.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Construct a pseudocode algorithm that will sort the surnames into alphabetical order using the bubble sort method. The order of the first names must also be changed so that they keep the same index as their corresponding surname.",
+      "context_synopsis": "600 employee names in collectionNAMES, formatted surname, first name; split then bubble-sort parallel arrays and binary-search surnames.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-007/transcription/pdf-page-006.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC007-Q13-c",
+      "source_id": "SRC-007",
+      "source_filename": "Computer_science_paper_1__HL (4).pdf",
+      "year": "2021",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ0",
+      "option": "",
+      "question": "13",
+      "subquestion": "c",
+      "source_pdf_pages": [
+        6
+      ],
+      "source_printed_pages": [
+        "5"
+      ],
+      "original_marks": 4,
+      "command_term": "Describe",
+      "original_text": "(c) Describe the process a binary search would follow to find a record in the surname array. [4]",
+      "parent_context": "13. A company has 600 employees whose names are currently stored using a collection\ncalled . The names are stored as surname, first name. For example: Smith, Jane,\nNAMES\nUysal, Rafael, Ahmed, Ishmael, Jonsonn, Sara, …\n(a) Construct a pseudocode algorithm that will store the surnames in one array and\nfirst names in another. [4]\nThe names in the collection are kept in a random order. However, it would be more useful\nif they were kept in alphabetical order.\n(b) Construct a pseudocode algorithm that will sort the surnames into alphabetical order\nusing the bubble sort method. The order of the first names must also be changed so\nthat they keep the same index as their corresponding surname. [5]\nThe company’s staff list is now organized in the arrays in alphabetical order.\nA binary search was used to find a specific name in the array.\n(c) Describe the process a binary search would follow to find a record in the surname array. [4]\n(d) Outline one benefit of using sub-programmes to implement your algorithms from parts\n(a) and (b). [2]\nTurn over\nM21/4/COMSC/HP1/ENG/TZ0/XX\n– 6 – 2221 – 7011\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-007/renders/page-6.png",
+          "source_pdf_page": 6,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct and trace algorithms to implement a linear search and a binary search for data retrieval."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-013",
+        "filename": "Computer_science_paper_1__HL_markscheme (4).pdf",
+        "pdf_pages": [
+          12
+        ],
+        "question_reference": "13(c)",
+        "marking_summary": "Middlecomparison,narrowhalf,repetition and found/notfound termination.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B2.4.2",
+          "scope_evidence": "• The differences in efficiency between different methods of linear and binary search\n• Use of search technique based on efficiency requirements—for example, searching a database for a sorted/indexed list of names to find a phone number, versus searching by the number to identify the name",
+          "rationale": "Binary-search construction/tracing explicitly scoped.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Describe the process a binary search would follow to find a record in the surname array.",
+      "context_synopsis": "600 employee names in collectionNAMES, formatted surname, first name; split then bubble-sort parallel arrays and binary-search surnames.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-007/transcription/pdf-page-006.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC007-Q13-d",
+      "source_id": "SRC-007",
+      "source_filename": "Computer_science_paper_1__HL (4).pdf",
+      "year": "2021",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ0",
+      "option": "",
+      "question": "13",
+      "subquestion": "d",
+      "source_pdf_pages": [
+        6
+      ],
+      "source_printed_pages": [
+        "5"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "(d) Outline one benefit of using sub-programmes to implement your algorithms from parts\n(a) and (b). [2]",
+      "parent_context": "13. A company has 600 employees whose names are currently stored using a collection\ncalled . The names are stored as surname, first name. For example: Smith, Jane,\nNAMES\nUysal, Rafael, Ahmed, Ishmael, Jonsonn, Sara, …\n(a) Construct a pseudocode algorithm that will store the surnames in one array and\nfirst names in another. [4]\nThe names in the collection are kept in a random order. However, it would be more useful\nif they were kept in alphabetical order.\n(b) Construct a pseudocode algorithm that will sort the surnames into alphabetical order\nusing the bubble sort method. The order of the first names must also be changed so\nthat they keep the same index as their corresponding surname. [5]\nThe company’s staff list is now organized in the arrays in alphabetical order.\nA binary search was used to find a specific name in the array.\n(c) Describe the process a binary search would follow to find a record in the surname array. [4]\n(d) Outline one benefit of using sub-programmes to implement your algorithms from parts\n(a) and (b). [2]\nTurn over\nM21/4/COMSC/HP1/ENG/TZ0/XX\n– 6 – 2221 – 7011\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-007/renders/page-6.png",
+          "source_pdf_page": 6,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct functions and modularization."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-013",
+        "filename": "Computer_science_paper_1__HL_markscheme (4).pdf",
+        "pdf_pages": [
+          13
+        ],
+        "question_reference": "13(d)",
+        "marking_summary": "Reusability/modularity/maintainability with expansion.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B2.3.4",
+          "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+          "rationale": "Functions/modularization benefits explicit.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Outline one benefit of using sub-programmes to implement your algorithms from parts(a)and(b).",
+      "context_synopsis": "600 employee names in collectionNAMES, formatted surname, first name; split then bubble-sort parallel arrays and binary-search surnames.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-007/transcription/pdf-page-006.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC007-Q14-a-i",
+      "source_id": "SRC-007",
+      "source_filename": "Computer_science_paper_1__HL (4).pdf",
+      "year": "2021",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ0",
+      "option": "",
+      "question": "14",
+      "subquestion": "a-i",
+      "source_pdf_pages": [
+        7,
+        8
+      ],
+      "source_printed_pages": [
+        "6",
+        "7"
+      ],
+      "original_marks": 1,
+      "command_term": "Identify",
+      "original_text": "(i) Identify the logic error in the algorithm. [1]",
+      "parent_context": "14. The following flowchart is intended to represent an algorithm in which numbers that are input\ncannot be negative.\nThe flowchart contains a logic error that will affect the algorithm’s functionality.\nSTART\nHIGHEST = 0\nLOWEST = 0\nCOUNTER = 0\nCOUNTER =\nCOUNTER + 1\nYes\nIs COUNTER >\n999?\nNo\nOUTPUT INPUT\nHIGHEST NUMBER\nYes\nIs NUMBER > HIGHEST =\nOUTPUT\nHIGHEST? NUMBER\nLOWEST\nNo\nYes\nIs NUMBER < LOWEST =\nEND\nLOWEST? NUMBER\nNo\n(This question continues on the following page)\nM21/4/COMSC/HP1/ENG/TZ0/XX\n– 7 – 2221 – 7011\n(Question 14 continued)\n(a) (i) Identify the logic error in the algorithm. [1]\n(ii) Outline how the error in the algorithm identified in part (i) can be corrected. [2]\nThe algorithm is to be altered to restrict the values that are input to whole numbers\nbetween 0 and 1000.\n(b) State the name of the method that could be used to restrict the values that are input. [1]\nA further change has been requested for the algorithm to enable it to calculate the average of\nall the numbers entered. The average will be output when the algorithm terminates.\n(c) Based on the flowchart, construct this algorithm using pseudocode. You must include\nthe required changes:\n• correction of logic error\n• only allow input of integers between 0 and 1000\n• calculation of average of all numbers entered\n• output of final average. [8]\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-007/renders/page-8.png",
+          "source_pdf_page": 8,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct and use common debugging techniques."
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-013",
+        "filename": "Computer_science_paper_1__HL_markscheme (4).pdf",
+        "pdf_pages": [
+          14
+        ],
+        "question_reference": "14(a-i)",
+        "marking_summary": "LOWESTstarts0 and nonnegative inputs cannot lower it.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B2.1.4",
+          "scope_evidence": "• Debugging techniques may include trace tables, breakpoint debugging, print statements and step-by-step code execution.",
+          "rationale": "Debugging faulty extrema initialization supported.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Identify the logic error in the algorithm.",
+      "context_synopsis": "SourceflowchartPDF7:highest=0,lowest=0,counter=0;whilecounter<=999,inputnumber;updatehighest/lowest;counter++;output extrema. Inputs nonnegative.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-007/transcription/pdf-page-007.txt",
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-007/transcription/pdf-page-008.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC007-Q14-a-ii",
+      "source_id": "SRC-007",
+      "source_filename": "Computer_science_paper_1__HL (4).pdf",
+      "year": "2021",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ0",
+      "option": "",
+      "question": "14",
+      "subquestion": "a-ii",
+      "source_pdf_pages": [
+        7,
+        8
+      ],
+      "source_printed_pages": [
+        "6",
+        "7"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "(ii) Outline how the error in the algorithm identified in part (i) can be corrected. [2]",
+      "parent_context": "14. The following flowchart is intended to represent an algorithm in which numbers that are input\ncannot be negative.\nThe flowchart contains a logic error that will affect the algorithm’s functionality.\nSTART\nHIGHEST = 0\nLOWEST = 0\nCOUNTER = 0\nCOUNTER =\nCOUNTER + 1\nYes\nIs COUNTER >\n999?\nNo\nOUTPUT INPUT\nHIGHEST NUMBER\nYes\nIs NUMBER > HIGHEST =\nOUTPUT\nHIGHEST? NUMBER\nLOWEST\nNo\nYes\nIs NUMBER < LOWEST =\nEND\nLOWEST? NUMBER\nNo\n(This question continues on the following page)\nM21/4/COMSC/HP1/ENG/TZ0/XX\n– 7 – 2221 – 7011\n(Question 14 continued)\n(a) (i) Identify the logic error in the algorithm. [1]\n(ii) Outline how the error in the algorithm identified in part (i) can be corrected. [2]\nThe algorithm is to be altered to restrict the values that are input to whole numbers\nbetween 0 and 1000.\n(b) State the name of the method that could be used to restrict the values that are input. [1]\nA further change has been requested for the algorithm to enable it to calculate the average of\nall the numbers entered. The average will be output when the algorithm terminates.\n(c) Based on the flowchart, construct this algorithm using pseudocode. You must include\nthe required changes:\n• correction of logic error\n• only allow input of integers between 0 and 1000\n• calculation of average of all numbers entered\n• output of final average. [8]\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-007/renders/page-8.png",
+          "source_pdf_page": 8,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct and use common debugging techniques."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-013",
+        "filename": "Computer_science_paper_1__HL_markscheme (4).pdf",
+        "pdf_pages": [
+          14
+        ],
+        "question_reference": "14(a-ii)",
+        "marking_summary": "Initialize minimum from first input or guaranteedupperbound; account for any separately consumed input.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B2.1.4",
+          "scope_evidence": "• Debugging techniques may include trace tables, breakpoint debugging, print statements and step-by-step code execution.",
+          "rationale": "Debugging uses trace/step understanding; safe data-dependent initialization.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Outline how the error in the algorithm identified in part(i) can be corrected.",
+      "context_synopsis": "SourceflowchartPDF7:highest=0,lowest=0,counter=0;whilecounter<=999,inputnumber;updatehighest/lowest;counter++;output extrema. Inputs nonnegative.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-007/transcription/pdf-page-007.txt",
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-007/transcription/pdf-page-008.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC007-Q14-b",
+      "source_id": "SRC-007",
+      "source_filename": "Computer_science_paper_1__HL (4).pdf",
+      "year": "2021",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ0",
+      "option": "",
+      "question": "14",
+      "subquestion": "b",
+      "source_pdf_pages": [
+        7,
+        8
+      ],
+      "source_printed_pages": [
+        "6",
+        "7"
+      ],
+      "original_marks": 1,
+      "command_term": "State",
+      "original_text": "(b) State the name of the method that could be used to restrict the values that are input. [1]",
+      "parent_context": "14. The following flowchart is intended to represent an algorithm in which numbers that are input\ncannot be negative.\nThe flowchart contains a logic error that will affect the algorithm’s functionality.\nSTART\nHIGHEST = 0\nLOWEST = 0\nCOUNTER = 0\nCOUNTER =\nCOUNTER + 1\nYes\nIs COUNTER >\n999?\nNo\nOUTPUT INPUT\nHIGHEST NUMBER\nYes\nIs NUMBER > HIGHEST =\nOUTPUT\nHIGHEST? NUMBER\nLOWEST\nNo\nYes\nIs NUMBER < LOWEST =\nEND\nLOWEST? NUMBER\nNo\n(This question continues on the following page)\nM21/4/COMSC/HP1/ENG/TZ0/XX\n– 7 – 2221 – 7011\n(Question 14 continued)\n(a) (i) Identify the logic error in the algorithm. [1]\n(ii) Outline how the error in the algorithm identified in part (i) can be corrected. [2]\nThe algorithm is to be altered to restrict the values that are input to whole numbers\nbetween 0 and 1000.\n(b) State the name of the method that could be used to restrict the values that are input. [1]\nA further change has been requested for the algorithm to enable it to calculate the average of\nall the numbers entered. The average will be output when the algorithm terminates.\n(c) Based on the flowchart, construct this algorithm using pseudocode. You must include\nthe required changes:\n• correction of logic error\n• only allow input of integers between 0 and 1000\n• calculation of average of all numbers entered\n• output of final average. [8]\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-007/renders/page-8.png",
+          "source_pdf_page": 8,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct programs utilizing appropriate selection structures."
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-013",
+        "filename": "Computer_science_paper_1__HL_markscheme (4).pdf",
+        "pdf_pages": [
+          14
+        ],
+        "question_reference": "14(b)",
+        "marking_summary": "Validation/range/typecheck.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Keep boundary-checking skill using actual selection condition rather than old validation terminology recall.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "State the name of the method that could be used to restrict the values that are input.",
+      "context_synopsis": "Altered inputrestricted to whole numbers0…1000.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-007/transcription/pdf-page-007.txt",
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-007/transcription/pdf-page-008.txt"
+      ]
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC007-Q12-e",
+      "source_question_ids": [
+        "H-SRC007-Q12-e"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Explain how using a VPN can help a museum curator access an internal catalogue while travelling on untrusted Wi-Fi.",
+      "syllabus_codes": [
+        "A2.4.3"
+      ],
+      "theme": "A",
+      "level": "HL-only",
+      "marks": 3,
+      "command_term": "Explain",
+      "difficulty": "medium",
+      "adaptation_rationale": "VPN is explicitly listed countermeasure; explain protection and its limit. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "Authenticated VPN creates an encrypted tunnel to the museum, protecting traffic on public Wi-Fi and allowing authorized access to the internal catalogue.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Encrypted/authenticated tunnel to organization."
+        },
+        {
+          "marks": 1,
+          "criterion": "Protects traffic from local interception."
+        },
+        {
+          "marks": 1,
+          "criterion": "Connects private access to internal catalogue while remote."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 3,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC007-Q13-a",
+      "source_question_ids": [
+        "H-SRC007-Q13-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct Python function split_names(entries) returning two parallel lists of surnames and firstnames. Each input string has exactly one comma separating surname from firstnames; strip surrounding spaces. For example \"Okafor, Ada\".",
+      "syllabus_codes": [
+        "B2.1.2",
+        "B2.2.2"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 4,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Replace old collection API with explicitly formatted Python strings. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "def split_names(entries):\n    surnames = []\n    firstnames = []\n    for entry in entries:\n        surname, first = entry.split(\",\", 1)\n        surnames.append(surname.strip())\n        firstnames.append(first.strip())\n    return surnames, firstnames",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Creates two result lists."
+        },
+        {
+          "marks": 1,
+          "criterion": "Traverses all entries."
+        },
+        {
+          "marks": 1,
+          "criterion": "Splits correctly at comma and strips spaces."
+        },
+        {
+          "marks": 1,
+          "criterion": "Appends matching surname/firstname at same index and returns both."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 4,
+        "code_execution": "Executed on empty input,spaces and multiple firstnames; expectedparallel lists verified."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": [],
+      "code": "def split_names(entries):\n    surnames = []\n    firstnames = []\n    for entry in entries:\n        surname, first = entry.split(\",\", 1)\n        surnames.append(surname.strip())\n        firstnames.append(first.strip())\n    return surnames, firstnames"
+    },
+    {
+      "question_id": "P-SRC007-Q13-b",
+      "source_question_ids": [
+        "H-SRC007-Q13-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct Python function sort_names(surnames, firstnames) sorting surnames in ascending alphabetical order in place using bubble sort. Keep each firstname paired with its surname. Assume equal list lengths. Do not use built-in sorting because the bubble-sort steps are assessed.",
+      "syllabus_codes": [
+        "B2.4.3",
+        "B2.2.2"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 5,
+      "command_term": "Construct",
+      "difficulty": "high",
+      "adaptation_rationale": "Bubble-sort parallel lists directly matches listed sort; translate to Python. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "def sort_names(surnames, firstnames):\n    n = len(surnames)\n    for end in range(n - 1, 0, -1):\n        for i in range(end):\n            if surnames[i] > surnames[i + 1]:\n                surnames[i], surnames[i + 1] = surnames[i + 1], surnames[i]\n                firstnames[i], firstnames[i + 1] = firstnames[i + 1], firstnames[i]",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Suitable repeated passes."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct adjacent-pair traversal without index error."
+        },
+        {
+          "marks": 1,
+          "criterion": "Compares surnames in correct direction."
+        },
+        {
+          "marks": 1,
+          "criterion": "Swaps adjacent surnames correctly."
+        },
+        {
+          "marks": 1,
+          "criterion": "Swaps corresponding firstnames at same time."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 5,
+        "code_execution": "Executed empty,singleton,reverse,duplicate surname and paired-name cases."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": [],
+      "code": "def sort_names(surnames, firstnames):\n    n = len(surnames)\n    for end in range(n - 1, 0, -1):\n        for i in range(end):\n            if surnames[i] > surnames[i + 1]:\n                surnames[i], surnames[i + 1] = surnames[i + 1], surnames[i]\n                firstnames[i], firstnames[i + 1] = firstnames[i + 1], firstnames[i]"
+    },
+    {
+      "question_id": "P-SRC007-Q13-c",
+      "source_question_ids": [
+        "H-SRC007-Q13-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Describe binary search for a target name in a list sorted ascending. Include how absence is detected.",
+      "syllabus_codes": [
+        "B2.4.2"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 4,
+      "command_term": "Describe",
+      "difficulty": "medium",
+      "adaptation_rationale": "Binary-search construction/tracing explicitly scoped. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "Keep lower/upper bounds. Compare target with middle value. Return if equal; otherwise discard lower or upper half according to comparison. Repeat until found or bounds cross; crossing means absent.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Initial bounds and middle index."
+        },
+        {
+          "marks": 1,
+          "criterion": "Compares target to middle and detects equality."
+        },
+        {
+          "marks": 1,
+          "criterion": "Selects correct half and repeats."
+        },
+        {
+          "marks": 1,
+          "criterion": "Terminates absent when search interval empty."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 4,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC007-Q13-d",
+      "source_question_ids": [
+        "H-SRC007-Q13-d"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline one maintenance benefit of placing the name-splitting operation in a separate function.",
+      "syllabus_codes": [
+        "B2.3.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Functions/modularization benefits explicit. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "Its parsing logic can be corrected in one place; all callers then use the corrected implementation without duplicated changes.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Single reusable/separate operation."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains one-place updates/testing across callers."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 2,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC007-Q14-a-i",
+      "source_question_ids": [
+        "H-SRC007-Q14-a-i"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "A program sets lowest=0, then updates lowest only when a newly read positive value is smaller. Identify its logic error.",
+      "syllabus_codes": [
+        "B2.1.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 1,
+      "command_term": "Identify",
+      "difficulty": "low",
+      "adaptation_rationale": "Debugging faulty extrema initialization supported. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "The initial0 is smaller than every permitted input, so lowest stays0.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Incorrect initial minimum0 prevents updates for positive input."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 1,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC007-Q14-a-ii",
+      "source_question_ids": [
+        "H-SRC007-Q14-a-ii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline how to repair that minimum-finding program for an arbitrary nonempty list of positive values.",
+      "syllabus_codes": [
+        "B2.1.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Debugging uses trace/step understanding; safe data-dependent initialization. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "Initialize lowest to the first list value before comparison; then scan the remaining values and replace it when a smaller value occurs.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Initializes from actual first value."
+        },
+        {
+          "marks": 1,
+          "criterion": "Compares all remaining values and updates correctly."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 2,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC007-Q14-b",
+      "source_question_ids": [
+        "H-SRC007-Q14-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "State a Python Boolean condition accepting integer variable n only when0<=n<=1000.",
+      "syllabus_codes": [
+        "B2.3.2"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 1,
+      "command_term": "State",
+      "difficulty": "low",
+      "adaptation_rationale": "Keep boundary-checking skill using actual selection condition rather than old validation terminology recall. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "0 <= n <= 1000",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Correct inclusive condition."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 1,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    }
+  ]
+}

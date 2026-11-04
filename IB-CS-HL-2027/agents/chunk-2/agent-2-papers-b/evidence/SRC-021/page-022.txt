@@ -1,0 +1,40 @@
+– 22 – M23/4/COMSC/HP1/ENG/TZ2/XX/M 
+Example 2 (several if statements- inefficient, but it outputs a correct value): 
+Award [1] for each correct if statement, x4 
+ Award [1] for correct use of row index and column index in the DICEDIAL array 
+if //three different numbers 
+  DICEDIAL[R][0]!=DICEDIAL[R][1] 
+  and DICEDIAL[R][0]!=DICEDIAL[R][2] 
+  and DICEDIAL[R][1]!=DICEDIAL[R][2] 
+  then 
+ RESULT=0 
+end if 
+if DICEDIAL[R][0]=DICEDIAL[R][1] and DICEDIAL[R][0]=DICEDIAL[R][2] 
+  then //three same numbers 
+ RESULT = DICEDIAL[R][0] 
+end if 
+//any two same 
+if DICEDIAL[R][0]=DICEDIAL[R][1] or DICEDIAL[R][0]=DICEDIAL[R][2] 
+  then 
+ RESULT = DICEDIAL[R][0] 
+end if 
+if DICEDIAL[R][1]=DICEDIAL[R][2] 
+  then 
+ RESULT = DICEDIAL[R][1] 
+end if 
+return RESULT 
+Note: Accept answers written in Java/ Python. The following example answer is written in 
+Java.   
+public int DuplicateNum (int[][] DiceDial, int row) 
+{ 
+if(DiceDial[row][0] == DiceDial[row][1]  || DiceDial[row][0] == 
+DiceDial[row][2]) 
+  { 
+  return DiceDial[row][0]; 
+  }  
+ else if(DiceDial[row][1] == DiceDial[row][2]) 
+ { 
+  return DiceDial[row][1]; 
+ } 
+  else return 0; 
+} 

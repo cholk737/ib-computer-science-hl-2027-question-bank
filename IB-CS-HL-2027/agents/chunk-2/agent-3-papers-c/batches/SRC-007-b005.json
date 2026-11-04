@@ -1,0 +1,626 @@
+{
+  "source_id": "SRC-007",
+  "batch_id": "SRC-007-b005",
+  "source_questions": [
+    {
+      "source_question_id": "H-SRC007-Q16-a",
+      "source_id": "SRC-007",
+      "source_filename": "Computer_science_paper_1__HL (4).pdf",
+      "year": "2021",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ0",
+      "option": "",
+      "question": "16",
+      "subquestion": "a",
+      "source_pdf_pages": [
+        9
+      ],
+      "source_printed_pages": [
+        "8"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "(a) Outline why a queue is the appropriate data structure to manage print jobs. [2]",
+      "parent_context": "16. A network is set up with shared printers so that when a user wishes to print, print jobs are\nsent to a queue until the printer is available.\n(a) Outline why a queue is the appropriate data structure to manage print jobs. [2]\n(b) Draw a diagram to show how a print queue may be implemented using a linked list. [3]\n(c) Explain why a stack would not be appropriate as a data structure for managing print jobs. [3]\nThe factorial of the positive integer n, which is written n!, is the product of all the positive\nintegers less than or equal to n. A stack may be used to perform a factorial calculation as\nshown by the algorithm:\n//stack for factorial(NUM)\n//creates a stack of (NUM - 1) elements\n//when NUM = 6\nNUM = 6\nloop while NUM > 1\nstack.push(NUM)\nNUM = NUM – 1\nend loop\nPRODUCT = 1\nloop while not stack.isEmpty()\nNUM = stack.pop()\nPRODUCT = PRODUCT * NUM\nend loop\noutput PRODUCT\n(d) Copy and complete the trace table for the algorithm shown for . [3]\nNUM = 6\nNUM PRODUCT OUTPUT\n6\n(e) Explain how a stack may be used in the implementation of a recursive function. [4]\nReferences:\n© International Baccalaureate Organization 2021",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-007/renders/page-9.png",
+          "source_pdf_page": 9,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Explain the concept of a queue as a “first in, first out” (FIFO) data structure."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-013",
+        "filename": "Computer_science_paper_1__HL_markscheme (4).pdf",
+        "pdf_pages": [
+          19
+        ],
+        "question_reference": "16(a)",
+        "marking_summary": "FIFOprocesses jobsinarrivalorder.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.4",
+          "scope_evidence": "• Must include fundamental operations such as enqueue, dequeue, front and isEmpty\n• How queue operations impact both performance and memory usage\n• An appropriate queue for a specific problem",
+          "rationale": "FIFOqueue application explicitlyscoped.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Outline why a queue is the appropriate data structure to manage print jobs.",
+      "context_synopsis": "Network printjobs queue;linkedlist implementation;stackfactorial pushes6,5,4,3,2 thenpops/multiplies.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-007/transcription/pdf-page-009.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC007-Q16-b",
+      "source_id": "SRC-007",
+      "source_filename": "Computer_science_paper_1__HL (4).pdf",
+      "year": "2021",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ0",
+      "option": "",
+      "question": "16",
+      "subquestion": "b",
+      "source_pdf_pages": [
+        9
+      ],
+      "source_printed_pages": [
+        "8"
+      ],
+      "original_marks": 3,
+      "command_term": "Draw",
+      "original_text": "(b) Draw a diagram to show how a print queue may be implemented using a linked list. [3]",
+      "parent_context": "16. A network is set up with shared printers so that when a user wishes to print, print jobs are\nsent to a queue until the printer is available.\n(a) Outline why a queue is the appropriate data structure to manage print jobs. [2]\n(b) Draw a diagram to show how a print queue may be implemented using a linked list. [3]\n(c) Explain why a stack would not be appropriate as a data structure for managing print jobs. [3]\nThe factorial of the positive integer n, which is written n!, is the product of all the positive\nintegers less than or equal to n. A stack may be used to perform a factorial calculation as\nshown by the algorithm:\n//stack for factorial(NUM)\n//creates a stack of (NUM - 1) elements\n//when NUM = 6\nNUM = 6\nloop while NUM > 1\nstack.push(NUM)\nNUM = NUM – 1\nend loop\nPRODUCT = 1\nloop while not stack.isEmpty()\nNUM = stack.pop()\nPRODUCT = PRODUCT * NUM\nend loop\noutput PRODUCT\n(d) Copy and complete the trace table for the algorithm shown for . [3]\nNUM = 6\nNUM PRODUCT OUTPUT\n6\n(e) Explain how a stack may be used in the implementation of a recursive function. [4]\nReferences:\n© International Baccalaureate Organization 2021",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-007/renders/page-9.png",
+          "source_pdf_page": 9,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Evaluate linked lists."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-013",
+        "filename": "Computer_science_paper_1__HL_markscheme (4).pdf",
+        "pdf_pages": [
+          19
+        ],
+        "question_reference": "16(b)",
+        "marking_summary": "Data/next nodes,head/tail,lastnull.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B4.1.2",
+          "scope_evidence": "• Lists must include singly, doubly, circular\n• Sketch of linked lists and implementation of basic operations diagrammatically, such as insertion, deletion, traversal, search\n• The advantages and disadvantages of using linked lists over other data structures like arrays, particularly in terms of memory utilization and performance",
+          "rationale": "Linked-list sketches/basicoperations explicit.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Draw a diagram to show how a print queue may be implemented using a linked list.",
+      "context_synopsis": "Network printjobs queue;linkedlist implementation;stackfactorial pushes6,5,4,3,2 thenpops/multiplies.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-007/transcription/pdf-page-009.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC007-Q16-c",
+      "source_id": "SRC-007",
+      "source_filename": "Computer_science_paper_1__HL (4).pdf",
+      "year": "2021",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ0",
+      "option": "",
+      "question": "16",
+      "subquestion": "c",
+      "source_pdf_pages": [
+        9
+      ],
+      "source_printed_pages": [
+        "8"
+      ],
+      "original_marks": 3,
+      "command_term": "Explain",
+      "original_text": "(c) Explain why a stack would not be appropriate as a data structure for managing print jobs. [3]",
+      "parent_context": "16. A network is set up with shared printers so that when a user wishes to print, print jobs are\nsent to a queue until the printer is available.\n(a) Outline why a queue is the appropriate data structure to manage print jobs. [2]\n(b) Draw a diagram to show how a print queue may be implemented using a linked list. [3]\n(c) Explain why a stack would not be appropriate as a data structure for managing print jobs. [3]\nThe factorial of the positive integer n, which is written n!, is the product of all the positive\nintegers less than or equal to n. A stack may be used to perform a factorial calculation as\nshown by the algorithm:\n//stack for factorial(NUM)\n//creates a stack of (NUM - 1) elements\n//when NUM = 6\nNUM = 6\nloop while NUM > 1\nstack.push(NUM)\nNUM = NUM – 1\nend loop\nPRODUCT = 1\nloop while not stack.isEmpty()\nNUM = stack.pop()\nPRODUCT = PRODUCT * NUM\nend loop\noutput PRODUCT\n(d) Copy and complete the trace table for the algorithm shown for . [3]\nNUM = 6\nNUM PRODUCT OUTPUT\n6\n(e) Explain how a stack may be used in the implementation of a recursive function. [4]\nReferences:\n© International Baccalaureate Organization 2021",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-007/renders/page-9.png",
+          "source_pdf_page": 9,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Explain the concept of a stack as a “last in, first out” (LIFO) data structure."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-013",
+        "filename": "Computer_science_paper_1__HL_markscheme (4).pdf",
+        "pdf_pages": [
+          19
+        ],
+        "question_reference": "16(c)",
+        "marking_summary": "LIFOletsnew jobprecedeolderjobsandmaystarveolderones.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.3",
+          "scope_evidence": "• Must include fundamental operations such as push, pop, peek and isEmpty\n• How stack operations impact both performance and memory usage\n• An appropriate stack for a specific problem",
+          "rationale": "Chooseappropriate stack explicitlyscoped.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Explain why a stack would not be appropriate as a data structure for managing print jobs.",
+      "context_synopsis": "Network printjobs queue;linkedlist implementation;stackfactorial pushes6,5,4,3,2 thenpops/multiplies.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-007/transcription/pdf-page-009.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC007-Q16-d",
+      "source_id": "SRC-007",
+      "source_filename": "Computer_science_paper_1__HL (4).pdf",
+      "year": "2021",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ0",
+      "option": "",
+      "question": "16",
+      "subquestion": "d",
+      "source_pdf_pages": [
+        9
+      ],
+      "source_printed_pages": [
+        "8"
+      ],
+      "original_marks": 3,
+      "command_term": "Copy and complete",
+      "original_text": "(d) Copy and complete the trace table for the algorithm shown for . [3]",
+      "parent_context": "16. A network is set up with shared printers so that when a user wishes to print, print jobs are\nsent to a queue until the printer is available.\n(a) Outline why a queue is the appropriate data structure to manage print jobs. [2]\n(b) Draw a diagram to show how a print queue may be implemented using a linked list. [3]\n(c) Explain why a stack would not be appropriate as a data structure for managing print jobs. [3]\nThe factorial of the positive integer n, which is written n!, is the product of all the positive\nintegers less than or equal to n. A stack may be used to perform a factorial calculation as\nshown by the algorithm:\n//stack for factorial(NUM)\n//creates a stack of (NUM - 1) elements\n//when NUM = 6\nNUM = 6\nloop while NUM > 1\nstack.push(NUM)\nNUM = NUM – 1\nend loop\nPRODUCT = 1\nloop while not stack.isEmpty()\nNUM = stack.pop()\nPRODUCT = PRODUCT * NUM\nend loop\noutput PRODUCT\n(d) Copy and complete the trace table for the algorithm shown for . [3]\nNUM = 6\nNUM PRODUCT OUTPUT\n6\n(e) Explain how a stack may be used in the implementation of a recursive function. [4]\nReferences:\n© International Baccalaureate Organization 2021",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-007/renders/page-9.png",
+          "source_pdf_page": 9,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Explain the concept of a stack as a “last in, first out” (LIFO) data structure.",
+        "Construct programs that utilize looping structures to perform repeated actions."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-013",
+        "filename": "Computer_science_paper_1__HL_markscheme (4).pdf",
+        "pdf_pages": [
+          20
+        ],
+        "question_reference": "16(d)",
+        "marking_summary": "Pushes6…2;pop2…6;products2,6,24,120,720;output720.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.3",
+          "scope_evidence": "• Must include fundamental operations such as push, pop, peek and isEmpty\n• How stack operations impact both performance and memory usage\n• An appropriate stack for a specific problem",
+          "rationale": "Translateabstractstack toPythonlistpush/pop maintainingLIFOtrace.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "Translateabstractstack toPythonlistpush/pop maintainingLIFOtrace.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Copy and complete the trace table for the algorithm shown for NUM=6.",
+      "context_synopsis": "Network printjobs queue;linkedlist implementation;stackfactorial pushes6,5,4,3,2 thenpops/multiplies.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-007/transcription/pdf-page-009.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC007-Q16-e",
+      "source_id": "SRC-007",
+      "source_filename": "Computer_science_paper_1__HL (4).pdf",
+      "year": "2021",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "TZ0",
+      "option": "",
+      "question": "16",
+      "subquestion": "e",
+      "source_pdf_pages": [
+        9
+      ],
+      "source_printed_pages": [
+        "8"
+      ],
+      "original_marks": 4,
+      "command_term": "Explain",
+      "original_text": "(e) Explain how a stack may be used in the implementation of a recursive function. [4]",
+      "parent_context": "16. A network is set up with shared printers so that when a user wishes to print, print jobs are\nsent to a queue until the printer is available.\n(a) Outline why a queue is the appropriate data structure to manage print jobs. [2]\n(b) Draw a diagram to show how a print queue may be implemented using a linked list. [3]\n(c) Explain why a stack would not be appropriate as a data structure for managing print jobs. [3]\nThe factorial of the positive integer n, which is written n!, is the product of all the positive\nintegers less than or equal to n. A stack may be used to perform a factorial calculation as\nshown by the algorithm:\n//stack for factorial(NUM)\n//creates a stack of (NUM - 1) elements\n//when NUM = 6\nNUM = 6\nloop while NUM > 1\nstack.push(NUM)\nNUM = NUM – 1\nend loop\nPRODUCT = 1\nloop while not stack.isEmpty()\nNUM = stack.pop()\nPRODUCT = PRODUCT * NUM\nend loop\noutput PRODUCT\n(d) Copy and complete the trace table for the algorithm shown for . [3]\nNUM = 6\nNUM PRODUCT OUTPUT\n6\n(e) Explain how a stack may be used in the implementation of a recursive function. [4]\nReferences:\n© International Baccalaureate Organization 2021",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-007/renders/page-9.png",
+          "source_pdf_page": 9,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Explain the fundamental concept of recursion and its applications in programming. (HL only)",
+        "Explain the concept of a stack as a “last in, first out” (LIFO) data structure."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-013",
+        "filename": "Computer_science_paper_1__HL_markscheme (4).pdf",
+        "pdf_pages": [
+          20
+        ],
+        "question_reference": "16(e)",
+        "marking_summary": "Stackrecords calls/local state/returnaddresses,popsLIFOafterbase case.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B2.4.4",
+          "scope_evidence": "• The fundamentals of recursion and its advantages and limitations\n• The utility of recursion in solving problems that can be broken down into smaller, similar sub-problems\n• Recursive algorithms, including but not limited to quicksort\n• The limitations of recursion, including complexity and memory usage\n• Situations that best suit the use of recursion, including fractal image creation, traversing binary trees, sorting algorithms",
+          "rationale": "Recursionmemory use and stack operations explicitlyscoped.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.2.3",
+          "scope_evidence": "• Must include fundamental operations such as push, pop, peek and isEmpty\n• How stack operations impact both performance and memory usage\n• An appropriate stack for a specific problem",
+          "rationale": "Recursionmemory use and stack operations explicitlyscoped.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Explain how a stack may be used in the implementation of a recursive function.",
+      "context_synopsis": "Network printjobs queue;linkedlist implementation;stackfactorial pushes6,5,4,3,2 thenpops/multiplies.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-007/transcription/pdf-page-009.txt"
+      ]
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC007-Q16-a",
+      "source_question_ids": [
+        "H-SRC007-Q16-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline why an ordinary queue is suitable for equally urgent document jobs sent to a printer.",
+      "syllabus_codes": [
+        "B2.2.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "FIFO queue application explicitly scoped. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "New jobs enqueue at rear; printer dequeues front so earliest submitted jobs are served first.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "FIFO arrival order."
+        },
+        {
+          "marks": 1,
+          "criterion": "Rear enqueue and front dequeue linked to fair printing."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 2,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC007-Q16-b",
+      "source_question_ids": [
+        "H-SRC007-Q16-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Sketch a singly linked queue containing jobs A, B, C in that service order. Label front, rear and the final next reference.",
+      "syllabus_codes": [
+        "B4.1.2"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 3,
+      "command_term": "Sketch",
+      "difficulty": "medium",
+      "adaptation_rationale": "Linked-list sketches/basic operations explicit. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "front/head→[A|next]→[B|next]→[C|None]←rear/tail.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Linked nodes contain data/next references."
+        },
+        {
+          "marks": 1,
+          "criterion": "Front/head at A and service order A→B→C."
+        },
+        {
+          "marks": 1,
+          "criterion": "Rear/tailat C with final next None."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 3,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC007-Q16-c",
+      "source_question_ids": [
+        "H-SRC007-Q16-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Explain why a stack is unsuitable if equally urgent print jobs must be handled in arrival order.",
+      "syllabus_codes": [
+        "B2.2.3"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 3,
+      "command_term": "Explain",
+      "difficulty": "medium",
+      "adaptation_rationale": "Choose appropriate stack explicitly scoped. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "Stack pops most recently pushed job first;new arrivals overtake older jobs, reversing desired order and potentially delaying old jobs indefinitely.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "LIFO identified."
+        },
+        {
+          "marks": 1,
+          "criterion": "New job takes precedence over older jobs."
+        },
+        {
+          "marks": 1,
+          "criterion": "Connects to desired FIFO/fairness/starvation issue."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 3,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC007-Q16-d",
+      "source_question_ids": [
+        "H-SRC007-Q16-d"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Trace the program, listing the values popped, the running product after each pop, and final output.\n\nstack = []\nn = 5\nwhile n > 1:\n    stack.append(n)\n    n -= 1\nproduct = 1\nwhile stack:\n    n = stack.pop()\n    product *= n\nprint(product)",
+      "syllabus_codes": [
+        "B2.2.3",
+        "B2.3.3"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 3,
+      "command_term": "Trace",
+      "difficulty": "medium",
+      "adaptation_rationale": "Translate abstract stack to Python list push/pop maintaining LIFO trace. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "Popped2,3, 4,5;products2,6,24,120;output 120.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Correct popped sequence2,3, 4,5."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct running products2,6,24,120."
+        },
+        {
+          "marks": 1,
+          "criterion": "Final output 120."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 3,
+        "code_execution": "Executed stdout120;manuallycheckedpush5,4,3,2,popreverse."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": [],
+      "code": "stack = []\nn = 5\nwhile n > 1:\n    stack.append(n)\n    n -= 1\nproduct = 1\nwhile stack:\n    n = stack.pop()\n    product *= n\nprint(product)"
+    },
+    {
+      "question_id": "P-SRC007-Q16-e",
+      "source_question_ids": [
+        "H-SRC007-Q16-e"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Explain how the call stack supports a recursive function that reduces n by 1 until a base case.",
+      "syllabus_codes": [
+        "B2.4.4",
+        "B2.2.3"
+      ],
+      "theme": "B",
+      "level": "mixed common/HL",
+      "marks": 4,
+      "command_term": "Explain",
+      "difficulty": "medium",
+      "adaptation_rationale": "Recursion memory use and stack operations explicitly scoped. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "Each call pushes a frame with local state/return location. Frames accumulate asn decreases. Atbase case returns start;most recent frame resumes first and pops, restoring previous call state until original call returns.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Pushes frame for each call."
+        },
+        {
+          "marks": 1,
+          "criterion": "Stores local state and return location."
+        },
+        {
+          "marks": 1,
+          "criterion": "Base case starts return/unwinding."
+        },
+        {
+          "marks": 1,
+          "criterion": "Pops/resumes in LIFO order."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 4,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    }
+  ]
+}

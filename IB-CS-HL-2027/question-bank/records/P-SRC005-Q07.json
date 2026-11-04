@@ -1,0 +1,50 @@
+{
+  "question_id": "P-SRC005-Q07",
+  "source_question_ids": [
+    "H-SRC005-Q07"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A program repeatedly accesses a working set that is larger than its current CPU cache. Explain why a larger cache might improve its runtime.",
+  "syllabus_codes": [
+    "A1.1.4"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 3,
+  "command_term": "Explain",
+  "difficulty": "medium",
+  "adaptation_rationale": "Original application rewritten to be self-contained; assessed reasoning retained within cited 2027 scope.",
+  "solution": "The larger cache can retain more of the repeatedly accessed data/instructions.; This can increase the cache-hit rate and reduce accesses to slower RAM.; The CPU spends less time waiting for memory, reducing runtime; improvement depends on the access pattern.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "The larger cache can retain more of the repeatedly accessed data/instructions."
+    },
+    {
+      "marks": 1,
+      "criterion": "This can increase the cache-hit rate and reduce accesses to slower RAM."
+    },
+    {
+      "marks": 1,
+      "criterion": "The CPU spends less time waiting for memory, reducing runtime; improvement depends on the access pattern."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "No executable code required; manual technical check."
+  },
+  "code": "",
+  "test_code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC005-Q07.json",
+  "question_path": "question-bank/questions/P-SRC005-Q07.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC005-Q07.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

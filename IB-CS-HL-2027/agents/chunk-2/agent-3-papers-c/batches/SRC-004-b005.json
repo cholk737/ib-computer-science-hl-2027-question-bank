@@ -1,0 +1,910 @@
+{
+  "source_id": "SRC-004",
+  "batch_id": "SRC-004-b005",
+  "source_questions": [
+    {
+      "source_question_id": "H-SRC004-Q13-b",
+      "source_id": "SRC-004",
+      "source_filename": "Computer_science_paper_1__HL (1).pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "not stated",
+      "option": "",
+      "question": "13",
+      "subquestion": "b",
+      "source_pdf_pages": [
+        7
+      ],
+      "source_printed_pages": [
+        "6"
+      ],
+      "original_marks": 3,
+      "command_term": "Explain",
+      "original_text": "(b) Explain why a queue data structure is not suitable in this situation. [3]",
+      "parent_context": "13. A programmer is developing a program to record information about patients as they arrive at\nthe emergency department of a hospital.\nDue to the unplanned nature of patient attendance, the emergency department must provide\ntreatment for a range of illnesses and injuries, some of which may be critical and require\nimmediate attention.\nThe programmer decided to use a linked list for storing the patients’ data.\n(a) Describe the structure of a linked list. [2]\n(b) Explain why a queue data structure is not suitable in this situation. [3]\nThe information about the most seriously ill patient is held at the beginning of the linked list.\nThe linked list should be updated as each new patient arrives at the emergency department.\n(c) Describe how the linked list should be updated if a new patient arrives at the\nemergency department with more serious symptoms than all the other patients. [3]\n(d) Describe how the linked list should be updated if a new patient arrives at the\nemergency department and has more serious symptoms than some patients but less\nserious symptoms than others. [4]\n(e) Compare static and dynamic data structures. [3]\n– 7 – 8823 – 7011\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-004/renders/page-7.png",
+          "source_pdf_page": 7,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Explain the concept of a queue as a “first in, first out” (FIFO) data structure."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-010",
+        "filename": "Computer_science_paper_1__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          14
+        ],
+        "question_reference": "13(b)",
+        "marking_summary": "FIFO may delay urgent arrival; priority or middle removal needed.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.4",
+          "scope_evidence": "• Must include fundamental operations such as enqueue, dequeue, front and isEmpty\n• How queue operations impact both performance and memory usage\n• An appropriate queue for a specific problem",
+          "rationale": "Selecting a FIFO queue for a specific problem is explicit.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Explain why a queue data structure is not suitable in this situation.",
+      "context_synopsis": "Emergency hospital patients stored in a singly linked list in decreasing severity; most serious at head; some arrivals need immediate attention.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-004/transcription/pdf-page-007.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC004-Q13-c",
+      "source_id": "SRC-004",
+      "source_filename": "Computer_science_paper_1__HL (1).pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "not stated",
+      "option": "",
+      "question": "13",
+      "subquestion": "c",
+      "source_pdf_pages": [
+        7
+      ],
+      "source_printed_pages": [
+        "6"
+      ],
+      "original_marks": 3,
+      "command_term": "Describe",
+      "original_text": "(c) Describe how the linked list should be updated if a new patient arrives at the\nemergency department with more serious symptoms than all the other patients. [3]",
+      "parent_context": "13. A programmer is developing a program to record information about patients as they arrive at\nthe emergency department of a hospital.\nDue to the unplanned nature of patient attendance, the emergency department must provide\ntreatment for a range of illnesses and injuries, some of which may be critical and require\nimmediate attention.\nThe programmer decided to use a linked list for storing the patients’ data.\n(a) Describe the structure of a linked list. [2]\n(b) Explain why a queue data structure is not suitable in this situation. [3]\nThe information about the most seriously ill patient is held at the beginning of the linked list.\nThe linked list should be updated as each new patient arrives at the emergency department.\n(c) Describe how the linked list should be updated if a new patient arrives at the\nemergency department with more serious symptoms than all the other patients. [3]\n(d) Describe how the linked list should be updated if a new patient arrives at the\nemergency department and has more serious symptoms than some patients but less\nserious symptoms than others. [4]\n(e) Compare static and dynamic data structures. [3]\n– 7 – 8823 – 7011\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-004/renders/page-7.png",
+          "source_pdf_page": 7,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct and apply linked lists: singly, doubly and circular."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-010",
+        "filename": "Computer_science_paper_1__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          14
+        ],
+        "question_reference": "13(c)",
+        "marking_summary": "Create node, new.next=head, head=new.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B4.1.3",
+          "scope_evidence": "• The basic operations on a linked list, such as insertion, deletion, traversal, search",
+          "rationale": "Insertion at linked-list head explicit.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Describe how the linked list should be updated if a new patient arrives at the emergency department with more serious symptoms than all the other patients.",
+      "context_synopsis": "Emergency hospital patients stored in a singly linked list in decreasing severity; most serious at head; some arrivals need immediate attention.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-004/transcription/pdf-page-007.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC004-Q13-d",
+      "source_id": "SRC-004",
+      "source_filename": "Computer_science_paper_1__HL (1).pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "not stated",
+      "option": "",
+      "question": "13",
+      "subquestion": "d",
+      "source_pdf_pages": [
+        7
+      ],
+      "source_printed_pages": [
+        "6"
+      ],
+      "original_marks": 4,
+      "command_term": "Describe",
+      "original_text": "(d) Describe how the linked list should be updated if a new patient arrives at the\nemergency department and has more serious symptoms than some patients but less\nserious symptoms than others. [4]",
+      "parent_context": "13. A programmer is developing a program to record information about patients as they arrive at\nthe emergency department of a hospital.\nDue to the unplanned nature of patient attendance, the emergency department must provide\ntreatment for a range of illnesses and injuries, some of which may be critical and require\nimmediate attention.\nThe programmer decided to use a linked list for storing the patients’ data.\n(a) Describe the structure of a linked list. [2]\n(b) Explain why a queue data structure is not suitable in this situation. [3]\nThe information about the most seriously ill patient is held at the beginning of the linked list.\nThe linked list should be updated as each new patient arrives at the emergency department.\n(c) Describe how the linked list should be updated if a new patient arrives at the\nemergency department with more serious symptoms than all the other patients. [3]\n(d) Describe how the linked list should be updated if a new patient arrives at the\nemergency department and has more serious symptoms than some patients but less\nserious symptoms than others. [4]\n(e) Compare static and dynamic data structures. [3]\n– 7 – 8823 – 7011\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-004/renders/page-7.png",
+          "source_pdf_page": 7,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct and apply linked lists: singly, doubly and circular."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-010",
+        "filename": "Computer_science_paper_1__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          14
+        ],
+        "question_reference": "13(d)",
+        "marking_summary": "Locate predecessor then link new node between predecessor and successor without losing tail.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B4.1.3",
+          "scope_evidence": "• The basic operations on a linked list, such as insertion, deletion, traversal, search",
+          "rationale": "Ordered linked-list insertion preserves exact supported skill.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Describe how the linked list should be updated if a new patient arrives at the emergency department and has more serious symptoms than some patients but less serious symptoms than others.",
+      "context_synopsis": "Emergency hospital patients stored in a singly linked list in decreasing severity; most serious at head; some arrivals need immediate attention.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-004/transcription/pdf-page-007.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC004-Q13-e",
+      "source_id": "SRC-004",
+      "source_filename": "Computer_science_paper_1__HL (1).pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "not stated",
+      "option": "",
+      "question": "13",
+      "subquestion": "e",
+      "source_pdf_pages": [
+        7
+      ],
+      "source_printed_pages": [
+        "6"
+      ],
+      "original_marks": 3,
+      "command_term": "Compare",
+      "original_text": "(e) Compare static and dynamic data structures. [3]",
+      "parent_context": "13. A programmer is developing a program to record information about patients as they arrive at\nthe emergency department of a hospital.\nDue to the unplanned nature of patient attendance, the emergency department must provide\ntreatment for a range of illnesses and injuries, some of which may be critical and require\nimmediate attention.\nThe programmer decided to use a linked list for storing the patients’ data.\n(a) Describe the structure of a linked list. [2]\n(b) Explain why a queue data structure is not suitable in this situation. [3]\nThe information about the most seriously ill patient is held at the beginning of the linked list.\nThe linked list should be updated as each new patient arrives at the emergency department.\n(c) Describe how the linked list should be updated if a new patient arrives at the\nemergency department with more serious symptoms than all the other patients. [3]\n(d) Describe how the linked list should be updated if a new patient arrives at the\nemergency department and has more serious symptoms than some patients but less\nserious symptoms than others. [4]\n(e) Compare static and dynamic data structures. [3]\n– 7 – 8823 – 7011\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-004/renders/page-7.png",
+          "source_pdf_page": 7,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Compare static and dynamic data structures."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-010",
+        "filename": "Computer_science_paper_1__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          14
+        ],
+        "question_reference": "13(e)",
+        "marking_summary": "Fixed versus resizable allocation/flexibility; linked-reference overhead where applicable.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.1",
+          "scope_evidence": "• The fundamental differences between static and dynamic data structures, including their underlying mechanisms for memory allocation and resizing\n• The advantages and disadvantages of each type in various scenarios, considering factors such as speed, memory usage, flexibility",
+          "rationale": "Allocation/resizing and trade-offs explicit; avoid source overgeneralization all dynamic structures are sequential.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Compare static and dynamic data structures.",
+      "context_synopsis": "Emergency hospital patients stored in a singly linked list in decreasing severity; most serious at head; some arrivals need immediate attention.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-004/transcription/pdf-page-007.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC004-Q14-a",
+      "source_id": "SRC-004",
+      "source_filename": "Computer_science_paper_1__HL (1).pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "not stated",
+      "option": "",
+      "question": "14",
+      "subquestion": "a",
+      "source_pdf_pages": [
+        8
+      ],
+      "source_printed_pages": [
+        "7"
+      ],
+      "original_marks": 1,
+      "command_term": "State",
+      "original_text": "(a) State the judge who awarded the highest score to the competitor Tea Fox. [1]",
+      "parent_context": "14. There are 20 gymnasts who took part in a gymnastics competition.\nCompetitors were assessed by 8 judges who each awarded a score in a range from 0–10.\nThe judges were numbered 0–7. The competitors’ names are stored in the one-dimensional\narray , and their scores are stored in the two-dimensional array (see Figure 1).\nNAMES SCORES\nFigure 1: Data held in the array and the array\nNAMES SCORES\nNAMES SCORES\n[0] [1] [2] [3] [4] [5] [6] [7]\nEvans, Lina 7.9 6.7 7.2 7.5 7.5 7.4 7.2 6.9\n[0] [0]\nTann, Mary 9.3 9.6 9.1 9.1 8.9 9.1 10.0 9.1\n[1] [1]\nBush, Lilly 7.2 7.9 6.9 6.9 6.9 6.9 6.9 7.2\n[2] [2]\nKeon, Lea 5.9 5.6 5.9 5.8 5.9 5.5 5.9 5.9\n[3] [3]\nFox, Tea 7.2 6.9 6.9 7.9 6.9 6.9 6.9 6.9\n[4] [4]\nLobar, Tanya 8.2 7.9 8.2 8.2 8.2 8.2 7.9 8.2\n[5] [5]\n… …\nLee, Mae 8.2 8.0 6.9 6.9 8.1 6.9 7.9 8.2\n[18] [18]\nBurton, Sarah 6.9 6.7 6.9 7.9 6.9 7.2 6.8 6.9\n[19] [19]\nFor example, the score that Judge 4 awarded to Mary Tann ( ) is 8.9 and can be\nNAMES[1]\nfound in .\nSCORES[1][4]\n(a) State the judge who awarded the highest score to the competitor Tea Fox. [1]\nThe highest attainable score in gymnastics is 10.0 .\n(b) Construct an algorithm that determines and outputs the number of times the highest\nattainable score was awarded in this competition. [4]\nA competitor’s final score is calculated by ignoring the highest and the lowest mark awarded\nand averaging the remaining marks.\nFor example, the highest mark awarded to Lilly Bush was 7.9, and the lowest mark was 6.9,\nso her final score was (7.2 + 6.9 + 6.9 + 6.9 + 6.9 + 7.2) / 6.\n(c) Construct an algorithm in pseudocode to output the name and the final score for\nevery competitor. [10]",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-004/renders/page-8.png",
+          "source_pdf_page": 8,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct programs that apply arrays and Lists."
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-010",
+        "filename": "Computer_science_paper_1__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          15
+        ],
+        "question_reference": "14(a)",
+        "marking_summary": "Judge3.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Interpret indexed two-dimensional data as used in list programs.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "State the judge who awarded the highest score to the competitor Tea Fox.",
+      "context_synopsis": "20 gymnasts;8 judges numbered0–7;NAMES one-dimensional and SCORES20x8. Exact original Figure1 preserved in rendered source page8. Final score drops one highest and one lowest and averages other6.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-004/transcription/pdf-page-008.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC004-Q14-b",
+      "source_id": "SRC-004",
+      "source_filename": "Computer_science_paper_1__HL (1).pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "not stated",
+      "option": "",
+      "question": "14",
+      "subquestion": "b",
+      "source_pdf_pages": [
+        8
+      ],
+      "source_printed_pages": [
+        "7"
+      ],
+      "original_marks": 4,
+      "command_term": "Construct",
+      "original_text": "(b) Construct an algorithm that determines and outputs the number of times the highest\nattainable score was awarded in this competition. [4]",
+      "parent_context": "14. There are 20 gymnasts who took part in a gymnastics competition.\nCompetitors were assessed by 8 judges who each awarded a score in a range from 0–10.\nThe judges were numbered 0–7. The competitors’ names are stored in the one-dimensional\narray , and their scores are stored in the two-dimensional array (see Figure 1).\nNAMES SCORES\nFigure 1: Data held in the array and the array\nNAMES SCORES\nNAMES SCORES\n[0] [1] [2] [3] [4] [5] [6] [7]\nEvans, Lina 7.9 6.7 7.2 7.5 7.5 7.4 7.2 6.9\n[0] [0]\nTann, Mary 9.3 9.6 9.1 9.1 8.9 9.1 10.0 9.1\n[1] [1]\nBush, Lilly 7.2 7.9 6.9 6.9 6.9 6.9 6.9 7.2\n[2] [2]\nKeon, Lea 5.9 5.6 5.9 5.8 5.9 5.5 5.9 5.9\n[3] [3]\nFox, Tea 7.2 6.9 6.9 7.9 6.9 6.9 6.9 6.9\n[4] [4]\nLobar, Tanya 8.2 7.9 8.2 8.2 8.2 8.2 7.9 8.2\n[5] [5]\n… …\nLee, Mae 8.2 8.0 6.9 6.9 8.1 6.9 7.9 8.2\n[18] [18]\nBurton, Sarah 6.9 6.7 6.9 7.9 6.9 7.2 6.8 6.9\n[19] [19]\nFor example, the score that Judge 4 awarded to Mary Tann ( ) is 8.9 and can be\nNAMES[1]\nfound in .\nSCORES[1][4]\n(a) State the judge who awarded the highest score to the competitor Tea Fox. [1]\nThe highest attainable score in gymnastics is 10.0 .\n(b) Construct an algorithm that determines and outputs the number of times the highest\nattainable score was awarded in this competition. [4]\nA competitor’s final score is calculated by ignoring the highest and the lowest mark awarded\nand averaging the remaining marks.\nFor example, the highest mark awarded to Lilly Bush was 7.9, and the lowest mark was 6.9,\nso her final score was (7.2 + 6.9 + 6.9 + 6.9 + 6.9 + 7.2) / 6.\n(c) Construct an algorithm in pseudocode to output the name and the final score for\nevery competitor. [10]",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-004/renders/page-8.png",
+          "source_pdf_page": 8,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct programs that apply arrays and Lists.",
+        "Construct programs that utilize looping structures to perform repeated actions."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-010",
+        "filename": "Computer_science_paper_1__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          15
+        ],
+        "question_reference": "14(b)",
+        "marking_summary": "Nested traversal,compare10,increment initialized counter,output.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Nested array processing converted to general Python 2D lists.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "Nested array processing converted to general Python 2D lists.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Construct an algorithm that determines and outputs the number of times the highest attainable score was awarded in this competition.",
+      "context_synopsis": "20 gymnasts;8 judges numbered0–7;NAMES one-dimensional and SCORES20x8. Exact original Figure1 preserved in rendered source page8. Final score drops one highest and one lowest and averages other6.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-004/transcription/pdf-page-008.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC004-Q14-c",
+      "source_id": "SRC-004",
+      "source_filename": "Computer_science_paper_1__HL (1).pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "not stated",
+      "option": "",
+      "question": "14",
+      "subquestion": "c",
+      "source_pdf_pages": [
+        8
+      ],
+      "source_printed_pages": [
+        "7"
+      ],
+      "original_marks": 10,
+      "command_term": "Construct",
+      "original_text": "(c) Construct an algorithm in pseudocode to output the name and the final score for\nevery competitor. [10]",
+      "parent_context": "14. There are 20 gymnasts who took part in a gymnastics competition.\nCompetitors were assessed by 8 judges who each awarded a score in a range from 0–10.\nThe judges were numbered 0–7. The competitors’ names are stored in the one-dimensional\narray , and their scores are stored in the two-dimensional array (see Figure 1).\nNAMES SCORES\nFigure 1: Data held in the array and the array\nNAMES SCORES\nNAMES SCORES\n[0] [1] [2] [3] [4] [5] [6] [7]\nEvans, Lina 7.9 6.7 7.2 7.5 7.5 7.4 7.2 6.9\n[0] [0]\nTann, Mary 9.3 9.6 9.1 9.1 8.9 9.1 10.0 9.1\n[1] [1]\nBush, Lilly 7.2 7.9 6.9 6.9 6.9 6.9 6.9 7.2\n[2] [2]\nKeon, Lea 5.9 5.6 5.9 5.8 5.9 5.5 5.9 5.9\n[3] [3]\nFox, Tea 7.2 6.9 6.9 7.9 6.9 6.9 6.9 6.9\n[4] [4]\nLobar, Tanya 8.2 7.9 8.2 8.2 8.2 8.2 7.9 8.2\n[5] [5]\n… …\nLee, Mae 8.2 8.0 6.9 6.9 8.1 6.9 7.9 8.2\n[18] [18]\nBurton, Sarah 6.9 6.7 6.9 7.9 6.9 7.2 6.8 6.9\n[19] [19]\nFor example, the score that Judge 4 awarded to Mary Tann ( ) is 8.9 and can be\nNAMES[1]\nfound in .\nSCORES[1][4]\n(a) State the judge who awarded the highest score to the competitor Tea Fox. [1]\nThe highest attainable score in gymnastics is 10.0 .\n(b) Construct an algorithm that determines and outputs the number of times the highest\nattainable score was awarded in this competition. [4]\nA competitor’s final score is calculated by ignoring the highest and the lowest mark awarded\nand averaging the remaining marks.\nFor example, the highest mark awarded to Lilly Bush was 7.9, and the lowest mark was 6.9,\nso her final score was (7.2 + 6.9 + 6.9 + 6.9 + 6.9 + 7.2) / 6.\n(c) Construct an algorithm in pseudocode to output the name and the final score for\nevery competitor. [10]",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-004/renders/page-8.png",
+          "source_pdf_page": 8,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct programs that apply arrays and Lists.",
+        "Construct programs that utilize looping structures to perform repeated actions.",
+        "Construct programs utilizing appropriate selection structures."
+      ],
+      "difficulty": "high",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-010",
+        "filename": "Computer_science_paper_1__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          16,
+          17,
+          18
+        ],
+        "question_reference": "14(c)",
+        "marking_summary": "Process all competitors,initialize extrema/sum,scan scores,remove exactly one max/min,divide6,output paired names.",
+        "source_issues": [
+          "Source MS uses MARKS while paper uses SCORES; adapted variables made consistent. Source sorting sample loop bound requires independent verification; adaptation uses independently executed linear scan."
+        ]
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Preserve nested traversal/extrema/mean challenge in Python; makes conditions/data domain explicit.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "Preserve nested traversal/extrema/mean challenge in Python; makes conditions/data domain explicit.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Preserve nested traversal/extrema/mean challenge in Python; makes conditions/data domain explicit.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [
+        "Source MS uses MARKS while paper uses SCORES; adapted variables made consistent. Source sorting sample loop bound requires independent verification; adaptation uses independently executed linear scan."
+      ],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Construct an algorithm in pseudocode to output the name and the final score for every competitor.",
+      "context_synopsis": "20 gymnasts;8 judges numbered0–7;NAMES one-dimensional and SCORES20x8. Exact original Figure1 preserved in rendered source page8. Final score drops one highest and one lowest and averages other6.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-004/transcription/pdf-page-008.txt"
+      ]
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC004-Q13-b",
+      "source_question_ids": [
+        "H-SRC004-Q13-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "A repair centre processes urgent safety faults before routine jobs, regardless of arrival time. Explain why an ordinary FIFO queue is unsuitable.",
+      "syllabus_codes": [
+        "B2.2.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 3,
+      "command_term": "Explain",
+      "difficulty": "medium",
+      "adaptation_rationale": "Selecting a FIFO queue for a specific problem is explicit. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "FIFO serves earliest arrival first; an urgent later job would wait behind routine jobs; priority-dependent insertion/service is needed instead.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "FIFO service order explained."
+        },
+        {
+          "marks": 1,
+          "criterion": "Later urgent item delayed by earlier routine items."
+        },
+        {
+          "marks": 1,
+          "criterion": "Links needed priority order to mismatch with ordinary FIFO."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 3,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC004-Q13-c",
+      "source_question_ids": [
+        "H-SRC004-Q13-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Describe the reference changes to insert a new highest-priority job at the head of a singly linked list.",
+      "syllabus_codes": [
+        "B4.1.3"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 3,
+      "command_term": "Describe",
+      "difficulty": "medium",
+      "adaptation_rationale": "Insertion at linked-list head explicit. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "Create node containing the job; set its next to old head; assign head to the new node.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Creates/initializes new node."
+        },
+        {
+          "marks": 1,
+          "criterion": "new.next assigned old head."
+        },
+        {
+          "marks": 1,
+          "criterion": "head assigned new node after next reference is saved."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 3,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC004-Q13-d",
+      "source_question_ids": [
+        "H-SRC004-Q13-d"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "A nonempty singly linked list stores jobs in descending priority. Describe insertion of a new job whose priority lies strictly between two existing adjacent priorities.",
+      "syllabus_codes": [
+        "B4.1.3"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 4,
+      "command_term": "Describe",
+      "difficulty": "medium",
+      "adaptation_rationale": "Ordered linked-list insertion preserves exact supported skill. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "Create node. Traverse to predecessor with priority above new and successor below. Set new.next=predecessor.next, then predecessor.next=new.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Creates node/data."
+        },
+        {
+          "marks": 1,
+          "criterion": "Finds correct predecessor by comparison/traversal."
+        },
+        {
+          "marks": 1,
+          "criterion": "new.next points to successor."
+        },
+        {
+          "marks": 1,
+          "criterion": "predecessor.next points to new, preserving order/tail."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 4,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC004-Q13-e",
+      "source_question_ids": [
+        "H-SRC004-Q13-e"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Compare a fixed-capacity contiguous array with a singly linked list whose nodes are allocated on demand, for a changing number of jobs.",
+      "syllabus_codes": [
+        "B2.2.1"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 3,
+      "command_term": "Compare",
+      "difficulty": "medium",
+      "adaptation_rationale": "Allocation/resizing and trade-offs explicit; avoid source over generalization all dynamic structures are sequential. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "Array has fixed capacity, linked list grows/shrinks as nodes are allocated/freed. Array permits direct indexed access; linked list follows references. Linked list needs per-node links but avoids reserving unused array slots.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Paired fixed capacity versus on-demand growth."
+        },
+        {
+          "marks": 1,
+          "criterion": "Paired direct indexing versus traversal for these named structures."
+        },
+        {
+          "marks": 1,
+          "criterion": "Paired storage trade-off: reserved slots versus per-node reference overhead."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 3,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC004-Q14-a",
+      "source_question_ids": [
+        "H-SRC004-Q14-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "For scores=[[4,7,5],[8,6,9]], state the column index of the largest value in scores[1].",
+      "syllabus_codes": [
+        "B2.2.2"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 1,
+      "command_term": "State",
+      "difficulty": "low",
+      "adaptation_rationale": "Interpret indexed two-dimensional data as used in list programs. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "2",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Correct zero-based column index2."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 1,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC004-Q14-b",
+      "source_question_ids": [
+        "H-SRC004-Q14-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "A robotics event records judges’ integer scores from 0 to 12 in a 2D list scores. Construct a Python function returning the total number of 12s across all rows.",
+      "syllabus_codes": [
+        "B2.2.2",
+        "B2.3.3"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 4,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Nested array processing converted to general Python 2D lists. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "def count_full(scores):\n    total = 0\n    for row in scores:\n        for value in row:\n            if value == 12:\n                total += 1\n    return total",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Initializes count0."
+        },
+        {
+          "marks": 1,
+          "criterion": "Traverses every row and every element."
+        },
+        {
+          "marks": 1,
+          "criterion": "Tests each value==12."
+        },
+        {
+          "marks": 1,
+          "criterion": "Increments correctly and returns final count."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 4,
+        "code_execution": "Executed on empty list,empty rows,zero/full scores and mixed matrix; results checked."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": [],
+      "code": "def count_full(scores):\n    total = 0\n    for row in scores:\n        for value in row:\n            if value == 12:\n                total += 1\n    return total"
+    },
+    {
+      "question_id": "P-SRC004-Q14-c",
+      "source_question_ids": [
+        "H-SRC004-Q14-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "A design contest stores entrant names in names and corresponding judge scores in scores. Each row has at least 3 numeric scores. Construct Python function final_scores(names, scores) returning (name, adjusted_mean) pairs. For each row remove exactly one occurrence of its largest and one of its smallest score before averaging. Use explicit loops to calculate totals/extrema rather than sum, min, max or sorting. Assume names and scores have equal length.",
+      "syllabus_codes": [
+        "B2.2.2",
+        "B2.3.3",
+        "B2.3.2"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 10,
+      "command_term": "Construct",
+      "difficulty": "high",
+      "adaptation_rationale": "Preserve nested traversal/extrema/mean challenge in Python; makes conditions/data domain explicit. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "def final_scores(names, scores):\n    results = []\n    for i in range(len(scores)):\n        row = scores[i]\n        high = low = row[0]\n        total = 0\n        for value in row:\n            total += value\n            if value > high:\n                high = value\n            if value < low:\n                low = value\n        final = (total - high - low) / (len(row) - 2)\n        results.append((names[i], final))\n    return results",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Iterates each entrant."
+        },
+        {
+          "marks": 1,
+          "criterion": "Pairs same indexed name and score row."
+        },
+        {
+          "marks": 1,
+          "criterion": "Initializes row total0."
+        },
+        {
+          "marks": 1,
+          "criterion": "Initializes high/low from row value."
+        },
+        {
+          "marks": 1,
+          "criterion": "Traverses every score."
+        },
+        {
+          "marks": 1,
+          "criterion": "Accumulates total."
+        },
+        {
+          "marks": 1,
+          "criterion": "Updates highest correctly."
+        },
+        {
+          "marks": 1,
+          "criterion": "Updates lowest correctly, including equal-score cases."
+        },
+        {
+          "marks": 1,
+          "criterion": "Subtracts exactly one highest and one lowest and divides by len(row)-2."
+        },
+        {
+          "marks": 1,
+          "criterion": "Returns all correct name/result pairs."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 10,
+        "code_execution": "Executed on duplicate extrema,all-equal scores,negative values,3-score rows and multiple entrants. Cross-checked with independently sorted row[1:-1] mean."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": [],
+      "code": "def final_scores(names, scores):\n    results = []\n    for i in range(len(scores)):\n        row = scores[i]\n        high = low = row[0]\n        total = 0\n        for value in row:\n            total += value\n            if value > high:\n                high = value\n            if value < low:\n                low = value\n        final = (total - high - low) / (len(row) - 2)\n        results.append((names[i], final))\n    return results"
+    }
+  ]
+}

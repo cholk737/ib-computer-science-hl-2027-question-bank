@@ -1,0 +1,19 @@
+{
+  "question_id": "P-SRC030-Q12-a",
+  "source_question_ids": [
+    "H-SRC030-Q12-a"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Determine alternating(4), showing the recursive returns. Assume n is nonnegative.\n\ndef alternating(n):\n    if n == 0:\n        return 2\n    if n % 2 == 0:\n        return alternating(n-1) + n\n    return alternating(n-1) - n",
+  "syllabus_codes": [
+    "B2.4.5"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 5,
+  "command_term": "Determine",
+  "difficulty": "high",
+  "adaptation_rationale": "One recursive call per path preserved; Python, new base value ands wapped signs.",
+  "assets": []
+}

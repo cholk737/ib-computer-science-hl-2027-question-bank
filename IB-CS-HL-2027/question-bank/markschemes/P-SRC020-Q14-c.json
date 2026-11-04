@@ -1,0 +1,55 @@
+{
+  "question_id": "P-SRC020-Q14-c",
+  "unofficial": true,
+  "marks": 8,
+  "solution": "One solution:\ndef greatest_rows(readings):\n    best = None\n    winners = []\n    for i in range(len(readings)):\n        total = 0\n        for value in readings[i]:\n            total += value\n        if best is None or total > best:\n            best = total\n            winners = [i]\n        elif total == best:\n            winners.append(i)\n    return best, winners",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes best/winner state."
+    },
+    {
+      "marks": 1,
+      "criterion": "Visits all rows."
+    },
+    {
+      "marks": 1,
+      "criterion": "Initializes row total for eachrow."
+    },
+    {
+      "marks": 1,
+      "criterion": "Accumulates all values in correctrow."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct greater-total comparison."
+    },
+    {
+      "marks": 1,
+      "criterion": "Updates best and replaces winnerlist on newbest."
+    },
+    {
+      "marks": 1,
+      "criterion": "Appends ties without discarding earlier tiedrows."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns greatest total andall correct indices."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed unique best,tied rows,negative totals andsingle row.",
+    "source_comparison": [
+      24,
+      25,
+      26
+    ],
+    "test_code": "def greatest_rows(readings):\n    best = None\n    winners = []\n    for i in range(len(readings)):\n        total = 0\n        for value in readings[i]:\n            total += value\n        if best is None or total > best:\n            best = total\n            winners = [i]\n        elif total == best:\n            winners.append(i)\n    return best, winners\nassert greatest_rows([[3,4],[6,1],[2,2]])==(7,[0,1])\nassert greatest_rows([[-5,-1],[-2,-1]])==(-3,[1])\nassert greatest_rows([[4]])==(4,[0])",
+    "result_file": ""
+  },
+  "code": "def greatest_rows(readings):\n    best = None\n    winners = []\n    for i in range(len(readings)):\n        total = 0\n        for value in readings[i]:\n            total += value\n        if best is None or total > best:\n            best = total\n            winners = [i]\n        elif total == best:\n            winners.append(i)\n    return best, winners",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

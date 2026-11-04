@@ -1,0 +1,43 @@
+– 6 – 2225 – 6417
+11. There are 200 students in a school. Their names are held in the one-dimensional string
+array .
+STUDENTS
+The one-dimensional integer array stores marks (0–100 inclusive) that students
+MARKS
+scored in an examination.
+Figure 1: Example data stored in the two arrays and
+STUDENTS MARKS
+STUDENTS MARKS
+Ximena Alba 5
+[0] [0]
+Boris Mount 88
+[1] [1]
+Hugh Parr 45
+[2] [2]
+Arjinder Singh 75
+[3] [3]
+Mei Chen 59
+[4] [4]
+… …
+Tammy Teller 51
+[199] [199]
+The one-dimensional integer array will be used to store the grades awarded to
+GRADES
+students based on their examination marks.
+In Figure 1, Boris Mount scored 88 marks. His grade will be stored in .
+GRADES[1]
+Consider the following algorithm that the school currently uses for awarding grades:
+loop K from 0 to 199
+GRADES[K] = 1 + (MARKS[K] div 10)
+if GRADES[K] >= 7 then
+GRADES[K] = 7
+end if
+end loop
+(a) (i) D etermine the value of . [1]
+GRADES[0]
+(ii) Determine the value of . [1]
+GRADES[1]
+(iii) Determine the value of . [1]
+GRADES[2]
+(iv) State the minimum mark necessary to achieve Grade 7. [1]
+(This question continues on the following page)

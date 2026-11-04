@@ -1,0 +1,92 @@
+{
+  "original_assessment_context": "Input names Anna,Ava,Baker,Emma,Nolan,Zara; scores56,47,24,87,63,90. Bubble sort descending scores while retaining names. Output Zara90,Emma87,Nolan63,Anna56,Ava47,Baker24.",
+  "source_scope_note": "Original assessed concept classified directly or excluded with reason.",
+  "source_question_id": "H-SRC005-Q13-a-i",
+  "source_id": "SRC-005",
+  "source_filename": "Computer_science_paper_1__HL (2).pdf",
+  "year": "2022",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "TZ0",
+  "option": "",
+  "question": "13",
+  "subquestion": "a-i",
+  "source_pdf_pages": [
+    8
+  ],
+  "source_printed_pages": [
+    "7"
+  ],
+  "original_marks": 5,
+  "command_term": "Describe",
+  "original_text": "[Source PDF page 8]\n13. A list of students’ names and test scores are written in a teacher’s notebook in alphabetical\norder. The teacher uses an application that allows her to input all of the names and scores\nin the order they appear in her notebook. The application orders the scores from highest to\nlowest and then outputs all the names and scores (see Figure 1).\nFigure 1: An example of the input and output of the application\nInput: Output:\nAnna 56 Zara 90\nAva 47 Emma 87\nBaker 24 Nolan 63\nEmma 87 Anna 56\nNolan 63 Ava 47\nZara 90 Baker 24\nThe application:\ny inputs the names and scores\ny stores the input data in two arrays: and (see Figure 2)\nNAMES SCORES\nFigure 2: The and arrays\nNAMES SCORES\nNAMES Anna Ava Baker Emma Nolan Zara\n[0] [1] [2] [3] [4] [5]\nSCORES 56 47 24 87 63 90\nFor example, holds the student’s name (Emma), and her score (87) can be found\nNAMES[3]\nin .\nSCORES[3]\nThe application also:\ny sorts the input data in order of scores from the highest to the lowest by using a bubble sort\nalgorithm.\ny outputs the sorted data.\n(a) (i) Describe the steps in the bubble sort algorithm that sorts the input data stored in\nthe and arrays in order of scores. [5]\nSCORES NAMES",
+  "parent_context": "Input names Anna,Ava,Baker,Emma,Nolan,Zara; scores56,47,24,87,63,90. Bubble sort descending scores while retaining names. Output Zara90,Emma87,Nolan63,Anna56,Ava47,Baker24.",
+  "assets": [
+    {
+      "kind": "source_page",
+      "description": "Input/output and parallel arrays",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-005-page-08.png",
+      "source_pdf_page": 8,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Describe: Describe the steps in the bubble sort algorithm that sorts the input data stored in the SCORES and NAMES arrays in order of scores."
+  ],
+  "difficulty": "high",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-011",
+    "filename": "Computer_science_paper_1__HL_markscheme (2).pdf",
+    "pdf_pages": [
+      13
+    ],
+    "question_reference": "13(a-i)",
+    "marking_summary": "Repeat passes until sorted; adjacent score comparison/swap,also swap corresponding names.",
+    "source_issues": []
+  },
+  "relevance_status": "A",
+  "mappings": [
+    {
+      "mapping_target": "original_and_adapted",
+      "syllabus_code": "B2.4.3",
+      "scope_evidence": "• The time and space complexities of each algorithm, denoted by their respective Big O notations\n• The advantages and disadvantages of each algorithm in terms of efficiency across various data sets",
+      "rationale": "The assessed skill is explicitly named in the cited statement and its guidance; mapping does not credit unassessed scenario topics.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "mapping_target": "original_and_adapted",
+      "syllabus_code": "B2.2.2",
+      "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+      "rationale": "The assessed skill is explicitly named in the cited statement and its guidance; mapping does not credit unassessed scenario topics.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+    "marks": "Printed allocation transcribed.",
+    "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+    "official_answer_status": "See source markscheme record"
+  },
+  "original_text_manual_synopsis": "Describe the steps in the bubble sort algorithm that sorts the input data stored in the SCORES and NAMES arrays in order of scores.",
+  "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+  "source_page_evidence": [
+    {
+      "pdf_page": 8,
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-005/page-008.txt"
+    }
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC005-Q13-a-i"
+  ]
+}

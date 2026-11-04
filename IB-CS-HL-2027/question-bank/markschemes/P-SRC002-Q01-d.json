@@ -1,0 +1,39 @@
+{
+  "question_id": "P-SRC002-Q01-d",
+  "unofficial": true,
+  "marks": 5,
+  "solution": "A transaction obtains a suitable exclusive lock before updating the record. A competing writer waits or retries. The first change is committed before the next writer reads and updates the current value. Releasing locks at the appropriate transaction boundary preserves isolation and avoids a lost update.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Lock before conflicting update."
+    },
+    {
+      "marks": 1,
+      "criterion": "Other writer waits/retries."
+    },
+    {
+      "marks": 1,
+      "criterion": "Update operates on current data in an ordered sequence."
+    },
+    {
+      "marks": 1,
+      "criterion": "Commit/transaction boundary handled."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains isolation/lost-update prevention."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

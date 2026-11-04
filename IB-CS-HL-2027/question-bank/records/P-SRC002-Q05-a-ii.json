@@ -1,0 +1,45 @@
+{
+  "question_id": "P-SRC002-Q05-a-ii",
+  "source_question_ids": [
+    "H-SRC002-Q05-a-ii"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A course combines a test out of50 weighted30% and a project out of80 weighted70%. Construct a Python assignment to percentage using variables test_score and project_score.",
+  "syllabus_codes": [
+    "B2.3.1"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 2,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "percentage = (test_score/50)*30 + (project_score/80)*70",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Normalizes both component scores by their maxima."
+    },
+    {
+      "marks": 1,
+      "criterion": "Applies30/70 weights and combines into percentage."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Full scores produce100; half scores50.",
+    "source_comparison": [],
+    "test_code": "test_score=25;project_score=40\npercentage=(test_score/50)*30+(project_score/80)*70\nassert percentage==50",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC002-Q05-a-ii.json",
+  "question_path": "question-bank/questions/P-SRC002-Q05-a-ii.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC002-Q05-a-ii.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

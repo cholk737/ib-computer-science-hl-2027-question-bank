@@ -1,0 +1,64 @@
+{
+  "question_id": "P-SRC002-Q15-c",
+  "source_question_ids": [
+    "H-SRC002-Q15-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct bookings_on(self,day) in Python. self.bookings is a list whose first self.used entries are booking objects; later entries may be None. Each booking has a start_day string in YYYY-MM-DD format. Return a new list of all active bookings starting on day, in stored order.",
+  "syllabus_codes": [
+    "B2.2.2",
+    "B2.3.2",
+    "B2.3.3",
+    "B2.3.4"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 6,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "One solution:\ndef bookings_on(self, day):\n    result = []\n    for i in range(self.used):\n        booking = self.bookings[i]\n        if booking.start_day == day:\n            result.append(booking)\n    return result",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes output list."
+    },
+    {
+      "marks": 1,
+      "criterion": "Loops only over active prefix."
+    },
+    {
+      "marks": 1,
+      "criterion": "Accesses each booking object."
+    },
+    {
+      "marks": 1,
+      "criterion": "Compares its start_day with day."
+    },
+    {
+      "marks": 1,
+      "criterion": "Appends matching objects."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns complete result,including empty list when no match."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed matching,absent andemptyactiveprefix cases.",
+    "source_comparison": [],
+    "test_code": "def bookings_on(self, day):\n    result = []\n    for i in range(self.used):\n        booking = self.bookings[i]\n        if booking.start_day == day:\n            result.append(booking)\n    return result\nfrom types import SimpleNamespace as N\na=N(start_day=\"2027-01-03\");b=N(start_day=\"2027-01-04\");d=N(bookings=[a,b,None],used=2)\nassert bookings_on(d,\"2027-01-03\")==[a]\nassert bookings_on(d,\"2027-02-01\")==[]\nassert bookings_on(N(bookings=[],used=0),\"2027-01-03\")==[]",
+    "result_file": ""
+  },
+  "code": "def bookings_on(self, day):\n    result = []\n    for i in range(self.used):\n        booking = self.bookings[i]\n        if booking.start_day == day:\n            result.append(booking)\n    return result",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC002-Q15-c.json",
+  "question_path": "question-bank/questions/P-SRC002-Q15-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC002-Q15-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

@@ -1,0 +1,44 @@
+{
+  "question_id": "P-SRC008-Q12-b",
+  "unofficial": true,
+  "marks": 6,
+  "solution": "Only indices 0..4 are available and top tracks the occupied top position.; push checks space, then increments top and stores at buffer[top].; pop checks nonempty, returns buffer[top] and decrements top.; Operations occur at one end, giving LIFO behaviour.; Empty i ff top==-1.; Full i ff top==4; reject another push before writing.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Only indices 0..4 are available and top tracks the occupied top position."
+    },
+    {
+      "marks": 1,
+      "criterion": "push checks space, then increments top and stores at buffer[top]."
+    },
+    {
+      "marks": 1,
+      "criterion": "pop checks nonempty, returns buffer[top] and decrements top."
+    },
+    {
+      "marks": 1,
+      "criterion": "Operations occur at one end, giving LIFO behaviour."
+    },
+    {
+      "marks": 1,
+      "criterion": "Empty i ff top==-1."
+    },
+    {
+      "marks": 1,
+      "criterion": "Full i ff top==4; reject another push before writing."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "No executable code required; manual technical check."
+  },
+  "code": "",
+  "test_code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

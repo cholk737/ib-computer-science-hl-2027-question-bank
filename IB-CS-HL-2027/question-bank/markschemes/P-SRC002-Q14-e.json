@@ -1,0 +1,35 @@
+{
+  "question_id": "P-SRC002-Q14-e",
+  "unofficial": true,
+  "marks": 4,
+  "solution": "One solution:\ndef get_cost(self):\n    days = self.get_days()\n    return days * self.rate",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Correct method/instance reference."
+    },
+    {
+      "marks": 1,
+      "criterion": "Calls get_days()."
+    },
+    {
+      "marks": 1,
+      "criterion": "Multiplies duration by rate."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns calculated charge."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed duration4/rate18.5; formula also giveszero forzeroduration.",
+    "source_comparison": [],
+    "test_code": "def get_cost(self):\n    days = self.get_days()\n    return days * self.rate\nclass R:\n rate=18.5\n def get_days(self):return 4\nassert get_cost(R())==74",
+    "result_file": ""
+  },
+  "code": "def get_cost(self):\n    days = self.get_days()\n    return days * self.rate",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

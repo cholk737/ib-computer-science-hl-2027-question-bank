@@ -1,0 +1,130 @@
+from build_records import *
+fix={}
+for line in '''IdentifiesWAP=Identifies WAP
+indexerror=index error
+middleindex=middle index
+searchinterval=search interval
+actualfirst=actual first
+debugrepair=debug repair
+excludingbool=excluding bool
+diskhardware=disk hardware
+filesystem=file system
+cloudserver=cloud server
+lightlevel=light level
+logicalAND=logical AND
+aretrue=are true
+Lightlevel=Light level
+Newjobs=New jobs
+enqueueatrear=enqueue at rear
+dequeuesfront=dequeues front
+soearliest=so earliest
+submittedjobs=submitted jobs
+FIFOqueue=FIFO queue
+arrivalorder=arrival order
+Linkednodes=Linked nodes
+withfinal=with final
+pushedjob=pushed job
+olderjobs=older jobs
+runningproduct=running product
+eachpop=each pop
+finaloutput=final output
+Eachcallpushes=Each call pushes
+withlocal=with local
+returnsstart=returns start
+resumesfirst=resumes first
+untiloriginal=until original
+frameforeach=frame for each
+Storeslocal=Stores local
+stateandreturn=state and return
+CorrectnameBo=Correct name Bo
+allscores=all scores
+returnsmean=returns mean
+Thresholdcount=Threshold count
+binarysearch=binary search
+andparallel=and parallel
+Correctmat=Correct mat
+Testsnonzero=Tests nonzero
+BothTrue=Both True
+OnlyupperTrue=Only upper True
+OnlylowerTrue=Only lower True
+NeitherTrue=Neither True
+WirelessNIC=Wireless NIC
+networkcable=network cable
+Reducedcabling=Reduced cabling
+wirelesslink=wireless link
+suchasTLS=such as TLS
+VPNclient=VPN client
+andlabgateway=and lab gateway
+Trafficinthat=Traffic in that
+isencrypted=is encrypted
+isrouted=is routed
+toprivate=to private
+hasupfront=has upfront
+usagecost=usage cost
+Pairedupfront=Paired upfront
+oncapacity=on capacity
+losslessmethods=lossless methods
+tothepalette=to the palette
+canproduce=can produce
+visiblebanding=visible banding
+depthreasoning=depth reasoning
+toshades=to shades
+tooriginal=to original
+toloads=to loads
+copyingcost=copying cost
+anexternalhead=an external head
+Externalentry=External entry
+Stackpush=Stack push
+popattop=pop at top
+LIFOversusFIFO=LIFO versus FIFO
+endversusrear=end versus rear
+frontinsertion=front insertion
+Retainstack=Retain stack
+underHL=under HL
+anddata=and data
+cloudcopy=cloud copy
+treatingRAID=treating RAID
+andmalware=and malware
+andstaff=and staff
+privatefiles=private files
+andlimited=and limited
+publicfolder=public folder
+avoidduplicate=avoid duplicate
+BSTinsertion=BST insertion
+BSTstructure=BST structure
+lightpulses=light pulses
+lossfrom=loss from
+networkmalware=network malware
+lostdata=lost data
+ACIDexplicit=ACID explicit
+onlyevents=only events
+ratherthan=rather than
+andUnitPrice=and UnitPrice
+andRegion=and Region
+Boundaryreasoning=Boundary reasoning
+onlyvalidation=only validation
+firstMSexample=first MS example
+supercall=super call
+generaltest=general test
+planunit=plan unit'''.splitlines():
+ a,b=line.split('=',1);fix[a]=b
+phrase={'vet ting':'vetting','speed fi leI':'speed file I','data anda next':'data and a next','player sina game':'players in a game','queue remove sear li est item':'queue removes earliest item','and test sA':'and tests A','files size':'file size','on site':'on site'}
+changes=[]
+def clean(s):
+ if not isinstance(s,str) or s.lstrip().startswith(('def ','class ','SELECT ')):return s
+ prose,sep,code=s.partition('\n\n')
+ for a,b in fix.items():prose=re.sub(r'\b'+re.escape(a)+r'\b',b,prose)
+ for a,b in phrase.items():prose=prose.replace(a,b)
+ prose=re.sub(r',(?=[A-Za-z])',', ',prose)
+ return prose+sep+code
+for f in sorted((O/'batches').glob('*.json')):
+ data=json.loads(f.read_text())
+ for p in data['practice_questions']:
+  for key in ['question_text','solution','adaptation_rationale','partial_credit_notes']:
+   new=clean(p[key])
+   if new!=p[key]:changes.append((p['question_id'],key))
+   p[key]=new
+  for m in p['marking_points']:m['criterion']=clean(m['criterion'])
+ atomic(f,data)
+atomic(O/'manual_spacing_repair_audit.json',changes)
+print('Manual spacing fields corrected:',len(changes))

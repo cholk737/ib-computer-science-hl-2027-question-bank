@@ -1,0 +1,18 @@
+– 6 – 8825 – 6405M 
+(c) Award [3] max
+Award [1] per point
+Initial State: Before payment, the patient's account shows a due balance;
+Transition State: During payment processing, the system temporarily locks the patient's
+record to update payment details;
+Final State: After successful payment, the new balance is shown, often updating the
+patient's status to 'Paid' or 'Cleared';
+Error Handling: In case of transaction failure, the system rolls back to the initial state,
+ensuring data integrity;
+Note: Accept alternative terminology e.g. consistent, intermediate, and final.
+(d) Award [3] max
+Award [1] per point
+a consistent version of the DB is recovered from backup;
+the log file is scanned to determine the most recent checkpoint;
+the committed and uncommitted transactions (since that checkpoint) are determined;
+the committed transactions are redone (reapplied to the database);
+the uncommitted transactions are undone / rollback (in the case of immediate update);

@@ -1,0 +1,42 @@
+                                                –   16 –              N22/4/COMSC/HP1/ENG/TZ0/XX/M
+
+
+(c)   Award [10] max.
+      Award [1] for initializing indexes in all three arrays
+      Award [1] for correct outer loop
+      Award [1] for correct inner loop
+      Award [1] for calling the subprogram correctly
+      Award [1] for correctly accessing element of MAT (correct row and column indexes)
+      Award [1] for correct use of if statements
+      Award [1] for checking if MAT[R][C]  is perfect and increasing the array PERFECT index
+      Award [1] for placing MAT[R][C] at correct place in array PERFECT
+      Award [1] for checking if MAT[R][C]  is abundant and increasing the array ABUNDANT index
+      Award [1] for placing MAT[R][C] at correct place in the array ABUNDANT
+      Award [1] for checking if MAT[R][C]  is deficient and increasing the array DEFICIENT index
+      Award [1] for placing MAT[R][C] at correct positi     on in array DEFICIENT
+
+
+
+      Example 1
+
+      IP=-1
+      ID=-1
+      IA=-1
+      loop R from 0 to 3    // Accept MAT.length() OR len(MAT) instead of 3
+       loop C from 0 to 5// Accept MAT[R].length() OR len(MAT[R])instead of 5
+                     X = sumPD (MAT[R][C]) //calls the sumPD()subprogram
+                     if X == MAT[R][C]   //checking if perfect
+                     then
+                          IP=IP+1
+                          PERFECT[IP]= MAT[R][C]
+                     else if X > MAT[R][C]  //checking if abundant
+                                   then
+                                          IA=IA+1
+                                          ABUNDANT[IA]= MAT[R][C]
+                                   else
+                                          ID=ID+1
+                                          DEFICIENT[ID]= MAT[R][C]
+                              end if
+                       end if
+       end loop
+      end loop

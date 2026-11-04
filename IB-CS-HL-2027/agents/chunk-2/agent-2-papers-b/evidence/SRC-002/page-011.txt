@@ -1,0 +1,51 @@
+-11-
+2226-4429
+(Option B, question 5 continued)
+The function =ISNUMBER (value) returns TRUE if the value is a number and FALSE if the
+value is not a number.
+For example, the value in F2 should be 7 because 7 is an integer. The value in F4 should be
+FALSE because #VALUE! is not an integer.
+(d) Construct a formula for cell F4 as described.
+[3]
+To fix the error in row 4, Isabella's last name has been added. Two additional columns have
+been inserted: Last name and First name (see Figure 8).
+Figure 8
+D
+1
+Student name
+Last name
+First name
+Sem 1
+2
+Elaine Anaya Khan
+Khan
+Elaine
+20
+3
+Angel Chanchikova
+Chanchikova
+Angel
+32
+4
+Isabella Hodroge
+Hodroge
+Isabella
+26
+5
+Sarah Naveneethan
+Naveneethan
+Sarah
+32
+6
+Scott Abou Khalil
+Khalil
+Scott
+16
+The first name in cell C2 has been extracted from the full name in cell A2 using the MID
+function and FIND function:
+=MID(A2, 1, FIND(" ",A2) -1)
+In column B, last names have been extracted from the student names in column A.
+Any middle name has been ignored.
+(e) Explain how a last name could be extracted while ignoring a middle name.
+[4]
+(Option B continues on the following page)

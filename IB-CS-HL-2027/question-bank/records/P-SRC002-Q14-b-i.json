@@ -1,0 +1,49 @@
+{
+  "question_id": "P-SRC002-Q14-b-i",
+  "source_question_ids": [
+    "H-SRC002-Q14-b-i"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A Python class Reservation has constructor __init__(self,rate,priority=False). Construct two calls: one reservation at rate40 using the default priority,and another at rate40 with priorityTrue. Outline why one constructor supports both.",
+  "syllabus_codes": [
+    "B3.1.4"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 3,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Replaces Java constructor overloading with accurate Python optional-argument initialization.",
+  "solution": "a = Reservation(40); b = Reservation(40,True). The optional parameter supplies False when omitted and accepts the caller’s value when supplied.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Correct default-priority constructor call."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct explicit-True constructor call."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains default versus supplied parameter."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC002-Q14-b-i.json",
+  "question_path": "question-bank/questions/P-SRC002-Q14-b-i.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC002-Q14-b-i.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

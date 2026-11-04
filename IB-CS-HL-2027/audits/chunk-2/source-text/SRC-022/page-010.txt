@@ -1,0 +1,45 @@
+                                                                                                                                                                                           – 9 –                                                                                                                                                                     8825–6404
+
+(Question 15 continued)
+
+                     For example, from Figure 1:
+
+                                                                                                                                   isUpper(AMAT,5) returns TRUE
+                                                                                                                                   isUpper(CMAT,3) returns TRUE
+                                                                                                                                   isUpper(DMAT,4) returns FALSE
+                                                                                                                                   isUpper(BMAT,4) returns FALSE
+
+                     (c)                   Construct an algorithm in pseudocode for the sub-program isUpper(MAT,N)
+                                           asdescribed.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [7]
+
+                     In a lower triangular matrix, all entries above the main diagonal are 0.
+
+                     The sub-program isLower(MAT,N) accepts a square matrix MAT and an integer N
+                     thatrepresents the number of rows and columns.
+
+                     It returns TRUE if MAT is a lower triangular matrix; otherwise it returns FALSE.
+
+                     For example, from Figure 1:
+
+                                                                                                                                   isLower(AMAT,5) returns FALSE
+                                                                                                                                   isLower(CMAT,3) returns TRUE
+
+                     The sub-program identify(MAT,N) calls sub-programs isLower(MAT,N) and
+                     isUpper(MAT,N) to determine and output whether the square matrix MAT is:
+                     y	upper triangular
+                     y	lower triangular
+                     y	both upper and lower triangular
+                     y	none of the above.
+
+                     For example, from Figure 1:
+
+                                                                                                              identify(AMAT,5) should output ‘ UPPER ’
+                                                                                                              identify(BMAT,4) should output ‘ LOWER ’
+                                                                                                              identify(CMAT,3) should output ‘ BOTH ’
+                                                                                                              identify(DMAT,4) should output ‘ NONE ’
+
+                     (d)                   Construct an algorithm in pseudocode for the sub-program identify(MAT,N)
+                                           asdescribed.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [5]
+
+
+

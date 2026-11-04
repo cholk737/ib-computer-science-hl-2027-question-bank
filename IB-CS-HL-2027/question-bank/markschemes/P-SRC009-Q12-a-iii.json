@@ -1,0 +1,29 @@
+{
+  "question_id": "P-SRC009-Q12-a-iii",
+  "unofficial": true,
+  "marks": 2,
+  "solution": "False or (True and True)=True.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Correct substitutions False,True,True."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct final True."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed Python condition for level4,speed12.",
+    "source_comparison": [
+      11
+    ],
+    "test_code": "level=4;speed=12\nassert ((level>4) or (speed>8 and level+speed<30)) is True",
+    "result_file": ""
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

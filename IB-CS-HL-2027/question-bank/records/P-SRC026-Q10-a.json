@@ -1,0 +1,64 @@
+{
+  "question_id": "P-SRC026-Q10-a",
+  "source_question_ids": [
+    "H-SRC026-Q10-a"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A shared server has administrators, analysts and visitors. Explain how OS account and file-permission controls can give these groups different access.",
+  "syllabus_codes": [
+    "A1.3.2"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 6,
+  "command_term": "Explain",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "Authenticate each user to an account. Assign accounts to role groups. Grant administrators management rights, analysts read/write access only to their project files, and visitors no access to confidential files. The OS checks permissions on file operations, applying least privilege rather than granting every login full access.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Authenticated user identities."
+    },
+    {
+      "marks": 1,
+      "criterion": "Role/group membership."
+    },
+    {
+      "marks": 1,
+      "criterion": "Appropriate administrator rights."
+    },
+    {
+      "marks": 1,
+      "criterion": "Restricted analyst project rights."
+    },
+    {
+      "marks": 1,
+      "criterion": "Visitors denied sensitive files."
+    },
+    {
+      "marks": 1,
+      "criterion": "OS permission enforcement/least-privilege reasoning."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      12,
+      13
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC026-Q10-a.json",
+  "question_path": "question-bank/questions/P-SRC026-Q10-a.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC026-Q10-a.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

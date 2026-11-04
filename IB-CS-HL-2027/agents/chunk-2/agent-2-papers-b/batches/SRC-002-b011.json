@@ -1,0 +1,714 @@
+{
+  "source_id": "SRC-002",
+  "batch_id": "SRC-002-b011",
+  "source_questions": [
+    {
+      "source_question_id": "H-SRC002-Q17-a",
+      "source_id": "SRC-002",
+      "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+      "year": "2026",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "A/B/C",
+      "option": "D",
+      "question": 17,
+      "subquestion": "a",
+      "source_pdf_pages": [
+        24
+      ],
+      "source_printed_pages": [
+        "24"
+      ],
+      "original_marks": 6,
+      "command_term": "Construct",
+      "original_text": "Construct the method public int changePreferredShop(LinkedList customers,String preferredShop,String newShop).",
+      "parent_context": "-24-\n2226-4429\n(Option D continued)\nThe car rental company wants to create a linked list of Customer objects. The Customer\nclass, which stores information about each customer, is partially outlined as shown.\npublic class Customer\nprivate\nint customerID;\nprivate String customerName;\nprivate String preferredshop;\npublic String getPreferredshop ()\nreturn preferredShop;\n}\npublic void setPreferredShop (String shop)\npreferredShop = shop;\n}\n// remaining\naccessor and mutator methods implemented but not shown\n}\nOne of the shops has closed. Any customer who prefers this shop requires their\npreferredShop updated\nThe method changePreferredShop () will change the preferred shop of all affected\ncustomers to the new shop given in the parameter newShop. The method should return\nthe number of customers that have been changed.\nConstruct the method public int changePreferredShop(LinkedList\ncustomers,\nString preferredShop, String newshop).\nThe programmers have used a library of objects rather than developing a custom linked list.\n(b) Outline two benefits of using a library when developing code.\n[4]\n(Option D continues on the following page)\nA000",
+      "assets": [
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-24.png",
+          "source_pdf_page": 24,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Construct the method public int changePreferredShop(LinkedList customers,String preferredShop,String newShop).",
+        "Construct change_preference(head,old,new) in Python"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "not_uploaded",
+        "source_id": "",
+        "filename": "",
+        "pdf_pages": [],
+        "question_reference": "Q17 a",
+        "marking_summary": "One solution:\ndef change_preference(head, old, new):\n    changed = 0\n    current = head\n    while current is not None:\n        if current.customer.preferred_shop == old:\n            current.customer.preferred_shop = new\n            changed += 1\n        current = current.next\n    return changed",
+        "source_issues": [],
+        "source_marking_evidence": ""
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B4.1.3",
+          "scope_evidence": "• The basic operations on a linked list, such as insertion, deletion, traversal, search",
+          "rationale": "Construct change_preference(head,old,new) in Python assesses Construct and apply linked lists: singly, doubly and circular.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "No uploaded MS; independent unofficial answer.",
+        "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+        "technical": "Executed multiple matches,nonmatch andemptylist."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC002-Q17-a"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC002-Q17-b",
+      "source_id": "SRC-002",
+      "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+      "year": "2026",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "A/B/C",
+      "option": "D",
+      "question": 17,
+      "subquestion": "b",
+      "source_pdf_pages": [
+        24
+      ],
+      "source_printed_pages": [
+        "24"
+      ],
+      "original_marks": 4,
+      "command_term": "Outline",
+      "original_text": "Outline two benefits of using a library when developing code.",
+      "parent_context": "-24-\n2226-4429\n(Option D continued)\nThe car rental company wants to create a linked list of Customer objects. The Customer\nclass, which stores information about each customer, is partially outlined as shown.\npublic class Customer\nprivate\nint customerID;\nprivate String customerName;\nprivate String preferredshop;\npublic String getPreferredshop ()\nreturn preferredShop;\n}\npublic void setPreferredShop (String shop)\npreferredShop = shop;\n}\n// remaining\naccessor and mutator methods implemented but not shown\n}\nOne of the shops has closed. Any customer who prefers this shop requires their\npreferredShop updated\nThe method changePreferredShop () will change the preferred shop of all affected\ncustomers to the new shop given in the parameter newShop. The method should return\nthe number of customers that have been changed.\nConstruct the method public int changePreferredShop(LinkedList\ncustomers,\nString preferredShop, String newshop).\nThe programmers have used a library of objects rather than developing a custom linked list.\n(b) Outline two benefits of using a library when developing code.\n[4]\n(Option D continues on the following page)\nA000",
+      "assets": [
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-24.png",
+          "source_pdf_page": 24,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline two benefits of using a library when developing code.",
+        "Outline two benefits of reusing a tested library function through its documented interface rather than reimplementing it at every call site"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "not_uploaded",
+        "source_id": "",
+        "filename": "",
+        "pdf_pages": [],
+        "question_reference": "Q17 b",
+        "marking_summary": "Reuse reduces repeated development effort. A well-tested shared implementation can reduce duplicated defects and can be replaced centrally through the same interface,although its suitability still needs checking.",
+        "source_issues": [],
+        "source_marking_evidence": ""
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.3.4",
+          "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+          "rationale": "Outline two benefits of reusing a tested library function through its documented interface rather than reimplementing it at every call site assesses Construct functions and modularization.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "No uploaded MS; independent unofficial answer.",
+        "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC002-Q17-b"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC002-Q18-a",
+      "source_id": "SRC-002",
+      "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+      "year": "2026",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "A/B/C",
+      "option": "D",
+      "question": 18,
+      "subquestion": "a",
+      "source_pdf_pages": [
+        25
+      ],
+      "source_printed_pages": [
+        "25"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "Outline one benefit of recursion.",
+      "parent_context": "- 25-\n2226-4429\n(Option D continued)\n18. A programmer has produced the following recursive algorithm:\nint X (int Y){\nif (Y <= 1){\nreturn Y;\n}\nelsel\nreturn Y + X(Y-1);\n}\n}\n(a)\n•Outline one benefit of recursion.\n[2]\n(b) Copy and trace the recursive algorithm when called with the following statement.\nX(5);\n[4]\nY <1\nReturn call\nReturn value\n(c) Identify why calling the algorithm with the following statement would cause an error.\nX(-3) ;\n[1]\n(d) Explain one action a programmer could take to improve the readability of code.\n(3]\nEnd of Option D\nA000",
+      "assets": [
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-25.png",
+          "source_pdf_page": 25,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline one benefit of recursion.",
+        "Outline one benefit of recursion for a problem that naturally decomposes into a smaller instance of itself"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "not_uploaded",
+        "source_id": "",
+        "filename": "",
+        "pdf_pages": [],
+        "question_reference": "Q18 a",
+        "marking_summary": "The recursive definition expresses the repeated structure directly; the same function handles each smaller case until a base case,which can make the solution clearer.",
+        "source_issues": [],
+        "source_marking_evidence": ""
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B2.4.4",
+          "scope_evidence": "• The fundamentals of recursion and its advantages and limitations\n• The utility of recursion in solving problems that can be broken down into smaller, similar sub-problems\n• Recursive algorithms, including but not limited to quicksort\n• The limitations of recursion, including complexity and memory usage\n• Situations that best suit the use of recursion, including fractal image creation, traversing binary trees, sorting algorithms",
+          "rationale": "Outline one benefit of recursion for a problem that naturally decomposes into a smaller instance of itself assesses Explain the fundamental concept of recursion and its applications in programming. (HL only)",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "No uploaded MS; independent unofficial answer.",
+        "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC002-Q18-a"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC002-Q18-b",
+      "source_id": "SRC-002",
+      "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+      "year": "2026",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "A/B/C",
+      "option": "D",
+      "question": 18,
+      "subquestion": "b",
+      "source_pdf_pages": [
+        25
+      ],
+      "source_printed_pages": [
+        "25"
+      ],
+      "original_marks": 4,
+      "command_term": "See original prompt",
+      "original_text": "Copy and trace the recursive algorithm when called with X(5);",
+      "parent_context": "- 25-\n2226-4429\n(Option D continued)\n18. A programmer has produced the following recursive algorithm:\nint X (int Y){\nif (Y <= 1){\nreturn Y;\n}\nelsel\nreturn Y + X(Y-1);\n}\n}\n(a)\n•Outline one benefit of recursion.\n[2]\n(b) Copy and trace the recursive algorithm when called with the following statement.\nX(5);\n[4]\nY <1\nReturn call\nReturn value\n(c) Identify why calling the algorithm with the following statement would cause an error.\nX(-3) ;\n[1]\n(d) Explain one action a programmer could take to improve the readability of code.\n(3]\nEnd of Option D\nA000",
+      "assets": [
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-25.png",
+          "source_pdf_page": 25,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Copy and trace the recursive algorithm when called with X(5);",
+        "Trace sum_down(4),showing call arguments and returned values"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "not_uploaded",
+        "source_id": "",
+        "filename": "",
+        "pdf_pages": [],
+        "question_reference": "Q18 b",
+        "marking_summary": "Calls4,3,2,1; return values1,3,6,10 while unwinding. Final10.",
+        "source_issues": [],
+        "source_marking_evidence": ""
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.4.5",
+          "scope_evidence": "• Simple, non-branching recursive algorithms in programming only",
+          "rationale": "Trace sum_down(4),showing call arguments and returned values assesses Construct and trace recursive algorithms in a programming language. (HL only)",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "No uploaded MS; independent unofficial answer.",
+        "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+        "technical": "Executed non-branching recursion andbasecase."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC002-Q18-b"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC002-Q18-c",
+      "source_id": "SRC-002",
+      "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+      "year": "2026",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "A/B/C",
+      "option": "D",
+      "question": 18,
+      "subquestion": "c",
+      "source_pdf_pages": [
+        25
+      ],
+      "source_printed_pages": [
+        "25"
+      ],
+      "original_marks": 1,
+      "command_term": "Identify",
+      "original_text": "Identify why calling the algorithm with X(-3); would cause an error.",
+      "parent_context": "- 25-\n2226-4429\n(Option D continued)\n18. A programmer has produced the following recursive algorithm:\nint X (int Y){\nif (Y <= 1){\nreturn Y;\n}\nelsel\nreturn Y + X(Y-1);\n}\n}\n(a)\n•Outline one benefit of recursion.\n[2]\n(b) Copy and trace the recursive algorithm when called with the following statement.\nX(5);\n[4]\nY <1\nReturn call\nReturn value\n(c) Identify why calling the algorithm with the following statement would cause an error.\nX(-3) ;\n[1]\n(d) Explain one action a programmer could take to improve the readability of code.\n(3]\nEnd of Option D\nA000",
+      "assets": [
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-25.png",
+          "source_pdf_page": 25,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Identify why calling the algorithm with X(-3); would cause an error.",
+        "For the following Python function,state the result of sum_down(-3)"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "not_uploaded",
+        "source_id": "",
+        "filename": "",
+        "pdf_pages": [],
+        "question_reference": "Q18 c",
+        "marking_summary": "-3; the base condition is immediately true.",
+        "source_issues": [
+          "Original Q18c falsely presupposes an error for X(-3); printed Y<=1 returns-3 immediately. No uploaded MS exists."
+        ],
+        "source_marking_evidence": ""
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.4.5",
+          "scope_evidence": "• Simple, non-branching recursive algorithms in programming only",
+          "rationale": "For the following Python function,state the result of sum_down(-3) assesses Construct and trace recursive algorithms in a programming language. (HL only)",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "No uploaded MS; independent unofficial answer.",
+        "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+        "technical": "Executed negativeinput; returnsimmediately."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC002-Q18-c"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC002-Q18-d",
+      "source_id": "SRC-002",
+      "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+      "year": "2026",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "A/B/C",
+      "option": "D",
+      "question": 18,
+      "subquestion": "d",
+      "source_pdf_pages": [
+        25
+      ],
+      "source_printed_pages": [
+        "25"
+      ],
+      "original_marks": 3,
+      "command_term": "Explain",
+      "original_text": "Explain one action a programmer could take to improve the readability of code.",
+      "parent_context": "- 25-\n2226-4429\n(Option D continued)\n18. A programmer has produced the following recursive algorithm:\nint X (int Y){\nif (Y <= 1){\nreturn Y;\n}\nelsel\nreturn Y + X(Y-1);\n}\n}\n(a)\n•Outline one benefit of recursion.\n[2]\n(b) Copy and trace the recursive algorithm when called with the following statement.\nX(5);\n[4]\nY <1\nReturn call\nReturn value\n(c) Identify why calling the algorithm with the following statement would cause an error.\nX(-3) ;\n[1]\n(d) Explain one action a programmer could take to improve the readability of code.\n(3]\nEnd of Option D\nA000",
+      "assets": [
+        {
+          "kind": "scanned_source_page",
+          "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-25.png",
+          "source_pdf_page": 25,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Explain one action a programmer could take to improve the readability of code.",
+        "Explain how replacing a repeated block with a clearly named function can improve the readability of a program"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "not_uploaded",
+        "source_id": "",
+        "filename": "",
+        "pdf_pages": [],
+        "question_reference": "Q18 d",
+        "marking_summary": "The name summarizes the task at each call site,while detailed implementation is grouped in one place. Readers can follow the main flow without repeatedly scanning the same low-level operations.",
+        "source_issues": [],
+        "source_marking_evidence": ""
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.3.4",
+          "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+          "rationale": "Explain how replacing a repeated block with a clearly named function can improve the readability of a program assesses Construct functions and modularization.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "No uploaded MS; independent unofficial answer.",
+        "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC002-Q18-d"
+      ]
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC002-Q17-a",
+      "source_question_ids": [
+        "H-SRC002-Q17-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct change_preference(head,old,new) in Python. head identifies a singly linked list of nodes with customer and next attributes; the final next is None. Each customer has preferred_shop. Replace old with new for every matching customer and return the number changed. Return0 for an empty list.",
+      "syllabus_codes": [
+        "B4.1.3"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 6,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "One solution:\ndef change_preference(head, old, new):\n    changed = 0\n    current = head\n    while current is not None:\n        if current.customer.preferred_shop == old:\n            current.customer.preferred_shop = new\n            changed += 1\n        current = current.next\n    return changed",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Initializes change count andhead traversal."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct while/end test."
+        },
+        {
+          "marks": 1,
+          "criterion": "Compares customer preference with old."
+        },
+        {
+          "marks": 1,
+          "criterion": "Updates all matching preferences."
+        },
+        {
+          "marks": 1,
+          "criterion": "Increments count only on match andadvances references."
+        },
+        {
+          "marks": 1,
+          "criterion": "Returns count withcorrectemptycase."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Executed multiple matches,nonmatch andemptylist.",
+        "source_comparison": [],
+        "test_code": "def change_preference(head, old, new):\n    changed = 0\n    current = head\n    while current is not None:\n        if current.customer.preferred_shop == old:\n            current.customer.preferred_shop = new\n            changed += 1\n        current = current.next\n    return changed\nfrom types import SimpleNamespace as N\nc1=N(preferred_shop=\"A\");c2=N(preferred_shop=\"B\");c3=N(preferred_shop=\"A\")\nh=N(customer=c1,next=N(customer=c2,next=N(customer=c3,next=None)))\nassert change_preference(h,\"A\",\"C\")==2\nassert [c1.preferred_shop,c2.preferred_shop,c3.preferred_shop]==[\"C\",\"B\",\"C\"]\nassert change_preference(None,\"A\",\"C\")==0",
+        "result_file": ""
+      },
+      "code": "def change_preference(head, old, new):\n    changed = 0\n    current = head\n    while current is not None:\n        if current.customer.preferred_shop == old:\n            current.customer.preferred_shop = new\n            changed += 1\n        current = current.next\n    return changed",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC002-Q17-b",
+      "source_question_ids": [
+        "H-SRC002-Q17-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline two benefits of reusing a tested library function through its documented interface rather than reimplementing it at every call site.",
+      "syllabus_codes": [
+        "B2.3.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 4,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Reuse reduces repeated development effort. A well-tested shared implementation can reduce duplicated defects and can be replaced centrally through the same interface,although its suitability still needs checking.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Reduced repeated implementation effort."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains time/maintenance effect."
+        },
+        {
+          "marks": 1,
+          "criterion": "Tested shared implementation/reduced duplicated defects."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains reliability or central update benefit without treating all libraries as infallible."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC002-Q18-a",
+      "source_question_ids": [
+        "H-SRC002-Q18-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline one benefit of recursion for a problem that naturally decomposes into a smaller instance of itself.",
+      "syllabus_codes": [
+        "B2.4.4"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "The recursive definition expresses the repeated structure directly; the same function handles each smaller case until a base case,which can make the solution clearer.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Natural repeated subproblem structure."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains reuse/clarity withbasecase."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC002-Q18-b",
+      "source_question_ids": [
+        "H-SRC002-Q18-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Trace sum_down(4),showing call arguments and returned values.\ndef sum_down(n):\n    if n <= 1:\n        return n\n    return n + sum_down(n - 1)",
+      "syllabus_codes": [
+        "B2.4.5"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 4,
+      "command_term": "Trace",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Calls4,3,2,1; return values1,3,6,10 while unwinding. Final10.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Correct decreasing call sequence."
+        },
+        {
+          "marks": 1,
+          "criterion": "Base returns1."
+        },
+        {
+          "marks": 1,
+          "criterion": "Intermediate returns3 and6."
+        },
+        {
+          "marks": 1,
+          "criterion": "Final10."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Executed non-branching recursion andbasecase.",
+        "source_comparison": [],
+        "test_code": "def sum_down(n):\n    if n <= 1:\n        return n\n    return n + sum_down(n - 1)\nassert sum_down(4)==10\nassert sum_down(1)==1",
+        "result_file": ""
+      },
+      "code": "def sum_down(n):\n    if n <= 1:\n        return n\n    return n + sum_down(n - 1)",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC002-Q18-c",
+      "source_question_ids": [
+        "H-SRC002-Q18-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "For the following Python function,state the result of sum_down(-3).\ndef sum_down(n):\n    if n <= 1:\n        return n\n    return n + sum_down(n - 1)",
+      "syllabus_codes": [
+        "B2.4.5"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 1,
+      "command_term": "State",
+      "difficulty": "medium",
+      "adaptation_rationale": "Repairs false source presupposition while retaining correct base-case tracing.",
+      "solution": "-3; the base condition is immediately true.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "-3,without an invented recursion error."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Executed negativeinput; returnsimmediately.",
+        "source_comparison": [],
+        "test_code": "def sum_down(n):\n    if n <= 1:\n        return n\n    return n + sum_down(n - 1)\nassert sum_down(-3)==-3",
+        "result_file": ""
+      },
+      "code": "def sum_down(n):\n    if n <= 1:\n        return n\n    return n + sum_down(n - 1)",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC002-Q18-d",
+      "source_question_ids": [
+        "H-SRC002-Q18-d"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Explain how replacing a repeated block with a clearly named function can improve the readability of a program.",
+      "syllabus_codes": [
+        "B2.3.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 3,
+      "command_term": "Explain",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "The name summarizes the task at each call site,while detailed implementation is grouped in one place. Readers can follow the main flow without repeatedly scanning the same low-level operations.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Clear function name summarizes task."
+        },
+        {
+          "marks": 1,
+          "criterion": "Implementation details grouped/hidden."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains easier main-flow understanding/reduced repetition."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    }
+  ]
+}

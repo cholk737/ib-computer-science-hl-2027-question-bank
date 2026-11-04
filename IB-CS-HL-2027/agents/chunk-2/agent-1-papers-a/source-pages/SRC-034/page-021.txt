@@ -1,0 +1,56 @@
+– 20 – 8823 – 7012
+(Option D continued)
+15. The class contains the method . This is used when
+Monster attack(Monster defender)
+a monster attacks another monster (the defender).
+This method:
+y decreases the health variable of the defending monster by the amount returned by the
+method
+rollDice
+y uses the method to display a defending monster’s name, damage and health
+output
+points if its health variable is greater than zero
+y sets the defending monster’s health variable to zero if it is less than zero
+y outputs the defending monster’s name followed by “must leave the game” if its health
+variable is zero.
+(a) Construct the method , using any existing static
+attack(Monster defender)
+methods in the class that might be useful. [4]
+Monster
+(b) Outline two differences between the class and an instance of
+FireMonster
+. [4]
+FireMonster
+The programmer has created a class named to model the place in which the
+Arena
+monsters will battle.
+public class Arena {
+public Monster[] monsters = new Monster[10];
+int monsterCount = 0; //the number of monsters currently
+in array
+public void addMonster(Monster M) {
+// to be written
+}
+public void removeMonster(Monster M) {
+//to be written
+}
+public void doOneOnOneBattle(Monster A, Monster B) {
+while (A.health > 0 && B.health > 0) {
+gameLog(A.attack(B));
+gameLog(B.attack(A));
+}
+if (A.health > B.health) {
+output(A.name + " WINS!");
+removeMonster(B);
+} else if (B.health > A.health) {
+output(B.name + " WINS!");
+removeMonster(A);
+} else {
+output("IT IS A DRAW!");
+}
+}
+public static void output(String message) {
+System.out.println(message);
+}
+}
+(Option D continues on the following page)

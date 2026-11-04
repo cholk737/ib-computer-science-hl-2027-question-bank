@@ -1,0 +1,62 @@
+{
+  "question_id": "P-SRC006-Q13-b",
+  "source_question_ids": [
+    "H-SRC006-Q13-b"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct a Python function valid_distances(d) for a nonempty square numeric nested list. It returns True exactly when all entries on/above the main diagonal are zero and all entries below it are positive.",
+  "syllabus_codes": [
+    "B2.2.2",
+    "B2.3.2",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 5,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "One valid solution:\ndef valid_distances(d):\n    for r in range(len(d)):\n        for c in range(len(d)):\n            if r <= c and d[r][c] != 0:\n                return False\n            if r > c and d[r][c] <= 0:\n                return False\n    return True",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Visits all rows."
+    },
+    {
+      "marks": 1,
+      "criterion": "Visits all columns in each row."
+    },
+    {
+      "marks": 1,
+      "criterion": "Rejects nonzero entries when r<=c."
+    },
+    {
+      "marks": 1,
+      "criterion": "Rejects nonpositive entries when r>c."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns True only after every required check passes."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed valid3x3, wrong upper entry, zero lower entry and1x1 cases.",
+    "source_comparison": [
+      15,
+      16
+    ],
+    "test_code": "def valid_distances(d):\n    for r in range(len(d)):\n        for c in range(len(d)):\n            if r <= c and d[r][c] != 0:\n                return False\n            if r > c and d[r][c] <= 0:\n                return False\n    return True\nassert valid_distances([[0,0,0],[2,0,0],[3,4,0]])\nassert not valid_distances([[0,1],[2,0]])\nassert not valid_distances([[0,0],[0,0]])\nassert valid_distances([[0]])",
+    "result_file": ""
+  },
+  "code": "def valid_distances(d):\n    for r in range(len(d)):\n        for c in range(len(d)):\n            if r <= c and d[r][c] != 0:\n                return False\n            if r > c and d[r][c] <= 0:\n                return False\n    return True",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC006-Q13-b.json",
+  "question_path": "question-bank/questions/P-SRC006-Q13-b.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC006-Q13-b.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

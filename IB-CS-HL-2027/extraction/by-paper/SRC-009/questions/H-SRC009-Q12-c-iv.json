@@ -1,0 +1,76 @@
+{
+  "source_question_id": "H-SRC009-Q12-c-iv",
+  "source_id": "SRC-009",
+  "source_filename": "Computer_science_paper_1__HL.pdf",
+  "year": "2024",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "not stated",
+  "option": "",
+  "question": 12,
+  "subquestion": "c-iv",
+  "source_pdf_pages": [
+    6
+  ],
+  "source_printed_pages": [
+    "5"
+  ],
+  "original_marks": 4,
+  "command_term": "Explain",
+  "original_text": "Explain the role of buses in the execution of a machine language instruction.",
+  "parent_context": "– 5 – 8824 – 6904\nTurn over\n(Question 12 continued)\nA siren will make a warning noise when the door is locked and either of the following occur:\n y Movement is detected.\n y The window is open.\n(b) Copy and complete the truth table for this alarm system. [4]\nMOTION DOOR WINDOW SIREN\n0 0 0\nThe central processing unit (CPU) executes a program that is stored as a sequence of \nmachine language instructions in primary memory. It does this by repeatedly fetching an \ninstruction from primary memory, decoding that instruction, executing and storing the result.\n(c) (i)   Identify the CPU register that holds data to be transferred to primary memory. [1]\n(ii) Identify the part of the CPU that performs decoding. [1]\n(iii) State where the calculations will be executed. [1]\n(iv) Explain the role of buses in the execution of a machine language instruction. [4]\n13. Cell phones are used to make phone calls and send text messages. They can also browse \nthe internet and run apps.\nAn incoming call will interrupt an app being executed.\n(a) Describe how a stack data structure can be used to resume the app that was \ninitially running. [2]\n(b) Describe one way a cell phone app can help the user improve their health. [2]\n(c) Outline why a higher screen resolution leads to higher quality images on a cell \nphone screen. [2]\n(d) (i)   Explain what is meant by GPS (global positioning system). [4]\n(ii) Outline one concern of cell phone apps sharing the location of the user. [2]\n(e) Explain one advantage of using a dedicated operating system on a cell phone instead \nof a generic operating system. [3]",
+  "assets": [],
+  "assessed_concepts": [
+    "Original source task: Explain the role of buses in the execution of a machine language instruction.",
+    "Explain the roles of the three buses during a CPU memory-read operation"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-015",
+    "filename": "Computer_science_paper_1__HL_markscheme.pdf",
+    "pdf_pages": [
+      11
+    ],
+    "question_reference": "Q12 c-iv",
+    "marking_summary": "The address bus specifies the required memory location. The control bus carries the read command and relevant timing/control signals. The data bus carries the requested word back to the CPU. Together these coordinate transfer between memory and CPU registers.",
+    "source_issues": [
+      "Original MS awards a statement that buses carry power supply to all components; source buses here are address/data/control, so that misleading point is not copied."
+    ],
+    "source_marking_evidence": "– 11 – 8824 – 6904M \n12. (a)    (i)  Award [1 max]\nOR, AND; \n(ii) Award [1 max]\n6, 3, 20;\n(iii) Award [2 max]\nAward [1] for the correct result (True) and award [1] for working.\n(6 > 6) OR  (6 > 3) AND (6 + 6 < 20) \nFalse  OR True AND True \nFalse  OR True \nTrue \n(b) Award [4 max]\nAward [1] for every two correct rows.\nMOTION DOOR WINDOW SIREN \n0 0 0 0 \n0 0 1 0 \n0 1 0 0 \n0 1 1 1 \n1 0 0 0 \n1 0 1 0 \n1 1 0 1 \n1 1 1 1 \n(c) (i) Award [1 max] \nMemory Data Register/ MDR; \n(ii) Award [1 max]\nControl Unit/ CU;\n(iii) Award [1 max]\nArithmetic and Logic Unit/ ALU;\n(iv) Award [4 max]\nBuses connect hardware components/ transfer information/signals between different\ncomponents (CU, ALU, RAM, registers);\nAddress bus carries the address of the memory location from where data should be\nread/ written:\nData bus carries the actual data which need to be stored on/ written to the primary\nmemory;\nControl bus carries control/ timing signals from CU to other components;\nBuses carry power supply to all components;"
+  },
+  "relevance_status": "A",
+  "mappings": [
+    {
+      "syllabus_code": "A1.1.1",
+      "scope_evidence": "• Units: arithmetic logic unit (ALU), control unit (CU)\n• Registers: instruction register (IR), program counter (PC), memory address register (MAR), memory data register (MDR), accumulator (AC)\n• Buses: address, data, control\n• Processors: single core processor, multi-core processor, co-processors\n• A diagrammatic representation of the relationship between the specified CPU components",
+      "rationale": "Explain the roles of the three buses during a CPU memory-read operation assesses Describe the functions and interactions of the main CPU components.",
+      "theme": "A",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "A1.1.5",
+      "scope_evidence": "• The basic operations a CPU performs to execute a single instruction in machine language\n• The interaction between memory and registers via the three buses: address, data, control",
+      "rationale": "Explain the roles of the three buses during a CPU memory-read operation assesses Describe the fetch, decode and execute cycle.",
+      "theme": "A",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "No visual required by this leaf.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC009-Q12-c-iv"
+  ]
+}

@@ -1,0 +1,35 @@
+– 16 – 2223 – 7012
+(Option D continued)
+15. All the unsorted House objects in the database have been copied to a sufficiently large array 
+allHouses. This array is not completely filled with House objects.
+The array allHouses and all methods in this question are declared in the main program class. 
+All methods can access the array allHouses directly.
+Consider the following method.
+public void unknown(String x)
+{
+  for (int i=0; i<allHouses.length; i++)
+  {
+    if (allHouses[i].getCity().equals(x))
+    {  
+      System.out.println (allHouses[i].getAddress());
+    }
+  }
+}
+(a) Define the term method signature. [2]
+(b) Describe how the original String variable, passed to a method as a parameter, 
+can be assigned a new value by that method. [2]
+(c) State the intended purpose of the method unknown. [1]
+(d) (i)  Outline the runtime error that is likely to occur if this method is called. [2]
+(ii) Outline how this error can be corrected. [2]
+(e) Construct the code for the method houseSort that will sort the array allHouses in 
+ascending order of price. [5]
+A method is needed to select from the original unsorted array allHouses the three most 
+expensive houses below or equal to a given price.
+(f) Construct the code for the method selectThree that will take an integer parameter 
+budget. It must return a sorted array of size 3 that contains the three most expensive 
+House objects (in ascending order of price) with a price that is less than or equal  
+to budget.
+You may assume that the array allHouses contains at least three House objects 
+with a price less than or equal to budget. As part of your answer you should use the 
+method houseSort() as developed in part (e). [7]
+(Option D continues on the following page)

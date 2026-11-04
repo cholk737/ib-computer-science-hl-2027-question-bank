@@ -1,0 +1,28 @@
+                                             –   24 –                                     2225 – 6419M
+
+
+
+
+Alternative pseudocode for ‘initializing the FLAGS array’:
+Award [2] for
+
+ FLAGS = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+
+
+
+
+
+
+Alternative pseudocode for the part “inspecting all elements in the FLAGS array and       displaying
+appropriate messages”
+
+
+k=0
+loop while k <=24 DO
+       if FLAGS[k] == 0
+               then output('the table has not been completed correctly ')
+                       return
+       endif
+       k = k+1
+endloop
+output('the table has been completed correctly ')

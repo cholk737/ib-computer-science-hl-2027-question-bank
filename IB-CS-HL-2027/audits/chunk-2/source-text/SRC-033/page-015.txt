@@ -1,0 +1,49 @@
+                                                                                N20/4/COMSC/HP2/ENG/TZ0/XX
+
+
+
+
+                                                      – 14 –                                            8820–7012
+
+Option D —    Object-oriented programming
+
+13.   A company provides car parking services in large cities and needs a computer system to
+      keep track of the number of vehicles using its parking areas.
+
+      When a vehicle arrives, its registration plate is recorded on the system and it is allocated a
+      number that identifies where it should park. When the vehicle leaves, that space is made
+      available for other vehicles to use.
+
+      Vehicles are identified by their unique registration plate, which is an alphanumeric code of
+      eight characters (eg X1234567). This is clearly displayed on the vehicle.
+
+      A programmer created the classes ParkingArea and Vehicle to model the above situation.
+
+      public class ParkingArea {
+          private Vehicle vehicles[];
+          private String name;
+
+          ParkingArea(String name, int capacity) {
+              this.name = name;
+              if (capacity > 300) capacity = 300;
+              this.vehicles = new Vehicle[capacity];
+          }
+
+          String getName() {
+              return name;
+          }
+
+          public int getCapacity() {
+              return vehicles.length;
+          }
+
+          public int findVehicle(String reg) {
+              //find where the vehicle is located in the array and
+              //return the index not yet written
+          }
+      }
+
+
+
+
+(Option D continues on the following page)

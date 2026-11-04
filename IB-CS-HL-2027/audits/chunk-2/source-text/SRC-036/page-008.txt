@@ -1,0 +1,29 @@
+                                                     –  8 –                 N20/4/COMSC/HP2/ENG/TZ0/XX/M
+
+
+(d)    Award [6 max].
+
+       Example of solution (accept different names for tables)
+
+       Vineyard (Vineyard, Region)
+       Wine (WineID, Wine, Vineyard(fk), Year, Flavour, APV, UnitPrice)
+       Stock (StoreID, WineID(fk), StockQty)
+
+       Vineyard table eg Vineyard (Vineyard, Region)
+       Award [1] for primary key. Either Vineyard or VineyardID.
+       Wine table eg Wine (WineID, Wine, Vineyard(fk), Year, Flavour, APV, UnitPrice)
+       Award [1] for primary key WineID or composite Wine/Vineyard
+       Award [1] for identifying the foreign key (Vineyard)
+       Award [1] for splitting the three description fields
+       Stock table eg Stock (StoreID, WineID(fk), StockQty)
+       Award [1] for composite key StoreID/WineID or Store/Wine/Vineyard
+       Award [1] for WineID or equivalent key shown as foreign key
+
+       Note: Should candidates provide other reasonable solutions, please contact your team
+       leader.
+
+(e)    Award [2 max].
+       Relationship 1-1 might not exist;
+       Which means a single-field PK might not uniquely identify a record;
+       So a composite key is needed made up of 2 or more fields;
+       Allow any suitable example;

@@ -1,0 +1,898 @@
+{
+  "source_id": "SRC-004",
+  "batch_id": "SRC-004-b002",
+  "source_questions": [
+    {
+      "source_question_id": "H-SRC004-Q08-b",
+      "source_id": "SRC-004",
+      "source_filename": "Computer_science_paper_1__HL (1).pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "not stated",
+      "option": "",
+      "question": "8",
+      "subquestion": "b",
+      "source_pdf_pages": [
+        4
+      ],
+      "source_printed_pages": [
+        "3"
+      ],
+      "original_marks": 1,
+      "command_term": "Identify",
+      "original_text": "(b) Identify one advantage of concurrent processing. [1]",
+      "parent_context": "8. (a) Outline what is meant by concurrent processing. [2]\n(b) Identify one advantage of concurrent processing. [1]\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-004/renders/page-4.png",
+          "source_pdf_page": 4,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Explain the role of the operating system in managing multitasking and resource allocation. (HL only)"
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-010",
+        "filename": "Computer_science_paper_1__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          6
+        ],
+        "question_reference": "8(b)",
+        "marking_summary": "Improved resource usage or responsiveness.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "A1.3.5",
+          "scope_evidence": "• The challenges of multitasking and resource allocation, including task scheduling, resource contention and deadlock",
+          "rationale": "Multitasking/resource allocation includes responsiveness.",
+          "theme": "A",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Identify one advantage of concurrent processing.",
+      "context_synopsis": "",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-004/transcription/pdf-page-004.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC004-Q09-a",
+      "source_id": "SRC-004",
+      "source_filename": "Computer_science_paper_1__HL (1).pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "not stated",
+      "option": "",
+      "question": "9",
+      "subquestion": "a",
+      "source_pdf_pages": [
+        4
+      ],
+      "source_printed_pages": [
+        "3"
+      ],
+      "original_marks": 4,
+      "command_term": "Determine",
+      "original_text": "(a) Determine the value of . Show all your working. [4]",
+      "parent_context": "9. Consider the following recursive method:\nfun(N)\n>\nif N 0\nthen\n+\nreturn (N mod 10) fun(N div 10)\nelse\nreturn 0\nend if\nend fun\n(a) Determine the value of . Show all your working. [4]\nfun(1216)\n(b) Deduce the purpose of this recursive method. [2]\nTurn over\n– 4 – 8823 – 7011\nSection B\nAnswer all questions.\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-004/renders/page-4.png",
+          "source_pdf_page": 4,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct and trace recursive algorithms in a programming language. (HL only)"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-010",
+        "filename": "Computer_science_paper_1__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          6
+        ],
+        "question_reference": "9(a)",
+        "marking_summary": "Expansion 6+1+2+1+0 =10.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.4.5",
+          "scope_evidence": "• Simple, non-branching recursive algorithms in programming only",
+          "rationale": "Single non-branching recursion is explicitly allowed; pseudocode converted to Python.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Determine the value of fun(1216). Show all your working.",
+      "context_synopsis": "fun(N): if N > 0 return (N mod 10) + fun(N div 10); else return 0.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-004/transcription/pdf-page-004.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC004-Q09-b",
+      "source_id": "SRC-004",
+      "source_filename": "Computer_science_paper_1__HL (1).pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "not stated",
+      "option": "",
+      "question": "9",
+      "subquestion": "b",
+      "source_pdf_pages": [
+        4
+      ],
+      "source_printed_pages": [
+        "3"
+      ],
+      "original_marks": 2,
+      "command_term": "Deduce",
+      "original_text": "(b) Deduce the purpose of this recursive method. [2]",
+      "parent_context": "9. Consider the following recursive method:\nfun(N)\n>\nif N 0\nthen\n+\nreturn (N mod 10) fun(N div 10)\nelse\nreturn 0\nend if\nend fun\n(a) Determine the value of . Show all your working. [4]\nfun(1216)\n(b) Deduce the purpose of this recursive method. [2]\nTurn over\n– 4 – 8823 – 7011\nSection B\nAnswer all questions.\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-004/renders/page-4.png",
+          "source_pdf_page": 4,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Explain the fundamental concept of recursion and its applications in programming. (HL only)"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-010",
+        "filename": "Computer_science_paper_1__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          6
+        ],
+        "question_reference": "9(b)",
+        "marking_summary": "Returns sum of digits in nonnegative N.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.4.4",
+          "scope_evidence": "• The fundamentals of recursion and its advantages and limitations\n• The utility of recursion in solving problems that can be broken down into smaller, similar sub-problems\n• Recursive algorithms, including but not limited to quicksort\n• The limitations of recursion, including complexity and memory usage\n• Situations that best suit the use of recursion, including fractal image creation, traversing binary trees, sorting algorithms",
+          "rationale": "Reason about the purpose of a recursive algorithm; same supported non-branching process.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Deduce the purpose of this recursive method.",
+      "context_synopsis": "fun(N): if N > 0 return (N mod 10) + fun(N div 10); else return 0.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-004/transcription/pdf-page-004.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC004-Q10-a",
+      "source_id": "SRC-004",
+      "source_filename": "Computer_science_paper_1__HL (1).pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "not stated",
+      "option": "",
+      "question": "10",
+      "subquestion": "a",
+      "source_pdf_pages": [
+        5
+      ],
+      "source_printed_pages": [
+        "4"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "(a) Outline one security measure that can be taken to prevent unauthorized access to the\npatients’ data stored on the central computer. [2]",
+      "parent_context": "10. The staff at a doctor’s practice consist of a receptionist and a doctor.\nThe patients’ medical records and payments, the doctor’s appointment calendar, and other\nimportant data are stored in a database on the central computer.\n(a) Outline one security measure that can be taken to prevent unauthorized access to the\npatients’ data stored on the central computer. [2]\n(b) (i) Identify one cause of data loss. [1]\n(ii) Describe one method that can be used to prevent data loss. [2]\nA new vaccine has been distributed that would be of benefit to some of the doctor’s patients.\nA large number of personalized letters need to be written to these patients, inviting them to\nvisit the doctor’s practice to be vaccinated.\n(c) Describe how these letters could be automatically generated by a word\nprocessing application. [3]\nWhen the doctor visits a patient in their home, she needs to be able to access the patient’s\nmedical records stored on the central computer in the practice.\n(d) Outline two reasons for the use of a virtual private network (VPN) in this situation. [4]\nA mobile data connection enables the doctor to access internet resources while visiting\npatients in their homes. Sometimes the data transfer speeds are slow.\n(e) Explain why the speed of data transmission across a mobile network can vary. [3]\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-004/renders/page-5.png",
+          "source_pdf_page": 5,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Describe common network countermeasures. (HL only)"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-010",
+        "filename": "Computer_science_paper_1__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          7
+        ],
+        "question_reference": "10(a)",
+        "marking_summary": "Password/role restriction/MFA/encryption/updates/training with relevant explanation.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "A2.4.3",
+          "scope_evidence": "• Content security policies, complex password policies, DDoS mitigation tools, email filtering solutions, encrypted protocols, input validation (filtering, whitelisting), intrusion detection systems (IDS), intrusion prevention systems (IPS), multifactor authentication (MFA), secure socket layer (SSL) certificate, transport layer security (TLS) certificate, update software, VPNs\n• The importance of regular security testing and employee training\n• Wireless security measures may include media access controllers (MAC), whitelists and blacklists.",
+          "rationale": "Restrict broad computer security to explicit network countermeasures: MFA.",
+          "theme": "A",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Outline one security measure that can be taken to prevent unauthorized access to the patients’ data stored on the central computer.",
+      "context_synopsis": "Doctor/receptionist practice stores patient records and appointments on a central database computer; remote home visits need access.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-004/transcription/pdf-page-005.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC004-Q10-b-i",
+      "source_id": "SRC-004",
+      "source_filename": "Computer_science_paper_1__HL (1).pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "not stated",
+      "option": "",
+      "question": "10",
+      "subquestion": "b-i",
+      "source_pdf_pages": [
+        5
+      ],
+      "source_printed_pages": [
+        "4"
+      ],
+      "original_marks": 1,
+      "command_term": "Identify",
+      "original_text": "(i) Identify one cause of data loss. [1]",
+      "parent_context": "10. The staff at a doctor’s practice consist of a receptionist and a doctor.\nThe patients’ medical records and payments, the doctor’s appointment calendar, and other\nimportant data are stored in a database on the central computer.\n(a) Outline one security measure that can be taken to prevent unauthorized access to the\npatients’ data stored on the central computer. [2]\n(b) (i) Identify one cause of data loss. [1]\n(ii) Describe one method that can be used to prevent data loss. [2]\nA new vaccine has been distributed that would be of benefit to some of the doctor’s patients.\nA large number of personalized letters need to be written to these patients, inviting them to\nvisit the doctor’s practice to be vaccinated.\n(c) Describe how these letters could be automatically generated by a word\nprocessing application. [3]\nWhen the doctor visits a patient in their home, she needs to be able to access the patient’s\nmedical records stored on the central computer in the practice.\n(d) Outline two reasons for the use of a virtual private network (VPN) in this situation. [4]\nA mobile data connection enables the doctor to access internet resources while visiting\npatients in their homes. Sometimes the data transfer speeds are slow.\n(e) Explain why the speed of data transmission across a mobile network can vary. [3]\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-004/renders/page-5.png",
+          "source_pdf_page": 5,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Describe common network vulnerabilities. (HL only)"
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-010",
+        "filename": "Computer_science_paper_1__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          8
+        ],
+        "question_reference": "10(b-i)",
+        "marking_summary": "Human error, malware, hardware destruction, corruption or theft.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "A2.4.2",
+          "scope_evidence": "• Distributed denial of service (DDoS), insecure network protocols, malware, man-in-the-middle (MitM) attacks, phishing attacks, SQL injection, cross-site scripting (XSS), unpatched software, weak authentication, zero-day exploits",
+          "rationale": "Only a scoped network vulnerability is retained from the broad old data-loss topic.",
+          "theme": "A",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Identify one cause of data loss.",
+      "context_synopsis": "Doctor/receptionist practice stores patient records and appointments on a central database computer; remote home visits need access.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-004/transcription/pdf-page-005.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC004-Q10-b-ii",
+      "source_id": "SRC-004",
+      "source_filename": "Computer_science_paper_1__HL (1).pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "not stated",
+      "option": "",
+      "question": "10",
+      "subquestion": "b-ii",
+      "source_pdf_pages": [
+        5
+      ],
+      "source_printed_pages": [
+        "4"
+      ],
+      "original_marks": 2,
+      "command_term": "Describe",
+      "original_text": "(ii) Describe one method that can be used to prevent data loss. [2]",
+      "parent_context": "10. The staff at a doctor’s practice consist of a receptionist and a doctor.\nThe patients’ medical records and payments, the doctor’s appointment calendar, and other\nimportant data are stored in a database on the central computer.\n(a) Outline one security measure that can be taken to prevent unauthorized access to the\npatients’ data stored on the central computer. [2]\n(b) (i) Identify one cause of data loss. [1]\n(ii) Describe one method that can be used to prevent data loss. [2]\nA new vaccine has been distributed that would be of benefit to some of the doctor’s patients.\nA large number of personalized letters need to be written to these patients, inviting them to\nvisit the doctor’s practice to be vaccinated.\n(c) Describe how these letters could be automatically generated by a word\nprocessing application. [3]\nWhen the doctor visits a patient in their home, she needs to be able to access the patient’s\nmedical records stored on the central computer in the practice.\n(d) Outline two reasons for the use of a virtual private network (VPN) in this situation. [4]\nA mobile data connection enables the doctor to access internet resources while visiting\npatients in their homes. Sometimes the data transfer speeds are slow.\n(e) Explain why the speed of data transmission across a mobile network can vary. [3]\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-004/renders/page-5.png",
+          "source_pdf_page": 5,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Describe common network countermeasures. (HL only)"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-010",
+        "filename": "Computer_science_paper_1__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          8
+        ],
+        "question_reference": "10(b-ii)",
+        "marking_summary": "Backups, anti-malware/update, training or physical security with expansion.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "A2.4.3",
+          "scope_evidence": "• Content security policies, complex password policies, DDoS mitigation tools, email filtering solutions, encrypted protocols, input validation (filtering, whitelisting), intrusion detection systems (IDS), intrusion prevention systems (IPS), multifactor authentication (MFA), secure socket layer (SSL) certificate, transport layer security (TLS) certificate, update software, VPNs\n• The importance of regular security testing and employee training\n• Wireless security measures may include media access controllers (MAC), whitelists and blacklists.",
+          "rationale": "Retain software updates as an explicit countermeasure; do not map general backup policy as a required syllabus bullet.",
+          "theme": "A",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Describe one method that can be used to prevent data loss.",
+      "context_synopsis": "Doctor/receptionist practice stores patient records and appointments on a central database computer; remote home visits need access.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-004/transcription/pdf-page-005.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC004-Q10-c",
+      "source_id": "SRC-004",
+      "source_filename": "Computer_science_paper_1__HL (1).pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "not stated",
+      "option": "",
+      "question": "10",
+      "subquestion": "c",
+      "source_pdf_pages": [
+        5
+      ],
+      "source_printed_pages": [
+        "4"
+      ],
+      "original_marks": 3,
+      "command_term": "Describe",
+      "original_text": "(c) Describe how these letters could be automatically generated by a word\nprocessing application. [3]",
+      "parent_context": "10. The staff at a doctor’s practice consist of a receptionist and a doctor.\nThe patients’ medical records and payments, the doctor’s appointment calendar, and other\nimportant data are stored in a database on the central computer.\n(a) Outline one security measure that can be taken to prevent unauthorized access to the\npatients’ data stored on the central computer. [2]\n(b) (i) Identify one cause of data loss. [1]\n(ii) Describe one method that can be used to prevent data loss. [2]\nA new vaccine has been distributed that would be of benefit to some of the doctor’s patients.\nA large number of personalized letters need to be written to these patients, inviting them to\nvisit the doctor’s practice to be vaccinated.\n(c) Describe how these letters could be automatically generated by a word\nprocessing application. [3]\nWhen the doctor visits a patient in their home, she needs to be able to access the patient’s\nmedical records stored on the central computer in the practice.\n(d) Outline two reasons for the use of a virtual private network (VPN) in this situation. [4]\nA mobile data connection enables the doctor to access internet resources while visiting\npatients in their homes. Sometimes the data transfer speeds are slow.\n(e) Explain why the speed of data transmission across a mobile network can vary. [3]\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-004/renders/page-5.png",
+          "source_pdf_page": 5,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Word-processing mail merge is not a 2027 learning requirement; changing it to SQL would assess a different task."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-010",
+        "filename": "Computer_science_paper_1__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          8
+        ],
+        "question_reference": "10(c)",
+        "marking_summary": "Mail merge, letter template, query recipients and insert data.",
+        "source_issues": []
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Word-processing mail merge is not a 2027 learning requirement; changing it to SQL would assess a different task.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Describe how these letters could be automatically generated by a word processing application.",
+      "context_synopsis": "Personalized vaccination invitation letters using patient records.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-004/transcription/pdf-page-005.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC004-Q10-d",
+      "source_id": "SRC-004",
+      "source_filename": "Computer_science_paper_1__HL (1).pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "1",
+      "zone": "not stated",
+      "option": "",
+      "question": "10",
+      "subquestion": "d",
+      "source_pdf_pages": [
+        5
+      ],
+      "source_printed_pages": [
+        "4"
+      ],
+      "original_marks": 4,
+      "command_term": "Outline",
+      "original_text": "(d) Outline two reasons for the use of a virtual private network (VPN) in this situation. [4]",
+      "parent_context": "10. The staff at a doctor’s practice consist of a receptionist and a doctor.\nThe patients’ medical records and payments, the doctor’s appointment calendar, and other\nimportant data are stored in a database on the central computer.\n(a) Outline one security measure that can be taken to prevent unauthorized access to the\npatients’ data stored on the central computer. [2]\n(b) (i) Identify one cause of data loss. [1]\n(ii) Describe one method that can be used to prevent data loss. [2]\nA new vaccine has been distributed that would be of benefit to some of the doctor’s patients.\nA large number of personalized letters need to be written to these patients, inviting them to\nvisit the doctor’s practice to be vaccinated.\n(c) Describe how these letters could be automatically generated by a word\nprocessing application. [3]\nWhen the doctor visits a patient in their home, she needs to be able to access the patient’s\nmedical records stored on the central computer in the practice.\n(d) Outline two reasons for the use of a virtual private network (VPN) in this situation. [4]\nA mobile data connection enables the doctor to access internet resources while visiting\npatients in their homes. Sometimes the data transfer speeds are slow.\n(e) Explain why the speed of data transmission across a mobile network can vary. [3]\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-004/renders/page-5.png",
+          "source_pdf_page": 5,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Describe the purpose and characteristics of networks.",
+        "Describe common network countermeasures. (HL only)"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-010",
+        "filename": "Computer_science_paper_1__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          9
+        ],
+        "question_reference": "10(d)",
+        "marking_summary": "Remote private-network access and protection/authentication with explanations.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "A2.1.1",
+          "scope_evidence": "• Networks: local area network (LAN), wide area network (WAN), personal area network (PAN), virtual private network (VPN)",
+          "rationale": "VPN purpose and countermeasure are explicit; avoid source suggestions that VPN provides universal anonymity.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "A2.4.3",
+          "scope_evidence": "• Content security policies, complex password policies, DDoS mitigation tools, email filtering solutions, encrypted protocols, input validation (filtering, whitelisting), intrusion detection systems (IDS), intrusion prevention systems (IPS), multifactor authentication (MFA), secure socket layer (SSL) certificate, transport layer security (TLS) certificate, update software, VPNs\n• The importance of regular security testing and employee training\n• Wireless security measures may include media access controllers (MAC), whitelists and blacklists.",
+          "rationale": "VPN purpose and countermeasure are explicit; avoid source suggestions that VPN provides universal anonymity.",
+          "theme": "A",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Outline two reasons for the use of a virtual private network (VPN) in this situation.",
+      "context_synopsis": "Doctor/receptionist practice stores patient records and appointments on a central database computer; remote home visits need access.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-004/transcription/pdf-page-005.txt"
+      ]
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC004-Q08-b",
+      "source_question_ids": [
+        "H-SRC004-Q08-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "State one advantage of letting an editor run while a download waits for network data.",
+      "syllabus_codes": [
+        "A1.3.5"
+      ],
+      "theme": "A",
+      "level": "HL-only",
+      "marks": 1,
+      "command_term": "State",
+      "difficulty": "low",
+      "adaptation_rationale": "Multitasking/resource allocation includes responsiveness. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "The user interface remains responsive while the other task waits.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Improved responsiveness or use of otherwise idle resources."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 1,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC004-Q09-a",
+      "source_question_ids": [
+        "H-SRC004-Q09-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Trace digit_total(3407), showing calls and returned additions. Assume a nonnegative integer.\n\ndef digit_total(n):\n    if n > 0:\n        return n % 10 + digit_total(n // 10)\n    return 0",
+      "syllabus_codes": [
+        "B2.4.5"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 4,
+      "command_term": "Trace",
+      "difficulty": "medium",
+      "adaptation_rationale": "Single non-branching recursion is explicitly allowed; pseudocode converted to Python. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "digit_total(3407)=7+digit_total(340)=7+0+digit_total(34)=7+0+4+digit_total(3)=7+0+4+3+digit_total(0)=14.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Correct first call7+digit_total(340)."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct subsequent calls340→34→3→0."
+        },
+        {
+          "marks": 1,
+          "criterion": "Base call returns0."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct unwinding and final14."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 4,
+        "code_execution": "Executed digit_total on0,7,3407,1216; results0,7,14,10."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": [],
+      "code": "def digit_total(n):\n    if n > 0:\n        return n % 10 + digit_total(n // 10)\n    return 0"
+    },
+    {
+      "question_id": "P-SRC004-Q09-b",
+      "source_question_ids": [
+        "H-SRC004-Q09-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline what digit_total computes for a nonnegative integer n.\n\ndef digit_total(n):\n    if n > 0:\n        return n % 10 + digit_total(n // 10)\n    return 0",
+      "syllabus_codes": [
+        "B2.4.4"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Reason about the purpose of a recursive algorithm; same supported non-branching process. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "It returns the sum of the decimal digits of n; it removes the final digit at each call and adds that digit to the recursive result.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Sum of decimal digits."
+        },
+        {
+          "marks": 1,
+          "criterion": "Relates remainder/removal to summing all digits."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 2,
+        "code_execution": "Executed sample/edge cases in verification script."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": [],
+      "code": "def digit_total(n):\n    if n > 0:\n        return n % 10 + digit_total(n // 10)\n    return 0"
+    },
+    {
+      "question_id": "P-SRC004-Q10-a",
+      "source_question_ids": [
+        "H-SRC004-Q10-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "A clinic allows staff to sign in to its network remotely. Outline how MFA reduces unauthorized access if a password is stolen.",
+      "syllabus_codes": [
+        "A2.4.3"
+      ],
+      "theme": "A",
+      "level": "HL-only",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Restrict broad computer security to explicit network countermeasures: MFA. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "A second independent factor such as a security key is required, so the password alone is insufficient.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Requires second independent authentication factor."
+        },
+        {
+          "marks": 1,
+          "criterion": "Stolen password alone does not provide access."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 2,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC004-Q10-b-i",
+      "source_question_ids": [
+        "H-SRC004-Q10-b-i"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Identify one malware threat that could make files on a clinic network unavailable.",
+      "syllabus_codes": [
+        "A2.4.2"
+      ],
+      "theme": "A",
+      "level": "HL-only",
+      "marks": 1,
+      "command_term": "Identify",
+      "difficulty": "low",
+      "adaptation_rationale": "Only a scoped network vulnerability is retained from the broad old data-loss topic. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "Ransomware encrypting the files.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Ransomware/malware with file-damage/unavailability effect."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 1,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC004-Q10-b-ii",
+      "source_question_ids": [
+        "H-SRC004-Q10-b-ii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Describe how promptly updating networked clinic software can reduce the risk of malware damaging data.",
+      "syllabus_codes": [
+        "A2.4.3"
+      ],
+      "theme": "A",
+      "level": "HL-only",
+      "marks": 2,
+      "command_term": "Describe",
+      "difficulty": "medium",
+      "adaptation_rationale": "Retain software updates as an explicit countermeasure; do not map general backup policy as a required syllabus bullet. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "Updates patch known vulnerabilities; malware cannot exploit the patched flaw to compromise files in that way.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Applies patches/security fixes."
+        },
+        {
+          "marks": 1,
+          "criterion": "Removes known exploitable vulnerability, reducing compromise risk."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 2,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC004-Q10-d",
+      "source_question_ids": [
+        "H-SRC004-Q10-d"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "A laboratory researcher connects from public Wi-Fi to private lab resources. Outline two reasons for using a correctly configured VPN.",
+      "syllabus_codes": [
+        "A2.1.1",
+        "A2.4.3"
+      ],
+      "theme": "A",
+      "level": "mixed common/HL",
+      "marks": 4,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "VPN purpose and countermeasure are explicit; avoid source suggestions that VPN provides universal anonymity. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "Encrypted tunnel protects traffic from local eavesdroppers; authenticated access allows authorized use of private lab resources over the internet.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Encrypted tunnel."
+        },
+        {
+          "marks": 1,
+          "criterion": "Links encryption to confidentiality on untrusted Wi-Fi."
+        },
+        {
+          "marks": 1,
+          "criterion": "Authenticated remote private-network access."
+        },
+        {
+          "marks": 1,
+          "criterion": "Links access to resources unavailable directly on public internet."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 4,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    }
+  ]
+}

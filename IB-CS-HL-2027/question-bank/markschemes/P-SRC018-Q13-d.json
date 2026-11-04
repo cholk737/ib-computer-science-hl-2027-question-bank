@@ -1,0 +1,40 @@
+{
+  "question_id": "P-SRC018-Q13-d",
+  "unofficial": true,
+  "marks": 5,
+  "solution": "def reverse_using_queue(stack,queue):\n    while not stack.isEmpty():\n        queue.enqueue(stack.pop())\n    while not queue.isEmpty():\n        stack.push(queue.dequeue())",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Loops until original stack isempty."
+    },
+    {
+      "marks": 1,
+      "criterion": "Pops current stack top."
+    },
+    {
+      "marks": 1,
+      "criterion": "En queues each popped item in FIFO order."
+    },
+    {
+      "marks": 1,
+      "criterion": "Loops until temporary queue isempty."
+    },
+    {
+      "marks": 1,
+      "criterion": "De queues each item and pushes on to original stack."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "Executable checks saved under checks/ where applicable."
+  },
+  "code": "def reverse_using_queue(stack,queue):\n    while not stack.isEmpty():\n        queue.enqueue(stack.pop())\n    while not queue.isEmpty():\n        stack.push(queue.dequeue())",
+  "test_code": "class Stack:\n def __init__(self,v): self.v=list(v)\n def isEmpty(self): return not self.v\n def pop(self): return self.v.pop()\n def push(self,x): self.v.append(x)\nclass Queue:\n def __init__(self): self.v=[]\n def isEmpty(self): return not self.v\n def enqueue(self,x): self.v.append(x)\n def dequeue(self): return self.v.pop(0)\ns=Stack([\"A\",\"B\",\"C\"]);q=Queue();reverse_using_queue(s,q)\nassert s.v==[\"C\",\"B\",\"A\"] and q.isEmpty()\ns=Stack([]);q=Queue();reverse_using_queue(s,q);assert s.isEmpty()",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

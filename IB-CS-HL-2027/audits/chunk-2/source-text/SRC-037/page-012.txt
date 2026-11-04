@@ -1,0 +1,47 @@
+                                                       –   12 –                                      8823 – 7012M
+
+
+6.   (a)     Award [2 max]
+            Award [1] for initialising TOTAL and returning TOTAL
+            Award [1] for looping from 1 to N times
+            Award [1] for TOTAL = TOTAL * X
+
+            Example 1:
+            function FACTORIAL(N):
+                  TOTAL = 1
+                  loop X from 1 to N
+                        TOTAL = TOTAL * X
+                  end loop
+                 return TOTAL
+            end function
+
+            Award [1] for a terminating condition N == 1
+            Award [1] for calling FACTORIAL(N-1) to loop recursively
+            Award [1] for multiplying by N to return the total value
+
+            Example 2:
+            function FACTORIAL(N):
+                  if N == 0 or N == 1 then                     // does not need to include N==0
+                        return(1)
+                  else
+                        return FACTORIAL(N-1) * N
+                 end if
+            end function
+
+            Accept alternative solutions that calculate factorial.
+
+
+     (b)     Award [2 max]
+            Award [1] for using a variable HIGHEST that is suitably initialised
+            Award [1] for correctly finding the highest value
+
+            Example 1:
+            function FINDHIGH(ARR):
+                  HIGHEST = -1
+                  loop COUNT from 0 to 2
+                        if ARR[COUNT] > HIGHEST then
+                             HIGHEST = ARR[COUNT]
+                        end if
+                  end loop
+                 return HIGHEST
+            end function

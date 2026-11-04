@@ -1,0 +1,36 @@
+{
+  "question_id": "P-SRC001-Q15-b",
+  "unofficial": true,
+  "marks": 4,
+  "solution": "def discounted_in_row(bookings, row):\n    count = 0\n    for kind in bookings[row]:\n        if kind == \"D\":\n            count += 1\n    return count",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes a counter to 0."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses every seat in the selected row."
+    },
+    {
+      "marks": 1,
+      "criterion": "Increments only when the code is D."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns the completed count after the loop."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "Executable checks saved under checks/ where applicable."
+  },
+  "code": "def discounted_in_row(bookings, row):\n    count = 0\n    for kind in bookings[row]:\n        if kind == \"D\":\n            count += 1\n    return count",
+  "test_code": "assert discounted_in_row([[\"D\",\"X\",\"D\"],[\"S\",\"S\",\"X\"]],0)==2\nassert discounted_in_row([[\"D\",\"X\",\"D\"],[\"S\",\"S\",\"X\"]],1)==0",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

@@ -1,0 +1,33 @@
+{
+  "question_id": "P-SRC006-Q13-d",
+  "unofficial": true,
+  "marks": 3,
+  "solution": "Find low=min(a,b) and high=max(a,b). Add segment_time[k] for k from low+1 through high inclusive. Equal indices give an empty sum of zero.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Determine lower/higher stop indices."
+    },
+    {
+      "marks": 1,
+      "criterion": "Sum relevant segment times."
+    },
+    {
+      "marks": 1,
+      "criterion": "Uses low+1 through high inclusive; avoids preceding segment."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      18
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

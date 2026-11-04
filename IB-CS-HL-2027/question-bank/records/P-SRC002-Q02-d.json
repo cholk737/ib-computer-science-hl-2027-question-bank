@@ -1,0 +1,57 @@
+{
+  "question_id": "P-SRC002-Q02-d",
+  "source_question_ids": [
+    "H-SRC002-Q02-d"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A training register has fields LearnerID,LearnerName,Level,EventID,CourseTitle,Provider,EventDate,Fee,Completed. LearnerID determines LearnerName and Level; EventID determines CourseTitle,Provider,EventDate and Fee; the pair LearnerID/EventID determines Completed. Construct a3NF schema, indicating primary and foreign keys.",
+  "syllabus_codes": [
+    "A3.2.6"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 5,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Original table does not state all functional dependencies; supplied dependencies remove ambiguity about event cost and qualification/provider relationships.",
+  "solution": "LEARNER(LearnerID PK,LearnerName,Level); EVENT(EventID PK,CourseTitle,Provider,EventDate,Fee); ENROLMENT(LearnerID PK/FK,EventID PK/FK,Completed). The enrolment key is the pair of IDs.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Learner table with correct dependency."
+    },
+    {
+      "marks": 1,
+      "criterion": "Event table with correct dependency."
+    },
+    {
+      "marks": 1,
+      "criterion": "Enrolment contains completion status."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct composite enrolment key."
+    },
+    {
+      "marks": 1,
+      "criterion": "Both foreign keys and no partial-key dependencies."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC002-Q02-d.json",
+  "question_path": "question-bank/questions/P-SRC002-Q02-d.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC002-Q02-d.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

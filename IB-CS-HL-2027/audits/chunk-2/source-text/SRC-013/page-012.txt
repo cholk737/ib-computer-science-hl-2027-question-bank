@@ -1,0 +1,28 @@
+                                                      –   12 –               M21/4/COMSC/HP1/ENG/TZ0/XX/M
+
+
+
+(c)    Award [4 max]
+
+       Example 1:
+
+       Calculate the index of the middle point in the array SURNAME: (first + last)/2;
+       Compare surname found with the one stored at middle point;
+       If greater than the value at the middle point, search the upper half of the array (right side) by
+       calling the binary search method again with a new first index (first = middle + 1);
+       If smaller than the value at the middle point, sea          rch the lower half of the array (left side) by
+       calling the binary search method with a new last (last = middle               -1);
+       if found algorithm terminates;
+
+       Example 2:
+
+       Find the centre point of the array SURNAME[ ];
+       Compare surname to be found with the current name in SURNAME[ ];
+       If correct surname found => STOP;
+       Else if surname to be found is greater than the current name in SURNAME[ ]
+       eliminate lower half of array from search and repeat algorithm;
+       Else if surname to be found is less than the name in S             URNAME[ ] eliminate upper half
+       of array from search and repeat algorithm;
+
+       Note: Allow a mark for provision for name not found             ;
+                                                                                                                        [4]

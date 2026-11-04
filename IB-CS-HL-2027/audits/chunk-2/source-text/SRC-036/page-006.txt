@@ -1,0 +1,30 @@
+                                                              –  6 –                 N20/4/COMSC/HP2/ENG/TZ0/XX/M
+
+
+2.   (a)      Award [1 max].
+              A logical unit of work that is executed in full or not at all;
+              A transaction is a single logical operation that comprises of a sequence of database
+              operations;
+              A transation satisfies the ACID (Atomicity, Consistency, Isolation, Durability) properties;
+
+       (b)    Award [2 max].
+              The database would store details of concerts, tickets sold, customers;
+              An information system would access the database to present data it in a way that aids
+              informs managers / aids decision making (eg charts of ticket sales);
+
+              Accept any other reasonable example.
+
+       (c)    Award [3 max].
+              Durability ensures that transactions are saved permanently and do not accidentally
+              disappear or get erased;
+              Billetmania does not need to worry the transaction being lost even in the event of power loss,
+              crashes, or errors;
+              A seat in a theatre is guaranteed even if the database crashes;
+
+       (d)    Award [4 max].
+              Concurrency allows multiple users try to book tickets at the same time / complete a
+              transaction at the same time;
+              Concurrency prevents access by more than one user to the same row/record;
+              Concurrency uses row locking;
+              Select seats are locked for a short period of time to ensure that they aren’t double
+              booked/overwritten;

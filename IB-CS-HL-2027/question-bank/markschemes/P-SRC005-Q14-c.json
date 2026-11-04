@@ -1,0 +1,60 @@
+{
+  "question_id": "P-SRC005-Q14-c",
+  "unofficial": true,
+  "marks": 10,
+  "solution": "def proper_sum(n):\n    total=0\n    for factor in range(1,n):\n        if n % factor == 0:\n            total += factor\n    return total\n\ndef classify_grid(grid):\n    low, equal, high=[],[],[]\n    for row in grid:\n        for n in row:\n            summed=proper_sum(n)\n            if summed < n:\n                low.append(n)\n            elif summed == n:\n                equal.append(n)\n            else:\n                high.append(n)\n    return low,equal,high",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes three distinct empty output lists."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses each input row."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses every value in the row."
+    },
+    {
+      "marks": 1,
+      "criterion": "Calls proper_sum on that value."
+    },
+    {
+      "marks": 1,
+      "criterion": "Uses comparison with the original value, not an index."
+    },
+    {
+      "marks": 1,
+      "criterion": "Appends to low if summed<n."
+    },
+    {
+      "marks": 1,
+      "criterion": "Appends to equal if summed==n."
+    },
+    {
+      "marks": 1,
+      "criterion": "Appends to high if summed>n."
+    },
+    {
+      "marks": 1,
+      "criterion": "Preserves row-major order and duplicates, with each value assigned exactly once."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns the three lists in the required order after traversal."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "Executable checks saved under checks/ where applicable."
+  },
+  "code": "def proper_sum(n):\n    total=0\n    for factor in range(1,n):\n        if n % factor == 0:\n            total += factor\n    return total\n\ndef classify_grid(grid):\n    low,equal,high=[],[],[]\n    for row in grid:\n        for n in row:\n            summed=proper_sum(n)\n            if summed < n:\n                low.append(n)\n            elif summed == n:\n                equal.append(n)\n            else:\n                high.append(n)\n    return low,equal,high",
+  "test_code": "assert classify_grid([[1,6,12],[9,28,12]])==([1,9],[6,28],[12,12])\nassert classify_grid([])==([],[],[])",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

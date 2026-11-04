@@ -1,0 +1,36 @@
+                                                   –   25 –               N20/4/COMSC/HP2/ENG/TZ0/XX/M
+
+
+(d)   (i)    Award [1] for returning admin fee if <=5 hours;
+             Award [1] for returning 0 if >5 hours;
+
+             public double pay(int hours) {
+                    if (hours <= 5) {
+                           return ADMIN_FEE;
+                    } else return 0;
+             }
+                                                                                                                   [2]
+
+
+      (ii)   Award [2 max].
+             Award [1] for for super.pay(hours);
+             Award [1] for returning result of correct formula (ie. adding on hourlyFee*hours);
+
+             Example:
+             public double pay(int hours) {
+                    return super.pay(hours)+hourlyFee*hours;
+             }
+
+                                                                                                                   [2]
+
+(e)   Award [2 max]
+      Cars and Motorbikes are also Vehicles as they extend the Vehicle class / Vehicle is the
+      superclass and Car/Motorbike are subclasses;
+      The subclasses can be cast as/considered to be/referred to as Vehicle which is its
+      superclass;
+      As Cars and Motorbikes inherit from Vehicles they are also Vehicles and can therefore be
+      stored in an array of type Vehicle;
+      Arrays must be declared as 1 type, and the state and behaviour of Vehicle is what both Car
+      and Motorbike have in common. Therefore they can be referenced as Vehicles and stored in
+      an array of Vehicles, even though they are subclasses;
+                                                                                                                   [2]

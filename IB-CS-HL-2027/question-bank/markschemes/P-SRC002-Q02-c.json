@@ -1,0 +1,39 @@
+{
+  "question_id": "P-SRC002-Q02-c",
+  "unofficial": true,
+  "marks": 5,
+  "solution": "One solution:\nSELECT c.ClientName, c.ContactNumber\nFROM Client AS c JOIN Job AS j ON c.ClientID=j.ClientID\nWHERE j.LeadName='Mira Sen' AND j.Priority='High';",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Selects both required client fields."
+    },
+    {
+      "marks": 1,
+      "criterion": "Uses Client and Job."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct join on ClientID."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct lead-name filter."
+    },
+    {
+      "marks": 1,
+      "criterion": "High-priority filter combined with AND."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed SQLite query with matching and nonmatching jobs.",
+    "source_comparison": [],
+    "test_code": "import sqlite3\nc=sqlite3.connect(':memory:')\nc.executescript(\"CREATE TABLE Client(ClientID,ClientName,ContactNumber);CREATE TABLE Job(JobID,ClientID,LeadName,Priority);INSERT INTO Client VALUES(1,'Atlas','001'),(2,'Birch','002');INSERT INTO Job VALUES(1,1,'Mira Sen','High'),(2,2,'Mira Sen','Low');\")\nassert c.execute(\"SELECT c.ClientName,c.ContactNumber FROM Client c JOIN Job j ON c.ClientID=j.ClientID WHERE j.LeadName='Mira Sen' AND j.Priority='High'\").fetchall()==[('Atlas','001')]",
+    "result_file": ""
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

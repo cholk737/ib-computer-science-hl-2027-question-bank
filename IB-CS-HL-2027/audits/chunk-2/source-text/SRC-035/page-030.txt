@@ -1,0 +1,43 @@
+                                    –   30 –           M23/4/COMSC/HP2/ENG/TZ0/XX/M
+
+
+
+Example answer 3
+public void houseSort()                   // basic selection sort 1
+{
+  House swapHouse;
+  int smallest;
+  for (int i=0; i< allHouses.length-1; i++)
+  {
+    smallest = i;
+    for (int j=i+1; j< allHouses.length; j++)     // allow j =i
+    {
+       if (allHouses[j].getPrice()<allHouses[smallest].getPrice())
+       {
+         smallest = j;
+       }
+    }
+       swapHouse = allHouses[smallest];
+       allHouses[smallest] = allHouses[i];
+       allHouses[i] = swapHouse;
+  }
+}
+
+
+ Example answer 4
+ public void houseSort()          // basic selection sort 2
+ {
+     House swapHouse;
+     for (int i=0; i< allHouses.length-1; i++)
+       {
+      for (int j=i+1; j< allHouses.length; j++)     // allow j = i
+      {
+        if (allHouses[i].getPrice()>allHouses[j].getPrice())
+        {
+           swapHouse = allHouses[i];
+           allHouses[i] = allHouses[j];
+           allHouses[j] = swapHouse;
+        }
+      }
+   }
+ }

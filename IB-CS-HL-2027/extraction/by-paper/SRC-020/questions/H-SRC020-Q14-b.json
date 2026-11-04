@@ -1,0 +1,85 @@
+{
+  "source_question_id": "H-SRC020-Q14-b",
+  "source_id": "SRC-020",
+  "source_filename": "Computer_science_paper_1__TZ2_HL.pdf",
+  "year": "2023",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "TZ2",
+  "option": "",
+  "question": 14,
+  "subquestion": "b",
+  "source_pdf_pages": [
+    8
+  ],
+  "source_printed_pages": [
+    "7"
+  ],
+  "original_marks": 4,
+  "command_term": "Construct",
+  "original_text": "Construct an algorithm in pseudocode for the sub-program DuplicateNum(DICEDIAL,R).",
+  "parent_context": "– 7 – 2223 – 7011\n14. A program is developed to simulate the roll of dice in a game.\nThree dice are thrown, with faces that have numbers from 1 to 6.\nThe dice are thrown seven times, and the data are stored in a two-dimensional array called \nDICEDIAL (see Figure 2).\nFigure 2: The example data stored in the DICEDIAL array\n[0] [1] [2]\n[0] 4 2 2\n[1] 4 4 4\n[2] 5 2 3\n[3] 6 5 5\n[4] 5 5 6\n[5] 1 1 4\n[6] 3 2 1\n(a) Construct an algorithm in pseudocode to calculate the sum of all values stored in the \nDICEDIAL array. [3]\nThe sub-program DuplicateNum(DICEDIAL,R) checks whether there are repeated \nnumbers in row R. If the numbers are not repeated, it returns 0, otherwise it returns the \nrepeated number.\nThe DuplicateNum() sub-program will produce the following from the values used in Figure 2:\nDuplicateNum(DICEDIAL,0) returns 2\nDuplicateNum (DICEDIAL,1) returns 4\nDuplicateNum(DICEDIAL,2) returns 0\n(b) Construct an algorithm in pseudocode for the sub-program DuplicateNum(DICEDIAL,R). [4]\nThe sub-program highestRT(DICEDIAL) accepts the DICEDIAL array and outputs the \nhighest row total and the indexes of all the rows with that total.\nFrom the example data given in Figure 2, highestRT(DICEDIAL) would output that the \nhighest row total is 16, and it occurs in the rows with indexes 3 and 4.\n(c) Construct an algorithm in pseudocode for the sub-program highestRT(DICEDIAL). [8]\n ",
+  "assets": [
+    {
+      "kind": "source_table",
+      "description": "Original7x3dice data, all values read",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-020/renders/page-8.png",
+      "source_pdf_page": 8,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Construct an algorithm in pseudocode for the sub-program DuplicateNum(DICEDIAL,R).",
+    "Construct repeated_value(readings,r) in Python"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-021",
+    "filename": "Computer_science_paper_1__TZ2_HL_markscheme.pdf",
+    "pdf_pages": [
+      21,
+      22,
+      23
+    ],
+    "question_reference": "Q14 b",
+    "marking_summary": "One solution:\ndef repeated_value(readings, r):\n    a, b, c = readings[r]\n    if a == b or a == c:\n        return a\n    if b == c:\n        return b\n    return 0",
+    "source_issues": [],
+    "source_marking_evidence": "– 21 – M23/4/COMSC/HP1/ENG/TZ2/XX/M \n(b) Award [4 max]\nExample 1 (if-else statement):\nAward [1] for initializing VAL to 0 and return VAL / return 0 (in case no duplicates)\nAward [3 max] for determining a correct value (1 mark for each correct condition and change\nof the value of VAL if needed)\nNote: Award marks for determining a correct return value in each of possible cases: three\ndifferent values in row R- no duplicates, any two numbers/values in row R are the same and\nall three values in row R are the same.\nAward [1] for correct use of row index and column index in the DICEDIAL array\nNote: the method heading may not appear in a candidate’s response.\nDuplicateNum (DICEDIAL, R)\n VAL=0 \n if DICEDIAL[R][0] = DICEDIAL[R][1] \n then \n VAL= DICEDIAL[R][0] // or VAL= DICEDIAL[R][1] \n else \n  if DICEDIAL[R][0] = DICEDIAL[R][2] \n  then VAL= DICEDIAL[R][0] \n  else \n if DICEDIAL[R][1] = DICEDIAL[R][2] \n  then VAL= DICEDIAL[R][1] \n  end if \n  end if \n  end if \nreturn VAL \nend DuplicateNum \n– 22 – M23/4/COMSC/HP1/ENG/TZ2/XX/M \nExample 2 (several if statements- inefficient, but it outputs a correct value): \nAward [1] for each correct if statement, x4 \n Award [1] for correct use of row index and column index in the DICEDIAL array \nif //three different numbers \n  DICEDIAL[R][0]!=DICEDIAL[R][1] \n  and DICEDIAL[R][0]!=DICEDIAL[R][2] \n  and DICEDIAL[R][1]!=DICEDIAL[R][2] \n  then \n RESULT=0 \nend if \nif DICEDIAL[R][0]=DICEDIAL[R][1] and DICEDIAL[R][0]=DICEDIAL[R][2] \n  then //three same numbers \n RESULT = DICEDIAL[R][0] \nend if \n//any two same \nif DICEDIAL[R][0]=DICEDIAL[R][1] or DICEDIAL[R][0]=DICEDIAL[R][2] \n  then \n RESULT = DICEDIAL[R][0] \nend if \nif DICEDIAL[R][1]=DICEDIAL[R][2] \n  then \n RESULT = DICEDIAL[R][1] \nend if \nreturn RESULT \nNote: Accept answers written in Java/ Python. The following example answer is written in \nJava.   \npublic int DuplicateNum (int[][] DiceDial, int row) \n{ \nif(DiceDial[row][0] == DiceDial[row][1]  || DiceDial[row][0] == \nDiceDial[row][2]) \n  { \n  return DiceDial[row][0]; \n  }  \n else if(DiceDial[row][1] == DiceDial[row][2]) \n { \n  return DiceDial[row][1]; \n } \n  else return 0; \n} \n– 23 – M23/4/COMSC/HP1/ENG/TZ2/XX/M \nExample 3 (single loop): \nAward [1] for initializing VAL to 0 and return VAL  \nAward [1] for correct loop \nAward [1] for correct condition and change of VAL \nAward [1] for if statement after the loop \nAward [1] for correct use of row index and column index in the DICEDIAL array \nDuplicateNum (DICEDIAL, R) \nVAL=0 \nloop K from 0 to 1 \n if (DICEDIAL[R][K]== DICEDIAL[R][K+1]) \n then \n  VAL= DICEDIAL[R][K]// or DICEDIAL[R][K+1] \n  end if \nend loop // determines VAL \n  //comparing only DICEDIAL[R][0] with DICEDIAL[R][1] \n  // and DICEDIAL[R][1] with DICEDIAL[R][2] \nif (DICEDIAL[R][0] == DICEDIAL[R][2]) \n then \n  VAL= DICEDIAL[R][0] //or DICEDIAL[R][2] \nend if \nreturn VAL \nend DuplicateNum \n  Example 4 (nested loops): \n Award [1] for initializing VAL to 0 and return VAL  \n  Award [1] for correct outer loop \n  Award [1] for correct inner loop \n  Award [1] for correct condition and change of VAL \n  Award [1] for correct use of indexes in the DICEDIAL array \n VAL =0 \n  loop K from 0 to 1 \n  loop J from K + 1 to 2 \n if DICEDIAL[R][K] == DICEDIAL[R][J] \n  then VAL = DICEDIAL[R][K] \n  end if \n end loop \n end loop  \n return VAL "
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B2.2.2",
+      "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+      "rationale": "Construct repeated_value(readings,r) in Python assesses Construct programs that apply arrays and Lists.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B2.3.2",
+      "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+      "rationale": "Construct repeated_value(readings,r) in Python assesses Construct programs utilizing appropriate selection structures.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "No visual required by this leaf.",
+    "technical": "Exhaustively checked all216 possible triples against independent frequency criterion."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC020-Q14-b"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

@@ -1,0 +1,41 @@
+{
+  "question_id": "P-SRC009-Q14-b",
+  "unofficial": true,
+  "marks": 5,
+  "solution": "Set current=head. While current is not None, compare its code with the target; return/report found on equality, otherwise follow current.next. If current becomes None, report absent.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Temporary pointer starts at head."
+    },
+    {
+      "marks": 1,
+      "criterion": "Loop while node exists."
+    },
+    {
+      "marks": 1,
+      "criterion": "Compare node data with target."
+    },
+    {
+      "marks": 1,
+      "criterion": "Stop correctly on match."
+    },
+    {
+      "marks": 1,
+      "criterion": "Advance and report failure at end."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      15
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

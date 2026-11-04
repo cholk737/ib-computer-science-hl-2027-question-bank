@@ -1,0 +1,65 @@
+{
+  "source_question_id": "H-SRC006-Q12-e",
+  "source_id": "SRC-006",
+  "source_filename": "Computer_science_paper_1__HL (3).pdf",
+  "year": "2021",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "TZ0",
+  "option": "",
+  "question": 12,
+  "subquestion": "e",
+  "source_pdf_pages": [
+    6
+  ],
+  "source_printed_pages": [
+    "5"
+  ],
+  "original_marks": 2,
+  "command_term": "Identify",
+  "original_text": "Identify two applications of a queue data structure.",
+  "parent_context": "– 5 –\nN21/4/COMSC/HP1/ENG/TZ0/XX\n8821 – 7011\nTurn over\n11. A rail transport company uses a global positioning system (GPS) to determine a train’s position.\n(a) Explain how GPS works. [4]\nThe GPS data is used to provide real-time arrival data on video displays in train stations.\n(b) (i)  State one data item concerning the arrival of a train that may be provided on the \nvideo display. [1]\n(ii) Outline how sensors can be used in combination with GPS to provide more \naccurate arrival data. [2]\nThe GPS data is made publicly available so that software developers can use it to build apps.\nThe mobile application ATrainAway uses the real-time train GPS data as well as the GPS \ndata from the user’s smartphone.\n(c) Outline two pieces of information that the ATrainAway application could provide to \nthe user. [4]\n(d) Discuss the advantages and disadvantages of using GPS in transportation systems. [4]\n12. Consider the following circular linked list:\n20 5 10head\nwhere head is an external pointer that points to the first node in the circular linked list.\nThree operations are performed on this circular linked list in the following order:\n1 A node containing the number 30 is inserted at the beginning of the circular linked list.\n2 The last node is deleted from the circular linked list.\n3 The first node is deleted from the beginning of the circular linked list.\n(a) Sketch a diagram showing the resulting circular linked list. [3]\n(b) Outline how the last node of the circular linked list is identified. [2]\n(c) Describe the steps required to calculate the sum of all numbers held in this circular \nlinked list. [4]\nArrays and linked lists are used to store linear data.\n(d) Compare the use of arrays and linked lists. [4]\nA linked list can be used to implement a data structure queue.\n(e) Identify two applications of a queue data structure. [2]",
+  "assets": [],
+  "assessed_concepts": [
+    "Original source task: Identify two applications of a queue data structure.",
+    "Identify two computing tasks that can appropriately use a FIFO queue"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-012",
+    "filename": "Computer_science_paper_1__HL_markscheme (3).pdf",
+    "pdf_pages": [
+      14
+    ],
+    "question_reference": "Q12 e",
+    "marking_summary": "A printer job queue and a first-come-first-served service-request queue.",
+    "source_issues": [],
+    "source_marking_evidence": "– 14 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \n(e) Award [2 max]\nPrint queues (a number of print jobs on a queue instead of waiting for each one to finish \nbefore specifying the next one); \nQueue is used for synchronization when data is transferred asynchronously between two \nprocesses (for example IO Buffers, file IO); \nQueues are used in CPU scheduling algorithms; \nHandling of interrupts in real-time systems (the interrupts are handled in the same order as \nthey arrive, first come first served); \nComputer modelling of physical queues (supermarket checkouts) (call centre phone systems \nuse queues to hold people calling them in an order, until a service representative is free); "
+  },
+  "relevance_status": "A",
+  "mappings": [
+    {
+      "syllabus_code": "B2.2.4",
+      "scope_evidence": "• Must include fundamental operations such as enqueue, dequeue, front and isEmpty\n• How queue operations impact both performance and memory usage\n• An appropriate queue for a specific problem",
+      "rationale": "Identify two computing tasks that can appropriately use a FIFO queue assesses Explain the concept of a queue as a “first in, first out” (FIFO) data structure.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "No visual required by this leaf.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC006-Q12-e"
+  ]
+}

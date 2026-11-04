@@ -1,0 +1,52 @@
+N20/4/COMSC/HP2/ENG/TZ0/XX
+– 16 – 8820 – 7012
+(Option D continued)
+14. (a) Construct the method that will add a vehicle to the first
+addVehicle(Vehicle v)
+empty position of the array and return the position (ie the index of the
+vehicles[]
+array) at which it has added the car. If it is not possible to fit the vehicle into the array
+then it should return . [6]
+-1
+(b) Outline two differences between inheritance and aggregation. [4]
+Two further classes, and , are created.
+Car Motorbike
+public class Car extends Vehicle{
+=
+public static double hourlyFee 3.5;
+public double pay(int hours) {
+//code to calculate and return the complete price
+}
+}
+public class Motorbike extends Vehicle{
+=
+public static double hourlyFee 2.5;
+public double pay(int hours) {
+//code to calculate and return the complete price
+}
+}
+(c) Construct a UML diagram that shows the relationships between the ,
+ParkingArea
+, and classes. There is no need to include the attributes or
+Vehicle Motorbike Car
+methods of each class. [4]
+The method in the class returns the administration fee (which is only part of the
+pay Vehicle
+total price), while the method of the class calculates the total price for a car staying
+pay Car
+in the parking area.
+(d) (i) Construct the method in the class that returns the admin fee
+pay Vehicle
+stored in the variable if the vehicle has stayed for five hours or less;
+AdminFee
+otherwise, it returns 0. [2]
+(ii) Construct the method in the class, where it uses the method
+pay Car vehicle pay
+but adds the charge for the amount of time spent in the parking area. [2]
+The array in the class is used to store instances of the or
+vehicles[] ParkingArea Car
+class.
+Motorbike
+(e) Outline why is a valid type for this array. [2]
+Vehicle
+(Option D continues on the following page)

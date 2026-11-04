@@ -1,0 +1,45 @@
+                                                       –   13 –                                       8823 – 7014M
+
+
+12.   (a)    Award [1 max].
+             Labar, Tanya or Tanya Labar;
+
+      (b)    Award [3 max].
+
+             Award [1] for initializing all the variables used
+             Award [1] for a correct loop.
+             Award [1] for calculating sum using correct array index.
+             Award [1] for calculating the average.
+
+             Example 1:
+
+             SUM=0
+             K=0
+             loop while K <= 9   //Accept SCORES.length()                    -1
+                  SUM = SUM + SCORES[K]
+                  K = K + 1
+             end loop
+             AVERAGE = SUM / 10  //Accept use of SCORES.length() or a counter variable
+
+             Example 2:
+
+             S=0
+             loop K from 0 to 9
+                  S = S + SCORES[K]
+             end loop
+             S = S / 10
+
+
+      (c)    Award [4 max].
+
+             Award [1] for initializing and increasing counter if needed
+             Award [1] for a correct loop
+             Award [1] for a correct condition in if statement
+             Award [1] for output
+
+             COUNT=0
+             loop K from 0 to 9
+                  if SCORES[K]>AVERAGE then
+                        COUNT=COUNT+1
+             end loop
+             output COUNT

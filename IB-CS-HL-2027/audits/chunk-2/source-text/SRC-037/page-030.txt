@@ -1,0 +1,55 @@
+                                                      –   30 –                                     8823 – 7012M
+
+
+16.   (a)   Award [2 max]
+            A method with the same name but different parameter types is created;
+            Depending on the arguments/parameters, one of the methods is executed;
+
+            A method with the same name and parameters is created / inherited in the subclass;
+            and used instead of the method in the superclass;
+
+      (b)   Award [6 max]
+            Award [1] mark for attempt to find the index of Monster M
+            Award [1] mark for correct loop that finds the index of Monster M (using == or .equals())
+            Award [1] mark for attempting a loop to shift monsters
+            Award [1] mark for correctly shifting monsters from the index onwards (either until the end or
+            until the first null value)
+            Award [1] mark for correctly adding the extra null value to the array (at the end)
+            Award [1] for decrementing monsterCount
+
+            Example 1:
+
+            public void removeMonster(Monster M)
+            {
+                   for (int i = 0; i < monsters.length; i++)
+                   {
+                        if (monsters[i]==M)
+                        {
+                              for (int move = i; move < monsterCount – 1; move++)
+                              {
+                                    monsters[move] = monsters[move + 1];
+                              }
+                              monsters[monsterCount – 1] = null;
+                              monsterCount = monsterCount – 1;
+                              break;
+                        }
+                   }
+            }
+
+            Example 2:
+
+            public void removeMonster(Monster M)
+             {
+                   // find the monster
+                   boolean found = false;
+                   int i = 0;
+                   while (!found && i<monsterCount)
+                   {
+                        found = (monsters[i] == M);
+                        i = i + 1;
+                   }
+                   // close up the rest of the array
+                   for (int j=i; j<10; j++)
+                        monsters[j-1] = monsters[j];
+                   monsterCount = monsterCount - 1;
+             }

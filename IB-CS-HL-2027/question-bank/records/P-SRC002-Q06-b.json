@@ -1,0 +1,50 @@
+{
+  "question_id": "P-SRC002-Q06-b",
+  "source_question_ids": [
+    "H-SRC002-Q06-b"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct scale_scores(scores) in Python. For each score s,calculate (s-20)/(80-20)*(95-30)+30,round to the nearest integer using Python round,and store the result in a new list in the same order.",
+  "syllabus_codes": [
+    "B2.2.2",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 3,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "One solution:\ndef scale_scores(scores):\n    result = []\n    for score in scores:\n        result.append(round((score-20)/(80-20)*(95-30)+30))\n    return result",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Loops over every input score."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct supplied calculation and rounding."
+    },
+    {
+      "marks": 1,
+      "criterion": "Builds/returns corresponding output list in order."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Endpoints and midpoint executed; Python round tie convention explicitly specified.",
+    "source_comparison": [],
+    "test_code": "def scale_scores(scores):\n    result = []\n    for score in scores:\n        result.append(round((score-20)/(80-20)*(95-30)+30))\n    return result\nassert scale_scores([20,50,80])==[30,62,95]",
+    "result_file": ""
+  },
+  "code": "def scale_scores(scores):\n    result = []\n    for score in scores:\n        result.append(round((score-20)/(80-20)*(95-30)+30))\n    return result",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC002-Q06-b.json",
+  "question_path": "question-bank/questions/P-SRC002-Q06-b.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC002-Q06-b.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

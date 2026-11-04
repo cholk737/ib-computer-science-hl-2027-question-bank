@@ -1,0 +1,49 @@
+{
+  "question_id": "P-SRC002-Q16-d",
+  "source_question_ids": [
+    "H-SRC002-Q16-d"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Explain why depending on a small abstract interface rather than the internal fields of another class can improve maintainability.",
+  "syllabus_codes": [
+    "B3.2.3"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 3,
+  "command_term": "Explain",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "Client code uses a stable set of operations. The other class can change its internal representation without forcing changes throughout clients,provided the interface remains consistent. This localizes modifications and reduces error risk.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Stable abstract interface."
+    },
+    {
+      "marks": 1,
+      "criterion": "Internal representation can change independently."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains reduced ripple changes/testing risk."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC002-Q16-d.json",
+  "question_path": "question-bank/questions/P-SRC002-Q16-d.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC002-Q16-d.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

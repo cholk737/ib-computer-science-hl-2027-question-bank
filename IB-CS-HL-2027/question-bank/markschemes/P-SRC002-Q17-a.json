@@ -1,0 +1,43 @@
+{
+  "question_id": "P-SRC002-Q17-a",
+  "unofficial": true,
+  "marks": 6,
+  "solution": "One solution:\ndef change_preference(head, old, new):\n    changed = 0\n    current = head\n    while current is not None:\n        if current.customer.preferred_shop == old:\n            current.customer.preferred_shop = new\n            changed += 1\n        current = current.next\n    return changed",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes change count andhead traversal."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct while/end test."
+    },
+    {
+      "marks": 1,
+      "criterion": "Compares customer preference with old."
+    },
+    {
+      "marks": 1,
+      "criterion": "Updates all matching preferences."
+    },
+    {
+      "marks": 1,
+      "criterion": "Increments count only on match andadvances references."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns count withcorrectemptycase."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed multiple matches,nonmatch andemptylist.",
+    "source_comparison": [],
+    "test_code": "def change_preference(head, old, new):\n    changed = 0\n    current = head\n    while current is not None:\n        if current.customer.preferred_shop == old:\n            current.customer.preferred_shop = new\n            changed += 1\n        current = current.next\n    return changed\nfrom types import SimpleNamespace as N\nc1=N(preferred_shop=\"A\");c2=N(preferred_shop=\"B\");c3=N(preferred_shop=\"A\")\nh=N(customer=c1,next=N(customer=c2,next=N(customer=c3,next=None)))\nassert change_preference(h,\"A\",\"C\")==2\nassert [c1.preferred_shop,c2.preferred_shop,c3.preferred_shop]==[\"C\",\"B\",\"C\"]\nassert change_preference(None,\"A\",\"C\")==0",
+    "result_file": ""
+  },
+  "code": "def change_preference(head, old, new):\n    changed = 0\n    current = head\n    while current is not None:\n        if current.customer.preferred_shop == old:\n            current.customer.preferred_shop = new\n            changed += 1\n        current = current.next\n    return changed",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

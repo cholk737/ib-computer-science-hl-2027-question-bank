@@ -1,0 +1,48 @@
+{
+  "question_id": "P-SRC009-Q13-a",
+  "source_question_ids": [
+    "H-SRC009-Q13-a"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Describe how a LIFO stack supports returning to interrupted work when nested interrupt handling has completed.",
+  "syllabus_codes": [
+    "B2.2.3",
+    "A1.3.4"
+  ],
+  "theme": "B;A",
+  "level": "SL/HL common",
+  "marks": 2,
+  "command_term": "Describe",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "The saved return information/state for each interruption is pushed. Popping the most recently saved state first resumes the most recently interrupted work in the reverse order of suspension.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Save return information/state by push."
+    },
+    {
+      "marks": 1,
+      "criterion": "Pop latest state first to resume in reverse order."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      12
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC009-Q13-a.json",
+  "question_path": "question-bank/questions/P-SRC009-Q13-a.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC009-Q13-a.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

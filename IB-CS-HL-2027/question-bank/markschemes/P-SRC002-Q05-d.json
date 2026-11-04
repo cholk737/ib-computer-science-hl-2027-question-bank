@@ -1,0 +1,31 @@
+{
+  "question_id": "P-SRC002-Q05-d",
+  "unofficial": true,
+  "marks": 3,
+  "solution": "One solution:\ndef first_space_or_false(name):\n    try:\n        return name.index(' ')\n    except ValueError:\n        return False",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Attempts index lookup in try."
+    },
+    {
+      "marks": 1,
+      "criterion": "Catches ValueError."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns index on success and False on failure."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Both present and absent delimiters executed.",
+    "source_comparison": [],
+    "test_code": "def first_space_or_false(name):\n    try:\n        return name.index(' ')\n    except ValueError:\n        return False\nassert first_space_or_false(\"Ari Moss\")==3\nassert first_space_or_false(\"Isabella\") is False",
+    "result_file": ""
+  },
+  "code": "def first_space_or_false(name):\n    try:\n        return name.index(' ')\n    except ValueError:\n        return False",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

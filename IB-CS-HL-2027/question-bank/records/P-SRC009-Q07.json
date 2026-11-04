@@ -1,0 +1,55 @@
+{
+  "question_id": "P-SRC009-Q07",
+  "source_question_ids": [
+    "H-SRC009-Q07"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Trace the following Python function for gcd_step(30,18), showing each recursive call and the final return.\ndef gcd_step(a, b):\n    if b == 0:\n        return a\n    return gcd_step(b, a % b)",
+  "syllabus_codes": [
+    "B2.4.5"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 4,
+  "command_term": "Trace",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "gcd_step(30,18) → gcd_step(18,12) → gcd_step(12,6) → gcd_step(6,0) →6.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "(18,12)."
+    },
+    {
+      "marks": 1,
+      "criterion": "(12,6)."
+    },
+    {
+      "marks": 1,
+      "criterion": "(6,0) base call."
+    },
+    {
+      "marks": 1,
+      "criterion": "Final6 returned through calls."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed gcd_step(30,18)==6 and basecase gcd_step(9,0)==9.",
+    "source_comparison": [
+      6
+    ],
+    "test_code": "def gcd_step(a, b):\n    if b == 0:\n        return a\n    return gcd_step(b, a % b)\nassert gcd_step(30,18)==6\nassert gcd_step(9,0)==9",
+    "result_file": ""
+  },
+  "code": "def gcd_step(a, b):\n    if b == 0:\n        return a\n    return gcd_step(b, a % b)",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC009-Q07.json",
+  "question_path": "question-bank/questions/P-SRC009-Q07.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC009-Q07.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

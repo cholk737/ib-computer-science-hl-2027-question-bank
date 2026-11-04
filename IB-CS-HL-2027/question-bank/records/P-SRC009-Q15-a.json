@@ -1,0 +1,56 @@
+{
+  "question_id": "P-SRC009-Q15-a",
+  "source_question_ids": [
+    "H-SRC009-Q15-a"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct a Python function frequencies(grid) that returns a10-element count list for all integers in a nonempty nested list grid. Every value is from0 to9. To assess traversal, do not use list.count or collections.Counter.",
+  "syllabus_codes": [
+    "B2.2.2",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 4,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "One solution:\ndef frequencies(grid):\n    counts = [0] * 10\n    for row in grid:\n        for value in row:\n            counts[value] += 1\n    return counts",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes ten zero counts."
+    },
+    {
+      "marks": 1,
+      "criterion": "Visits every row."
+    },
+    {
+      "marks": 1,
+      "criterion": "Visits every value in each row."
+    },
+    {
+      "marks": 1,
+      "criterion": "Increments counts[value] and returns final counts."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed repeated values, missing values and one-cell grid.",
+    "source_comparison": [
+      16
+    ],
+    "test_code": "def frequencies(grid):\n    counts = [0] * 10\n    for row in grid:\n        for value in row:\n            counts[value] += 1\n    return counts\nassert frequencies([[2,2,0],[9,0,2]])==[2,0,3,0,0,0,0,0,0,1]\nassert frequencies([[8]])[8]==1",
+    "result_file": ""
+  },
+  "code": "def frequencies(grid):\n    counts = [0] * 10\n    for row in grid:\n        for value in row:\n            counts[value] += 1\n    return counts",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC009-Q15-a.json",
+  "question_path": "question-bank/questions/P-SRC009-Q15-a.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC009-Q15-a.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

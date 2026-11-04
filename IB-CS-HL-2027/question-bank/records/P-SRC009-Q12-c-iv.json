@@ -1,0 +1,56 @@
+{
+  "question_id": "P-SRC009-Q12-c-iv",
+  "source_question_ids": [
+    "H-SRC009-Q12-c-iv"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Explain the roles of the three buses during a CPU memory-read operation.",
+  "syllabus_codes": [
+    "A1.1.1",
+    "A1.1.5"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 4,
+  "command_term": "Explain",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "The address bus specifies the required memory location. The control bus carries the read command and relevant timing/control signals. The data bus carries the requested word back to the CPU. Together these coordinate transfer between memory and CPU registers.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Address bus carries selected address."
+    },
+    {
+      "marks": 1,
+      "criterion": "Control bus carries read/timing signal."
+    },
+    {
+      "marks": 1,
+      "criterion": "Data bus carries word."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains coordinated transfer between CPU/registers and memory."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      11
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC009-Q12-c-iv.json",
+  "question_path": "question-bank/questions/P-SRC009-Q12-c-iv.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC009-Q12-c-iv.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

@@ -1,0 +1,33 @@
+                                     –   16 –                                 8825 – 6407M
+
+
+
+Example 2:
+
+PLTNT.resetNext()
+if not PLTNT.isEmpty()
+    then
+          X = PLTNT.getNext()
+          MINC = X
+          MAXC = X
+          C = 1  // counter
+          S = X  // sum
+          while PLTNT.hasNext()
+               X = PLTNT.getNext()
+               S = S + X
+               C = C + 1
+
+               if MAXC < X
+                     then MAXC = X
+               endif
+               if MINC > X
+                     then MINC = X
+               endif
+          end loop
+          A = S / C  //Accept S DIV C
+          output ('Maximum: ', MAXC)
+          output (('Minimum: ', MINC)
+          output ('AVERAGE: ',A)
+else
+    output('PLNT is empty')
+endif

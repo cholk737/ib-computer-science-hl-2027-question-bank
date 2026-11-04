@@ -1,0 +1,53 @@
+{
+  "question_id": "P-SRC002-Q15-d",
+  "source_question_ids": [
+    "H-SRC002-Q15-d"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A Reservation currently stores only customer_id. A reusable Customer class will now hold customer details independently of reservations. Outline two changes that let reservations refer to Customer objects.",
+  "syllabus_codes": [
+    "B3.2.4"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 4,
+  "command_term": "Outline",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "Add a customer reference attribute to Reservation and accept/store it during initialization. Update methods that need customer details to call that referenced object’s interface. Customers can exist independently and be referenced by several reservations,an aggregation relationship.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Reference attribute replaces/augments ID as specified."
+    },
+    {
+      "marks": 1,
+      "criterion": "Constructor accepts/stores Customer object."
+    },
+    {
+      "marks": 1,
+      "criterion": "Methods use the referenced object’s interface."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains independent lifetime/shared references or consistent updating of callers."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC002-Q15-d.json",
+  "question_path": "question-bank/questions/P-SRC002-Q15-d.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC002-Q15-d.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

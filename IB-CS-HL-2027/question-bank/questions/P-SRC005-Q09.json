@@ -1,0 +1,19 @@
+{
+  "question_id": "P-SRC005-Q09",
+  "source_question_ids": [
+    "H-SRC005-Q09"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Trace reveal([\"Oak\",\"Pine\",\"Elm\"], 2), showing the recursive calls and order of printed values.\n\ndef reveal(items, n):\n    if n > 0:\n        reveal(items, n-1)\n    print(items[2-n])",
+  "syllabus_codes": [
+    "B2.4.5"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 4,
+  "command_term": "Trace",
+  "difficulty": "medium",
+  "adaptation_rationale": "Non branching recursion and post-call output retained; Python and different list/index boundary replace old pseudocode.",
+  "assets": []
+}

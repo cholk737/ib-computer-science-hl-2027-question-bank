@@ -1,0 +1,53 @@
+{
+  "question_id": "P-SRC002-Q07-e",
+  "source_question_ids": [
+    "H-SRC002-Q07-e"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A chart is stored as an uncompressed raster image. Outline how its pixel dimensions and colour depth affect its storage requirement.",
+  "syllabus_codes": [
+    "A1.2.2"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 4,
+  "command_term": "Outline",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "More pixels require more encoded pixel values. More bits per pixel allow more colours but increase data per pixel; ignoring headers,size is width×height×bits_per_pixel bits.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "More pixels increases storage."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains values stored per pixel."
+    },
+    {
+      "marks": 1,
+      "criterion": "Greater bit depth increases per-pixel storage."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains colour/detail tradeoff or correct multiplicative relation."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC002-Q07-e.json",
+  "question_path": "question-bank/questions/P-SRC002-Q07-e.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC002-Q07-e.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

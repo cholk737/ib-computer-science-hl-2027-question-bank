@@ -1,0 +1,56 @@
+                                                      –   15 –             N21/4/COMSC/HP1/ENG/TZ0/XX/M
+
+
+13.    (a)  Award [1 max]
+            5.9;
+
+      (b)   Award [5 max]
+            Award [1] for correct outer/row loop
+            Award [1] for correct inner/column loop
+            Award [1] for use of a flag
+            Award [1] for checking whether all elements on and above the main diagonal are zero
+            Award [1] for checking all elements below the main diagonal (they all should be positive
+            numbers)
+            Award [1] for outputting the appropriate message
+
+            Example 1:
+
+            VALID=True
+            loop R from 0 to 9
+               loop C from 0 to 9
+                       if R>C and ROUTE_X_DISTANCES[R][C]<=0
+                              then VALID=False
+                        end if
+                        if R<=C and ROUTE_X_DISTANCES[R][C]!=0
+                              then VALID=False
+                        end if
+                   end loop
+            end loop
+            if VALID
+              then output('VALID')
+              else output('INVALID')
+            end if
+
+
+            Example 2:
+
+            FLAG=1
+            loop R from 1 to 9
+                   loop C from 0 to R-1
+                        if ROUTE_X_DISTANCES[R][C]<=0
+                              then FLAG=0
+                        end if
+                   end loop
+            end loop
+
+            loop R from 0 to 9
+                   loop C= from R to 9
+                        if ROUTE_X_DISTANCES[R][C]!=0
+                              then FLAG=0
+                        end if
+                   end loop
+            end loop
+            if FLAG ==1
+              then output('IT IS VALID')
+              else output('IT IS NOT VALID')
+            end if

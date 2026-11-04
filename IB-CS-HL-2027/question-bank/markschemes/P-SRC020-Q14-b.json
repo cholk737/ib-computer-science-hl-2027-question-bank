@@ -1,0 +1,39 @@
+{
+  "question_id": "P-SRC020-Q14-b",
+  "unofficial": true,
+  "marks": 4,
+  "solution": "One solution:\ndef repeated_value(readings, r):\n    a, b, c = readings[r]\n    if a == b or a == c:\n        return a\n    if b == c:\n        return b\n    return 0",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Uses correct row/threevalues."
+    },
+    {
+      "marks": 1,
+      "criterion": "Tests first value against both others."
+    },
+    {
+      "marks": 1,
+      "criterion": "Tests remainingpair."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns repeated value or0 correctly, includingall equal."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Exhaustively checked all216 possible triples against independent frequency criterion.",
+    "source_comparison": [
+      21,
+      22,
+      23
+    ],
+    "test_code": "def repeated_value(readings, r):\n    a, b, c = readings[r]\n    if a == b or a == c:\n        return a\n    if b == c:\n        return b\n    return 0\nfrom itertools import product\nfor t in product(range(1,7),repeat=3):\n expected=next((v for v in t if t.count(v)>1),0)\n assert repeated_value([list(t)],0)==expected",
+    "result_file": ""
+  },
+  "code": "def repeated_value(readings, r):\n    a, b, c = readings[r]\n    if a == b or a == c:\n        return a\n    if b == c:\n        return b\n    return 0",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

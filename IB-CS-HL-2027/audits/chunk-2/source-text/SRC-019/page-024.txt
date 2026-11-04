@@ -1,0 +1,40 @@
+                                            –   24 –             M23/4/COMSC/HP1/ENG/TZ1/XX/M
+
+
+  Example 2:
+  Award [2 max] for defining the ROWTOTALS array (1 mark for correct row loop (I) and 1
+  mark for calculating the sum of all elements in the Ith row of the DICEDIAL array)
+  Award [1] for initializing LOWEST
+  Award [3 max] for searching for the lowest (1 mark for the correct loop, 1 mark for comparing
+  the row sum with the lowest row sum so far and 1 mark for changing the value of LOWEST if
+  needed)
+  Award [1] for outputting the lowest row sum once
+  Award [3 max] marks outputting the numbers of rows with the lowest total (1 mark for a loop,
+  1 mark for comparing the row total with the lowest total, and 1 mark for outputting the
+  corresponding index of the ROWTOTALS array)
+
+
+  loop I from 0 to 6
+      S=0
+      loop K from 0 to 2
+            S=S+ DICEDIAL[I][K]
+      end loop
+      ROWTOTALS[I]=S
+   end loop
+          //ROWTOTALS[R] holds the sum of all
+          //numbers in row R of the DICEDIAL array
+    LOWEST = 19 //any number greater than 18 OR first row total
+   loop I from 0 to 6
+         if ROWTOTALS[I] < LOWEST
+                then
+                     LOWEST = ROWTOTALS[I]
+         end if
+   end loop     //searching for the LOWEST row total
+   output(‘the LOWEST row total:’, LOWEST)
+    output(‘the LOWEST row total occurs in the following rows:’)
+
+   loop I from 0 to 6
+          if ROWTOTALS[I] = LOWEST
+               then output(I)
+           end if
+   end loop

@@ -1,0 +1,49 @@
+                                                              –  28 –                  N20/4/COMSC/HP2/ENG/TZ0/XX/M
+
+
+16.    (a)    (i)     Award [1 max].
+                      Faster to access (ie. O1 instead of On);
+                      Arrays take less memory than lists (as they do not store pointers);
+                      Mirrors real life situation;
+                                                                                                                                  [1]
+
+              (ii)    Award [1 max].
+                      Static, therefore memory wasted when not being fully utilised;
+                      Inability to grow, should further spaces be added, ie. If Parking area grows;
+                                                                                                                                  [1]
+
+       (b)    Award [3 max].
+              The array would need to be searched using a linear search which is inefficient O(n) whereas
+              a binary search is much more efficient O(log n);
+              A linear search for a car in this parking area could require a maximum of 200 comparisons
+              (ie. it would look at the first row of every column) whereas a binary search would only require
+              8 (ie log 200 base 2);
+              A linear  search for a motorbike in this parking area would require a maximum of 400
+              comparisons (ie. it would need to look at both rows of               every column) whereas a binary
+              search would only require 7 (log 100 base 2);
+              In a binary search, each comparison would eliminate half of the remaining possible matches,
+              whereas in a linear search it only eliminates 1;
+               A binary search has the registration plate as its key and therefore it doesn’t require
+              accessing the field of the vehicle object for each comparison, whereas in a linear search,
+              each comparison would be slower because it would require getting the vehicle object’s
+              registration field using an accessor method;
+              A binary search is always faster than a linear search on a large data set. As the police may
+              be searching for many cars and in many parking areas, their searches will be on large set of
+              data;
+
+                                                                                                                                  [3]
+
+       (c)    Award [5 max].
+              Create a binary tree to store vehicle objects;
+              Loop around all of the elements in the 2 dimensional array (e.g. using inner and outer loop);
+              Skip empty locations;
+              Take the first vehicle found and add as the head of the binary tree;
+              Take all subsequent vehicles found and do the following;
+              Get the node’s vehicle registration;
+              Find the appropriate insertion point in the binary tree by navigating from the root and
+              comparing the registration to the key of the current node;
+              When a leaf node is reached compare the registration with the vehicle to be inserted and
+              insert it as the left or right child node, using its registration as the key;
+              Continue until the end of the vehicle array has been reached;
+
+                                                                                                                                  [5]

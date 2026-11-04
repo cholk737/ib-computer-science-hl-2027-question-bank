@@ -1,0 +1,40 @@
+{
+  "question_id": "P-SRC030-Q12-a",
+  "unofficial": true,
+  "marks": 5,
+  "solution": "alternating(0)=2.; alternating(1)=2-1=1.; alternating(2)=1+2=3.; alternating(3)=3-3=0.; alternating(4)=0+4=4.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "alternating(0)=2."
+    },
+    {
+      "marks": 1,
+      "criterion": "alternating(1)=2-1=1."
+    },
+    {
+      "marks": 1,
+      "criterion": "alternating(2)=1+2=3."
+    },
+    {
+      "marks": 1,
+      "criterion": "alternating(3)=3-3=0."
+    },
+    {
+      "marks": 1,
+      "criterion": "alternating(4)=0+4=4."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "Executable checks saved under checks/ where applicable."
+  },
+  "code": "def alternating(n):\n    if n == 0:\n        return 2\n    if n % 2 == 0:\n        return alternating(n-1) + n\n    return alternating(n-1) - n",
+  "test_code": "assert alternating(4)==4\nassert alternating(0)==2",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

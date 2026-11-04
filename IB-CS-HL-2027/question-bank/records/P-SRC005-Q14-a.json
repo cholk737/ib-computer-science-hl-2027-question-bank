@@ -1,0 +1,46 @@
+{
+  "question_id": "P-SRC005-Q14-a",
+  "source_question_ids": [
+    "H-SRC005-Q14-a"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "For positive integers a and b, construct a Python Boolean expression that is True exactly when a divides b with no remainder and a is smaller than b.",
+  "syllabus_codes": [
+    "B2.3.2"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 2,
+  "command_term": "Construct",
+  "difficulty": "low",
+  "adaptation_rationale": "Preserves arithmetic/relational conjunction reasoning using Python; positive domain removes divide-by-zero ambiguity.",
+  "solution": "b % a == 0 and a < b",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "b % a ==0."
+    },
+    {
+      "marks": 1,
+      "criterion": "Combined using and with a < b."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "No executable code required; manual technical check."
+  },
+  "code": "",
+  "test_code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC005-Q14-a.json",
+  "question_path": "question-bank/questions/P-SRC005-Q14-a.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC005-Q14-a.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

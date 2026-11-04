@@ -1,0 +1,102 @@
+{
+  "original_assessment_context": "TOWNS top→bottomCardiff,WashingtonDC,TheHague,Singapore,Geneva;afterreversalGenevaontop.",
+  "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+  "source_question_id": "H-SRC018-Q13-d",
+  "source_id": "SRC-018",
+  "source_filename": "Computer_science_paper_1__TZ1_HL.pdf",
+  "year": "2023",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "TZ1",
+  "option": "",
+  "question": "13",
+  "subquestion": "d",
+  "source_pdf_pages": [
+    7
+  ],
+  "source_printed_pages": [
+    "6"
+  ],
+  "original_marks": 5,
+  "command_term": "Construct",
+  "original_text": "[Source PDF page 7]\nisEmpty()\nThe stack holds several town names, and the name “Cardiff” is on the top of the\nTOWNS\nstack (see Figure 1a).\nTOWNS\nAn algorithm is needed that will reverse the contents of the stack. The name “Geneva”\nTOWNS\nshould be on top of the stack after reversing its contents (see Figure 1b).\nTOWNS\nFigure 1: Example data held on the stack before\nTOWNS\nand after execution of the requested algorithm\na. The content in the stack b. The content in the stack\nTOWNS TOWNS\nbefore it is reversed after it is reversed\nCardiff Geneva\nWashington DC Singapore\nThe Hague The Hague\nSingapore Washington DC\nGeneva Cardiff\n(d) Construct an algorithm that will reverse the stack using an empty queue.\nTOWNS\nYou may assume that the stack is inputted and a new empty queue named\nTOWNS\nis initialized.\nTEMP\nYou must use stack access methods and queue access methods in your response. [5]",
+  "parent_context": "TOWNS top→bottomCardiff,WashingtonDC,TheHague,Singapore,Geneva;afterreversalGenevaontop.",
+  "assets": [
+    {
+      "kind": "source_page",
+      "description": "Before/after stack reversal diagram",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-018-page-7.png",
+      "source_pdf_page": 7,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Construct: Construct an algorithm that will reverse the TOWNS stack using an empty queue. You may assume the TOWNS stack is inputted and newemptyqueueTEMP initialized. You must use stackaccessmethods and queueaccessmethods."
+  ],
+  "difficulty": "high",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-019",
+    "filename": "Computer_science_paper_1__TZ1_HL_markscheme.pdf",
+    "pdf_pages": [
+      18
+    ],
+    "question_reference": "13(d)",
+    "marking_summary": "Popintoqueueuntilstackempty;dequeue/pushuntilqueueempty;correctoperations cap5.",
+    "source_issues": []
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "mapping_target": "adapted_practice_only",
+      "syllabus_code": "B2.2.3",
+      "scope_evidence": "• Must include fundamental operations such as push, pop, peek and isEmpty\n• How stack operations impact both performance and memory usage\n• An appropriate stack for a specific problem",
+      "rationale": "Retains ADT-only transferalgorithm with explicit supportedoperationconstraint;usesPythonmethodcalls.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "mapping_target": "adapted_practice_only",
+      "syllabus_code": "B2.2.4",
+      "scope_evidence": "• Must include fundamental operations such as enqueue, dequeue, front and isEmpty\n• How queue operations impact both performance and memory usage\n• An appropriate queue for a specific problem",
+      "rationale": "Retains ADT-only transferalgorithm with explicit supportedoperationconstraint;usesPythonmethodcalls.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "mapping_target": "adapted_practice_only",
+      "syllabus_code": "B2.3.3",
+      "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+      "rationale": "Retains ADT-only transferalgorithm with explicit supportedoperationconstraint;usesPythonmethodcalls.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+    "marks": "Printed allocation transcribed.",
+    "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+    "official_answer_status": "See source markscheme record"
+  },
+  "original_text_manual_synopsis": "Construct an algorithm that will reverse the TOWNS stack using an empty queue. You may assume the TOWNS stack is inputted and newemptyqueueTEMP initialized. You must use stackaccessmethods and queueaccessmethods.",
+  "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+  "source_page_evidence": [
+    {
+      "pdf_page": 7,
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-018/page-007.txt"
+    }
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC018-Q13-d"
+  ]
+}

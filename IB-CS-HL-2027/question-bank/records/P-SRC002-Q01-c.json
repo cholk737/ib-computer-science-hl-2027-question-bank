@@ -1,0 +1,45 @@
+{
+  "question_id": "P-SRC002-Q01-c",
+  "source_question_ids": [
+    "H-SRC002-Q01-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Two clients read version7 of a database row. One commits a change, creating version8. Outline how comparing the saved version before the second update can prevent a lost update.",
+  "syllabus_codes": [
+    "A3.3.6"
+  ],
+  "theme": "A",
+  "level": "HL-only",
+  "marks": 2,
+  "command_term": "Outline",
+  "difficulty": "medium",
+  "adaptation_rationale": "Original timestamp ordering is narrowed to a supplied version-check mechanism illustrating transaction consistency/isolation; no particular timestamp protocol is required.",
+  "solution": "The database compares the second client’s saved version7 with current version8. It rejects or retries the stale update rather than overwriting the newer committed data.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Detects stale row/version difference."
+    },
+    {
+      "marks": 1,
+      "criterion": "Prevents overwrite by rejection/retry."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC002-Q01-c.json",
+  "question_path": "question-bank/questions/P-SRC002-Q01-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC002-Q01-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

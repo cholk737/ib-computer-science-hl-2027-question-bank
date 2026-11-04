@@ -1,0 +1,29 @@
+                                      –   12 –            M23/4/COMSC/HP2/ENG/TZ0/XX/M
+
+
+
+Alternative solution which sorts the data in two parallel arrays and outputs the lowest and the
+highest that way.
+
+MONTHS = ["Jan", … , "Dec"]
+USAGE = [5800, … , 6280]
+TEMP = 0
+TEMPMONTH = ""
+I = 0
+loop while I < 11                               // allow I < 12
+     J = 0
+     loop while J < 11
+          if USAGE[J]>USAGE[J+1] then
+               TEMP = USAGE[J]
+               USAGE[J] = USAGE[J+1]
+               USAGE[J+1] = TEMP
+               TEMPMONTH = MONTH[J]
+               MONTH[J] = MONTH[J+1]
+               MONTH[J+1] = TEMPMONTH
+          end if
+          J = J+1
+     end loop
+    I = I+1
+end loop
+output "highest usage was in ", MONTH[11]
+output "lowest usage was in ", MONTH[0]

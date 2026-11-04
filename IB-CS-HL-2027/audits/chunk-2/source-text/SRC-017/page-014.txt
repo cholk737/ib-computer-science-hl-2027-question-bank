@@ -1,0 +1,36 @@
+                                                –   14 –                                     8823 – 7014M
+
+
+(d)   Award [7 max].
+
+      Award [1] for inputting a name and initializing all variables used
+      Award [1] for the correct loop
+      Award [1] for using a flag
+      Award [1] for calculating the middle index(MID) inside the loop
+      Award [1] for comparing NAMES[MID] with GYMNAST
+      Award [1] for changing the value of END if needed
+      Award [1] for changing the value of START if needed
+      Award [1] for the if statement after the loop
+      Award [1] for outputting either SCORES[MID] or an appropriate message
+
+      input GYMNAST
+      START = 0
+      END = 9
+      FOUND = False
+      loop while START <= END and NOT FOUND
+           MID = (START + END) div 2
+           if NAMES[MID] > GYMNAST then   // method compareTo() may be used
+                 END = MID - 1
+           else
+                 if NAMES[MID] < GYMNAST then
+                       START = MID + 1
+                 else
+                       FOUND=True
+                 end if
+           end if
+      end loop
+      if FOUND then
+           output (SCORES[MID])
+      else
+           output (GYMNAST, ‘this name is not found’)
+      end if

@@ -1,0 +1,75 @@
+{
+  "question_id": "P-SRC020-Q14-c",
+  "source_question_ids": [
+    "H-SRC020-Q14-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct greatest_rows(readings) in Python for a nonempty rectangular integer nested list. Return a tuple containing the largest row total and a list of every row index tied for it. Do not use sum or max; the task assesses accumulation and comparison.",
+  "syllabus_codes": [
+    "B2.2.2",
+    "B2.3.2",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 8,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "One solution:\ndef greatest_rows(readings):\n    best = None\n    winners = []\n    for i in range(len(readings)):\n        total = 0\n        for value in readings[i]:\n            total += value\n        if best is None or total > best:\n            best = total\n            winners = [i]\n        elif total == best:\n            winners.append(i)\n    return best, winners",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes best/winner state."
+    },
+    {
+      "marks": 1,
+      "criterion": "Visits all rows."
+    },
+    {
+      "marks": 1,
+      "criterion": "Initializes row total for eachrow."
+    },
+    {
+      "marks": 1,
+      "criterion": "Accumulates all values in correctrow."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct greater-total comparison."
+    },
+    {
+      "marks": 1,
+      "criterion": "Updates best and replaces winnerlist on newbest."
+    },
+    {
+      "marks": 1,
+      "criterion": "Appends ties without discarding earlier tiedrows."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns greatest total andall correct indices."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed unique best,tied rows,negative totals andsingle row.",
+    "source_comparison": [
+      24,
+      25,
+      26
+    ],
+    "test_code": "def greatest_rows(readings):\n    best = None\n    winners = []\n    for i in range(len(readings)):\n        total = 0\n        for value in readings[i]:\n            total += value\n        if best is None or total > best:\n            best = total\n            winners = [i]\n        elif total == best:\n            winners.append(i)\n    return best, winners\nassert greatest_rows([[3,4],[6,1],[2,2]])==(7,[0,1])\nassert greatest_rows([[-5,-1],[-2,-1]])==(-3,[1])\nassert greatest_rows([[4]])==(4,[0])",
+    "result_file": ""
+  },
+  "code": "def greatest_rows(readings):\n    best = None\n    winners = []\n    for i in range(len(readings)):\n        total = 0\n        for value in readings[i]:\n            total += value\n        if best is None or total > best:\n            best = total\n            winners = [i]\n        elif total == best:\n            winners.append(i)\n    return best, winners",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC020-Q14-c.json",
+  "question_path": "question-bank/questions/P-SRC020-Q14-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC020-Q14-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

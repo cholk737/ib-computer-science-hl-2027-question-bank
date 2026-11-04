@@ -1,0 +1,55 @@
+{
+  "question_id": "P-SRC001-Q15-a",
+  "source_question_ids": [
+    "H-SRC001-Q15-a"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A venue has 12 rows of 8 numbered seats. A two-dimensional list has one single-character booking code per seat and is initialized once to the required dimensions. Outline two reasons why this layout suits the task.",
+  "syllabus_codes": [
+    "B2.2.1",
+    "B2.2.2"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 4,
+  "command_term": "Outline",
+  "difficulty": "medium",
+  "adaptation_rationale": "Preserves fixed-capacity spatial representation reasoning; accurately uses a Python list without falsely calling Python lists statically allocated arrays.",
+  "solution": "The two indices directly correspond to row and seat.; This makes a particular seat easy to locate/update.; The fixed known dimensions allocate exactly one element per seat.; A short code per element is sufficient to represent each booking state.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "The two indices directly correspond to row and seat."
+    },
+    {
+      "marks": 1,
+      "criterion": "This makes a particular seat easy to locate/update."
+    },
+    {
+      "marks": 1,
+      "criterion": "The fixed known dimensions allocate exactly one element per seat."
+    },
+    {
+      "marks": 1,
+      "criterion": "A short code per element is sufficient to represent each booking state."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "No executable code required; manual technical check."
+  },
+  "code": "",
+  "test_code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC001-Q15-a.json",
+  "question_path": "question-bank/questions/P-SRC001-Q15-a.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC001-Q15-a.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

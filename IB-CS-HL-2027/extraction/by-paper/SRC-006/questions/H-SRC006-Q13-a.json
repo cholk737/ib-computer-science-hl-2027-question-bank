@@ -1,0 +1,73 @@
+{
+  "source_question_id": "H-SRC006-Q13-a",
+  "source_id": "SRC-006",
+  "source_filename": "Computer_science_paper_1__HL (3).pdf",
+  "year": "2021",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "TZ0",
+  "option": "",
+  "question": 13,
+  "subquestion": "a",
+  "source_pdf_pages": [
+    8
+  ],
+  "source_printed_pages": [
+    "7"
+  ],
+  "original_marks": 1,
+  "command_term": "State",
+  "original_text": "State the distance between Kiko and Longlines.",
+  "parent_context": "– 6 –\nN21/4/COMSC/HP1/ENG/TZ0/XX\n8821 – 7011\n13. A bus company provides services within a city. Passengers can look up the distance between \nany two bus stations on any of its routes.\nFor each route, a one-dimensional string array is used to store the names of all bus stations \non the route and a two-dimensional array is used to store the distances between the bus \nstations (in kilometres). Only the lower triangle of the two-dimensional array is used to store \nthe distances.\nFigure 1 shows data about Route X, a bus route between Oppox and Dovely.\nFigure 1: One-dimensional string array, ROUTE_X_NAMES, and  \ntwo-dimensional array, ROUTE_X_DISTANCES, for Route X\nROUTE_X_NAMES ROUTE_X_DISTANCES\n[0] [1] [2] [3] [4] [5] [6] [7] [8] [9]\n[0]  Oppox [0] 0 0 0 0 0 0 0 0 0 0\n[1]  Thamesley [1] 1.2 0 0 0 0 0 0 0 0 0\n[2]  Brinkley [2] 2.2 1.0 0 0 0 0 0 0 0 0\n[3]  Kiko [3] 6.6 3.4 2.2 0 0 0 0 0 0 0\n[4]  Endsley [4] 5.7 4.5 3.5 1.3 0 0 0 0 0 0\n[5]  Kingsley [5] 7.1 5.9 4.9 2.7 1.4 0 0 0 0 0\n[6]  Allapay [6] 8.0 6.8 5.8 3.6 2.3 0.9 0 0 0 0\n[7]  Kronos [7] 10.1 9.1 6.9 4.7 3.4 2.0 1.1 0 0 0\n[8]  Longlines [8] 10.5 9.3 8.1 5.9 4.6 3.2 2.3 1.2 0 0\n[9]  Dovely [9] 11.3 10.1 9.1 6.9 5.6 4.2 3.3 2.1 0.9 0\nFor example, the distance between Kingsley and Kronos (2.0 kilometres) can be found in \nROUTE_X_DISTANCES [7][5].\n(This question continues on the following page)\n– 7 –\nN21/4/COMSC/HP1/ENG/TZ0/XX\n8821 – 7011\n(Question 13 continued)\n(a) State the distance between Kiko and Longlines. [1]\nThe two-dimensional array ROUTE_X_DISTANCES is valid if all the entries on and above the \nmain diagonal are zero and all the entries below the main diagonal are greater than zero.\nFigure 2 shows an invalid form of ROUTE_X_DISTANCES.\nFigure 2: Invalid form of two-dimensional array ROUTE_X_DISTANCES\n[0] [1] [2] [3] [4] [5] [6] [7] [8] [9]\n[0] 0 0 0 0 0 0 0 0 0 0\n[1] 1.2 0 0 0 0 5.9 0 0 0 0\n[2] 2.2 1.0 0 0 0 0 0 0 0 0\n[3] 6.6 3.4 2.2 0 0 0 0 0 0 0\n[4] 5.7 4.5 3.5 1.3 0 0 0 0 0 0\n[5] 7.1 0 4.9 2.7 1.4 0 0 0 0 0\n[6] 8.0 6.8 5.8 3.6 2.3 0.9 0 0 0 0\n[7] 10.1 9.1 6.9 4.7 3.4 2.0 1.1 0 0 0\n[8] 10.5 9.3 8.1 5.9 4.6 3.2 2.3 1.2 0 0\n[9] 11.3 10.1 9.1 6.9 5.6 4.2 3.3 2.1 0.9 0\n(b) Construct an algorithm in pseudocode that checks the elements of the array  \nROUTE_X_DISTANCES and outputs whether the array is valid or not. [5]\n(c) Construct an algorithm in pseudocode that inputs the names of two bus stations and \noutputs the distance between them. If any of the inputted names are not found, the \nmethod should output an appropriate message. [6]\nThe array ROUTE_X_TIMES (Figure 3) stores the approximate number of minutes it takes for \na bus to travel to a bus station from the previous one. For example, ROUTE_X_TIMES [6] \nstores the number of minutes it takes for a bus to travel from Kingsley to Allapay: 7 minutes.\nFigure 3: The array ROUTE_X_TIMES\n[0] [1] [2] [3] [4] [5] [6] [7] [8] [9]\n0 5 6 6 8 4 7 5 6 6\n(d) Explain how this data could be used to determine the number of minutes it takes for a \nbus to travel between any two bus stations. [3]\n \nReferences:\n© International Baccalaureate Organization 2021",
+  "assets": [
+    {
+      "kind": "source_table",
+      "description": "Original route names and lower triangular distance matrix",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-006/renders/page-7.png",
+      "source_pdf_page": 7,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: State the distance between Kiko and Longlines.",
+    "A lower-triangular distance list d stores d[2][0]=7"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-012",
+    "filename": "Computer_science_paper_1__HL_markscheme (3).pdf",
+    "pdf_pages": [
+      15
+    ],
+    "question_reference": "Q13 a",
+    "marking_summary": "Official source value5.9 kilometres.",
+    "source_issues": [],
+    "source_marking_evidence": "– 15 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \n13. (a) Award [1 max]\n5.9; \n(b) Award [5 max]\nAward [1] for correct outer/row loop\nAward [1] for correct inner/column loop\nAward [1] for use of a flag\nAward [1] for checking whether all elements on and above the main diagonal are zero\nAward [1] for checking all elements below the main diagonal (they all should be positive\nnumbers)\nAward [1] for outputting the appropriate message\nExample 1:\nVALID=True\nloop R from 0 to 9\n   loop C from 0 to 9 \nif R>C and ROUTE_X_DISTANCES[R][C]<=0 \nthen VALID=False \nend if \nif R<=C and ROUTE_X_DISTANCES[R][C]!=0 \nthen VALID=False \nend if \nend loop \nend loop \nif VALID  \n  then output('VALID') \n  else output('INVALID') \nend if \nExample 2: \nFLAG=1 \nloop R from 1 to 9 \nloop C from 0 to R-1 \nif ROUTE_X_DISTANCES[R][C]<=0 \nthen FLAG=0 \nend if \nend loop \nend loop \nloop R from 0 to 9 \nloop C= from R to 9 \nif ROUTE_X_DISTANCES[R][C]!=0 \nthen FLAG=0 \nend if \nend loop \nend loop \nif FLAG ==1 \n  then output('IT IS VALID') \n  else output('IT IS NOT VALID') \nend if"
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B2.2.2",
+      "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+      "rationale": "A lower-triangular distance list d stores d[2][0]=7 assesses Construct programs that apply arrays and Lists.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "Full original route table visually read.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC006-Q13-a"
+  ]
+}

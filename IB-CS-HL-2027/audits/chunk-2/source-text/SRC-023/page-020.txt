@@ -1,0 +1,57 @@
+                                           –   20 –                                   8825 – 6404M
+
+
+(c)       (i)      Award [2 max]
+
+             Stack follows the LIFO (Last In First Out) order to store the elements (the
+             element that is inserted last will come out first) whilst queue follows the
+             FIFO (First In First Out) order to store the elements (the element that is
+             inserted first will come out first);
+
+             Stack has only one end (top) at which both insertion and deletion take
+             place whilst queue has two ends (rear and front), the rear end is used to
+             insert the elements whereas the front end is used to delete the elements
+             from the queue.
+
+             Stack is/ can be used to solve recursive problems, queue is used to solve
+             problems based on sequential processing;
+
+             Stack uses push() to add an element, queue uses enqueue()               / Stacks use
+             pop() to remove an element, queues use dequeue();
+             Note: Accept other reasonable answers.
+
+      (ii)Award [5 max]
+
+             Award [1] for using access methods isEmpty(), pop() and enqueue()
+             Award [1] for the loop
+             Award [1] for popping an element from the stack
+             Award [1] for correct call to subprogram firstletter()
+             Award [1] for correct condition(s) in if statement(s)
+             Award [1] for enqueuing the element popped from the stack to the correct
+             queue
+
+             Example 1:
+
+             while not CUSTOMERS.isEmpty()
+                   X=CUSTOMERS.pop()
+                   if firstletter(X) >= 'A' and firstletter(X)<= 'M'
+                          then ONE.enqueue(X)
+                          else TWO.enqueue(x)
+                   end if
+             end loop
+
+             Example 2:
+
+             while CUSTOMERS.isEmpty()= False
+                     NAME = CUSTOMERS.peek()
+                   F = firstletter(NAME)
+                     if F > 'M'
+                          then
+                                TWO.enqueue(NAME)
+                    end if
+                   if F < 'N'
+                          then
+                                ONE.enqueue(NAME)
+                   end if
+                   X = CUSTOMERS.pop()
+             end loop

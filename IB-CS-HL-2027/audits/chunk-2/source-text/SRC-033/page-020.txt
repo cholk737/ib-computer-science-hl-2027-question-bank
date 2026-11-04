@@ -1,0 +1,53 @@
+                                                                                                                                                                                                                                    N20/4/COMSC/HP2/ENG/TZ0/XX
+
+
+
+
+                                                                                                                                                         – 19 –                                                                                                                                          8820–7012
+
+(Option D continued)
+
+17.               A new parking service has been introduced: staff will park the car for the driver and then return
+                  it later when the driver wants to leave. This service will use a narrow parking area surrounded
+                  on three sides by walls, where any cars behind the required car must be reversed out. For
+                  example, car X00000011 was the first vehicle to be parked, so to remove it from the parking
+                  area, the other five cars, starting with X00000123, will need to be removed. The cars are then
+                  returned starting with car X00000010.
+
+                                                                                               Figure 5: Cars parked in the parking area
+
+
+
+
+                                   X00000011                     X00000010                     X00000051                     X00000022                     X00000050                     X00000123
+
+
+                  The class Stack, which contains the Vehicle objects, has the following methods:
+
+                                             Method signature                                                      Returns
+
+                                             isEmpty()                                                             Returns true if the stack is empty, otherwise false.
+
+                                             push(Vehiclev)                                                        Adds a vehicle to the stack.
+
+                                             pop()                                                                 Removes and returns a Vehicle object.
+
+                  The method staffRemoveCar will remove a vehicle with a specified registration plate from
+                  the parking area (you can assume the vehicle is in the parking area):
+
+                  public static void staffRemoveCar(Stack stack, String reg){
+                      Stack temp = new Stack();
+                      //add code here
+                  }
+
+                  (a)               Construct the staffRemoveCar method.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            [6]
+
+                  A stack can be implemented using an array or a singly linked list.
+
+                  (b)               Compare the use of these two data structures for creating a stack.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [4]
+
+
+                                                                                                                           End of Option D
+
+
+

@@ -1,60 +1,35 @@
-# Progress — Chunk 1 complete
+# Progress — Chunk 2 active
 
-Checkpoint **C1-FINAL**, 2026-11-04 (Europe/Zurich). Fresh project started from zero. Only Steps 1–3 authorized and performed. **STOP: await explicit user assignment of Chunk 2.**
+Current checkpoint C2-003 — 2026-11-04 (Europe/Zurich). Authorized Steps4–6 only. Do not begin Chunk3 or generate full exam PDFs.
 
-## Completed steps and verified counts
+## Authoritative merged checkpoint
 
-| Step | Result | Verification |
-| --- | --- | --- |
-| 1 — setup/inventory | Full required folder structure; 48 uploaded PDFs; 47 unique hashes; 1 guide, 1 specimen compilation, 46 historical files | All original/project-copy SHA-256 hashes agree; original PDFs unchanged; source identities/availability and scan covers checked |
-| 2 — syllabus | 112 individual statements: 74 Theme A +38 Theme B; 68 common SL/HL +44 HL-only | Entire Syllabus Content read; 269 bullets +2 extra guidance paragraphs; exact source text/page/code sets and HL inheritance independently checked; six page continuations verified; no missing statement |
-| 3 — specimens | Both HL papers and markschemes; complete Python alternative; 54 marked leaf parts (26 P1 +28 P2) | All printed mark sequences checked; P1 56/24/80 and P2 80; case four challenges confirmed; source/marking/command conventions reviewed; code caveats reproduced |
+- 60 approved batch snapshots; 437 extracted source subquestions.
+- 331 scoped A/B source subquestions mapped; 541 mapping rows including explicit C exclusions.
+- 328 unique converted practice questions; 106 obsolete source exclusions; 3 source records reuse an existing practice.
+- 0 unresolved mappings among the approved/merged records. Other saved author batches still require review.
+- Each bank record has a separate question file and preliminary unofficial marking file; no official marking status claimed. All original sources unchanged.
 
-## Historical and question-bank state
+## Saved specialist work awaiting remaining review/integration
 
-- Historical inventory: 25 question-paper files representing **23 distinct examinations**, plus 21 markscheme files. One exact duplicate and one scanned alternate are retained/flagged.
-- Historical examinations processed: **0 of 23**; **23 remain** for future authorized Chunk2. Matching markschemes uploaded for 21; missing for 2 (2026 P1/P2).
-- Historical/practice questions extracted, mapped, adapted, excluded, original: **0 each**. The54 specimen reference parts are analysis records, not bank questions.
-- All 112 syllabus records have `not_yet_assessed_chunk1`, no bank IDs. Mapping/bank/coverage indexes contain headers only. No practice-exam or markscheme PDFs generated.
+Latest structural snapshot: 746 source records, 553 practice records, 99 batches across 19 source papers (some partial). Author completeness flags: {"SRC-001": true, "SRC-002": true, "SRC-004": true, "SRC-005": true, "SRC-006": true, "SRC-007": true, "SRC-008": true, "SRC-009": true, "SRC-016": true, "SRC-018": true, "SRC-020": true, "SRC-022": true, "SRC-024": true, "SRC-026": true, "SRC-028": true, "SRC-030": true, "SRC-033": true, "SRC-034": false}. Do not count a paper finished solely because it has saved batches.
 
-## Three actual specialist contributions
+Exactly three specialists ran and resumed under the same identities after a reported usage interruption: Processor A /root/historical_processor_a (8 assigned papers), B /root/historical_processor_b (8), C /root/historical_processor_c (7). All have contributed durable results. Source-ID-sorted round-robin assignments are fixed in extraction/HISTORICAL_MANIFEST.json. Ownership is isolated; coordinator alone writes masters.
 
-Exactly three native specialists ran, in parallel, alongside the main coordinator. No additional subagents were launched.
+## Files / evidence
 
-| Agent | Task and exclusive output | Completion and integration |
-| --- | --- | --- |
-| `/root/theme_a_syllabus` | Theme A Syllabus Analyst; `agents/chunk-1/agent-1-theme-a/` | Completed 74 source records, 179 bullets +2 paragraphs, findings, evidence, all-page visuals and checks. Coordinator independently checked and merged. |
-| `/root/theme_b_syllabus` | Theme B Syllabus Analyst; `agents/chunk-1/agent-2-theme-b/` | Completed 38 records, 90 bullets, Python/scope notes, findings, evidence and visuals. Coordinator independently checked and merged. |
-| `/root/specimen_assessment` | Specimen Examination Analyst; `agents/chunk-1/agent-3-specimen/` | Completed both HL papers/MS, 54-part index, component manifest, guide/case conventions, five source cautions and technical reproductions. Coordinator source-checked and published. |
+- extraction/HISTORICAL_QUESTION_INDEX.csv and by-paper/<source>/questions/*.json
+- mapping/SYLLABUS_MAPPING.csv
+- question-bank/QUESTION_BANK.csv; questions/, markschemes/, records/
+- extraction/OBSOLETE_QUESTIONS.csv
+- audits/chunk-2/APPROVED_BATCHES.json, MERGE_LEDGER.json, MERGE_STATUS.json
+- BATCH_REVIEW.json, MARK_RECONCILIATION.json, CODE_REVIEW.json, VISUAL_REVIEW.json, scan OCR mark reconciliations, source issue and coordinator override indexes
+- QA_ISSUES.md; all three agents' findings and per-paper audits
 
-Only the coordinator wrote shared master files. Specialist originals remain isolated. All three completed and contributed durable files; no delegation failure.
+Checkpoint history is in audits/chunk-2/PROGRESS_HISTORY.md. Chunk1 ledger is PROGRESS_CHUNK_1_ARCHIVE.md, verified commit46e2823.
 
-## Authoritative outputs
+## Outstanding / exact next action
 
-- `sources/SOURCE_INVENTORY.csv`, `.json`, `sources/INVENTORY_SUMMARY.md`: 48 original sources and verified copies.
-- `syllabus/SYLLABUS_MASTER.csv`, `.json`, `syllabus/records/` (112 JSON records).
-- `syllabus/SCOPE_VERIFICATION.md`: exact scope, counts, source normalization and verification evidence.
-- `specimen/SPECIMEN_ANALYSIS.md`, `EXAM_BLUEPRINT.json`, `SPECIMEN_QUESTION_INDEX.csv`, `.json`, `COMPONENT_MANIFEST.csv`.
-- `audits/independent_code_census.json`, `SYLLABUS_INTEGRATION_CHECK.json`, `SPECIMEN_INTEGRATION_CHECK.json`, `FINAL_VALIDATION.json`, `CHECKPOINT_MANIFEST.json`.
-- `README.md`, `AGENTS.md`, `QA_ISSUES.md`; reproducible scripts in `scripts/` and specialist folders.
-- Git checkpoint status/ID, when available: `audits/GIT_CHECKPOINT.md` (created after commit attempt).
+Finish remaining assigned old-option Paper2 sources and final wording/transcription repairs. Recheck every new/changed batch snapshot, reconcile paper mark positions against original sources, review full mapped guidance and representative solutions, run saved code checks, resolve duplicate-scope differences, then cumulatively approve/merge. Update history after each batch or finished paper. Existing328 practice records must remain in the cumulative bank unless an explicit logged correction removes/reuses one.
 
-## Findings and unresolved constraints
-
-No missing/unreadable required syllabus or HL specimen component. The source-code typo `A.1.2.5` is retained with disclosed lookup normalization; guide SQL `AVERAGE` and r² typography are documented. Generic OOP/recursion scope cautions are retained.
-
-`QA_ISSUES.md` records all issues. Outstanding historical constraints: three image-only PDFs; one short scan (SRC-047, complete alternate needs checking); no uploaded 2026 markschemes for SRC-001/SRC-002. Five specimen caveats include confirmed erroneous linked-list sample indentation, single-underscore privacy wording, composition ambiguity, unstated recursion domain and execution-model qualification. Source defects remain unchanged; they must not be copied as validated answers later.
-
-## Checkpoint history
-
-- C1-000: fresh folders/initial progress.
-- C1-001: Step1 complete; source inventory and three specialist launches recorded.
-- C1-002: Step2 authoritative merge after all 112 source-text/page/code/HL checks passed.
-- C1-003: Step3 source verification and publication; all three specialist contributions reviewed.
-- C1-FINAL: final integrity checks/checksum manifest and handover; stop boundary.
-
-## Exact next action / resume
-
-Current authorized work is finished. Await a new explicit **Chunk2** assignment; do not process historical questions now. On future authorization, read `AGENTS.md`, this file, `QA_ISSUES.md`, inventory and syllabus/specimen masters; verify actual files/checksums. Establish a distinct-examination source manifest from the 23 inventory examinations, resolve alternate-version completeness/OCR and preserve missing-MS flags, then assign the three prescribed non-overlapping round-robin paper-processing shards. No question or paper has an incomplete extraction batch to reconcile.
-
-A usage window was a planning boundary; no account-credit balance or automatic continuation is claimed. No work continues after this run ends.
+Known source caveats and editorial fixes are in QA and agent findings; no missing2026 markscheme may be invented. Source-only PNG renders and unmodified PDFs are retained locally, excluded from Git. No automatic background continuation is promised. Stop only at completed Chunk2 or an honestly recorded interruption checkpoint.

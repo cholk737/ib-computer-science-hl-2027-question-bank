@@ -1,0 +1,42 @@
+- 23 -
+2226-4429
+(Option D continued)
+16. The full solution is being tested using the following code:
+RentalShop[] shops = new RentalShop[3];
+shops[0] = new RentalShop("Silverlake");
+shops[1] = new RentalShop("Fjord View");
+shops[2] = new RentalShop("Sea View");
+shops [0].addRental (new Rental(2920393,true, 2934,
+54.0, new
+RentDate (2026, 2, 12), new RentDate(2026, 2, 22)));
+shops [0].addRental(new Rental(2929202, 2944, 64.0, new
+RentDate (2026, 2, 14), new RentDate (2026, 2, 23)));
+shops [2] .addRental(new Rental(2920393,true, 334, 52.0, new
+RentDate (2026, 2, 12), new RentDate (2026, 4, 20) )) ;
+shops [2].addRental (new Rental(2910222,true, 5645, 65.0, new
+RentDate (2026, 2, 13), new RentDate(2026, 4, 20)));
+(a) State the outcome from the following code:
+(i) IBIO.output (shops [1].getLocation ());
+[1]
+(iI) IBIO.output (shops [0].getRental(0).getCustomerID());
+[1]
+(iii) IBIO.output (shops[2].getRental(1).getEndDate ());
+[1]
+A method, getTotalIncome (), is needed to find the total costs of all rentals from all cars
+in all shops.
+(b) Outline one ethical issue programmers need consider when developing code for
+financial transactions.
+[2]
+(c)
+Construct the code for the method getTotalIncome ().
+You can use any previously constructed methods.
+[5]
+The Rental class is dependent on the RentDate class.
+(d)
+Explain one reason why the programmers would want to reduce dependencies.
+[3]
+The programmers have worked in a team to develop this solution.
+(e)
+Describe one advantage of working as a team.
+[2]
+(Option D continues on the following page)

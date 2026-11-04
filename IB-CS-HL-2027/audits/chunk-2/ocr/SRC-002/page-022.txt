@@ -1,0 +1,50 @@
+-22 -
+2226-4429
+(Option D continued)
+15. The RentalShop class stores information about the shop (location) to which the rental
+cars belong.
+The RentalShop class is shown.
+public class RentalShop {
+private String location;
+private Rental theRentals [];
+private int no0fRentals;
+public RentalShop(String location) {
+this.location
+= location;
+this.no0fRentals = 0;
+this.theRentals = new Rental[500];
+}
+public String getLocation()
+{ return location; }
+public Rental
+getRental(int x) ( return theRentals[x]; }
+public int getNoOfRentals ()
+( return noOfRentals; }
+357
+protected void addRental(Rental newRental) {
+theRentals[no0fRentals]
+= newRental;
+noOfRentals = noOfRentals + 1;
+}
+protected Rental [] getTodaysRentals (RentDate today) (
+// code missing
+}
+The car rental company would like to open a new shop (location) in Beach Side.
+(a) Construct the code required to create this instance of the RentalShop class.
+[3]
+(b)
+Describe the use of the modifier protected, with reference to methods in the
+RentalShop class.
+(2]
+A000
+At the start of each day, the shop needs to produce a listing of all the cars that are being
+rented out that day.
+(c) Construct the method getTodaysRentals (RentDate today), which will return an
+array of all the rentals starting on that day.
+You can use any previously constructed methods.
+The car rental company would like to store information about customers in a separate class.
+(d)
+Outline two changes that would need to be made to the existing classes to
+accommodate this.
+[4]
+(Option D continues on the following page)

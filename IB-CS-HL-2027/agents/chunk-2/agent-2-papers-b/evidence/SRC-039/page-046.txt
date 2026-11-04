@@ -1,0 +1,47 @@
+– 46 – 8825 – 6405M 
+18. (a) (i) Award [2 max]
+a binary tree can grow and shrink dynamically, while an array has a fixed size; 
+a binary tree is more memory efficient than an array; 
+a binary tree allows faster searching than an array; 
+a binary tree does not require contiguous memory, unlike an array; 
+a binary tree supports ordered data storage (giving efficient retrieval); 
+a binary tree avoids shifting elements when inserting or deleting, unlike an array; 
+Note: Candidates are not expected to refer to arrays while stating the advantages. Accept 
+other correct advantages.  
+(ii) Award [2 max]
+Memory usage -
+binary tree uses more memory;
+each node stores extra pointers (left/right child);
+Accessing -
+direct access is not possible;
+access must start from the root and move through left/right pointers, making the retrieval
+Slower;
+Operation -
+deleting an element in a binary tree is complex;
+the tree must be restructured by reassigning left and right child pointers;
+Maintenance overhead -
+tree operations require careful pointer management;
+increasing algorithmic complexity compared to simple index-based access in arrays;
+(b) Award [3 max]
+Award [2] for showing correct recursive calls + [1] for correct final answer ;
+Award only [1] if one error in calling otherwise award [0];
+Working #1:
+8 + aMethod(casesWon,4,1)
+8 + 6 + aMethod(casesWon,4,2)
+8 + 6 + 5+ aMethod(casesWon,4,3)
+8 + 6 + 5+ 1
+8+ 6+5+1= 20
+Working #2:
+aMethod(casesWon,4,0) = 8 + aMethod(casesWon,4,1)
+aMethod(casesWon,4,1) = 6 + aMethod(casesWon,4,2)
+aMethod(casesWon,4,2) = 5+ aMethod(casesWon,4,3)
+aMethod(casesWon,4,0) = 8 + 6 + 5+ 1=20
+Note: The working may be differently presented but the recursive calls must be correct.
+(c) Award [2 max]
+the method calls itself from within the method;
+the method has a base case (to stop the recursion);
+it passes an updated parameter at each successive call (that moves towards the base case);
+(d) Award [1 max]
+a pointer/address/location (reference) to an instance of a class;
+a variable that stores the memory address of an object;
+a variable that refers to an object (not the actual object but the address);

@@ -1,0 +1,49 @@
+                                           –   17 –              N19/4/COMSC/HP1/ENG/TZ0/XX/M
+
+
+Please note that instead the logical expression given in the Example answer 1
+several if statements could be used and award 1 mark for each correct            if
+statement (1 mark for checking elements in the lower triangle, 1 mark for
+checking upper triangle, 1 mark for checking three diagonals).
+
+if R>C and R-C>1 then   //lower triangle
+   if A[R][C]!=0 then
+        INVALID=True
+   endif
+endif
+if R<C and C-R>1 then   //upper triangle
+   if A[R][C]!=0 then
+        INVALID=True
+   endif
+endif
+if R<C and C-R=1 or R>C and R-C==1 or R==C then   //three
+diagonals
+   if A[R][C]==0 then
+        INVALID=True
+   endif
+endif
+
+Example 2:
+Award [7 max] (no ‘efficiency’ mark).
+Award [1] for initialization, correct changing and returning of a flag
+Award [1] for the nested loops.
+Award [1] for correct initial and for correct terminal value of the control variable in
+outer loop.
+Award [1] for correct initial and for correct terminal value of the control variable in
+inner loop.
+Award [1] for correct condition in if statement.
+Award [1] for checking elements in lower/upper triangle.
+Award [1]  for checking elements on the three diagonals.
+Award [1] for the use of correct logical expressions.
+
+INVALID=False
+loop R=0 to N-1 do
+   loop C=0 to N-1 do
+        if abs(R-C)>=2 and A[R][C]!=0 or abs(R-C)<2 and
+        A[R][C]==0 then
+            INVALID=True
+        endif
+   endloop
+endloop
+return not INVALID
+                                                                                                 [8 max]

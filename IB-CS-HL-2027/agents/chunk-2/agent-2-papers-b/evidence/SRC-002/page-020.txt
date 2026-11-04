@@ -1,0 +1,45 @@
+-20 -
+2226-4429
+Option D — Object-oriented programming
+14. A car rental company has several locations around a country. Each location has many cars
+that are rented to customers throughout the year. The company makes use of object-oriented
+programming (OOP) to manage the rentals.
+The Rental class is shown.
+public class Rental
+private int customerID;
+private boolean priority;
+private int carID;
+private
+double costPerDay;
+private RentDate startDate;
+private RentDate endDate;
+public Rental(int customerID, boolean priority, int carID, double
+costPerDay, RentDate startDate, RentDate endDate)
+this.customerID = customerID;
+357
+this priority = priority;
+this.carID = carID;
+this.costPerDay = costPerDay;
+this.startDate = startDate;
+this.endDate = endDate;
+public Rental (int customerID, int carID, double costPerDay,
+RentDate startDate, RentDate endDate)
+this.customerID = customerID;
+this.priority = false;
+this.carID = carID;
+this.costPerDay = costPerDay;
+this.startDate = startDate;
+this.endDate = endDate;
+}
+oublic int getCustomerID() { return customerID; }
+oublic boolean getPriority() { return priority;
+public int getCarID() { return carID; }
+public double getCostPerDay() ( return costPerday; }
+public RentDate getStartDate() { return startDate; }
+public RentDate getEndDate() ( return endDate; )
+pablic int getDaysl
+// implementation not shown
+II returns the number of days between the start date
+I/ and the end date of the rental
+}
+(Option D continues on the following page)

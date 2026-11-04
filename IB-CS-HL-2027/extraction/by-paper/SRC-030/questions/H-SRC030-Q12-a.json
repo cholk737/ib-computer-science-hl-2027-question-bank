@@ -1,0 +1,82 @@
+{
+  "original_assessment_context": "refnN:ifN<1return1;elseevenNreturnrefn(N-1)-N;oddNreturnrefn(N-1)+N.",
+  "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+  "source_question_id": "H-SRC030-Q12-a",
+  "source_id": "SRC-030",
+  "source_filename": "Computer_science_paper_1_TZ3_HL.pdf",
+  "year": "2025",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "TZ3 (filename; numerical cover code)",
+  "option": "",
+  "question": "12",
+  "subquestion": "a",
+  "source_pdf_pages": [
+    5
+  ],
+  "source_printed_pages": [
+    "4"
+  ],
+  "original_marks": 5,
+  "command_term": "Determine",
+  "original_text": "[Source PDF page 5]\n12. (a) Consider the following recursive function:\nrefn(N)\nif N < 1\nthen\nreturn 1\nelse\nif N mod 2 = 0\nthen\nreturn refn(N-1) - N\nelse\nreturn refn(N-1) + N\nendif\nendif\nend refn\nDetermine the value of variable after execution of the following program statement:\nX\nX = refn(5)\nShow all your working. [5]",
+  "parent_context": "refnN:ifN<1return1;elseevenNreturnrefn(N-1)-N;oddNreturnrefn(N-1)+N.",
+  "assets": [
+    {
+      "kind": "source_page",
+      "description": "Originalconditionalnonbranchingrecursion",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-030-page-05.png",
+      "source_pdf_page": 5,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Determine: Determine the value of variable X after execution X=refn(5). Show all your working."
+  ],
+  "difficulty": "high",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-031",
+    "filename": "Computer_science_paper_1_TZ3_HL_markscheme.pdf",
+    "pdf_pages": [
+      19
+    ],
+    "question_reference": "12(a)",
+    "marking_summary": "Sourcecallunwinds1+1-2+3-4+5=4.",
+    "source_issues": []
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "mapping_target": "adapted_practice_only",
+      "syllabus_code": "B2.4.5",
+      "scope_evidence": "• Simple, non-branching recursive algorithms in programming only",
+      "rationale": "One recursivecallperpathpreserved;Python,newbasevalue andswappedsigns.",
+      "theme": "B",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+    "marks": "Printed allocation transcribed.",
+    "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+    "official_answer_status": "See source markscheme record"
+  },
+  "original_text_manual_synopsis": "Determine the value of variable X after execution X=refn(5). Show all your working.",
+  "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+  "source_page_evidence": [
+    {
+      "pdf_page": 5,
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-030/page-005.txt"
+    }
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC030-Q12-a"
+  ]
+}

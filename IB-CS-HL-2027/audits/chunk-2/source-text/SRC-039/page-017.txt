@@ -1,0 +1,48 @@
+                                                                                                                                –   17    –                                                                                                               8825                                                                                         – 6405M
+
+
+(e)                                                 Award [4] max
+                 Award [1]for initialising COUNT                                                                                                                                                                                                       ;
+                 Award [1]for looping 1000 times;
+                 Award [1]for resetting CHILDREN array to False;
+                 Award [1]for copying the code from Q5d)                                                                                                                                                                                                                                                                                                                                                                                                        ;                                        /
+                 Award [1]for loop through CHILDREN array                                                                                                                                                                                                       ;
+                 Award [1] for if statement setting PRIZE to False;
+                 Award [1]for incrementing COUNT when                                                                                                                                                                                                        PRIZE is True;
+                 Award [1]for correctly outputting the percentage(which may be wrong numerically)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ;
+                 Example answer:
+
+                 COUNT = 0
+                 loop N from 0 to 999
+                 loop M from 0 to 9
+                                                    CHILDREN[M] = False
+                 end loop
+                 -----------------------------// copied from 5d)
+                 random.shuffle(BOX)
+                 loop N from 0 to 9
+                                  LOOK = N
+                                  loop A from 0 to 4
+                                                                 if N = BOX[LOOK]:
+                                                                     CHILDREN[N] = True
+                                                    else:
+                                                                                  LOOK = BOX[LOOK]
+                                                    end if
+                                               end loop
+                 end loop
+            -----------------------------
+
+                 PRIZE = True
+                 loop N from 0 to 9
+                                                    if CHILDREN[N] == False:
+                                                                     PRIZE = False
+                                                    end if
+                 end loop
+                 if PRIZE = True:
+                                                    COUNT = COUNT + 1
+                 end if
+                 end loop
+
+                 output COUNT/100 + "%"
+
+                 Note:Candidates may                                                                                                                           refer toQ5d for the code between the broken lines, but that is
+                 not award MP4.

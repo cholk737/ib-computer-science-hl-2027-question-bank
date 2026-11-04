@@ -1,0 +1,27 @@
+– 20 – M23/4/COMSC/HP1/ENG/TZ2/XX/M 
+14. (a) Award [3 max] 
+Award [1] for a correct row loop 
+Award [1] for a correct column loop 
+Award [1] for initializing SUM and summing inside the loop using correct array indexes 
+ Example 1: 
+SUM=0 
+loop I from 0 to 6 
+  //accept DICEDIAL.length-1 
+  // or len(DICEDIAL)-1 instead of 6 
+   loop J from 0 to 2 
+ //accept DICEDIAL[I].length-1  
+  // or len(DICEDIAL[I])-1 instead of 2 
+ SUM = SUM + DICEDIAL[I][J] 
+   end loop 
+end loop 
+ Example 2: 
+I =0 
+SUM=0 
+loop while I <= 6 
+ j=0 
+ loop while J <= 2 
+  SUM =SUM + DICEDIAL[I][J] 
+  J = J + 1 
+ end loop 
+ I = I + 1 
+end loop 

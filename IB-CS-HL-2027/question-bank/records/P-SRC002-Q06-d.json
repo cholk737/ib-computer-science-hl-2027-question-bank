@@ -1,0 +1,55 @@
+{
+  "question_id": "P-SRC002-Q06-d",
+  "source_question_ids": [
+    "H-SRC002-Q06-d"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct high_percentage(scores) for a nonempty Python list of numerical scores. Return the percentage of entries between91 and100 inclusive.",
+  "syllabus_codes": [
+    "B2.2.2",
+    "B2.3.2",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 4,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "One solution:\ndef high_percentage(scores):\n    count = 0\n    for score in scores:\n        if 91 <= score <= 100:\n            count += 1\n    return count / len(scores) * 100",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes and traverses count."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct inclusive condition."
+    },
+    {
+      "marks": 1,
+      "criterion": "Counts qualifying entries only."
+    },
+    {
+      "marks": 1,
+      "criterion": "Divides by total and multiplies by100."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Both qualifying boundaries and adjacent values executed.",
+    "source_comparison": [],
+    "test_code": "def high_percentage(scores):\n    count = 0\n    for score in scores:\n        if 91 <= score <= 100:\n            count += 1\n    return count / len(scores) * 100\nassert high_percentage([90,91,100,101])==50\nassert high_percentage([40])==0",
+    "result_file": ""
+  },
+  "code": "def high_percentage(scores):\n    count = 0\n    for score in scores:\n        if 91 <= score <= 100:\n            count += 1\n    return count / len(scores) * 100",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC002-Q06-d.json",
+  "question_path": "question-bank/questions/P-SRC002-Q06-d.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC002-Q06-d.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

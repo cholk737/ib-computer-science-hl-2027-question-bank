@@ -1,0 +1,54 @@
+                                                                            –18–                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            2225–6420
+
+Option D —                  Object-oriented programming
+
+14.                                                                                           An art shop sells the work of several artists. Each artist has many artworks for sale. A system
+         is designed to manage artworks, sales and customers.
+
+         The following shows part of the code for the two classes, Artist and Artwork:
+
+         public class Artist {
+
+             private String artistName;      // name of the artist
+             private String artistLocation;  // current location of the artist
+             private int noOfArtworks;       // number of works of art the artist has
+                                             // stored in the array theArtworks
+             private Artwork [] theArtworks; // details of the works of art produced
+                                             // by the artist
+
+             public Artist(String artistName, String artistLocation){
+                 this.artistName = artistName;
+                 this.artistLocation = artistLocation;
+                 noOfArtworks = 0;
+                 theArtworks = new Artwork [100]; // an artist has a maximum of 100
+                                                  // artworks
+             }
+
+             public String getName() {
+                 return artistName;
+             }
+
+             public String getLocation() {
+                 return artistLocation;
+             }
+
+             public Artwork getArtwork(int x) {
+                 return theArtworks[x];
+             }
+
+             public void addArtwork(Artwork x) {
+                 theArtworks[noOfArtworks] = x;
+                 noOfArtworks = noOfArtworks + 1;
+             }
+
+             public double commissionToPay() {
+                 // code missing
+             }
+
+             public Artwork[] sortArt() {
+                 // code missing
+             }
+
+         } // end of class Artist
+
+(Option D continues on the following page)

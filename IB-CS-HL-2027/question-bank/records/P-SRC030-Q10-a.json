@@ -1,0 +1,63 @@
+{
+  "question_id": "P-SRC030-Q10-a",
+  "source_question_ids": [
+    "H-SRC030-Q10-a"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Explain how a school can use network segmentation and OS security permissions to restrict students, staff and guests to appropriate resources.",
+  "syllabus_codes": [
+    "A2.2.4",
+    "A1.3.2"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 6,
+  "command_term": "Explain",
+  "difficulty": "high",
+  "adaptation_rationale": "Preserves differentiated access reasoning under explicit segmentation plusOSsecurity; does not conflate authentication with authorization.",
+  "solution": "Authenticate users and associate them with appropriate groups/roles.; Use VLANs/sub nets to separate guest, student and staff traffic.; Configure inter-segment access rules rather than allowing unrestricted reach ability.; Give students access only to appropriate learning/personal files.; Give staff only the sensitive-record permissions their roles require.; Keep guest devices from sensitive internal services; enforce file permissions even when a network path exists.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Authenticate users and associate them with appropriate groups/roles."
+    },
+    {
+      "marks": 1,
+      "criterion": "Use VLANs/sub nets to separate guest, student and staff traffic."
+    },
+    {
+      "marks": 1,
+      "criterion": "Configure inter-segment access rules rather than allowing unrestricted reach ability."
+    },
+    {
+      "marks": 1,
+      "criterion": "Give students access only to appropriate learning/personal files."
+    },
+    {
+      "marks": 1,
+      "criterion": "Give staff only the sensitive-record permissions their roles require."
+    },
+    {
+      "marks": 1,
+      "criterion": "Keep guest devices from sensitive internal services; enforce file permissions even when a network path exists."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "No executable code required; manual technical check."
+  },
+  "code": "",
+  "test_code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC030-Q10-a.json",
+  "question_path": "question-bank/questions/P-SRC030-Q10-a.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC030-Q10-a.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

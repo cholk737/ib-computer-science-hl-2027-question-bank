@@ -1,0 +1,765 @@
+{
+  "source_id": "SRC-034",
+  "batch_id": "SRC-034-b002",
+  "source_questions": [
+    {
+      "original_assessment_context": "",
+      "source_scope_note": "Original assessed concept classified directly or excluded with reason.",
+      "source_question_id": "H-SRC034-Q02-c-ii",
+      "source_id": "SRC-034",
+      "source_filename": "Computer_science_paper_2__HL.pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "A",
+      "question": "2",
+      "subquestion": "c-ii",
+      "source_pdf_pages": [
+        4
+      ],
+      "source_printed_pages": [
+        "3"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "Outline one way to verify the payrate field.",
+      "parent_context": "",
+      "assets": [],
+      "assessed_concepts": [
+        "Outline: Outline one way to verify the payrate field."
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-037",
+        "filename": "Computer_science_paper_2__HL_markscheme.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "question_reference": "2(c-ii)",
+        "marking_summary": "Compare source record or double-entry verification.",
+        "source_issues": []
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Data-entry verification methods are not a2027 requirement;do not relabel them database data types or ML cleaning.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      }
+    },
+    {
+      "original_assessment_context": "Concurrent reads/edits of shift record.",
+      "source_scope_note": "Original assessed concept classified directly or excluded with reason.",
+      "source_question_id": "H-SRC034-Q02-d",
+      "source_id": "SRC-034",
+      "source_filename": "Computer_science_paper_2__HL.pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "A",
+      "question": "2",
+      "subquestion": "d",
+      "source_pdf_pages": [
+        4
+      ],
+      "source_printed_pages": [
+        "3"
+      ],
+      "original_marks": 4,
+      "command_term": "Explain",
+      "original_text": "Explain how data integrity can be maintained if an employee tries to access their work hours while the shift manager is editing them.",
+      "parent_context": "Concurrent reads/edits of shift record.",
+      "assets": [],
+      "assessed_concepts": [
+        "Explain: Explain how data integrity can be maintained if an employee tries to access their work hours while the shift manager is editing them."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-037",
+        "filename": "Computer_science_paper_2__HL_markscheme.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "question_reference": "2(d)",
+        "marking_summary": "Lock record or use coherent version;isolate edit until completed.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "mapping_target": "original_and_adapted",
+          "syllabus_code": "A3.3.6",
+          "scope_evidence": "• The role of atomicity, consistency, isolation and durability (ACID) to ensure reliable processing of transactions\n• Transaction control language (TCL) commands: BEGIN TRANSACTION, COMMIT, ROLLBACK",
+          "rationale": "The assessed skill is explicitly named in the cited statement and its guidance; mapping does not credit unassessed scenario topics.",
+          "theme": "A",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      }
+    },
+    {
+      "original_assessment_context": "Alternative to transaction-log recovery.",
+      "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+      "source_question_id": "H-SRC034-Q02-e",
+      "source_id": "SRC-034",
+      "source_filename": "Computer_science_paper_2__HL.pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "A",
+      "question": "2",
+      "subquestion": "e",
+      "source_pdf_pages": [
+        4
+      ],
+      "source_printed_pages": [
+        "3"
+      ],
+      "original_marks": 4,
+      "command_term": "Describe",
+      "original_text": "Describe one alternative method that could be used to recover a database after a crash has occurred.",
+      "parent_context": "Alternative to transaction-log recovery.",
+      "assets": [],
+      "assessed_concepts": [
+        "Describe: Describe one alternative method that could be used to recover a database after a crash has occurred."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-037",
+        "filename": "Computer_science_paper_2__HL_markscheme.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "question_reference": "2(e)",
+        "marking_summary": "Snapshot recovery or rollback interrupted transactions.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "A3.3.6",
+          "scope_evidence": "• The role of atomicity, consistency, isolation and durability (ACID) to ensure reliable processing of transactions\n• Transaction control language (TCL) commands: BEGIN TRANSACTION, COMMIT, ROLLBACK",
+          "rationale": "Narrows detailed backup/recovery-method taxonomy to explicit ACID atomicity,durability and rollback.",
+          "theme": "A",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      }
+    },
+    {
+      "original_assessment_context": "Each owner may have several pets;each pet has one passport. VET(VetID,FirstName,Surname,Address,Postcode,City,Country,Phone,Email). Passport records pet transponder,name,species,breed,sex,DOB;issuer details/date. Vaccination entries store vaccine/manufacturer/batch,vaccination date,valid from/until,veterinarian.",
+      "source_scope_note": "Original assessed concept classified directly or excluded with reason.",
+      "source_question_id": "H-SRC034-Q03-a",
+      "source_id": "SRC-034",
+      "source_filename": "Computer_science_paper_2__HL.pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "A",
+      "question": "3",
+      "subquestion": "a",
+      "source_pdf_pages": [
+        5
+      ],
+      "source_printed_pages": [
+        "4"
+      ],
+      "original_marks": 2,
+      "command_term": "Construct",
+      "original_text": "Construct the ERD showing the relationship between pet owners,their pets,and the pet passport.",
+      "parent_context": "Each owner may have several pets;each pet has one passport. VET(VetID,FirstName,Surname,Address,Postcode,City,Country,Phone,Email). Passport records pet transponder,name,species,breed,sex,DOB;issuer details/date. Vaccination entries store vaccine/manufacturer/batch,vaccination date,valid from/until,veterinarian.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "description": "Exact passport fields/relationship stem",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-25.png",
+          "source_pdf_page": 5,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct: Construct the ERD showing the relationship between pet owners,their pets,and the pet passport."
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-037",
+        "filename": "Computer_science_paper_2__HL_markscheme.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "question_reference": "3(a)",
+        "marking_summary": "Owner1:manyPet,Pet1:1Passport.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "mapping_target": "original_and_adapted",
+          "syllabus_code": "A3.2.2",
+          "scope_evidence": "• The significance of entity relationship diagrams (ERDs) in crafting organized, efficient database designs tailored for specific applications\n• The relationships between different data entities within a database\n• The roles of cardinality and modality in defining relationships in ERDs",
+          "rationale": "The assessed skill is explicitly named in the cited statement and its guidance; mapping does not credit unassessed scenario topics.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      }
+    },
+    {
+      "original_assessment_context": "Each owner may have several pets;each pet has one passport. VET(VetID,FirstName,Surname,Address,Postcode,City,Country,Phone,Email). Passport records pet transponder,name,species,breed,sex,DOB;issuer details/date. Vaccination entries store vaccine/manufacturer/batch,vaccination date,valid from/until,veterinarian.Phone is secondary key.",
+      "source_scope_note": "Original assessed concept classified directly or excluded with reason.",
+      "source_question_id": "H-SRC034-Q03-b",
+      "source_id": "SRC-034",
+      "source_filename": "Computer_science_paper_2__HL.pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "A",
+      "question": "3",
+      "subquestion": "b",
+      "source_pdf_pages": [
+        5
+      ],
+      "source_printed_pages": [
+        "4"
+      ],
+      "original_marks": 1,
+      "command_term": "Define",
+      "original_text": "Define the term secondary key.",
+      "parent_context": "Each owner may have several pets;each pet has one passport. VET(VetID,FirstName,Surname,Address,Postcode,City,Country,Phone,Email). Passport records pet transponder,name,species,breed,sex,DOB;issuer details/date. Vaccination entries store vaccine/manufacturer/batch,vaccination date,valid from/until,veterinarian.Phone is secondary key.",
+      "assets": [],
+      "assessed_concepts": [
+        "Define: Define the term secondary key."
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-037",
+        "filename": "Computer_science_paper_2__HL_markscheme.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "question_reference": "3(b)",
+        "marking_summary": "Non-identifying field used for lookup.",
+        "source_issues": []
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Secondary-key taxonomy is not specified in2027 key guidance;do not equate it with explicitly required primary/foreign/composite keys.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      }
+    },
+    {
+      "original_assessment_context": "Each owner may have several pets;each pet has one passport. VET(VetID,FirstName,Surname,Address,Postcode,City,Country,Phone,Email). Passport records pet transponder,name,species,breed,sex,DOB;issuer details/date. Vaccination entries store vaccine/manufacturer/batch,vaccination date,valid from/until,veterinarian.",
+      "source_scope_note": "Original assessed concept classified directly or excluded with reason.",
+      "source_question_id": "H-SRC034-Q03-c",
+      "source_id": "SRC-034",
+      "source_filename": "Computer_science_paper_2__HL.pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "A",
+      "question": "3",
+      "subquestion": "c",
+      "source_pdf_pages": [
+        5,
+        6
+      ],
+      "source_printed_pages": [
+        "4",
+        "5"
+      ],
+      "original_marks": 8,
+      "command_term": "Construct",
+      "original_text": "Construct the database in3NF for all entities shown inFigures1 and2. Incorporate VET and use the given table notation.",
+      "parent_context": "Each owner may have several pets;each pet has one passport. VET(VetID,FirstName,Surname,Address,Postcode,City,Country,Phone,Email). Passport records pet transponder,name,species,breed,sex,DOB;issuer details/date. Vaccination entries store vaccine/manufacturer/batch,vaccination date,valid from/until,veterinarian.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "description": "Source passport entities",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-25.png",
+          "source_pdf_page": 5,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page",
+          "description": "Source repeated vaccination event fields",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-06.png",
+          "source_pdf_page": 6,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct: Construct the database in3NF for all entities shown inFigures1 and2. Incorporate VET and use the given table notation."
+      ],
+      "difficulty": "high",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-037",
+        "filename": "Computer_science_paper_2__HL_markscheme.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "question_reference": "3(c)",
+        "marking_summary": "Separate pet,passport,vaccine,vaccination withkeys andVETlinks;valid alternatives accepted.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "mapping_target": "original_and_adapted",
+          "syllabus_code": "A3.2.6",
+          "scope_evidence": "• Examples may include library management, hospital management, e-commerce platforms, school management, employee management, inventory management, police crime reporting",
+          "rationale": "The assessed skill is explicitly named in the cited statement and its guidance; mapping does not credit unassessed scenario topics.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "mapping_target": "original_and_adapted",
+          "syllabus_code": "A3.2.4",
+          "scope_evidence": "• The relationship between tables using primary keys, foreign keys, composite keys and concatenated keys\n• The importance of well-defined tables in ensuring data integrity",
+          "rationale": "The assessed skill is explicitly named in the cited statement and its guidance; mapping does not credit unassessed scenario topics.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      }
+    },
+    {
+      "original_assessment_context": "Each owner may have several pets;each pet has one passport. VET(VetID,FirstName,Surname,Address,Postcode,City,Country,Phone,Email). Passport records pet transponder,name,species,breed,sex,DOB;issuer details/date. Vaccination entries store vaccine/manufacturer/batch,vaccination date,valid from/until,veterinarian.",
+      "source_scope_note": "Original assessed concept classified directly or excluded with reason.",
+      "source_question_id": "H-SRC034-Q03-d",
+      "source_id": "SRC-034",
+      "source_filename": "Computer_science_paper_2__HL.pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "A",
+      "question": "3",
+      "subquestion": "d",
+      "source_pdf_pages": [
+        6
+      ],
+      "source_printed_pages": [
+        "5"
+      ],
+      "original_marks": 4,
+      "command_term": "Describe",
+      "original_text": "Describe the principles of data protection legislation that would apply to a pet owner’s data.",
+      "parent_context": "Each owner may have several pets;each pet has one passport. VET(VetID,FirstName,Surname,Address,Postcode,City,Country,Phone,Email). Passport records pet transponder,name,species,breed,sex,DOB;issuer details/date. Vaccination entries store vaccine/manufacturer/batch,vaccination date,valid from/until,veterinarian.",
+      "assets": [],
+      "assessed_concepts": [
+        "Describe: Describe the principles of data protection legislation that would apply to a pet owner’s data."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-037",
+        "filename": "Computer_science_paper_2__HL_markscheme.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "question_reference": "3(d)",
+        "marking_summary": "Purpose limitation,consent,minimization,accuracy,retention,access rights,etc.",
+        "source_issues": []
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Specific data-protection legislation principles are not a2027 statutory syllabus requirement;no legal claims fabricated or substituted for general ethics.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      }
+    },
+    {
+      "original_assessment_context": "EMIS spatial database maps emergency-call coordinates;crime map circles sized byreportedcrimecount.",
+      "source_scope_note": "Original assessed concept classified directly or excluded with reason.",
+      "source_question_id": "H-SRC034-Q04-a-i",
+      "source_id": "SRC-034",
+      "source_filename": "Computer_science_paper_2__HL.pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "A",
+      "question": "4",
+      "subquestion": "a-i",
+      "source_pdf_pages": [
+        7
+      ],
+      "source_printed_pages": [
+        "6"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "Outline what is meant by spatial data.",
+      "parent_context": "EMIS spatial database maps emergency-call coordinates;crime map circles sized byreportedcrimecount.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "description": "Source crime map and spatial context",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-07.png",
+          "source_pdf_page": 7,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Outline: Outline what is meant by spatial data."
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-037",
+        "filename": "Computer_science_paper_2__HL_markscheme.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "question_reference": "4(a-i)",
+        "marking_summary": "Location/shape data represented bycoordinates.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "mapping_target": "original_and_adapted",
+          "syllabus_code": "A3.4.1",
+          "scope_evidence": "• Databases models: NoSQL, cloud, spatial, in-memory\n• Examples of the use of the database model in real-world scenarios may include e-commerce platforms, geographic information systems (GIS), managed services, real-time analytics, social media platforms, SaaS.",
+          "rationale": "The assessed skill is explicitly named in the cited statement and its guidance; mapping does not credit unassessed scenario topics.",
+          "theme": "A",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      }
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC034-Q02-d",
+      "source_question_ids": [
+        "H-SRC034-Q02-d"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Explain how transaction isolation can protect a payroll record while one user updates hours and another reads it.",
+      "syllabus_codes": [
+        "A3.3.6"
+      ],
+      "theme": "A",
+      "level": "HL-only",
+      "marks": 4,
+      "command_term": "Explain",
+      "difficulty": "medium",
+      "adaptation_rationale": "Original application rewritten to be self-contained; assessed reasoning retained within cited 2027 scope.",
+      "solution": "The update is performed within a transaction.; Other users must not see a partially applied update.; A suitable locking/version mechanism presents a consistent record or delays access.; Commit exposes the completed state;rollback restores the previous valid state after failure.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "The update is performed within a transaction."
+        },
+        {
+          "marks": 1,
+          "criterion": "Other users must not see a partially applied update."
+        },
+        {
+          "marks": 1,
+          "criterion": "A suitable locking/version mechanism presents a consistent record or delays access."
+        },
+        {
+          "marks": 1,
+          "criterion": "Commit exposes the completed state;rollback restores the previous valid state after failure."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "No executable code required; manual technical check."
+      },
+      "code": "",
+      "test_code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC034-Q02-e",
+      "source_question_ids": [
+        "H-SRC034-Q02-e"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Describe what should happen to an uncommitted transaction interrupted by a database failure,using a transfer that debits one account and credits another.",
+      "syllabus_codes": [
+        "A3.3.6"
+      ],
+      "theme": "A",
+      "level": "HL-only",
+      "marks": 4,
+      "command_term": "Describe",
+      "difficulty": "medium",
+      "adaptation_rationale": "Narrows detailed backup/recovery-method taxonomy to explicit ACID atomicity,durability and rollback.",
+      "solution": "Treat both changes as one transaction.; If the transaction was not committed,undo its partial changes.; Restore balances to the consistent pre-transaction state.; A completed committed transfer must remain durable rather than losing one side of the transfer.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Treat both changes as one transaction."
+        },
+        {
+          "marks": 1,
+          "criterion": "If the transaction was not committed,undo its partial changes."
+        },
+        {
+          "marks": 1,
+          "criterion": "Restore balances to the consistent pre-transaction state."
+        },
+        {
+          "marks": 1,
+          "criterion": "A completed committed transfer must remain durable rather than losing one side of the transfer."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "No executable code required; manual technical check."
+      },
+      "code": "",
+      "test_code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC034-Q03-a",
+      "source_question_ids": [
+        "H-SRC034-Q03-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct an ERD for a fleet where one depot owns many vehicles,each vehicle belongs to one depot,and each vehicle has exactly one current registration record.",
+      "syllabus_codes": [
+        "A3.2.2"
+      ],
+      "theme": "A",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Construct",
+      "difficulty": "low",
+      "adaptation_rationale": "Original application rewritten to be self-contained; assessed reasoning retained within cited 2027 scope.",
+      "solution": "Depot1:manyVehicle relationship,with each Vehicle belonging to one Depot.; Vehicle1:1Registration relationship.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Depot1:manyVehicle relationship,with each Vehicle belonging to one Depot."
+        },
+        {
+          "marks": 1,
+          "criterion": "Vehicle1:1Registration relationship."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "No executable code required; manual technical check."
+      },
+      "code": "",
+      "test_code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC034-Q03-c",
+      "source_question_ids": [
+        "H-SRC034-Q03-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct a3NF schema for these facts. Each asset has AssetID,label andmodel,and one current certificate recording issue date and issuing technician. Each technician has TechID,name andphone. An asset can have many inspections. Each inspection has InspectionID,date,valid-until date,inspecting technician andone standard. A standard has StandardID,title andauthority. Show primary andforeign keys.",
+      "syllabus_codes": [
+        "A3.2.6",
+        "A3.2.4"
+      ],
+      "theme": "A",
+      "level": "SL/HL common",
+      "marks": 8,
+      "command_term": "Construct",
+      "difficulty": "high",
+      "adaptation_rationale": "Original application rewritten to be self-contained; assessed reasoning retained within cited 2027 scope.",
+      "solution": "TECH(TechID PK,Name,Phone);ASSET(AssetID PK,Label,Model);CERTIFICATE(AssetID PK/FK→ASSET,IssueDate,IssuerID FK→TECH);STANDARD(StandardID PK,Title,Authority);INSPECTION(InspectionID PK,AssetID FK→ASSET,InspectorID FK→TECH,StandardID FK→STANDARD,InspectionDate,ValidUntil).",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Separate TECH andASSET tables with their own descriptive attributes."
+        },
+        {
+          "marks": 1,
+          "criterion": "Separate CERTIFICATE table for certificate-specific facts."
+        },
+        {
+          "marks": 1,
+          "criterion": "Separate STANDARD table storing title andauthority once."
+        },
+        {
+          "marks": 1,
+          "criterion": "Separate INSPECTION event table."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct stable primary keys,including one certificate perasset."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct certificate→asset andissuer→TECH foreign keys."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct inspection→asset,TECH andSTANDARD foreign keys."
+        },
+        {
+          "marks": 1,
+          "criterion": "Event dates belong to inspections;no repeated groups or duplicated technician/standard descriptions."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "No executable code required; manual technical check."
+      },
+      "code": "",
+      "test_code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC034-Q04-a-i",
+      "source_question_ids": [
+        "H-SRC034-Q04-a-i"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline what location data in a spatial database represents.",
+      "syllabus_codes": [
+        "A3.4.1"
+      ],
+      "theme": "A",
+      "level": "HL-only",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "low",
+      "adaptation_rationale": "Original application rewritten to be self-contained; assessed reasoning retained within cited 2027 scope.",
+      "solution": "Positions and/or shapes of geographic features.; Coordinates/geometric representations allow spatial relationships to be queried.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Positions and/or shapes of geographic features."
+        },
+        {
+          "marks": 1,
+          "criterion": "Coordinates/geometric representations allow spatial relationships to be queried."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "No executable code required; manual technical check."
+      },
+      "code": "",
+      "test_code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    }
+  ]
+}

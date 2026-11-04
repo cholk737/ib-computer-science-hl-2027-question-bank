@@ -1,0 +1,41 @@
+– 13 – 2225 – 6423
+Turn over
+(Option C, question 8 continued)
+One of the online databases provides Alexia and Jay with the following code:
+<?php
+    if(isset($_FILES['CV'])){
+        $errors= array();
+        $file_name = $_FILES['CV']['name'];
+        $file_size =$_FILES['CV']['size'];
+        $file_tmp =$_FILES['CV']['tmp_name'];
+        $file_type=$_FILES['CV']['type'];
+        $file_ext=strtolower(end(explode('.',$_FILES['CV']['name'])));
+        $extensions= array("pdf","doc","docx");
+        if(in_array($file_ext,$extensions)=== false){
+            $errors[]="This file extension not allowed";
+        }
+        if($file_size > 2097152){
+            $errors[]="File size must be under 2 Mb";
+        }
+        if(empty($errors)==true){
+            move_uploaded_file($file_tmp,"CV/".$file_name);
+            echo "Success";
+        }else{
+            print_r($errors);
+        }
+    }
+?>
+<html>
+<body>
+    <h1>Curriculum Vitae</h1>
+    <form action="" method="POST" enctype="multipart/form-data">
+        <input type="file" name="CV" />
+        <input type="submit"/>
+    </form>
+</body>
+</html>
+(f) Identify four steps that take place during the processing of this PHP code. [4]
+The PHP code is processed on the server.
+(g) Explain why an organization would choose to use server-side processing rather than 
+client-side processing when delivering content to the client. [3]
+(Option C continues on page 15)

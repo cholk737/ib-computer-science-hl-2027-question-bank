@@ -1,0 +1,34 @@
+– 18 – N21/4/COMSC/HP1/ENG/TZ0/XX/M 
+Example 3: 
+Note: Award marks if algorithm is presented in a Java/Python/Javascript/any other program 
+rather than IB pseudocode.  
+For example, please see the following Javascript program 
+function findStation(station) 
+{ var found = false; 
+  var i = 0; 
+  do 
+  { found = (ROUTE_X_NAMES[i] == station); 
+if (!found) i = i + 1; 
+  } while (!found && i < 10); 
+  if (found) return i; 
+  else 
+  { output("No such bus station as "+station); 
+return -1; 
+  } 
+} 
+var station1 = input(); 
+var station2 = input(); 
+output("Finding the distance between "+station1+" and "+station2); 
+var station1index = findStation(station1); 
+var station2index = findStation(station2); 
+if (station1index >=0 && station2index >= 0) 
+   { if (station1index >= station2index) 
+output("Distance "+ROUTE_X_DISTANCES[station1index][station2index]); 
+   else 
+output ("Distance = "+ROUTE_X_DISTANCES[station2index][station1index]); 
+   } 
+(d) Award [3 max]
+Determine positions/indexes/subscripts of both bus stations in array ROUTE_X_NAMES;
+Calculate the sum of the elements of array   ROUTE_X_TIMES (calculate the number of
+minutes as the sum of the array elements);
+Between (lower +1) index and higher index;

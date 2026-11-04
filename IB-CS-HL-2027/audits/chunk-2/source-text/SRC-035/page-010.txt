@@ -1,0 +1,54 @@
+                                                        –   10 –              M23/4/COMSC/HP2/ENG/TZ0/XX/M
+
+
+Option B – Modelling and simulation
+5.    (a)    Award [1 max]
+             A computer program designed to simulate a real-life scenario / what might or what did
+             happen in a situation;
+
+
+      (b)    Award [3 max]
+             Units – Integer (allow number or real, etc);
+             MONTH – String / text / alphanumeric
+             UnitCost – Real;
+             DailyCharge – Real;
+             Tax – Real;
+
+             Award [1 max] for 3 variables without datatype
+             Allow other suitable responses.
+
+
+      (c)    Award [5 max]
+             Inputs – units used and days in month;
+                // do not allow a reference to a 2D array for the first marking point
+             Calculation of bill;
+             Calculation of units used per day;
+             Calculation of tax;
+               // allow references to a 2D array for calculations
+             Outputs – bill and units used per day;
+             Appropriate messages in inputs and outputs;
+
+             Example algorithm
+
+             UNITCOST = 0.2
+             DAILYCHARGE = 0.75
+             TAX = 0.1
+             input "units used this month? ", UNITMONTH
+             input "Days in month? ", DAYSINMONTH
+             BILL = (UNITCOST * UNITMONTH + DAILYCHARGE * DAYSINMONTH)
+             TOTALBILL = BILL + BILL * TAX
+             UNITDAY = UNITMONTH / DAYSINMONTH
+             output "The bill for this month is ", TOTALBILL
+             output "The number of units used per day were ", UNITDAY
+
+
+      (d)    Award [2 max]
+             The model only shows how much power has been used in a month/per day;
+             Insufficient information on where money/electricity could be saved;
+
+
+      (e)    Award [2 max]
+             Spreadsheets;
+             Code;
+
+             // accept for [1] any form of code, eg. linear search

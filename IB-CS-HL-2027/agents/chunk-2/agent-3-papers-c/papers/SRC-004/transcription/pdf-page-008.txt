@@ -1,0 +1,41 @@
+– 7 – 8823 – 7011
+14. There are 20 gymnasts who took part in a gymnastics competition.
+Competitors were assessed by 8 judges who each awarded a score in a range from 0–10.
+The judges were numbered 0–7. The competitors’ names are stored in the one-dimensional
+array , and their scores are stored in the two-dimensional array (see Figure 1).
+NAMES SCORES
+Figure 1: Data held in the array and the array
+NAMES SCORES
+NAMES SCORES
+[0] [1] [2] [3] [4] [5] [6] [7]
+Evans, Lina 7.9 6.7 7.2 7.5 7.5 7.4 7.2 6.9
+[0] [0]
+Tann, Mary 9.3 9.6 9.1 9.1 8.9 9.1 10.0 9.1
+[1] [1]
+Bush, Lilly 7.2 7.9 6.9 6.9 6.9 6.9 6.9 7.2
+[2] [2]
+Keon, Lea 5.9 5.6 5.9 5.8 5.9 5.5 5.9 5.9
+[3] [3]
+Fox, Tea 7.2 6.9 6.9 7.9 6.9 6.9 6.9 6.9
+[4] [4]
+Lobar, Tanya 8.2 7.9 8.2 8.2 8.2 8.2 7.9 8.2
+[5] [5]
+… …
+Lee, Mae 8.2 8.0 6.9 6.9 8.1 6.9 7.9 8.2
+[18] [18]
+Burton, Sarah 6.9 6.7 6.9 7.9 6.9 7.2 6.8 6.9
+[19] [19]
+For example, the score that Judge 4 awarded to Mary Tann ( ) is 8.9 and can be
+NAMES[1]
+found in .
+SCORES[1][4]
+(a) State the judge who awarded the highest score to the competitor Tea Fox. [1]
+The highest attainable score in gymnastics is 10.0 .
+(b) Construct an algorithm that determines and outputs the number of times the highest
+attainable score was awarded in this competition. [4]
+A competitor’s final score is calculated by ignoring the highest and the lowest mark awarded
+and averaging the remaining marks.
+For example, the highest mark awarded to Lilly Bush was 7.9, and the lowest mark was 6.9,
+so her final score was (7.2 + 6.9 + 6.9 + 6.9 + 6.9 + 7.2) / 6.
+(c) Construct an algorithm in pseudocode to output the name and the final score for
+every competitor. [10]

@@ -1,0 +1,43 @@
+– 28 – 8825 – 6405M 
+(e) (i) Award [4 max]
+when the user submits the form, the server runs the PHP script; 
+receives the work category and rating from the HTML form/CGI  sent from the form 
+using the $_POST array; 
+connects to the database (sales);  
+selects the average rating for the given category;  
+inserts the new rating into the database;  
+compares the new rating to the average; 
+outputs “Thank you...” message if it is at least equal to the average;  
+outputs a “Sorry...” message if it is below the average for that category; 
+closes the database connection;  
+(ii) Award [3 max: 1+1+1, Advantage + Explanation + further illustration or
+example]
+Data Security and Privacy;
+server-side processing prevents exposure of sensitive data;
+such as feedback scores and hotel details, to the client-side;
+Data Security and Privacy;
+database credentials (username, password);
+remain obscured and secure as the user cannot see or modify the server-side
+code;
+Data Security and privacy;
+source code / queries are kept private;
+and not sent to the browser ;
+Data Integrity and reliability;
+ensures consistent data manipulation and calculations;
+Independent of client's browser capabilities;
+Data Integrity and reliability;
+protects data (e.g., historic ratings);
+from manipulation or alteration by third parties during transmission;
+Data Integrity and reliability;
+database is accessed form the same server;
+which increases reliability (does not depend on network nodes etc);
+Performance and efficiency;
+improves performance;
+particularly for users with less powerful devices;
+Performance and efficiency;
+saves bandwidth;
+by not transmitting database query results;
+Performance and efficiency;
+server handles the computational load;
+enhancing overall user experience;
+Note: Do not allow mixing of points from different clusters.

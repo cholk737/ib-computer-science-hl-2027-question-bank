@@ -1,0 +1,57 @@
+                                                             –   14 –                                            8823 – 7011M
+
+
+13.    (a)    Award [2 max].
+              A linked list is a data structure made of a chain of nodes, the external (head) pointer points
+              to the first node and the link part of the last element of the list points to null/nil/none;
+              each node contains a data field (value) and a pointer (to the next node);
+
+
+       (b)    Award [3 max].
+              A queue data structure reflects the queuing which adds nodes at the end (enqueue)
+              and deletes nodes from the beginning of the queue (dequeue)/FIFO data structure;
+
+              the data about the patient which is seen by a doctor would be deleted from the beginning of
+              the queue;
+              and as patients arrive their data would be added to the end of the queue;
+              which is not really suitable because emergency cases may arise who need to be seen by a
+              doctor immediately/first so the patients’ data should be added at the beginning of the queue;
+              or a patient may decide to go home/leave the queue and the data should be deleted from the
+              middle/end of the queue;
+
+
+       (c)    Award [3 max].
+              A new node for a new patient would be created and the data about the patient should be
+              stored into the data field of the new node;
+              this new node should be inserted at the beginning of the singly linked list;
+              so, set the next pointer of the new node to point to the node pointed to by the external
+              pointer/make the link part of the new node pointing to the existing first node;
+              then the external pointer to the list should be changed to make new node as the first node/
+              the external pointer should be updated to point to the new node;
+
+
+       (d)    Award [4 max].
+              Create a new node for a new patient and place the data about this patient into the data field
+              of the node;
+              severity of illness defines insertion position of the node/where to place the node;
+              the new node should be inserted in the middle of the list (after the node containing data
+              about the patient who has more serious symptoms and before the node containing data
+              about the patient who has less serious symptoms than the new patient);
+              search the list for the node prior to the insertion position;
+              set the next pointer of the new node to point to the node pointed to by the next pointer of
+              prior node;
+              set the next pointer of the prior node to point to the new node;
+
+
+       (e)    Award [3 max].
+              Size of a static data structure is fixed whilst dynamic structures are more flexible/size can be
+              changed;
+              memory is allocated to a static data structure at compile time (is predetermined) whilst
+              memory is allocated to the dynamic data structure as the program executes/at run-time;
+              elements of a static data structure can be directly accessed whilst access to the items in a
+              dynamic data structure is sequential;
+              a dynamic structure come at extra costs of memory to store address pointers, so it uses
+              more memory than a static structure (holding the same amount of data);
+              elements can be inserted into/deleted from a dynamic data structure just by manipulating
+              pointers/by updating addresses without shuffling/shifting/resorting as in a static data
+              structure;

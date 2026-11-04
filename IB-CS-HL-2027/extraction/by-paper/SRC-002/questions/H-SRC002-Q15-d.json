@@ -1,0 +1,72 @@
+{
+  "source_question_id": "H-SRC002-Q15-d",
+  "source_id": "SRC-002",
+  "source_filename": "Computer Sci HL Paper 2 TZC.pdf",
+  "year": "2026",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "A/B/C",
+  "option": "D",
+  "question": 15,
+  "subquestion": "d",
+  "source_pdf_pages": [
+    22
+  ],
+  "source_printed_pages": [
+    "22"
+  ],
+  "original_marks": 4,
+  "command_term": "Outline",
+  "original_text": "Outline two changes that would need to be made to the existing classes to accommodate this.",
+  "parent_context": "-22 -\n2226-4429\n(Option D continued)\n15. The RentalShop class stores information about the shop (location) to which the rental\ncars belong.\nThe RentalShop class is shown.\npublic class RentalShop {\nprivate String location;\nprivate Rental theRentals [];\nprivate int no0fRentals;\npublic RentalShop(String location) {\nthis.location\n= location;\nthis.no0fRentals = 0;\nthis.theRentals = new Rental[500];\n}\npublic String getLocation()\n{ return location; }\npublic Rental\ngetRental(int x) ( return theRentals[x]; }\npublic int getNoOfRentals ()\n( return noOfRentals; }\n357\nprotected void addRental(Rental newRental) {\ntheRentals[no0fRentals]\n= newRental;\nnoOfRentals = noOfRentals + 1;\n}\nprotected Rental [] getTodaysRentals (RentDate today) (\n// code missing\n}\nThe car rental company would like to open a new shop (location) in Beach Side.\n(a) Construct the code required to create this instance of the RentalShop class.\n[3]\n(b)\nDescribe the use of the modifier protected, with reference to methods in the\nRentalShop class.\n(2]\nA000\nAt the start of each day, the shop needs to produce a listing of all the cars that are being\nrented out that day.\n(c) Construct the method getTodaysRentals (RentDate today), which will return an\narray of all the rentals starting on that day.\nYou can use any previously constructed methods.\nThe car rental company would like to store information about customers in a separate class.\n(d)\nOutline two changes that would need to be made to the existing classes to\naccommodate this.\n[4]\n(Option D continues on the following page)",
+  "assets": [
+    {
+      "kind": "scanned_source_page",
+      "description": "Original scanned page contains exact stem, code, table/figure and leaf wording; OCR is an aid and was visually checked.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-002/renders/page-22.png",
+      "source_pdf_page": 22,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Outline two changes that would need to be made to the existing classes to accommodate this.",
+    "A Reservation currently stores only customer_id"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "not_uploaded",
+    "source_id": "",
+    "filename": "",
+    "pdf_pages": [],
+    "question_reference": "Q15 d",
+    "marking_summary": "Add a customer reference attribute to Reservation and accept/store it during initialization. Update methods that need customer details to call that referenced object’s interface. Customers can exist independently and be referenced by several reservations,an aggregation relationship.",
+    "source_issues": [],
+    "source_marking_evidence": ""
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B3.2.4",
+      "scope_evidence": "• How to design objects by leveraging smaller component objects through composition and aggregation\n• That aggregation implies that the subcomponents can function independently of the aggregating class, while in composition, the subcomponents are tightly coupled and cannot exist outside the aggregating class",
+      "rationale": "A Reservation currently stores only customer_id assesses Explain the role of composition and aggregation in class relationships.",
+      "theme": "B",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "No uploaded MS; independent unofficial answer.",
+    "visual": "Read every question-bearing scanned page and checked question/mark plus all associated visuals/code. OCR errors do not replace source image.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC002-Q15-d"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

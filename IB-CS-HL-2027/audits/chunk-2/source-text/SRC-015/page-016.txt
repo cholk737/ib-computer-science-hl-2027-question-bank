@@ -1,0 +1,49 @@
+                                                      –   16 –                                     8824 – 6904M
+
+
+15.     (a)     Award [4 max]
+
+            Example 1:
+            Award [1] for the row loop
+            Award [1] for the column loop
+            Award [1] for the correct index (index in the COUNT array is MAT[R][C])
+            Award [1] for incrementing the correct element in the COUNT array
+
+            loop R from 0 to 6  //accept 6 or MAT.length-1
+                   loop C from 0 to 6
+                         COUNT[MAT[R][C]] = COUNT[MAT[R][C]] + 1
+                   end loop
+            end loop
+
+            Example 2:
+            Award [4 max] as follows:
+            Award [1] for the outer loop
+            Award [1] for the inner loop
+            Award [2] for correct if statement (comparing MAT[R][C] with all values in the range from 0 to
+            9), award [1] for a minor error
+            Award [1] for incrementing the correct element in the COUNT array
+
+            loop R from 0 to 6
+              loop C from 0 to 6
+                   if MAT[R][C]] = 0 then COUNT[0] = COUNT[0]+1
+                      else if MAT[R][C]] = 1 then COUNT[1] = COUNT[1]+1
+                       else if MAT[R][C]] = 2 then COUNT[2]= COUNT[2]+1
+                          else if MAT[R][C]] = 3 then COUNT[3]= COUNT[3]+1
+                             else if MAT[R][C]] = 4 then COUNT[4]= COUNT[4]+1
+                              else if MAT[R][C]] = 5 then COUNT[5]= COUNT[5]+1
+                               else if MAT[R][C]] = 6 then COUNT[6]=C OUNT[6]+1
+                                 else if MAT[R][C]] = 7 then COUNT[7]= COUNT[7]+1
+                                  else if MAT[R][C]] = 8 then COUNT[8]= COUNT[8]+1
+                                   else if MAT[R][C]] = 9 then COUNT[9]= COUNT[9]+1
+                                            end if
+                                          end if
+                                       end if
+                                     end if
+                                 end if
+                               end if
+                             end if
+                         end if
+                    end if
+                   end if
+               end loop
+            end loop

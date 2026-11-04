@@ -1,0 +1,55 @@
+{
+  "question_id": "P-SRC006-Q12-c",
+  "source_question_ids": [
+    "H-SRC006-Q12-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Describe an algorithm to total all values in a nonempty circular singly linked list exactly once.",
+  "syllabus_codes": [
+    "B4.1.3"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 4,
+  "command_term": "Describe",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "Set total=0 and current=head. Add current.value to total, then advance current=current.next. Repeat until current is head again, and report total.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initialize total/current."
+    },
+    {
+      "marks": 1,
+      "criterion": "Add current value."
+    },
+    {
+      "marks": 1,
+      "criterion": "Advance reference."
+    },
+    {
+      "marks": 1,
+      "criterion": "Stop on return to head, after processing it once."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      13
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC006-Q12-c.json",
+  "question_path": "question-bank/questions/P-SRC006-Q12-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC006-Q12-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

@@ -1,0 +1,44 @@
+                                                                                                   –   15    –                                                                        2225                                                                                         – 6417M
+
+
+
+
+           (c)                                                                  Award max           [7].
+
+                       Award max [3]           for the calculation of the average mark. [1] for initializing sum and adding
+                       Marks[k] to the sum, [1] for a correct loop, [1] for the sum divided by 200;
+                       Award [1] for a correct second loop;
+                       Award [1]                        for correct use of indexing in both                       MARKS and LETTERGRADES array;
+                       Award max [3]           for determining each letter grade. [1] for each condition and grade assignment
+                       (String) to the LETTERGRADES arra                       y x3;
+
+                       //calculate the average mark
+                       Sum=0
+                       loop K from 0 to 199   //Accept len(STUDENTS)-1 or STUDENTS.length()-                                                                                                                                                                                                                           1
+                                   Sum = Sum + MARKS[K] // Accept any correct loop
+                       end loop
+                       AVE = Sum / 200                                                                                                                                                                                            //accept SUM DIV 200
+
+                       K=0
+                       loop K from 0 to 199                         //Accept len(STUDENTS)-1 or STUDENTS.length()-1
+                                           // loop through the array MARKS
+                                           // accept any correct loop
+                                if MARKS[K] > AVE + 20                                                                             //determine the grade
+                                           then
+                                                      G = "A"
+                                           else
+                                                      if MARKS[K] < AVE -                                                                                                                                                                                                       20
+                                                                 then
+                                                                            G = "C"
+                                                                 else
+                                                                            G = "B"
+                                                      end if
+                                end if
+                                                         LETTERGRADES[K] = G
+                       end loop
+
+
+
+
+ Note : Collection                      methods not accepted.
+           Alternate selection constructs accepted                                 provided it leads to the correct grade assignment
