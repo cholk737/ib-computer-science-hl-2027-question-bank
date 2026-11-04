@@ -1,0 +1,42 @@
+{
+  "question_id": "O-C3-B-002",
+  "unofficial": true,
+  "solution": "def compare_members(club_a, club_b):\n    a = set(club_a)\n    b = set(club_b)\n    both = a & b\n    only_a = a - b\n    either = a | b\n    return both, only_a, either",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Represents club_a membership uniquely as a set or equivalent set-based construction."
+    },
+    {
+      "marks": 1,
+      "criterion": "Represents club_b membership uniquely as a set or equivalent set-based construction."
+    },
+    {
+      "marks": 1,
+      "criterion": "Computes the intersection for IDs in both clubs."
+    },
+    {
+      "marks": 1,
+      "criterion": "Computes the directional difference A minus B."
+    },
+    {
+      "marks": 1,
+      "criterion": "Computes the union for IDs in either club."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns the three sets in the requested order without modifying either input list."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Any correct Python implementation meeting the stated input/output, mutation and file requirements. Equivalent set methods/operators and correct context-manager or explicit file closing accepted. Do not double-credit the same achieved criterion."
+  ],
+  "partial_credit_notes": "Award each independent achieved step up to six marks; a minor syntax slip need not erase an otherwise clearly demonstrated algorithmic step. Accept equivalent valid algorithms. No credit for contradicting the stated operation order or output contract.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Exact reference executed; see audits/chunk-3/ORIGINAL_GAP_BATCH_CHECKS.json.",
+    "scope": "Does not test membership/add/remove/subset operations or hash-table mechanics. Order of set iteration must not be marked."
+  },
+  "code": "def compare_members(club_a, club_b):\n    a = set(club_a)\n    b = set(club_b)\n    both = a & b\n    only_a = a - b\n    either = a | b\n    return both, only_a, either",
+  "markscheme_status": "preliminary_unofficial_verified_by_coordinator_author"
+}

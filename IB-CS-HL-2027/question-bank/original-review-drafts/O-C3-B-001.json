@@ -1,0 +1,89 @@
+{
+  "reviews": [
+    {
+      "question_id": "O-C3-B-001",
+      "record_sha256": "ec9fd1df865720827f41444d7fc9219212d5e488bc1159e720af2be08054b027",
+      "reviewer": "/root",
+      "reviewed_at": "2026-11-04T18:20:52.906743+00:00",
+      "question_type": "Python code construction",
+      "review_scope": "Coordinator author review of new original; independent Chunk4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read complete exact statement and guidance; mapped only described aspects; omitted scope explicitly retained."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Executed reference function in 5 domain/edge cases; independent fixture or bitmask oracle; output/mutation/file closing checked."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Stored full reference matches tested function and defined domain; separate student file contains no reference solution."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Six independent positive criteria manually checked against command and complete solution; alternatives/partial credit included; unofficial preliminary author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All necessary input/domain information and function contract contained in prose; no missing diagram/table or code stimulus required."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original coordinator authorship recorded; historical source IDs intentionally empty; official syllabus evidence is not claimed as an original question source."
+        }
+      },
+      "mappings": [
+        {
+          "code": "B2.5.1",
+          "scope_bullet_id": "B2.5.1:G01",
+          "exact_guidance": "• Programs that manipulate text files",
+          "assessed_skill": "Construct text-file input and a numeric summary report.",
+          "relevance": "direct",
+          "evidence": "The actual code-construction contract and independent marking steps require this aspect. Append mode remains untested. Python helper examples are may-include, not a mandatory call checklist. No Java requirement is introduced.",
+          "coverage_limit": "Append mode remains untested. Python helper examples are may-include, not a mandatory call checklist. No Java requirement is introduced.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt explicitly requires construction of the scoped Python function."
+        },
+        {
+          "code": "B2.5.1",
+          "scope_bullet_id": "B2.5.1:G02",
+          "exact_guidance": "• Opening a sequential file in various modes (read, write, append)",
+          "assessed_skill": "Select read and overwrite/write modes for different text files.",
+          "relevance": "partial",
+          "evidence": "The actual code-construction contract and independent marking steps require this aspect. Append mode remains untested. Python helper examples are may-include, not a mandatory call checklist. No Java requirement is introduced.",
+          "coverage_limit": "Append mode remains untested. Python helper examples are may-include, not a mandatory call checklist. No Java requirement is introduced.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt explicitly requires construction of the scoped Python function."
+        },
+        {
+          "code": "B2.5.1",
+          "scope_bullet_id": "B2.5.1:G03",
+          "exact_guidance": "• How to read from and write to files, append data to an existing file, and close a file once operations are completed",
+          "assessed_skill": "Read and write sequential text, then close both files.",
+          "relevance": "partial",
+          "evidence": "The actual code-construction contract and independent marking steps require this aspect. Append mode remains untested. Python helper examples are may-include, not a mandatory call checklist. No Java requirement is introduced.",
+          "coverage_limit": "Append mode remains untested. Python helper examples are may-include, not a mandatory call checklist. No Java requirement is introduced.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt explicitly requires construction of the scoped Python function."
+        },
+        {
+          "code": "B2.5.1",
+          "scope_bullet_id": "B2.5.1:G05",
+          "exact_guidance": "• Functions for Python users may include open(), read(), readline(), write(), close().",
+          "assessed_skill": "Apply appropriate Python file operations; context-manager closing is acceptable.",
+          "relevance": "partial",
+          "evidence": "The actual code-construction contract and independent marking steps require this aspect. Append mode remains untested. Python helper examples are may-include, not a mandatory call checklist. No Java requirement is introduced.",
+          "coverage_limit": "Append mode remains untested. Python helper examples are may-include, not a mandatory call checklist. No Java requirement is introduced.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt explicitly requires construction of the scoped Python function."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Append mode remains untested. Python helper examples are may-include, not a mandatory call checklist. No Java requirement is introduced."
+      ],
+      "execution_evidence": "audits/chunk-3/ORIGINAL_GAP_BATCH_CHECKS.json"
+    }
+  ]
+}

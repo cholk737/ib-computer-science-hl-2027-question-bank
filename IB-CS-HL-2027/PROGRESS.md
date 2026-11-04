@@ -1,8 +1,8 @@
 # Progress — Chunk 3 active, recovery-first
 
-**Checkpoint C3-20261104-191432-415945 — 04 November 2026 19:14:32 CET (Europe/Zurich).**
+**Checkpoint C3-20261104-193554-099234 — 04 November 2026 19:35:54 CET (Europe/Zurich).**
 
-All three specialist turns reported usage-limit interruptions. Their saved files are authority; no live/background work is assumed. Canonical DB/search sources and23 functional plus10 semantic precision passing tests persist. Last source002 independent audit is partial; next inspect it before approval. New user pasted instruction pending read/application.
+HANDOVER CONTENT READY; Phase2 generation stopped.826 questions (823 protected adapted+3 originals),826 answers/criteria,63 imported reviews/117 links;154 historical reviews saved,94 saved reviews pending integration,669 historical reviews unsaved.23 functional+10 precision tests pass. Complete single-agent Claude docs and271-row backlog prepared. Next commit all content, create/verify full Git bundle and portable ZIP, then STOP; no Chunk4/5 execution.
 
 User authorized Chunk 3 only. Checkpoint after every 2–3 questions, each topic and meaningful milestone. **Do not enter Chunk 4.** Do not enter future chunks; user mentioned a future Chunk 5 but has not authorized it.
 
@@ -10,7 +10,7 @@ User authorized Chunk 3 only. Checkpoint after every 2–3 questions, each topic
 
 - Initial recovery found Chunk 2 final only, no previous Chunk 3 artifacts or live specialists. Previous report: audits/chunk-3/PROGRESS_BEFORE_C3_RECOVERY.md.
 - 48 PDFs inventoried; 23 distinct historical exams processed, 0 remaining; 1,141 source parts; 838 mapped (383 A / 455 B); 303 exclusions; 15 reuse links.
-- Master bank: 823 records, including 0 merged original questions. The 823 historical adapted IDs are preserved.
+- Master bank: 826 records, including 3 merged original questions. The 823 historical adapted IDs are preserved.
 - Specialist first-pass objective audits saved: 112/112. This is review progress, not complete coverage or coordinator approval.
 - Current structural bank check: 0 errors. Historical record changes: 0 (must be explained/reviewed if nonzero).
 - Initial baseline integrity passed 2,473 file hashes and all 823 record schemas/identities/codes/mark totals. See audits/chunk-3/BASELINE_INTEGRITY.json.
@@ -21,14 +21,14 @@ User authorized Chunk 3 only. Checkpoint after every 2–3 questions, each topic
 ```json
 {
   "live_path": "question-bank/database.sqlite3",
-  "snapshot_path": "audits/chunk-3/database-snapshots/503fff078a74687ac3e90ece20e5caf8f3fae9f3333d4f6c3a77b69dbf700a3d.sqlite3",
-  "sha256": "503fff078a74687ac3e90ece20e5caf8f3fae9f3333d4f6c3a77b69dbf700a3d",
+  "snapshot_path": "audits/chunk-3/database-snapshots/a9f96c16c4168d05b1ee1bfaf61a363f104eab0efb48ef594115581a0814a1d0.sqlite3",
+  "sha256": "a9f96c16c4168d05b1ee1bfaf61a363f104eab0efb48ef594115581a0814a1d0",
   "integrity_check": "ok",
   "table_counts": {
-    "questions": 823,
-    "answers": 823,
-    "scope_evidence": 50,
-    "verification": 4938,
+    "questions": 826,
+    "answers": 826,
+    "scope_evidence": 117,
+    "verification": 4956,
     "usage_history": 0,
     "selections": 0
   },
@@ -36,67 +36,67 @@ User authorized Chunk 3 only. Checkpoint after every 2–3 questions, each topic
     [
       "answer",
       "pending",
-      796
+      763
     ],
     [
       "answer",
       "verified",
-      27
+      63
     ],
     [
       "assets",
       "pending",
-      797
+      764
     ],
     [
       "assets",
       "verified",
-      26
+      62
     ],
     [
       "mapping",
       "pending",
-      796
+      763
     ],
     [
       "mapping",
       "verified",
-      27
+      63
     ],
     [
       "markscheme",
       "issue",
-      5
+      13
     ],
     [
       "markscheme",
       "pending",
-      796
+      763
     ],
     [
       "markscheme",
       "verified",
-      22
+      50
     ],
     [
       "provenance",
       "pending",
-      806
+      780
     ],
     [
       "provenance",
       "verified",
-      17
+      46
     ],
     [
       "technical",
       "pending",
-      796
+      763
     ],
     [
       "technical",
       "verified",
-      27
+      63
     ]
   ],
   "limits": "Database integrity/schema/import counts do not establish completeness of search features or content verification."
@@ -943,9 +943,9 @@ Owned directory: `agents/chunk-3/agent-3-bank-audit/`. Latest saved status (auth
 
 ## Recovery instructions
 
-Read AGENTS.md, PROGRESS.md, audits/chunk-3/USER_CHUNK3_SCOPE.md, QA_ISSUES.md, current bank/coverage and audits/chunk-3/LATEST_CHECKPOINT.json. Verify files against its hashes. Read each agent STATUS.json for more recent atomic saves. Reassign exactly three specialist roles; do not invent previous completions or rely on agents continuing after this run. Existing Chunk 2 generators must not be rerun over approved records.
+Read AGENTS.md, PROGRESS.md, audits/chunk-3/USER_CHUNK3_SCOPE.md, QA_ISSUES.md, current bank/coverage and audits/chunk-3/LATEST_CHECKPOINT.json. Verify files against its hashes. Read each agent STATUS.json for more recent atomic saves. For Claude handover, work as ONE AGENT and resume the three historical queues sequentially; do not spawn or delegate. Do not invent previous completions or rely on agents continuing after this run. Existing Chunk 2 generators must not be rerun over approved records.
 
-Run `python3 scripts/checkpoint_chunk3.py --note "concrete saved milestone and next action"` after each meaningful milestone. Only coordinator runs it. Git staging/commit follows a verified saved milestone; Git is supplementary to atomic files.
+Run `python3 scripts/checkpoint_chunk3.py --note "concrete saved milestone and next action"` after each meaningful milestone. Only the current coordinating/single agent runs it. Git staging/commit follows a verified saved milestone; Git is supplementary to atomic files.
 
 Last verified Git milestones: C2 `dd5285c`; initial C3 recovery `523d2b5`. Additional saved Git milestones, if any: audits/chunk-3/GIT_CHECKPOINT.md.
 

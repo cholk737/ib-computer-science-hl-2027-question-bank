@@ -73,7 +73,7 @@ All current integrity/code/SQL/source-mark checks pass. Preliminary practice mar
 <!-- C3-REVIEW-STATE-START -->
 ### Current individual-review queue and reported issues
 
-- 154/823 per-question reviews saved with valid current hashes; 27 coordinator-approved versions; 669 individual reviews remaining.
+- 157/826 per-question reviews saved with valid current hashes; 63 coordinator-approved versions; 669 individual reviews remaining.
 - 31 reported issue entries, all still explicit unresolved findings unless a later repair log says otherwise. Scope approval does not clear marking/technical issues.
 - Full durable queue: `audits/chunk-3/FULL_BANK_REVIEW_QUEUE.csv`.
 - Exact question IDs, issue details, author paths and review limits: `audits/chunk-3/REVIEW_ISSUES.json` and each specialist review.

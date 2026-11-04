@@ -1,0 +1,42 @@
+{
+  "question_id": "O-C3-B-003",
+  "unofficial": true,
+  "solution": "def update_access(active, new_id, leaving_id, permitted):\n    active.add(new_id)\n    if leaving_id in active:\n        active.remove(leaving_id)\n    return new_id in active, active <= permitted",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Adds new_id to the original active set."
+    },
+    {
+      "marks": 1,
+      "criterion": "Removes leaving_id when present after the addition."
+    },
+    {
+      "marks": 1,
+      "criterion": "Handles an absent leaving_id safely without an exception."
+    },
+    {
+      "marks": 1,
+      "criterion": "Determines whether new_id belongs to the final active set, including when both IDs are equal."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correctly checks whether final active is a subset of permitted, including equality and an empty final set."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns the two Boolean results in order, modifying active itself while preserving permitted."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Any correct Python implementation meeting the stated input/output, mutation and file requirements. Equivalent set methods/operators and correct context-manager or explicit file closing accepted. Do not double-credit the same achieved criterion."
+  ],
+  "partial_credit_notes": "Award each independent achieved step up to six marks; a minor syntax slip need not erase an otherwise clearly demonstrated algorithmic step. Accept equivalent valid algorithms. No credit for contradicting the stated operation order or output contract.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Exact reference executed; see audits/chunk-3/ORIGINAL_GAP_BATCH_CHECKS.json.",
+    "scope": "Does not test a superset operator separately or union/intersection/difference calculations. Equivalent safe removal methods are accepted; no arbitrary built-in ban."
+  },
+  "code": "def update_access(active, new_id, leaving_id, permitted):\n    active.add(new_id)\n    if leaving_id in active:\n        active.remove(leaving_id)\n    return new_id in active, active <= permitted",
+  "markscheme_status": "preliminary_unofficial_verified_by_coordinator_author"
+}

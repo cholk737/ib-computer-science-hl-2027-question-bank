@@ -1,0 +1,67 @@
+{
+  "reviews": [
+    {
+      "question_id": "O-C3-B-003",
+      "record_sha256": "e5c25f9b90499fb2d96fab24113f9e1d7f9558be9693ab5a213590ba50623a95",
+      "reviewer": "/root",
+      "reviewed_at": "2026-11-04T18:20:52.911646+00:00",
+      "question_type": "Python code construction",
+      "review_scope": "Coordinator author review of new original; independent Chunk4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read complete exact statement and guidance; mapped only described aspects; omitted scope explicitly retained."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Executed reference function in 4096 domain/edge cases; independent fixture or bitmask oracle; output/mutation/file closing checked."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Stored full reference matches tested function and defined domain; separate student file contains no reference solution."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Six independent positive criteria manually checked against command and complete solution; alternatives/partial credit included; unofficial preliminary author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All necessary input/domain information and function contract contained in prose; no missing diagram/table or code stimulus required."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original coordinator authorship recorded; historical source IDs intentionally empty; official syllabus evidence is not claimed as an original question source."
+        }
+      },
+      "mappings": [
+        {
+          "code": "B4.1.5",
+          "scope_bullet_id": "B4.1.5:G01",
+          "exact_guidance": "• The fundamental characteristics of sets, including their unordered nature and the uniqueness of elements",
+          "assessed_skill": "Apply unique set membership while updating a mutable set.",
+          "relevance": "partial",
+          "evidence": "The actual code-construction contract and independent marking steps require this aspect. Does not test a superset operator separately or union/intersection/difference calculations. Equivalent safe removal methods are accepted; no arbitrary built-in ban.",
+          "coverage_limit": "Does not test a superset operator separately or union/intersection/difference calculations. Equivalent safe removal methods are accepted; no arbitrary built-in ban.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt explicitly requires construction of the scoped Python function."
+        },
+        {
+          "code": "B4.1.5",
+          "scope_bullet_id": "B4.1.5:G03",
+          "exact_guidance": "• Code to check if an element is in a set, to add an element to a set, to remove an element, and to check whether one set is a subset/superset of another set",
+          "assessed_skill": "Construct membership, add, safe remove and subset operations with a defined update order.",
+          "relevance": "direct",
+          "evidence": "The actual code-construction contract and independent marking steps require this aspect. Does not test a superset operator separately or union/intersection/difference calculations. Equivalent safe removal methods are accepted; no arbitrary built-in ban.",
+          "coverage_limit": "Does not test a superset operator separately or union/intersection/difference calculations. Equivalent safe removal methods are accepted; no arbitrary built-in ban.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt explicitly requires construction of the scoped Python function."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Does not test a superset operator separately or union/intersection/difference calculations. Equivalent safe removal methods are accepted; no arbitrary built-in ban."
+      ],
+      "execution_evidence": "audits/chunk-3/ORIGINAL_GAP_BATCH_CHECKS.json"
+    }
+  ]
+}

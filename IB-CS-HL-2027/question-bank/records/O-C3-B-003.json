@@ -1,0 +1,62 @@
+{
+  "question_id": "O-C3-B-003",
+  "source_question_ids": [],
+  "derivation_status": "original_unofficial",
+  "unofficial": true,
+  "question_text": "A visitor system uses a mutable set active and a separate set permitted. Construct update_access(active, new_id, leaving_id, permitted) in Python. First add new_id to active. Then remove leaving_id if it is present; an absent leaving_id must not cause an error. Finally return a tuple (new_still_active, all_permitted): whether new_id is in the final active set, and whether every final active ID belongs to permitted. The two IDs may be equal, so the stated operation order matters. Modify active itself and leave permitted unchanged. You may use Python set operations.",
+  "syllabus_codes": [
+    "B4.1.5"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 6,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "question_type": "Python code construction",
+  "adaptation_rationale": "Original coordinator-authored question for a zero-linked C2 objective; no historical source question or official marking status claimed.",
+  "solution": "def update_access(active, new_id, leaving_id, permitted):\n    active.add(new_id)\n    if leaving_id in active:\n        active.remove(leaving_id)\n    return new_id in active, active <= permitted",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Adds new_id to the original active set."
+    },
+    {
+      "marks": 1,
+      "criterion": "Removes leaving_id when present after the addition."
+    },
+    {
+      "marks": 1,
+      "criterion": "Handles an absent leaving_id safely without an exception."
+    },
+    {
+      "marks": 1,
+      "criterion": "Determines whether new_id belongs to the final active set, including when both IDs are equal."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correctly checks whether final active is a subset of permitted, including equality and an empty final set."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns the two Boolean results in order, modifying active itself while preserving permitted."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Any correct Python implementation meeting the stated input/output, mutation and file requirements. Equivalent set methods/operators and correct context-manager or explicit file closing accepted. Do not double-credit the same achieved criterion."
+  ],
+  "partial_credit_notes": "Award each independent achieved step up to six marks; a minor syntax slip need not erase an otherwise clearly demonstrated algorithmic step. Accept equivalent valid algorithms. No credit for contradicting the stated operation order or output contract.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Exact reference executed; see audits/chunk-3/ORIGINAL_GAP_BATCH_CHECKS.json.",
+    "scope": "Does not test a superset operator separately or union/intersection/difference calculations. Equivalent safe removal methods are accepted; no arbitrary built-in ban."
+  },
+  "code": "def update_access(active, new_id, leaving_id, permitted):\n    active.add(new_id)\n    if leaving_id in active:\n        active.remove(leaving_id)\n    return new_id in active, active <= permitted",
+  "test_code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_coordinator_author",
+  "record_path": "question-bank/records/O-C3-B-003.json",
+  "question_path": "question-bank/questions/O-C3-B-003.json",
+  "markscheme_path": "question-bank/markschemes/O-C3-B-003.json",
+  "coordinator_status": "author_content_scope_answer_marking_execution_checks_passed; independent_Chunk4_audit_pending",
+  "independent_verification_status": "pending"
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "O-C3-B-001",
+  "unofficial": true,
+  "solution": "def load_totals(input_path, output_path):\n    count = 0\n    total = 0\n    with open(input_path, \"r\", encoding=\"utf-8\") as source:\n        for line in source:\n            total += int(line.strip())\n            count += 1\n    with open(output_path, \"w\", encoding=\"utf-8\") as report:\n        report.write(str(count) + \"\\n\")\n        report.write(str(total) + \"\\n\")\n    return count, total",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Opens and reads the input text file in read mode."
+    },
+    {
+      "marks": 1,
+      "criterion": "Converts and processes every integer measurement, including negative values."
+    },
+    {
+      "marks": 1,
+      "criterion": "Determines both count and total correctly, including an empty input."
+    },
+    {
+      "marks": 1,
+      "criterion": "Opens the output in write/overwrite mode and writes the two requested newline-terminated lines in order."
+    },
+    {
+      "marks": 1,
+      "criterion": "Closes both files, including correct use of context managers."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns the correct count/total tuple after completing file processing."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Any correct Python implementation meeting the stated input/output, mutation and file requirements. Equivalent set methods/operators and correct context-manager or explicit file closing accepted. Do not double-credit the same achieved criterion."
+  ],
+  "partial_credit_notes": "Award each independent achieved step up to six marks; a minor syntax slip need not erase an otherwise clearly demonstrated algorithmic step. Accept equivalent valid algorithms. No credit for contradicting the stated operation order or output contract.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Exact reference executed; see audits/chunk-3/ORIGINAL_GAP_BATCH_CHECKS.json.",
+    "scope": "Append mode remains untested. Python helper examples are may-include, not a mandatory call checklist. No Java requirement is introduced."
+  },
+  "code": "def load_totals(input_path, output_path):\n    count = 0\n    total = 0\n    with open(input_path, \"r\", encoding=\"utf-8\") as source:\n        for line in source:\n            total += int(line.strip())\n            count += 1\n    with open(output_path, \"w\", encoding=\"utf-8\") as report:\n        report.write(str(count) + \"\\n\")\n        report.write(str(total) + \"\\n\")\n    return count, total",
+  "markscheme_status": "preliminary_unofficial_verified_by_coordinator_author"
+}

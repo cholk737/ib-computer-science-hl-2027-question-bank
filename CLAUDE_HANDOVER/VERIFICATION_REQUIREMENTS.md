@@ -1,0 +1,9 @@
+# Verification requirements
+
+For every question: exact statement/all guidance/level; actual demanded knowledge rather than topic mention; command/difficulty/mark depth; full self-contained text/subquestions/data/assets/code; technical correctness; complete answer; mark-by-mark criteria and cap; alternatives/partial credit; valid Python/domain/edge cases and relevant algorithm time/space reasoning; source file/session/page/Q/part or honest original authorship; links/IDs/duplicate relationships; saved checks and current content hashes.
+
+Keep six mutable dimensions distinct: mapping, technical, answer, markscheme, assets, provenance. Mark pending/issue/stale where appropriate and give evidence. Original questions have no invented historical references; provenance can verify original authorship. Author verification is not independent Chunk4 verification. Do not clear a marking ambiguity merely because code executes or scope mapping is accepted.
+
+Python checks should use independent expected results/oracles where feasible, including empty/singleton/boundary/duplicate/invalid-domain handling when actually in the prompt's domain, plus input mutation/aliasing and object identity where relevant. Do not demand out-of-domain inputs without changing the question contract. Preserve source defects separately. All generated criteria are unofficial.
+
+Current semantic regression guards prohibit conflating encapsulation with hiding, generic for with counted, generic while with pre-test, or slope/intercept with the whole regression topic. Exact guide scope may be broader than a tested aspect; show what remains unsupported. All source documents unchanged. Future PDFs only in authorized Chunk5: render and inspect every page for clipping, missing data/figures, code legibility, numbering and answer leakage; student/markscheme PDFs separate.

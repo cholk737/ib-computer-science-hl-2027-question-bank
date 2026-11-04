@@ -1,3 +1,5 @@
+> **Latest master handover override (4 November 2026):** Follow `IB-CS-HL-2027/audits/handover/USER_MASTER_HANDOVER_REQUEST.md` (or `audits/handover/...` inside project). Preserve Git history and complete the portable handover. Future Claude execution is ONE AGENT, without subagents. Chunk 3 is bank/search/coverage only; Chunk 4 is full bank verification with no examination generation; Chunk 5 is future mass examination generation and quality ranking. These later stage definitions and the single-agent Claude rule supersede conflicting historical instructions below. Do not execute Chunk 4 or 5 in this Codex run.
+
 > **Later user override (4 November 2026):** Chunk 3 is database/search/coverage infrastructure only. Do not generate examinations, topic tests, PDFs or full examination assembly this chunk. Follow `IB-CS-HL-2027/audits/chunk-3/USER_CHUNK3_SCOPE.md` (or `audits/chunk-3/USER_CHUNK3_SCOPE.md` inside the project) and current PROGRESS.md for the revised completion gates. This supersedes the original Chunk 3 draft-paper requirement below.
 
 # AGENTS.md — IB Computer Science HL 2027 Exam Conversion Project

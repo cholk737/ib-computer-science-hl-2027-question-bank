@@ -1,9 +1,250 @@
 {
   "schema_version": 1,
   "unofficial": true,
-  "updated_at": "2026-11-04T14:04:44.354669+01:00",
+  "updated_at": "2026-11-04T19:21:26.736031+01:00",
   "scope_bullet_id_rule": "CODE:GNN is the one-based exact guidance paragraph. Direct relevance certifies the described assessed skill, never every item in the paragraph.",
   "reviews": [
+    {
+      "question_id": "O-C3-B-001",
+      "record_sha256": "ec9fd1df865720827f41444d7fc9219212d5e488bc1159e720af2be08054b027",
+      "reviewer": "/root",
+      "reviewed_at": "2026-11-04T18:20:52.906743+00:00",
+      "question_type": "Python code construction",
+      "review_scope": "Coordinator author review of new original; independent Chunk4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read complete exact statement and guidance; mapped only described aspects; omitted scope explicitly retained."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Executed reference function in 5 domain/edge cases; independent fixture or bitmask oracle; output/mutation/file closing checked."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Stored full reference matches tested function and defined domain; separate student file contains no reference solution."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Six independent positive criteria manually checked against command and complete solution; alternatives/partial credit included; unofficial preliminary author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All necessary input/domain information and function contract contained in prose; no missing diagram/table or code stimulus required."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original coordinator authorship recorded; historical source IDs intentionally empty; official syllabus evidence is not claimed as an original question source."
+        }
+      },
+      "mappings": [
+        {
+          "code": "B2.5.1",
+          "scope_bullet_id": "B2.5.1:G01",
+          "exact_guidance": "• Programs that manipulate text files",
+          "assessed_skill": "Construct text-file input and a numeric summary report.",
+          "relevance": "direct",
+          "evidence": "The actual code-construction contract and independent marking steps require this aspect. Append mode remains untested. Python helper examples are may-include, not a mandatory call checklist. No Java requirement is introduced.",
+          "coverage_limit": "Append mode remains untested. Python helper examples are may-include, not a mandatory call checklist. No Java requirement is introduced.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt explicitly requires construction of the scoped Python function."
+        },
+        {
+          "code": "B2.5.1",
+          "scope_bullet_id": "B2.5.1:G02",
+          "exact_guidance": "• Opening a sequential file in various modes (read, write, append)",
+          "assessed_skill": "Select read and overwrite/write modes for different text files.",
+          "relevance": "partial",
+          "evidence": "The actual code-construction contract and independent marking steps require this aspect. Append mode remains untested. Python helper examples are may-include, not a mandatory call checklist. No Java requirement is introduced.",
+          "coverage_limit": "Append mode remains untested. Python helper examples are may-include, not a mandatory call checklist. No Java requirement is introduced.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt explicitly requires construction of the scoped Python function."
+        },
+        {
+          "code": "B2.5.1",
+          "scope_bullet_id": "B2.5.1:G03",
+          "exact_guidance": "• How to read from and write to files, append data to an existing file, and close a file once operations are completed",
+          "assessed_skill": "Read and write sequential text, then close both files.",
+          "relevance": "partial",
+          "evidence": "The actual code-construction contract and independent marking steps require this aspect. Append mode remains untested. Python helper examples are may-include, not a mandatory call checklist. No Java requirement is introduced.",
+          "coverage_limit": "Append mode remains untested. Python helper examples are may-include, not a mandatory call checklist. No Java requirement is introduced.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt explicitly requires construction of the scoped Python function."
+        },
+        {
+          "code": "B2.5.1",
+          "scope_bullet_id": "B2.5.1:G05",
+          "exact_guidance": "• Functions for Python users may include open(), read(), readline(), write(), close().",
+          "assessed_skill": "Apply appropriate Python file operations; context-manager closing is acceptable.",
+          "relevance": "partial",
+          "evidence": "The actual code-construction contract and independent marking steps require this aspect. Append mode remains untested. Python helper examples are may-include, not a mandatory call checklist. No Java requirement is introduced.",
+          "coverage_limit": "Append mode remains untested. Python helper examples are may-include, not a mandatory call checklist. No Java requirement is introduced.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt explicitly requires construction of the scoped Python function."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Append mode remains untested. Python helper examples are may-include, not a mandatory call checklist. No Java requirement is introduced."
+      ],
+      "execution_evidence": "audits/chunk-3/ORIGINAL_GAP_BATCH_CHECKS.json",
+      "coordinator_review": {
+        "question_id": "O-C3-B-001",
+        "review_sha256": "4f984ca41e97a798d52c4bb0a84ca64b37d853fe2a9c4e29585129a83028d811",
+        "record_sha256": "ec9fd1df865720827f41444d7fc9219212d5e488bc1159e720af2be08054b027",
+        "source_path": "question-bank/original-review-drafts/O-C3-B-001.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:21:26.736031+01:00",
+        "reason": "Coordinator authored from exact zero-linked B2.5.1/B4.1.5 scope; checked complete prompts/6-mark criteria/alternatives and executed exact references across5 file fixtures/closing checks,256 set-comparison and4096 mutable-update/subset cases. Original author verification only; independent Chunk4 audit pending.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "O-C3-B-002",
+      "record_sha256": "2c7aedbff9e31d95b6e93abf0faae28492c8d8f39e75bc1e17798c7e1c5ad893",
+      "reviewer": "/root",
+      "reviewed_at": "2026-11-04T18:20:52.909882+00:00",
+      "question_type": "Python code construction",
+      "review_scope": "Coordinator author review of new original; independent Chunk4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read complete exact statement and guidance; mapped only described aspects; omitted scope explicitly retained."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Executed reference function in 256 domain/edge cases; independent fixture or bitmask oracle; output/mutation/file closing checked."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Stored full reference matches tested function and defined domain; separate student file contains no reference solution."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Six independent positive criteria manually checked against command and complete solution; alternatives/partial credit included; unofficial preliminary author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All necessary input/domain information and function contract contained in prose; no missing diagram/table or code stimulus required."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original coordinator authorship recorded; historical source IDs intentionally empty; official syllabus evidence is not claimed as an original question source."
+        }
+      },
+      "mappings": [
+        {
+          "code": "B4.1.5",
+          "scope_bullet_id": "B4.1.5:G01",
+          "exact_guidance": "• The fundamental characteristics of sets, including their unordered nature and the uniqueness of elements",
+          "assessed_skill": "Apply unique, unordered set membership to duplicate-bearing lists.",
+          "relevance": "direct",
+          "evidence": "The actual code-construction contract and independent marking steps require this aspect. Does not test membership/add/remove/subset operations or hash-table mechanics. Order of set iteration must not be marked.",
+          "coverage_limit": "Does not test membership/add/remove/subset operations or hash-table mechanics. Order of set iteration must not be marked.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt explicitly requires construction of the scoped Python function."
+        },
+        {
+          "code": "B4.1.5",
+          "scope_bullet_id": "B4.1.5:G02",
+          "exact_guidance": "• Operations: union, intersection and difference",
+          "assessed_skill": "Construct union, intersection and directional difference.",
+          "relevance": "direct",
+          "evidence": "The actual code-construction contract and independent marking steps require this aspect. Does not test membership/add/remove/subset operations or hash-table mechanics. Order of set iteration must not be marked.",
+          "coverage_limit": "Does not test membership/add/remove/subset operations or hash-table mechanics. Order of set iteration must not be marked.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt explicitly requires construction of the scoped Python function."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Does not test membership/add/remove/subset operations or hash-table mechanics. Order of set iteration must not be marked."
+      ],
+      "execution_evidence": "audits/chunk-3/ORIGINAL_GAP_BATCH_CHECKS.json",
+      "coordinator_review": {
+        "question_id": "O-C3-B-002",
+        "review_sha256": "bb1ff0f9728e91f3301de3842630eb29ec296e4a7a22a549168d61a90e1dbd55",
+        "record_sha256": "2c7aedbff9e31d95b6e93abf0faae28492c8d8f39e75bc1e17798c7e1c5ad893",
+        "source_path": "question-bank/original-review-drafts/O-C3-B-002.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:21:26.736031+01:00",
+        "reason": "Coordinator authored from exact zero-linked B2.5.1/B4.1.5 scope; checked complete prompts/6-mark criteria/alternatives and executed exact references across5 file fixtures/closing checks,256 set-comparison and4096 mutable-update/subset cases. Original author verification only; independent Chunk4 audit pending.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "O-C3-B-003",
+      "record_sha256": "e5c25f9b90499fb2d96fab24113f9e1d7f9558be9693ab5a213590ba50623a95",
+      "reviewer": "/root",
+      "reviewed_at": "2026-11-04T18:20:52.911646+00:00",
+      "question_type": "Python code construction",
+      "review_scope": "Coordinator author review of new original; independent Chunk4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read complete exact statement and guidance; mapped only described aspects; omitted scope explicitly retained."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Executed reference function in 4096 domain/edge cases; independent fixture or bitmask oracle; output/mutation/file closing checked."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Stored full reference matches tested function and defined domain; separate student file contains no reference solution."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Six independent positive criteria manually checked against command and complete solution; alternatives/partial credit included; unofficial preliminary author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All necessary input/domain information and function contract contained in prose; no missing diagram/table or code stimulus required."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original coordinator authorship recorded; historical source IDs intentionally empty; official syllabus evidence is not claimed as an original question source."
+        }
+      },
+      "mappings": [
+        {
+          "code": "B4.1.5",
+          "scope_bullet_id": "B4.1.5:G01",
+          "exact_guidance": "• The fundamental characteristics of sets, including their unordered nature and the uniqueness of elements",
+          "assessed_skill": "Apply unique set membership while updating a mutable set.",
+          "relevance": "partial",
+          "evidence": "The actual code-construction contract and independent marking steps require this aspect. Does not test a superset operator separately or union/intersection/difference calculations. Equivalent safe removal methods are accepted; no arbitrary built-in ban.",
+          "coverage_limit": "Does not test a superset operator separately or union/intersection/difference calculations. Equivalent safe removal methods are accepted; no arbitrary built-in ban.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt explicitly requires construction of the scoped Python function."
+        },
+        {
+          "code": "B4.1.5",
+          "scope_bullet_id": "B4.1.5:G03",
+          "exact_guidance": "• Code to check if an element is in a set, to add an element to a set, to remove an element, and to check whether one set is a subset/superset of another set",
+          "assessed_skill": "Construct membership, add, safe remove and subset operations with a defined update order.",
+          "relevance": "direct",
+          "evidence": "The actual code-construction contract and independent marking steps require this aspect. Does not test a superset operator separately or union/intersection/difference calculations. Equivalent safe removal methods are accepted; no arbitrary built-in ban.",
+          "coverage_limit": "Does not test a superset operator separately or union/intersection/difference calculations. Equivalent safe removal methods are accepted; no arbitrary built-in ban.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt explicitly requires construction of the scoped Python function."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Does not test a superset operator separately or union/intersection/difference calculations. Equivalent safe removal methods are accepted; no arbitrary built-in ban."
+      ],
+      "execution_evidence": "audits/chunk-3/ORIGINAL_GAP_BATCH_CHECKS.json",
+      "coordinator_review": {
+        "question_id": "O-C3-B-003",
+        "review_sha256": "353545f26397a150414b2fd1a85af825cfbf594672af97c213ff1d619b548bce",
+        "record_sha256": "e5c25f9b90499fb2d96fab24113f9e1d7f9558be9693ab5a213590ba50623a95",
+        "source_path": "question-bank/original-review-drafts/O-C3-B-003.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:21:26.736031+01:00",
+        "reason": "Coordinator authored from exact zero-linked B2.5.1/B4.1.5 scope; checked complete prompts/6-mark criteria/alternatives and executed exact references across5 file fixtures/closing checks,256 set-comparison and4096 mutable-update/subset cases. Original author verification only; independent Chunk4 audit pending.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
     {
       "question_id": "P-SRC001-Q01",
       "record_sha256": "1970a08a04265cd1fe8eda7b250f07c4ee010d19f510a44296c28c7fdbe4f412",
@@ -2097,6 +2338,2457 @@
         "coordinator": "/root",
         "reviewed_at": "2026-11-04T14:04:44.354669+01:00",
         "reason": "Coordinator read complete rectangular-list tariff prompt, answer/7 criteria/all scope limits; independent exhaustive tariff oracle and no-mutation checks passed. Only for-each traversal/simple selection assessed, not all counted/pre/post loops; split-word editorial issue retained. All10 source001 B records now individually integrated.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q01-a",
+      "record_sha256": "b156144f2a2cb3498e48fd30c72653fe19fc86835e676dc9b9cbdcee7f92c1ee",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:56:10.409487+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.2.2",
+          "scope_bullet_id": "A3.2.2:G02",
+          "exact_guidance": "• The relationships between different data entities within a database",
+          "assessed_skill": "Construct supervisor-to-production and production-to-editor one-to-many relationships.",
+          "relevance": "direct",
+          "evidence": "Two explicitly specified relationships translated into ERD, each1 mark."
+        },
+        {
+          "code": "A3.2.2",
+          "scope_bullet_id": "A3.2.2:G03",
+          "exact_guidance": "• The roles of cardinality and modality in defining relationships in ERDs",
+          "assessed_skill": "Show mandatory one-and-one-or-more participation on both ERD relationships.",
+          "relevance": "direct",
+          "evidence": "Every child exactly one parent and every parent at least one child stated. Criteria explicitly include cardinality/modality."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "The four stated minimum/maximum constraints yield Supervisor1→Production1..many and Production1→Editor1..many, with each child exactly1 parent."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Textual answer correctly describes each relation and mandatory participation; candidate expected an actual equivalent labelled ERD."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Two independently marked relationship/cardinality/modality criteria total2. Equivalent standard ERD notations accepted through partial-credit note. Output diagram required, no missing stimulus diagram."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q01-a.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• The significance of entity relationship diagrams (ERDs) in crafting organized, efficient database designs tailored for specific applications"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q01-a.json": "b156144f2a2cb3498e48fd30c72653fe19fc86835e676dc9b9cbdcee7f92c1ee",
+        "question-bank/questions/P-SRC002-Q01-a.json": "8c67a9c7984b1aa8666f1ca1bfbe963279b62b5ed8cd1b587be95f954eb0ff3b",
+        "question-bank/markschemes/P-SRC002-Q01-a.json": "9b22c99df566156d8cfe23d736b5eb8cc9288964d3efb77f82984037d987ce85",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q01-a.json": "8ae5853a134b0144653ef67e09b62082777c56f7605c73be91a47fd904d3cc80"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q01-a",
+        "review_sha256": "ff0977fccd0659a48e4f920d1c1d7202e6d94bc78ac9ffef7e0943e7268ea7dc",
+        "record_sha256": "b156144f2a2cb3498e48fd30c72653fe19fc86835e676dc9b9cbdcee7f92c1ee",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-007.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:05.907973+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q01-b",
+      "record_sha256": "cb71afa26ba739867ed7604b0f303e1678eb0ef399bb4e627908215c5690fad3",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:56:10.410016+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.1.1",
+          "scope_bullet_id": "A3.1.1:G02",
+          "exact_guidance": "• Benefits of databases: community support, concurrency control, data consistency, data integrity, data retrieval, reduced data duplication, reduced redundancy, reliable transaction processing, scalability, security features",
+          "assessed_skill": "Outline one relational database retrieval/consistency benefit for document change histories.",
+          "relevance": "partial",
+          "evidence": "Only one contextual benefit tested, not features or limitations or all listed benefits."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Shared related records support coherent queries and avoid manually joining independent change files; database use still requires correct identifiers and transactional updates."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Model gives a concrete benefit (consistent query retrieval) developed in document-history context, meeting Outline2."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "One valid retrieval/consistency/duplication benefit plus contextual development yields2. Alternatives phrased as equivalent technically valid solutions in partial-credit note."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q01-b.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Features: composite keys, foreign keys, primary keys, relationships, tables",
+        "• Limitations of databases: “big data” scalability issues, design complexity, hierarchical data handling, rigid schema, object-relational impedance mismatch, unstructured data handling"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q01-b.json": "cb71afa26ba739867ed7604b0f303e1678eb0ef399bb4e627908215c5690fad3",
+        "question-bank/questions/P-SRC002-Q01-b.json": "78777543b121138ba8e219b1b722081c931f70f897f92c565db327c4bf64ef95",
+        "question-bank/markschemes/P-SRC002-Q01-b.json": "1f60077f0ddf5b944177084609d8cbc0fa5b7245ad0d0a8e288b48b04403ad0e",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q01-b.json": "58f4446a77ad8ec007aba1701568e0b4555b613885bfc41d2d05ca23363b3bb8"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q01-b",
+        "review_sha256": "0543df52f5d98d996aaeb27820c8eb5dda694f11a40e0e800b707a2954c5c2c9",
+        "record_sha256": "cb71afa26ba739867ed7604b0f303e1678eb0ef399bb4e627908215c5690fad3",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-007.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:05.907973+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q01-c",
+      "record_sha256": "6772c7e5154e71e62ca78d357590c6fd49198cb6eb8c20e2d3e010585cd11503",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:56:10.410300+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.3.6",
+          "scope_bullet_id": "A3.3.6:G01",
+          "exact_guidance": "• The role of atomicity, consistency, isolation and durability (ACID) to ensure reliable processing of transactions",
+          "assessed_skill": "Explain how a supplied version check avoids stale overwrite/lost update.",
+          "relevance": "partial",
+          "evidence": "Concurrency/isolation facet assessed through provided mechanism; no requirement to know timestamp protocol, full ACID definitions or transaction commands."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Optimistic concurrency can detect stale version7 after committed version8 and reject/retry that attempted update; comparing and applying must be controlled as one conditional update in a correct implementation."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "The mismatch7 versus8 and rejection/retry prevent overwriting a committed edit, appropriate two-stage outline."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "One detection point plus one prevention point total2; retry must use refreshed state rather than blindly replay stale overwrite."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q01-c.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Transaction control language (TCL) commands: BEGIN TRANSACTION, COMMIT, ROLLBACK"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q01-c.json": "6772c7e5154e71e62ca78d357590c6fd49198cb6eb8c20e2d3e010585cd11503",
+        "question-bank/questions/P-SRC002-Q01-c.json": "022650fc15e2d3096ed8f093eb5fc674bb09b03f8997a009fa6fcf46cfd6ff1c",
+        "question-bank/markschemes/P-SRC002-Q01-c.json": "1088c26de23f6c2b6044cf3711fb9446952a4fec878ea4803ddd3ed8b936c636",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q01-c.json": "e868cb5547a05122c4842b135fd5f31bef9681892f74c38752a2057d6cdd272f"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q01-c",
+        "review_sha256": "763fe263d5ef98cc4a16f9a909a99dcafb0268b1259cd5df9794c373f588fd76",
+        "record_sha256": "6772c7e5154e71e62ca78d357590c6fd49198cb6eb8c20e2d3e010585cd11503",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-007.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:05.907973+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q01-d",
+      "record_sha256": "2e3ead3a71dc07a8b9ea1c0514b97f2dfe707c1ee830ea4efa12093c40ece35e",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:56:49.029815+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.3.6",
+          "scope_bullet_id": "A3.3.6:G01",
+          "exact_guidance": "• The role of atomicity, consistency, isolation and durability (ACID) to ensure reliable processing of transactions",
+          "assessed_skill": "Explain locking/serialized competing writers preventing a booking lost update.",
+          "relevance": "partial",
+          "evidence": "Isolation and integrity preservation through a supplied locking model; no full ACID catalogue required."
+        },
+        {
+          "code": "A3.3.6",
+          "scope_bullet_id": "A3.3.6:G02",
+          "exact_guidance": "• Transaction control language (TCL) commands: BEGIN TRANSACTION, COMMIT, ROLLBACK",
+          "assessed_skill": "Explain commit boundary when locks protect a conflicting update.",
+          "relevance": "partial",
+          "evidence": "Commit/release boundary assessed conceptually; no BEGIN/ROLLBACK syntax construction."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Exclusive lock before update blocks conflicting writer; reading current committed data before its own protected update avoids overwriting stale state. Lock lifetime must cover appropriate transaction boundary."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Answer gives lock, wait/retry, fresh ordered updates, commit/release, and why no lost update, all coherent."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Five1-mark components total5 and match Explain depth. Correct locking sequence—not just use a lock—needed for full marks; equivalent safe transaction behaviour acceptable."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q01-d.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q01-d.json": "2e3ead3a71dc07a8b9ea1c0514b97f2dfe707c1ee830ea4efa12093c40ece35e",
+        "question-bank/questions/P-SRC002-Q01-d.json": "71988cd189201a9d853b34f1f68efdf6098e1f0018b2bd53367d98472bf3e7ad",
+        "question-bank/markschemes/P-SRC002-Q01-d.json": "39b9204a23f8b866113238f1e25f199cc0c5d7c85596fc4af065675b8b9b51f4",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q01-d.json": "6bc8157b12227b8be7f01837da54cd1279663bd41f39575356667e51978caac8"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q01-d",
+        "review_sha256": "6baaa3d1001625c0587d077fe551457447de1d05c6cd3ef4671f9fc8e741c7ff",
+        "record_sha256": "2e3ead3a71dc07a8b9ea1c0514b97f2dfe707c1ee830ea4efa12093c40ece35e",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-008.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:06.400702+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q01-e-i",
+      "record_sha256": "a20d7a50918d08b500162bbd7411c7fefc7e52efbeed165f0a4f0531f21d0057",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:56:49.030461+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.3.6",
+          "scope_bullet_id": "A3.3.6:G01",
+          "exact_guidance": "• The role of atomicity, consistency, isolation and durability (ACID) to ensure reliable processing of transactions",
+          "assessed_skill": "Outline ACID consistency with a conserved total in a two-account transfer.",
+          "relevance": "partial",
+          "evidence": "Consistency/integrity invariant only; atomicity/isolation/durability not directly requested."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "A valid no-fee transfer preserves declared account constraints and combined balance. Consistency is constraint preservation, not merely every user seeing the same value."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "General constraint preservation plus debit/credit conserved total is correct contextual expansion for2."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Two1-mark criteria distinguish definition and valid invariant/example; other appropriate stated integrity rules accepted."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q01-e-i.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Transaction control language (TCL) commands: BEGIN TRANSACTION, COMMIT, ROLLBACK"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q01-e-i.json": "a20d7a50918d08b500162bbd7411c7fefc7e52efbeed165f0a4f0531f21d0057",
+        "question-bank/questions/P-SRC002-Q01-e-i.json": "82db4be75b96d89d1dff754eeb69270b516764f9dede67f97ca7e219714f10ce",
+        "question-bank/markschemes/P-SRC002-Q01-e-i.json": "a844e9356cbac9e6023f84e9f95c59419893fd93bbc26369f053287d825327b6",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q01-e-i.json": "c20ac384ab5628a17507de9c04a7a6fd96ea6f906c62616ceb8c8ba03b63bd12"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q01-e-i",
+        "review_sha256": "0f7a1e58444728cb903c9a7ab55a5fd158e9c0428c6ebd4c4e8ab2163e88074a",
+        "record_sha256": "a20d7a50918d08b500162bbd7411c7fefc7e52efbeed165f0a4f0531f21d0057",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-008.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:06.400702+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q01-e-ii",
+      "record_sha256": "e167a1990e8feee25988643f848492c096fb79629e5fa507c68871211ffe910b",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:56:49.030860+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.3.6",
+          "scope_bullet_id": "A3.3.6:G01",
+          "exact_guidance": "• The role of atomicity, consistency, isolation and durability (ACID) to ensure reliable processing of transactions",
+          "assessed_skill": "Describe atomic all-or-none transfer restoration after partial failure.",
+          "relevance": "partial",
+          "evidence": "Partial debit rollback preserves consistency/atomicity; isolation/durability untested."
+        },
+        {
+          "code": "A3.3.6",
+          "scope_bullet_id": "A3.3.6:G02",
+          "exact_guidance": "• Transaction control language (TCL) commands: BEGIN TRANSACTION, COMMIT, ROLLBACK",
+          "assessed_skill": "Describe ROLLBACK undoing the uncommitted transaction.",
+          "relevance": "partial",
+          "evidence": "ROLLBACK behaviour only; BEGIN/COMMIT not directly required."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Rollback undoes uncommitted changes of that transaction, restoring the debit and consistent pre-transfer balances. It does not undo unrelated committed transactions."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "All answer elements correctly target incomplete transaction, undo partial changes and restore previous balances."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Three1-mark elements total3 with partial credit for mechanism and state; do not accept merely completing the credit as explanation of ROLLBACK."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q01-e-ii.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q01-e-ii.json": "e167a1990e8feee25988643f848492c096fb79629e5fa507c68871211ffe910b",
+        "question-bank/questions/P-SRC002-Q01-e-ii.json": "9ba92811e40801863bab0c7a40007039b04c27d37db72fb6970ba6e9efb333cc",
+        "question-bank/markschemes/P-SRC002-Q01-e-ii.json": "6ee9b7929bd9446cca8e3d43b157df394207834d39fa84bd88cf3a353837d790",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q01-e-ii.json": "bbe65ee5cfc392bdf411f26b7e4080787e731be3509a5fb82893dba3b779efc7"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q01-e-ii",
+        "review_sha256": "c05d7ab3567b3aedd2186af71d3b10f1fc3eea942162074e51d5ba2845c43c46",
+        "record_sha256": "e167a1990e8feee25988643f848492c096fb79629e5fa507c68871211ffe910b",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-008.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:06.400702+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q02-a",
+      "record_sha256": "d42fb45fe8bdc48e3e079a0fb810f861dbbb5a5c885d3168f9656fe5dbe443cd",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:57:26.452735+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.2.4",
+          "scope_bullet_id": "A3.2.4:G01",
+          "exact_guidance": "• The relationship between tables using primary keys, foreign keys, composite keys and concatenated keys",
+          "assessed_skill": "Choose and justify a unique primary key for a supplied Build table.",
+          "relevance": "partial",
+          "evidence": "BuildID only; no table construction/foreign/composite/concatenated key relationships."
+        },
+        {
+          "code": "A3.2.4",
+          "scope_bullet_id": "A3.2.4:G02",
+          "exact_guidance": "• The importance of well-defined tables in ensuring data integrity",
+          "assessed_skill": "Relate unique row identification to a suitable key.",
+          "relevance": "partial",
+          "evidence": "Uniqueness aspect supports integrity; no constraints or cross-table consistency enforcement constructed."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Uniquely numbered builds imply BuildID identifies each row; LeadID or ClientID can recur and unnecessary additional fields are not needed to ensure uniqueness."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "BuildID plus uniqueness justification answers both explicit requests."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Two1-mark criteria for key selection and justification, with equivalent naming accepted. No invented requirement to concatenate IDs."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q02-a.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q02-a.json": "d42fb45fe8bdc48e3e079a0fb810f861dbbb5a5c885d3168f9656fe5dbe443cd",
+        "question-bank/questions/P-SRC002-Q02-a.json": "26b63cee70ea30eff8698c05f1cff3bd9ec057644130d56802aefb875256d736",
+        "question-bank/markschemes/P-SRC002-Q02-a.json": "3d4da15fff742cd3e6a03d5f83b90c4ba351ce6a6dcaf9b68c3b7838abe4758a",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q02-a.json": "9a97c93721af7dc02a5a1ca7b4ce3e1a81332ebb945a119f36b1b17582ff3021"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q02-a",
+        "review_sha256": "5f45ff39ee0adb67b0814ff62f355a21fa144595279cafd1c6253bedfad00ed6",
+        "record_sha256": "d42fb45fe8bdc48e3e079a0fb810f861dbbb5a5c885d3168f9656fe5dbe443cd",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-009.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:06.866925+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q02-b",
+      "record_sha256": "b683fa866a9c10096be31ec0d46a75a8294fc26470d1fb9f98203dc74d38e033",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:57:26.453418+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.2.3",
+          "scope_bullet_id": "A3.2.3:G01",
+          "exact_guidance": "• The importance of data type consistency",
+          "assessed_skill": "Choose a Boolean field for an explicitly two-state domain and outline why.",
+          "relevance": "supporting",
+          "evidence": "Assesses data-type selection under the learning statement. It does not directly explain importance of consistency across stored values or effects of wrong type; foundation evidence only."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Boolean is appropriate for an explicitly non-null yes/no domain. SQL dialects may encode BOOLEAN differently; conceptual two-state type remains valid."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Boolean plus True/False two-state representation meets Outline2. No requirement for a particular SQL storage encoding."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "One type plus one correct two-state explanation totals2. Equivalent Boolean/bit domain choices with justification should be accepted under general equivalence note."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q02-b.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• The potential effects of choosing the wrong data type"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q02-b.json": "b683fa866a9c10096be31ec0d46a75a8294fc26470d1fb9f98203dc74d38e033",
+        "question-bank/questions/P-SRC002-Q02-b.json": "7d3b40b8c4281e53c19a77c68664dea3b801af4992c1b6c13b9346c4869c5000",
+        "question-bank/markschemes/P-SRC002-Q02-b.json": "8856472da2ba2cbe377c6a5717e2d8a3931a7f1ba51f134cacd1cdb93cd9941f",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q02-b.json": "0872c23e4ee517f2e2b46a29da3e7f738f554847a6dc69c5d9f5e3be0aebd2f5"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q02-b",
+        "review_sha256": "1513a920dc96282f896536ab8c632ea569fc1d1822db2ffe3b684811ceef65a0",
+        "record_sha256": "b683fa866a9c10096be31ec0d46a75a8294fc26470d1fb9f98203dc74d38e033",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-009.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:06.866925+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q02-c",
+      "record_sha256": "cdd1f2a021001c7d680ca8747b8414cc5faeb32f4d4a5effe7e5bb55f3c0cf09",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:57:26.453793+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.3.2",
+          "scope_bullet_id": "A3.3.2:G01",
+          "exact_guidance": "• Queries must include joins, relational operators, filtering, pattern matching, and ordering data",
+          "assessed_skill": "Construct a two-table joined query filtered by lead and priority.",
+          "relevance": "partial",
+          "evidence": "Join/equality/filter conditions directly assessed; no pattern matching or ordering despite broader bullet list."
+        },
+        {
+          "code": "A3.3.2",
+          "scope_bullet_id": "A3.3.2:G02",
+          "exact_guidance": "• SQL commands: SELECT, DISTINCT, FROM, WHERE, BETWEEN, ORDER BY, GROUP BY, HAVING, ASC, DESC, JOIN, LIKE with % wildcard, AND, OR, NOT (note: Syntax may vary in different database systems)",
+          "assessed_skill": "Use SELECT/FROM/JOIN/WHERE/AND and column qualification to retrieve two client fields.",
+          "relevance": "partial",
+          "evidence": "Only listed command subset assessed; no DISTINCT/grouping/HAVING/LIKE/OR/NOT or ordering requirement."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "SQLite execution passes matching/nonmatching lead/priority cases and duplicate qualifying jobs; correct join avoids cross-client Cartesian results."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Answer returns exactly the two requested fields for matching jobs; repeated rows permitted and preserved. Saved checks/P-SRC002-Q02-c-sql-check.json."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Five1-mark steps total5. Equivalent explicit/implicit inner joins and DISTINCT (if used) should be accepted as duplicates permitted rather than required; semantic correctness governs."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q02-c.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q02-c.json": "cdd1f2a021001c7d680ca8747b8414cc5faeb32f4d4a5effe7e5bb55f3c0cf09",
+        "question-bank/questions/P-SRC002-Q02-c.json": "9abee2a845f07e04e75fd16167d6ebbb517612ee21828578dbe130b11264c796",
+        "question-bank/markschemes/P-SRC002-Q02-c.json": "adaea6504c9e3d9f867e00194fd8b147e26270b97956a69863eaecbc39a150d5",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q02-c.json": "dc6119b461fa91559cc94ae922051e4eeec67136e6ef3e187ee019732bbe10a0"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q02-c",
+        "review_sha256": "f96dfdfe79911895ddaa34cdf7de314a9d5ba728e70ba82a9b389d23302189cb",
+        "record_sha256": "cdd1f2a021001c7d680ca8747b8414cc5faeb32f4d4a5effe7e5bb55f3c0cf09",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-009.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:06.866925+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q02-d",
+      "record_sha256": "afa2a35f76a64db19f685a634e7b48c5662cd3e4adf6485fbe1876e502fde6bb",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:58:23.474483+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.2.6",
+          "scope_bullet_id": "A3.2.6:G01",
+          "exact_guidance": "• Examples may include library management, hospital management, e-commerce platforms, school management, employee management, inventory management, police crime reporting",
+          "assessed_skill": "Construct a three-table 3NF training-enrolment schema from supplied functional dependencies.",
+          "relevance": "direct",
+          "evidence": "Meaningful school/training management application. Dependencies assign learner facts to learner, event facts to event, and completion to the pair; source example list is non-exhaustive."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "LearnerID and EventID determine their separate entity facts; Completed depends on the combined pair. Decomposition removes both partial dependencies and leaves no stated transitive non-key dependency."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "LEARNER/EVENT/ENROLMENT with composite enrolment PK and two FKs preserves all supplied fields and dependencies. Assumes one enrolment per learner/event pair as supplied dependency."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Five1-mark components total5: both entity groups, completion association, composite key, two FKs/no partial dependence. Equivalent table/attribute naming and semantically valid surrogate-key schema with unique pair may be accepted."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q02-d.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q02-d.json": "afa2a35f76a64db19f685a634e7b48c5662cd3e4adf6485fbe1876e502fde6bb",
+        "question-bank/questions/P-SRC002-Q02-d.json": "49ada8dbbda9a8b2a8f013751a2c0d4cbfa040f07562d73ecec9bdb3a27c99b6",
+        "question-bank/markschemes/P-SRC002-Q02-d.json": "d2505518d2df5c67e130a39b23c2d0dec567015e310790c7bd52e5f93427acc8",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q02-d.json": "f490cf944dfd930983580ba53399fffe4a9c5c832950978cd6caccd048c7e705"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q02-d",
+        "review_sha256": "06ce0f2be0c212b2432e26bf67e3ade852c45d1d3241649138e83ea85663837b",
+        "record_sha256": "afa2a35f76a64db19f685a634e7b48c5662cd3e4adf6485fbe1876e502fde6bb",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-010.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:07.447518+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q03-a",
+      "record_sha256": "557111cbf2f2fb027051e757a7387606fa7255f7a496e85b1d7e894a392fda34",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:58:23.475218+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.2.1",
+          "scope_bullet_id": "A3.2.1:G01",
+          "exact_guidance": "• Conceptual schema, logical schema, physical schema",
+          "assessed_skill": "Outline a conceptual schema for clinic entities and relationships.",
+          "relevance": "partial",
+          "evidence": "Conceptual level only; logical and physical structures not independently described."
+        },
+        {
+          "code": "A3.2.1",
+          "scope_bullet_id": "A3.2.1:G02",
+          "exact_guidance": "• Abstract definitions of the data structure and organization of the data at different levels",
+          "assessed_skill": "Explain a high-level structure independent of physical storage/DBMS.",
+          "relevance": "partial",
+          "evidence": "One abstraction level described and distinguished from implementation; no three-way schema hierarchy."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Conceptual schema captures domain entities/relationships without committing to DBMS storage design."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "High-level entities/relationships plus independence from implementation correctly outlines its planning role."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Two1-mark elements total2. Context-specific entities can illustrate but are not mandatory because prompt asks role, not construct clinic schema."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q03-a.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q03-a.json": "557111cbf2f2fb027051e757a7387606fa7255f7a496e85b1d7e894a392fda34",
+        "question-bank/questions/P-SRC002-Q03-a.json": "6f61ff3aa91b6e66e8c2edb23ede0158805c9426a3f383968f6534dae6746744",
+        "question-bank/markschemes/P-SRC002-Q03-a.json": "13a041dd40d9ef3dc2061364b53f45b87081a589a208c070c596f410bcaeaece",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q03-a.json": "527904939f191fbd78ca7125e235dc3c6268fb47c830ca53817df9edb37dd18d"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q03-a",
+        "review_sha256": "f7bebc2cffff7e935e4100a3958453706662844d3d5bf5adcdc241f006a79704",
+        "record_sha256": "557111cbf2f2fb027051e757a7387606fa7255f7a496e85b1d7e894a392fda34",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-010.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:07.447518+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q03-c",
+      "record_sha256": "9fe7e3928d2deede5fbb1cb3de5aa584c0d24c0df6967ae2890cb3a417bbb6c2",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:58:23.475761+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.3.1",
+          "scope_bullet_id": "A3.3.1:G01",
+          "exact_guidance": "• Data language types must include data definition language (DDL) and data manipulation language (DML)",
+          "assessed_skill": "Describe SQL DDL responsibilities when implementing a schema.",
+          "relevance": "partial",
+          "evidence": "DDL only, no DML comparison or full distinction between language categories."
+        },
+        {
+          "code": "A3.3.1",
+          "scope_bullet_id": "A3.3.1:G02",
+          "exact_guidance": "• SQL statements to define data structures or to manipulate data",
+          "assessed_skill": "Describe creating structures, typed columns and key constraints.",
+          "relevance": "partial",
+          "evidence": "Data-definition statement purposes tested; manipulation operations not assessed."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "DDL specifies tables/columns/types and structural constraints. Description correctly distinguishes structure enforcement from processing row changes."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Three concrete DDL responsibilities appropriately describe implementing a relational model."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Three1-mark criteria total3. No SQL command syntax construction required; accurate DDL examples can substantiate equivalent description."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q03-c.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q03-c.json": "9fe7e3928d2deede5fbb1cb3de5aa584c0d24c0df6967ae2890cb3a417bbb6c2",
+        "question-bank/questions/P-SRC002-Q03-c.json": "c050451844574d2f69a709d96e19080b69a66c827b895b5e8a7ba2dc4979ee1a",
+        "question-bank/markschemes/P-SRC002-Q03-c.json": "8a8065009c88f7417d94011e55f5edca16d6c00cadea39b9d353489ca74960ab",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q03-c.json": "7d9da181189137127dd42a5de25750dc2a1d76e680b73b0be0cdb5de2b6b725b"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q03-c",
+        "review_sha256": "aa5e231ada65cd38a0833bb1d9a0eb24d98b5254f4d6600bcd9ad78c077a095a",
+        "record_sha256": "9fe7e3928d2deede5fbb1cb3de5aa584c0d24c0df6967ae2890cb3a417bbb6c2",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-010.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:07.447518+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q03-d",
+      "record_sha256": "c400965e5f77376d21e44ab16f47d20badc5345b477267cf626e73dad0dc99e3",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:58:51.246504+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.1.1",
+          "scope_bullet_id": "A3.1.1:G02",
+          "exact_guidance": "• Benefits of databases: community support, concurrency control, data consistency, data integrity, data retrieval, reduced data duplication, reduced redundancy, reliable transaction processing, scalability, security features",
+          "assessed_skill": "List database access-security tasks protecting confidential records.",
+          "relevance": "partial",
+          "evidence": "Security-feature benefit only, no relational feature/other benefits/limitations. Lists tasks without requiring explained benefit."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Authentication establishes account claim evidence; permissions limit authorized operations; review/revocation removes inappropriate continuing access. These are distinct access-management tasks."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Three model tasks are valid; authentication is not the same as authorization."
+        },
+        "markscheme": {
+          "status": "issue",
+          "evidence": "Three1-mark categories total3, but prompt permits any three appropriate tasks; current fixed authentication/permissions/review categories could restrict other valid access controls. State award any3 distinct correct access-security tasks with equivalence."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q03-d.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Features: composite keys, foreign keys, primary keys, relationships, tables",
+        "• Limitations of databases: “big data” scalability issues, design complexity, hierarchical data handling, rigid schema, object-relational impedance mismatch, unstructured data handling"
+      ],
+      "issues": [
+        "A-C3-MS-004: List3 security tasks should permit other distinct valid access restrictions (e.g. configure secure authentication, enforce least privilege, encrypt confidential data/keys appropriately) instead of requiring exactly the three model categories."
+      ],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q03-d.json": "c400965e5f77376d21e44ab16f47d20badc5345b477267cf626e73dad0dc99e3",
+        "question-bank/questions/P-SRC002-Q03-d.json": "f8bd16a69571d76a1a6db43450ceb0b5861ef71b23977dec770e799320653609",
+        "question-bank/markschemes/P-SRC002-Q03-d.json": "dab9ac7f3b5a65c4cdca61a535d7d5c76c7fcd6654be346d69692edb2a654970",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q03-d.json": "2b7cc7bbac17b461b61ada5125ea8a382652bace7b4f6119a0675978a765e1c0"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q03-d",
+        "review_sha256": "6dd1ffd91e86b8833897b0efefdb9fb65a636d43a6f8a87c904e1caa281a48a0",
+        "record_sha256": "c400965e5f77376d21e44ab16f47d20badc5345b477267cf626e73dad0dc99e3",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-011.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:07.834643+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q03-e",
+      "record_sha256": "1e236ef7de478607d2a595f17df33385abdf9a894798c48cb72596d471ca5299",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:58:51.247077+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.3.5",
+          "scope_bullet_id": "A3.3.5:G02",
+          "exact_guidance": "• Hiding data complexity, data consistency, independence, performance, query simplification, read-only data or updatable data, security",
+          "assessed_skill": "Explain restricted read-only view privacy, protected edits and simpler audit access.",
+          "relevance": "partial",
+          "evidence": "Security/read-only/query simplification/data hiding directly tested; virtual/materialized distinction, independence and performance not required."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "A restricted view limits exposed rows/columns and a genuinely read-only permission/interface prevents edits through it; underlying table permissions must also deny bypass."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Model correctly links minimal disclosure, prevented edits and simpler required audit access while retaining underlying data control."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Five1-mark points total5; privacy/field restriction and read-only/update prevention remain distinct. Controlled underlying-data criterion should require permission/bypass awareness rather than assume any view itself is secure."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q03-e.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Virtual views and materialized (snapshot) views"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q03-e.json": "1e236ef7de478607d2a595f17df33385abdf9a894798c48cb72596d471ca5299",
+        "question-bank/questions/P-SRC002-Q03-e.json": "b2d55f0297554ba5c96bdfb69572d6f26b5cffaee439f0faf118b686b654574b",
+        "question-bank/markschemes/P-SRC002-Q03-e.json": "d299d7729bee5dd98dcb8d77f8c12d7203726540f6a2a7112b83668915eca43b",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q03-e.json": "08a8a327c1b5f02867dc16e4fa1a86b350da772e801922be6e9f5c633000c96c"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q03-e",
+        "review_sha256": "f50f902c3c5b1426a0a43bd29de09d2dd4bfbd6a192ccd1642ce4c2d24d24e13",
+        "record_sha256": "1e236ef7de478607d2a595f17df33385abdf9a894798c48cb72596d471ca5299",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-011.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:07.834643+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q04-a",
+      "record_sha256": "83eed66b40925d68c68bc38c410d211b0d6068db01a301f4b5fafe41aad115f9",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:58:51.247484+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.4.3",
+          "scope_bullet_id": "A3.4.3:G02",
+          "exact_guidance": "• The uses of the techniques in extracting meaningful information from large data sets",
+          "assessed_skill": "List ways OLAP extracts meaningful business information from historical retail sales.",
+          "relevance": "partial",
+          "evidence": "Direct to statement OLAP business-intelligence role; examples aggregate by region, compare time, inspect category. Does not establish any of six named data-mining techniques under G01."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Multidimensional aggregation, time comparisons and more detailed category analysis are valid OLAP uses for historical retail sales."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "All three proposed examples are meaningful retailer analytical uses, not operational record updates."
+        },
+        "markscheme": {
+          "status": "issue",
+          "evidence": "Three1-mark categories total3. Prompt asks any3 ways; literal fixed category buckets may under-credit distinct correct breakdowns such as region/product/customer-type analysis if all assigned only first aggregation criterion. Clarify any3 distinct meaningful OLAP uses with no duplicated idea."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q04-a.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Data mining techniques must include classification, clustering, regression, association rule discovery, sequential pattern discovery, anomaly detection (note: This links to “A4 Machine learning”)."
+      ],
+      "issues": [
+        "A-C3-MS-005: OLAP List3 examples require any3 distinct meaningful analytical uses rather than rigid one aggregation + one time + one drill-down pattern."
+      ],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q04-a.json": "83eed66b40925d68c68bc38c410d211b0d6068db01a301f4b5fafe41aad115f9",
+        "question-bank/questions/P-SRC002-Q04-a.json": "cac12edbb84c5ddb5f8813b59d3833644317f305693bdd398f6ba6ac50e30ea5",
+        "question-bank/markschemes/P-SRC002-Q04-a.json": "821bf5648747703b3a296f0d3015d0793c94da9eb29c454d6978c156bff32990",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q04-a.json": "28e98e868e8e35296dcded59e4abc36a5eed9f0643565f225463c3a03f69da50"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q04-a",
+        "review_sha256": "a0444ce1bf9f4633191844d295c6f605907f896cd7d8857839a3776b5fb6cbea",
+        "record_sha256": "83eed66b40925d68c68bc38c410d211b0d6068db01a301f4b5fafe41aad115f9",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-011.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:07.834643+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q04-b",
+      "record_sha256": "cb14ddb6027a48f56f3d26bfc6257ff7b65f1943a944ae9dcb3edeb0610baea2",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:59:45.429666+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.4.2",
+          "scope_bullet_id": "A3.4.2:G01",
+          "exact_guidance": "• The roles of append-only data, subject-oriented data, integrated data, time-variant data, non-volatile data and data optimized for query performance, to ensure efficient data storage and analysis",
+          "assessed_skill": "Define an integrated subject-oriented historical analytical warehouse.",
+          "relevance": "partial",
+          "evidence": "One-mark definition identifies several named attributes, but does not explain append-only/nonvolatile/time-variant/query-optimized roles in context."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Integrated subject-oriented historical data for analysis/decision support is a valid warehouse definition; does not conflate operational transaction store with analytical warehouse."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Concise defining combination addresses Define1."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Single1-mark criterion rewards a recognizable analytical warehouse definition, not requiring every guide property for1."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q04-b.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q04-b.json": "cb14ddb6027a48f56f3d26bfc6257ff7b65f1943a944ae9dcb3edeb0610baea2",
+        "question-bank/questions/P-SRC002-Q04-b.json": "a2741cd3f16c7c775c796622666b3494204efb74dcfea4287eb91b8f8cb8a875",
+        "question-bank/markschemes/P-SRC002-Q04-b.json": "045e224b35eea57a2c444e4f4732c5a080c3765a604cecfbb3764caaca108cfd",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q04-b.json": "af5362a0bc45e04fefb5755e83572a4499a9d7f36568799690473cbb81f37c7b"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q04-b",
+        "review_sha256": "9eed58a5fd627aaa148a34657a2e35199ea5bd9d6d71b3f9d91c0df2c58ec21f",
+        "record_sha256": "cb14ddb6027a48f56f3d26bfc6257ff7b65f1943a944ae9dcb3edeb0610baea2",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-012.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:08.222509+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q04-c",
+      "record_sha256": "9fb904773b0a22dd850c33b04338e93cdc80aead864356e8576276ff704d6bfa",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:59:45.430456+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A4.2.1",
+          "scope_bullet_id": "A4.2.1:G01",
+          "exact_guidance": "• The impact of data quality on model performance",
+          "assessed_skill": "Explain how format inconsistencies, duplicates and missing observations affect model training.",
+          "relevance": "direct",
+          "evidence": "Explicit why/pretraining explanation links quality defects with comparability, bias in weighting and invalid/distorted learning."
+        },
+        {
+          "code": "A4.2.1",
+          "scope_bullet_id": "A4.2.1:G02",
+          "exact_guidance": "• Techniques for handling outliers, removing or consolidating duplicate data, identifying incorrect data, filtering irrelevant data, transforming improperly formatted data, and imputation, deletion or predictive modelling for missing data",
+          "assessed_skill": "Explain cleaning formats, consolidating/removing duplicates and treating missing values.",
+          "relevance": "partial",
+          "evidence": "Only three cleaning families tested; outliers/irrelevant data/incorrect values/predictive missing-data modelling not established."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Inconsistent formats can misinterpret equivalent values; duplicate observations can overweight cases; missing values require justified handling. Removing all duplicates indiscriminately is not universally correct if repeated observations are genuine."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Answer links suitable treatment with each problem and does not conflate format standardization with numerical scaling."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Five1-mark components total5: treatment/effect for format and duplicate, plus suitable missing-value treatment with purpose. Different justified treatments accepted."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q04-c.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Normalization and standardization as crucial preprocessing steps"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q04-c.json": "9fb904773b0a22dd850c33b04338e93cdc80aead864356e8576276ff704d6bfa",
+        "question-bank/questions/P-SRC002-Q04-c.json": "7522f249dcff2968fac7e18ed07d902e10c483f43e1101b4e84d09af79254ef3",
+        "question-bank/markschemes/P-SRC002-Q04-c.json": "9a69b8a4fc9c5ea26edc3ed57313b02c7531e789cd5746f7af1a7e8d308f0bf0",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q04-c.json": "ed2fdac9e54448ff146a3f5de38e891386500445ab26f563e9659d6df75e66cd"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q04-c",
+        "review_sha256": "e7f4dde05a72535b325a4be2d25fa26e805a1b7b243d67dcf48fdf61baac8f21",
+        "record_sha256": "9fb904773b0a22dd850c33b04338e93cdc80aead864356e8576276ff704d6bfa",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-012.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:08.222509+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q04-d",
+      "record_sha256": "575a361ff6fb5f42e78acf66d395396ed3c4dc4db60ed20b828557f7407c6e68",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:59:45.431022+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A4.3.2",
+          "scope_bullet_id": "A4.3.2:G01",
+          "exact_guidance": "• K-Nearest Neighbours (K-NN) and decision trees algorithms to categorize new data points, based on patterns learned from existing labelled data",
+          "assessed_skill": "Describe supervised decision-tree training and a new record following learned splits to a category.",
+          "relevance": "partial",
+          "evidence": "Decision tree directly assessed, K-NN not. Software pass/fail labels are a valid non-exhaustive classification application."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "A supervised tree learns feature splits from labelled examples; applying tests for a new record leads to a leaf/category. Independent labelled evaluation is useful but not itself the classification operation."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Model sequence training→splits→branch traversal→leaf class is correct, with optional evaluation detail."
+        },
+        "markscheme": {
+          "status": "issue",
+          "evidence": "Four1-mark criteria total4. Fourth currently permits appropriate evaluation detail as alternative to leaf prediction, allowing full marks without completing classification; clarify classification-output requirement or add evaluation only as supplementary credit under a justified cap."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q04-d.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Real-world applications of K-NN may include collaborative filtering recommendation systems.",
+        "• Real-world applications of decision trees may include medical diagnosis based on a patient’s symptoms."
+      ],
+      "issues": [
+        "A-C3-MS-006: Fourth criterion leaf class prediction/appropriate evaluation detail should not let generic evaluation substitute for the category output that completes the requested classification mechanism."
+      ],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q04-d.json": "575a361ff6fb5f42e78acf66d395396ed3c4dc4db60ed20b828557f7407c6e68",
+        "question-bank/questions/P-SRC002-Q04-d.json": "f42bb6448bad597d965c812cfd3500ccc7b3028afc7a098c02d9a1df4256e768",
+        "question-bank/markschemes/P-SRC002-Q04-d.json": "ec8715f59e9677feb2bd44e54284ea3e87511f8fad8fd4c548891f9c5b4e94ba",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q04-d.json": "2d21c354c056c064ee2b80bf8e17cf27663de6c8738f63f77dd4f7622155fc29"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q04-d",
+        "review_sha256": "ade23f552bacc31e7c16b6fa6463de22ff7620c4c8a27462d94823f44276a0bf",
+        "record_sha256": "575a361ff6fb5f42e78acf66d395396ed3c4dc4db60ed20b828557f7407c6e68",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-012.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:08.222509+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q04-e",
+      "record_sha256": "2dc138dfce33c57f4fc6275f87f83d8752e97f977965b2cf0a0bc9b3a1444b3d",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:00:11.947779+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A3.4.3",
+          "scope_bullet_id": "A3.4.3:G01",
+          "exact_guidance": "• Data mining techniques must include classification, clustering, regression, association rule discovery, sequential pattern discovery, anomaly detection (note: This links to “A4 Machine learning”).",
+          "assessed_skill": "Describe anomaly detection against a baseline to flag unusual changes.",
+          "relevance": "partial",
+          "evidence": "Only anomaly detection among six required mining techniques; no credit for classification/clustering/regression/association/sequential patterns."
+        },
+        {
+          "code": "A3.4.3",
+          "scope_bullet_id": "A3.4.3:G02",
+          "exact_guidance": "• The uses of the techniques in extracting meaningful information from large data sets",
+          "assessed_skill": "Interpret unusual change records as investigation leads rather than proof of infringement.",
+          "relevance": "direct",
+          "evidence": "Scenario requires interpreting information extracted from data and limits of what the flag establishes."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Anomaly detection flags departures from an expected pattern; difference from baseline does not establish legal ownership/copying. No specific law needed."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Compare with normal patterns and flag departures for review accurately answers Describe2 with explicit inferential limit."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Two1-mark criteria total2 and combine method with appropriate interpretation; no marks for claiming deviation proves misconduct."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q04-e.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q04-e.json": "2dc138dfce33c57f4fc6275f87f83d8752e97f977965b2cf0a0bc9b3a1444b3d",
+        "question-bank/questions/P-SRC002-Q04-e.json": "976517676259b16c3ca493bb01d941f597d6eee76ac93cc4453d39cde3dcf585",
+        "question-bank/markschemes/P-SRC002-Q04-e.json": "3d4646eacf91b71b6c04f527beea6302f806badb8d6226590200b66a426d0f47",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q04-e.json": "e676289267b54a9fe41afc5a915468e90589a5dc8c6a0d7eb522cb32b343d6ac"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q04-e",
+        "review_sha256": "f6180f6dc97b8d07b0c4689f963c370603c188443075ee0e56ef615d320bccf7",
+        "record_sha256": "2dc138dfce33c57f4fc6275f87f83d8752e97f977965b2cf0a0bc9b3a1444b3d",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-013.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:08.615871+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q04-f",
+      "record_sha256": "0f373f19aa461b269264aec9eb60b7a730035a13e886979aae63d3658ecd1d86",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:00:11.948450+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A4.3.2",
+          "scope_bullet_id": "A4.3.2:G01",
+          "exact_guidance": "• K-Nearest Neighbours (K-NN) and decision trees algorithms to categorize new data points, based on patterns learned from existing labelled data",
+          "assessed_skill": "Compare labelled supervised category prediction with unsupervised discovery.",
+          "relevance": "partial",
+          "evidence": "General labelled classification properties tested, not K-NN/decision-tree operation. No algorithm-specific coverage inferred."
+        },
+        {
+          "code": "A4.3.4",
+          "scope_bullet_id": "A4.3.4:G01",
+          "exact_guidance": "• Clustering techniques in unsupervised learning group data based on feature similarities",
+          "assessed_skill": "Explain clustering by feature similarity without target labels and contrast outputs with predefined classes.",
+          "relevance": "direct",
+          "evidence": "Clustering mechanism and interpretation explicitly assessed in support-request context; no need to force purchasing example."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Classification targets predefined labels from supervised examples; clustering groups similar feature vectors without supplied target categories. Both can analyze the same request features for different goals."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "One similarity plus label/training/output distinctions and cluster interpretation provides appropriate Compare5 depth."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Five1-mark points total5 cover similarity and meaningful paired distinctions; clustering without labels does not mean no features or no human interpretation."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q04-f.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Real-world applications of K-NN may include collaborative filtering recommendation systems.",
+        "• Real-world applications of decision trees may include medical diagnosis based on a patient’s symptoms.",
+        "• Real-world applications of clustering may include using purchasing data to segment a customer base."
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q04-f.json": "0f373f19aa461b269264aec9eb60b7a730035a13e886979aae63d3658ecd1d86",
+        "question-bank/questions/P-SRC002-Q04-f.json": "0e861c8151beb3e139ae9d393d73d2642c2154d797e369612eca2c58dadbca40",
+        "question-bank/markschemes/P-SRC002-Q04-f.json": "d94f48d77c865dac07d78cce9d8ac9dcbc9c86a39fa2fb01fd1a7490a9e37bfa",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q04-f.json": "2b15113f2837518eeb0553a226d36401777b3a093a8453ecdf1503aea11d3069"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q04-f",
+        "review_sha256": "dfe601ab3ab2fc16f7106da8d9c461cb9749ad02e621bd8114f9f4bea5923547",
+        "record_sha256": "0f373f19aa461b269264aec9eb60b7a730035a13e886979aae63d3658ecd1d86",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-013.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:08.615871+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q05-a-ii",
+      "statement_mappings": [
+        {
+          "code": "B2.3.1",
+          "relevance": "partial",
+          "evidence": "Constructs one arithmetic assignment meeting a numeric objective, but no sequence of multiple instructions."
+        }
+      ],
+      "mappings": [
+        {
+          "code": "B2.3.1",
+          "guidance_index": 1,
+          "assessed_skill": "Apply weighted arithmetic in one assignment",
+          "relevance": "supporting",
+          "evidence": "Correct division and weighting meet calculation objective.",
+          "coverage_limit": "Does not ask impact of instruction order; operator precedence is not instruction-sequencing evidence.",
+          "scope_bullet_id": "B2.3.1:G01",
+          "exact_guidance": "• The impact of instruction order on program functionality",
+          "statement": "Construct programs that implement the correct sequence of code instructions to meet program objectives.",
+          "mapping_verification_status": "verified",
+          "statement_relevance": "partial",
+          "statement_evidence": "Constructs one arithmetic assignment meeting a numeric objective, but no sequence of multiple instructions."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "All4131 valid integer component combinations match independent linear-coefficient oracle.",
+        "Normalization criterion and weighted-combination criterion sum two marks; equivalent algebraic assignment accepted."
+      ],
+      "execution_evidence": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_012.json",
+      "issues": [
+        {
+          "severity": "low",
+          "dimension": "mapping",
+          "detail": "Retain as partial statement/supporting guidance match; do not return as checked instruction-order problem."
+        }
+      ],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T12:51:44.935903+00:00",
+      "record_sha256": "73eb2d557ec6d541bc3c614e1cd1c7a5c035bafb784b050df0bc27765a2f16d9",
+      "record_path": "question-bank/records/P-SRC002-Q05-a-ii.json",
+      "original_syllabus_codes": [
+        "B2.3.1"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 2,
+        "marking_point_sum": 2,
+        "status": "pass"
+      },
+      "revision": 2,
+      "revision_reason": "Explicit statement_relevance/statement_evidence fields for search importer; previous full review preserved.",
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q05-a-ii",
+        "review_sha256": "6ccc155959d60ee690fce991b24f42e28b0b2955d8266cc19d8fd9f945f20589",
+        "record_sha256": "73eb2d557ec6d541bc3c614e1cd1c7a5c035bafb784b050df0bc27765a2f16d9",
+        "source_path": "agents/chunk-3/agent-2-theme-b/question_reviews.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:08.615871+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q05-b",
+      "mappings": [
+        {
+          "code": "B2.3.2",
+          "guidance_index": 1,
+          "assessed_skill": "Construct ordered threshold selection for grade bands",
+          "relevance": "direct",
+          "evidence": "Function selects one grade for each disjoint allowed score interval.",
+          "coverage_limit": "Multiple if/early-return solution is valid; does not itself require elif/else syntax.",
+          "scope_bullet_id": "B2.3.2:G01",
+          "exact_guidance": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions",
+          "statement": "Construct programs utilizing appropriate selection structures.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.3.2",
+          "guidance_index": 2,
+          "assessed_skill": "Use numerical relational conditions",
+          "relevance": "direct",
+          "evidence": "Descending >= comparisons govern return value.",
+          "coverage_limit": "No AND/OR/NOT required.",
+          "scope_bullet_id": "B2.3.2:G02",
+          "exact_guidance": "• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "statement": "Construct programs utilizing appropriate selection structures.",
+          "mapping_verification_status": "verified"
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "issue",
+          "evidence": "needs_context_repair; concrete issue recorded in review."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "All66 scores35..100 checked against independent disjoint-range oracle; no overlap or omitted boundary.",
+        "Three criteria appropriate to small classification task; accept valid if/elif/else or other equivalent selection."
+      ],
+      "execution_evidence": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_012.json",
+      "issues": [
+        {
+          "severity": "low",
+          "dimension": "markscheme",
+          "detail": "Prompt should explicitly say return the grade string, since criteria demand return and phrase Construct grade(score) alone leaves output mechanism implicit."
+        }
+      ],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T12:51:44.935969+00:00",
+      "record_sha256": "3aa6b088b355869318e1753c3ed655930c76db6565d53f3dca40378c49982946",
+      "record_path": "question-bank/records/P-SRC002-Q05-b.json",
+      "original_syllabus_codes": [
+        "B2.3.2"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 3,
+        "marking_point_sum": 3,
+        "status": "pass"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q05-b",
+        "review_sha256": "90fa05edb2ed612210b10b771b26984d7aca4f83ee84ed1f173398dea814eed3",
+        "record_sha256": "3aa6b088b355869318e1753c3ed655930c76db6565d53f3dca40378c49982946",
+        "source_path": "agents/chunk-3/agent-2-theme-b/question_reviews.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:08.989908+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q05-c",
+      "mappings": [
+        {
+          "code": "B2.1.2",
+          "guidance_index": 1,
+          "assessed_skill": "Recognize absent substring lookup",
+          "relevance": "supporting",
+          "evidence": "Question asks why searching for a space fails.",
+          "coverage_limit": "No program constructed and no substring extracted/manipulated.",
+          "scope_bullet_id": "B2.1.2:G01",
+          "exact_guidance": "• Writing of programs that accurately identify and extract substrings from given strings, demonstrating the ability to perform various manipulations, such as altering, concatenating or replacing",
+          "statement": "Construct programs that can extract and manipulate substrings.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.1.3",
+          "guidance_index": 1,
+          "assessed_skill": "Explain input-dependent substring lookup exception",
+          "relevance": "direct",
+          "evidence": "Name lacks required delimiter; index signals ValueError.",
+          "coverage_limit": "Only an unexpected-input failure, not resource unavailability or silent logic errors.",
+          "scope_bullet_id": "B2.1.3:G01",
+          "exact_guidance": "• Potential points of failure in a program must include unexpected inputs, resource unavailability, logic errors.",
+          "statement": "Describe how programs use common exception handling techniques.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.1.3",
+          "guidance_index": 2,
+          "assessed_skill": "Describe failure signaling before error handling",
+          "relevance": "supporting",
+          "evidence": "Exception occurrence illustrates why handling may be needed.",
+          "coverage_limit": "No handling role/technique explicitly requested beyond identifying failure.",
+          "scope_bullet_id": "B2.1.3:G02",
+          "exact_guidance": "• The role of exception handling in developing programs",
+          "statement": "Describe how programs use common exception handling techniques.",
+          "mapping_verification_status": "verified"
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "Directly executed Isabella.index(space) and observed ValueError.",
+        "Two mark points separate absent delimiter from raised exception."
+      ],
+      "execution_evidence": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_015.json",
+      "issues": [],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T12:52:35.518300+00:00",
+      "record_sha256": "2f53934efefb47065affb96f46afe65f56b2d7a44bb18ae600e5ed76308445da",
+      "record_path": "question-bank/records/P-SRC002-Q05-c.json",
+      "original_syllabus_codes": [
+        "B2.1.2",
+        "B2.1.3"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 2,
+        "marking_point_sum": 2,
+        "status": "pass"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q05-c",
+        "review_sha256": "05956f04d530bed0c61abb001d72744452a9ce8f77f3244cf84c82a300b3c174",
+        "record_sha256": "2f53934efefb47065affb96f46afe65f56b2d7a44bb18ae600e5ed76308445da",
+        "source_path": "agents/chunk-3/agent-2-theme-b/question_reviews.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:08.989908+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q05-d",
+      "mappings": [
+        {
+          "code": "B2.1.3",
+          "guidance_index": 1,
+          "assessed_skill": "Handle missing-delimiter failure on unexpected string input",
+          "relevance": "direct",
+          "evidence": "try catches ValueError from name.index.",
+          "coverage_limit": "Only one failure category.",
+          "scope_bullet_id": "B2.1.3:G01",
+          "exact_guidance": "• Potential points of failure in a program must include unexpected inputs, resource unavailability, logic errors.",
+          "statement": "Describe how programs use common exception handling techniques.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.1.3",
+          "guidance_index": 2,
+          "assessed_skill": "Use handler to return a specified fallback",
+          "relevance": "direct",
+          "evidence": "Successful path returns position; exceptional path returns False.",
+          "coverage_limit": "Role applied, not an essay explanation.",
+          "scope_bullet_id": "B2.1.3:G02",
+          "exact_guidance": "• The role of exception handling in developing programs",
+          "statement": "Describe how programs use common exception handling techniques.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.1.3",
+          "guidance_index": 3,
+          "assessed_skill": "Construct Python try/except",
+          "relevance": "direct",
+          "evidence": "Required try/except explicitly used and exception type specified.",
+          "coverage_limit": "No finally block; does not cover complete required constructs bullet.",
+          "scope_bullet_id": "B2.1.3:G03",
+          "exact_guidance": "• Exception handling constructs that effectively manage errors must include try/catch in Java, and try/except in Python, along with the finally block.",
+          "statement": "Describe how programs use common exception handling techniques.",
+          "mapping_verification_status": "verified"
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "127 exhaustive strings passed; index0 is integer0, not Boolean False; missing delimiter produces Boolean False.",
+        "Separate try placement, ValueError handler and two outcomes make three concrete criteria."
+      ],
+      "execution_evidence": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_015.json",
+      "issues": [
+        {
+          "severity": "low",
+          "dimension": "technical",
+          "detail": "Using False as sentinel alongside valid index0 is allowed by prompt, but client code must distinguish with is False; do not call function result a Boolean-only result."
+        }
+      ],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T12:52:35.518577+00:00",
+      "record_sha256": "ea26d2cb0963e9225db3d0e5fbfc543b755e107720b151f6ad49070f49747805",
+      "record_path": "question-bank/records/P-SRC002-Q05-d.json",
+      "original_syllabus_codes": [
+        "B2.1.3"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 3,
+        "marking_point_sum": 3,
+        "status": "pass"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q05-d",
+        "review_sha256": "5b40d2584da9be8f17d09152a07b0907a167708ecd1871ff987e405caec55316",
+        "record_sha256": "ea26d2cb0963e9225db3d0e5fbfc543b755e107720b151f6ad49070f49747805",
+        "source_path": "agents/chunk-3/agent-2-theme-b/question_reviews.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:08.989908+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q05-e",
+      "mappings": [
+        {
+          "code": "B2.1.2",
+          "guidance_index": 1,
+          "assessed_skill": "Explain extraction after final name delimiter",
+          "relevance": "partial",
+          "evidence": "Explains finding final space and suffix so middle-name tokens are skipped.",
+          "coverage_limit": "Explanation of algorithm, not construction of a program or broader altering/replacing manipulations.",
+          "scope_bullet_id": "B2.1.2:G01",
+          "exact_guidance": "• Writing of programs that accurately identify and extract substrings from given strings, demonstrating the ability to perform various manipulations, such as altering, concatenating or replacing",
+          "statement": "Construct programs that can extract and manipulate substrings.",
+          "mapping_verification_status": "verified"
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "issue",
+          "evidence": "needs_marking_repair; concrete issue recorded in review."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "For first+surname, last space precedes surname; inserting any number of middle tokens does not alter final-token rule.",
+        "Single-token fallback in answer is outside promised first-name-plus-surname format, so cannot be required for credit."
+      ],
+      "issues": [
+        {
+          "severity": "medium",
+          "dimension": "markscheme",
+          "detail": "Fourth criterion says correct single-token handling or justified format assumption although input promises first name and surname. Rewrite criterion to reward explicit explanation that stated format makes final token surname; do not penalize omission of out-of-domain single-token case."
+        }
+      ],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T12:52:35.518871+00:00",
+      "record_sha256": "8f222044d2279d598c287e1fb6d5f009118801c67ee882f25a3f37d11f5e37d7",
+      "record_path": "question-bank/records/P-SRC002-Q05-e.json",
+      "original_syllabus_codes": [
+        "B2.1.2"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 4,
+        "marking_point_sum": 4,
+        "status": "pass"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q05-e",
+        "review_sha256": "3edb5e8488ee4d4b12a213e28366edd7b576e847ea125d1629feb6bfb0cc4342",
+        "record_sha256": "8f222044d2279d598c287e1fb6d5f009118801c67ee882f25a3f37d11f5e37d7",
+        "source_path": "agents/chunk-3/agent-2-theme-b/question_reviews.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:09.356095+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q06-b",
+      "mappings": [
+        {
+          "code": "B2.2.2",
+          "guidance_index": 2,
+          "assessed_skill": "Construct 1D Python list transformation",
+          "relevance": "direct",
+          "evidence": "Creates result list with one scaled item per input.",
+          "coverage_limit": "No2D use or removal.",
+          "scope_bullet_id": "B2.2.2:G02",
+          "exact_guidance": "• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python",
+          "statement": "Construct programs that apply arrays and Lists.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.2.2",
+          "guidance_index": 3,
+          "assessed_skill": "Traverse input and append transformed values",
+          "relevance": "direct",
+          "evidence": "for score plus result.append retains order.",
+          "coverage_limit": "No removal.",
+          "scope_bullet_id": "B2.2.2:G03",
+          "exact_guidance": "• Add, remove and traverse elements in a dynamic list",
+          "statement": "Construct programs that apply arrays and Lists.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.3.3",
+          "guidance_index": 1,
+          "assessed_skill": "Construct finite list iteration",
+          "relevance": "direct",
+          "evidence": "Loop repeats supplied transform for every input score.",
+          "coverage_limit": "For-each definite traversal; not conditional or pre/post-condition loop example.",
+          "scope_bullet_id": "B2.3.3:G01",
+          "exact_guidance": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type",
+          "statement": "Construct programs that utilize looping structures to perform repeated actions.",
+          "mapping_verification_status": "verified"
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "issue",
+          "evidence": "needs_context_repair; concrete issue recorded in review."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "Actual code matches supplied formula for all integer20..80; empty input and no mutation checked.",
+        "Python round explicitly chosen; midpoint62.5 gives62, not63; no alternative school rounding assumed.",
+        "Three criteria cover traversal, transform/rounding, ordered new output."
+      ],
+      "execution_evidence": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_018.json",
+      "issues": [
+        {
+          "severity": "low",
+          "dimension": "markscheme",
+          "detail": "Prompt says store results in new list but marking requires return. Add return the new list explicitly for standalone use, or accept otherwise correctly built local list under current wording."
+        }
+      ],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T12:53:27.474001+00:00",
+      "record_sha256": "3642e41760054b6d371109540bea85107222952da7e95bc6dae1649f8538c895",
+      "record_path": "question-bank/records/P-SRC002-Q06-b.json",
+      "original_syllabus_codes": [
+        "B2.2.2",
+        "B2.3.3"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 3,
+        "marking_point_sum": 3,
+        "status": "pass"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q06-b",
+        "review_sha256": "424873dd058dc886af693006ca5092e0c3cd9efe5a6307d13d26ac0979e345ed",
+        "record_sha256": "3642e41760054b6d371109540bea85107222952da7e95bc6dae1649f8538c895",
+        "source_path": "agents/chunk-3/agent-2-theme-b/question_reviews.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:09.356095+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q06-d",
+      "mappings": [
+        {
+          "code": "B2.2.2",
+          "guidance_index": 2,
+          "assessed_skill": "Apply1D list traversal for aggregation",
+          "relevance": "direct",
+          "evidence": "Receives numerical list and counts qualifying entries.",
+          "coverage_limit": "No2D use or mutation.",
+          "scope_bullet_id": "B2.2.2:G02",
+          "exact_guidance": "• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python",
+          "statement": "Construct programs that apply arrays and Lists.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.2.2",
+          "guidance_index": 3,
+          "assessed_skill": "Traverse every input element",
+          "relevance": "direct",
+          "evidence": "Loop over scores includes each entry.",
+          "coverage_limit": "No add/remove.",
+          "scope_bullet_id": "B2.2.2:G03",
+          "exact_guidance": "• Add, remove and traverse elements in a dynamic list",
+          "statement": "Construct programs that apply arrays and Lists.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.3.2",
+          "guidance_index": 2,
+          "assessed_skill": "Construct inclusive range predicate",
+          "relevance": "direct",
+          "evidence": "91<=score<=100 tests lower/upper boundaries.",
+          "coverage_limit": "Uses if; no elif/else or compound OR/NOT required.",
+          "scope_bullet_id": "B2.3.2:G02",
+          "exact_guidance": "• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "statement": "Construct programs utilizing appropriate selection structures.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.3.3",
+          "guidance_index": 1,
+          "assessed_skill": "Construct bounded for-each list loop",
+          "relevance": "direct",
+          "evidence": "Repeats one check per score.",
+          "coverage_limit": "No conditional/pre/post-condition loop form.",
+          "scope_bullet_id": "B2.3.3:G01",
+          "exact_guidance": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type",
+          "statement": "Construct programs that utilize looping structures to perform repeated actions.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.3.3",
+          "guidance_index": 2,
+          "assessed_skill": "Conditionally increment count inside loop",
+          "relevance": "direct",
+          "evidence": "Only matching scores increment count.",
+          "coverage_limit": "Specific numerical predicate only.",
+          "scope_bullet_id": "B2.3.3:G02",
+          "exact_guidance": "• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "statement": "Construct programs that utilize looping structures to perform repeated actions.",
+          "mapping_verification_status": "verified"
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "issue",
+          "evidence": "needs_editorial_repair; concrete issue recorded in review."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "780 exhaustive lists with endpoints,adjacent failures,decimal scores match independent predicate oracle.",
+        "Nonempty precondition guarantees denominator nonzero; all entries, not qualifying count, form denominator."
+      ],
+      "execution_evidence": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_018.json",
+      "issues": [
+        {
+          "severity": "low",
+          "dimension": "markscheme",
+          "detail": "Criterion Initializes and traverses count is malformed. Replace with Initializes counter and traverses scores; functionality otherwise correct."
+        }
+      ],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T12:53:27.474178+00:00",
+      "record_sha256": "cac3b42d817074206b9158412e8bb77ccf818c8f2b359dbeef564660a2abcc86",
+      "record_path": "question-bank/records/P-SRC002-Q06-d.json",
+      "original_syllabus_codes": [
+        "B2.2.2",
+        "B2.3.2",
+        "B2.3.3"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 4,
+        "marking_point_sum": 4,
+        "status": "pass"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q06-d",
+        "review_sha256": "a5a12b0473a93d97c2e0f2b6a1bfa4de91cf0ffb0aaa8691720327f44c983b83",
+        "record_sha256": "cac3b42d817074206b9158412e8bb77ccf818c8f2b359dbeef564660a2abcc86",
+        "source_path": "agents/chunk-3/agent-2-theme-b/question_reviews.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:09.356095+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q07-c",
+      "record_sha256": "9984c608bd4ddfcca3caf9b3d3380ddac6d8315a2c2ea760a8a15095f0d332c5",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:00:11.949020+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.1.2",
+          "scope_bullet_id": "A1.1.2:G01",
+          "exact_guidance": "• The architecture that allows graphics processing units (GPUs) to handle specific tasks and makes them suitable for complex computations",
+          "assessed_skill": "Explain GPU parallel computation suitability for a large numerical simulation.",
+          "relevance": "direct",
+          "evidence": "Numerous similar numerical operations can run in parallel; prompt does not assert every simulation is parallelizable."
+        },
+        {
+          "code": "A1.1.2",
+          "scope_bullet_id": "A1.1.2:G02",
+          "exact_guidance": "• Real-world scenarios may include video games, artificial intelligence (AI), large simulations and other applications that require graphics rendering and machine learning.",
+          "assessed_skill": "Apply GPU architecture to a large-simulation real-world workload.",
+          "relevance": "direct",
+          "evidence": "Large simulation is a listed may-include example; evidence is assessed parallel workload, not example-name mention alone."
+        },
+        {
+          "code": "A1.1.4",
+          "scope_bullet_id": "A1.1.4:G01",
+          "exact_guidance": "• Random-access memory (RAM), read only memory (ROM), cache (L1, L2, L3), registers",
+          "assessed_skill": "Outline RAM capacity holding a large model working state.",
+          "relevance": "partial",
+          "evidence": "RAM purpose/capacity only; no ROM/cache levels/register purposes or cache hits/misses."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "RAM stores actively used simulation state; a suitable GPU accelerates parallel numerical calculations. Working-set capacity and compute throughput are distinct requirements."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Two developed roles (RAM state/model size and GPU parallel workload) appropriately answer Outline4."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Four1-mark criteria total4 with two role+context pairs; no ban on CPU participation or guarantee GPU always faster."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q07-c.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• The interaction of the CPU with different types of memory to optimize performance",
+        "• The relevance of the terms “cache miss” and “cache hit”"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q07-c.json": "9984c608bd4ddfcca3caf9b3d3380ddac6d8315a2c2ea760a8a15095f0d332c5",
+        "question-bank/questions/P-SRC002-Q07-c.json": "40edce1133a2fb55760b7d3ce0da17e78a43fe92b76f150023444a49077216a3",
+        "question-bank/markschemes/P-SRC002-Q07-c.json": "3488c6ceb32364376c52fcfb8ff0d2be12d0b64758f587d2ca5f635eab496ba3",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q07-c.json": "8ef63e672d02be715d97d887d7c18adf493123094d5d8243884cb2d1bfe72372"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q07-c",
+        "review_sha256": "6f9eb850778ccfa09631cfc201df156ebadaee79285e0173211ee25e512c7454",
+        "record_sha256": "9984c608bd4ddfcca3caf9b3d3380ddac6d8315a2c2ea760a8a15095f0d332c5",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-013.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:09.738291+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q07-e",
+      "record_sha256": "4424fa64bfdea3ffc95aa36a1bcf7d3130a6351b7f569e37e3d243fee5ae625e",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:00:55.336723+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.2.2",
+          "scope_bullet_id": "A1.2.2:G01",
+          "exact_guidance": "• The fundamentals of binary encoding and the impact on data storage and retrieval",
+          "assessed_skill": "Outline multiplicative effect of pixel count and bit depth on uncompressed image storage.",
+          "relevance": "partial",
+          "evidence": "Storage impact of binary pixel values directly assessed; retrieval/other data representations not required."
+        },
+        {
+          "code": "A1.2.2",
+          "scope_bullet_id": "A1.2.2:G02",
+          "exact_guidance": "• The mechanisms by which data such as integers, strings, characters, images, audio and video are stored in binary form",
+          "assessed_skill": "Explain raster representation as one encoded colour value per pixel.",
+          "relevance": "partial",
+          "evidence": "Image storage mechanism only, not integer/string/audio/video mechanisms."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Ignoring metadata/padding/compression, pixel-data size is width×height×bits per pixel. Increasing either dimension increases count; larger bit depth increases per-pixel encoded information."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Model correctly separates more pixel values from more bits per value and gives units bits."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Four1-mark elements total4 for two developed factors. Resolution (pixel count) and colour precision should remain distinct; no unsupported file-header assumptions."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q07-e.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q07-e.json": "4424fa64bfdea3ffc95aa36a1bcf7d3130a6351b7f569e37e3d243fee5ae625e",
+        "question-bank/questions/P-SRC002-Q07-e.json": "2a28266993790a8ce4c077ff51882a0e5d058a9cbb87822d26a91be5ec2724c0",
+        "question-bank/markschemes/P-SRC002-Q07-e.json": "8ab22782f5682bf402f0581d24e9036f5435c1c432eca1470fc101c2ff73d19b",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q07-e.json": "f7039f4b7c72b7a531392385d937582e9f25151f49545e8b8b34c80f52c04187"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q07-e",
+        "review_sha256": "c2d9ef0e5157d27a7f4042cc91477ab5e0c6b66881cb56b5603274c3b706f486",
+        "record_sha256": "4424fa64bfdea3ffc95aa36a1bcf7d3130a6351b7f569e37e3d243fee5ae625e",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-014.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:09.738291+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q08-a",
+      "record_sha256": "c0adc305cfe5a46262ec9d06c10971d2a3ccb77ee9aa83e897c0ffebf95396aa",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:00:55.336958+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A4.3.7",
+          "scope_bullet_id": "A4.3.7:G01",
+          "exact_guidance": "• For example: population, fitness function, selection, crossover, mutation, evaluation, termination",
+          "assessed_skill": "Outline two GA improvement steps after initialization and before given termination.",
+          "relevance": "partial",
+          "evidence": "Tests selected fitness/selection/crossover/mutation steps, not full process or initialization/termination construction."
+        },
+        {
+          "code": "A4.3.7",
+          "scope_bullet_id": "A4.3.7:G02",
+          "exact_guidance": "• A real-world application of genetic algorithms is seen in optimization problems, such as route planning (e.g. the “travelling salesperson problem”).",
+          "assessed_skill": "Apply genetic improvement to delivery-depot layout optimization.",
+          "relevance": "direct",
+          "evidence": "Actual objective/encoded candidate layout context supports optimization example; route-planning/TSP is illustrative, not mandatory special solver."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Contextual fitness evaluates delivery cost/access; selection and crossover/mutation vary candidate layouts. Improvement is search-guided, not guaranteed monotonic or globally optimal."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Model provides fitness evaluation with context and generation variation, valid two developed steps."
+        },
+        "markscheme": {
+          "status": "issue",
+          "evidence": "Four criteria total4 but require fitness evaluation despite prompt allowing any two other steps. A developed selection step plus developed mutation step is valid yet cannot access the fixed first2 criteria. Make any2 permitted steps ×2 marks explicit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q08-a.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [
+        "A-C3-MS-007: Outline two other GA steps permits selection+mutation/crossover without fitness; current fixed fitness2 plus other2 may under-credit valid choices."
+      ],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q08-a.json": "c0adc305cfe5a46262ec9d06c10971d2a3ccb77ee9aa83e897c0ffebf95396aa",
+        "question-bank/questions/P-SRC002-Q08-a.json": "94aaa061bb932f51682e3000b7877a7ddf277dd48727f4a8b81130d9771c9b12",
+        "question-bank/markschemes/P-SRC002-Q08-a.json": "de5cbaa3b75de908b833d1b2805e40de777c886938430406c09b17b27cd01fb0",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q08-a.json": "9ff8bcf96a8e3e56899c79d3b37350989b9414798c5a8646e573d31079b6b5f3"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q08-a",
+        "review_sha256": "9eb80b86a21135fe89cc1fb7d3955d23cc4ff8803abfdfdc46f0146bb3316e39",
+        "record_sha256": "c0adc305cfe5a46262ec9d06c10971d2a3ccb77ee9aa83e897c0ffebf95396aa",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-014.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:09.738291+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q08-b-i",
+      "record_sha256": "1c8d2d39529dc406fe9802e3c8d82cdb669a3df0565c89d24fc7003cb54671cf",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:00:55.337193+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A4.1.1",
+          "scope_bullet_id": "A4.1.1:G03",
+          "exact_guidance": "• Real-world applications of machine learning may include market basket analysis, medical imaging diagnostics, natural language processing, object detection and classification, robotics navigation, sentiment analysis.",
+          "assessed_skill": "Outline a practical NLP chatbot assistance benefit in a large support service.",
+          "relevance": "partial",
+          "evidence": "Application and contextual benefit tested; no distinction of DL/RL/supervised/TL/UL or their characteristics."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "A suitably deployed chatbot can handle routine language requests at scale and route exceptions to humans; benefit is conditional, not accuracy guarantee."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Rapid scalable routine assistance plus human workload consequence matches Outline2."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "One relevant benefit plus service-specific expansion total2; equivalent cost/availability/accessibility benefits with appropriate development can be accepted."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q08-b-i.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• The different approaches to machine learning algorithms and their unique characteristics",
+        "• Deep learning (DL), reinforcement learning (RL), supervised learning, transfer learning (TL), unsupervised learning (UL)"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q08-b-i.json": "1c8d2d39529dc406fe9802e3c8d82cdb669a3df0565c89d24fc7003cb54671cf",
+        "question-bank/questions/P-SRC002-Q08-b-i.json": "1d2544f7233a0a1f05c0a8c5432b7e1162a9688d60b45e2c1f0cf817991b984e",
+        "question-bank/markschemes/P-SRC002-Q08-b-i.json": "3b444cd8aa502044da7f87c31b6c0008c279ea619d719df16a04f2a27d4388ba",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q08-b-i.json": "9613fb9d22a43fd2bfbee39be90b25758985b62f2a45fe530c37c0c9554f1404"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q08-b-i",
+        "review_sha256": "39633d06fec0a02f0d86d4a5d0c5e5cde5b7d629bc98fb873a1ebc1fe901c0f3",
+        "record_sha256": "1c8d2d39529dc406fe9802e3c8d82cdb669a3df0565c89d24fc7003cb54671cf",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-014.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:10.105673+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q08-b-ii",
+      "record_sha256": "9f41c91d30edfaee1fcc1393e1d74aeb4018a6c8d63f4517aec81571853d10dc",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:01:43.531555+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A4.4.1",
+          "scope_bullet_id": "A4.4.1:G03",
+          "exact_guidance": "• The ethics of using machine learning in online communication may include concerns about misinformation, bias, online harassment, anonymity, privacy.",
+          "assessed_skill": "Outline misinformation/bias risk when users rely on ML chatbot guidance.",
+          "relevance": "partial",
+          "evidence": "Online communication risk and consequence/oversight tested; not broad discussion of all ethical examples or cause in training data."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "An ML chatbot may produce plausible inaccurate/biased guidance; reliance can cause harmful decisions, motivating checking/escalation. A risk is not asserted certain for every output."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Specific incorrect/biased advice plus user-consequence/oversight development matches Outline2."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Two1-mark elements total2. Equivalent ethical risks with a developed consequence accepted; factual technical failure alone should be linked to harm/reliance."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q08-b-ii.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Ethical issues may include accountability, algorithmic fairness, bias, consent, environmental impact, privacy, security, societal impact, transparency.",
+        "• The challenges posed by biases in training data"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q08-b-ii.json": "9f41c91d30edfaee1fcc1393e1d74aeb4018a6c8d63f4517aec81571853d10dc",
+        "question-bank/questions/P-SRC002-Q08-b-ii.json": "45abc829bf5d1a17f0f8337e6b4511785906c5aa9030297475fbde96d86e26ea",
+        "question-bank/markschemes/P-SRC002-Q08-b-ii.json": "745f22e8e879af228aeb894ef5c63b4b70270f78fe2ff6c06c170605143f3606",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q08-b-ii.json": "1309468bf83b5791ff642c1292355f14cffc5e57e0eaa7d3a88321008c258e68"
+      },
+      "question_type": "contextual explanation",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Outline one contextual chatbot risk with consequence, no code/diagram."
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q08-b-ii",
+        "review_sha256": "dd16cf429656f212c5ccaa39327c928ed74a9b6d9eb5a068e23c3aad6843aee1",
+        "record_sha256": "9f41c91d30edfaee1fcc1393e1d74aeb4018a6c8d63f4517aec81571853d10dc",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-015.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:10.105673+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q08-d",
+      "record_sha256": "41c4158c80aba9c01b781f37e09a67db309d3d8a0d0229d2fc07fff200a82af6",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T13:01:43.531783+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A4.4.1",
+          "scope_bullet_id": "A4.4.1:G01",
+          "exact_guidance": "• Ethical issues may include accountability, algorithmic fairness, bias, consent, environmental impact, privacy, security, societal impact, transparency.",
+          "assessed_skill": "Evaluate efficiency against fairness, accountability and transparency when sole ML essay assessment affects students.",
+          "relevance": "partial",
+          "evidence": "Specific ethical trade-off and justified recommendation tested; not all optional listed issues."
+        },
+        {
+          "code": "A4.4.1",
+          "scope_bullet_id": "A4.4.1:G02",
+          "exact_guidance": "• The challenges posed by biases in training data",
+          "assessed_skill": "Explain how biased training examples can disadvantage language varieties in student scoring.",
+          "relevance": "partial",
+          "evidence": "Training bias is a valid directly relevant limitation in the model, but prompt permits other meaningful limitations; coverage is one conditional assessment route, not guaranteed every answer."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Consistent rapid scoring can coexist with systematic bias/opaque appeals; human moderation and group evaluation mitigate risks. No assumption that statistical consistency equals fairness or understanding."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Model balances benefit, concrete training-bias/opacity harms, safeguards and justified rejection of sole use merely for speed."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Four1-mark evaluative elements total4. A developed justified safeguard can embody the conclusion; generic unbalanced listing should not earn full evaluate credit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-002/questions/H-SRC002-Q08-d.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. The linked source metadata explicitly records markscheme availability; adapted criteria remain preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• The ethics of using machine learning in online communication may include concerns about misinformation, bias, online harassment, anonymity, privacy."
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC002-Q08-d.json": "41c4158c80aba9c01b781f37e09a67db309d3d8a0d0229d2fc07fff200a82af6",
+        "question-bank/questions/P-SRC002-Q08-d.json": "32287e7dba4a1d6b4bd279ce8ccc139107ab6332c9d73812e3560b7bfea3da56",
+        "question-bank/markschemes/P-SRC002-Q08-d.json": "9faea63badb5e3272f799144a4b831f6ffa88b5526f55cd3f55ca58c24761915",
+        "extraction/by-paper/SRC-002/questions/H-SRC002-Q08-d.json": "ddef959cab3c391f29642984e0a29f187bb49bf8cbfebaeef6f54a8b2713c190"
+      },
+      "question_type": "evaluation",
+      "question_type_review": {
+        "status": "verified",
+        "reviewer": "/root/theme_a_coverage",
+        "evidence": "Weigh sole automated assessment benefits/ethical harms and justify conclusion."
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC002-Q08-d",
+        "review_sha256": "bb952b04a90fd7028e80fed84cb15279e5e5f37fbdd886f2f7cad508709f1858",
+        "record_sha256": "41c4158c80aba9c01b781f37e09a67db309d3d8a0d0229d2fc07fff200a82af6",
+        "source_path": "agents/chunk-3/agent-1-theme-a/scope_reviews/batch-015.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T19:19:10.105673+01:00",
+        "reason": "Independent specialist re-read actual full SRC002 prompts/solutions/criteria and every mapped exact guide statement/guidance (integration_review_SRC002.json); coordinator validated all current author hashes and structured evidence, reviewed sample SQL join/key/type rationale against actual content, and retained all explicit limitations/issues. Accept mapping evidence only; no blanket answer/provenance/C4 certification.",
         "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
       }
     }

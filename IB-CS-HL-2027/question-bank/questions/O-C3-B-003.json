@@ -1,0 +1,17 @@
+{
+  "question_id": "O-C3-B-003",
+  "source_question_ids": [],
+  "derivation_status": "original_unofficial",
+  "unofficial": true,
+  "question_text": "A visitor system uses a mutable set active and a separate set permitted. Construct update_access(active, new_id, leaving_id, permitted) in Python. First add new_id to active. Then remove leaving_id if it is present; an absent leaving_id must not cause an error. Finally return a tuple (new_still_active, all_permitted): whether new_id is in the final active set, and whether every final active ID belongs to permitted. The two IDs may be equal, so the stated operation order matters. Modify active itself and leave permitted unchanged. You may use Python set operations.",
+  "syllabus_codes": [
+    "B4.1.5"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 6,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "question_type": "Python code construction",
+  "assets": []
+}

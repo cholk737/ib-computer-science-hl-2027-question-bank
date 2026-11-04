@@ -1,0 +1,5 @@
+# Dependencies and portability
+
+Search server/import/database/functional tests and original3 reference checks use Python standard library only. Use Python3.10+ and a sqlite3 build with FTS5. Browser needs ordinary modern JavaScript. No API keys, embeddings service, Codex tool, cloud connector or running account is needed for local search. Stored question code is never run by import/server.
+
+Older source/PDF extraction verification scripts may additionally need pypdf, pdfplumber, Pillow, Poppler pdftoppm and macOS Swift/Vision OCR. Their exact original runtime is documented in IB-CS-HL-2027/audits/RUNTIME.md; that old absolute bundled-runtime location is not portable. Existing extracted/OCR/rendered evidence is included, so those scripts need not be rerun to resume Chunk3. Reproduce optional tools in a suitable local environment if reinspection is needed. No dependency cache or credentials is included. Chunk5 PDF authoring tools must be selected/verified then; no claim a PDF generator already exists.

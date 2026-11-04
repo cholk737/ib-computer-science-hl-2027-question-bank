@@ -1,0 +1,62 @@
+{
+  "question_id": "O-C3-B-002",
+  "source_question_ids": [],
+  "derivation_status": "original_unofficial",
+  "unofficial": true,
+  "question_text": "Two clubs supply lists of member IDs, club_a and club_b. An ID can occur more than once in either list. Construct compare_members(club_a, club_b) in Python. Return a tuple containing three sets in this order: IDs in both clubs; IDs in club_a but not club_b; IDs in at least one club. Each ID must occur only once in a returned set. Set order is irrelevant. Do not modify the input lists. You may use Python set operations.",
+  "syllabus_codes": [
+    "B4.1.5"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 6,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "question_type": "Python code construction",
+  "adaptation_rationale": "Original coordinator-authored question for a zero-linked C2 objective; no historical source question or official marking status claimed.",
+  "solution": "def compare_members(club_a, club_b):\n    a = set(club_a)\n    b = set(club_b)\n    both = a & b\n    only_a = a - b\n    either = a | b\n    return both, only_a, either",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Represents club_a membership uniquely as a set or equivalent set-based construction."
+    },
+    {
+      "marks": 1,
+      "criterion": "Represents club_b membership uniquely as a set or equivalent set-based construction."
+    },
+    {
+      "marks": 1,
+      "criterion": "Computes the intersection for IDs in both clubs."
+    },
+    {
+      "marks": 1,
+      "criterion": "Computes the directional difference A minus B."
+    },
+    {
+      "marks": 1,
+      "criterion": "Computes the union for IDs in either club."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns the three sets in the requested order without modifying either input list."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Any correct Python implementation meeting the stated input/output, mutation and file requirements. Equivalent set methods/operators and correct context-manager or explicit file closing accepted. Do not double-credit the same achieved criterion."
+  ],
+  "partial_credit_notes": "Award each independent achieved step up to six marks; a minor syntax slip need not erase an otherwise clearly demonstrated algorithmic step. Accept equivalent valid algorithms. No credit for contradicting the stated operation order or output contract.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Exact reference executed; see audits/chunk-3/ORIGINAL_GAP_BATCH_CHECKS.json.",
+    "scope": "Does not test membership/add/remove/subset operations or hash-table mechanics. Order of set iteration must not be marked."
+  },
+  "code": "def compare_members(club_a, club_b):\n    a = set(club_a)\n    b = set(club_b)\n    both = a & b\n    only_a = a - b\n    either = a | b\n    return both, only_a, either",
+  "test_code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_coordinator_author",
+  "record_path": "question-bank/records/O-C3-B-002.json",
+  "question_path": "question-bank/questions/O-C3-B-002.json",
+  "markscheme_path": "question-bank/markschemes/O-C3-B-002.json",
+  "coordinator_status": "author_content_scope_answer_marking_execution_checks_passed; independent_Chunk4_audit_pending",
+  "independent_verification_status": "pending"
+}

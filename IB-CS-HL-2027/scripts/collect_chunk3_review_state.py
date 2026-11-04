@@ -25,6 +25,8 @@ def main():
         qid = row['question_id']
         candidate = reviews.get(qid)
         owner = '/root/theme_a_coverage' if row['theme'] == 'A' else '/root/theme_b_coverage'
+        if row['derivation_status'] == 'original_unofficial':
+            owner = '/root'
         if candidate:
             r = candidate['review']
             assert r['reviewer'] == owner, f'Wrong/overlapping writer for {qid}'

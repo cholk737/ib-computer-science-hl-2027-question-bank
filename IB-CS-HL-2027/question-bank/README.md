@@ -1,3 +1,9 @@
+# Current permanent question bank
+
+826 full records:823 protected adapted questions and3 original unofficial Python construction questions. The original questions are O-C3-B-001/002/003 with separately tested reference answers and preliminary criteria; independent Chunk4 audit is pending. Canonical SQLite is database.sqlite3; run search/serve_bank.py with explicit --db and relocated root import as documented in search/README.md and the complete Claude handover. No examination is assembled.
+
+Current reviewed code/bullet aspects live in scope_evidence.json and ../mapping/SCOPE_MAPPING.csv; legacy historical mappings remain separate. QUESTION_BANK.csv appends C3 dimensions/metadata while preserving original author status.63 approved review records are imported, not a claim all826 are verified or all112 statements fully covered. Search/student answers are separate; local internal records are full provenance bundles.
+
 # Unofficial converted practice question bank
 
 `QUESTION_BANK.csv` is the cumulative index, not the full question text. Each row links:

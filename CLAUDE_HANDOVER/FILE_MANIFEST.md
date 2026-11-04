@@ -1,0 +1,7 @@
+# File manifest
+
+The complete machine-readable PROJECT_FILE_MANIFEST.json and human PROJECT_FILE_MANIFEST.csv list every actual PROJECT_FILES payload with relative path, byte count and SHA-256. HANDOVER_FILE_MANIFEST.json inventories wrapper instructions/backlogs and the Git bundle. They are generated after final snapshot creation; neither replaces actual files. ARCHIVE_VERIFICATION.json records final ZIP CRC/path/count/hash checks and Git-bundle restoration checks.
+
+PROJECT_FILES/ preserves repository-relative paths, including IB-CS-HL-2027/ actual project, rootAGENTS/CLAUDE/README and setup files. CLAUDE_HANDOVER wrapper documents sit beside PROJECT_FILES rather than recursively copying themselves. Full Git history is in ib-computer-science-hl-2027-question-bank.bundle, with restore commands in REPOSITORY_SETUP.md. The ZIP and generated PROJECT_FILES mirror are intentionally not committed recursively; canonical project and wrapper instructions are committed. Existing sources/evidence/checkpoints are retained, including database backups, rather than replaced by summaries.
+
+Unavailable originals: uploaded matching official markschemes for SRC001/SRC002 were never supplied. No existing durable project data is intentionally omitted; only named caches/temporary files/credentials and redundant parent copies of PDFs already present byte-identically in project sources are excluded. Exact exclusions are in PACKAGE_BUILD_REPORT.json.

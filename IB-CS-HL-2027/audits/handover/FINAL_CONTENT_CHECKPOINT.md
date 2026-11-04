@@ -1,0 +1,5 @@
+# Handover content checkpoint
+
+C3-20261104-193554-099234. Current Chunk3 incomplete; generation stopped for handover.826questions,823adapted,3original;90explicit Python construction directives (conservative census, not independent correctness certification);826separate answers/preliminary criteria. All826 await independent Chunk4 audit.63review records/117scope links imported;154historical individual reviews saved,94saved unmerged,669historical unsaved.112statements/271guide paragraphs first-pass audited;13current no-link statements, broader scope gaps in fullbacklog.
+
+Complete controlling ONE-AGENT Claude instructions, stage1/2 history, stage3 continuation/backlog, future stage4 whole-bank verification and future stage5 mass generation/new-question expansion/100-point rankings are prepared. No full examinations/topic tests/PDFs generated. Private remote creation/push unavailable; no URL claimed. Required actual project/source data and Git history are preserved; package verification follows content commit. Final package receipts record actual commit/archive hashes rather than attempting a self-referential commit ID.

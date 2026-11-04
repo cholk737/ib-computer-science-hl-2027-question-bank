@@ -39,6 +39,7 @@ def load_reviews():
     # A can use a single wrapped file instead; duplicate IDs are never silently
     # overwritten if both formats are accidentally supplied.
     paths += [P / 'agents/chunk-3/agent-1-theme-a/question_reviews.json']
+    paths += sorted((P / 'question-bank/original-review-drafts').glob('*.json'))
     for path in paths:
         if not path.exists():
             continue

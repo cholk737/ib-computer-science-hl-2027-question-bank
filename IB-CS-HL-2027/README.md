@@ -1,3 +1,7 @@
+## Current portable handover (latest user instructions)
+
+826 permanent questions:823 adapted plus3 original Python construction questions. Chunk3 is incomplete and database/search/coverage only. Canonical DB: question-bank/database.sqlite3; canonical application: question-bank/search/. Current scope evidence: question-bank/scope_evidence.json and mapping/SCOPE_MAPPING.csv. Future Claude works ONE AGENT. Later Chunk4 verifies the whole bank without exams; later Chunk5 generates/ranks many distinct exams. Read repository-root CLAUDE.md and CLAUDE_HANDOVER/CURRENT_PROGRESS.md (or the extracted handover wrapper). The older notes below are historical where they conflict.
+
 # IB Computer Science HL 2027 — unofficial practice-exam project
 
 Fresh project initialized 4 November 2026. Chunks 1 and 2 (Steps 1–6) are complete; Chunk 3 is now authorized and active with recovery checkpoints. Read PROGRESS.md for the current checkpoint. All future practice papers and authored marking criteria will be unofficial; no affiliation or endorsement is implied.
