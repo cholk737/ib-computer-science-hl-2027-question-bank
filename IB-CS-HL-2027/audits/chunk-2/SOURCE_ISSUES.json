@@ -8,7 +8,7 @@
     "markscheme_source_id": "",
     "markscheme_pdf_pages": [],
     "issue": "Original implication that deviation detection identifies copyrighted code is not sufficient evidence of copying/ownership.",
-    "verification_status": "specialist_reported; coordinator technical check required where used"
+    "status": "source caveat retained; not imported as a verified adapted answer"
   },
   {
     "source_question_id": "H-SRC002-Q05-b",
@@ -19,7 +19,7 @@
     "markscheme_source_id": "",
     "markscheme_pdf_pages": [],
     "issue": "Source prose overlaps grade69; source table uses70 asB lower threshold. Adapted bounds explicit.",
-    "verification_status": "specialist_reported; coordinator technical check required where used"
+    "status": "source caveat retained; not imported as a verified adapted answer"
   },
   {
     "source_question_id": "H-SRC002-Q05-c",
@@ -30,7 +30,7 @@
     "markscheme_source_id": "",
     "markscheme_pdf_pages": [],
     "issue": "Source FIND(A2,\" \") reverses the usual spreadsheet arguments; its displayed results assume FIND(\" \",A2). Rewritten Python semantics explicit.",
-    "verification_status": "specialist_reported; coordinator technical check required where used"
+    "status": "source caveat retained; not imported as a verified adapted answer"
   },
   {
     "source_question_id": "H-SRC002-Q18-c",
@@ -41,7 +41,35 @@
     "markscheme_source_id": "",
     "markscheme_pdf_pages": [],
     "issue": "Original Q18c falsely presupposes an error for X(-3); printed Y<=1 returns-3 immediately. No uploaded MS exists.",
-    "verification_status": "specialist_reported; coordinator technical check required where used"
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC004-Q14-c",
+    "source_id": "SRC-004",
+    "question_pdf_pages": [
+      8
+    ],
+    "markscheme_source_id": "SRC-010",
+    "markscheme_pdf_pages": [
+      16,
+      17,
+      18
+    ],
+    "issue": "Source MS uses MARKS while paper uses SCORES; adapted variables made consistent. Source sorting sample loop bound requires independent verification; adaptation uses independently executed linear scan.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC005-Q14-b",
+    "source_id": "SRC-005",
+    "question_pdf_pages": [
+      9
+    ],
+    "markscheme_source_id": "SRC-011",
+    "markscheme_pdf_pages": [
+      15
+    ],
+    "issue": "SRC-011 PDF p15: the suggested square-root bound is invalid for the shown simple proper-divisor accumulator without adding paired factors. The unofficial solution traverses all candidates below n and is tested.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
   },
   {
     "source_question_id": "H-SRC006-Q01",
@@ -54,7 +82,7 @@
       4
     ],
     "issue": "Original MS generalizes all primary storage as volatile; ROM is an exception. Adaptation explicitly compares RAM and SSD.",
-    "verification_status": "specialist_reported; coordinator technical check required where used"
+    "status": "source caveat retained; not imported as a verified adapted answer"
   },
   {
     "source_question_id": "H-SRC006-Q08",
@@ -67,7 +95,7 @@
       6
     ],
     "issue": "Original MS describes driver instructions as analogue signals; that is not a general property of device drivers and is not repeated.",
-    "verification_status": "specialist_reported; coordinator technical check required where used"
+    "status": "source caveat retained; not imported as a verified adapted answer"
   },
   {
     "source_question_id": "H-SRC006-Q12-d",
@@ -80,7 +108,48 @@
       13
     ],
     "issue": "Source MS uses compile-time allocation as a universal array property; rewritten comparison explicitly states static array and avoids that generalization.",
-    "verification_status": "specialist_reported; coordinator technical check required where used"
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC007-Q12-c",
+    "source_id": "SRC-007",
+    "question_pdf_pages": [
+      6
+    ],
+    "markscheme_source_id": "SRC-013",
+    "markscheme_pdf_pages": [
+      9
+    ],
+    "issue": "Source accepts hidingSSID; adaptation does not claim that hiding a network name is strong authentication or confidentiality.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC007-Q14-c",
+    "source_id": "SRC-007",
+    "question_pdf_pages": [
+      7,
+      8
+    ],
+    "markscheme_source_id": "SRC-013",
+    "markscheme_pdf_pages": [
+      15,
+      16
+    ],
+    "issue": "SourceMS PDF16 example2 sets TOTAL=0 after consuming first input, so first input omitted from total; independently solved adaptation fixesthis.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC008-Q12-b",
+    "source_id": "SRC-008",
+    "question_pdf_pages": [
+      6
+    ],
+    "markscheme_source_id": "SRC-014",
+    "markscheme_pdf_pages": [
+      14
+    ],
+    "issue": "SRC-014 PDF p14: the static-stack full condition TOP > N-1 is inconsistent with TOP as the occupied last index. The adapted stack uses the correct capacity boundary.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
   },
   {
     "source_question_id": "H-SRC009-Q05",
@@ -93,7 +162,7 @@
       5
     ],
     "issue": "Source MS suggests a firewall detects/prevents viruses generically; rewritten criteria avoid claiming all firewalls provide antivirus inspection.",
-    "verification_status": "specialist_reported; coordinator technical check required where used"
+    "status": "source caveat retained; not imported as a verified adapted answer"
   },
   {
     "source_question_id": "H-SRC009-Q11-c",
@@ -106,7 +175,7 @@
       9
     ],
     "issue": "Source MS universally describes wired bandwidth as much larger than wireless; actual standards vary, so adapted question avoids universal speed assertion.",
-    "verification_status": "specialist_reported; coordinator technical check required where used"
+    "status": "source caveat retained; not imported as a verified adapted answer"
   },
   {
     "source_question_id": "H-SRC009-Q12-c-iv",
@@ -119,7 +188,7 @@
       11
     ],
     "issue": "Original MS awards a statement that buses carry power supply to all components; source buses here are address/data/control, so that misleading point is not copied.",
-    "verification_status": "specialist_reported; coordinator technical check required where used"
+    "status": "source caveat retained; not imported as a verified adapted answer"
   },
   {
     "source_question_id": "H-SRC009-Q13-e",
@@ -132,7 +201,20 @@
       14
     ],
     "issue": "Original MS suggests prohibiting updates improves security; this is not copied.",
-    "verification_status": "specialist_reported; coordinator technical check required where used"
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC018-Q07",
+    "source_id": "SRC-018",
+    "question_pdf_pages": [
+      3
+    ],
+    "markscheme_source_id": "SRC-019",
+    "markscheme_pdf_pages": [
+      6
+    ],
+    "issue": "SRC-019 contains a misleading claim that a CPU cannot read ROM; this claim is not copied into unofficial criteria.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
   },
   {
     "source_question_id": "H-SRC020-Q03",
@@ -145,7 +227,7 @@
       4
     ],
     "issue": "Source MS conflates ASCII with8-bit and Unicode with fixed16/32bit; no fixed-width Unicode claim copied.",
-    "verification_status": "specialist_reported; coordinator technical check required where used"
+    "status": "source caveat retained; not imported as a verified adapted answer"
   },
   {
     "source_question_id": "H-SRC020-Q07",
@@ -158,7 +240,61 @@
       6
     ],
     "issue": "Original MS incorrectly claims CPU cannot access ROM unless copied toRAM; not copied.",
-    "verification_status": "specialist_reported; coordinator technical check required where used"
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC022-Q11-c",
+    "source_id": "SRC-022",
+    "question_pdf_pages": [
+      5
+    ],
+    "markscheme_source_id": "SRC-023",
+    "markscheme_pdf_pages": [
+      9,
+      10
+    ],
+    "issue": "Source MS mentions WEP and hidesSSID among broad acceptedpoints. Adaptation uses no obsolete-protocol endorsement; exactprotocolversionnotrequired.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC022-Q11-d",
+    "source_id": "SRC-022",
+    "question_pdf_pages": [
+      5
+    ],
+    "markscheme_source_id": "SRC-023",
+    "markscheme_pdf_pages": [
+      10
+    ],
+    "issue": "OfficialMS PDF10 suggestsVPN makesoriginuntraceable and usesmultipleexitnodes. These are notgenericVPNproperties;notcopied.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC022-Q14-a",
+    "source_id": "SRC-022",
+    "question_pdf_pages": [
+      7
+    ],
+    "markscheme_source_id": "SRC-023",
+    "markscheme_pdf_pages": [
+      19
+    ],
+    "issue": "Notall dynamicstructureshaveonlysequentialaccess orfastconstant-timeinsertion;sourceMSgeneralizationnotimported.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC024-Q13-c",
+    "source_id": "SRC-024",
+    "question_pdf_pages": [
+      6
+    ],
+    "markscheme_source_id": "SRC-025",
+    "markscheme_pdf_pages": [
+      15,
+      16
+    ],
+    "issue": "SRC-025 PDF p15: Example 1 uses if/else-if extrema updates with sentinels and can miss the minimum in an increasing sequence; independent comparisons are required for that initialization. Integer DIV also gives the wrong fractional mean. The unofficial answer uses safe initialization, independent updates and true division.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
   },
   {
     "source_question_id": "H-SRC026-Q08",
@@ -171,7 +307,7 @@
       8
     ],
     "issue": "Original MS includes overly broad anonymity/interception claims; adaptation limits protection to the tunnel path.",
-    "verification_status": "specialist_reported; coordinator technical check required where used"
+    "status": "source caveat retained; not imported as a verified adapted answer"
   },
   {
     "source_question_id": "H-SRC026-Q11-d",
@@ -184,7 +320,7 @@
       17
     ],
     "issue": "Original MS treats polling as having no priority and interrupts as hardware-only; these are not universal and not repeated.",
-    "verification_status": "specialist_reported; coordinator technical check required where used"
+    "status": "source caveat retained; not imported as a verified adapted answer"
   },
   {
     "source_question_id": "H-SRC026-Q13-c",
@@ -200,90 +336,7 @@
       26
     ],
     "issue": "Source description omits explicit value-to-zero-based-index subtraction; MS correctly uses value-1. Adapted prompt makes it explicit.",
-    "verification_status": "specialist_reported; coordinator technical check required where used"
-  },
-  {
-    "source_question_id": "H-SRC004-Q14-c",
-    "source_id": "SRC-004",
-    "question_pdf_pages": [
-      8
-    ],
-    "markscheme_source_id": "SRC-010",
-    "markscheme_pdf_pages": [
-      16,
-      17,
-      18
-    ],
-    "issue": "Source MS uses MARKS while paper uses SCORES; adapted variables made consistent. Source sorting sample loop bound requires independent verification; adaptation uses independently executed linear scan.",
-    "verification_status": "specialist_reported; coordinator technical check required where used"
-  },
-  {
-    "source_question_id": "H-SRC007-Q12-c",
-    "source_id": "SRC-007",
-    "question_pdf_pages": [
-      6
-    ],
-    "markscheme_source_id": "SRC-013",
-    "markscheme_pdf_pages": [
-      9
-    ],
-    "issue": "Source accepts hidingSSID; adaptation does not claim that hiding a network name is strong authentication or confidentiality.",
-    "verification_status": "specialist_reported; coordinator technical check required where used"
-  },
-  {
-    "source_question_id": "H-SRC007-Q14-c",
-    "source_id": "SRC-007",
-    "question_pdf_pages": [
-      7,
-      8
-    ],
-    "markscheme_source_id": "SRC-013",
-    "markscheme_pdf_pages": [
-      15,
-      16
-    ],
-    "issue": "SourceMS PDF16 example2 sets TOTAL=0 after consuming first input, so first input omitted from total; independently solved adaptation fixesthis.",
-    "verification_status": "specialist_reported; coordinator technical check required where used"
-  },
-  {
-    "source_question_id": "H-SRC022-Q11-c",
-    "source_id": "SRC-022",
-    "question_pdf_pages": [
-      5
-    ],
-    "markscheme_source_id": "SRC-023",
-    "markscheme_pdf_pages": [
-      9,
-      10
-    ],
-    "issue": "Source MS mentions WEP and hidesSSID among broad acceptedpoints. Adaptation uses no obsolete-protocol endorsement; exactprotocolversionnotrequired.",
-    "verification_status": "specialist_reported; coordinator technical check required where used"
-  },
-  {
-    "source_question_id": "H-SRC022-Q11-d",
-    "source_id": "SRC-022",
-    "question_pdf_pages": [
-      5
-    ],
-    "markscheme_source_id": "SRC-023",
-    "markscheme_pdf_pages": [
-      10
-    ],
-    "issue": "OfficialMS PDF10 suggestsVPN makesoriginuntraceable and usesmultipleexitnodes. These are notgenericVPNproperties;notcopied.",
-    "verification_status": "specialist_reported; coordinator technical check required where used"
-  },
-  {
-    "source_question_id": "H-SRC022-Q14-a",
-    "source_id": "SRC-022",
-    "question_pdf_pages": [
-      7
-    ],
-    "markscheme_source_id": "SRC-023",
-    "markscheme_pdf_pages": [
-      19
-    ],
-    "issue": "Notall dynamicstructureshaveonlysequentialaccess orfastconstant-timeinsertion;sourceMSgeneralizationnotimported.",
-    "verification_status": "specialist_reported; coordinator technical check required where used"
+    "status": "source caveat retained; not imported as a verified adapted answer"
   },
   {
     "source_question_id": "H-SRC028-Q11-c",
@@ -297,7 +350,99 @@
       15
     ],
     "issue": "SourceMS PDF15 accepts SUM DIV200 formean;this canmisclassifyfractionalboundarycases. Adaptationusestruedivisionandtestsfractionalmeans.",
-    "verification_status": "specialist_reported; coordinator technical check required where used"
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC032-Q01-d",
+    "source_id": "SRC-032",
+    "question_pdf_pages": [
+      4
+    ],
+    "markscheme_source_id": "SRC-035",
+    "markscheme_pdf_pages": [
+      4
+    ],
+    "issue": "Original MS SQL quotes join operands as text literals; adapted SQL uses actual column references.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC032-Q08-c-ii",
+    "source_id": "SRC-032",
+    "question_pdf_pages": [
+      9
+    ],
+    "markscheme_source_id": "SRC-035",
+    "markscheme_pdf_pages": [
+      15
+    ],
+    "issue": "Original MS implies unsupervised learning automatically yields appropriate responses to unforeseen commands; not guaranteed and not copied.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC032-Q09-b",
+    "source_id": "SRC-032",
+    "question_pdf_pages": [
+      10
+    ],
+    "markscheme_source_id": "SRC-035",
+    "markscheme_pdf_pages": [
+      17
+    ],
+    "issue": "Source MS says web addresses are resolved inTCP and that a resolvedURL is returned; DNS returns relevant resource records,not aTCP URL transformation.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC032-Q11-b",
+    "source_id": "SRC-032",
+    "question_pdf_pages": [
+      12
+    ],
+    "markscheme_source_id": "SRC-035",
+    "markscheme_pdf_pages": [
+      20
+    ],
+    "issue": "Original eBook discussion focuses on image quality; rewritten task explicitly distinguishes exact text fromaudio.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC032-Q14-d",
+    "source_id": "SRC-032",
+    "question_pdf_pages": [
+      16
+    ],
+    "markscheme_source_id": "SRC-035",
+    "markscheme_pdf_pages": [
+      27
+    ],
+    "issue": "Source MS incorrectly limitsUnicode to2^16 and describesASCII as8-bit; not copied.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC032-Q15-e",
+    "source_id": "SRC-032",
+    "question_pdf_pages": [
+      17
+    ],
+    "markscheme_source_id": "SRC-035",
+    "markscheme_pdf_pages": [
+      29,
+      30
+    ],
+    "issue": "Source MS sort samples loop over whole array despite earlierNone slots; corrected active entries explicit.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC032-Q16-d",
+    "source_id": "SRC-032",
+    "question_pdf_pages": [
+      19
+    ],
+    "markscheme_source_id": "SRC-035",
+    "markscheme_pdf_pages": [
+      34
+    ],
+    "issue": "Original marking summary does not spell out safe relinking; adapted requirement andsolution preventlosing traversal orcreating sharednextchains.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
   },
   {
     "source_question_id": "H-SRC033-Q01-b",
@@ -310,7 +455,7 @@
       4
     ],
     "issue": "SourceMS suggests DATE types inherently slower/harder to validate than split integers;not imported.",
-    "verification_status": "specialist_reported; coordinator technical check required where used"
+    "status": "source caveat retained; not imported as a verified adapted answer"
   },
   {
     "source_question_id": "H-SRC033-Q08-b",
@@ -323,7 +468,7 @@
       15
     ],
     "issue": "Source calls supervised learning of a genetic algorithm;adaptation distinguishes GA optimization from supervised-learning category labels.",
-    "verification_status": "specialist_reported; coordinator technical check required where used"
+    "status": "source caveat retained; not imported as a verified adapted answer"
   },
   {
     "source_question_id": "H-SRC033-Q09-c",
@@ -336,6 +481,448 @@
       17
     ],
     "issue": "Source question says website certificate authenticates user browser;adaptation correctly authenticates server.",
-    "verification_status": "specialist_reported; coordinator technical check required where used"
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC033-Q14-a",
+    "source_id": "SRC-033",
+    "question_pdf_pages": [
+      17
+    ],
+    "markscheme_source_id": "SRC-036",
+    "markscheme_pdf_pages": [
+      23
+    ],
+    "issue": "SourceMS PDF23 example1 resets loop index to0 and has incorrect increment/return behaviour;correct example2/intended criteria used.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC033-Q16-b",
+    "source_id": "SRC-033",
+    "question_pdf_pages": [
+      19
+    ],
+    "markscheme_source_id": "SRC-036",
+    "markscheme_pdf_pages": [
+      28
+    ],
+    "issue": "SourceMS PDF28 conflates arbitraryBSTwithbalancedbinarysearch and contains inconsistent logarithmiccomparisoncounts;notimported.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC033-Q17-b",
+    "source_id": "SRC-033",
+    "question_pdf_pages": [
+      20
+    ],
+    "markscheme_source_id": "SRC-036",
+    "markscheme_pdf_pages": [
+      30
+    ],
+    "issue": "SourceMS tail-pointer suggestion does not make singlylinked tail removalO(1);adaptation explicitly uses head as top.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC034-Q01-e",
+    "source_id": "SRC-034",
+    "question_pdf_pages": [
+      3
+    ],
+    "markscheme_source_id": "SRC-037",
+    "markscheme_pdf_pages": [
+      5
+    ],
+    "issue": "SRC-037 SQL example has inconsistent OrdDate/OrderDate naming and uses ORDER as a table name. The unofficial SQL uses a new consistent Buyer/Invoice schema and is executed in SQLite.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC034-Q17-c",
+    "source_id": "SRC-034",
+    "question_pdf_pages": [
+      23
+    ],
+    "markscheme_source_id": "SRC-037",
+    "markscheme_pdf_pages": [
+      34
+    ],
+    "issue": "SRC-037 PDF p34: the recommendation sample incorrectly requires both effectiveness and health to increase. It can reject a higher primary score with lower health and mishandle equal primary scores. The unofficial answer implements lexicographic priority and is tested with these counterexamples.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC034-Q18-b",
+    "source_id": "SRC-034",
+    "question_pdf_pages": [
+      24
+    ],
+    "markscheme_source_id": "SRC-037",
+    "markscheme_pdf_pages": [
+      35
+    ],
+    "issue": "SRC-037 PDF p35: backward traversal is not directly supported by the stated singly linked list. The unofficial algorithm counts the nodes, skips length-n nodes and traverses forward without modifying the log.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC038-Q05-e",
+    "source_id": "SRC-038",
+    "question_pdf_pages": [
+      10
+    ],
+    "markscheme_source_id": "SRC-039",
+    "markscheme_pdf_pages": [
+      17
+    ],
+    "issue": "Original prompt specifies10000 repetitions; MS example loops1000 and uses inconsistent percentage divisor. Adaptation uses explicit trials parameter and100*wins/trials.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC038-Q15-b-iii",
+    "source_id": "SRC-038",
+    "question_pdf_pages": [
+      26
+    ],
+    "markscheme_source_id": "SRC-039",
+    "markscheme_pdf_pages": [
+      42
+    ],
+    "issue": "Original MS loosely equates all has-a with composition and says has-a cannot change behaviour/support polymorphism; these universal claims are not repeated.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC038-Q16-a-ii",
+    "source_id": "SRC-038",
+    "question_pdf_pages": [
+      27
+    ],
+    "markscheme_source_id": "SRC-039",
+    "markscheme_pdf_pages": [
+      44
+    ],
+    "issue": "Source prose says judgement passed while specific bullet/MS require judgement A (against). Adaptation explicitly asks failure only.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC038-Q17-a",
+    "source_id": "SRC-038",
+    "question_pdf_pages": [
+      28
+    ],
+    "markscheme_source_id": "SRC-039",
+    "markscheme_pdf_pages": [
+      45
+    ],
+    "issue": "Original message refers to a change but MS flag tracks qualification,even if already rank1. Adaptation explicitly tracks actual changes.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC040-Q02-d",
+    "source_id": "SRC-040",
+    "question_pdf_pages": [
+      5
+    ],
+    "markscheme_source_id": "SRC-041",
+    "markscheme_pdf_pages": [
+      7
+    ],
+    "issue": "Source MS date-range example omits a left operand in one comparison and mixes date formats. Adaptation uses complete comparisons and ISO timestamps.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC040-Q04-a-ii",
+    "source_id": "SRC-040",
+    "question_pdf_pages": [
+      9
+    ],
+    "markscheme_source_id": "SRC-041",
+    "markscheme_pdf_pages": [
+      11
+    ],
+    "issue": "Source MS decimal 0.00977 is inconsistent with (1/2)^10 = 0.0009765625; source formula is correct for independent random choices.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC040-Q04-e",
+    "source_id": "SRC-040",
+    "question_pdf_pages": [
+      10
+    ],
+    "markscheme_source_id": "SRC-041",
+    "markscheme_pdf_pages": [
+      13
+    ],
+    "issue": "Source MS example loops 1000 times rather than requested 10000 and retains scaling for 10000; adaptation uses the actual trial count.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC040-Q07-a-ii",
+    "source_id": "SRC-040",
+    "question_pdf_pages": [
+      15
+    ],
+    "markscheme_source_id": "SRC-041",
+    "markscheme_pdf_pages": [
+      20
+    ],
+    "issue": "Source MS also accepts hardware4hotels.com, which is not the hostname in the supplied URL; not imported.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC040-Q07-e-i",
+    "source_id": "SRC-040",
+    "question_pdf_pages": [
+      16
+    ],
+    "markscheme_source_id": "SRC-041",
+    "markscheme_pdf_pages": [
+      21
+    ],
+    "issue": "Source PHP constructs SQL by interpolating submitted values and does not handle an empty previous result set; adaptation uses supplied nonempty Python list and does not reproduce unsafe SQL.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC040-Q10-d-iii",
+    "source_id": "SRC-040",
+    "question_pdf_pages": [
+      21
+    ],
+    "markscheme_source_id": "SRC-041",
+    "markscheme_pdf_pages": [
+      31
+    ],
+    "issue": "Source Case constructor has caseID/caseId and casesTitle/caseTitle identifier errors; source-only code retained faithfully, corrected Python interfaces supplied in practice.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC040-Q10-d-iii",
+    "source_id": "SRC-040",
+    "question_pdf_pages": [
+      21
+    ],
+    "markscheme_source_id": "SRC-041",
+    "markscheme_pdf_pages": [
+      31
+    ],
+    "issue": "Source MS PDF31 example2 omits the return statement required by its int signature; adaptation returns the count.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC040-Q11-b-ii",
+    "source_id": "SRC-040",
+    "question_pdf_pages": [
+      22
+    ],
+    "markscheme_source_id": "SRC-041",
+    "markscheme_pdf_pages": [
+      32
+    ],
+    "issue": "Source labels the has-a link inconsistently as aggregation/composition without specifying component lifetimes; adapted question explicitly defines independent lifetimes.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC040-Q12-a-ii",
+    "source_id": "SRC-040",
+    "question_pdf_pages": [
+      23
+    ],
+    "markscheme_source_id": "SRC-041",
+    "markscheme_pdf_pages": [
+      34
+    ],
+    "issue": "Source prose says judgment passed (F or A), but mandatory bullet restricts A; adapted question explicitly requires only A.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC042-Q01-b",
+    "source_id": "SRC-042",
+    "question_pdf_pages": [
+      3
+    ],
+    "markscheme_source_id": "SRC-043",
+    "markscheme_pdf_pages": [
+      4
+    ],
+    "issue": "SRC-042 PDF p3 narrative allows staff in several departments while STAFF stores only one DepartmentID. SRC-043 PDF p4 accepts contradictory cardinalities. The practice explicitly specifies one home department; the original contradiction is preserved as source evidence.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC042-Q01-d",
+    "source_id": "SRC-042",
+    "question_pdf_pages": [
+      3
+    ],
+    "markscheme_source_id": "SRC-043",
+    "markscheme_pdf_pages": [
+      5
+    ],
+    "issue": "SRC-043 query example inconsistently refers to ROLE/Roles. The unofficial query has consistent schema identifiers and is executed in SQLite.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC042-Q03-a-ii",
+    "source_id": "SRC-042",
+    "question_pdf_pages": [
+      5
+    ],
+    "markscheme_source_id": "SRC-043",
+    "markscheme_pdf_pages": [
+      9
+    ],
+    "issue": "SRC-043 PDF p9 year-only age subtraction ignores whether the birthday has occurred this year. The unofficial algorithm compares month/day and adjusts the completed-year count.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC042-Q05-f",
+    "source_id": "SRC-042",
+    "question_pdf_pages": [
+      8
+    ],
+    "markscheme_source_id": "SRC-043",
+    "markscheme_pdf_pages": [
+      14
+    ],
+    "issue": "SRC-043 PDF p14 uses a cross-midnight condition TIME >= 19:00 AND TIME < 07:00, which is impossible, and inconsistent NIGHT_TOTAL/TOTAL_NIGHT names. The adapted hour-based answer uses OR and counts the included observations before division; boundary, negative and constant-value cases are tested.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC042-Q08-d",
+    "source_id": "SRC-042",
+    "question_pdf_pages": [
+      11
+    ],
+    "markscheme_source_id": "SRC-043",
+    "markscheme_pdf_pages": [
+      17
+    ],
+    "issue": "The source markscheme characterization of unsupervised learning as more random/deeper is not a sound distinction. The unofficial criteria distinguish target-labelled training from unlabelled pattern discovery.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC042-Q14-f",
+    "source_id": "SRC-042",
+    "question_pdf_pages": [
+      20
+    ],
+    "markscheme_source_id": "SRC-043",
+    "markscheme_pdf_pages": [
+      30
+    ],
+    "issue": "SRC-043 UML example adds a toString method absent from the given source class. The unofficial task specifies every attribute/method required and does not import the added method.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC042-Q16-d",
+    "source_id": "SRC-042",
+    "question_pdf_pages": [
+      22
+    ],
+    "markscheme_source_id": "SRC-043",
+    "markscheme_pdf_pages": [
+      34
+    ],
+    "issue": "SRC-043 PDF p34 fixed 2^16 characterization does not correctly describe the full Unicode code-point repertoire. The practice states the general cross-script representation benefit without this claim.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC042-Q17-b",
+    "source_id": "SRC-042",
+    "question_pdf_pages": [
+      24
+    ],
+    "markscheme_source_id": "SRC-043",
+    "markscheme_pdf_pages": [
+      35
+    ],
+    "issue": "SRC-042 PDF pp23-24 describes an alphabetically ordered list but Figure 10 shows Matthew, Jon, Angelica, Maria, which is not alphabetical. The Customer constructor also contains an invalid int maximumBudget() parameter. The adapted list is explicitly assumed sorted and all programming uses valid Python.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC044-Q01-b",
+    "source_id": "SRC-044",
+    "question_pdf_pages": [
+      3
+    ],
+    "markscheme_source_id": "SRC-046",
+    "markscheme_pdf_pages": [
+      4
+    ],
+    "issue": "Source stem permits staff in several departments but STAFF has only one DepartmentID; MS accepts one-to-many or many-to-many. Adaptation states intended cardinalities explicitly.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC044-Q01-d",
+    "source_id": "SRC-044",
+    "question_pdf_pages": [
+      3
+    ],
+    "markscheme_source_id": "SRC-046",
+    "markscheme_pdf_pages": [
+      5
+    ],
+    "issue": "Source MS first SQL example inconsistently uses ROLE/Roles; adapted query uses consistent names.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC044-Q03-a-ii",
+    "source_id": "SRC-044",
+    "question_pdf_pages": [
+      6
+    ],
+    "markscheme_source_id": "SRC-046",
+    "markscheme_pdf_pages": [
+      9
+    ],
+    "issue": "Some source MS formulas subtract years only and overstate age before the birthday. Adaptation explicitly calculates completed years.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC044-Q03-b",
+    "source_id": "SRC-044",
+    "question_pdf_pages": [
+      6
+    ],
+    "markscheme_source_id": "SRC-046",
+    "markscheme_pdf_pages": [
+      9
+    ],
+    "issue": "MS says2NF only applies to tables with composite keys; more precisely partial dependency concerns composite keys,while single-key1NF relations satisfy2NF automatically.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC044-Q04-f",
+    "source_id": "SRC-044",
+    "question_pdf_pages": [
+      8
+    ],
+    "markscheme_source_id": "SRC-046",
+    "markscheme_pdf_pages": [
+      12
+    ],
+    "issue": "Official MS sample night condition uses >=19 AND <7,which is impossible; adaptation correctly uses OR.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC044-Q09-a",
+    "source_id": "SRC-044",
+    "question_pdf_pages": [
+      16
+    ],
+    "markscheme_source_id": "SRC-046",
+    "markscheme_pdf_pages": [
+      19
+    ],
+    "issue": "MS’s illustrative Huffman codes0,01,10,11 are not prefix-free; this invalid example is not copied.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
+  },
+  {
+    "source_question_id": "H-SRC044-Q12-d",
+    "source_id": "SRC-044",
+    "question_pdf_pages": [
+      20
+    ],
+    "markscheme_source_id": "SRC-046",
+    "markscheme_pdf_pages": [
+      27
+    ],
+    "issue": "MS describes Unicode as2^16/about64000 characters; Unicode is not universally16bit or limited to that repertoire. No such claim is copied.",
+    "status": "source caveat retained; not imported as a verified adapted answer"
   }
 ]

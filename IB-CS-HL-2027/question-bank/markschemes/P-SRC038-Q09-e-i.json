@@ -1,0 +1,38 @@
+{
+  "question_id": "P-SRC038-Q09-e-i",
+  "unofficial": true,
+  "marks": 4,
+  "solution": "The stored average is 3 from scores2 and 4. INSERT adds the repair score 5, producing a third repair row. The already stored result remains3 because the SELECT happened before insertion; a fresh average would be11/3.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Stored average3."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains only pre-insert repair rows counted."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct new row added."
+    },
+    {
+      "marks": 1,
+      "criterion": "Stored value unchanged unless the query is rerun."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "SQLite aggregate-before-insert and final row count executed.",
+    "source_comparison": [
+      28
+    ],
+    "test_code": "import sqlite3\nc=sqlite3.connect(':memory:');c.executescript(\"CREATE TABLE Feedback(Category,Score);INSERT INTO Feedback VALUES('repair',2),('repair',4),('paint',5);\")\navg=c.execute(\"SELECT AVG(Score) FROM Feedback WHERE Category='repair'\").fetchone()[0]\nc.execute(\"INSERT INTO Feedback VALUES('repair',5)\")\nassert avg==3 and c.execute(\"SELECT COUNT(*) FROM Feedback WHERE Category='repair'\").fetchone()[0]==3",
+    "result_file": ""
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

@@ -1,0 +1,660 @@
+{
+  "source_id": "SRC-034",
+  "batch_id": "SRC-034-b012",
+  "source_questions": [
+    {
+      "original_assessment_context": "Monster cardgame;Monster class has static type constants and instance name,health,strength,type;WaterMonster/FireMonster inherit Monster;Arena stores10 Monster references plusmonsterCount. Full Java source retained in source page evidence.Onebasedtypes1ice2water3fire;effectiveness rowsattacker colsdefender.",
+      "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+      "source_question_id": "H-SRC034-Q17-b",
+      "source_id": "SRC-034",
+      "source_filename": "Computer_science_paper_2__HL.pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": "17",
+      "subquestion": "b",
+      "source_pdf_pages": [
+        23
+      ],
+      "source_printed_pages": [
+        "22"
+      ],
+      "original_marks": 2,
+      "command_term": "Construct",
+      "original_text": "[Source PDF page 23]\nSome types of monsters cause more damage when attacking other types of monsters. The\ngame will change the damage of each attack by a factor between –8 and +6 depending on\nthe types of the two monsters involved in the battle.\nIn Table 1, the attacking monster is indicated by the row and the defending monster by the\ncolumn. For example, if a fire-type monster attacks an ice-type monster, the damage will be\nincreased by 6.\nTable 1: The effectiveness of different monster types in a battle\nDefending monster\nIce Water Fire\ngnikcattA\nretsnom\nIce 0 −4 +2\nWater −8 0 +5\nFire +6 −3 0\nThis is implemented as a static array in the class as follows:\nMonster int[][]\neffectiveness = {{0, -4, 2},{-8, 0, 5},{6, -3, 0}};\nThe following method will be written to return the corresponding value from the\neffectiveness array:\npublic static int getAttackingWeight(Monster attacker, Monster defender){\nreturn // ... to be completed\n}\n(b) Construct the return statement. [2]",
+      "parent_context": "Monster cardgame;Monster class has static type constants and instance name,health,strength,type;WaterMonster/FireMonster inherit Monster;Arena stores10 Monster references plusmonsterCount. Full Java source retained in source page evidence.Onebasedtypes1ice2water3fire;effectiveness rowsattacker colsdefender.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "description": "Exacteffectivenessmatrixandindexconvention",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-23.png",
+          "source_pdf_page": 23,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-22.png",
+          "source_pdf_page": 22,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        }
+      ],
+      "assessed_concepts": [
+        "Construct: Construct the returnstatement for getAttackingWeight(attacker,defender)."
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-037",
+        "filename": "Computer_science_paper_2__HL_markscheme.pdf",
+        "pdf_pages": [
+          33
+        ],
+        "question_reference": "17(b)",
+        "marking_summary": "Rowattacker.type-1,coldefender.type-1.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Retains indexoffsetandrow/column reasoning;Pythonobjectattributes.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Construct the returnstatement for getAttackingWeight(attacker,defender).",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 23,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-023.txt"
+        }
+      ],
+      "source_context_page_evidence": [
+        {
+          "pdf_page": 22,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-22.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-022.txt"
+        },
+        {
+          "pdf_page": 23,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-23.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-023.txt"
+        }
+      ],
+      "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+      "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2__HL.pdf",
+      "source_issues": []
+    },
+    {
+      "original_assessment_context": "Monster cardgame;Monster class has static type constants and instance name,health,strength,type;WaterMonster/FireMonster inherit Monster;Arena stores10 Monster references plusmonsterCount. Full Java source retained in source page evidence.Choosehighesteffectiveness,thenhighesthealth,thenfirsttie;atleastone.",
+      "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+      "source_question_id": "H-SRC034-Q17-c",
+      "source_id": "SRC-034",
+      "source_filename": "Computer_science_paper_2__HL.pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": "17",
+      "subquestion": "c",
+      "source_pdf_pages": [
+        23
+      ],
+      "source_printed_pages": [
+        "22"
+      ],
+      "original_marks": 6,
+      "command_term": "Construct",
+      "original_text": "[Source PDF page 23]\nThe method in the class\nrecommendAttackingMonster(Monster defender) Arena\nrecommends the best monster in the array to use in a battle based on its\nmonster\neffectiveness against the defending monster.\nIf there is more than one monster with the same effectiveness and health points, the first of\nthem will be selected.\n(c) Construct the method . You can\nrecommendAttackingMonster(Monster defender)\nassume that there is at least one monster in the monsters array, that the attacking\nmonster is not in the monsters array, and that the method\ngetAttackingWeight\nis available. [6]",
+      "parent_context": "Monster cardgame;Monster class has static type constants and instance name,health,strength,type;WaterMonster/FireMonster inherit Monster;Arena stores10 Monster references plusmonsterCount. Full Java source retained in source page evidence.Choosehighesteffectiveness,thenhighesthealth,thenfirsttie;atleastone.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-22.png",
+          "source_pdf_page": 22,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-23.png",
+          "source_pdf_page": 23,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        }
+      ],
+      "assessed_concepts": [
+        "Construct: Construct recommendAttackingMonster(defender)."
+      ],
+      "difficulty": "high",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-037",
+        "filename": "Computer_science_paper_2__HL_markscheme.pdf",
+        "pdf_pages": [
+          34
+        ],
+        "question_reference": "17(c)",
+        "marking_summary": "Need lexicographicprimaryweight,secondaryhealth,firsttie;sourceexamplewronglyrequiresbothmetricsincrease.",
+        "source_issues": [
+          "SRC-037 PDF p34: the recommendation sample incorrectly requires both effectiveness and health to increase. It can reject a higher primary score with lower health and mishandle equal primary scores. The unofficial answer implements lexicographic priority and is tested with these counterexamples."
+        ]
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Corrects officialsamplelexicographicbug;retains object-listselection with primary/secondary/first-tiepolicy andtests counterexamples.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Corrects officialsamplelexicographicbug;retains object-listselection with primary/secondary/first-tiepolicy andtests counterexamples.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "Corrects officialsamplelexicographicbug;retains object-listselection with primary/secondary/first-tiepolicy andtests counterexamples.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Construct recommendAttackingMonster(defender).",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 23,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-023.txt"
+        }
+      ],
+      "source_context_page_evidence": [
+        {
+          "pdf_page": 22,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-22.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-022.txt"
+        },
+        {
+          "pdf_page": 23,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-23.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-023.txt"
+        }
+      ],
+      "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+      "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2__HL.pdf",
+      "source_issues": [
+        "SRC-037 PDF p34: the recommendation sample incorrectly requires both effectiveness and health to increase. It can reject a higher primary score with lower health and mishandle equal primary scores. The unofficial answer implements lexicographic priority and is tested with these counterexamples."
+      ]
+    },
+    {
+      "original_assessment_context": "Chronological singly linked gameLog headoldest;Turn(timestamp,from,to,damage). rewindTurns(N,rewinder)restoresdamageforrewinderonlywithinlastNtotalturns;logunchanged;example4eventsWindy→Flamey11,Flamey→Windy4,Windy→Flamey1,Flamey→Windy4.",
+      "source_scope_note": "Original assessed concept classified directly or excluded with reason.",
+      "source_question_id": "H-SRC034-Q18-a",
+      "source_id": "SRC-034",
+      "source_filename": "Computer_science_paper_2__HL.pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": "18",
+      "subquestion": "a",
+      "source_pdf_pages": [
+        24
+      ],
+      "source_printed_pages": [
+        "23"
+      ],
+      "original_marks": 4,
+      "command_term": "Outline",
+      "original_text": "[Source PDF page 23]\n(Option D continues on the following page)\n\n[Source PDF page 24]\n(Option D continued)\n18. The arena will maintain a linked list of the battles that take place between monsters,\ncalled .\ngameLog\nEach time a player takes a turn and one monster attacks another, a new instance of the\nclass is created and added to the linked list:\nTurn gameLog\npublic class Turn {\nlong timestamp;\nMonster from;\nMonster to;\nint damage;\n}\nThe developer wants to add a method in the class, which restores\nrewindTurns Arena\nhealth points taken from a particular monster during a specified number of turns. This method\ncan be called at any time and will leave the linked list unchanged (see Figure 10).\ngameLog\nFigure 10: The linked list\ngameLog\nTimestamp: 01 Timestamp: 02 Timestamp: 03 Timestamp: 04\nFrom: Windy From: Flamey From: Windy From: Flamey\nH\nTo: Flamey To: Windy To: Flamey To: Windy\nDamage: 11 Damage: 4 Damage: 1 Damage: 4\nThe variable is a reference to a monster named Windy, which is battling another\nrewinder\nmonster, Flamey. The game has had four attacks so far, each of which are entered in the\nlinked list. In this example, the code would restore\ngameLog rewindTurns(2, rewinder)\n4 health points to Windy, and the code would restore 8 health\nrewindTurns(3, rewinder)\npoints to Windy.\n(a) Outline two differences between the use of a linked list and a stack when using the\nmethod. [4]\nrewindTurns",
+      "parent_context": "Chronological singly linked gameLog headoldest;Turn(timestamp,from,to,damage). rewindTurns(N,rewinder)restoresdamageforrewinderonlywithinlastNtotalturns;logunchanged;example4eventsWindy→Flamey11,Flamey→Windy4,Windy→Flamey1,Flamey→Windy4.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "description": "Exactchronologicallinkedlogandrestoreexamples",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-24.png",
+          "source_pdf_page": 24,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-23.png",
+          "source_pdf_page": 23,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        }
+      ],
+      "assessed_concepts": [
+        "Outline: Outline two differences between a linked list andstack for rewindTurns."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-037",
+        "filename": "Computer_science_paper_2__HL_markscheme.pdf",
+        "pdf_pages": [
+          34
+        ],
+        "question_reference": "18(a)",
+        "marking_summary": "LIFOaccessrecentfirstversusheadtraversal;olderstackaccessneedsremoval/restoration,linkedlistnonmutatingread.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "mapping_target": "original_and_adapted",
+          "syllabus_code": "B4.1.2",
+          "scope_evidence": "• Lists must include singly, doubly, circular\n• Sketch of linked lists and implementation of basic operations diagrammatically, such as insertion, deletion, traversal, search\n• The advantages and disadvantages of using linked lists over other data structures like arrays, particularly in terms of memory utilization and performance",
+          "rationale": "The assessed skill is explicitly named in the cited statement and its guidance; mapping does not credit unassessed scenario topics.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "mapping_target": "original_and_adapted",
+          "syllabus_code": "B2.2.3",
+          "scope_evidence": "• Must include fundamental operations such as push, pop, peek and isEmpty\n• How stack operations impact both performance and memory usage\n• An appropriate stack for a specific problem",
+          "rationale": "The assessed skill is explicitly named in the cited statement and its guidance; mapping does not credit unassessed scenario topics.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Outline two differences between a linked list andstack for rewindTurns.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 24,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-024.txt"
+        }
+      ],
+      "source_context_page_evidence": [
+        {
+          "pdf_page": 23,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-23.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-023.txt"
+        },
+        {
+          "pdf_page": 24,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-24.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-024.txt"
+        }
+      ],
+      "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+      "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2__HL.pdf",
+      "source_issues": []
+    },
+    {
+      "original_assessment_context": "Chronological singly linked gameLog headoldest;Turn(timestamp,from,to,damage). rewindTurns(N,rewinder)restoresdamageforrewinderonlywithinlastNtotalturns;logunchanged;example4eventsWindy→Flamey11,Flamey→Windy4,Windy→Flamey1,Flamey→Windy4.",
+      "source_scope_note": "Original assessed concept classified directly or excluded with reason.",
+      "source_question_id": "H-SRC034-Q18-b",
+      "source_id": "SRC-034",
+      "source_filename": "Computer_science_paper_2__HL.pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": "18",
+      "subquestion": "b",
+      "source_pdf_pages": [
+        24
+      ],
+      "source_printed_pages": [
+        "23"
+      ],
+      "original_marks": 6,
+      "command_term": "Explain",
+      "original_text": "[Source PDF page 24]\nrewindTurns\n(b) Explain how to implement the\nrewindTurns(int numberOfTurns, Monster\nmethod using the linked list . [6]\nrewinder) gameLog",
+      "parent_context": "Chronological singly linked gameLog headoldest;Turn(timestamp,from,to,damage). rewindTurns(N,rewinder)restoresdamageforrewinderonlywithinlastNtotalturns;logunchanged;example4eventsWindy→Flamey11,Flamey→Windy4,Windy→Flamey1,Flamey→Windy4.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "description": "Source linkedlisttraversalandselectiverestoration",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-24.png",
+          "source_pdf_page": 24,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-23.png",
+          "source_pdf_page": 23,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        }
+      ],
+      "assessed_concepts": [
+        "Explain: Explain implementation of rewindTurns(numberOfTurns,rewinder) using linkedlistgameLog."
+      ],
+      "difficulty": "high",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-037",
+        "filename": "Computer_science_paper_2__HL_markscheme.pdf",
+        "pdf_pages": [
+          35
+        ],
+        "question_reference": "18(b)",
+        "marking_summary": "Countlog,validateN,locatestartoflastN,walk,filterrecipient,restoredamagewithoutchanginglog.",
+        "source_issues": [
+          "SRC-037 PDF p35: backward traversal is not directly supported by the stated singly linked list. The unofficial algorithm counts the nodes, skips length-n nodes and traverses forward without modifying the log."
+        ]
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "mapping_target": "original_and_adapted",
+          "syllabus_code": "B4.1.3",
+          "scope_evidence": "• The basic operations on a linked list, such as insertion, deletion, traversal, search",
+          "rationale": "The assessed skill is explicitly named in the cited statement and its guidance; mapping does not credit unassessed scenario topics.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Explain implementation of rewindTurns(numberOfTurns,rewinder) using linkedlistgameLog.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 24,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-024.txt"
+        }
+      ],
+      "source_context_page_evidence": [
+        {
+          "pdf_page": 23,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-23.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-023.txt"
+        },
+        {
+          "pdf_page": 24,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-24.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-024.txt"
+        }
+      ],
+      "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+      "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2__HL.pdf",
+      "source_issues": [
+        "SRC-037 PDF p35: backward traversal is not directly supported by the stated singly linked list. The unofficial algorithm counts the nodes, skips length-n nodes and traverses forward without modifying the log."
+      ]
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC034-Q17-b",
+      "source_question_ids": [
+        "H-SRC034-Q17-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Objects attacker and defender have kind values 1..3. A2D list table uses zero-based rows for attacker type and columns for defender type. Construct the return statement for the corresponding adjustment.",
+      "syllabus_codes": [
+        "B2.2.2"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Construct",
+      "difficulty": "low",
+      "adaptation_rationale": "Retains index off set and row/column reasoning; Python object attributes.",
+      "solution": "return table[attacker.kind-1][defender.kind-1]",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Uses attacker.kind-1 as row index."
+        },
+        {
+          "marks": 1,
+          "criterion": "Uses defender.kind-1 as column index:return table[attacker.kind-1][defender.kind-1]."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "Executable checks saved under checks/ where applicable."
+      },
+      "code": "def adjustment_for(attacker,defender):\n    table=[[0,-2,3],[-5,0,4],[6,-1,0]]\n    return table[attacker.kind-1][defender.kind-1]",
+      "test_code": "from types import SimpleNamespace\nassert adjustment_for(SimpleNamespace(kind=1),SimpleNamespace(kind=3))==3\nassert adjustment_for(SimpleNamespace(kind=3),SimpleNamespace(kind=1))==6",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC034-Q17-c",
+      "source_question_ids": [
+        "H-SRC034-Q17-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct recommend(items, target, score) in Python. items is nonempty; score(item, target) returns an integer suitability. Return the item with highest suitability, breaking equal-suitability ties by greater item.stock. If both are equal, keep the first item. Negative suitability is possible.",
+      "syllabus_codes": [
+        "B2.2.2",
+        "B2.3.2",
+        "B2.3.3"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 6,
+      "command_term": "Construct",
+      "difficulty": "high",
+      "adaptation_rationale": "Corrects official sample lexicographic bug; retains object-list selection with primary/secondary/first-tie policy and tests counter examples.",
+      "solution": "def recommend(items,target,score):\n    best=items[0]\n    best_score=score(best,target)\n    for item in items[1:]:\n        current=score(item,target)\n        if current>best_score or(current==best_score and item.stock>best.stock):\n            best=item\n            best_score=current\n    return best",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Initializes best and best score from an actual first item."
+        },
+        {
+          "marks": 1,
+          "criterion": "Visits remaining items and computes suitability."
+        },
+        {
+          "marks": 1,
+          "criterion": "Replaces best whenever suitability is strictly higher, regardless of stock."
+        },
+        {
+          "marks": 1,
+          "criterion": "On equal suitability, replaces only if stock is greater."
+        },
+        {
+          "marks": 1,
+          "criterion": "Keeps first when both metrics tie and updates cached score with best."
+        },
+        {
+          "marks": 1,
+          "criterion": "Returns the chosen item object."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "Executable checks saved under checks/ where applicable."
+      },
+      "code": "def recommend(items,target,score):\n    best=items[0]\n    best_score=score(best,target)\n    for item in items[1:]:\n        current=score(item,target)\n        if current>best_score or(current==best_score and item.stock>best.stock):\n            best=item\n            best_score=current\n    return best",
+      "test_code": "from types import SimpleNamespace\na=SimpleNamespace(score=-2,stock=100);b=SimpleNamespace(score=3,stock=1);c=SimpleNamespace(score=3,stock=2);d=SimpleNamespace(score=3,stock=2)\nf=lambda item,target:item.score\nassert recommend([a,b,c,d],None,f) is c\nassert recommend([a,b],None,f) is b\nassert recommend([a],None,f) is a",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC034-Q18-a",
+      "source_question_ids": [
+        "H-SRC034-Q18-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "A chronological singly linked transaction log stores old est entries at its head; an alternative stack stores new est entries at top. Outline two differences when inspecting recent transactions while preserving the log.",
+      "syllabus_codes": [
+        "B4.1.2",
+        "B2.2.3"
+      ],
+      "theme": "B",
+      "level": "HL-only/SL/HL common",
+      "marks": 4,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Original application rewritten to be self-contained; assessed reasoning retained within cited 2027 scope.",
+      "solution": "Stack gives direct access to the new est entry at its top.; The stated linkedlist must traverse from its old-entry head to reach recent entries.; Accessing entries below stack top normally requires pop ping newer entries.; Those popped entries must be restored correctly, whereas linkedlist traversal can read entries without relinking/removing them.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Stack gives direct access to the new est entry at its top."
+        },
+        {
+          "marks": 1,
+          "criterion": "The stated linkedlist must traverse from its old-entry head to reach recent entries."
+        },
+        {
+          "marks": 1,
+          "criterion": "Accessing entries below stack top normally requires pop ping newer entries."
+        },
+        {
+          "marks": 1,
+          "criterion": "Those popped entries must be restored correctly, whereas linkedlist traversal can read entries without relinking/removing them."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "No executable code required; manual technical check."
+      },
+      "code": "",
+      "test_code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC034-Q18-b",
+      "source_question_ids": [
+        "H-SRC034-Q18-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Explain an algorithm that restores stock for a selected product using the lastn entries of a chronological singly linked sales log. Each node stores product, quantity and next; head is the old est. Add quantities only for the selected product; count n across all recent entries, leave the log unchanged, and report invalidn.",
+      "syllabus_codes": [
+        "B4.1.3"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 6,
+      "command_term": "Explain",
+      "difficulty": "high",
+      "adaptation_rationale": "Original application rewritten to be self-contained; assessed reasoning retained within cited 2027 scope.",
+      "solution": "Count total entries without changing links.; Reject n<0 orn greater than the log length with appropriate error handling.; Start at head and skip length-n nodes.; Traverse the remaining n recent entries.; For entries whose product is the selected product, add that quantity to its stock.; Do not alter nodes/next links or restore entries outside then-entry window.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Count total entries without changing links."
+        },
+        {
+          "marks": 1,
+          "criterion": "Reject n<0 orn greater than the log length with appropriate error handling."
+        },
+        {
+          "marks": 1,
+          "criterion": "Start at head and skip length-n nodes."
+        },
+        {
+          "marks": 1,
+          "criterion": "Traverse the remaining n recent entries."
+        },
+        {
+          "marks": 1,
+          "criterion": "For entries whose product is the selected product, add that quantity to its stock."
+        },
+        {
+          "marks": 1,
+          "criterion": "Do not alter nodes/next links or restore entries outside then-entry window."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "No executable code required; manual technical check."
+      },
+      "code": "",
+      "test_code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "question_id": "P-SRC034-Q14-e",
+  "source_question_ids": [
+    "H-SRC034-Q14-e"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "The class ChilledItem has constructor __init__(self, name, stock). Construct Python code that creates one instance for product name VaccinePack with stock 60, and assigns it to item.",
+  "syllabus_codes": [
+    "B3.1.4"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 2,
+  "command_term": "Construct",
+  "difficulty": "low",
+  "adaptation_rationale": "Python object instantiation with business record context; no Java new/type-declaration syntax.",
+  "solution": "item=ChilledItem(\"VaccinePack\",60)",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Calls ChilledItem with the specified name and stock arguments."
+    },
+    {
+      "marks": 1,
+      "criterion": "Assigns the resulting instance to item: item=ChilledItem(\"VaccinePack\", 60)."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "No executable code required; manual technical check."
+  },
+  "code": "",
+  "test_code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC034-Q14-e.json",
+  "question_path": "question-bank/questions/P-SRC034-Q14-e.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC034-Q14-e.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

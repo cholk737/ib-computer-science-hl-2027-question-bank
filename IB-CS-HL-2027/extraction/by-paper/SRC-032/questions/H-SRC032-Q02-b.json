@@ -1,0 +1,76 @@
+{
+  "source_question_id": "H-SRC032-Q02-b",
+  "source_id": "SRC-032",
+  "source_filename": "Computer_science_paper_2__HL (1).pdf",
+  "year": "2023",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "TZ0 (markscheme)",
+  "option": "A",
+  "question": 2,
+  "subquestion": "b",
+  "source_pdf_pages": [
+    5
+  ],
+  "source_printed_pages": [
+    "4"
+  ],
+  "original_marks": 4,
+  "command_term": "Describe",
+  "original_text": "Describe two methods of database recovery that a database administrator can carry out.",
+  "parent_context": "– 4 – 2223 – 7012\n(Option A continued)\n2. Database recovery is performed when disasters, hardware failures or application problems \noccur. Database administrators have to make decisions about which type of database \nrecovery strategy to use.\n(a) Identify one factor that a database administrator could consider when choosing a \ndatabase recovery strategy. [1]\n(b) Describe two methods of database recovery that a database administrator can carry out. [4]\nMany organizations are concerned about staff having access to sensitive or inappropriate data.\n(c) Describe two methods organizations could use to ensure that staff do not have access \nto sensitive or inappropriate data. [4]\n3. Artisan College has the following data about students and the courses they have chosen.\nSTUDENT table\nStudentID FName SName MajorID Major CourseNum CourseName\n2907 Jacob Smith MAT Mathematics MAT0011\nMAT0027\nEGL0010\nDiscrete Maths\nCalculus I\nClassics I\n4019 Jane Paterson PHI Philosophy PHI0010\nCS00100\nPhilosophy\nProgramming 1\n5145 Norris Neeld EGL English SOC0102 Ascent of man\n6132 Xavier Morrison MUS Music MUS0002\nSOC0102\nOrigin of jazz\nAscent of man\n8966 Samantha Juarez EGL English EGL0010\nEGL0101\nClassics I\nShakespeare II\nThe table can also be represented in the following form.\nSTUDENT (StudentID, FName, SName, MajorID, Major, CourseNum, CourseName)\n(a) Outline why this table is not in 1st Normal Form (1NF). [2]\n(b) Construct the 3rd Normal Form (3NF) of the unnormalized relation shown above. [8]\n(c) Explain the importance of data modelling in the design of a database. [5]\n(Option A continues on the following page)",
+  "assets": [
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-05.png",
+      "source_pdf_page": 5,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Describe two methods of database recovery that a database administrator can carry out.",
+    "Outline how ROLLBACK helps when an uncommitted transaction has made an incorrect update"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-035",
+    "filename": "Computer_science_paper_2__HL_markscheme (1).pdf",
+    "pdf_pages": [
+      6
+    ],
+    "question_reference": "Q2 b",
+    "marking_summary": "Exact original MS leaf excerpt: Award [4 max] Backup and Restore/The DBA restores the database from backup; Using BACKUP and RESTORE SQL commands; After making periodic backups of the database (may be full or incremental); Log Recovery/ Point in time recovery/rollback; Backup is recorded in the log files and restored at that point; Transaction after that point are added back in; If the failure was due to an error in a transaction, the DBA can also \"undo\" the transaction to revert the database to a consistent Instant Recovery/database mirroring/recovery in place; Redirects user workloads to the backup server/backup database is brought online; When recovery is completd the original system is used with the interim transactions added; Deferred update (NO-UNDO/REDO or write-ahead logging); The system consults the transaction log and any transactions that were not fully written to the database (deferred) are redone; Mark as  … [full leaf evidence retained]",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [4 max]\nBackup and Restore/The DBA restores the database from backup;\nUsing BACKUP and RESTORE SQL commands;\nAfter making periodic backups of the database (may be full or incremental);\nLog Recovery/ Point in time recovery/rollback;\nBackup is recorded in the log files and restored at that point;\nTransaction after that point are added back in;\nIf the failure was due to an error in a transaction, the DBA can also \"undo\" the transaction to\nrevert the database to a consistent\nInstant Recovery/database mirroring/recovery in place;\nRedirects user workloads to the backup server/backup database is brought online;\nWhen recovery is completd the original system is used with the interim transactions added;\nDeferred update (NO-UNDO/REDO or write-ahead logging);\nThe system consults the transaction log and any transactions that were not fully written to the\ndatabase (deferred) are redone;\nMark as [2] and [2].",
+    "source_issues": [],
+    "source_marking_evidence": "– 6 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \n2. (a) Award [1 max] \nAmount of acceptable data loss; \nTime to full recovery/Recovery Time Objective(RTO); \nCost (Instant recovery requires failover systems); \nResources/Architecture; (volume of data) // size of database not accepted; \nLegal regulations/sensitivity of data; \n(b) Award [4 max]\nBackup and Restore/The DBA restores the database from backup;\nUsing BACKUP and RESTORE SQL commands;\nAfter making periodic backups of the database (may be full or incremental);\nLog Recovery/ Point in time recovery/rollback;\nBackup is recorded in the log files and restored at that point;\nTransaction after that point are added back in;\nIf the failure was due to an error in a transaction, the DBA can also \"undo\" the transaction to\nrevert the database to a consistent\nInstant Recovery/database mirroring/recovery in place;\nRedirects user workloads to the backup server/backup database is brought online;\nWhen recovery is completd the original system is used with the interim transactions added;\nDeferred update (NO-UNDO/REDO or write-ahead logging);\nThe system consults the transaction log and any transactions that were not fully written to the\ndatabase (deferred) are redone;\nMark as [2] and [2].\n(c) Award [4 max]\nAccess control levels;\nsame as in a school, admistrators can see everything, teachers can see some, students can\nsee very little;\nAny example to explain the access control can be accepted;\nMaintaining data anonymity;\nfor example the personally identifiable information (PII) that could potentially identify a person\nin the database is located in a separate table;\nand the person is given a unique identifier like PER0001 so the anonymity of the person\ncan be ensured;\nNote: password alone not accepted, encryption not accepted\nMark as [2] and [2]."
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "A3.3.6",
+      "scope_evidence": "• The role of atomicity, consistency, isolation and durability (ACID) to ensure reliable processing of transactions\n• Transaction control language (TCL) commands: BEGIN TRANSACTION, COMMIT, ROLLBACK",
+      "rationale": "Adapted target only: Outline how ROLLBACK helps when an uncommitted transaction has made an incorrect update; guidance target: Describe how transactions maintain data integrity in a database. (HL only) Adaptation: Only source rollback reasoning is retained; unrelated backup/mirroring recovery methods are excluded and allocation reduced from4 to2.",
+      "theme": "A",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC032-Q02-b"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

@@ -1,0 +1,95 @@
+{
+  "source_question_id": "H-SRC040-Q07-a-i",
+  "source_id": "SRC-040",
+  "source_filename": "Computer_science_paper_2_SL.pdf",
+  "year": "2025",
+  "session": "November",
+  "source_level": "SL",
+  "paper": "2",
+  "zone": "not stated",
+  "option": "C",
+  "question": "7",
+  "subquestion": "a-i",
+  "source_pdf_pages": [
+    15
+  ],
+  "source_printed_pages": [
+    "14"
+  ],
+  "original_marks": 1,
+  "command_term": "State",
+  "original_text": "(i) S tate the protocol in the company’s website URL. [1]",
+  "parent_context": "7. Hardware4Hotels is a company that provides services to hotels, such as carrying out\nelectrical repairs, decorating, and plumbing.\nThe URL for the company’s website is http://hardware4hotels.example.com\n(a) (i) S tate the protocol in the company’s website URL. [1]\n(ii) State the domain name in the company’s website URL. [1]\n(b) Outline the importance of protocols when browsing websites. [2]\n(c) Identify two components of a webpage. [2]\nThe website for Hardware4Hotels has been designed so it can receive feedback from its\ncustomers. After the work has been completed, the customer is asked to submit a score from\n1 to 5 for the service provided (see Figure 8).\nFigure 8: The Hardware4Hotels feedback webpage\nhttp://hardware4hotels.example.com\nHardware4Hotels\nH\nspecialist hotel maintenance contractors\nHome About Services Case studies Careers Contact\nPlease rate the following job:\nUser: 09876 (Peter Achison)\nWork category: interior decoration\nSubmit\n(d) Describe the role of the common gateway interface (CGI) on the Hardware4Hotels\nwebsite. [2]\n(Option C continues on the following page)\n– 15 – 8825 – 6408\n(Option C, question 7 continued)\nThe following is part of the code that is run on the server when a customer (the user)\nsubmits a rating.\n<?php\n$work_category = $_POST[\"work_category\"];\n$rating = $_POST[\"rating\"];\n$conn = mysqli_connect(\"localhost\", $username, $password, \"sales\");\n$sql = \"SELECT AVG(rating) as averageRating FROM ratings WHERE work_\ncategory = '$work_category'\";\n$result = mysqli_query($conn, $sql);\n$row = mysqli_fetch_assoc($result);\n$averageRating = $row[\"averageRating\"];\n$sql = \"INSERT INTO ratings (work_category, rating) VALUES ('$work_\ncategory', $rating)\";\nmysqli_query($conn, $sql);\nif ($rating >= $averageRating) {\necho \"Thank you for the good review.\";\n} else {\necho \"Sorry, we will try to do better next time.\";\n}\nmysqli_close($conn);\n?>\n(e) (i) Describe the processing that takes place when this code is executed. [4]\n(ii) Outline one advantage of executing this code on a server rather than in\nthe browser. [3]\n(Option C continues on the following page)\nTurn over\n– 16 – 8825 – 6408\n(Option C continued)\n",
+  "assets": [
+    {
+      "kind": "source_page_render",
+      "description": "Full source page inspected; includes all question context, source code/figures where present.",
+      "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-15.png",
+      "source_pdf_page": 15,
+      "visually_verified": true
+    },
+    {
+      "kind": "source_page_render",
+      "description": "Shared full source question context, table,code or figure inspected.",
+      "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-16.png",
+      "source_pdf_page": 16,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Describe the network protocols used for transport and application."
+  ],
+  "difficulty": "low",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-041",
+    "filename": "Computer_science_paper_2_SL_markscheme.pdf",
+    "pdf_pages": [
+      20
+    ],
+    "question_reference": "7(a-i)",
+    "marking_summary": "HTTP.",
+    "source_issues": []
+  },
+  "relevance_status": "A",
+  "mappings": [
+    {
+      "syllabus_code": "A2.1.4",
+      "scope_evidence": "• Protocols: transmission control protocol (TCP), user datagram protocol (UDP), hypertext transfer protocol (HTTP), hypertext transfer protocol secure (HTTPS), dynamic host configuration protocol (DHCP)",
+      "rationale": "HTTP application protocol explicitly scoped.",
+      "theme": "A",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "transcribed from original PDF and compared with rendered page",
+    "source_marks": "checked against printed allocation and official MS",
+    "visual_review": "full question page inspected",
+    "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+  },
+  "original_text_synopsis": "State protocol in URL.",
+  "context_synopsis": "Website URL http://hardware4hotels.example.com, feedback form and PHP server processing in PDF15–16; full source code preserved separately.",
+  "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+  "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+  "raw_source_page_transcriptions": [
+    "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-015.txt"
+  ],
+  "context_pdf_pages": [
+    16
+  ],
+  "mark_allocation_pdf_page": 15,
+  "context_printed_pages": [
+    "15"
+  ],
+  "raw_context_page_transcriptions": [
+    "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-016.txt"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC040-Q07-a-i"
+  ]
+}

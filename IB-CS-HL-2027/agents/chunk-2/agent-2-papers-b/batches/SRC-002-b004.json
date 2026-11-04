@@ -58,7 +58,9 @@
         "filename": "",
         "pdf_pages": [],
         "question_reference": "Q5 c",
-        "marking_summary": "The string contains no space, so index cannot find the requested substring and signals failure with ValueError.",
+        "marking_summary": "No uploaded official MS; independently solved unofficial criteria are stored in the practice record.",
+        "summary_kind": "missing_official_MS",
+        "source_marking_leaf_evidence": "",
         "source_issues": [
           "Source FIND(A2,\" \") reverses the usual spreadsheet arguments; its displayed results assume FIND(\" \",A2). Rewritten Python semantics explicit."
         ],
@@ -69,7 +71,7 @@
         {
           "syllabus_code": "B2.1.2",
           "scope_evidence": "• Writing of programs that accurately identify and extract substrings from given strings, demonstrating the ability to perform various manipulations, such as altering, concatenating or replacing",
-          "rationale": "A Python program evaluates full_name assesses Construct programs that can extract and manipulate substrings.",
+          "rationale": "Adapted target only: A Python program evaluates full_name; guidance target: Construct programs that can extract and manipulate substrings. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -78,7 +80,7 @@
         {
           "syllabus_code": "B2.1.3",
           "scope_evidence": "• Potential points of failure in a program must include unexpected inputs, resource unavailability, logic errors.\n• The role of exception handling in developing programs\n• Exception handling constructs that effectively manage errors must include try/catch in Java, and try/except in Python, along with the finally block.",
-          "rationale": "A Python program evaluates full_name assesses Describe how programs use common exception handling techniques.",
+          "rationale": "Adapted target only: A Python program evaluates full_name; guidance target: Describe how programs use common exception handling techniques. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -154,7 +156,9 @@
         "filename": "",
         "pdf_pages": [],
         "question_reference": "Q5 d",
-        "marking_summary": "One solution:\ndef first_space_or_false(name):\n    try:\n        return name.index(' ')\n    except ValueError:\n        return False",
+        "marking_summary": "No uploaded official MS; independently solved unofficial criteria are stored in the practice record.",
+        "summary_kind": "missing_official_MS",
+        "source_marking_leaf_evidence": "",
         "source_issues": [],
         "source_marking_evidence": ""
       },
@@ -163,7 +167,7 @@
         {
           "syllabus_code": "B2.1.3",
           "scope_evidence": "• Potential points of failure in a program must include unexpected inputs, resource unavailability, logic errors.\n• The role of exception handling in developing programs\n• Exception handling constructs that effectively manage errors must include try/catch in Java, and try/except in Python, along with the finally block.",
-          "rationale": "Construct first_space_or_false(name) in Python assesses Describe how programs use common exception handling techniques.",
+          "rationale": "Adapted target only: Construct first_space_or_false(name) in Python; guidance target: Describe how programs use common exception handling techniques. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -239,7 +243,9 @@
         "filename": "",
         "pdf_pages": [],
         "question_reference": "Q5 e",
-        "marking_summary": "Find the final space,then take the substring after it; if there is no space,the whole string is the only token. Under the stated format,the last token is the surname. Compound surnames would require different metadata or a different format.",
+        "marking_summary": "No uploaded official MS; independently solved unofficial criteria are stored in the practice record.",
+        "summary_kind": "missing_official_MS",
+        "source_marking_leaf_evidence": "",
         "source_issues": [],
         "source_marking_evidence": ""
       },
@@ -248,7 +254,7 @@
         {
           "syllabus_code": "B2.1.2",
           "scope_evidence": "• Writing of programs that accurately identify and extract substrings from given strings, demonstrating the ability to perform various manipulations, such as altering, concatenating or replacing",
-          "rationale": "Names contain a first name,zero or more middle names,and a final surname token separated by single spaces assesses Construct programs that can extract and manipulate substrings.",
+          "rationale": "Adapted target only: Names contain a first name,zero or more middle names,and a final surname token separated by single spaces; guidance target: Construct programs that can extract and manipulate substrings. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -287,7 +293,7 @@
         "12"
       ],
       "original_marks": 2,
-      "command_term": "See original prompt",
+      "command_term": "Calculate",
       "original_text": "Calculate KS to one decimal place, where SSS=60. You must show your working.",
       "parent_context": "-12-\n2226-4429\n(Option B continued)\nSchools in the region are required to upload student names and their scores for each\nsubject to the portal of the Ministry of Education (a governmental organization that\noversees standards for examination scores).\nCity Walk School's grade boundaries* are lower than the Ministry of Education's grade\nboundaries, as shown in Figure 9.\nFigure 9: Grade boundaries for City Walk School and the Ministry of Education\nH\nK\n1\nSchool score\nGrade\nMinistry score\nGrade\n2\n35-46\n40-51\nE\n3\n47-59\nD\n52-65\nD\n4\n60-69\n66-75\n5\n70-84\nB\n76-90\nB\n6\n85-100\nA\n91-100\nConsider the formula:\n( SSS - MinSS\nKS =\n(axs--Mmsss (91-40)+40\nwhere:\n• SSS is the student's school score.\n• MinSS is 35, the minimum score in the school's data range.\n• MaxSS is 85, the minimum score for an A grade in the school's data range.\n• 40 is the minimum score in the Ministry of Education's data range.\n• 91 is the minimum score for an A grade in the Ministry of Education's data range.\nThis formula is used to scale data from one range (e.g. school score: 35-85) to a different\nrange (Ministry score: 40-91).\n(a) Calculate KS to one decimal place, where SSS = 60.\nYou must show your working.\n[2)\n* grade boundaries: the range of marks required to achieve a specific grade\n(Ontion B continues on the following page)\n- 13 -\n2226-4429\n(Option B, question 6 continued)\nThe spreadsheet extract shown in Figure 9 has been imported into a program.\n• An array, STUDENTS, stores student's last names.\n• An array, SCORES, stores student's school scores rounded to the nearest integer.\n• An array, MINISTRY, consists of five integers of 0.\nSTUDENTS = [Khan, Chanchikova, Hodroge, Naveneethan, Khalil]\nSCORES = [50, 88, 73, 68, 40]\nMINISTRY = [0, 0, 0, 0, 0]\nA pseudocode algorithm should take each value in the SCORES array and apply the formula\nto calculate the Ministry score. The result of this calculation should be rounded to the nearest\ninteger and stored in the MINISTRY array.\n(b) Construct an algorithm in pseudocode as described.\n[3]\nWhen schools upload student names and scores, the portal only allows integers between 40\nand 100 to be entered. The Ministry of Education runs several automated checks on the data.\nDescribe one other automated check the Ministry of Education might use to ensure the\ndata is accurate.\n[3]\nFor a student to achieve a grade A, they must score between 91 and 100.\nA pseudocode algorithm should count the number of grade A students and store the result\nas a percentage of the total number of students.\n(d)\nConstruct an algorithm in pseudocode as described.\n(4]\n(Option B continues on the following page)\nA000",
       "assets": [
@@ -317,7 +323,9 @@
         "filename": "",
         "pdf_pages": [],
         "question_reference": "Q6 a",
-        "marking_summary": "Excluded topic; original criteria retained in referenced MS source.",
+        "marking_summary": "No uploaded official MS; independently solved unofficial criteria are stored in the practice record.",
+        "summary_kind": "missing_official_MS",
+        "source_marking_leaf_evidence": "",
         "source_issues": [],
         "source_marking_evidence": ""
       },
@@ -383,7 +391,9 @@
         "filename": "",
         "pdf_pages": [],
         "question_reference": "Q6 b",
-        "marking_summary": "One solution:\ndef scale_scores(scores):\n    result = []\n    for score in scores:\n        result.append(round((score-20)/(80-20)*(95-30)+30))\n    return result",
+        "marking_summary": "No uploaded official MS; independently solved unofficial criteria are stored in the practice record.",
+        "summary_kind": "missing_official_MS",
+        "source_marking_leaf_evidence": "",
         "source_issues": [],
         "source_marking_evidence": ""
       },
@@ -392,7 +402,7 @@
         {
           "syllabus_code": "B2.2.2",
           "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
-          "rationale": "Construct scale_scores(scores) in Python assesses Construct programs that apply arrays and Lists.",
+          "rationale": "Adapted target only: Construct scale_scores(scores) in Python; guidance target: Construct programs that apply arrays and Lists. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -401,7 +411,7 @@
         {
           "syllabus_code": "B2.3.3",
           "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
-          "rationale": "Construct scale_scores(scores) in Python assesses Construct programs that utilize looping structures to perform repeated actions.",
+          "rationale": "Adapted target only: Construct scale_scores(scores) in Python; guidance target: Construct programs that utilize looping structures to perform repeated actions. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -470,7 +480,9 @@
         "filename": "",
         "pdf_pages": [],
         "question_reference": "Q6 c",
-        "marking_summary": "Excluded topic; original criteria retained in referenced MS source.",
+        "marking_summary": "No uploaded official MS; independently solved unofficial criteria are stored in the practice record.",
+        "summary_kind": "missing_official_MS",
+        "source_marking_leaf_evidence": "",
         "source_issues": [],
         "source_marking_evidence": ""
       },
@@ -536,7 +548,9 @@
         "filename": "",
         "pdf_pages": [],
         "question_reference": "Q6 d",
-        "marking_summary": "One solution:\ndef high_percentage(scores):\n    count = 0\n    for score in scores:\n        if 91 <= score <= 100:\n            count += 1\n    return count / len(scores) * 100",
+        "marking_summary": "No uploaded official MS; independently solved unofficial criteria are stored in the practice record.",
+        "summary_kind": "missing_official_MS",
+        "source_marking_leaf_evidence": "",
         "source_issues": [],
         "source_marking_evidence": ""
       },
@@ -545,7 +559,7 @@
         {
           "syllabus_code": "B2.2.2",
           "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
-          "rationale": "Construct high_percentage(scores) for a nonempty Python list of numerical scores assesses Construct programs that apply arrays and Lists.",
+          "rationale": "Adapted target only: Construct high_percentage(scores) for a nonempty Python list of numerical scores; guidance target: Construct programs that apply arrays and Lists. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -554,7 +568,7 @@
         {
           "syllabus_code": "B2.3.2",
           "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
-          "rationale": "Construct high_percentage(scores) for a nonempty Python list of numerical scores assesses Construct programs utilizing appropriate selection structures.",
+          "rationale": "Adapted target only: Construct high_percentage(scores) for a nonempty Python list of numerical scores; guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -563,7 +577,7 @@
         {
           "syllabus_code": "B2.3.3",
           "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
-          "rationale": "Construct high_percentage(scores) for a nonempty Python list of numerical scores assesses Construct programs that utilize looping structures to perform repeated actions.",
+          "rationale": "Adapted target only: Construct high_percentage(scores) for a nonempty Python list of numerical scores; guidance target: Construct programs that utilize looping structures to perform repeated actions. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -625,7 +639,9 @@
         "filename": "",
         "pdf_pages": [],
         "question_reference": "Q7 a",
-        "marking_summary": "Excluded topic; original criteria retained in referenced MS source.",
+        "marking_summary": "No uploaded official MS; independently solved unofficial criteria are stored in the practice record.",
+        "summary_kind": "missing_official_MS",
+        "source_marking_leaf_evidence": "",
         "source_issues": [],
         "source_marking_evidence": ""
       },
@@ -738,7 +754,7 @@
       ],
       "derivation_status": "adapted_unofficial",
       "unofficial": true,
-      "question_text": "Names contain a first name,zero or more middle names,and a final surname token separated by single spaces. Explain how a program can extract the final surname while ignoring middle names.",
+      "question_text": "Names contain a first name, zero or more middle names, and a final surname token separated by single spaces. Explain how a program can extract the final surname while ignoring middle names.",
       "syllabus_codes": [
         "B2.1.2"
       ],
@@ -748,7 +764,7 @@
       "command_term": "Explain",
       "difficulty": "medium",
       "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
-      "solution": "Find the final space,then take the substring after it; if there is no space,the whole string is the only token. Under the stated format,the last token is the surname. Compound surnames would require different metadata or a different format.",
+      "solution": "Find the final space, then take the substring after it; if there is no space, the whole string is the only token. Under the stated format, the last token is the surname. Compound surnames would require different metadata or a different format.",
       "marking_points": [
         {
           "marks": 1,
@@ -787,7 +803,7 @@
       ],
       "derivation_status": "adapted_unofficial",
       "unofficial": true,
-      "question_text": "Construct scale_scores(scores) in Python. For each score s,calculate (s-20)/(80-20)*(95-30)+30,round to the nearest integer using Python round,and store the result in a new list in the same order.",
+      "question_text": "Construct scale_scores(scores) in Python. For each score s, calculate (s-20)/(80-20)*(95-30)+30, round to the nearest integer using Python round, and store the result in a new list in the same order.",
       "syllabus_codes": [
         "B2.2.2",
         "B2.3.3"
@@ -833,7 +849,7 @@
       ],
       "derivation_status": "adapted_unofficial",
       "unofficial": true,
-      "question_text": "Construct high_percentage(scores) for a nonempty Python list of numerical scores. Return the percentage of entries between91 and100 inclusive.",
+      "question_text": "Construct high_percentage(scores) for a nonempty Python list of numerical scores. Return the percentage of entries between 91 and 100 inclusive.",
       "syllabus_codes": [
         "B2.2.2",
         "B2.3.2",
@@ -861,7 +877,7 @@
         },
         {
           "marks": 1,
-          "criterion": "Divides by total and multiplies by100."
+          "criterion": "Divides by total and multiplies by 100."
         }
       ],
       "acceptable_alternatives": [],

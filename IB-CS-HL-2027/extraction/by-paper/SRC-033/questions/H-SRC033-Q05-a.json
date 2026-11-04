@@ -1,0 +1,78 @@
+{
+  "source_question_id": "H-SRC033-Q05-a",
+  "source_id": "SRC-033",
+  "source_filename": "Computer_science_paper_2__HL (2).pdf",
+  "year": "2020",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "TZ0",
+  "option": "B",
+  "question": "5",
+  "subquestion": "a",
+  "source_pdf_pages": [
+    7
+  ],
+  "source_printed_pages": [
+    "6"
+  ],
+  "original_marks": 3,
+  "command_term": "Identify",
+  "original_text": "(a) Identify the data types for the , and variables. [3]",
+  "parent_context": "5. EnviroBuild is a construction company that recently purchased land. It has permission to\nbuild either small houses or large houses but not both types of house. The maximum number\nof small houses that can be built is 10. The maximum number of large houses that can be\nbuilt is five.\nThe cost of building the houses is calculated using a model with the following three variables:\n: The type of house (small or large).\nHouse_Type\n: The number of houses to be built.\nHouse_Num\n: The total sales revenue minus the land costs, labour costs and material costs.\nProfit\n(a) Identify the data types for the , and variables. [3]\nHouse_Type House_Num Profit\nThe decision whether to build small houses or large houses is a purely financial one and is\nbased on the following information:\ny A single payment of $500 000 for the land, regardless of whether 10 small houses or five\nlarge houses are to be built.\ny The revenue from each house sale will be $220 000 for a small house and $400 000 for a\nlarge house.\ny The labour costs will be $2500 per day, regardless of the type of house built.\ny It will take 17 days to build each small house and 23 days to build each large house.\nHouses are built sequentially so that they can be sold as soon as they are completed.\ny The material costs will be $100 000 for each small house and $190 000 for each large house.\n(b) Construct a spreadsheet model that shows the total profit for the chosen type of house.\nThe user must input the and to calculate the total profit. [6]\nHouse_Type House_Num\n(c) Outline two validation tests that should be included in the test plan for this\nspreadsheet model. [4]\nTo finance this project, EnviroBuild took out a bank loan of $400 000 and will be required to\npay interest on this loan. The project starts on 1 January 2021.\nThe following steps are used to calculate the total profit:\ny Read the variable and the variable from the spreadsheet model in (b).\nProfit No_of_Days\ny Calculate the number of months that the project will take.\n◦ There are no partial months.\n◦ For example, if a project finished on 1 July 2021, the loan interest rates will include\nJuly: the project will last for 7 months.\ny The rate of interest on the bank loan of $400 000 is 1 % per month.\ny The land tax is $500 per month.\n(d) Construct the pseudocode that will calculate the profit after these additional costs have\nbeen considered. You can introduce any new variables, if necessary. [5]\n(Option B continues on the following page)\nN20/4/COMSC/HP2/ENG/TZ0/XX\n– 7 – 8820 – 7012\n(Option B continued)\n",
+  "assets": [
+    {
+      "kind": "source_page_render",
+      "description": "Full source page inspected; includes all question context, source code/figures where present.",
+      "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-033/renders/page-07.png",
+      "source_pdf_page": 7,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Construct and trace programs using a range of global and local variables of various data types."
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-036",
+    "filename": "Computer_science_paper_2__HL_markscheme (2).pdf",
+    "pdf_pages": [
+      11
+    ],
+    "question_reference": "5(a)",
+    "marking_summary": "String/char/Boolean;integer;real/decimal.",
+    "source_issues": []
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B2.1.1",
+      "scope_evidence": "• Data types: Boolean value, char, decimal, integer, string",
+      "rationale": "Retain representation choices as actual Python assignments.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "transcribed from original PDF and compared with rendered page",
+    "source_marks": "checked against printed allocation and official MS",
+    "visual_review": "full question page inspected",
+    "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+  },
+  "original_text_synopsis": "Identify data types for House_Type,House_Num and Profit.",
+  "context_synopsis": "Constructionmodel:small/largehouses;land500000;smallrevenue220000,17days,materials100000;largerevenue400000,23days,materials190000;labour2500/day;maximum10smallor5large;loan400000,1%/month,landtax500/month.",
+  "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+  "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+  "raw_source_page_transcriptions": [
+    "agents/chunk-2/agent-3-papers-c/papers/SRC-033/transcription/pdf-page-007.txt"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC033-Q05-a"
+  ]
+}

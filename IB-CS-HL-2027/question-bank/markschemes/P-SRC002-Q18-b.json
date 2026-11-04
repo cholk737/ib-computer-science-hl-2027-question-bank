@@ -2,7 +2,7 @@
   "question_id": "P-SRC002-Q18-b",
   "unofficial": true,
   "marks": 4,
-  "solution": "Calls4,3,2,1; return values1,3,6,10 while unwinding. Final10.",
+  "solution": "Calls 4, 3, 2, 1; return values1, 3, 6, 10 while unwinding. Final 10.",
   "marking_points": [
     {
       "marks": 1,
@@ -10,15 +10,15 @@
     },
     {
       "marks": 1,
-      "criterion": "Base returns1."
+      "criterion": "Base returns 1."
     },
     {
       "marks": 1,
-      "criterion": "Intermediate returns3 and6."
+      "criterion": "Intermediate returns 3 and 6."
     },
     {
       "marks": 1,
-      "criterion": "Final10."
+      "criterion": "Final 10."
     }
   ],
   "acceptable_alternatives": [],
@@ -31,5 +31,6 @@
     "result_file": ""
   },
   "code": "def sum_down(n):\n    if n <= 1:\n        return n\n    return n + sum_down(n - 1)",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

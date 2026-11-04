@@ -1,0 +1,853 @@
+{
+  "source_id": "SRC-040",
+  "batch_id": "SRC-040-A-b001",
+  "source_questions": [
+    {
+      "source_question_id": "H-SRC040-Q01-a",
+      "source_id": "SRC-040",
+      "source_filename": "Computer_science_paper_2_SL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "A",
+      "question": "1",
+      "subquestion": "a",
+      "source_pdf_pages": [
+        4
+      ],
+      "source_printed_pages": [
+        "3"
+      ],
+      "original_marks": 3,
+      "command_term": "Construct",
+      "original_text": "(a) Construct an entity-relationship diagram (ERD) that shows the relationships between\nclinic, dentist, and nurse. [3]",
+      "parent_context": "1. A dental clinic employs dentists and nurses.\ny Many dentists work at a single dental clinic.\ny Many nurses work at a single dental clinic.\ny A dentist can work with many nurses.\ny A nurse can assist many dentists.\n(a) Construct an entity-relationship diagram (ERD) that shows the relationships between\nclinic, dentist, and nurse. [3]\nA dentist adds comments to the clinic’s database using an electronic device rather than using\na paper-based medical record.\n(b) Explain two advantages of storing medical notes in a database. [6]\nA database transaction occurs when a patient pays their bill. To maintain data consistency\nand integrity during the transaction, the database goes through several states.\n(c) Describe the change in database states when a transaction is updated. [3]\nLog files are stored prior to database updates. If the database crashes, the log files are used\nto recover the database.\n(d) Describe the steps used in log recovery when a database crashes. [3]\n(Option A continues on the following page)\nTurn over\n– 4 – 8825 – 6408\n(Option A continued)\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-04.png",
+          "source_pdf_page": 4,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct ERDs."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-041",
+        "filename": "Computer_science_paper_2_SL_markscheme.pdf",
+        "pdf_pages": [
+          4
+        ],
+        "question_reference": "1(a)",
+        "marking_summary": "Clinic to dentist 1:M; clinic to nurse 1:M; dentist to nurse M:M.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "A3.2.2",
+          "scope_evidence": "• The significance of entity relationship diagrams (ERDs) in crafting organized, efficient database designs tailored for specific applications\n• The relationships between different data entities within a database\n• The roles of cardinality and modality in defining relationships in ERDs",
+          "rationale": "ERD relationship cardinalities remain directly scoped.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Construct the clinic/dentist/nurse ERD.",
+      "context_synopsis": "Dental clinic, dentists and nurses, payment transaction and log recovery; original PDF page 4.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-004.txt"
+      ],
+      "context_pdf_pages": [],
+      "mark_allocation_pdf_page": 4,
+      "context_printed_pages": [],
+      "raw_context_page_transcriptions": []
+    },
+    {
+      "source_question_id": "H-SRC040-Q01-b",
+      "source_id": "SRC-040",
+      "source_filename": "Computer_science_paper_2_SL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "A",
+      "question": "1",
+      "subquestion": "b",
+      "source_pdf_pages": [
+        4
+      ],
+      "source_printed_pages": [
+        "3"
+      ],
+      "original_marks": 6,
+      "command_term": "Explain",
+      "original_text": "(b) Explain two advantages of storing medical notes in a database. [6]",
+      "parent_context": "1. A dental clinic employs dentists and nurses.\ny Many dentists work at a single dental clinic.\ny Many nurses work at a single dental clinic.\ny A dentist can work with many nurses.\ny A nurse can assist many dentists.\n(a) Construct an entity-relationship diagram (ERD) that shows the relationships between\nclinic, dentist, and nurse. [3]\nA dentist adds comments to the clinic’s database using an electronic device rather than using\na paper-based medical record.\n(b) Explain two advantages of storing medical notes in a database. [6]\nA database transaction occurs when a patient pays their bill. To maintain data consistency\nand integrity during the transaction, the database goes through several states.\n(c) Describe the change in database states when a transaction is updated. [3]\nLog files are stored prior to database updates. If the database crashes, the log files are used\nto recover the database.\n(d) Describe the steps used in log recovery when a database crashes. [3]\n(Option A continues on the following page)\nTurn over\n– 4 – 8825 – 6408\n(Option A continued)\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-04.png",
+          "source_pdf_page": 4,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Explain the features, benefits and limitations of a relational database."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-041",
+        "filename": "Computer_science_paper_2_SL_markscheme.pdf",
+        "pdf_pages": [
+          5
+        ],
+        "question_reference": "1(b)",
+        "marking_summary": "Two advantages explained in the medical-record context: shared access, retrieval, validation, security and consistency.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "A3.1.1",
+          "scope_evidence": "• Features: composite keys, foreign keys, primary keys, relationships, tables\n• Benefits of databases: community support, concurrency control, data consistency, data integrity, data retrieval, reduced data duplication, reduced redundancy, reliable transaction processing, scalability, security features\n• Limitations of databases: “big data” scalability issues, design complexity, hierarchical data handling, rigid schema, object-relational impedance mismatch, unstructured data handling",
+          "rationale": "Relational database benefits assessed; avoid assuming storage automatically guarantees security or backup.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Explain two advantages of storing medical notes in a database.",
+      "context_synopsis": "Dental clinic, dentists and nurses, payment transaction and log recovery; original PDF page 4.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-004.txt"
+      ],
+      "context_pdf_pages": [],
+      "mark_allocation_pdf_page": 4,
+      "context_printed_pages": [],
+      "raw_context_page_transcriptions": []
+    },
+    {
+      "source_question_id": "H-SRC040-Q01-c",
+      "source_id": "SRC-040",
+      "source_filename": "Computer_science_paper_2_SL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "A",
+      "question": "1",
+      "subquestion": "c",
+      "source_pdf_pages": [
+        4
+      ],
+      "source_printed_pages": [
+        "3"
+      ],
+      "original_marks": 3,
+      "command_term": "Describe",
+      "original_text": "(c) Describe the change in database states when a transaction is updated. [3]",
+      "parent_context": "1. A dental clinic employs dentists and nurses.\ny Many dentists work at a single dental clinic.\ny Many nurses work at a single dental clinic.\ny A dentist can work with many nurses.\ny A nurse can assist many dentists.\n(a) Construct an entity-relationship diagram (ERD) that shows the relationships between\nclinic, dentist, and nurse. [3]\nA dentist adds comments to the clinic’s database using an electronic device rather than using\na paper-based medical record.\n(b) Explain two advantages of storing medical notes in a database. [6]\nA database transaction occurs when a patient pays their bill. To maintain data consistency\nand integrity during the transaction, the database goes through several states.\n(c) Describe the change in database states when a transaction is updated. [3]\nLog files are stored prior to database updates. If the database crashes, the log files are used\nto recover the database.\n(d) Describe the steps used in log recovery when a database crashes. [3]\n(Option A continues on the following page)\nTurn over\n– 4 – 8825 – 6408\n(Option A continued)\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-04.png",
+          "source_pdf_page": 4,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Describe how transactions maintain data integrity in a database. (HL only)"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-041",
+        "filename": "Computer_science_paper_2_SL_markscheme.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "question_reference": "1(c)",
+        "marking_summary": "Consistent state before transaction; intermediate update state; final committed consistent state or rollback.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "A3.3.6",
+          "scope_evidence": "• The role of atomicity, consistency, isolation and durability (ACID) to ensure reliable processing of transactions\n• Transaction control language (TCL) commands: BEGIN TRANSACTION, COMMIT, ROLLBACK",
+          "rationale": "Retain consistent transaction, commit and rollback reasoning; do not require an unsupported state-machine taxonomy.",
+          "theme": "A",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Describe database-state changes when a transaction is updated.",
+      "context_synopsis": "Dental clinic, dentists and nurses, payment transaction and log recovery; original PDF page 4.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-004.txt"
+      ],
+      "context_pdf_pages": [],
+      "mark_allocation_pdf_page": 4,
+      "context_printed_pages": [],
+      "raw_context_page_transcriptions": []
+    },
+    {
+      "source_question_id": "H-SRC040-Q01-d",
+      "source_id": "SRC-040",
+      "source_filename": "Computer_science_paper_2_SL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "A",
+      "question": "1",
+      "subquestion": "d",
+      "source_pdf_pages": [
+        4
+      ],
+      "source_printed_pages": [
+        "3"
+      ],
+      "original_marks": 3,
+      "command_term": "Describe",
+      "original_text": "(d) Describe the steps used in log recovery when a database crashes. [3]",
+      "parent_context": "1. A dental clinic employs dentists and nurses.\ny Many dentists work at a single dental clinic.\ny Many nurses work at a single dental clinic.\ny A dentist can work with many nurses.\ny A nurse can assist many dentists.\n(a) Construct an entity-relationship diagram (ERD) that shows the relationships between\nclinic, dentist, and nurse. [3]\nA dentist adds comments to the clinic’s database using an electronic device rather than using\na paper-based medical record.\n(b) Explain two advantages of storing medical notes in a database. [6]\nA database transaction occurs when a patient pays their bill. To maintain data consistency\nand integrity during the transaction, the database goes through several states.\n(c) Describe the change in database states when a transaction is updated. [3]\nLog files are stored prior to database updates. If the database crashes, the log files are used\nto recover the database.\n(d) Describe the steps used in log recovery when a database crashes. [3]\n(Option A continues on the following page)\nTurn over\n– 4 – 8825 – 6408\n(Option A continued)\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-04.png",
+          "source_pdf_page": 4,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Detailed log/checkpoint recovery procedure is not explicitly required by the transaction/ACID guidance; no extra recovery algorithm introduced."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-041",
+        "filename": "Computer_science_paper_2_SL_markscheme.pdf",
+        "pdf_pages": [
+          6
+        ],
+        "question_reference": "1(d)",
+        "marking_summary": "Restore consistent state using logs; undo uncommitted changes and redo committed changes as needed.",
+        "source_issues": []
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Detailed log/checkpoint recovery procedure is not explicitly required by the transaction/ACID guidance; no extra recovery algorithm introduced.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Describe log-recovery steps after a database crash.",
+      "context_synopsis": "Dental clinic, dentists and nurses, payment transaction and log recovery; original PDF page 4.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-004.txt"
+      ],
+      "context_pdf_pages": [],
+      "mark_allocation_pdf_page": 4,
+      "context_printed_pages": [],
+      "raw_context_page_transcriptions": []
+    },
+    {
+      "source_question_id": "H-SRC040-Q02-a",
+      "source_id": "SRC-040",
+      "source_filename": "Computer_science_paper_2_SL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "A",
+      "question": "2",
+      "subquestion": "a",
+      "source_pdf_pages": [
+        5
+      ],
+      "source_printed_pages": [
+        "4"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "(a) Outline why DateTime has been included as part of the composite primary key. [2]",
+      "parent_context": "2. When a patient visits the dental clinic, a dentist may carry out a number of tests. Each record\nof a test is placed in a TEST table:\nTEST (PatientID, NurseID, DateTime, TestType, PatientName, Notes)\nThis table uses a composite primary key of PatientID, NurseID, and DateTime.\n(a) Outline why DateTime has been included as part of the composite primary key. [2]\n(b) Outline why the TEST table is not in second normal form (2NF). [2]\nThe TEST table is shown in Figure 1, and the NURSE table is shown in Figure 2.\nFigure 1: The TEST table\nPatientID NurseID DateTime TestType PatientName Notes\n5 BM2385 2024/11/17 09:05 Oral X-ray Simon Moore Tooth fracture\n54 JF2227 2024/11/17 09:05 Dental scan Ciara Alinac Implant planning\n78 BM2385 2024/11/19 09:45 Oral X-ray Scottie Ngatai Tooth decay\n23 JF2227 2024/11/19 09:35 Dental scan William Hartley Assessment\n30 AS2590 2024/11/19 10:15 Oral X-ray Emma Lee Impacted teeth\n29 JF2227 2024/11/20 11:20 Dental scan Lena Lee Assessment\nFigure 2: The NURSE table\nNurseID NurseName Nationality PhoneNumber StartDate\nBM2385 Billy McCoy Scottish 0102930308 2022/04/17\nAS2590 Anya Svetlana Russian 0102940209 2023/01/29\nJF2227 James Fernley English 0102839305 2019/06/18\n(c) State the output from the following query:\nSELECT PatientName FROM TEST\nWHERE TestType = \"Oral X-ray\"\n[2]\nAND NurseID = \"BM2385\";\n(d) Construct a query to find patients who had a test carried out by the nurse\nAnya Svetlana at any time on 19 November 2024. [4]\n(Option A continues on the following page)\n– 5 – 8825 – 6408\n(Option A, question 2 continued)\nFigure 3 is an extract showing patients’ appointments with dentists and the cost of\ntheir treatments.\nFigure 3: Extract showing patients’ appointments with\ndentists and the cost of their treatments\nPatientID PatientName Dentist Specialties VisitDateTime Treatment Cost\n1 Zixin Yang Dr Kim Orthodontics 2024/12/01 09:00 Braces fitting 300\nDr Kim Orthodontics 2024/12/08 09:30 Braces adjust 100\n2 Charlie Algie Dr Ali Periodontics 2024/11/29 10:00 Gum cleaning 180\nDr Ali Periodontics 2024/11/30 10:00 Gum surgery 500\n3 Eve Armstrong Dr Ito General 2024/09/01 14:00 Cavity filling 120\nDr Ito General 2024/09/02 14:00 Whitening 250\n4 Chan Oh Dr Ito General 2024/09/05 11:00 Cavity filling 120\nDr Ito General 2024/09/12 11:30 Cleaning 90\n5 Simon Moore Dr Kim Orthodontics 2024/12/02 10:00 Braces fitting 300\nDr Kim Orthodontics 2024/12/09 11:00 Braces adjust 100\n(e) Construct the database in 3rd normal form (3NF) for the entities shown in Figure 3.\nYou should use the following notation:\n[5]\nTABLE (KEY, FIELD1, FIELD2,…)\n(Option A continues on page 7)\nTurn over\n– 6 – 8825 – 6408\nBlank page\n– 7 – 8825 – 6408\n(Option A continued)\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-05.png",
+          "source_pdf_page": 5,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_render",
+          "description": "Shared full source question context, table,code or figure inspected.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-06.png",
+          "source_pdf_page": 6,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct tables for relational databases."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-041",
+        "filename": "Computer_science_paper_2_SL_markscheme.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "question_reference": "2(a)",
+        "marking_summary": "Same patient and nurse may have tests at different times; full key distinguishes these records.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "A3.2.4",
+          "scope_evidence": "• The relationship between tables using primary keys, foreign keys, composite keys and concatenated keys\n• The importance of well-defined tables in ensuring data integrity",
+          "rationale": "Composite key uniqueness explicitly scoped.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Outline why DateTime is in the composite primary key.",
+      "context_synopsis": "TEST and NURSE tables in PDF 5 and appointment extract in PDF 6; exact tables preserved in linked source transcriptions/renders.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-005.txt"
+      ],
+      "context_pdf_pages": [
+        6
+      ],
+      "mark_allocation_pdf_page": 5,
+      "context_printed_pages": [
+        "5"
+      ],
+      "raw_context_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-006.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC040-Q02-b",
+      "source_id": "SRC-040",
+      "source_filename": "Computer_science_paper_2_SL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "A",
+      "question": "2",
+      "subquestion": "b",
+      "source_pdf_pages": [
+        5
+      ],
+      "source_printed_pages": [
+        "4"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "(b) Outline why the TEST table is not in second normal form (2NF). [2]",
+      "parent_context": "2. When a patient visits the dental clinic, a dentist may carry out a number of tests. Each record\nof a test is placed in a TEST table:\nTEST (PatientID, NurseID, DateTime, TestType, PatientName, Notes)\nThis table uses a composite primary key of PatientID, NurseID, and DateTime.\n(a) Outline why DateTime has been included as part of the composite primary key. [2]\n(b) Outline why the TEST table is not in second normal form (2NF). [2]\nThe TEST table is shown in Figure 1, and the NURSE table is shown in Figure 2.\nFigure 1: The TEST table\nPatientID NurseID DateTime TestType PatientName Notes\n5 BM2385 2024/11/17 09:05 Oral X-ray Simon Moore Tooth fracture\n54 JF2227 2024/11/17 09:05 Dental scan Ciara Alinac Implant planning\n78 BM2385 2024/11/19 09:45 Oral X-ray Scottie Ngatai Tooth decay\n23 JF2227 2024/11/19 09:35 Dental scan William Hartley Assessment\n30 AS2590 2024/11/19 10:15 Oral X-ray Emma Lee Impacted teeth\n29 JF2227 2024/11/20 11:20 Dental scan Lena Lee Assessment\nFigure 2: The NURSE table\nNurseID NurseName Nationality PhoneNumber StartDate\nBM2385 Billy McCoy Scottish 0102930308 2022/04/17\nAS2590 Anya Svetlana Russian 0102940209 2023/01/29\nJF2227 James Fernley English 0102839305 2019/06/18\n(c) State the output from the following query:\nSELECT PatientName FROM TEST\nWHERE TestType = \"Oral X-ray\"\n[2]\nAND NurseID = \"BM2385\";\n(d) Construct a query to find patients who had a test carried out by the nurse\nAnya Svetlana at any time on 19 November 2024. [4]\n(Option A continues on the following page)\n– 5 – 8825 – 6408\n(Option A, question 2 continued)\nFigure 3 is an extract showing patients’ appointments with dentists and the cost of\ntheir treatments.\nFigure 3: Extract showing patients’ appointments with\ndentists and the cost of their treatments\nPatientID PatientName Dentist Specialties VisitDateTime Treatment Cost\n1 Zixin Yang Dr Kim Orthodontics 2024/12/01 09:00 Braces fitting 300\nDr Kim Orthodontics 2024/12/08 09:30 Braces adjust 100\n2 Charlie Algie Dr Ali Periodontics 2024/11/29 10:00 Gum cleaning 180\nDr Ali Periodontics 2024/11/30 10:00 Gum surgery 500\n3 Eve Armstrong Dr Ito General 2024/09/01 14:00 Cavity filling 120\nDr Ito General 2024/09/02 14:00 Whitening 250\n4 Chan Oh Dr Ito General 2024/09/05 11:00 Cavity filling 120\nDr Ito General 2024/09/12 11:30 Cleaning 90\n5 Simon Moore Dr Kim Orthodontics 2024/12/02 10:00 Braces fitting 300\nDr Kim Orthodontics 2024/12/09 11:00 Braces adjust 100\n(e) Construct the database in 3rd normal form (3NF) for the entities shown in Figure 3.\nYou should use the following notation:\n[5]\nTABLE (KEY, FIELD1, FIELD2,…)\n(Option A continues on page 7)\nTurn over\n– 6 – 8825 – 6408\nBlank page\n– 7 – 8825 – 6408\n(Option A continued)\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-05.png",
+          "source_pdf_page": 5,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_render",
+          "description": "Shared full source question context, table,code or figure inspected.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-06.png",
+          "source_pdf_page": 6,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Explain the difference between normal forms."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-041",
+        "filename": "Computer_science_paper_2_SL_markscheme.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "question_reference": "2(b)",
+        "marking_summary": "PatientName depends only on PatientID, part of the composite key.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "A3.2.5",
+          "scope_evidence": "• First normal form (1NF), second normal form (2NF), third normal form (3NF)\n• The terms atomicity, unique identification, functional dependencies, partial-key dependencies, non-key/transitive dependencies\n• Normalization issues can encompass data duplication, missing data, and a range of dependency concerns, including data dependencies, composite key dependencies, transitive dependencies, and multi-valued dependencies.",
+          "rationale": "Partial functional dependency and 2NF explicitly scoped.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Outline why TEST is not in 2NF.",
+      "context_synopsis": "TEST and NURSE tables in PDF 5 and appointment extract in PDF 6; exact tables preserved in linked source transcriptions/renders.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-005.txt"
+      ],
+      "context_pdf_pages": [
+        6
+      ],
+      "mark_allocation_pdf_page": 5,
+      "context_printed_pages": [
+        "5"
+      ],
+      "raw_context_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-006.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC040-Q02-c",
+      "source_id": "SRC-040",
+      "source_filename": "Computer_science_paper_2_SL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "A",
+      "question": "2",
+      "subquestion": "c",
+      "source_pdf_pages": [
+        5
+      ],
+      "source_printed_pages": [
+        "4"
+      ],
+      "original_marks": 2,
+      "command_term": "State",
+      "original_text": "(c) State the output from the following query:\nSELECT PatientName FROM TEST\nWHERE TestType = \"Oral X-ray\"\n[2]",
+      "parent_context": "2. When a patient visits the dental clinic, a dentist may carry out a number of tests. Each record\nof a test is placed in a TEST table:\nTEST (PatientID, NurseID, DateTime, TestType, PatientName, Notes)\nThis table uses a composite primary key of PatientID, NurseID, and DateTime.\n(a) Outline why DateTime has been included as part of the composite primary key. [2]\n(b) Outline why the TEST table is not in second normal form (2NF). [2]\nThe TEST table is shown in Figure 1, and the NURSE table is shown in Figure 2.\nFigure 1: The TEST table\nPatientID NurseID DateTime TestType PatientName Notes\n5 BM2385 2024/11/17 09:05 Oral X-ray Simon Moore Tooth fracture\n54 JF2227 2024/11/17 09:05 Dental scan Ciara Alinac Implant planning\n78 BM2385 2024/11/19 09:45 Oral X-ray Scottie Ngatai Tooth decay\n23 JF2227 2024/11/19 09:35 Dental scan William Hartley Assessment\n30 AS2590 2024/11/19 10:15 Oral X-ray Emma Lee Impacted teeth\n29 JF2227 2024/11/20 11:20 Dental scan Lena Lee Assessment\nFigure 2: The NURSE table\nNurseID NurseName Nationality PhoneNumber StartDate\nBM2385 Billy McCoy Scottish 0102930308 2022/04/17\nAS2590 Anya Svetlana Russian 0102940209 2023/01/29\nJF2227 James Fernley English 0102839305 2019/06/18\n(c) State the output from the following query:\nSELECT PatientName FROM TEST\nWHERE TestType = \"Oral X-ray\"\n[2]\nAND NurseID = \"BM2385\";\n(d) Construct a query to find patients who had a test carried out by the nurse\nAnya Svetlana at any time on 19 November 2024. [4]\n(Option A continues on the following page)\n– 5 – 8825 – 6408\n(Option A, question 2 continued)\nFigure 3 is an extract showing patients’ appointments with dentists and the cost of\ntheir treatments.\nFigure 3: Extract showing patients’ appointments with\ndentists and the cost of their treatments\nPatientID PatientName Dentist Specialties VisitDateTime Treatment Cost\n1 Zixin Yang Dr Kim Orthodontics 2024/12/01 09:00 Braces fitting 300\nDr Kim Orthodontics 2024/12/08 09:30 Braces adjust 100\n2 Charlie Algie Dr Ali Periodontics 2024/11/29 10:00 Gum cleaning 180\nDr Ali Periodontics 2024/11/30 10:00 Gum surgery 500\n3 Eve Armstrong Dr Ito General 2024/09/01 14:00 Cavity filling 120\nDr Ito General 2024/09/02 14:00 Whitening 250\n4 Chan Oh Dr Ito General 2024/09/05 11:00 Cavity filling 120\nDr Ito General 2024/09/12 11:30 Cleaning 90\n5 Simon Moore Dr Kim Orthodontics 2024/12/02 10:00 Braces fitting 300\nDr Kim Orthodontics 2024/12/09 11:00 Braces adjust 100\n(e) Construct the database in 3rd normal form (3NF) for the entities shown in Figure 3.\nYou should use the following notation:\n[5]\nTABLE (KEY, FIELD1, FIELD2,…)\n(Option A continues on page 7)\nTurn over\n– 6 – 8825 – 6408\nBlank page\n– 7 – 8825 – 6408\n(Option A continued)\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-05.png",
+          "source_pdf_page": 5,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_render",
+          "description": "Shared full source question context, table,code or figure inspected.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-06.png",
+          "source_pdf_page": 6,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct queries between two tables in SQL."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-041",
+        "filename": "Computer_science_paper_2_SL_markscheme.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "question_reference": "2(c)",
+        "marking_summary": "Simon Moore and Scottie Ngatai.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "A3.3.2",
+          "scope_evidence": "• Queries must include joins, relational operators, filtering, pattern matching, and ordering data\n• SQL commands: SELECT, DISTINCT, FROM, WHERE, BETWEEN, ORDER BY, GROUP BY, HAVING, ASC, DESC, JOIN, LIKE with % wildcard, AND, OR, NOT (note: Syntax may vary in different database systems)",
+          "rationale": "Add a two-table join to match the explicitly required between-two-tables SQL objective; retain filtered-query output reasoning.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "State query output for oral X-rays by BM2385.",
+      "context_synopsis": "TEST and NURSE tables in PDF 5 and appointment extract in PDF 6; exact tables preserved in linked source transcriptions/renders.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-005.txt"
+      ],
+      "context_pdf_pages": [
+        6
+      ],
+      "mark_allocation_pdf_page": 5,
+      "context_printed_pages": [
+        "5"
+      ],
+      "raw_context_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-006.txt"
+      ]
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC040-Q01-a",
+      "source_question_ids": [
+        "H-SRC040-Q01-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct an ERD for a repair centre, technicians and assistants. Each technician and each assistant works at exactly one centre. A centre has many technicians and assistants. A technician works with many assistants and an assistant works with many technicians. Show cardinalities.",
+      "syllabus_codes": [
+        "A3.2.2"
+      ],
+      "theme": "A",
+      "level": "SL/HL common",
+      "marks": 3,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "ERD relationship cardinalities remain directly scoped. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "Centre 1—many Technician; Centre 1—many Assistant; Technician many—many Assistant. A correctly keyed link entity may replace the many-to-many relationship.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Correct centre-technician one-to-many relationship."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct centre-assistant one-to-many relationship."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct technician-assistant many-to-many relationship, directly or through link entity."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 3,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC040-Q01-b",
+      "source_question_ids": [
+        "H-SRC040-Q01-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "A repair company has related Customer, Device and Repair tables, replacing separate paper job cards. Explain two benefits of this relational database for staff answering customer enquiries.",
+      "syllabus_codes": [
+        "A3.1.1"
+      ],
+      "theme": "A",
+      "level": "SL/HL common",
+      "marks": 6,
+      "command_term": "Explain",
+      "difficulty": "medium",
+      "adaptation_rationale": "Relational database benefits assessed; avoid assuming storage automatically guarantees security or backup. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "A query joins a customer to their devices and repairs, finding the relevant history without searching many cards, so enquiries can be answered quickly. Staff share one maintained repair record rather than separate copies, so a correctly committed progress update is available to all authorized staff and inconsistent duplicate records are reduced.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Identifies efficient retrieval/querying."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains joining or filtering related records for an enquiry."
+        },
+        {
+          "marks": 1,
+          "criterion": "Connects retrieval to reduced manual search or faster response."
+        },
+        {
+          "marks": 1,
+          "criterion": "Identifies shared consistently maintained data."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains one update is available to authorized staff rather than separate copies."
+        },
+        {
+          "marks": 1,
+          "criterion": "Connects shared data to fewer contradictory progress reports."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 6,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC040-Q01-c",
+      "source_question_ids": [
+        "H-SRC040-Q01-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "A transaction transfers 20 credits from account X, initially 70, to account Y, initially 30. Describe the database state before the transaction, after a successful commit, and after rollback if the second update fails.",
+      "syllabus_codes": [
+        "A3.3.6"
+      ],
+      "theme": "A",
+      "level": "HL-only",
+      "marks": 3,
+      "command_term": "Describe",
+      "difficulty": "medium",
+      "adaptation_rationale": "Retain consistent transaction, commit and rollback reasoning; do not require an unsupported state-machine taxonomy. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "Before: X=70 and Y=30, total 100. Commit: X=50 and Y=50, total 100. If the credit to Y fails, rollback must undo the debit so X=70 and Y=30; no partial transfer remains.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Correct original consistent balances."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct committed balances preserving total."
+        },
+        {
+          "marks": 1,
+          "criterion": "Rollback restores both original balances, avoiding a partial transfer."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 3,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC040-Q02-a",
+      "source_question_ids": [
+        "H-SRC040-Q02-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Observation has primary key (DeviceID, TechnicianID, RecordedAt). A device may be checked repeatedly by the same technician. Outline why RecordedAt is part of the key.",
+      "syllabus_codes": [
+        "A3.2.4"
+      ],
+      "theme": "A",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Composite key uniqueness explicitly scoped. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "The DeviceID/TechnicianID pair repeats for later checks; adding the timestamp distinguishes separate observations, assuming at most one observation for that pair at each timestamp.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Device-technician pair can repeat."
+        },
+        {
+          "marks": 1,
+          "criterion": "Timestamp distinguishes separate observations under the stated uniqueness rule."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 2,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC040-Q02-b",
+      "source_question_ids": [
+        "H-SRC040-Q02-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Observation(DeviceID, TechnicianID, RecordedAt, DeviceModel, Reading) has composite primary key (DeviceID, TechnicianID, RecordedAt). DeviceID determines DeviceModel. Outline why it is not in 2NF.",
+      "syllabus_codes": [
+        "A3.2.5"
+      ],
+      "theme": "A",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Partial functional dependency and 2NF explicitly scoped. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "DeviceModel is a non-key attribute depending only on DeviceID, a proper subset of the composite key. This partial dependency violates 2NF.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Identifies DeviceID → DeviceModel partial dependency."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains non-key attribute depends on only part of the composite key, violating 2NF."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 2,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC040-Q02-c",
+      "source_question_ids": [
+        "H-SRC040-Q02-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "State the output of this SQL query. Technician(TechnicianID, Name) contains (7, \"Ari\"),(8, \"Bo\"). Observation(DeviceID, TechnicianID, Kind) contains (10,7, \"voltage\"),(11,7, \"temperature\"),(12,8, \"voltage\"),(13,7, \"voltage\"). Treat output order as unspecified.\n\nSELECT O.DeviceID FROM Observation O JOIN Technician T ON O.TechnicianID=T.TechnicianID WHERE O.Kind='voltage' AND T.Name='Ari';",
+      "syllabus_codes": [
+        "A3.3.2"
+      ],
+      "theme": "A",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "State",
+      "difficulty": "medium",
+      "adaptation_rationale": "Add a two-table join to match the explicitly required between-two-tables SQL objective; retain filtered-query output reasoning. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "DeviceID values 10 and 13, in either order.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "DeviceID 10 included."
+        },
+        {
+          "marks": 1,
+          "criterion": "DeviceID 13 included, with no other rows."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 2,
+        "code_execution": "Specific executable boundary and behaviour tests passed; see agents/chunk-2/agent-3-papers-c/technical_checks.json and verify_practice.py."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    }
+  ]
+}

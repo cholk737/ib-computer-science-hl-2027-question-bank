@@ -1,0 +1,76 @@
+{
+  "source_question_id": "H-SRC044-Q03-c",
+  "source_id": "SRC-044",
+  "source_filename": "Computer_science_paper_2_TZ3_SL (1).pdf",
+  "year": "2025",
+  "session": "May",
+  "source_level": "SL",
+  "paper": "2",
+  "zone": "TZ3 (filename; numerical cover code)",
+  "option": "A",
+  "question": 3,
+  "subquestion": "c",
+  "source_pdf_pages": [
+    6
+  ],
+  "source_printed_pages": [
+    "5"
+  ],
+  "original_marks": 6,
+  "command_term": "Construct",
+  "original_text": "Construct a database in third normal form (3NF) for all of the data shown in Figure 2. You should use database notation as shown in the PATIENT table.",
+  "parent_context": "– 5 – 2225 – 6423\nTurn over\n(Option A continued)\n3. Alpha Hospital uses a database application to book appointments. Information can be shown \nin different formats.\nFigure 2 shows an example of a patient’s appointments displayed in the application.\nFigure 2: A patient’s appointments\nBack\nPatient appointments\nList\nSelect the appointment for \ndetails and directions to the \nbuilding and room.\n24 Jan 2024   09:30   Dr L. Ross\nGeneral Surgery\n26 Jan 2024   10:00   Dr N. Friend\nRadiology\n28 Jan 2024   09:30   Dr L. Ross\nGeneral Surgery\nPatient number\nFirst name\nPreferred name\nSurname\nDate of birth\nAge\nForm\nThe Age field is a derived field.\n(a) (i)   Outline one reason why a derived field would be used in a database. [2]\n(ii) Describe how the derived field Age would be calculated. [2]\nPatient information can be represented in the following format:\nPATIENT (PatientID, FirstName, Surname, PreferredName, DateOfBirth)\n(b) Outline the difference between first normal form (1NF) and second normal form (2NF). [2]\n(c) Construct a database in third normal form (3NF) for all of the data shown in Figure 2. \nYou should use database notation as shown in the PATIENT table. [6]\nEnd of Option A",
+  "assets": [
+    {
+      "kind": "source_page_evidence",
+      "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-06.png",
+      "source_pdf_page": 6,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Construct a database in third normal form (3NF) for all of the data shown in Figure 2. You should use database notation as shown in the PATIENT table.",
+    "A booking system stores MemberID,MemberName,GuideID,GuideName,DepartmentID,DepartmentName,BookingID,StartTime"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-046",
+    "filename": "Computer_science_paper_2_TZ3_SL_markscheme.pdf",
+    "pdf_pages": [
+      10
+    ],
+    "question_reference": "Q3 c",
+    "marking_summary": "Exact original MS leaf excerpt: Award [6 max] Award [1] for identifying three tables with correct fields (without PK and FK) Award [1] for the DEPARTMENT table (correct fields and PK identified) Award [1] for the DOCTOR table (correct fields and PK identified, without FK) Award [1] for including FK (DepartmentID) in DOCTOR/APPOINTMENT table but not both Award [1] for identifying the PK in the APPOINTMENT table Award [1] for including FK (PatientID, DoctorID) in APPOINTMENT table Award [1] for all fields correct in APPOINTMENT table Example 1 PATIENT (PatientID, FirstName, Surname, PreferredName, DateOfBirth) DEPARTMENT (DepartmentID, departmentName) DOCTOR (DoctorID, FirstName, Surname, DepartmentID*) //accept DoctorName APPOINTMENT (PatientID*, DoctorID*, date, time) Example 2 PATIENT (PatientID, FirstName, Surname, PreferredName, DateOfBirth) DEPARTMENT (DepartmentID, departmentName) DOCTOR (DoctorID, FirstName, Surn … [full leaf evidence retained]",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [6 max]\nAward [1] for identifying three tables with correct fields (without PK and FK)\nAward [1] for the DEPARTMENT table (correct fields and PK identified)\nAward [1] for the DOCTOR table (correct fields and PK identified, without FK)\nAward [1] for including FK (DepartmentID) in DOCTOR/APPOINTMENT table but not both\nAward [1] for identifying the PK in the APPOINTMENT table\nAward [1] for including FK (PatientID, DoctorID) in APPOINTMENT table\nAward [1] for all fields correct in APPOINTMENT table\nExample 1\nPATIENT (PatientID, FirstName, Surname, PreferredName, DateOfBirth)\nDEPARTMENT (DepartmentID, departmentName)\nDOCTOR (DoctorID, FirstName, Surname, DepartmentID*) //accept DoctorName\nAPPOINTMENT (PatientID*, DoctorID*, date, time)\nExample 2\nPATIENT (PatientID, FirstName, Surname, PreferredName, DateOfBirth)\nDEPARTMENT (DepartmentID, departmentName)\nDOCTOR (DoctorID, FirstName, Surname) //accept DoctorName\nAPPOINTMENT (PatientID*, DoctorID*, date, time, DepartmentID*)\nAward the mark for FK if not explicitly indicated as long as the name matches the PK\nAccept an additional field as PK in APPOINTMENT:\nAPPOINTMENT (AppointmentID, PatientID*, DoctorID*, date, time)\nAccept a dateTime field in APPOINTMENT instead of date and time separately.  \nAccept LOCATION in place of DEPARTMENT (and LocationID in place of DepartmentID): \nLOCATION (LocationID, LocationName)  \nNote: Apply the MS according to example 1 or example 2 \nNote: The relation names do not matter; check the fields used \n\nOption B – Modelling and simulation",
+    "source_issues": [],
+    "source_marking_evidence": "– 10 – 2225 – 6423M \n(c) Award [6 max]\nAward [1] for identifying three tables with correct fields (without PK and FK)\nAward [1] for the DEPARTMENT table (correct fields and PK identified)\nAward [1] for the DOCTOR table (correct fields and PK identified, without FK)\nAward [1] for including FK (DepartmentID) in DOCTOR/APPOINTMENT table but not both\nAward [1] for identifying the PK in the APPOINTMENT table\nAward [1] for including FK (PatientID, DoctorID) in APPOINTMENT table\nAward [1] for all fields correct in APPOINTMENT table\nExample 1\nPATIENT (PatientID, FirstName, Surname, PreferredName, DateOfBirth)\nDEPARTMENT (DepartmentID, departmentName)\nDOCTOR (DoctorID, FirstName, Surname, DepartmentID*) //accept DoctorName\nAPPOINTMENT (PatientID*, DoctorID*, date, time)\nExample 2\nPATIENT (PatientID, FirstName, Surname, PreferredName, DateOfBirth)\nDEPARTMENT (DepartmentID, departmentName)\nDOCTOR (DoctorID, FirstName, Surname) //accept DoctorName\nAPPOINTMENT (PatientID*, DoctorID*, date, time, DepartmentID*)\nAward the mark for FK if not explicitly indicated as long as the name matches the PK\nAccept an additional field as PK in APPOINTMENT:\nAPPOINTMENT (AppointmentID, PatientID*, DoctorID*, date, time)\nAccept a dateTime field in APPOINTMENT instead of date and time separately.  \nAccept LOCATION in place of DEPARTMENT (and LocationID in place of DepartmentID): \nLOCATION (LocationID, LocationName)  \nNote: Apply the MS according to example 1 or example 2 \nNote: The relation names do not matter; check the fields used "
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "A3.2.6",
+      "scope_evidence": "• Examples may include library management, hospital management, e-commerce platforms, school management, employee management, inventory management, police crime reporting",
+      "rationale": "Adapted target only: A booking system stores MemberID,MemberName,GuideID,GuideName,DepartmentID,DepartmentName,BookingID,StartTime; guidance target: Construct a database normalized to 3NF for a range of real-world scenarios. Adaptation: Supplies explicit dependencies and booking identity rather than inferring functional dependencies from a UI screenshot.",
+      "theme": "A",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC044-Q03-c"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

@@ -1,0 +1,42 @@
+{
+  "question_id": "P-SRC032-Q05-c",
+  "unofficial": true,
+  "marks": 5,
+  "solution": "One solution:\ndef monthly_bill(units, days):\n    pre_tax = units * 0.24 + days * 0.65\n    return pre_tax * 1.08, units / days",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Receives both units and days."
+    },
+    {
+      "marks": 1,
+      "criterion": "Computes usage and standing charges."
+    },
+    {
+      "marks": 1,
+      "criterion": "Applies tax to combined charge."
+    },
+    {
+      "marks": 1,
+      "criterion": "Computes units/days."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns both required results."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed100units/10days; charge30.5 beforetax and32.94 aftertax.",
+    "source_comparison": [
+      10
+    ],
+    "test_code": "def monthly_bill(units, days):\n    pre_tax = units * 0.24 + days * 0.65\n    return pre_tax * 1.08, units / days\nb,u=monthly_bill(100,10)\nassert abs(b-32.94)<1e-9 and u==10",
+    "result_file": ""
+  },
+  "code": "def monthly_bill(units, days):\n    pre_tax = units * 0.24 + days * 0.65\n    return pre_tax * 1.08, units / days",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

@@ -1,0 +1,83 @@
+{
+  "source_question_id": "H-SRC038-Q09-e-ii",
+  "source_id": "SRC-038",
+  "source_filename": "Computer_science_paper_2_HL.pdf",
+  "year": "2025",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "not stated",
+  "option": "C",
+  "question": 9,
+  "subquestion": "e-ii",
+  "source_pdf_pages": [
+    18
+  ],
+  "source_printed_pages": [
+    "17"
+  ],
+  "original_marks": 3,
+  "command_term": "Outline",
+  "original_text": "Outline one advantage of executing this code on a server rather than in the browser.",
+  "parent_context": "– 16 – 8825 – 6405\nOption C — Web science\n9. Hardware4Hotels is a company that provides services to hotels, such as carrying out \nelectrical repairs, decorating, and plumbing.\nThe URL for the company’s website is http://hardware4hotels.example.com\n(a) (i)   State the protocol in the company’s website URL. [1]\n(ii) State the domain name in the company’s website URL. [1]\n(b) Outline the importance of protocols when browsing websites. [2]\n(c) Identify two components of a webpage. [2]\nThe website for Hardware4Hotels has been designed so it can receive feedback from its \ncustomers. After the work has been completed, the customer is asked to submit a score from \n1 to 5 for the service provided (see Figure 8).\nFigure 8: The Hardware4Hotels feedback webpage\nH\nhttp://hardware4hotels.example.com\nHardware4Hotels\nspecialist hotel maintenance contractors\nPlease rate the following job:\nUser: 09876 (Peter Achison)\nWork category: interior decoration\nSubmit\nHome  About  Services  Case studies  Careers  Contact\n(d) Describe the role of the common gateway interface (CGI) on the Hardware4Hotels \nwebsite. [2]\n(Option C continues on the following page)\n– 17 – 8825 – 6405\nTurn over\n(Option C, question 9 continued)\nThe following is part of the code that is run on the server when a customer (the user) \nsubmits a rating.\n<?php\n$work_category = $_POST[\"work_category\"];\n$rating = $_POST[\"rating\"];\n$conn = mysqli_connect(\"localhost\", $username, $password, \"sales\");\n$sql = \"SELECT AVG(rating) as averageRating FROM ratings WHERE work_\ncategory = '$work_category'\";\n$result = mysqli_query($conn, $sql);\n$row = mysqli_fetch_assoc($result);\n$averageRating = $row[\"averageRating\"];\n$sql = \"INSERT INTO ratings (work_category, rating) VALUES ('$work_\ncategory', $rating)\";\nmysqli_query($conn, $sql);\nif ($rating >= $averageRating) {\n    echo \"Thank you for the good review.\";\n} else {\n    echo \"Sorry, we will try to do better next time.\";\n}\nmysqli_close($conn);\n?>\n(e) (i)   Describe the processing that takes place when this code is executed. [4]\n(ii) Outline one advantage of executing this code on a server rather than in  \nthe browser. [3]\n(Option C continues on the following page)",
+  "assets": [
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-17.png",
+      "source_pdf_page": 17,
+      "visually_verified": true
+    },
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-18.png",
+      "source_pdf_page": 18,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Outline one advantage of executing this code on a server rather than in the browser.",
+    "A browser sends a rating request to a central service"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-039",
+    "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+    "pdf_pages": [
+      28
+    ],
+    "question_reference": "Q9 e-ii",
+    "marking_summary": "Exact original MS leaf excerpt: Award [3 max: 1+1+1, Advantage + Explanation + further illustration or example] Data Security and Privacy; server-side processing prevents exposure of sensitive data; such as feedback scores and hotel details, to the client-side; Data Security and Privacy; database credentials (username, password); remain obscured and secure as the user cannot see or modify the server-side code; Data Security and privacy; source code / queries are kept private; and not sent to the browser ; Data Integrity and reliability; ensures consistent data manipulation and calculations; Independent of client's browser capabilities; Data Integrity and reliability; protects data (e.g., historic ratings); from manipulation or alteration by third parties during transmission; Data Integrity and reliability; database is accessed form the same server; which increases reliability (does not depend on network nodes etc); Per … [full leaf evidence retained]",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [3 max: 1+1+1, Advantage + Explanation + further illustration or\nexample]\nData Security and Privacy;\nserver-side processing prevents exposure of sensitive data;\nsuch as feedback scores and hotel details, to the client-side;\nData Security and Privacy;\ndatabase credentials (username, password);\nremain obscured and secure as the user cannot see or modify the server-side\ncode;\nData Security and privacy;\nsource code / queries are kept private;\nand not sent to the browser ;\nData Integrity and reliability;\nensures consistent data manipulation and calculations;\nIndependent of client's browser capabilities;\nData Integrity and reliability;\nprotects data (e.g., historic ratings);\nfrom manipulation or alteration by third parties during transmission;\nData Integrity and reliability;\ndatabase is accessed form the same server;\nwhich increases reliability (does not depend on network nodes etc);\nPerformance and efficiency;\nimproves performance;\nparticularly for users with less powerful devices;\nPerformance and efficiency;\nsaves bandwidth;\nby not transmitting database query results;\nPerformance and efficiency;\nserver handles the computational load;\nenhancing overall user experience;\nNote: Do not allow mixing of points from different clusters.",
+    "source_issues": [],
+    "source_marking_evidence": "– 28 – 8825 – 6405M \n(e) (i) Award [4 max]\nwhen the user submits the form, the server runs the PHP script; \nreceives the work category and rating from the HTML form/CGI  sent from the form \nusing the $_POST array; \nconnects to the database (sales);  \nselects the average rating for the given category;  \ninserts the new rating into the database;  \ncompares the new rating to the average; \noutputs “Thank you...” message if it is at least equal to the average;  \noutputs a “Sorry...” message if it is below the average for that category; \ncloses the database connection;  \n(ii) Award [3 max: 1+1+1, Advantage + Explanation + further illustration or\nexample]\nData Security and Privacy;\nserver-side processing prevents exposure of sensitive data;\nsuch as feedback scores and hotel details, to the client-side;\nData Security and Privacy;\ndatabase credentials (username, password);\nremain obscured and secure as the user cannot see or modify the server-side\ncode;\nData Security and privacy;\nsource code / queries are kept private;\nand not sent to the browser ;\nData Integrity and reliability;\nensures consistent data manipulation and calculations;\nIndependent of client's browser capabilities;\nData Integrity and reliability;\nprotects data (e.g., historic ratings);\nfrom manipulation or alteration by third parties during transmission;\nData Integrity and reliability;\ndatabase is accessed form the same server;\nwhich increases reliability (does not depend on network nodes etc);\nPerformance and efficiency;\nimproves performance;\nparticularly for users with less powerful devices;\nPerformance and efficiency;\nsaves bandwidth;\nby not transmitting database query results;\nPerformance and efficiency;\nserver handles the computational load;\nenhancing overall user experience;\nNote: Do not allow mixing of points from different clusters."
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "A2.2.3",
+      "scope_evidence": "• Client-server and peer-to-peer models\n• The respective benefits and drawbacks of client-server and peer-to-peer models\n• Real-world applications may include web browsing, email services, online banking, file sharing, VoIP services, blockchain.",
+      "rationale": "Adapted target only: A browser sends a rating request to a central service; guidance target: Compare and contrast networking models. Adaptation: Uses explicit client-server roles and centralized-control benefits; does not assess PHP, browser scripting or CGI mechanisms.",
+      "theme": "A",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC038-Q09-e-ii"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

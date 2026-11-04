@@ -1,0 +1,103 @@
+{
+  "source_question_id": "H-SRC038-Q05-e",
+  "source_id": "SRC-038",
+  "source_filename": "Computer_science_paper_2_HL.pdf",
+  "year": "2025",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "not stated",
+  "option": "B",
+  "question": 5,
+  "subquestion": "e",
+  "source_pdf_pages": [
+    10
+  ],
+  "source_printed_pages": [
+    "9"
+  ],
+  "original_marks": 4,
+  "command_term": "Construct",
+  "original_text": "Construct an algorithm in pseudocode that outputs, as a percentage, the number of times the children all win a prize.",
+  "parent_context": "– 8 – 8825 – 6405\nOption B — Modelling and simulation\n5. Ten children play a game in which all of them or none of them win a prize. The rules of the \ngame are as follows:\n\ty 10 children are assigned a unique number from 0 to 9.\n\ty A cupboard contains 10 boxes, each numbered from 0 to 9.\n\ty 10 sheets of paper are numbered from 0 to 9.\n\ty One piece of paper is put into each box in random order (see Figure 4).\nFigure 4: 10 boxes, each containing a sheet of paper with a number from 0 to 9\nBox 0 1 2 3 4 5 6 7 8 9\nPaper 9 8 2 1 7 6 4 3 5 0\nEach child is allowed to open 5 boxes to look for their own number. You can assume they will \nnot open the same box twice.\nChild number 0 goes first and opens 5 of the 10 boxes.\n(a) (i)   State the probability of child 0 finding their number in the 5 boxes they opened.\nYour answer can be a formula, fraction, or decimal. [1]\n(ii) State the probability of all 10 children finding their number.\nYour answer can be a formula, fraction, or decimal. [1]\nThe children all get a prize if all 10 of them find their number within 5 attempts. They use the \nfollow-the-number strategy:\n1: Each child first opens the box labelled with their own number.\n2: If this box contains their number, they are successful.\n3: If unsuccessful, the child opens the box shown on the piece of paper.\n4: The child repeats steps 2 to 3 until 5 boxes are opened.\nExample 1:  Child 0 opens box 0, seeing 9 on the paper. They then open box 9 and see \ntheir number. They are successful.\nExample 2:  Child 1 opens box 1, seeing 8 on the paper. They then open box 8, seeing \n5 on the paper. Then they open box 5, then box 6, then box 4. They are \nnot successful.\n(b) State the order sequence for child 3, who opens box 3 in Figure 4. [1]\n(Option B continues on the following page)\n– 9 – 8825 – 6405\nTurn over\n(Option B, question 5 continued)\nA one-dimensional Boolean array, CHILDREN, is created and initialized so that all elements \nare False.\nA one-dimensional integer array, BOX, is created and initialized so that BOX contains 0, 1, 2, \n3, 4, 5, 6, 7, 8, 9.\nA function, random.shuffle(BOX), shuffles the BOX array randomly to change the sequence.\nFor example, the new sequence might be: 9, 8, 2, 1, 7, 6, 4, 3, 5, 0.\nThus, BOX[5] = 6\nThe children use the follow-the-number strategy shown previously.\nEach time a child is successful, the corresponding element in the array CHILDREN is set \nto True. If a child is unsuccessful, the corresponding element in the array CHILDREN  \nis unchanged.\n(c) Outline two reasons why this problem would be difficult to simulate using a spreadsheet. [4]\n(d) Construct an algorithm in pseudocode that uses the follow-the-number strategy before \noutputting each element in the array CHILDREN. [6]\nIf all 10 cells in the CHILDREN array are set to True, the children all win a prize.\nTo calculate the percentage of times all the children will win a prize, the pseudocode \nalgorithm in part (d) needs to be run 10 000 times.\n(e) Construct an algorithm in pseudocode that outputs, as a percentage, the number of \ntimes the children all win a prize. [4]\n(Option B continues on page 11)",
+  "assets": [
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-09.png",
+      "source_pdf_page": 9,
+      "visually_verified": true
+    },
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-10.png",
+      "source_pdf_page": 10,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Construct an algorithm in pseudocode that outputs, as a percentage, the number of times the children all win a prize.",
+    "Construct success_percent(make_links,follow_all,trials)"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-039",
+    "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+    "pdf_pages": [
+      17
+    ],
+    "question_reference": "Q5 e",
+    "marking_summary": "Exact original MS leaf excerpt: Award [4] max Award [1] for initialising COUNT; Award [1] for looping 1000 times; Award [1] for resetting CHILDREN array to False; Award [1] for copying the code from Q5d) ; / Award [1] for loop through CHILDREN array; Award [1] for if statement setting PRIZE to False; Award [1] for incrementing COUNT when PRIZE is True; Award [1] for correctly outputting the percentage (which may be wrong numerically); Example answer: COUNT = 0 loop N from 0 to 999 loop M from 0 to 9 CHILDREN[M] = False end loop ----------------------------- // copied from 5d) random.shuffle(BOX) loop N from 0 to 9 LOOK = N loop A from 0 to 4 if N = BOX[LOOK]: CHILDREN[N] = True else: LOOK = BOX[LOOK] end if end loop end loop ----------------------------- PRIZE = True loop N from 0 to 9 if CHILDREN[N] == False: PRIZE = False end if end loop if PRIZE = True: COUNT = COUNT + 1 end if end loop output COUNT/100 + \"%\" Note:  … [full leaf evidence retained]",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [4] max\nAward [1] for initialising COUNT;\nAward [1] for looping 1000 times;\nAward [1] for resetting CHILDREN array to False;\nAward [1] for copying the code from Q5d)\n   ;                             /\nAward [1] for loop through CHILDREN array;\nAward [1] for if statement setting PRIZE to False;\nAward [1] for incrementing COUNT when PRIZE is True;\nAward [1] for correctly outputting the percentage (which may be wrong numerically);\nExample answer:\nCOUNT = 0\nloop N from 0 to 999\n    loop M from 0 to 9 \nCHILDREN[M] = False \n    end loop \n----------------------------- // copied from 5d) \n    random.shuffle(BOX) \n    loop N from 0 to 9 \n    LOOK = N \n    loop A from 0 to 4 \n if N = BOX[LOOK]: \n    CHILDREN[N] = True \n    else: \n LOOK = BOX[LOOK] \n    end if \n end loop \n    end loop \n----------------------------- \n    PRIZE = True \n    loop N from 0 to 9 \nif CHILDREN[N] == False: \nPRIZE = False \nend if \n    end loop \n    if PRIZE = True: \nCOUNT = COUNT + 1 \n    end if \nend loop \noutput COUNT/100 + \"%\" \nNote: Candidates may refer to Q5d for the code between the broken lines, but that is \nnot award MP4.",
+    "source_issues": [
+      "Original prompt specifies10000 repetitions; MS example loops1000 and uses inconsistent percentage divisor. Adaptation uses explicit trials parameter and100*wins/trials."
+    ],
+    "source_marking_evidence": "– 17 – 8825 – 6405M \n(e) Award [4] max\nAward [1] for initialising COUNT;\nAward [1] for looping 1000 times;\nAward [1] for resetting CHILDREN array to False;\nAward [1] for copying the code from Q5d)\n   ;                             /\nAward [1] for loop through CHILDREN array;\nAward [1] for if statement setting PRIZE to False;\nAward [1] for incrementing COUNT when PRIZE is True;\nAward [1] for correctly outputting the percentage (which may be wrong numerically);\nExample answer:\nCOUNT = 0\nloop N from 0 to 999\n    loop M from 0 to 9 \nCHILDREN[M] = False \n    end loop \n----------------------------- // copied from 5d) \n    random.shuffle(BOX) \n    loop N from 0 to 9 \n    LOOK = N \n    loop A from 0 to 4 \n if N = BOX[LOOK]: \n    CHILDREN[N] = True \n    else: \n LOOK = BOX[LOOK] \n    end if \n end loop \n    end loop \n----------------------------- \n    PRIZE = True \n    loop N from 0 to 9 \nif CHILDREN[N] == False: \nPRIZE = False \nend if \n    end loop \n    if PRIZE = True: \nCOUNT = COUNT + 1 \n    end if \nend loop \noutput COUNT/100 + \"%\" \nNote: Candidates may refer to Q5d for the code between the broken lines, but that is \nnot award MP4.  "
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B2.3.2",
+      "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+      "rationale": "Adapted target only: Construct success_percent(make_links,follow_all,trials); guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B2.3.3",
+      "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+      "rationale": "Adapted target only: Construct success_percent(make_links,follow_all,trials); guidance target: Construct programs that utilize looping structures to perform repeated actions. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B2.3.4",
+      "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+      "rationale": "Adapted target only: Construct success_percent(make_links,follow_all,trials); guidance target: Construct functions and modularization. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+    "technical": "Deterministic two-trial test gives50%; all-failed/successful formula reviewed."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC038-Q05-e"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

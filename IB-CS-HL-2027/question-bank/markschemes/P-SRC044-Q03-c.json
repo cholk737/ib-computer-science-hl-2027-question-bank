@@ -1,0 +1,46 @@
+{
+  "question_id": "P-SRC044-Q03-c",
+  "unofficial": true,
+  "marks": 6,
+  "solution": "MEMBER(MemberID PK, MemberName); DEPARTMENT(DepartmentID PK, DepartmentName); GUIDE(GuideID PK, GuideName, DepartmentID FK); BOOKING(BookingID PK, MemberID FK, GuideID FK, StartTime).",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "MEMBER correct."
+    },
+    {
+      "marks": 1,
+      "criterion": "DEPARTMENT correct."
+    },
+    {
+      "marks": 1,
+      "criterion": "GUIDE attributes and primary key."
+    },
+    {
+      "marks": 1,
+      "criterion": "DepartmentID foreign key in GUIDE."
+    },
+    {
+      "marks": 1,
+      "criterion": "BOOKING key and StartTime."
+    },
+    {
+      "marks": 1,
+      "criterion": "MemberID/GuideID foreign keys and no redundant names in BOOKING."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      10
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

@@ -29,13 +29,14 @@
   "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
   "common_errors": [],
   "verification": {
-    "technical": "Traced bottom-to-top[1,2,3]→queue3,2,1→stack[3,2,1]; also empty andsingleton.",
+    "technical": "Executed empty,singleton and three-element stacks with FIFO queue harness.",
     "source_comparison": [
       19
     ],
-    "test_code": "",
+    "test_code": "def reverse_stack(stack, queue):\n    while not stack.isEmpty():\n        queue.enqueue(stack.pop())\n    while not queue.isEmpty():\n        stack.push(queue.dequeue())\nclass Stack:\n def __init__(self,values):self.values=values[:]\n def pop(self):return self.values.pop()\n def push(self,value):self.values.append(value)\n def isEmpty(self):return not self.values\nclass Queue:\n def __init__(self):self.values=[]\n def enqueue(self,value):self.values.append(value)\n def dequeue(self):return self.values.pop(0)\n def isEmpty(self):return not self.values\nfor values in [[],[9],[1,2,3]]:\n s=Stack(values);q=Queue();reverse_stack(s,q)\n assert s.values==values[::-1] and q.isEmpty()\n",
     "result_file": ""
   },
   "code": "def reverse_stack(stack, queue):\n    while not stack.isEmpty():\n        queue.enqueue(stack.pop())\n    while not queue.isEmpty():\n        stack.push(queue.dequeue())",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

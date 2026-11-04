@@ -1,0 +1,55 @@
+{
+  "question_id": "P-SRC044-Q01-d",
+  "source_question_ids": [
+    "H-SRC044-Q01-d"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "EMPLOYEE(EmployeeID, FirstName, Surname, RoleID) and ROLE(RoleID, Grade) are related by RoleID. Construct SQL showing only FirstName, Surname and Grade for employees named Chen in grade 8.",
+  "syllabus_codes": [
+    "A3.3.2"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 4,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "One solution:\nSELECT e.FirstName,e.Surname,r.Grade FROM Employee e JOIN Role r ON e.RoleID=r.RoleID WHERE e.Surname='Chen' AND r.Grade=8;",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Selects exactly three required fields."
+    },
+    {
+      "marks": 1,
+      "criterion": "Uses both tables."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct RoleID join."
+    },
+    {
+      "marks": 1,
+      "criterion": "Both surname and grade filters with AND."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "SQLite join/filter executed on matching and nonmatching rows.",
+    "source_comparison": [
+      5
+    ],
+    "test_code": "import sqlite3\nc=sqlite3.connect(':memory:');c.executescript(\"CREATE TABLE Employee(EmployeeID,FirstName,Surname,RoleID);CREATE TABLE Role(RoleID,Grade);INSERT INTO Role VALUES(1,8),(2,7);INSERT INTO Employee VALUES(1,'A','Chen',1),(2,'B','Chen',2),(3,'C','Mora',1);\")\nassert c.execute(\"SELECT e.FirstName,e.Surname,r.Grade FROM Employee e JOIN Role r ON e.RoleID=r.RoleID WHERE e.Surname='Chen' AND r.Grade=8\").fetchall()==[('A','Chen',8)]",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC044-Q01-d.json",
+  "question_path": "question-bank/questions/P-SRC044-Q01-d.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC044-Q01-d.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

@@ -1,0 +1,1215 @@
+{
+  "source_id": "SRC-040",
+  "batch_id": "SRC-040-D-b001",
+  "source_questions": [
+    {
+      "source_question_id": "H-SRC040-Q10-a",
+      "source_id": "SRC-040",
+      "source_filename": "Computer_science_paper_2_SL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": "10",
+      "subquestion": "a",
+      "source_pdf_pages": [
+        21
+      ],
+      "source_printed_pages": [
+        "20"
+      ],
+      "original_marks": 1,
+      "command_term": "State",
+      "original_text": "(a) State the purpose of a constructor method. [1]",
+      "parent_context": "10. A law firm has 20 lawyers. They can be categorized into three groups: civil lawyers, criminal\nlawyers, and company lawyers.\nA lawyer can have a maximum of 15 cases at a time.\nThe following shows part of the code for the class, which keeps details of a lawyer:\nLawyer\npublic class Lawyer\n{\nprivate int lawyerID; // id of the lawyer\nprivate String lawyerName;\nprivate String lawyerType; // category of lawyer\nprivate int lawyerRank; // 0 or 1, default is 0\nprivate int casesWon; // total number of cases won by the lawyer\nprivate Case lawyerCases[] = new Case[15]; // lawyer’s array of cases\npublic Lawyer(int lawyerID, String lawyerName, String lawyerType,\nCase[] lawyerCases)\n{\nthis.lawyerID = lawyerID;\nthis.lawyerName = lawyerName;\nthis.lawyerType = lawyerType;\nthis.lawyerRank = 0;\nthis.casesWon = 0;\nthis.lawyerCases = lawyerCases;\n}\npublic String getlawyerName()\n{\nreturn lawyerName;\n}\npublic String getlawyerType()\n{\nreturn lawyerType;\n}\npublic int getlawyerRank()\n{\nreturn lawyerRank;\n}\npublic void setlawyerRank(int lawyerRank)\n{\nthis.lawyerRank = lawyerRank;\n}\n// all accessor and mutator methods are present but not shown\n} // end of Lawyer class\n(Option D continues on the following page)\n– 19 – 8825 – 6408\n(Option D, question 10 continued)\nThe following shows part of the code for the class, which keeps details of a case:\nCase\npublic class Case\n{\nprivate int caseId; // unique id of the case\nprivate String caseClient; // name of the client\nprivate String caseTitle; // e.g. 'property dispute', 'tax evasion' etc\nprivate int daysFromStart; // number of days elapsed from start of case\nprivate char judgmentGiven; // 'N'=no, 'F'=favorable, 'A'=against\nprivate String caseStatus; // open/ won/ lost\npublic Case(int caseID, String caseClient, String casesTitle)\n{\nthis.caseId = caseId;\nthis.caseClient = caseClient;\nthis.casesTitle = casesTitle;\nthis.daysFromStart = 0;\nthis.judgmentGiven = 'N';\nthis.caseStatus = \"open\";\n}\npublic void setCaseStatus(String caseStatus)\n{\nthis.caseStatus = caseStatus;\n}\n// all accessor and mutator methods are present but not shown\npublic void changeCaseStatus(char judgmentGiven)\n{\n/*Code missing*/\n}\n} // end of Case class\n(Option D continues on the following page)\nTurn over\n– 20 – 8825 – 6408\n(Option D, question 10 continued)\nThe class has a main method and other methods to generate the\nLawFirmManagement\ninformation required. The following shows part of the code for the class:\nLawFirmManagement\npublic class LawFirmManagement\n{\nprivate static Lawyer[] allLawyers = new Lawyer[20];\n// array of lawyers\nprivate static TraineeLawyer[] allTrainees = new\nTraineeLawyer[30]; // array of lawyer trainees\npublic static void main(String []args)\n{\n/*Code missing*/\n}\npublic static void displayLawyerNames()\n{\n/*Code missing*/\n}\npublic static void updateLawyerRank(int[][]casesWon)\n{\n/*Code missing*/\n}\n} // end of LawFirmManagement class\n(a) State the purpose of a constructor method. [1]\n(b) Describe how the method given in the\nchangeCaseStatus(char judgmentGiven)\nclass would change the case status. [2]\nCase\n(c) Construct the method in the class.\ndisplayLawyerNames() LawFirmManagement\nThe method should display the names of all civil lawyers who have won more than\n30 cases. [4]\n(d) (i) S tate the purpose of a return statement. [1]\nIf the number of days since the start of a case is more than 45 and no judgment has\nbeen given, it is considered a delayed case. Assume that a method exists that updates\ndays elapsed.\n(ii) Construct the method signature for in which the method\ncountDelayedCases\ntakes a lawyer’s ID as a parameter and returns the total number of delayed\ncases that the lawyer has. [2]\n(iii) Construct the complete code for the method constructed\ncountDelayedCases\nin part (d)(ii). [5]\n(Option D continues on the following page)\n– 21 – 8825 – 6408\n(Option D continued)\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-21.png",
+          "source_pdf_page": 21,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_render",
+          "description": "Shared full source question context, table,code or figure inspected.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-19.png",
+          "source_pdf_page": 19,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_render",
+          "description": "Shared full source question context, table,code or figure inspected.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-20.png",
+          "source_pdf_page": 20,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct code to define classes and instantiate objects."
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-041",
+        "filename": "Computer_science_paper_2_SL_markscheme.pdf",
+        "pdf_pages": [
+          30
+        ],
+        "question_reference": "10(a)",
+        "marking_summary": "Initialize object attributes when object created.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B3.1.4",
+          "scope_evidence": "• How to define classes and create objects from those classes\n• The role of constructors in initializing an object's state, setting initial values for its attributes to define its condition or characteristics at the time of creation",
+          "rationale": "Constructor/initializer role explicitly scoped.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "State constructor purpose.",
+      "context_synopsis": "Java Lawyer,Case and LawFirmManagement classes on PDF19–21. Original constructors contain identifier errors; complete source code is retained as source-only evidence.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-021.txt"
+      ],
+      "context_pdf_pages": [
+        19,
+        20
+      ],
+      "mark_allocation_pdf_page": 21,
+      "context_printed_pages": [
+        "18",
+        "19"
+      ],
+      "raw_context_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-019.txt",
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-020.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC040-Q10-b",
+      "source_id": "SRC-040",
+      "source_filename": "Computer_science_paper_2_SL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": "10",
+      "subquestion": "b",
+      "source_pdf_pages": [
+        21
+      ],
+      "source_printed_pages": [
+        "20"
+      ],
+      "original_marks": 2,
+      "command_term": "Describe",
+      "original_text": "(b) Describe how the method given in the\nchangeCaseStatus(char judgmentGiven)\nclass would change the case status. [2]",
+      "parent_context": "10. A law firm has 20 lawyers. They can be categorized into three groups: civil lawyers, criminal\nlawyers, and company lawyers.\nA lawyer can have a maximum of 15 cases at a time.\nThe following shows part of the code for the class, which keeps details of a lawyer:\nLawyer\npublic class Lawyer\n{\nprivate int lawyerID; // id of the lawyer\nprivate String lawyerName;\nprivate String lawyerType; // category of lawyer\nprivate int lawyerRank; // 0 or 1, default is 0\nprivate int casesWon; // total number of cases won by the lawyer\nprivate Case lawyerCases[] = new Case[15]; // lawyer’s array of cases\npublic Lawyer(int lawyerID, String lawyerName, String lawyerType,\nCase[] lawyerCases)\n{\nthis.lawyerID = lawyerID;\nthis.lawyerName = lawyerName;\nthis.lawyerType = lawyerType;\nthis.lawyerRank = 0;\nthis.casesWon = 0;\nthis.lawyerCases = lawyerCases;\n}\npublic String getlawyerName()\n{\nreturn lawyerName;\n}\npublic String getlawyerType()\n{\nreturn lawyerType;\n}\npublic int getlawyerRank()\n{\nreturn lawyerRank;\n}\npublic void setlawyerRank(int lawyerRank)\n{\nthis.lawyerRank = lawyerRank;\n}\n// all accessor and mutator methods are present but not shown\n} // end of Lawyer class\n(Option D continues on the following page)\n– 19 – 8825 – 6408\n(Option D, question 10 continued)\nThe following shows part of the code for the class, which keeps details of a case:\nCase\npublic class Case\n{\nprivate int caseId; // unique id of the case\nprivate String caseClient; // name of the client\nprivate String caseTitle; // e.g. 'property dispute', 'tax evasion' etc\nprivate int daysFromStart; // number of days elapsed from start of case\nprivate char judgmentGiven; // 'N'=no, 'F'=favorable, 'A'=against\nprivate String caseStatus; // open/ won/ lost\npublic Case(int caseID, String caseClient, String casesTitle)\n{\nthis.caseId = caseId;\nthis.caseClient = caseClient;\nthis.casesTitle = casesTitle;\nthis.daysFromStart = 0;\nthis.judgmentGiven = 'N';\nthis.caseStatus = \"open\";\n}\npublic void setCaseStatus(String caseStatus)\n{\nthis.caseStatus = caseStatus;\n}\n// all accessor and mutator methods are present but not shown\npublic void changeCaseStatus(char judgmentGiven)\n{\n/*Code missing*/\n}\n} // end of Case class\n(Option D continues on the following page)\nTurn over\n– 20 – 8825 – 6408\n(Option D, question 10 continued)\nThe class has a main method and other methods to generate the\nLawFirmManagement\ninformation required. The following shows part of the code for the class:\nLawFirmManagement\npublic class LawFirmManagement\n{\nprivate static Lawyer[] allLawyers = new Lawyer[20];\n// array of lawyers\nprivate static TraineeLawyer[] allTrainees = new\nTraineeLawyer[30]; // array of lawyer trainees\npublic static void main(String []args)\n{\n/*Code missing*/\n}\npublic static void displayLawyerNames()\n{\n/*Code missing*/\n}\npublic static void updateLawyerRank(int[][]casesWon)\n{\n/*Code missing*/\n}\n} // end of LawFirmManagement class\n(a) State the purpose of a constructor method. [1]\n(b) Describe how the method given in the\nchangeCaseStatus(char judgmentGiven)\nclass would change the case status. [2]\nCase\n(c) Construct the method in the class.\ndisplayLawyerNames() LawFirmManagement\nThe method should display the names of all civil lawyers who have won more than\n30 cases. [4]\n(d) (i) S tate the purpose of a return statement. [1]\nIf the number of days since the start of a case is more than 45 and no judgment has\nbeen given, it is considered a delayed case. Assume that a method exists that updates\ndays elapsed.\n(ii) Construct the method signature for in which the method\ncountDelayedCases\ntakes a lawyer’s ID as a parameter and returns the total number of delayed\ncases that the lawyer has. [2]\n(iii) Construct the complete code for the method constructed\ncountDelayedCases\nin part (d)(ii). [5]\n(Option D continues on the following page)\n– 21 – 8825 – 6408\n(Option D continued)\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-21.png",
+          "source_pdf_page": 21,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_render",
+          "description": "Shared full source question context, table,code or figure inspected.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-19.png",
+          "source_pdf_page": 19,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_render",
+          "description": "Shared full source question context, table,code or figure inspected.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-20.png",
+          "source_pdf_page": 20,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct programs utilizing appropriate selection structures."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-041",
+        "filename": "Computer_science_paper_2_SL_markscheme.pdf",
+        "pdf_pages": [
+          30
+        ],
+        "question_reference": "10(b)",
+        "marking_summary": "F sets won;A sets lost.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Existing-object selection logic, not class creation/constructor evidence.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Describe changeCaseStatus behaviour.",
+      "context_synopsis": "Java Lawyer,Case and LawFirmManagement classes on PDF19–21. Original constructors contain identifier errors; complete source code is retained as source-only evidence.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-021.txt"
+      ],
+      "context_pdf_pages": [
+        19,
+        20
+      ],
+      "mark_allocation_pdf_page": 21,
+      "context_printed_pages": [
+        "18",
+        "19"
+      ],
+      "raw_context_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-019.txt",
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-020.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC040-Q10-c",
+      "source_id": "SRC-040",
+      "source_filename": "Computer_science_paper_2_SL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": "10",
+      "subquestion": "c",
+      "source_pdf_pages": [
+        21
+      ],
+      "source_printed_pages": [
+        "20"
+      ],
+      "original_marks": 4,
+      "command_term": "Construct",
+      "original_text": "(c) Construct the method in the class.\ndisplayLawyerNames() LawFirmManagement\nThe method should display the names of all civil lawyers who have won more than\n30 cases. [4]",
+      "parent_context": "10. A law firm has 20 lawyers. They can be categorized into three groups: civil lawyers, criminal\nlawyers, and company lawyers.\nA lawyer can have a maximum of 15 cases at a time.\nThe following shows part of the code for the class, which keeps details of a lawyer:\nLawyer\npublic class Lawyer\n{\nprivate int lawyerID; // id of the lawyer\nprivate String lawyerName;\nprivate String lawyerType; // category of lawyer\nprivate int lawyerRank; // 0 or 1, default is 0\nprivate int casesWon; // total number of cases won by the lawyer\nprivate Case lawyerCases[] = new Case[15]; // lawyer’s array of cases\npublic Lawyer(int lawyerID, String lawyerName, String lawyerType,\nCase[] lawyerCases)\n{\nthis.lawyerID = lawyerID;\nthis.lawyerName = lawyerName;\nthis.lawyerType = lawyerType;\nthis.lawyerRank = 0;\nthis.casesWon = 0;\nthis.lawyerCases = lawyerCases;\n}\npublic String getlawyerName()\n{\nreturn lawyerName;\n}\npublic String getlawyerType()\n{\nreturn lawyerType;\n}\npublic int getlawyerRank()\n{\nreturn lawyerRank;\n}\npublic void setlawyerRank(int lawyerRank)\n{\nthis.lawyerRank = lawyerRank;\n}\n// all accessor and mutator methods are present but not shown\n} // end of Lawyer class\n(Option D continues on the following page)\n– 19 – 8825 – 6408\n(Option D, question 10 continued)\nThe following shows part of the code for the class, which keeps details of a case:\nCase\npublic class Case\n{\nprivate int caseId; // unique id of the case\nprivate String caseClient; // name of the client\nprivate String caseTitle; // e.g. 'property dispute', 'tax evasion' etc\nprivate int daysFromStart; // number of days elapsed from start of case\nprivate char judgmentGiven; // 'N'=no, 'F'=favorable, 'A'=against\nprivate String caseStatus; // open/ won/ lost\npublic Case(int caseID, String caseClient, String casesTitle)\n{\nthis.caseId = caseId;\nthis.caseClient = caseClient;\nthis.casesTitle = casesTitle;\nthis.daysFromStart = 0;\nthis.judgmentGiven = 'N';\nthis.caseStatus = \"open\";\n}\npublic void setCaseStatus(String caseStatus)\n{\nthis.caseStatus = caseStatus;\n}\n// all accessor and mutator methods are present but not shown\npublic void changeCaseStatus(char judgmentGiven)\n{\n/*Code missing*/\n}\n} // end of Case class\n(Option D continues on the following page)\nTurn over\n– 20 – 8825 – 6408\n(Option D, question 10 continued)\nThe class has a main method and other methods to generate the\nLawFirmManagement\ninformation required. The following shows part of the code for the class:\nLawFirmManagement\npublic class LawFirmManagement\n{\nprivate static Lawyer[] allLawyers = new Lawyer[20];\n// array of lawyers\nprivate static TraineeLawyer[] allTrainees = new\nTraineeLawyer[30]; // array of lawyer trainees\npublic static void main(String []args)\n{\n/*Code missing*/\n}\npublic static void displayLawyerNames()\n{\n/*Code missing*/\n}\npublic static void updateLawyerRank(int[][]casesWon)\n{\n/*Code missing*/\n}\n} // end of LawFirmManagement class\n(a) State the purpose of a constructor method. [1]\n(b) Describe how the method given in the\nchangeCaseStatus(char judgmentGiven)\nclass would change the case status. [2]\nCase\n(c) Construct the method in the class.\ndisplayLawyerNames() LawFirmManagement\nThe method should display the names of all civil lawyers who have won more than\n30 cases. [4]\n(d) (i) S tate the purpose of a return statement. [1]\nIf the number of days since the start of a case is more than 45 and no judgment has\nbeen given, it is considered a delayed case. Assume that a method exists that updates\ndays elapsed.\n(ii) Construct the method signature for in which the method\ncountDelayedCases\ntakes a lawyer’s ID as a parameter and returns the total number of delayed\ncases that the lawyer has. [2]\n(iii) Construct the complete code for the method constructed\ncountDelayedCases\nin part (d)(ii). [5]\n(Option D continues on the following page)\n– 21 – 8825 – 6408\n(Option D continued)\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-21.png",
+          "source_pdf_page": 21,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_render",
+          "description": "Shared full source question context, table,code or figure inspected.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-19.png",
+          "source_pdf_page": 19,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_render",
+          "description": "Shared full source question context, table,code or figure inspected.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-20.png",
+          "source_pdf_page": 20,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct programs that apply arrays and Lists.",
+        "Construct programs utilizing appropriate selection structures.",
+        "Construct programs that utilize looping structures to perform repeated actions."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-041",
+        "filename": "Computer_science_paper_2_SL_markscheme.pdf",
+        "pdf_pages": [
+          30
+        ],
+        "question_reference": "10(c)",
+        "marking_summary": "Traverse lawyers;both predicates;nameoutput.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Translate traversal/filtering of existing objects to Python, without B3.1.4 over-credit.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Translate traversal/filtering of existing objects to Python, without B3.1.4 over-credit.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "Translate traversal/filtering of existing objects to Python, without B3.1.4 over-credit.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Construct displayLawyerNames for civil lawyers with casesWon>30.",
+      "context_synopsis": "Java Lawyer,Case and LawFirmManagement classes on PDF19–21. Original constructors contain identifier errors; complete source code is retained as source-only evidence.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-021.txt"
+      ],
+      "context_pdf_pages": [
+        19,
+        20
+      ],
+      "mark_allocation_pdf_page": 21,
+      "context_printed_pages": [
+        "18",
+        "19"
+      ],
+      "raw_context_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-019.txt",
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-020.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC040-Q10-d-i",
+      "source_id": "SRC-040",
+      "source_filename": "Computer_science_paper_2_SL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": "10",
+      "subquestion": "d-i",
+      "source_pdf_pages": [
+        21
+      ],
+      "source_printed_pages": [
+        "20"
+      ],
+      "original_marks": 1,
+      "command_term": "State",
+      "original_text": "(i) S tate the purpose of a return statement. [1]",
+      "parent_context": "10. A law firm has 20 lawyers. They can be categorized into three groups: civil lawyers, criminal\nlawyers, and company lawyers.\nA lawyer can have a maximum of 15 cases at a time.\nThe following shows part of the code for the class, which keeps details of a lawyer:\nLawyer\npublic class Lawyer\n{\nprivate int lawyerID; // id of the lawyer\nprivate String lawyerName;\nprivate String lawyerType; // category of lawyer\nprivate int lawyerRank; // 0 or 1, default is 0\nprivate int casesWon; // total number of cases won by the lawyer\nprivate Case lawyerCases[] = new Case[15]; // lawyer’s array of cases\npublic Lawyer(int lawyerID, String lawyerName, String lawyerType,\nCase[] lawyerCases)\n{\nthis.lawyerID = lawyerID;\nthis.lawyerName = lawyerName;\nthis.lawyerType = lawyerType;\nthis.lawyerRank = 0;\nthis.casesWon = 0;\nthis.lawyerCases = lawyerCases;\n}\npublic String getlawyerName()\n{\nreturn lawyerName;\n}\npublic String getlawyerType()\n{\nreturn lawyerType;\n}\npublic int getlawyerRank()\n{\nreturn lawyerRank;\n}\npublic void setlawyerRank(int lawyerRank)\n{\nthis.lawyerRank = lawyerRank;\n}\n// all accessor and mutator methods are present but not shown\n} // end of Lawyer class\n(Option D continues on the following page)\n– 19 – 8825 – 6408\n(Option D, question 10 continued)\nThe following shows part of the code for the class, which keeps details of a case:\nCase\npublic class Case\n{\nprivate int caseId; // unique id of the case\nprivate String caseClient; // name of the client\nprivate String caseTitle; // e.g. 'property dispute', 'tax evasion' etc\nprivate int daysFromStart; // number of days elapsed from start of case\nprivate char judgmentGiven; // 'N'=no, 'F'=favorable, 'A'=against\nprivate String caseStatus; // open/ won/ lost\npublic Case(int caseID, String caseClient, String casesTitle)\n{\nthis.caseId = caseId;\nthis.caseClient = caseClient;\nthis.casesTitle = casesTitle;\nthis.daysFromStart = 0;\nthis.judgmentGiven = 'N';\nthis.caseStatus = \"open\";\n}\npublic void setCaseStatus(String caseStatus)\n{\nthis.caseStatus = caseStatus;\n}\n// all accessor and mutator methods are present but not shown\npublic void changeCaseStatus(char judgmentGiven)\n{\n/*Code missing*/\n}\n} // end of Case class\n(Option D continues on the following page)\nTurn over\n– 20 – 8825 – 6408\n(Option D, question 10 continued)\nThe class has a main method and other methods to generate the\nLawFirmManagement\ninformation required. The following shows part of the code for the class:\nLawFirmManagement\npublic class LawFirmManagement\n{\nprivate static Lawyer[] allLawyers = new Lawyer[20];\n// array of lawyers\nprivate static TraineeLawyer[] allTrainees = new\nTraineeLawyer[30]; // array of lawyer trainees\npublic static void main(String []args)\n{\n/*Code missing*/\n}\npublic static void displayLawyerNames()\n{\n/*Code missing*/\n}\npublic static void updateLawyerRank(int[][]casesWon)\n{\n/*Code missing*/\n}\n} // end of LawFirmManagement class\n(a) State the purpose of a constructor method. [1]\n(b) Describe how the method given in the\nchangeCaseStatus(char judgmentGiven)\nclass would change the case status. [2]\nCase\n(c) Construct the method in the class.\ndisplayLawyerNames() LawFirmManagement\nThe method should display the names of all civil lawyers who have won more than\n30 cases. [4]\n(d) (i) S tate the purpose of a return statement. [1]\nIf the number of days since the start of a case is more than 45 and no judgment has\nbeen given, it is considered a delayed case. Assume that a method exists that updates\ndays elapsed.\n(ii) Construct the method signature for in which the method\ncountDelayedCases\ntakes a lawyer’s ID as a parameter and returns the total number of delayed\ncases that the lawyer has. [2]\n(iii) Construct the complete code for the method constructed\ncountDelayedCases\nin part (d)(ii). [5]\n(Option D continues on the following page)\n– 21 – 8825 – 6408\n(Option D continued)\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-21.png",
+          "source_pdf_page": 21,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_render",
+          "description": "Shared full source question context, table,code or figure inspected.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-19.png",
+          "source_pdf_page": 19,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_render",
+          "description": "Shared full source question context, table,code or figure inspected.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-20.png",
+          "source_pdf_page": 20,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct functions and modularization."
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-041",
+        "filename": "Computer_science_paper_2_SL_markscheme.pdf",
+        "pdf_pages": [
+          30
+        ],
+        "question_reference": "10(d-i)",
+        "marking_summary": "Terminates method and passes value to caller.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B2.3.4",
+          "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+          "rationale": "Return values and modular function flow explicitly scoped.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "State purpose of return.",
+      "context_synopsis": "Java Lawyer,Case and LawFirmManagement classes on PDF19–21. Original constructors contain identifier errors; complete source code is retained as source-only evidence.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-021.txt"
+      ],
+      "context_pdf_pages": [
+        19,
+        20
+      ],
+      "mark_allocation_pdf_page": 21,
+      "context_printed_pages": [
+        "18",
+        "19"
+      ],
+      "raw_context_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-019.txt",
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-020.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC040-Q10-d-ii",
+      "source_id": "SRC-040",
+      "source_filename": "Computer_science_paper_2_SL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": "10",
+      "subquestion": "d-ii",
+      "source_pdf_pages": [
+        21
+      ],
+      "source_printed_pages": [
+        "20"
+      ],
+      "original_marks": 2,
+      "command_term": "Construct",
+      "original_text": "(ii) Construct the method signature for in which the method\ncountDelayedCases\ntakes a lawyer’s ID as a parameter and returns the total number of delayed\ncases that the lawyer has. [2]",
+      "parent_context": "10. A law firm has 20 lawyers. They can be categorized into three groups: civil lawyers, criminal\nlawyers, and company lawyers.\nA lawyer can have a maximum of 15 cases at a time.\nThe following shows part of the code for the class, which keeps details of a lawyer:\nLawyer\npublic class Lawyer\n{\nprivate int lawyerID; // id of the lawyer\nprivate String lawyerName;\nprivate String lawyerType; // category of lawyer\nprivate int lawyerRank; // 0 or 1, default is 0\nprivate int casesWon; // total number of cases won by the lawyer\nprivate Case lawyerCases[] = new Case[15]; // lawyer’s array of cases\npublic Lawyer(int lawyerID, String lawyerName, String lawyerType,\nCase[] lawyerCases)\n{\nthis.lawyerID = lawyerID;\nthis.lawyerName = lawyerName;\nthis.lawyerType = lawyerType;\nthis.lawyerRank = 0;\nthis.casesWon = 0;\nthis.lawyerCases = lawyerCases;\n}\npublic String getlawyerName()\n{\nreturn lawyerName;\n}\npublic String getlawyerType()\n{\nreturn lawyerType;\n}\npublic int getlawyerRank()\n{\nreturn lawyerRank;\n}\npublic void setlawyerRank(int lawyerRank)\n{\nthis.lawyerRank = lawyerRank;\n}\n// all accessor and mutator methods are present but not shown\n} // end of Lawyer class\n(Option D continues on the following page)\n– 19 – 8825 – 6408\n(Option D, question 10 continued)\nThe following shows part of the code for the class, which keeps details of a case:\nCase\npublic class Case\n{\nprivate int caseId; // unique id of the case\nprivate String caseClient; // name of the client\nprivate String caseTitle; // e.g. 'property dispute', 'tax evasion' etc\nprivate int daysFromStart; // number of days elapsed from start of case\nprivate char judgmentGiven; // 'N'=no, 'F'=favorable, 'A'=against\nprivate String caseStatus; // open/ won/ lost\npublic Case(int caseID, String caseClient, String casesTitle)\n{\nthis.caseId = caseId;\nthis.caseClient = caseClient;\nthis.casesTitle = casesTitle;\nthis.daysFromStart = 0;\nthis.judgmentGiven = 'N';\nthis.caseStatus = \"open\";\n}\npublic void setCaseStatus(String caseStatus)\n{\nthis.caseStatus = caseStatus;\n}\n// all accessor and mutator methods are present but not shown\npublic void changeCaseStatus(char judgmentGiven)\n{\n/*Code missing*/\n}\n} // end of Case class\n(Option D continues on the following page)\nTurn over\n– 20 – 8825 – 6408\n(Option D, question 10 continued)\nThe class has a main method and other methods to generate the\nLawFirmManagement\ninformation required. The following shows part of the code for the class:\nLawFirmManagement\npublic class LawFirmManagement\n{\nprivate static Lawyer[] allLawyers = new Lawyer[20];\n// array of lawyers\nprivate static TraineeLawyer[] allTrainees = new\nTraineeLawyer[30]; // array of lawyer trainees\npublic static void main(String []args)\n{\n/*Code missing*/\n}\npublic static void displayLawyerNames()\n{\n/*Code missing*/\n}\npublic static void updateLawyerRank(int[][]casesWon)\n{\n/*Code missing*/\n}\n} // end of LawFirmManagement class\n(a) State the purpose of a constructor method. [1]\n(b) Describe how the method given in the\nchangeCaseStatus(char judgmentGiven)\nclass would change the case status. [2]\nCase\n(c) Construct the method in the class.\ndisplayLawyerNames() LawFirmManagement\nThe method should display the names of all civil lawyers who have won more than\n30 cases. [4]\n(d) (i) S tate the purpose of a return statement. [1]\nIf the number of days since the start of a case is more than 45 and no judgment has\nbeen given, it is considered a delayed case. Assume that a method exists that updates\ndays elapsed.\n(ii) Construct the method signature for in which the method\ncountDelayedCases\ntakes a lawyer’s ID as a parameter and returns the total number of delayed\ncases that the lawyer has. [2]\n(iii) Construct the complete code for the method constructed\ncountDelayedCases\nin part (d)(ii). [5]\n(Option D continues on the following page)\n– 21 – 8825 – 6408\n(Option D continued)\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-21.png",
+          "source_pdf_page": 21,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_render",
+          "description": "Shared full source question context, table,code or figure inspected.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-19.png",
+          "source_pdf_page": 19,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_render",
+          "description": "Shared full source question context, table,code or figure inspected.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-20.png",
+          "source_pdf_page": 20,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct functions and modularization."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-041",
+        "filename": "Computer_science_paper_2_SL_markscheme.pdf",
+        "pdf_pages": [
+          30
+        ],
+        "question_reference": "10(d-ii)",
+        "marking_summary": "Method name,ID parameter and integer return type.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.3.4",
+          "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+          "rationale": "Python header/parameter interface; annotations optional, not Java type declarations.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Construct countDelayedCases signature.",
+      "context_synopsis": "Java Lawyer,Case and LawFirmManagement classes on PDF19–21. Original constructors contain identifier errors; complete source code is retained as source-only evidence.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-021.txt"
+      ],
+      "context_pdf_pages": [
+        19,
+        20
+      ],
+      "mark_allocation_pdf_page": 21,
+      "context_printed_pages": [
+        "18",
+        "19"
+      ],
+      "raw_context_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-019.txt",
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-020.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC040-Q10-d-iii",
+      "source_id": "SRC-040",
+      "source_filename": "Computer_science_paper_2_SL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": "10",
+      "subquestion": "d-iii",
+      "source_pdf_pages": [
+        21
+      ],
+      "source_printed_pages": [
+        "20"
+      ],
+      "original_marks": 5,
+      "command_term": "Construct",
+      "original_text": "(iii) Construct the complete code for the method constructed\ncountDelayedCases\nin part (d)(ii). [5]",
+      "parent_context": "10. A law firm has 20 lawyers. They can be categorized into three groups: civil lawyers, criminal\nlawyers, and company lawyers.\nA lawyer can have a maximum of 15 cases at a time.\nThe following shows part of the code for the class, which keeps details of a lawyer:\nLawyer\npublic class Lawyer\n{\nprivate int lawyerID; // id of the lawyer\nprivate String lawyerName;\nprivate String lawyerType; // category of lawyer\nprivate int lawyerRank; // 0 or 1, default is 0\nprivate int casesWon; // total number of cases won by the lawyer\nprivate Case lawyerCases[] = new Case[15]; // lawyer’s array of cases\npublic Lawyer(int lawyerID, String lawyerName, String lawyerType,\nCase[] lawyerCases)\n{\nthis.lawyerID = lawyerID;\nthis.lawyerName = lawyerName;\nthis.lawyerType = lawyerType;\nthis.lawyerRank = 0;\nthis.casesWon = 0;\nthis.lawyerCases = lawyerCases;\n}\npublic String getlawyerName()\n{\nreturn lawyerName;\n}\npublic String getlawyerType()\n{\nreturn lawyerType;\n}\npublic int getlawyerRank()\n{\nreturn lawyerRank;\n}\npublic void setlawyerRank(int lawyerRank)\n{\nthis.lawyerRank = lawyerRank;\n}\n// all accessor and mutator methods are present but not shown\n} // end of Lawyer class\n(Option D continues on the following page)\n– 19 – 8825 – 6408\n(Option D, question 10 continued)\nThe following shows part of the code for the class, which keeps details of a case:\nCase\npublic class Case\n{\nprivate int caseId; // unique id of the case\nprivate String caseClient; // name of the client\nprivate String caseTitle; // e.g. 'property dispute', 'tax evasion' etc\nprivate int daysFromStart; // number of days elapsed from start of case\nprivate char judgmentGiven; // 'N'=no, 'F'=favorable, 'A'=against\nprivate String caseStatus; // open/ won/ lost\npublic Case(int caseID, String caseClient, String casesTitle)\n{\nthis.caseId = caseId;\nthis.caseClient = caseClient;\nthis.casesTitle = casesTitle;\nthis.daysFromStart = 0;\nthis.judgmentGiven = 'N';\nthis.caseStatus = \"open\";\n}\npublic void setCaseStatus(String caseStatus)\n{\nthis.caseStatus = caseStatus;\n}\n// all accessor and mutator methods are present but not shown\npublic void changeCaseStatus(char judgmentGiven)\n{\n/*Code missing*/\n}\n} // end of Case class\n(Option D continues on the following page)\nTurn over\n– 20 – 8825 – 6408\n(Option D, question 10 continued)\nThe class has a main method and other methods to generate the\nLawFirmManagement\ninformation required. The following shows part of the code for the class:\nLawFirmManagement\npublic class LawFirmManagement\n{\nprivate static Lawyer[] allLawyers = new Lawyer[20];\n// array of lawyers\nprivate static TraineeLawyer[] allTrainees = new\nTraineeLawyer[30]; // array of lawyer trainees\npublic static void main(String []args)\n{\n/*Code missing*/\n}\npublic static void displayLawyerNames()\n{\n/*Code missing*/\n}\npublic static void updateLawyerRank(int[][]casesWon)\n{\n/*Code missing*/\n}\n} // end of LawFirmManagement class\n(a) State the purpose of a constructor method. [1]\n(b) Describe how the method given in the\nchangeCaseStatus(char judgmentGiven)\nclass would change the case status. [2]\nCase\n(c) Construct the method in the class.\ndisplayLawyerNames() LawFirmManagement\nThe method should display the names of all civil lawyers who have won more than\n30 cases. [4]\n(d) (i) S tate the purpose of a return statement. [1]\nIf the number of days since the start of a case is more than 45 and no judgment has\nbeen given, it is considered a delayed case. Assume that a method exists that updates\ndays elapsed.\n(ii) Construct the method signature for in which the method\ncountDelayedCases\ntakes a lawyer’s ID as a parameter and returns the total number of delayed\ncases that the lawyer has. [2]\n(iii) Construct the complete code for the method constructed\ncountDelayedCases\nin part (d)(ii). [5]\n(Option D continues on the following page)\n– 21 – 8825 – 6408\n(Option D continued)\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-21.png",
+          "source_pdf_page": 21,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_render",
+          "description": "Shared full source question context, table,code or figure inspected.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-19.png",
+          "source_pdf_page": 19,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_render",
+          "description": "Shared full source question context, table,code or figure inspected.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-20.png",
+          "source_pdf_page": 20,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct programs that apply arrays and Lists.",
+        "Construct programs utilizing appropriate selection structures.",
+        "Construct programs that utilize looping structures to perform repeated actions."
+      ],
+      "difficulty": "high",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-041",
+        "filename": "Computer_science_paper_2_SL_markscheme.pdf",
+        "pdf_pages": [
+          31
+        ],
+        "question_reference": "10(d-iii)",
+        "marking_summary": "Find lawyer,iterate cases,days>45 andnojudgment,count/return.",
+        "source_issues": [
+          "Source Case constructor has caseID/caseId and casesTitle/caseTitle identifier errors; source-only code retained faithfully, corrected Python interfaces supplied in practice.",
+          "Source MS PDF31 example2 omits the return statement required by its int signature; adaptation returns the count."
+        ]
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Existing-object nested traversal with null guard; exact boundary and missing ID defined.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Existing-object nested traversal with null guard; exact boundary and missing ID defined.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "Existing-object nested traversal with null guard; exact boundary and missing ID defined.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [
+        "Source Case constructor has caseID/caseId and casesTitle/caseTitle identifier errors; source-only code retained faithfully, corrected Python interfaces supplied in practice."
+      ],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Construct countDelayedCases implementation.",
+      "context_synopsis": "Java Lawyer,Case and LawFirmManagement classes on PDF19–21. Original constructors contain identifier errors; complete source code is retained as source-only evidence.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-021.txt"
+      ],
+      "context_pdf_pages": [
+        19,
+        20
+      ],
+      "mark_allocation_pdf_page": 21,
+      "context_printed_pages": [
+        "18",
+        "19"
+      ],
+      "raw_context_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-019.txt",
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-020.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC040-Q11-a-i",
+      "source_id": "SRC-040",
+      "source_filename": "Computer_science_paper_2_SL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": "11",
+      "subquestion": "a-i",
+      "source_pdf_pages": [
+        22
+      ],
+      "source_printed_pages": [
+        "21"
+      ],
+      "original_marks": 2,
+      "command_term": "Identify",
+      "original_text": "(i) Identify a suitable data type for each additional attribute in the\nTraineeLawyer\nclass. [2]",
+      "parent_context": "11. The law firm employs trainee lawyers who work under senior lawyers for one year and then\nsit an examination. On successful completion, they become full lawyers.\nThe class has been created. A trainee lawyer is a lawyer with two additional\nTraineeLawyer\nattributes: joining date and exam status.\n(a) (i) Identify a suitable data type for each additional attribute in the\nTraineeLawyer\nclass. [2]\n(ii) Construct a detailed class diagram including attributes, methods, and relationship.\nThe diagram must include the class and the class. [4]\nLawyer TraineeLawyer\n(b) (i) State the relationship between the class and the class. [1]\nTraineeLawyer Lawyer\n(ii) State the relationship between the class and the class. [1]\nLawyer Case\n(iii) Describe the difference between the two relationships stated in part (b)(i) and\npart (b)(ii). [4]\n(c) Outline what is meant by the term encapsulation. [2]\n(d) Define the term parent object. [1]\n(Option D continues on the following page)\nTurn over\n– 22 – 8825 – 6408\n(Option D continued)\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-22.png",
+          "source_pdf_page": 22,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct and trace programs using a range of global and local variables of various data types."
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-041",
+        "filename": "Computer_science_paper_2_SL_markscheme.pdf",
+        "pdf_pages": [
+          32
+        ],
+        "question_reference": "11(a-i)",
+        "marking_summary": "Date/string and boolean.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.1.1",
+          "scope_evidence": "• Data types: Boolean value, char, decimal, integer, string",
+          "rationale": "Use required Python primitive types, not an imposed Java date class.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Identify types for joining date and exam status.",
+      "context_synopsis": "TraineeLawyer extends Lawyer with joining date and examination status; Lawyer holds Case references.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "shared_class_context_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-019.txt",
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-020.txt",
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-021.txt"
+      ],
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-022.txt"
+      ],
+      "context_pdf_pages": [
+        19,
+        20,
+        21
+      ],
+      "mark_allocation_pdf_page": 22,
+      "context_printed_pages": [
+        "18",
+        "19",
+        "20"
+      ],
+      "raw_context_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-019.txt",
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-020.txt",
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-021.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC040-Q11-a-ii",
+      "source_id": "SRC-040",
+      "source_filename": "Computer_science_paper_2_SL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": "11",
+      "subquestion": "a-ii",
+      "source_pdf_pages": [
+        22
+      ],
+      "source_printed_pages": [
+        "21"
+      ],
+      "original_marks": 4,
+      "command_term": "Construct",
+      "original_text": "(ii) Construct a detailed class diagram including attributes, methods, and relationship.\nThe diagram must include the class and the class. [4]",
+      "parent_context": "11. The law firm employs trainee lawyers who work under senior lawyers for one year and then\nsit an examination. On successful completion, they become full lawyers.\nThe class has been created. A trainee lawyer is a lawyer with two additional\nTraineeLawyer\nattributes: joining date and exam status.\n(a) (i) Identify a suitable data type for each additional attribute in the\nTraineeLawyer\nclass. [2]\n(ii) Construct a detailed class diagram including attributes, methods, and relationship.\nThe diagram must include the class and the class. [4]\nLawyer TraineeLawyer\n(b) (i) State the relationship between the class and the class. [1]\nTraineeLawyer Lawyer\n(ii) State the relationship between the class and the class. [1]\nLawyer Case\n(iii) Describe the difference between the two relationships stated in part (b)(i) and\npart (b)(ii). [4]\n(c) Outline what is meant by the term encapsulation. [2]\n(d) Define the term parent object. [1]\n(Option D continues on the following page)\nTurn over\n– 22 – 8825 – 6408\n(Option D continued)\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-22.png",
+          "source_pdf_page": 22,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct a design of classes, their methods and behaviour.",
+        "Explain and apply the concept of inheritance in OOP to promote code reusability."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-041",
+        "filename": "Computer_science_paper_2_SL_markscheme.pdf",
+        "pdf_pages": [
+          32
+        ],
+        "question_reference": "11(a-ii)",
+        "marking_summary": "Superclass attributes/methods,subclass added fields and inheritance.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B3.1.2",
+          "scope_evidence": "• Classes and their methods, based on application requirements\n• The use of unified modelling language (UML) class diagrams to represent class relationships, attributes and methods, to aid effective software design and planning",
+          "rationale": "Translate UML class design and inheritance with explicitly supplied members; inheritance is 2027 HL-only despite old SL source.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B3.2.1",
+          "scope_evidence": "• How inheritance enables a hierarchical relationship between parent and child classes\n• Extending existing classes, utilizing inheritance to reuse and extend functionalities\n• The impact of inheritance on access to parent class members with different access modifiers (private, public, protected, default)",
+          "rationale": "Translate UML class design and inheritance with explicitly supplied members; inheritance is 2027 HL-only despite old SL source.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Construct detailed Lawyer/TraineeLawyer class diagram.",
+      "context_synopsis": "TraineeLawyer extends Lawyer with joining date and examination status; Lawyer holds Case references.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "shared_class_context_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-019.txt",
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-020.txt",
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-021.txt"
+      ],
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-022.txt"
+      ],
+      "context_pdf_pages": [
+        19,
+        20,
+        21
+      ],
+      "mark_allocation_pdf_page": 22,
+      "context_printed_pages": [
+        "18",
+        "19",
+        "20"
+      ],
+      "raw_context_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-019.txt",
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-020.txt",
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-021.txt"
+      ]
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC040-Q10-a",
+      "source_question_ids": [
+        "H-SRC040-Q10-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "State the role of __init__ when a new Python object is initialized.",
+      "syllabus_codes": [
+        "B3.1.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 1,
+      "command_term": "State",
+      "difficulty": "low",
+      "adaptation_rationale": "Constructor/initializer role explicitly scoped. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "It sets up the new instance’s initial state, such as its attribute values.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Initializes the newly created instance state."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 1,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC040-Q10-b",
+      "source_question_ids": [
+        "H-SRC040-Q10-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct method change_status(self, decision). Set self.status to \"won\" if decision is \"F\" and to \"lost\" if it is \"A\". Leave status unchanged for \"N\".",
+      "syllabus_codes": [
+        "B2.3.2"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Existing-object selection logic, not class creation/constructor evidence. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "def change_status(self, decision):\n    if decision == \"F\":\n        self.status = \"won\"\n    elif decision == \"A\":\n        self.status = \"lost\"",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Correct F branch sets won."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct A branch sets lost, with N unchanged."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 2,
+        "code_execution": "Specific executable boundary and behaviour tests passed; see agents/chunk-2/agent-3-papers-c/technical_checks.json and verify_practice.py."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": [],
+      "code": "def change_status(self, decision):\n    if decision == \"F\":\n        self.status = \"won\"\n    elif decision == \"A\":\n        self.status = \"lost\""
+    },
+    {
+      "question_id": "P-SRC040-Q10-c",
+      "source_question_ids": [
+        "H-SRC040-Q10-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct selected_names(staff). staff is a list of objects with role, name and completed attributes. Return, in list order, the names of staff whose role is \"civil\" and whose completed count is greater than 30.",
+      "syllabus_codes": [
+        "B2.2.2",
+        "B2.3.2",
+        "B2.3.3"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 4,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Translate traversal/filtering of existing objects to Python, without B3.1.4 over-credit. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "def selected_names(staff):\n    result = []\n    for person in staff:\n        if person.role == \"civil\" and person.completed > 30:\n            result.append(person.name)\n    return result",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Traverses every staff object."
+        },
+        {
+          "marks": 1,
+          "criterion": "Tests role equals civil."
+        },
+        {
+          "marks": 1,
+          "criterion": "Tests completed strictly greater than 30 and combines with role."
+        },
+        {
+          "marks": 1,
+          "criterion": "Returns matching names in original order, including empty result if none."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 4,
+        "code_execution": "Specific executable boundary and behaviour tests passed; see agents/chunk-2/agent-3-papers-c/technical_checks.json and verify_practice.py."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": [],
+      "code": "def selected_names(staff):\n    result = []\n    for person in staff:\n        if person.role == \"civil\" and person.completed > 30:\n            result.append(person.name)\n    return result"
+    },
+    {
+      "question_id": "P-SRC040-Q10-d-i",
+      "source_question_ids": [
+        "H-SRC040-Q10-d-i"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "State the effect of return total inside a Python function.",
+      "syllabus_codes": [
+        "B2.3.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 1,
+      "command_term": "State",
+      "difficulty": "low",
+      "adaptation_rationale": "Return values and modular function flow explicitly scoped. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "It ends the current function call and sends the value of total back to the caller.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Ends the call and returns total’s value to caller."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 1,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC040-Q10-d-ii",
+      "source_question_ids": [
+        "H-SRC040-Q10-d-ii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct the Python function header for count_delayed. It receives staff_members and staff_id as parameters and will return an integer count. Type annotations are optional.",
+      "syllabus_codes": [
+        "B2.3.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Python header/parameter interface; annotations optional, not Java type declarations. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "def count_delayed(staff_members, staff_id):",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Correct function name/header syntax."
+        },
+        {
+          "marks": 1,
+          "criterion": "Both parameters correctly supplied; optional accurate annotations accepted."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 2,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC040-Q10-d-iii",
+      "source_question_ids": [
+        "H-SRC040-Q10-d-iii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct count_delayed(staff_members, staff_id). Each staff object has identifier and projects. projects is a list containing project objects or None; each project has days and decision. Count projects belonging to the matching staff identifier with days>45 and decision==\"N\". Staff identifiers are unique. Return 0 if there is no match.",
+      "syllabus_codes": [
+        "B2.2.2",
+        "B2.3.2",
+        "B2.3.3"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 5,
+      "command_term": "Construct",
+      "difficulty": "high",
+      "adaptation_rationale": "Existing-object nested traversal with null guard; exact boundary and missing ID defined. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "def count_delayed(staff_members, staff_id):\n    count = 0\n    for person in staff_members:\n        if person.identifier == staff_id:\n            for project in person.projects:\n                if project is not None and project.days > 45 and project.decision == \"N\":\n                    count += 1\n            return count\n    return 0",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Finds the matching staff identifier."
+        },
+        {
+          "marks": 1,
+          "criterion": "Traverses its projects and ignores None safely."
+        },
+        {
+          "marks": 1,
+          "criterion": "Tests strictly days>45."
+        },
+        {
+          "marks": 1,
+          "criterion": "Requires decision N and increments once per qualifying project."
+        },
+        {
+          "marks": 1,
+          "criterion": "Returns the correct total, including 0 for absent/no qualifying staff."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 5,
+        "code_execution": "Specific executable boundary and behaviour tests passed; see agents/chunk-2/agent-3-papers-c/technical_checks.json and verify_practice.py."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": [],
+      "code": "def count_delayed(staff_members, staff_id):\n    count = 0\n    for person in staff_members:\n        if person.identifier == staff_id:\n            for project in person.projects:\n                if project is not None and project.days > 45 and project.decision == \"N\":\n                    count += 1\n            return count\n    return 0"
+    },
+    {
+      "question_id": "P-SRC040-Q11-a-i",
+      "source_question_ids": [
+        "H-SRC040-Q11-a-i"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Identify suitable Python types for a stored joining date represented as ISO text such as \"2026-09-01\", and a flag indicating whether an examination has been passed.",
+      "syllabus_codes": [
+        "B2.1.1"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Identify",
+      "difficulty": "low",
+      "adaptation_rationale": "Use required Python primitive types, not an imposed Java date class. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "Joining date: str. Passed flag: bool.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "str for the specified text representation."
+        },
+        {
+          "marks": 1,
+          "criterion": "bool for the two-state pass flag."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 2,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC040-Q11-a-ii",
+      "source_question_ids": [
+        "H-SRC040-Q11-a-ii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct a UML class diagram for Staff and Trainee. Staff has identifier: int, name: str and get_name(): str. Trainee is a Staff subclass adding joined: str, passed: bool and set_passed(value: bool): None. Show class compartments and the relationship.",
+      "syllabus_codes": [
+        "B3.1.2",
+        "B3.2.1"
+      ],
+      "theme": "B",
+      "level": "mixed common/HL",
+      "marks": 4,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Translate UML class design and inheritance with explicitly supplied members; inheritance is 2027 HL-only despite old SL source. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "Staff box: identifier: int, name: str; get_name(): str. Trainee box: joined: str, passed: bool; set_passed(value: bool): None. Generalization line has a hollow triangle pointing from Trainee to Staff.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Staff attributes correctly shown in attribute compartment."
+        },
+        {
+          "marks": 1,
+          "criterion": "Staff method correctly shown in method compartment."
+        },
+        {
+          "marks": 1,
+          "criterion": "Trainee’s added attributes/method correctly shown."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct generalization arrow from Trainee toward Staff."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 4,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    }
+  ]
+}

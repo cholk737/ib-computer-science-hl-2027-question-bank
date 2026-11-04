@@ -1,0 +1,83 @@
+{
+  "source_question_id": "H-SRC032-Q01-a-iii",
+  "source_id": "SRC-032",
+  "source_filename": "Computer_science_paper_2__HL (1).pdf",
+  "year": "2023",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "TZ0 (markscheme)",
+  "option": "A",
+  "question": 1,
+  "subquestion": "a-iii",
+  "source_pdf_pages": [
+    3
+  ],
+  "source_printed_pages": [
+    "2"
+  ],
+  "original_marks": 1,
+  "command_term": "State",
+  "original_text": "State the name of the table that contains foreign keys.",
+  "parent_context": "– 2 – 2223 – 7012\nOption A — Databases\n1. Quick Rent-a-Car is a popular car rental company in Chicago. The company stores \ninformation about the cars, customers and rental agreements.\nThe diagram below shows a part of the entity-relationship diagram (ERD) for the  \nQuick Rent-a-Car database.\nCUSTOMER\nCustID\nFName\nSName\nPhone\n…\nRENTAL\nRentalNum\nCustID\nDateOut\nDateRet\nCarID\n…\nCAR\nCarID\nMake\nMan\nYear\nCarSerialNum\n…\n(a) (i)  State the type of relationship between the CUSTOMER table and the  \nRENTAL table. [1]\n(ii) State the name of one primary key. [1]\n(iii) State the name of the table that contains foreign keys. [1]\nSome of the information held in the three tables in the Quick Rent-a-Car database is  \nshown below:\nCUSTOMER\nCustID FName SName Phone …\n4098 Rod Lever 480-9225-9180 …\n6543 Cador Travolta 708-4567-1012 …\n8265 Ella Hanks 605-6543-1056 …\nRENTAL\nRentalNum CustID DateOut DateRet CarID …\n00000001 4098 22/01/2020 25/01/2020 WRE2345 …\n00000002 6543 22/01/2020 23/01/2020 ELA3489 …\n00000003 8265 22/01/2020 26/01/2020 ACC2345 …\n00000004 6543 24/01/2020 29/01/2020 WEM6789 …\n(Option A continues on the following page)\n– 3 – 2223 – 7012\nTurn over\n(Option A, question 1 continued)\nCAR\nCarID Make Man Year CarSerialNum …\nWRE2345 Pacifica Chrysler 2018 5Y2SP670X9Z459140 …\nDEF4567 UX Lexus 2017 2CNDL73F456219488 …\nELA3489 ES350 Lexus 2015 1FTFX28L7VNB18489 …\nWEM6789 Pacifica Chrysler 2018 8YTBN54K8CSD2879 …\nACC2345 UX Lexus 2017 4DFBS43L0MNB3156 …\nDHE7623 EF475 Lexus 2016 2GHKU98P1SWY456 …\n(b) State the result from the following query: [1]\nSELECT  Make\nFROM    CAR\nWHERE Man = \"Lexus\"\nAND Year = 2016;\n(c) Outline two possible validation checks for the CarID attribute. You may assume that \nthe CarID will always be in the format shown. [4]\n(d) Identify the steps to create a query to find the surname (SName) of the customer who \nrented the car from  22 January 2020 (22/01/2020) until 26 January 2020 (26/01/2020). [4]\n(e) Explain why queries would be used to create views of the Quick Rent-a-Car database. [3]\nViews of the database can also be created by using a query language.\n(f) Explain how a data definition language can be used to implement a data model such as \nthe Quick Rent-a-Car database. [3]\n(g) Explain why maintaining data consistency is important in the Quick Rent-a-Car database. [3]\n(Option A continues on the following page)",
+  "assets": [
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-03.png",
+      "source_pdf_page": 3,
+      "visually_verified": true
+    },
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-04.png",
+      "source_pdf_page": 4,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: State the name of the table that contains foreign keys.",
+    "In MEMBER(MemberID PK,Name),LOAN(LoanID PK,MemberID FK,CopyID FK),COPY(CopyID PK,Title),state the table containing foreign keys"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-035",
+    "filename": "Computer_science_paper_2__HL_markscheme (1).pdf",
+    "pdf_pages": [
+      4
+    ],
+    "question_reference": "Q1 a-iii",
+    "marking_summary": "Original RENTAL.",
+    "summary_kind": "author_paraphrase_of_original",
+    "source_marking_leaf_evidence": "Award [1 max]\nRental;",
+    "source_issues": [],
+    "source_marking_evidence": "– 4 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \nOption A — Databases \n1. (a) (i) Award [1 max]\nOne – many;\nOne – one;\n(ii) Award [1 max]\nCustID;\nRentalNum;\nCarID;\n(iii) Award [1 max]\nRental;\n(b) Award [1 max]\nEF475;\n(c) Award [4 max]\nLength Check;\nCharacter count is 7;\nInput mask/Format check;\nLLL0000/3 STRING/TEXT following by 4 INTEGER/NUMBER;\nData Type Check;\nSTRING data type/only alphanumeric and no special characters;\nUniqueness Check\nData is not duplicated\nPresence check;\nCertain attributes must be present/ Data exists;\nMark as [2] and [2]\n(d) Award [4 max]\nAward [1] for selecting the SName from Customer;\nAward [1] for correct tables(both) identified;\nAward [1] for making the CustID comparison;\nAward [1] for writing the correct DateOut and DateRet;\nSELECT SName FROM CUSTOMER\nINNER JOIN RENTAL ON “CUSTOMER.CustID” =\n“RENTAL.CustID”\nWHERE DateOut = “22/01/2020” AND\nDateRet = “26/01/2020”;\nNote: candidates who have used 2 separate queries can be awarded up to 3 marks\nNote: the mark for using both tables cannot be awarded"
+  },
+  "relevance_status": "A",
+  "mappings": [
+    {
+      "syllabus_code": "A3.1.1",
+      "scope_evidence": "• Features: composite keys, foreign keys, primary keys, relationships, tables\n• Benefits of databases: community support, concurrency control, data consistency, data integrity, data retrieval, reduced data duplication, reduced redundancy, reliable transaction processing, scalability, security features\n• Limitations of databases: “big data” scalability issues, design complexity, hierarchical data handling, rigid schema, object-relational impedance mismatch, unstructured data handling",
+      "rationale": "Original and adapted within-scope skill: In MEMBER(MemberID PK,Name),LOAN(LoanID PK,MemberID FK,CopyID FK),COPY(CopyID PK,Title),state the table containing foreign keys; guidance target: Explain the features, benefits and limitations of a relational database.",
+      "theme": "A",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC032-Q01-a-iii"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

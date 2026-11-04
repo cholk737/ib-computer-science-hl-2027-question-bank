@@ -1,0 +1,109 @@
+{
+  "original_assessment_context": "Chronological singly linked gameLog headoldest;Turn(timestamp,from,to,damage). rewindTurns(N,rewinder)restoresdamageforrewinderonlywithinlastNtotalturns;logunchanged;example4eventsWindy→Flamey11,Flamey→Windy4,Windy→Flamey1,Flamey→Windy4.",
+  "source_scope_note": "Original assessed concept classified directly or excluded with reason.",
+  "source_question_id": "H-SRC034-Q18-b",
+  "source_id": "SRC-034",
+  "source_filename": "Computer_science_paper_2__HL.pdf",
+  "year": "2023",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "not stated",
+  "option": "D",
+  "question": "18",
+  "subquestion": "b",
+  "source_pdf_pages": [
+    24
+  ],
+  "source_printed_pages": [
+    "23"
+  ],
+  "original_marks": 6,
+  "command_term": "Explain",
+  "original_text": "[Source PDF page 24]\nrewindTurns\n(b) Explain how to implement the\nrewindTurns(int numberOfTurns, Monster\nmethod using the linked list . [6]\nrewinder) gameLog",
+  "parent_context": "Chronological singly linked gameLog headoldest;Turn(timestamp,from,to,damage). rewindTurns(N,rewinder)restoresdamageforrewinderonlywithinlastNtotalturns;logunchanged;example4eventsWindy→Flamey11,Flamey→Windy4,Windy→Flamey1,Flamey→Windy4.",
+  "assets": [
+    {
+      "kind": "source_page",
+      "description": "Source linkedlisttraversalandselectiverestoration",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-24.png",
+      "source_pdf_page": 24,
+      "visually_verified": true
+    },
+    {
+      "kind": "source_page",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-23.png",
+      "source_pdf_page": 23,
+      "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+    }
+  ],
+  "assessed_concepts": [
+    "Explain: Explain implementation of rewindTurns(numberOfTurns,rewinder) using linkedlistgameLog."
+  ],
+  "difficulty": "high",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-037",
+    "filename": "Computer_science_paper_2__HL_markscheme.pdf",
+    "pdf_pages": [
+      35
+    ],
+    "question_reference": "18(b)",
+    "marking_summary": "Countlog,validateN,locatestartoflastN,walk,filterrecipient,restoredamagewithoutchanginglog.",
+    "source_issues": [
+      "SRC-037 PDF p35: backward traversal is not directly supported by the stated singly linked list. The unofficial algorithm counts the nodes, skips length-n nodes and traverses forward without modifying the log."
+    ]
+  },
+  "relevance_status": "A",
+  "mappings": [
+    {
+      "mapping_target": "original_and_adapted",
+      "syllabus_code": "B4.1.3",
+      "scope_evidence": "• The basic operations on a linked list, such as insertion, deletion, traversal, search",
+      "rationale": "The assessed skill is explicitly named in the cited statement and its guidance; mapping does not credit unassessed scenario topics.",
+      "theme": "B",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+    "marks": "Printed allocation transcribed.",
+    "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+    "official_answer_status": "See source markscheme record"
+  },
+  "original_text_manual_synopsis": "Explain implementation of rewindTurns(numberOfTurns,rewinder) using linkedlistgameLog.",
+  "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+  "source_page_evidence": [
+    {
+      "pdf_page": 24,
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-024.txt"
+    }
+  ],
+  "source_context_page_evidence": [
+    {
+      "pdf_page": 23,
+      "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-23.png",
+      "kind": "complete_original_page_raster",
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-023.txt"
+    },
+    {
+      "pdf_page": 24,
+      "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-24.png",
+      "kind": "complete_original_page_raster",
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-024.txt"
+    }
+  ],
+  "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+  "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2__HL.pdf",
+  "source_issues": [
+    "SRC-037 PDF p35: backward traversal is not directly supported by the stated singly linked list. The unofficial algorithm counts the nodes, skips length-n nodes and traverses forward without modifying the log."
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC034-Q18-b"
+  ]
+}

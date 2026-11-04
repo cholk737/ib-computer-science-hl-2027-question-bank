@@ -1,0 +1,69 @@
+{
+  "question_id": "P-SRC038-Q17-a",
+  "source_question_ids": [
+    "H-SRC038-Q17-a"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "completed is an n-by-4 list of yearly totals, and row i belongs to advisers[i]. An adviser qualifies for rank 1 if some adjacent pair of years each has more than 6 completed requests. Construct update_ranks(advisers, completed). Change qualifying ranks to 1, leave all others unchanged, and return \"No rank changed to 1\" only when no rank actually changes; otherwise return \"Rank updated\".",
+  "syllabus_codes": [
+    "B2.2.2",
+    "B2.3.2",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 7,
+  "command_term": "List",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "One solution:\ndef update_ranks(advisers, completed):\n    changed = False\n    for i in range(len(advisers)):\n        qualifies = False\n        for year in range(3):\n            if completed[i][year] > 6 and completed[i][year+1] > 6:\n                qualifies = True\n        if qualifies and advisers[i].rank != 1:\n            advisers[i].rank = 1\n            changed = True\n    if not changed:\n        return \"No rank changed to 1\"\n    return \"Rank updated\"",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Tracks whether a rank actually changed."
+    },
+    {
+      "marks": 1,
+      "criterion": "Processes every corresponding row/adviser."
+    },
+    {
+      "marks": 1,
+      "criterion": "Checks only valid adjacent pairs0–1, 1–2, 2–3."
+    },
+    {
+      "marks": 1,
+      "criterion": "Both values must individually exceed6."
+    },
+    {
+      "marks": 1,
+      "criterion": "Sets qualifying adviser rank to 1."
+    },
+    {
+      "marks": 1,
+      "criterion": "Distinguishes already-rank 1 from a new change."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns correct message from change flag."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed nonadjacent highs,adjacent qualification,strict boundary and already-ranked repeat.",
+    "source_comparison": [
+      45
+    ],
+    "test_code": "def update_ranks(advisers, completed):\n    changed = False\n    for i in range(len(advisers)):\n        qualifies = False\n        for year in range(3):\n            if completed[i][year] > 6 and completed[i][year+1] > 6:\n                qualifies = True\n        if qualifies and advisers[i].rank != 1:\n            advisers[i].rank = 1\n            changed = True\n    if not changed:\n        return \"No rank changed to 1\"\n    return \"Rank updated\"\nfrom types import SimpleNamespace as O\nx=[O(rank=0),O(rank=0),O(rank=1),O(rank=0)]\nassert update_ranks(x,[[7,1,7,1],[1,7,8,1],[8,8,1,1],[6,7,6,7]])=='Rank updated'\nassert [a.rank for a in x]==[0,1,1,0]\nassert update_ranks(x,[[7,1,7,1],[1,7,8,1],[8,8,1,1],[6,7,6,7]])=='No rank changed to 1' ",
+    "result_file": ""
+  },
+  "code": "def update_ranks(advisers, completed):\n    changed = False\n    for i in range(len(advisers)):\n        qualifies = False\n        for year in range(3):\n            if completed[i][year] > 6 and completed[i][year+1] > 6:\n                qualifies = True\n        if qualifies and advisers[i].rank != 1:\n            advisers[i].rank = 1\n            changed = True\n    if not changed:\n        return \"No rank changed to 1\"\n    return \"Rank updated\"",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC038-Q17-a.json",
+  "question_path": "question-bank/questions/P-SRC038-Q17-a.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC038-Q17-a.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

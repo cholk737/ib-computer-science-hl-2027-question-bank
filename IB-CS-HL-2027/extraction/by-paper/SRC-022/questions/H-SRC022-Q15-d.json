@@ -1,0 +1,91 @@
+{
+  "source_question_id": "H-SRC022-Q15-d",
+  "source_id": "SRC-022",
+  "source_filename": "Computer_science_paper_1_HL.pdf",
+  "year": "2025",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "not stated",
+  "option": "",
+  "question": "15",
+  "subquestion": "d",
+  "source_pdf_pages": [
+    9,
+    10
+  ],
+  "source_printed_pages": [
+    "8",
+    "9"
+  ],
+  "original_marks": 5,
+  "command_term": "Construct",
+  "original_text": "(d) Construct an algorithm in pseudocode for the sub-program\nidentify(MAT,N)\nas described. [5]",
+  "parent_context": "15. A two-dimensional array is also known as a matrix.\nA square matrix is a matrix with the same number of rows and columns.\nFigure 1: Example data stored in four square matrices:\n, , , and\nAMAT BMAT CMAT DMAT\nAMAT BMAT\n[0] [1] [2] [3] [4] [0] [1] [2] [3]\n[0] 2 4 1 4 5 [0] 1 0 0 0\n[1] 0 5 7 0 6 [1] 3 6 0 0\n[2] 0 0 3 2 2 [2] 4 0 7 0\n[3] 0 0 0 2 3 [3] 0 3 2 0\n[4] 0 0 0 0 9\nCMAT DMAT\n[0] [1] [2] [0] [1] [2] [3]\n[0] 2 0 0 [0] 1 5 0 0\n[1] 0 5 0 [1] 3 6 9 0\n[2] 0 0 3 [2] 4 0 7 1\n[3] 0 3 2 0\nThe main diagonal is the set of elements that run from the upper left-hand corner of the\nmatrix to the lower right-hand corner of the matrix.\n(a) State all the main diagonal elements in the matrix in Figure 1. [1]\nDMAT\n(b) Describe the process to check whether an element of a matrix is a main\ndiagonal element. [2]\nIn an upper triangular matrix, all entries below the main diagonal are 0.\nThe sub-program accepts a square matrix and an integer\nisUpper(MAT,N) MAT N\nthat represents the number of rows and columns.\nIt returns if is an upper triangular matrix; otherwise it returns .\nTRUE MAT FALSE\n(This question continues on the following page)\n– 9 – 8825 – 6404\n(Question 15 continued)\nFor example, from Figure 1:\nreturns\nisUpper(AMAT,5) TRUE\nreturns\nisUpper(CMAT,3) TRUE\nreturns\nisUpper(DMAT,4) FALSE\nreturns\nisUpper(BMAT,4) FALSE\n(c) Construct an algorithm in pseudocode for the sub-program\nisUpper(MAT,N)\nas described. [7]\nIn a lower triangular matrix, all entries above the main diagonal are 0.\nThe sub-program accepts a square matrix and an integer\nisLower(MAT,N) MAT N\nthat represents the number of rows and columns.\nIt returns if is a lower triangular matrix; otherwise it returns .\nTRUE MAT FALSE\nFor example, from Figure 1:\nreturns\nisLower(AMAT,5) FALSE\nreturns\nisLower(CMAT,3) TRUE\nThe sub-program calls sub-programs and\nidentify(MAT,N) isLower(MAT,N)\nto determine and output whether the square matrix is:\nisUpper(MAT,N) MAT\ny upper triangular\ny lower triangular\ny both upper and lower triangular\ny none of the above.\nFor example, from Figure 1:\nshould output ‘ UPPER ’\nidentify(AMAT,5)\nshould output ‘ LOWER ’\nidentify(BMAT,4)\nshould output ‘ BOTH ’\nidentify(CMAT,3)\nshould output ‘ NONE ’\nidentify(DMAT,4)\n(d) Construct an algorithm in pseudocode for the sub-program\nidentify(MAT,N)\nas described. [5]",
+  "assets": [
+    {
+      "kind": "source_page_render",
+      "description": "Full source page inspected; includes all question context, source code/figures where present.",
+      "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-022/renders/page-10.png",
+      "source_pdf_page": 10,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Construct programs utilizing appropriate selection structures.",
+    "Construct functions and modularization."
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-023",
+    "filename": "Computer_science_paper_1_HL_markscheme.pdf",
+    "pdf_pages": [
+      23
+    ],
+    "question_reference": "15(d)",
+    "marking_summary": "Callsupper/lowerhelpersandcoversfourBooleancombinations.",
+    "source_issues": []
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B2.3.2",
+      "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+      "rationale": "Combinemodularpredicateswithfourmutuallyexclusiveoutcomes.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B2.3.4",
+      "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+      "rationale": "Combinemodularpredicateswithfourmutuallyexclusiveoutcomes.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "transcribed from original PDF and compared with rendered page",
+    "source_marks": "checked against printed allocation and official MS",
+    "visual_review": "full question page inspected",
+    "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+  },
+  "original_text_synopsis": "Construct an algorithm in pseudocode for the sub-program identify(MAT,N)as described.",
+  "context_synopsis": "OriginalFigure1PDF9:AMAT5x5upper;BMAT4x4lower;CMAT3x3diagonal;DMAT=[[1,5,0,0],[3,6,9,0],[4,0,7,1],[0,3,2,0]]. Main diagonali=j.Upperrequiresallbelowdiagonalzero;lowerrequiresallabovezero.",
+  "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+  "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+  "raw_source_page_transcriptions": [
+    "agents/chunk-2/agent-3-papers-c/papers/SRC-022/transcription/pdf-page-009.txt",
+    "agents/chunk-2/agent-3-papers-c/papers/SRC-022/transcription/pdf-page-010.txt"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC022-Q15-d"
+  ]
+}

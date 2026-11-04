@@ -1,0 +1,76 @@
+{
+  "source_question_id": "H-SRC038-Q04-e",
+  "source_id": "SRC-038",
+  "source_filename": "Computer_science_paper_2_HL.pdf",
+  "year": "2025",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "not stated",
+  "option": "A",
+  "question": 4,
+  "subquestion": "e",
+  "source_pdf_pages": [
+    8
+  ],
+  "source_printed_pages": [
+    "7"
+  ],
+  "original_marks": 3,
+  "command_term": "Explain",
+  "original_text": "Explain why the three processes of extract, transform, and load (ETL) need to be applied to treatment data.",
+  "parent_context": "– 7 – 8825 – 6405\nTurn over\n(Option A continued)\n4. A characteristic of an object-oriented database is object hierarchy. This is where objects are \norganized into classes and subclasses.\n(a) (i)   Identify three other characteristics of an object-oriented database. [3]\nA multi-dimensional database could offer significant advantages for analysing the \ndental treatment data of patients.\n(ii) Describe one advantage of having dental treatment data organized  \ninto dimensions. [3]\nThe dental clinic uses data matching to review patients’ past medical treatments.\n(b) Explain one reason why data matching is an appropriate method of reviewing patients’ \npast medical treatments. [3]\nThe dental clinic has decided to use forecasting, a sub-branch of data mining, in its database.\n(c) Outline two research areas to which the dental clinic could apply forecasting. [4]\nThe dental clinic has decided to apply database segmentation to focus on specific  \npatient groups.\n(d) Justify applying database segmentation to focus on specific patient groups. [4]\nThe dental regulatory authority uses a data warehouse to store the treatment data from \nmultiple clinics.\n(e) Explain why the three processes of extract, transform, and load (ETL) need to be \napplied to treatment data. [3]\nEnd of Option A",
+  "assets": [
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-08.png",
+      "source_pdf_page": 8,
+      "visually_verified": false
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Explain why the three processes of extract, transform, and load (ETL) need to be applied to treatment data.",
+    "Explain why combining different branch records in a data warehouse requires consistent identifiers and formats"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-039",
+    "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+    "pdf_pages": [
+      14
+    ],
+    "question_reference": "Q4 e",
+    "marking_summary": "Exact original MS leaf excerpt: Award [3] max Award [1] per point for extraction, [1] for transform, and [1] for load; Extract: identification of the data sources used by the various clinics (e.g., databases, cloud storage, spreadsheets etc); the warehouse will need different extraction processes for the different sources/file formats; retrieving the data either by incremental or full extraction strategies; validating the extraction process to ensure no data was lost; Transform: data warehouse needs data in a consistent format (standard data structure) so transforming data is needed; processes also clean the data, correcting inaccuracies, removing duplicates, and dealing with missing values to ensure data integrity; there may be need to augment data with generated aggregates; Load: transferring the data into appropriate data warehouse schema (e.g. tables, dimensions, and facts). there is need to verify the transfer pro … [full leaf evidence retained]",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [3] max\nAward [1] per point for extraction, [1] for transform, and [1] for load;\nExtract:\nidentification of the data sources used by the various clinics (e.g., databases, cloud\nstorage, spreadsheets etc);\nthe warehouse will need different extraction processes for the different sources/file\nformats;\nretrieving the data either by incremental or full extraction strategies;\nvalidating the extraction process to ensure no data was lost;\nTransform:\ndata warehouse needs data in a consistent format (standard data structure) so\ntransforming data is needed;\nprocesses also clean the data, correcting inaccuracies, removing duplicates, and\ndealing with missing values to ensure data integrity;\nthere may be need to augment data with generated aggregates;\nLoad:\ntransferring the data into appropriate data warehouse schema (e.g. tables, dimensions,\nand facts).\nthere is need to verify the transfer process to ensure all expected data was successfully\nwritten to the data warehouse;\n\nOption B — Modelling and simulation",
+    "source_issues": [],
+    "source_marking_evidence": "– 14 – 8825 – 6405M \n(e) Award [3] max\nAward [1] per point for extraction, [1] for transform, and [1] for load;\nExtract:\nidentification of the data sources used by the various clinics (e.g., databases, cloud\nstorage, spreadsheets etc);\nthe warehouse will need different extraction processes for the different sources/file\nformats;\nretrieving the data either by incremental or full extraction strategies;\nvalidating the extraction process to ensure no data was lost;\nTransform:\ndata warehouse needs data in a consistent format (standard data structure) so\ntransforming data is needed;\nprocesses also clean the data, correcting inaccuracies, removing duplicates, and\ndealing with missing values to ensure data integrity;\nthere may be need to augment data with generated aggregates;\nLoad:\ntransferring the data into appropriate data warehouse schema (e.g. tables, dimensions,\nand facts).\nthere is need to verify the transfer process to ensure all expected data was successfully\nwritten to the data warehouse;"
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "A3.4.2",
+      "scope_evidence": "• The roles of append-only data, subject-oriented data, integrated data, time-variant data, non-volatile data and data optimized for query performance, to ensure efficient data storage and analysis",
+      "rationale": "Adapted target only: Explain why combining different branch records in a data warehouse requires consistent identifiers and formats; guidance target: Explain the primary objectives of data warehouses in data management and business intelligence. Adaptation: Retains warehouse integration reasoning; detailed ETL stages/strategies are outside the assessed requirement.",
+      "theme": "A",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC038-Q04-e"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

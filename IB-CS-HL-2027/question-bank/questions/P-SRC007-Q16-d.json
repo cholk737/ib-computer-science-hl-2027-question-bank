@@ -1,0 +1,20 @@
+{
+  "question_id": "P-SRC007-Q16-d",
+  "source_question_ids": [
+    "H-SRC007-Q16-d"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Trace the program, listing the values popped, the running product after each pop, and final output.\n\nstack = []\nn = 5\nwhile n > 1:\n    stack.append(n)\n    n -= 1\nproduct = 1\nwhile stack:\n    n = stack.pop()\n    product *= n\nprint(product)",
+  "syllabus_codes": [
+    "B2.2.3",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 3,
+  "command_term": "Trace",
+  "difficulty": "medium",
+  "adaptation_rationale": "Translate abstract stack to Python list push/pop maintaining LIFO trace. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "assets": []
+}

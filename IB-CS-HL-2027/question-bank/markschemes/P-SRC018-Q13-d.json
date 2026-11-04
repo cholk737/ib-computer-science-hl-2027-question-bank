@@ -36,5 +36,6 @@
   },
   "code": "def reverse_using_queue(stack,queue):\n    while not stack.isEmpty():\n        queue.enqueue(stack.pop())\n    while not queue.isEmpty():\n        stack.push(queue.dequeue())",
   "test_code": "class Stack:\n def __init__(self,v): self.v=list(v)\n def isEmpty(self): return not self.v\n def pop(self): return self.v.pop()\n def push(self,x): self.v.append(x)\nclass Queue:\n def __init__(self): self.v=[]\n def isEmpty(self): return not self.v\n def enqueue(self,x): self.v.append(x)\n def dequeue(self): return self.v.pop(0)\ns=Stack([\"A\",\"B\",\"C\"]);q=Queue();reverse_using_queue(s,q)\nassert s.v==[\"C\",\"B\",\"A\"] and q.isEmpty()\ns=Stack([]);q=Queue();reverse_using_queue(s,q);assert s.isEmpty()",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

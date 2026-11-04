@@ -1,0 +1,59 @@
+{
+  "question_id": "P-SRC042-Q08-e",
+  "source_question_ids": [
+    "H-SRC042-Q08-e"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Explain how transfer learning and data cleaning can help develop a useful ML text classifier from a small task-specific dataset.",
+  "syllabus_codes": [
+    "A4.1.1",
+    "A4.2.1"
+  ],
+  "theme": "A",
+  "level": "HL-only/SL/HL common",
+  "marks": 5,
+  "command_term": "Explain",
+  "difficulty": "high",
+  "adaptation_rationale": "Retains supported transfer/data quality subsets; does not introduce transformer attention, NLPembeddings or historical research requirements.",
+  "solution": "Transfer learning reuses a model trained on a related larger task/dataset.; Its learned representations provide a starting point rather than learning everything from scratch.; Adapting it to the target task can reduce the amount of task-specific training required.; Cleaning removes incorrect, duplicate or mislabelled examples that distort learning.; The adapted model still needs evaluation on relevant data; transfer does not guarantee accuracy if the source and target differ substantially.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Transfer learning reuses a model trained on a related larger task/dataset."
+    },
+    {
+      "marks": 1,
+      "criterion": "Its learned representations provide a starting point rather than learning everything from scratch."
+    },
+    {
+      "marks": 1,
+      "criterion": "Adapting it to the target task can reduce the amount of task-specific training required."
+    },
+    {
+      "marks": 1,
+      "criterion": "Cleaning removes incorrect, duplicate or mislabelled examples that distort learning."
+    },
+    {
+      "marks": 1,
+      "criterion": "The adapted model still needs evaluation on relevant data; transfer does not guarantee accuracy if the source and target differ substantially."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "No executable code required; manual technical check."
+  },
+  "code": "",
+  "test_code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC042-Q08-e.json",
+  "question_path": "question-bank/questions/P-SRC042-Q08-e.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC042-Q08-e.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

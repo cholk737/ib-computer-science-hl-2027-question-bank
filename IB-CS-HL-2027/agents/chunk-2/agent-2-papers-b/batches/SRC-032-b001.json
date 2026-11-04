@@ -53,7 +53,9 @@
           4
         ],
         "question_reference": "Q1 a-i",
-        "marking_summary": "One-to-many.",
+        "marking_summary": "Exact original MS leaf excerpt: Award [1 max] One – many; One – one;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [1 max]\nOne – many;\nOne – one;",
         "source_issues": [],
         "source_marking_evidence": "– 4 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \nOption A — Databases \n1. (a) (i) Award [1 max]\nOne – many;\nOne – one;\n(ii) Award [1 max]\nCustID;\nRentalNum;\nCarID;\n(iii) Award [1 max]\nRental;\n(b) Award [1 max]\nEF475;\n(c) Award [4 max]\nLength Check;\nCharacter count is 7;\nInput mask/Format check;\nLLL0000/3 STRING/TEXT following by 4 INTEGER/NUMBER;\nData Type Check;\nSTRING data type/only alphanumeric and no special characters;\nUniqueness Check\nData is not duplicated\nPresence check;\nCertain attributes must be present/ Data exists;\nMark as [2] and [2]\n(d) Award [4 max]\nAward [1] for selecting the SName from Customer;\nAward [1] for correct tables(both) identified;\nAward [1] for making the CustID comparison;\nAward [1] for writing the correct DateOut and DateRet;\nSELECT SName FROM CUSTOMER\nINNER JOIN RENTAL ON “CUSTOMER.CustID” =\n“RENTAL.CustID”\nWHERE DateOut = “22/01/2020” AND\nDateRet = “26/01/2020”;\nNote: candidates who have used 2 separate queries can be awarded up to 3 marks\nNote: the mark for using both tables cannot be awarded"
       },
@@ -62,7 +64,7 @@
         {
           "syllabus_code": "A3.1.1",
           "scope_evidence": "• Features: composite keys, foreign keys, primary keys, relationships, tables\n• Benefits of databases: community support, concurrency control, data consistency, data integrity, data retrieval, reduced data duplication, reduced redundancy, reliable transaction processing, scalability, security features\n• Limitations of databases: “big data” scalability issues, design complexity, hierarchical data handling, rigid schema, object-relational impedance mismatch, unstructured data handling",
-          "rationale": "Each member can make many loans; each loan belongs to exactly one member assesses Explain the features, benefits and limitations of a relational database.",
+          "rationale": "Original and adapted within-scope skill: Each member can make many loans; each loan belongs to exactly one member; guidance target: Explain the features, benefits and limitations of a relational database.",
           "theme": "A",
           "level": "SL/HL common",
           "confidence": "high",
@@ -74,7 +76,7 @@
       "verification": {
         "source_text": "Read complete source page and matched leaf/mark to original PDF.",
         "markscheme": "Read cited MS page(s).",
-        "visual": "No visual required by this leaf.",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
         "technical": "Independently reasoned and compared with available source marking points."
       },
       "adaptation_reuse_question_id": "",
@@ -134,6 +136,8 @@
         ],
         "question_reference": "Q1 a-ii",
         "marking_summary": "Original CustID,RentalNum or CarID.",
+        "summary_kind": "author_paraphrase_of_original",
+        "source_marking_leaf_evidence": "Award [1 max]\nCustID;\nRentalNum;\nCarID;",
         "source_issues": [],
         "source_marking_evidence": "– 4 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \nOption A — Databases \n1. (a) (i) Award [1 max]\nOne – many;\nOne – one;\n(ii) Award [1 max]\nCustID;\nRentalNum;\nCarID;\n(iii) Award [1 max]\nRental;\n(b) Award [1 max]\nEF475;\n(c) Award [4 max]\nLength Check;\nCharacter count is 7;\nInput mask/Format check;\nLLL0000/3 STRING/TEXT following by 4 INTEGER/NUMBER;\nData Type Check;\nSTRING data type/only alphanumeric and no special characters;\nUniqueness Check\nData is not duplicated\nPresence check;\nCertain attributes must be present/ Data exists;\nMark as [2] and [2]\n(d) Award [4 max]\nAward [1] for selecting the SName from Customer;\nAward [1] for correct tables(both) identified;\nAward [1] for making the CustID comparison;\nAward [1] for writing the correct DateOut and DateRet;\nSELECT SName FROM CUSTOMER\nINNER JOIN RENTAL ON “CUSTOMER.CustID” =\n“RENTAL.CustID”\nWHERE DateOut = “22/01/2020” AND\nDateRet = “26/01/2020”;\nNote: candidates who have used 2 separate queries can be awarded up to 3 marks\nNote: the mark for using both tables cannot be awarded"
       },
@@ -142,7 +146,7 @@
         {
           "syllabus_code": "A3.1.1",
           "scope_evidence": "• Features: composite keys, foreign keys, primary keys, relationships, tables\n• Benefits of databases: community support, concurrency control, data consistency, data integrity, data retrieval, reduced data duplication, reduced redundancy, reliable transaction processing, scalability, security features\n• Limitations of databases: “big data” scalability issues, design complexity, hierarchical data handling, rigid schema, object-relational impedance mismatch, unstructured data handling",
-          "rationale": "MEMBER(MemberID,Name),LOAN(LoanID,MemberID,CopyID) and COPY(CopyID,Title) use their first field as primary key assesses Explain the features, benefits and limitations of a relational database.",
+          "rationale": "Original and adapted within-scope skill: MEMBER(MemberID,Name),LOAN(LoanID,MemberID,CopyID) and COPY(CopyID,Title) use their first field as primary key; guidance target: Explain the features, benefits and limitations of a relational database.",
           "theme": "A",
           "level": "SL/HL common",
           "confidence": "high",
@@ -154,7 +158,7 @@
       "verification": {
         "source_text": "Read complete source page and matched leaf/mark to original PDF.",
         "markscheme": "Read cited MS page(s).",
-        "visual": "No visual required by this leaf.",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
         "technical": "Independently reasoned and compared with available source marking points."
       },
       "adaptation_reuse_question_id": "",
@@ -214,6 +218,8 @@
         ],
         "question_reference": "Q1 a-iii",
         "marking_summary": "Original RENTAL.",
+        "summary_kind": "author_paraphrase_of_original",
+        "source_marking_leaf_evidence": "Award [1 max]\nRental;",
         "source_issues": [],
         "source_marking_evidence": "– 4 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \nOption A — Databases \n1. (a) (i) Award [1 max]\nOne – many;\nOne – one;\n(ii) Award [1 max]\nCustID;\nRentalNum;\nCarID;\n(iii) Award [1 max]\nRental;\n(b) Award [1 max]\nEF475;\n(c) Award [4 max]\nLength Check;\nCharacter count is 7;\nInput mask/Format check;\nLLL0000/3 STRING/TEXT following by 4 INTEGER/NUMBER;\nData Type Check;\nSTRING data type/only alphanumeric and no special characters;\nUniqueness Check\nData is not duplicated\nPresence check;\nCertain attributes must be present/ Data exists;\nMark as [2] and [2]\n(d) Award [4 max]\nAward [1] for selecting the SName from Customer;\nAward [1] for correct tables(both) identified;\nAward [1] for making the CustID comparison;\nAward [1] for writing the correct DateOut and DateRet;\nSELECT SName FROM CUSTOMER\nINNER JOIN RENTAL ON “CUSTOMER.CustID” =\n“RENTAL.CustID”\nWHERE DateOut = “22/01/2020” AND\nDateRet = “26/01/2020”;\nNote: candidates who have used 2 separate queries can be awarded up to 3 marks\nNote: the mark for using both tables cannot be awarded"
       },
@@ -222,7 +228,7 @@
         {
           "syllabus_code": "A3.1.1",
           "scope_evidence": "• Features: composite keys, foreign keys, primary keys, relationships, tables\n• Benefits of databases: community support, concurrency control, data consistency, data integrity, data retrieval, reduced data duplication, reduced redundancy, reliable transaction processing, scalability, security features\n• Limitations of databases: “big data” scalability issues, design complexity, hierarchical data handling, rigid schema, object-relational impedance mismatch, unstructured data handling",
-          "rationale": "In MEMBER(MemberID PK,Name),LOAN(LoanID PK,MemberID FK,CopyID FK),COPY(CopyID PK,Title),state the table containing foreign keys assesses Explain the features, benefits and limitations of a relational database.",
+          "rationale": "Original and adapted within-scope skill: In MEMBER(MemberID PK,Name),LOAN(LoanID PK,MemberID FK,CopyID FK),COPY(CopyID PK,Title),state the table containing foreign keys; guidance target: Explain the features, benefits and limitations of a relational database.",
           "theme": "A",
           "level": "SL/HL common",
           "confidence": "high",
@@ -234,7 +240,7 @@
       "verification": {
         "source_text": "Read complete source page and matched leaf/mark to original PDF.",
         "markscheme": "Read cited MS page(s).",
-        "visual": "No visual required by this leaf.",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
         "technical": "Independently reasoned and compared with available source marking points."
       },
       "adaptation_reuse_question_id": "",
@@ -294,6 +300,8 @@
         ],
         "question_reference": "Q1 b",
         "marking_summary": "Original query returns EF475.",
+        "summary_kind": "author_paraphrase_of_original",
+        "source_marking_leaf_evidence": "Award [1 max]\nEF475;",
         "source_issues": [],
         "source_marking_evidence": "– 4 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \nOption A — Databases \n1. (a) (i) Award [1 max]\nOne – many;\nOne – one;\n(ii) Award [1 max]\nCustID;\nRentalNum;\nCarID;\n(iii) Award [1 max]\nRental;\n(b) Award [1 max]\nEF475;\n(c) Award [4 max]\nLength Check;\nCharacter count is 7;\nInput mask/Format check;\nLLL0000/3 STRING/TEXT following by 4 INTEGER/NUMBER;\nData Type Check;\nSTRING data type/only alphanumeric and no special characters;\nUniqueness Check\nData is not duplicated\nPresence check;\nCertain attributes must be present/ Data exists;\nMark as [2] and [2]\n(d) Award [4 max]\nAward [1] for selecting the SName from Customer;\nAward [1] for correct tables(both) identified;\nAward [1] for making the CustID comparison;\nAward [1] for writing the correct DateOut and DateRet;\nSELECT SName FROM CUSTOMER\nINNER JOIN RENTAL ON “CUSTOMER.CustID” =\n“RENTAL.CustID”\nWHERE DateOut = “22/01/2020” AND\nDateRet = “26/01/2020”;\nNote: candidates who have used 2 separate queries can be awarded up to 3 marks\nNote: the mark for using both tables cannot be awarded"
       },
@@ -302,7 +310,7 @@
         {
           "syllabus_code": "A3.3.2",
           "scope_evidence": "• Queries must include joins, relational operators, filtering, pattern matching, and ordering data\n• SQL commands: SELECT, DISTINCT, FROM, WHERE, BETWEEN, ORDER BY, GROUP BY, HAVING, ASC, DESC, JOIN, LIKE with % wildcard, AND, OR, NOT (note: Syntax may vary in different database systems)",
-          "rationale": "ITEM has rows (Name,Brand,Year):(\"Ridge\",\"Zen\",2020),(\"Vale\",\"Zen\",2021),(\"Bay\",\"Orin\",2021) assesses Construct queries between two tables in SQL.",
+          "rationale": "Adapted target only: ITEM has rows (Name,Brand,Year):(\"Ridge\",\"Zen\",2020),(\"Vale\",\"Zen\",2021),(\"Bay\",\"Orin\",2021); guidance target: Construct queries between two tables in SQL. Adaptation: Retains filtering/result reasoning; full query-between-two-tables coverage is not claimed for this single-table trace.",
           "theme": "A",
           "level": "SL/HL common",
           "confidence": "high",
@@ -314,7 +322,7 @@
       "verification": {
         "source_text": "Read complete source page and matched leaf/mark to original PDF.",
         "markscheme": "Read cited MS page(s).",
-        "visual": "No visual required by this leaf.",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
         "technical": "Independently reasoned and compared with available source marking points."
       },
       "adaptation_reuse_question_id": "",
@@ -373,7 +381,9 @@
           4
         ],
         "question_reference": "Q1 c",
-        "marking_summary": "Check total length is7 so incomplete/overlong values are rejected. Check positions0–2 are A–Z and positions3–6 are0–9 so the required format is enforced.",
+        "marking_summary": "Exact original MS leaf excerpt: Award [4 max] Length Check; Character count is 7; Input mask/Format check; LLL0000/3 STRING/TEXT following by 4 INTEGER/NUMBER; Data Type Check; STRING data type/only alphanumeric and no special characters; Uniqueness Check Data is not duplicated Presence check; Certain attributes must be present/ Data exists; Mark as [2] and [2]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [4 max]\nLength Check;\nCharacter count is 7;\nInput mask/Format check;\nLLL0000/3 STRING/TEXT following by 4 INTEGER/NUMBER;\nData Type Check;\nSTRING data type/only alphanumeric and no special characters;\nUniqueness Check\nData is not duplicated\nPresence check;\nCertain attributes must be present/ Data exists;\nMark as [2] and [2]",
         "source_issues": [],
         "source_marking_evidence": "– 4 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \nOption A — Databases \n1. (a) (i) Award [1 max]\nOne – many;\nOne – one;\n(ii) Award [1 max]\nCustID;\nRentalNum;\nCarID;\n(iii) Award [1 max]\nRental;\n(b) Award [1 max]\nEF475;\n(c) Award [4 max]\nLength Check;\nCharacter count is 7;\nInput mask/Format check;\nLLL0000/3 STRING/TEXT following by 4 INTEGER/NUMBER;\nData Type Check;\nSTRING data type/only alphanumeric and no special characters;\nUniqueness Check\nData is not duplicated\nPresence check;\nCertain attributes must be present/ Data exists;\nMark as [2] and [2]\n(d) Award [4 max]\nAward [1] for selecting the SName from Customer;\nAward [1] for correct tables(both) identified;\nAward [1] for making the CustID comparison;\nAward [1] for writing the correct DateOut and DateRet;\nSELECT SName FROM CUSTOMER\nINNER JOIN RENTAL ON “CUSTOMER.CustID” =\n“RENTAL.CustID”\nWHERE DateOut = “22/01/2020” AND\nDateRet = “26/01/2020”;\nNote: candidates who have used 2 separate queries can be awarded up to 3 marks\nNote: the mark for using both tables cannot be awarded"
       },
@@ -382,7 +392,7 @@
         {
           "syllabus_code": "B2.1.2",
           "scope_evidence": "• Writing of programs that accurately identify and extract substrings from given strings, demonstrating the ability to perform various manipulations, such as altering, concatenating or replacing",
-          "rationale": "Outline two checks a Python input routine can apply to an identifier that must contain exactly three uppercase English letters followed by four decimal digits assesses Construct programs that can extract and manipulate substrings.",
+          "rationale": "Adapted target only: Outline two checks a Python input routine can apply to an identifier that must contain exactly three uppercase English letters followed by four decimal digits; guidance target: Construct programs that can extract and manipulate substrings. Adaptation: Retains string-format validation reasoning but does not claim database validation-check taxonomy is a separate2027 requirement; conversion uses programming/string selection context.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -391,7 +401,7 @@
         {
           "syllabus_code": "B2.3.2",
           "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
-          "rationale": "Outline two checks a Python input routine can apply to an identifier that must contain exactly three uppercase English letters followed by four decimal digits assesses Construct programs utilizing appropriate selection structures.",
+          "rationale": "Adapted target only: Outline two checks a Python input routine can apply to an identifier that must contain exactly three uppercase English letters followed by four decimal digits; guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Retains string-format validation reasoning but does not claim database validation-check taxonomy is a separate2027 requirement; conversion uses programming/string selection context.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -403,7 +413,7 @@
       "verification": {
         "source_text": "Read complete source page and matched leaf/mark to original PDF.",
         "markscheme": "Read cited MS page(s).",
-        "visual": "No visual required by this leaf.",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
         "technical": "Independently reasoned and compared with available source marking points."
       },
       "adaptation_reuse_question_id": "",
@@ -462,7 +472,9 @@
           4
         ],
         "question_reference": "Q1 d",
-        "marking_summary": "One solution:\nSELECT m.Surname FROM Member m JOIN Loan l ON m.MemberID=l.MemberID\nWHERE l.DateOut='2027-03-01' AND l.DateRet='2027-03-05';",
+        "marking_summary": "Exact original MS leaf excerpt: Award [4 max] Award [1] for selecting the SName from Customer; Award [1] for correct tables(both) identified; Award [1] for making the CustID comparison; Award [1] for writing the correct DateOut and DateRet; SELECT SName FROM CUSTOMER INNER JOIN RENTAL ON “CUSTOMER.CustID” = “RENTAL.CustID” WHERE DateOut = “22/01/2020” AND DateRet = “26/01/2020”; Note: candidates who have used 2 separate queries can be awarded up to 3 marks Note: the mark for using both tables cannot be awarded",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [4 max]\nAward [1] for selecting the SName from Customer;\nAward [1] for correct tables(both) identified;\nAward [1] for making the CustID comparison;\nAward [1] for writing the correct DateOut and DateRet;\nSELECT SName FROM CUSTOMER\nINNER JOIN RENTAL ON “CUSTOMER.CustID” =\n“RENTAL.CustID”\nWHERE DateOut = “22/01/2020” AND\nDateRet = “26/01/2020”;\nNote: candidates who have used 2 separate queries can be awarded up to 3 marks\nNote: the mark for using both tables cannot be awarded",
         "source_issues": [
           "Original MS SQL quotes join operands as text literals; adapted SQL uses actual column references."
         ],
@@ -473,7 +485,7 @@
         {
           "syllabus_code": "A3.3.2",
           "scope_evidence": "• Queries must include joins, relational operators, filtering, pattern matching, and ordering data\n• SQL commands: SELECT, DISTINCT, FROM, WHERE, BETWEEN, ORDER BY, GROUP BY, HAVING, ASC, DESC, JOIN, LIKE with % wildcard, AND, OR, NOT (note: Syntax may vary in different database systems)",
-          "rationale": "MEMBER(MemberID,Surname) and LOAN(LoanID,MemberID,DateOut,DateRet) store loans assesses Construct queries between two tables in SQL.",
+          "rationale": "Adapted target only: MEMBER(MemberID,Surname) and LOAN(LoanID,MemberID,DateOut,DateRet) store loans; guidance target: Construct queries between two tables in SQL. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "A",
           "level": "SL/HL common",
           "confidence": "high",
@@ -485,7 +497,7 @@
       "verification": {
         "source_text": "Read complete source page and matched leaf/mark to original PDF.",
         "markscheme": "Read cited MS page(s).",
-        "visual": "No visual required by this leaf.",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
         "technical": "SQLite query executed on matching and nonmatching loans."
       },
       "adaptation_reuse_question_id": "",
@@ -544,7 +556,9 @@
           5
         ],
         "question_reference": "Q1 e",
-        "marking_summary": "The view stores a query definition. Users query it as a table while the DBMS derives rows from underlying tables. It can hide joins/unneeded fields and reflect changes in base data.",
+        "marking_summary": "Exact original MS leaf excerpt: Award [3 max] Used to save frequently used, complex queries; Though a view doesn’t store data, we refer to a views as “virtual tables,” you can query a view like you can a table; A view can combine data from two or more tables, using joins, and also just contain a subset of information; Views don’t store data directly/draw data from tables; This makes them convenient to abstract, or hide, complicated queries; Views automatically update (dynamic) as the data in tables change; (Static/materialised) views capture the query at that moment in time/to allow for faster retrieval with large datasets; Views improve security because you can give access to a view without access to the underlying database; Some types of views allow you to insert / update / delete multiple tables within the one view; Note: must be related to views of queries not queries themselves",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [3 max]\nUsed to save frequently used, complex queries;\nThough a view doesn’t store data, we refer to a views as “virtual tables,”\nyou can query a view like you can a table;\nA view can combine data from two or more tables, using joins, and also just contain\na subset of information;\nViews don’t store data directly/draw data from tables;\nThis makes them convenient to abstract, or hide, complicated queries;\nViews automatically update (dynamic) as the data in tables change;\n(Static/materialised) views capture the query at that moment in time/to allow for faster\nretrieval with large datasets;\nViews improve security because you can give access to a view without access to the\nunderlying database;\nSome types of views allow you to insert / update / delete multiple tables within the one view;\nNote: must be related to views of queries not queries themselves",
         "source_issues": [],
         "source_marking_evidence": "– 5 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \n(e) Award [3 max]\nUsed to save frequently used, complex queries;\nThough a view doesn’t store data, we refer to a views as “virtual tables,”\nyou can query a view like you can a table;\nA view can combine data from two or more tables, using joins, and also just contain\na subset of information;\nViews don’t store data directly/draw data from tables;\nThis makes them convenient to abstract, or hide, complicated queries;\nViews automatically update (dynamic) as the data in tables change;\n(Static/materialised) views capture the query at that moment in time/to allow for faster\nretrieval with large datasets;\nViews improve security because you can give access to a view without access to the\nunderlying database;\nSome types of views allow you to insert / update / delete multiple tables within the one view;\nNote: must be related to views of queries not queries themselves \n(f) Award [3 max]\nA DDL is used to specify the schema of a database / defines parameters and data\nA DDL allows you to define the tables, fields, datatypes e.g CREATE TABLE;\nA DDL allows you to specify keys/create relationships;\nA DDL allows you to modify schema (e.g. DROP, ALTER);\n(g) Award [3 max]\nData about the rents given out will be accurate at any point in time;\ndata written to the database must be valid according to all defined rules, including\nconstraints, cascades, triggers;\nConsistency allows user to trust the data for decision making;\nConsistency is need for transactional operations to be carried out correctly/ACID;\nConsistency allows data to be transferred (to other systems) with confidence;\nConsistency allows data to be analysed using algorithmic tools/multiple formats cannot be\nanalysed accurately;\nConsistency is important or it leads to integrity issues (e.g. foreign keys unlinked to primary\nkeys);\nWithout consistency it leads to confusion and misinterpretation of the data/ need of accuracy;\nCompliance with the car industry may be a legal requirement;"
       },
@@ -553,7 +567,7 @@
         {
           "syllabus_code": "A3.3.5",
           "scope_evidence": "• Virtual views and materialized (snapshot) views\n• Hiding data complexity, data consistency, independence, performance, query simplification, read-only data or updatable data, security",
-          "rationale": "Explain how a virtual database view can simplify access to selected data without storing a separate copy of every displayed result assesses Describe different database views. (HL only)",
+          "rationale": "Original and adapted within-scope skill: Explain how a virtual database view can simplify access to selected data without storing a separate copy of every displayed result; guidance target: Describe different database views. (HL only)",
           "theme": "A",
           "level": "HL-only",
           "confidence": "high",
@@ -565,7 +579,7 @@
       "verification": {
         "source_text": "Read complete source page and matched leaf/mark to original PDF.",
         "markscheme": "Read cited MS page(s).",
-        "visual": "No visual required by this leaf.",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
         "technical": "Independently reasoned and compared with available source marking points."
       },
       "adaptation_reuse_question_id": "",
@@ -624,7 +638,9 @@
           5
         ],
         "question_reference": "Q1 f",
-        "marking_summary": "CREATE TABLE defines tables and typed columns. Primary and foreign key constraints encode identity and relationships. ALTER/DROP can change defined structures when the agreed schema changes.",
+        "marking_summary": "Exact original MS leaf excerpt: Award [3 max] A DDL is used to specify the schema of a database / defines parameters and data A DDL allows you to define the tables, fields, datatypes e.g CREATE TABLE; A DDL allows you to specify keys/create relationships; A DDL allows you to modify schema (e.g. DROP, ALTER);",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [3 max]\nA DDL is used to specify the schema of a database / defines parameters and data\nA DDL allows you to define the tables, fields, datatypes e.g CREATE TABLE;\nA DDL allows you to specify keys/create relationships;\nA DDL allows you to modify schema (e.g. DROP, ALTER);",
         "source_issues": [],
         "source_marking_evidence": "– 5 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \n(e) Award [3 max]\nUsed to save frequently used, complex queries;\nThough a view doesn’t store data, we refer to a views as “virtual tables,”\nyou can query a view like you can a table;\nA view can combine data from two or more tables, using joins, and also just contain\na subset of information;\nViews don’t store data directly/draw data from tables;\nThis makes them convenient to abstract, or hide, complicated queries;\nViews automatically update (dynamic) as the data in tables change;\n(Static/materialised) views capture the query at that moment in time/to allow for faster\nretrieval with large datasets;\nViews improve security because you can give access to a view without access to the\nunderlying database;\nSome types of views allow you to insert / update / delete multiple tables within the one view;\nNote: must be related to views of queries not queries themselves \n(f) Award [3 max]\nA DDL is used to specify the schema of a database / defines parameters and data\nA DDL allows you to define the tables, fields, datatypes e.g CREATE TABLE;\nA DDL allows you to specify keys/create relationships;\nA DDL allows you to modify schema (e.g. DROP, ALTER);\n(g) Award [3 max]\nData about the rents given out will be accurate at any point in time;\ndata written to the database must be valid according to all defined rules, including\nconstraints, cascades, triggers;\nConsistency allows user to trust the data for decision making;\nConsistency is need for transactional operations to be carried out correctly/ACID;\nConsistency allows data to be transferred (to other systems) with confidence;\nConsistency allows data to be analysed using algorithmic tools/multiple formats cannot be\nanalysed accurately;\nConsistency is important or it leads to integrity issues (e.g. foreign keys unlinked to primary\nkeys);\nWithout consistency it leads to confusion and misinterpretation of the data/ need of accuracy;\nCompliance with the car industry may be a legal requirement;"
       },
@@ -633,7 +649,7 @@
         {
           "syllabus_code": "A3.3.1",
           "scope_evidence": "• Data language types must include data definition language (DDL) and data manipulation language (DML)\n• SQL statements to define data structures or to manipulate data",
-          "rationale": "Explain how SQL DDL implements the structure of a course-registration data model assesses Outline the differences between data language types within SQL.",
+          "rationale": "Original and adapted within-scope skill: Explain how SQL DDL implements the structure of a course-registration data model; guidance target: Outline the differences between data language types within SQL.",
           "theme": "A",
           "level": "SL/HL common",
           "confidence": "high",
@@ -645,7 +661,7 @@
       "verification": {
         "source_text": "Read complete source page and matched leaf/mark to original PDF.",
         "markscheme": "Read cited MS page(s).",
-        "visual": "No visual required by this leaf.",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
         "technical": "Independently reasoned and compared with available source marking points."
       },
       "adaptation_reuse_question_id": "",
@@ -701,7 +717,7 @@
       ],
       "derivation_status": "adapted_unofficial",
       "unofficial": true,
-      "question_text": "MEMBER(MemberID,Name),LOAN(LoanID,MemberID,CopyID) and COPY(CopyID,Title) use their first field as primary key. State one primary key.",
+      "question_text": "MEMBER(MemberID, Name), LOAN(LoanID, MemberID, CopyID) and COPY(CopyID, Title) use their first field as primary key. State one primary key.",
       "syllabus_codes": [
         "A3.1.1"
       ],
@@ -711,7 +727,7 @@
       "command_term": "State",
       "difficulty": "medium",
       "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
-      "solution": "MemberID,LoanID or CopyID in its respective table.",
+      "solution": "MemberID, LoanID or CopyID in its respective table.",
       "marking_points": [
         {
           "marks": 1,
@@ -740,7 +756,7 @@
       ],
       "derivation_status": "adapted_unofficial",
       "unofficial": true,
-      "question_text": "In MEMBER(MemberID PK,Name),LOAN(LoanID PK,MemberID FK,CopyID FK),COPY(CopyID PK,Title),state the table containing foreign keys.",
+      "question_text": "In MEMBER(MemberID PK, Name), LOAN(LoanID PK, MemberID FK, CopyID FK), COPY(CopyID PK, Title), state the table containing foreign keys.",
       "syllabus_codes": [
         "A3.1.1"
       ],
@@ -779,7 +795,7 @@
       ],
       "derivation_status": "adapted_unofficial",
       "unofficial": true,
-      "question_text": "ITEM has rows (Name,Brand,Year):(\"Ridge\",\"Zen\",2020),(\"Vale\",\"Zen\",2021),(\"Bay\",\"Orin\",2021). State the result of SELECT Name FROM ITEM WHERE Brand='Zen' AND Year=2021;.",
+      "question_text": "ITEM has rows (Name, Brand, Year):(\"Ridge\", \"Zen\", 2020), (\"Vale\", \"Zen\", 2021), (\"Bay\", \"Orin\", 2021). State the result of SELECT Name FROM ITEM WHERE Brand='Zen' AND Year=2021;.",
       "syllabus_codes": [
         "A3.3.2"
       ],
@@ -829,7 +845,7 @@
       "command_term": "Outline",
       "difficulty": "medium",
       "adaptation_rationale": "Retains string-format validation reasoning but does not claim database validation-check taxonomy is a separate2027 requirement; conversion uses programming/string selection context.",
-      "solution": "Check total length is7 so incomplete/overlong values are rejected. Check positions0–2 are A–Z and positions3–6 are0–9 so the required format is enforced.",
+      "solution": "Check total length is 7 so incomplete/overlong values are rejected. Check positions0–2 are A–Z and positions3–6 are 0–9 so the required format is enforced.",
       "marking_points": [
         {
           "marks": 1,
@@ -837,7 +853,7 @@
         },
         {
           "marks": 1,
-          "criterion": "Correct expected length7 and purpose."
+          "criterion": "Correct expected length 7 and purpose."
         },
         {
           "marks": 1,
@@ -870,7 +886,7 @@
       ],
       "derivation_status": "adapted_unofficial",
       "unofficial": true,
-      "question_text": "MEMBER(MemberID,Surname) and LOAN(LoanID,MemberID,DateOut,DateRet) store loans. Construct SQL listing surnames of members whose loan began2027-03-01 and ended2027-03-05. Dates are ISO strings.",
+      "question_text": "MEMBER(MemberID, Surname) and LOAN(LoanID, MemberID, DateOut, DateRet) store loans. Construct SQL listing surnames of members whose loan began 2027-03-01 and ended 2027-03-05. Dates are ISO strings.",
       "syllabus_codes": [
         "A3.3.2"
       ],

@@ -1,0 +1,61 @@
+{
+  "question_id": "P-SRC033-Q03-d",
+  "source_question_ids": [
+    "H-SRC033-Q03-d"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct 3NF tables with keys for these facts: A product has unique ProductID, Name, SupplierID and UnitPrice; each supplier has one SupplierName and Region; each store stocks many products with a Quantity specific to(StoreID, ProductID). Show primary and foreign keys.",
+  "syllabus_codes": [
+    "A3.2.6"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 6,
+  "command_term": "Construct",
+  "difficulty": "high",
+  "adaptation_rationale": "Preserve multi-store normalization with explicitly stated dependencies and atomic fields. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "solution": "Supplier(SupplierID PK, SupplierName, Region); Product(ProductID PK, Name, SupplierID FK→Supplier, UnitPrice); Stock(StoreID PKpart, ProductID PKpart/FK→Product, Quantity). A Store table may be included if additional store facts are defined.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Supplier table contains supplier-dependent attributes."
+    },
+    {
+      "marks": 1,
+      "criterion": "SupplierID primary key."
+    },
+    {
+      "marks": 1,
+      "criterion": "Product table with ProductID primary key."
+    },
+    {
+      "marks": 1,
+      "criterion": "Product.SupplierID foreign key."
+    },
+    {
+      "marks": 1,
+      "criterion": "Stock composite primary key(StoreID, ProductID)."
+    },
+    {
+      "marks": 1,
+      "criterion": "Quantity stored only on Stock and ProductID linked to Product."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 6,
+    "code_execution": "No executable code required; explicit answer/trace checked manually."
+  },
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "assets": [],
+  "record_path": "question-bank/records/P-SRC033-Q03-d.json",
+  "question_path": "question-bank/questions/P-SRC033-Q03-d.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC033-Q03-d.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

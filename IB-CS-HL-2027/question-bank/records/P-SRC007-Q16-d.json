@@ -1,0 +1,51 @@
+{
+  "question_id": "P-SRC007-Q16-d",
+  "source_question_ids": [
+    "H-SRC007-Q16-d"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Trace the program, listing the values popped, the running product after each pop, and final output.\n\nstack = []\nn = 5\nwhile n > 1:\n    stack.append(n)\n    n -= 1\nproduct = 1\nwhile stack:\n    n = stack.pop()\n    product *= n\nprint(product)",
+  "syllabus_codes": [
+    "B2.2.3",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 3,
+  "command_term": "Trace",
+  "difficulty": "medium",
+  "adaptation_rationale": "Translate abstract stack to Python list push/pop maintaining LIFO trace. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "solution": "Popped2,3, 4,5; products2,6,24,120; output 120.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Correct popped sequence2,3, 4,5."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct running products2,6,24,120."
+    },
+    {
+      "marks": 1,
+      "criterion": "Final output 120."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 3,
+    "code_execution": "Specific executable boundary and behaviour tests passed; see agents/chunk-2/agent-3-papers-c/technical_checks.json and verify_practice.py."
+  },
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "assets": [],
+  "code": "stack = []\nn = 5\nwhile n > 1:\n    stack.append(n)\n    n -= 1\nproduct = 1\nwhile stack:\n    n = stack.pop()\n    product *= n\nprint(product)",
+  "record_path": "question-bank/records/P-SRC007-Q16-d.json",
+  "question_path": "question-bank/questions/P-SRC007-Q16-d.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC007-Q16-d.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

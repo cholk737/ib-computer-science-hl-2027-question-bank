@@ -1,0 +1,46 @@
+{
+  "question_id": "P-SRC033-Q14-d-i",
+  "source_question_ids": [
+    "H-SRC033-Q14-d-i"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct method pay(self, hours) in class Rental, returning self.ADMIN_FEE for stays of at most 5 hours and 0 otherwise. Assume hours is a nonnegative integer.",
+  "syllabus_codes": [
+    "B2.3.2"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 2,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Construct Python method retaining boundary condition. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "solution": "def pay(self,hours):\n    return self.ADMIN_FEE if hours <= 5 else 0",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Correct inclusive fee branch."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct zero branch and return."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 2,
+    "code_execution": "Specific executable boundary and behaviour tests passed; see agents/chunk-2/agent-3-papers-c/technical_checks.json and verify_practice.py."
+  },
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "assets": [],
+  "code": "class Rental:\n    ADMIN_FEE = 4\n    def pay(self, hours):\n        if hours <= 5:\n            return self.ADMIN_FEE\n        return 0",
+  "record_path": "question-bank/records/P-SRC033-Q14-d-i.json",
+  "question_path": "question-bank/questions/P-SRC033-Q14-d-i.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC033-Q14-d-i.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

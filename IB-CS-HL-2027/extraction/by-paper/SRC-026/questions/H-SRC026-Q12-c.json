@@ -42,7 +42,9 @@
       20
     ],
     "question_reference": "Q12 c",
-    "marking_summary": "One solution:\ndef retain_extremes(stack):\n    first = stack.pop()\n    smallest = largest = first\n    while not stack.isEmpty():\n        value = stack.pop()\n        if value < smallest:\n            smallest = value\n        if value > largest:\n            largest = value\n    stack.push(largest)\n    stack.push(smallest)",
+    "marking_summary": "Exact original MS leaf excerpt: Award max [6]. Award [1] for correct initialization (before the loop) Award [1] for correct loop through the NUMBERS stack using isEmpty() Award [1] for taking an element from the top of the NUMBERS stack using pop()(within the loop) Award [1] for changing the value of SMALLEST if needed Award [1] for changing the value of LARGEST if needed Award [1] for placing SMALLEST and LARGEST on the stack NUMBERS using push() (after the loop) Award [1] for the order of push operations: first push LARGEST onto the stack then SMALLEST (so that SMALLEST will be on the top of stack NUMBERS) Example 1: X = NUMBERS.pop() SMALLEST = X LARGEST = X // OR // initialization // SMALEST= 999999999999 (any very large number) // LARGEST= -999999999999 (negative number!) loop while not NUMBERS.isEmpty() //searching for the smallest and largest value X=NUMBERS.pop() if X <= SMALLEST then SMALLEST = X else if X >=  … [full leaf evidence retained]",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award max [6].\nAward [1] for correct initialization (before the loop)\nAward [1] for correct loop through the NUMBERS stack using isEmpty()\nAward [1] for taking an element from the top of the NUMBERS stack using pop()(within the loop)\nAward [1] for changing the value of SMALLEST if needed\nAward [1] for changing the value of LARGEST if needed\nAward [1] for placing SMALLEST and LARGEST on the stack NUMBERS using push() (after the\nloop)\nAward [1] for the order of push operations: first push LARGEST onto the stack then SMALLEST\n(so that SMALLEST will be on the top of stack NUMBERS)\nExample 1: \nX = NUMBERS.pop()\nSMALLEST = X\nLARGEST = X   \n//  OR \n//   initialization \n//   SMALEST= 999999999999 (any very large number) \n//   LARGEST= -999999999999 (negative number!) \nloop while not NUMBERS.isEmpty() \n//searching for the smallest and largest value \nX=NUMBERS.pop() \nif X <= SMALLEST \nthen SMALLEST = X \nelse if X >= LARGEST \nthen LARGEST = X \nend if \nend if  \nend loop \nNUMBERS.push(LARGEST) \nNUMBERS.push(SMALLEST) \nExample 2: \nSMALLEST = NUMBERS.peek()   //initialization\nLARGEST = SMALLEST\nloop while NUMBERS.isEmpty()= false \n//searching for the smallest and largest value \nX=NUMBERS.pop() \nif X < SMALLEST \nthen SMALLEST = X \nend if \nif X > LARGEST \nthen LARGEST = X \nend if \nend loop  \nNUMBERS.push( LARGEST) \nNUMBERS.push(SMALLEST)",
     "source_issues": [],
     "source_marking_evidence": "– 20 – 2225 – 6414M \n(c) Award max [6].\nAward [1] for correct initialization (before the loop)\nAward [1] for correct loop through the NUMBERS stack using isEmpty()\nAward [1] for taking an element from the top of the NUMBERS stack using pop()(within the loop)\nAward [1] for changing the value of SMALLEST if needed\nAward [1] for changing the value of LARGEST if needed\nAward [1] for placing SMALLEST and LARGEST on the stack NUMBERS using push() (after the\nloop)\nAward [1] for the order of push operations: first push LARGEST onto the stack then SMALLEST\n(so that SMALLEST will be on the top of stack NUMBERS)\nExample 1: \nX = NUMBERS.pop()\nSMALLEST = X\nLARGEST = X   \n//  OR \n//   initialization \n//   SMALEST= 999999999999 (any very large number) \n//   LARGEST= -999999999999 (negative number!) \nloop while not NUMBERS.isEmpty() \n//searching for the smallest and largest value \nX=NUMBERS.pop() \nif X <= SMALLEST \nthen SMALLEST = X \nelse if X >= LARGEST \nthen LARGEST = X \nend if \nend if  \nend loop \nNUMBERS.push(LARGEST) \nNUMBERS.push(SMALLEST) \nExample 2: \nSMALLEST = NUMBERS.peek()   //initialization\nLARGEST = SMALLEST\nloop while NUMBERS.isEmpty()= false \n//searching for the smallest and largest value \nX=NUMBERS.pop() \nif X < SMALLEST \nthen SMALLEST = X \nend if \nif X > LARGEST \nthen LARGEST = X \nend if \nend loop  \nNUMBERS.push( LARGEST) \nNUMBERS.push(SMALLEST) "
   },
@@ -51,7 +53,7 @@
     {
       "syllabus_code": "B2.2.3",
       "scope_evidence": "• Must include fundamental operations such as push, pop, peek and isEmpty\n• How stack operations impact both performance and memory usage\n• An appropriate stack for a specific problem",
-      "rationale": "Construct retain_extremes(stack) in Python for a nonempty numeric stack assesses Explain the concept of a stack as a “last in, first out” (LIFO) data structure.",
+      "rationale": "Adapted target only: Construct retain_extremes(stack) in Python for a nonempty numeric stack; guidance target: Explain the concept of a stack as a “last in, first out” (LIFO) data structure. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
       "theme": "B",
       "level": "SL/HL common",
       "confidence": "high",
@@ -60,7 +62,7 @@
     {
       "syllabus_code": "B2.3.2",
       "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
-      "rationale": "Construct retain_extremes(stack) in Python for a nonempty numeric stack assesses Construct programs utilizing appropriate selection structures.",
+      "rationale": "Adapted target only: Construct retain_extremes(stack) in Python for a nonempty numeric stack; guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
       "theme": "B",
       "level": "SL/HL common",
       "confidence": "high",
@@ -69,7 +71,7 @@
     {
       "syllabus_code": "B2.3.3",
       "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
-      "rationale": "Construct retain_extremes(stack) in Python for a nonempty numeric stack assesses Construct programs that utilize looping structures to perform repeated actions.",
+      "rationale": "Adapted target only: Construct retain_extremes(stack) in Python for a nonempty numeric stack; guidance target: Construct programs that utilize looping structures to perform repeated actions. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
       "theme": "B",
       "level": "SL/HL common",
       "confidence": "high",
@@ -81,7 +83,7 @@
   "verification": {
     "source_text": "Read complete source page and matched leaf/mark to original PDF.",
     "markscheme": "Read cited MS page(s).",
-    "visual": "No visual required by this leaf.",
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
     "technical": "Executed mixed negative/positive,all-negative,singleton,equal-value cases with stack harness."
   },
   "adaptation_reuse_question_id": "",

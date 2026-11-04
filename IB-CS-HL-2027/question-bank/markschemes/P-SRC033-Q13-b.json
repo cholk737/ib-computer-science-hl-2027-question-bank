@@ -1,0 +1,32 @@
+{
+  "question_id": "P-SRC033-Q13-b",
+  "unofficial": true,
+  "marks": 3,
+  "solution": "Aggregation: Depot has Bicycle component references, but bicycles have independent lifetimes and are not destroyed when the depot object is removed.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Identifies aggregation."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains has-a/component relationship."
+    },
+    {
+      "marks": 1,
+      "criterion": "Uses independent lifetime condition to distinguish composition."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 3,
+    "code_execution": "No executable code required; explicit answer/trace checked manually."
+  },
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

@@ -1,0 +1,1062 @@
+{
+  "source_id": "SRC-038",
+  "batch_id": "SRC-038-b010",
+  "source_questions": [
+    {
+      "source_question_id": "H-SRC038-Q14-d-ii",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": 14,
+      "subquestion": "d-ii",
+      "source_pdf_pages": [
+        25
+      ],
+      "source_printed_pages": [
+        "24"
+      ],
+      "original_marks": 2,
+      "command_term": "Construct",
+      "original_text": "Construct the method signature for countDelayedCases in which the method takes a lawyer’s ID as a parameter and returns the total number of delayed cases that the lawyer has.",
+      "parent_context": "– 22 – 8825 – 6405\nOption D — Object-oriented programming\n14. A law firm has 20 lawyers. They can be categorized into three groups: civil lawyers, criminal \nlawyers, and company lawyers.\nA lawyer can have a maximum of 15 cases at a time.\nThe following shows part of the code for the Lawyer class, which keeps details of a lawyer:\npublic class Lawyer\n{\n    private int lawyerID;       // id of the lawyer\n    private String lawyerName;\n    private String lawyerType;  // category of lawyer\n    private int lawyerRank;     // 0 or 1, default is 0\n    private int casesWon;       // total number of cases won by the lawyer\n    private Case lawyerCases[] = new Case[15]; // lawyer’s array of cases\n    public Lawyer(int lawyerID, String lawyerName, String lawyerType, \nCase[] lawyerCases)\n    {\n        this.lawyerID = lawyerID;\n        this.lawyerName = lawyerName;\n        this.lawyerType = lawyerType;\n        this.lawyerRank = 0;\n        this.casesWon = 0;\n        this.lawyerCases = lawyerCases;\n    }\n    public String getlawyerName()\n    {\n        return lawyerName;\n    }\n    public String getlawyerType()\n    {\n        return lawyerType;\n    }\n    public int getlawyerRank() \n    {\n        return lawyerRank;\n    }\n    public void setlawyerRank(int lawyerRank)\n    {\n        this.lawyerRank = lawyerRank;\n    }\n    // all accessor and mutator methods are present but not shown\n} // end of Lawyer class\n(Option D continues on the following page)\n– 23 – 8825 – 6405\nTurn over\n(Option D, question 14 continued)\nThe following shows part of the code for the Case class, which keeps details of a case:\npublic class Case\n{\n    private int caseId;        // unique id of the case\n    private String caseClient; // name of the client\n    private String caseTitle;  // e.g. 'property dispute', 'tax evasion' etc\n    private int daysFromStart; // number of days elapsed from start of case\n    private char judgmentGiven; // 'N'=no, 'F'=favorable, 'A'=against\n    private String caseStatus;  // open/ won/ lost\n    public Case(int caseID, String caseClient, String casesTitle)  \n    { \n        this.caseId = caseId;  \n        this.caseClient = caseClient; \n        this.casesTitle = casesTitle; \n        this.daysFromStart = 0; \n        this.judgmentGiven = 'N'; \n        this.caseStatus = \"open\"; \n    }\n    public void setCaseStatus(String caseStatus)\n    {\n        this.caseStatus = caseStatus;\n    }\n    // all accessor and mutator methods are present but not shown\n    public void changeCaseStatus(char judgmentGiven)\n    {\n        /*Code missing*/\n    }\n} // end of Case class\n(Option D continues on the following page)\n– 24 – 8825 – 6405\n(Option D, question 14 continued)\nThe LawFirmManagement class has a main method and other methods to generate the \ninformation required. The following shows part of the code for the LawFirmManagement class:\npublic class LawFirmManagement\n{\n    private static Lawyer[] allLawyers = new Lawyer[20];\n    // array of lawyers\n    private static TraineeLawyer[] allTrainees = new \nTraineeLawyer[30]; // array of lawyer trainees\n    public static void main(String []args)\n    {\n        /*Code missing*/\n    }\n    public static void displayLawyerNames()\n    {\n        /*Code missing*/\n    }\n    public static void updateLawyerRank(int[][]casesWon)\n    {\n        /*Code missing*/\n    }\n} // end of LawFirmManagement class\n(a) State the purpose of a constructor method. [1]\n(b) Describe how the changeCaseStatus(char judgmentGiven) method given in the \nCase class would change the case status. [2]\n(c) Construct the method displayLawyerNames() in the LawFirmManagement class.\nThe method should display the names of all civil lawyers who have won more than \n30 cases. [4]\n(d) (i)   State the purpose of a return statement. [1]\nIf the number of days since the start of a case is more than 45 and no judgment has \nbeen given, it is considered a delayed case. Assume that a method exists that updates \ndays elapsed.\n(ii) Construct the method signature for countDelayedCases in which the method \ntakes a lawyer’s ID as a parameter and returns the total number of delayed \ncases that the lawyer has. [2]\n(iii) Construct the complete code for the method countDelayedCases constructed \nin part (d)(ii). [5]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-23.png",
+          "source_pdf_page": 23,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-24.png",
+          "source_pdf_page": 24,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-25.png",
+          "source_pdf_page": 25,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Construct the method signature for countDelayedCases in which the method takes a lawyer’s ID as a parameter and returns the total number of delayed cases that the lawyer has.",
+        "Construct a Python function header for count_overdue that receives adviser_id and advisers, with optional type hints indicating an integer result"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          40
+        ],
+        "question_reference": "Q14 d-ii",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max] Award [1] for correct return type ‘int’ (as intended in the question); Award [1] for correct int parameter; Example: (public) int countDelayedCases(int id) Note: Award [2] for a signature with or without the access specifier and the return type.",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]\nAward [1] for correct return type ‘int’ (as intended in the question); \nAward [1] for correct int parameter; \nExample: (public) int countDelayedCases(int id)\nNote: Award [2] for a signature with or without the access specifier and the return type.",
+        "source_issues": [],
+        "source_marking_evidence": "– 40 – 8825 – 6405M \nOption D — Object-oriented programming \n14. (a) Award [1 max]\na constructor is a (special) method used to initialize objects; \ncreates an instance of a class; \nassigns values to the instance variables;  \n(b) Award [2 max]\nAward [1] for checking the parameter’s (judgementGiven) value;\nAward [1] for changing the value of caseStatus to “won” if the judgementGiven is ‘F’;\nAward [1] for changing the value of caseStatus to “lost” if the judgementGiven is ‘A’;\nNote: Allow either calling the setCaseStatus() or directly accessing the caseStatus to\nchange the status of the case.\n(c) Award [4 max]\nAward [1] for a correct loop to navigate through allLawyers[];\nAward [1] for correctly checking lawyerType is “civil” (accept both .equals() or “==”);\nAward [1] for correctly checking casesWon >30, (accept >=31);\nAward [1] for correctly displaying the lawyer’s name;\nExample Answer :\npublic static void displayLawyerNames()\n{\n    for(int i=0; i<20; i++) \n    {  \nif((allLawyers[i].getLawyerType().equals(\"civil\"))&& \n(allLawyers[i].getCasesWon()>30)) \nSystem.out.println(allLawyers[i].getLawyerName()); \n    } \n} \nNote: Allow writing “civil” in any case. \n(d) (i) Award [1 max]\na return statement is used to send a value back (to the calling method when the execution \nof a method is complete);  \na return statement transfers the program control back to the calling method;  \n(ii) Award [2 max]\nAward [1] for correct return type ‘int’ (as intended in the question); \nAward [1] for correct int parameter; \nExample: (public) int countDelayedCases(int id)\nNote: Award [2] for a signature with or without the access specifier and the return type. "
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.3.4",
+          "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+          "rationale": "Adapted target only: Construct a Python function header for count_overdue that receives adviser_id and advisers, with optional type hints indicating an integer result; guidance target: Construct functions and modularization. Adaptation: Replaces Java return-type signature with Python function interface; annotations are optional, not invented requirements.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q14-d-ii"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q14-d-iii",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": 14,
+      "subquestion": "d-iii",
+      "source_pdf_pages": [
+        25
+      ],
+      "source_printed_pages": [
+        "24"
+      ],
+      "original_marks": 5,
+      "command_term": "Construct",
+      "original_text": "Construct the complete code for the method countDelayedCases constructed in part (d)(ii).",
+      "parent_context": "– 22 – 8825 – 6405\nOption D — Object-oriented programming\n14. A law firm has 20 lawyers. They can be categorized into three groups: civil lawyers, criminal \nlawyers, and company lawyers.\nA lawyer can have a maximum of 15 cases at a time.\nThe following shows part of the code for the Lawyer class, which keeps details of a lawyer:\npublic class Lawyer\n{\n    private int lawyerID;       // id of the lawyer\n    private String lawyerName;\n    private String lawyerType;  // category of lawyer\n    private int lawyerRank;     // 0 or 1, default is 0\n    private int casesWon;       // total number of cases won by the lawyer\n    private Case lawyerCases[] = new Case[15]; // lawyer’s array of cases\n    public Lawyer(int lawyerID, String lawyerName, String lawyerType, \nCase[] lawyerCases)\n    {\n        this.lawyerID = lawyerID;\n        this.lawyerName = lawyerName;\n        this.lawyerType = lawyerType;\n        this.lawyerRank = 0;\n        this.casesWon = 0;\n        this.lawyerCases = lawyerCases;\n    }\n    public String getlawyerName()\n    {\n        return lawyerName;\n    }\n    public String getlawyerType()\n    {\n        return lawyerType;\n    }\n    public int getlawyerRank() \n    {\n        return lawyerRank;\n    }\n    public void setlawyerRank(int lawyerRank)\n    {\n        this.lawyerRank = lawyerRank;\n    }\n    // all accessor and mutator methods are present but not shown\n} // end of Lawyer class\n(Option D continues on the following page)\n– 23 – 8825 – 6405\nTurn over\n(Option D, question 14 continued)\nThe following shows part of the code for the Case class, which keeps details of a case:\npublic class Case\n{\n    private int caseId;        // unique id of the case\n    private String caseClient; // name of the client\n    private String caseTitle;  // e.g. 'property dispute', 'tax evasion' etc\n    private int daysFromStart; // number of days elapsed from start of case\n    private char judgmentGiven; // 'N'=no, 'F'=favorable, 'A'=against\n    private String caseStatus;  // open/ won/ lost\n    public Case(int caseID, String caseClient, String casesTitle)  \n    { \n        this.caseId = caseId;  \n        this.caseClient = caseClient; \n        this.casesTitle = casesTitle; \n        this.daysFromStart = 0; \n        this.judgmentGiven = 'N'; \n        this.caseStatus = \"open\"; \n    }\n    public void setCaseStatus(String caseStatus)\n    {\n        this.caseStatus = caseStatus;\n    }\n    // all accessor and mutator methods are present but not shown\n    public void changeCaseStatus(char judgmentGiven)\n    {\n        /*Code missing*/\n    }\n} // end of Case class\n(Option D continues on the following page)\n– 24 – 8825 – 6405\n(Option D, question 14 continued)\nThe LawFirmManagement class has a main method and other methods to generate the \ninformation required. The following shows part of the code for the LawFirmManagement class:\npublic class LawFirmManagement\n{\n    private static Lawyer[] allLawyers = new Lawyer[20];\n    // array of lawyers\n    private static TraineeLawyer[] allTrainees = new \nTraineeLawyer[30]; // array of lawyer trainees\n    public static void main(String []args)\n    {\n        /*Code missing*/\n    }\n    public static void displayLawyerNames()\n    {\n        /*Code missing*/\n    }\n    public static void updateLawyerRank(int[][]casesWon)\n    {\n        /*Code missing*/\n    }\n} // end of LawFirmManagement class\n(a) State the purpose of a constructor method. [1]\n(b) Describe how the changeCaseStatus(char judgmentGiven) method given in the \nCase class would change the case status. [2]\n(c) Construct the method displayLawyerNames() in the LawFirmManagement class.\nThe method should display the names of all civil lawyers who have won more than \n30 cases. [4]\n(d) (i)   State the purpose of a return statement. [1]\nIf the number of days since the start of a case is more than 45 and no judgment has \nbeen given, it is considered a delayed case. Assume that a method exists that updates \ndays elapsed.\n(ii) Construct the method signature for countDelayedCases in which the method \ntakes a lawyer’s ID as a parameter and returns the total number of delayed \ncases that the lawyer has. [2]\n(iii) Construct the complete code for the method countDelayedCases constructed \nin part (d)(ii). [5]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-23.png",
+          "source_pdf_page": 23,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-24.png",
+          "source_pdf_page": 24,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-25.png",
+          "source_pdf_page": 25,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Construct the complete code for the method countDelayedCases constructed in part (d)(ii).",
+        "Each adviser has id and tickets attributes"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          41
+        ],
+        "question_reference": "Q14 d-iii",
+        "marking_summary": "Exact original MS leaf excerpt: Award [5 max] Award [1] for initialising and returning the count;. Award [1] for a correct loop to navigate through the allLawyers[]; Award [1] for correctly matching lawyerID with the parameter passed. Award [1] for correct ‘for’ loop for all cases of the lawyer. Award [1] for checking ‘null’ in lawyerCases[]; Award [1] for correctly checking daysFromStart > 45; Award [1] for correctly checking judgementGiven equals N; Example 1: public int countDelayedCases(int id) { int count = 0; for(int i=0; i<20; i++) { if(allLawyers[i].getLawyerId()== id) { for(int j=0; j<15; j++) { if(allLawyers[i].getLawyerCases()[j]!= null) { Case C = allLawyers[i].getLawyerCases()[j]; if(C.getDaysFromStart()>45 && C.getJudgementGiven()=='N') count++; } } } } return count; } Example 2: int countDelayedCases(int lawyerID) { int count = 0; for(int i = 0; i < 20; i++) { if(allLawyers[i].getLawyerID() == lawyerID)  … [full leaf evidence retained]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [5 max]\nAward [1] for  initialising and returning the count;.\nAward [1] for a correct loop to navigate through the allLawyers[];\nAward [1] for correctly matching lawyerID with the parameter passed.\nAward [1] for correct ‘for’ loop for all cases of the lawyer.\nAward [1] for checking ‘null’ in lawyerCases[];\nAward [1] for correctly checking daysFromStart > 45;\nAward [1] for correctly checking judgementGiven  equals N;\nExample 1:\npublic int countDelayedCases(int id)\n{\n int count = 0;  \n   for(int i=0; i<20; i++) \n   {  \n if(allLawyers[i].getLawyerId()== id) \n { \n  for(int j=0; j<15; j++) \n {  \n  if(allLawyers[i].getLawyerCases()[j]!= null) \n{ \nCase C = allLawyers[i].getLawyerCases()[j]; \nif(C.getDaysFromStart()>45 && C.getJudgementGiven()=='N') \ncount++; \n   } \n   } \n   } \n    }  \n    return count; \n} \nExample 2: \nint countDelayedCases(int lawyerID) \n{ \n  int count = 0; \n for(int i = 0; i < 20; i++) \n  { \n    if(allLawyers[i].getLawyerID() == lawyerID) \n    { \nCase[] temp = allLawyers[i].getLawyerCases(); \nfor(int j = 0; j < temp.length; j++) \n{ \nif(temp[j] != null) \n{ \nif(temp[j].getDaysFromStart()>45 && temp[j].getJudgmentGiven()=='N') \ncount++; \n} \n} \n    } \n  } \n}",
+        "source_issues": [],
+        "source_marking_evidence": "– 41 – 8825 – 6405M \n(iii) Award [5 max]\nAward [1] for  initialising and returning the count;.\nAward [1] for a correct loop to navigate through the allLawyers[];\nAward [1] for correctly matching lawyerID with the parameter passed.\nAward [1] for correct ‘for’ loop for all cases of the lawyer.\nAward [1] for checking ‘null’ in lawyerCases[];\nAward [1] for correctly checking daysFromStart > 45;\nAward [1] for correctly checking judgementGiven  equals N;\nExample 1:\npublic int countDelayedCases(int id)\n{\n int count = 0;  \n   for(int i=0; i<20; i++) \n   {  \n if(allLawyers[i].getLawyerId()== id) \n { \n  for(int j=0; j<15; j++) \n {  \n  if(allLawyers[i].getLawyerCases()[j]!= null) \n{ \nCase C = allLawyers[i].getLawyerCases()[j]; \nif(C.getDaysFromStart()>45 && C.getJudgementGiven()=='N') \ncount++; \n   } \n   } \n   } \n    }  \n    return count; \n} \nExample 2: \nint countDelayedCases(int lawyerID) \n{ \n  int count = 0; \n for(int i = 0; i < 20; i++) \n  { \n    if(allLawyers[i].getLawyerID() == lawyerID) \n    { \nCase[] temp = allLawyers[i].getLawyerCases(); \nfor(int j = 0; j < temp.length; j++) \n{ \nif(temp[j] != null) \n{ \nif(temp[j].getDaysFromStart()>45 && temp[j].getJudgmentGiven()=='N') \ncount++; \n} \n} \n    } \n  } \n} "
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Adapted target only: Each adviser has id and tickets attributes; guidance target: Construct programs that apply arrays and Lists. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Adapted target only: Each adviser has id and tickets attributes; guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "Adapted target only: Each adviser has id and tickets attributes; guidance target: Construct programs that utilize looping structures to perform repeated actions. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.4",
+          "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+          "rationale": "Adapted target only: Each adviser has id and tickets attributes; guidance target: Construct functions and modularization. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Executed missing ID,None,age boundary and status combinations."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q14-d-iii"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q15-a-i",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": 15,
+      "subquestion": "a-i",
+      "source_pdf_pages": [
+        26
+      ],
+      "source_printed_pages": [
+        "25"
+      ],
+      "original_marks": 2,
+      "command_term": "Identify",
+      "original_text": "Identify a suitable data type for each additional attribute in the TraineeLawyer class.",
+      "parent_context": "– 25 – 8825 – 6405\nTurn over\n(Option D continued)\n15. The law firm employs trainee lawyers who work under senior lawyers for one year and then \nsit an examination. On successful completion, they become full lawyers.\nThe TraineeLawyer class has been created. A trainee lawyer is a lawyer with two additional \nattributes: joining date and exam status.\n(a) (i)   Identify a suitable data type for each additional attribute in the TraineeLawyer \nclass. [2]\n(ii) Construct a detailed class diagram including attributes, methods, and relationship.\nThe diagram must include the Lawyer class and the TraineeLawyer class. [4]\n(b) (i)   State the relationship between the TraineeLawyer class and the Lawyer class. [1]\n(ii) State the relationship between the Lawyer class and the Case class. [1]\n(iii) Describe the difference between the two relationships stated in part (b)(i) and \npart (b)(ii). [4]\n(c) Outline what is meant by the term encapsulation. [2]\n(d) Define the term parent object. [1]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-26.png",
+          "source_pdf_page": 26,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Identify a suitable data type for each additional attribute in the TraineeLawyer class.",
+        "A Trainee class needs joined_on, stored as an ISO date string, and exam_passed, which has only True/False states"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          42
+        ],
+        "question_reference": "Q15 a-i",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max] Award [1] for each attribute Date of joining: int / String / Date type ; also accept int for day, int for month, int for year; ExamPassed: boolean / char / String / int;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]\nAward [1] for each attribute \nDate of joining:    int / String / Date type ; \nalso accept int for day, int for month, int for year; \nExamPassed:  boolean / char / String / int;",
+        "source_issues": [],
+        "source_marking_evidence": "– 42 – 8825 – 6405M \n15. (a)    (i) Award [2 max]\nAward [1] for each attribute \nDate of joining:    int / String / Date type ; \nalso accept int for day, int for month, int for year; \nExamPassed:  boolean / char / String / int; \n(ii) Award [4 max]\nAward [1] for correctly representing the relationship;\nAward [1] for both classes having three sections;\nAward [1] for correctly representing the Lawyer class with all attributes and at least one\nmethod;\nAward [1] for correctly representing the TraineeLawyer class with both attributes \nand\nat least one method;\nNote: Allow any valid representation of joiningDate and examStaus. \n(b) (i) Award [1 max]\nis a (relationship) / super class - sub class/ parent - child/ inheritance; \n(ii) Award [1 max]\nhas a (relationship)/ aggregation;\n(iii) Award [4 max as 2 + 2]\nis-a relationship is inheritance;\nhas-a relationship is composition;\nis-a creates a new specialized type by inheriting attributes and methods;\nhas-a does not create a new type and only stores objects as attributes.\nis-a allows extending or overriding behaviour;\nhas-a cannot change the behaviour of the contained objects.\nis-a supports polymorphism (a TraineeLawyer is a Lawyer);\nhas-a does not support polymorphism.\nis-a forms a class hierarchy;\nhas-a forms a whole–part ownership structure.\n"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B3.1.2",
+          "scope_evidence": "• Classes and their methods, based on application requirements\n• The use of unified modelling language (UML) class diagrams to represent class relationships, attributes and methods, to aid effective software design and planning",
+          "rationale": "Adapted target only: A Trainee class needs joined_on, stored as an ISO date string, and exam_passed, which has only True/False states; guidance target: Construct a design of classes, their methods and behaviour. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.1.1",
+          "scope_evidence": "• Data types: Boolean value, char, decimal, integer, string",
+          "rationale": "Adapted target only: A Trainee class needs joined_on, stored as an ISO date string, and exam_passed, which has only True/False states; guidance target: Construct and trace programs using a range of global and local variables of various data types. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q15-a-i"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q15-a-ii",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": 15,
+      "subquestion": "a-ii",
+      "source_pdf_pages": [
+        26
+      ],
+      "source_printed_pages": [
+        "25"
+      ],
+      "original_marks": 4,
+      "command_term": "Construct",
+      "original_text": "Construct a detailed class diagram including attributes, methods, and relationship. The diagram must include the Lawyer class and the TraineeLawyer class.",
+      "parent_context": "– 25 – 8825 – 6405\nTurn over\n(Option D continued)\n15. The law firm employs trainee lawyers who work under senior lawyers for one year and then \nsit an examination. On successful completion, they become full lawyers.\nThe TraineeLawyer class has been created. A trainee lawyer is a lawyer with two additional \nattributes: joining date and exam status.\n(a) (i)   Identify a suitable data type for each additional attribute in the TraineeLawyer \nclass. [2]\n(ii) Construct a detailed class diagram including attributes, methods, and relationship.\nThe diagram must include the Lawyer class and the TraineeLawyer class. [4]\n(b) (i)   State the relationship between the TraineeLawyer class and the Lawyer class. [1]\n(ii) State the relationship between the Lawyer class and the Case class. [1]\n(iii) Describe the difference between the two relationships stated in part (b)(i) and \npart (b)(ii). [4]\n(c) Outline what is meant by the term encapsulation. [2]\n(d) Define the term parent object. [1]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-26.png",
+          "source_pdf_page": 26,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Construct a detailed class diagram including attributes, methods, and relationship. The diagram must include the Lawyer class and the TraineeLawyer class.",
+        "Construct a UML class design for Adviser with id:int,name:str and assign(ticket), and TraineeAdviser that inherits Adviser and adds joined_on:str,exam_passed:bool and record_exam(passed)"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          42
+        ],
+        "question_reference": "Q15 a-ii",
+        "marking_summary": "Exact original MS leaf excerpt: Award [4 max] Award [1] for correctly representing the relationship; Award [1] for both classes having three sections; Award [1] for correctly representing the Lawyer class with all attributes and at least one method; Award [1] for correctly representing the TraineeLawyer class with both attributes and at least one method; Note: Allow any valid representation of joiningDate and examStaus.",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [4 max]\nAward [1] for correctly representing the relationship;\nAward [1] for both classes having three sections;\nAward [1] for correctly representing the Lawyer class with all attributes and at least one\nmethod;\nAward [1] for correctly representing the TraineeLawyer class with both attributes \nand\nat least one method;\nNote: Allow any valid representation of joiningDate and examStaus.",
+        "source_issues": [],
+        "source_marking_evidence": "– 42 – 8825 – 6405M \n15. (a)    (i) Award [2 max]\nAward [1] for each attribute \nDate of joining:    int / String / Date type ; \nalso accept int for day, int for month, int for year; \nExamPassed:  boolean / char / String / int; \n(ii) Award [4 max]\nAward [1] for correctly representing the relationship;\nAward [1] for both classes having three sections;\nAward [1] for correctly representing the Lawyer class with all attributes and at least one\nmethod;\nAward [1] for correctly representing the TraineeLawyer class with both attributes \nand\nat least one method;\nNote: Allow any valid representation of joiningDate and examStaus. \n(b) (i) Award [1 max]\nis a (relationship) / super class - sub class/ parent - child/ inheritance; \n(ii) Award [1 max]\nhas a (relationship)/ aggregation;\n(iii) Award [4 max as 2 + 2]\nis-a relationship is inheritance;\nhas-a relationship is composition;\nis-a creates a new specialized type by inheriting attributes and methods;\nhas-a does not create a new type and only stores objects as attributes.\nis-a allows extending or overriding behaviour;\nhas-a cannot change the behaviour of the contained objects.\nis-a supports polymorphism (a TraineeLawyer is a Lawyer);\nhas-a does not support polymorphism.\nis-a forms a class hierarchy;\nhas-a forms a whole–part ownership structure.\n"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B3.1.2",
+          "scope_evidence": "• Classes and their methods, based on application requirements\n• The use of unified modelling language (UML) class diagrams to represent class relationships, attributes and methods, to aid effective software design and planning",
+          "rationale": "Adapted target only: Construct a UML class design for Adviser with id:int,name:str and assign(ticket), and TraineeAdviser that inherits Adviser and adds joined_on:str,exam_passed:bool and record_exam(passed); guidance target: Construct a design of classes, their methods and behaviour. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B3.2.1",
+          "scope_evidence": "• How inheritance enables a hierarchical relationship between parent and child classes\n• Extending existing classes, utilizing inheritance to reuse and extend functionalities\n• The impact of inheritance on access to parent class members with different access modifiers (private, public, protected, default)",
+          "rationale": "Adapted target only: Construct a UML class design for Adviser with id:int,name:str and assign(ticket), and TraineeAdviser that inherits Adviser and adds joined_on:str,exam_passed:bool and record_exam(passed); guidance target: Explain and apply the concept of inheritance in OOP to promote code reusability. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q15-a-ii"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q15-b-i",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": 15,
+      "subquestion": "b-i",
+      "source_pdf_pages": [
+        26
+      ],
+      "source_printed_pages": [
+        "25"
+      ],
+      "original_marks": 1,
+      "command_term": "State",
+      "original_text": "State the relationship between the TraineeLawyer class and the Lawyer class.",
+      "parent_context": "– 25 – 8825 – 6405\nTurn over\n(Option D continued)\n15. The law firm employs trainee lawyers who work under senior lawyers for one year and then \nsit an examination. On successful completion, they become full lawyers.\nThe TraineeLawyer class has been created. A trainee lawyer is a lawyer with two additional \nattributes: joining date and exam status.\n(a) (i)   Identify a suitable data type for each additional attribute in the TraineeLawyer \nclass. [2]\n(ii) Construct a detailed class diagram including attributes, methods, and relationship.\nThe diagram must include the Lawyer class and the TraineeLawyer class. [4]\n(b) (i)   State the relationship between the TraineeLawyer class and the Lawyer class. [1]\n(ii) State the relationship between the Lawyer class and the Case class. [1]\n(iii) Describe the difference between the two relationships stated in part (b)(i) and \npart (b)(ii). [4]\n(c) Outline what is meant by the term encapsulation. [2]\n(d) Define the term parent object. [1]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-26.png",
+          "source_pdf_page": 26,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: State the relationship between the TraineeLawyer class and the Lawyer class.",
+        "State the OOP relationship when TraineeAdviser is a specialized Adviser and reuses its behaviour"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          42
+        ],
+        "question_reference": "Q15 b-i",
+        "marking_summary": "Exact original MS leaf excerpt: Award [1 max] is a (relationship) / super class - sub class/ parent - child/ inheritance;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [1 max]\nis a (relationship) / super class - sub class/ parent - child/ inheritance;",
+        "source_issues": [],
+        "source_marking_evidence": "– 42 – 8825 – 6405M \n15. (a)    (i) Award [2 max]\nAward [1] for each attribute \nDate of joining:    int / String / Date type ; \nalso accept int for day, int for month, int for year; \nExamPassed:  boolean / char / String / int; \n(ii) Award [4 max]\nAward [1] for correctly representing the relationship;\nAward [1] for both classes having three sections;\nAward [1] for correctly representing the Lawyer class with all attributes and at least one\nmethod;\nAward [1] for correctly representing the TraineeLawyer class with both attributes \nand\nat least one method;\nNote: Allow any valid representation of joiningDate and examStaus. \n(b) (i) Award [1 max]\nis a (relationship) / super class - sub class/ parent - child/ inheritance; \n(ii) Award [1 max]\nhas a (relationship)/ aggregation;\n(iii) Award [4 max as 2 + 2]\nis-a relationship is inheritance;\nhas-a relationship is composition;\nis-a creates a new specialized type by inheriting attributes and methods;\nhas-a does not create a new type and only stores objects as attributes.\nis-a allows extending or overriding behaviour;\nhas-a cannot change the behaviour of the contained objects.\nis-a supports polymorphism (a TraineeLawyer is a Lawyer);\nhas-a does not support polymorphism.\nis-a forms a class hierarchy;\nhas-a forms a whole–part ownership structure.\n"
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B3.2.1",
+          "scope_evidence": "• How inheritance enables a hierarchical relationship between parent and child classes\n• Extending existing classes, utilizing inheritance to reuse and extend functionalities\n• The impact of inheritance on access to parent class members with different access modifiers (private, public, protected, default)",
+          "rationale": "Original and adapted within-scope skill: State the OOP relationship when TraineeAdviser is a specialized Adviser and reuses its behaviour; guidance target: Explain and apply the concept of inheritance in OOP to promote code reusability.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q15-b-i"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q15-b-ii",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": 15,
+      "subquestion": "b-ii",
+      "source_pdf_pages": [
+        26
+      ],
+      "source_printed_pages": [
+        "25"
+      ],
+      "original_marks": 1,
+      "command_term": "State",
+      "original_text": "State the relationship between the Lawyer class and the Case class.",
+      "parent_context": "– 25 – 8825 – 6405\nTurn over\n(Option D continued)\n15. The law firm employs trainee lawyers who work under senior lawyers for one year and then \nsit an examination. On successful completion, they become full lawyers.\nThe TraineeLawyer class has been created. A trainee lawyer is a lawyer with two additional \nattributes: joining date and exam status.\n(a) (i)   Identify a suitable data type for each additional attribute in the TraineeLawyer \nclass. [2]\n(ii) Construct a detailed class diagram including attributes, methods, and relationship.\nThe diagram must include the Lawyer class and the TraineeLawyer class. [4]\n(b) (i)   State the relationship between the TraineeLawyer class and the Lawyer class. [1]\n(ii) State the relationship between the Lawyer class and the Case class. [1]\n(iii) Describe the difference between the two relationships stated in part (b)(i) and \npart (b)(ii). [4]\n(c) Outline what is meant by the term encapsulation. [2]\n(d) Define the term parent object. [1]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-26.png",
+          "source_pdf_page": 26,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: State the relationship between the Lawyer class and the Case class.",
+        "An Adviser stores references to Ticket objects that continue to exist in a central archive after that adviser is removed"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          42
+        ],
+        "question_reference": "Q15 b-ii",
+        "marking_summary": "Exact original MS leaf excerpt: Award [1 max] has a (relationship)/ aggregation;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [1 max]\nhas a (relationship)/ aggregation;",
+        "source_issues": [],
+        "source_marking_evidence": "– 42 – 8825 – 6405M \n15. (a)    (i) Award [2 max]\nAward [1] for each attribute \nDate of joining:    int / String / Date type ; \nalso accept int for day, int for month, int for year; \nExamPassed:  boolean / char / String / int; \n(ii) Award [4 max]\nAward [1] for correctly representing the relationship;\nAward [1] for both classes having three sections;\nAward [1] for correctly representing the Lawyer class with all attributes and at least one\nmethod;\nAward [1] for correctly representing the TraineeLawyer class with both attributes \nand\nat least one method;\nNote: Allow any valid representation of joiningDate and examStaus. \n(b) (i) Award [1 max]\nis a (relationship) / super class - sub class/ parent - child/ inheritance; \n(ii) Award [1 max]\nhas a (relationship)/ aggregation;\n(iii) Award [4 max as 2 + 2]\nis-a relationship is inheritance;\nhas-a relationship is composition;\nis-a creates a new specialized type by inheriting attributes and methods;\nhas-a does not create a new type and only stores objects as attributes.\nis-a allows extending or overriding behaviour;\nhas-a cannot change the behaviour of the contained objects.\nis-a supports polymorphism (a TraineeLawyer is a Lawyer);\nhas-a does not support polymorphism.\nis-a forms a class hierarchy;\nhas-a forms a whole–part ownership structure.\n"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B3.2.4",
+          "scope_evidence": "• How to design objects by leveraging smaller component objects through composition and aggregation\n• That aggregation implies that the subcomponents can function independently of the aggregating class, while in composition, the subcomponents are tightly coupled and cannot exist outside the aggregating class",
+          "rationale": "Adapted target only: An Adviser stores references to Ticket objects that continue to exist in a central archive after that adviser is removed; guidance target: Explain the role of composition and aggregation in class relationships. Adaptation: Makes independent component lifetime explicit so aggregation is justified rather than inferred from an underspecified association.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q15-b-ii"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q15-b-iii",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": 15,
+      "subquestion": "b-iii",
+      "source_pdf_pages": [
+        26
+      ],
+      "source_printed_pages": [
+        "25"
+      ],
+      "original_marks": 4,
+      "command_term": "Describe",
+      "original_text": "Describe the difference between the two relationships stated in part (b)(i) and part (b)(ii).",
+      "parent_context": "– 25 – 8825 – 6405\nTurn over\n(Option D continued)\n15. The law firm employs trainee lawyers who work under senior lawyers for one year and then \nsit an examination. On successful completion, they become full lawyers.\nThe TraineeLawyer class has been created. A trainee lawyer is a lawyer with two additional \nattributes: joining date and exam status.\n(a) (i)   Identify a suitable data type for each additional attribute in the TraineeLawyer \nclass. [2]\n(ii) Construct a detailed class diagram including attributes, methods, and relationship.\nThe diagram must include the Lawyer class and the TraineeLawyer class. [4]\n(b) (i)   State the relationship between the TraineeLawyer class and the Lawyer class. [1]\n(ii) State the relationship between the Lawyer class and the Case class. [1]\n(iii) Describe the difference between the two relationships stated in part (b)(i) and \npart (b)(ii). [4]\n(c) Outline what is meant by the term encapsulation. [2]\n(d) Define the term parent object. [1]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-26.png",
+          "source_pdf_page": 26,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Describe the difference between the two relationships stated in part (b)(i) and part (b)(ii).",
+        "Describe two differences between inheritance and aggregation, using TraineeAdviser inheriting Adviser and Adviser holding independently existing Ticket objects"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          42
+        ],
+        "question_reference": "Q15 b-iii",
+        "marking_summary": "Exact original MS leaf excerpt: Award [4 max as 2 + 2] is-a relationship is inheritance; has-a relationship is composition; is-a creates a new specialized type by inheriting attributes and methods; has-a does not create a new type and only stores objects as attributes. is-a allows extending or overriding behaviour; has-a cannot change the behaviour of the contained objects. is-a supports polymorphism (a TraineeLawyer is a Lawyer); has-a does not support polymorphism. is-a forms a class hierarchy; has-a forms a whole–part ownership structure.",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [4 max as 2 + 2]\nis-a relationship is inheritance;\nhas-a relationship is composition;\nis-a creates a new specialized type by inheriting attributes and methods;\nhas-a does not create a new type and only stores objects as attributes.\nis-a allows extending or overriding behaviour;\nhas-a cannot change the behaviour of the contained objects.\nis-a supports polymorphism (a TraineeLawyer is a Lawyer);\nhas-a does not support polymorphism.\nis-a forms a class hierarchy;\nhas-a forms a whole–part ownership structure.",
+        "source_issues": [
+          "Original MS loosely equates all has-a with composition and says has-a cannot change behaviour/support polymorphism; these universal claims are not repeated."
+        ],
+        "source_marking_evidence": "– 42 – 8825 – 6405M \n15. (a)    (i) Award [2 max]\nAward [1] for each attribute \nDate of joining:    int / String / Date type ; \nalso accept int for day, int for month, int for year; \nExamPassed:  boolean / char / String / int; \n(ii) Award [4 max]\nAward [1] for correctly representing the relationship;\nAward [1] for both classes having three sections;\nAward [1] for correctly representing the Lawyer class with all attributes and at least one\nmethod;\nAward [1] for correctly representing the TraineeLawyer class with both attributes \nand\nat least one method;\nNote: Allow any valid representation of joiningDate and examStaus. \n(b) (i) Award [1 max]\nis a (relationship) / super class - sub class/ parent - child/ inheritance; \n(ii) Award [1 max]\nhas a (relationship)/ aggregation;\n(iii) Award [4 max as 2 + 2]\nis-a relationship is inheritance;\nhas-a relationship is composition;\nis-a creates a new specialized type by inheriting attributes and methods;\nhas-a does not create a new type and only stores objects as attributes.\nis-a allows extending or overriding behaviour;\nhas-a cannot change the behaviour of the contained objects.\nis-a supports polymorphism (a TraineeLawyer is a Lawyer);\nhas-a does not support polymorphism.\nis-a forms a class hierarchy;\nhas-a forms a whole–part ownership structure.\n"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B3.2.1",
+          "scope_evidence": "• How inheritance enables a hierarchical relationship between parent and child classes\n• Extending existing classes, utilizing inheritance to reuse and extend functionalities\n• The impact of inheritance on access to parent class members with different access modifiers (private, public, protected, default)",
+          "rationale": "Adapted target only: Describe two differences between inheritance and aggregation, using TraineeAdviser inheriting Adviser and Adviser holding independently existing Ticket objects; guidance target: Explain and apply the concept of inheritance in OOP to promote code reusability. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B3.2.4",
+          "scope_evidence": "• How to design objects by leveraging smaller component objects through composition and aggregation\n• That aggregation implies that the subcomponents can function independently of the aggregating class, while in composition, the subcomponents are tightly coupled and cannot exist outside the aggregating class",
+          "rationale": "Adapted target only: Describe two differences between inheritance and aggregation, using TraineeAdviser inheriting Adviser and Adviser holding independently existing Ticket objects; guidance target: Explain the role of composition and aggregation in class relationships. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q15-b-iii"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q15-c",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": 15,
+      "subquestion": "c",
+      "source_pdf_pages": [
+        26
+      ],
+      "source_printed_pages": [
+        "25"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "Outline what is meant by the term encapsulation.",
+      "parent_context": "– 25 – 8825 – 6405\nTurn over\n(Option D continued)\n15. The law firm employs trainee lawyers who work under senior lawyers for one year and then \nsit an examination. On successful completion, they become full lawyers.\nThe TraineeLawyer class has been created. A trainee lawyer is a lawyer with two additional \nattributes: joining date and exam status.\n(a) (i)   Identify a suitable data type for each additional attribute in the TraineeLawyer \nclass. [2]\n(ii) Construct a detailed class diagram including attributes, methods, and relationship.\nThe diagram must include the Lawyer class and the TraineeLawyer class. [4]\n(b) (i)   State the relationship between the TraineeLawyer class and the Lawyer class. [1]\n(ii) State the relationship between the Lawyer class and the Case class. [1]\n(iii) Describe the difference between the two relationships stated in part (b)(i) and \npart (b)(ii). [4]\n(c) Outline what is meant by the term encapsulation. [2]\n(d) Define the term parent object. [1]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-26.png",
+          "source_pdf_page": 26,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline what is meant by the term encapsulation.",
+        "Outline how encapsulation can protect an adviser’s completed-request count from invalid changes"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          43
+        ],
+        "question_reference": "Q15 c",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max] Encapsulation means putting/wrapping variables and method into one single unit; the variables of the class are private / hidden from other classes; variables can be accessed only through public members;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]\nEncapsulation means putting/wrapping variables and method into one single unit;\nthe variables of the class are private / hidden from other classes;\nvariables can be accessed only through public members;",
+        "source_issues": [],
+        "source_marking_evidence": "– 43 – 8825 – 6405M \n(c) Award [2 max]\nEncapsulation means putting/wrapping variables and method into one single unit;\nthe variables of the class are private / hidden from other classes;\nvariables can be accessed only through public members;\n(d) Award [1 max]\na parent object holds properties and behaviours (to be) inherited/extended by the child objects;"
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B3.1.5",
+          "scope_evidence": "• The principles of encapsulation and information hiding\n• Apply access modifiers such as private and public\n• Controlling access to class members\n• The importance of limiting access to maintain the integrity and security of an object's state",
+          "rationale": "Original and adapted within-scope skill: Outline how encapsulation can protect an adviser’s completed-request count from invalid changes; guidance target: Explain and apply the concepts of encapsulation and information hiding in OOP.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q15-c"
+      ]
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC038-Q14-d-ii",
+      "source_question_ids": [
+        "H-SRC038-Q14-d-ii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct a Python function header for count_overdue that receives adviser_id and advisers, with optional type hints indicating an integer result. Do not write the body.",
+      "syllabus_codes": [
+        "B2.3.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Replaces Java return-type signature with Python function interface; annotations are optional, not invented requirements.",
+      "solution": "def count_overdue(adviser_id: int, advisers) -> int:",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Correct function name and both parameters."
+        },
+        {
+          "marks": 1,
+          "criterion": "Syntactically correct header, with optional suitable hints."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          40
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q14-d-iii",
+      "source_question_ids": [
+        "H-SRC038-Q14-d-iii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Each adviser has id and tickets attributes. tickets is a list of Ticket objects or None. A ticket has days and status; it is overdue only when days>30 and status=\"open\". Adviser IDs are unique. Construct count_overdue(adviser_id, advisers), returning0 if no adviser matches.",
+      "syllabus_codes": [
+        "B2.2.2",
+        "B2.3.2",
+        "B2.3.3",
+        "B2.3.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 5,
+      "command_term": "List",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "One solution:\ndef count_overdue(adviser_id, advisers):\n    count = 0\n    for adviser in advisers:\n        if adviser.id == adviser_id:\n            for ticket in adviser.tickets:\n                if ticket is not None and ticket.days > 30 and ticket.status == \"open\":\n                    count += 1\n    return count",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Initializes and returns count."
+        },
+        {
+          "marks": 1,
+          "criterion": "Finds matching adviser ID."
+        },
+        {
+          "marks": 1,
+          "criterion": "Traverses that adviser’s tickets."
+        },
+        {
+          "marks": 1,
+          "criterion": "Safely ignores None and tests days>30."
+        },
+        {
+          "marks": 1,
+          "criterion": "Tests open status and increments only matching tickets."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Executed missing ID,None,age boundary and status combinations.",
+        "source_comparison": [
+          41
+        ],
+        "test_code": "def count_overdue(adviser_id, advisers):\n    count = 0\n    for adviser in advisers:\n        if adviser.id == adviser_id:\n            for ticket in adviser.tickets:\n                if ticket is not None and ticket.days > 30 and ticket.status == \"open\":\n                    count += 1\n    return count\nfrom types import SimpleNamespace as O\np=O(id=7,tickets=[None,O(days=30,status='open'),O(days=31,status='closed'),O(days=31,status='open')])\nassert count_overdue(7,[p])==1 and count_overdue(8,[p])==0",
+        "result_file": ""
+      },
+      "code": "def count_overdue(adviser_id, advisers):\n    count = 0\n    for adviser in advisers:\n        if adviser.id == adviser_id:\n            for ticket in adviser.tickets:\n                if ticket is not None and ticket.days > 30 and ticket.status == \"open\":\n                    count += 1\n    return count",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q15-a-i",
+      "source_question_ids": [
+        "H-SRC038-Q15-a-i"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "A Trainee class needs joined_on, stored as an ISO date string, and exam_passed, which has only True/False states. Identify suitable Python types.",
+      "syllabus_codes": [
+        "B3.1.2",
+        "B2.1.1"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Identify",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "str for joined_on; bool for exam_passed.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "str."
+        },
+        {
+          "marks": 1,
+          "criterion": "bool."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          42
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q15-a-ii",
+      "source_question_ids": [
+        "H-SRC038-Q15-a-ii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct a UML class design for Adviser with id:int, name:str and assign(ticket), and TraineeAdviser that inherits Adviser and adds joined_on:str, exam_passed:bool and record_exam(passed). Show attributes, operations and inheritance.",
+      "syllabus_codes": [
+        "B3.1.2",
+        "B3.2.1"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 4,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Two three-compartment class boxes. Adviser contains id:int, name:str and assign(ticket). TraineeAdviser contains joined_on:str, exam_passed:bool and record_exam(passed). A generalization line with hollow triangle points from TraineeAdviser to Adviser.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Both classes clearly separate names, attributes and operations."
+        },
+        {
+          "marks": 1,
+          "criterion": "Adviser attributes/operation correct."
+        },
+        {
+          "marks": 1,
+          "criterion": "Trainee additions/operation correct."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct inheritance direction/notation."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          42
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q15-b-i",
+      "source_question_ids": [
+        "H-SRC038-Q15-b-i"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "State the OOP relationship when TraineeAdviser is a specialized Adviser and reuses its behaviour.",
+      "syllabus_codes": [
+        "B3.2.1"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 1,
+      "command_term": "State",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Inheritance / is-a.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Inheritance or is-a."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          42
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q15-b-ii",
+      "source_question_ids": [
+        "H-SRC038-Q15-b-ii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "An Adviser stores references to Ticket objects that continue to exist in a central archive after that adviser is removed. State whether this is aggregation or composition.",
+      "syllabus_codes": [
+        "B3.2.4"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 1,
+      "command_term": "State",
+      "difficulty": "medium",
+      "adaptation_rationale": "Makes independent component lifetime explicit so aggregation is justified rather than inferred from an underspecified association.",
+      "solution": "Aggregation.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Aggregation."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          42
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q15-b-iii",
+      "source_question_ids": [
+        "H-SRC038-Q15-b-iii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Describe two differences between inheritance and aggregation, using TraineeAdviser inheriting Adviser and Adviser holding independently existing Ticket objects.",
+      "syllabus_codes": [
+        "B3.2.1",
+        "B3.2.4"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 4,
+      "command_term": "Describe",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Inheritance expresses is-a: a trainee is an adviser and reuses/extends inherited behaviour. Aggregation expresses has-a: an adviser refers to tickets without becoming a ticket; those ticket objects can survive independently when the adviser is removed.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Inheritance is-a."
+        },
+        {
+          "marks": 1,
+          "criterion": "Reuses/extends behaviour or subtype explanation."
+        },
+        {
+          "marks": 1,
+          "criterion": "Aggregation has-a."
+        },
+        {
+          "marks": 1,
+          "criterion": "Independent component lifetime/contextual explanation."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          42
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q15-c",
+      "source_question_ids": [
+        "H-SRC038-Q15-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline how encapsulation can protect an adviser’s completed-request count from invalid changes.",
+      "syllabus_codes": [
+        "B3.1.5"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Bundle the count and its operations in the class, and control access through methods that validate changes, such as rejecting negative counts instead of allowing unrestricted updates.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "State and behaviour grouped with controlled/hidden access."
+        },
+        {
+          "marks": 1,
+          "criterion": "Validating interface prevents invalid count changes."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          43
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    }
+  ]
+}

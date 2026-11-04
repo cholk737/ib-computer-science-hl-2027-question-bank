@@ -1,0 +1,60 @@
+{
+  "question_id": "P-SRC038-Q03-e",
+  "source_question_ids": [
+    "H-SRC038-Q03-e"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A lending database includes private member addresses and loan details. Evaluate giving an external courier unrestricted access compared with a read-only view containing only the delivery fields it needs.",
+  "syllabus_codes": [
+    "A3.1.1",
+    "A3.3.5"
+  ],
+  "theme": "A",
+  "level": "HL-only",
+  "marks": 5,
+  "command_term": "Evaluate",
+  "difficulty": "medium",
+  "adaptation_rationale": "Retains access-benefit/privacy evaluation but explicitly assesses relational security and views, rather than generic insurance ethics.",
+  "solution": "Unrestricted access may make ad hoc queries easy, but reveals unrelated private information and may permit damaging edits. A restricted read-only view supplies the address and dispatch details required for delivery while hiding other records and preventing updates through that interface. View permissions and maintenance are needed; the limited view is preferable for the courier’s defined task.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Relevant unrestricted-access convenience."
+    },
+    {
+      "marks": 1,
+      "criterion": "Concrete excessive-disclosure/edit risk."
+    },
+    {
+      "marks": 1,
+      "criterion": "View supplies only required delivery fields."
+    },
+    {
+      "marks": 1,
+      "criterion": "Read-only/restricted permissions reduce harm, with maintenance limitation."
+    },
+    {
+      "marks": 1,
+      "criterion": "Supported contextual judgment."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      10
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC038-Q03-e.json",
+  "question_path": "question-bank/questions/P-SRC038-Q03-e.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC038-Q03-e.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

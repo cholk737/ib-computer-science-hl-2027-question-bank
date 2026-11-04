@@ -1,0 +1,42 @@
+{
+  "question_id": "P-SRC044-Q06-c",
+  "unofficial": true,
+  "marks": 5,
+  "solution": "More objects/pixels increase rendering work and can reduce frame rate unless processing throughput increases. A GPU can perform many similar graphics operations in parallel. Larger textures and working results need more RAM; insufficient capacity may force extra transfers or reduced detail. Choose processing and memory together against the target frame rate and acceptable detail, cost and power use.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "More graphics work increases time/reduces frame rate."
+    },
+    {
+      "marks": 1,
+      "criterion": "GPU parallel-processing benefit."
+    },
+    {
+      "marks": 1,
+      "criterion": "More working textures/data require RAM."
+    },
+    {
+      "marks": 1,
+      "criterion": "Develops memory-capacity/transfer consequence."
+    },
+    {
+      "marks": 1,
+      "criterion": "Balanced contextual hardware recommendation."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      14
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

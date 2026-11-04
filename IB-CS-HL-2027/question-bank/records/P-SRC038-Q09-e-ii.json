@@ -1,0 +1,51 @@
+{
+  "question_id": "P-SRC038-Q09-e-ii",
+  "source_question_ids": [
+    "H-SRC038-Q09-e-ii"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A browser sends a rating request to a central service. Explain one benefit of the server, rather than every client, controlling updates to the shared ratings database.",
+  "syllabus_codes": [
+    "A2.2.3"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 3,
+  "command_term": "Explain",
+  "difficulty": "medium",
+  "adaptation_rationale": "Uses explicit client-server roles and centralized-control benefits; does not assess PHP, browser scripting or CGI mechanisms.",
+  "solution": "The server provides one controlled update service for all clients. It can apply the same validation/access rules before accepting each request, reducing inconsistent or unauthorized updates to the shared records. A client can request a change without receiving unrestricted database credentials.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Central controlled server service."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains consistent validation/access for client requests."
+    },
+    {
+      "marks": 1,
+      "criterion": "Concrete shared-data/credential protection consequence."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      28
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC038-Q09-e-ii.json",
+  "question_path": "question-bank/questions/P-SRC038-Q09-e-ii.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC038-Q09-e-ii.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

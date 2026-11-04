@@ -1,0 +1,51 @@
+{
+  "question_id": "P-SRC032-Q01-f",
+  "source_question_ids": [
+    "H-SRC032-Q01-f"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Explain how SQL DDL implements the structure of a course-registration data model.",
+  "syllabus_codes": [
+    "A3.3.1"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 3,
+  "command_term": "Explain",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "CREATE TABLE defines tables and typed columns. Primary and foreign key constraints encode identity and relationships. ALTER/DROP can change defined structures when the agreed schema changes.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Defines tables/columns."
+    },
+    {
+      "marks": 1,
+      "criterion": "Defines keys/relationships or types."
+    },
+    {
+      "marks": 1,
+      "criterion": "Appropriate structural-change detail."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      5
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC032-Q01-f.json",
+  "question_path": "question-bank/questions/P-SRC032-Q01-f.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC032-Q01-f.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

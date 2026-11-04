@@ -45,7 +45,9 @@
     ],
     "question_reference": "13(c)",
     "marking_summary": "Trackmin/max,sum,count,average;sourceExample1elsebug andDIVaverageacceptanceinvalid.",
-    "source_issues": []
+    "source_issues": [
+      "SRC-025 PDF p15: Example 1 uses if/else-if extrema updates with sentinels and can miss the minimum in an increasing sequence; independent comparisons are required for that initialization. Integer DIV also gives the wrong fractional mean. The unofficial answer uses safe initialization, independent updates and true division."
+    ]
   },
   "relevance_status": "B",
   "mappings": [
@@ -95,6 +97,19 @@
       "pdf_page": 6,
       "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-024/page-006.txt"
     }
+  ],
+  "source_context_page_evidence": [
+    {
+      "pdf_page": 6,
+      "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-024-page-6.png",
+      "kind": "complete_original_page_raster",
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-024/page-006.txt"
+    }
+  ],
+  "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+  "complete_original_document_path": "sources/historical-papers/Computer_science_paper_1_SL.pdf",
+  "source_issues": [
+    "SRC-025 PDF p15: Example 1 uses if/else-if extrema updates with sentinels and can miss the minimum in an increasing sequence; independent comparisons are required for that initialization. Integer DIV also gives the wrong fractional mean. The unofficial answer uses safe initialization, independent updates and true division."
   ],
   "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
   "practice_question_ids": [

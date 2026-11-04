@@ -1,0 +1,54 @@
+{
+  "question_id": "P-SRC034-Q06-e",
+  "source_question_ids": [
+    "H-SRC034-Q06-e"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "An algorithm examines all n! order ings. Describe why buying a processor twice as fast does not remove its scalability problem as n grows, and state one memory-saving implementation choice.",
+  "syllabus_codes": [
+    "B2.4.1"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 4,
+  "command_term": "Describe",
+  "difficulty": "medium",
+  "adaptation_rationale": "Retains factorial-workload/hardware trade off reasoning under explicit scalability/time-space scope; does not classify the problem as NP merely because enumeration is expensive.",
+  "solution": "The number of order ings grows factorially.; A factor-of-two speed up reduces a fixed run’s time but does not change that growth class.; Increasing n can therefore overwhelm the hardware improvement.; Generate/process one ordering at a time instead of storing all permutations simultaneously.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "The number of order ings grows factorially."
+    },
+    {
+      "marks": 1,
+      "criterion": "A factor-of-two speed up reduces a fixed run’s time but does not change that growth class."
+    },
+    {
+      "marks": 1,
+      "criterion": "Increasing n can therefore overwhelm the hardware improvement."
+    },
+    {
+      "marks": 1,
+      "criterion": "Generate/process one ordering at a time instead of storing all permutations simultaneously."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "No executable code required; manual technical check."
+  },
+  "code": "",
+  "test_code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC034-Q06-e.json",
+  "question_path": "question-bank/questions/P-SRC034-Q06-e.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC034-Q06-e.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

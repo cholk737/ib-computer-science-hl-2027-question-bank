@@ -635,7 +635,7 @@
       "command_term": "Construct",
       "difficulty": "medium",
       "adaptation_rationale": "Iterative trace retained with Python semantics. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
-      "solution": "Initial(5028,0);after iterations(502,8),(50,10),(5,10),(0,15);output15.",
+      "solution": "Initial(5028,0); after iterations(502,8),(50,10),(5,10),(0,15); output15.",
       "marking_points": [
         {
           "marks": 1,
@@ -643,15 +643,15 @@
         },
         {
           "marks": 1,
-          "criterion": "n progression502,50,5,0."
+          "criterion": "n progression: 502, 50, 5, 0."
         },
         {
           "marks": 1,
-          "criterion": "x progression8,10,10,15."
+          "criterion": "x progression: 8, 10, 10, 15."
         },
         {
           "marks": 1,
-          "criterion": "Finaloutput15."
+          "criterion": "Final output: 15."
         }
       ],
       "acceptable_alternatives": [
@@ -662,7 +662,7 @@
       "verification": {
         "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
         "mark_sum": 4,
-        "code_execution": "Executed trace; compared intermediate states with expected list."
+        "code_execution": "Specific executable boundary and behaviour tests passed; see agents/chunk-2/agent-3-papers-c/technical_checks.json and verify_practice.py."
       },
       "markscheme_status": "preliminary_unofficial_verified_by_author",
       "assets": [],
@@ -704,7 +704,7 @@
       "verification": {
         "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
         "mark_sum": 2,
-        "code_execution": "Executed starting values0,5028,111;expected0,15,3."
+        "code_execution": "Specific executable boundary and behaviour tests passed; see agents/chunk-2/agent-3-papers-c/technical_checks.json and verify_practice.py."
       },
       "markscheme_status": "preliminary_unofficial_verified_by_author",
       "assets": [],

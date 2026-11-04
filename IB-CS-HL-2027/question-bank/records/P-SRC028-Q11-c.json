@@ -1,0 +1,68 @@
+{
+  "question_id": "P-SRC028-Q11-c",
+  "source_question_ids": [
+    "H-SRC028-Q11-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct Python function letter_grades(marks) for a nonempty list. Compute its arithmetic mean, then return A for each mark more than 15 above the mean, C for each mark more than 15 below it, and B otherwise. Preserve input order and include exactly-boundary marks in B.",
+  "syllabus_codes": [
+    "B2.2.2",
+    "B2.3.2",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 7,
+  "command_term": "Construct",
+  "difficulty": "high",
+  "adaptation_rationale": "Retain multiple passes, computed thresholds and boundary care; translate Python, do not copy MS acceptance of integer division mean. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "solution": "def letter_grades(marks):\n    total = 0\n    for mark in marks:\n        total += mark\n    average = total / len(marks)\n    letters = []\n    for mark in marks:\n        if mark > average + 15:\n            letters.append(\"A\")\n        elif mark < average - 15:\n            letters.append(\"C\")\n        else:\n            letters.append(\"B\")\n    return letters",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes/accumulates total correctly."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses every mark for mean."
+    },
+    {
+      "marks": 1,
+      "criterion": "Uses true division by number of marks."
+    },
+    {
+      "marks": 1,
+      "criterion": "Second pass preserves corresponding order."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct strict upper test and A."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct strict lower test and C."
+    },
+    {
+      "marks": 1,
+      "criterion": "B includes both boundaries and remaining values."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 7,
+    "code_execution": "Specific executable boundary and behaviour tests passed; see agents/chunk-2/agent-3-papers-c/technical_checks.json and verify_practice.py."
+  },
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "assets": [],
+  "code": "def letter_grades(marks):\n    total = 0\n    for mark in marks:\n        total += mark\n    average = total / len(marks)\n    letters = []\n    for mark in marks:\n        if mark > average + 15:\n            letters.append(\"A\")\n        elif mark < average - 15:\n            letters.append(\"C\")\n        else:\n            letters.append(\"B\")\n    return letters",
+  "record_path": "question-bank/records/P-SRC028-Q11-c.json",
+  "question_path": "question-bank/questions/P-SRC028-Q11-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC028-Q11-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

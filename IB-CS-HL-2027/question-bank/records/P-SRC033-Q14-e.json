@@ -1,0 +1,46 @@
+{
+  "question_id": "P-SRC033-Q14-e",
+  "source_question_ids": [
+    "H-SRC033-Q14-e"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A Python list contains Rental and PoweredRental objects, both offering pay(hours). Outline why code can iterate through the list and call item.pay(2) without separately checking each object’s class.",
+  "syllabus_codes": [
+    "B3.2.1",
+    "B3.2.2"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 2,
+  "command_term": "Outline",
+  "difficulty": "medium",
+  "adaptation_rationale": "Remove Java-only single-array-type rule; retain polymorphic interface in Python. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "solution": "Both implement the common method interface; dynamic dispatch selects the appropriate implementation, including the override on PoweredRental.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Common method interface available."
+    },
+    {
+      "marks": 1,
+      "criterion": "Runtime dispatch chooses object’s implementation."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 2,
+    "code_execution": "No executable code required; explicit answer/trace checked manually."
+  },
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "assets": [],
+  "record_path": "question-bank/records/P-SRC033-Q14-e.json",
+  "question_path": "question-bank/questions/P-SRC033-Q14-e.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC033-Q14-e.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

@@ -1,0 +1,46 @@
+{
+  "question_id": "P-SRC038-Q05-d",
+  "unofficial": true,
+  "marks": 6,
+  "solution": "One solution:\ndef follow_all(links, limit):\n    success = [False] * len(links)\n    for target in range(len(links)):\n        index = target\n        for attempt in range(limit):\n            value = links[index]\n            if value == target:\n                success[target] = True\n                break\n            index = value\n    return success",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes a False result for each target."
+    },
+    {
+      "marks": 1,
+      "criterion": "Processes each target with a fresh starting index."
+    },
+    {
+      "marks": 1,
+      "criterion": "Limits inspections correctly."
+    },
+    {
+      "marks": 1,
+      "criterion": "Compares current value with target."
+    },
+    {
+      "marks": 1,
+      "criterion": "Marks success and stops appropriately."
+    },
+    {
+      "marks": 1,
+      "criterion": "Follows stored index on failure and returns all results."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed self-loops, longer cycle failure and exact-limit success.",
+    "source_comparison": [
+      16
+    ],
+    "test_code": "def follow_all(links, limit):\n    success = [False] * len(links)\n    for target in range(len(links)):\n        index = target\n        for attempt in range(limit):\n            value = links[index]\n            if value == target:\n                success[target] = True\n                break\n            index = value\n    return success\nassert follow_all([0,1,2],1)==[True,True,True]\nassert follow_all([1,2,0],2)==[False]*3\nassert follow_all([1,2,0],3)==[True]*3",
+    "result_file": ""
+  },
+  "code": "def follow_all(links, limit):\n    success = [False] * len(links)\n    for target in range(len(links)):\n        index = target\n        for attempt in range(limit):\n            value = links[index]\n            if value == target:\n                success[target] = True\n                break\n            index = value\n    return success",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

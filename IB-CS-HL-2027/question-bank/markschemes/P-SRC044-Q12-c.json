@@ -1,0 +1,46 @@
+{
+  "question_id": "P-SRC044-Q12-c",
+  "unofficial": true,
+  "marks": 6,
+  "solution": "One solution:\ndef commission(products):\n    total = 0\n    for product in products:\n        if product.sold:\n            total += product.price\n    return total * 0.12",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes total0."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses all products."
+    },
+    {
+      "marks": 1,
+      "criterion": "Tests sold status."
+    },
+    {
+      "marks": 1,
+      "criterion": "Adds each sold product price once."
+    },
+    {
+      "marks": 1,
+      "criterion": "Computes12% of correct total."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns result, including0 for empty/no sales."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed mixed sold/unsold and empty cases.",
+    "source_comparison": [
+      27
+    ],
+    "test_code": "def commission(products):\n    total = 0\n    for product in products:\n        if product.sold:\n            total += product.price\n    return total * 0.12\nfrom types import SimpleNamespace as O\nassert commission([O(price=100,sold=True),O(price=200,sold=False),O(price=50,sold=True)])==18\nassert commission([])==0",
+    "result_file": ""
+  },
+  "code": "def commission(products):\n    total = 0\n    for product in products:\n        if product.sold:\n            total += product.price\n    return total * 0.12",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

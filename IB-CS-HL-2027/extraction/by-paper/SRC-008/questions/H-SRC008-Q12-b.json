@@ -22,7 +22,14 @@
   "command_term": "Explain",
   "original_text": "[Source PDF page 6]\n(b) Explain the use of a one-dimensional array as a static stack. Your answer should\ninclude brief outlines of the push and pop operations and the tests for empty and\nfull stacks. [6]",
   "parent_context": "",
-  "assets": [],
+  "assets": [
+    {
+      "kind": "source_page",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-008-page-6.png",
+      "source_pdf_page": 6,
+      "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+    }
+  ],
   "assessed_concepts": [
     "Explain: Explain the use of a one-dimensional array as a static stack. Your answer should include brief outlines of the push and pop operations and the tests for empty and full stacks."
   ],
@@ -36,7 +43,9 @@
     ],
     "question_reference": "12(b)",
     "marking_summary": "Fixed array,top index,LIFO;push/pop;emptyTOP<0;sourcefullconditionTOP>N-1 is offbyone if topindex.",
-    "source_issues": []
+    "source_issues": [
+      "SRC-014 PDF p14: the static-stack full condition TOP > N-1 is inconsistent with TOP as the occupied last index. The adapted stack uses the correct capacity boundary."
+    ]
   },
   "relevance_status": "B",
   "mappings": [
@@ -76,6 +85,19 @@
       "pdf_page": 6,
       "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-008/page-006.txt"
     }
+  ],
+  "source_context_page_evidence": [
+    {
+      "pdf_page": 6,
+      "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-008-page-6.png",
+      "kind": "complete_original_page_raster",
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-008/page-006.txt"
+    }
+  ],
+  "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+  "complete_original_document_path": "sources/historical-papers/Computer_science_paper_1__HL (5).pdf",
+  "source_issues": [
+    "SRC-014 PDF p14: the static-stack full condition TOP > N-1 is inconsistent with TOP as the occupied last index. The adapted stack uses the correct capacity boundary."
   ],
   "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
   "practice_question_ids": [

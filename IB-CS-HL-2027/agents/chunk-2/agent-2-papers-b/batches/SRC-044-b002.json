@@ -1,0 +1,988 @@
+{
+  "source_id": "SRC-044",
+  "batch_id": "SRC-044-b002",
+  "source_questions": [
+    {
+      "source_question_id": "H-SRC044-Q02-b",
+      "source_id": "SRC-044",
+      "source_filename": "Computer_science_paper_2_TZ3_SL (1).pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "A",
+      "question": 2,
+      "subquestion": "b",
+      "source_pdf_pages": [
+        4
+      ],
+      "source_printed_pages": [
+        "3"
+      ],
+      "original_marks": 2,
+      "command_term": "Explain",
+      "original_text": "Explain the importance of a data definition language in implementing a data model.",
+      "parent_context": "– 3 – 2225 – 6423\nTurn over\n(Option A continued)\n2. Database design is a complex process that takes place in a range of phases. Different phases \nof database design use different schema.\n(a) Describe the difference between a conceptual schema and a logical schema. [2]\n(b) Explain the importance of a data definition language in implementing a data model. [2]\n(c) Explain why data modelling is used during the development of a database. [4]\n(d) Explain why both data validation and data verification are required to ensure the \ncorrectness of the data within a database. [3]\n(e) Outline how data integrity is maintained during a database transaction. [2]\n(f) Outline the role of relational integrity in maintaining data consistency within a database. [2]\n(Option A continues on page 5)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-04.png",
+          "source_pdf_page": 4,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Explain the importance of a data definition language in implementing a data model.",
+        "Explain why DDL is needed to implement an agreed database model, giving one suitable command"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-046",
+        "filename": "Computer_science_paper_2_TZ3_SL_markscheme.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "question_reference": "Q2 b",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max] Award [1 max] explanation of why DDL is important Award [1 max] example of use A DDL is used to specify the schema of a database; A DDL allows you to define the tables, fields, and set datatypes (e.g., CREATE TABLE); A DDL allows you to specify keys/create relationships; A DDL allows you to modify schema (e.g. DROP, ALTER); Note: Award 1 mark for any valid DDL command term",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]\nAward [1 max] explanation of why DDL is important\nAward [1 max] example of use\nA DDL is used to specify the schema of a database;\nA DDL allows you to define the tables, fields, and set datatypes (e.g., CREATE TABLE);\nA DDL allows you to specify keys/create relationships;\nA DDL allows you to modify schema (e.g. DROP, ALTER);\nNote: Award 1 mark for any valid DDL command term",
+        "source_issues": [],
+        "source_marking_evidence": "– 7 – 2225 – 6423M \n2. (a) Award [2 max] \nAward [1 max] description of conceptual schema \nAward [1 max] description of logical schema \nThe conceptual schema is a high level/least detailed representation of the database; \nConceptual is sometimes described as the “what” Model; \nInvolves identification of entities and (high level) relationships between them; \nThe logical schema is more detailed than a conceptual schema and shows details such as field \nnames; \nLogical schema is sometimes described as the “How” Schema; \nLogical schema is developed from the Conceptual schema; \n(b) Award [2 max]\nAward [1 max] explanation of why DDL is important\nAward [1 max] example of use\nA DDL is used to specify the schema of a database;\nA DDL allows you to define the tables, fields, and set datatypes (e.g., CREATE TABLE);\nA DDL allows you to specify keys/create relationships;\nA DDL allows you to modify schema (e.g. DROP, ALTER);\nNote: Award 1 mark for any valid DDL command term\n(c) Award [4 max]\nAward [1] explanation and [1] for example x 2\nIt helps to identify the entities/tables in the database;\nIf incorrect, they will not support the purpose of the DB;\nThe attributes of the tables should be necessary and sufficient for the purpose;\nTo avoid inefficiencies in the operation of the database;\nThe keys for accessing the tables need to be identified;\nTo ensure the user can easily access the data;\nThe relationships between tables are identified;\nTo enable the user to perform complex queries across several tables;\nNormalization during data modelling reduces data duplication;\nWhich reduces data anomalies;\nAnd saves storage space;\nEnables the database structure to be understood by other stakeholders/analyst/programmers;\nWhich makes database maintenance easier;"
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "A3.3.1",
+          "scope_evidence": "• Data language types must include data definition language (DDL) and data manipulation language (DML)\n• SQL statements to define data structures or to manipulate data",
+          "rationale": "Original and adapted within-scope skill: Explain why DDL is needed to implement an agreed database model, giving one suitable command; guidance target: Outline the differences between data language types within SQL.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC044-Q02-b"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC044-Q02-c",
+      "source_id": "SRC-044",
+      "source_filename": "Computer_science_paper_2_TZ3_SL (1).pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "A",
+      "question": 2,
+      "subquestion": "c",
+      "source_pdf_pages": [
+        4
+      ],
+      "source_printed_pages": [
+        "3"
+      ],
+      "original_marks": 4,
+      "command_term": "Explain",
+      "original_text": "Explain why data modelling is used during the development of a database.",
+      "parent_context": "– 3 – 2225 – 6423\nTurn over\n(Option A continued)\n2. Database design is a complex process that takes place in a range of phases. Different phases \nof database design use different schema.\n(a) Describe the difference between a conceptual schema and a logical schema. [2]\n(b) Explain the importance of a data definition language in implementing a data model. [2]\n(c) Explain why data modelling is used during the development of a database. [4]\n(d) Explain why both data validation and data verification are required to ensure the \ncorrectness of the data within a database. [3]\n(e) Outline how data integrity is maintained during a database transaction. [2]\n(f) Outline the role of relational integrity in maintaining data consistency within a database. [2]\n(Option A continues on page 5)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-04.png",
+          "source_pdf_page": 4,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Explain why data modelling is used during the development of a database.",
+        "Explain two reasons to model an equipment-loan database before creating its tables"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-046",
+        "filename": "Computer_science_paper_2_TZ3_SL_markscheme.pdf",
+        "pdf_pages": [
+          7
+        ],
+        "question_reference": "Q2 c",
+        "marking_summary": "Exact original MS leaf excerpt: Award [4 max] Award [1] explanation and [1] for example x 2 It helps to identify the entities/tables in the database; If incorrect, they will not support the purpose of the DB; The attributes of the tables should be necessary and sufficient for the purpose; To avoid inefficiencies in the operation of the database; The keys for accessing the tables need to be identified; To ensure the user can easily access the data; The relationships between tables are identified; To enable the user to perform complex queries across several tables; Normalization during data modelling reduces data duplication; Which reduces data anomalies; And saves storage space; Enables the database structure to be understood by other stakeholders/analyst/programmers; Which makes database maintenance easier;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [4 max]\nAward [1] explanation and [1] for example x 2\nIt helps to identify the entities/tables in the database;\nIf incorrect, they will not support the purpose of the DB;\nThe attributes of the tables should be necessary and sufficient for the purpose;\nTo avoid inefficiencies in the operation of the database;\nThe keys for accessing the tables need to be identified;\nTo ensure the user can easily access the data;\nThe relationships between tables are identified;\nTo enable the user to perform complex queries across several tables;\nNormalization during data modelling reduces data duplication;\nWhich reduces data anomalies;\nAnd saves storage space;\nEnables the database structure to be understood by other stakeholders/analyst/programmers;\nWhich makes database maintenance easier;",
+        "source_issues": [],
+        "source_marking_evidence": "– 7 – 2225 – 6423M \n2. (a) Award [2 max] \nAward [1 max] description of conceptual schema \nAward [1 max] description of logical schema \nThe conceptual schema is a high level/least detailed representation of the database; \nConceptual is sometimes described as the “what” Model; \nInvolves identification of entities and (high level) relationships between them; \nThe logical schema is more detailed than a conceptual schema and shows details such as field \nnames; \nLogical schema is sometimes described as the “How” Schema; \nLogical schema is developed from the Conceptual schema; \n(b) Award [2 max]\nAward [1 max] explanation of why DDL is important\nAward [1 max] example of use\nA DDL is used to specify the schema of a database;\nA DDL allows you to define the tables, fields, and set datatypes (e.g., CREATE TABLE);\nA DDL allows you to specify keys/create relationships;\nA DDL allows you to modify schema (e.g. DROP, ALTER);\nNote: Award 1 mark for any valid DDL command term\n(c) Award [4 max]\nAward [1] explanation and [1] for example x 2\nIt helps to identify the entities/tables in the database;\nIf incorrect, they will not support the purpose of the DB;\nThe attributes of the tables should be necessary and sufficient for the purpose;\nTo avoid inefficiencies in the operation of the database;\nThe keys for accessing the tables need to be identified;\nTo ensure the user can easily access the data;\nThe relationships between tables are identified;\nTo enable the user to perform complex queries across several tables;\nNormalization during data modelling reduces data duplication;\nWhich reduces data anomalies;\nAnd saves storage space;\nEnables the database structure to be understood by other stakeholders/analyst/programmers;\nWhich makes database maintenance easier;"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "A3.2.1",
+          "scope_evidence": "• Conceptual schema, logical schema, physical schema\n• Abstract definitions of the data structure and organization of the data at different levels",
+          "rationale": "Adapted target only: Explain two reasons to model an equipment-loan database before creating its tables; guidance target: Describe database schemas. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "A3.2.4",
+          "scope_evidence": "• The relationship between tables using primary keys, foreign keys, composite keys and concatenated keys\n• The importance of well-defined tables in ensuring data integrity",
+          "rationale": "Adapted target only: Explain two reasons to model an equipment-loan database before creating its tables; guidance target: Construct tables for relational databases. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC044-Q02-c"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC044-Q02-d",
+      "source_id": "SRC-044",
+      "source_filename": "Computer_science_paper_2_TZ3_SL (1).pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "A",
+      "question": 2,
+      "subquestion": "d",
+      "source_pdf_pages": [
+        4
+      ],
+      "source_printed_pages": [
+        "3"
+      ],
+      "original_marks": 3,
+      "command_term": "Explain",
+      "original_text": "Explain why both data validation and data verification are required to ensure the correctness of the data within a database.",
+      "parent_context": "– 3 – 2225 – 6423\nTurn over\n(Option A continued)\n2. Database design is a complex process that takes place in a range of phases. Different phases \nof database design use different schema.\n(a) Describe the difference between a conceptual schema and a logical schema. [2]\n(b) Explain the importance of a data definition language in implementing a data model. [2]\n(c) Explain why data modelling is used during the development of a database. [4]\n(d) Explain why both data validation and data verification are required to ensure the \ncorrectness of the data within a database. [3]\n(e) Outline how data integrity is maintained during a database transaction. [2]\n(f) Outline the role of relational integrity in maintaining data consistency within a database. [2]\n(Option A continues on page 5)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-04.png",
+          "source_pdf_page": 4,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Explain why both data validation and data verification are required to ensure the correctness of the data within a database.",
+        "A program accepts a day number only if1<=day<=31"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-046",
+        "filename": "Computer_science_paper_2_TZ3_SL_markscheme.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "question_reference": "Q2 d",
+        "marking_summary": "Exact original MS leaf excerpt: Award [3 max] Data validation is an automated process that ensures input meets the data entry rules) / Data validation is an automated process that ensures input data is reasonable/valid; Data verification is the checking of data to ensure it is the input intended; Using both techniques will provide the optimal solution, data validation can be applied to fields where the values can be easily determined (for example, no date of birth before a specified date), then data verification allows checking where data validation is not possible/appropriate (for example, a person’s surname); Award one mark for each definition [max 2] and one mark for linkage [1]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [3 max]\nData validation is an automated process that ensures input meets the data entry rules) / Data\nvalidation is an automated process that ensures input data is reasonable/valid;\nData verification is the checking of data to ensure it is the input intended;\nUsing both techniques will provide the optimal solution, data validation can be applied to fields\nwhere the values can be easily determined (for example, no date of birth before a specified\ndate), then data verification allows checking where data validation is not possible/appropriate\n(for example, a person’s surname);\nAward one mark for each definition [max 2] and one mark for linkage [1]",
+        "source_issues": [],
+        "source_marking_evidence": "– 8 – 2225 – 6423M \n(d) Award [3 max]\nData validation is an automated process that ensures input meets the data entry rules) / Data\nvalidation is an automated process that ensures input data is reasonable/valid;\nData verification is the checking of data to ensure it is the input intended;\nUsing both techniques will provide the optimal solution, data validation can be applied to fields\nwhere the values can be easily determined (for example, no date of birth before a specified\ndate), then data verification allows checking where data validation is not possible/appropriate\n(for example, a person’s surname);\nAward one mark for each definition [max 2] and one mark for linkage [1]\n(e) Award [2 max]\nIntegrity is maintained by no changes being made until the transaction is complete;\nIf the transaction cannot be completed it is rolled back (to the original state);\nAtomicity (all or nothing): change made or no changes made;\nConsistency ensures a transaction does not put the database in an invalid state;\nRules and integrity constraints (validation, entity and referential integrity) are automatically\nenforced before a transaction is committed;\nPreventing anomalies like orphan records and erroneous data;\nIsolation prevents interference between concurrent transactions;\nWhich ensures intermediate/uncommitted values of one transaction are not visible to other\ntransactions;\nThrough the use of locks and other concurrency control measures;\nPreventing errors like the lost update, dirty reads, phantom reads etc;\nDurability ensures that the effects of a committed transaction are permanent (irrespective of a\nsubsequent system failure);\nTransaction logs record all the changes made during transactions;\nIf a system failure occurs, the committed transactions in the log are reapplied to the database\nduring recovery;\nData integrity is ensured by preventing data loss;\nNote: Award 1 mark if a student only refers to ACID properties without any expansion\n(f) Award [2 max]\nReferential integrity refers to relationships between tables in a database;\nReferential integrity is maintained by the connection between the primary key in one table \nand\nthe foreign key in another;\nWhich ensures records are appropriately updated (e.g. FK value cannot be changed to a value\nthat does not exist as a PK);\nIt cascades updates and deletes from the PK table to the FK table;\nTo prevent update anomalies and orphan records;"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Adapted target only: A program accepts a day number only if1<=day<=31; guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Retains validation-versus-verification reasoning in a supplied programming selection context; no broad database-validation taxonomy is claimed.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC044-Q02-d"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC044-Q02-e",
+      "source_id": "SRC-044",
+      "source_filename": "Computer_science_paper_2_TZ3_SL (1).pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "A",
+      "question": 2,
+      "subquestion": "e",
+      "source_pdf_pages": [
+        4
+      ],
+      "source_printed_pages": [
+        "3"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "Outline how data integrity is maintained during a database transaction.",
+      "parent_context": "– 3 – 2225 – 6423\nTurn over\n(Option A continued)\n2. Database design is a complex process that takes place in a range of phases. Different phases \nof database design use different schema.\n(a) Describe the difference between a conceptual schema and a logical schema. [2]\n(b) Explain the importance of a data definition language in implementing a data model. [2]\n(c) Explain why data modelling is used during the development of a database. [4]\n(d) Explain why both data validation and data verification are required to ensure the \ncorrectness of the data within a database. [3]\n(e) Outline how data integrity is maintained during a database transaction. [2]\n(f) Outline the role of relational integrity in maintaining data consistency within a database. [2]\n(Option A continues on page 5)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-04.png",
+          "source_pdf_page": 4,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline how data integrity is maintained during a database transaction.",
+        "Outline how a transaction can avoid leaving only half of an account transfer in a database when an update fails"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-046",
+        "filename": "Computer_science_paper_2_TZ3_SL_markscheme.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "question_reference": "Q2 e",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max] Integrity is maintained by no changes being made until the transaction is complete; If the transaction cannot be completed it is rolled back (to the original state); Atomicity (all or nothing): change made or no changes made; Consistency ensures a transaction does not put the database in an invalid state; Rules and integrity constraints (validation, entity and referential integrity) are automatically enforced before a transaction is committed; Preventing anomalies like orphan records and erroneous data; Isolation prevents interference between concurrent transactions; Which ensures intermediate/uncommitted values of one transaction are not visible to other transactions; Through the use of locks and other concurrency control measures; Preventing errors like the lost update, dirty reads, phantom reads etc; Durability ensures that the effects of a committed transaction are perm … [full leaf evidence retained]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]\nIntegrity is maintained by no changes being made until the transaction is complete;\nIf the transaction cannot be completed it is rolled back (to the original state);\nAtomicity (all or nothing): change made or no changes made;\nConsistency ensures a transaction does not put the database in an invalid state;\nRules and integrity constraints (validation, entity and referential integrity) are automatically\nenforced before a transaction is committed;\nPreventing anomalies like orphan records and erroneous data;\nIsolation prevents interference between concurrent transactions;\nWhich ensures intermediate/uncommitted values of one transaction are not visible to other\ntransactions;\nThrough the use of locks and other concurrency control measures;\nPreventing errors like the lost update, dirty reads, phantom reads etc;\nDurability ensures that the effects of a committed transaction are permanent (irrespective of a\nsubsequent system failure);\nTransaction logs record all the changes made during transactions;\nIf a system failure occurs, the committed transactions in the log are reapplied to the database\nduring recovery;\nData integrity is ensured by preventing data loss;\nNote: Award 1 mark if a student only refers to ACID properties without any expansion",
+        "source_issues": [],
+        "source_marking_evidence": "– 8 – 2225 – 6423M \n(d) Award [3 max]\nData validation is an automated process that ensures input meets the data entry rules) / Data\nvalidation is an automated process that ensures input data is reasonable/valid;\nData verification is the checking of data to ensure it is the input intended;\nUsing both techniques will provide the optimal solution, data validation can be applied to fields\nwhere the values can be easily determined (for example, no date of birth before a specified\ndate), then data verification allows checking where data validation is not possible/appropriate\n(for example, a person’s surname);\nAward one mark for each definition [max 2] and one mark for linkage [1]\n(e) Award [2 max]\nIntegrity is maintained by no changes being made until the transaction is complete;\nIf the transaction cannot be completed it is rolled back (to the original state);\nAtomicity (all or nothing): change made or no changes made;\nConsistency ensures a transaction does not put the database in an invalid state;\nRules and integrity constraints (validation, entity and referential integrity) are automatically\nenforced before a transaction is committed;\nPreventing anomalies like orphan records and erroneous data;\nIsolation prevents interference between concurrent transactions;\nWhich ensures intermediate/uncommitted values of one transaction are not visible to other\ntransactions;\nThrough the use of locks and other concurrency control measures;\nPreventing errors like the lost update, dirty reads, phantom reads etc;\nDurability ensures that the effects of a committed transaction are permanent (irrespective of a\nsubsequent system failure);\nTransaction logs record all the changes made during transactions;\nIf a system failure occurs, the committed transactions in the log are reapplied to the database\nduring recovery;\nData integrity is ensured by preventing data loss;\nNote: Award 1 mark if a student only refers to ACID properties without any expansion\n(f) Award [2 max]\nReferential integrity refers to relationships between tables in a database;\nReferential integrity is maintained by the connection between the primary key in one table \nand\nthe foreign key in another;\nWhich ensures records are appropriately updated (e.g. FK value cannot be changed to a value\nthat does not exist as a PK);\nIt cascades updates and deletes from the PK table to the FK table;\nTo prevent update anomalies and orphan records;"
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "A3.3.6",
+          "scope_evidence": "• The role of atomicity, consistency, isolation and durability (ACID) to ensure reliable processing of transactions\n• Transaction control language (TCL) commands: BEGIN TRANSACTION, COMMIT, ROLLBACK",
+          "rationale": "Original and adapted within-scope skill: Outline how a transaction can avoid leaving only half of an account transfer in a database when an update fails; guidance target: Describe how transactions maintain data integrity in a database. (HL only)",
+          "theme": "A",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC044-Q02-e"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC044-Q02-f",
+      "source_id": "SRC-044",
+      "source_filename": "Computer_science_paper_2_TZ3_SL (1).pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "A",
+      "question": 2,
+      "subquestion": "f",
+      "source_pdf_pages": [
+        4
+      ],
+      "source_printed_pages": [
+        "3"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "Outline the role of relational integrity in maintaining data consistency within a database.",
+      "parent_context": "– 3 – 2225 – 6423\nTurn over\n(Option A continued)\n2. Database design is a complex process that takes place in a range of phases. Different phases \nof database design use different schema.\n(a) Describe the difference between a conceptual schema and a logical schema. [2]\n(b) Explain the importance of a data definition language in implementing a data model. [2]\n(c) Explain why data modelling is used during the development of a database. [4]\n(d) Explain why both data validation and data verification are required to ensure the \ncorrectness of the data within a database. [3]\n(e) Outline how data integrity is maintained during a database transaction. [2]\n(f) Outline the role of relational integrity in maintaining data consistency within a database. [2]\n(Option A continues on page 5)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-04.png",
+          "source_pdf_page": 4,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline the role of relational integrity in maintaining data consistency within a database.",
+        "Outline how primary and foreign keys help keep loan/member data consistent"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-046",
+        "filename": "Computer_science_paper_2_TZ3_SL_markscheme.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "question_reference": "Q2 f",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max] Referential integrity refers to relationships between tables in a database; Referential integrity is maintained by the connection between the primary key in one table and the foreign key in another; Which ensures records are appropriately updated (e.g. FK value cannot be changed to a value that does not exist as a PK); It cascades updates and deletes from the PK table to the FK table; To prevent update anomalies and orphan records;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]\nReferential integrity refers to relationships between tables in a database;\nReferential integrity is maintained by the connection between the primary key in one table \nand\nthe foreign key in another;\nWhich ensures records are appropriately updated (e.g. FK value cannot be changed to a value\nthat does not exist as a PK);\nIt cascades updates and deletes from the PK table to the FK table;\nTo prevent update anomalies and orphan records;",
+        "source_issues": [],
+        "source_marking_evidence": "– 8 – 2225 – 6423M \n(d) Award [3 max]\nData validation is an automated process that ensures input meets the data entry rules) / Data\nvalidation is an automated process that ensures input data is reasonable/valid;\nData verification is the checking of data to ensure it is the input intended;\nUsing both techniques will provide the optimal solution, data validation can be applied to fields\nwhere the values can be easily determined (for example, no date of birth before a specified\ndate), then data verification allows checking where data validation is not possible/appropriate\n(for example, a person’s surname);\nAward one mark for each definition [max 2] and one mark for linkage [1]\n(e) Award [2 max]\nIntegrity is maintained by no changes being made until the transaction is complete;\nIf the transaction cannot be completed it is rolled back (to the original state);\nAtomicity (all or nothing): change made or no changes made;\nConsistency ensures a transaction does not put the database in an invalid state;\nRules and integrity constraints (validation, entity and referential integrity) are automatically\nenforced before a transaction is committed;\nPreventing anomalies like orphan records and erroneous data;\nIsolation prevents interference between concurrent transactions;\nWhich ensures intermediate/uncommitted values of one transaction are not visible to other\ntransactions;\nThrough the use of locks and other concurrency control measures;\nPreventing errors like the lost update, dirty reads, phantom reads etc;\nDurability ensures that the effects of a committed transaction are permanent (irrespective of a\nsubsequent system failure);\nTransaction logs record all the changes made during transactions;\nIf a system failure occurs, the committed transactions in the log are reapplied to the database\nduring recovery;\nData integrity is ensured by preventing data loss;\nNote: Award 1 mark if a student only refers to ACID properties without any expansion\n(f) Award [2 max]\nReferential integrity refers to relationships between tables in a database;\nReferential integrity is maintained by the connection between the primary key in one table \nand\nthe foreign key in another;\nWhich ensures records are appropriately updated (e.g. FK value cannot be changed to a value\nthat does not exist as a PK);\nIt cascades updates and deletes from the PK table to the FK table;\nTo prevent update anomalies and orphan records;"
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "A3.1.1",
+          "scope_evidence": "• Features: composite keys, foreign keys, primary keys, relationships, tables\n• Benefits of databases: community support, concurrency control, data consistency, data integrity, data retrieval, reduced data duplication, reduced redundancy, reliable transaction processing, scalability, security features\n• Limitations of databases: “big data” scalability issues, design complexity, hierarchical data handling, rigid schema, object-relational impedance mismatch, unstructured data handling",
+          "rationale": "Original and adapted within-scope skill: Outline how primary and foreign keys help keep loan/member data consistent; guidance target: Explain the features, benefits and limitations of a relational database.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC044-Q02-f"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC044-Q03-a-i",
+      "source_id": "SRC-044",
+      "source_filename": "Computer_science_paper_2_TZ3_SL (1).pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "A",
+      "question": 3,
+      "subquestion": "a-i",
+      "source_pdf_pages": [
+        6
+      ],
+      "source_printed_pages": [
+        "5"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "Outline one reason why a derived field would be used in a database.",
+      "parent_context": "– 5 – 2225 – 6423\nTurn over\n(Option A continued)\n3. Alpha Hospital uses a database application to book appointments. Information can be shown \nin different formats.\nFigure 2 shows an example of a patient’s appointments displayed in the application.\nFigure 2: A patient’s appointments\nBack\nPatient appointments\nList\nSelect the appointment for \ndetails and directions to the \nbuilding and room.\n24 Jan 2024   09:30   Dr L. Ross\nGeneral Surgery\n26 Jan 2024   10:00   Dr N. Friend\nRadiology\n28 Jan 2024   09:30   Dr L. Ross\nGeneral Surgery\nPatient number\nFirst name\nPreferred name\nSurname\nDate of birth\nAge\nForm\nThe Age field is a derived field.\n(a) (i)   Outline one reason why a derived field would be used in a database. [2]\n(ii) Describe how the derived field Age would be calculated. [2]\nPatient information can be represented in the following format:\nPATIENT (PatientID, FirstName, Surname, PreferredName, DateOfBirth)\n(b) Outline the difference between first normal form (1NF) and second normal form (2NF). [2]\n(c) Construct a database in third normal form (3NF) for all of the data shown in Figure 2. \nYou should use database notation as shown in the PATIENT table. [6]\nEnd of Option A",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-06.png",
+          "source_pdf_page": 6,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline one reason why a derived field would be used in a database.",
+        "Outline why computing an employee’s current age from stored date of birth can avoid an inconsistency caused by separately storing age"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-046",
+        "filename": "Computer_science_paper_2_TZ3_SL_markscheme.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "question_reference": "Q3 a-i",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max] A derived field is calculated by using data that exists within the database; That means the data does not have to be input / does not take up storage space; A derived field has currency as it is calculated/derived at the time so accounts for changes in date etc;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]\nA derived field is calculated by using data that exists within the database; \nThat means the data does not have to be input / does not take up storage space; \nA derived field has currency as it is calculated/derived at the time so accounts for changes in \ndate etc;",
+        "source_issues": [],
+        "source_marking_evidence": "– 9 – 2225 – 6423M \n3. (a) (i) Award [2 max]\nA derived field is calculated by using data that exists within the database; \nThat means the data does not have to be input / does not take up storage space; \nA derived field has currency as it is calculated/derived at the time so accounts for changes in \ndate etc; \n(ii) Award [2 max]\nAward [1] for identifying the data from the database;\nAward [1] for the correct formula to create the derived data;\n[DateOfBirth] = SELECT DateOfBirth FROM Table\nAge = YEAR ([Date]) – YEAR([DateOfBirth])\nSELECT DATEDIFF (YYYY, DateOfBirth, GetDate()) AS Age FROM Table\nSELECT TIMESTAMPDIFF(YEAR, DateOfBirth, CURDATE()) AS Age FROM Table;\nSELECT DATE_FORMAT(NOW(), '%Y') - DATE_FORMAT(DOB, '%Y')  AS age\nFROM Table\nAccept similar structure\nAccept answers in structured English example:\nSelect Date of Birth from the patient table;\nSubtract the year of the birth date from the current year to get the “Age”;\n(b) Award [2 max]\nThe prerequisite for 2NF is 1NF;\n1NF has no prerequisite;\nThe focus of 1NF is to eliminate repeating groups, ensure atomicity of data values and ensure\nentity integrity;\nThe focus of 2NF is to ensure full functional dependency (remove partial dependencies);\n1NF applies to any data table;\n2NF only applies to tables with composite keys;"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "A3.1.1",
+          "scope_evidence": "• Features: composite keys, foreign keys, primary keys, relationships, tables\n• Benefits of databases: community support, concurrency control, data consistency, data integrity, data retrieval, reduced data duplication, reduced redundancy, reliable transaction processing, scalability, security features\n• Limitations of databases: “big data” scalability issues, design complexity, hierarchical data handling, rigid schema, object-relational impedance mismatch, unstructured data handling",
+          "rationale": "Adapted target only: Outline why computing an employee’s current age from stored date of birth can avoid an inconsistency caused by separately storing age; guidance target: Explain the features, benefits and limitations of a relational database. Adaptation: Retains derived-data reasoning as explicit redundancy/consistency benefit; does not claim a separate derived-field taxonomy.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC044-Q03-a-i"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC044-Q03-a-ii",
+      "source_id": "SRC-044",
+      "source_filename": "Computer_science_paper_2_TZ3_SL (1).pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "A",
+      "question": 3,
+      "subquestion": "a-ii",
+      "source_pdf_pages": [
+        6
+      ],
+      "source_printed_pages": [
+        "5"
+      ],
+      "original_marks": 2,
+      "command_term": "Describe",
+      "original_text": "Describe how the derived field Age would be calculated.",
+      "parent_context": "– 5 – 2225 – 6423\nTurn over\n(Option A continued)\n3. Alpha Hospital uses a database application to book appointments. Information can be shown \nin different formats.\nFigure 2 shows an example of a patient’s appointments displayed in the application.\nFigure 2: A patient’s appointments\nBack\nPatient appointments\nList\nSelect the appointment for \ndetails and directions to the \nbuilding and room.\n24 Jan 2024   09:30   Dr L. Ross\nGeneral Surgery\n26 Jan 2024   10:00   Dr N. Friend\nRadiology\n28 Jan 2024   09:30   Dr L. Ross\nGeneral Surgery\nPatient number\nFirst name\nPreferred name\nSurname\nDate of birth\nAge\nForm\nThe Age field is a derived field.\n(a) (i)   Outline one reason why a derived field would be used in a database. [2]\n(ii) Describe how the derived field Age would be calculated. [2]\nPatient information can be represented in the following format:\nPATIENT (PatientID, FirstName, Surname, PreferredName, DateOfBirth)\n(b) Outline the difference between first normal form (1NF) and second normal form (2NF). [2]\n(c) Construct a database in third normal form (3NF) for all of the data shown in Figure 2. \nYou should use database notation as shown in the PATIENT table. [6]\nEnd of Option A",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-06.png",
+          "source_pdf_page": 6,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Describe how the derived field Age would be calculated.",
+        "Describe how to calculate a person’s completed years of age from birth year/month/day and today’s year/month/day, assuming a valid ordinary date"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-046",
+        "filename": "Computer_science_paper_2_TZ3_SL_markscheme.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "question_reference": "Q3 a-ii",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max] Award [1] for identifying the data from the database; Award [1] for the correct formula to create the derived data; [DateOfBirth] = SELECT DateOfBirth FROM Table Age = YEAR ([Date]) – YEAR([DateOfBirth]) SELECT DATEDIFF (YYYY, DateOfBirth, GetDate()) AS Age FROM Table SELECT TIMESTAMPDIFF(YEAR, DateOfBirth, CURDATE()) AS Age FROM Table; SELECT DATE_FORMAT(NOW(), '%Y') - DATE_FORMAT(DOB, '%Y') AS age FROM Table Accept similar structure Accept answers in structured English example: Select Date of Birth from the patient table; Subtract the year of the birth date from the current year to get the “Age”;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]\nAward [1] for identifying the data from the database;\nAward [1] for the correct formula to create the derived data;\n[DateOfBirth] = SELECT DateOfBirth FROM Table\nAge = YEAR ([Date]) – YEAR([DateOfBirth])\nSELECT DATEDIFF (YYYY, DateOfBirth, GetDate()) AS Age FROM Table\nSELECT TIMESTAMPDIFF(YEAR, DateOfBirth, CURDATE()) AS Age FROM Table;\nSELECT DATE_FORMAT(NOW(), '%Y') - DATE_FORMAT(DOB, '%Y')  AS age\nFROM Table\nAccept similar structure\nAccept answers in structured English example:\nSelect Date of Birth from the patient table;\nSubtract the year of the birth date from the current year to get the “Age”;",
+        "source_issues": [
+          "Some source MS formulas subtract years only and overstate age before the birthday. Adaptation explicitly calculates completed years."
+        ],
+        "source_marking_evidence": "– 9 – 2225 – 6423M \n3. (a) (i) Award [2 max]\nA derived field is calculated by using data that exists within the database; \nThat means the data does not have to be input / does not take up storage space; \nA derived field has currency as it is calculated/derived at the time so accounts for changes in \ndate etc; \n(ii) Award [2 max]\nAward [1] for identifying the data from the database;\nAward [1] for the correct formula to create the derived data;\n[DateOfBirth] = SELECT DateOfBirth FROM Table\nAge = YEAR ([Date]) – YEAR([DateOfBirth])\nSELECT DATEDIFF (YYYY, DateOfBirth, GetDate()) AS Age FROM Table\nSELECT TIMESTAMPDIFF(YEAR, DateOfBirth, CURDATE()) AS Age FROM Table;\nSELECT DATE_FORMAT(NOW(), '%Y') - DATE_FORMAT(DOB, '%Y')  AS age\nFROM Table\nAccept similar structure\nAccept answers in structured English example:\nSelect Date of Birth from the patient table;\nSubtract the year of the birth date from the current year to get the “Age”;\n(b) Award [2 max]\nThe prerequisite for 2NF is 1NF;\n1NF has no prerequisite;\nThe focus of 1NF is to eliminate repeating groups, ensure atomicity of data values and ensure\nentity integrity;\nThe focus of 2NF is to ensure full functional dependency (remove partial dependencies);\n1NF applies to any data table;\n2NF only applies to tables with composite keys;"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.3.1",
+          "scope_evidence": "• The impact of instruction order on program functionality\n• Ways to avoid errors, such as infinite loops, deadlock, incorrect output",
+          "rationale": "Adapted target only: Describe how to calculate a person’s completed years of age from birth year/month/day and today’s year/month/day, assuming a valid ordinary date; guidance target: Construct programs that implement the correct sequence of code instructions to meet program objectives. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Adapted target only: Describe how to calculate a person’s completed years of age from birth year/month/day and today’s year/month/day, assuming a valid ordinary date; guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC044-Q03-a-ii"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC044-Q03-b",
+      "source_id": "SRC-044",
+      "source_filename": "Computer_science_paper_2_TZ3_SL (1).pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "A",
+      "question": 3,
+      "subquestion": "b",
+      "source_pdf_pages": [
+        6
+      ],
+      "source_printed_pages": [
+        "5"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "Outline the difference between first normal form (1NF) and second normal form (2NF).",
+      "parent_context": "– 5 – 2225 – 6423\nTurn over\n(Option A continued)\n3. Alpha Hospital uses a database application to book appointments. Information can be shown \nin different formats.\nFigure 2 shows an example of a patient’s appointments displayed in the application.\nFigure 2: A patient’s appointments\nBack\nPatient appointments\nList\nSelect the appointment for \ndetails and directions to the \nbuilding and room.\n24 Jan 2024   09:30   Dr L. Ross\nGeneral Surgery\n26 Jan 2024   10:00   Dr N. Friend\nRadiology\n28 Jan 2024   09:30   Dr L. Ross\nGeneral Surgery\nPatient number\nFirst name\nPreferred name\nSurname\nDate of birth\nAge\nForm\nThe Age field is a derived field.\n(a) (i)   Outline one reason why a derived field would be used in a database. [2]\n(ii) Describe how the derived field Age would be calculated. [2]\nPatient information can be represented in the following format:\nPATIENT (PatientID, FirstName, Surname, PreferredName, DateOfBirth)\n(b) Outline the difference between first normal form (1NF) and second normal form (2NF). [2]\n(c) Construct a database in third normal form (3NF) for all of the data shown in Figure 2. \nYou should use database notation as shown in the PATIENT table. [6]\nEnd of Option A",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-06.png",
+          "source_pdf_page": 6,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline the difference between first normal form (1NF) and second normal form (2NF).",
+        "Outline the difference between1NF and2NF"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-046",
+        "filename": "Computer_science_paper_2_TZ3_SL_markscheme.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "question_reference": "Q3 b",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max] The prerequisite for 2NF is 1NF; 1NF has no prerequisite; The focus of 1NF is to eliminate repeating groups, ensure atomicity of data values and ensure entity integrity; The focus of 2NF is to ensure full functional dependency (remove partial dependencies); 1NF applies to any data table; 2NF only applies to tables with composite keys;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]\nThe prerequisite for 2NF is 1NF;\n1NF has no prerequisite;\nThe focus of 1NF is to eliminate repeating groups, ensure atomicity of data values and ensure\nentity integrity;\nThe focus of 2NF is to ensure full functional dependency (remove partial dependencies);\n1NF applies to any data table;\n2NF only applies to tables with composite keys;",
+        "source_issues": [
+          "MS says2NF only applies to tables with composite keys; more precisely partial dependency concerns composite keys,while single-key1NF relations satisfy2NF automatically."
+        ],
+        "source_marking_evidence": "– 9 – 2225 – 6423M \n3. (a) (i) Award [2 max]\nA derived field is calculated by using data that exists within the database; \nThat means the data does not have to be input / does not take up storage space; \nA derived field has currency as it is calculated/derived at the time so accounts for changes in \ndate etc; \n(ii) Award [2 max]\nAward [1] for identifying the data from the database;\nAward [1] for the correct formula to create the derived data;\n[DateOfBirth] = SELECT DateOfBirth FROM Table\nAge = YEAR ([Date]) – YEAR([DateOfBirth])\nSELECT DATEDIFF (YYYY, DateOfBirth, GetDate()) AS Age FROM Table\nSELECT TIMESTAMPDIFF(YEAR, DateOfBirth, CURDATE()) AS Age FROM Table;\nSELECT DATE_FORMAT(NOW(), '%Y') - DATE_FORMAT(DOB, '%Y')  AS age\nFROM Table\nAccept similar structure\nAccept answers in structured English example:\nSelect Date of Birth from the patient table;\nSubtract the year of the birth date from the current year to get the “Age”;\n(b) Award [2 max]\nThe prerequisite for 2NF is 1NF;\n1NF has no prerequisite;\nThe focus of 1NF is to eliminate repeating groups, ensure atomicity of data values and ensure\nentity integrity;\nThe focus of 2NF is to ensure full functional dependency (remove partial dependencies);\n1NF applies to any data table;\n2NF only applies to tables with composite keys;"
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "A3.2.5",
+          "scope_evidence": "• First normal form (1NF), second normal form (2NF), third normal form (3NF)\n• The terms atomicity, unique identification, functional dependencies, partial-key dependencies, non-key/transitive dependencies\n• Normalization issues can encompass data duplication, missing data, and a range of dependency concerns, including data dependencies, composite key dependencies, transitive dependencies, and multi-valued dependencies.",
+          "rationale": "Original and adapted within-scope skill: Outline the difference between1NF and2NF; guidance target: Explain the difference between normal forms.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC044-Q03-b"
+      ]
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC044-Q02-b",
+      "source_question_ids": [
+        "H-SRC044-Q02-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Explain why DDL is needed to implement an agreed database model, giving one suitable command.",
+      "syllabus_codes": [
+        "A3.3.1"
+      ],
+      "theme": "A",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Explain",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "DDL defines the schema in the DBMS. CREATE TABLE can turn a modelled entity and attributes into a table with columns and key constraints.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Defines/implements schema structure."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct command with structural example."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          7
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC044-Q02-c",
+      "source_question_ids": [
+        "H-SRC044-Q02-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Explain two reasons to model an equipment-loan database before creating its tables.",
+      "syllabus_codes": [
+        "A3.2.1",
+        "A3.2.4"
+      ],
+      "theme": "A",
+      "level": "SL/HL common",
+      "marks": 4,
+      "command_term": "Explain",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Identifying entities and attributes checks that member, equipment and loan data support the required service instead of omitting essential facts. Defining keys and relationships lets each loan identify the correct member/item, supporting valid joins and avoiding ambiguous duplicated names.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Identifies necessary entities/attributes."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains support for intended use/avoided omission."
+        },
+        {
+          "marks": 1,
+          "criterion": "Defines keys/relationships."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains reliable linking/retrieval."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          7
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC044-Q02-d",
+      "source_question_ids": [
+        "H-SRC044-Q02-d"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "A program accepts a day number only if1<=day<=31. Explain why passing that test does not prove that the entered day equals the value on an original form, and describe an additional check.",
+      "syllabus_codes": [
+        "B2.3.2"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 3,
+      "command_term": "Explain",
+      "difficulty": "medium",
+      "adaptation_rationale": "Retains validation-versus-verification reasoning in a supplied programming selection context; no broad database-validation taxonomy is claimed.",
+      "solution": "The range test rejects impossible numbers but accepts a mistyped value such as12 instead of 21. Compare the entered value with the original form or use independently repeated entry and resolve differences. Rule conformity and faithful transcription are different checks.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Range test checks permitted values, not intended source value."
+        },
+        {
+          "marks": 1,
+          "criterion": "Concrete in-range transcription error."
+        },
+        {
+          "marks": 1,
+          "criterion": "Appropriate source comparison/double-entry check."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          8
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC044-Q02-e",
+      "source_question_ids": [
+        "H-SRC044-Q02-e"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline how a transaction can avoid leaving only half of an account transfer in a database when an update fails.",
+      "syllabus_codes": [
+        "A3.3.6"
+      ],
+      "theme": "A",
+      "level": "HL-only",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Treat the debit and credit as one transaction. Commit both if successful; otherwise roll back the uncommitted changes so neither half remains.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Both updates form one all-or-nothing transaction."
+        },
+        {
+          "marks": 1,
+          "criterion": "Commit both or roll back failed partial updates."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          8
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC044-Q02-f",
+      "source_question_ids": [
+        "H-SRC044-Q02-f"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline how primary and foreign keys help keep loan/member data consistent.",
+      "syllabus_codes": [
+        "A3.1.1"
+      ],
+      "theme": "A",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "A member primary key uniquely identifies each member. A loan’s foreign key must match a member key, preventing a loan from referring to a nonexistent member.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Primary key uniqueness/correct cross-table link."
+        },
+        {
+          "marks": 1,
+          "criterion": "Foreign-key rule prevents invalid references."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          8
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC044-Q03-a-i",
+      "source_question_ids": [
+        "H-SRC044-Q03-a-i"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline why computing an employee’s current age from stored date of birth can avoid an inconsistency caused by separately storing age.",
+      "syllabus_codes": [
+        "A3.1.1"
+      ],
+      "theme": "A",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Retains derived-data reasoning as explicit redundancy/consistency benefit; does not claim a separate derived-field taxonomy.",
+      "solution": "A stored age becomes outdated at a birthday even when the date of birth is correct. Calculating it when needed avoids maintaining two dependent values that can disagree.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Stored age can become outdated/inconsistent."
+        },
+        {
+          "marks": 1,
+          "criterion": "Calculation avoids redundant dependent values/update need."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          9
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC044-Q03-a-ii",
+      "source_question_ids": [
+        "H-SRC044-Q03-a-ii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Describe how to calculate a person’s completed years of age from birth year/month/day and today’s year/month/day, assuming a valid ordinary date.",
+      "syllabus_codes": [
+        "B2.3.1",
+        "B2.3.2"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Describe",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Subtract birth year from current year, then subtract one more if the current month/day is before the birthday this year.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Year difference."
+        },
+        {
+          "marks": 1,
+          "criterion": "Adjusts by one before this year’s birthday."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          9
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC044-Q03-b",
+      "source_question_ids": [
+        "H-SRC044-Q03-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline the difference between 1NF and 2NF.",
+      "syllabus_codes": [
+        "A3.2.5"
+      ],
+      "theme": "A",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "1NF requires atomic field values and no repeating groups. 2NF additionally requires every non-key attribute to depend on the whole candidate key, removing partial-key dependencies.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Correct1NF atomic/no-repeating-group requirement."
+        },
+        {
+          "marks": 1,
+          "criterion": "2NF includes1NF and removes partial-key dependencies."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          9
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    }
+  ]
+}

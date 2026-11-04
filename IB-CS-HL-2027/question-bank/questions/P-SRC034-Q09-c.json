@@ -1,0 +1,19 @@
+{
+  "question_id": "P-SRC034-Q09-c",
+  "source_question_ids": [
+    "H-SRC034-Q09-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Describe the effect of this SQL query. Buyer(BuyerID, Name) joins Invoice(InvoiceID, BuyerID, Total): SELECT Buyer.Name, Invoice.Total FROM Buyer JOIN Invoice ON Buyer.BuyerID=Invoice.BuyerID WHERE Invoice.Total>100 ORDER BY Invoice.Total DESC;",
+  "syllabus_codes": [
+    "A3.3.2"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 4,
+  "command_term": "Describe",
+  "difficulty": "medium",
+  "adaptation_rationale": "Retains relational query interpretation subset; removes PHP-specific processing and uses required two-table SQL scope.",
+  "assets": []
+}

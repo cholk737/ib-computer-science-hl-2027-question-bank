@@ -40,5 +40,6 @@
   },
   "code": "def replace_with_extreme_sum(stack):\n    first=stack.pop()\n    low=high=first\n    while not stack.isEmpty():\n        value=stack.pop()\n        if value < low:\n            low=value\n        if value > high:\n            high=value\n    stack.push(low+high)",
   "test_code": "class Stack:\n def __init__(self,v):self.v=list(v)\n def pop(self):return self.v.pop()\n def push(self,x):self.v.append(x)\n def isEmpty(self):return not self.v\nfor values,expected in [([-7,2,9],2),([-5,-2],-7),([4],8)]:\n s=Stack(values);replace_with_extreme_sum(s);assert s.v==[expected]",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

@@ -1,0 +1,34 @@
+{
+  "question_id": "P-SRC038-Q18-b",
+  "unofficial": true,
+  "marks": 3,
+  "solution": "Calls (row, col)=(1, 0), (1, 1), (1, 2), (1, 3). The base returns 3; successive returns are 2+3=5, 4+5=9, 1+9=10.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Correct calls through columns 0, 1, 2."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct base at column 3 and unwinding."
+    },
+    {
+      "marks": 1,
+      "criterion": "Final result10."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed multi-element and singleton base case.",
+    "source_comparison": [
+      46
+    ],
+    "test_code": "def row_total(grid, row, col):\n    if col == len(grid[row]) - 1:\n        return grid[row][col]\n    return grid[row][col] + row_total(grid, row, col+1)\nassert row_total([[9,8,7,6],[1,4,2,3]],1,0)==10\nassert row_total([[5]],0,0)==5",
+    "result_file": ""
+  },
+  "code": "def row_total(grid, row, col):\n    if col == len(grid[row]) - 1:\n        return grid[row][col]\n    return grid[row][col] + row_total(grid, row, col+1)",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

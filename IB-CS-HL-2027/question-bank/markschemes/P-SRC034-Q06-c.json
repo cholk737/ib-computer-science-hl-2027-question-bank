@@ -1,0 +1,45 @@
+{
+  "question_id": "P-SRC034-Q06-c",
+  "unofficial": true,
+  "marks": 6,
+  "solution": "def choose_order(order):\n    threshold=max(order[:2])\n    for rating in order[2:]:\n        if rating > threshold:\n            return rating\n    return order[-1]\n\ndef success_fraction(orders):\n    successful=0\n    for order in orders:\n        if choose_order(order) == 5:\n            successful+=1\n    return successful/len(orders)",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes success count to zero."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses all supplied orders once."
+    },
+    {
+      "marks": 1,
+      "criterion": "Calls choose_order for each order."
+    },
+    {
+      "marks": 1,
+      "criterion": "Tests whether selected rating is 5."
+    },
+    {
+      "marks": 1,
+      "criterion": "Increments only on success."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns count divided by number of orders using true division."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "Executable checks saved under checks/ where applicable."
+  },
+  "code": "def choose_order(order):\n    threshold=max(order[:2])\n    for rating in order[2:]:\n        if rating > threshold:\n            return rating\n    return order[-1]\n\ndef success_fraction(orders):\n    successful=0\n    for order in orders:\n        if choose_order(order) == 5:\n            successful+=1\n    return successful/len(orders)",
+  "test_code": "import itertools\norders=list(itertools.permutations(range(1,6)))\nassert success_fraction(orders)==(52/120)",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

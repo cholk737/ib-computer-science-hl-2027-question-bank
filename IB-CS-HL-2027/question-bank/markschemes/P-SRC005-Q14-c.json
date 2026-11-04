@@ -56,5 +56,6 @@
   },
   "code": "def proper_sum(n):\n    total=0\n    for factor in range(1,n):\n        if n % factor == 0:\n            total += factor\n    return total\n\ndef classify_grid(grid):\n    low,equal,high=[],[],[]\n    for row in grid:\n        for n in row:\n            summed=proper_sum(n)\n            if summed < n:\n                low.append(n)\n            elif summed == n:\n                equal.append(n)\n            else:\n                high.append(n)\n    return low,equal,high",
   "test_code": "assert classify_grid([[1,6,12],[9,28,12]])==([1,9],[6,28],[12,12])\nassert classify_grid([])==([],[],[])",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

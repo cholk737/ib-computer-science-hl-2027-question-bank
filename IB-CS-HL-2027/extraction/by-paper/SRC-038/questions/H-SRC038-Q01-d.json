@@ -1,0 +1,76 @@
+{
+  "source_question_id": "H-SRC038-Q01-d",
+  "source_id": "SRC-038",
+  "source_filename": "Computer_science_paper_2_HL.pdf",
+  "year": "2025",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "not stated",
+  "option": "A",
+  "question": 1,
+  "subquestion": "d",
+  "source_pdf_pages": [
+    4
+  ],
+  "source_printed_pages": [
+    "3"
+  ],
+  "original_marks": 3,
+  "command_term": "Describe",
+  "original_text": "Describe the steps used in log recovery when a database crashes.",
+  "parent_context": "– 3 – 8825 – 6405\nTurn over\nOption A — Databases\n1. A dental clinic employs dentists and nurses.\n\ty Many dentists work at a single dental clinic.\n\ty Many nurses work at a single dental clinic.\n\ty A dentist can work with many nurses.\n\ty A nurse can assist many dentists.\n(a) Construct an entity-relationship diagram (ERD) that shows the relationships between \nclinic, dentist, and nurse. [3]\nA dentist adds comments to the clinic’s database using an electronic device rather than using \na paper-based medical record.\n(b) Explain two advantages of storing medical notes in a database. [6]\nA database transaction occurs when a patient pays their bill. To maintain data consistency \nand integrity during the transaction, the database goes through several states.\n(c) Describe the change in database states when a transaction is updated. [3]\nLog files are stored prior to database updates. If the database crashes, the log files are used \nto recover the database.\n(d) Describe the steps used in log recovery when a database crashes. [3]\n(Option A continues on the following page)",
+  "assets": [
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-04.png",
+      "source_pdf_page": 4,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Describe the steps used in log recovery when a database crashes.",
+    "A transaction has decreased store A’s count but fails before increasing store B’s count"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-039",
+    "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+    "pdf_pages": [
+      6
+    ],
+    "question_reference": "Q1 d",
+    "marking_summary": "Exact original MS leaf excerpt: Award [3] max Award [1] per point a consistent version of the DB is recovered from backup; the log file is scanned to determine the most recent checkpoint; the committed and uncommitted transactions (since that checkpoint) are determined; the committed transactions are redone (reapplied to the database); the uncommitted transactions are undone / rollback (in the case of immediate update);",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [3] max\nAward [1] per point\na consistent version of the DB is recovered from backup;\nthe log file is scanned to determine the most recent checkpoint;\nthe committed and uncommitted transactions (since that checkpoint) are determined;\nthe committed transactions are redone (reapplied to the database);\nthe uncommitted transactions are undone / rollback (in the case of immediate update);",
+    "source_issues": [],
+    "source_marking_evidence": "– 6 – 8825 – 6405M \n(c) Award [3] max\nAward [1] per point\nInitial State: Before payment, the patient's account shows a due balance;\nTransition State: During payment processing, the system temporarily locks the patient's\nrecord to update payment details;\nFinal State: After successful payment, the new balance is shown, often updating the\npatient's status to 'Paid' or 'Cleared';\nError Handling: In case of transaction failure, the system rolls back to the initial state,\nensuring data integrity;\nNote: Accept alternative terminology e.g. consistent, intermediate, and final.\n(d) Award [3] max\nAward [1] per point\na consistent version of the DB is recovered from backup;\nthe log file is scanned to determine the most recent checkpoint;\nthe committed and uncommitted transactions (since that checkpoint) are determined;\nthe committed transactions are redone (reapplied to the database);\nthe uncommitted transactions are undone / rollback (in the case of immediate update);"
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "A3.3.6",
+      "scope_evidence": "• The role of atomicity, consistency, isolation and durability (ACID) to ensure reliable processing of transactions\n• Transaction control language (TCL) commands: BEGIN TRANSACTION, COMMIT, ROLLBACK",
+      "rationale": "Adapted target only: A transaction has decreased store A’s count but fails before increasing store B’s count; guidance target: Describe how transactions maintain data integrity in a database. (HL only) Adaptation: Retains undo/recovery reasoning through explicit ROLLBACK; log/checkpoint recovery algorithms are not claimed as requirements.",
+      "theme": "A",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC038-Q01-d"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

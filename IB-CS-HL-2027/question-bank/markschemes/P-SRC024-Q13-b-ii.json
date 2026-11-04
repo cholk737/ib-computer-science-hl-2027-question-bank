@@ -24,5 +24,6 @@
   },
   "code": "def show_readings(readings):\n    i=0\n    while i < len(readings):\n        value=readings[i]\n        print(value)\n        i+=1",
   "test_code": "import io,contextlib\nfor data in [[],[7],[7,9,2],[1,2]]:\n buf=io.StringIO()\n with contextlib.redirect_stdout(buf):show_readings(data)\n assert buf.getvalue()==\"\".join(str(x)+\"\\n\" for x in data)",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

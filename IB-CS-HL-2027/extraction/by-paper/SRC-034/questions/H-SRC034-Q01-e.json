@@ -1,0 +1,96 @@
+{
+  "original_assessment_context": "Restaurant schema CUSTOMER(CustomerID,FirstName,Surname,Phone,Email);ORDER(OrderID,OrderDate,OrderTime,CustomerID);ORDERLINE(OrderID,ItemID,Quantity,UnitPrice,LinePrice);ITEM(ItemID,Name,QtyInStock,UnitPrice).",
+  "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+  "source_question_id": "H-SRC034-Q01-e",
+  "source_id": "SRC-034",
+  "source_filename": "Computer_science_paper_2__HL.pdf",
+  "year": "2023",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "not stated",
+  "option": "A",
+  "question": "1",
+  "subquestion": "e",
+  "source_pdf_pages": [
+    3
+  ],
+  "source_printed_pages": [
+    "2"
+  ],
+  "original_marks": 4,
+  "command_term": "Identify",
+  "original_text": "[Source PDF page 3]\nThe restaurant owner wants to introduce a loyalty scheme for customers. After 10 visits,\nthey will receive a voucher for $ 20.\n(e) Identify the steps to create a query to list the visits of a customer with the first name of\n“Akemi” and the surname of “Watene”. The query should display FirstName, Surname\nand OrderDate. [4]",
+  "parent_context": "Restaurant schema CUSTOMER(CustomerID,FirstName,Surname,Phone,Email);ORDER(OrderID,OrderDate,OrderTime,CustomerID);ORDERLINE(OrderID,ItemID,Quantity,UnitPrice,LinePrice);ITEM(ItemID,Name,QtyInStock,UnitPrice).",
+  "assets": [
+    {
+      "kind": "source_page",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-03.png",
+      "source_pdf_page": 3,
+      "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+    }
+  ],
+  "assessed_concepts": [
+    "Identify: Identify the steps to create a query to list the visits of a customer with first name Akemi and surname Watene. Display FirstName,Surname and OrderDate."
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-037",
+    "filename": "Computer_science_paper_2__HL_markscheme.pdf",
+    "pdf_pages": [
+      5
+    ],
+    "question_reference": "1(e)",
+    "marking_summary": "Select fields;join customer/order by PK-FK;filter both names.",
+    "source_issues": [
+      "SRC-037 SQL example has inconsistent OrdDate/OrderDate naming and uses ORDER as a table name. The unofficial SQL uses a new consistent Buyer/Invoice schema and is executed in SQLite."
+    ]
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "mapping_target": "adapted_practice_only",
+      "syllabus_code": "A3.3.2",
+      "scope_evidence": "• Queries must include joins, relational operators, filtering, pattern matching, and ordering data\n• SQL commands: SELECT, DISTINCT, FROM, WHERE, BETWEEN, ORDER BY, GROUP BY, HAVING, ASC, DESC, JOIN, LIKE with % wildcard, AND, OR, NOT (note: Syntax may vary in different database systems)",
+      "rationale": "Preserves two-table join/filter reasoning;new schema avoids reserved ORDER identifier and source sample’s OrdDate/OrderDate mismatch.",
+      "theme": "A",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+    "marks": "Printed allocation transcribed.",
+    "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+    "official_answer_status": "See source markscheme record"
+  },
+  "original_text_manual_synopsis": "Identify the steps to create a query to list the visits of a customer with first name Akemi and surname Watene. Display FirstName,Surname and OrderDate.",
+  "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+  "source_page_evidence": [
+    {
+      "pdf_page": 3,
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-003.txt"
+    }
+  ],
+  "source_context_page_evidence": [
+    {
+      "pdf_page": 3,
+      "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-03.png",
+      "kind": "complete_original_page_raster",
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-003.txt"
+    }
+  ],
+  "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+  "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2__HL.pdf",
+  "source_issues": [
+    "SRC-037 SQL example has inconsistent OrdDate/OrderDate naming and uses ORDER as a table name. The unofficial SQL uses a new consistent Buyer/Invoice schema and is executed in SQLite."
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC034-Q01-e"
+  ]
+}

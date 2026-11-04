@@ -1,0 +1,37 @@
+{
+  "question_id": "P-SRC034-Q15-a",
+  "unofficial": true,
+  "marks": 4,
+  "solution": "def sell(self,item):\n    requested=self.request_units()\n    item.stock-=requested\n    if item.stock < 0:\n        item.stock=0\n    if item.stock == 0:\n        print(item.name,\"sold out\")\n    else:\n        print(item.name, requested, item.stock)",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Calls self.request_units exactly once and subtracts its result from item.stock."
+    },
+    {
+      "marks": 1,
+      "criterion": "Clamps negative stock to 0."
+    },
+    {
+      "marks": 1,
+      "criterion": "Prints name and sold-out message when remaining stock is 0."
+    },
+    {
+      "marks": 1,
+      "criterion": "Otherwise prints name, requested quantity and remaining stock."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "Executable checks saved under checks/ where applicable."
+  },
+  "code": "def sell(self,item):\n    requested=self.request_units()\n    item.stock-=requested\n    if item.stock < 0:\n        item.stock=0\n    if item.stock == 0:\n        print(item.name,\"sold out\")\n    else:\n        print(item.name,requested,item.stock)",
+  "test_code": "from types import SimpleNamespace\nimport contextlib,io\nowner=SimpleNamespace(request_units=lambda:3)\nfor initial,expected in [(2,0),(3,0),(8,5)]:\n item=SimpleNamespace(name=\"P\",stock=initial)\n with contextlib.redirect_stdout(io.StringIO()):sell(owner,item)\n assert item.stock==expected",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

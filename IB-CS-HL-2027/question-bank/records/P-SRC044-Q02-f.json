@@ -1,0 +1,47 @@
+{
+  "question_id": "P-SRC044-Q02-f",
+  "source_question_ids": [
+    "H-SRC044-Q02-f"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Outline how primary and foreign keys help keep loan/member data consistent.",
+  "syllabus_codes": [
+    "A3.1.1"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 2,
+  "command_term": "Outline",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "A member primary key uniquely identifies each member. A loan’s foreign key must match a member key, preventing a loan from referring to a nonexistent member.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Primary key uniqueness/correct cross-table link."
+    },
+    {
+      "marks": 1,
+      "criterion": "Foreign-key rule prevents invalid references."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      8
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC044-Q02-f.json",
+  "question_path": "question-bank/questions/P-SRC044-Q02-f.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC044-Q02-f.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

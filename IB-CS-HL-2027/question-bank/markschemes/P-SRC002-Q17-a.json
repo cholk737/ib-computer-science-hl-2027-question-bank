@@ -6,7 +6,7 @@
   "marking_points": [
     {
       "marks": 1,
-      "criterion": "Initializes change count andhead traversal."
+      "criterion": "Initializes change count and head traversal."
     },
     {
       "marks": 1,
@@ -22,11 +22,11 @@
     },
     {
       "marks": 1,
-      "criterion": "Increments count only on match andadvances references."
+      "criterion": "Increments count only on match and advances references."
     },
     {
       "marks": 1,
-      "criterion": "Returns count withcorrectemptycase."
+      "criterion": "Returns count with correct empty case."
     }
   ],
   "acceptable_alternatives": [],
@@ -39,5 +39,6 @@
     "result_file": ""
   },
   "code": "def change_preference(head, old, new):\n    changed = 0\n    current = head\n    while current is not None:\n        if current.customer.preferred_shop == old:\n            current.customer.preferred_shop = new\n            changed += 1\n        current = current.next\n    return changed",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

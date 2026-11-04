@@ -1,0 +1,38 @@
+{
+  "question_id": "P-SRC032-Q16-d",
+  "unofficial": true,
+  "marks": 4,
+  "solution": "Create two empty result lists with head/tail references. Traverse the original list, saving the next reference before detaching a node. Append that node to the appropriate result tail according to attended. Advance using the saved reference and finally clear the original head.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes two result lists."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses every original node and saves next."
+    },
+    {
+      "marks": 1,
+      "criterion": "Chooses correct result from attended."
+    },
+    {
+      "marks": 1,
+      "criterion": "Relinks/detaches safely, preserves order and clears original head."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      34
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

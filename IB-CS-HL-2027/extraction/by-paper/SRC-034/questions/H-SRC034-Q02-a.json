@@ -1,0 +1,104 @@
+{
+  "original_assessment_context": "Restaurant schema CUSTOMER(CustomerID,FirstName,Surname,Phone,Email);ORDER(OrderID,OrderDate,OrderTime,CustomerID);ORDERLINE(OrderID,ItemID,Quantity,UnitPrice,LinePrice);ITEM(ItemID,Name,QtyInStock,UnitPrice).LinePrice=Quantity×UnitPrice.",
+  "source_scope_note": "Original assessed concept classified directly or excluded with reason.",
+  "source_question_id": "H-SRC034-Q02-a",
+  "source_id": "SRC-034",
+  "source_filename": "Computer_science_paper_2__HL.pdf",
+  "year": "2023",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "not stated",
+  "option": "A",
+  "question": "2",
+  "subquestion": "a",
+  "source_pdf_pages": [
+    4
+  ],
+  "source_printed_pages": [
+    "3"
+  ],
+  "original_marks": 3,
+  "command_term": "Explain",
+  "original_text": "[Source PDF page 3]\n(Option A continues on the following page)\n\n[Source PDF page 4]\n(Option A continued)\n2. The restaurant owner has hired a database administrator to extend the database.\nThe database administrator has decided to delete the LinePrice field from the\nORDERLINE table.\nORDERLINE\nOrderID ItemID Quantity UnitPrice LinePrice\nDM1007 F1234 1 16.99 16.99\nDM1007 W2134 2 6.99 13.98\n(a) Explain why the decision to delete the LinePrice field has been made. [3]",
+  "parent_context": "Restaurant schema CUSTOMER(CustomerID,FirstName,Surname,Phone,Email);ORDER(OrderID,OrderDate,OrderTime,CustomerID);ORDERLINE(OrderID,ItemID,Quantity,UnitPrice,LinePrice);ITEM(ItemID,Name,QtyInStock,UnitPrice).LinePrice=Quantity×UnitPrice.",
+  "assets": [
+    {
+      "kind": "source_page",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-03.png",
+      "source_pdf_page": 3,
+      "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+    },
+    {
+      "kind": "source_page",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-04.png",
+      "source_pdf_page": 4,
+      "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+    }
+  ],
+  "assessed_concepts": [
+    "Explain: Explain why the decision to delete the LinePrice field has been made."
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-037",
+    "filename": "Computer_science_paper_2__HL_markscheme.pdf",
+    "pdf_pages": [
+      5
+    ],
+    "question_reference": "2(a)",
+    "marking_summary": "Derived field duplicates calculable data and risks inconsistency.",
+    "source_issues": []
+  },
+  "relevance_status": "A",
+  "mappings": [
+    {
+      "mapping_target": "original_and_adapted",
+      "syllabus_code": "A3.2.5",
+      "scope_evidence": "• First normal form (1NF), second normal form (2NF), third normal form (3NF)\n• The terms atomicity, unique identification, functional dependencies, partial-key dependencies, non-key/transitive dependencies\n• Normalization issues can encompass data duplication, missing data, and a range of dependency concerns, including data dependencies, composite key dependencies, transitive dependencies, and multi-valued dependencies.",
+      "rationale": "The assessed skill is explicitly named in the cited statement and its guidance; mapping does not credit unassessed scenario topics.",
+      "theme": "A",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+    "marks": "Printed allocation transcribed.",
+    "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+    "official_answer_status": "See source markscheme record"
+  },
+  "original_text_manual_synopsis": "Explain why the decision to delete the LinePrice field has been made.",
+  "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+  "source_page_evidence": [
+    {
+      "pdf_page": 4,
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-004.txt"
+    }
+  ],
+  "source_context_page_evidence": [
+    {
+      "pdf_page": 3,
+      "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-03.png",
+      "kind": "complete_original_page_raster",
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-003.txt"
+    },
+    {
+      "pdf_page": 4,
+      "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-04.png",
+      "kind": "complete_original_page_raster",
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-004.txt"
+    }
+  ],
+  "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+  "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2__HL.pdf",
+  "source_issues": [],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC034-Q02-a"
+  ]
+}

@@ -22,7 +22,14 @@
   "command_term": "Deduce",
   "original_text": "[Source PDF page 7]\nMAT\n(d) Deduce the purpose of the method . [2]\nmystery(A,R)",
   "parent_context": "MAT=[[7,7,0,0,0,0],[1,2,1,0,0,0],[0,9,-3,5,0,0],[0,0,-5,6,4,0],[0,0,0,7,7,2],[0,0,0,0,5,1]]. Nonzero iff within one position of main diagonal.mystery(A,R): ifR>0 returnA[R][R-1]+mystery(A,R-1),else0;X=mystery(MAT,5).",
-  "assets": [],
+  "assets": [
+    {
+      "kind": "source_page",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-008-page-7.png",
+      "source_pdf_page": 7,
+      "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+    }
+  ],
   "assessed_concepts": [
     "Deduce: Deduce the purpose of the method mystery(A,R)."
   ],
@@ -67,6 +74,17 @@
       "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-008/page-007.txt"
     }
   ],
+  "source_context_page_evidence": [
+    {
+      "pdf_page": 7,
+      "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-008-page-7.png",
+      "kind": "complete_original_page_raster",
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-008/page-007.txt"
+    }
+  ],
+  "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+  "complete_original_document_path": "sources/historical-papers/Computer_science_paper_1__HL (5).pdf",
+  "source_issues": [],
   "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
   "practice_question_ids": [
     "P-SRC008-Q13-d"

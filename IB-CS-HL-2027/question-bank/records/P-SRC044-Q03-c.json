@@ -1,0 +1,63 @@
+{
+  "question_id": "P-SRC044-Q03-c",
+  "source_question_ids": [
+    "H-SRC044-Q03-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A booking system stores MemberID, MemberName, GuideID, GuideName, DepartmentID, DepartmentName, BookingID, StartTime. Each guide belongs to one department. MemberID determines MemberName; GuideID determines GuideName and DepartmentID; DepartmentID determines DepartmentName. Each unique BookingID refers to one member and guide at StartTime. Construct a 3NF schema with keys.",
+  "syllabus_codes": [
+    "A3.2.6"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 6,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Supplies explicit dependencies and booking identity rather than inferring functional dependencies from a UI screenshot.",
+  "solution": "MEMBER(MemberID PK, MemberName); DEPARTMENT(DepartmentID PK, DepartmentName); GUIDE(GuideID PK, GuideName, DepartmentID FK); BOOKING(BookingID PK, MemberID FK, GuideID FK, StartTime).",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "MEMBER correct."
+    },
+    {
+      "marks": 1,
+      "criterion": "DEPARTMENT correct."
+    },
+    {
+      "marks": 1,
+      "criterion": "GUIDE attributes and primary key."
+    },
+    {
+      "marks": 1,
+      "criterion": "DepartmentID foreign key in GUIDE."
+    },
+    {
+      "marks": 1,
+      "criterion": "BOOKING key and StartTime."
+    },
+    {
+      "marks": 1,
+      "criterion": "MemberID/GuideID foreign keys and no redundant names in BOOKING."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      10
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC044-Q03-c.json",
+  "question_path": "question-bank/questions/P-SRC044-Q03-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC044-Q03-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

@@ -13,3 +13,5 @@
 `SOURCE_INVENTORY.csv` / `.json` contain stable source IDs, exact filenames, original/project paths, hashes, byte/page counts, cover text, source codes, sessions/levels/papers, identity evidence, pairing and uncertainty notes. Do not infer newer numeric exam-code timezone labels where not explicitly supported: qualifier text in `zone` states filename/paired-source evidence.
 
 Historical metadata checks were confined to inventory/cover availability. No historical question extraction, syllabus mapping, adaptation or marking was begun. Sources are authoritative only in the order in AGENTS.md; historical formats do not define 2027 examinations.
+
+Chunk 2 resolution: the omitted page in SRC047 is printed page4, a confirmed blank page. Its question content is complete, but canonical SRC005 is processed once. See audits/chunk-2/ALTERNATE_SOURCE_CHECK.json.

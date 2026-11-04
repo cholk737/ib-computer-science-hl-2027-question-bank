@@ -1,0 +1,47 @@
+{
+  "question_id": "P-SRC044-Q04-d",
+  "source_question_ids": [
+    "H-SRC044-Q04-d"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A monitoring program retains every reading in RAM. Outline why sampling every hour rather than every minute reduces its working-memory requirement, assuming equal-size records over the same day.",
+  "syllabus_codes": [
+    "A1.1.4"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 2,
+  "command_term": "Outline",
+  "difficulty": "medium",
+  "adaptation_rationale": "Retains sampling/storage reasoning through explicit RAM working-data context,not simulation data-collection theory.",
+  "solution": "It stores24 readings rather than 1440, so storage for the reading records is reduced by a factor of 60, leaving more working memory available.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Fewer retained reading records, 24 versus1440."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains proportionately lower RAM use."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      11
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC044-Q04-d.json",
+  "question_path": "question-bank/questions/P-SRC044-Q04-d.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC044-Q04-d.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

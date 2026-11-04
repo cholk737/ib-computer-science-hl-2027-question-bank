@@ -1,0 +1,659 @@
+{
+  "source_id": "SRC-038",
+  "batch_id": "SRC-038-b007",
+  "source_questions": [
+    {
+      "source_question_id": "H-SRC038-Q09-e-i",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "C",
+      "question": 9,
+      "subquestion": "e-i",
+      "source_pdf_pages": [
+        18
+      ],
+      "source_printed_pages": [
+        "17"
+      ],
+      "original_marks": 4,
+      "command_term": "Describe",
+      "original_text": "Describe the processing that takes place when this code is executed.",
+      "parent_context": "– 16 – 8825 – 6405\nOption C — Web science\n9. Hardware4Hotels is a company that provides services to hotels, such as carrying out \nelectrical repairs, decorating, and plumbing.\nThe URL for the company’s website is http://hardware4hotels.example.com\n(a) (i)   State the protocol in the company’s website URL. [1]\n(ii) State the domain name in the company’s website URL. [1]\n(b) Outline the importance of protocols when browsing websites. [2]\n(c) Identify two components of a webpage. [2]\nThe website for Hardware4Hotels has been designed so it can receive feedback from its \ncustomers. After the work has been completed, the customer is asked to submit a score from \n1 to 5 for the service provided (see Figure 8).\nFigure 8: The Hardware4Hotels feedback webpage\nH\nhttp://hardware4hotels.example.com\nHardware4Hotels\nspecialist hotel maintenance contractors\nPlease rate the following job:\nUser: 09876 (Peter Achison)\nWork category: interior decoration\nSubmit\nHome  About  Services  Case studies  Careers  Contact\n(d) Describe the role of the common gateway interface (CGI) on the Hardware4Hotels \nwebsite. [2]\n(Option C continues on the following page)\n– 17 – 8825 – 6405\nTurn over\n(Option C, question 9 continued)\nThe following is part of the code that is run on the server when a customer (the user) \nsubmits a rating.\n<?php\n$work_category = $_POST[\"work_category\"];\n$rating = $_POST[\"rating\"];\n$conn = mysqli_connect(\"localhost\", $username, $password, \"sales\");\n$sql = \"SELECT AVG(rating) as averageRating FROM ratings WHERE work_\ncategory = '$work_category'\";\n$result = mysqli_query($conn, $sql);\n$row = mysqli_fetch_assoc($result);\n$averageRating = $row[\"averageRating\"];\n$sql = \"INSERT INTO ratings (work_category, rating) VALUES ('$work_\ncategory', $rating)\";\nmysqli_query($conn, $sql);\nif ($rating >= $averageRating) {\n    echo \"Thank you for the good review.\";\n} else {\n    echo \"Sorry, we will try to do better next time.\";\n}\nmysqli_close($conn);\n?>\n(e) (i)   Describe the processing that takes place when this code is executed. [4]\n(ii) Outline one advantage of executing this code on a server rather than in  \nthe browser. [3]\n(Option C continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-17.png",
+          "source_pdf_page": 17,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-18.png",
+          "source_pdf_page": 18,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Describe the processing that takes place when this code is executed.",
+        "FEEDBACK(Category,Score) initially contains (\"repair\",2),(\"repair\",4),(\"paint\",5)"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          28
+        ],
+        "question_reference": "Q9 e-i",
+        "marking_summary": "Original server computes existing category average, inserts submitted rating, compares new rating against old average and outputs a corresponding message.",
+        "summary_kind": "author_paraphrase_of_original",
+        "source_marking_leaf_evidence": "Award [4 max]\nwhen the user submits the form, the server runs the PHP script; \nreceives the work category and rating from the HTML form/CGI  sent from the form \nusing the $_POST array; \nconnects to the database (sales);  \nselects the average rating for the given category;  \ninserts the new rating into the database;  \ncompares the new rating to the average; \noutputs “Thank you...” message if it is at least equal to the average;  \noutputs a “Sorry...” message if it is below the average for that category; \ncloses the database connection;",
+        "source_issues": [],
+        "source_marking_evidence": "– 28 – 8825 – 6405M \n(e) (i) Award [4 max]\nwhen the user submits the form, the server runs the PHP script; \nreceives the work category and rating from the HTML form/CGI  sent from the form \nusing the $_POST array; \nconnects to the database (sales);  \nselects the average rating for the given category;  \ninserts the new rating into the database;  \ncompares the new rating to the average; \noutputs “Thank you...” message if it is at least equal to the average;  \noutputs a “Sorry...” message if it is below the average for that category; \ncloses the database connection;  \n(ii) Award [3 max: 1+1+1, Advantage + Explanation + further illustration or\nexample]\nData Security and Privacy;\nserver-side processing prevents exposure of sensitive data;\nsuch as feedback scores and hotel details, to the client-side;\nData Security and Privacy;\ndatabase credentials (username, password);\nremain obscured and secure as the user cannot see or modify the server-side\ncode;\nData Security and privacy;\nsource code / queries are kept private;\nand not sent to the browser ;\nData Integrity and reliability;\nensures consistent data manipulation and calculations;\nIndependent of client's browser capabilities;\nData Integrity and reliability;\nprotects data (e.g., historic ratings);\nfrom manipulation or alteration by third parties during transmission;\nData Integrity and reliability;\ndatabase is accessed form the same server;\nwhich increases reliability (does not depend on network nodes etc);\nPerformance and efficiency;\nimproves performance;\nparticularly for users with less powerful devices;\nPerformance and efficiency;\nsaves bandwidth;\nby not transmitting database query results;\nPerformance and efficiency;\nserver handles the computational load;\nenhancing overall user experience;\nNote: Do not allow mixing of points from different clusters."
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "A3.3.3",
+          "scope_evidence": "• Insert new records (INSERT INTO), modify data (UPDATE SET), remove data (DELETE)\n• The performance implications of updating data in indexed columns, and how indexes might need to be rebuilt or reorganized following significant data modifications",
+          "rationale": "Adapted target only: FEEDBACK(Category,Score) initially contains (\"repair\",2),(\"repair\",4),(\"paint\",5); guidance target: Explain how SQL can be used to update data in a database. Adaptation: Retains original aggregate-before-insertion reasoning; removes PHP/CGI mechanics and evaluates explicit SQL effects.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "A3.3.4",
+          "scope_evidence": "• Aggregate functions on grouped data to aid reporting and decision-making\n• Aggregate commands: AVERAGE, COUNT, MAX, MIN, SUM",
+          "rationale": "Adapted target only: FEEDBACK(Category,Score) initially contains (\"repair\",2),(\"repair\",4),(\"paint\",5); guidance target: Construct calculations within a database using SQL’s aggregate functions. (HL only) Adaptation: Retains original aggregate-before-insertion reasoning; removes PHP/CGI mechanics and evaluates explicit SQL effects.",
+          "theme": "A",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "SQLite aggregate-before-insert and final row count executed."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q09-e-i"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q09-e-ii",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "C",
+      "question": 9,
+      "subquestion": "e-ii",
+      "source_pdf_pages": [
+        18
+      ],
+      "source_printed_pages": [
+        "17"
+      ],
+      "original_marks": 3,
+      "command_term": "Outline",
+      "original_text": "Outline one advantage of executing this code on a server rather than in the browser.",
+      "parent_context": "– 16 – 8825 – 6405\nOption C — Web science\n9. Hardware4Hotels is a company that provides services to hotels, such as carrying out \nelectrical repairs, decorating, and plumbing.\nThe URL for the company’s website is http://hardware4hotels.example.com\n(a) (i)   State the protocol in the company’s website URL. [1]\n(ii) State the domain name in the company’s website URL. [1]\n(b) Outline the importance of protocols when browsing websites. [2]\n(c) Identify two components of a webpage. [2]\nThe website for Hardware4Hotels has been designed so it can receive feedback from its \ncustomers. After the work has been completed, the customer is asked to submit a score from \n1 to 5 for the service provided (see Figure 8).\nFigure 8: The Hardware4Hotels feedback webpage\nH\nhttp://hardware4hotels.example.com\nHardware4Hotels\nspecialist hotel maintenance contractors\nPlease rate the following job:\nUser: 09876 (Peter Achison)\nWork category: interior decoration\nSubmit\nHome  About  Services  Case studies  Careers  Contact\n(d) Describe the role of the common gateway interface (CGI) on the Hardware4Hotels \nwebsite. [2]\n(Option C continues on the following page)\n– 17 – 8825 – 6405\nTurn over\n(Option C, question 9 continued)\nThe following is part of the code that is run on the server when a customer (the user) \nsubmits a rating.\n<?php\n$work_category = $_POST[\"work_category\"];\n$rating = $_POST[\"rating\"];\n$conn = mysqli_connect(\"localhost\", $username, $password, \"sales\");\n$sql = \"SELECT AVG(rating) as averageRating FROM ratings WHERE work_\ncategory = '$work_category'\";\n$result = mysqli_query($conn, $sql);\n$row = mysqli_fetch_assoc($result);\n$averageRating = $row[\"averageRating\"];\n$sql = \"INSERT INTO ratings (work_category, rating) VALUES ('$work_\ncategory', $rating)\";\nmysqli_query($conn, $sql);\nif ($rating >= $averageRating) {\n    echo \"Thank you for the good review.\";\n} else {\n    echo \"Sorry, we will try to do better next time.\";\n}\nmysqli_close($conn);\n?>\n(e) (i)   Describe the processing that takes place when this code is executed. [4]\n(ii) Outline one advantage of executing this code on a server rather than in  \nthe browser. [3]\n(Option C continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-17.png",
+          "source_pdf_page": 17,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-18.png",
+          "source_pdf_page": 18,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline one advantage of executing this code on a server rather than in the browser.",
+        "A browser sends a rating request to a central service"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          28
+        ],
+        "question_reference": "Q9 e-ii",
+        "marking_summary": "Exact original MS leaf excerpt: Award [3 max: 1+1+1, Advantage + Explanation + further illustration or example] Data Security and Privacy; server-side processing prevents exposure of sensitive data; such as feedback scores and hotel details, to the client-side; Data Security and Privacy; database credentials (username, password); remain obscured and secure as the user cannot see or modify the server-side code; Data Security and privacy; source code / queries are kept private; and not sent to the browser ; Data Integrity and reliability; ensures consistent data manipulation and calculations; Independent of client's browser capabilities; Data Integrity and reliability; protects data (e.g., historic ratings); from manipulation or alteration by third parties during transmission; Data Integrity and reliability; database is accessed form the same server; which increases reliability (does not depend on network nodes etc); Per … [full leaf evidence retained]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [3 max: 1+1+1, Advantage + Explanation + further illustration or\nexample]\nData Security and Privacy;\nserver-side processing prevents exposure of sensitive data;\nsuch as feedback scores and hotel details, to the client-side;\nData Security and Privacy;\ndatabase credentials (username, password);\nremain obscured and secure as the user cannot see or modify the server-side\ncode;\nData Security and privacy;\nsource code / queries are kept private;\nand not sent to the browser ;\nData Integrity and reliability;\nensures consistent data manipulation and calculations;\nIndependent of client's browser capabilities;\nData Integrity and reliability;\nprotects data (e.g., historic ratings);\nfrom manipulation or alteration by third parties during transmission;\nData Integrity and reliability;\ndatabase is accessed form the same server;\nwhich increases reliability (does not depend on network nodes etc);\nPerformance and efficiency;\nimproves performance;\nparticularly for users with less powerful devices;\nPerformance and efficiency;\nsaves bandwidth;\nby not transmitting database query results;\nPerformance and efficiency;\nserver handles the computational load;\nenhancing overall user experience;\nNote: Do not allow mixing of points from different clusters.",
+        "source_issues": [],
+        "source_marking_evidence": "– 28 – 8825 – 6405M \n(e) (i) Award [4 max]\nwhen the user submits the form, the server runs the PHP script; \nreceives the work category and rating from the HTML form/CGI  sent from the form \nusing the $_POST array; \nconnects to the database (sales);  \nselects the average rating for the given category;  \ninserts the new rating into the database;  \ncompares the new rating to the average; \noutputs “Thank you...” message if it is at least equal to the average;  \noutputs a “Sorry...” message if it is below the average for that category; \ncloses the database connection;  \n(ii) Award [3 max: 1+1+1, Advantage + Explanation + further illustration or\nexample]\nData Security and Privacy;\nserver-side processing prevents exposure of sensitive data;\nsuch as feedback scores and hotel details, to the client-side;\nData Security and Privacy;\ndatabase credentials (username, password);\nremain obscured and secure as the user cannot see or modify the server-side\ncode;\nData Security and privacy;\nsource code / queries are kept private;\nand not sent to the browser ;\nData Integrity and reliability;\nensures consistent data manipulation and calculations;\nIndependent of client's browser capabilities;\nData Integrity and reliability;\nprotects data (e.g., historic ratings);\nfrom manipulation or alteration by third parties during transmission;\nData Integrity and reliability;\ndatabase is accessed form the same server;\nwhich increases reliability (does not depend on network nodes etc);\nPerformance and efficiency;\nimproves performance;\nparticularly for users with less powerful devices;\nPerformance and efficiency;\nsaves bandwidth;\nby not transmitting database query results;\nPerformance and efficiency;\nserver handles the computational load;\nenhancing overall user experience;\nNote: Do not allow mixing of points from different clusters."
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "A2.2.3",
+          "scope_evidence": "• Client-server and peer-to-peer models\n• The respective benefits and drawbacks of client-server and peer-to-peer models\n• Real-world applications may include web browsing, email services, online banking, file sharing, VoIP services, blockchain.",
+          "rationale": "Adapted target only: A browser sends a rating request to a central service; guidance target: Compare and contrast networking models. Adaptation: Uses explicit client-server roles and centralized-control benefits; does not assess PHP, browser scripting or CGI mechanisms.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q09-e-ii"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q10-a",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "C",
+      "question": 10,
+      "subquestion": "a",
+      "source_pdf_pages": [
+        19
+      ],
+      "source_printed_pages": [
+        "18"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "Outline why Figure 9 shows that there are 248 000 results when there are actually fewer web pages about One2Seven Academy.",
+      "parent_context": "– 18 – 8825    – 6405\n(Option C continued)\n10. MYP students at One2Seven Academy used a search engine to find information about \ntheir school.\nFigure 9 shows the outcome of their search.\nFigure 9: Number of results from a search for One2Seven Academy\none2seven academy\nNewsAll Images Video\nAbout 248 000 results (0.39 seconds)\n(a) Outline why Figure 9 shows that there are 248 000 results when there are actually \nfewer web pages about One2Seven Academy. [2]\n(b) Describe one principle used by the PageRank algorithm as it searches for web pages \nabout One2Seven Academy. [3]\nThe webmaster at One2Seven Academy is considering increasing the number of meta tags \nincluded in the website.\n(c) Identify two other ways in which the webmaster could improve the ranking of the \nOne2Seven Academy website. [2]\n(d) Explain the relationship between the data in a meta tag and how it is accessed by a \nweb crawler. [3]\n(e) Discuss whether the webmaster of One2Seven Academy should use white hat search \nengine optimization techniques or black hat search engine optimization techniques. [5]\n(f) Identify two challenges that search engines face as the web continues to evolve. [2]\n(Option C continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-19.png",
+          "source_pdf_page": 19,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline why Figure 9 shows that there are 248 000 results when there are actually fewer web pages about One2Seven Academy.",
+        "Search-engine indexing, PageRank, SEO techniques, meta-tags or search-result quality are old web-science content outside individual 2027 requirements."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          29
+        ],
+        "question_reference": "Q10 a",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max] absence of quotes around \"One2Seven Academy\"; this leads to including results with either word, or both words in any order/location; the results can include pages that mention similar words; partial matches / related topics / cached pages / duplicates / or automatically generated content. pages unrelated to the academy may have added meta tags with the academy name; this is sometimes done to gain popularity / ie. is a Black Hat SEO technique; it is difficult/impossible to index pages with dynamic or user-generated content; pages may dynamically be generated containing a search term to capture traffic;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]\nabsence of quotes around \"One2Seven Academy\";  \nthis leads to including results with either word, or both words in any order/location; \nthe results can include pages that mention similar words;  \npartial matches / related topics / cached pages / duplicates / or automatically generated \ncontent. \npages unrelated to the academy may have added meta tags with the academy name; \nthis is sometimes done to gain popularity / ie. is a Black Hat SEO technique;  \nit is difficult/impossible to index pages with dynamic or user-generated content;  \npages may dynamically be generated containing a search term to capture traffic;",
+        "source_issues": [],
+        "source_marking_evidence": "– 29 – 8825 – 6405M \n10. (a) Award [2 max]\nabsence of quotes around \"One2Seven Academy\";  \nthis leads to including results with either word, or both words in any order/location; \nthe results can include pages that mention similar words;  \npartial matches / related topics / cached pages / duplicates / or automatically generated \ncontent. \npages unrelated to the academy may have added meta tags with the academy name; \nthis is sometimes done to gain popularity / ie. is a Black Hat SEO technique;  \nit is difficult/impossible to index pages with dynamic or user-generated content;  \npages may dynamically be generated containing a search term to capture traffic; \n(b) Award [3 max – Mark 1+1+1]\nLink Analysis\nmore important pages are likely to receive more links from various sources;\npages about One2Seven Academy linked by numerous reputable sources are more\nlikely to be presented;\nQuality of Links\nlinks from high-ranking websites contribute more to a page's ranking;\nhigh-quality links to One2Seven Academy increase its visibility in search results;\nDamping Factor\naccounts for the likelihood of users starting a new search instead of following links\nindefinitely;\ninfluences how prominently One2Seven Academy pages appear based on typical\nnavigation behaviour;\nRandom Surfer Model\nmodels a user randomly clicking on links and starting new searches;\nmore links to One2Seven Academy pages mean higher chances they appear in random\nsearches;\nNote: May include other factors: eg. content relevance, user experience and iterative\nprocess."
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Search-engine indexing, PageRank, SEO techniques, meta-tags or search-result quality are old web-science content outside individual 2027 requirements.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": []
+    },
+    {
+      "source_question_id": "H-SRC038-Q10-b",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "C",
+      "question": 10,
+      "subquestion": "b",
+      "source_pdf_pages": [
+        19
+      ],
+      "source_printed_pages": [
+        "18"
+      ],
+      "original_marks": 3,
+      "command_term": "Describe",
+      "original_text": "Describe one principle used by the PageRank algorithm as it searches for web pages about One2Seven Academy.",
+      "parent_context": "– 18 – 8825    – 6405\n(Option C continued)\n10. MYP students at One2Seven Academy used a search engine to find information about \ntheir school.\nFigure 9 shows the outcome of their search.\nFigure 9: Number of results from a search for One2Seven Academy\none2seven academy\nNewsAll Images Video\nAbout 248 000 results (0.39 seconds)\n(a) Outline why Figure 9 shows that there are 248 000 results when there are actually \nfewer web pages about One2Seven Academy. [2]\n(b) Describe one principle used by the PageRank algorithm as it searches for web pages \nabout One2Seven Academy. [3]\nThe webmaster at One2Seven Academy is considering increasing the number of meta tags \nincluded in the website.\n(c) Identify two other ways in which the webmaster could improve the ranking of the \nOne2Seven Academy website. [2]\n(d) Explain the relationship between the data in a meta tag and how it is accessed by a \nweb crawler. [3]\n(e) Discuss whether the webmaster of One2Seven Academy should use white hat search \nengine optimization techniques or black hat search engine optimization techniques. [5]\n(f) Identify two challenges that search engines face as the web continues to evolve. [2]\n(Option C continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-19.png",
+          "source_pdf_page": 19,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Describe one principle used by the PageRank algorithm as it searches for web pages about One2Seven Academy.",
+        "Search-engine indexing, PageRank, SEO techniques, meta-tags or search-result quality are old web-science content outside individual 2027 requirements."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          29
+        ],
+        "question_reference": "Q10 b",
+        "marking_summary": "Exact original MS leaf excerpt: Award [3 max – Mark 1+1+1] Link Analysis more important pages are likely to receive more links from various sources; pages about One2Seven Academy linked by numerous reputable sources are more likely to be presented; Quality of Links links from high-ranking websites contribute more to a page's ranking; high-quality links to One2Seven Academy increase its visibility in search results; Damping Factor accounts for the likelihood of users starting a new search instead of following links indefinitely; influences how prominently One2Seven Academy pages appear based on typical navigation behaviour; Random Surfer Model models a user randomly clicking on links and starting new searches; more links to One2Seven Academy pages mean higher chances they appear in random searches; Note: May include other factors: eg. content relevance, user experience and iterative process.",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [3 max – Mark 1+1+1]\nLink Analysis\nmore important pages are likely to receive more links from various sources;\npages about One2Seven Academy linked by numerous reputable sources are more\nlikely to be presented;\nQuality of Links\nlinks from high-ranking websites contribute more to a page's ranking;\nhigh-quality links to One2Seven Academy increase its visibility in search results;\nDamping Factor\naccounts for the likelihood of users starting a new search instead of following links\nindefinitely;\ninfluences how prominently One2Seven Academy pages appear based on typical\nnavigation behaviour;\nRandom Surfer Model\nmodels a user randomly clicking on links and starting new searches;\nmore links to One2Seven Academy pages mean higher chances they appear in random\nsearches;\nNote: May include other factors: eg. content relevance, user experience and iterative\nprocess.",
+        "source_issues": [],
+        "source_marking_evidence": "– 29 – 8825 – 6405M \n10. (a) Award [2 max]\nabsence of quotes around \"One2Seven Academy\";  \nthis leads to including results with either word, or both words in any order/location; \nthe results can include pages that mention similar words;  \npartial matches / related topics / cached pages / duplicates / or automatically generated \ncontent. \npages unrelated to the academy may have added meta tags with the academy name; \nthis is sometimes done to gain popularity / ie. is a Black Hat SEO technique;  \nit is difficult/impossible to index pages with dynamic or user-generated content;  \npages may dynamically be generated containing a search term to capture traffic; \n(b) Award [3 max – Mark 1+1+1]\nLink Analysis\nmore important pages are likely to receive more links from various sources;\npages about One2Seven Academy linked by numerous reputable sources are more\nlikely to be presented;\nQuality of Links\nlinks from high-ranking websites contribute more to a page's ranking;\nhigh-quality links to One2Seven Academy increase its visibility in search results;\nDamping Factor\naccounts for the likelihood of users starting a new search instead of following links\nindefinitely;\ninfluences how prominently One2Seven Academy pages appear based on typical\nnavigation behaviour;\nRandom Surfer Model\nmodels a user randomly clicking on links and starting new searches;\nmore links to One2Seven Academy pages mean higher chances they appear in random\nsearches;\nNote: May include other factors: eg. content relevance, user experience and iterative\nprocess."
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Search-engine indexing, PageRank, SEO techniques, meta-tags or search-result quality are old web-science content outside individual 2027 requirements.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": []
+    },
+    {
+      "source_question_id": "H-SRC038-Q10-c",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "C",
+      "question": 10,
+      "subquestion": "c",
+      "source_pdf_pages": [
+        19
+      ],
+      "source_printed_pages": [
+        "18"
+      ],
+      "original_marks": 2,
+      "command_term": "Identify",
+      "original_text": "Identify two other ways in which the webmaster could improve the ranking of the One2Seven Academy website.",
+      "parent_context": "– 18 – 8825    – 6405\n(Option C continued)\n10. MYP students at One2Seven Academy used a search engine to find information about \ntheir school.\nFigure 9 shows the outcome of their search.\nFigure 9: Number of results from a search for One2Seven Academy\none2seven academy\nNewsAll Images Video\nAbout 248 000 results (0.39 seconds)\n(a) Outline why Figure 9 shows that there are 248 000 results when there are actually \nfewer web pages about One2Seven Academy. [2]\n(b) Describe one principle used by the PageRank algorithm as it searches for web pages \nabout One2Seven Academy. [3]\nThe webmaster at One2Seven Academy is considering increasing the number of meta tags \nincluded in the website.\n(c) Identify two other ways in which the webmaster could improve the ranking of the \nOne2Seven Academy website. [2]\n(d) Explain the relationship between the data in a meta tag and how it is accessed by a \nweb crawler. [3]\n(e) Discuss whether the webmaster of One2Seven Academy should use white hat search \nengine optimization techniques or black hat search engine optimization techniques. [5]\n(f) Identify two challenges that search engines face as the web continues to evolve. [2]\n(Option C continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-19.png",
+          "source_pdf_page": 19,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Identify two other ways in which the webmaster could improve the ranking of the One2Seven Academy website.",
+        "Search-engine indexing, PageRank, SEO techniques, meta-tags or search-result quality are old web-science content outside individual 2027 requirements."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          30
+        ],
+        "question_reference": "Q10 c",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max] improving Website Performance; arranging Quality Backlinks; content Optimization; mobile Optimization; use of Structured Data (Schema Markup); improving User Experience (UX); social media Integration; local SEO; SSL Certificate for Security; keyword Research and Analysis; competitor Analysis; image Optimization; optimize page loading speed; regularly update the website with new content;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]\nimproving Website Performance;\narranging Quality Backlinks;\ncontent Optimization;\nmobile Optimization;\nuse of Structured Data (Schema Markup);\nimproving User Experience (UX);\nsocial media Integration;\nlocal SEO;\nSSL Certificate for Security;\nkeyword Research and Analysis;\ncompetitor Analysis;\nimage Optimization;\noptimize page loading speed;\nregularly update the website with new content;",
+        "source_issues": [],
+        "source_marking_evidence": "– 30 – 8825 – 6405M \n(c) Award [2 max]\nimproving Website Performance;\narranging Quality Backlinks;\ncontent Optimization;\nmobile Optimization;\nuse of Structured Data (Schema Markup);\nimproving User Experience (UX);\nsocial media Integration;\nlocal SEO;\nSSL Certificate for Security;\nkeyword Research and Analysis;\ncompetitor Analysis;\nimage Optimization;\noptimize page loading speed;\nregularly update the website with new content;\n(d)  Award [3 max] Marked as 2+1 or 1+2\nHow meta-tags are accessed/used\nmeta-tags provide essential metadata about the webpage, like descriptions and\nkeywords or author;\nweb crawlers access meta-tags to understand and index the webpage's content while\nindexing the page;\ninformation in meta-tags impacts how the page is indexed and its relevance in search\nresults.\nIntransitive relationship\nweb crawlers may interpret the same meta-tag data differently across various search\nengines;\nmeta-tag content does not guarantee consistent responses or actions by web crawlers;\nthe impact of meta-tag data on web crawlers can change over time as search\nalgorithms evolve;"
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Search-engine indexing, PageRank, SEO techniques, meta-tags or search-result quality are old web-science content outside individual 2027 requirements.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": []
+    },
+    {
+      "source_question_id": "H-SRC038-Q10-d",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "C",
+      "question": 10,
+      "subquestion": "d",
+      "source_pdf_pages": [
+        19
+      ],
+      "source_printed_pages": [
+        "18"
+      ],
+      "original_marks": 3,
+      "command_term": "Explain",
+      "original_text": "Explain the relationship between the data in a meta tag and how it is accessed by a web crawler.",
+      "parent_context": "– 18 – 8825    – 6405\n(Option C continued)\n10. MYP students at One2Seven Academy used a search engine to find information about \ntheir school.\nFigure 9 shows the outcome of their search.\nFigure 9: Number of results from a search for One2Seven Academy\none2seven academy\nNewsAll Images Video\nAbout 248 000 results (0.39 seconds)\n(a) Outline why Figure 9 shows that there are 248 000 results when there are actually \nfewer web pages about One2Seven Academy. [2]\n(b) Describe one principle used by the PageRank algorithm as it searches for web pages \nabout One2Seven Academy. [3]\nThe webmaster at One2Seven Academy is considering increasing the number of meta tags \nincluded in the website.\n(c) Identify two other ways in which the webmaster could improve the ranking of the \nOne2Seven Academy website. [2]\n(d) Explain the relationship between the data in a meta tag and how it is accessed by a \nweb crawler. [3]\n(e) Discuss whether the webmaster of One2Seven Academy should use white hat search \nengine optimization techniques or black hat search engine optimization techniques. [5]\n(f) Identify two challenges that search engines face as the web continues to evolve. [2]\n(Option C continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-19.png",
+          "source_pdf_page": 19,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Explain the relationship between the data in a meta tag and how it is accessed by a web crawler.",
+        "Search-engine indexing, PageRank, SEO techniques, meta-tags or search-result quality are old web-science content outside individual 2027 requirements."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          30
+        ],
+        "question_reference": "Q10 d",
+        "marking_summary": "Exact original MS leaf excerpt: Award [3 max] Marked as 2+1 or 1+2 How meta-tags are accessed/used meta-tags provide essential metadata about the webpage, like descriptions and keywords or author; web crawlers access meta-tags to understand and index the webpage's content while indexing the page; information in meta-tags impacts how the page is indexed and its relevance in search results. Intransitive relationship web crawlers may interpret the same meta-tag data differently across various search engines; meta-tag content does not guarantee consistent responses or actions by web crawlers; the impact of meta-tag data on web crawlers can change over time as search algorithms evolve;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [3 max] Marked as 2+1 or 1+2\nHow meta-tags are accessed/used\nmeta-tags provide essential metadata about the webpage, like descriptions and\nkeywords or author;\nweb crawlers access meta-tags to understand and index the webpage's content while\nindexing the page;\ninformation in meta-tags impacts how the page is indexed and its relevance in search\nresults.\nIntransitive relationship\nweb crawlers may interpret the same meta-tag data differently across various search\nengines;\nmeta-tag content does not guarantee consistent responses or actions by web crawlers;\nthe impact of meta-tag data on web crawlers can change over time as search\nalgorithms evolve;",
+        "source_issues": [],
+        "source_marking_evidence": "– 30 – 8825 – 6405M \n(c) Award [2 max]\nimproving Website Performance;\narranging Quality Backlinks;\ncontent Optimization;\nmobile Optimization;\nuse of Structured Data (Schema Markup);\nimproving User Experience (UX);\nsocial media Integration;\nlocal SEO;\nSSL Certificate for Security;\nkeyword Research and Analysis;\ncompetitor Analysis;\nimage Optimization;\noptimize page loading speed;\nregularly update the website with new content;\n(d)  Award [3 max] Marked as 2+1 or 1+2\nHow meta-tags are accessed/used\nmeta-tags provide essential metadata about the webpage, like descriptions and\nkeywords or author;\nweb crawlers access meta-tags to understand and index the webpage's content while\nindexing the page;\ninformation in meta-tags impacts how the page is indexed and its relevance in search\nresults.\nIntransitive relationship\nweb crawlers may interpret the same meta-tag data differently across various search\nengines;\nmeta-tag content does not guarantee consistent responses or actions by web crawlers;\nthe impact of meta-tag data on web crawlers can change over time as search\nalgorithms evolve;"
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Search-engine indexing, PageRank, SEO techniques, meta-tags or search-result quality are old web-science content outside individual 2027 requirements.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": []
+    },
+    {
+      "source_question_id": "H-SRC038-Q10-e",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "C",
+      "question": 10,
+      "subquestion": "e",
+      "source_pdf_pages": [
+        19
+      ],
+      "source_printed_pages": [
+        "18"
+      ],
+      "original_marks": 5,
+      "command_term": "Discuss",
+      "original_text": "Discuss whether the webmaster of One2Seven Academy should use white hat search engine optimization techniques or black hat search engine optimization techniques.",
+      "parent_context": "– 18 – 8825    – 6405\n(Option C continued)\n10. MYP students at One2Seven Academy used a search engine to find information about \ntheir school.\nFigure 9 shows the outcome of their search.\nFigure 9: Number of results from a search for One2Seven Academy\none2seven academy\nNewsAll Images Video\nAbout 248 000 results (0.39 seconds)\n(a) Outline why Figure 9 shows that there are 248 000 results when there are actually \nfewer web pages about One2Seven Academy. [2]\n(b) Describe one principle used by the PageRank algorithm as it searches for web pages \nabout One2Seven Academy. [3]\nThe webmaster at One2Seven Academy is considering increasing the number of meta tags \nincluded in the website.\n(c) Identify two other ways in which the webmaster could improve the ranking of the \nOne2Seven Academy website. [2]\n(d) Explain the relationship between the data in a meta tag and how it is accessed by a \nweb crawler. [3]\n(e) Discuss whether the webmaster of One2Seven Academy should use white hat search \nengine optimization techniques or black hat search engine optimization techniques. [5]\n(f) Identify two challenges that search engines face as the web continues to evolve. [2]\n(Option C continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-19.png",
+          "source_pdf_page": 19,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Discuss whether the webmaster of One2Seven Academy should use white hat search engine optimization techniques or black hat search engine optimization techniques.",
+        "Search-engine indexing, PageRank, SEO techniques, meta-tags or search-result quality are old web-science content outside individual 2027 requirements."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          31,
+          32
+        ],
+        "question_reference": "Q10 e",
+        "marking_summary": "Exact original MS leaf excerpt: Award [5 max] Advantages of White Hat SEO: ensures steady, long-term growth in rankings, ie. long-term sustainability; avoids penalties or bans from search engines; establishes credibility with users and search engines; focuses on improving content quality and website usability; aligns with ethical standards and search engine guidelines; minimizes the risk of penalties or bans from search engines; Disadvantages of White Hat SEO: slow results, rankings improve gradually because changes rely on natural indexing; requires significant ongoing effort for content, keywords, links, UX, and technical updates. higher upfront cost, quality content, website optimization, and professional audits can be expensive; requires specialized skills and continuous updating in SEO, algorithms, UX, and analytics; no guaranteed rankings, even with ethical practices, search engines may not reward the site immedi … [full leaf evidence retained]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [5 max]\nAdvantages of White Hat SEO:\nensures steady, long-term growth in rankings, ie. long-term sustainability;\navoids penalties or bans from search engines;\nestablishes credibility with users and search engines;\nfocuses on improving content quality and website usability;\naligns with ethical standards and search engine guidelines;\nminimizes the risk of penalties or bans from search engines;\nDisadvantages of White Hat SEO:\nslow results, rankings improve gradually because changes rely on natural indexing;\nrequires significant ongoing effort for content, keywords, links, UX, and technical\nupdates.\nhigher upfront cost, quality content, website optimization, and professional audits can\nbe expensive;\nrequires specialized skills and continuous updating in SEO, algorithms, UX, and\nanalytics;\nno guaranteed rankings, even with ethical practices, search engines may not reward\nthe site immediately;\ndependence on algorithm updates, white hat methods must evolve with changes in\nranking criteria;\nintense competition, all high-quality websites use White Hat SEO, making it harder to\nstand out;\nAdvantages of Black Hat SEO:\ncan provide rapid improvements in search rankings;\ntemporarily outperform competitors who adhere to ethical SEO practices;\ntakes advantage of current search engine algorithm weaknesses;\nsome black hat techniques require less effort or resources compared to white hat\nstrategies;\nDisadvantages of Black Hat SEO:\nreputational damage;\nsearch engine penalties for inappropriate techniques;\nblacklisting lower search engine score / Initial ranking may improve, but long-term score\ncan drop if detected and penalized by search engines;\nflagged as an unsafe site;\nethical issues-inaccurate, unreliable, inappropriate content etc;\nConclusion:\nwhile black hat SEO might offer short-term advantages, it comes with significant risks;\n\nMarks Descriptor \n5 Provides a balanced and detailed discussion of both white \nhat and black hat SEO. Clearly explains advantages and \ndisadvantages. Demonstrates strong understanding of \nethical, practical, and long-term implications. Presents a \nwell-reasoned, fully justified conclusion. \n4 Discusses both types of SEO with some detail. Explains at \nleast one advantage and one disadvantage of each. \nGenerally accurate understanding with minor omissions. \nConclusion is present and mostly supported. \n3 Mentions both SEO types but gives limited or uneven detail. \nShows partial understanding; may focus more on one side. \nConclusion is weak or only partially supported. \n2 Refers to white and/or black hat SEO with minimal \nunderstanding. Discussion is superficial, incomplete, or \nincludes inaccuracies. Conclusion is missing or irrelevant. \n1 Very limited response. Shows little or no understanding of \nSEO. No meaningful discussion or conclusion. \n0 No relevant response.",
+        "source_issues": [],
+        "source_marking_evidence": "– 31 – 8825 – 6405M \n(e) Award [5 max]\nAdvantages of White Hat SEO:\nensures steady, long-term growth in rankings, ie. long-term sustainability;\navoids penalties or bans from search engines;\nestablishes credibility with users and search engines;\nfocuses on improving content quality and website usability;\naligns with ethical standards and search engine guidelines;\nminimizes the risk of penalties or bans from search engines;\nDisadvantages of White Hat SEO:\nslow results, rankings improve gradually because changes rely on natural indexing;\nrequires significant ongoing effort for content, keywords, links, UX, and technical\nupdates.\nhigher upfront cost, quality content, website optimization, and professional audits can\nbe expensive;\nrequires specialized skills and continuous updating in SEO, algorithms, UX, and\nanalytics;\nno guaranteed rankings, even with ethical practices, search engines may not reward\nthe site immediately;\ndependence on algorithm updates, white hat methods must evolve with changes in\nranking criteria;\nintense competition, all high-quality websites use White Hat SEO, making it harder to\nstand out;\nAdvantages of Black Hat SEO:\ncan provide rapid improvements in search rankings;\ntemporarily outperform competitors who adhere to ethical SEO practices;\ntakes advantage of current search engine algorithm weaknesses;\nsome black hat techniques require less effort or resources compared to white hat\nstrategies;\nDisadvantages of Black Hat SEO:\nreputational damage;\nsearch engine penalties for inappropriate techniques;\nblacklisting lower search engine score / Initial ranking may improve, but long-term score\ncan drop if detected and penalized by search engines;\nflagged as an unsafe site;\nethical issues-inaccurate, unreliable, inappropriate content etc;\nConclusion:\nwhile black hat SEO might offer short-term advantages, it comes with significant risks;\n– 32 – 8825 – 6405M \nMarks Descriptor \n5 Provides a balanced and detailed discussion of both white \nhat and black hat SEO. Clearly explains advantages and \ndisadvantages. Demonstrates strong understanding of \nethical, practical, and long-term implications. Presents a \nwell-reasoned, fully justified conclusion. \n4 Discusses both types of SEO with some detail. Explains at \nleast one advantage and one disadvantage of each. \nGenerally accurate understanding with minor omissions. \nConclusion is present and mostly supported. \n3 Mentions both SEO types but gives limited or uneven detail. \nShows partial understanding; may focus more on one side. \nConclusion is weak or only partially supported. \n2 Refers to white and/or black hat SEO with minimal \nunderstanding. Discussion is superficial, incomplete, or \nincludes inaccuracies. Conclusion is missing or irrelevant. \n1 Very limited response. Shows little or no understanding of \nSEO. No meaningful discussion or conclusion. \n0 No relevant response. \n(f) Award [2 max]\nindexing growing volume of online content;\nrefining algorithms for relevance and accuracy;\nfiltering out false or misleading information;\nadapting to new content types like AR;\nenhancing algorithms for better user experience;\nbalancing search efficiency with user privacy;"
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Search-engine indexing, PageRank, SEO techniques, meta-tags or search-result quality are old web-science content outside individual 2027 requirements.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": []
+    },
+    {
+      "source_question_id": "H-SRC038-Q10-f",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "C",
+      "question": 10,
+      "subquestion": "f",
+      "source_pdf_pages": [
+        19
+      ],
+      "source_printed_pages": [
+        "18"
+      ],
+      "original_marks": 2,
+      "command_term": "Identify",
+      "original_text": "Identify two challenges that search engines face as the web continues to evolve.",
+      "parent_context": "– 18 – 8825    – 6405\n(Option C continued)\n10. MYP students at One2Seven Academy used a search engine to find information about \ntheir school.\nFigure 9 shows the outcome of their search.\nFigure 9: Number of results from a search for One2Seven Academy\none2seven academy\nNewsAll Images Video\nAbout 248 000 results (0.39 seconds)\n(a) Outline why Figure 9 shows that there are 248 000 results when there are actually \nfewer web pages about One2Seven Academy. [2]\n(b) Describe one principle used by the PageRank algorithm as it searches for web pages \nabout One2Seven Academy. [3]\nThe webmaster at One2Seven Academy is considering increasing the number of meta tags \nincluded in the website.\n(c) Identify two other ways in which the webmaster could improve the ranking of the \nOne2Seven Academy website. [2]\n(d) Explain the relationship between the data in a meta tag and how it is accessed by a \nweb crawler. [3]\n(e) Discuss whether the webmaster of One2Seven Academy should use white hat search \nengine optimization techniques or black hat search engine optimization techniques. [5]\n(f) Identify two challenges that search engines face as the web continues to evolve. [2]\n(Option C continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-19.png",
+          "source_pdf_page": 19,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Identify two challenges that search engines face as the web continues to evolve.",
+        "Search-engine indexing, PageRank, SEO techniques, meta-tags or search-result quality are old web-science content outside individual 2027 requirements."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          32
+        ],
+        "question_reference": "Q10 f",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max] indexing growing volume of online content; refining algorithms for relevance and accuracy; filtering out false or misleading information; adapting to new content types like AR; enhancing algorithms for better user experience; balancing search efficiency with user privacy;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]\nindexing growing volume of online content;\nrefining algorithms for relevance and accuracy;\nfiltering out false or misleading information;\nadapting to new content types like AR;\nenhancing algorithms for better user experience;\nbalancing search efficiency with user privacy;",
+        "source_issues": [],
+        "source_marking_evidence": "– 32 – 8825 – 6405M \nMarks Descriptor \n5 Provides a balanced and detailed discussion of both white \nhat and black hat SEO. Clearly explains advantages and \ndisadvantages. Demonstrates strong understanding of \nethical, practical, and long-term implications. Presents a \nwell-reasoned, fully justified conclusion. \n4 Discusses both types of SEO with some detail. Explains at \nleast one advantage and one disadvantage of each. \nGenerally accurate understanding with minor omissions. \nConclusion is present and mostly supported. \n3 Mentions both SEO types but gives limited or uneven detail. \nShows partial understanding; may focus more on one side. \nConclusion is weak or only partially supported. \n2 Refers to white and/or black hat SEO with minimal \nunderstanding. Discussion is superficial, incomplete, or \nincludes inaccuracies. Conclusion is missing or irrelevant. \n1 Very limited response. Shows little or no understanding of \nSEO. No meaningful discussion or conclusion. \n0 No relevant response. \n(f) Award [2 max]\nindexing growing volume of online content;\nrefining algorithms for relevance and accuracy;\nfiltering out false or misleading information;\nadapting to new content types like AR;\nenhancing algorithms for better user experience;\nbalancing search efficiency with user privacy;"
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Search-engine indexing, PageRank, SEO techniques, meta-tags or search-result quality are old web-science content outside individual 2027 requirements.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": []
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC038-Q09-e-i",
+      "source_question_ids": [
+        "H-SRC038-Q09-e-i"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "FEEDBACK(Category, Score) initially contains (\"repair\", 2), (\"repair\", 4), (\"paint\", 5). A service first runs SELECT AVG(Score) FROM FEEDBACK WHERE Category='repair'; and stores its result, then INSERT INTO FEEDBACK(Category, Score) VALUES('repair', 5);. Describe the stored result and the effect of the INSERT, explaining whether the stored result includes the new row.",
+      "syllabus_codes": [
+        "A3.3.3",
+        "A3.3.4"
+      ],
+      "theme": "A",
+      "level": "HL-only",
+      "marks": 4,
+      "command_term": "Describe",
+      "difficulty": "medium",
+      "adaptation_rationale": "Retains original aggregate-before-insertion reasoning; removes PHP/CGI mechanics and evaluates explicit SQL effects.",
+      "solution": "The stored average is 3 from scores2 and 4. INSERT adds the repair score 5, producing a third repair row. The already stored result remains3 because the SELECT happened before insertion; a fresh average would be11/3.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Stored average3."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains only pre-insert repair rows counted."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct new row added."
+        },
+        {
+          "marks": 1,
+          "criterion": "Stored value unchanged unless the query is rerun."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "SQLite aggregate-before-insert and final row count executed.",
+        "source_comparison": [
+          28
+        ],
+        "test_code": "import sqlite3\nc=sqlite3.connect(':memory:');c.executescript(\"CREATE TABLE Feedback(Category,Score);INSERT INTO Feedback VALUES('repair',2),('repair',4),('paint',5);\")\navg=c.execute(\"SELECT AVG(Score) FROM Feedback WHERE Category='repair'\").fetchone()[0]\nc.execute(\"INSERT INTO Feedback VALUES('repair',5)\")\nassert avg==3 and c.execute(\"SELECT COUNT(*) FROM Feedback WHERE Category='repair'\").fetchone()[0]==3",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q09-e-ii",
+      "source_question_ids": [
+        "H-SRC038-Q09-e-ii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "A browser sends a rating request to a central service. Explain one benefit of the server, rather than every client, controlling updates to the shared ratings database.",
+      "syllabus_codes": [
+        "A2.2.3"
+      ],
+      "theme": "A",
+      "level": "SL/HL common",
+      "marks": 3,
+      "command_term": "Explain",
+      "difficulty": "medium",
+      "adaptation_rationale": "Uses explicit client-server roles and centralized-control benefits; does not assess PHP, browser scripting or CGI mechanisms.",
+      "solution": "The server provides one controlled update service for all clients. It can apply the same validation/access rules before accepting each request, reducing inconsistent or unauthorized updates to the shared records. A client can request a change without receiving unrestricted database credentials.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Central controlled server service."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains consistent validation/access for client requests."
+        },
+        {
+          "marks": 1,
+          "criterion": "Concrete shared-data/credential protection consequence."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          28
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    }
+  ]
+}

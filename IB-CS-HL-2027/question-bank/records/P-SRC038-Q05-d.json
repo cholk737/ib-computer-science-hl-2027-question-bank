@@ -1,0 +1,65 @@
+{
+  "question_id": "P-SRC038-Q05-d",
+  "source_question_ids": [
+    "H-SRC038-Q05-d"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "links is a permutation of indices 0 to n-1. For each target, begin at index target and inspect at most limit entries, moving to the index stored in the current entry. Construct follow_all(links, limit) in Python returning a Boolean list: True where that target is found. limit is positive.",
+  "syllabus_codes": [
+    "B2.2.2",
+    "B2.3.2",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 6,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "One solution:\ndef follow_all(links, limit):\n    success = [False] * len(links)\n    for target in range(len(links)):\n        index = target\n        for attempt in range(limit):\n            value = links[index]\n            if value == target:\n                success[target] = True\n                break\n            index = value\n    return success",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes a False result for each target."
+    },
+    {
+      "marks": 1,
+      "criterion": "Processes each target with a fresh starting index."
+    },
+    {
+      "marks": 1,
+      "criterion": "Limits inspections correctly."
+    },
+    {
+      "marks": 1,
+      "criterion": "Compares current value with target."
+    },
+    {
+      "marks": 1,
+      "criterion": "Marks success and stops appropriately."
+    },
+    {
+      "marks": 1,
+      "criterion": "Follows stored index on failure and returns all results."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed self-loops, longer cycle failure and exact-limit success.",
+    "source_comparison": [
+      16
+    ],
+    "test_code": "def follow_all(links, limit):\n    success = [False] * len(links)\n    for target in range(len(links)):\n        index = target\n        for attempt in range(limit):\n            value = links[index]\n            if value == target:\n                success[target] = True\n                break\n            index = value\n    return success\nassert follow_all([0,1,2],1)==[True,True,True]\nassert follow_all([1,2,0],2)==[False]*3\nassert follow_all([1,2,0],3)==[True]*3",
+    "result_file": ""
+  },
+  "code": "def follow_all(links, limit):\n    success = [False] * len(links)\n    for target in range(len(links)):\n        index = target\n        for attempt in range(limit):\n            value = links[index]\n            if value == target:\n                success[target] = True\n                break\n            index = value\n    return success",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC038-Q05-d.json",
+  "question_path": "question-bank/questions/P-SRC038-Q05-d.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC038-Q05-d.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

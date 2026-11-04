@@ -1,0 +1,71 @@
+{
+  "source_question_id": "H-SRC038-Q05-a-ii",
+  "source_id": "SRC-038",
+  "source_filename": "Computer_science_paper_2_HL.pdf",
+  "year": "2025",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "not stated",
+  "option": "B",
+  "question": 5,
+  "subquestion": "a-ii",
+  "source_pdf_pages": [
+    9
+  ],
+  "source_printed_pages": [
+    "8"
+  ],
+  "original_marks": 1,
+  "command_term": "State",
+  "original_text": "State the probability of all 10 children finding their number. Your answer can be a formula, fraction, or decimal.",
+  "parent_context": "– 8 – 8825 – 6405\nOption B — Modelling and simulation\n5. Ten children play a game in which all of them or none of them win a prize. The rules of the \ngame are as follows:\n\ty 10 children are assigned a unique number from 0 to 9.\n\ty A cupboard contains 10 boxes, each numbered from 0 to 9.\n\ty 10 sheets of paper are numbered from 0 to 9.\n\ty One piece of paper is put into each box in random order (see Figure 4).\nFigure 4: 10 boxes, each containing a sheet of paper with a number from 0 to 9\nBox 0 1 2 3 4 5 6 7 8 9\nPaper 9 8 2 1 7 6 4 3 5 0\nEach child is allowed to open 5 boxes to look for their own number. You can assume they will \nnot open the same box twice.\nChild number 0 goes first and opens 5 of the 10 boxes.\n(a) (i)   State the probability of child 0 finding their number in the 5 boxes they opened.\nYour answer can be a formula, fraction, or decimal. [1]\n(ii) State the probability of all 10 children finding their number.\nYour answer can be a formula, fraction, or decimal. [1]\nThe children all get a prize if all 10 of them find their number within 5 attempts. They use the \nfollow-the-number strategy:\n1: Each child first opens the box labelled with their own number.\n2: If this box contains their number, they are successful.\n3: If unsuccessful, the child opens the box shown on the piece of paper.\n4: The child repeats steps 2 to 3 until 5 boxes are opened.\nExample 1:  Child 0 opens box 0, seeing 9 on the paper. They then open box 9 and see \ntheir number. They are successful.\nExample 2:  Child 1 opens box 1, seeing 8 on the paper. They then open box 8, seeing \n5 on the paper. Then they open box 5, then box 6, then box 4. They are \nnot successful.\n(b) State the order sequence for child 3, who opens box 3 in Figure 4. [1]\n(Option B continues on the following page)\n– 9 – 8825 – 6405\nTurn over\n(Option B, question 5 continued)\nA one-dimensional Boolean array, CHILDREN, is created and initialized so that all elements \nare False.\nA one-dimensional integer array, BOX, is created and initialized so that BOX contains 0, 1, 2, \n3, 4, 5, 6, 7, 8, 9.\nA function, random.shuffle(BOX), shuffles the BOX array randomly to change the sequence.\nFor example, the new sequence might be: 9, 8, 2, 1, 7, 6, 4, 3, 5, 0.\nThus, BOX[5] = 6\nThe children use the follow-the-number strategy shown previously.\nEach time a child is successful, the corresponding element in the array CHILDREN is set \nto True. If a child is unsuccessful, the corresponding element in the array CHILDREN  \nis unchanged.\n(c) Outline two reasons why this problem would be difficult to simulate using a spreadsheet. [4]\n(d) Construct an algorithm in pseudocode that uses the follow-the-number strategy before \noutputting each element in the array CHILDREN. [6]\nIf all 10 cells in the CHILDREN array are set to True, the children all win a prize.\nTo calculate the percentage of times all the children will win a prize, the pseudocode \nalgorithm in part (d) needs to be run 10 000 times.\n(e) Construct an algorithm in pseudocode that outputs, as a percentage, the number of \ntimes the children all win a prize. [4]\n(Option B continues on page 11)",
+  "assets": [
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-09.png",
+      "source_pdf_page": 9,
+      "visually_verified": true
+    },
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-10.png",
+      "source_pdf_page": 10,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: State the probability of all 10 children finding their number. Your answer can be a formula, fraction, or decimal.",
+    "Pure probability calculation for the box game is not an individual 2027 computer-science objective."
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-039",
+    "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+    "pdf_pages": [
+      15
+    ],
+    "question_reference": "Q5 a-ii",
+    "marking_summary": "Exact original MS leaf excerpt: Award [1] max ½ ^10; ½ **10; 1/1024; 0.00977; Alternative answer if the student assumes that they know that the number was found then this becomes: (1/2)(5/9)(5/8)(5/7)(5/6)(1)^5 ;",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [1] max\n½ ^10;\n½ **10;\n1/1024;\n0.00977;\nAlternative answer\nif the student assumes that they know that the number was found\nthen this becomes:\n(1/2)(5/9)(5/8)(5/7)(5/6)(1)^5 ;",
+    "source_issues": [],
+    "source_marking_evidence": "– 15 – 8825 – 6405M \nOption B — Modelling and simulation \n5. (a) (i) Award [1] max\n5/10  or  ½ or 50%; \n(ii) Award [1] max\n½ ^10;\n½ **10;\n1/1024;\n0.00977;\nAlternative answer\nif the student assumes that they know that the number was found\nthen this becomes:\n(1/2)(5/9)(5/8)(5/7)(5/6)(1)^5 ;\n(b) Award [1] max\n3 à 1 à 8 à 5 à 6;\n(c) Award [4 max]\nAward [1] for identifying point, [1] for expansion\nMark as [2] + [2]\nIterative and Conditional Logic\nSpreadsheets are not designed for iterative processes that depend on the outcome of\nprevious steps;\nSpreadsheets are not designed  for processes that involve looping and conditional\nchecks.;\nA formula can be used to check the number in another cell;\nbut not to move to the cell specified by the paper;\nShuffling rows or columns\nSpreadsheets can randomise a range of unique numbers;\ne.g. =SORTBY(SEQUENCE(10), RANDARRAY(10));\nBut cannot ensure one-to-one mapping without repeats (i.e. shuffling);\nTracking Each Child's Attempts \nTracking each child’s attempts and outcomes requires many cells; \nThe spreadsheet would become too complex/difficult to follow; \nRunning Multiple Simulations \nRunning 10000 times would require manual repeating; \nOr complex scripting within the spreadsheet; \nEasier to use a programming language; \nLimited Automation \nMacros / scripting are limited; \nthey require programming knowledge; \nThe average spreadsheet user is not a programmer; "
+  },
+  "relevance_status": "C",
+  "mappings": [],
+  "exclusion_reason": "Pure probability calculation for the box game is not an individual 2027 computer-science objective.",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

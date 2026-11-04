@@ -1,0 +1,101 @@
+{
+  "source_question_id": "H-SRC038-Q05-d",
+  "source_id": "SRC-038",
+  "source_filename": "Computer_science_paper_2_HL.pdf",
+  "year": "2025",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "not stated",
+  "option": "B",
+  "question": 5,
+  "subquestion": "d",
+  "source_pdf_pages": [
+    10
+  ],
+  "source_printed_pages": [
+    "9"
+  ],
+  "original_marks": 6,
+  "command_term": "Construct",
+  "original_text": "Construct an algorithm in pseudocode that uses the follow-the-number strategy before outputting each element in the array CHILDREN.",
+  "parent_context": "– 8 – 8825 – 6405\nOption B — Modelling and simulation\n5. Ten children play a game in which all of them or none of them win a prize. The rules of the \ngame are as follows:\n\ty 10 children are assigned a unique number from 0 to 9.\n\ty A cupboard contains 10 boxes, each numbered from 0 to 9.\n\ty 10 sheets of paper are numbered from 0 to 9.\n\ty One piece of paper is put into each box in random order (see Figure 4).\nFigure 4: 10 boxes, each containing a sheet of paper with a number from 0 to 9\nBox 0 1 2 3 4 5 6 7 8 9\nPaper 9 8 2 1 7 6 4 3 5 0\nEach child is allowed to open 5 boxes to look for their own number. You can assume they will \nnot open the same box twice.\nChild number 0 goes first and opens 5 of the 10 boxes.\n(a) (i)   State the probability of child 0 finding their number in the 5 boxes they opened.\nYour answer can be a formula, fraction, or decimal. [1]\n(ii) State the probability of all 10 children finding their number.\nYour answer can be a formula, fraction, or decimal. [1]\nThe children all get a prize if all 10 of them find their number within 5 attempts. They use the \nfollow-the-number strategy:\n1: Each child first opens the box labelled with their own number.\n2: If this box contains their number, they are successful.\n3: If unsuccessful, the child opens the box shown on the piece of paper.\n4: The child repeats steps 2 to 3 until 5 boxes are opened.\nExample 1:  Child 0 opens box 0, seeing 9 on the paper. They then open box 9 and see \ntheir number. They are successful.\nExample 2:  Child 1 opens box 1, seeing 8 on the paper. They then open box 8, seeing \n5 on the paper. Then they open box 5, then box 6, then box 4. They are \nnot successful.\n(b) State the order sequence for child 3, who opens box 3 in Figure 4. [1]\n(Option B continues on the following page)\n– 9 – 8825 – 6405\nTurn over\n(Option B, question 5 continued)\nA one-dimensional Boolean array, CHILDREN, is created and initialized so that all elements \nare False.\nA one-dimensional integer array, BOX, is created and initialized so that BOX contains 0, 1, 2, \n3, 4, 5, 6, 7, 8, 9.\nA function, random.shuffle(BOX), shuffles the BOX array randomly to change the sequence.\nFor example, the new sequence might be: 9, 8, 2, 1, 7, 6, 4, 3, 5, 0.\nThus, BOX[5] = 6\nThe children use the follow-the-number strategy shown previously.\nEach time a child is successful, the corresponding element in the array CHILDREN is set \nto True. If a child is unsuccessful, the corresponding element in the array CHILDREN  \nis unchanged.\n(c) Outline two reasons why this problem would be difficult to simulate using a spreadsheet. [4]\n(d) Construct an algorithm in pseudocode that uses the follow-the-number strategy before \noutputting each element in the array CHILDREN. [6]\nIf all 10 cells in the CHILDREN array are set to True, the children all win a prize.\nTo calculate the percentage of times all the children will win a prize, the pseudocode \nalgorithm in part (d) needs to be run 10 000 times.\n(e) Construct an algorithm in pseudocode that outputs, as a percentage, the number of \ntimes the children all win a prize. [4]\n(Option B continues on page 11)",
+  "assets": [
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-09.png",
+      "source_pdf_page": 9,
+      "visually_verified": true
+    },
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-10.png",
+      "source_pdf_page": 10,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Construct an algorithm in pseudocode that uses the follow-the-number strategy before outputting each element in the array CHILDREN.",
+    "links is a permutation of indices 0 to n-1"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-039",
+    "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+    "pdf_pages": [
+      16
+    ],
+    "question_reference": "Q5 d",
+    "marking_summary": "Exact original MS leaf excerpt: Award [6 max] Award [1] for using the shuffle function outside the loop; Award [1] looping 10 times; Award [1] setting a variable to the loop index (LOOK = N); Award [1] looping 5 times; Award [1] test setting children to True if found; Award [1] else setting the variable LOOK to the paper number found; Award [1] for outputting CHILDREN[N] within the correct loop; Note: MP1 is not required by the question but it will be awarded if included. Example answer 1: random.shuffle(BOX) loop N from 0 to 9 LOOK = N loop A from 0 to 4 if N = BOX[LOOK]: CHILDREN[N] = True else: LOOK = BOX[LOOK] end if end loop output CHILDREN[N] end loop Example answer 2: random.shuffle(BOX) loop N from 0 to 9 LOOK = N ATTEMPT = 0 while ATTEMPT < 5 if N = BOX[LOOK]: CHILDREN[N] = True ATTEMPT = 5 else: LOOK = BOX[LOOK] ATTEMPT = ATTEMPT + 1 end if end loop output CHILDREN[N] end loop",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [6 max]\nAward [1] for using the shuffle function outside the loop;\nAward [1] looping 10 times;\nAward [1] setting a variable to the loop index (LOOK = N);\nAward [1] looping 5 times;\nAward [1] test setting children to True if found;\nAward [1] else setting the variable LOOK to the paper number found;\nAward [1] for outputting CHILDREN[N] within the correct loop;\nNote: MP1 is not required by the question but it will be awarded if included.\nExample answer 1:\nrandom.shuffle(BOX)\nloop N from 0 to 9\n    LOOK = N \n    loop A from 0 to 4 \nif N = BOX[LOOK]: \nCHILDREN[N] = True \nelse: \nLOOK = BOX[LOOK] \nend if \n    end loop \n    output CHILDREN[N] \nend loop \nExample answer 2: \nrandom.shuffle(BOX) \nloop N from 0 to 9 \n    LOOK = N \n    ATTEMPT = 0 \n    while ATTEMPT < 5 \nif N = BOX[LOOK]: \nCHILDREN[N] = True \nATTEMPT = 5 \nelse: \nLOOK = BOX[LOOK] \nATTEMPT = ATTEMPT + 1 \nend if \n    end loop \n    output CHILDREN[N] \nend loop",
+    "source_issues": [],
+    "source_marking_evidence": "– 16 – 8825 – 6405M \n(d) Award [6 max]\nAward [1] for using the shuffle function outside the loop;\nAward [1] looping 10 times;\nAward [1] setting a variable to the loop index (LOOK = N);\nAward [1] looping 5 times;\nAward [1] test setting children to True if found;\nAward [1] else setting the variable LOOK to the paper number found;\nAward [1] for outputting CHILDREN[N] within the correct loop;\nNote: MP1 is not required by the question but it will be awarded if included.\nExample answer 1:\nrandom.shuffle(BOX)\nloop N from 0 to 9\n    LOOK = N \n    loop A from 0 to 4 \nif N = BOX[LOOK]: \nCHILDREN[N] = True \nelse: \nLOOK = BOX[LOOK] \nend if \n    end loop \n    output CHILDREN[N] \nend loop \nExample answer 2: \nrandom.shuffle(BOX) \nloop N from 0 to 9 \n    LOOK = N \n    ATTEMPT = 0 \n    while ATTEMPT < 5 \nif N = BOX[LOOK]: \nCHILDREN[N] = True \nATTEMPT = 5 \nelse: \nLOOK = BOX[LOOK] \nATTEMPT = ATTEMPT + 1 \nend if \n    end loop \n    output CHILDREN[N] \nend loop "
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B2.2.2",
+      "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+      "rationale": "Adapted target only: links is a permutation of indices 0 to n-1; guidance target: Construct programs that apply arrays and Lists. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B2.3.2",
+      "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+      "rationale": "Adapted target only: links is a permutation of indices 0 to n-1; guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B2.3.3",
+      "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+      "rationale": "Adapted target only: links is a permutation of indices 0 to n-1; guidance target: Construct programs that utilize looping structures to perform repeated actions. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+    "technical": "Executed self-loops, longer cycle failure and exact-limit success."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC038-Q05-d"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

@@ -22,7 +22,7 @@
     },
     {
       "marks": 1,
-      "criterion": "Returns complete total,includingzero whenempty."
+      "criterion": "Returns complete total, including zero when empty."
     }
   ],
   "acceptable_alternatives": [],
@@ -35,5 +35,6 @@
     "result_file": ""
   },
   "code": "def total_income(stores):\n    total = 0\n    for store in stores:\n        for booking in store.bookings:\n            total += booking.get_cost()\n    return total",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

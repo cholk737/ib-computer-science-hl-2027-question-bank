@@ -1,0 +1,47 @@
+{
+  "question_id": "P-SRC032-Q13-f",
+  "source_question_ids": [
+    "H-SRC032-Q13-f"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "All Cottage and Apartment objects call Accommodation.__init__ once. Outline how one shared counter can track their combined number.",
+  "syllabus_codes": [
+    "B3.1.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 2,
+  "command_term": "Outline",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "Initialize Accommodation.count=0 at class level and increment Accommodation.count in the shared initializer. Reading Accommodation.count retrieves the combined count without using an instance-specific counter.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "One counter on common class."
+    },
+    {
+      "marks": 1,
+      "criterion": "Increment that class counter once for each object."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      25
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC032-Q13-f.json",
+  "question_path": "question-bank/questions/P-SRC032-Q13-f.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC032-Q13-f.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

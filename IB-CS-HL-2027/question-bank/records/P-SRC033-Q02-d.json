@@ -1,0 +1,53 @@
+{
+  "question_id": "P-SRC033-Q02-d",
+  "source_question_ids": [
+    "H-SRC033-Q02-d"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Explain how transaction isolation can prevent two clients from both confirming the last available seat.",
+  "syllabus_codes": [
+    "A3.3.6"
+  ],
+  "theme": "A",
+  "level": "HL-only",
+  "marks": 4,
+  "command_term": "Explain",
+  "difficulty": "medium",
+  "adaptation_rationale": "Isolation and reliable transactions explicit. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "solution": "The availability check and reservation update form a transaction; conflicting transactions are serialized or blocked/aborted. The second must recheck after the first commits and cannot confirm an already-booked seat.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Availability check/update treated as transaction."
+    },
+    {
+      "marks": 1,
+      "criterion": "Conflicting access controlled by lock/serialization/equivalent."
+    },
+    {
+      "marks": 1,
+      "criterion": "First successful booking changes seat state before second confirmation."
+    },
+    {
+      "marks": 1,
+      "criterion": "Second transaction rechecks/fails rather than double books."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 4,
+    "code_execution": "No executable code required; explicit answer/trace checked manually."
+  },
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "assets": [],
+  "record_path": "question-bank/records/P-SRC033-Q02-d.json",
+  "question_path": "question-bank/questions/P-SRC033-Q02-d.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC033-Q02-d.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

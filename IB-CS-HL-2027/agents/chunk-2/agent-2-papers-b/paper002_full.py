@@ -26,7 +26,7 @@ stores = [N(location="West Bay", bookings=[N(customer_id=310,end_day="2027-02-08
                                        N(customer_id=610,end_day="2027-04-10")])]'''
 for key,expr,ans in [('16:a-i','stores[1].location','Hilltop'),('16:a-ii','stores[0].bookings[0].customer_id','310'),('16:a-iii','stores[2].bookings[1].end_day','2027-04-10')]:
  add(key,['B2.2.2','B3.1.4'],'Given the following Python setup,state the value of '+expr+'.\n'+trace_context,ans,[(1,'Correct value '+ans+'.')],status='B',code=trace_context,test_code=trace_context+'\nassert '+expr+'=='+repr(int(ans) if ans.isdigit() else ans),check='Executed supplied object/list expression.',flags=['Original RentDate printed-output format unspecified; adaptation supplies an explicit string field.'] if key=='16:a-iii' else [])
-add('16:b',['A4.4.2'],'Outline one ethical issue when a financial application records customers’ transaction details.','The records can reveal sensitive behaviour; developers should restrict collection/access to what is necessary and protect the data from unauthorized disclosure.',[(1,'Identifies relevant privacy/confidentiality concern.'),(1,'Explains consequence or appropriate ethical response.')],status='B')
+add('16:b',['A4.4.1'],'Outline one ethical issue when an ML fraud-detection application uses customers’ identifiable transaction details as training data.','The records can reveal sensitive behaviour; developers should restrict collection/access to what is necessary and protect the data from unauthorized disclosure.',[(1,'Identifies relevant privacy/confidentiality concern.'),(1,'Explains consequence or appropriate ethical response.')],status='B')
 c='''def total_income(stores):
     total = 0
     for store in stores:

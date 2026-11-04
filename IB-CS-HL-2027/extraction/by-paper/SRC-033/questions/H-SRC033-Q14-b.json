@@ -1,0 +1,88 @@
+{
+  "source_question_id": "H-SRC033-Q14-b",
+  "source_id": "SRC-033",
+  "source_filename": "Computer_science_paper_2__HL (2).pdf",
+  "year": "2020",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "TZ0",
+  "option": "D",
+  "question": "14",
+  "subquestion": "b",
+  "source_pdf_pages": [
+    17
+  ],
+  "source_printed_pages": [
+    "16"
+  ],
+  "original_marks": 4,
+  "command_term": "Outline",
+  "original_text": "(b) Outline two differences between inheritance and aggregation. [4]",
+  "parent_context": "14. (a) Construct the method that will add a vehicle to the first\naddVehicle(Vehicle v)\nempty position of the array and return the position (ie the index of the\nvehicles[]\narray) at which it has added the car. If it is not possible to fit the vehicle into the array\nthen it should return . [6]\n-1\n(b) Outline two differences between inheritance and aggregation. [4]\nTwo further classes, and , are created.\nCar Motorbike\npublic class Car extends Vehicle{\n=\npublic static double hourlyFee 3.5;\npublic double pay(int hours) {\n//code to calculate and return the complete price\n}\n}\npublic class Motorbike extends Vehicle{\n=\npublic static double hourlyFee 2.5;\npublic double pay(int hours) {\n//code to calculate and return the complete price\n}\n}\n(c) Construct a UML diagram that shows the relationships between the ,\nParkingArea\n, and classes. There is no need to include the attributes or\nVehicle Motorbike Car\nmethods of each class. [4]\nThe method in the class returns the administration fee (which is only part of the\npay Vehicle\ntotal price), while the method of the class calculates the total price for a car staying\npay Car\nin the parking area.\n(d) (i) Construct the method in the class that returns the admin fee\npay Vehicle\nstored in the variable if the vehicle has stayed for five hours or less;\nAdminFee\notherwise, it returns 0. [2]\n(ii) Construct the method in the class, where it uses the method\npay Car vehicle pay\nbut adds the charge for the amount of time spent in the parking area. [2]\nThe array in the class is used to store instances of the or\nvehicles[] ParkingArea Car\nclass.\nMotorbike\n(e) Outline why is a valid type for this array. [2]\nVehicle\n(Option D continues on the following page)\nN20/4/COMSC/HP2/ENG/TZ0/XX\n– 17 – 8820 – 7012\n(Option D continued)\n",
+  "assets": [
+    {
+      "kind": "source_page_render",
+      "description": "Full source page inspected; includes all question context, source code/figures where present.",
+      "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-033/renders/page-17.png",
+      "source_pdf_page": 17,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Explain and apply the concept of inheritance in OOP to promote code reusability.",
+    "Explain the role of composition and aggregation in class relationships."
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-036",
+    "filename": "Computer_science_paper_2__HL_markscheme (2).pdf",
+    "pdf_pages": [
+      24
+    ],
+    "question_reference": "14(b)",
+    "marking_summary": "Is-a vs has-a;inheritancebehaviourversuscomponentreferences.",
+    "source_issues": []
+  },
+  "relevance_status": "A",
+  "mappings": [
+    {
+      "syllabus_code": "B3.2.1",
+      "scope_evidence": "• How inheritance enables a hierarchical relationship between parent and child classes\n• Extending existing classes, utilizing inheritance to reuse and extend functionalities\n• The impact of inheritance on access to parent class members with different access modifiers (private, public, protected, default)",
+      "rationale": "Inheritance/aggregationexplicit;avoid sourceclaimaggregationcannotreusecode.",
+      "theme": "B",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B3.2.4",
+      "scope_evidence": "• How to design objects by leveraging smaller component objects through composition and aggregation\n• That aggregation implies that the subcomponents can function independently of the aggregating class, while in composition, the subcomponents are tightly coupled and cannot exist outside the aggregating class",
+      "rationale": "Inheritance/aggregationexplicit;avoid sourceclaimaggregationcannotreusecode.",
+      "theme": "B",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "transcribed from original PDF and compared with rendered page",
+    "source_marks": "checked against printed allocation and official MS",
+    "visual_review": "full question page inspected",
+    "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+  },
+  "original_text_synopsis": "Outline two differences between inheritance and aggregation.",
+  "context_synopsis": "ParkingAreaaddVehiclefirstnullslot/returnindexor-1;Car/MotorbikeextendVehicle;payadminfeeifhours<=5;subclassaddsperhourcharge;UMLrelationships.",
+  "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+  "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+  "raw_source_page_transcriptions": [
+    "agents/chunk-2/agent-3-papers-c/papers/SRC-033/transcription/pdf-page-017.txt"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC033-Q14-b"
+  ]
+}

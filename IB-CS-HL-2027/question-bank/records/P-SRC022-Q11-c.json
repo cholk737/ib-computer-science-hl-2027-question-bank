@@ -1,0 +1,54 @@
+{
+  "question_id": "P-SRC022-Q11-c",
+  "source_question_ids": [
+    "H-SRC022-Q11-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Describe two layers that can protect the confidentiality of data crossing a public wireless network.",
+  "syllabus_codes": [
+    "A2.4.3",
+    "A2.4.4"
+  ],
+  "theme": "A",
+  "level": "mixed common/HL",
+  "marks": 4,
+  "command_term": "Describe",
+  "difficulty": "medium",
+  "adaptation_rationale": "Encrypted protocols and VPN explicit. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "solution": "Encrypt the wireless link using a secure current configuration; also use an end-to-end encrypted application connection such as TLS so data remains protected beyond the wireless access point.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Wireless traffic encryption."
+    },
+    {
+      "marks": 1,
+      "criterion": "Without appropriate key captured frames are not readable."
+    },
+    {
+      "marks": 1,
+      "criterion": "Encrypted application protocol/TLS."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains protection beyond local wireless hop."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 4,
+    "code_execution": "No executable code required; explicit answer/trace checked manually."
+  },
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "assets": [],
+  "record_path": "question-bank/records/P-SRC022-Q11-c.json",
+  "question_path": "question-bank/questions/P-SRC022-Q11-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC022-Q11-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

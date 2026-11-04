@@ -1,0 +1,48 @@
+{
+  "question_id": "P-SRC032-Q15-d-i",
+  "source_question_ids": [
+    "H-SRC032-Q15-d-i"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Outline why visit(entries,city) may raise an error if entries includes None.\ndef visit(entries, city):\n    for item in entries:\n        if item.city == city:\n            print(item.address)",
+  "syllabus_codes": [
+    "B2.1.3",
+    "B2.1.4"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 2,
+  "command_term": "Outline",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "The loop eventually binds item to None. Accessing item.city then raises AttributeError because None has no city attribute.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "None entry accessed."
+    },
+    {
+      "marks": 1,
+      "criterion": "AttributeError on missing attribute."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed nullable-entry failure.",
+    "source_comparison": [
+      28
+    ],
+    "test_code": "def visit(entries, city):\n    for item in entries:\n        if item.city == city:\n            print(item.address)\ntry:\n visit([None],\"Bay\")\n raise AssertionError(\"missing AttributeError\")\nexcept AttributeError:pass",
+    "result_file": ""
+  },
+  "code": "def visit(entries, city):\n    for item in entries:\n        if item.city == city:\n            print(item.address)",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC032-Q15-d-i.json",
+  "question_path": "question-bank/questions/P-SRC032-Q15-d-i.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC032-Q15-d-i.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

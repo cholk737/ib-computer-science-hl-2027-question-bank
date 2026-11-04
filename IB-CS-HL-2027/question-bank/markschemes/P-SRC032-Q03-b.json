@@ -1,0 +1,54 @@
+{
+  "question_id": "P-SRC032-Q03-b",
+  "unofficial": true,
+  "marks": 8,
+  "solution": "STUDENT(StudentID PK, StudentName, MajorID FK); MAJOR(MajorID PK, MajorName); COURSE(CourseID PK, CourseName); ENROLMENT(StudentID PK/FK, CourseID PK/FK). ENROLMENT has a composite key.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Correct STUDENT attributes."
+    },
+    {
+      "marks": 1,
+      "criterion": "STUDENT primary key."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct MAJOR attributes."
+    },
+    {
+      "marks": 1,
+      "criterion": "MAJOR primary key."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct COURSE attributes."
+    },
+    {
+      "marks": 1,
+      "criterion": "COURSE primary key."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct ENROLMENT with both foreign keys."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct composite enrolment key; no transitive major-name dependency."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      7
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

@@ -38,7 +38,9 @@
           4
         ],
         "question_reference": "Q1 ",
-        "marking_summary": "RAM is volatile whereas SSD retains data without power. RAM normally offers lower access latency than SSD.",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max] Primary storage is accessed by a computer's central processing unit (CPU) and secondary storage is not accessed directly by the CPU; Primary storage has lower access time / has smaller capacity/ more expensive type of memory than secondary storage (which is slower than primary storage, with larger capacity but it is cheaper); Primary storage is volatile (uses random-access memory (RAM), cache memory, or some other specialized hardware to store data while the computer is powered on/ volatile devices), whilst secondary storage on a computer is provided by non-volatile devices (such as SSD or HDD); Primary storage holds data temporarily whilst data is kept permanently/ for a long time in secondary storage; Primary storage holds currently running programs/data/operating system, secondary storage does not;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]\nPrimary storage is accessed by a computer's central processing unit (CPU) and secondary storage\nis not accessed directly by the CPU;\nPrimary storage has lower access time / has smaller capacity/ more expensive type of memory\nthan secondary storage (which is slower than primary storage, with larger capacity but it is\ncheaper);\nPrimary storage is volatile (uses random-access memory (RAM), cache memory, or some other\nspecialized hardware to store data while the computer is powered on/ volatile devices), whilst\nsecondary storage on a computer is provided by non-volatile devices (such as SSD or HDD);\nPrimary storage holds data temporarily whilst data is kept permanently/ for a long time in\nsecondary storage;\nPrimary storage holds currently running programs/data/operating system, secondary storage\ndoes not;",
         "source_issues": [
           "Original MS generalizes all primary storage as volatile; ROM is an exception. Adaptation explicitly compares RAM and SSD."
         ],
@@ -49,7 +51,7 @@
         {
           "syllabus_code": "A1.1.4",
           "scope_evidence": "• Random-access memory (RAM), read only memory (ROM), cache (L1, L2, L3), registers\n• The interaction of the CPU with different types of memory to optimize performance\n• The relevance of the terms “cache miss” and “cache hit”",
-          "rationale": "A field recorder uses RAM while processing audio and an SSD to retain recordings assesses Explain the purposes of different types of primary memory.",
+          "rationale": "Adapted target only: A field recorder uses RAM while processing audio and an SSD to retain recordings; guidance target: Explain the purposes of different types of primary memory. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "A",
           "level": "SL/HL common",
           "confidence": "high",
@@ -58,7 +60,7 @@
         {
           "syllabus_code": "A1.1.7",
           "scope_evidence": "• Internal hard drives: solid state drive (SSD), hard disk drive (HDD), embedded multimedia cards (eMMCs)\n• External hard drives: SSD, HDD, optical drives, flash drives, memory cards, network attached storage (NAS)\n• The scenarios in which the various types of drive are used",
-          "rationale": "A field recorder uses RAM while processing audio and an SSD to retain recordings assesses Describe internal and external types of secondary memory storage.",
+          "rationale": "Adapted target only: A field recorder uses RAM while processing audio and an SSD to retain recordings; guidance target: Describe internal and external types of secondary memory storage. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "A",
           "level": "SL/HL common",
           "confidence": "high",
@@ -72,7 +74,11 @@
         "markscheme": "Read cited MS page(s).",
         "visual": "No visual required by this leaf.",
         "technical": "Independently reasoned and compared with available source marking points."
-      }
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC006-Q01"
+      ]
     },
     {
       "source_question_id": "H-SRC006-Q02",
@@ -111,6 +117,8 @@
         ],
         "question_reference": "Q2 ",
         "marking_summary": "Official source result8A for binary10001010.",
+        "summary_kind": "author_paraphrase_of_original",
+        "source_marking_leaf_evidence": "Award [1 max]\n8A;",
         "source_issues": [],
         "source_marking_evidence": "– 4 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \nSection A \n1. Award [2 max]\nPrimary storage is accessed by a computer's central processing unit (CPU) and secondary storage\nis not accessed directly by the CPU;\nPrimary storage has lower access time / has smaller capacity/ more expensive type of memory\nthan secondary storage (which is slower than primary storage, with larger capacity but it is\ncheaper);\nPrimary storage is volatile (uses random-access memory (RAM), cache memory, or some other\nspecialized hardware to store data while the computer is powered on/ volatile devices), whilst\nsecondary storage on a computer is provided by non-volatile devices (such as SSD or HDD);\nPrimary storage holds data temporarily whilst data is kept permanently/ for a long time in\nsecondary storage;\nPrimary storage holds currently running programs/data/operating system, secondary storage\ndoes not;\n2. Award [1 max]\n8A;\n3. (a) Award [2 max] \nA sorting algorithm is a method for reorganizing a number of items; \ninto a specific order (such as alphabetical order, highest-to-lowest value); \nSorting algorithm performs specific operations on the input list/array; \nIn order to deliver ordered list/array as output; \n(b) Award [2 max]\nBubble sort swaps adjacent items;\nSelection sort finds the next smallest (each time it goes through the list);\nBubble sort can exit early/ is faster if already the list is sorted;\nSelection sort will need to complete the procedure for the entire list every time;\n(The efficiency of Bubble and selection sort is different when applied on already sorted list)\nin the best-case bubble sort takes an order of N time;\nwhereas selection sort consumes an order of N2 time (where N is the number of items on the\nlist));\nNote: To award marks for such an answer it should be evident that the list is already sorted\nOR the term 'the best-case' should appear because the worst-case /average-case\ncomplexity/efficiency is same in both algorithms (O(N2))."
       },
@@ -119,7 +127,7 @@
         {
           "syllabus_code": "A1.2.1",
           "scope_evidence": "• The representation of integers in binary and hexadecimal\n• Conversion of binary and hexadecimal integers to decimal, and vice versa\n• Conversion of integers from binary to hexadecimal, and vice versa",
-          "rationale": "State the hexadecimal value of the eight-bit code 11010110 assesses Describe the principal methods of representing data.",
+          "rationale": "Original and adapted within-scope skill: State the hexadecimal value of the eight-bit code 11010110; guidance target: Describe the principal methods of representing data.",
           "theme": "A",
           "level": "SL/HL common",
           "confidence": "high",
@@ -133,7 +141,11 @@
         "markscheme": "Read cited MS page(s).",
         "visual": "No visual required by this leaf.",
         "technical": "int(\"11010110\",2)=214; hexadecimal D6."
-      }
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC006-Q02"
+      ]
     },
     {
       "source_question_id": "H-SRC006-Q03-a",
@@ -171,7 +183,9 @@
           4
         ],
         "question_reference": "Q3 a",
-        "marking_summary": "It performs a defined sequence of operations to rearrange the existing elements into the required order.",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max] A sorting algorithm is a method for reorganizing a number of items; into a specific order (such as alphabetical order, highest-to-lowest value); Sorting algorithm performs specific operations on the input list/array; In order to deliver ordered list/array as output;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max] \nA sorting algorithm is a method for reorganizing a number of items; \ninto a specific order (such as alphabetical order, highest-to-lowest value); \nSorting algorithm performs specific operations on the input list/array; \nIn order to deliver ordered list/array as output;",
         "source_issues": [],
         "source_marking_evidence": "– 4 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \nSection A \n1. Award [2 max]\nPrimary storage is accessed by a computer's central processing unit (CPU) and secondary storage\nis not accessed directly by the CPU;\nPrimary storage has lower access time / has smaller capacity/ more expensive type of memory\nthan secondary storage (which is slower than primary storage, with larger capacity but it is\ncheaper);\nPrimary storage is volatile (uses random-access memory (RAM), cache memory, or some other\nspecialized hardware to store data while the computer is powered on/ volatile devices), whilst\nsecondary storage on a computer is provided by non-volatile devices (such as SSD or HDD);\nPrimary storage holds data temporarily whilst data is kept permanently/ for a long time in\nsecondary storage;\nPrimary storage holds currently running programs/data/operating system, secondary storage\ndoes not;\n2. Award [1 max]\n8A;\n3. (a) Award [2 max] \nA sorting algorithm is a method for reorganizing a number of items; \ninto a specific order (such as alphabetical order, highest-to-lowest value); \nSorting algorithm performs specific operations on the input list/array; \nIn order to deliver ordered list/array as output; \n(b) Award [2 max]\nBubble sort swaps adjacent items;\nSelection sort finds the next smallest (each time it goes through the list);\nBubble sort can exit early/ is faster if already the list is sorted;\nSelection sort will need to complete the procedure for the entire list every time;\n(The efficiency of Bubble and selection sort is different when applied on already sorted list)\nin the best-case bubble sort takes an order of N time;\nwhereas selection sort consumes an order of N2 time (where N is the number of items on the\nlist));\nNote: To award marks for such an answer it should be evident that the list is already sorted\nOR the term 'the best-case' should appear because the worst-case /average-case\ncomplexity/efficiency is same in both algorithms (O(N2))."
       },
@@ -180,7 +194,7 @@
         {
           "syllabus_code": "B2.4.3",
           "scope_evidence": "• The time and space complexities of each algorithm, denoted by their respective Big O notations\n• The advantages and disadvantages of each algorithm in terms of efficiency across various data sets",
-          "rationale": "A sensor list must be rearranged from its lowest reading to its highest assesses Construct and trace algorithms to implement bubble sort and selection sort, evaluating their time and space complexities.",
+          "rationale": "Original and adapted within-scope skill: A sensor list must be rearranged from its lowest reading to its highest; guidance target: Construct and trace algorithms to implement bubble sort and selection sort, evaluating their time and space complexities.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -194,7 +208,11 @@
         "markscheme": "Read cited MS page(s).",
         "visual": "No visual required by this leaf.",
         "technical": "Independently reasoned and compared with available source marking points."
-      }
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC006-Q03-a"
+      ]
     },
     {
       "source_question_id": "H-SRC006-Q03-b",
@@ -232,7 +250,9 @@
           4
         ],
         "question_reference": "Q3 b",
-        "marking_summary": "Bubble sort repeatedly compares and swaps neighbouring values. Selection sort finds the smallest remaining value and swaps it into the next sorted position.",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max] Bubble sort swaps adjacent items; Selection sort finds the next smallest (each time it goes through the list); Bubble sort can exit early/ is faster if already the list is sorted; Selection sort will need to complete the procedure for the entire list every time; (The efficiency of Bubble and selection sort is different when applied on already sorted list) in the best-case bubble sort takes an order of N time; whereas selection sort consumes an order of N2 time (where N is the number of items on the list)); Note: To award marks for such an answer it should be evident that the list is already sorted OR the term 'the best-case' should appear because the worst-case /average-case complexity/efficiency is same in both algorithms (O(N2)).",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]\nBubble sort swaps adjacent items;\nSelection sort finds the next smallest (each time it goes through the list);\nBubble sort can exit early/ is faster if already the list is sorted;\nSelection sort will need to complete the procedure for the entire list every time;\n(The efficiency of Bubble and selection sort is different when applied on already sorted list)\nin the best-case bubble sort takes an order of N time;\nwhereas selection sort consumes an order of N2 time (where N is the number of items on the\nlist));\nNote: To award marks for such an answer it should be evident that the list is already sorted\nOR the term 'the best-case' should appear because the worst-case /average-case\ncomplexity/efficiency is same in both algorithms (O(N2)).",
         "source_issues": [],
         "source_marking_evidence": "– 4 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \nSection A \n1. Award [2 max]\nPrimary storage is accessed by a computer's central processing unit (CPU) and secondary storage\nis not accessed directly by the CPU;\nPrimary storage has lower access time / has smaller capacity/ more expensive type of memory\nthan secondary storage (which is slower than primary storage, with larger capacity but it is\ncheaper);\nPrimary storage is volatile (uses random-access memory (RAM), cache memory, or some other\nspecialized hardware to store data while the computer is powered on/ volatile devices), whilst\nsecondary storage on a computer is provided by non-volatile devices (such as SSD or HDD);\nPrimary storage holds data temporarily whilst data is kept permanently/ for a long time in\nsecondary storage;\nPrimary storage holds currently running programs/data/operating system, secondary storage\ndoes not;\n2. Award [1 max]\n8A;\n3. (a) Award [2 max] \nA sorting algorithm is a method for reorganizing a number of items; \ninto a specific order (such as alphabetical order, highest-to-lowest value); \nSorting algorithm performs specific operations on the input list/array; \nIn order to deliver ordered list/array as output; \n(b) Award [2 max]\nBubble sort swaps adjacent items;\nSelection sort finds the next smallest (each time it goes through the list);\nBubble sort can exit early/ is faster if already the list is sorted;\nSelection sort will need to complete the procedure for the entire list every time;\n(The efficiency of Bubble and selection sort is different when applied on already sorted list)\nin the best-case bubble sort takes an order of N time;\nwhereas selection sort consumes an order of N2 time (where N is the number of items on the\nlist));\nNote: To award marks for such an answer it should be evident that the list is already sorted\nOR the term 'the best-case' should appear because the worst-case /average-case\ncomplexity/efficiency is same in both algorithms (O(N2))."
       },
@@ -241,7 +261,7 @@
         {
           "syllabus_code": "B2.4.3",
           "scope_evidence": "• The time and space complexities of each algorithm, denoted by their respective Big O notations\n• The advantages and disadvantages of each algorithm in terms of efficiency across various data sets",
-          "rationale": "Outline one difference between the movements of values in bubble sort and selection sort assesses Construct and trace algorithms to implement bubble sort and selection sort, evaluating their time and space complexities.",
+          "rationale": "Original and adapted within-scope skill: Outline one difference between the movements of values in bubble sort and selection sort; guidance target: Construct and trace algorithms to implement bubble sort and selection sort, evaluating their time and space complexities.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -255,7 +275,11 @@
         "markscheme": "Read cited MS page(s).",
         "visual": "No visual required by this leaf.",
         "technical": "Independently reasoned and compared with available source marking points."
-      }
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC006-Q03-b"
+      ]
     },
     {
       "source_question_id": "H-SRC006-Q04",
@@ -293,7 +317,9 @@
           5
         ],
         "question_reference": "Q4 ",
-        "marking_summary": "(False != True) and True = True and True = True.",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max] Award [1] for showing the working out Award [1] for the correct result (TRUE) ((5>5) XOR TRUE) AND (3+2>4) = (FALSE XOR TRUE) AND TRUE= =TRUE AND TRUE; =TRUE;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]\nAward [1] for showing the working out\nAward [1] for the correct result (TRUE)\n((5>5) XOR TRUE) AND (3+2>4) = (FALSE XOR TRUE) AND TRUE=\n=TRUE AND TRUE;\n=TRUE;",
         "source_issues": [],
         "source_marking_evidence": "– 5 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \n4. Award [2 max]\nAward [1] for showing the working out\nAward [1] for the correct result (TRUE)\n((5>5) XOR TRUE) AND (3+2>4) = (FALSE XOR TRUE) AND TRUE=\n=TRUE AND TRUE;\n=TRUE;\n5. (a) Award [1 max] \nBinary tree (is a tree) in which every node has (no, one or) at most two children whilst \na non binary tree can have nodes with more than 2 children (non binary trees do not have an \nupper limit on number of children nodes);  \nEach node in a binary tree can have at most two subtrees (left and right subtree), a node in a \nnon binary tree can have any number of subtrees; \n(b) Award [2 max]\nAward [1] for the root (1)\nAward [1] for the correct right subtree\nAlternative answer \nAward [1] for the root (4) \nAward [1] for the correct right subtree \n6. Award [3 max]\nCompressing a data file reduces the file size;\nThe amount of time it takes to send a file over the network depends on the size of the transmitted\nfile, so the amount of time needed to transmit the file is reduced /transmission of a compressed file\ntakes less time than transmission of that same uncompressed file;\nAlso, compression of data files before transmission reduces the financial cost of running a network/\nless equipment / bandwidth is needed to transmit the data file;\n1 \n5 \n4 \n4 \n1 5 "
       },
@@ -302,7 +328,7 @@
         {
           "syllabus_code": "B2.3.2",
           "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
-          "rationale": "Given x=4, y=7 and ready=True, determine the value of ((x > 4) != ready) and (y - 2 > 4) assesses Construct programs utilizing appropriate selection structures.",
+          "rationale": "Adapted target only: Given x=4, y=7 and ready=True, determine the value of ((x > 4) != ready) and (y - 2 > 4); guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -316,7 +342,11 @@
         "markscheme": "Read cited MS page(s).",
         "visual": "No visual required by this leaf.",
         "technical": "Python execution verifies the result."
-      }
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC006-Q04"
+      ]
     },
     {
       "source_question_id": "H-SRC006-Q05-a",
@@ -354,7 +384,9 @@
           5
         ],
         "question_reference": "Q5 a",
-        "marking_summary": "Two.",
+        "marking_summary": "Exact original MS leaf excerpt: Award [1 max] Binary tree (is a tree) in which every node has (no, one or) at most two children whilst a non binary tree can have nodes with more than 2 children (non binary trees do not have an upper limit on number of children nodes); Each node in a binary tree can have at most two subtrees (left and right subtree), a node in a non binary tree can have any number of subtrees;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [1 max] \nBinary tree (is a tree) in which every node has (no, one or) at most two children whilst \na non binary tree can have nodes with more than 2 children (non binary trees do not have an \nupper limit on number of children nodes);  \nEach node in a binary tree can have at most two subtrees (left and right subtree), a node in a \nnon binary tree can have any number of subtrees;",
         "source_issues": [],
         "source_marking_evidence": "– 5 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \n4. Award [2 max]\nAward [1] for showing the working out\nAward [1] for the correct result (TRUE)\n((5>5) XOR TRUE) AND (3+2>4) = (FALSE XOR TRUE) AND TRUE=\n=TRUE AND TRUE;\n=TRUE;\n5. (a) Award [1 max] \nBinary tree (is a tree) in which every node has (no, one or) at most two children whilst \na non binary tree can have nodes with more than 2 children (non binary trees do not have an \nupper limit on number of children nodes);  \nEach node in a binary tree can have at most two subtrees (left and right subtree), a node in a \nnon binary tree can have any number of subtrees; \n(b) Award [2 max]\nAward [1] for the root (1)\nAward [1] for the correct right subtree\nAlternative answer \nAward [1] for the root (4) \nAward [1] for the correct right subtree \n6. Award [3 max]\nCompressing a data file reduces the file size;\nThe amount of time it takes to send a file over the network depends on the size of the transmitted\nfile, so the amount of time needed to transmit the file is reduced /transmission of a compressed file\ntakes less time than transmission of that same uncompressed file;\nAlso, compression of data files before transmission reduces the financial cost of running a network/\nless equipment / bandwidth is needed to transmit the data file;\n1 \n5 \n4 \n4 \n1 5 "
       },
@@ -363,7 +395,7 @@
         {
           "syllabus_code": "B4.1.4",
           "scope_evidence": "• How binary search trees (BSTs) are used for data organization\n• Insert, delete, traverse and searching nodes in a BST\n• Sketching a BST as a tree diagram",
-          "rationale": "State the maximum number of children of one node in a binary search tree assesses Explain the structures and properties of BSTs.",
+          "rationale": "Adapted target only: State the maximum number of children of one node in a binary search tree; guidance target: Explain the structures and properties of BSTs. Adaptation: Retains binary-tree branching knowledge, avoids making arbitrary general tree taxonomy a separate requirement.",
           "theme": "B",
           "level": "HL-only",
           "confidence": "high",
@@ -377,7 +409,11 @@
         "markscheme": "Read cited MS page(s).",
         "visual": "No visual required by this leaf.",
         "technical": "Independently reasoned and compared with available source marking points."
-      }
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC006-Q05-a"
+      ]
     },
     {
       "source_question_id": "H-SRC006-Q05-b",
@@ -398,7 +434,7 @@
         "2"
       ],
       "original_marks": 2,
-      "command_term": "See original prompt",
+      "command_term": "Draw",
       "original_text": "Given the following binary search tree (BST), draw the resulting BST after the deletion of the root node.",
       "parent_context": "– 2 –\nN21/4/COMSC/HP1/ENG/TZ0/XX\n8821 – 7011\nSection A\nAnswer all questions.\n1. State two differences between primary storage and secondary storage. [2]\n2. State the hexadecimal representation of the binary number 10001010. [1]\n3. (a)  Outline what is meant by a sorting algorithm. [2]\n(b) Outline one difference between a bubble sort algorithm and a selection sort algorithm. [2]\n4. Assume X = 5, Y = 3 and A = TRUE.\nDetermine the value of the following expression:\n((X > 5) xor A) and (Y + 2 > 4)\nShow all your working. [2]\n5. (a)  Identify one difference between a binary tree and a non-binary tree. [1]\n(b) Given the following binary search tree (BST), draw the resulting BST after the deletion \nof the root node. [2]\n3\n51\n4\n6. Explain why compression of data is beneficial when transmitting data files across a network. [3]",
       "assets": [
@@ -424,6 +460,8 @@
         ],
         "question_reference": "Q5 b",
         "marking_summary": "Accept source root1 with right subtree5(left4), or root4 with left1 and right5.",
+        "summary_kind": "author_paraphrase_of_original",
+        "source_marking_leaf_evidence": "Award [2 max]\nAward [1] for the root (1)\nAward [1] for the correct right subtree\nAlternative answer \nAward [1] for the root (4) \nAward [1] for the correct right subtree",
         "source_issues": [],
         "source_marking_evidence": "– 5 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \n4. Award [2 max]\nAward [1] for showing the working out\nAward [1] for the correct result (TRUE)\n((5>5) XOR TRUE) AND (3+2>4) = (FALSE XOR TRUE) AND TRUE=\n=TRUE AND TRUE;\n=TRUE;\n5. (a) Award [1 max] \nBinary tree (is a tree) in which every node has (no, one or) at most two children whilst \na non binary tree can have nodes with more than 2 children (non binary trees do not have an \nupper limit on number of children nodes);  \nEach node in a binary tree can have at most two subtrees (left and right subtree), a node in a \nnon binary tree can have any number of subtrees; \n(b) Award [2 max]\nAward [1] for the root (1)\nAward [1] for the correct right subtree\nAlternative answer \nAward [1] for the root (4) \nAward [1] for the correct right subtree \n6. Award [3 max]\nCompressing a data file reduces the file size;\nThe amount of time it takes to send a file over the network depends on the size of the transmitted\nfile, so the amount of time needed to transmit the file is reduced /transmission of a compressed file\ntakes less time than transmission of that same uncompressed file;\nAlso, compression of data files before transmission reduces the financial cost of running a network/\nless equipment / bandwidth is needed to transmit the data file;\n1 \n5 \n4 \n4 \n1 5 "
       },
@@ -432,7 +470,7 @@
         {
           "syllabus_code": "B4.1.4",
           "scope_evidence": "• How binary search trees (BSTs) are used for data organization\n• Insert, delete, traverse and searching nodes in a BST\n• Sketching a BST as a tree diagram",
-          "rationale": "A BST has root 8, left child 3 and right child 12 assesses Explain the structures and properties of BSTs.",
+          "rationale": "Original and adapted within-scope skill: A BST has root 8, left child 3 and right child 12; guidance target: Explain the structures and properties of BSTs.",
           "theme": "B",
           "level": "HL-only",
           "confidence": "high",
@@ -446,7 +484,11 @@
         "markscheme": "Read cited MS page(s).",
         "visual": "Viewed source diagram and checked both predecessor/successor alternatives in MS.",
         "technical": "Independently reasoned and compared with available source marking points."
-      }
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC006-Q05-b"
+      ]
     },
     {
       "source_question_id": "H-SRC006-Q06",
@@ -484,7 +526,9 @@
           5
         ],
         "question_reference": "Q6 ",
-        "marking_summary": "Compression encodes the log using fewer bits. At the same available bit rate, fewer bits take less time to transfer, leaving more capacity for other traffic.",
+        "marking_summary": "Exact original MS leaf excerpt: Award [3 max] Compressing a data file reduces the file size; The amount of time it takes to send a file over the network depends on the size of the transmitted file, so the amount of time needed to transmit the file is reduced /transmission of a compressed file takes less time than transmission of that same uncompressed file; Also, compression of data files before transmission reduces the financial cost of running a network/ less equipment / bandwidth is needed to transmit the data file; 1 5 4 4 1 5",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [3 max]\nCompressing a data file reduces the file size;\nThe amount of time it takes to send a file over the network depends on the size of the transmitted\nfile, so the amount of time needed to transmit the file is reduced /transmission of a compressed file\ntakes less time than transmission of that same uncompressed file;\nAlso, compression of data files before transmission reduces the financial cost of running a network/\nless equipment / bandwidth is needed to transmit the data file;\n1 \n5 \n4 \n4 \n1 5",
         "source_issues": [],
         "source_marking_evidence": "– 5 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \n4. Award [2 max]\nAward [1] for showing the working out\nAward [1] for the correct result (TRUE)\n((5>5) XOR TRUE) AND (3+2>4) = (FALSE XOR TRUE) AND TRUE=\n=TRUE AND TRUE;\n=TRUE;\n5. (a) Award [1 max] \nBinary tree (is a tree) in which every node has (no, one or) at most two children whilst \na non binary tree can have nodes with more than 2 children (non binary trees do not have an \nupper limit on number of children nodes);  \nEach node in a binary tree can have at most two subtrees (left and right subtree), a node in a \nnon binary tree can have any number of subtrees; \n(b) Award [2 max]\nAward [1] for the root (1)\nAward [1] for the correct right subtree\nAlternative answer \nAward [1] for the root (4) \nAward [1] for the correct right subtree \n6. Award [3 max]\nCompressing a data file reduces the file size;\nThe amount of time it takes to send a file over the network depends on the size of the transmitted\nfile, so the amount of time needed to transmit the file is reduced /transmission of a compressed file\ntakes less time than transmission of that same uncompressed file;\nAlso, compression of data files before transmission reduces the financial cost of running a network/\nless equipment / bandwidth is needed to transmit the data file;\n1 \n5 \n4 \n4 \n1 5 "
       },
@@ -493,7 +537,7 @@
         {
           "syllabus_code": "A1.1.8",
           "scope_evidence": "• The differences between lossy compression methods and lossless compression methods\n• Run-length encoding and transform coding",
-          "rationale": "Explain why compressing a large diagnostic log can help when it is sent over a connection with limited bandwidth assesses Describe the concept of compression.",
+          "rationale": "Original and adapted within-scope skill: Explain why compressing a large diagnostic log can help when it is sent over a connection with limited bandwidth; guidance target: Describe the concept of compression.",
           "theme": "A",
           "level": "SL/HL common",
           "confidence": "high",
@@ -507,7 +551,11 @@
         "markscheme": "Read cited MS page(s).",
         "visual": "No visual required by this leaf.",
         "technical": "Independently reasoned and compared with available source marking points."
-      }
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC006-Q06"
+      ]
     }
   ],
   "practice_questions": [
@@ -608,7 +656,7 @@
       "theme": "B",
       "level": "SL/HL common",
       "marks": 2,
-      "command_term": "Outline",
+      "command_term": "List",
       "difficulty": "medium",
       "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
       "solution": "It performs a defined sequence of operations to rearrange the existing elements into the required order.",
@@ -787,7 +835,7 @@
         },
         {
           "marks": 1,
-          "criterion": "3 is its left child and12 its right child; no duplicate10."
+          "criterion": "3 is its left child and 12 its right child; no duplicate10."
         }
       ],
       "acceptable_alternatives": [],

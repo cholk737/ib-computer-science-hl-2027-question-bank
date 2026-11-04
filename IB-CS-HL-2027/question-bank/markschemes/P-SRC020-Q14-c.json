@@ -14,11 +14,11 @@
     },
     {
       "marks": 1,
-      "criterion": "Initializes row total for eachrow."
+      "criterion": "Initializes row total for each row."
     },
     {
       "marks": 1,
-      "criterion": "Accumulates all values in correctrow."
+      "criterion": "Accumulates all values in correct row."
     },
     {
       "marks": 1,
@@ -26,15 +26,15 @@
     },
     {
       "marks": 1,
-      "criterion": "Updates best and replaces winnerlist on newbest."
+      "criterion": "Updates best and replaces winner list on new best."
     },
     {
       "marks": 1,
-      "criterion": "Appends ties without discarding earlier tiedrows."
+      "criterion": "Appends ties without discarding earlier tied rows."
     },
     {
       "marks": 1,
-      "criterion": "Returns greatest total andall correct indices."
+      "criterion": "Returns greatest total and all correct indices."
     }
   ],
   "acceptable_alternatives": [],
@@ -51,5 +51,6 @@
     "result_file": ""
   },
   "code": "def greatest_rows(readings):\n    best = None\n    winners = []\n    for i in range(len(readings)):\n        total = 0\n        for value in readings[i]:\n            total += value\n        if best is None or total > best:\n            best = total\n            winners = [i]\n        elif total == best:\n            winners.append(i)\n    return best, winners",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

@@ -276,8 +276,7 @@
         }
       ],
       "assessed_concepts": [
-        "Construct programs that apply arrays and Lists.",
-        "Construct code to define classes and instantiate objects."
+        "Construct programs that apply arrays and Lists."
       ],
       "difficulty": "high",
       "markscheme": {
@@ -296,15 +295,6 @@
         {
           "syllabus_code": "B2.2.2",
           "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
-          "rationale": "Python object-list search preserving holes/referenceidentity.",
-          "theme": "B",
-          "level": "SL/HL common",
-          "confidence": "high",
-          "review_required": false
-        },
-        {
-          "syllabus_code": "B3.1.4",
-          "scope_evidence": "• How to define classes and create objects from those classes\n• The role of constructors in initializing an object's state, setting initial values for its attributes to define its condition or characteristics at the time of creation",
           "rationale": "Python object-list search preserving holes/referenceidentity.",
           "theme": "B",
           "level": "SL/HL common",
@@ -839,8 +829,8 @@
       "marks": 2,
       "command_term": "Outline",
       "difficulty": "medium",
-      "adaptation_rationale": "Remove Java-only single-array-type rule;retain polymorphic interface in Python. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
-      "solution": "Both implement the common method interface;dynamic dispatch selects the appropriate implementation, including the override on PoweredRental.",
+      "adaptation_rationale": "Remove Java-only single-array-type rule; retain polymorphic interface in Python. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "Both implement the common method interface; dynamic dispatch selects the appropriate implementation, including the override on PoweredRental.",
       "marking_points": [
         {
           "marks": 1,
@@ -871,7 +861,7 @@
       ],
       "derivation_status": "adapted_unofficial",
       "unofficial": true,
-      "question_text": "A depot gives a reward on every20th standard rental and every30th powered rental it accepts. Describe the state and algorithm changes needed to an add-rental operation. Count only successful additions and keep separate counts for each depot.",
+      "question_text": "A depot gives a reward on every 20th standard rental and every 30th powered rental it accepts. Describe the state and algorithm changes needed to an add-rental operation. Count only successful additions and keep separate counts for each depot.",
       "syllabus_codes": [
         "B3.1.3",
         "B2.3.2"
@@ -882,7 +872,7 @@
       "command_term": "Describe",
       "difficulty": "medium",
       "adaptation_rationale": "Persistent object-state and conditional counter reasoning supported. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
-      "solution": "Store two instance counters initialized0. After successful addition, identify rental kind and increment only its counter. If its updated count is divisible by the appropriate threshold, call the reward operation once. Do not count failed additions.",
+      "solution": "Store two instance counters initialized to 0. After successful addition, identify rental kind and increment only its counter. If its updated count is divisible by the appropriate threshold, call the reward operation once. Do not count failed additions.",
       "marking_points": [
         {
           "marks": 1,
@@ -925,7 +915,7 @@
       ],
       "derivation_status": "adapted_unofficial",
       "unofficial": true,
-      "question_text": "For the20/30 reward scheme, identify expected reward outputs when tracing three independent fresh-depot runs:(i)19standard rentals,(ii)20standard rentals,(iii)61powered rentals.",
+      "question_text": "For the 20/30 reward scheme, identify expected reward outputs when tracing three independent fresh-depot runs: (i) 19 standard rentals, (ii) 20 standard rentals, (iii) 61 powered rentals.",
       "syllabus_codes": [
         "B2.1.4"
       ],
@@ -939,15 +929,15 @@
       "marking_points": [
         {
           "marks": 1,
-          "criterion": "19standard→0."
+          "criterion": "19 standard rentals produce 0 rewards."
         },
         {
           "marks": 1,
-          "criterion": "20standard→1."
+          "criterion": "20 standard rentals produce 1 reward."
         },
         {
           "marks": 1,
-          "criterion": "61powered→2."
+          "criterion": "61 powered rentals produce 2 rewards."
         }
       ],
       "acceptable_alternatives": [
@@ -970,10 +960,9 @@
       ],
       "derivation_status": "adapted_unofficial",
       "unofficial": true,
-      "question_text": "Construct Depot.remove_asset(self, identifier). self.slots is a list containing Asset objects or None. Each Asset has identifier. On the first match, replace that position with None and return the removed object. Return None if absent;do not shift other positions.",
+      "question_text": "Construct Depot.remove_asset(self, identifier). self.slots is a list containing Asset objects or None. Each Asset has identifier. On the first match, replace that position with None and return the removed object. Return None if absent; do not shift other positions.",
       "syllabus_codes": [
-        "B2.2.2",
-        "B3.1.4"
+        "B2.2.2"
       ],
       "theme": "B",
       "level": "SL/HL common",
@@ -1016,7 +1005,7 @@
       "verification": {
         "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
         "mark_sum": 6,
-        "code_execution": "Executedfirst/middle/last/absent andholes;returnedreferenceidentity/unchangedotherindicesverified."
+        "code_execution": "Specific executable boundary and behaviour tests passed; see agents/chunk-2/agent-3-papers-c/technical_checks.json and verify_practice.py."
       },
       "markscheme_status": "preliminary_unofficial_verified_by_author",
       "assets": [],
@@ -1113,8 +1102,8 @@
       "marks": 3,
       "command_term": "Outline",
       "difficulty": "medium",
-      "adaptation_rationale": "State balance assumption;avoid source false universal speed claim. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
-      "solution": "Each comparison selects one subtree and a balanced tree has heightO(log n);an unordered scan may needO(n) comparisons. An unbalanced BST can degrade toO(n), so the improvement depends on shape.",
+      "adaptation_rationale": "State balance assumption; avoid source false universal speed claim. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "Each comparison selects one subtree and a balanced tree has heightO(log n); an unordered scan may needO(n) comparisons. An unbalanced BST can degrade toO(n), so the improvement depends on shape.",
       "marking_points": [
         {
           "marks": 1,
@@ -1122,7 +1111,7 @@
         },
         {
           "marks": 1,
-          "criterion": "Balanced height/searchO(log n) contrasted with linearO(n)."
+          "criterion": "Balanced height/search O(log n) contrasted with linear O(n)."
         },
         {
           "marks": 1,
@@ -1159,8 +1148,8 @@
       "marks": 5,
       "command_term": "Describe",
       "difficulty": "medium",
-      "adaptation_rationale": "BST insertion and2Dtraversal explicit. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
-      "solution": "Start with an empty tree;traverse all rows/positions;skip None. For each asset, use its identifier as key, compare from the root and follow smaller/larger subtrees until an empty child position is found, then insert there.",
+      "adaptation_rationale": "BST insertion and 2Dtraversal explicit. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "Start with an empty tree; traverse all rows/positions; skip None. For each asset, use its identifier as key, compare from the root and follow smaller/larger subtrees until an empty child position is found, then insert there.",
       "marking_points": [
         {
           "marks": 1,
@@ -1203,7 +1192,7 @@
       ],
       "derivation_status": "adapted_unofficial",
       "unofficial": true,
-      "question_text": "Construct function remove_target(stack, target, make_stack). Stack methods are isEmpty(), push(value), pop();make_stack()returns a new empty stack. Items have identifier, and target is present once. Remove that item and restore every other item to its original relative order. Return removed item. Use only supplied stack operations.",
+      "question_text": "Construct function remove_target(stack, target, make_stack). Stack methods are isEmpty(), push(value), pop(); make_stack() returns a new empty stack. Items have identifier, and target is present once. Remove that item and restore every other item to its original relative order. Return removed item. Use only supplied stack operations.",
       "syllabus_codes": [
         "B2.2.3",
         "B2.3.3"
@@ -1249,7 +1238,7 @@
       "verification": {
         "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
         "mark_sum": 6,
-        "code_execution": "Executed targettop/middle/bottom withstackstubs;remainingorderandreferenceidentityverified."
+        "code_execution": "Specific executable boundary and behaviour tests passed; see agents/chunk-2/agent-3-papers-c/technical_checks.json and verify_practice.py."
       },
       "markscheme_status": "preliminary_unofficial_verified_by_author",
       "assets": [],
@@ -1272,8 +1261,8 @@
       "marks": 4,
       "command_term": "Compare",
       "difficulty": "medium",
-      "adaptation_rationale": "Accurate named-structure comparison;avoid dynamic list generalizations. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
-      "solution": "Array reserves capacity and can become full;linked nodes allocate as needed but need next references. Array push/pop at a tracked top index areO(1);linked head insertion/removal are alsoO(1), without traversing the list.",
+      "adaptation_rationale": "Accurate named-structure comparison; avoid dynamic list generalizations. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "Array reserves capacity and can become full; linked nodes allocate as needed but need next references. Array push/pop at a tracked top index areO(1); linked head insertion/removal are alsoO(1), without traversing the list.",
       "marking_points": [
         {
           "marks": 1,
@@ -1281,7 +1270,7 @@
         },
         {
           "marks": 1,
-          "criterion": "Paired memory trade-off:unused array slots versus node-reference overhead."
+          "criterion": "Paired memory trade-off: unused array slots versus node-reference overhead."
         },
         {
           "marks": 1,

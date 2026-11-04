@@ -1,0 +1,78 @@
+{
+  "source_question_id": "H-SRC028-Q11-a-i",
+  "source_id": "SRC-028",
+  "source_filename": "Computer_science_paper_1_TZ2_SL.pdf",
+  "year": "2025",
+  "session": "May",
+  "source_level": "SL",
+  "paper": "1",
+  "zone": "TZ1/2 (markscheme)",
+  "option": "",
+  "question": "11",
+  "subquestion": "a-i",
+  "source_pdf_pages": [
+    7
+  ],
+  "source_printed_pages": [
+    "6"
+  ],
+  "original_marks": 1,
+  "command_term": "Determine",
+  "original_text": "(i) D etermine the value of . [1]",
+  "parent_context": "11. There are 200 students in a school. Their names are held in the one-dimensional string\narray .\nSTUDENTS\nThe one-dimensional integer array stores marks (0–100 inclusive) that students\nMARKS\nscored in an examination.\nFigure 1: Example data stored in the two arrays and\nSTUDENTS MARKS\nSTUDENTS MARKS\nXimena Alba 5\n[0] [0]\nBoris Mount 88\n[1] [1]\nHugh Parr 45\n[2] [2]\nArjinder Singh 75\n[3] [3]\nMei Chen 59\n[4] [4]\n… …\nTammy Teller 51\n[199] [199]\nThe one-dimensional integer array will be used to store the grades awarded to\nGRADES\nstudents based on their examination marks.\nIn Figure 1, Boris Mount scored 88 marks. His grade will be stored in .\nGRADES[1]\nConsider the following algorithm that the school currently uses for awarding grades:\nloop K from 0 to 199\nGRADES[K] = 1 + (MARKS[K] div 10)\nif GRADES[K] >= 7 then\nGRADES[K] = 7\nend if\nend loop\n(a) (i) D etermine the value of . [1]\nGRADES[0]\n(ii) Determine the value of . [1]\nGRADES[1]\n(iii) Determine the value of . [1]\nGRADES[2]\n(iv) State the minimum mark necessary to achieve Grade 7. [1]\n(This question continues on the following page)\n– 7 – 2225 – 6417\n(Question 11 continued)\nGrade 1 is a failing grade. Each student who receives a failing grade must re-sit\nthe examination.\n(b) Construct an algorithm in pseudocode to fill the one-dimensional string array\nRESIT\nwith the names of students who must re-sit the examination. [4]\nA different method of awarding grades is proposed for the examinations. This new grading\nsystem will use three grades represented by the letters A, B, and C.\nGrades A, B, or C will be calculated as follows:\ny The average mark for all students is calculated.\ny Grade A is awarded if an individual student’s marks are more than 20 marks above the\naverage mark for all students.\ny Grade B is awarded if an individual student’s marks are within 20 marks of the average\nmark for all students.\ny Grade C is awarded if an individual student’s marks are more than 20 marks below the\naverage mark for all students.\nFor example, if the average mark for all students is 49.5:\ny Grade A is awarded if a student’s marks are greater than 69.5.\ny Grade B is awarded if a student’s marks are in the range from 29.5 to 69.5 inclusive.\ny Grade C is awarded if a student’s marks are less than 29.5.\n(c) Construct an algorithm in pseudocode to calculate and store the letter grades of all\nstudents in the one-dimensional string array as described. [7]\nLETTERGRADES",
+  "assets": [
+    {
+      "kind": "source_page_render",
+      "description": "Full source page inspected; includes all question context, source code/figures where present.",
+      "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-028/renders/page-7.png",
+      "source_pdf_page": 7,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Construct programs utilizing appropriate selection structures."
+  ],
+  "difficulty": "low",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-029",
+    "filename": "Computer_science_paper_1_TZ2_SL_markscheme.pdf",
+    "pdf_pages": [
+      14
+    ],
+    "question_reference": "11(a-i)",
+    "marking_summary": "Originalanswer1.",
+    "source_issues": []
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B2.3.2",
+      "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+      "rationale": "Integerdivisionandcaptrace translated into Python.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "transcribed from original PDF and compared with rendered page",
+    "source_marks": "checked against printed allocation and official MS",
+    "visual_review": "full question page inspected",
+    "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+  },
+  "original_text_synopsis": "Determine the value of GRADES[0].",
+  "context_synopsis": "Originalstudents200;parallelSTUDENTS/MARKS0…100;GRADES=1+(MARKSdiv10),capped7;shownmarks5,88,45,75,59,…51;resitgrade1. LettergradesAaboveaverage+20,Cbelowaverage-20,Binclusivebetween.",
+  "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+  "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+  "raw_source_page_transcriptions": [
+    "agents/chunk-2/agent-3-papers-c/papers/SRC-028/transcription/pdf-page-007.txt"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC028-Q11-a-i"
+  ]
+}

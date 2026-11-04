@@ -6,7 +6,7 @@
   "marking_points": [
     {
       "marks": 1,
-      "criterion": "Uses correct row/threevalues."
+      "criterion": "Uses correct row/three values."
     },
     {
       "marks": 1,
@@ -14,11 +14,11 @@
     },
     {
       "marks": 1,
-      "criterion": "Tests remainingpair."
+      "criterion": "Tests remaining pair."
     },
     {
       "marks": 1,
-      "criterion": "Returns repeated value or0 correctly, includingall equal."
+      "criterion": "Returns repeated value or 0 correctly, including all equal."
     }
   ],
   "acceptable_alternatives": [],
@@ -35,5 +35,6 @@
     "result_file": ""
   },
   "code": "def repeated_value(readings, r):\n    a, b, c = readings[r]\n    if a == b or a == c:\n        return a\n    if b == c:\n        return b\n    return 0",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

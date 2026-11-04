@@ -1,0 +1,61 @@
+{
+  "question_id": "P-SRC040-Q01-b",
+  "source_question_ids": [
+    "H-SRC040-Q01-b"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A repair company has related Customer, Device and Repair tables, replacing separate paper job cards. Explain two benefits of this relational database for staff answering customer enquiries.",
+  "syllabus_codes": [
+    "A3.1.1"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 6,
+  "command_term": "Explain",
+  "difficulty": "medium",
+  "adaptation_rationale": "Relational database benefits assessed; avoid assuming storage automatically guarantees security or backup. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "solution": "A query joins a customer to their devices and repairs, finding the relevant history without searching many cards, so enquiries can be answered quickly. Staff share one maintained repair record rather than separate copies, so a correctly committed progress update is available to all authorized staff and inconsistent duplicate records are reduced.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Identifies efficient retrieval/querying."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains joining or filtering related records for an enquiry."
+    },
+    {
+      "marks": 1,
+      "criterion": "Connects retrieval to reduced manual search or faster response."
+    },
+    {
+      "marks": 1,
+      "criterion": "Identifies shared consistently maintained data."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains one update is available to authorized staff rather than separate copies."
+    },
+    {
+      "marks": 1,
+      "criterion": "Connects shared data to fewer contradictory progress reports."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 6,
+    "code_execution": "No executable code required; explicit answer/trace checked manually."
+  },
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "assets": [],
+  "record_path": "question-bank/records/P-SRC040-Q01-b.json",
+  "question_path": "question-bank/questions/P-SRC040-Q01-b.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC040-Q01-b.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

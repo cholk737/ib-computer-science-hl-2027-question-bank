@@ -1,0 +1,1002 @@
+{
+  "source_id": "SRC-038",
+  "batch_id": "SRC-038-b005",
+  "source_questions": [
+    {
+      "source_question_id": "H-SRC038-Q07-a",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "B",
+      "question": 7,
+      "subquestion": "a",
+      "source_pdf_pages": [
+        13
+      ],
+      "source_printed_pages": [
+        "12"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "Outline the appropriateness of using a 2D visualization for the Monte Carlo estimation of π.",
+      "parent_context": "– 12 – 8825 – 6405\n(Option B continued)\n7. The Monte Carlo estimation of pi (π) is achieved by randomly generating points within a \nsquare and counting how many fall within an inscribed circle (see Figure 5).\nFigure 5: 2D visualization of the Monte Carlo estimation of π\n−1 0 1\n−1\n0\n1\n(a) Outline the appropriateness of using a 2D visualization for the Monte Carlo estimation  \nof π. [2]\nA spreadsheet model can be created to simulate the Monte Carlo method for the estimation  \nof π.\nThe =RAND() spreadsheet function is used in columns x-cord and y-cord (see Figure 6) to \ngenerate a random decimal between 0 and 1.\nThe distance column uses Pythagoras’ theorem to calculate distance, where a is x-cord and \nb is y-cord:\nca b/g32/g1422\nThe In or Out column is determined using an IF statement. When distance is less than 1, “In” \nis shown. When distance is 1 or more, “Out” is shown.\n(Option B continues on the following page)\n– 13 – 8825    – 6405\nTurn over\n(Option B, question 7 continued)\nFigure 6: The four columns needed in the simulation of \nthe Monte Carlo method for the estimation of π\nA B C D E\n1 x-cord y-cord distance In or Out\n2 0.9709594 0.03075972 0.97144651 In\n3 0.47929644 0.46729567 0.66939549 In\n(b) (i)  State a formula to calculate the distance for cell C2. [1]\n(ii) State a formula to show In or Out for cell D2. [1]\nThe formulae in row 2, columns A, B, C, and D, are automatically filled down to row 5001.\nA range of 5000 numbers will be sufficient to give a good approximation of π.\nTo give an approximation for π, a formula should be entered in cell E2.\nThe formula will calculate the ratio of points inside the circle (the number of “In” occurrences) \nrelative to the total points (total number of rows) and multiply the result by 4.\n(c) State a formula to be entered in cell E2. [3]\nBounding boxes in the context of self-driving cars are 3D geometric shapes encapsulating \nsurrounding objects that are memory and processor intensive (see Figure 7).\nFigure 7: 3D visualization of a bounding box\n(d) Evaluate the processing power and memory requirements needed to calculate the 3D \nbounding boxes for self-driving cars. [5]\n(Option B continues on page 15)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-13.png",
+          "source_pdf_page": 13,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-14.png",
+          "source_pdf_page": 14,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline the appropriateness of using a 2D visualization for the Monte Carlo estimation of π.",
+        "Choice of 2D Monte Carlo visualization is not an individual 2027 learning statement."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          22
+        ],
+        "question_reference": "Q7 a",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2] max The Monte Carlo method for estimating π relies on a 2D geometric shape; A 2D visualization represents these shapes and the random points within them; The concept of plotting points within a square can be clearly demonstrated in two dimensions; The visualisation intuitively helps understanding the underlying principle of the method; The visualisation can be represented by a scatter diagram; A 2D chart widely available in spreadsheet software; The Monte Carlo method relies on random x and y coordinates; The foundation for 2D charts (like scatter diagrams);",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2] max\nThe Monte Carlo method for estimating π relies on a 2D geometric shape; \nA 2D visualization represents these shapes and the random points within them; \nThe concept of plotting points within a square can be clearly demonstrated in two \ndimensions; \nThe visualisation intuitively helps understanding the underlying principle of the method; \nThe visualisation can be represented by a scatter diagram; \nA 2D chart widely available in spreadsheet software; \nThe Monte Carlo method relies on random x and y coordinates; \nThe foundation for 2D charts (like scatter diagrams);",
+        "source_issues": [],
+        "source_marking_evidence": "– 22 – 8825 – 6405M \n7. (a)\t Award [2] max\nThe Monte Carlo method for estimating π relies on a 2D geometric shape; \nA 2D visualization represents these shapes and the random points within them; \nThe concept of plotting points within a square can be clearly demonstrated in two \ndimensions; \nThe visualisation intuitively helps understanding the underlying principle of the method; \nThe visualisation can be represented by a scatter diagram; \nA 2D chart widely available in spreadsheet software; \nThe Monte Carlo method relies on random x and y coordinates; \nThe foundation for 2D charts (like scatter diagrams); \n(b) (i)\t Award [1] max\n=SQRT(A2^2 + B2^2)\n \n// must be exact \n(ii) Award [1] max\n=IF(C2<=1, \"In\",\"Out\")\n// Accept C2 < 1\n(c) Award [1] for COUNTIF with “In”\nAward [1] for COUNTIF with correct range\nAward [1] for dividing by 5000 * 4\n=COUNTIF(D2:D5001,\"In\") / COUNTA(D2:D5001)*4\nAlternative\n=COUNTIF(D2:D5001,\"In\") / 5000*4\nAwards full marks if students correctly use more than one formula/cell."
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Choice of 2D Monte Carlo visualization is not an individual 2027 learning statement.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": []
+    },
+    {
+      "source_question_id": "H-SRC038-Q07-b-i",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "B",
+      "question": 7,
+      "subquestion": "b-i",
+      "source_pdf_pages": [
+        14
+      ],
+      "source_printed_pages": [
+        "13"
+      ],
+      "original_marks": 1,
+      "command_term": "State",
+      "original_text": "State a formula to calculate the distance for cell C2.",
+      "parent_context": "– 12 – 8825 – 6405\n(Option B continued)\n7. The Monte Carlo estimation of pi (π) is achieved by randomly generating points within a \nsquare and counting how many fall within an inscribed circle (see Figure 5).\nFigure 5: 2D visualization of the Monte Carlo estimation of π\n−1 0 1\n−1\n0\n1\n(a) Outline the appropriateness of using a 2D visualization for the Monte Carlo estimation  \nof π. [2]\nA spreadsheet model can be created to simulate the Monte Carlo method for the estimation  \nof π.\nThe =RAND() spreadsheet function is used in columns x-cord and y-cord (see Figure 6) to \ngenerate a random decimal between 0 and 1.\nThe distance column uses Pythagoras’ theorem to calculate distance, where a is x-cord and \nb is y-cord:\nca b/g32/g1422\nThe In or Out column is determined using an IF statement. When distance is less than 1, “In” \nis shown. When distance is 1 or more, “Out” is shown.\n(Option B continues on the following page)\n– 13 – 8825    – 6405\nTurn over\n(Option B, question 7 continued)\nFigure 6: The four columns needed in the simulation of \nthe Monte Carlo method for the estimation of π\nA B C D E\n1 x-cord y-cord distance In or Out\n2 0.9709594 0.03075972 0.97144651 In\n3 0.47929644 0.46729567 0.66939549 In\n(b) (i)  State a formula to calculate the distance for cell C2. [1]\n(ii) State a formula to show In or Out for cell D2. [1]\nThe formulae in row 2, columns A, B, C, and D, are automatically filled down to row 5001.\nA range of 5000 numbers will be sufficient to give a good approximation of π.\nTo give an approximation for π, a formula should be entered in cell E2.\nThe formula will calculate the ratio of points inside the circle (the number of “In” occurrences) \nrelative to the total points (total number of rows) and multiply the result by 4.\n(c) State a formula to be entered in cell E2. [3]\nBounding boxes in the context of self-driving cars are 3D geometric shapes encapsulating \nsurrounding objects that are memory and processor intensive (see Figure 7).\nFigure 7: 3D visualization of a bounding box\n(d) Evaluate the processing power and memory requirements needed to calculate the 3D \nbounding boxes for self-driving cars. [5]\n(Option B continues on page 15)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-13.png",
+          "source_pdf_page": 13,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-14.png",
+          "source_pdf_page": 14,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: State a formula to calculate the distance for cell C2.",
+        "State a Python assignment computing d from x and y using the supplied formula d = square root of (x squared + y squared)"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          22
+        ],
+        "question_reference": "Q7 b-i",
+        "marking_summary": "Original spreadsheet formula SQRT(A2^2+B2^2).",
+        "summary_kind": "author_paraphrase_of_original",
+        "source_marking_leaf_evidence": "Award [1] max\n=SQRT(A2^2 + B2^2)\n \n// must be exact",
+        "source_issues": [],
+        "source_marking_evidence": "– 22 – 8825 – 6405M \n7. (a)\t Award [2] max\nThe Monte Carlo method for estimating π relies on a 2D geometric shape; \nA 2D visualization represents these shapes and the random points within them; \nThe concept of plotting points within a square can be clearly demonstrated in two \ndimensions; \nThe visualisation intuitively helps understanding the underlying principle of the method; \nThe visualisation can be represented by a scatter diagram; \nA 2D chart widely available in spreadsheet software; \nThe Monte Carlo method relies on random x and y coordinates; \nThe foundation for 2D charts (like scatter diagrams); \n(b) (i)\t Award [1] max\n=SQRT(A2^2 + B2^2)\n \n// must be exact \n(ii) Award [1] max\n=IF(C2<=1, \"In\",\"Out\")\n// Accept C2 < 1\n(c) Award [1] for COUNTIF with “In”\nAward [1] for COUNTIF with correct range\nAward [1] for dividing by 5000 * 4\n=COUNTIF(D2:D5001,\"In\") / COUNTA(D2:D5001)*4\nAlternative\n=COUNTIF(D2:D5001,\"In\") / 5000*4\nAwards full marks if students correctly use more than one formula/cell."
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.3.1",
+          "scope_evidence": "• The impact of instruction order on program functionality\n• Ways to avoid errors, such as infinite loops, deadlock, incorrect output",
+          "rationale": "Adapted target only: State a Python assignment computing d from x and y using the supplied formula d = square root of (x squared + y squared); guidance target: Construct programs that implement the correct sequence of code instructions to meet program objectives. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q07-b-i"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q07-b-ii",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "B",
+      "question": 7,
+      "subquestion": "b-ii",
+      "source_pdf_pages": [
+        14
+      ],
+      "source_printed_pages": [
+        "13"
+      ],
+      "original_marks": 1,
+      "command_term": "State",
+      "original_text": "State a formula to show In or Out for cell D2.",
+      "parent_context": "– 12 – 8825 – 6405\n(Option B continued)\n7. The Monte Carlo estimation of pi (π) is achieved by randomly generating points within a \nsquare and counting how many fall within an inscribed circle (see Figure 5).\nFigure 5: 2D visualization of the Monte Carlo estimation of π\n−1 0 1\n−1\n0\n1\n(a) Outline the appropriateness of using a 2D visualization for the Monte Carlo estimation  \nof π. [2]\nA spreadsheet model can be created to simulate the Monte Carlo method for the estimation  \nof π.\nThe =RAND() spreadsheet function is used in columns x-cord and y-cord (see Figure 6) to \ngenerate a random decimal between 0 and 1.\nThe distance column uses Pythagoras’ theorem to calculate distance, where a is x-cord and \nb is y-cord:\nca b/g32/g1422\nThe In or Out column is determined using an IF statement. When distance is less than 1, “In” \nis shown. When distance is 1 or more, “Out” is shown.\n(Option B continues on the following page)\n– 13 – 8825    – 6405\nTurn over\n(Option B, question 7 continued)\nFigure 6: The four columns needed in the simulation of \nthe Monte Carlo method for the estimation of π\nA B C D E\n1 x-cord y-cord distance In or Out\n2 0.9709594 0.03075972 0.97144651 In\n3 0.47929644 0.46729567 0.66939549 In\n(b) (i)  State a formula to calculate the distance for cell C2. [1]\n(ii) State a formula to show In or Out for cell D2. [1]\nThe formulae in row 2, columns A, B, C, and D, are automatically filled down to row 5001.\nA range of 5000 numbers will be sufficient to give a good approximation of π.\nTo give an approximation for π, a formula should be entered in cell E2.\nThe formula will calculate the ratio of points inside the circle (the number of “In” occurrences) \nrelative to the total points (total number of rows) and multiply the result by 4.\n(c) State a formula to be entered in cell E2. [3]\nBounding boxes in the context of self-driving cars are 3D geometric shapes encapsulating \nsurrounding objects that are memory and processor intensive (see Figure 7).\nFigure 7: 3D visualization of a bounding box\n(d) Evaluate the processing power and memory requirements needed to calculate the 3D \nbounding boxes for self-driving cars. [5]\n(Option B continues on page 15)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-13.png",
+          "source_pdf_page": 13,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-14.png",
+          "source_pdf_page": 14,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: State a formula to show In or Out for cell D2.",
+        "Construct Python selection assigning label=\"inside\" when d<1, and label=\"outside\" otherwise"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          22
+        ],
+        "question_reference": "Q7 b-ii",
+        "marking_summary": "Exact original MS leaf excerpt: Award [1] max =IF(C2<=1, \"In\",\"Out\") // Accept C2 < 1",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [1] max\n=IF(C2<=1, \"In\",\"Out\")\n// Accept C2 < 1",
+        "source_issues": [],
+        "source_marking_evidence": "– 22 – 8825 – 6405M \n7. (a)\t Award [2] max\nThe Monte Carlo method for estimating π relies on a 2D geometric shape; \nA 2D visualization represents these shapes and the random points within them; \nThe concept of plotting points within a square can be clearly demonstrated in two \ndimensions; \nThe visualisation intuitively helps understanding the underlying principle of the method; \nThe visualisation can be represented by a scatter diagram; \nA 2D chart widely available in spreadsheet software; \nThe Monte Carlo method relies on random x and y coordinates; \nThe foundation for 2D charts (like scatter diagrams); \n(b) (i)\t Award [1] max\n=SQRT(A2^2 + B2^2)\n \n// must be exact \n(ii) Award [1] max\n=IF(C2<=1, \"In\",\"Out\")\n// Accept C2 < 1\n(c) Award [1] for COUNTIF with “In”\nAward [1] for COUNTIF with correct range\nAward [1] for dividing by 5000 * 4\n=COUNTIF(D2:D5001,\"In\") / COUNTA(D2:D5001)*4\nAlternative\n=COUNTIF(D2:D5001,\"In\") / 5000*4\nAwards full marks if students correctly use more than one formula/cell."
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Adapted target only: Construct Python selection assigning label=\"inside\" when d<1, and label=\"outside\" otherwise; guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q07-b-ii"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q07-c",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "B",
+      "question": 7,
+      "subquestion": "c",
+      "source_pdf_pages": [
+        14
+      ],
+      "source_printed_pages": [
+        "13"
+      ],
+      "original_marks": 3,
+      "command_term": "State",
+      "original_text": "State a formula to be entered in cell E2.",
+      "parent_context": "– 12 – 8825 – 6405\n(Option B continued)\n7. The Monte Carlo estimation of pi (π) is achieved by randomly generating points within a \nsquare and counting how many fall within an inscribed circle (see Figure 5).\nFigure 5: 2D visualization of the Monte Carlo estimation of π\n−1 0 1\n−1\n0\n1\n(a) Outline the appropriateness of using a 2D visualization for the Monte Carlo estimation  \nof π. [2]\nA spreadsheet model can be created to simulate the Monte Carlo method for the estimation  \nof π.\nThe =RAND() spreadsheet function is used in columns x-cord and y-cord (see Figure 6) to \ngenerate a random decimal between 0 and 1.\nThe distance column uses Pythagoras’ theorem to calculate distance, where a is x-cord and \nb is y-cord:\nca b/g32/g1422\nThe In or Out column is determined using an IF statement. When distance is less than 1, “In” \nis shown. When distance is 1 or more, “Out” is shown.\n(Option B continues on the following page)\n– 13 – 8825    – 6405\nTurn over\n(Option B, question 7 continued)\nFigure 6: The four columns needed in the simulation of \nthe Monte Carlo method for the estimation of π\nA B C D E\n1 x-cord y-cord distance In or Out\n2 0.9709594 0.03075972 0.97144651 In\n3 0.47929644 0.46729567 0.66939549 In\n(b) (i)  State a formula to calculate the distance for cell C2. [1]\n(ii) State a formula to show In or Out for cell D2. [1]\nThe formulae in row 2, columns A, B, C, and D, are automatically filled down to row 5001.\nA range of 5000 numbers will be sufficient to give a good approximation of π.\nTo give an approximation for π, a formula should be entered in cell E2.\nThe formula will calculate the ratio of points inside the circle (the number of “In” occurrences) \nrelative to the total points (total number of rows) and multiply the result by 4.\n(c) State a formula to be entered in cell E2. [3]\nBounding boxes in the context of self-driving cars are 3D geometric shapes encapsulating \nsurrounding objects that are memory and processor intensive (see Figure 7).\nFigure 7: 3D visualization of a bounding box\n(d) Evaluate the processing power and memory requirements needed to calculate the 3D \nbounding boxes for self-driving cars. [5]\n(Option B continues on page 15)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-13.png",
+          "source_pdf_page": 13,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-14.png",
+          "source_pdf_page": 14,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: State a formula to be entered in cell E2.",
+        "A nonempty list labels contains \"inside\" or \"outside\""
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          22
+        ],
+        "question_reference": "Q7 c",
+        "marking_summary": "Exact original MS leaf excerpt: Award [1] for COUNTIF with “In” Award [1] for COUNTIF with correct range Award [1] for dividing by 5000 * 4 =COUNTIF(D2:D5001,\"In\") / COUNTA(D2:D5001)*4 Alternative =COUNTIF(D2:D5001,\"In\") / 5000*4 Awards full marks if students correctly use more than one formula/cell.",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [1] for COUNTIF with “In”\nAward [1] for COUNTIF with correct range\nAward [1] for dividing by 5000 * 4\n=COUNTIF(D2:D5001,\"In\") / COUNTA(D2:D5001)*4\nAlternative\n=COUNTIF(D2:D5001,\"In\") / 5000*4\nAwards full marks if students correctly use more than one formula/cell.",
+        "source_issues": [],
+        "source_marking_evidence": "– 22 – 8825 – 6405M \n7. (a)\t Award [2] max\nThe Monte Carlo method for estimating π relies on a 2D geometric shape; \nA 2D visualization represents these shapes and the random points within them; \nThe concept of plotting points within a square can be clearly demonstrated in two \ndimensions; \nThe visualisation intuitively helps understanding the underlying principle of the method; \nThe visualisation can be represented by a scatter diagram; \nA 2D chart widely available in spreadsheet software; \nThe Monte Carlo method relies on random x and y coordinates; \nThe foundation for 2D charts (like scatter diagrams); \n(b) (i)\t Award [1] max\n=SQRT(A2^2 + B2^2)\n \n// must be exact \n(ii) Award [1] max\n=IF(C2<=1, \"In\",\"Out\")\n// Accept C2 < 1\n(c) Award [1] for COUNTIF with “In”\nAward [1] for COUNTIF with correct range\nAward [1] for dividing by 5000 * 4\n=COUNTIF(D2:D5001,\"In\") / COUNTA(D2:D5001)*4\nAlternative\n=COUNTIF(D2:D5001,\"In\") / 5000*4\nAwards full marks if students correctly use more than one formula/cell."
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Adapted target only: A nonempty list labels contains \"inside\" or \"outside\"; guidance target: Construct programs that apply arrays and Lists. Adaptation: Changes spreadsheet formula to Python traversal/selection with mathematical rule supplied, so no Monte Carlo theory is required.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Adapted target only: A nonempty list labels contains \"inside\" or \"outside\"; guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Changes spreadsheet formula to Python traversal/selection with mathematical rule supplied, so no Monte Carlo theory is required.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "Adapted target only: A nonempty list labels contains \"inside\" or \"outside\"; guidance target: Construct programs that utilize looping structures to perform repeated actions. Adaptation: Changes spreadsheet formula to Python traversal/selection with mathematical rule supplied, so no Monte Carlo theory is required.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Executed mixed and zero-inside cases."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q07-c"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q07-d",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "B",
+      "question": 7,
+      "subquestion": "d",
+      "source_pdf_pages": [
+        14
+      ],
+      "source_printed_pages": [
+        "13"
+      ],
+      "original_marks": 5,
+      "command_term": "Evaluate",
+      "original_text": "Evaluate the processing power and memory requirements needed to calculate the 3D bounding boxes for self-driving cars.",
+      "parent_context": "– 12 – 8825 – 6405\n(Option B continued)\n7. The Monte Carlo estimation of pi (π) is achieved by randomly generating points within a \nsquare and counting how many fall within an inscribed circle (see Figure 5).\nFigure 5: 2D visualization of the Monte Carlo estimation of π\n−1 0 1\n−1\n0\n1\n(a) Outline the appropriateness of using a 2D visualization for the Monte Carlo estimation  \nof π. [2]\nA spreadsheet model can be created to simulate the Monte Carlo method for the estimation  \nof π.\nThe =RAND() spreadsheet function is used in columns x-cord and y-cord (see Figure 6) to \ngenerate a random decimal between 0 and 1.\nThe distance column uses Pythagoras’ theorem to calculate distance, where a is x-cord and \nb is y-cord:\nca b/g32/g1422\nThe In or Out column is determined using an IF statement. When distance is less than 1, “In” \nis shown. When distance is 1 or more, “Out” is shown.\n(Option B continues on the following page)\n– 13 – 8825    – 6405\nTurn over\n(Option B, question 7 continued)\nFigure 6: The four columns needed in the simulation of \nthe Monte Carlo method for the estimation of π\nA B C D E\n1 x-cord y-cord distance In or Out\n2 0.9709594 0.03075972 0.97144651 In\n3 0.47929644 0.46729567 0.66939549 In\n(b) (i)  State a formula to calculate the distance for cell C2. [1]\n(ii) State a formula to show In or Out for cell D2. [1]\nThe formulae in row 2, columns A, B, C, and D, are automatically filled down to row 5001.\nA range of 5000 numbers will be sufficient to give a good approximation of π.\nTo give an approximation for π, a formula should be entered in cell E2.\nThe formula will calculate the ratio of points inside the circle (the number of “In” occurrences) \nrelative to the total points (total number of rows) and multiply the result by 4.\n(c) State a formula to be entered in cell E2. [3]\nBounding boxes in the context of self-driving cars are 3D geometric shapes encapsulating \nsurrounding objects that are memory and processor intensive (see Figure 7).\nFigure 7: 3D visualization of a bounding box\n(d) Evaluate the processing power and memory requirements needed to calculate the 3D \nbounding boxes for self-driving cars. [5]\n(Option B continues on page 15)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-13.png",
+          "source_pdf_page": 13,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-14.png",
+          "source_pdf_page": 14,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Evaluate the processing power and memory requirements needed to calculate the 3D bounding boxes for self-driving cars.",
+        "Evaluate the processing and memory needs of an ML camera system that detects many moving objects in a live image stream"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          23
+        ],
+        "question_reference": "Q7 d",
+        "marking_summary": "Exact original MS leaf excerpt: Award [5] max Award [2] for strengths, [2] for weaknesses, [1] for a reasoned conclusion Strengths Wireframe use less processor/memory intensive than scanline/ray traced/rendered; Thousands of bounding boxes processed per second; No need to render lighting, shadows, or textures / less overhead than 3D imaging; No need for detailed rendering; weaknesses Constant streaming of changing real time data; Many objects in every data frame have bounding box; Precision of bounding boxes must be very high; Machine learning algorithms (CNNs) that detect the bounding boxes are computationally intensive; High danger situation is time dependent/processing every few thousands of a second; Conclusion Bounding boxes, while seemingly simple wireframe representations, require a substantial amount of memory and processing power; AVs need advanced graphic processing units (GPUs) installed to cope with the hig … [full leaf evidence retained]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [5] max\nAward [2] for strengths, [2] for weaknesses, [1] for a reasoned conclusion\nStrengths\nWireframe use less processor/memory intensive than scanline/ray traced/rendered;\nThousands of bounding boxes processed per second;\nNo need to render lighting, shadows, or textures / less overhead than 3D imaging;\nNo need for detailed rendering;\nweaknesses\nConstant streaming of changing real time data;\nMany objects in every data frame have bounding box;\nPrecision of bounding boxes must be very high;\nMachine learning algorithms (CNNs) that detect the bounding boxes are\ncomputationally intensive;\nHigh danger situation is time dependent/processing every few thousands of a second;\nConclusion\nBounding boxes, while seemingly simple wireframe representations, require a\nsubstantial amount of memory and processing power;\nAVs need advanced graphic processing units (GPUs) installed to cope with the high\nprocessing demands.",
+        "source_issues": [],
+        "source_marking_evidence": "– 23 – 8825 – 6405M \n(d) Award [5] max\nAward [2] for strengths, [2] for weaknesses, [1] for a reasoned conclusion\nStrengths\nWireframe use less processor/memory intensive than scanline/ray traced/rendered;\nThousands of bounding boxes processed per second;\nNo need to render lighting, shadows, or textures / less overhead than 3D imaging;\nNo need for detailed rendering;\nweaknesses\nConstant streaming of changing real time data;\nMany objects in every data frame have bounding box;\nPrecision of bounding boxes must be very high;\nMachine learning algorithms (CNNs) that detect the bounding boxes are\ncomputationally intensive;\nHigh danger situation is time dependent/processing every few thousands of a second;\nConclusion\nBounding boxes, while seemingly simple wireframe representations, require a\nsubstantial amount of memory and processing power;\nAVs need advanced graphic processing units (GPUs) installed to cope with the high\nprocessing demands."
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "A1.1.2",
+          "scope_evidence": "• The architecture that allows graphics processing units (GPUs) to handle specific tasks and makes them suitable for complex computations\n• Real-world scenarios may include video games, artificial intelligence (AI), large simulations and other applications that require graphics rendering and machine learning.",
+          "rationale": "Adapted target only: Evaluate the processing and memory needs of an ML camera system that detects many moving objects in a live image stream; guidance target: Describe the role of a GPU. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "A1.1.4",
+          "scope_evidence": "• Random-access memory (RAM), read only memory (ROM), cache (L1, L2, L3), registers\n• The interaction of the CPU with different types of memory to optimize performance\n• The relevance of the terms “cache miss” and “cache hit”",
+          "rationale": "Adapted target only: Evaluate the processing and memory needs of an ML camera system that detects many moving objects in a live image stream; guidance target: Explain the purposes of different types of primary memory. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "A4.1.2",
+          "scope_evidence": "• The hardware configurations for different machine learning scenarios, considering factors such as processing, storage and scalability\n• Hardware configurations for machine learning ranging from standard laptops to advanced infrastructure\n• Advanced infrastructure must include application-specific integrated circuits (ASICs), edge devices, field-programmable gate arrays (FPGAs), GPUs, tensor processing units (TPUs), cloud-based platforms, high-performance computing (HPC) centres.",
+          "rationale": "Adapted target only: Evaluate the processing and memory needs of an ML camera system that detects many moving objects in a live image stream; guidance target: Describe the hardware requirements for various scenarios where machine learning is deployed. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q07-d"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q08-a",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "B",
+      "question": 8,
+      "subquestion": "a",
+      "source_pdf_pages": [
+        16
+      ],
+      "source_printed_pages": [
+        "15"
+      ],
+      "original_marks": 3,
+      "command_term": "Describe",
+      "original_text": "Describe the steps a genetic algorithm would use to develop an antenna for a self- driving car.",
+      "parent_context": "– 15 – 8825 – 6405\nTurn over\n(Option B continued)\n8. A genetic algorithm will be used to develop a self-driving car’s antenna to communicate with \ntraffic lights and other vehicles.\n(a) Describe the steps a genetic algorithm would use to develop an antenna for a self-\ndriving car. [3]\nSome aspects of self-driving cars are designed using neural networks.\n(b) Sketch a simple block diagram, with labels, of a neural network. [2]\nSelf-driving cars use computer vision to identify objects.\n(c) Outline two differences in the way supervised and unsupervised learning are used to \nidentify objects. [4]\nSelf-driving cars communicate to their passengers using natural language processing and \nvoice recognition.\nFor example, a passenger could say, “Take me home via the scenic route,” and the natural \nlanguage processing should correctly interpret this instruction.\n(d) (i)   Identify a noun in this instruction. [1]\n(ii) Explain the semantics of this instruction. [4]\nThe passenger could also use natural language to check the grammar of messages sent \nfrom the self-driving car. The model would suggest and include missing words.\nFor example, “I late. Don’t wait me,” might be interpreted as, “I am late. Don’t wait for me.”\n(e) Compare voice recognition with natural language grammar checking using neural \nnetwork modelling. [6]\nEnd of Option B",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-16.png",
+          "source_pdf_page": 16,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Describe the steps a genetic algorithm would use to develop an antenna for a self- driving car.",
+        "Describe a genetic algorithm for improving a compact antenna design against a supplied signal-quality score"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          24
+        ],
+        "question_reference": "Q8 a",
+        "marking_summary": "Exact original MS leaf excerpt: Award [3] max Create the initial population of antenna designs; Evaluate fitness of each design/test each design against the goal; Apply Selection/Crossover/mutation; Iterate against a stopping condition/approaching convergence. Note: Accept: Establish the goal for the antenna design (e.g. maximising signal range, minimising interference, optimising bandwidth);",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [3] max\nCreate the initial population of antenna designs; \nEvaluate fitness of each design/test each design against the goal; \nApply Selection/Crossover/mutation; \nIterate against a stopping condition/approaching convergence. \nNote: Accept: Establish the goal for the antenna design (e.g. maximising signal range, \nminimising interference, optimising bandwidth);",
+        "source_issues": [],
+        "source_marking_evidence": "– 24 – 8825 – 6405M \n8. (a) Award [3] max\nCreate the initial population of antenna designs; \nEvaluate fitness of each design/test each design against the goal; \nApply Selection/Crossover/mutation; \nIterate against a stopping condition/approaching convergence. \nNote: Accept: Establish the goal for the antenna design (e.g. maximising signal range, \nminimising interference, optimising bandwidth); \n(b) Award [2] max\nAward [1] for min. 2 inputs / 3 hidden / 2 output nodes\nAward [1] for uni-directional arrows\n(c) Award [4] max\nAward [1]\n for each point\nTraining\nSupervised learning (SL) trains on a labelled dataset;\nUnsupervised learning (UL) trains without labelled outputs;\nApproach\nSL datasets learns to classify objects from the labels;\nUL clusters similar objects together/detects anomalies in visual data;\nEnvironment\nSL works well when objects are well known and defined in advance;\nUL are advantageous in scenarios where the types of objects or patterns to be identified\nare not pre-defined;\nMark [2] + [2]\n[Source: Glosser.ca. https://commons.wikimedia.org/wiki/File:Colored_neural_network.svg. \nLicensed under CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/deed.en. Source adapted.]"
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "A4.3.7",
+          "scope_evidence": "• For example: population, fitness function, selection, crossover, mutation, evaluation, termination\n• A real-world application of genetic algorithms is seen in optimization problems, such as route planning (e.g. the “travelling salesperson problem”).",
+          "rationale": "Original and adapted within-scope skill: Describe a genetic algorithm for improving a compact antenna design against a supplied signal-quality score; guidance target: Describe the application of genetic algorithms in various real-world situations.",
+          "theme": "A",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q08-a"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q08-b",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "B",
+      "question": 8,
+      "subquestion": "b",
+      "source_pdf_pages": [
+        16
+      ],
+      "source_printed_pages": [
+        "15"
+      ],
+      "original_marks": 2,
+      "command_term": "Sketch",
+      "original_text": "Sketch a simple block diagram, with labels, of a neural network.",
+      "parent_context": "– 15 – 8825 – 6405\nTurn over\n(Option B continued)\n8. A genetic algorithm will be used to develop a self-driving car’s antenna to communicate with \ntraffic lights and other vehicles.\n(a) Describe the steps a genetic algorithm would use to develop an antenna for a self-\ndriving car. [3]\nSome aspects of self-driving cars are designed using neural networks.\n(b) Sketch a simple block diagram, with labels, of a neural network. [2]\nSelf-driving cars use computer vision to identify objects.\n(c) Outline two differences in the way supervised and unsupervised learning are used to \nidentify objects. [4]\nSelf-driving cars communicate to their passengers using natural language processing and \nvoice recognition.\nFor example, a passenger could say, “Take me home via the scenic route,” and the natural \nlanguage processing should correctly interpret this instruction.\n(d) (i)   Identify a noun in this instruction. [1]\n(ii) Explain the semantics of this instruction. [4]\nThe passenger could also use natural language to check the grammar of messages sent \nfrom the self-driving car. The model would suggest and include missing words.\nFor example, “I late. Don’t wait me,” might be interpreted as, “I am late. Don’t wait for me.”\n(e) Compare voice recognition with natural language grammar checking using neural \nnetwork modelling. [6]\nEnd of Option B",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-16.png",
+          "source_pdf_page": 16,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Sketch a simple block diagram, with labels, of a neural network.",
+        "Sketch a labelled multi-layer perceptron with two input nodes, one hidden layer of three nodes and one output node"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          24
+        ],
+        "question_reference": "Q8 b",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2] max Award [1] for min. 2 inputs / 3 hidden / 2 output nodes Award [1] for uni-directional arrows",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2] max\nAward [1] for min. 2 inputs / 3 hidden / 2 output nodes\nAward [1] for uni-directional arrows",
+        "source_issues": [],
+        "source_marking_evidence": "– 24 – 8825 – 6405M \n8. (a) Award [3] max\nCreate the initial population of antenna designs; \nEvaluate fitness of each design/test each design against the goal; \nApply Selection/Crossover/mutation; \nIterate against a stopping condition/approaching convergence. \nNote: Accept: Establish the goal for the antenna design (e.g. maximising signal range, \nminimising interference, optimising bandwidth); \n(b) Award [2] max\nAward [1] for min. 2 inputs / 3 hidden / 2 output nodes\nAward [1] for uni-directional arrows\n(c) Award [4] max\nAward [1]\n for each point\nTraining\nSupervised learning (SL) trains on a labelled dataset;\nUnsupervised learning (UL) trains without labelled outputs;\nApproach\nSL datasets learns to classify objects from the labels;\nUL clusters similar objects together/detects anomalies in visual data;\nEnvironment\nSL works well when objects are well known and defined in advance;\nUL are advantageous in scenarios where the types of objects or patterns to be identified\nare not pre-defined;\nMark [2] + [2]\n[Source: Glosser.ca. https://commons.wikimedia.org/wiki/File:Colored_neural_network.svg. \nLicensed under CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/deed.en. Source adapted.]"
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "A4.3.8",
+          "scope_evidence": "• An artificial neural network (ANN) to simulate interconnected nodes or “neurons” to process and learn from input data, enabling tasks such as classification, regression and pattern recognition\n• Sketch of a single perceptron, highlighting its input, weights, bias, activation function and output\n• Sketch of a multi-layer perceptron (MLP) encompassing the input layer, one or more hidden layers and the output layer.",
+          "rationale": "Original and adapted within-scope skill: Sketch a labelled multi-layer perceptron with two input nodes, one hidden layer of three nodes and one output node; guidance target: Outline the structure and function of ANNs and how multi-layer networks are used to model complex patterns in data sets.",
+          "theme": "A",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q08-b"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q08-c",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "B",
+      "question": 8,
+      "subquestion": "c",
+      "source_pdf_pages": [
+        16
+      ],
+      "source_printed_pages": [
+        "15"
+      ],
+      "original_marks": 4,
+      "command_term": "Outline",
+      "original_text": "Outline two differences in the way supervised and unsupervised learning are used to identify objects.",
+      "parent_context": "– 15 – 8825 – 6405\nTurn over\n(Option B continued)\n8. A genetic algorithm will be used to develop a self-driving car’s antenna to communicate with \ntraffic lights and other vehicles.\n(a) Describe the steps a genetic algorithm would use to develop an antenna for a self-\ndriving car. [3]\nSome aspects of self-driving cars are designed using neural networks.\n(b) Sketch a simple block diagram, with labels, of a neural network. [2]\nSelf-driving cars use computer vision to identify objects.\n(c) Outline two differences in the way supervised and unsupervised learning are used to \nidentify objects. [4]\nSelf-driving cars communicate to their passengers using natural language processing and \nvoice recognition.\nFor example, a passenger could say, “Take me home via the scenic route,” and the natural \nlanguage processing should correctly interpret this instruction.\n(d) (i)   Identify a noun in this instruction. [1]\n(ii) Explain the semantics of this instruction. [4]\nThe passenger could also use natural language to check the grammar of messages sent \nfrom the self-driving car. The model would suggest and include missing words.\nFor example, “I late. Don’t wait me,” might be interpreted as, “I am late. Don’t wait for me.”\n(e) Compare voice recognition with natural language grammar checking using neural \nnetwork modelling. [6]\nEnd of Option B",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-16.png",
+          "source_pdf_page": 16,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline two differences in the way supervised and unsupervised learning are used to identify objects.",
+        "Outline two differences between supervised classification and unsupervised clustering when analysing image features"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          24
+        ],
+        "question_reference": "Q8 c",
+        "marking_summary": "Exact original MS leaf excerpt: Award [4] max Award [1] for each point Training Supervised learning (SL) trains on a labelled dataset; Unsupervised learning (UL) trains without labelled outputs; Approach SL datasets learns to classify objects from the labels; UL clusters similar objects together/detects anomalies in visual data; Environment SL works well when objects are well known and defined in advance; UL are advantageous in scenarios where the types of objects or patterns to be identified are not pre-defined; Mark [2] + [2] [Source: Glosser.ca. https://commons.wikimedia.org/wiki/File:Colored_neural_network.svg. Licensed under CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/deed.en. Source adapted.]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [4] max\nAward [1]\n for each point\nTraining\nSupervised learning (SL) trains on a labelled dataset;\nUnsupervised learning (UL) trains without labelled outputs;\nApproach\nSL datasets learns to classify objects from the labels;\nUL clusters similar objects together/detects anomalies in visual data;\nEnvironment\nSL works well when objects are well known and defined in advance;\nUL are advantageous in scenarios where the types of objects or patterns to be identified\nare not pre-defined;\nMark [2] + [2]\n[Source: Glosser.ca. https://commons.wikimedia.org/wiki/File:Colored_neural_network.svg. \nLicensed under CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/deed.en. Source adapted.]",
+        "source_issues": [],
+        "source_marking_evidence": "– 24 – 8825 – 6405M \n8. (a) Award [3] max\nCreate the initial population of antenna designs; \nEvaluate fitness of each design/test each design against the goal; \nApply Selection/Crossover/mutation; \nIterate against a stopping condition/approaching convergence. \nNote: Accept: Establish the goal for the antenna design (e.g. maximising signal range, \nminimising interference, optimising bandwidth); \n(b) Award [2] max\nAward [1] for min. 2 inputs / 3 hidden / 2 output nodes\nAward [1] for uni-directional arrows\n(c) Award [4] max\nAward [1]\n for each point\nTraining\nSupervised learning (SL) trains on a labelled dataset;\nUnsupervised learning (UL) trains without labelled outputs;\nApproach\nSL datasets learns to classify objects from the labels;\nUL clusters similar objects together/detects anomalies in visual data;\nEnvironment\nSL works well when objects are well known and defined in advance;\nUL are advantageous in scenarios where the types of objects or patterns to be identified\nare not pre-defined;\nMark [2] + [2]\n[Source: Glosser.ca. https://commons.wikimedia.org/wiki/File:Colored_neural_network.svg. \nLicensed under CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/deed.en. Source adapted.]"
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "A4.1.1",
+          "scope_evidence": "• The different approaches to machine learning algorithms and their unique characteristics\n• Deep learning (DL), reinforcement learning (RL), supervised learning, transfer learning (TL), unsupervised learning (UL)\n• Real-world applications of machine learning may include market basket analysis, medical imaging diagnostics, natural language processing, object detection and classification, robotics navigation, sentiment analysis.",
+          "rationale": "Original and adapted within-scope skill: Outline two differences between supervised classification and unsupervised clustering when analysing image features; guidance target: Describe the types of machine learning and their applications in the real world.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "A4.3.4",
+          "scope_evidence": "• Clustering techniques in unsupervised learning group data based on feature similarities\n• Real-world applications of clustering may include using purchasing data to segment a customer base.",
+          "rationale": "Original and adapted within-scope skill: Outline two differences between supervised classification and unsupervised clustering when analysing image features; guidance target: Describe how clustering techniques in unsupervised learning are used to group data based on similarities in features.",
+          "theme": "A",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q08-c"
+      ]
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC038-Q07-b-i",
+      "source_question_ids": [
+        "H-SRC038-Q07-b-i"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "State a Python assignment computing d from x and y using the supplied formula d = square root of (x squared + y squared).",
+      "syllabus_codes": [
+        "B2.3.1"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 1,
+      "command_term": "State",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "d = (x*x + y*y) ** 0.5",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Correct expression and assignment."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          22
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q07-b-ii",
+      "source_question_ids": [
+        "H-SRC038-Q07-b-ii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct Python selection assigning label=\"inside\" when d<1, and label=\"outside\" otherwise.",
+      "syllabus_codes": [
+        "B2.3.2"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 1,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "if d < 1:\n    label = \"inside\"\nelse:\n    label = \"outside\"",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Both correct branches including boundary d=1."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          22
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q07-c",
+      "source_question_ids": [
+        "H-SRC038-Q07-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "A nonempty list labels contains \"inside\" or \"outside\". A supplied estimation rule is 4 times the number of \"inside\" entries divided by the total entries. Construct estimate(labels) in Python using a loop to return that value.",
+      "syllabus_codes": [
+        "B2.2.2",
+        "B2.3.2",
+        "B2.3.3"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 3,
+      "command_term": "List",
+      "difficulty": "medium",
+      "adaptation_rationale": "Changes spreadsheet formula to Python traversal/selection with mathematical rule supplied, so no Monte Carlo theory is required.",
+      "solution": "One solution:\ndef estimate(labels):\n    count = 0\n    for label in labels:\n        if label == \"inside\":\n            count += 1\n    return 4 * count / len(labels)",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Scans all labels."
+        },
+        {
+          "marks": 1,
+          "criterion": "Counts only inside entries."
+        },
+        {
+          "marks": 1,
+          "criterion": "Returns correct supplied ratio."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Executed mixed and zero-inside cases.",
+        "source_comparison": [
+          22
+        ],
+        "test_code": "def estimate(labels):\n    count = 0\n    for label in labels:\n        if label == \"inside\":\n            count += 1\n    return 4 * count / len(labels)\nassert estimate([\"inside\",\"outside\",\"inside\",\"inside\"])==3\nassert estimate([\"outside\"])==0",
+        "result_file": ""
+      },
+      "code": "def estimate(labels):\n    count = 0\n    for label in labels:\n        if label == \"inside\":\n            count += 1\n    return 4 * count / len(labels)",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q07-d",
+      "source_question_ids": [
+        "H-SRC038-Q07-d"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Evaluate the processing and memory needs of an ML camera system that detects many moving objects in a live image stream.",
+      "syllabus_codes": [
+        "A1.1.2",
+        "A1.1.4",
+        "A4.1.2"
+      ],
+      "theme": "A",
+      "level": "SL/HL common",
+      "marks": 5,
+      "command_term": "Evaluate",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "A GPU can process many similar image operations in parallel, improving throughput. RAM holds frames, model data and intermediate results; larger frames/more objects increase working data. Powerful hardware costs energy and money, while insufficient throughput increases delay and stale decisions. Choose enough GPU/RAM for measured frame-rate and latency requirements rather than assuming a simple box overlay means the whole detection task is cheap.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "GPU parallel processing benefit."
+        },
+        {
+          "marks": 1,
+          "criterion": "Concrete live-image workload explanation."
+        },
+        {
+          "marks": 1,
+          "criterion": "RAM working-data role."
+        },
+        {
+          "marks": 1,
+          "criterion": "Develops capacity/latency/cost trade-off."
+        },
+        {
+          "marks": 1,
+          "criterion": "Supported contextual hardware judgment."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          23
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q08-a",
+      "source_question_ids": [
+        "H-SRC038-Q08-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Describe a genetic algorithm for improving a compact antenna design against a supplied signal-quality score.",
+      "syllabus_codes": [
+        "A4.3.7"
+      ],
+      "theme": "A",
+      "level": "HL-only",
+      "marks": 3,
+      "command_term": "Describe",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Create an initial population of candidate designs. Evaluate fitness and select stronger candidates; combine and mutate them to form another generation. Repeat evaluation/variation until a stopping condition is met, retaining a suitable best design.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Population and fitness evaluation."
+        },
+        {
+          "marks": 1,
+          "criterion": "Selection plus crossover/mutation."
+        },
+        {
+          "marks": 1,
+          "criterion": "Repeated generations with termination."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          24
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q08-b",
+      "source_question_ids": [
+        "H-SRC038-Q08-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Sketch a labelled multi-layer perceptron with two input nodes, one hidden layer of three nodes and one output node. Show the direction of information flow.",
+      "syllabus_codes": [
+        "A4.3.8"
+      ],
+      "theme": "A",
+      "level": "HL-only",
+      "marks": 2,
+      "command_term": "Sketch",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Two nodes in the input layer connect forwards to three hidden nodes, which connect forwards to one output node. Label all three layers and use arrows from input to hidden to output.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Correct labelled input/hidden/output layers and node counts."
+        },
+        {
+          "marks": 1,
+          "criterion": "Forward connections/arrows in the correct direction."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          24
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q08-c",
+      "source_question_ids": [
+        "H-SRC038-Q08-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline two differences between supervised classification and unsupervised clustering when analysing image features.",
+      "syllabus_codes": [
+        "A4.1.1",
+        "A4.3.4"
+      ],
+      "theme": "A",
+      "level": "HL-only",
+      "marks": 4,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Classification learns from image features paired with known class labels and predicts those defined categories. Clustering receives features without target labels and groups images by similarity; a person must interpret what the groups represent.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Supervised labelled training."
+        },
+        {
+          "marks": 1,
+          "criterion": "Unsupervised absence of target labels."
+        },
+        {
+          "marks": 1,
+          "criterion": "Classification predicts defined categories."
+        },
+        {
+          "marks": 1,
+          "criterion": "Clustering discovers similarity groups requiring interpretation."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          24
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    }
+  ]
+}

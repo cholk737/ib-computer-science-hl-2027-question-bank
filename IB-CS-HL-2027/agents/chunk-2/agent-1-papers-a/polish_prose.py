@@ -47,8 +47,8 @@ def polish(text):
  # Protect executable fenced/code tails and inline underscores; only prose fields supplied.
  lines=[]
  for line in text.splitlines():
-  if re.match(r'^\s*(def |class |return |if |elif |else:|for |while |assert |import |from |[A-Za-z_][\w.]*\s*[=+])',line):lines.append(line);continue
-  line=re.sub(r'(?<=[a-z])(?=[A-Z][a-z])',' ',line) if 'isEmpty' not in line else line
+  if re.match(r'^\s*(SELECT |CREATE |INSERT |UPDATE |DELETE |def |class |return |if |elif |else:|for |while |assert |import |from |[A-Za-z_][\w.]*\s*[=+])',line):lines.append(line);continue
+  # Keep inline code identifiers and CamelCase class/field names intact.
   keep={}
   def protect(m):
    token='ZZTOKEN'+chr(65+len(keep))+'ZZ';keep[token]=m[0];return token

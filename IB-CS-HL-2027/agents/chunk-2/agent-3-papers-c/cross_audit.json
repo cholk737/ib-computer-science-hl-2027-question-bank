@@ -1,0 +1,532 @@
+{
+  "auditor": "Historical Paper Processor C; read-only review of A/B ownership",
+  "date": "2026-11-04",
+  "source_evidence": "cross-audit-evidence/ contains independently extracted original PDF pages and inspected renders",
+  "receipts": [
+    {
+      "question_id": "P-SRC042-Q05-f",
+      "batch": "agents/chunk-2/agent-1-papers-a/batches/SRC-042-b004.json",
+      "batch_sha256": "cb8b0602595eb9024d8e8759c9f189635138efa9f853d49209d66c89819c3d83",
+      "tests": [
+        {
+          "case": "constant -3000",
+          "result": [
+            -3000,
+            -3000,
+            -3000.0,
+            -3000.0
+          ]
+        },
+        {
+          "case": "constant -4",
+          "result": [
+            -4,
+            -4,
+            -4.0,
+            -4.0
+          ]
+        },
+        {
+          "case": "constant 0",
+          "result": [
+            0,
+            0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "case": "constant 4000",
+          "result": [
+            4000,
+            4000,
+            4000.0,
+            4000.0
+          ]
+        },
+        {
+          "case": "single nonzero at hour 0",
+          "night_mean": 10.0
+        },
+        {
+          "case": "single nonzero at hour 5",
+          "night_mean": 10.0
+        },
+        {
+          "case": "single nonzero at hour 6",
+          "night_mean": 0.0
+        },
+        {
+          "case": "single nonzero at hour 7",
+          "night_mean": 0.0
+        },
+        {
+          "case": "single nonzero at hour 18",
+          "night_mean": 0.0
+        },
+        {
+          "case": "single nonzero at hour 19",
+          "night_mean": 0.0
+        },
+        {
+          "case": "single nonzero at hour 20",
+          "night_mean": 10.0
+        },
+        {
+          "case": "single nonzero at hour 23",
+          "night_mean": 10.0
+        },
+        {
+          "case": "ascending,reversed,rotated parallel lists and mixed negative values",
+          "result": "passed"
+        }
+      ],
+      "verdict": "Adapted algorithm passes; original MS defects confirmed. Original and adapted nighttime windows differ explicitly, so the adapted night denominator is10 rather than source12.",
+      "mapped_scope": [
+        {
+          "B2.2.2": {
+            "code": "B2.2.2",
+            "source_pdf_pages": [
+              45
+            ],
+            "statement": "Construct programs that apply arrays and Lists.",
+            "guidance_bullets": [
+              "One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java",
+              "One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python",
+              "Add, remove and traverse elements in a dynamic list"
+            ],
+            "guidance": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+            "theme": "B",
+            "topic": "B2 Programming",
+            "subtopic": "B2.2 Data structures",
+            "level": "SL/HL common",
+            "level_evidence": "No HL-only marker; common content",
+            "source_printed_pages": [
+              39
+            ],
+            "source_file": "sources/2027-guide/Computer-Science-First-Assessment-2027-guide-sbs (1).pdf",
+            "source_sha256": "7e7c9408946e66e9b3d58ccb43110cf0b4bf55d368ca5cd6ebcf11437fbe9745",
+            "scope_qualifications": "",
+            "scope_bullet_labels": [
+              {
+                "text": "One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java",
+                "label": "unqualified guidance"
+              },
+              {
+                "text": "One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python",
+                "label": "unqualified guidance"
+              },
+              {
+                "text": "Add, remove and traverse elements in a dynamic list",
+                "label": "unqualified guidance"
+              }
+            ],
+            "assessable_knowledge_skills": "Construct programs using 1D/2D Python Lists, adding, removing and traversing dynamic-list elements.",
+            "allowed_context": "Data-structure choices and Python List programs, stack/queue problems with performance and memory considerations.",
+            "coverage_status": "not_yet_assessed_chunk1",
+            "question_bank_ids": [],
+            "verification_status": "verified_source_text_all_characters; independent_code_pages_HL_check_pass; specialist_all_page_visual_review; coordinator_visual_sampling",
+            "record_path": "syllabus/records/B2.2.2.json",
+            "specialist_record_path": "agents/chunk-1/agent-2-theme-b/records/B2.2.2.json",
+            "source_code": "B2.2.2",
+            "source_statement": "Construct programs that apply arrays and Lists.",
+            "level_basis": "No HL-only marker; common content",
+            "transcription_normalizations": [
+              "Source line wraps joined; layout whitespace normalized; full original PDF remains authoritative."
+            ],
+            "specialist_guidance_transcription": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+            "guidance_paragraphs": [
+              "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java",
+              "• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python",
+              "• Add, remove and traverse elements in a dynamic list"
+            ],
+            "must_include_guidance": [],
+            "may_include_guidance": [],
+            "global_scope_note_source": "Guide PDF p34 / printed p28",
+            "global_scope_note": "“May include” means that the list includes examples that could be assessed, although other examples may also be used by the IB in assessment. “Must include” means that the list includes all the examples that will be used in assessment.",
+            "coordinator_check_path": "audits/SYLLABUS_INTEGRATION_CHECK.json",
+            "uncertainty_flags": []
+          }
+        },
+        {
+          "B2.3.2": {
+            "code": "B2.3.2",
+            "source_pdf_pages": [
+              45
+            ],
+            "statement": "Construct programs utilizing appropriate selection structures.",
+            "guidance_bullets": [
+              "Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions",
+              "Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively"
+            ],
+            "guidance": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+            "theme": "B",
+            "topic": "B2 Programming",
+            "subtopic": "B2.3 Programming constructs",
+            "level": "SL/HL common",
+            "level_evidence": "No HL-only marker; common content",
+            "source_printed_pages": [
+              39
+            ],
+            "source_file": "sources/2027-guide/Computer-Science-First-Assessment-2027-guide-sbs (1).pdf",
+            "source_sha256": "7e7c9408946e66e9b3d58ccb43110cf0b4bf55d368ca5cd6ebcf11437fbe9745",
+            "scope_qualifications": "Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions",
+            "scope_bullet_labels": [
+              {
+                "text": "Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions",
+                "label": "must include"
+              },
+              {
+                "text": "Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+                "label": "unqualified guidance"
+              }
+            ],
+            "assessable_knowledge_skills": "Construct selection with Python if/else/elif, Boolean and relational operators.",
+            "allowed_context": "Python programs selected to meet specified objectives, using the relevant constructs and functions.",
+            "coverage_status": "not_yet_assessed_chunk1",
+            "question_bank_ids": [],
+            "verification_status": "verified_source_text_all_characters; independent_code_pages_HL_check_pass; specialist_all_page_visual_review; coordinator_visual_sampling",
+            "record_path": "syllabus/records/B2.3.2.json",
+            "specialist_record_path": "agents/chunk-1/agent-2-theme-b/records/B2.3.2.json",
+            "source_code": "B2.3.2",
+            "source_statement": "Construct programs utilizing appropriate selection structures.",
+            "level_basis": "No HL-only marker; common content",
+            "transcription_normalizations": [
+              "Source line wraps joined; layout whitespace normalized; full original PDF remains authoritative."
+            ],
+            "specialist_guidance_transcription": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+            "guidance_paragraphs": [
+              "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions",
+              "• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively"
+            ],
+            "must_include_guidance": [
+              "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions"
+            ],
+            "may_include_guidance": [],
+            "global_scope_note_source": "Guide PDF p34 / printed p28",
+            "global_scope_note": "“May include” means that the list includes examples that could be assessed, although other examples may also be used by the IB in assessment. “Must include” means that the list includes all the examples that will be used in assessment.",
+            "coordinator_check_path": "audits/SYLLABUS_INTEGRATION_CHECK.json",
+            "uncertainty_flags": []
+          }
+        },
+        {
+          "B2.3.3": {
+            "code": "B2.3.3",
+            "source_pdf_pages": [
+              45
+            ],
+            "statement": "Construct programs that utilize looping structures to perform repeated actions.",
+            "guidance_bullets": [
+              "Types of loops, including counted loops and conditional loops, and appropriate use of each type",
+              "Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution"
+            ],
+            "guidance": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+            "theme": "B",
+            "topic": "B2 Programming",
+            "subtopic": "B2.3 Programming constructs",
+            "level": "SL/HL common",
+            "level_evidence": "No HL-only marker; common content",
+            "source_printed_pages": [
+              39
+            ],
+            "source_file": "sources/2027-guide/Computer-Science-First-Assessment-2027-guide-sbs (1).pdf",
+            "source_sha256": "7e7c9408946e66e9b3d58ccb43110cf0b4bf55d368ca5cd6ebcf11437fbe9745",
+            "scope_qualifications": "",
+            "scope_bullet_labels": [
+              {
+                "text": "Types of loops, including counted loops and conditional loops, and appropriate use of each type",
+                "label": "unqualified guidance"
+              },
+              {
+                "text": "Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+                "label": "unqualified guidance"
+              }
+            ],
+            "assessable_knowledge_skills": "Construct counted/conditional loops and conditions governing execution.",
+            "allowed_context": "Python programs selected to meet specified objectives, using the relevant constructs and functions.",
+            "coverage_status": "not_yet_assessed_chunk1",
+            "question_bank_ids": [],
+            "verification_status": "verified_source_text_all_characters; independent_code_pages_HL_check_pass; specialist_all_page_visual_review; coordinator_visual_sampling",
+            "record_path": "syllabus/records/B2.3.3.json",
+            "specialist_record_path": "agents/chunk-1/agent-2-theme-b/records/B2.3.3.json",
+            "source_code": "B2.3.3",
+            "source_statement": "Construct programs that utilize looping structures to perform repeated actions.",
+            "level_basis": "No HL-only marker; common content",
+            "transcription_normalizations": [
+              "Source line wraps joined; layout whitespace normalized; full original PDF remains authoritative."
+            ],
+            "specialist_guidance_transcription": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+            "guidance_paragraphs": [
+              "• Types of loops, including counted loops and conditional loops, and appropriate use of each type",
+              "• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution"
+            ],
+            "must_include_guidance": [],
+            "may_include_guidance": [],
+            "global_scope_note_source": "Guide PDF p34 / printed p28",
+            "global_scope_note": "“May include” means that the list includes examples that could be assessed, although other examples may also be used by the IB in assessment. “Must include” means that the list includes all the examples that will be used in assessment.",
+            "coordinator_check_path": "audits/SYLLABUS_INTEGRATION_CHECK.json",
+            "uncertainty_flags": []
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "P-SRC038-Q05-e",
+      "batch": "agents/chunk-2/agent-2-papers-b/batches/SRC-038-b004.json",
+      "batch_sha256": "cf2efc93743be7a221e09deb9265ff97c4af8bd7167c56db0581fa508cdcf5c5",
+      "tests": [
+        {
+          "trials": 1,
+          "wins": 0,
+          "percentage": 0.0,
+          "fresh_calls": 1
+        },
+        {
+          "trials": 1,
+          "wins": 1,
+          "percentage": 100.0,
+          "fresh_calls": 1
+        },
+        {
+          "trials": 2,
+          "wins": 1,
+          "percentage": 50.0,
+          "fresh_calls": 2
+        },
+        {
+          "trials": 3,
+          "wins": 1,
+          "percentage": 33.333333333333336,
+          "fresh_calls": 3
+        },
+        {
+          "trials": 10,
+          "wins": 0,
+          "percentage": 0.0,
+          "fresh_calls": 10
+        },
+        {
+          "trials": 1000,
+          "wins": 1000,
+          "percentage": 100.0,
+          "fresh_calls": 1000
+        },
+        {
+          "trials": 10000,
+          "wins": 10000,
+          "percentage": 100.0,
+          "fresh_calls": 10000
+        },
+        {
+          "trials": 10000,
+          "wins": 3721,
+          "percentage": 37.21,
+          "fresh_calls": 10000
+        },
+        {
+          "case": "all ten individual false positions after an all-success trial",
+          "percentage": 9.090909090909092
+        }
+      ],
+      "verdict": "Adapted algorithm passes; fresh per-trial state and correct trial-dependent denominator. Original MS1000/100 scale defect confirmed.",
+      "mapped_scope": [
+        {
+          "B2.3.2": {
+            "code": "B2.3.2",
+            "source_pdf_pages": [
+              45
+            ],
+            "statement": "Construct programs utilizing appropriate selection structures.",
+            "guidance_bullets": [
+              "Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions",
+              "Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively"
+            ],
+            "guidance": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+            "theme": "B",
+            "topic": "B2 Programming",
+            "subtopic": "B2.3 Programming constructs",
+            "level": "SL/HL common",
+            "level_evidence": "No HL-only marker; common content",
+            "source_printed_pages": [
+              39
+            ],
+            "source_file": "sources/2027-guide/Computer-Science-First-Assessment-2027-guide-sbs (1).pdf",
+            "source_sha256": "7e7c9408946e66e9b3d58ccb43110cf0b4bf55d368ca5cd6ebcf11437fbe9745",
+            "scope_qualifications": "Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions",
+            "scope_bullet_labels": [
+              {
+                "text": "Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions",
+                "label": "must include"
+              },
+              {
+                "text": "Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+                "label": "unqualified guidance"
+              }
+            ],
+            "assessable_knowledge_skills": "Construct selection with Python if/else/elif, Boolean and relational operators.",
+            "allowed_context": "Python programs selected to meet specified objectives, using the relevant constructs and functions.",
+            "coverage_status": "not_yet_assessed_chunk1",
+            "question_bank_ids": [],
+            "verification_status": "verified_source_text_all_characters; independent_code_pages_HL_check_pass; specialist_all_page_visual_review; coordinator_visual_sampling",
+            "record_path": "syllabus/records/B2.3.2.json",
+            "specialist_record_path": "agents/chunk-1/agent-2-theme-b/records/B2.3.2.json",
+            "source_code": "B2.3.2",
+            "source_statement": "Construct programs utilizing appropriate selection structures.",
+            "level_basis": "No HL-only marker; common content",
+            "transcription_normalizations": [
+              "Source line wraps joined; layout whitespace normalized; full original PDF remains authoritative."
+            ],
+            "specialist_guidance_transcription": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+            "guidance_paragraphs": [
+              "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions",
+              "• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively"
+            ],
+            "must_include_guidance": [
+              "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions"
+            ],
+            "may_include_guidance": [],
+            "global_scope_note_source": "Guide PDF p34 / printed p28",
+            "global_scope_note": "“May include” means that the list includes examples that could be assessed, although other examples may also be used by the IB in assessment. “Must include” means that the list includes all the examples that will be used in assessment.",
+            "coordinator_check_path": "audits/SYLLABUS_INTEGRATION_CHECK.json",
+            "uncertainty_flags": []
+          }
+        },
+        {
+          "B2.3.3": {
+            "code": "B2.3.3",
+            "source_pdf_pages": [
+              45
+            ],
+            "statement": "Construct programs that utilize looping structures to perform repeated actions.",
+            "guidance_bullets": [
+              "Types of loops, including counted loops and conditional loops, and appropriate use of each type",
+              "Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution"
+            ],
+            "guidance": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+            "theme": "B",
+            "topic": "B2 Programming",
+            "subtopic": "B2.3 Programming constructs",
+            "level": "SL/HL common",
+            "level_evidence": "No HL-only marker; common content",
+            "source_printed_pages": [
+              39
+            ],
+            "source_file": "sources/2027-guide/Computer-Science-First-Assessment-2027-guide-sbs (1).pdf",
+            "source_sha256": "7e7c9408946e66e9b3d58ccb43110cf0b4bf55d368ca5cd6ebcf11437fbe9745",
+            "scope_qualifications": "",
+            "scope_bullet_labels": [
+              {
+                "text": "Types of loops, including counted loops and conditional loops, and appropriate use of each type",
+                "label": "unqualified guidance"
+              },
+              {
+                "text": "Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+                "label": "unqualified guidance"
+              }
+            ],
+            "assessable_knowledge_skills": "Construct counted/conditional loops and conditions governing execution.",
+            "allowed_context": "Python programs selected to meet specified objectives, using the relevant constructs and functions.",
+            "coverage_status": "not_yet_assessed_chunk1",
+            "question_bank_ids": [],
+            "verification_status": "verified_source_text_all_characters; independent_code_pages_HL_check_pass; specialist_all_page_visual_review; coordinator_visual_sampling",
+            "record_path": "syllabus/records/B2.3.3.json",
+            "specialist_record_path": "agents/chunk-1/agent-2-theme-b/records/B2.3.3.json",
+            "source_code": "B2.3.3",
+            "source_statement": "Construct programs that utilize looping structures to perform repeated actions.",
+            "level_basis": "No HL-only marker; common content",
+            "transcription_normalizations": [
+              "Source line wraps joined; layout whitespace normalized; full original PDF remains authoritative."
+            ],
+            "specialist_guidance_transcription": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+            "guidance_paragraphs": [
+              "• Types of loops, including counted loops and conditional loops, and appropriate use of each type",
+              "• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution"
+            ],
+            "must_include_guidance": [],
+            "may_include_guidance": [],
+            "global_scope_note_source": "Guide PDF p34 / printed p28",
+            "global_scope_note": "“May include” means that the list includes examples that could be assessed, although other examples may also be used by the IB in assessment. “Must include” means that the list includes all the examples that will be used in assessment.",
+            "coordinator_check_path": "audits/SYLLABUS_INTEGRATION_CHECK.json",
+            "uncertainty_flags": []
+          }
+        },
+        {
+          "B2.3.4": {
+            "code": "B2.3.4",
+            "source_pdf_pages": [
+              45
+            ],
+            "statement": "Construct functions and modularization.",
+            "guidance_bullets": [
+              "Functions to define reusable blocks of code with different inputs",
+              "Modularization to create well-structured, reusable and maintainable code",
+              "The principles of scope (local versus global)",
+              "The benefits of code modularization, applying this concept to various programming scenarios"
+            ],
+            "guidance": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+            "theme": "B",
+            "topic": "B2 Programming",
+            "subtopic": "B2.3 Programming constructs",
+            "level": "SL/HL common",
+            "level_evidence": "No HL-only marker; common content",
+            "source_printed_pages": [
+              39
+            ],
+            "source_file": "sources/2027-guide/Computer-Science-First-Assessment-2027-guide-sbs (1).pdf",
+            "source_sha256": "7e7c9408946e66e9b3d58ccb43110cf0b4bf55d368ca5cd6ebcf11437fbe9745",
+            "scope_qualifications": "",
+            "scope_bullet_labels": [
+              {
+                "text": "Functions to define reusable blocks of code with different inputs",
+                "label": "unqualified guidance"
+              },
+              {
+                "text": "Modularization to create well-structured, reusable and maintainable code",
+                "label": "unqualified guidance"
+              },
+              {
+                "text": "The principles of scope (local versus global)",
+                "label": "unqualified guidance"
+              },
+              {
+                "text": "The benefits of code modularization, applying this concept to various programming scenarios",
+                "label": "unqualified guidance"
+              }
+            ],
+            "assessable_knowledge_skills": "Construct reusable functions and modular programs; apply local/global scope.",
+            "allowed_context": "Python programs selected to meet specified objectives, using the relevant constructs and functions.",
+            "coverage_status": "not_yet_assessed_chunk1",
+            "question_bank_ids": [],
+            "verification_status": "verified_source_text_all_characters; independent_code_pages_HL_check_pass; specialist_all_page_visual_review; coordinator_visual_sampling",
+            "record_path": "syllabus/records/B2.3.4.json",
+            "specialist_record_path": "agents/chunk-1/agent-2-theme-b/records/B2.3.4.json",
+            "source_code": "B2.3.4",
+            "source_statement": "Construct functions and modularization.",
+            "level_basis": "No HL-only marker; common content",
+            "transcription_normalizations": [
+              "Source line wraps joined; layout whitespace normalized; full original PDF remains authoritative."
+            ],
+            "specialist_guidance_transcription": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+            "guidance_paragraphs": [
+              "• Functions to define reusable blocks of code with different inputs",
+              "• Modularization to create well-structured, reusable and maintainable code",
+              "• The principles of scope (local versus global)",
+              "• The benefits of code modularization, applying this concept to various programming scenarios"
+            ],
+            "must_include_guidance": [],
+            "may_include_guidance": [],
+            "global_scope_note_source": "Guide PDF p34 / printed p28",
+            "global_scope_note": "“May include” means that the list includes examples that could be assessed, although other examples may also be used by the IB in assessment. “Must include” means that the list includes all the examples that will be used in assessment.",
+            "coordinator_check_path": "audits/SYLLABUS_INTEGRATION_CHECK.json",
+            "uncertainty_flags": []
+          }
+        }
+      ]
+    }
+  ],
+  "non_algorithm_findings": [
+    "At audit time SRC042 source original_text and parent_context are synopses, assets empty, and source_issues empty despite known defects. Require owner transcription/evidence/source-issue repair before final integration.",
+    "Both adapted algorithms meet the precise mapped list/selection/loop/function scope. Built-in restriction on SRC042 explicitly assesses extrema/accumulation.",
+    "P-SRC038-Q05-e should specify positive integer trials, since range requires integer. This is a small wording clarification; algorithm/criteria are correct."
+  ]
+}

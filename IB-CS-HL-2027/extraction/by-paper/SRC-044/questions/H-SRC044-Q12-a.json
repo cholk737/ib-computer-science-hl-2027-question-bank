@@ -1,0 +1,90 @@
+{
+  "source_question_id": "H-SRC044-Q12-a",
+  "source_id": "SRC-044",
+  "source_filename": "Computer_science_paper_2_TZ3_SL (1).pdf",
+  "year": "2025",
+  "session": "May",
+  "source_level": "SL",
+  "paper": "2",
+  "zone": "TZ3 (filename; numerical cover code)",
+  "option": "D",
+  "question": 12,
+  "subquestion": "a",
+  "source_pdf_pages": [
+    20
+  ],
+  "source_printed_pages": [
+    "19"
+  ],
+  "original_marks": 1,
+  "command_term": "State",
+  "original_text": "State the initial value of noOfArtworks for an artist.",
+  "parent_context": "– 16 – 2225 – 6423\nOption D — Object-oriented programming\n10. An art shop sells the work of several artists. Each artist has many artworks for sale. A system \nis designed to manage artworks, sales and customers.\nThe following shows part of the code for the two classes, Artist and Artwork:\npublic class Artist {\n    private String artistName;      // name of the artist\n    private String artistLocation;  // current location of the artist\n    private int noOfArtworks;       // number of works of art the artist has \n                                    // stored in the array theArtworks\n    private Artwork [] theArtworks; // details of the works of art produced \n                                    // by the artist\n    public Artist(String artistName, String artistLocation){\n        this.artistName = artistName;\n        this.artistLocation = artistLocation;\n        noOfArtworks = 0;\n        theArtworks = new Artwork [100]; // an artist has a maximum of 100\n                                         // artworks\n    }\n    public String getName() {\n        return artistName;\n    }\n    public String getLocation() {\n        return artistLocation;\n    }\n    public Artwork getArtwork(int x) {\n        return theArtworks[x];\n    }\n    public void addArtwork(Artwork x) {\n        theArtworks[noOfArtworks] = x;\n        noOfArtworks = noOfArtworks + 1;\n    }\n    public double commissionToPay() {\n        // code missing\n    }\n \n    public Artwork[] sortArt() {\n        // code missing\n    }\n} // end of class Artist\n(Option D continues on the following page)\n– 17 – 2225 – 6423\nTurn over\n(Option D, question 10 continued)\npublic class Artwork {\n    private String artworkTitle; // name of the artwork\n    private int artworkPrice;    // price of artwork\n    private boolean isSold;      // if the artwork has been sold or not\n    public Artwork(String artworkTitle, int artworkPrice) {\n        this.artworkTitle = artworkTitle;\n        this.artworkPrice = artworkPrice;\n        isSold = false; // default value is not sold\n    }\n    public String getArtworkTitle(){\n        return artworkTitle;\n    }\n    public void isSold(){\n        isSold = true;\n    }\n} // end of class Artwork\n(a) State the relationship between the Artist class and Artwork class. [1]\n(b) Outline what is meant by instantiation of an object. [2]\n(c) Construct the code required to instantiate the artist “Thomas Lucas” from “Ireland”. [3]\n(d) With reference to the Artist and Artwork classes, outline the use of the \nmodifier private. [2]\n(e) Outline two advantages of modularity in program development. [4]\n(f) Construct a UML diagram to represent the Artist class. [3]\n(Option D continues on the following page)\n– 19 – 2225 – 6423\n(Option D continued)\n12. The system, which is designed to manage artworks, sales and customers, should have \nmethods to find artworks that match a specific request made by a customer.\nFor example, a customer may want to find all artworks by Sebastián Müller.\n(a) State the initial value of noOfArtworks for an artist. [1]\n(b) Construct the method sortArt() in the Artist class that will find the five most \nexpensive artworks for a given artist.\nYou must make use of the selection sort algorithm. [5]\nArtists must pay a 15 % commission to the shop for each of their artworks sold there.\nThe method commissionToPay calculates the commission to be paid by an artist on all \nsold artworks.\n(c) Construct the method commissionToPay that will calculate and return the amount \nof commission to be paid by the artist to the shop. [6]\n(d) Outline why Unicode enables internationalization. [2]\nEnd of Option D\n ",
+  "assets": [
+    {
+      "kind": "source_page_evidence",
+      "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-17.png",
+      "source_pdf_page": 17,
+      "visually_verified": true
+    },
+    {
+      "kind": "source_page_evidence",
+      "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-18.png",
+      "source_pdf_page": 18,
+      "visually_verified": true
+    },
+    {
+      "kind": "source_page_evidence",
+      "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-20.png",
+      "source_pdf_page": 20,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: State the initial value of noOfArtworks for an artist.",
+    "State the value of count after the initializer executes self"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-046",
+    "filename": "Computer_science_paper_2_TZ3_SL_markscheme.pdf",
+    "pdf_pages": [
+      26
+    ],
+    "question_reference": "Q12 a",
+    "marking_summary": "Exact original MS leaf excerpt: Award [1 max] 0;",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [1 max]\n0;",
+    "source_issues": [],
+    "source_marking_evidence": "– 26 – 2225 – 6423M \n12. (a) Award [1 max]\n0; \n(b) Award [5 max]\nAward [1] for correctly creating a temporary and returning an array of Artwork type;\nAward [1] for correct initialising and updating of max_index;\nAward [1] for correct outer loop up to < noOfArtworks-1 (or up to 5 times);\nAward [1] for correct inner loop;\nAward [1] for correct comparison of price;\nAward [1] for correct implementation of swap;\nAward [1] for transferring the five most expensive artworks to the temporary array;\nNote: Award only MP1, MP7, and another [1] for implementing a different sorting algorithm. If\nno sorting used then only MP1 and MP3/MP7 to be awarded.\npublic Artwork [] sortArt()\n{ \nfor (int i = 0; i < noOfArtworks-1; i++) \n{ \nint max_index = i;  \nfor (int j = i+1; j < noOfArtworks; j++) // accept j=i; \n{  \n  \nif(theArtworks[j].getArtworkPrice() > \ntheArtworks[max_index].getArtworkPrice()) \n{  \n max_index = j; \n} \n } \nArtwork temp = theArtworks[max_index];  \ntheArtworks[max_index] = theArtworks[i]; \ntheArtworks[i] = temp;  \n}   \nArtwork [] expensive = new Artwork[5]; \nfor (int i = 0; i < 5; i++)  \n{  \nexpensive[i] = theArtworks[i];  \n } \nreturn expensive; \n} \nNote: Accept  < theArtworks.length-1 for the outer loop. However, a condition must be \nplaced inside the loop to check for the null values in the theArtworks[] to avoid the \nNullPointerException. Allow any name for the getter getArtworkPrice() as long as it returns the \nartworkPrice."
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B2.1.1",
+      "scope_evidence": "• Data types: Boolean value, char, decimal, integer, string",
+      "rationale": "Adapted target only: State the value of count after the initializer executes self; guidance target: Construct and trace programs using a range of global and local variables of various data types. Adaptation: Simple initialized-variable trace; does not claim that tracing an existing assignment assesses constructing a class.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC044-Q12-a"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

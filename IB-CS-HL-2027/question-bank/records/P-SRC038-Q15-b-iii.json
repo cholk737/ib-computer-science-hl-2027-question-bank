@@ -1,0 +1,56 @@
+{
+  "question_id": "P-SRC038-Q15-b-iii",
+  "source_question_ids": [
+    "H-SRC038-Q15-b-iii"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Describe two differences between inheritance and aggregation, using TraineeAdviser inheriting Adviser and Adviser holding independently existing Ticket objects.",
+  "syllabus_codes": [
+    "B3.2.1",
+    "B3.2.4"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 4,
+  "command_term": "Describe",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "Inheritance expresses is-a: a trainee is an adviser and reuses/extends inherited behaviour. Aggregation expresses has-a: an adviser refers to tickets without becoming a ticket; those ticket objects can survive independently when the adviser is removed.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Inheritance is-a."
+    },
+    {
+      "marks": 1,
+      "criterion": "Reuses/extends behaviour or subtype explanation."
+    },
+    {
+      "marks": 1,
+      "criterion": "Aggregation has-a."
+    },
+    {
+      "marks": 1,
+      "criterion": "Independent component lifetime/contextual explanation."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      42
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC038-Q15-b-iii.json",
+  "question_path": "question-bank/questions/P-SRC038-Q15-b-iii.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC038-Q15-b-iii.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

@@ -28,5 +28,6 @@
   },
   "code": "def proper_sum(n):\n    total=0\n    for factor in range(1,n):\n        if n % factor == 0:\n            total += factor\n    return total",
   "test_code": "assert [proper_sum(n) for n in [1,6,9,12,28]]==[0,6,4,16,28]",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

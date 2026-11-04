@@ -1,0 +1,46 @@
+{
+  "question_id": "P-SRC044-Q11-c",
+  "unofficial": true,
+  "marks": 6,
+  "solution": "One solution:\ndef mark_sold(producers, producer_name, title):\n    for producer in producers:\n        if producer.name == producer_name:\n            for product in producer.products:\n                if product.title == title:\n                    product.sold = True\n                    return True\n    return False",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Traverses producer list."
+    },
+    {
+      "marks": 1,
+      "criterion": "Matches producer_name."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses selected producer’s products."
+    },
+    {
+      "marks": 1,
+      "criterion": "Matches title."
+    },
+    {
+      "marks": 1,
+      "criterion": "Sets sold=True on matched object."
+    },
+    {
+      "marks": 1,
+      "criterion": "Stops with True, otherwise returns False without changing unrelated products."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed matching title and absent producer; unrelated object remains unchanged.",
+    "source_comparison": [
+      25
+    ],
+    "test_code": "def mark_sold(producers, producer_name, title):\n    for producer in producers:\n        if producer.name == producer_name:\n            for product in producer.products:\n                if product.title == title:\n                    product.sold = True\n                    return True\n    return False\nfrom types import SimpleNamespace as O\np=O(name='A',products=[O(title='X',sold=False),O(title='Y',sold=False)])\nassert mark_sold([p],'A','Y') is True and [x.sold for x in p.products]==[False,True]\nassert mark_sold([p],'B','X') is False and p.products[0].sold is False",
+    "result_file": ""
+  },
+  "code": "def mark_sold(producers, producer_name, title):\n    for producer in producers:\n        if producer.name == producer_name:\n            for product in producer.products:\n                if product.title == title:\n                    product.sold = True\n                    return True\n    return False",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

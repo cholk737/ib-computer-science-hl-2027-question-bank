@@ -35,7 +35,9 @@
       22
     ],
     "question_reference": "Q13 b",
-    "marking_summary": "One solution:\ndef read_in_range(read_integer):\n    while True:\n        value = read_integer()\n        if 1 <= value <= 16:\n            print(\"Accepted\")\n            return value\n        print(\"Enter an integer from 1 to 16\")",
+    "marking_summary": "Exact original MS leaf excerpt: Award max [4]. Award [1] for a correct while loop Award [1] for a correct condition /validation check Award [1] for input within the while loop (input repeated until input validated) Award [1] for outputting appropriate messages Award [1] for return statement; Example 1: inputInRange() K=input('Enter a number: ') loop while (K < 1) or (K > 25) output ('The number is not in the range 1 to 25. ') output(' Please try again! ') K=input('Enter a number: ') end loop output('Your number is valid. ') return K end inputInRange() Example 2: inputInRange() F=true loop while F output('Enter a number') input(K) if(K < 1) or (K > 25) then output ('The number is invalid. ') output( 'Please try again! ') else F=false end if end loop output('Your number is valid. ') return K end inputInRange() Example 3: inputInRange() loop while True K=input('Enter a number: ') if(K >= 1) and (K <= 25) then output('Your … [full leaf evidence retained]",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award max [4].\nAward [1] for a correct while loop \nAward [1] for a correct condition /validation check \nAward [1] for input within the while loop (input repeated until input validated) \nAward [1] for outputting appropriate messages \nAward [1] for return statement; \nExample 1: \ninputInRange()\nK=input('Enter a number: ') \nloop while (K < 1) or (K > 25) \noutput ('The number is not in the range 1 to 25. ') \n   output(' Please try again! ')  \nK=input('Enter a number: ') \nend loop \noutput('Your number is valid. ') \nreturn K \nend inputInRange() \nExample 2: \ninputInRange() \nF=true \nloop while F \noutput('Enter a number') \ninput(K) \nif(K < 1) or (K > 25) \nthen \n   output ('The number is invalid. ') \noutput( 'Please try again! ') \nelse \nF=false  \nend if \nend loop \noutput('Your number is valid. ') \nreturn K \nend inputInRange() \n\nExample 3: \ninputInRange() \nloop while True \nK=input('Enter a number: ') \nif(K >= 1) and (K <= 25) \nthen \noutput('Your number is valid. ') \nreturn K  \nelse \noutput('The number is not in the range1 to 25. ') \noutput('Please try again! ') \nend if \nend loop \nend inputInRange()",
     "source_issues": [],
     "source_marking_evidence": "– 21 – 2225 – 6414M \n13. (a) Award max [3]. \nThe (difficult) program is divided into several easier parts (sub-programs); \nThe program is better organized/ easier to understand /reduced size of code (due to several \nsub-programs calls)/ no duplication of code; \n  Sub-programs hide implementation details; \nSub-programs keep specific tasks self-contained; \n Each of the sub-programs could be written independently; \nEach of the sub-programs is debugged/tested independently; \nDifferent parts of the program can be written at the same time/concurrently; \nSub-programs speed up the development process (as different students can work  \non different subprogram at the same time); \nEach sub-program could be used many times in this program (and in other programs); \n The maintenance/modification/change of the program will be easier/faster \n (because only a sub-program could be changed/modified as needed); \n(b) Award max [4].\nAward [1] for a correct while loop \nAward [1] for a correct condition /validation check \nAward [1] for input within the while loop (input repeated until input validated) \nAward [1] for outputting appropriate messages \nAward [1] for return statement; \nExample 1: \ninputInRange()\nK=input('Enter a number: ') \nloop while (K < 1) or (K > 25) \noutput ('The number is not in the range 1 to 25. ') \n   output(' Please try again! ')  \nK=input('Enter a number: ') \nend loop \noutput('Your number is valid. ') \nreturn K \nend inputInRange() \nExample 2: \ninputInRange() \nF=true \nloop while F \noutput('Enter a number') \ninput(K) \nif(K < 1) or (K > 25) \nthen \n   output ('The number is invalid. ') \noutput( 'Please try again! ') \nelse \nF=false  \nend if \nend loop \noutput('Your number is valid. ') \nreturn K \nend inputInRange() \n– 22 – 2225 – 6414M \nExample 3: \ninputInRange() \nloop while True \nK=input('Enter a number: ') \nif(K >= 1) and (K <= 25) \nthen \noutput('Your number is valid. ') \nreturn K  \nelse \noutput('The number is not in the range1 to 25. ') \noutput('Please try again! ') \nend if \nend loop \nend inputInRange() "
   },
@@ -44,7 +46,7 @@
     {
       "syllabus_code": "B2.3.2",
       "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
-      "rationale": "Construct read_in_range(read_integer) in Python assesses Construct programs utilizing appropriate selection structures.",
+      "rationale": "Adapted target only: Construct read_in_range(read_integer) in Python; guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
       "theme": "B",
       "level": "SL/HL common",
       "confidence": "high",
@@ -53,7 +55,7 @@
     {
       "syllabus_code": "B2.3.3",
       "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
-      "rationale": "Construct read_in_range(read_integer) in Python assesses Construct programs that utilize looping structures to perform repeated actions.",
+      "rationale": "Adapted target only: Construct read_in_range(read_integer) in Python; guidance target: Construct programs that utilize looping structures to perform repeated actions. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
       "theme": "B",
       "level": "SL/HL common",
       "confidence": "high",
@@ -62,7 +64,7 @@
     {
       "syllabus_code": "B2.3.4",
       "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
-      "rationale": "Construct read_in_range(read_integer) in Python assesses Construct functions and modularization.",
+      "rationale": "Adapted target only: Construct read_in_range(read_integer) in Python; guidance target: Construct functions and modularization. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
       "theme": "B",
       "level": "SL/HL common",
       "confidence": "high",

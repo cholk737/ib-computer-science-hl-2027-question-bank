@@ -1,0 +1,1010 @@
+{
+  "source_id": "SRC-032",
+  "batch_id": "SRC-032-b009",
+  "source_questions": [
+    {
+      "source_question_id": "H-SRC032-Q13-a",
+      "source_id": "SRC-032",
+      "source_filename": "Computer_science_paper_2__HL (1).pdf",
+      "year": "2023",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ0 (markscheme)",
+      "option": "D",
+      "question": 13,
+      "subquestion": "a",
+      "source_pdf_pages": [
+        15
+      ],
+      "source_printed_pages": [
+        "14"
+      ],
+      "original_marks": 1,
+      "command_term": "Define",
+      "original_text": "Define the term primitive data type.",
+      "parent_context": "– 14 – 2223 – 7012\nOption D — Object-oriented programming\n13. A real estate business maintains an unsorted database of houses and apartments that it tries \nto sell for the property owners.\nThe following UML diagram describes the objects in the current system.\nOwner Property\n- name: String\n- address: String\n- phone: String\n< … more attributes >\n- ID: String\n- address: String\n- city: String\n- price: int\n< … more attributes >\n+ constructor\n+ accessor and  \nmutator methods\n+ constructor\n+ accessor and  \nmutator methods\nHouse Apartment\n< attributes > < attributes >\n< methods > < methods >\n(a) Define the term primitive data type. [1]\n(b) State an additional attribute in the class Property that would have data type\n(i) Boolean [1]\n(ii) integer. [1]\n(c) State the relationship between\n(i) Owner and Property [1]\n(ii) House and Property. [1]\n(d) Distinguish between a class and an instantiation in this scenario. [2]\n(e) Outline how the modifier static affects how a variable is used. [2]\n(f) Describe how the modifier static could be used to access the total number of both \nHouse and Apartment objects that have been created in this system. [2]\n(Option D continues on the following page)\n– 15 – 2223 – 7012\nTurn over\n(Option D, question 13 continued)\nThe object-oriented software solution that implements this system for the real estate \nbusiness allows a customer to select a maximum of 10 houses that he or she is interested in. \nThese houses are stored in an array wishList of type House.\n(g) Construct the code needed to instantiate an array wishList that can store a maximum \nof 10 House objects. [3]\n14. (a)  Define the term encapsulation. [1]\n(b) Explain one benefit provided by encapsulation. [3]\nThe real estate business is planning to expand its database to include student housing. \nThese “houses” are usually single rooms in a privately owned house.\n(c) Explain one benefit of using inheritance to create a new class Room. [3]\nMany of the prospective students have an international background.\n(d) Explain one feature of modern programming languages that allows for internationalization. [3]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-15.png",
+          "source_pdf_page": 15,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-16.png",
+          "source_pdf_page": 16,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Define the term primitive data type.",
+        "State the Python data type suitable for a whole-number count of available rooms"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-035",
+        "filename": "Computer_science_paper_2__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          24
+        ],
+        "question_reference": "Q13 a",
+        "marking_summary": "Exact original MS leaf excerpt: Award [1 max]. These are data types that are pre-defined / fundamental / basic in the programming language; A data type that is always assigned a value (in the memory); They are the building blocks of the composite data types / classes / objects; The types that are implemented directly as bit patterns (by a Java compiler);",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [1 max].  \nThese are data types that are pre-defined / fundamental / basic in the programming \n  language; \n  A data type that is always assigned a value (in the memory); \nThey are the building blocks of the composite data types / classes / objects; \nThe types that are implemented directly as bit patterns (by a Java compiler);",
+        "source_issues": [],
+        "source_marking_evidence": "– 24 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \nOption D – Object oriented programming (OOP) \n13. (a) Award [1 max].  \nThese are data types that are pre-defined / fundamental / basic in the programming \n  language; \n  A data type that is always assigned a value (in the memory); \nThey are the building blocks of the composite data types / classes / objects; \nThe types that are implemented directly as bit patterns (by a Java compiler); \n(b) (i) Award [1 max] for any suitable example. Allow a description. \nFor example \nhasParking; \nhasPool; \nhasGarden; \nWhether the property has been sold or not; \n(ii) Award [1 max] for any suitable example. Allow a description.\nFor example \nnumberRooms; \narea; \nThe number of bathrooms; \n(c) (i) Award [1 max]. \nAggregation (allow Property 'has a' Owner); \n(ii) Award [1 max].\nInheritance (allow House 'is a' Property);\nHouse is a subclass of Property;\nHouse inherits Property;\n(d) Award [2 max].\nAward [1] for distinguishing between a class and an instantiation at the definition level;\nAward [1] for including an example;\nA class (e.g. House class) is a blueprint / definition / specification (that defines all variables \nand methods that are needed) and an instantiation of a class is creates a (new) object of that \nclass [1] (e.g. a (new) object of an actual house giving its actual address etc [1]; \n(e) Award [2 max].\nA static variable is used when it is to be a class variable (belongs to the class not to the\ninstantiation);\nIt is used when all objects of that class are to have the same value for the static variable;\nIt will not be instantiated when a new object is created;\nIf the value of a static variable is changed, it will be changed in all instances of that class;\nIt does not require an object of that class to be accessed;"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.1.1",
+          "scope_evidence": "• Data types: Boolean value, char, decimal, integer, string",
+          "rationale": "Adapted target only: State the Python data type suitable for a whole-number count of available rooms; guidance target: Construct and trace programs using a range of global and local variables of various data types. Adaptation: Replaces Java primitive-type taxonomy with an explicitly required Python-compatible basic data type.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC032-Q13-a"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC032-Q13-b-i",
+      "source_id": "SRC-032",
+      "source_filename": "Computer_science_paper_2__HL (1).pdf",
+      "year": "2023",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ0 (markscheme)",
+      "option": "D",
+      "question": 13,
+      "subquestion": "b-i",
+      "source_pdf_pages": [
+        15
+      ],
+      "source_printed_pages": [
+        "14"
+      ],
+      "original_marks": 1,
+      "command_term": "State",
+      "original_text": "Boolean",
+      "parent_context": "– 14 – 2223 – 7012\nOption D — Object-oriented programming\n13. A real estate business maintains an unsorted database of houses and apartments that it tries \nto sell for the property owners.\nThe following UML diagram describes the objects in the current system.\nOwner Property\n- name: String\n- address: String\n- phone: String\n< … more attributes >\n- ID: String\n- address: String\n- city: String\n- price: int\n< … more attributes >\n+ constructor\n+ accessor and  \nmutator methods\n+ constructor\n+ accessor and  \nmutator methods\nHouse Apartment\n< attributes > < attributes >\n< methods > < methods >\n(a) Define the term primitive data type. [1]\n(b) State an additional attribute in the class Property that would have data type\n(i) Boolean [1]\n(ii) integer. [1]\n(c) State the relationship between\n(i) Owner and Property [1]\n(ii) House and Property. [1]\n(d) Distinguish between a class and an instantiation in this scenario. [2]\n(e) Outline how the modifier static affects how a variable is used. [2]\n(f) Describe how the modifier static could be used to access the total number of both \nHouse and Apartment objects that have been created in this system. [2]\n(Option D continues on the following page)\n– 15 – 2223 – 7012\nTurn over\n(Option D, question 13 continued)\nThe object-oriented software solution that implements this system for the real estate \nbusiness allows a customer to select a maximum of 10 houses that he or she is interested in. \nThese houses are stored in an array wishList of type House.\n(g) Construct the code needed to instantiate an array wishList that can store a maximum \nof 10 House objects. [3]\n14. (a)  Define the term encapsulation. [1]\n(b) Explain one benefit provided by encapsulation. [3]\nThe real estate business is planning to expand its database to include student housing. \nThese “houses” are usually single rooms in a privately owned house.\n(c) Explain one benefit of using inheritance to create a new class Room. [3]\nMany of the prospective students have an international background.\n(d) Explain one feature of modern programming languages that allows for internationalization. [3]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-15.png",
+          "source_pdf_page": 15,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-16.png",
+          "source_pdf_page": 16,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Boolean",
+        "State a Boolean attribute appropriate for an Accommodation class"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-035",
+        "filename": "Computer_science_paper_2__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          24
+        ],
+        "question_reference": "Q13 b-i",
+        "marking_summary": "Exact original MS leaf excerpt: Award [1 max] for any suitable example. Allow a description. For example hasParking; hasPool; hasGarden; Whether the property has been sold or not;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [1 max] for any suitable example. Allow a description. \nFor example \nhasParking; \nhasPool; \nhasGarden; \nWhether the property has been sold or not;",
+        "source_issues": [],
+        "source_marking_evidence": "– 24 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \nOption D – Object oriented programming (OOP) \n13. (a) Award [1 max].  \nThese are data types that are pre-defined / fundamental / basic in the programming \n  language; \n  A data type that is always assigned a value (in the memory); \nThey are the building blocks of the composite data types / classes / objects; \nThe types that are implemented directly as bit patterns (by a Java compiler); \n(b) (i) Award [1 max] for any suitable example. Allow a description. \nFor example \nhasParking; \nhasPool; \nhasGarden; \nWhether the property has been sold or not; \n(ii) Award [1 max] for any suitable example. Allow a description.\nFor example \nnumberRooms; \narea; \nThe number of bathrooms; \n(c) (i) Award [1 max]. \nAggregation (allow Property 'has a' Owner); \n(ii) Award [1 max].\nInheritance (allow House 'is a' Property);\nHouse is a subclass of Property;\nHouse inherits Property;\n(d) Award [2 max].\nAward [1] for distinguishing between a class and an instantiation at the definition level;\nAward [1] for including an example;\nA class (e.g. House class) is a blueprint / definition / specification (that defines all variables \nand methods that are needed) and an instantiation of a class is creates a (new) object of that \nclass [1] (e.g. a (new) object of an actual house giving its actual address etc [1]; \n(e) Award [2 max].\nA static variable is used when it is to be a class variable (belongs to the class not to the\ninstantiation);\nIt is used when all objects of that class are to have the same value for the static variable;\nIt will not be instantiated when a new object is created;\nIf the value of a static variable is changed, it will be changed in all instances of that class;\nIt does not require an object of that class to be accessed;"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B3.1.2",
+          "scope_evidence": "• Classes and their methods, based on application requirements\n• The use of unified modelling language (UML) class diagrams to represent class relationships, attributes and methods, to aid effective software design and planning",
+          "rationale": "Adapted target only: State a Boolean attribute appropriate for an Accommodation class; guidance target: Construct a design of classes, their methods and behaviour. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.1.1",
+          "scope_evidence": "• Data types: Boolean value, char, decimal, integer, string",
+          "rationale": "Adapted target only: State a Boolean attribute appropriate for an Accommodation class; guidance target: Construct and trace programs using a range of global and local variables of various data types. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC032-Q13-b-i"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC032-Q13-b-ii",
+      "source_id": "SRC-032",
+      "source_filename": "Computer_science_paper_2__HL (1).pdf",
+      "year": "2023",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ0 (markscheme)",
+      "option": "D",
+      "question": 13,
+      "subquestion": "b-ii",
+      "source_pdf_pages": [
+        15
+      ],
+      "source_printed_pages": [
+        "14"
+      ],
+      "original_marks": 1,
+      "command_term": "State",
+      "original_text": "integer.",
+      "parent_context": "– 14 – 2223 – 7012\nOption D — Object-oriented programming\n13. A real estate business maintains an unsorted database of houses and apartments that it tries \nto sell for the property owners.\nThe following UML diagram describes the objects in the current system.\nOwner Property\n- name: String\n- address: String\n- phone: String\n< … more attributes >\n- ID: String\n- address: String\n- city: String\n- price: int\n< … more attributes >\n+ constructor\n+ accessor and  \nmutator methods\n+ constructor\n+ accessor and  \nmutator methods\nHouse Apartment\n< attributes > < attributes >\n< methods > < methods >\n(a) Define the term primitive data type. [1]\n(b) State an additional attribute in the class Property that would have data type\n(i) Boolean [1]\n(ii) integer. [1]\n(c) State the relationship between\n(i) Owner and Property [1]\n(ii) House and Property. [1]\n(d) Distinguish between a class and an instantiation in this scenario. [2]\n(e) Outline how the modifier static affects how a variable is used. [2]\n(f) Describe how the modifier static could be used to access the total number of both \nHouse and Apartment objects that have been created in this system. [2]\n(Option D continues on the following page)\n– 15 – 2223 – 7012\nTurn over\n(Option D, question 13 continued)\nThe object-oriented software solution that implements this system for the real estate \nbusiness allows a customer to select a maximum of 10 houses that he or she is interested in. \nThese houses are stored in an array wishList of type House.\n(g) Construct the code needed to instantiate an array wishList that can store a maximum \nof 10 House objects. [3]\n14. (a)  Define the term encapsulation. [1]\n(b) Explain one benefit provided by encapsulation. [3]\nThe real estate business is planning to expand its database to include student housing. \nThese “houses” are usually single rooms in a privately owned house.\n(c) Explain one benefit of using inheritance to create a new class Room. [3]\nMany of the prospective students have an international background.\n(d) Explain one feature of modern programming languages that allows for internationalization. [3]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-15.png",
+          "source_pdf_page": 15,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-16.png",
+          "source_pdf_page": 16,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: integer.",
+        "State an integer attribute appropriate for an Accommodation class"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-035",
+        "filename": "Computer_science_paper_2__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          24
+        ],
+        "question_reference": "Q13 b-ii",
+        "marking_summary": "Exact original MS leaf excerpt: Award [1 max] for any suitable example. Allow a description. For example numberRooms; area; The number of bathrooms;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [1 max] for any suitable example. Allow a description.\nFor example \nnumberRooms; \narea; \nThe number of bathrooms;",
+        "source_issues": [],
+        "source_marking_evidence": "– 24 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \nOption D – Object oriented programming (OOP) \n13. (a) Award [1 max].  \nThese are data types that are pre-defined / fundamental / basic in the programming \n  language; \n  A data type that is always assigned a value (in the memory); \nThey are the building blocks of the composite data types / classes / objects; \nThe types that are implemented directly as bit patterns (by a Java compiler); \n(b) (i) Award [1 max] for any suitable example. Allow a description. \nFor example \nhasParking; \nhasPool; \nhasGarden; \nWhether the property has been sold or not; \n(ii) Award [1 max] for any suitable example. Allow a description.\nFor example \nnumberRooms; \narea; \nThe number of bathrooms; \n(c) (i) Award [1 max]. \nAggregation (allow Property 'has a' Owner); \n(ii) Award [1 max].\nInheritance (allow House 'is a' Property);\nHouse is a subclass of Property;\nHouse inherits Property;\n(d) Award [2 max].\nAward [1] for distinguishing between a class and an instantiation at the definition level;\nAward [1] for including an example;\nA class (e.g. House class) is a blueprint / definition / specification (that defines all variables \nand methods that are needed) and an instantiation of a class is creates a (new) object of that \nclass [1] (e.g. a (new) object of an actual house giving its actual address etc [1]; \n(e) Award [2 max].\nA static variable is used when it is to be a class variable (belongs to the class not to the\ninstantiation);\nIt is used when all objects of that class are to have the same value for the static variable;\nIt will not be instantiated when a new object is created;\nIf the value of a static variable is changed, it will be changed in all instances of that class;\nIt does not require an object of that class to be accessed;"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B3.1.2",
+          "scope_evidence": "• Classes and their methods, based on application requirements\n• The use of unified modelling language (UML) class diagrams to represent class relationships, attributes and methods, to aid effective software design and planning",
+          "rationale": "Adapted target only: State an integer attribute appropriate for an Accommodation class; guidance target: Construct a design of classes, their methods and behaviour. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.1.1",
+          "scope_evidence": "• Data types: Boolean value, char, decimal, integer, string",
+          "rationale": "Adapted target only: State an integer attribute appropriate for an Accommodation class; guidance target: Construct and trace programs using a range of global and local variables of various data types. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC032-Q13-b-ii"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC032-Q13-c-i",
+      "source_id": "SRC-032",
+      "source_filename": "Computer_science_paper_2__HL (1).pdf",
+      "year": "2023",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ0 (markscheme)",
+      "option": "D",
+      "question": 13,
+      "subquestion": "c-i",
+      "source_pdf_pages": [
+        15
+      ],
+      "source_printed_pages": [
+        "14"
+      ],
+      "original_marks": 1,
+      "command_term": "State",
+      "original_text": "Owner and Property",
+      "parent_context": "– 14 – 2223 – 7012\nOption D — Object-oriented programming\n13. A real estate business maintains an unsorted database of houses and apartments that it tries \nto sell for the property owners.\nThe following UML diagram describes the objects in the current system.\nOwner Property\n- name: String\n- address: String\n- phone: String\n< … more attributes >\n- ID: String\n- address: String\n- city: String\n- price: int\n< … more attributes >\n+ constructor\n+ accessor and  \nmutator methods\n+ constructor\n+ accessor and  \nmutator methods\nHouse Apartment\n< attributes > < attributes >\n< methods > < methods >\n(a) Define the term primitive data type. [1]\n(b) State an additional attribute in the class Property that would have data type\n(i) Boolean [1]\n(ii) integer. [1]\n(c) State the relationship between\n(i) Owner and Property [1]\n(ii) House and Property. [1]\n(d) Distinguish between a class and an instantiation in this scenario. [2]\n(e) Outline how the modifier static affects how a variable is used. [2]\n(f) Describe how the modifier static could be used to access the total number of both \nHouse and Apartment objects that have been created in this system. [2]\n(Option D continues on the following page)\n– 15 – 2223 – 7012\nTurn over\n(Option D, question 13 continued)\nThe object-oriented software solution that implements this system for the real estate \nbusiness allows a customer to select a maximum of 10 houses that he or she is interested in. \nThese houses are stored in an array wishList of type House.\n(g) Construct the code needed to instantiate an array wishList that can store a maximum \nof 10 House objects. [3]\n14. (a)  Define the term encapsulation. [1]\n(b) Explain one benefit provided by encapsulation. [3]\nThe real estate business is planning to expand its database to include student housing. \nThese “houses” are usually single rooms in a privately owned house.\n(c) Explain one benefit of using inheritance to create a new class Room. [3]\nMany of the prospective students have an international background.\n(d) Explain one feature of modern programming languages that allows for internationalization. [3]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-15.png",
+          "source_pdf_page": 15,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-16.png",
+          "source_pdf_page": 16,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Owner and Property",
+        "A Building object stores a reference to an Owner object"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-035",
+        "filename": "Computer_science_paper_2__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          24
+        ],
+        "question_reference": "Q13 c-i",
+        "marking_summary": "Exact original MS leaf excerpt: Award [1 max]. Aggregation (allow Property 'has a' Owner);",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [1 max]. \nAggregation (allow Property 'has a' Owner);",
+        "source_issues": [],
+        "source_marking_evidence": "– 24 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \nOption D – Object oriented programming (OOP) \n13. (a) Award [1 max].  \nThese are data types that are pre-defined / fundamental / basic in the programming \n  language; \n  A data type that is always assigned a value (in the memory); \nThey are the building blocks of the composite data types / classes / objects; \nThe types that are implemented directly as bit patterns (by a Java compiler); \n(b) (i) Award [1 max] for any suitable example. Allow a description. \nFor example \nhasParking; \nhasPool; \nhasGarden; \nWhether the property has been sold or not; \n(ii) Award [1 max] for any suitable example. Allow a description.\nFor example \nnumberRooms; \narea; \nThe number of bathrooms; \n(c) (i) Award [1 max]. \nAggregation (allow Property 'has a' Owner); \n(ii) Award [1 max].\nInheritance (allow House 'is a' Property);\nHouse is a subclass of Property;\nHouse inherits Property;\n(d) Award [2 max].\nAward [1] for distinguishing between a class and an instantiation at the definition level;\nAward [1] for including an example;\nA class (e.g. House class) is a blueprint / definition / specification (that defines all variables \nand methods that are needed) and an instantiation of a class is creates a (new) object of that \nclass [1] (e.g. a (new) object of an actual house giving its actual address etc [1]; \n(e) Award [2 max].\nA static variable is used when it is to be a class variable (belongs to the class not to the\ninstantiation);\nIt is used when all objects of that class are to have the same value for the static variable;\nIt will not be instantiated when a new object is created;\nIf the value of a static variable is changed, it will be changed in all instances of that class;\nIt does not require an object of that class to be accessed;"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B3.2.4",
+          "scope_evidence": "• How to design objects by leveraging smaller component objects through composition and aggregation\n• That aggregation implies that the subcomponents can function independently of the aggregating class, while in composition, the subcomponents are tightly coupled and cannot exist outside the aggregating class",
+          "rationale": "Adapted target only: A Building object stores a reference to an Owner object; guidance target: Explain the role of composition and aggregation in class relationships. Adaptation: Makes independent lifetime explicit rather than relying only on a vaguehas-a phrase.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC032-Q13-c-i"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC032-Q13-c-ii",
+      "source_id": "SRC-032",
+      "source_filename": "Computer_science_paper_2__HL (1).pdf",
+      "year": "2023",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ0 (markscheme)",
+      "option": "D",
+      "question": 13,
+      "subquestion": "c-ii",
+      "source_pdf_pages": [
+        15
+      ],
+      "source_printed_pages": [
+        "14"
+      ],
+      "original_marks": 1,
+      "command_term": "State",
+      "original_text": "House and Property.",
+      "parent_context": "– 14 – 2223 – 7012\nOption D — Object-oriented programming\n13. A real estate business maintains an unsorted database of houses and apartments that it tries \nto sell for the property owners.\nThe following UML diagram describes the objects in the current system.\nOwner Property\n- name: String\n- address: String\n- phone: String\n< … more attributes >\n- ID: String\n- address: String\n- city: String\n- price: int\n< … more attributes >\n+ constructor\n+ accessor and  \nmutator methods\n+ constructor\n+ accessor and  \nmutator methods\nHouse Apartment\n< attributes > < attributes >\n< methods > < methods >\n(a) Define the term primitive data type. [1]\n(b) State an additional attribute in the class Property that would have data type\n(i) Boolean [1]\n(ii) integer. [1]\n(c) State the relationship between\n(i) Owner and Property [1]\n(ii) House and Property. [1]\n(d) Distinguish between a class and an instantiation in this scenario. [2]\n(e) Outline how the modifier static affects how a variable is used. [2]\n(f) Describe how the modifier static could be used to access the total number of both \nHouse and Apartment objects that have been created in this system. [2]\n(Option D continues on the following page)\n– 15 – 2223 – 7012\nTurn over\n(Option D, question 13 continued)\nThe object-oriented software solution that implements this system for the real estate \nbusiness allows a customer to select a maximum of 10 houses that he or she is interested in. \nThese houses are stored in an array wishList of type House.\n(g) Construct the code needed to instantiate an array wishList that can store a maximum \nof 10 House objects. [3]\n14. (a)  Define the term encapsulation. [1]\n(b) Explain one benefit provided by encapsulation. [3]\nThe real estate business is planning to expand its database to include student housing. \nThese “houses” are usually single rooms in a privately owned house.\n(c) Explain one benefit of using inheritance to create a new class Room. [3]\nMany of the prospective students have an international background.\n(d) Explain one feature of modern programming languages that allows for internationalization. [3]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-15.png",
+          "source_pdf_page": 15,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-16.png",
+          "source_pdf_page": 16,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: House and Property.",
+        "Class Cottage extends Accommodation and inherits its attributes and methods"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-035",
+        "filename": "Computer_science_paper_2__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          24
+        ],
+        "question_reference": "Q13 c-ii",
+        "marking_summary": "Exact original MS leaf excerpt: Award [1 max]. Inheritance (allow House 'is a' Property); House is a subclass of Property; House inherits Property;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [1 max].\nInheritance (allow House 'is a' Property);\nHouse is a subclass of Property;\nHouse inherits Property;",
+        "source_issues": [],
+        "source_marking_evidence": "– 24 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \nOption D – Object oriented programming (OOP) \n13. (a) Award [1 max].  \nThese are data types that are pre-defined / fundamental / basic in the programming \n  language; \n  A data type that is always assigned a value (in the memory); \nThey are the building blocks of the composite data types / classes / objects; \nThe types that are implemented directly as bit patterns (by a Java compiler); \n(b) (i) Award [1 max] for any suitable example. Allow a description. \nFor example \nhasParking; \nhasPool; \nhasGarden; \nWhether the property has been sold or not; \n(ii) Award [1 max] for any suitable example. Allow a description.\nFor example \nnumberRooms; \narea; \nThe number of bathrooms; \n(c) (i) Award [1 max]. \nAggregation (allow Property 'has a' Owner); \n(ii) Award [1 max].\nInheritance (allow House 'is a' Property);\nHouse is a subclass of Property;\nHouse inherits Property;\n(d) Award [2 max].\nAward [1] for distinguishing between a class and an instantiation at the definition level;\nAward [1] for including an example;\nA class (e.g. House class) is a blueprint / definition / specification (that defines all variables \nand methods that are needed) and an instantiation of a class is creates a (new) object of that \nclass [1] (e.g. a (new) object of an actual house giving its actual address etc [1]; \n(e) Award [2 max].\nA static variable is used when it is to be a class variable (belongs to the class not to the\ninstantiation);\nIt is used when all objects of that class are to have the same value for the static variable;\nIt will not be instantiated when a new object is created;\nIf the value of a static variable is changed, it will be changed in all instances of that class;\nIt does not require an object of that class to be accessed;"
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B3.2.1",
+          "scope_evidence": "• How inheritance enables a hierarchical relationship between parent and child classes\n• Extending existing classes, utilizing inheritance to reuse and extend functionalities\n• The impact of inheritance on access to parent class members with different access modifiers (private, public, protected, default)",
+          "rationale": "Original and adapted within-scope skill: Class Cottage extends Accommodation and inherits its attributes and methods; guidance target: Explain and apply the concept of inheritance in OOP to promote code reusability.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC032-Q13-c-ii"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC032-Q13-d",
+      "source_id": "SRC-032",
+      "source_filename": "Computer_science_paper_2__HL (1).pdf",
+      "year": "2023",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ0 (markscheme)",
+      "option": "D",
+      "question": 13,
+      "subquestion": "d",
+      "source_pdf_pages": [
+        15
+      ],
+      "source_printed_pages": [
+        "14"
+      ],
+      "original_marks": 2,
+      "command_term": "Distinguish",
+      "original_text": "Distinguish between a class and an instantiation in this scenario.",
+      "parent_context": "– 14 – 2223 – 7012\nOption D — Object-oriented programming\n13. A real estate business maintains an unsorted database of houses and apartments that it tries \nto sell for the property owners.\nThe following UML diagram describes the objects in the current system.\nOwner Property\n- name: String\n- address: String\n- phone: String\n< … more attributes >\n- ID: String\n- address: String\n- city: String\n- price: int\n< … more attributes >\n+ constructor\n+ accessor and  \nmutator methods\n+ constructor\n+ accessor and  \nmutator methods\nHouse Apartment\n< attributes > < attributes >\n< methods > < methods >\n(a) Define the term primitive data type. [1]\n(b) State an additional attribute in the class Property that would have data type\n(i) Boolean [1]\n(ii) integer. [1]\n(c) State the relationship between\n(i) Owner and Property [1]\n(ii) House and Property. [1]\n(d) Distinguish between a class and an instantiation in this scenario. [2]\n(e) Outline how the modifier static affects how a variable is used. [2]\n(f) Describe how the modifier static could be used to access the total number of both \nHouse and Apartment objects that have been created in this system. [2]\n(Option D continues on the following page)\n– 15 – 2223 – 7012\nTurn over\n(Option D, question 13 continued)\nThe object-oriented software solution that implements this system for the real estate \nbusiness allows a customer to select a maximum of 10 houses that he or she is interested in. \nThese houses are stored in an array wishList of type House.\n(g) Construct the code needed to instantiate an array wishList that can store a maximum \nof 10 House objects. [3]\n14. (a)  Define the term encapsulation. [1]\n(b) Explain one benefit provided by encapsulation. [3]\nThe real estate business is planning to expand its database to include student housing. \nThese “houses” are usually single rooms in a privately owned house.\n(c) Explain one benefit of using inheritance to create a new class Room. [3]\nMany of the prospective students have an international background.\n(d) Explain one feature of modern programming languages that allows for internationalization. [3]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-15.png",
+          "source_pdf_page": 15,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-16.png",
+          "source_pdf_page": 16,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Distinguish between a class and an instantiation in this scenario.",
+        "Distinguish a class from an object using Accommodation as context"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-035",
+        "filename": "Computer_science_paper_2__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          24
+        ],
+        "question_reference": "Q13 d",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max]. Award [1] for distinguishing between a class and an instantiation at the definition level; Award [1] for including an example; A class (e.g. House class) is a blueprint / definition / specification (that defines all variables and methods that are needed) and an instantiation of a class is creates a (new) object of that class [1] (e.g. a (new) object of an actual house giving its actual address etc [1];",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max].\nAward [1] for distinguishing between a class and an instantiation at the definition level;\nAward [1] for including an example;\nA class (e.g. House class) is a blueprint / definition / specification (that defines all variables \nand methods that are needed) and an instantiation of a class is creates a (new) object of that \nclass [1] (e.g. a (new) object of an actual house giving its actual address etc [1];",
+        "source_issues": [],
+        "source_marking_evidence": "– 24 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \nOption D – Object oriented programming (OOP) \n13. (a) Award [1 max].  \nThese are data types that are pre-defined / fundamental / basic in the programming \n  language; \n  A data type that is always assigned a value (in the memory); \nThey are the building blocks of the composite data types / classes / objects; \nThe types that are implemented directly as bit patterns (by a Java compiler); \n(b) (i) Award [1 max] for any suitable example. Allow a description. \nFor example \nhasParking; \nhasPool; \nhasGarden; \nWhether the property has been sold or not; \n(ii) Award [1 max] for any suitable example. Allow a description.\nFor example \nnumberRooms; \narea; \nThe number of bathrooms; \n(c) (i) Award [1 max]. \nAggregation (allow Property 'has a' Owner); \n(ii) Award [1 max].\nInheritance (allow House 'is a' Property);\nHouse is a subclass of Property;\nHouse inherits Property;\n(d) Award [2 max].\nAward [1] for distinguishing between a class and an instantiation at the definition level;\nAward [1] for including an example;\nA class (e.g. House class) is a blueprint / definition / specification (that defines all variables \nand methods that are needed) and an instantiation of a class is creates a (new) object of that \nclass [1] (e.g. a (new) object of an actual house giving its actual address etc [1]; \n(e) Award [2 max].\nA static variable is used when it is to be a class variable (belongs to the class not to the\ninstantiation);\nIt is used when all objects of that class are to have the same value for the static variable;\nIt will not be instantiated when a new object is created;\nIf the value of a static variable is changed, it will be changed in all instances of that class;\nIt does not require an object of that class to be accessed;"
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B3.1.1",
+          "scope_evidence": "• Model real-world entities using OOP concepts: classes, objects, inheritance, encapsulation, polymorphism\n• The advantages and disadvantages of using OOP in various programming scenarios",
+          "rationale": "Original and adapted within-scope skill: Distinguish a class from an object using Accommodation as context; guidance target: Evaluate the fundamentals of OOP.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC032-Q13-d"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC032-Q13-e",
+      "source_id": "SRC-032",
+      "source_filename": "Computer_science_paper_2__HL (1).pdf",
+      "year": "2023",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ0 (markscheme)",
+      "option": "D",
+      "question": 13,
+      "subquestion": "e",
+      "source_pdf_pages": [
+        15
+      ],
+      "source_printed_pages": [
+        "14"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "Outline how the modifier static affects how a variable is used.",
+      "parent_context": "– 14 – 2223 – 7012\nOption D — Object-oriented programming\n13. A real estate business maintains an unsorted database of houses and apartments that it tries \nto sell for the property owners.\nThe following UML diagram describes the objects in the current system.\nOwner Property\n- name: String\n- address: String\n- phone: String\n< … more attributes >\n- ID: String\n- address: String\n- city: String\n- price: int\n< … more attributes >\n+ constructor\n+ accessor and  \nmutator methods\n+ constructor\n+ accessor and  \nmutator methods\nHouse Apartment\n< attributes > < attributes >\n< methods > < methods >\n(a) Define the term primitive data type. [1]\n(b) State an additional attribute in the class Property that would have data type\n(i) Boolean [1]\n(ii) integer. [1]\n(c) State the relationship between\n(i) Owner and Property [1]\n(ii) House and Property. [1]\n(d) Distinguish between a class and an instantiation in this scenario. [2]\n(e) Outline how the modifier static affects how a variable is used. [2]\n(f) Describe how the modifier static could be used to access the total number of both \nHouse and Apartment objects that have been created in this system. [2]\n(Option D continues on the following page)\n– 15 – 2223 – 7012\nTurn over\n(Option D, question 13 continued)\nThe object-oriented software solution that implements this system for the real estate \nbusiness allows a customer to select a maximum of 10 houses that he or she is interested in. \nThese houses are stored in an array wishList of type House.\n(g) Construct the code needed to instantiate an array wishList that can store a maximum \nof 10 House objects. [3]\n14. (a)  Define the term encapsulation. [1]\n(b) Explain one benefit provided by encapsulation. [3]\nThe real estate business is planning to expand its database to include student housing. \nThese “houses” are usually single rooms in a privately owned house.\n(c) Explain one benefit of using inheritance to create a new class Room. [3]\nMany of the prospective students have an international background.\n(d) Explain one feature of modern programming languages that allows for internationalization. [3]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-15.png",
+          "source_pdf_page": 15,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-16.png",
+          "source_pdf_page": 16,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline how the modifier static affects how a variable is used.",
+        "Outline the difference between a Python class attribute and an instance attribute when recording a total count"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-035",
+        "filename": "Computer_science_paper_2__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          24
+        ],
+        "question_reference": "Q13 e",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max]. A static variable is used when it is to be a class variable (belongs to the class not to the instantiation); It is used when all objects of that class are to have the same value for the static variable; It will not be instantiated when a new object is created; If the value of a static variable is changed, it will be changed in all instances of that class; It does not require an object of that class to be accessed;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max].\nA static variable is used when it is to be a class variable (belongs to the class not to the\ninstantiation);\nIt is used when all objects of that class are to have the same value for the static variable;\nIt will not be instantiated when a new object is created;\nIf the value of a static variable is changed, it will be changed in all instances of that class;\nIt does not require an object of that class to be accessed;",
+        "source_issues": [],
+        "source_marking_evidence": "– 24 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \nOption D – Object oriented programming (OOP) \n13. (a) Award [1 max].  \nThese are data types that are pre-defined / fundamental / basic in the programming \n  language; \n  A data type that is always assigned a value (in the memory); \nThey are the building blocks of the composite data types / classes / objects; \nThe types that are implemented directly as bit patterns (by a Java compiler); \n(b) (i) Award [1 max] for any suitable example. Allow a description. \nFor example \nhasParking; \nhasPool; \nhasGarden; \nWhether the property has been sold or not; \n(ii) Award [1 max] for any suitable example. Allow a description.\nFor example \nnumberRooms; \narea; \nThe number of bathrooms; \n(c) (i) Award [1 max]. \nAggregation (allow Property 'has a' Owner); \n(ii) Award [1 max].\nInheritance (allow House 'is a' Property);\nHouse is a subclass of Property;\nHouse inherits Property;\n(d) Award [2 max].\nAward [1] for distinguishing between a class and an instantiation at the definition level;\nAward [1] for including an example;\nA class (e.g. House class) is a blueprint / definition / specification (that defines all variables \nand methods that are needed) and an instantiation of a class is creates a (new) object of that \nclass [1] (e.g. a (new) object of an actual house giving its actual address etc [1]; \n(e) Award [2 max].\nA static variable is used when it is to be a class variable (belongs to the class not to the\ninstantiation);\nIt is used when all objects of that class are to have the same value for the static variable;\nIt will not be instantiated when a new object is created;\nIf the value of a static variable is changed, it will be changed in all instances of that class;\nIt does not require an object of that class to be accessed;"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B3.1.3",
+          "scope_evidence": "• The differences between static and non-static variables and methods, including their usage and scope\n• When to use instance variables instead of class variables, and how to apply these concepts effectively in code",
+          "rationale": "Adapted target only: Outline the difference between a Python class attribute and an instance attribute when recording a total count; guidance target: Distinguish between static and non-static variables and methods. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC032-Q13-e"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC032-Q13-f",
+      "source_id": "SRC-032",
+      "source_filename": "Computer_science_paper_2__HL (1).pdf",
+      "year": "2023",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ0 (markscheme)",
+      "option": "D",
+      "question": 13,
+      "subquestion": "f",
+      "source_pdf_pages": [
+        15
+      ],
+      "source_printed_pages": [
+        "14"
+      ],
+      "original_marks": 2,
+      "command_term": "Describe",
+      "original_text": "Describe how the modifier static could be used to access the total number of both House and Apartment objects that have been created in this system.",
+      "parent_context": "– 14 – 2223 – 7012\nOption D — Object-oriented programming\n13. A real estate business maintains an unsorted database of houses and apartments that it tries \nto sell for the property owners.\nThe following UML diagram describes the objects in the current system.\nOwner Property\n- name: String\n- address: String\n- phone: String\n< … more attributes >\n- ID: String\n- address: String\n- city: String\n- price: int\n< … more attributes >\n+ constructor\n+ accessor and  \nmutator methods\n+ constructor\n+ accessor and  \nmutator methods\nHouse Apartment\n< attributes > < attributes >\n< methods > < methods >\n(a) Define the term primitive data type. [1]\n(b) State an additional attribute in the class Property that would have data type\n(i) Boolean [1]\n(ii) integer. [1]\n(c) State the relationship between\n(i) Owner and Property [1]\n(ii) House and Property. [1]\n(d) Distinguish between a class and an instantiation in this scenario. [2]\n(e) Outline how the modifier static affects how a variable is used. [2]\n(f) Describe how the modifier static could be used to access the total number of both \nHouse and Apartment objects that have been created in this system. [2]\n(Option D continues on the following page)\n– 15 – 2223 – 7012\nTurn over\n(Option D, question 13 continued)\nThe object-oriented software solution that implements this system for the real estate \nbusiness allows a customer to select a maximum of 10 houses that he or she is interested in. \nThese houses are stored in an array wishList of type House.\n(g) Construct the code needed to instantiate an array wishList that can store a maximum \nof 10 House objects. [3]\n14. (a)  Define the term encapsulation. [1]\n(b) Explain one benefit provided by encapsulation. [3]\nThe real estate business is planning to expand its database to include student housing. \nThese “houses” are usually single rooms in a privately owned house.\n(c) Explain one benefit of using inheritance to create a new class Room. [3]\nMany of the prospective students have an international background.\n(d) Explain one feature of modern programming languages that allows for internationalization. [3]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-15.png",
+          "source_pdf_page": 15,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-16.png",
+          "source_pdf_page": 16,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Describe how the modifier static could be used to access the total number of both House and Apartment objects that have been created in this system.",
+        "All Cottage and Apartment objects call Accommodation"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-035",
+        "filename": "Computer_science_paper_2__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          25
+        ],
+        "question_reference": "Q13 f",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max]. Both classes House and Apartment need a static (integer) variable count; that is incremented whenever a new object of that class is created; A static variable (e.g total) could be defined in the Property class; Which is incremented every time a House or Apartment object is instantiated; A static method in the Property class retrieves the total number of house and apartments; From static total variables that are in each of the 2 sub-classes;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max].\nBoth classes House and Apartment need a static (integer) variable count;\nthat is incremented whenever a new object of that class is created;\nA static variable (e.g total) could be defined in the Property class; \nWhich is incremented every time a House or Apartment object is instantiated; \nA static method in the Property class retrieves the total number of house and apartments; \nFrom static total variables that are in each of the 2 sub-classes;",
+        "source_issues": [],
+        "source_marking_evidence": "– 25 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \n(f) Award [2 max].\nBoth classes House and Apartment need a static (integer) variable count;\nthat is incremented whenever a new object of that class is created;\nA static variable (e.g total) could be defined in the Property class; \nWhich is incremented every time a House or Apartment object is instantiated; \nA static method in the Property class retrieves the total number of house and apartments; \nFrom static total variables that are in each of the 2 sub-classes;  \n(g) Award [3 max].\nAward [1] for the identifier (left-hand side);\nAward [1] for use of new;\nAward [1] for House[10];\nHouse[] wishList = new House[10];"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B3.1.3",
+          "scope_evidence": "• The differences between static and non-static variables and methods, including their usage and scope\n• When to use instance variables instead of class variables, and how to apply these concepts effectively in code",
+          "rationale": "Adapted target only: All Cottage and Apartment objects call Accommodation; guidance target: Distinguish between static and non-static variables and methods. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC032-Q13-f"
+      ]
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC032-Q13-a",
+      "source_question_ids": [
+        "H-SRC032-Q13-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "State the Python data type suitable for a whole-number count of available rooms.",
+      "syllabus_codes": [
+        "B2.1.1"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 1,
+      "command_term": "State",
+      "difficulty": "medium",
+      "adaptation_rationale": "Replaces Java primitive-type taxonomy with an explicitly required Python-compatible basic data type.",
+      "solution": "int.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "int."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          24
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC032-Q13-b-i",
+      "source_question_ids": [
+        "H-SRC032-Q13-b-i"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "State a Boolean attribute appropriate for an Accommodation class.",
+      "syllabus_codes": [
+        "B3.1.2",
+        "B2.1.1"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 1,
+      "command_term": "State",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "has_accessible_entrance, storing True or False.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Appropriate yes/no attribute."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          24
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC032-Q13-b-ii",
+      "source_question_ids": [
+        "H-SRC032-Q13-b-ii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "State an integer attribute appropriate for an Accommodation class.",
+      "syllabus_codes": [
+        "B3.1.2",
+        "B2.1.1"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 1,
+      "command_term": "State",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "number_of_rooms.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Appropriate whole-number attribute."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          24
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC032-Q13-c-i",
+      "source_question_ids": [
+        "H-SRC032-Q13-c-i"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "A Building object stores a reference to an Owner object. The owner exists independently and may be associated with several buildings. State this object relationship.",
+      "syllabus_codes": [
+        "B3.2.4"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 1,
+      "command_term": "State",
+      "difficulty": "medium",
+      "adaptation_rationale": "Makes independent lifetime explicit rather than relying only on a vaguehas-a phrase.",
+      "solution": "Aggregation.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Aggregation."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          24
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC032-Q13-c-ii",
+      "source_question_ids": [
+        "H-SRC032-Q13-c-ii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Class Cottage extends Accommodation and inherits its attributes and methods. State the relationship between Cottage and Accommodation.",
+      "syllabus_codes": [
+        "B3.2.1"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 1,
+      "command_term": "State",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Inheritance; Cottage is a subclass of Accommodation.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Inheritance/subclass relationship."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          24
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC032-Q13-d",
+      "source_question_ids": [
+        "H-SRC032-Q13-d"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Distinguish a class from an object using Accommodation as context.",
+      "syllabus_codes": [
+        "B3.1.1"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Distinguish",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Accommodation defines common state and behaviour. A particular Accommodation object stores concrete values, such as one address and room count.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Class definition versus concrete instance."
+        },
+        {
+          "marks": 1,
+          "criterion": "Contextual attribute/example."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          24
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC032-Q13-e",
+      "source_question_ids": [
+        "H-SRC032-Q13-e"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline the difference between a Python class attribute and an instance attribute when recording a total count.",
+      "syllabus_codes": [
+        "B3.1.3"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "A class attribute belongs to the class and can be shared/accessed through it. Each instance attribute is stored as part of a particular object’s state, so individual objects can hold different values.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Class-level/shared association."
+        },
+        {
+          "marks": 1,
+          "criterion": "Instance-specific state distinction."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [
+        "Assigning self.count may create an instance attribute that shadows the class attribute."
+      ],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          24
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC032-Q13-f",
+      "source_question_ids": [
+        "H-SRC032-Q13-f"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "All Cottage and Apartment objects call Accommodation.__init__ once. Outline how one shared counter can track their combined number.",
+      "syllabus_codes": [
+        "B3.1.3"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Initialize Accommodation.count=0 at class level and increment Accommodation.count in the shared initializer. Reading Accommodation.count retrieves the combined count without using an instance-specific counter.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "One counter on common class."
+        },
+        {
+          "marks": 1,
+          "criterion": "Increment that class counter once for each object."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          25
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    }
+  ]
+}

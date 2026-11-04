@@ -38,5 +38,6 @@
     "result_file": ""
   },
   "code": "def valid_distances(d):\n    for r in range(len(d)):\n        for c in range(len(d)):\n            if r <= c and d[r][c] != 0:\n                return False\n            if r > c and d[r][c] <= 0:\n                return False\n    return True",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

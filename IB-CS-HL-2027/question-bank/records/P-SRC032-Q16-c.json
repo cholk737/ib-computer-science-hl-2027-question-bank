@@ -1,0 +1,59 @@
+{
+  "question_id": "P-SRC032-Q16-c",
+  "source_question_ids": [
+    "H-SRC032-Q16-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct append(self, visitor) in Python for a singly linked list whose head attribute is None when empty. visitor is a new unlinked node. Append it at the end, maintaining None as the last next reference.",
+  "syllabus_codes": [
+    "B4.1.3"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 5,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "One solution:\ndef append(self, visitor):\n    visitor.next = None\n    if self.head is None:\n        self.head = visitor\n    else:\n        current = self.head\n        while current.next is not None:\n            current = current.next\n        current.next = visitor",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Handles empty list."
+    },
+    {
+      "marks": 1,
+      "criterion": "Assigns new head when empty."
+    },
+    {
+      "marks": 1,
+      "criterion": "Initializes traversal athead."
+    },
+    {
+      "marks": 1,
+      "criterion": "Follows links until last node."
+    },
+    {
+      "marks": 1,
+      "criterion": "Links visitor at tail with correct None boundary."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed empty andnonempty append; nodeidentity preserved.",
+    "source_comparison": [
+      33
+    ],
+    "test_code": "def append(self, visitor):\n    visitor.next = None\n    if self.head is None:\n        self.head = visitor\n    else:\n        current = self.head\n        while current.next is not None:\n            current = current.next\n        current.next = visitor\nfrom types import SimpleNamespace as N\nl=N(head=None);a=N(next=None);b=N(next=None)\nappend(l,a);append(l,b)\nassert l.head is a and a.next is b and b.next is None",
+    "result_file": ""
+  },
+  "code": "def append(self, visitor):\n    visitor.next = None\n    if self.head is None:\n        self.head = visitor\n    else:\n        current = self.head\n        while current.next is not None:\n            current = current.next\n        current.next = visitor",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC032-Q16-c.json",
+  "question_path": "question-bank/questions/P-SRC032-Q16-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC032-Q16-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

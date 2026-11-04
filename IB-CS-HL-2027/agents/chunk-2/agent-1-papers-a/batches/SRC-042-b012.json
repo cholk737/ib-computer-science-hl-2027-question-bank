@@ -1,0 +1,927 @@
+{
+  "source_id": "SRC-042",
+  "batch_id": "SRC-042-b012",
+  "source_questions": [
+    {
+      "original_assessment_context": "Customer(name,address,maximumBudget) linkedlist;sourceconstructorhasintmaximumBudget()syntaxerror. SourceFigure10 headMatthew→Jon→Angelica→Maria isnotalphabeticallyordered despite textcallingitordered.",
+      "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+      "source_question_id": "H-SRC042-Q17-a",
+      "source_id": "SRC-042",
+      "source_filename": "Computer_science_paper_2_TZ3_HL.pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "D",
+      "question": "17",
+      "subquestion": "a",
+      "source_pdf_pages": [
+        23
+      ],
+      "source_printed_pages": [
+        "22"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "[Source PDF page 22]\n(Option D continues on the following page)\n\n[Source PDF page 23]\n(Option D continued)\n17. The owner of the art shop would like to keep a record of their customers. The following\nshows part of the code for the class:\nCustomer\npublic class Customer {\nprivate String customerName;\nprivate String customerAddress;\nprivate int maximumBudget;\npublic Customer (String customerName, String customerAddress, int\nmaximumBudget()) {\nthis.customerName = customerName;\nthis.customerAddress = customerAddress;\nthis.maximumBudget = maximumBudget;\n}\npublic int getMaximumBudget(){\nreturn maximumBudget;\n}\n// additional accessor and mutator methods exist but are not shown\npublic String toString() {\nreturn \"Name: \" + customerName + \", Address: \" + customerAddress\n+ \", Maximum Budget: \" + maximumBudget;\n}\n} // end of class Customer\n(a) Outline one advantage of using library collections when developing a program. [2]",
+      "parent_context": "Customer(name,address,maximumBudget) linkedlist;sourceconstructorhasintmaximumBudget()syntaxerror. SourceFigure10 headMatthew→Jon→Angelica→Maria isnotalphabeticallyordered despite textcallingitordered.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-22.png",
+          "source_pdf_page": 22,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-23.png",
+          "source_pdf_page": 23,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-24.png",
+          "source_pdf_page": 24,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        }
+      ],
+      "assessed_concepts": [
+        "Outline: Outline one advantage of librarycollections."
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-043",
+        "filename": "Computer_science_paper_2_TZ3_HL_markscheme.pdf",
+        "pdf_pages": [
+          35
+        ],
+        "question_reference": "17(a)",
+        "marking_summary": "Built-inadd/remove/access reducesmanualarraycode andmaintenance.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Narrows legacycollection-library benefits to explicitPythonlistadd/remove/traversal scope.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Outline one advantage of librarycollections.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 23,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-023.txt"
+        }
+      ],
+      "source_context_page_evidence": [
+        {
+          "pdf_page": 22,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-22.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-022.txt"
+        },
+        {
+          "pdf_page": 23,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-23.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-023.txt"
+        },
+        {
+          "pdf_page": 24,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-24.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-024.txt"
+        }
+      ],
+      "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+      "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2_TZ3_HL.pdf",
+      "source_issues": []
+    },
+    {
+      "original_assessment_context": "Customer(name,address,maximumBudget) linkedlist;sourceconstructorhasintmaximumBudget()syntaxerror. SourceFigure10 headMatthew→Jon→Angelica→Maria isnotalphabeticallyordered despite textcallingitordered.",
+      "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+      "source_question_id": "H-SRC042-Q17-b",
+      "source_id": "SRC-042",
+      "source_filename": "Computer_science_paper_2_TZ3_HL.pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "D",
+      "question": "17",
+      "subquestion": "b",
+      "source_pdf_pages": [
+        24
+      ],
+      "source_printed_pages": [
+        "23"
+      ],
+      "original_marks": 5,
+      "command_term": "Construct",
+      "original_text": "[Source PDF page 23]\n(Option D continues on the following page)\n\n[Source PDF page 24]\n(Option D, question 17 continued)\nWhen a new customer buys a piece of artwork, they are added to a linked list.\nFigure 10 shows a section of the ordered linked list.\nFigure 10: A section of the linked list\nMatthew Jon Angelica Maria\nBerlin Hong Kong Stockholm Madrid\n45 000 50 000 25 000 39 000\n(b) Construct an algorithm to add new customers to the linked list ordered by\ncustomer name. Do not write program code. [5]",
+      "parent_context": "Customer(name,address,maximumBudget) linkedlist;sourceconstructorhasintmaximumBudget()syntaxerror. SourceFigure10 headMatthew→Jon→Angelica→Maria isnotalphabeticallyordered despite textcallingitordered.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "description": "Exact source linkedlist;displayordercontradiction preserved in metadata",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-24.png",
+          "source_pdf_page": 24,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-22.png",
+          "source_pdf_page": 22,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-23.png",
+          "source_pdf_page": 23,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        }
+      ],
+      "assessed_concepts": [
+        "Construct: Construct an algorithm addingcustomers alphabetically tolinkedlist;do notwritecode."
+      ],
+      "difficulty": "high",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-043",
+        "filename": "Computer_science_paper_2_TZ3_HL_markscheme.pdf",
+        "pdf_pages": [
+          35
+        ],
+        "question_reference": "17(b)",
+        "marking_summary": "Createnode,headtraversal,findinsertionpoint,relinknew/previous/head;sourceexamplewordingincorrect.",
+        "source_issues": [
+          "SRC-042 PDF pp23-24 describes an alphabetically ordered list but Figure 10 shows Matthew, Jon, Angelica, Maria, which is not alphabetical. The Customer constructor also contains an invalid int maximumBudget() parameter. The adapted list is explicitly assumed sorted and all programming uses valid Python."
+        ]
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B4.1.3",
+          "scope_evidence": "• The basic operations on a linked list, such as insertion, deletion, traversal, search",
+          "rationale": "Repairs sourcefigure’snot-actually-orderedlist byexplicitlyassuming sortedinput;preserves algorithmic insertionreasoning.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Construct an algorithm addingcustomers alphabetically tolinkedlist;do notwritecode.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 24,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-024.txt"
+        }
+      ],
+      "source_context_page_evidence": [
+        {
+          "pdf_page": 22,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-22.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-022.txt"
+        },
+        {
+          "pdf_page": 23,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-23.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-023.txt"
+        },
+        {
+          "pdf_page": 24,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-24.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-024.txt"
+        }
+      ],
+      "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+      "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2_TZ3_HL.pdf",
+      "source_issues": [
+        "SRC-042 PDF pp23-24 describes an alphabetically ordered list but Figure 10 shows Matthew, Jon, Angelica, Maria, which is not alphabetical. The Customer constructor also contains an invalid int maximumBudget() parameter. The adapted list is explicitly assumed sorted and all programming uses valid Python."
+      ]
+    },
+    {
+      "original_assessment_context": "Customer(name,address,maximumBudget) linkedlist;sourceconstructorhasintmaximumBudget()syntaxerror. SourceFigure10 headMatthew→Jon→Angelica→Maria isnotalphabeticallyordered despite textcallingitordered.",
+      "source_scope_note": "Original assessed concept classified directly or excluded with reason.",
+      "source_question_id": "H-SRC042-Q17-c-i",
+      "source_id": "SRC-042",
+      "source_filename": "Computer_science_paper_2_TZ3_HL.pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "D",
+      "question": "17",
+      "subquestion": "c-i",
+      "source_pdf_pages": [
+        24
+      ],
+      "source_printed_pages": [
+        "23"
+      ],
+      "original_marks": 2,
+      "command_term": "Define",
+      "original_text": "[Source PDF page 24]\n(c) (i) Define the term recursion. [2]",
+      "parent_context": "Customer(name,address,maximumBudget) linkedlist;sourceconstructorhasintmaximumBudget()syntaxerror. SourceFigure10 headMatthew→Jon→Angelica→Maria isnotalphabeticallyordered despite textcallingitordered.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-22.png",
+          "source_pdf_page": 22,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-23.png",
+          "source_pdf_page": 23,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-24.png",
+          "source_pdf_page": 24,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        }
+      ],
+      "assessed_concepts": [
+        "Define: Define recursion."
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-043",
+        "filename": "Computer_science_paper_2_TZ3_HL_markscheme.pdf",
+        "pdf_pages": [
+          36
+        ],
+        "question_reference": "17(c-i)",
+        "marking_summary": "Selfcall,progress,basecase.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "mapping_target": "original_and_adapted",
+          "syllabus_code": "B2.4.4",
+          "scope_evidence": "• The fundamentals of recursion and its advantages and limitations\n• The utility of recursion in solving problems that can be broken down into smaller, similar sub-problems\n• Recursive algorithms, including but not limited to quicksort\n• The limitations of recursion, including complexity and memory usage\n• Situations that best suit the use of recursion, including fractal image creation, traversing binary trees, sorting algorithms",
+          "rationale": "The assessed skill is explicitly named in the cited statement and its guidance; mapping does not credit unassessed scenario topics.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Define recursion.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 24,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-024.txt"
+        }
+      ],
+      "source_context_page_evidence": [
+        {
+          "pdf_page": 22,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-22.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-022.txt"
+        },
+        {
+          "pdf_page": 23,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-23.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-023.txt"
+        },
+        {
+          "pdf_page": 24,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-24.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-024.txt"
+        }
+      ],
+      "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+      "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2_TZ3_HL.pdf",
+      "source_issues": []
+    },
+    {
+      "original_assessment_context": "Customer(name,address,maximumBudget) linkedlist;sourceconstructorhasintmaximumBudget()syntaxerror. SourceFigure10 headMatthew→Jon→Angelica→Maria isnotalphabeticallyordered despite textcallingitordered.",
+      "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+      "source_question_id": "H-SRC042-Q17-c-ii",
+      "source_id": "SRC-042",
+      "source_filename": "Computer_science_paper_2_TZ3_HL.pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "D",
+      "question": "17",
+      "subquestion": "c-ii",
+      "source_pdf_pages": [
+        24
+      ],
+      "source_printed_pages": [
+        "23"
+      ],
+      "original_marks": 5,
+      "command_term": "Construct",
+      "original_text": "[Source PDF page 24]\nA new artwork has been added to the shop. It has a price of $40 000. A method exists\nwithin the linked list that returns the size of the linked list as an .\nint\n(ii) Construct a recursive method,\npublic int countRecursive(LinkedList\n, that returns the number of\n<Customer> customerList, int max, int n)\ncustomers who have a maximum budget greater than the price of this artwork. [5]",
+      "parent_context": "Customer(name,address,maximumBudget) linkedlist;sourceconstructorhasintmaximumBudget()syntaxerror. SourceFigure10 headMatthew→Jon→Angelica→Maria isnotalphabeticallyordered despite textcallingitordered.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-22.png",
+          "source_pdf_page": 22,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-23.png",
+          "source_pdf_page": 23,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-24.png",
+          "source_pdf_page": 24,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        }
+      ],
+      "assessed_concepts": [
+        "Construct: Construct recursive countRecursive(customerList,max,n) countingbudgets greaterthanartworkprice40000."
+      ],
+      "difficulty": "high",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-043",
+        "filename": "Computer_science_paper_2_TZ3_HL_markscheme.pdf",
+        "pdf_pages": [
+          36
+        ],
+        "question_reference": "17(c-ii)",
+        "marking_summary": "Base0,comparebudget,add1condition,n-1progress,return.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.4.5",
+          "scope_evidence": "• Simple, non-branching recursive algorithms in programming only",
+          "rationale": "Retains nonbranching recursive conditionalcount;node traversal avoids importing JavaLinkedList indexedaccess costs/API.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B4.1.3",
+          "scope_evidence": "• The basic operations on a linked list, such as insertion, deletion, traversal, search",
+          "rationale": "Retains nonbranching recursive conditionalcount;node traversal avoids importing JavaLinkedList indexedaccess costs/API.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Construct recursive countRecursive(customerList,max,n) countingbudgets greaterthanartworkprice40000.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 24,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-024.txt"
+        }
+      ],
+      "source_context_page_evidence": [
+        {
+          "pdf_page": 22,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-22.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-022.txt"
+        },
+        {
+          "pdf_page": 23,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-23.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-023.txt"
+        },
+        {
+          "pdf_page": 24,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-24.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-024.txt"
+        }
+      ],
+      "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+      "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2_TZ3_HL.pdf",
+      "source_issues": []
+    },
+    {
+      "original_assessment_context": "Customer(name,address,maximumBudget) linkedlist;sourceconstructorhasintmaximumBudget()syntaxerror. SourceFigure10 headMatthew→Jon→Angelica→Maria isnotalphabeticallyordered despite textcallingitordered.",
+      "source_scope_note": "Original assessed concept classified directly or excluded with reason.",
+      "source_question_id": "H-SRC042-Q17-c-iii",
+      "source_id": "SRC-042",
+      "source_filename": "Computer_science_paper_2_TZ3_HL.pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "D",
+      "question": "17",
+      "subquestion": "c-iii",
+      "source_pdf_pages": [
+        24
+      ],
+      "source_printed_pages": [
+        "23"
+      ],
+      "original_marks": 4,
+      "command_term": "Outline",
+      "original_text": "[Source PDF page 24]\n(iii) Outline two reasons why a recursive algorithm is not the most appropriate\nalgorithm for counting the number of customers that have a maximum budget\ngreater than the price of this artwork. [4]",
+      "parent_context": "Customer(name,address,maximumBudget) linkedlist;sourceconstructorhasintmaximumBudget()syntaxerror. SourceFigure10 headMatthew→Jon→Angelica→Maria isnotalphabeticallyordered despite textcallingitordered.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-22.png",
+          "source_pdf_page": 22,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-23.png",
+          "source_pdf_page": 23,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-24.png",
+          "source_pdf_page": 24,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        }
+      ],
+      "assessed_concepts": [
+        "Outline: Outline two reasons recursion isnotmostappropriateforbudgetcount."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-043",
+        "filename": "Computer_science_paper_2_TZ3_HL_markscheme.pdf",
+        "pdf_pages": [
+          36
+        ],
+        "question_reference": "17(c-iii)",
+        "marking_summary": "Callstackmemory/depthrisk,calloverhead/complexity;twoexpandedreasons.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "mapping_target": "original_and_adapted",
+          "syllabus_code": "B2.4.4",
+          "scope_evidence": "• The fundamentals of recursion and its advantages and limitations\n• The utility of recursion in solving problems that can be broken down into smaller, similar sub-problems\n• Recursive algorithms, including but not limited to quicksort\n• The limitations of recursion, including complexity and memory usage\n• Situations that best suit the use of recursion, including fractal image creation, traversing binary trees, sorting algorithms",
+          "rationale": "The assessed skill is explicitly named in the cited statement and its guidance; mapping does not credit unassessed scenario topics.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Outline two reasons recursion isnotmostappropriateforbudgetcount.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 24,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-024.txt"
+        }
+      ],
+      "source_context_page_evidence": [
+        {
+          "pdf_page": 22,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-22.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-022.txt"
+        },
+        {
+          "pdf_page": 23,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-23.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-023.txt"
+        },
+        {
+          "pdf_page": 24,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-24.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-024.txt"
+        }
+      ],
+      "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+      "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2_TZ3_HL.pdf",
+      "source_issues": []
+    },
+    {
+      "original_assessment_context": "Customer(name,address,maximumBudget) linkedlist;sourceconstructorhasintmaximumBudget()syntaxerror. SourceFigure10 headMatthew→Jon→Angelica→Maria isnotalphabeticallyordered despite textcallingitordered.",
+      "source_scope_note": "Original assessed concept classified directly or excluded with reason.",
+      "source_question_id": "H-SRC042-Q17-d",
+      "source_id": "SRC-042",
+      "source_filename": "Computer_science_paper_2_TZ3_HL.pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "D",
+      "question": "17",
+      "subquestion": "d",
+      "source_pdf_pages": [
+        24
+      ],
+      "source_printed_pages": [
+        "23"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "[Source PDF page 24]\nThe programmer has made use of naming conventions throughout the code.\n(d) Outline one advantage of using naming conventions. [2]",
+      "parent_context": "Customer(name,address,maximumBudget) linkedlist;sourceconstructorhasintmaximumBudget()syntaxerror. SourceFigure10 headMatthew→Jon→Angelica→Maria isnotalphabeticallyordered despite textcallingitordered.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-22.png",
+          "source_pdf_page": 22,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-23.png",
+          "source_pdf_page": 23,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-24.png",
+          "source_pdf_page": 24,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        }
+      ],
+      "assessed_concepts": [
+        "Outline: Outline one advantage of namingconventions."
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-043",
+        "filename": "Computer_science_paper_2_TZ3_HL_markscheme.pdf",
+        "pdf_pages": [
+          37
+        ],
+        "question_reference": "17(d)",
+        "marking_summary": "Readability/maintainability/collaboration.",
+        "source_issues": []
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Specific naming-convention benefits are not an individual2027requirement;not credited as functionmodularization merelybecause code ismentioned.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Outline one advantage of namingconventions.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 24,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-024.txt"
+        }
+      ],
+      "source_context_page_evidence": [
+        {
+          "pdf_page": 22,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-22.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-022.txt"
+        },
+        {
+          "pdf_page": 23,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-23.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-023.txt"
+        },
+        {
+          "pdf_page": 24,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-24.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-024.txt"
+        }
+      ],
+      "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+      "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2_TZ3_HL.pdf",
+      "source_issues": []
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC042-Q17-a",
+      "source_question_ids": [
+        "H-SRC042-Q17-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline one benefit of using Python’s dynamic list operations rather than manually shifting a fixed array whenever an item is removed.",
+      "syllabus_codes": [
+        "B2.2.2"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "low",
+      "adaptation_rationale": "Narrows legacy collection-library benefits to explicitPythonlistadd/remove/traversal scope.",
+      "solution": "The list provides an existing removal operation.; The program need not duplicate its element-shifting/bookkeeping implementation, which simplifies the client code.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "The list provides an existing removal operation."
+        },
+        {
+          "marks": 1,
+          "criterion": "The program need not duplicate its element-shifting/bookkeeping implementation, which simplifies the client code."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "No executable code required; manual technical check."
+      },
+      "code": "",
+      "test_code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC042-Q17-b",
+      "source_question_ids": [
+        "H-SRC042-Q17-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Describe, without code, how to insert a new uniquely named client into an alphabetically ordered singly linked list. Include empty-list and head-insertion cases; preserve existing order.",
+      "syllabus_codes": [
+        "B4.1.3"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 5,
+      "command_term": "Describe",
+      "difficulty": "high",
+      "adaptation_rationale": "Repairs source figure’snot-actually-ordered list by explicitly assuming sorted input; preserves algorithmic insertion reasoning.",
+      "solution": "Create the new node containing the client record.; Start current at head with previous unset.; Move through smaller names, keeping previous, until the first larger name or end.; Set new.next to current.; If previous exists, set previous.next to new; otherwise update head to new, also handling an empty list.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Create the new node containing the client record."
+        },
+        {
+          "marks": 1,
+          "criterion": "Start current at head with previous unset."
+        },
+        {
+          "marks": 1,
+          "criterion": "Move through smaller names, keeping previous, until the first larger name or end."
+        },
+        {
+          "marks": 1,
+          "criterion": "Set new.next to current."
+        },
+        {
+          "marks": 1,
+          "criterion": "If previous exists, set previous.next to new; otherwise update head to new, also handling an empty list."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "No executable code required; manual technical check."
+      },
+      "code": "",
+      "test_code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC042-Q17-c-i",
+      "source_question_ids": [
+        "H-SRC042-Q17-c-i"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Define recursion in programming.",
+      "syllabus_codes": [
+        "B2.4.4"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 2,
+      "command_term": "Define",
+      "difficulty": "low",
+      "adaptation_rationale": "Original application rewritten to be self-contained; assessed reasoning retained within cited 2027 scope.",
+      "solution": "A function/method solves a task by calling itself on a related smaller/simpler subproblem.; A base case stops further recursive calls.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "A function/method solves a task by calling itself on a related smaller/simpler subproblem."
+        },
+        {
+          "marks": 1,
+          "criterion": "A base case stops further recursive calls."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "No executable code required; manual technical check."
+      },
+      "code": "",
+      "test_code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC042-Q17-c-ii",
+      "source_question_ids": [
+        "H-SRC042-Q17-c-ii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct count_above(node, limit) in Python for a singly linked list. node is the current node or None; each node has next and customer.budget. Return the number of customers whose budget is strictly greater than limit. Use simple nonbranching recursion.",
+      "syllabus_codes": [
+        "B2.4.5",
+        "B4.1.3"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 5,
+      "command_term": "Construct",
+      "difficulty": "high",
+      "adaptation_rationale": "Retains nonbranching recursive conditional count; node traversal avoids importing JavaLinkedList indexed access costs/API.",
+      "solution": "def count_above(node,limit):\n    if node is None:\n        return 0\n    rest=count_above(node.next,limit)\n    if node.customer.budget > limit:\n        return rest+1\n    return rest",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Returns 0 when node is None."
+        },
+        {
+          "marks": 1,
+          "criterion": "Makes one recursive call progressing to node.next."
+        },
+        {
+          "marks": 1,
+          "criterion": "Compares the current budget with limit using strict greater-than."
+        },
+        {
+          "marks": 1,
+          "criterion": "Adds 1 to the recursive result exactly when the budget qualifies."
+        },
+        {
+          "marks": 1,
+          "criterion": "Returns the unchanged recursive result otherwise."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "Executable checks saved under checks/ where applicable."
+      },
+      "code": "def count_above(node,limit):\n    if node is None:\n        return 0\n    rest=count_above(node.next,limit)\n    if node.customer.budget > limit:\n        return rest+1\n    return rest",
+      "test_code": "from types import SimpleNamespace\nhead=None\nfor budget in [5000,3000,4000]:head=SimpleNamespace(customer=SimpleNamespace(budget=budget),next=head)\nassert count_above(head,3000)==2\nassert count_above(head,5000)==0\nassert count_above(None,3000)==0",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC042-Q17-c-iii",
+      "source_question_ids": [
+        "H-SRC042-Q17-c-iii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline two reasons an iterative traversal may be preferable to recursion for counting qualifying records in a long linked list.",
+      "syllabus_codes": [
+        "B2.4.4"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 4,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Original application rewritten to be self-contained; assessed reasoning retained within cited 2027 scope.",
+      "solution": "Recursive calls retain a frame for each active call.; A very long list can therefore consume large stack space or hit a recursion limit.; Each recursive call adds call/return overhead.; A simple loop with a counter can perform this traversal without that extra overhead.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Recursive calls retain a frame for each active call."
+        },
+        {
+          "marks": 1,
+          "criterion": "A very long list can therefore consume large stack space or hit a recursion limit."
+        },
+        {
+          "marks": 1,
+          "criterion": "Each recursive call adds call/return overhead."
+        },
+        {
+          "marks": 1,
+          "criterion": "A simple loop with a counter can perform this traversal without that extra overhead."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "No executable code required; manual technical check."
+      },
+      "code": "",
+      "test_code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    }
+  ]
+}

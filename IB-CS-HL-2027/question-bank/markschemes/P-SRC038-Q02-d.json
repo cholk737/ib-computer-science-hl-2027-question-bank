@@ -1,0 +1,38 @@
+{
+  "question_id": "P-SRC038-Q02-d",
+  "unofficial": true,
+  "marks": 4,
+  "solution": "One solution:\nSELECT r.DeviceID FROM Reading r JOIN Technician t ON r.TechID=t.TechID WHERE t.Name='R. Kim' AND r.RecordedAt >= '2027-05-12 00:00' AND r.RecordedAt < '2027-05-13 00:00';",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Selects DeviceID."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct two-table join on TechID."
+    },
+    {
+      "marks": 1,
+      "criterion": "Filters technician name."
+    },
+    {
+      "marks": 1,
+      "criterion": "Includes the whole specified day and excludes other days."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "SQLite test includes start, last minute and next-day exclusion.",
+    "source_comparison": [
+      7
+    ],
+    "test_code": "import sqlite3\nc=sqlite3.connect(':memory:');c.executescript(\"CREATE TABLE Reading(DeviceID,TechID,RecordedAt);CREATE TABLE Technician(TechID,Name);INSERT INTO Technician VALUES(1,'R. Kim'),(2,'J. Hall');INSERT INTO Reading VALUES('a',1,'2027-05-12 00:00'),('b',1,'2027-05-12 23:59'),('c',1,'2027-05-13 00:00'),('d',2,'2027-05-12 11:00');\")\nassert c.execute(\"SELECT r.DeviceID FROM Reading r JOIN Technician t ON r.TechID=t.TechID WHERE t.Name='R. Kim' AND r.RecordedAt >= '2027-05-12 00:00' AND r.RecordedAt < '2027-05-13 00:00'\").fetchall()==[('a',),('b',)]",
+    "result_file": ""
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

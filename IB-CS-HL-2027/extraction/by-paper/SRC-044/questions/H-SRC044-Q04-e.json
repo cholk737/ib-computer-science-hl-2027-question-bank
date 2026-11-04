@@ -1,0 +1,92 @@
+{
+  "source_question_id": "H-SRC044-Q04-e",
+  "source_id": "SRC-044",
+  "source_filename": "Computer_science_paper_2_TZ3_SL (1).pdf",
+  "year": "2025",
+  "session": "May",
+  "source_level": "SL",
+  "paper": "2",
+  "zone": "TZ3 (filename; numerical cover code)",
+  "option": "B",
+  "question": 4,
+  "subquestion": "e",
+  "source_pdf_pages": [
+    7
+  ],
+  "source_printed_pages": [
+    "6"
+  ],
+  "original_marks": 5,
+  "command_term": "Describe",
+  "original_text": "Describe the steps that should be used to store the data collected for one day (24 hours) in suitable parallel one-dimensional (1D) arrays. The time the data was collected must be easy to identify. Do not write a pseudocode algorithm.",
+  "parent_context": "– 6 – 2225 – 6423\nOption B — Modelling and simulation\n4. Global warming can be measured over time using mean temperatures. Figure 3 shows the \nmean daily maximum temperatures from 1970 to 2020 for Nauru, an island in the Pacific Ocean.\nFigure 3: Mean daily maximum temperatures for Nauru, 1970–2020\n1970 1975 1980 1985 1990 1995 2000 2005 2010 2015 2020\n27\n28\n29\n30\nTemperature (°C)\nYear\n(a) State two variables that are necessary for the mean daily maximum temperature to \nbe calculated. [1]\n(b) Identify the steps that would be used to create the diagram exactly as shown in \nFigure 3 using the data in a spreadsheet. [3]\n(c) Identify two reasons why the mean daily maximum temperature data is presented in \ngraphical form. [2]\nAn automated system is used to collect the temperature data for Nauru once an hour for  \none year.\n(d) Outline one reason why the temperature data is collected once an hour rather than \nat shorter intervals, such as once a minute. [2]\n(e) Describe the steps that should be used to store the data collected for one day \n(24 hours) in suitable parallel one-dimensional (1D) arrays.\nThe time the data was collected must be easy to identify. Do not write a \npseudocode algorithm. [5]\n(Option B continues on the following page)\n– 7 – 2225 – 6423\nTurn over\n(Option B, question 4 continued)\nThe temperature data is downloaded every day and collated into a master file.\nThe data from the master file is loaded into a suitable array for that 24-hour period. \nThe following statistics are calculated:\n\ty Maximum temperature\n\ty Minimum temperature\n\ty Mean temperature\nAs Nauru is very close to the equator, the length of the day changes very little throughout \nthe year. For the purposes of part (f), the lengths of its day and night are:\n\ty Day: 07:00 to 18:59 inclusive (12 hours)\n\ty Night: 19:00 to 06:59 inclusive (12 hours)\n(f) Construct a pseudocode algorithm to calculate the:\n\ty maximum temperature\n\ty minimum temperature\n\ty mean temperature\n\ty mean night-time temperature.\nAssume the arrays for the time of day of the reading and hourly temperature readings \nhave already been set up and populated as parallel 1D arrays. [8]\n(Option B continues on the following page)",
+  "assets": [
+    {
+      "kind": "source_page_evidence",
+      "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-07.png",
+      "source_pdf_page": 7,
+      "visually_verified": true
+    },
+    {
+      "kind": "source_page_evidence",
+      "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-08.png",
+      "source_pdf_page": 8,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Describe the steps that should be used to store the data collected for one day (24 hours) in suitable parallel one-dimensional (1D) arrays. The time the data was collected must be easy to identify. Do not write a pseudocode algorithm.",
+    "Without writing code, describe a procedure to store24 hourly readings in parallel lists hours and readings so that each time is clearly associated with its measurement"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-046",
+    "filename": "Computer_science_paper_2_TZ3_SL_markscheme.pdf",
+    "pdf_pages": [
+      11
+    ],
+    "question_reference": "Q4 e",
+    "marking_summary": "Exact original MS leaf excerpt: Award [5 max] Create two (parallel) arrays of size 24 (TIME and TEMP); Initialise the time array (with 00:00, 01:00 to 23:00 for the full 24-hour clock); Use a loop counter (N); Loop 24 times; Show TIME(N); Input TEMP(N);",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [5 max]\nCreate two (parallel) arrays of size 24 (TIME and TEMP);\nInitialise the time array (with 00:00, 01:00 to 23:00 for the full 24-hour clock);\nUse a loop counter (N);\nLoop 24 times;\nShow TIME(N);\nInput TEMP(N);",
+    "source_issues": [],
+    "source_marking_evidence": "– 11 – 2225 – 6423M \nOption B – Modelling and simulation \n4. (a) Award [1 max] \nTemperatureReading; \nDailyMaximumTemperature; \nTotalTemperature; \nAccept variables where the meaning is similar to the above. \nNote: Only one answer is required to achieve the one mark. \n(b) Award [3 max]\nIdentifying data for mean daily maximum temperatures and years / selecting the cells for temperature\nand year data;\nSelecting a line graph;\nIncluding the correct chart heading;\nLabelling both axes as ‘Temperature (°C)’ and ‘Year’;\n(c) Award [2 max]\nDisplays the data visually to allow trendlines to be identified;\nThis trend displays an increase in mean daily temperatures over time;\nData can be compared with other similar charts (for different regions or time frames);\nComplicated data is easier to understand if displayed visually;\nAccept other meaningful answers.\n(d) Award [2 max]\n24 Recordings over a day rather than 1440;\nThat will require less processing / less storage;\nThe minor changes per minute; \nShould not affect the study; \n(e) Award [5 max]\nCreate two (parallel) arrays of size 24 (TIME and TEMP);\nInitialise the time array (with 00:00, 01:00 to 23:00 for the full 24-hour clock);\nUse a loop counter (N);\nLoop 24 times;\nShow TIME(N);\nInput TEMP(N);"
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B2.2.2",
+      "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+      "rationale": "Adapted target only: Without writing code, describe a procedure to store24 hourly readings in parallel lists hours and readings so that each time is clearly associated with its measurement; guidance target: Construct programs that apply arrays and Lists. Adaptation: Retains no-code parallel-list procedure and algorithmic design; no spreadsheet implementation required.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B1.1.2",
+      "scope_evidence": "• Abstraction, algorithmic design, decomposition, pattern recognition",
+      "rationale": "Adapted target only: Without writing code, describe a procedure to store24 hourly readings in parallel lists hours and readings so that each time is clearly associated with its measurement; guidance target: Describe the fundamental concepts of computational thinking. Adaptation: Retains no-code parallel-list procedure and algorithmic design; no spreadsheet implementation required.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC044-Q04-e"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

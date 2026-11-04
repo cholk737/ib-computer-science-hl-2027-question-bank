@@ -1,0 +1,76 @@
+{
+  "source_question_id": "H-SRC038-Q08-b",
+  "source_id": "SRC-038",
+  "source_filename": "Computer_science_paper_2_HL.pdf",
+  "year": "2025",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "not stated",
+  "option": "B",
+  "question": 8,
+  "subquestion": "b",
+  "source_pdf_pages": [
+    16
+  ],
+  "source_printed_pages": [
+    "15"
+  ],
+  "original_marks": 2,
+  "command_term": "Sketch",
+  "original_text": "Sketch a simple block diagram, with labels, of a neural network.",
+  "parent_context": "– 15 – 8825 – 6405\nTurn over\n(Option B continued)\n8. A genetic algorithm will be used to develop a self-driving car’s antenna to communicate with \ntraffic lights and other vehicles.\n(a) Describe the steps a genetic algorithm would use to develop an antenna for a self-\ndriving car. [3]\nSome aspects of self-driving cars are designed using neural networks.\n(b) Sketch a simple block diagram, with labels, of a neural network. [2]\nSelf-driving cars use computer vision to identify objects.\n(c) Outline two differences in the way supervised and unsupervised learning are used to \nidentify objects. [4]\nSelf-driving cars communicate to their passengers using natural language processing and \nvoice recognition.\nFor example, a passenger could say, “Take me home via the scenic route,” and the natural \nlanguage processing should correctly interpret this instruction.\n(d) (i)   Identify a noun in this instruction. [1]\n(ii) Explain the semantics of this instruction. [4]\nThe passenger could also use natural language to check the grammar of messages sent \nfrom the self-driving car. The model would suggest and include missing words.\nFor example, “I late. Don’t wait me,” might be interpreted as, “I am late. Don’t wait for me.”\n(e) Compare voice recognition with natural language grammar checking using neural \nnetwork modelling. [6]\nEnd of Option B",
+  "assets": [
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-16.png",
+      "source_pdf_page": 16,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Sketch a simple block diagram, with labels, of a neural network.",
+    "Sketch a labelled multi-layer perceptron with two input nodes, one hidden layer of three nodes and one output node"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-039",
+    "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+    "pdf_pages": [
+      24
+    ],
+    "question_reference": "Q8 b",
+    "marking_summary": "Exact original MS leaf excerpt: Award [2] max Award [1] for min. 2 inputs / 3 hidden / 2 output nodes Award [1] for uni-directional arrows",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [2] max\nAward [1] for min. 2 inputs / 3 hidden / 2 output nodes\nAward [1] for uni-directional arrows",
+    "source_issues": [],
+    "source_marking_evidence": "– 24 – 8825 – 6405M \n8. (a) Award [3] max\nCreate the initial population of antenna designs; \nEvaluate fitness of each design/test each design against the goal; \nApply Selection/Crossover/mutation; \nIterate against a stopping condition/approaching convergence. \nNote: Accept: Establish the goal for the antenna design (e.g. maximising signal range, \nminimising interference, optimising bandwidth); \n(b) Award [2] max\nAward [1] for min. 2 inputs / 3 hidden / 2 output nodes\nAward [1] for uni-directional arrows\n(c) Award [4] max\nAward [1]\n for each point\nTraining\nSupervised learning (SL) trains on a labelled dataset;\nUnsupervised learning (UL) trains without labelled outputs;\nApproach\nSL datasets learns to classify objects from the labels;\nUL clusters similar objects together/detects anomalies in visual data;\nEnvironment\nSL works well when objects are well known and defined in advance;\nUL are advantageous in scenarios where the types of objects or patterns to be identified\nare not pre-defined;\nMark [2] + [2]\n[Source: Glosser.ca. https://commons.wikimedia.org/wiki/File:Colored_neural_network.svg. \nLicensed under CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/deed.en. Source adapted.]"
+  },
+  "relevance_status": "A",
+  "mappings": [
+    {
+      "syllabus_code": "A4.3.8",
+      "scope_evidence": "• An artificial neural network (ANN) to simulate interconnected nodes or “neurons” to process and learn from input data, enabling tasks such as classification, regression and pattern recognition\n• Sketch of a single perceptron, highlighting its input, weights, bias, activation function and output\n• Sketch of a multi-layer perceptron (MLP) encompassing the input layer, one or more hidden layers and the output layer.",
+      "rationale": "Original and adapted within-scope skill: Sketch a labelled multi-layer perceptron with two input nodes, one hidden layer of three nodes and one output node; guidance target: Outline the structure and function of ANNs and how multi-layer networks are used to model complex patterns in data sets.",
+      "theme": "A",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC038-Q08-b"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

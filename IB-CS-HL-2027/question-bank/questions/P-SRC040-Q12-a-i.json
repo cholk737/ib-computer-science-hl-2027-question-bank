@@ -1,0 +1,19 @@
+{
+  "question_id": "P-SRC040-Q12-a-i",
+  "source_question_ids": [
+    "H-SRC040-Q12-a-i"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Identify three corrections needed in this Python code to count civil and company staff. staff is a list of objects with role.\n\nx = 0\ncount_a = 0\nwhile x > len(staff):\n    if staff[x].role == \"civil\":\n        count_a += 1\n    elif staff[x].role == \"company\":\n        count_b += 1\nprint(count_a, count_b)",
+  "syllabus_codes": [
+    "B2.1.4"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 3,
+  "command_term": "Identify",
+  "difficulty": "medium",
+  "adaptation_rationale": "Retain debugging using Python and finite manual trace; tests exercise corrected code. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "assets": []
+}

@@ -2,23 +2,23 @@
   "question_id": "P-SRC009-Q07",
   "unofficial": true,
   "marks": 4,
-  "solution": "gcd_step(30,18) → gcd_step(18,12) → gcd_step(12,6) → gcd_step(6,0) →6.",
+  "solution": "gcd_step(30, 18) → gcd_step(18, 12) → gcd_step(12, 6) → gcd_step(6, 0) →6.",
   "marking_points": [
     {
       "marks": 1,
-      "criterion": "(18,12)."
+      "criterion": "(18, 12)."
     },
     {
       "marks": 1,
-      "criterion": "(12,6)."
+      "criterion": "(12, 6)."
     },
     {
       "marks": 1,
-      "criterion": "(6,0) base call."
+      "criterion": "(6, 0) base call."
     },
     {
       "marks": 1,
-      "criterion": "Final6 returned through calls."
+      "criterion": "Final 6 returned through calls."
     }
   ],
   "acceptable_alternatives": [],
@@ -33,5 +33,6 @@
     "result_file": ""
   },
   "code": "def gcd_step(a, b):\n    if b == 0:\n        return a\n    return gcd_step(b, a % b)",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

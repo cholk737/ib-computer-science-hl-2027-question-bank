@@ -1,0 +1,60 @@
+{
+  "question_id": "P-SRC032-Q05-c",
+  "source_question_ids": [
+    "H-SRC032-Q05-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct monthly_bill(units, days) in Python. Usage costs 0.24 per unit and the standing charge is 0.65 per day. Tax is 8% of the combined charge. days is positive. Return the taxed bill and mean daily units.",
+  "syllabus_codes": [
+    "B2.3.1",
+    "B2.3.4"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 5,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "One solution:\ndef monthly_bill(units, days):\n    pre_tax = units * 0.24 + days * 0.65\n    return pre_tax * 1.08, units / days",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Receives both units and days."
+    },
+    {
+      "marks": 1,
+      "criterion": "Computes usage and standing charges."
+    },
+    {
+      "marks": 1,
+      "criterion": "Applies tax to combined charge."
+    },
+    {
+      "marks": 1,
+      "criterion": "Computes units/days."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns both required results."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed100units/10days; charge30.5 beforetax and32.94 aftertax.",
+    "source_comparison": [
+      10
+    ],
+    "test_code": "def monthly_bill(units, days):\n    pre_tax = units * 0.24 + days * 0.65\n    return pre_tax * 1.08, units / days\nb,u=monthly_bill(100,10)\nassert abs(b-32.94)<1e-9 and u==10",
+    "result_file": ""
+  },
+  "code": "def monthly_bill(units, days):\n    pre_tax = units * 0.24 + days * 0.65\n    return pre_tax * 1.08, units / days",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC032-Q05-c.json",
+  "question_path": "question-bank/questions/P-SRC032-Q05-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC032-Q05-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

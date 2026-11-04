@@ -1,0 +1,64 @@
+{
+  "question_id": "P-SRC032-Q16-e",
+  "source_question_ids": [
+    "H-SRC032-Q16-e"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct find_owner(contacts, name, low, high) in Python. contacts is a list of Owner objects sorted ascending by unique name. Search the inclusive index interval recursively, returning the matching object or None. Each recursive activation must make at most one further recursive call.",
+  "syllabus_codes": [
+    "B2.4.2",
+    "B2.4.5"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 6,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Replaces indexed JavaLinkedList with Pythonlist; retainsbinarysearch/recursive reasoning withoutclaimingLinkedList random-access efficiency.",
+  "solution": "One solution:\ndef find_owner(contacts, name, low, high):\n    if low > high:\n        return None\n    middle = (low + high) // 2\n    owner = contacts[middle]\n    if owner.name == name:\n        return owner\n    if name < owner.name:\n        return find_owner(contacts, name, low, middle - 1)\n    return find_owner(contacts, name, middle + 1, high)",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Absent interval base case returns None."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct middle index and access."
+    },
+    {
+      "marks": 1,
+      "criterion": "Equality returns correct object."
+    },
+    {
+      "marks": 1,
+      "criterion": "Chooses correct half."
+    },
+    {
+      "marks": 1,
+      "criterion": "Left recursive boundary excludes middle."
+    },
+    {
+      "marks": 1,
+      "criterion": "Right recursive boundary excludes middle and returns call result."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed allhits,absent gap andemptyinterval; one recursive call perpath.",
+    "source_comparison": [
+      34
+    ],
+    "test_code": "def find_owner(contacts, name, low, high):\n    if low > high:\n        return None\n    middle = (low + high) // 2\n    owner = contacts[middle]\n    if owner.name == name:\n        return owner\n    if name < owner.name:\n        return find_owner(contacts, name, low, middle - 1)\n    return find_owner(contacts, name, middle + 1, high)\nfrom types import SimpleNamespace as N\ne=[N(name=x) for x in [\"Ari\",\"Bea\",\"Cai\",\"Dee\"]]\nfor i in range(4):assert find_owner(e,e[i].name,0,3) is e[i]\nassert find_owner(e,\"Ada\",0,3) is None\nassert find_owner([],\"Ari\",0,-1) is None",
+    "result_file": ""
+  },
+  "code": "def find_owner(contacts, name, low, high):\n    if low > high:\n        return None\n    middle = (low + high) // 2\n    owner = contacts[middle]\n    if owner.name == name:\n        return owner\n    if name < owner.name:\n        return find_owner(contacts, name, low, middle - 1)\n    return find_owner(contacts, name, middle + 1, high)",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC032-Q16-e.json",
+  "question_path": "question-bank/questions/P-SRC032-Q16-e.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC032-Q16-e.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

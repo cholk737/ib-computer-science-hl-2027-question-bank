@@ -1,0 +1,47 @@
+{
+  "question_id": "P-SRC034-Q05-d-i",
+  "source_question_ids": [
+    "H-SRC034-Q05-d-i"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct times_chosen(choices, target) in Python to count target occurrences in a list. Use a loop and comparison rather than list.count.",
+  "syllabus_codes": [
+    "B2.3.2",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 2,
+  "command_term": "Construct",
+  "difficulty": "low",
+  "adaptation_rationale": "Retains conditional counting; new Python loop rather than spreadsheet function.",
+  "solution": "def times_chosen(choices,target):\n    count=0\n    for value in choices:\n        if value == target:\n            count+=1\n    return count",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Traverses choices, testing equality with target."
+    },
+    {
+      "marks": 1,
+      "criterion": "Counts matches from zero and returns the completed count."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "Executable checks saved under checks/ where applicable."
+  },
+  "code": "def times_chosen(choices,target):\n    count=0\n    for value in choices:\n        if value == target:\n            count+=1\n    return count",
+  "test_code": "assert times_chosen([2,3,3,3,2,1],3)==3\nassert times_chosen([],3)==0",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC034-Q05-d-i.json",
+  "question_path": "question-bank/questions/P-SRC034-Q05-d-i.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC034-Q05-d-i.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

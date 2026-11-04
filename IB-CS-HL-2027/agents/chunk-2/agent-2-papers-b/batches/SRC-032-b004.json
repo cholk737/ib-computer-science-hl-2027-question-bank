@@ -53,7 +53,9 @@
           10
         ],
         "question_reference": "Q5 e",
-        "marking_summary": "Excluded topic; original criteria retained in referenced MS source.",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max] Spreadsheets; Code; // accept for [1] any form of code, eg. linear search",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]\nSpreadsheets;\nCode;\n// accept for [1] any form of code, eg. linear search",
         "source_issues": [],
         "source_marking_evidence": "– 10 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \nOption B – Modelling and simulation \n5. (a) Award [1 max]  \nA computer program designed to simulate a real-life scenario / what might or what did \nhappen in a situation; \n(b) Award [3 max]\nUnits – Integer (allow number or real, etc);\nMONTH – String / text / alphanumeric\nUnitCost – Real;\nDailyCharge – Real;\nTax – Real;\nAward [1 max] for 3 variables without datatype\nAllow other suitable responses.\n(c) Award [5 max]\nInputs – units used and days in month;\n// do not allow a reference to a 2D array for the first marking point\nCalculation of bill;\nCalculation of units used per day;\nCalculation of tax;\n// allow references to a 2D array for calculations\nOutputs – bill and units used per day;\nAppropriate messages in inputs and outputs;\nExample algorithm\nUNITCOST = 0.2\nDAILYCHARGE = 0.75\nTAX = 0.1\ninput \"units used this month? \", UNITMONTH\ninput \"Days in month? \", DAYSINMONTH\nBILL = (UNITCOST * UNITMONTH + DAILYCHARGE * DAYSINMONTH)\nTOTALBILL = BILL + BILL * TAX\nUNITDAY = UNITMONTH / DAYSINMONTH\noutput \"The bill for this month is \", TOTALBILL\noutput \"The number of units used per day were \", UNITDAY\n(d) Award [2 max]\nThe model only shows how much power has been used in a month/per day;\nInsufficient information on where money/electricity could be saved;\n(e) Award [2 max]\nSpreadsheets;\nCode;\n// accept for [1] any form of code, eg. linear search"
       },
@@ -64,7 +66,7 @@
       "verification": {
         "source_text": "Read complete source page and matched leaf/mark to original PDF.",
         "markscheme": "Read cited MS page(s).",
-        "visual": "No visual required by this leaf.",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
         "technical": "Independently reasoned and compared with available source marking points."
       },
       "adaptation_reuse_question_id": "",
@@ -122,7 +124,9 @@
           12
         ],
         "question_reference": "Q5 f",
-        "marking_summary": "One solution:\ndef extreme_months(months, usage):\n    low = high = 0\n    for i in range(1, len(usage)):\n        if usage[i] < usage[low]: low = i\n        if usage[i] > usage[high]: high = i\n    return months[low], months[high]",
+        "marking_summary": "Exact original MS leaf excerpt: Award [8 max] Award [1] for initialization of MIN/MAX or arrays MONTHS/USAGE Award [1] for declaring HIGHMONTH/LOWMONTH or TEMP/TEMPMONTH Award [1] for appropriate loop / double loop Award [1] for use of parallel arrays // Do not accept a 2D array Award [1] for finding and recording data for highest month / sorting the usage; Award [1] for finding and recording data for lowest month / sorting the month; Award [1] for Outputting *month* for highest usage; Award [1] for outputting *month* for lowest usage; // allow for finding months with highest and lowest bill Example algorithm MAX = 0 MIN = 9999999 (or similar) COUNTER = 0 HIGHMONTH = \"\" LOWMONTH = \"\" loop while COUNTER < 12 input \"units used this month? \", ELECMONTH[COUNTER] input \"name of month? \", MONTH[COUNTER] if ELECMONTH[COUNTER] > MAX then MAX = ELECMONTH[COUNTER] HIGHMONTH = MONTH[COUNTER] end if if ELECMONTH[COUNTER] < MIN the … [full leaf evidence retained]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [8 max]\nAward [1] for initialization of MIN/MAX  or  arrays MONTHS/USAGE\nAward [1] for declaring HIGHMONTH/LOWMONTH  or  TEMP/TEMPMONTH\nAward [1] for appropriate loop / double loop\nAward [1] for use of parallel arrays                       // Do not accept a 2D array\nAward [1] for finding and recording data for highest month / sorting the usage;\nAward [1] for finding and recording data for lowest month / sorting the month;\nAward [1] for Outputting *month* for highest usage;\nAward [1] for outputting *month* for lowest usage;\n// allow for finding months with highest and lowest bill\nExample algorithm\nMAX = 0\nMIN = 9999999    (or similar)\nCOUNTER = 0\nHIGHMONTH = \"\"\nLOWMONTH = \"\"\nloop while COUNTER < 12\n input \"units used this month? \", ELECMONTH[COUNTER] \n input \"name of month? \", MONTH[COUNTER] \n if ELECMONTH[COUNTER] > MAX then \n MAX = ELECMONTH[COUNTER] \n HIGHMONTH = MONTH[COUNTER] \n end if \n if ELECMONTH[COUNTER] < MIN then \n MIN = ELECMONTH[COUNTER] \n LOWMONTH = MONTH[COUNTER] \n end if \n  COUNTER = COUNTER + 1 \nend loop \noutput \"The highest usage was in \", HIGHMONTH \noutput \"The lowest usage was in \", LOWMONTH\n\nAlternative solution which sorts the data in two parallel arrays and outputs the lowest and the \nhighest that way. \nMONTHS = [\"Jan\", … , \"Dec\"] \nUSAGE = [5800, … , 6280] \nTEMP = 0 \nTEMPMONTH = \"\" \nI = 0 \nloop while I < 11 // allow I < 12 \n J = 0 \n loop while J < 11 \n if USAGE[J]>USAGE[J+1] then \n TEMP = USAGE[J] \n USAGE[J] = USAGE[J+1] \n USAGE[J+1] = TEMP \n TEMPMONTH = MONTH[J] \n MONTH[J] = MONTH[J+1] \n MONTH[J+1] = TEMPMONTH \n end if \n J = J+1 \n end loop \n  I = I+1 \nend loop \noutput \"highest usage was in \", MONTH[11] \noutput \"lowest usage was in \", MONTH[0]",
         "source_issues": [],
         "source_marking_evidence": "– 11 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \n(f) Award [8 max]\nAward [1] for initialization of MIN/MAX  or  arrays MONTHS/USAGE\nAward [1] for declaring HIGHMONTH/LOWMONTH  or  TEMP/TEMPMONTH\nAward [1] for appropriate loop / double loop\nAward [1] for use of parallel arrays                       // Do not accept a 2D array\nAward [1] for finding and recording data for highest month / sorting the usage;\nAward [1] for finding and recording data for lowest month / sorting the month;\nAward [1] for Outputting *month* for highest usage;\nAward [1] for outputting *month* for lowest usage;\n// allow for finding months with highest and lowest bill\nExample algorithm\nMAX = 0\nMIN = 9999999    (or similar)\nCOUNTER = 0\nHIGHMONTH = \"\"\nLOWMONTH = \"\"\nloop while COUNTER < 12\n input \"units used this month? \", ELECMONTH[COUNTER] \n input \"name of month? \", MONTH[COUNTER] \n if ELECMONTH[COUNTER] > MAX then \n MAX = ELECMONTH[COUNTER] \n HIGHMONTH = MONTH[COUNTER] \n end if \n if ELECMONTH[COUNTER] < MIN then \n MIN = ELECMONTH[COUNTER] \n LOWMONTH = MONTH[COUNTER] \n end if \n  COUNTER = COUNTER + 1 \nend loop \noutput \"The highest usage was in \", HIGHMONTH \noutput \"The lowest usage was in \", LOWMONTH\n– 12 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \nAlternative solution which sorts the data in two parallel arrays and outputs the lowest and the \nhighest that way. \nMONTHS = [\"Jan\", … , \"Dec\"] \nUSAGE = [5800, … , 6280] \nTEMP = 0 \nTEMPMONTH = \"\" \nI = 0 \nloop while I < 11 // allow I < 12 \n J = 0 \n loop while J < 11 \n if USAGE[J]>USAGE[J+1] then \n TEMP = USAGE[J] \n USAGE[J] = USAGE[J+1] \n USAGE[J+1] = TEMP \n TEMPMONTH = MONTH[J] \n MONTH[J] = MONTH[J+1] \n MONTH[J+1] = TEMPMONTH \n end if \n J = J+1 \n end loop \n  I = I+1 \nend loop \noutput \"highest usage was in \", MONTH[11] \noutput \"lowest usage was in \", MONTH[0] "
       },
@@ -131,7 +135,7 @@
         {
           "syllabus_code": "B2.2.2",
           "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
-          "rationale": "Construct extreme_months(months,usage) in Python for nonempty parallel lists of equal length assesses Construct programs that apply arrays and Lists.",
+          "rationale": "Adapted target only: Construct extreme_months(months,usage) in Python for nonempty parallel lists of equal length; guidance target: Construct programs that apply arrays and Lists. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -140,7 +144,7 @@
         {
           "syllabus_code": "B2.3.2",
           "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
-          "rationale": "Construct extreme_months(months,usage) in Python for nonempty parallel lists of equal length assesses Construct programs utilizing appropriate selection structures.",
+          "rationale": "Adapted target only: Construct extreme_months(months,usage) in Python for nonempty parallel lists of equal length; guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -149,7 +153,7 @@
         {
           "syllabus_code": "B2.3.3",
           "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
-          "rationale": "Construct extreme_months(months,usage) in Python for nonempty parallel lists of equal length assesses Construct programs that utilize looping structures to perform repeated actions.",
+          "rationale": "Adapted target only: Construct extreme_months(months,usage) in Python for nonempty parallel lists of equal length; guidance target: Construct programs that utilize looping structures to perform repeated actions. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -161,7 +165,7 @@
       "verification": {
         "source_text": "Read complete source page and matched leaf/mark to original PDF.",
         "markscheme": "Read cited MS page(s).",
-        "visual": "No visual required by this leaf.",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
         "technical": "Executed tie,minimum andsingleton cases."
       },
       "adaptation_reuse_question_id": "",
@@ -213,7 +217,9 @@
           13
         ],
         "question_reference": "Q6 a",
-        "marking_summary": "Excluded topic; original criteria retained in referenced MS source.",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max] A simulation is the application of a model (to a specific situation) A simulation uses a variety of inputs in the model to determine the overall balance of the budget; // award for [1] answers that do not refer to the context.",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]  \nA simulation is the application of a model (to a specific situation) \nA simulation uses a variety of inputs in the model to determine the overall balance of the \nbudget; \n// award for [1] answers that do not refer to the context.",
         "source_issues": [],
         "source_marking_evidence": "– 13 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \n6. (a) Award [2 max]  \nA simulation is the application of a model (to a specific situation) \nA simulation uses a variety of inputs in the model to determine the overall balance of the \nbudget; \n// award for [1] answers that do not refer to the context. \n(b) (i) Award [2 max]: \nThe simulation could demonstrate that the money spent (on healthcare) will be \ninadequate in five years; \nThis could help prevent shortages in the budget; \n(ii) Award [2 max]:\nThe variables used to run the simulation may be flawed/incomplete/inaccurate;\nThis could lead to the wrong budgets being set leaving areas incorrectly funded;\n(c) Award [4 max]:\nData could be collected more frequently;\nTo detect more subtle changes in trends that would allow the predictions to be more accurate;\nData could be collected to cover more/different variables;\nto give a smaller chance for outliers/unusual data from skewing the overall model;\nMark as 2 and 2\n(d) Award [5 max]\nAward [2 max] for concerns\nAward [2 max] for benefits\nAward [1 max] for conclusion\nAn ethical issue is invasion of privacy;\nIt is possible that the data could be shared with third party individuals;\nCitizens may not trust the government to use the data for purposes other than those for\nwhich it was collected;\nCitizens may be concerned as to how securely their data is stored;\npersonal data is essential to get the best quality model ;\nso that accurate tax, health, social security, earnings information may be used;\nSuggest any trade-off between the invasion of privacy and the need for accurate information\nfor future resource allocation;"
       },
@@ -224,7 +230,7 @@
       "verification": {
         "source_text": "Read complete source page and matched leaf/mark to original PDF.",
         "markscheme": "Read cited MS page(s).",
-        "visual": "No visual required by this leaf.",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
         "technical": "Independently reasoned and compared with available source marking points."
       },
       "adaptation_reuse_question_id": "",
@@ -274,7 +280,9 @@
           13
         ],
         "question_reference": "Q6 b-i",
-        "marking_summary": "Excluded topic; original criteria retained in referenced MS source.",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max]: The simulation could demonstrate that the money spent (on healthcare) will be inadequate in five years; This could help prevent shortages in the budget;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]: \nThe simulation could demonstrate that the money spent (on healthcare) will be \ninadequate in five years; \nThis could help prevent shortages in the budget;",
         "source_issues": [],
         "source_marking_evidence": "– 13 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \n6. (a) Award [2 max]  \nA simulation is the application of a model (to a specific situation) \nA simulation uses a variety of inputs in the model to determine the overall balance of the \nbudget; \n// award for [1] answers that do not refer to the context. \n(b) (i) Award [2 max]: \nThe simulation could demonstrate that the money spent (on healthcare) will be \ninadequate in five years; \nThis could help prevent shortages in the budget; \n(ii) Award [2 max]:\nThe variables used to run the simulation may be flawed/incomplete/inaccurate;\nThis could lead to the wrong budgets being set leaving areas incorrectly funded;\n(c) Award [4 max]:\nData could be collected more frequently;\nTo detect more subtle changes in trends that would allow the predictions to be more accurate;\nData could be collected to cover more/different variables;\nto give a smaller chance for outliers/unusual data from skewing the overall model;\nMark as 2 and 2\n(d) Award [5 max]\nAward [2 max] for concerns\nAward [2 max] for benefits\nAward [1 max] for conclusion\nAn ethical issue is invasion of privacy;\nIt is possible that the data could be shared with third party individuals;\nCitizens may not trust the government to use the data for purposes other than those for\nwhich it was collected;\nCitizens may be concerned as to how securely their data is stored;\npersonal data is essential to get the best quality model ;\nso that accurate tax, health, social security, earnings information may be used;\nSuggest any trade-off between the invasion of privacy and the need for accurate information\nfor future resource allocation;"
       },
@@ -285,7 +293,7 @@
       "verification": {
         "source_text": "Read complete source page and matched leaf/mark to original PDF.",
         "markscheme": "Read cited MS page(s).",
-        "visual": "No visual required by this leaf.",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
         "technical": "Independently reasoned and compared with available source marking points."
       },
       "adaptation_reuse_question_id": "",
@@ -335,7 +343,9 @@
           13
         ],
         "question_reference": "Q6 b-ii",
-        "marking_summary": "Excluded topic; original criteria retained in referenced MS source.",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max]: The variables used to run the simulation may be flawed/incomplete/inaccurate; This could lead to the wrong budgets being set leaving areas incorrectly funded;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]:\nThe variables used to run the simulation may be flawed/incomplete/inaccurate;\nThis could lead to the wrong budgets being set leaving areas incorrectly funded;",
         "source_issues": [],
         "source_marking_evidence": "– 13 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \n6. (a) Award [2 max]  \nA simulation is the application of a model (to a specific situation) \nA simulation uses a variety of inputs in the model to determine the overall balance of the \nbudget; \n// award for [1] answers that do not refer to the context. \n(b) (i) Award [2 max]: \nThe simulation could demonstrate that the money spent (on healthcare) will be \ninadequate in five years; \nThis could help prevent shortages in the budget; \n(ii) Award [2 max]:\nThe variables used to run the simulation may be flawed/incomplete/inaccurate;\nThis could lead to the wrong budgets being set leaving areas incorrectly funded;\n(c) Award [4 max]:\nData could be collected more frequently;\nTo detect more subtle changes in trends that would allow the predictions to be more accurate;\nData could be collected to cover more/different variables;\nto give a smaller chance for outliers/unusual data from skewing the overall model;\nMark as 2 and 2\n(d) Award [5 max]\nAward [2 max] for concerns\nAward [2 max] for benefits\nAward [1 max] for conclusion\nAn ethical issue is invasion of privacy;\nIt is possible that the data could be shared with third party individuals;\nCitizens may not trust the government to use the data for purposes other than those for\nwhich it was collected;\nCitizens may be concerned as to how securely their data is stored;\npersonal data is essential to get the best quality model ;\nso that accurate tax, health, social security, earnings information may be used;\nSuggest any trade-off between the invasion of privacy and the need for accurate information\nfor future resource allocation;"
       },
@@ -346,7 +356,7 @@
       "verification": {
         "source_text": "Read complete source page and matched leaf/mark to original PDF.",
         "markscheme": "Read cited MS page(s).",
-        "visual": "No visual required by this leaf.",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
         "technical": "Independently reasoned and compared with available source marking points."
       },
       "adaptation_reuse_question_id": "",
@@ -396,7 +406,9 @@
           13
         ],
         "question_reference": "Q6 c",
-        "marking_summary": "Excluded topic; original criteria retained in referenced MS source.",
+        "marking_summary": "Exact original MS leaf excerpt: Award [4 max]: Data could be collected more frequently; To detect more subtle changes in trends that would allow the predictions to be more accurate; Data could be collected to cover more/different variables; to give a smaller chance for outliers/unusual data from skewing the overall model; Mark as 2 and 2",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [4 max]:\nData could be collected more frequently;\nTo detect more subtle changes in trends that would allow the predictions to be more accurate;\nData could be collected to cover more/different variables;\nto give a smaller chance for outliers/unusual data from skewing the overall model;\nMark as 2 and 2",
         "source_issues": [],
         "source_marking_evidence": "– 13 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \n6. (a) Award [2 max]  \nA simulation is the application of a model (to a specific situation) \nA simulation uses a variety of inputs in the model to determine the overall balance of the \nbudget; \n// award for [1] answers that do not refer to the context. \n(b) (i) Award [2 max]: \nThe simulation could demonstrate that the money spent (on healthcare) will be \ninadequate in five years; \nThis could help prevent shortages in the budget; \n(ii) Award [2 max]:\nThe variables used to run the simulation may be flawed/incomplete/inaccurate;\nThis could lead to the wrong budgets being set leaving areas incorrectly funded;\n(c) Award [4 max]:\nData could be collected more frequently;\nTo detect more subtle changes in trends that would allow the predictions to be more accurate;\nData could be collected to cover more/different variables;\nto give a smaller chance for outliers/unusual data from skewing the overall model;\nMark as 2 and 2\n(d) Award [5 max]\nAward [2 max] for concerns\nAward [2 max] for benefits\nAward [1 max] for conclusion\nAn ethical issue is invasion of privacy;\nIt is possible that the data could be shared with third party individuals;\nCitizens may not trust the government to use the data for purposes other than those for\nwhich it was collected;\nCitizens may be concerned as to how securely their data is stored;\npersonal data is essential to get the best quality model ;\nso that accurate tax, health, social security, earnings information may be used;\nSuggest any trade-off between the invasion of privacy and the need for accurate information\nfor future resource allocation;"
       },
@@ -407,7 +419,7 @@
       "verification": {
         "source_text": "Read complete source page and matched leaf/mark to original PDF.",
         "markscheme": "Read cited MS page(s).",
-        "visual": "No visual required by this leaf.",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
         "technical": "Independently reasoned and compared with available source marking points."
       },
       "adaptation_reuse_question_id": "",
@@ -457,7 +469,9 @@
           13
         ],
         "question_reference": "Q6 d",
-        "marking_summary": "The records may improve predictions and help plan resources. However,secondary use without informed consent or weak access controls can expose sensitive information and discriminate against groups. Data minimization,appropriate consent,secure access and fairness review are needed; useful predictions do not automatically justify unrestricted collection.",
+        "marking_summary": "Exact original MS leaf excerpt: Award [5 max] Award [2 max] for concerns Award [2 max] for benefits Award [1 max] for conclusion An ethical issue is invasion of privacy; It is possible that the data could be shared with third party individuals; Citizens may not trust the government to use the data for purposes other than those for which it was collected; Citizens may be concerned as to how securely their data is stored; personal data is essential to get the best quality model ; so that accurate tax, health, social security, earnings information may be used; Suggest any trade-off between the invasion of privacy and the need for accurate information for future resource allocation;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [5 max]\nAward [2 max] for concerns\nAward [2 max] for benefits\nAward [1 max] for conclusion\nAn ethical issue is invasion of privacy;\nIt is possible that the data could be shared with third party individuals;\nCitizens may not trust the government to use the data for purposes other than those for\nwhich it was collected;\nCitizens may be concerned as to how securely their data is stored;\npersonal data is essential to get the best quality model ;\nso that accurate tax, health, social security, earnings information may be used;\nSuggest any trade-off between the invasion of privacy and the need for accurate information\nfor future resource allocation;",
         "source_issues": [],
         "source_marking_evidence": "– 13 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \n6. (a) Award [2 max]  \nA simulation is the application of a model (to a specific situation) \nA simulation uses a variety of inputs in the model to determine the overall balance of the \nbudget; \n// award for [1] answers that do not refer to the context. \n(b) (i) Award [2 max]: \nThe simulation could demonstrate that the money spent (on healthcare) will be \ninadequate in five years; \nThis could help prevent shortages in the budget; \n(ii) Award [2 max]:\nThe variables used to run the simulation may be flawed/incomplete/inaccurate;\nThis could lead to the wrong budgets being set leaving areas incorrectly funded;\n(c) Award [4 max]:\nData could be collected more frequently;\nTo detect more subtle changes in trends that would allow the predictions to be more accurate;\nData could be collected to cover more/different variables;\nto give a smaller chance for outliers/unusual data from skewing the overall model;\nMark as 2 and 2\n(d) Award [5 max]\nAward [2 max] for concerns\nAward [2 max] for benefits\nAward [1 max] for conclusion\nAn ethical issue is invasion of privacy;\nIt is possible that the data could be shared with third party individuals;\nCitizens may not trust the government to use the data for purposes other than those for\nwhich it was collected;\nCitizens may be concerned as to how securely their data is stored;\npersonal data is essential to get the best quality model ;\nso that accurate tax, health, social security, earnings information may be used;\nSuggest any trade-off between the invasion of privacy and the need for accurate information\nfor future resource allocation;"
       },
@@ -466,7 +480,7 @@
         {
           "syllabus_code": "A4.4.1",
           "scope_evidence": "• Ethical issues may include accountability, algorithmic fairness, bias, consent, environmental impact, privacy, security, societal impact, transparency.\n• The challenges posed by biases in training data\n• The ethics of using machine learning in online communication may include concerns about misinformation, bias, online harassment, anonymity, privacy.",
-          "rationale": "A public agency proposes training an ML model on identifiable health and income records to allocate services assesses Discuss the ethical implications of machine learning in real-world scenarios.",
+          "rationale": "Adapted target only: A public agency proposes training an ML model on identifiable health and income records to allocate services; guidance target: Discuss the ethical implications of machine learning in real-world scenarios. Adaptation: Retains ethical data-collection reasoning and supplies explicit ML training context forA4.4.1.",
           "theme": "A",
           "level": "SL/HL common",
           "confidence": "high",
@@ -478,7 +492,7 @@
       "verification": {
         "source_text": "Read complete source page and matched leaf/mark to original PDF.",
         "markscheme": "Read cited MS page(s).",
-        "visual": "No visual required by this leaf.",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
         "technical": "Independently reasoned and compared with available source marking points."
       },
       "adaptation_reuse_question_id": "",
@@ -530,7 +544,9 @@
           14
         ],
         "question_reference": "Q7 a-i",
-        "marking_summary": "Excluded topic; original criteria retained in referenced MS source.",
+        "marking_summary": "Exact original MS leaf excerpt: Award [1 max] a flat image/a diagram, or a simple photographic type image;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [1 max]\na flat image/a diagram, or a simple photographic type image;",
         "source_issues": [],
         "source_marking_evidence": "– 14 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \n7. (a) (i) Award [1 max]\na flat image/a diagram, or a simple photographic type image;\n(ii) Award [1 max]\nCGI graphics in animations/movies; a 3D model\n(b) Award [2 max]\nThe keyframe is a drawing that defines the starting or ending points;\nof a smooth transition (in the animation);\n(c) Award [5 max]\nHigh degree of processing between the CPU and the GPU for rendering the graphics;\nParticularly when working with multiple layers;\nThe rendering that combines the different layers into a final 3D image;\nTransitions can be processor heavy;\nMay require access to secondary memory that has high processing requirements;\nMay have issues with different memory speeds;\nRendering times can be very high if the image required is highly detailed;\nTherefore, sufficient computer memory is required;"
       },
@@ -541,7 +557,7 @@
       "verification": {
         "source_text": "Read complete source page and matched leaf/mark to original PDF.",
         "markscheme": "Read cited MS page(s).",
-        "visual": "No visual required by this leaf.",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
         "technical": "Independently reasoned and compared with available source marking points."
       },
       "adaptation_reuse_question_id": "",
@@ -556,7 +572,7 @@
       ],
       "derivation_status": "adapted_unofficial",
       "unofficial": true,
-      "question_text": "Construct extreme_months(months,usage) in Python for nonempty parallel lists of equal length. Return the month with least usage and the month with greatest usage. On ties,choose the first occurrence. Do not use min,max or sorted; the task assesses a scan.",
+      "question_text": "Construct extreme_months(months, usage) in Python for nonempty parallel lists of equal length. Return the month with least usage and the month with greatest usage. On ties, choose the first occurrence. Do not use min, max or sorted; the task assesses a scan.",
       "syllabus_codes": [
         "B2.2.2",
         "B2.3.2",
@@ -636,7 +652,7 @@
       "command_term": "Discuss",
       "difficulty": "medium",
       "adaptation_rationale": "Retains ethical data-collection reasoning and supplies explicit ML training context forA4.4.1.",
-      "solution": "The records may improve predictions and help plan resources. However,secondary use without informed consent or weak access controls can expose sensitive information and discriminate against groups. Data minimization,appropriate consent,secure access and fairness review are needed; useful predictions do not automatically justify unrestricted collection.",
+      "solution": "The records may improve predictions and help plan resources. However, secondary use without informed consent or weak access controls can expose sensitive information and discriminate against groups. Data minimization, appropriate consent, secure access and fairness review are needed; useful predictions do not automatically justify unrestricted collection.",
       "marking_points": [
         {
           "marks": 1,

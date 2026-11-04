@@ -15,8 +15,8 @@
   "marks": 6,
   "command_term": "Explain",
   "difficulty": "medium",
-  "adaptation_rationale": "Reframe role permissions as OS security function;MFA handles authentication separately. No claim authentication alone provides authorization. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
-  "solution": "Users authenticate to individual accounts, with MFA where configured. Accounts belong to role groups. The OS assigns read/write/manage permissions to files/folders and checks the authenticated account’s group permissions on access. Administrator group has management rights;staff can edit teaching files;guest group has only public-folder read rights.",
+  "adaptation_rationale": "Role permissions are OS authorization; authentication establishes identity separately. MFA is an optional implementation choice. Scenario and wording rewritten within supported 2027 scope.",
+  "solution": "Users authenticate to individual accounts, with MFA where configured. Accounts belong to role groups. The OS assigns read/write/manage permissions to files/folders and checks the authenticated account’s group permissions on access. Administrator group has management rights; staff can edit teaching files; guest group has only public-folder read rights.",
   "marking_points": [
     {
       "marks": 1,
@@ -24,7 +24,7 @@
     },
     {
       "marks": 1,
-      "criterion": "Distinguishes authentication of identity from authorization of permitted operations;MFA is optional rather than required by this prompt."
+      "criterion": "Distinguishes authentication of identity from authorization of permitted operations; MFA is optional rather than required by this prompt."
     },
     {
       "marks": 1,

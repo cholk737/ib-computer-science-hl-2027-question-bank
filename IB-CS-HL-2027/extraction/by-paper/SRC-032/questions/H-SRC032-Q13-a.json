@@ -1,0 +1,83 @@
+{
+  "source_question_id": "H-SRC032-Q13-a",
+  "source_id": "SRC-032",
+  "source_filename": "Computer_science_paper_2__HL (1).pdf",
+  "year": "2023",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "TZ0 (markscheme)",
+  "option": "D",
+  "question": 13,
+  "subquestion": "a",
+  "source_pdf_pages": [
+    15
+  ],
+  "source_printed_pages": [
+    "14"
+  ],
+  "original_marks": 1,
+  "command_term": "Define",
+  "original_text": "Define the term primitive data type.",
+  "parent_context": "– 14 – 2223 – 7012\nOption D — Object-oriented programming\n13. A real estate business maintains an unsorted database of houses and apartments that it tries \nto sell for the property owners.\nThe following UML diagram describes the objects in the current system.\nOwner Property\n- name: String\n- address: String\n- phone: String\n< … more attributes >\n- ID: String\n- address: String\n- city: String\n- price: int\n< … more attributes >\n+ constructor\n+ accessor and  \nmutator methods\n+ constructor\n+ accessor and  \nmutator methods\nHouse Apartment\n< attributes > < attributes >\n< methods > < methods >\n(a) Define the term primitive data type. [1]\n(b) State an additional attribute in the class Property that would have data type\n(i) Boolean [1]\n(ii) integer. [1]\n(c) State the relationship between\n(i) Owner and Property [1]\n(ii) House and Property. [1]\n(d) Distinguish between a class and an instantiation in this scenario. [2]\n(e) Outline how the modifier static affects how a variable is used. [2]\n(f) Describe how the modifier static could be used to access the total number of both \nHouse and Apartment objects that have been created in this system. [2]\n(Option D continues on the following page)\n– 15 – 2223 – 7012\nTurn over\n(Option D, question 13 continued)\nThe object-oriented software solution that implements this system for the real estate \nbusiness allows a customer to select a maximum of 10 houses that he or she is interested in. \nThese houses are stored in an array wishList of type House.\n(g) Construct the code needed to instantiate an array wishList that can store a maximum \nof 10 House objects. [3]\n14. (a)  Define the term encapsulation. [1]\n(b) Explain one benefit provided by encapsulation. [3]\nThe real estate business is planning to expand its database to include student housing. \nThese “houses” are usually single rooms in a privately owned house.\n(c) Explain one benefit of using inheritance to create a new class Room. [3]\nMany of the prospective students have an international background.\n(d) Explain one feature of modern programming languages that allows for internationalization. [3]\n(Option D continues on the following page)",
+  "assets": [
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-15.png",
+      "source_pdf_page": 15,
+      "visually_verified": true
+    },
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-16.png",
+      "source_pdf_page": 16,
+      "visually_verified": false
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Define the term primitive data type.",
+    "State the Python data type suitable for a whole-number count of available rooms"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-035",
+    "filename": "Computer_science_paper_2__HL_markscheme (1).pdf",
+    "pdf_pages": [
+      24
+    ],
+    "question_reference": "Q13 a",
+    "marking_summary": "Exact original MS leaf excerpt: Award [1 max]. These are data types that are pre-defined / fundamental / basic in the programming language; A data type that is always assigned a value (in the memory); They are the building blocks of the composite data types / classes / objects; The types that are implemented directly as bit patterns (by a Java compiler);",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [1 max].  \nThese are data types that are pre-defined / fundamental / basic in the programming \n  language; \n  A data type that is always assigned a value (in the memory); \nThey are the building blocks of the composite data types / classes / objects; \nThe types that are implemented directly as bit patterns (by a Java compiler);",
+    "source_issues": [],
+    "source_marking_evidence": "– 24 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \nOption D – Object oriented programming (OOP) \n13. (a) Award [1 max].  \nThese are data types that are pre-defined / fundamental / basic in the programming \n  language; \n  A data type that is always assigned a value (in the memory); \nThey are the building blocks of the composite data types / classes / objects; \nThe types that are implemented directly as bit patterns (by a Java compiler); \n(b) (i) Award [1 max] for any suitable example. Allow a description. \nFor example \nhasParking; \nhasPool; \nhasGarden; \nWhether the property has been sold or not; \n(ii) Award [1 max] for any suitable example. Allow a description.\nFor example \nnumberRooms; \narea; \nThe number of bathrooms; \n(c) (i) Award [1 max]. \nAggregation (allow Property 'has a' Owner); \n(ii) Award [1 max].\nInheritance (allow House 'is a' Property);\nHouse is a subclass of Property;\nHouse inherits Property;\n(d) Award [2 max].\nAward [1] for distinguishing between a class and an instantiation at the definition level;\nAward [1] for including an example;\nA class (e.g. House class) is a blueprint / definition / specification (that defines all variables \nand methods that are needed) and an instantiation of a class is creates a (new) object of that \nclass [1] (e.g. a (new) object of an actual house giving its actual address etc [1]; \n(e) Award [2 max].\nA static variable is used when it is to be a class variable (belongs to the class not to the\ninstantiation);\nIt is used when all objects of that class are to have the same value for the static variable;\nIt will not be instantiated when a new object is created;\nIf the value of a static variable is changed, it will be changed in all instances of that class;\nIt does not require an object of that class to be accessed;"
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B2.1.1",
+      "scope_evidence": "• Data types: Boolean value, char, decimal, integer, string",
+      "rationale": "Adapted target only: State the Python data type suitable for a whole-number count of available rooms; guidance target: Construct and trace programs using a range of global and local variables of various data types. Adaptation: Replaces Java primitive-type taxonomy with an explicitly required Python-compatible basic data type.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC032-Q13-a"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

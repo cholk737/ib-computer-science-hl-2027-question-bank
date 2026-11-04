@@ -1,0 +1,34 @@
+{
+  "question_id": "P-SRC038-Q16-a-i",
+  "unofficial": true,
+  "marks": 3,
+  "solution": "The while condition should be i<len(advisers); initialize finance=0 before use; increment i inside the loop. As written the loop does not run and the final finance reference is undefined.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Incorrect loop condition, corrected to i<len(advisers)."
+    },
+    {
+      "marks": 1,
+      "criterion": "Missing finance initialization, corrected."
+    },
+    {
+      "marks": 1,
+      "criterion": "Missing i increment, corrected."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Manual control-flow trace: initial0>nonnegative length isFalse; repaired loop tested in aggregate checks.",
+    "source_comparison": [
+      44
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

@@ -1,0 +1,117 @@
+{
+  "source_question_id": "H-SRC044-Q11-c",
+  "source_id": "SRC-044",
+  "source_filename": "Computer_science_paper_2_TZ3_SL (1).pdf",
+  "year": "2025",
+  "session": "May",
+  "source_level": "SL",
+  "paper": "2",
+  "zone": "TZ3 (filename; numerical cover code)",
+  "option": "D",
+  "question": 11,
+  "subquestion": "c",
+  "source_pdf_pages": [
+    19
+  ],
+  "source_printed_pages": [
+    "18"
+  ],
+  "original_marks": 6,
+  "command_term": "Construct",
+  "original_text": "Construct a method, Sold(String artistName, String artworkTitle), that will loop through the array theArtists array and set the isSold variable to true. You can assume the artwork exists in theArtworks array.",
+  "parent_context": "– 16 – 2225 – 6423\nOption D — Object-oriented programming\n10. An art shop sells the work of several artists. Each artist has many artworks for sale. A system \nis designed to manage artworks, sales and customers.\nThe following shows part of the code for the two classes, Artist and Artwork:\npublic class Artist {\n    private String artistName;      // name of the artist\n    private String artistLocation;  // current location of the artist\n    private int noOfArtworks;       // number of works of art the artist has \n                                    // stored in the array theArtworks\n    private Artwork [] theArtworks; // details of the works of art produced \n                                    // by the artist\n    public Artist(String artistName, String artistLocation){\n        this.artistName = artistName;\n        this.artistLocation = artistLocation;\n        noOfArtworks = 0;\n        theArtworks = new Artwork [100]; // an artist has a maximum of 100\n                                         // artworks\n    }\n    public String getName() {\n        return artistName;\n    }\n    public String getLocation() {\n        return artistLocation;\n    }\n    public Artwork getArtwork(int x) {\n        return theArtworks[x];\n    }\n    public void addArtwork(Artwork x) {\n        theArtworks[noOfArtworks] = x;\n        noOfArtworks = noOfArtworks + 1;\n    }\n    public double commissionToPay() {\n        // code missing\n    }\n \n    public Artwork[] sortArt() {\n        // code missing\n    }\n} // end of class Artist\n(Option D continues on the following page)\n– 17 – 2225 – 6423\nTurn over\n(Option D, question 10 continued)\npublic class Artwork {\n    private String artworkTitle; // name of the artwork\n    private int artworkPrice;    // price of artwork\n    private boolean isSold;      // if the artwork has been sold or not\n    public Artwork(String artworkTitle, int artworkPrice) {\n        this.artworkTitle = artworkTitle;\n        this.artworkPrice = artworkPrice;\n        isSold = false; // default value is not sold\n    }\n    public String getArtworkTitle(){\n        return artworkTitle;\n    }\n    public void isSold(){\n        isSold = true;\n    }\n} // end of class Artwork\n(a) State the relationship between the Artist class and Artwork class. [1]\n(b) Outline what is meant by instantiation of an object. [2]\n(c) Construct the code required to instantiate the artist “Thomas Lucas” from “Ireland”. [3]\n(d) With reference to the Artist and Artwork classes, outline the use of the \nmodifier private. [2]\n(e) Outline two advantages of modularity in program development. [4]\n(f) Construct a UML diagram to represent the Artist class. [3]\n(Option D continues on the following page)\n– 18 – 2225 – 6423\n(Option D continued)\n11. The owner of the art shop would like the artworks separated into three different categories: \npaintings, sculptures, and performances.\nThree classes, Painting, Sculpture, and Performance, are created for the three different \ncategories of artwork.\nThe variable typeOfPaint belongs to Painting. It holds the name of the type of paint used.\nThe variable weight belongs to Sculpture. It holds the weight of a sculpture.\nThe variable needForSound belongs to Performance. It states whether sound is needed for \nthe performance.\nThe other variables are common to all three classes.\n(a) State a suitable data type for:\n(i) the variable typeOfPaint; [1]\n(ii) the variable weight; [1]\n(iii) the variable needForSound. [1]\n(b) (i)   Outline two advantages of using inheritance. [4]\n(ii) Explain how inheritance could be used to develop the three classes described \n(Painting, Sculpture, and Performance). [3]\nAn array of type Artist has been declared in the main class, and objects are added using \nthe following code:\ntheArtists[0] = new Artist(\"Nishan Nathan\", \"Italy\");\ntheArtists[1] = new Artist(\"Saskia Anna\", \"Egypt\");\ntheArtists[2] = new Artist(\"Kate Matherson\", \"USA\");\nThe variable isSold in the Artwork object needs to be set to true when an artwork has \nbeen sold.\n(c) Construct a method, Sold(String artistName, String artworkTitle), that will \nloop through the array theArtists array and set the isSold variable to true.\nYou can assume the artwork exists in theArtworks array. [6]\n(Option D continues on the following page)",
+  "assets": [
+    {
+      "kind": "source_page_evidence",
+      "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-17.png",
+      "source_pdf_page": 17,
+      "visually_verified": true
+    },
+    {
+      "kind": "source_page_evidence",
+      "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-18.png",
+      "source_pdf_page": 18,
+      "visually_verified": true
+    },
+    {
+      "kind": "source_page_evidence",
+      "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-19.png",
+      "source_pdf_page": 19,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Construct a method, Sold(String artistName, String artworkTitle), that will loop through the array theArtists array and set the isSold variable to true. You can assume the artwork exists in theArtworks array.",
+    "producers contains objects with name and products"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-046",
+    "filename": "Computer_science_paper_2_TZ3_SL_markscheme.pdf",
+    "pdf_pages": [
+      25
+    ],
+    "question_reference": "Q11 c",
+    "marking_summary": "Exact original MS leaf excerpt: Award [6 max] Award [1] for using a boolean flag or similar variable to stop either of the loops; Award [1] for correct outer loop to run through the theArtists array; Award [1] for correctly finding the required Artist; Award [1] for correct inner loop to run through the theArtworks array; Award [1] for an attempt to search for the artwork; Award [1] for correct use of appropriate accessors and .equals(); // accept ‘==’ Award [1] for an attempt to set the isSold; Award [1] for correctly calling issold(); Example 1: public void Sold( String artistName, String artworkTitle) { for (int i = 0; i < theArtists.length; i++) { if(theArtists[i].getName().equals(artistName)) { for (int x = 0; x < theArtists[i].getnoOfArtworks(); x++) { if(theArtists[i].getArtwork(x).getArtworkTitle().equals( artworkTitle)) { theArtists[i].getArtwork(x).isSold(); } } } } } Example 2: public void Sold(String artist … [full leaf evidence retained]",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [6 max]\nAward [1] for using a boolean flag or similar variable to stop either of the loops;\nAward [1] for correct outer loop to run through the theArtists array;\nAward [1] for correctly finding the required Artist;\nAward [1] for correct inner loop to run through the theArtworks array;\nAward [1] for an attempt to search for the artwork;\nAward [1] for correct use of appropriate accessors and .equals(); // accept ‘==’\nAward [1] for an attempt to set the isSold;\nAward [1] for correctly calling issold();\nExample 1:\npublic void Sold( String artistName, String artworkTitle)\n{\nfor (int i = 0; i < theArtists.length; i++) \n{ \nif(theArtists[i].getName().equals(artistName)) \n{ \nfor (int x = 0; x < theArtists[i].getnoOfArtworks(); x++) \n{ \nif(theArtists[i].getArtwork(x).getArtworkTitle().equals( artworkTitle)) \n{ \ntheArtists[i].getArtwork(x).isSold(); \n} \n} \n} \n} \n} \n Example 2: \npublic void Sold(String artistName, String artworkTitle) \n{ \nboolean found=false; \nint i=0; \nwhile(i<theArtists.length && found ==false) \n{ \nif(theArtists[i].getName().equals(artistName)) \n{ \nint j=0; \nwhile(j<theArtists[i].getnoOfArtworks() && found == false) \n{ \nif(theArtists[i].getArtwork(j).getArtworkTitle().equals( \nartworkTitle)) \n{ \ntheArtists[i].getArtwork(j).isSold(); \nfound=true; \n} \nj++; \n} \n} \ni++; \n} \n} \nNote: Accept any name for getnoOfArtworks()as long as it returns\nnoOfArtworks.",
+    "source_issues": [],
+    "source_marking_evidence": "– 25 – 2225 – 6423M \n(c) Award [6 max]\nAward [1] for using a boolean flag or similar variable to stop either of the loops;\nAward [1] for correct outer loop to run through the theArtists array;\nAward [1] for correctly finding the required Artist;\nAward [1] for correct inner loop to run through the theArtworks array;\nAward [1] for an attempt to search for the artwork;\nAward [1] for correct use of appropriate accessors and .equals(); // accept ‘==’\nAward [1] for an attempt to set the isSold;\nAward [1] for correctly calling issold();\nExample 1:\npublic void Sold( String artistName, String artworkTitle)\n{\nfor (int i = 0; i < theArtists.length; i++) \n{ \nif(theArtists[i].getName().equals(artistName)) \n{ \nfor (int x = 0; x < theArtists[i].getnoOfArtworks(); x++) \n{ \nif(theArtists[i].getArtwork(x).getArtworkTitle().equals( artworkTitle)) \n{ \ntheArtists[i].getArtwork(x).isSold(); \n} \n} \n} \n} \n} \n Example 2: \npublic void Sold(String artistName, String artworkTitle) \n{ \nboolean found=false; \nint i=0; \nwhile(i<theArtists.length && found ==false) \n{ \nif(theArtists[i].getName().equals(artistName)) \n{ \nint j=0; \nwhile(j<theArtists[i].getnoOfArtworks() && found == false) \n{ \nif(theArtists[i].getArtwork(j).getArtworkTitle().equals( \nartworkTitle)) \n{ \ntheArtists[i].getArtwork(j).isSold(); \nfound=true; \n} \nj++; \n} \n} \ni++; \n} \n} \nNote: Accept any name for getnoOfArtworks()as long as it returns\nnoOfArtworks. "
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B2.2.2",
+      "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+      "rationale": "Adapted target only: producers contains objects with name and products; guidance target: Construct programs that apply arrays and Lists. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B2.3.2",
+      "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+      "rationale": "Adapted target only: producers contains objects with name and products; guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B2.3.3",
+      "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+      "rationale": "Adapted target only: producers contains objects with name and products; guidance target: Construct programs that utilize looping structures to perform repeated actions. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B2.3.4",
+      "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+      "rationale": "Adapted target only: producers contains objects with name and products; guidance target: Construct functions and modularization. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+    "technical": "Executed matching title and absent producer; unrelated object remains unchanged."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC044-Q11-c"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

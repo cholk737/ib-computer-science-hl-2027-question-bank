@@ -40,4 +40,20 @@ Verification evidence: `audits/SYLLABUS_INTEGRATION_CHECK.json`, `audits/SPECIME
 - **C2-QA-05 — source answer defects:** specialist-reported source caveats with original question/MS page references are indexed in audits/chunk-2/SOURCE_ISSUES.json. These include unsafe divisor-loop bounds, omitted first inputs, incorrect ROM/power/VPN claims, and faulty extrema examples. They are not imported into authored marking criteria; executed repaired examples have separate tests. The index distinguishes reported source caveats from independently confirmed defects.
 - **C2-QA-06 — scanned2026 papers:** both OCR aids are now available and unchanged source pages are rendered/visually checked by the owners. No uploaded official markschemes exist for SRC001/SRC002. All new criteria remain independently authored, unofficial and preliminary. Handwritten annotations are excluded. SRC002 includes contradictory grade boundaries and a negative-recursion premise inconsistent with its printed base case; both are flagged in source records rather than silently treated as correct.
 
-No full examination PDFs or Chunk3 coverage/gap-filling work has been started.
+No full examination PDFs or Chunk 3 coverage/gap-filling work has been started.
+
+
+### Resolved C1-SRC-03 alternate-scan discrepancy
+
+Coordinator rendered SRC047 physical pages2–8 and read printed-page sequence2,3,5,6,7,8,9. The omitted printed page4 is explicitly a blank page in canonical SRC005 physical5. Thus SRC047 omits a blank page, not a historical question; canonical SRC005 still remains the processed version to avoid duplicate extraction. Visual evidence: audits/chunk-2/alternate-scan/contact.png and canonical source-text/SRC005/page005. No question content is missing on account of this shorter alternate.
+
+
+## Chunk 2 final resolution — C2-FINAL
+
+All 23 selected historical examinations/1,141 source leaves are processed and verified; no missing question content or unresolved mapping remains. C2-QA-01/02/03 source transcription, prose/command and scope consistency repairs are complete in final approved snapshots. Known incidental OOP/dimensionality/ethics over-mappings were repaired. Original MS evidence is separated from adapted-answer fallback. Caught SQL polish regression was corrected and executed successfully before approval. SRC040 exact leaf/mark pages now have separate context provenance; all 21 text-paper mark censuses agree.
+
+C2-QA-04 duplicate detection is retained as 93 normalized text-match candidate groups, with 15 explicit reuse links already consolidated. Other context/skill variants remain separately indexed and do not count as additional syllabus coverage; later paper assembly must avoid redundant selection. This is not an unresolved syllabus mapping.
+
+C2-QA-05 original-source caveats are indexed in audits/chunk-2/SOURCE_ISSUES.json (71 records); originals remain unchanged. Repaired answers are independently tested as appropriate. Two high-risk A/B algorithms received a separate read-only source audit by C. C2-QA-06 has no remaining OCR allocation discrepancy; coordinator inspected every unmatched mark. Missing official markschemes for SRC001/SRC002 remain an availability limitation, explicitly labelled independently authored unofficial criteria.
+
+All current integrity/code/SQL/source-mark checks pass. Preliminary practice marking remains subject to the later Chunk 4 exam-specific audit. No Chunk 3 coverage/gap-filling or full examination PDF work has begun.

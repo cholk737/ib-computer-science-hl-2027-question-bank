@@ -1,0 +1,76 @@
+{
+  "source_question_id": "H-SRC038-Q16-a-i",
+  "source_id": "SRC-038",
+  "source_filename": "Computer_science_paper_2_HL.pdf",
+  "year": "2025",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "not stated",
+  "option": "D",
+  "question": 16,
+  "subquestion": "a-i",
+  "source_pdf_pages": [
+    27
+  ],
+  "source_printed_pages": [
+    "26"
+  ],
+  "original_marks": 3,
+  "command_term": "Identify",
+  "original_text": "The following code fragment has been written to count and output the number of civil lawyers and company lawyers that the law firm has: int x = 0; int countA = 0; while (x > 20) { if(allLawyers[x].getLawyerType().equals(\"civil\")) countA++; else if(allLawyers[x].getLawyerType().equals(\"company\")) countB++; } System.out.println(\"civil: \"+ countA + \"company: \" + countB); Identify three reasons why this code does not work as expected.",
+  "parent_context": "– 26 – 8825 – 6405\n(Option D continued)\n16. (a)  (i)   The following code fragment has been written to count and output the number of \ncivil lawyers and company lawyers that the law firm has:\nint x = 0;\nint countA = 0;\nwhile (x > 20)\n{\n    if(allLawyers[x].getLawyerType().equals(\"civil\"))\n        countA++;\n    else if(allLawyers[x].getLawyerType().equals(\"company\"))\n        countB++;\n}\nSystem.out.println(\"civil: \"+ countA + \"company: \" + countB);\nIdentify three reasons why this code does not work as expected. [3]\n(ii) Construct a method, displayClientName(), to display all client names of \ncompany lawyers where a judgment has been passed on the case. Assume that \nthere will always be at least one such client. The method must:\n\ty search the allLaywers[] array for lawyerType is “company”\n\ty search the lawyerCases[] array for judgmentGiven is “A”\n\ty output the client’s name. [7]\nThe law firm is considering the use of open source software as part of its software \ndevelopment process.\n(b) Discuss the impact of the open source movement on the software industry. [5]\n(Option D continues on the following page)",
+  "assets": [
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-27.png",
+      "source_pdf_page": 27,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: The following code fragment has been written to count and output the number of civil lawyers and company lawyers that the law firm has: int x = 0; int countA = 0; while (x > 20) { if(allLawyers[x].getLawyerType().equals(\"civil\")) countA++; else if(allLawyers[x].getLawyerType().equals(\"company\")) countB++; } System.out.println(\"civil: \"+ countA + \"company: \" + countB); Identify three reasons why this code does not work as expected.",
+    "The following Python is meant to count housing and finance advisers"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-039",
+    "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+    "pdf_pages": [
+      44
+    ],
+    "question_reference": "Q16 a-i",
+    "marking_summary": "Exact original MS leaf excerpt: Award [3 max] Award [1] for condition in the while loop is incorrect / condition should be while (x<20) / the body of while loop never executes; Award [1] for variable x is not being incremented within the while loop; Award [1] for variable countB has not been declared / compile time error – unknown variable countB ;",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [3 max]\nAward [1]  for condition in the while loop is incorrect / condition should be while (x<20) / \nthe body of while loop never executes;  \nAward [1]   for variable x is not being incremented within the while loop;  \nAward [1]  for variable countB has not been declared / compile time error – unknown \nvariable countB ;",
+    "source_issues": [],
+    "source_marking_evidence": "– 44 – 8825 – 6405M \n16. (a) (i) Award [3 max]\nAward [1]  for condition in the while loop is incorrect / condition should be while (x<20) / \nthe body of while loop never executes;  \nAward [1]   for variable x is not being incremented within the while loop;  \nAward [1]  for variable countB has not been declared / compile time error – unknown \nvariable countB ;  \n(ii) Award [7 max]\nAward [1] for correct outer loop to navigate through allLawyers[];\nAward [1] for correctly checking lawyerType is “company”;\nAward [1] for correct inner loop to navigate all cases in lawyerCases[] including a ‘null’\ncheck;\nAward [1] for accessing the lawyerCases[] correctly;\nAward [1] for an attempt to check if judgementGiven is ‘A’;\nAward [1] for correctly checking if judgementGiven is ‘A’;\nAward [1] for an attempt to output the name of the client of the case;\nAward [1] for correctly outputting the name of the client;\npublic static void displayClientNames()\n{\n  for(int i=0; i<20; i++) \n  {  \n if(allLawyers[i].getLawyerType().equals(\"company\")) \n     { \n for(int j=0; j<15; j++) \n {   \n  \nif((allLawyers[i].getLawyerCases()[j]!= null) \n  { \n  Case C = allLawyers[i].getLawyerCases()[j]; \n  if(C.getJudgementGiven()=='A'))  \n  {  \n   String cName = C.getCaseClient(); \n   System.out.println(cName);  \n  } \n  } \n  } \n  } \n } \n} \n(b) Award [5 max]\nAward [2] positives, [2] negatives, and [1] for an informed conclusion\nPositives -\nIt is a collaborative and transparent approach;\nIt has made software more accessible, anyone can see it and use it;\nSoftware is more affordable/ cost effective solutions are possible;\nSoftware is flexible/ can be tailored to specific needs and hence quality is better;\nNegatives -\nThere are risks as open source may not use best security practices;\nLeads to license violations and propriety issues;\nConclusion - any valid conclusion based on the discussion;"
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B2.1.4",
+      "scope_evidence": "• Debugging techniques may include trace tables, breakpoint debugging, print statements and step-by-step code execution.",
+      "rationale": "Adapted target only: The following Python is meant to count housing and finance advisers; guidance target: Construct and use common debugging techniques. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+    "technical": "Manual control-flow trace: initial0>nonnegative length isFalse; repaired loop tested in aggregate checks."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC038-Q16-a-i"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

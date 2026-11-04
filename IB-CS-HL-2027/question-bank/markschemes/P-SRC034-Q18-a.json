@@ -1,0 +1,37 @@
+{
+  "question_id": "P-SRC034-Q18-a",
+  "unofficial": true,
+  "marks": 4,
+  "solution": "Stack gives direct access to the new est entry at its top.; The stated linkedlist must traverse from its old-entry head to reach recent entries.; Accessing entries below stack top normally requires pop ping newer entries.; Those popped entries must be restored correctly, whereas linkedlist traversal can read entries without relinking/removing them.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Stack gives direct access to the new est entry at its top."
+    },
+    {
+      "marks": 1,
+      "criterion": "The stated linkedlist must traverse from its old-entry head to reach recent entries."
+    },
+    {
+      "marks": 1,
+      "criterion": "Accessing entries below stack top normally requires pop ping newer entries."
+    },
+    {
+      "marks": 1,
+      "criterion": "Those popped entries must be restored correctly, whereas linkedlist traversal can read entries without relinking/removing them."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "No executable code required; manual technical check."
+  },
+  "code": "",
+  "test_code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

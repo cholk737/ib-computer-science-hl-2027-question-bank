@@ -32,5 +32,6 @@
   },
   "code": "def reveal(items, n):\n    if n > 0:\n        reveal(items, n-1)\n    print(items[2-n])",
   "test_code": "import io,contextlib\nbuf=io.StringIO()\nwith contextlib.redirect_stdout(buf): reveal([\"Oak\",\"Pine\",\"Elm\"],2)\nassert buf.getvalue()==\"Elm\\nPine\\nOak\\n\"",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

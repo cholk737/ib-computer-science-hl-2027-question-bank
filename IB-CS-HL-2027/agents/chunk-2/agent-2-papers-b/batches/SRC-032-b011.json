@@ -1,0 +1,1142 @@
+{
+  "source_id": "SRC-032",
+  "batch_id": "SRC-032-b011",
+  "source_questions": [
+    {
+      "source_question_id": "H-SRC032-Q15-d-i",
+      "source_id": "SRC-032",
+      "source_filename": "Computer_science_paper_2__HL (1).pdf",
+      "year": "2023",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ0 (markscheme)",
+      "option": "D",
+      "question": 15,
+      "subquestion": "d-i",
+      "source_pdf_pages": [
+        17
+      ],
+      "source_printed_pages": [
+        "16"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "Outline the runtime error that is likely to occur if this method is called.",
+      "parent_context": "– 16 – 2223 – 7012\n(Option D continued)\n15. All the unsorted House objects in the database have been copied to a sufficiently large array \nallHouses. This array is not completely filled with House objects.\nThe array allHouses and all methods in this question are declared in the main program class. \nAll methods can access the array allHouses directly.\nConsider the following method.\npublic void unknown(String x)\n{\n  for (int i=0; i<allHouses.length; i++)\n  {\n    if (allHouses[i].getCity().equals(x))\n    {  \n      System.out.println (allHouses[i].getAddress());\n    }\n  }\n}\n(a) Define the term method signature. [2]\n(b) Describe how the original String variable, passed to a method as a parameter, \ncan be assigned a new value by that method. [2]\n(c) State the intended purpose of the method unknown. [1]\n(d) (i)  Outline the runtime error that is likely to occur if this method is called. [2]\n(ii) Outline how this error can be corrected. [2]\n(e) Construct the code for the method houseSort that will sort the array allHouses in \nascending order of price. [5]\nA method is needed to select from the original unsorted array allHouses the three most \nexpensive houses below or equal to a given price.\n(f) Construct the code for the method selectThree that will take an integer parameter \nbudget. It must return a sorted array of size 3 that contains the three most expensive \nHouse objects (in ascending order of price) with a price that is less than or equal  \nto budget.\nYou may assume that the array allHouses contains at least three House objects \nwith a price less than or equal to budget. As part of your answer you should use the \nmethod houseSort() as developed in part (e). [7]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-17.png",
+          "source_pdf_page": 17,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline the runtime error that is likely to occur if this method is called.",
+        "Outline why visit(entries,city) may raise an error if entries includes None"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-035",
+        "filename": "Computer_science_paper_2__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          28
+        ],
+        "question_reference": "Q15 d-i",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max] The length of the array may not correspond to the number of houses stored; Causing a null pointer error/exception; Since the loop may try to access the getCity method for a null entry;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]  \nThe length of the array may not correspond to the number of houses stored; \nCausing a null pointer error/exception; \nSince the loop may try to access the getCity method for a null entry;",
+        "source_issues": [],
+        "source_marking_evidence": "– 28 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \n15. (a) Award [2 max]. \nThe signature defines the parameters (and their types); \nThe method name / identifier; \nAllow either the return type or access modifier for a mark; \n(b) Award [2 max].\nString is an immutable object / Java uses pass-by-value / does not use pass-by-\nreference;\nIt cannot simply have its value reassigned inside the method;\nThe method type must be String;\nTo return the new value for that String variable;\n(c) Award [1 max].\nTo output the addresses of all houses in a given city;\nNote to examiners. Must imply all the houses that match, not just one. \n(d) (i) Award [2 max]  \nThe length of the array may not correspond to the number of houses stored; \nCausing a null pointer error/exception; \nSince the loop may try to access the getCity method for a null entry; \n(ii) Award [2 max.]\nDeclare a variable count that stores the number of objects in allHouses;\nChange loop condition to j<count;\nAdd a test if(allHouses[i]!=null); \nBefore testing allHouses[i].getCity().equals(x) ; \nUse a while loop with a double condition; \n(i<allHouses.length)&&(allHouses[i]!=null) ; \nInitially fill the array with dummy objects; \nSo that no null entries will be encountered; \nChange the array to an arrayList; \nSo that no null entries will be encountered / so that the array has the exact \nnumber of valid objects in it;  "
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.1.3",
+          "scope_evidence": "• Potential points of failure in a program must include unexpected inputs, resource unavailability, logic errors.\n• The role of exception handling in developing programs\n• Exception handling constructs that effectively manage errors must include try/catch in Java, and try/except in Python, along with the finally block.",
+          "rationale": "Adapted target only: Outline why visit(entries,city) may raise an error if entries includes None; guidance target: Describe how programs use common exception handling techniques. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.1.4",
+          "scope_evidence": "• Debugging techniques may include trace tables, breakpoint debugging, print statements and step-by-step code execution.",
+          "rationale": "Adapted target only: Outline why visit(entries,city) may raise an error if entries includes None; guidance target: Construct and use common debugging techniques. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Executed nullable-entry failure."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC032-Q15-d-i"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC032-Q15-d-ii",
+      "source_id": "SRC-032",
+      "source_filename": "Computer_science_paper_2__HL (1).pdf",
+      "year": "2023",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ0 (markscheme)",
+      "option": "D",
+      "question": 15,
+      "subquestion": "d-ii",
+      "source_pdf_pages": [
+        17
+      ],
+      "source_printed_pages": [
+        "16"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "Outline how this error can be corrected.",
+      "parent_context": "– 16 – 2223 – 7012\n(Option D continued)\n15. All the unsorted House objects in the database have been copied to a sufficiently large array \nallHouses. This array is not completely filled with House objects.\nThe array allHouses and all methods in this question are declared in the main program class. \nAll methods can access the array allHouses directly.\nConsider the following method.\npublic void unknown(String x)\n{\n  for (int i=0; i<allHouses.length; i++)\n  {\n    if (allHouses[i].getCity().equals(x))\n    {  \n      System.out.println (allHouses[i].getAddress());\n    }\n  }\n}\n(a) Define the term method signature. [2]\n(b) Describe how the original String variable, passed to a method as a parameter, \ncan be assigned a new value by that method. [2]\n(c) State the intended purpose of the method unknown. [1]\n(d) (i)  Outline the runtime error that is likely to occur if this method is called. [2]\n(ii) Outline how this error can be corrected. [2]\n(e) Construct the code for the method houseSort that will sort the array allHouses in \nascending order of price. [5]\nA method is needed to select from the original unsorted array allHouses the three most \nexpensive houses below or equal to a given price.\n(f) Construct the code for the method selectThree that will take an integer parameter \nbudget. It must return a sorted array of size 3 that contains the three most expensive \nHouse objects (in ascending order of price) with a price that is less than or equal  \nto budget.\nYou may assume that the array allHouses contains at least three House objects \nwith a price less than or equal to budget. As part of your answer you should use the \nmethod houseSort() as developed in part (e). [7]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-17.png",
+          "source_pdf_page": 17,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline how this error can be corrected.",
+        "Outline how to repair visit so it ignores None entries while still printing every matching address"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-035",
+        "filename": "Computer_science_paper_2__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          28
+        ],
+        "question_reference": "Q15 d-ii",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max.] Declare a variable count that stores the number of objects in allHouses; Change loop condition to j<count; Add a test if(allHouses[i]!=null); Before testing allHouses[i].getCity().equals(x) ; Use a while loop with a double condition; (i<allHouses.length)&&(allHouses[i]!=null) ; Initially fill the array with dummy objects; So that no null entries will be encountered; Change the array to an arrayList; So that no null entries will be encountered / so that the array has the exact number of valid objects in it;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max.]\nDeclare a variable count that stores the number of objects in allHouses;\nChange loop condition to j<count;\nAdd a test if(allHouses[i]!=null); \nBefore testing allHouses[i].getCity().equals(x) ; \nUse a while loop with a double condition; \n(i<allHouses.length)&&(allHouses[i]!=null) ; \nInitially fill the array with dummy objects; \nSo that no null entries will be encountered; \nChange the array to an arrayList; \nSo that no null entries will be encountered / so that the array has the exact \nnumber of valid objects in it;",
+        "source_issues": [],
+        "source_marking_evidence": "– 28 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \n15. (a) Award [2 max]. \nThe signature defines the parameters (and their types); \nThe method name / identifier; \nAllow either the return type or access modifier for a mark; \n(b) Award [2 max].\nString is an immutable object / Java uses pass-by-value / does not use pass-by-\nreference;\nIt cannot simply have its value reassigned inside the method;\nThe method type must be String;\nTo return the new value for that String variable;\n(c) Award [1 max].\nTo output the addresses of all houses in a given city;\nNote to examiners. Must imply all the houses that match, not just one. \n(d) (i) Award [2 max]  \nThe length of the array may not correspond to the number of houses stored; \nCausing a null pointer error/exception; \nSince the loop may try to access the getCity method for a null entry; \n(ii) Award [2 max.]\nDeclare a variable count that stores the number of objects in allHouses;\nChange loop condition to j<count;\nAdd a test if(allHouses[i]!=null); \nBefore testing allHouses[i].getCity().equals(x) ; \nUse a while loop with a double condition; \n(i<allHouses.length)&&(allHouses[i]!=null) ; \nInitially fill the array with dummy objects; \nSo that no null entries will be encountered; \nChange the array to an arrayList; \nSo that no null entries will be encountered / so that the array has the exact \nnumber of valid objects in it;  "
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.1.4",
+          "scope_evidence": "• Debugging techniques may include trace tables, breakpoint debugging, print statements and step-by-step code execution.",
+          "rationale": "Adapted target only: Outline how to repair visit so it ignores None entries while still printing every matching address; guidance target: Construct and use common debugging techniques. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Adapted target only: Outline how to repair visit so it ignores None entries while still printing every matching address; guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC032-Q15-d-ii"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC032-Q15-e",
+      "source_id": "SRC-032",
+      "source_filename": "Computer_science_paper_2__HL (1).pdf",
+      "year": "2023",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ0 (markscheme)",
+      "option": "D",
+      "question": 15,
+      "subquestion": "e",
+      "source_pdf_pages": [
+        17
+      ],
+      "source_printed_pages": [
+        "16"
+      ],
+      "original_marks": 5,
+      "command_term": "Construct",
+      "original_text": "Construct the code for the method houseSort that will sort the array allHouses in ascending order of price.",
+      "parent_context": "– 16 – 2223 – 7012\n(Option D continued)\n15. All the unsorted House objects in the database have been copied to a sufficiently large array \nallHouses. This array is not completely filled with House objects.\nThe array allHouses and all methods in this question are declared in the main program class. \nAll methods can access the array allHouses directly.\nConsider the following method.\npublic void unknown(String x)\n{\n  for (int i=0; i<allHouses.length; i++)\n  {\n    if (allHouses[i].getCity().equals(x))\n    {  \n      System.out.println (allHouses[i].getAddress());\n    }\n  }\n}\n(a) Define the term method signature. [2]\n(b) Describe how the original String variable, passed to a method as a parameter, \ncan be assigned a new value by that method. [2]\n(c) State the intended purpose of the method unknown. [1]\n(d) (i)  Outline the runtime error that is likely to occur if this method is called. [2]\n(ii) Outline how this error can be corrected. [2]\n(e) Construct the code for the method houseSort that will sort the array allHouses in \nascending order of price. [5]\nA method is needed to select from the original unsorted array allHouses the three most \nexpensive houses below or equal to a given price.\n(f) Construct the code for the method selectThree that will take an integer parameter \nbudget. It must return a sorted array of size 3 that contains the three most expensive \nHouse objects (in ascending order of price) with a price that is less than or equal  \nto budget.\nYou may assume that the array allHouses contains at least three House objects \nwith a price less than or equal to budget. As part of your answer you should use the \nmethod houseSort() as developed in part (e). [7]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-17.png",
+          "source_pdf_page": 17,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Construct the code for the method houseSort that will sort the array allHouses in ascending order of price.",
+        "Construct house_sort(entries) in Python"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-035",
+        "filename": "Computer_science_paper_2__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          29,
+          30
+        ],
+        "question_reference": "Q15 e",
+        "marking_summary": "Exact original MS leaf excerpt: Award [5 max]. Award [1] for correctly declaring a swap variable; Award [1] for correct outer loop; Award [1] for correct inner loop; Award [1] for correctly testing prices (allow .price); Award [1] for correct swap statements (ignore here any incorrect declaration of swap variable); Notes to examiners. • As there are many variations on sort routines you will need to carefully read through each response. You can ignore minor syntax errors in every algorithm answer. • Note that is the House objects that are being swapped, not the prices. However, if prices are being swapped, allow FT for ta swap variable declared as a numeric type. Example answer 1 public void houseSort() // basic bubblesort 1 { House swapHouse; for (int i=0; i< allHouses.length-1; i++ //accept //allHouses.length { for (int j=0; j< allHouses.length-1; j++) { if (allHouses[j].getPrice()>allHouses[j+1].getPrice()) { swapHou … [full leaf evidence retained]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [5 max].\nAward [1] for correctly declaring a swap variable;\nAward [1] for correct outer loop;\nAward [1] for correct inner loop;\nAward [1] for correctly testing prices (allow .price);\nAward [1] for correct swap statements (ignore here any incorrect declaration of swap\nvariable);\nNotes to examiners. \n• As there are many variations on sort routines you will need to carefully read\nthrough each response. You can ignore minor syntax errors in every algorithm\nanswer.\n• Note that is the House objects that are being swapped, not the prices. However, if\nprices are being swapped, allow FT for ta swap variable declared as a numeric\ntype.\nExample answer 1 \npublic void houseSort()  // basic bubblesort 1 \n{ \n  House swapHouse; \n  for (int i=0; i< allHouses.length-1; i++ //accept \n  //allHouses.length \n  { \n for (int j=0; j< allHouses.length-1; j++) \n {  \n if (allHouses[j].getPrice()>allHouses[j+1].getPrice()) \n { \n swapHouse = allHouses[j]; \n allHouses[j] = allHouses[j+1]; \n allHouses[j+1] = swapHouse; \n } \n } \n  } \n} \nExample answer 2 \npublic void houseSort()  // basic bubblesort 2 \n{ \n  boolean isSorted = false; \n  House houseTemp; \n  while(!isSorted) \n  { \n isSorted = true; \n for(int j=0;j<allHouses.length-1;j++) \n { \n if(allHouses[j].getPrice()>allHouses[j+1].getPrice()) \n { \n  houseTemp = allHouses[j]; \n  allHouses[j] = allHouses[j+1]; \n  allHouses[j+1] = houseTemp; \n  isSorted=false; \n  } \n  } \n   } \n } \n\nExample answer 3 \npublic void houseSort()  // basic selection sort 1 \n{ \n  House swapHouse; \n  int smallest; \n  for (int i=0; i< allHouses.length-1; i++) \n  { \n smallest = i; \n for (int j=i+1; j< allHouses.length; j++)    // allow j =i  \n {  \n if (allHouses[j].getPrice()<allHouses[smallest].getPrice()) \n { \n smallest = j; \n } \n }  \n swapHouse = allHouses[smallest];  \n allHouses[smallest] = allHouses[i]; \n allHouses[i] = swapHouse; \n  } \n} \nExample answer 4 \npublic void houseSort()   // basic selection sort 2 \n{ \nHouse swapHouse; \nfor (int i=0; i< allHouses.length-1; i++)  \n  { \n for (int j=i+1; j< allHouses.length; j++)    // allow j = i  \n { \n if (allHouses[i].getPrice()>allHouses[j].getPrice()) \n { \n swapHouse = allHouses[i]; \n allHouses[i] = allHouses[j]; \n allHouses[j] = swapHouse; \n } \n } \n  } \n}",
+        "source_issues": [
+          "Source MS sort samples loop over whole array despite earlierNone slots; corrected active entries explicit."
+        ],
+        "source_marking_evidence": "– 29 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \n(e) Award [5 max].\nAward [1] for correctly declaring a swap variable;\nAward [1] for correct outer loop;\nAward [1] for correct inner loop;\nAward [1] for correctly testing prices (allow .price);\nAward [1] for correct swap statements (ignore here any incorrect declaration of swap\nvariable);\nNotes to examiners. \n• As there are many variations on sort routines you will need to carefully read\nthrough each response. You can ignore minor syntax errors in every algorithm\nanswer.\n• Note that is the House objects that are being swapped, not the prices. However, if\nprices are being swapped, allow FT for ta swap variable declared as a numeric\ntype.\nExample answer 1 \npublic void houseSort()  // basic bubblesort 1 \n{ \n  House swapHouse; \n  for (int i=0; i< allHouses.length-1; i++ //accept \n  //allHouses.length \n  { \n for (int j=0; j< allHouses.length-1; j++) \n {  \n if (allHouses[j].getPrice()>allHouses[j+1].getPrice()) \n { \n swapHouse = allHouses[j]; \n allHouses[j] = allHouses[j+1]; \n allHouses[j+1] = swapHouse; \n } \n } \n  } \n} \nExample answer 2 \npublic void houseSort()  // basic bubblesort 2 \n{ \n  boolean isSorted = false; \n  House houseTemp; \n  while(!isSorted) \n  { \n isSorted = true; \n for(int j=0;j<allHouses.length-1;j++) \n { \n if(allHouses[j].getPrice()>allHouses[j+1].getPrice()) \n { \n  houseTemp = allHouses[j]; \n  allHouses[j] = allHouses[j+1]; \n  allHouses[j+1] = houseTemp; \n  isSorted=false; \n  } \n  } \n   } \n } \n– 30 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \nExample answer 3 \npublic void houseSort()  // basic selection sort 1 \n{ \n  House swapHouse; \n  int smallest; \n  for (int i=0; i< allHouses.length-1; i++) \n  { \n smallest = i; \n for (int j=i+1; j< allHouses.length; j++)    // allow j =i  \n {  \n if (allHouses[j].getPrice()<allHouses[smallest].getPrice()) \n { \n smallest = j; \n } \n }  \n swapHouse = allHouses[smallest];  \n allHouses[smallest] = allHouses[i]; \n allHouses[i] = swapHouse; \n  } \n} \nExample answer 4 \npublic void houseSort()   // basic selection sort 2 \n{ \nHouse swapHouse; \nfor (int i=0; i< allHouses.length-1; i++)  \n  { \n for (int j=i+1; j< allHouses.length; j++)    // allow j = i  \n { \n if (allHouses[i].getPrice()>allHouses[j].getPrice()) \n { \n swapHouse = allHouses[i]; \n allHouses[i] = allHouses[j]; \n allHouses[j] = swapHouse; \n } \n } \n  } \n} "
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.4.3",
+          "scope_evidence": "• The time and space complexities of each algorithm, denoted by their respective Big O notations\n• The advantages and disadvantages of each algorithm in terms of efficiency across various data sets",
+          "rationale": "Adapted target only: Construct house_sort(entries) in Python; guidance target: Construct and trace algorithms to implement bubble sort and selection sort, evaluating their time and space complexities. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Adapted target only: Construct house_sort(entries) in Python; guidance target: Construct programs that apply arrays and Lists. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Executed None filtering,duplicate prices,empty list; objects preserved."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC032-Q15-e"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC032-Q15-f",
+      "source_id": "SRC-032",
+      "source_filename": "Computer_science_paper_2__HL (1).pdf",
+      "year": "2023",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ0 (markscheme)",
+      "option": "D",
+      "question": 15,
+      "subquestion": "f",
+      "source_pdf_pages": [
+        17
+      ],
+      "source_printed_pages": [
+        "16"
+      ],
+      "original_marks": 7,
+      "command_term": "Construct",
+      "original_text": "Construct the code for the method selectThree that will take an integer parameter budget. It must return a sorted array of size 3 that contains the three most expensive House objects (in ascending order of price) with a price that is less than or equal to budget. You may assume that the array allHouses contains at least three House objects with a price less than or equal to budget. As part of your answer you should use the method houseSort() as developed in part (e).",
+      "parent_context": "– 16 – 2223 – 7012\n(Option D continued)\n15. All the unsorted House objects in the database have been copied to a sufficiently large array \nallHouses. This array is not completely filled with House objects.\nThe array allHouses and all methods in this question are declared in the main program class. \nAll methods can access the array allHouses directly.\nConsider the following method.\npublic void unknown(String x)\n{\n  for (int i=0; i<allHouses.length; i++)\n  {\n    if (allHouses[i].getCity().equals(x))\n    {  \n      System.out.println (allHouses[i].getAddress());\n    }\n  }\n}\n(a) Define the term method signature. [2]\n(b) Describe how the original String variable, passed to a method as a parameter, \ncan be assigned a new value by that method. [2]\n(c) State the intended purpose of the method unknown. [1]\n(d) (i)  Outline the runtime error that is likely to occur if this method is called. [2]\n(ii) Outline how this error can be corrected. [2]\n(e) Construct the code for the method houseSort that will sort the array allHouses in \nascending order of price. [5]\nA method is needed to select from the original unsorted array allHouses the three most \nexpensive houses below or equal to a given price.\n(f) Construct the code for the method selectThree that will take an integer parameter \nbudget. It must return a sorted array of size 3 that contains the three most expensive \nHouse objects (in ascending order of price) with a price that is less than or equal  \nto budget.\nYou may assume that the array allHouses contains at least three House objects \nwith a price less than or equal to budget. As part of your answer you should use the \nmethod houseSort() as developed in part (e). [7]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-17.png",
+          "source_pdf_page": 17,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Construct the code for the method selectThree that will take an integer parameter budget. It must return a sorted array of size 3 that contains the three most expensive House objects (in ascending order of price) with a price that is less than or equal to budget. You may assume that the array allHouses contains at least three House objects with a price less than or equal to budget. As part of your answer you should use the method houseSort() as developed in part (e).",
+        "You are given house_sort(entries),which returns the non-None House objects in ascending price order"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-035",
+        "filename": "Computer_science_paper_2__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          31,
+          32
+        ],
+        "question_reference": "Q15 f",
+        "marking_summary": "Exact original MS leaf excerpt: Award [7 max]. Award [1] for correct return type and return; Award [1] for correct parameter, budget (allow allHouses to be passed as well); Award [1] for correctly instantiating a result array; Award [1] for correctly using houseSort; Award [1] for while loop with one correct condition; // other loops could be used Award [1] for while loop with two correct conditions in the right order; // note that some of these conditions may be implemented as IF statements; Award [2] for assigning all 3 House objects in the correct order (award [1] for good attempt at identifying the 3 objects); Example answer 1 public House[] selectThree(int budget) { House[] result = new House[3]; houseSort(); // allow allHouses.houseSort() int i=0; while ((i<allHouses.length)&&(allHouses[i]!=null) &&(allHouses[i].getPrice()<=budget)) { i++; } i--; for (int a=0; a<=2; a++) { result[a] = allHouses[i-2+a]; } return r … [full leaf evidence retained]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [7 max].\nAward [1] for correct return type and return;\nAward [1] for correct parameter, budget (allow allHouses to be passed as well);\nAward [1] for correctly instantiating a result array;\nAward [1] for correctly using houseSort;\nAward [1] for while loop with one correct condition; // other loops could be used\nAward [1] for while loop with two correct conditions in the right order; // note that some of\nthese conditions may be implemented as IF statements;\nAward [2] for assigning all 3 House objects in the correct order (award [1] for good attempt at\nidentifying the 3 objects);\nExample answer 1 \npublic House[] selectThree(int budget) \n{ \n  House[] result = new House[3]; \n  houseSort();                   // allow allHouses.houseSort() \n  int i=0; \n  while ((i<allHouses.length)&&(allHouses[i]!=null) \n &&(allHouses[i].getPrice()<=budget)) \n  { \n i++; \n  } \n  i--; \n  for (int a=0; a<=2; a++) \n  { \n result[a] = allHouses[i-2+a]; \n  } \n  return result; \n} \nExample answer 2 \npublic House[] selectThree(int budget) \n{ \n  House[] result = new House[3]; \n  houseSort(); \n  int i=0; \n  while ((i<allHouses.length)&&(allHouses[i]!=null) \n &&(allHouses[i].getPrice()<=budget)) \n  { \n i++; \n  } \n  i--; \n  result[0] = allHouses[i-2]; \n  result[1] = allHouses[i-1]; \n  result[2] = allHouses[i]; \n  return result; \n} \n\nExample answer 3 \npublic House[] selectThree(int budget) \n{ \n  House[] result = new House[3]; \n  houseSort(); \n  int index = 2; \n  for(int i=allHouses.length-1; i>=0 && index>=0; i--) \n  { \n if(allHouses[i]!=null && allHouses[i].getPrice()<=budget) \n  result[index--] = allHouses[i]; \n  } \n  return result; \n}",
+        "source_issues": [],
+        "source_marking_evidence": "– 31 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \n(f) Award [7 max].\nAward [1] for correct return type and return;\nAward [1] for correct parameter, budget (allow allHouses to be passed as well);\nAward [1] for correctly instantiating a result array;\nAward [1] for correctly using houseSort;\nAward [1] for while loop with one correct condition; // other loops could be used\nAward [1] for while loop with two correct conditions in the right order; // note that some of\nthese conditions may be implemented as IF statements;\nAward [2] for assigning all 3 House objects in the correct order (award [1] for good attempt at\nidentifying the 3 objects);\nExample answer 1 \npublic House[] selectThree(int budget) \n{ \n  House[] result = new House[3]; \n  houseSort();                   // allow allHouses.houseSort() \n  int i=0; \n  while ((i<allHouses.length)&&(allHouses[i]!=null) \n &&(allHouses[i].getPrice()<=budget)) \n  { \n i++; \n  } \n  i--; \n  for (int a=0; a<=2; a++) \n  { \n result[a] = allHouses[i-2+a]; \n  } \n  return result; \n} \nExample answer 2 \npublic House[] selectThree(int budget) \n{ \n  House[] result = new House[3]; \n  houseSort(); \n  int i=0; \n  while ((i<allHouses.length)&&(allHouses[i]!=null) \n &&(allHouses[i].getPrice()<=budget)) \n  { \n i++; \n  } \n  i--; \n  result[0] = allHouses[i-2]; \n  result[1] = allHouses[i-1]; \n  result[2] = allHouses[i]; \n  return result; \n} \n– 32 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \nExample answer 3 \npublic House[] selectThree(int budget) \n{ \n  House[] result = new House[3]; \n  houseSort(); \n  int index = 2; \n  for(int i=allHouses.length-1; i>=0 && index>=0; i--) \n  { \n if(allHouses[i]!=null && allHouses[i].getPrice()<=budget) \n  result[index--] = allHouses[i]; \n  } \n  return result; \n} "
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Adapted target only: You are given house_sort(entries),which returns the non-None House objects in ascending price order; guidance target: Construct programs that apply arrays and Lists. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Adapted target only: You are given house_sort(entries),which returns the non-None House objects in ascending price order; guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "Adapted target only: You are given house_sort(entries),which returns the non-None House objects in ascending price order; guidance target: Construct programs that utilize looping structures to perform repeated actions. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.4",
+          "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+          "rationale": "Adapted target only: You are given house_sort(entries),which returns the non-None House objects in ascending price order; guidance target: Construct functions and modularization. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Executed budgetboundary andhighest-three selection,notlowestthree."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC032-Q15-f"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC032-Q16-a",
+      "source_id": "SRC-032",
+      "source_filename": "Computer_science_paper_2__HL (1).pdf",
+      "year": "2023",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ0 (markscheme)",
+      "option": "D",
+      "question": 16,
+      "subquestion": "a",
+      "source_pdf_pages": [
+        18
+      ],
+      "source_printed_pages": [
+        "17"
+      ],
+      "original_marks": 2,
+      "command_term": "Identify",
+      "original_text": "Identify two features of an abstract data type (ADT).",
+      "parent_context": "– 17 – 2223 – 7012\nTurn over\n(Option D continued)\n16. Once a month the real estate business organizes an open day for a particular house.\nInterested clients can sign up by giving their name and phone number to the real estate business.\nThis information is stored in a list node ClientNode as follows.\npublic class ClientNode\n{\n  private String name;\n  private String phone;\n  private boolean attended;\n  private ClientNode next;\n  public ClientNode (String aName, String aPhone)\n      {\n    this.name = aName;\n    this.phone = aPhone;\n    this.attended = false;\n    this.next = null;\n  }\n  public String getName()\n  {\n    return this.name;\n  }\n  public String getClient()\n  {\n    return this.name+\" \"+this.phone;\n  }\n  public void setAttended()\n  {\n    attended = true;\n  }\n  public ClientNode getNext()\n  {\n    return this.next;\n  }\n  public void setNext(ClientNode nextNode)\n  {\n    this.next = nextNode;\n  }\n}\n(a) Identify two features of an abstract data type (ADT). [2]\n(Option D continues on the following page)\n– 18 – 2223 – 7012\n(Option D, question 16 continued)\nA new class ClientList is implemented as outlined below.\npublic class ClientList\n{\n  ClientNode root;\n  // default constructor\n  void enList(ClientNode visitor)\n  { \n    … adds visitor to the end of the list – missing code …\n  }\n  boolean isEmpty()\n  { \n    return (root==null);\n  }\n  … more methods …\n}\nA list openDay has been instantiated of the type ClientList.\nopenDay John Belaka\n071112223\nEmma Kim\n071135322\n(b) Describe the meaning of the following statement. [3]\nopenDay.enList(new ClientNode(\"Sophie Bella\", \"072456721\"));\n(c) By using object references, construct the method enList that allows a client to be \nadded to the end of the list openDay. [5]\nThe attendance of potential buyers is tracked during the open day by changing the attended \nvariable to true when a potential buyer arrives.\nAt the end of the day, the list openDay is processed so that every potential buyer that \nattended is added to new list hasAttended and every potential buyer that did not attend is \nadded to a new list notAttended.\n(d) Without writing code, outline the steps involved in splitting the list openDay into a list \nhasAttended and a list notAttended. [4]\n(Option D continues on the following page)\n– 19 – 2223 – 7012\n(Option D, question 16 continued)\nThe real estate business keeps the data of all past owners in a file for future reference.  \nThis file is sorted by owner name. When needed, this file is read into a LinkedList called \ncontacts, which has been instantiated as follows.\nprivate LinkedList<Owner> contacts = new LinkedList<Owner>();\n(e) Construct a recursive binary search method given as \n \npublic Owner binSearch(String name, int low, int high) \n \nwhere name is the search term.\nYou may assume that contacts is accessible to binSearch and that it has been filled \nwith many objects.\nYou may use the following standard LinkedList method.\n.get(int index)\nThis returns the object located in the LinkedList at index. [6]\nEnd of Option D\n ",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-18.png",
+          "source_pdf_page": 18,
+          "visually_verified": false
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-19.png",
+          "source_pdf_page": 19,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-20.png",
+          "source_pdf_page": 20,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Identify two features of an abstract data type (ADT).",
+        "Identify two defining features of an ADT"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-035",
+        "filename": "Computer_science_paper_2__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          33
+        ],
+        "question_reference": "Q16 a",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max]. Its (behaviour) is defined by its operations [1] and the data that the operations are carried out on [1]; An ADT is a complex data type; Each ADTs has standardised methods/operations / a specific set of methods/operations (such as addToEnd. Push etc.); // Don’t accept that “it has methods”; Implementation details are hidden from the user; Users only need to know how to use the operations/methods; Allow ADTs can be allocated memory dynamically;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]. \nIts (behaviour) is defined by its operations [1] and the data that the operations are carried \nout on [1]; \nAn ADT is a complex data type; \nEach ADTs has standardised methods/operations / a specific set of methods/operations  \n(such as addToEnd. Push etc.);              // Don’t accept that “it has methods”; \nImplementation details are hidden from the user; \nUsers only need to know how to use the operations/methods; \nAllow ADTs can be allocated memory dynamically;",
+        "source_issues": [],
+        "source_marking_evidence": "– 33 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \n16. (a) Award [2 max]. \nIts (behaviour) is defined by its operations [1] and the data that the operations are carried \nout on [1]; \nAn ADT is a complex data type; \nEach ADTs has standardised methods/operations / a specific set of methods/operations  \n(such as addToEnd. Push etc.);              // Don’t accept that “it has methods”; \nImplementation details are hidden from the user; \nUsers only need to know how to use the operations/methods; \nAllow ADTs can be allocated memory dynamically;  \n(b) Award [3 max].\nA new ClientNode is instantiated;\nwith name \"Sophie Bella\" and phone \"072456721\";\nand it is added as the last node in the list openDay;  // must specify openDay \n(c) Award [5 max].\nAward [1] for testing for an empty list;\nAward [1] for assigning visitor to root;\nAward [1] for declaring and initializing a new ClientNode (currentNode);\nAward [1] for correct loop;\nAward [1] for correct assignment of next node;\nAward [1] for correctly assigning visitor as the last node;\nNote: Allow follow through errors if the candidate only uses get/set once \nExample answer \nvoid enList(ClientNode visitor) \n{ \n  if (root==null)   // checks for empty list - allow  use of isEmpty \n  { \n root = visitor; \n  } \n  else \n  { \n ClientNode currentNode = root;   // declares cu rrentNode \n while (currentNode.getNext()!=null)   // finding the last node \n { \n currentNode = currentNode.getNext(); \n } \n currentNode.setNext(visitor)    ;   // set as last node \n  } \n}  "
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B4.1.1",
+          "scope_evidence": "• The core principles of ADTs, including their purpose in providing a high-level description of data structures and their associated operations",
+          "rationale": "Original and adapted within-scope skill: Identify two defining features of an ADT; guidance target: Explain the properties and purpose of ADTs in programming.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC032-Q16-a"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC032-Q16-b",
+      "source_id": "SRC-032",
+      "source_filename": "Computer_science_paper_2__HL (1).pdf",
+      "year": "2023",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ0 (markscheme)",
+      "option": "D",
+      "question": 16,
+      "subquestion": "b",
+      "source_pdf_pages": [
+        19
+      ],
+      "source_printed_pages": [
+        "18"
+      ],
+      "original_marks": 3,
+      "command_term": "Describe",
+      "original_text": "Describe the meaning of the following statement.",
+      "parent_context": "– 17 – 2223 – 7012\nTurn over\n(Option D continued)\n16. Once a month the real estate business organizes an open day for a particular house.\nInterested clients can sign up by giving their name and phone number to the real estate business.\nThis information is stored in a list node ClientNode as follows.\npublic class ClientNode\n{\n  private String name;\n  private String phone;\n  private boolean attended;\n  private ClientNode next;\n  public ClientNode (String aName, String aPhone)\n      {\n    this.name = aName;\n    this.phone = aPhone;\n    this.attended = false;\n    this.next = null;\n  }\n  public String getName()\n  {\n    return this.name;\n  }\n  public String getClient()\n  {\n    return this.name+\" \"+this.phone;\n  }\n  public void setAttended()\n  {\n    attended = true;\n  }\n  public ClientNode getNext()\n  {\n    return this.next;\n  }\n  public void setNext(ClientNode nextNode)\n  {\n    this.next = nextNode;\n  }\n}\n(a) Identify two features of an abstract data type (ADT). [2]\n(Option D continues on the following page)\n– 18 – 2223 – 7012\n(Option D, question 16 continued)\nA new class ClientList is implemented as outlined below.\npublic class ClientList\n{\n  ClientNode root;\n  // default constructor\n  void enList(ClientNode visitor)\n  { \n    … adds visitor to the end of the list – missing code …\n  }\n  boolean isEmpty()\n  { \n    return (root==null);\n  }\n  … more methods …\n}\nA list openDay has been instantiated of the type ClientList.\nopenDay John Belaka\n071112223\nEmma Kim\n071135322\n(b) Describe the meaning of the following statement. [3]\nopenDay.enList(new ClientNode(\"Sophie Bella\", \"072456721\"));\n(c) By using object references, construct the method enList that allows a client to be \nadded to the end of the list openDay. [5]\nThe attendance of potential buyers is tracked during the open day by changing the attended \nvariable to true when a potential buyer arrives.\nAt the end of the day, the list openDay is processed so that every potential buyer that \nattended is added to new list hasAttended and every potential buyer that did not attend is \nadded to a new list notAttended.\n(d) Without writing code, outline the steps involved in splitting the list openDay into a list \nhasAttended and a list notAttended. [4]\n(Option D continues on the following page)\n– 19 – 2223 – 7012\n(Option D, question 16 continued)\nThe real estate business keeps the data of all past owners in a file for future reference.  \nThis file is sorted by owner name. When needed, this file is read into a LinkedList called \ncontacts, which has been instantiated as follows.\nprivate LinkedList<Owner> contacts = new LinkedList<Owner>();\n(e) Construct a recursive binary search method given as \n \npublic Owner binSearch(String name, int low, int high) \n \nwhere name is the search term.\nYou may assume that contacts is accessible to binSearch and that it has been filled \nwith many objects.\nYou may use the following standard LinkedList method.\n.get(int index)\nThis returns the object located in the LinkedList at index. [6]\nEnd of Option D\n ",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-18.png",
+          "source_pdf_page": 18,
+          "visually_verified": false
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-19.png",
+          "source_pdf_page": 19,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-20.png",
+          "source_pdf_page": 20,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Describe the meaning of the following statement.",
+        "A linked-list object waiting has append(node),which adds a node at its tail"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-035",
+        "filename": "Computer_science_paper_2__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          33
+        ],
+        "question_reference": "Q16 b",
+        "marking_summary": "Exact original MS leaf excerpt: Award [3 max]. A new ClientNode is instantiated; with name \"Sophie Bella\" and phone \"072456721\"; and it is added as the last node in the list openDay; // must specify openDay",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [3 max].\nA new ClientNode is instantiated;\nwith name \"Sophie Bella\" and phone \"072456721\";\nand it is added as the last node in the list openDay;  // must specify openDay",
+        "source_issues": [],
+        "source_marking_evidence": "– 33 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \n16. (a) Award [2 max]. \nIts (behaviour) is defined by its operations [1] and the data that the operations are carried \nout on [1]; \nAn ADT is a complex data type; \nEach ADTs has standardised methods/operations / a specific set of methods/operations  \n(such as addToEnd. Push etc.);              // Don’t accept that “it has methods”; \nImplementation details are hidden from the user; \nUsers only need to know how to use the operations/methods; \nAllow ADTs can be allocated memory dynamically;  \n(b) Award [3 max].\nA new ClientNode is instantiated;\nwith name \"Sophie Bella\" and phone \"072456721\";\nand it is added as the last node in the list openDay;  // must specify openDay \n(c) Award [5 max].\nAward [1] for testing for an empty list;\nAward [1] for assigning visitor to root;\nAward [1] for declaring and initializing a new ClientNode (currentNode);\nAward [1] for correct loop;\nAward [1] for correct assignment of next node;\nAward [1] for correctly assigning visitor as the last node;\nNote: Allow follow through errors if the candidate only uses get/set once \nExample answer \nvoid enList(ClientNode visitor) \n{ \n  if (root==null)   // checks for empty list - allow  use of isEmpty \n  { \n root = visitor; \n  } \n  else \n  { \n ClientNode currentNode = root;   // declares cu rrentNode \n while (currentNode.getNext()!=null)   // finding the last node \n { \n currentNode = currentNode.getNext(); \n } \n currentNode.setNext(visitor)    ;   // set as last node \n  } \n}  "
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B3.1.4",
+          "scope_evidence": "• How to define classes and create objects from those classes\n• The role of constructors in initializing an object's state, setting initial values for its attributes to define its condition or characteristics at the time of creation",
+          "rationale": "Adapted target only: A linked-list object waiting has append(node),which adds a node at its tail; guidance target: Construct code to define classes and instantiate objects. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B4.1.3",
+          "scope_evidence": "• The basic operations on a linked list, such as insertion, deletion, traversal, search",
+          "rationale": "Adapted target only: A linked-list object waiting has append(node),which adds a node at its tail; guidance target: Construct and apply linked lists: singly, doubly and circular. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC032-Q16-b"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC032-Q16-c",
+      "source_id": "SRC-032",
+      "source_filename": "Computer_science_paper_2__HL (1).pdf",
+      "year": "2023",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ0 (markscheme)",
+      "option": "D",
+      "question": 16,
+      "subquestion": "c",
+      "source_pdf_pages": [
+        19
+      ],
+      "source_printed_pages": [
+        "18"
+      ],
+      "original_marks": 5,
+      "command_term": "Construct",
+      "original_text": "By using object references, construct the method enList that allows a client to be added to the end of the list openDay.",
+      "parent_context": "– 17 – 2223 – 7012\nTurn over\n(Option D continued)\n16. Once a month the real estate business organizes an open day for a particular house.\nInterested clients can sign up by giving their name and phone number to the real estate business.\nThis information is stored in a list node ClientNode as follows.\npublic class ClientNode\n{\n  private String name;\n  private String phone;\n  private boolean attended;\n  private ClientNode next;\n  public ClientNode (String aName, String aPhone)\n      {\n    this.name = aName;\n    this.phone = aPhone;\n    this.attended = false;\n    this.next = null;\n  }\n  public String getName()\n  {\n    return this.name;\n  }\n  public String getClient()\n  {\n    return this.name+\" \"+this.phone;\n  }\n  public void setAttended()\n  {\n    attended = true;\n  }\n  public ClientNode getNext()\n  {\n    return this.next;\n  }\n  public void setNext(ClientNode nextNode)\n  {\n    this.next = nextNode;\n  }\n}\n(a) Identify two features of an abstract data type (ADT). [2]\n(Option D continues on the following page)\n– 18 – 2223 – 7012\n(Option D, question 16 continued)\nA new class ClientList is implemented as outlined below.\npublic class ClientList\n{\n  ClientNode root;\n  // default constructor\n  void enList(ClientNode visitor)\n  { \n    … adds visitor to the end of the list – missing code …\n  }\n  boolean isEmpty()\n  { \n    return (root==null);\n  }\n  … more methods …\n}\nA list openDay has been instantiated of the type ClientList.\nopenDay John Belaka\n071112223\nEmma Kim\n071135322\n(b) Describe the meaning of the following statement. [3]\nopenDay.enList(new ClientNode(\"Sophie Bella\", \"072456721\"));\n(c) By using object references, construct the method enList that allows a client to be \nadded to the end of the list openDay. [5]\nThe attendance of potential buyers is tracked during the open day by changing the attended \nvariable to true when a potential buyer arrives.\nAt the end of the day, the list openDay is processed so that every potential buyer that \nattended is added to new list hasAttended and every potential buyer that did not attend is \nadded to a new list notAttended.\n(d) Without writing code, outline the steps involved in splitting the list openDay into a list \nhasAttended and a list notAttended. [4]\n(Option D continues on the following page)\n– 19 – 2223 – 7012\n(Option D, question 16 continued)\nThe real estate business keeps the data of all past owners in a file for future reference.  \nThis file is sorted by owner name. When needed, this file is read into a LinkedList called \ncontacts, which has been instantiated as follows.\nprivate LinkedList<Owner> contacts = new LinkedList<Owner>();\n(e) Construct a recursive binary search method given as \n \npublic Owner binSearch(String name, int low, int high) \n \nwhere name is the search term.\nYou may assume that contacts is accessible to binSearch and that it has been filled \nwith many objects.\nYou may use the following standard LinkedList method.\n.get(int index)\nThis returns the object located in the LinkedList at index. [6]\nEnd of Option D\n ",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-18.png",
+          "source_pdf_page": 18,
+          "visually_verified": false
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-19.png",
+          "source_pdf_page": 19,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-20.png",
+          "source_pdf_page": 20,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: By using object references, construct the method enList that allows a client to be added to the end of the list openDay.",
+        "Construct append(self,visitor) in Python for a singly linked list whose head attribute is None when empty"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-035",
+        "filename": "Computer_science_paper_2__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          33
+        ],
+        "question_reference": "Q16 c",
+        "marking_summary": "Exact original MS leaf excerpt: Award [5 max]. Award [1] for testing for an empty list; Award [1] for assigning visitor to root; Award [1] for declaring and initializing a new ClientNode (currentNode); Award [1] for correct loop; Award [1] for correct assignment of next node; Award [1] for correctly assigning visitor as the last node; Note: Allow follow through errors if the candidate only uses get/set once Example answer void enList(ClientNode visitor) { if (root==null) // checks for empty list - allow use of isEmpty { root = visitor; } else { ClientNode currentNode = root; // declares cu rrentNode while (currentNode.getNext()!=null) // finding the last node { currentNode = currentNode.getNext(); } currentNode.setNext(visitor) ; // set as last node } }",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [5 max].\nAward [1] for testing for an empty list;\nAward [1] for assigning visitor to root;\nAward [1] for declaring and initializing a new ClientNode (currentNode);\nAward [1] for correct loop;\nAward [1] for correct assignment of next node;\nAward [1] for correctly assigning visitor as the last node;\nNote: Allow follow through errors if the candidate only uses get/set once \nExample answer \nvoid enList(ClientNode visitor) \n{ \n  if (root==null)   // checks for empty list - allow  use of isEmpty \n  { \n root = visitor; \n  } \n  else \n  { \n ClientNode currentNode = root;   // declares cu rrentNode \n while (currentNode.getNext()!=null)   // finding the last node \n { \n currentNode = currentNode.getNext(); \n } \n currentNode.setNext(visitor)    ;   // set as last node \n  } \n}",
+        "source_issues": [],
+        "source_marking_evidence": "– 33 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \n16. (a) Award [2 max]. \nIts (behaviour) is defined by its operations [1] and the data that the operations are carried \nout on [1]; \nAn ADT is a complex data type; \nEach ADTs has standardised methods/operations / a specific set of methods/operations  \n(such as addToEnd. Push etc.);              // Don’t accept that “it has methods”; \nImplementation details are hidden from the user; \nUsers only need to know how to use the operations/methods; \nAllow ADTs can be allocated memory dynamically;  \n(b) Award [3 max].\nA new ClientNode is instantiated;\nwith name \"Sophie Bella\" and phone \"072456721\";\nand it is added as the last node in the list openDay;  // must specify openDay \n(c) Award [5 max].\nAward [1] for testing for an empty list;\nAward [1] for assigning visitor to root;\nAward [1] for declaring and initializing a new ClientNode (currentNode);\nAward [1] for correct loop;\nAward [1] for correct assignment of next node;\nAward [1] for correctly assigning visitor as the last node;\nNote: Allow follow through errors if the candidate only uses get/set once \nExample answer \nvoid enList(ClientNode visitor) \n{ \n  if (root==null)   // checks for empty list - allow  use of isEmpty \n  { \n root = visitor; \n  } \n  else \n  { \n ClientNode currentNode = root;   // declares cu rrentNode \n while (currentNode.getNext()!=null)   // finding the last node \n { \n currentNode = currentNode.getNext(); \n } \n currentNode.setNext(visitor)    ;   // set as last node \n  } \n}  "
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B4.1.3",
+          "scope_evidence": "• The basic operations on a linked list, such as insertion, deletion, traversal, search",
+          "rationale": "Adapted target only: Construct append(self,visitor) in Python for a singly linked list whose head attribute is None when empty; guidance target: Construct and apply linked lists: singly, doubly and circular. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Executed empty andnonempty append; nodeidentity preserved."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC032-Q16-c"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC032-Q16-d",
+      "source_id": "SRC-032",
+      "source_filename": "Computer_science_paper_2__HL (1).pdf",
+      "year": "2023",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ0 (markscheme)",
+      "option": "D",
+      "question": 16,
+      "subquestion": "d",
+      "source_pdf_pages": [
+        19
+      ],
+      "source_printed_pages": [
+        "18"
+      ],
+      "original_marks": 4,
+      "command_term": "Outline",
+      "original_text": "Without writing code, outline the steps involved in splitting the list openDay into a list hasAttended and a list notAttended.",
+      "parent_context": "– 17 – 2223 – 7012\nTurn over\n(Option D continued)\n16. Once a month the real estate business organizes an open day for a particular house.\nInterested clients can sign up by giving their name and phone number to the real estate business.\nThis information is stored in a list node ClientNode as follows.\npublic class ClientNode\n{\n  private String name;\n  private String phone;\n  private boolean attended;\n  private ClientNode next;\n  public ClientNode (String aName, String aPhone)\n      {\n    this.name = aName;\n    this.phone = aPhone;\n    this.attended = false;\n    this.next = null;\n  }\n  public String getName()\n  {\n    return this.name;\n  }\n  public String getClient()\n  {\n    return this.name+\" \"+this.phone;\n  }\n  public void setAttended()\n  {\n    attended = true;\n  }\n  public ClientNode getNext()\n  {\n    return this.next;\n  }\n  public void setNext(ClientNode nextNode)\n  {\n    this.next = nextNode;\n  }\n}\n(a) Identify two features of an abstract data type (ADT). [2]\n(Option D continues on the following page)\n– 18 – 2223 – 7012\n(Option D, question 16 continued)\nA new class ClientList is implemented as outlined below.\npublic class ClientList\n{\n  ClientNode root;\n  // default constructor\n  void enList(ClientNode visitor)\n  { \n    … adds visitor to the end of the list – missing code …\n  }\n  boolean isEmpty()\n  { \n    return (root==null);\n  }\n  … more methods …\n}\nA list openDay has been instantiated of the type ClientList.\nopenDay John Belaka\n071112223\nEmma Kim\n071135322\n(b) Describe the meaning of the following statement. [3]\nopenDay.enList(new ClientNode(\"Sophie Bella\", \"072456721\"));\n(c) By using object references, construct the method enList that allows a client to be \nadded to the end of the list openDay. [5]\nThe attendance of potential buyers is tracked during the open day by changing the attended \nvariable to true when a potential buyer arrives.\nAt the end of the day, the list openDay is processed so that every potential buyer that \nattended is added to new list hasAttended and every potential buyer that did not attend is \nadded to a new list notAttended.\n(d) Without writing code, outline the steps involved in splitting the list openDay into a list \nhasAttended and a list notAttended. [4]\n(Option D continues on the following page)\n– 19 – 2223 – 7012\n(Option D, question 16 continued)\nThe real estate business keeps the data of all past owners in a file for future reference.  \nThis file is sorted by owner name. When needed, this file is read into a LinkedList called \ncontacts, which has been instantiated as follows.\nprivate LinkedList<Owner> contacts = new LinkedList<Owner>();\n(e) Construct a recursive binary search method given as \n \npublic Owner binSearch(String name, int low, int high) \n \nwhere name is the search term.\nYou may assume that contacts is accessible to binSearch and that it has been filled \nwith many objects.\nYou may use the following standard LinkedList method.\n.get(int index)\nThis returns the object located in the LinkedList at index. [6]\nEnd of Option D\n ",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-18.png",
+          "source_pdf_page": 18,
+          "visually_verified": false
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-19.png",
+          "source_pdf_page": 19,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-20.png",
+          "source_pdf_page": 20,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Without writing code, outline the steps involved in splitting the list openDay into a list hasAttended and a list notAttended.",
+        "Without writing code,outline how to split a singly linked list into attended and absent lists according to each node’s Boolean attended field"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-035",
+        "filename": "Computer_science_paper_2__HL_markscheme (1).pdf",
+        "pdf_pages": [
+          34
+        ],
+        "question_reference": "Q16 d",
+        "marking_summary": "Exact original MS leaf excerpt: Award [4 max]. Declare/create/instantiate hasAttended and notAttended of type ClientList; // allow lists for ClientList Iterate through the list openDay (inspecting the nodes); If the variable attended in a node equals true; Then insert that node into hasAttended else into notAttended; // must imply that it is a node",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [4 max].\nDeclare/create/instantiate  hasAttended and notAttended of type ClientList;  // allow\nlists for ClientList\nIterate through the list openDay (inspecting the nodes);\nIf the variable attended in a node equals true;\nThen insert that node into hasAttended else into notAttended;  // must imply that it is a\nnode",
+        "source_issues": [
+          "Original marking summary does not spell out safe relinking; adapted requirement andsolution preventlosing traversal orcreating sharednextchains."
+        ],
+        "source_marking_evidence": "– 34 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \n(d) Award [4 max].\nDeclare/create/instantiate  hasAttended and notAttended of type ClientList;  // allow\nlists for ClientList\nIterate through the list openDay (inspecting the nodes);\nIf the variable attended in a node equals true;\nThen insert that node into hasAttended else into notAttended;  // must imply that it is a\nnode\n(e) Award [6 max].\nAward [1] for testing high<low and returning null if name is not found;\nAward [1] for declaring and assigning middle;\nAward [1] for accessing the middle node using .get(middle);\nAward [1] for testing for the base case where name is found and returned;   // allow  '==' or '='\nAward [1] for correct use of if condition(s);       // with or without the 'high<low' part\nAward [1] for correctly testing which range contains the search term;\nAward [1] for an attempt at a recursive call for both cases;\nAward [1] for correct boundaries in both recursive calls;\nExample answer: \npublic Owner binSearch(String name, int low, int high) \n{ \n  if (high<low)    // allow (low>high)  \n  {  \n return null; \n  } \n  else \n  { \n  int middle = (low+high)/2; \n  Owner current = contacts.get(middle); \n  if (current.getName().equals(name))  // allow  '==' or '=' \n  { \n  return current; \n  } \n  else \n  { \n  if (name.compareTo(current.getName())<0)   // allow < or > \n  { \n  return binSearch(name, low, middle-1); // do not allow middle \n  } \n  else \n  { \n return binSearch(name, middle+1, high); // do not allow middle \n  } \n  } \n   } \n } "
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B4.1.3",
+          "scope_evidence": "• The basic operations on a linked list, such as insertion, deletion, traversal, search",
+          "rationale": "Adapted target only: Without writing code,outline how to split a singly linked list into attended and absent lists according to each node’s Boolean attended field; guidance target: Construct and apply linked lists: singly, doubly and circular. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC032-Q16-d"
+      ]
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC032-Q15-d-i",
+      "source_question_ids": [
+        "H-SRC032-Q15-d-i"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline why visit(entries,city) may raise an error if entries includes None.\ndef visit(entries, city):\n    for item in entries:\n        if item.city == city:\n            print(item.address)",
+      "syllabus_codes": [
+        "B2.1.3",
+        "B2.1.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "The loop eventually binds item to None. Accessing item.city then raises AttributeError because None has no city attribute.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "None entry accessed."
+        },
+        {
+          "marks": 1,
+          "criterion": "AttributeError on missing attribute."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Executed nullable-entry failure.",
+        "source_comparison": [
+          28
+        ],
+        "test_code": "def visit(entries, city):\n    for item in entries:\n        if item.city == city:\n            print(item.address)\ntry:\n visit([None],\"Bay\")\n raise AssertionError(\"missing AttributeError\")\nexcept AttributeError:pass",
+        "result_file": ""
+      },
+      "code": "def visit(entries, city):\n    for item in entries:\n        if item.city == city:\n            print(item.address)",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC032-Q15-d-ii",
+      "source_question_ids": [
+        "H-SRC032-Q15-d-ii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline how to repair visit so it ignores None entries while still printing every matching address.",
+      "syllabus_codes": [
+        "B2.1.4",
+        "B2.3.2"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Test item is not None before reading its attributes, for example if item is not None and item.city==city. Continue scanning after skipped entries.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Explicit None guard."
+        },
+        {
+          "marks": 1,
+          "criterion": "Guard precedes attribute access/continues valid entries."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          28
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC032-Q15-e",
+      "source_question_ids": [
+        "H-SRC032-Q15-e"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct house_sort(entries) in Python. entries may contain None slots or House objects with numeric price. Return the non-None objects sorted by ascending price using bubble sort. Do not use sorted or list.sort; the task assesses bubble sort.",
+      "syllabus_codes": [
+        "B2.4.3",
+        "B2.2.2"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 5,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "One solution:\ndef house_sort(entries):\n    result = [item for item in entries if item is not None]\n    for end in range(len(result)-1, 0, -1):\n        for i in range(end):\n            if result[i].price > result[i+1].price:\n                result[i], result[i+1] = result[i+1], result[i]\n    return result",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Filters/ignores None slots correctly."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct outer pass loop."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct adjacent comparison loop."
+        },
+        {
+          "marks": 1,
+          "criterion": "Compares prices ascending."
+        },
+        {
+          "marks": 1,
+          "criterion": "Swaps whole object references and returns result."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Executed None filtering,duplicate prices,empty list; objects preserved.",
+        "source_comparison": [
+          29,
+          30
+        ],
+        "test_code": "def house_sort(entries):\n    result = [item for item in entries if item is not None]\n    for end in range(len(result)-1, 0, -1):\n        for i in range(end):\n            if result[i].price > result[i+1].price:\n                result[i], result[i+1] = result[i+1], result[i]\n    return result\nfrom types import SimpleNamespace as N\na,b,c=N(price=5),N(price=2),N(price=5)\nassert house_sort([a,None,b,c])==[b,a,c]\nassert house_sort([])==[]",
+        "result_file": ""
+      },
+      "code": "def house_sort(entries):\n    result = [item for item in entries if item is not None]\n    for end in range(len(result)-1, 0, -1):\n        for i in range(end):\n            if result[i].price > result[i+1].price:\n                result[i], result[i+1] = result[i+1], result[i]\n    return result",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC032-Q15-f",
+      "source_question_ids": [
+        "H-SRC032-Q15-f"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "You are given house_sort(entries), which returns the non-None House objects in ascending price order. Construct select_three(entries, budget) in Python. Return the three highest-priced objects costing no more than budget, in ascending price order. At least three eligible objects exist. Use the supplied helper.",
+      "syllabus_codes": [
+        "B2.2.2",
+        "B2.3.2",
+        "B2.3.3",
+        "B2.3.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 7,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "One solution:\ndef select_three(entries, budget):\n    ordered = house_sort(entries)\n    eligible = []\n    for item in ordered:\n        if item.price <= budget:\n            eligible.append(item)\n    return eligible[-3:]",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Accepts entries and budget."
+        },
+        {
+          "marks": 1,
+          "criterion": "Calls supplied sort helper."
+        },
+        {
+          "marks": 1,
+          "criterion": "Creates eligible/result list."
+        },
+        {
+          "marks": 1,
+          "criterion": "Visits ordered objects."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct price<=budget filter."
+        },
+        {
+          "marks": 1,
+          "criterion": "Selects the last three eligible objects."
+        },
+        {
+          "marks": 1,
+          "criterion": "Returns those objects in ascending order."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Executed budgetboundary andhighest-three selection,notlowestthree.",
+        "source_comparison": [
+          31,
+          32
+        ],
+        "test_code": "def house_sort(entries):\n    result = [item for item in entries if item is not None]\n    for end in range(len(result)-1, 0, -1):\n        for i in range(end):\n            if result[i].price > result[i+1].price:\n                result[i], result[i+1] = result[i+1], result[i]\n    return result\ndef select_three(entries, budget):\n    ordered = house_sort(entries)\n    eligible = []\n    for item in ordered:\n        if item.price <= budget:\n            eligible.append(item)\n    return eligible[-3:]\nfrom types import SimpleNamespace as N\ne=[N(price=x) for x in [8,2,9,4,6]]\nassert [x.price for x in select_three(e,8)]==[4,6,8]\nassert [x.price for x in select_three(e,6)]==[2,4,6]",
+        "result_file": ""
+      },
+      "code": "def select_three(entries, budget):\n    ordered = house_sort(entries)\n    eligible = []\n    for item in ordered:\n        if item.price <= budget:\n            eligible.append(item)\n    return eligible[-3:]",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC032-Q16-a",
+      "source_question_ids": [
+        "H-SRC032-Q16-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Identify two defining features of an ADT.",
+      "syllabus_codes": [
+        "B4.1.1"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 2,
+      "command_term": "Identify",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Its permitted operations/behaviour are specified; the concrete implementation and memory representation are hidden from users of the interface.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Specified operations/behaviour."
+        },
+        {
+          "marks": 1,
+          "criterion": "Implementation abstraction."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          33
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC032-Q16-b",
+      "source_question_ids": [
+        "H-SRC032-Q16-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "A linked-list object waiting has append(node), which adds a node at its tail. Describe waiting.append(ClientNode(\"Ari Moon\", \"070123\")), where ClientNode constructs a new node from name and phone.",
+      "syllabus_codes": [
+        "B3.1.4",
+        "B4.1.3"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 3,
+      "command_term": "List",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "A new ClientNode is instantiated with the supplied name and phone, and that node is added to the end of waiting.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "New node object created."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct attribute values."
+        },
+        {
+          "marks": 1,
+          "criterion": "Added at tail of waiting."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          33
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC032-Q16-c",
+      "source_question_ids": [
+        "H-SRC032-Q16-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct append(self, visitor) in Python for a singly linked list whose head attribute is None when empty. visitor is a new unlinked node. Append it at the end, maintaining None as the last next reference.",
+      "syllabus_codes": [
+        "B4.1.3"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 5,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "One solution:\ndef append(self, visitor):\n    visitor.next = None\n    if self.head is None:\n        self.head = visitor\n    else:\n        current = self.head\n        while current.next is not None:\n            current = current.next\n        current.next = visitor",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Handles empty list."
+        },
+        {
+          "marks": 1,
+          "criterion": "Assigns new head when empty."
+        },
+        {
+          "marks": 1,
+          "criterion": "Initializes traversal athead."
+        },
+        {
+          "marks": 1,
+          "criterion": "Follows links until last node."
+        },
+        {
+          "marks": 1,
+          "criterion": "Links visitor at tail with correct None boundary."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Executed empty andnonempty append; nodeidentity preserved.",
+        "source_comparison": [
+          33
+        ],
+        "test_code": "def append(self, visitor):\n    visitor.next = None\n    if self.head is None:\n        self.head = visitor\n    else:\n        current = self.head\n        while current.next is not None:\n            current = current.next\n        current.next = visitor\nfrom types import SimpleNamespace as N\nl=N(head=None);a=N(next=None);b=N(next=None)\nappend(l,a);append(l,b)\nassert l.head is a and a.next is b and b.next is None",
+        "result_file": ""
+      },
+      "code": "def append(self, visitor):\n    visitor.next = None\n    if self.head is None:\n        self.head = visitor\n    else:\n        current = self.head\n        while current.next is not None:\n            current = current.next\n        current.next = visitor",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC032-Q16-d",
+      "source_question_ids": [
+        "H-SRC032-Q16-d"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Without writing code, outline how to split a singly linked list into attended and absent lists according to each node’s Boolean attended field. Move the existing nodes, preserve order in each result, and leave the original list empty.",
+      "syllabus_codes": [
+        "B4.1.3"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 4,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Create two empty result lists with head/tail references. Traverse the original list, saving the next reference before detaching a node. Append that node to the appropriate result tail according to attended. Advance using the saved reference and finally clear the original head.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Initializes two result lists."
+        },
+        {
+          "marks": 1,
+          "criterion": "Traverses every original node and saves next."
+        },
+        {
+          "marks": 1,
+          "criterion": "Chooses correct result from attended."
+        },
+        {
+          "marks": 1,
+          "criterion": "Relinks/detaches safely, preserves order and clears original head."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          34
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    }
+  ]
+}

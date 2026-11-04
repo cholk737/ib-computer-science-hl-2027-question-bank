@@ -1,0 +1,54 @@
+{
+  "question_id": "P-SRC042-Q01-d",
+  "source_question_ids": [
+    "H-SRC042-Q01-d"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct SQL using Employee(EmployeeID, RoleID, FirstName, Surname) and Role(RoleID, Grade) to return FirstName, Surname, Grade for employees whose surname is Patel and grade is 8.",
+  "syllabus_codes": [
+    "A3.3.2"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 4,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Retains two-table query construction with new schema/filter and correct consistent table names.",
+  "solution": "SELECT e.FirstName,e.Surname,r.Grade FROM Employee AS e JOIN Role AS r ON e.RoleID=r.RoleID WHERE e.Surname='Patel' AND r.Grade=8;",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Selects requested fields."
+    },
+    {
+      "marks": 1,
+      "criterion": "Uses Employee joined with Role."
+    },
+    {
+      "marks": 1,
+      "criterion": "Matches their RoleID fields."
+    },
+    {
+      "marks": 1,
+      "criterion": "Combines surname and grade conditions using AND."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "No executable code required; manual technical check."
+  },
+  "code": "",
+  "test_code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC042-Q01-d.json",
+  "question_path": "question-bank/questions/P-SRC042-Q01-d.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC042-Q01-d.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

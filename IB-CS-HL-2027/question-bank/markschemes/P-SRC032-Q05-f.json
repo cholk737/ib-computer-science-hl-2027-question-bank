@@ -1,0 +1,55 @@
+{
+  "question_id": "P-SRC032-Q05-f",
+  "unofficial": true,
+  "marks": 8,
+  "solution": "One solution:\ndef extreme_months(months, usage):\n    low = high = 0\n    for i in range(1, len(usage)):\n        if usage[i] < usage[low]: low = i\n        if usage[i] > usage[high]: high = i\n    return months[low], months[high]",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes low from valid index."
+    },
+    {
+      "marks": 1,
+      "criterion": "Initializes high from valid index."
+    },
+    {
+      "marks": 1,
+      "criterion": "Scans remaining entries."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct low comparison."
+    },
+    {
+      "marks": 1,
+      "criterion": "Updates low index."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct high comparison/update."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns month names using indices."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct order and first-tie behaviour."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed tie,minimum andsingleton cases.",
+    "source_comparison": [
+      11,
+      12
+    ],
+    "test_code": "def extreme_months(months, usage):\n    low = high = 0\n    for i in range(1, len(usage)):\n        if usage[i] < usage[low]: low = i\n        if usage[i] > usage[high]: high = i\n    return months[low], months[high]\nassert extreme_months([\"Jan\",\"Feb\",\"Mar\"],[4,1,4])==(\"Feb\",\"Jan\")\nassert extreme_months([\"Jan\"],[2])==(\"Jan\",\"Jan\")",
+    "result_file": ""
+  },
+  "code": "def extreme_months(months, usage):\n    low = high = 0\n    for i in range(1, len(usage)):\n        if usage[i] < usage[low]: low = i\n        if usage[i] > usage[high]: high = i\n    return months[low], months[high]",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

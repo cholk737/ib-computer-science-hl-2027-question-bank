@@ -34,7 +34,9 @@
       13
     ],
     "question_reference": "Q12 c",
-    "marking_summary": "Set total=0 and current=head. Add current.value to total, then advance current=current.next. Repeat until current is head again, and report total.",
+    "marking_summary": "Exact original MS leaf excerpt: Award [4 max] Initialize (a temporary pointer with the head and) a variable sum with 0 (zero); Loop from the beginning to the end of the circular linked list / until all the nodes get traversed); Add the value (of the data field) (of the current node) to the sum; Change the temporary pointer so it points the next node of circular linked list; Note: Answers written in pseudocode are acceptable. For example, sum = 0 curr = head loop sum = sum + curr.data curr = curr.next until curr == head",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [4 max]\nInitialize (a temporary pointer with the head and) a variable sum with 0 (zero); \nLoop from the beginning to the end of the circular linked list / until all the nodes get \ntraversed); \nAdd the value (of the data field) (of the current node) to the sum; \nChange the temporary pointer so it points the next node of circular linked list; \nNote: Answers written in pseudocode are acceptable. \nFor example, \nsum = 0 \ncurr = head \nloop \n  sum = sum + curr.data \n  curr = curr.next \nuntil curr == head",
     "source_issues": [],
     "source_marking_evidence": "– 13 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \n(c) Award [4 max]\nInitialize (a temporary pointer with the head and) a variable sum with 0 (zero); \nLoop from the beginning to the end of the circular linked list / until all the nodes get \ntraversed); \nAdd the value (of the data field) (of the current node) to the sum; \nChange the temporary pointer so it points the next node of circular linked list; \nNote: Answers written in pseudocode are acceptable. \nFor example, \nsum = 0 \ncurr = head \nloop \n  sum = sum + curr.data \n  curr = curr.next \nuntil curr == head \n(d) Award [4 max]\nIn an array, memory is assigned during compile time(predetermined) whilst in a linked list it is \nallocated during execution/runtime; \nArrays are of fixed size whilst linked lists are flexible and can expand and contract its size; \nArray requires less memory (due to actual data being stored within the index in the array) \nwhilst there is a need for more memory in linked list (due to storage of additional next and \nprevious pointers/references); \nElements are stored consecutively in array whereas elements are stored randomly in linked \nlists; \nMemory utilization is inefficient in the array whilst memory utilization is efficient in the linked \nlist; \nAccessing an element in an array is direct (fast) while accessing an element in linked list is \nsequential/linear (slower) /to get into the nth element only the array name with index within \nthe square bracket should be written whilst a linked list (to get the nth element) should be \ntraversed starting from the beginning of the list, and traversing through the list until found/ ; \nOperations like insertion and deletion in arrays consume a lot of time whilst the performance \nof these operations in linked lists is fast; "
   },
@@ -43,7 +45,7 @@
     {
       "syllabus_code": "B4.1.3",
       "scope_evidence": "• The basic operations on a linked list, such as insertion, deletion, traversal, search",
-      "rationale": "Describe an algorithm to total all values in a nonempty circular singly linked list exactly once assesses Construct and apply linked lists: singly, doubly and circular.",
+      "rationale": "Original and adapted within-scope skill: Describe an algorithm to total all values in a nonempty circular singly linked list exactly once; guidance target: Construct and apply linked lists: singly, doubly and circular.",
       "theme": "B",
       "level": "HL-only",
       "confidence": "high",
@@ -58,8 +60,9 @@
     "visual": "No visual required by this leaf.",
     "technical": "Independently reasoned and compared with available source marking points."
   },
-  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "adaptation_reuse_question_id": "",
   "practice_question_ids": [
     "P-SRC006-Q12-c"
-  ]
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
 }

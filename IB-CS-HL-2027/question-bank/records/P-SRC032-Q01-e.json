@@ -1,0 +1,51 @@
+{
+  "question_id": "P-SRC032-Q01-e",
+  "source_question_ids": [
+    "H-SRC032-Q01-e"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Explain how a virtual database view can simplify access to selected data without storing a separate copy of every displayed result.",
+  "syllabus_codes": [
+    "A3.3.5"
+  ],
+  "theme": "A",
+  "level": "HL-only",
+  "marks": 3,
+  "command_term": "Explain",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "The view stores a query definition. Users query it as a table while the DBMS derives rows from underlying tables. It can hide joins/unneeded fields and reflect changes in base data.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Query definition/virtual table."
+    },
+    {
+      "marks": 1,
+      "criterion": "Results derived from base tables."
+    },
+    {
+      "marks": 1,
+      "criterion": "Simplification/security/up-to-date benefit."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      5
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC032-Q01-e.json",
+  "question_path": "question-bank/questions/P-SRC032-Q01-e.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC032-Q01-e.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

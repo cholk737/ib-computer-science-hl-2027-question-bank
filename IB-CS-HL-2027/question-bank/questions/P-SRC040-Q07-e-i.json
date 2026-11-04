@@ -1,0 +1,20 @@
+{
+  "question_id": "P-SRC040-Q07-e-i",
+  "source_question_ids": [
+    "H-SRC040-Q07-e-i"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Describe the effect of feedback(scores,3) for scores=[2,4,5], including the mean used, final list and return value.\n\ndef feedback(previous, rating):\n    old_mean = sum(previous) / len(previous)\n    previous.append(rating)\n    if rating >= old_mean:\n        return \"Thanks\"\n    return \"Review needed\"",
+  "syllabus_codes": [
+    "B2.3.1",
+    "B2.3.2"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 4,
+  "command_term": "Describe",
+  "difficulty": "medium",
+  "adaptation_rationale": "Convert server-language code to a self-contained Python trace preserving the significant pre-insertion average and branch sequence. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "assets": []
+}

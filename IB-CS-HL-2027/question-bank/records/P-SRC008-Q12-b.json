@@ -16,7 +16,7 @@
   "command_term": "Explain",
   "difficulty": "high",
   "adaptation_rationale": "Corrects source full-boundary bug; retains static-storage/stack reasoning without treating Python list growth as static allocation.",
-  "solution": "Only indices 0..4 are available and top tracks the occupied top position.; push checks space, then increments top and stores at buffer[top].; pop checks nonempty, returns buffer[top] and decrements top.; Operations occur at one end, giving LIFO behaviour.; Empty i ff top==-1.; Full i ff top==4; reject another push before writing.",
+  "solution": "Only indices 0..4 are available and top tracks the occupied top position.; push checks space, then increments top and stores at buffer[top].; pop checks nonempty, returns buffer[top] and decrements top.; Operations occur at one end, giving LIFO behaviour.; Empty if and only if top==-1.; Full if and only if top==4; reject another push before writing.",
   "marking_points": [
     {
       "marks": 1,
@@ -36,11 +36,11 @@
     },
     {
       "marks": 1,
-      "criterion": "Empty i ff top==-1."
+      "criterion": "Empty if and only if top==-1."
     },
     {
       "marks": 1,
-      "criterion": "Full i ff top==4; reject another push before writing."
+      "criterion": "Full if and only if top==4; reject another push before writing."
     }
   ],
   "acceptable_alternatives": [

@@ -48,5 +48,6 @@
   },
   "code": "def is_band_matrix(a):\n    n=len(a)\n    for r in range(n):\n        for c in range(n):\n            if abs(r-c) <= 1:\n                if a[r][c] == 0:\n                    return False\n            elif a[r][c] != 0:\n                return False\n    return True",
   "test_code": "assert is_band_matrix([[8,2,0],[4,7,3],[0,5,9]])\nassert not is_band_matrix([[8,2,1],[4,7,3],[0,5,9]])\nassert not is_band_matrix([[8,0],[2,7]])\nassert is_band_matrix([[1]])\nassert not is_band_matrix([[0]])",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

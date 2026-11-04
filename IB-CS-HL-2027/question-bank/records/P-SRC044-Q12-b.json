@@ -1,0 +1,60 @@
+{
+  "question_id": "P-SRC044-Q12-b",
+  "source_question_ids": [
+    "H-SRC044-Q12-b"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct top_five(products), returning the five most expensive Product objects in descending price order. There are at least five objects, each with price. Implement selection sort yourself rather than using a sorting built-in; leave the original list order unchanged. Equal-price order may be arbitrary.",
+  "syllabus_codes": [
+    "B2.4.3",
+    "B2.2.2"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 5,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "One solution:\ndef top_five(products):\n    ordered = products[:]\n    for i in range(len(ordered)-1):\n        best = i\n        for j in range(i+1, len(ordered)):\n            if ordered[j].price > ordered[best].price:\n                best = j\n        ordered[i], ordered[best] = ordered[best], ordered[i]\n    return ordered[:5]",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Copies list and returns first five objects."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct outer pass and best-index initialization."
+    },
+    {
+      "marks": 1,
+      "criterion": "Scans remaining suffix with correct bounds."
+    },
+    {
+      "marks": 1,
+      "criterion": "Selects greatest price."
+    },
+    {
+      "marks": 1,
+      "criterion": "Swaps selected object into position, producing descending order."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed ties,exact five and original-list preservation.",
+    "source_comparison": [
+      26
+    ],
+    "test_code": "def top_five(products):\n    ordered = products[:]\n    for i in range(len(ordered)-1):\n        best = i\n        for j in range(i+1, len(ordered)):\n            if ordered[j].price > ordered[best].price:\n                best = j\n        ordered[i], ordered[best] = ordered[best], ordered[i]\n    return ordered[:5]\nfrom types import SimpleNamespace as O\nxs=[O(price=v) for v in [2,9,4,9,1,7]]\nr=top_five(xs)\nassert [p.price for p in r]==[9,9,7,4,2] and [p.price for p in xs]==[2,9,4,9,1,7]\nassert len(top_five([O(price=1) for _ in range(5)]))==5",
+    "result_file": ""
+  },
+  "code": "def top_five(products):\n    ordered = products[:]\n    for i in range(len(ordered)-1):\n        best = i\n        for j in range(i+1, len(ordered)):\n            if ordered[j].price > ordered[best].price:\n                best = j\n        ordered[i], ordered[best] = ordered[best], ordered[i]\n    return ordered[:5]",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC044-Q12-b.json",
+  "question_path": "question-bank/questions/P-SRC044-Q12-b.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC044-Q12-b.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

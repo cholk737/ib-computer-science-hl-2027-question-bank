@@ -32,5 +32,6 @@
   },
   "code": "def lower_sum(a,r):\n    if r == 0:\n        return 0\n    return a[r][r-1] + lower_sum(a,r-1)",
   "test_code": "assert lower_sum([[6,2,0,0],[3,7,4,0],[0,-2,5,8],[0,0,9,1]],3)==10",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

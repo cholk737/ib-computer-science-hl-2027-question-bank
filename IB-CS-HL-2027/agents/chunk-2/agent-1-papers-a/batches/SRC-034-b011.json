@@ -1,0 +1,1214 @@
+{
+  "source_id": "SRC-034",
+  "batch_id": "SRC-034-b011",
+  "source_questions": [
+    {
+      "original_assessment_context": "Monster cardgame;Monster class has static type constants and instance name,health,strength,type;WaterMonster/FireMonster inherit Monster;Arena stores10 Monster references plusmonsterCount. Full Java source retained in source page evidence.",
+      "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+      "source_question_id": "H-SRC034-Q15-c",
+      "source_id": "SRC-034",
+      "source_filename": "Computer_science_paper_2__HL.pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": "15",
+      "subquestion": "c",
+      "source_pdf_pages": [
+        22
+      ],
+      "source_printed_pages": [
+        "21"
+      ],
+      "original_marks": 2,
+      "command_term": "Construct",
+      "original_text": "[Source PDF page 21]\nFireMonster\nThe programmer has created a class named to model the place in which the\nArena\nmonsters will battle.\npublic class Arena {\npublic Monster[] monsters = new Monster[10];\nint monsterCount = 0; //the number of monsters currently\nin array\npublic void addMonster(Monster M) {\n// to be written\n}\npublic void removeMonster(Monster M) {\n//to be written\n}\npublic void doOneOnOneBattle(Monster A, Monster B) {\nwhile (A.health > 0 && B.health > 0) {\ngameLog(A.attack(B));\ngameLog(B.attack(A));\n}\nif (A.health > B.health) {\noutput(A.name + \" WINS!\");\nremoveMonster(B);\n} else if (B.health > A.health) {\noutput(B.name + \" WINS!\");\nremoveMonster(A);\n} else {\noutput(\"IT IS A DRAW!\");\n}\n}\npublic static void output(String message) {\nSystem.out.println(message);\n}\n}\n(Option D continues on the following page)\n\n[Source PDF page 22]\n(Option D, question 15 continued)\n(c) Construct a simple UML class diagram showing the relationships between ,\nFireMonster\nand . You do not need to include variables and methods. [2]\nMonster Arena",
+      "parent_context": "Monster cardgame;Monster class has static type constants and instance name,health,strength,type;WaterMonster/FireMonster inherit Monster;Arena stores10 Monster references plusmonsterCount. Full Java source retained in source page evidence.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-20.png",
+          "source_pdf_page": 20,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-21.png",
+          "source_pdf_page": 21,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-22.png",
+          "source_pdf_page": 22,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        }
+      ],
+      "assessed_concepts": [
+        "Construct: Construct UML diagram showing FireMonster,Monster andArena relationships;omitfields/methods."
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-037",
+        "filename": "Computer_science_paper_2__HL_markscheme.pdf",
+        "pdf_pages": [
+          28
+        ],
+        "question_reference": "15(c)",
+        "marking_summary": "Inheritancechildtoparent;ArenahasMonstersaggregation.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B3.1.2",
+          "scope_evidence": "• Classes and their methods, based on application requirements\n• The use of unified modelling language (UML) class diagrams to represent class relationships, attributes and methods, to aid effective software design and planning",
+          "rationale": "Retains relationshipdiagram;explicitindependentlifetime makesaggregation unambiguous.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B3.2.4",
+          "scope_evidence": "• How to design objects by leveraging smaller component objects through composition and aggregation\n• That aggregation implies that the subcomponents can function independently of the aggregating class, while in composition, the subcomponents are tightly coupled and cannot exist outside the aggregating class",
+          "rationale": "Retains relationshipdiagram;explicitindependentlifetime makesaggregation unambiguous.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Construct UML diagram showing FireMonster,Monster andArena relationships;omitfields/methods.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 22,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-022.txt"
+        }
+      ],
+      "source_context_page_evidence": [
+        {
+          "pdf_page": 20,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-20.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-020.txt"
+        },
+        {
+          "pdf_page": 21,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-21.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-021.txt"
+        },
+        {
+          "pdf_page": 22,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-22.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-022.txt"
+        }
+      ],
+      "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+      "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2__HL.pdf",
+      "source_issues": []
+    },
+    {
+      "original_assessment_context": "Monster cardgame;Monster class has static type constants and instance name,health,strength,type;WaterMonster/FireMonster inherit Monster;Arena stores10 Monster references plusmonsterCount. Full Java source retained in source page evidence.Ifnotfullandnotalreadyexisting,addatcount,increment;otherwisecorrectmessage.",
+      "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+      "source_question_id": "H-SRC034-Q15-d",
+      "source_id": "SRC-034",
+      "source_filename": "Computer_science_paper_2__HL.pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": "15",
+      "subquestion": "d",
+      "source_pdf_pages": [
+        22
+      ],
+      "source_printed_pages": [
+        "21"
+      ],
+      "original_marks": 5,
+      "command_term": "Construct",
+      "original_text": "[Source PDF page 22]\nMonster Arena\nThe method does the following:\naddMonster(Monster M)\ny If the array is not full and is not in the array, it adds to the array and\nmonster M M\nincreases the variable .\nmonsterCount\ny Otherwise, a message is output stating the reason why.\n(d) Construct the method . [5]\naddMonster(Monster M)",
+      "parent_context": "Monster cardgame;Monster class has static type constants and instance name,health,strength,type;WaterMonster/FireMonster inherit Monster;Arena stores10 Monster references plusmonsterCount. Full Java source retained in source page evidence.Ifnotfullandnotalreadyexisting,addatcount,increment;otherwisecorrectmessage.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-20.png",
+          "source_pdf_page": 20,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-21.png",
+          "source_pdf_page": 21,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-22.png",
+          "source_pdf_page": 22,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        }
+      ],
+      "assessed_concepts": [
+        "Construct: Construct addMonster(MonsterM)."
+      ],
+      "difficulty": "high",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-037",
+        "filename": "Computer_science_paper_2__HL_markscheme.pdf",
+        "pdf_pages": [
+          28
+        ],
+        "question_reference": "15(d)",
+        "marking_summary": "Capacitycheck,identitycheck,insert/count,errorbranches.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Retains fixedcapacity/membershipbranching;identityrule prevents sourceMSname-equality shortcut incorrectlymergingdistinctobjects.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Retains fixedcapacity/membershipbranching;identityrule prevents sourceMSname-equality shortcut incorrectlymergingdistinctobjects.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Construct addMonster(MonsterM).",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 22,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-022.txt"
+        }
+      ],
+      "source_context_page_evidence": [
+        {
+          "pdf_page": 20,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-20.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-020.txt"
+        },
+        {
+          "pdf_page": 21,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-21.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-021.txt"
+        },
+        {
+          "pdf_page": 22,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-22.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-022.txt"
+        }
+      ],
+      "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+      "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2__HL.pdf",
+      "source_issues": []
+    },
+    {
+      "original_assessment_context": "Monster cardgame;Monster class has static type constants and instance name,health,strength,type;WaterMonster/FireMonster inherit Monster;Arena stores10 Monster references plusmonsterCount. Full Java source retained in source page evidence.",
+      "source_scope_note": "Original assessed concept classified directly or excluded with reason.",
+      "source_question_id": "H-SRC034-Q15-e",
+      "source_id": "SRC-034",
+      "source_filename": "Computer_science_paper_2__HL.pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": "15",
+      "subquestion": "e",
+      "source_pdf_pages": [
+        22
+      ],
+      "source_printed_pages": [
+        "21"
+      ],
+      "original_marks": 4,
+      "command_term": "Outline",
+      "original_text": "[Source PDF page 22]\naddMonster(Monster M)\n(e) Outline two disadvantages of using object-oriented programming (OOP) in the\ndevelopment of software. [4]",
+      "parent_context": "Monster cardgame;Monster class has static type constants and instance name,health,strength,type;WaterMonster/FireMonster inherit Monster;Arena stores10 Monster references plusmonsterCount. Full Java source retained in source page evidence.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-20.png",
+          "source_pdf_page": 20,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-21.png",
+          "source_pdf_page": 21,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-22.png",
+          "source_pdf_page": 22,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        }
+      ],
+      "assessed_concepts": [
+        "Outline: Outline two disadvantages of OOP in softwaredevelopment."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-037",
+        "filename": "Computer_science_paper_2__HL_markscheme.pdf",
+        "pdf_pages": [
+          29
+        ],
+        "question_reference": "15(e)",
+        "marking_summary": "Unnecessarycomplexity/size/overhead/trainingfor smalltasks;twoexpandedpoints.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "mapping_target": "original_and_adapted",
+          "syllabus_code": "B3.1.1",
+          "scope_evidence": "• Model real-world entities using OOP concepts: classes, objects, inheritance, encapsulation, polymorphism\n• The advantages and disadvantages of using OOP in various programming scenarios",
+          "rationale": "The assessed skill is explicitly named in the cited statement and its guidance; mapping does not credit unassessed scenario topics.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Outline two disadvantages of OOP in softwaredevelopment.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 22,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-022.txt"
+        }
+      ],
+      "source_context_page_evidence": [
+        {
+          "pdf_page": 20,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-20.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-020.txt"
+        },
+        {
+          "pdf_page": 21,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-21.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-021.txt"
+        },
+        {
+          "pdf_page": 22,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-22.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-022.txt"
+        }
+      ],
+      "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+      "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2__HL.pdf",
+      "source_issues": []
+    },
+    {
+      "original_assessment_context": "Monster cardgame;Monster class has static type constants and instance name,health,strength,type;WaterMonster/FireMonster inherit Monster;Arena stores10 Monster references plusmonsterCount. Full Java source retained in source page evidence.",
+      "source_scope_note": "Original assessed concept classified directly or excluded with reason.",
+      "source_question_id": "H-SRC034-Q16-a",
+      "source_id": "SRC-034",
+      "source_filename": "Computer_science_paper_2__HL.pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": "16",
+      "subquestion": "a",
+      "source_pdf_pages": [
+        22
+      ],
+      "source_printed_pages": [
+        "21"
+      ],
+      "original_marks": 2,
+      "command_term": "Define",
+      "original_text": "[Source PDF page 22]\n16. (a) Define the term polymorphism. [2]",
+      "parent_context": "Monster cardgame;Monster class has static type constants and instance name,health,strength,type;WaterMonster/FireMonster inherit Monster;Arena stores10 Monster references plusmonsterCount. Full Java source retained in source page evidence.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-22.png",
+          "source_pdf_page": 22,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        }
+      ],
+      "assessed_concepts": [
+        "Define: Define polymorphism."
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-037",
+        "filename": "Computer_science_paper_2__HL_markscheme.pdf",
+        "pdf_pages": [
+          30
+        ],
+        "question_reference": "16(a)",
+        "marking_summary": "Sameoperationdispatchedtoappropriateimplementation;oldMSoverloadingand overriding.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "mapping_target": "original_and_adapted",
+          "syllabus_code": "B3.2.2",
+          "scope_evidence": "• The principle of polymorphism and how it contributes to code flexibility and reusability\n• How to implement dynamic polymorphic behaviour through mechanisms like method overriding\n• How to apply static polymorphic behaviour to maximize code efficiency",
+          "rationale": "The assessed skill is explicitly named in the cited statement and its guidance; mapping does not credit unassessed scenario topics.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Define polymorphism.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 22,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-022.txt"
+        }
+      ],
+      "source_context_page_evidence": [
+        {
+          "pdf_page": 22,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-22.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-022.txt"
+        }
+      ],
+      "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+      "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2__HL.pdf",
+      "source_issues": []
+    },
+    {
+      "original_assessment_context": "Monster cardgame;Monster class has static type constants and instance name,health,strength,type;WaterMonster/FireMonster inherit Monster;Arena stores10 Monster references plusmonsterCount. Full Java source retained in source page evidence.Objectexists;removewithoutgaps;updatecount.",
+      "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+      "source_question_id": "H-SRC034-Q16-b",
+      "source_id": "SRC-034",
+      "source_filename": "Computer_science_paper_2__HL.pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": "16",
+      "subquestion": "b",
+      "source_pdf_pages": [
+        22
+      ],
+      "source_printed_pages": [
+        "21"
+      ],
+      "original_marks": 6,
+      "command_term": "Construct",
+      "original_text": "[Source PDF page 22]\nThe method in the class removes from\nremoveMonster(Monster M) Arena Monster M\nthe array without leaving any gaps. It also updates the variable. You may\nmonsterCount\nassume that already exists in the Arena.\nMonster M\n(b) Construct the method [6]\nremoveMonster(Monster M)",
+      "parent_context": "Monster cardgame;Monster class has static type constants and instance name,health,strength,type;WaterMonster/FireMonster inherit Monster;Arena stores10 Monster references plusmonsterCount. Full Java source retained in source page evidence.Objectexists;removewithoutgaps;updatecount.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-22.png",
+          "source_pdf_page": 22,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        }
+      ],
+      "assessed_concepts": [
+        "Construct: Construct removeMonster(MonsterM)."
+      ],
+      "difficulty": "high",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-037",
+        "filename": "Computer_science_paper_2__HL_markscheme.pdf",
+        "pdf_pages": [
+          30,
+          31
+        ],
+        "question_reference": "16(b)",
+        "marking_summary": "Findidentity,shiftlaterrefsleft,cleartail,decrementcount;sourcealternativescontainstale-tail/typo issues.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Retains reference-arraycompaction;testedfirst,middle,lastremoval;noJava-specificfixedarray syntax.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Construct removeMonster(MonsterM).",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 22,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-022.txt"
+        }
+      ],
+      "source_context_page_evidence": [
+        {
+          "pdf_page": 22,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-22.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-022.txt"
+        }
+      ],
+      "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+      "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2__HL.pdf",
+      "source_issues": []
+    },
+    {
+      "original_assessment_context": "Monster cardgame;Monster class has static type constants and instance name,health,strength,type;WaterMonster/FireMonster inherit Monster;Arena stores10 Monster references plusmonsterCount. Full Java source retained in source page evidence.",
+      "source_scope_note": "Original assessed concept classified directly or excluded with reason.",
+      "source_question_id": "H-SRC034-Q16-c-i",
+      "source_id": "SRC-034",
+      "source_filename": "Computer_science_paper_2__HL.pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": "16",
+      "subquestion": "c-i",
+      "source_pdf_pages": [
+        22
+      ],
+      "source_printed_pages": [
+        "21"
+      ],
+      "original_marks": 2,
+      "command_term": "Define",
+      "original_text": "[Source PDF page 22]\nremoveMonster(Monster M)\nMonsters have three special abilities that may be used on other monsters:\ny The ability “Heal”, which can be used on another monster\ny An ability specific to the monster type (eg, all water-type monsters have the ability\n“Put out fire”)\ny An ability specific to the monster (eg, only instances of Squishy have the ability “Clean”).\nThe methods , and\nability1(Monster defender) ability2(Monster defender)\nwill be created to enable the monsters to perform their\nability3(Monster defender)\nabilities. A class for each individual monster card, eg “Squishy”, will be created.\n(c) (i) Define the term inheritance. [2]",
+      "parent_context": "Monster cardgame;Monster class has static type constants and instance name,health,strength,type;WaterMonster/FireMonster inherit Monster;Arena stores10 Monster references plusmonsterCount. Full Java source retained in source page evidence.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-22.png",
+          "source_pdf_page": 22,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        }
+      ],
+      "assessed_concepts": [
+        "Define: Define inheritance."
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-037",
+        "filename": "Computer_science_paper_2__HL_markscheme.pdf",
+        "pdf_pages": [
+          32
+        ],
+        "question_reference": "16(c-i)",
+        "marking_summary": "Derivedclassbasedonexistingparent,reuses/extendsfeatures;sourceaccessmodifieroverclaimsnotcopied.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "mapping_target": "original_and_adapted",
+          "syllabus_code": "B3.2.1",
+          "scope_evidence": "• How inheritance enables a hierarchical relationship between parent and child classes\n• Extending existing classes, utilizing inheritance to reuse and extend functionalities\n• The impact of inheritance on access to parent class members with different access modifiers (private, public, protected, default)",
+          "rationale": "The assessed skill is explicitly named in the cited statement and its guidance; mapping does not credit unassessed scenario topics.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Define inheritance.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 22,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-022.txt"
+        }
+      ],
+      "source_context_page_evidence": [
+        {
+          "pdf_page": 22,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-22.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-022.txt"
+        }
+      ],
+      "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+      "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2__HL.pdf",
+      "source_issues": []
+    },
+    {
+      "original_assessment_context": "Monster cardgame;Monster class has static type constants and instance name,health,strength,type;WaterMonster/FireMonster inherit Monster;Arena stores10 Monster references plusmonsterCount. Full Java source retained in source page evidence.Monstercommonheal;typemethod;individualmonsterability.",
+      "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+      "source_question_id": "H-SRC034-Q16-c-ii",
+      "source_id": "SRC-034",
+      "source_filename": "Computer_science_paper_2__HL.pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": "16",
+      "subquestion": "c-ii",
+      "source_pdf_pages": [
+        22
+      ],
+      "source_printed_pages": [
+        "21"
+      ],
+      "original_marks": 5,
+      "command_term": "Explain",
+      "original_text": "[Source PDF page 22]\n(ii) Explain how inheritance and polymorphism could be used to maximize code\nreuse in these three methods. [5]",
+      "parent_context": "Monster cardgame;Monster class has static type constants and instance name,health,strength,type;WaterMonster/FireMonster inherit Monster;Arena stores10 Monster references plusmonsterCount. Full Java source retained in source page evidence.Monstercommonheal;typemethod;individualmonsterability.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-22.png",
+          "source_pdf_page": 22,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        }
+      ],
+      "assessed_concepts": [
+        "Explain: Explain how inheritance andpolymorphism maximizecodereuse across threeabilitymethods."
+      ],
+      "difficulty": "high",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-037",
+        "filename": "Computer_science_paper_2__HL_markscheme.pdf",
+        "pdf_pages": [
+          32
+        ],
+        "question_reference": "16(c-ii)",
+        "marking_summary": "Sharedbaseability,middletypespecificoverride,leafspecificoverride;dynamicdispatch.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B3.2.1",
+          "scope_evidence": "• How inheritance enables a hierarchical relationship between parent and child classes\n• Extending existing classes, utilizing inheritance to reuse and extend functionalities\n• The impact of inheritance on access to parent class members with different access modifiers (private, public, protected, default)",
+          "rationale": "Same three-levelreuse/override reasoning in a distinctdeliveryhierarchy;usesPython-compatible dynamicdispatch,notJavaoverloadassumptions.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B3.2.2",
+          "scope_evidence": "• The principle of polymorphism and how it contributes to code flexibility and reusability\n• How to implement dynamic polymorphic behaviour through mechanisms like method overriding\n• How to apply static polymorphic behaviour to maximize code efficiency",
+          "rationale": "Same three-levelreuse/override reasoning in a distinctdeliveryhierarchy;usesPython-compatible dynamicdispatch,notJavaoverloadassumptions.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Explain how inheritance andpolymorphism maximizecodereuse across threeabilitymethods.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 22,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-022.txt"
+        }
+      ],
+      "source_context_page_evidence": [
+        {
+          "pdf_page": 22,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-22.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-022.txt"
+        }
+      ],
+      "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+      "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2__HL.pdf",
+      "source_issues": []
+    },
+    {
+      "original_assessment_context": "Monster cardgame;Monster class has static type constants and instance name,health,strength,type;WaterMonster/FireMonster inherit Monster;Arena stores10 Monster references plusmonsterCount. Full Java source retained in source page evidence.",
+      "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+      "source_question_id": "H-SRC034-Q17-a",
+      "source_id": "SRC-034",
+      "source_filename": "Computer_science_paper_2__HL.pdf",
+      "year": "2023",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": "17",
+      "subquestion": "a",
+      "source_pdf_pages": [
+        23
+      ],
+      "source_printed_pages": [
+        "22"
+      ],
+      "original_marks": 2,
+      "command_term": "Identify",
+      "original_text": "[Source PDF page 22]\n(Option D continues on the following page)\n\n[Source PDF page 23]\n(Option D continued)\n17. A programmer is considering the way in which an arena holds object references to the\nmonsters and decides to use a library collection.\n(a) Identify two advantages of using an existing library collection rather than creating one. [2]",
+      "parent_context": "Monster cardgame;Monster class has static type constants and instance name,health,strength,type;WaterMonster/FireMonster inherit Monster;Arena stores10 Monster references plusmonsterCount. Full Java source retained in source page evidence.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-22.png",
+          "source_pdf_page": 22,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-23.png",
+          "source_pdf_page": 23,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        }
+      ],
+      "assessed_concepts": [
+        "Identify: Identify two advantages of an existing library collection rather than creatingone."
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-037",
+        "filename": "Computer_science_paper_2__HL_markscheme.pdf",
+        "pdf_pages": [
+          33
+        ],
+        "question_reference": "17(a)",
+        "marking_summary": "Reuseverifiedimplementation,savesdevelopment/specialistwork.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.3.4",
+          "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+          "rationale": "Retains code-reuse reasoning underexplicitfunctionmodularization;no newcollection-libraryAPI required.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Identify two advantages of an existing library collection rather than creatingone.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 23,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-023.txt"
+        }
+      ],
+      "source_context_page_evidence": [
+        {
+          "pdf_page": 22,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-22.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-022.txt"
+        },
+        {
+          "pdf_page": 23,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-23.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-023.txt"
+        }
+      ],
+      "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+      "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2__HL.pdf",
+      "source_issues": []
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC034-Q15-c",
+      "source_question_ids": [
+        "H-SRC034-Q15-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct a UML class-relationship diagram for ChilledItem, Item and Shop. ChilledItem is a subclass of Item. Shop stores references to Items that exist independently and may be moved to another Shop; omit attributes/methods.",
+      "syllabus_codes": [
+        "B3.1.2",
+        "B3.2.4"
+      ],
+      "theme": "B",
+      "level": "HL-only/SL/HL common",
+      "marks": 2,
+      "command_term": "Construct",
+      "difficulty": "low",
+      "adaptation_rationale": "Retains relationship diagram; explicit independent life time makes aggregation unambiguous.",
+      "solution": "ChilledItem --|> Item; Shop o-- Item.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Generalization arrow with hollow triangle pointing from ChilledItem toward Item."
+        },
+        {
+          "marks": 1,
+          "criterion": "Aggregation relationship with hollow diamond at Shop linking to Item."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "No executable code required; manual technical check."
+      },
+      "code": "",
+      "test_code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC034-Q15-d",
+      "source_question_ids": [
+        "H-SRC034-Q15-d"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Shop uses a fixed-capacity Python list self.items, with self.used occupied entries at the front and None afterwards. Construct add_item(self, item). Add the same object only if absent and capacity remains; otherwise print Full or Already present. Use object identity, not equal names.",
+      "syllabus_codes": [
+        "B2.2.2",
+        "B2.3.2"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 5,
+      "command_term": "Construct",
+      "difficulty": "high",
+      "adaptation_rationale": "Retains fixed capacity/membership branching; identity rule prevents sourceMSname-equality short cut in correctly merging distinct objects.",
+      "solution": "def add_item(self,item):\n    if self.used == len(self.items):\n        print(\"Full\")\n        return\n    for i in range(self.used):\n        if self.items[i] is item:\n            print(\"Already present\")\n            return\n    self.items[self.used]=item\n    self.used+=1",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Checks self.used against list capacity before inserting."
+        },
+        {
+          "marks": 1,
+          "criterion": "Searches occupied entries using is for object identity."
+        },
+        {
+          "marks": 1,
+          "criterion": "Reports duplicate and does not alter storage/count."
+        },
+        {
+          "marks": 1,
+          "criterion": "Stores new item at self.items[self.used] and increments used."
+        },
+        {
+          "marks": 1,
+          "criterion": "Reports full capacity without overwriting an item."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "Executable checks saved under checks/ where applicable."
+      },
+      "code": "def add_item(self,item):\n    if self.used == len(self.items):\n        print(\"Full\")\n        return\n    for i in range(self.used):\n        if self.items[i] is item:\n            print(\"Already present\")\n            return\n    self.items[self.used]=item\n    self.used+=1",
+      "test_code": "from types import SimpleNamespace\nimport contextlib,io\na=object();b=object();shop=SimpleNamespace(items=[None,None],used=0)\nwith contextlib.redirect_stdout(io.StringIO()):\n add_item(shop,a);add_item(shop,a);add_item(shop,b);add_item(shop,object())\nassert shop.used==2 and shop.items==[a,b]",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC034-Q15-e",
+      "source_question_ids": [
+        "H-SRC034-Q15-e"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline two reasons why OOP may be an unsuitable choice for a very small one-off numeric script.",
+      "syllabus_codes": [
+        "B3.1.1"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 4,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Original application rewritten to be self-contained; assessed reasoning retained within cited 2027 scope.",
+      "solution": "Designing classes can add structural complexity.; A short procedural calculation may be easier to read/maintain than unnecessary object layers.; Object creation/method indirection may add overhead.; If those features provide no modelling/reuse benefit, the extra code/time can be unjustified; not all OOP programs are inherentlys low.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Designing classes can add structural complexity."
+        },
+        {
+          "marks": 1,
+          "criterion": "A short procedural calculation may be easier to read/maintain than unnecessary object layers."
+        },
+        {
+          "marks": 1,
+          "criterion": "Object creation/method indirection may add overhead."
+        },
+        {
+          "marks": 1,
+          "criterion": "If those features provide no modelling/reuse benefit, the extra code/time can be unjustified; not all OOP programs are inherentlys low."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "No executable code required; manual technical check."
+      },
+      "code": "",
+      "test_code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC034-Q16-a",
+      "source_question_ids": [
+        "H-SRC034-Q16-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Define dynamic polymorphism in OOP.",
+      "syllabus_codes": [
+        "B3.2.2"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 2,
+      "command_term": "Define",
+      "difficulty": "low",
+      "adaptation_rationale": "Original application rewritten to be self-contained; assessed reasoning retained within cited 2027 scope.",
+      "solution": "Different object types support a common operation/interface.; The implementation used can depend on the actual object type at runtime.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Different object types support a common operation/interface."
+        },
+        {
+          "marks": 1,
+          "criterion": "The implementation used can depend on the actual object type at runtime."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "No executable code required; manual technical check."
+      },
+      "code": "",
+      "test_code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC034-Q16-b",
+      "source_question_ids": [
+        "H-SRC034-Q16-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct remove_item(self, item) for Shop’s fixed list self.items and occupied count self.used. Assume the exact object item occurs once among occupied entries. Remove it, preserve the relative order of other entries, clear the now-unused position to None, and decrement self.used.",
+      "syllabus_codes": [
+        "B2.2.2"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 6,
+      "command_term": "Construct",
+      "difficulty": "high",
+      "adaptation_rationale": "Retains reference-array compaction; tested first, middle, last removal; no Java-specific fixed array syntax.",
+      "solution": "def remove_item(self,item):\n    index=0\n    while self.items[index] is not item:\n        index+=1\n    for j in range(index,self.used-1):\n        self.items[j]=self.items[j+1]\n    self.items[self.used-1]=None\n    self.used-=1",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Locates the exact object using identity."
+        },
+        {
+          "marks": 1,
+          "criterion": "Starts compaction at its index."
+        },
+        {
+          "marks": 1,
+          "criterion": "Shifts every subsequent occupied entry one position left."
+        },
+        {
+          "marks": 1,
+          "criterion": "Stops shifting at the final occupied entry, before un used capacity."
+        },
+        {
+          "marks": 1,
+          "criterion": "Sets the old final occupied slot to None."
+        },
+        {
+          "marks": 1,
+          "criterion": "Decrements used exactly once."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "Executable checks saved under checks/ where applicable."
+      },
+      "code": "def remove_item(self,item):\n    index=0\n    while self.items[index] is not item:\n        index+=1\n    for j in range(index,self.used-1):\n        self.items[j]=self.items[j+1]\n    self.items[self.used-1]=None\n    self.used-=1",
+      "test_code": "from types import SimpleNamespace\na,b,c=object(),object(),object()\nfor index in range(3):\n original=[a,b,c];shop=SimpleNamespace(items=original+[None],used=3)\n target=original[index];remove_item(shop,target)\n assert shop.items==[x for x in original if x is not target]+[None,None] and shop.used==2",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC034-Q16-c-i",
+      "source_question_ids": [
+        "H-SRC034-Q16-c-i"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Define inheritance in OOP.",
+      "syllabus_codes": [
+        "B3.2.1"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 2,
+      "command_term": "Define",
+      "difficulty": "low",
+      "adaptation_rationale": "Original application rewritten to be self-contained; assessed reasoning retained within cited 2027 scope.",
+      "solution": "A subclass is defined using/extending an existing parent class.; It can reuse inherited behaviour/state and specialize or add functionality.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "A subclass is defined using/extending an existing parent class."
+        },
+        {
+          "marks": 1,
+          "criterion": "It can reuse inherited behaviour/state and specialize or add functionality."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "No executable code required; manual technical check."
+      },
+      "code": "",
+      "test_code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC034-Q16-c-ii",
+      "source_question_ids": [
+        "H-SRC034-Q16-c-ii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Parcel defines tracking(), handling() anddelivery_note(). CooledParcel specializes temperature handling; VaccineParcel is a CooledParcel with a special delivery note. Explain how inheritance and method overriding avoid duplication while allowing calls through Parcel references.",
+      "syllabus_codes": [
+        "B3.2.1",
+        "B3.2.2"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 5,
+      "command_term": "Explain",
+      "difficulty": "high",
+      "adaptation_rationale": "Same three-level reuse/override reasoning in a distinct delivery hierarchy; uses Python-compatible dynamic dispatch, notJavaoverloadassumptions.",
+      "solution": "Place common tracking behaviour in Parcel.; CooledParcel inherits tracking and overrides handling for cooling requirements.; VaccineParcel inherits tracking and cooled handling.; VaccineParcel overrides delivery_note for its specific instructions.; Calls through the common interface dispatch to the actual object’s overriding methods, so shared code need not be duplicated.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Place common tracking behaviour in Parcel."
+        },
+        {
+          "marks": 1,
+          "criterion": "CooledParcel inherits tracking and overrides handling for cooling requirements."
+        },
+        {
+          "marks": 1,
+          "criterion": "VaccineParcel inherits tracking and cooled handling."
+        },
+        {
+          "marks": 1,
+          "criterion": "VaccineParcel overrides delivery_note for its specific instructions."
+        },
+        {
+          "marks": 1,
+          "criterion": "Calls through the common interface dispatch to the actual object’s overriding methods, so shared code need not be duplicated."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "No executable code required; manual technical check."
+      },
+      "code": "",
+      "test_code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC034-Q17-a",
+      "source_question_ids": [
+        "H-SRC034-Q17-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Identify two benefits of reusing an existing well-tested helper function rather than duplicating its implementation across a program.",
+      "syllabus_codes": [
+        "B2.3.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Identify",
+      "difficulty": "low",
+      "adaptation_rationale": "Retains code-reuse reasoning under explicit function modularization; no new collection-library API required.",
+      "solution": "Avoids writing/testing the same logic repeatedly.; Corrections can be maintained in one shared implementation.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Avoids writing/testing the same logic repeatedly."
+        },
+        {
+          "marks": 1,
+          "criterion": "Corrections can be maintained in one shared implementation."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "No executable code required; manual technical check."
+      },
+      "code": "",
+      "test_code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    }
+  ]
+}

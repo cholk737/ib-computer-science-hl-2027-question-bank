@@ -1,0 +1,70 @@
+{
+  "question_id": "P-SRC038-Q16-a-ii",
+  "source_question_ids": [
+    "H-SRC038-Q16-a-ii"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Each adviser has area and tickets. Each ticket entry is None or an object with result and client. Construct failed_clients(advisers) returning client names for tickets whose result is exactly \"failure\", belonging to finance advisers. Preserve traversal order and allow duplicate names for separate tickets.",
+  "syllabus_codes": [
+    "B2.2.2",
+    "B2.3.2",
+    "B2.3.3",
+    "B2.3.4"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 7,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "One solution:\ndef failed_clients(advisers):\n    names = []\n    for adviser in advisers:\n        if adviser.area == \"finance\":\n            for ticket in adviser.tickets:\n                if ticket is not None:\n                    if ticket.result == \"failure\":\n                        names.append(ticket.client)\n    return names",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Creates output collection."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses advisers."
+    },
+    {
+      "marks": 1,
+      "criterion": "Filters finance advisers."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses each selected ticket list."
+    },
+    {
+      "marks": 1,
+      "criterion": "Safely skips None."
+    },
+    {
+      "marks": 1,
+      "criterion": "Tests exactly failure result."
+    },
+    {
+      "marks": 1,
+      "criterion": "Collects correct client names and returns list."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed None,opposite result and wrong-adviser-area cases.",
+    "source_comparison": [
+      44
+    ],
+    "test_code": "def failed_clients(advisers):\n    names = []\n    for adviser in advisers:\n        if adviser.area == \"finance\":\n            for ticket in adviser.tickets:\n                if ticket is not None:\n                    if ticket.result == \"failure\":\n                        names.append(ticket.client)\n    return names\nfrom types import SimpleNamespace as O\nassert failed_clients([O(area='finance',tickets=[None,O(result='failure',client='A'),O(result='success',client='B')]),O(area='housing',tickets=[O(result='failure',client='C')])])==['A']",
+    "result_file": ""
+  },
+  "code": "def failed_clients(advisers):\n    names = []\n    for adviser in advisers:\n        if adviser.area == \"finance\":\n            for ticket in adviser.tickets:\n                if ticket is not None:\n                    if ticket.result == \"failure\":\n                        names.append(ticket.client)\n    return names",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC038-Q16-a-ii.json",
+  "question_path": "question-bank/questions/P-SRC038-Q16-a-ii.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC038-Q16-a-ii.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

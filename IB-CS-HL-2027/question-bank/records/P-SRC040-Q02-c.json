@@ -1,0 +1,45 @@
+{
+  "question_id": "P-SRC040-Q02-c",
+  "source_question_ids": [
+    "H-SRC040-Q02-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "State the output of this SQL query. Technician(TechnicianID, Name) contains (7, \"Ari\"),(8, \"Bo\"). Observation(DeviceID, TechnicianID, Kind) contains (10,7, \"voltage\"),(11,7, \"temperature\"),(12,8, \"voltage\"),(13,7, \"voltage\"). Treat output order as unspecified.\n\nSELECT O.DeviceID FROM Observation O JOIN Technician T ON O.TechnicianID=T.TechnicianID WHERE O.Kind='voltage' AND T.Name='Ari';",
+  "syllabus_codes": [
+    "A3.3.2"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 2,
+  "command_term": "State",
+  "difficulty": "medium",
+  "adaptation_rationale": "Add a two-table join to match the explicitly required between-two-tables SQL objective; retain filtered-query output reasoning. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "solution": "DeviceID values 10 and 13, in either order.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "DeviceID 10 included."
+    },
+    {
+      "marks": 1,
+      "criterion": "DeviceID 13 included, with no other rows."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 2,
+    "code_execution": "Specific executable boundary and behaviour tests passed; see agents/chunk-2/agent-3-papers-c/technical_checks.json and verify_practice.py."
+  },
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "assets": [],
+  "record_path": "question-bank/records/P-SRC040-Q02-c.json",
+  "question_path": "question-bank/questions/P-SRC040-Q02-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC040-Q02-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

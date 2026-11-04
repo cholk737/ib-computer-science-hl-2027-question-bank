@@ -34,7 +34,9 @@
       17
     ],
     "question_reference": "Q11 d",
-    "marking_summary": "With interrupts, the device signals when it needs attention; with polling, the processor repeatedly checks device status even when no event has occurred.",
+    "marking_summary": "Exact original MS leaf excerpt: Award max [2]. Interrupt can occur at any point in time (an interrupt is asynchronous); processor polls the devices at regular intervals of time (polling is a synchronous activity); Interrupt occurs only when a device requires servicing; Polling occurs when processor needs to wait and check if a device needs to be serviced/ processor continuously checks the status of the device to find whether it requires attention; Interrupts save the processor cycles; polling wastes many of the processor cycles; Interrupts are priority based; Polling involves sequential checking with no priority; Interrupts allow the CPU to respond quickly to a situation; Response may be delayed depending on polling order / frequency; Polling involves creating a software loop (to regularly and continuously read sensor data); Interrupt is a hardware mechanism (in which the sensor notices processor that it requires its a … [full leaf evidence retained]",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award max [2].\nInterrupt can occur at any point in time (an interrupt is asynchronous); \nprocessor polls the devices at regular intervals of time (polling is a synchronous activity); \nInterrupt occurs only when a device requires servicing; \nPolling occurs when processor needs to wait and check if a device needs to be serviced/ \nprocessor continuously checks the status of the device to find whether it requires attention; \nInterrupts save the processor cycles;  \npolling wastes many of the processor cycles; \nInterrupts are priority based; \nPolling involves sequential checking with no priority; \nInterrupts allow the CPU to respond quickly to a situation; \nResponse may be delayed depending on polling order / frequency; \nPolling involves creating a software loop (to regularly and continuously read sensor data); \nInterrupt is a hardware mechanism (in which the sensor notices processor that it requires its \nattention);",
     "source_issues": [
       "Original MS treats polling as having no priority and interrupts as hardware-only; these are not universal and not repeated."
     ],
@@ -45,7 +47,7 @@
     {
       "syllabus_code": "A1.3.4",
       "scope_evidence": "• Event frequency, CPU processing overheads, power source (battery or mains), event predictability, controlled latency, security concerns\n• Real-world scenarios may include keyboard and mouse inputs, network communications, disk input/output operations, embedded systems, real-time systems.",
-      "rationale": "Describe one difference between interrupt-driven input and polling in a control system assesses Evaluate the use of polling and interrupt handling.",
+      "rationale": "Original and adapted within-scope skill: Describe one difference between interrupt-driven input and polling in a control system; guidance target: Evaluate the use of polling and interrupt handling.",
       "theme": "A",
       "level": "SL/HL common",
       "confidence": "high",

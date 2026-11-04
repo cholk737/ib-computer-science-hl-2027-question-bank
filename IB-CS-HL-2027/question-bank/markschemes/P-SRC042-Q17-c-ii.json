@@ -1,0 +1,41 @@
+{
+  "question_id": "P-SRC042-Q17-c-ii",
+  "unofficial": true,
+  "marks": 5,
+  "solution": "def count_above(node,limit):\n    if node is None:\n        return 0\n    rest=count_above(node.next,limit)\n    if node.customer.budget > limit:\n        return rest+1\n    return rest",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Returns 0 when node is None."
+    },
+    {
+      "marks": 1,
+      "criterion": "Makes one recursive call progressing to node.next."
+    },
+    {
+      "marks": 1,
+      "criterion": "Compares the current budget with limit using strict greater-than."
+    },
+    {
+      "marks": 1,
+      "criterion": "Adds 1 to the recursive result exactly when the budget qualifies."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns the unchanged recursive result otherwise."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "Executable checks saved under checks/ where applicable."
+  },
+  "code": "def count_above(node,limit):\n    if node is None:\n        return 0\n    rest=count_above(node.next,limit)\n    if node.customer.budget > limit:\n        return rest+1\n    return rest",
+  "test_code": "from types import SimpleNamespace\nhead=None\nfor budget in [5000,3000,4000]:head=SimpleNamespace(customer=SimpleNamespace(budget=budget),next=head)\nassert count_above(head,3000)==2\nassert count_above(head,5000)==0\nassert count_above(None,3000)==0",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

@@ -1,0 +1,51 @@
+{
+  "question_id": "P-SRC032-Q13-g",
+  "source_question_ids": [
+    "H-SRC032-Q13-g"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct a Python assignment creating wishlist as a list of ten empty slots for later object references. Do not instantiate any accommodation objects.",
+  "syllabus_codes": [
+    "B2.2.2"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 3,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Replaces fixed Java array allocation with aPython list of slots; no claim thatPython list capacity is fixed.",
+  "solution": "wishlist = [None] * 10",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Assignment to wishlist."
+    },
+    {
+      "marks": 1,
+      "criterion": "Creates a Python list."
+    },
+    {
+      "marks": 1,
+      "criterion": "Exactly ten None slots, no object instances."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      25
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC032-Q13-g.json",
+  "question_path": "question-bank/questions/P-SRC032-Q13-g.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC032-Q13-g.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

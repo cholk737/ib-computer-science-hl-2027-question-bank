@@ -1,0 +1,53 @@
+{
+  "question_id": "P-SRC038-Q07-c",
+  "source_question_ids": [
+    "H-SRC038-Q07-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A nonempty list labels contains \"inside\" or \"outside\". A supplied estimation rule is 4 times the number of \"inside\" entries divided by the total entries. Construct estimate(labels) in Python using a loop to return that value.",
+  "syllabus_codes": [
+    "B2.2.2",
+    "B2.3.2",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 3,
+  "command_term": "List",
+  "difficulty": "medium",
+  "adaptation_rationale": "Changes spreadsheet formula to Python traversal/selection with mathematical rule supplied, so no Monte Carlo theory is required.",
+  "solution": "One solution:\ndef estimate(labels):\n    count = 0\n    for label in labels:\n        if label == \"inside\":\n            count += 1\n    return 4 * count / len(labels)",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Scans all labels."
+    },
+    {
+      "marks": 1,
+      "criterion": "Counts only inside entries."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns correct supplied ratio."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed mixed and zero-inside cases.",
+    "source_comparison": [
+      22
+    ],
+    "test_code": "def estimate(labels):\n    count = 0\n    for label in labels:\n        if label == \"inside\":\n            count += 1\n    return 4 * count / len(labels)\nassert estimate([\"inside\",\"outside\",\"inside\",\"inside\"])==3\nassert estimate([\"outside\"])==0",
+    "result_file": ""
+  },
+  "code": "def estimate(labels):\n    count = 0\n    for label in labels:\n        if label == \"inside\":\n            count += 1\n    return 4 * count / len(labels)",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC038-Q07-c.json",
+  "question_path": "question-bank/questions/P-SRC038-Q07-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC038-Q07-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

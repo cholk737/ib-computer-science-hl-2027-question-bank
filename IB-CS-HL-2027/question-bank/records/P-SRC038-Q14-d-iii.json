@@ -1,0 +1,62 @@
+{
+  "question_id": "P-SRC038-Q14-d-iii",
+  "source_question_ids": [
+    "H-SRC038-Q14-d-iii"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Each adviser has id and tickets attributes. tickets is a list of Ticket objects or None. A ticket has days and status; it is overdue only when days>30 and status=\"open\". Adviser IDs are unique. Construct count_overdue(adviser_id, advisers), returning0 if no adviser matches.",
+  "syllabus_codes": [
+    "B2.2.2",
+    "B2.3.2",
+    "B2.3.3",
+    "B2.3.4"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 5,
+  "command_term": "List",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "One solution:\ndef count_overdue(adviser_id, advisers):\n    count = 0\n    for adviser in advisers:\n        if adviser.id == adviser_id:\n            for ticket in adviser.tickets:\n                if ticket is not None and ticket.days > 30 and ticket.status == \"open\":\n                    count += 1\n    return count",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes and returns count."
+    },
+    {
+      "marks": 1,
+      "criterion": "Finds matching adviser ID."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses that adviser’s tickets."
+    },
+    {
+      "marks": 1,
+      "criterion": "Safely ignores None and tests days>30."
+    },
+    {
+      "marks": 1,
+      "criterion": "Tests open status and increments only matching tickets."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed missing ID,None,age boundary and status combinations.",
+    "source_comparison": [
+      41
+    ],
+    "test_code": "def count_overdue(adviser_id, advisers):\n    count = 0\n    for adviser in advisers:\n        if adviser.id == adviser_id:\n            for ticket in adviser.tickets:\n                if ticket is not None and ticket.days > 30 and ticket.status == \"open\":\n                    count += 1\n    return count\nfrom types import SimpleNamespace as O\np=O(id=7,tickets=[None,O(days=30,status='open'),O(days=31,status='closed'),O(days=31,status='open')])\nassert count_overdue(7,[p])==1 and count_overdue(8,[p])==0",
+    "result_file": ""
+  },
+  "code": "def count_overdue(adviser_id, advisers):\n    count = 0\n    for adviser in advisers:\n        if adviser.id == adviser_id:\n            for ticket in adviser.tickets:\n                if ticket is not None and ticket.days > 30 and ticket.status == \"open\":\n                    count += 1\n    return count",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC038-Q14-d-iii.json",
+  "question_path": "question-bank/questions/P-SRC038-Q14-d-iii.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC038-Q14-d-iii.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

@@ -1,0 +1,1224 @@
+{
+  "source_id": "SRC-042",
+  "batch_id": "SRC-042-b010",
+  "source_questions": [
+    {
+      "original_assessment_context": "Artshop Artist(name,location,noOfArtworks=0,Artwork[100]);Artwork(title,price,isSold=false);getters/addArtwork;code remains Java in source-only evidence.",
+      "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+      "source_question_id": "H-SRC042-Q14-a",
+      "source_id": "SRC-042",
+      "source_filename": "Computer_science_paper_2_TZ3_HL.pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "D",
+      "question": "14",
+      "subquestion": "a",
+      "source_pdf_pages": [
+        20
+      ],
+      "source_printed_pages": [
+        "19"
+      ],
+      "original_marks": 1,
+      "command_term": "State",
+      "original_text": "[Source PDF page 18]\nEnd of Option C\n\n[Source PDF page 19]\nOption D — Object-oriented programming\n14. An art shop sells the work of several artists. Each artist has many artworks for sale. A system\nis designed to manage artworks, sales and customers.\nThe following shows part of the code for the two classes, and :\nArtist Artwork\npublic class Artist {\nprivate String artistName; // name of the artist\nprivate String artistLocation; // current location of the artist\nprivate int noOfArtworks; // number of works of art the artist has\n// stored in the array theArtworks\nprivate Artwork [] theArtworks; // details of the works of art produced\n// by the artist\npublic Artist(String artistName, String artistLocation){\nthis.artistName = artistName;\nthis.artistLocation = artistLocation;\nnoOfArtworks = 0;\ntheArtworks = new Artwork [100]; // an artist has a maximum of 100\n// artworks\n}\npublic String getName() {\nreturn artistName;\n}\npublic String getLocation() {\nreturn artistLocation;\n}\npublic Artwork getArtwork(int x) {\nreturn theArtworks[x];\n}\npublic void addArtwork(Artwork x) {\ntheArtworks[noOfArtworks] = x;\nnoOfArtworks = noOfArtworks + 1;\n}\npublic double commissionToPay() {\n// code missing\n}\npublic Artwork[] sortArt() {\n// code missing\n}\n} // end of class Artist\n(Option D continues on the following page)\n\n[Source PDF page 20]\n(Option D, question 14 continued)\npublic class Artwork {\nprivate String artworkTitle; // name of the artwork\nprivate int artworkPrice; // price of artwork\nprivate boolean isSold; // if the artwork has been sold or not\npublic Artwork(String artworkTitle, int artworkPrice) {\nthis.artworkTitle = artworkTitle;\nthis.artworkPrice = artworkPrice;\nisSold = false; // default value is not sold\n}\npublic String getArtworkTitle(){\nreturn artworkTitle;\n}\npublic void isSold(){\nisSold = true;\n}\n} // end of class Artwork\n(a) State the relationship between the class and class. [1]\nArtist Artwork",
+      "parent_context": "Artshop Artist(name,location,noOfArtworks=0,Artwork[100]);Artwork(title,price,isSold=false);getters/addArtwork;code remains Java in source-only evidence.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-18.png",
+          "source_pdf_page": 18,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-19.png",
+          "source_pdf_page": 19,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-20.png",
+          "source_pdf_page": 20,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        }
+      ],
+      "assessed_concepts": [
+        "State: State relationship between Artist andArtwork."
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-043",
+        "filename": "Computer_science_paper_2_TZ3_HL_markscheme.pdf",
+        "pdf_pages": [
+          29
+        ],
+        "question_reference": "14(a)",
+        "marking_summary": "Aggregation/has-a;ownershiplifetime notfullydefinedbysource.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B3.2.4",
+          "scope_evidence": "• How to design objects by leveraging smaller component objects through composition and aggregation\n• That aggregation implies that the subcomponents can function independently of the aggregating class, while in composition, the subcomponents are tightly coupled and cannot exist outside the aggregating class",
+          "rationale": "Retains has-a reasoning andexplicitly establishes independentlifetime;doesnotinfer ownershipfromreferencearrayalone.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "State relationship between Artist andArtwork.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 20,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-020.txt"
+        }
+      ],
+      "source_context_page_evidence": [
+        {
+          "pdf_page": 18,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-18.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-018.txt"
+        },
+        {
+          "pdf_page": 19,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-19.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-019.txt"
+        },
+        {
+          "pdf_page": 20,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-20.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-020.txt"
+        }
+      ],
+      "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+      "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2_TZ3_HL.pdf",
+      "source_issues": []
+    },
+    {
+      "original_assessment_context": "Artshop Artist(name,location,noOfArtworks=0,Artwork[100]);Artwork(title,price,isSold=false);getters/addArtwork;code remains Java in source-only evidence.",
+      "source_scope_note": "Original assessed concept classified directly or excluded with reason.",
+      "source_question_id": "H-SRC042-Q14-b",
+      "source_id": "SRC-042",
+      "source_filename": "Computer_science_paper_2_TZ3_HL.pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "D",
+      "question": "14",
+      "subquestion": "b",
+      "source_pdf_pages": [
+        20
+      ],
+      "source_printed_pages": [
+        "19"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "[Source PDF page 20]\nArtist Artwork\n(b) Outline what is meant by instantiation of an object. [2]",
+      "parent_context": "Artshop Artist(name,location,noOfArtworks=0,Artwork[100]);Artwork(title,price,isSold=false);getters/addArtwork;code remains Java in source-only evidence.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-18.png",
+          "source_pdf_page": 18,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-19.png",
+          "source_pdf_page": 19,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-20.png",
+          "source_pdf_page": 20,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        }
+      ],
+      "assessed_concepts": [
+        "Outline: Outline instantiation of anobject."
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-043",
+        "filename": "Computer_science_paper_2_TZ3_HL_markscheme.pdf",
+        "pdf_pages": [
+          29
+        ],
+        "question_reference": "14(b)",
+        "marking_summary": "Createobjectfromclass,constructorinitializesattributes.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "mapping_target": "original_and_adapted",
+          "syllabus_code": "B3.1.4",
+          "scope_evidence": "• How to define classes and create objects from those classes\n• The role of constructors in initializing an object's state, setting initial values for its attributes to define its condition or characteristics at the time of creation",
+          "rationale": "The assessed skill is explicitly named in the cited statement and its guidance; mapping does not credit unassessed scenario topics.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Outline instantiation of anobject.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 20,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-020.txt"
+        }
+      ],
+      "source_context_page_evidence": [
+        {
+          "pdf_page": 18,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-18.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-018.txt"
+        },
+        {
+          "pdf_page": 19,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-19.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-019.txt"
+        },
+        {
+          "pdf_page": 20,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-20.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-020.txt"
+        }
+      ],
+      "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+      "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2_TZ3_HL.pdf",
+      "source_issues": []
+    },
+    {
+      "original_assessment_context": "Artshop Artist(name,location,noOfArtworks=0,Artwork[100]);Artwork(title,price,isSold=false);getters/addArtwork;code remains Java in source-only evidence.",
+      "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+      "source_question_id": "H-SRC042-Q14-c",
+      "source_id": "SRC-042",
+      "source_filename": "Computer_science_paper_2_TZ3_HL.pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "D",
+      "question": "14",
+      "subquestion": "c",
+      "source_pdf_pages": [
+        20
+      ],
+      "source_printed_pages": [
+        "19"
+      ],
+      "original_marks": 3,
+      "command_term": "Construct",
+      "original_text": "[Source PDF page 20]\n(c) Construct the code required to instantiate the artist “Thomas Lucas” from “Ireland”. [3]",
+      "parent_context": "Artshop Artist(name,location,noOfArtworks=0,Artwork[100]);Artwork(title,price,isSold=false);getters/addArtwork;code remains Java in source-only evidence.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-18.png",
+          "source_pdf_page": 18,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-19.png",
+          "source_pdf_page": 19,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-20.png",
+          "source_pdf_page": 20,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        }
+      ],
+      "assessed_concepts": [
+        "Construct: Construct code instantiating artistThomasLucas fromIreland."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-043",
+        "filename": "Computer_science_paper_2_TZ3_HL_markscheme.pdf",
+        "pdf_pages": [
+          29
+        ],
+        "question_reference": "14(c)",
+        "marking_summary": "Variable,newArtist,correctarguments.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B3.1.4",
+          "scope_evidence": "• How to define classes and create objects from those classes\n• The role of constructors in initializing an object's state, setting initial values for its attributes to define its condition or characteristics at the time of creation",
+          "rationale": "Retains constructor invocation/argument/state reasoning;Python replacesJava typeddeclaration/new syntax.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Construct code instantiating artistThomasLucas fromIreland.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 20,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-020.txt"
+        }
+      ],
+      "source_context_page_evidence": [
+        {
+          "pdf_page": 18,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-18.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-018.txt"
+        },
+        {
+          "pdf_page": 19,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-19.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-019.txt"
+        },
+        {
+          "pdf_page": 20,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-20.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-020.txt"
+        }
+      ],
+      "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+      "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2_TZ3_HL.pdf",
+      "source_issues": []
+    },
+    {
+      "original_assessment_context": "Artshop Artist(name,location,noOfArtworks=0,Artwork[100]);Artwork(title,price,isSold=false);getters/addArtwork;code remains Java in source-only evidence.",
+      "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+      "source_question_id": "H-SRC042-Q14-d",
+      "source_id": "SRC-042",
+      "source_filename": "Computer_science_paper_2_TZ3_HL.pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "D",
+      "question": "14",
+      "subquestion": "d",
+      "source_pdf_pages": [
+        20
+      ],
+      "source_printed_pages": [
+        "19"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "[Source PDF page 20]\n(d) With reference to the and classes, outline the use of the\nArtist Artwork\nmodifier . [2]\nprivate",
+      "parent_context": "Artshop Artist(name,location,noOfArtworks=0,Artwork[100]);Artwork(title,price,isSold=false);getters/addArtwork;code remains Java in source-only evidence.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-18.png",
+          "source_pdf_page": 18,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-19.png",
+          "source_pdf_page": 19,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-20.png",
+          "source_pdf_page": 20,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        }
+      ],
+      "assessed_concepts": [
+        "Outline: With reference to Artist andArtwork,outline private."
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-043",
+        "filename": "Computer_science_paper_2_TZ3_HL_markscheme.pdf",
+        "pdf_pages": [
+          29
+        ],
+        "question_reference": "14(d)",
+        "marking_summary": "Restrict directaccess;useaccessors;sourceaccessorwrongclassstatementnotcopied.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B3.1.5",
+          "scope_evidence": "• The principles of encapsulation and information hiding\n• Apply access modifiers such as private and public\n• Controlling access to class members\n• The importance of limiting access to maintain the integrity and security of an object's state",
+          "rationale": "AccuratePython informationhiding;nofalseprivateaccessenforcement.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "With reference to Artist andArtwork,outline private.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 20,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-020.txt"
+        }
+      ],
+      "source_context_page_evidence": [
+        {
+          "pdf_page": 18,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-18.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-018.txt"
+        },
+        {
+          "pdf_page": 19,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-19.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-019.txt"
+        },
+        {
+          "pdf_page": 20,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-20.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-020.txt"
+        }
+      ],
+      "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+      "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2_TZ3_HL.pdf",
+      "source_issues": []
+    },
+    {
+      "original_assessment_context": "Artshop Artist(name,location,noOfArtworks=0,Artwork[100]);Artwork(title,price,isSold=false);getters/addArtwork;code remains Java in source-only evidence.",
+      "source_scope_note": "Original assessed concept classified directly or excluded with reason.",
+      "source_question_id": "H-SRC042-Q14-e",
+      "source_id": "SRC-042",
+      "source_filename": "Computer_science_paper_2_TZ3_HL.pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "D",
+      "question": "14",
+      "subquestion": "e",
+      "source_pdf_pages": [
+        20
+      ],
+      "source_printed_pages": [
+        "19"
+      ],
+      "original_marks": 4,
+      "command_term": "Outline",
+      "original_text": "[Source PDF page 20]\nprivate\n(e) Outline two advantages of modularity in program development. [4]",
+      "parent_context": "Artshop Artist(name,location,noOfArtworks=0,Artwork[100]);Artwork(title,price,isSold=false);getters/addArtwork;code remains Java in source-only evidence.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-18.png",
+          "source_pdf_page": 18,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-19.png",
+          "source_pdf_page": 19,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-20.png",
+          "source_pdf_page": 20,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        }
+      ],
+      "assessed_concepts": [
+        "Outline: Outline two advantages of modularity."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-043",
+        "filename": "Computer_science_paper_2_TZ3_HL_markscheme.pdf",
+        "pdf_pages": [
+          29
+        ],
+        "question_reference": "14(e)",
+        "marking_summary": "Reuse,independenttesting,parallelwork,maintainability;idea+expansiontwice.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "mapping_target": "original_and_adapted",
+          "syllabus_code": "B2.3.4",
+          "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+          "rationale": "The assessed skill is explicitly named in the cited statement and its guidance; mapping does not credit unassessed scenario topics.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Outline two advantages of modularity.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 20,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-020.txt"
+        }
+      ],
+      "source_context_page_evidence": [
+        {
+          "pdf_page": 18,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-18.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-018.txt"
+        },
+        {
+          "pdf_page": 19,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-19.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-019.txt"
+        },
+        {
+          "pdf_page": 20,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-20.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-020.txt"
+        }
+      ],
+      "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+      "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2_TZ3_HL.pdf",
+      "source_issues": []
+    },
+    {
+      "original_assessment_context": "Artshop Artist(name,location,noOfArtworks=0,Artwork[100]);Artwork(title,price,isSold=false);getters/addArtwork;code remains Java in source-only evidence.",
+      "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+      "source_question_id": "H-SRC042-Q14-f",
+      "source_id": "SRC-042",
+      "source_filename": "Computer_science_paper_2_TZ3_HL.pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "D",
+      "question": "14",
+      "subquestion": "f",
+      "source_pdf_pages": [
+        20
+      ],
+      "source_printed_pages": [
+        "19"
+      ],
+      "original_marks": 3,
+      "command_term": "Construct",
+      "original_text": "[Source PDF page 20]\n(f) Construct a UML diagram to represent the class. [3]\nArtist",
+      "parent_context": "Artshop Artist(name,location,noOfArtworks=0,Artwork[100]);Artwork(title,price,isSold=false);getters/addArtwork;code remains Java in source-only evidence.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-18.png",
+          "source_pdf_page": 18,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-19.png",
+          "source_pdf_page": 19,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-20.png",
+          "source_pdf_page": 20,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        }
+      ],
+      "assessed_concepts": [
+        "Construct: Construct UMLdiagram representing Artist."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-043",
+        "filename": "Computer_science_paper_2_TZ3_HL_markscheme.pdf",
+        "pdf_pages": [
+          30
+        ],
+        "question_reference": "14(f)",
+        "marking_summary": "Classname/threecompartments;attributes/methods;visibility;sourceMSaddsabsenttoString.",
+        "source_issues": [
+          "SRC-043 UML example adds a toString method absent from the given source class. The unofficial task specifies every attribute/method required and does not import the added method."
+        ]
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B3.1.2",
+          "scope_evidence": "• Classes and their methods, based on application requirements\n• The use of unified modelling language (UML) class diagrams to represent class relationships, attributes and methods, to aid effective software design and planning",
+          "rationale": "Preserves UMLclassrepresentation using providedPython-compatibletypes/signatures;doesnotinclude sourceMSinventedmethod.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "Construct UMLdiagram representing Artist.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 20,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-020.txt"
+        }
+      ],
+      "source_context_page_evidence": [
+        {
+          "pdf_page": 18,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-18.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-018.txt"
+        },
+        {
+          "pdf_page": 19,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-19.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-019.txt"
+        },
+        {
+          "pdf_page": 20,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-20.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-020.txt"
+        }
+      ],
+      "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+      "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2_TZ3_HL.pdf",
+      "source_issues": [
+        "SRC-043 UML example adds a toString method absent from the given source class. The unofficial task specifies every attribute/method required and does not import the added method."
+      ]
+    },
+    {
+      "original_assessment_context": "Artwork subclasses Painting(typeOfPaint),Sculpture(weight),Performance(needForSound);otherfieldscommon.",
+      "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+      "source_question_id": "H-SRC042-Q15-a-i",
+      "source_id": "SRC-042",
+      "source_filename": "Computer_science_paper_2_TZ3_HL.pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "D",
+      "question": "15",
+      "subquestion": "a-i",
+      "source_pdf_pages": [
+        21
+      ],
+      "source_printed_pages": [
+        "20"
+      ],
+      "original_marks": 1,
+      "command_term": "State",
+      "original_text": "[Source PDF page 20]\nArtist\n(Option D continues on the following page)\n\n[Source PDF page 21]\n(Option D continued)\n15. The owner of the art shop would like the artworks separated into three different categories:\npaintings, sculptures, and performances.\nThree classes, , , and , are created for the three different\nPainting Sculpture Performance\ncategories of artwork.\nThe variable belongs to . It holds the name of the type of paint used.\ntypeOfPaint Painting\nThe variable belongs to . It holds the weight of a sculpture.\nweight Sculpture\nThe variable belongs to . It states whether sound is needed for\nneedForSound Performance\nthe performance.\nThe other variables are common to all three classes.\n(a) State a suitable data type for:\n(i) the variable ; [1]\ntypeOfPaint",
+      "parent_context": "Artwork subclasses Painting(typeOfPaint),Sculpture(weight),Performance(needForSound);otherfieldscommon.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-20.png",
+          "source_pdf_page": 20,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-21.png",
+          "source_pdf_page": 21,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        }
+      ],
+      "assessed_concepts": [
+        "State: State suitable data type for typeOfPaint."
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-043",
+        "filename": "Computer_science_paper_2_TZ3_HL_markscheme.pdf",
+        "pdf_pages": [
+          31
+        ],
+        "question_reference": "15(a-i)",
+        "marking_summary": "String.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.1.1",
+          "scope_evidence": "• Data types: Boolean value, char, decimal, integer, string",
+          "rationale": "Source datatype selection retained withPython type naming.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "State suitable data type for typeOfPaint.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 21,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-021.txt"
+        }
+      ],
+      "source_context_page_evidence": [
+        {
+          "pdf_page": 20,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-20.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-020.txt"
+        },
+        {
+          "pdf_page": 21,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-21.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-021.txt"
+        }
+      ],
+      "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+      "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2_TZ3_HL.pdf",
+      "source_issues": []
+    },
+    {
+      "original_assessment_context": "Artwork subclasses Painting(typeOfPaint),Sculpture(weight),Performance(needForSound);otherfieldscommon.",
+      "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+      "source_question_id": "H-SRC042-Q15-a-ii",
+      "source_id": "SRC-042",
+      "source_filename": "Computer_science_paper_2_TZ3_HL.pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "D",
+      "question": "15",
+      "subquestion": "a-ii",
+      "source_pdf_pages": [
+        21
+      ],
+      "source_printed_pages": [
+        "20"
+      ],
+      "original_marks": 1,
+      "command_term": "State",
+      "original_text": "[Source PDF page 21]\ntypeOfPaint\n(ii) the variable ; [1]\nweight",
+      "parent_context": "Artwork subclasses Painting(typeOfPaint),Sculpture(weight),Performance(needForSound);otherfieldscommon.",
+      "assets": [
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-20.png",
+          "source_pdf_page": 20,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        },
+        {
+          "kind": "source_page",
+          "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-21.png",
+          "source_pdf_page": 21,
+          "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+        }
+      ],
+      "assessed_concepts": [
+        "State: State suitable data type for weight."
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-043",
+        "filename": "Computer_science_paper_2_TZ3_HL_markscheme.pdf",
+        "pdf_pages": [
+          31
+        ],
+        "question_reference": "15(a-ii)",
+        "marking_summary": "Integer orrealnumericdependingunits.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "mapping_target": "adapted_practice_only",
+          "syllabus_code": "B2.1.1",
+          "scope_evidence": "• Data types: Boolean value, char, decimal, integer, string",
+          "rationale": "Clarifies fractional measurement;no separateDecimal-library requirement.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+        "marks": "Printed allocation transcribed.",
+        "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+        "official_answer_status": "See source markscheme record"
+      },
+      "original_text_manual_synopsis": "State suitable data type for weight.",
+      "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+      "source_page_evidence": [
+        {
+          "pdf_page": 21,
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-021.txt"
+        }
+      ],
+      "source_context_page_evidence": [
+        {
+          "pdf_page": 20,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-20.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-020.txt"
+        },
+        {
+          "pdf_page": 21,
+          "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-21.png",
+          "kind": "complete_original_page_raster",
+          "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-021.txt"
+        }
+      ],
+      "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+      "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2_TZ3_HL.pdf",
+      "source_issues": []
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC042-Q14-a",
+      "source_question_ids": [
+        "H-SRC042-Q14-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "A Producer stores references to Products that can exist independently and can move between Producers. State the appropriate aggregation/composition relationship.",
+      "syllabus_codes": [
+        "B3.2.4"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 1,
+      "command_term": "State",
+      "difficulty": "low",
+      "adaptation_rationale": "Retains has-a reasoning and explicitly establishes independent life time; does not infer ownership from reference array alone.",
+      "solution": "Aggregation.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Aggregation."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "No executable code required; manual technical check."
+      },
+      "code": "",
+      "test_code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC042-Q14-b",
+      "source_question_ids": [
+        "H-SRC042-Q14-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline what happens when a Python class is instantiated with its normal constructor arguments.",
+      "syllabus_codes": [
+        "B3.1.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "low",
+      "adaptation_rationale": "Original application rewritten to be self-contained; assessed reasoning retained within cited 2027 scope.",
+      "solution": "A new instance of the class is created.; Initialization establishes its initial attributes/state using the supplied arguments.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "A new instance of the class is created."
+        },
+        {
+          "marks": 1,
+          "criterion": "Initialization establishes its initial attributes/state using the supplied arguments."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "No executable code required; manual technical check."
+      },
+      "code": "",
+      "test_code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC042-Q14-c",
+      "source_question_ids": [
+        "H-SRC042-Q14-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Producer has constructor __init__(self, name, region). Construct Python code creating a Producer for \"Aster Works\" in \"North\" and assign it to supplier.",
+      "syllabus_codes": [
+        "B3.1.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 3,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Retains constructor invocation/argument/state reasoning; Python replaces Java typed declaration/new syntax.",
+      "solution": "supplier=Producer(\"Aster Works\",\"North\")",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Uses supplier as the assignment target."
+        },
+        {
+          "marks": 1,
+          "criterion": "Calls the Producer class to create an instance."
+        },
+        {
+          "marks": 1,
+          "criterion": "Passes \"Aster Works\" and \"North\" in the required order."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "No executable code required; manual technical check."
+      },
+      "code": "",
+      "test_code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC042-Q14-d",
+      "source_question_ids": [
+        "H-SRC042-Q14-d"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline why a Python Producer class might document _products as non-public and provide controlled methods for changing it.",
+      "syllabus_codes": [
+        "B3.1.5"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "low",
+      "adaptation_rationale": "AccuratePython information hiding; no false private access enforcement.",
+      "solution": "Callers are directed to methods that can enforce valid changes rather than altering internal state arbitrarily.; The underscore is a convention, not enforced privacy; the controlled interface supports encapsulation.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Callers are directed to methods that can enforce valid changes rather than altering internal state arbitrarily."
+        },
+        {
+          "marks": 1,
+          "criterion": "The underscore is a convention, not enforced privacy; the controlled interface supports encapsulation."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "No executable code required; manual technical check."
+      },
+      "code": "",
+      "test_code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC042-Q14-e",
+      "source_question_ids": [
+        "H-SRC042-Q14-e"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline two benefits of separating a sales program into well-defined reusable functions.",
+      "syllabus_codes": [
+        "B2.3.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 4,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Original application rewritten to be self-contained; assessed reasoning retained within cited 2027 scope.",
+      "solution": "A function can be reused where the same task is needed.; This avoids duplicating logic and keeps corrections in one place.; Individual functions can be tested independently.; Smaller focused units make faults easier to locate and changes easier to isolate.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "A function can be reused where the same task is needed."
+        },
+        {
+          "marks": 1,
+          "criterion": "This avoids duplicating logic and keeps corrections in one place."
+        },
+        {
+          "marks": 1,
+          "criterion": "Individual functions can be tested independently."
+        },
+        {
+          "marks": 1,
+          "criterion": "Smaller focused units make faults easier to locate and changes easier to isolate."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "No executable code required; manual technical check."
+      },
+      "code": "",
+      "test_code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC042-Q14-f",
+      "source_question_ids": [
+        "H-SRC042-Q14-f"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct a UML class diagram for Producer. It has non-public _name:str,_region:str and _products:list[Product]. Its public methods are add_product(item:Product)->None and total_fee()->float. Use conceptual UML visibility markings; Python underscores remain a convention.",
+      "syllabus_codes": [
+        "B3.1.2"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 3,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Preserves UMLclassrepresentation using provided Python-compatible types/signatures; does not include sourceMSinventedmethod.",
+      "solution": "Producer | -_name:str;-_region:str;-_products:list[Product] | +add_product(item:Product):None;+total_fee():float",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Class named Producer with separate name, attribute and method compartments."
+        },
+        {
+          "marks": 1,
+          "criterion": "All three attributes with stated types and non-public visibility."
+        },
+        {
+          "marks": 1,
+          "criterion": "Both public methods with parameters/return types as specified."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "No executable code required; manual technical check."
+      },
+      "code": "",
+      "test_code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC042-Q15-a-i",
+      "source_question_ids": [
+        "H-SRC042-Q15-a-i"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "State a suitable Python type for a product’s material name, such as \"aluminium\".",
+      "syllabus_codes": [
+        "B2.1.1"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 1,
+      "command_term": "State",
+      "difficulty": "low",
+      "adaptation_rationale": "Source data type selection retained with Python type naming.",
+      "solution": "str.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "str."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "No executable code required; manual technical check."
+      },
+      "code": "",
+      "test_code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC042-Q15-a-ii",
+      "source_question_ids": [
+        "H-SRC042-Q15-a-ii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "State a suitable Python type for a measured mass that can include fractional kilograms.",
+      "syllabus_codes": [
+        "B2.1.1"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 1,
+      "command_term": "State",
+      "difficulty": "low",
+      "adaptation_rationale": "Clarifies fractional measurement; no separate Decimal-library requirement.",
+      "solution": "float.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "float."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct wording or valid implementation earning the specified independent points."
+      ],
+      "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+        "code_check": "No executable code required; manual technical check."
+      },
+      "code": "",
+      "test_code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    }
+  ]
+}

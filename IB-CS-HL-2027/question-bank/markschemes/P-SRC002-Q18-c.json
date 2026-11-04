@@ -6,7 +6,7 @@
   "marking_points": [
     {
       "marks": 1,
-      "criterion": "-3,without an invented recursion error."
+      "criterion": "-3, without an invented recursion error."
     }
   ],
   "acceptable_alternatives": [],
@@ -19,5 +19,6 @@
     "result_file": ""
   },
   "code": "def sum_down(n):\n    if n <= 1:\n        return n\n    return n + sum_down(n - 1)",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

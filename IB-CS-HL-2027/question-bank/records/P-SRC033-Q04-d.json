@@ -1,0 +1,58 @@
+{
+  "question_id": "P-SRC033-Q04-d",
+  "source_question_ids": [
+    "H-SRC033-Q04-d"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Compare supervised classification and unsupervised clustering for analysing incident records.",
+  "syllabus_codes": [
+    "A4.3.2",
+    "A4.3.4"
+  ],
+  "theme": "A",
+  "level": "HL-only",
+  "marks": 5,
+  "command_term": "Compare",
+  "difficulty": "medium",
+  "adaptation_rationale": "Classification/clustering explicitly scoped. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "solution": "Classification trains on labelled incidents to assign a new record to a known category; clustering groups records by feature similarity without supplied category labels. Both use incident features, but one predicts predefined classes while the other explores groups that may reveal new patterns.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Classification uses labelled examples."
+    },
+    {
+      "marks": 1,
+      "criterion": "Predicts predefined category."
+    },
+    {
+      "marks": 1,
+      "criterion": "Clustering uses unlabelled features."
+    },
+    {
+      "marks": 1,
+      "criterion": "Groups by similarity without supplied class labels."
+    },
+    {
+      "marks": 1,
+      "criterion": "Paired contextual comparison explains prediction versus exploratory grouping."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 5,
+    "code_execution": "No executable code required; explicit answer/trace checked manually."
+  },
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "assets": [],
+  "record_path": "question-bank/records/P-SRC033-Q04-d.json",
+  "question_path": "question-bank/questions/P-SRC033-Q04-d.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC033-Q04-d.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

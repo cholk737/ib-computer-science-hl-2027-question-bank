@@ -35,6 +35,8 @@ for q,s in sorted(sources.items()):
  s=dict(s);s['coordinator_status']='batch_structure_source_marks_and_sample_review_passed';s['practice_question_ids']=links[q]
  atomic_json(P/path,s)
  source_index.append(dict(source_question_id=q,source_id=s['source_id'],source_filename=s['source_filename'],year=s['year'],session=s['session'],source_level=s['source_level'],paper=s['paper'],zone=s['zone'],option=s['option'],question=s['question'],subquestion=s['subquestion'],source_pdf_pages=s['source_pdf_pages'],source_printed_pages=s['source_printed_pages'],original_marks=s['original_marks'],command_term=s['command_term'],relevance_status=s['relevance_status'],practice_question_ids=links[q],record_path=path,markscheme_status=s['markscheme']['status'],review_required=any(m.get('review_required') for m in s['mappings'])))
+ source_index[-1]['mark_allocation_pdf_page']=s.get('mark_allocation_pdf_page',s['source_pdf_pages'][-1])
+ source_index[-1]['context_pdf_pages']=s.get('context_pdf_pages',[])
  if s['relevance_status']=='C':exclusions.append(dict(source_question_id=q,source_id=s['source_id'],question=s['question'],subquestion=s['subquestion'],source_pdf_pages=s['source_pdf_pages'],original_marks=s['original_marks'],reason=s['exclusion_reason'],record_path=path))
  for i,m in enumerate(s['mappings'] or [{}],1):
   mapping.append(dict(mapping_id=f'MAP-{q}-{i:02}',source_question_id=q,practice_question_id=';'.join(links[q]),syllabus_code=m.get('syllabus_code',''),scope_bullet_reference=m.get('scope_evidence',''),relevance_status=s['relevance_status'],mapping_target=m.get('mapping_target','adapted_practice_only' if s['relevance_status']=='B' else 'original_and_adapted' if s['relevance_status']=='A' else 'excluded'),theme=m.get('theme',''),level=m.get('level',''),confidence=m.get('confidence',''),review_required=m.get('review_required',False),reviewer='specialist_author; coordinator_batch_checks_and_sample_review',notes=m.get('rationale',s['exclusion_reason'])))
@@ -45,7 +47,9 @@ for q,p in sorted(practices.items()):
  atomic_json(P/record_path,p)
  public={k:p[k] for k in ['question_id','source_question_ids','derivation_status','unofficial','question_text','syllabus_codes','theme','level','marks','command_term','difficulty','adaptation_rationale','assets'] if k in p}
  atomic_json(P/question_path,public)
- atomic_json(P/ms_path,{k:p[k] for k in ['question_id','unofficial','marks','solution','marking_points','acceptable_alternatives','partial_credit_notes','common_errors','verification','code','test_code','markscheme_status'] if k in p})
+ marking={k:p[k] for k in ['question_id','unofficial','marks','solution','marking_points','acceptable_alternatives','partial_credit_notes','common_errors','verification','code','test_code','markscheme_status'] if k in p}
+ marking['general_policy_reference']='question-bank/markschemes/MARKING_POLICY.md'
+ atomic_json(P/ms_path,marking)
  bank.append(dict(question_id=q,record_path=record_path,question_path=question_path,derivation_status=p['derivation_status'],source_question_ids=p['source_question_ids'],theme=p['theme'],syllabus_codes=p['syllabus_codes'],level=p['level'],marks=p['marks'],command_term=p['command_term'],difficulty=p['difficulty'],verification_status=p['coordinator_status'],markscheme_path=ms_path))
 def write_csv(path,rows,fields=None):
  assert rows or fields

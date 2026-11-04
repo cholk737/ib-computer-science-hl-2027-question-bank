@@ -28,5 +28,6 @@
   },
   "code": "def grid_product(grid):\n    product=1\n    for row in grid:\n        for value in row:\n            product *= value\n    return product",
   "test_code": "assert grid_product([[2,3],[4,5]])==120\nassert grid_product([[2,0],[4,5]])==0",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

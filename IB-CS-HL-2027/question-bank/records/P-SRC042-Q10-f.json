@@ -1,0 +1,55 @@
+{
+  "question_id": "P-SRC042-Q10-f",
+  "source_question_ids": [
+    "H-SRC042-Q10-f"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "State the returned value of check_upload below for each call: (i)check_upload(\"A.TXT\", 1024),(ii)check_upload(\"a.pdf\", 900),(iii)check_upload(\"b.csv\", 1025),(iv)check_upload(\"c.exe\", 2000).\n\ndef check_upload(name,size):\n    errors=[]\n    extension=name.rsplit(\".\",1)[-1].lower()\n    if extension not in [\"csv\",\"txt\"]:\n        errors.append(\"type\")\n    if size > 1024:\n        errors.append(\"size\")\n    if not errors:\n        return \"Accepted\"\n    return errors",
+  "syllabus_codes": [
+    "B2.1.2",
+    "B2.3.2"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 4,
+  "command_term": "State",
+  "difficulty": "medium",
+  "adaptation_rationale": "Retains extension/threshold/conditional error reasoning; Python string processing/selection replacesPHPspecificfileuploadAPI; no binary file-I/O scope added.",
+  "solution": "(i)\"Accepted\".; (ii)[\"type\"].; (iii)[\"size\"].; (iv)[\"type\",\"size\"] in that order.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "(i)\"Accepted\"."
+    },
+    {
+      "marks": 1,
+      "criterion": "(ii)[\"type\"]."
+    },
+    {
+      "marks": 1,
+      "criterion": "(iii)[\"size\"]."
+    },
+    {
+      "marks": 1,
+      "criterion": "(iv)[\"type\",\"size\"] in that order."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "Executable checks saved under checks/ where applicable."
+  },
+  "code": "def check_upload(name,size):\n    errors=[]\n    extension=name.rsplit(\".\",1)[-1].lower()\n    if extension not in [\"csv\",\"txt\"]:\n        errors.append(\"type\")\n    if size > 1024:\n        errors.append(\"size\")\n    if not errors:\n        return \"Accepted\"\n    return errors",
+  "test_code": "assert check_upload(\"A.TXT\",1024)==\"Accepted\"\nassert check_upload(\"a.pdf\",900)==[\"type\"]\nassert check_upload(\"b.csv\",1025)==[\"size\"]\nassert check_upload(\"c.exe\",2000)==[\"type\",\"size\"]",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC042-Q10-f.json",
+  "question_path": "question-bank/questions/P-SRC042-Q10-f.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC042-Q10-f.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

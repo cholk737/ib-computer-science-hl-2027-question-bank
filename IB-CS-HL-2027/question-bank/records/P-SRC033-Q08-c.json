@@ -1,0 +1,61 @@
+{
+  "question_id": "P-SRC033-Q08-c",
+  "source_question_ids": [
+    "H-SRC033-Q08-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Describe how a reinforcement-learning agent controlling a delivery robot in a simulated building can improve navigation. Refer to states, actions, rewards, policy, and exploration versus exploitation.",
+  "syllabus_codes": [
+    "A4.3.6"
+  ],
+  "theme": "A",
+  "level": "HL-only",
+  "marks": 6,
+  "command_term": "Describe",
+  "difficulty": "medium",
+  "adaptation_rationale": "Reframe general adaptation as explicit reinforcement-learning agent/environment reasoning. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "solution": "State describes current observations/location; actions choose movement. Environment returns a new state and reward for useful progress or penalties for collisions. Agent updates its policy to improve cumulative reward, trying uncertain actions while also choosing actions currently believed to work well.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Defines suitable state information."
+    },
+    {
+      "marks": 1,
+      "criterion": "Identifies movement actions."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains environment transition/reward."
+    },
+    {
+      "marks": 1,
+      "criterion": "Relates policy to action choice."
+    },
+    {
+      "marks": 1,
+      "criterion": "Uses cumulative reward as objective."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains exploration/exploitation trade-off."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 6,
+    "code_execution": "No executable code required; explicit answer/trace checked manually."
+  },
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "assets": [],
+  "record_path": "question-bank/records/P-SRC033-Q08-c.json",
+  "question_path": "question-bank/questions/P-SRC033-Q08-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC033-Q08-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

@@ -42,7 +42,9 @@
       19
     ],
     "question_reference": "Q13 d",
-    "marking_summary": "One solution:\ndef reverse_stack(stack, queue):\n    while not stack.isEmpty():\n        queue.enqueue(stack.pop())\n    while not queue.isEmpty():\n        stack.push(queue.dequeue())",
+    "marking_summary": "Exact original MS leaf excerpt: Award [5 max] Award [1] for correct use of the stack and queue access methods (isEmpty(), push(), pop(), enqueue(), dequeue()) Award [1] for loop through the TOWNS stack Award [1] for taking an element from the top of the TOWNS stack Award [1] for enqueuing the value popped from the TOWNS stack to the TEMP queue Award [1] for loop through the TEMP queue Award [1] for pushing the value dequeued from the TEMP queue onto the TOWNS stack Example: loop while not TOWNS.isEmpty() X=TOWNS.pop() TEMP.enqueue(X) //TEMP is an empty queue end while loop while not TEMP.isEmpty() Y=TEMP.dequeue() //instead of these 2 statements TOWNS.push(Y) //TOWNS.push(TEMP.dequeue()) //can be written end while",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [5 max]\nAward [1] for correct use of the stack and queue access methods (isEmpty(), push(),  pop(),\nenqueue(), dequeue())\nAward [1] for loop through the TOWNS stack\nAward [1] for taking an element from the top of the TOWNS stack\nAward [1] for enqueuing the value popped from the TOWNS stack to the TEMP queue\nAward [1] for loop through the TEMP queue\nAward [1] for pushing the value dequeued from the TEMP queue onto the TOWNS stack\nExample: \nloop while not TOWNS.isEmpty() \n X=TOWNS.pop() \n TEMP.enqueue(X)  //TEMP is an empty queue \nend while \nloop while not TEMP.isEmpty() \n Y=TEMP.dequeue()  //instead of these 2 statements \n TOWNS.push(Y)   //TOWNS.push(TEMP.dequeue())  \n  //can be written \nend while",
     "source_issues": [],
     "source_marking_evidence": "– 19 – M23/4/COMSC/HP1/ENG/TZ2/XX/M \n(d) Award [5 max]\nAward [1] for correct use of the stack and queue access methods (isEmpty(), push(),  pop(),\nenqueue(), dequeue())\nAward [1] for loop through the TOWNS stack\nAward [1] for taking an element from the top of the TOWNS stack\nAward [1] for enqueuing the value popped from the TOWNS stack to the TEMP queue\nAward [1] for loop through the TEMP queue\nAward [1] for pushing the value dequeued from the TEMP queue onto the TOWNS stack\nExample: \nloop while not TOWNS.isEmpty() \n X=TOWNS.pop() \n TEMP.enqueue(X)  //TEMP is an empty queue \nend while \nloop while not TEMP.isEmpty() \n Y=TEMP.dequeue()  //instead of these 2 statements \n TOWNS.push(Y)   //TOWNS.push(TEMP.dequeue())  \n  //can be written \nend while "
   },
@@ -51,7 +53,7 @@
     {
       "syllabus_code": "B2.2.3",
       "scope_evidence": "• Must include fundamental operations such as push, pop, peek and isEmpty\n• How stack operations impact both performance and memory usage\n• An appropriate stack for a specific problem",
-      "rationale": "Construct Python reverse_stack(stack,queue), where queue starts empty assesses Explain the concept of a stack as a “last in, first out” (LIFO) data structure.",
+      "rationale": "Adapted target only: Construct Python reverse_stack(stack,queue), where queue starts empty; guidance target: Explain the concept of a stack as a “last in, first out” (LIFO) data structure. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
       "theme": "B",
       "level": "SL/HL common",
       "confidence": "high",
@@ -60,7 +62,7 @@
     {
       "syllabus_code": "B2.2.4",
       "scope_evidence": "• Must include fundamental operations such as enqueue, dequeue, front and isEmpty\n• How queue operations impact both performance and memory usage\n• An appropriate queue for a specific problem",
-      "rationale": "Construct Python reverse_stack(stack,queue), where queue starts empty assesses Explain the concept of a queue as a “first in, first out” (FIFO) data structure.",
+      "rationale": "Adapted target only: Construct Python reverse_stack(stack,queue), where queue starts empty; guidance target: Explain the concept of a queue as a “first in, first out” (FIFO) data structure. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
       "theme": "B",
       "level": "SL/HL common",
       "confidence": "high",
@@ -69,7 +71,7 @@
     {
       "syllabus_code": "B2.3.3",
       "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
-      "rationale": "Construct Python reverse_stack(stack,queue), where queue starts empty assesses Construct programs that utilize looping structures to perform repeated actions.",
+      "rationale": "Adapted target only: Construct Python reverse_stack(stack,queue), where queue starts empty; guidance target: Construct programs that utilize looping structures to perform repeated actions. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
       "theme": "B",
       "level": "SL/HL common",
       "confidence": "high",
@@ -81,8 +83,8 @@
   "verification": {
     "source_text": "Read complete source page and matched leaf/mark to original PDF.",
     "markscheme": "Read cited MS page(s).",
-    "visual": "No visual required by this leaf.",
-    "technical": "Traced bottom-to-top[1,2,3]→queue3,2,1→stack[3,2,1]; also empty andsingleton."
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+    "technical": "Executed empty,singleton and three-element stacks with FIFO queue harness."
   },
   "adaptation_reuse_question_id": "",
   "practice_question_ids": [

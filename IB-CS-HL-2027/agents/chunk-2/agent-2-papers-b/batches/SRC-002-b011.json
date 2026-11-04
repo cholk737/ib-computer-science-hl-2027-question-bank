@@ -44,7 +44,9 @@
         "filename": "",
         "pdf_pages": [],
         "question_reference": "Q17 a",
-        "marking_summary": "One solution:\ndef change_preference(head, old, new):\n    changed = 0\n    current = head\n    while current is not None:\n        if current.customer.preferred_shop == old:\n            current.customer.preferred_shop = new\n            changed += 1\n        current = current.next\n    return changed",
+        "marking_summary": "No uploaded official MS; independently solved unofficial criteria are stored in the practice record.",
+        "summary_kind": "missing_official_MS",
+        "source_marking_leaf_evidence": "",
         "source_issues": [],
         "source_marking_evidence": ""
       },
@@ -53,7 +55,7 @@
         {
           "syllabus_code": "B4.1.3",
           "scope_evidence": "• The basic operations on a linked list, such as insertion, deletion, traversal, search",
-          "rationale": "Construct change_preference(head,old,new) in Python assesses Construct and apply linked lists: singly, doubly and circular.",
+          "rationale": "Adapted target only: Construct change_preference(head,old,new) in Python; guidance target: Construct and apply linked lists: singly, doubly and circular. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "HL-only",
           "confidence": "high",
@@ -115,7 +117,9 @@
         "filename": "",
         "pdf_pages": [],
         "question_reference": "Q17 b",
-        "marking_summary": "Reuse reduces repeated development effort. A well-tested shared implementation can reduce duplicated defects and can be replaced centrally through the same interface,although its suitability still needs checking.",
+        "marking_summary": "No uploaded official MS; independently solved unofficial criteria are stored in the practice record.",
+        "summary_kind": "missing_official_MS",
+        "source_marking_leaf_evidence": "",
         "source_issues": [],
         "source_marking_evidence": ""
       },
@@ -124,7 +128,7 @@
         {
           "syllabus_code": "B2.3.4",
           "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
-          "rationale": "Outline two benefits of reusing a tested library function through its documented interface rather than reimplementing it at every call site assesses Construct functions and modularization.",
+          "rationale": "Adapted target only: Outline two benefits of reusing a tested library function through its documented interface rather than reimplementing it at every call site; guidance target: Construct functions and modularization. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -186,7 +190,9 @@
         "filename": "",
         "pdf_pages": [],
         "question_reference": "Q18 a",
-        "marking_summary": "The recursive definition expresses the repeated structure directly; the same function handles each smaller case until a base case,which can make the solution clearer.",
+        "marking_summary": "No uploaded official MS; independently solved unofficial criteria are stored in the practice record.",
+        "summary_kind": "missing_official_MS",
+        "source_marking_leaf_evidence": "",
         "source_issues": [],
         "source_marking_evidence": ""
       },
@@ -195,7 +201,7 @@
         {
           "syllabus_code": "B2.4.4",
           "scope_evidence": "• The fundamentals of recursion and its advantages and limitations\n• The utility of recursion in solving problems that can be broken down into smaller, similar sub-problems\n• Recursive algorithms, including but not limited to quicksort\n• The limitations of recursion, including complexity and memory usage\n• Situations that best suit the use of recursion, including fractal image creation, traversing binary trees, sorting algorithms",
-          "rationale": "Outline one benefit of recursion for a problem that naturally decomposes into a smaller instance of itself assesses Explain the fundamental concept of recursion and its applications in programming. (HL only)",
+          "rationale": "Original and adapted within-scope skill: Outline one benefit of recursion for a problem that naturally decomposes into a smaller instance of itself; guidance target: Explain the fundamental concept of recursion and its applications in programming. (HL only)",
           "theme": "B",
           "level": "HL-only",
           "confidence": "high",
@@ -234,7 +240,7 @@
         "25"
       ],
       "original_marks": 4,
-      "command_term": "See original prompt",
+      "command_term": "Trace",
       "original_text": "Copy and trace the recursive algorithm when called with X(5);",
       "parent_context": "- 25-\n2226-4429\n(Option D continued)\n18. A programmer has produced the following recursive algorithm:\nint X (int Y){\nif (Y <= 1){\nreturn Y;\n}\nelsel\nreturn Y + X(Y-1);\n}\n}\n(a)\n•Outline one benefit of recursion.\n[2]\n(b) Copy and trace the recursive algorithm when called with the following statement.\nX(5);\n[4]\nY <1\nReturn call\nReturn value\n(c) Identify why calling the algorithm with the following statement would cause an error.\nX(-3) ;\n[1]\n(d) Explain one action a programmer could take to improve the readability of code.\n(3]\nEnd of Option D\nA000",
       "assets": [
@@ -257,7 +263,9 @@
         "filename": "",
         "pdf_pages": [],
         "question_reference": "Q18 b",
-        "marking_summary": "Calls4,3,2,1; return values1,3,6,10 while unwinding. Final10.",
+        "marking_summary": "No uploaded official MS; independently solved unofficial criteria are stored in the practice record.",
+        "summary_kind": "missing_official_MS",
+        "source_marking_leaf_evidence": "",
         "source_issues": [],
         "source_marking_evidence": ""
       },
@@ -266,7 +274,7 @@
         {
           "syllabus_code": "B2.4.5",
           "scope_evidence": "• Simple, non-branching recursive algorithms in programming only",
-          "rationale": "Trace sum_down(4),showing call arguments and returned values assesses Construct and trace recursive algorithms in a programming language. (HL only)",
+          "rationale": "Adapted target only: Trace sum_down(4),showing call arguments and returned values; guidance target: Construct and trace recursive algorithms in a programming language. (HL only) Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "HL-only",
           "confidence": "high",
@@ -328,7 +336,9 @@
         "filename": "",
         "pdf_pages": [],
         "question_reference": "Q18 c",
-        "marking_summary": "-3; the base condition is immediately true.",
+        "marking_summary": "No uploaded official MS; independently solved unofficial criteria are stored in the practice record.",
+        "summary_kind": "missing_official_MS",
+        "source_marking_leaf_evidence": "",
         "source_issues": [
           "Original Q18c falsely presupposes an error for X(-3); printed Y<=1 returns-3 immediately. No uploaded MS exists."
         ],
@@ -339,7 +349,7 @@
         {
           "syllabus_code": "B2.4.5",
           "scope_evidence": "• Simple, non-branching recursive algorithms in programming only",
-          "rationale": "For the following Python function,state the result of sum_down(-3) assesses Construct and trace recursive algorithms in a programming language. (HL only)",
+          "rationale": "Adapted target only: For the following Python function,state the result of sum_down(-3); guidance target: Construct and trace recursive algorithms in a programming language. (HL only) Adaptation: Repairs false source presupposition while retaining correct base-case tracing.",
           "theme": "B",
           "level": "HL-only",
           "confidence": "high",
@@ -401,7 +411,9 @@
         "filename": "",
         "pdf_pages": [],
         "question_reference": "Q18 d",
-        "marking_summary": "The name summarizes the task at each call site,while detailed implementation is grouped in one place. Readers can follow the main flow without repeatedly scanning the same low-level operations.",
+        "marking_summary": "No uploaded official MS; independently solved unofficial criteria are stored in the practice record.",
+        "summary_kind": "missing_official_MS",
+        "source_marking_leaf_evidence": "",
         "source_issues": [],
         "source_marking_evidence": ""
       },
@@ -410,7 +422,7 @@
         {
           "syllabus_code": "B2.3.4",
           "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
-          "rationale": "Explain how replacing a repeated block with a clearly named function can improve the readability of a program assesses Construct functions and modularization.",
+          "rationale": "Adapted target only: Explain how replacing a repeated block with a clearly named function can improve the readability of a program; guidance target: Construct functions and modularization. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -439,7 +451,7 @@
       ],
       "derivation_status": "adapted_unofficial",
       "unofficial": true,
-      "question_text": "Construct change_preference(head,old,new) in Python. head identifies a singly linked list of nodes with customer and next attributes; the final next is None. Each customer has preferred_shop. Replace old with new for every matching customer and return the number changed. Return0 for an empty list.",
+      "question_text": "Construct change_preference(head, old, new) in Python. head identifies a singly linked list of nodes with customer and next attributes; the final next is None. Each customer has preferred_shop. Replace old with new for every matching customer and return the number changed. Return0 for an empty list.",
       "syllabus_codes": [
         "B4.1.3"
       ],
@@ -453,7 +465,7 @@
       "marking_points": [
         {
           "marks": 1,
-          "criterion": "Initializes change count andhead traversal."
+          "criterion": "Initializes change count and head traversal."
         },
         {
           "marks": 1,
@@ -469,11 +481,11 @@
         },
         {
           "marks": 1,
-          "criterion": "Increments count only on match andadvances references."
+          "criterion": "Increments count only on match and advances references."
         },
         {
           "marks": 1,
-          "criterion": "Returns count withcorrectemptycase."
+          "criterion": "Returns count with correct empty case."
         }
       ],
       "acceptable_alternatives": [],
@@ -506,7 +518,7 @@
       "command_term": "Outline",
       "difficulty": "medium",
       "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
-      "solution": "Reuse reduces repeated development effort. A well-tested shared implementation can reduce duplicated defects and can be replaced centrally through the same interface,although its suitability still needs checking.",
+      "solution": "Reuse reduces repeated development effort. A well-tested shared implementation can reduce duplicated defects and can be replaced centrally through the same interface, although its suitability still needs checking.",
       "marking_points": [
         {
           "marks": 1,
@@ -555,7 +567,7 @@
       "command_term": "Outline",
       "difficulty": "medium",
       "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
-      "solution": "The recursive definition expresses the repeated structure directly; the same function handles each smaller case until a base case,which can make the solution clearer.",
+      "solution": "The recursive definition expresses the repeated structure directly; the same function handles each smaller case until a base case, which can make the solution clearer.",
       "marking_points": [
         {
           "marks": 1,
@@ -563,7 +575,7 @@
         },
         {
           "marks": 1,
-          "criterion": "Explains reuse/clarity withbasecase."
+          "criterion": "Explains reuse/clarity with base case."
         }
       ],
       "acceptable_alternatives": [],
@@ -596,7 +608,7 @@
       "command_term": "Trace",
       "difficulty": "medium",
       "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
-      "solution": "Calls4,3,2,1; return values1,3,6,10 while unwinding. Final10.",
+      "solution": "Calls 4, 3, 2, 1; return values1, 3, 6, 10 while unwinding. Final 10.",
       "marking_points": [
         {
           "marks": 1,
@@ -604,15 +616,15 @@
         },
         {
           "marks": 1,
-          "criterion": "Base returns1."
+          "criterion": "Base returns 1."
         },
         {
           "marks": 1,
-          "criterion": "Intermediate returns3 and6."
+          "criterion": "Intermediate returns 3 and 6."
         },
         {
           "marks": 1,
-          "criterion": "Final10."
+          "criterion": "Final 10."
         }
       ],
       "acceptable_alternatives": [],
@@ -649,7 +661,7 @@
       "marking_points": [
         {
           "marks": 1,
-          "criterion": "-3,without an invented recursion error."
+          "criterion": "-3, without an invented recursion error."
         }
       ],
       "acceptable_alternatives": [],
@@ -682,7 +694,7 @@
       "command_term": "Explain",
       "difficulty": "medium",
       "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
-      "solution": "The name summarizes the task at each call site,while detailed implementation is grouped in one place. Readers can follow the main flow without repeatedly scanning the same low-level operations.",
+      "solution": "The name summarizes the task at each call site, while detailed implementation is grouped in one place. Readers can follow the main flow without repeatedly scanning the same low-level operations.",
       "marking_points": [
         {
           "marks": 1,

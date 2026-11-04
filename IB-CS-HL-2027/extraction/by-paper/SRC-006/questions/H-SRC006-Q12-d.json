@@ -34,7 +34,9 @@
       13
     ],
     "question_reference": "Q12 d",
-    "marking_summary": "An array offers constant-time indexed access, whereas a linked list requires traversal. An array reserves fixed capacity; a linked list can grow node by node but stores an extra next reference. Inserting after a known list node can relink references, whereas insertion within an array may require shifting later records.",
+    "marking_summary": "Exact original MS leaf excerpt: Award [4 max] In an array, memory is assigned during compile time(predetermined) whilst in a linked list it is allocated during execution/runtime; Arrays are of fixed size whilst linked lists are flexible and can expand and contract its size; Array requires less memory (due to actual data being stored within the index in the array) whilst there is a need for more memory in linked list (due to storage of additional next and previous pointers/references); Elements are stored consecutively in array whereas elements are stored randomly in linked lists; Memory utilization is inefficient in the array whilst memory utilization is efficient in the linked list; Accessing an element in an array is direct (fast) while accessing an element in linked list is sequential/linear (slower) /to get into the nth element only the array name with index within the square bracket should be written whilst a link … [full leaf evidence retained]",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [4 max]\nIn an array, memory is assigned during compile time(predetermined) whilst in a linked list it is \nallocated during execution/runtime; \nArrays are of fixed size whilst linked lists are flexible and can expand and contract its size; \nArray requires less memory (due to actual data being stored within the index in the array) \nwhilst there is a need for more memory in linked list (due to storage of additional next and \nprevious pointers/references); \nElements are stored consecutively in array whereas elements are stored randomly in linked \nlists; \nMemory utilization is inefficient in the array whilst memory utilization is efficient in the linked \nlist; \nAccessing an element in an array is direct (fast) while accessing an element in linked list is \nsequential/linear (slower) /to get into the nth element only the array name with index within \nthe square bracket should be written whilst a linked list (to get the nth element) should be \ntraversed starting from the beginning of the list, and traversing through the list until found/ ; \nOperations like insertion and deletion in arrays consume a lot of time whilst the performance \nof these operations in linked lists is fast;",
     "source_issues": [
       "Source MS uses compile-time allocation as a universal array property; rewritten comparison explicitly states static array and avoids that generalization."
     ],
@@ -45,7 +47,7 @@
     {
       "syllabus_code": "B4.1.2",
       "scope_evidence": "• Lists must include singly, doubly, circular\n• Sketch of linked lists and implementation of basic operations diagrammatically, such as insertion, deletion, traversal, search\n• The advantages and disadvantages of using linked lists over other data structures like arrays, particularly in terms of memory utilization and performance",
-      "rationale": "Compare a static contiguous array and a singly linked list for storing a changing collection of records assesses Evaluate linked lists.",
+      "rationale": "Original and adapted within-scope skill: Compare a static contiguous array and a singly linked list for storing a changing collection of records; guidance target: Evaluate linked lists.",
       "theme": "B",
       "level": "HL-only",
       "confidence": "high",
@@ -60,8 +62,9 @@
     "visual": "No visual required by this leaf.",
     "technical": "Independently reasoned and compared with available source marking points."
   },
-  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "adaptation_reuse_question_id": "",
   "practice_question_ids": [
     "P-SRC006-Q12-d"
-  ]
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
 }

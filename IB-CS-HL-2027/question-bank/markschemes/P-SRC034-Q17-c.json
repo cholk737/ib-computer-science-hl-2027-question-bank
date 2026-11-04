@@ -1,0 +1,45 @@
+{
+  "question_id": "P-SRC034-Q17-c",
+  "unofficial": true,
+  "marks": 6,
+  "solution": "def recommend(items,target,score):\n    best=items[0]\n    best_score=score(best,target)\n    for item in items[1:]:\n        current=score(item,target)\n        if current>best_score or(current==best_score and item.stock>best.stock):\n            best=item\n            best_score=current\n    return best",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes best and best score from an actual first item."
+    },
+    {
+      "marks": 1,
+      "criterion": "Visits remaining items and computes suitability."
+    },
+    {
+      "marks": 1,
+      "criterion": "Replaces best whenever suitability is strictly higher, regardless of stock."
+    },
+    {
+      "marks": 1,
+      "criterion": "On equal suitability, replaces only if stock is greater."
+    },
+    {
+      "marks": 1,
+      "criterion": "Keeps first when both metrics tie and updates cached score with best."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns the chosen item object."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "Executable checks saved under checks/ where applicable."
+  },
+  "code": "def recommend(items,target,score):\n    best=items[0]\n    best_score=score(best,target)\n    for item in items[1:]:\n        current=score(item,target)\n        if current>best_score or(current==best_score and item.stock>best.stock):\n            best=item\n            best_score=current\n    return best",
+  "test_code": "from types import SimpleNamespace\na=SimpleNamespace(score=-2,stock=100);b=SimpleNamespace(score=3,stock=1);c=SimpleNamespace(score=3,stock=2);d=SimpleNamespace(score=3,stock=2)\nf=lambda item,target:item.score\nassert recommend([a,b,c,d],None,f) is c\nassert recommend([a,b],None,f) is b\nassert recommend([a],None,f) is a",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

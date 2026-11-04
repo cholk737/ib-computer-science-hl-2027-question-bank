@@ -1,0 +1,55 @@
+{
+  "question_id": "P-SRC040-Q07-e-i",
+  "source_question_ids": [
+    "H-SRC040-Q07-e-i"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Describe the effect of feedback(scores,3) for scores=[2,4,5], including the mean used, final list and return value.\n\ndef feedback(previous, rating):\n    old_mean = sum(previous) / len(previous)\n    previous.append(rating)\n    if rating >= old_mean:\n        return \"Thanks\"\n    return \"Review needed\"",
+  "syllabus_codes": [
+    "B2.3.1",
+    "B2.3.2"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 4,
+  "command_term": "Describe",
+  "difficulty": "medium",
+  "adaptation_rationale": "Convert server-language code to a self-contained Python trace preserving the significant pre-insertion average and branch sequence. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "solution": "The old mean is 11/3. The function appends 3, giving [2,4,5,3]. Since 3<11/3 it returns \"Review needed\". The comparison uses the pre-append mean, not the mean of four scores.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Computes old mean 11/3."
+    },
+    {
+      "marks": 1,
+      "criterion": "Appends rating to give [2,4,5,3]."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct comparison of 3 against old mean."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns Review needed and recognizes mean was calculated before insertion."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 4,
+    "code_execution": "Specific executable boundary and behaviour tests passed; see agents/chunk-2/agent-3-papers-c/technical_checks.json and verify_practice.py."
+  },
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "assets": [],
+  "code": "def feedback(previous, rating):\n    old_mean = sum(previous) / len(previous)\n    previous.append(rating)\n    if rating >= old_mean:\n        return \"Thanks\"\n    return \"Review needed\"",
+  "record_path": "question-bank/records/P-SRC040-Q07-e-i.json",
+  "question_path": "question-bank/questions/P-SRC040-Q07-e-i.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC040-Q07-e-i.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

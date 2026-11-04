@@ -42,5 +42,6 @@
     "result_file": ""
   },
   "code": "def modes(counts):\n    greatest = counts[0]\n    for count in counts:\n        if count > greatest:\n            greatest = count\n    result = []\n    for value in range(len(counts)):\n        if counts[value] == greatest:\n            result.append(value)\n    return result",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

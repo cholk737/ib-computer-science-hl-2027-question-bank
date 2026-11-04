@@ -35,6 +35,8 @@
     ],
     "question_reference": "Q12 a",
     "marking_summary": "Original recfn(5) returns3 with alternating +odd/-even unwind.",
+    "summary_kind": "author_paraphrase_of_original",
+    "source_marking_leaf_evidence": "Award max [5]. \nAward [1] for each correct recursive call shown, x5. \nAward [1] for the correct result. \nX = recfn(5) = recfn(4) + 5 ; \n  = recfn(3) - 4 + 5  =   recfn(3) + 1 ; \n  = recfn(2) + 3 - 4 + 5 = recfn(2) + 4 ; \n  = recfn(1)  - 2 + 3 - 4 + 5 =  recfn(1)   + 2  ; \n  = recfn(0)  + 1  - 2 + 3 - 4 + 5  = recfn(0)  + 3 ; \n  = 0 + 1 - 2 + 3 - 4 + 5 = 0 + 3 = 3 ; \nNote: The working may be shown differently.",
     "source_issues": [],
     "source_marking_evidence": "– 19 – 2225 – 6414M \n12. (a) Award max [5]. \nAward [1] for each correct recursive call shown, x5. \nAward [1] for the correct result. \nX = recfn(5) = recfn(4) + 5 ; \n  = recfn(3) - 4 + 5  =   recfn(3) + 1 ; \n  = recfn(2) + 3 - 4 + 5 = recfn(2) + 4 ; \n  = recfn(1)  - 2 + 3 - 4 + 5 =  recfn(1)   + 2  ; \n  = recfn(0)  + 1  - 2 + 3 - 4 + 5  = recfn(0)  + 3 ; \n  = 0 + 1 - 2 + 3 - 4 + 5 = 0 + 3 = 3 ; \nNote: The working may be shown differently. \n(b) Award max [4].\nAward [1] for name and [1] for description of operation, x2.\nPush; \nAdd an element to the top of a stack; \nPop; \nRemove an element from the top of a stack; \nIsEmpty; \nCheck if the stack contains no elements/ returns True when a stack is empty, returns False \notherwise; \nIsFull; \nCheck if the stack has reached maximum capacity/ returns True when a stack is full, returns \nFalse otherwise; "
   },
@@ -43,7 +45,7 @@
     {
       "syllabus_code": "B2.4.5",
       "scope_evidence": "• Simple, non-branching recursive algorithms in programming only",
-      "rationale": "Trace balance(6), showing the returned value for each n from0 through6 assesses Construct and trace recursive algorithms in a programming language. (HL only)",
+      "rationale": "Adapted target only: Trace balance(6), showing the returned value for each n from0 through6; guidance target: Construct and trace recursive algorithms in a programming language. (HL only) Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
       "theme": "B",
       "level": "HL-only",
       "confidence": "high",

@@ -1,0 +1,127 @@
+{
+  "original_assessment_context": "PHPsearchengineexample;webcrawler/index/rankpipeline;PHPfileuploadcodeallowspdf/doc/docx,size<=2097152bytes.",
+  "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+  "source_question_id": "H-SRC042-Q10-f",
+  "source_id": "SRC-042",
+  "source_filename": "Computer_science_paper_2_TZ3_HL.pdf",
+  "year": "2025",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "TZ3 (filename; numerical cover code)",
+  "option": "C",
+  "question": "10",
+  "subquestion": "f",
+  "source_pdf_pages": [
+    14
+  ],
+  "source_printed_pages": [
+    "13"
+  ],
+  "original_marks": 4,
+  "command_term": "Identify",
+  "original_text": "[Source PDF page 13]\n(Option C continues on the following page)\n\n[Source PDF page 14]\n(Option C, question 10 continued)\nOne of the online databases provides Alexia and Jay with the following code:\n<?php\nif(isset($_FILES['CV'])){\n$errors= array();\n$file_name = $_FILES['CV']['name'];\n$file_size =$_FILES['CV']['size'];\n$file_tmp =$_FILES['CV']['tmp_name'];\n$file_type=$_FILES['CV']['type'];\n$file_ext=strtolower(end(explode('.',$_FILES['CV']['name'])));\n$extensions= array(\"pdf\",\"doc\",\"docx\");\nif(in_array($file_ext,$extensions)=== false){\n$errors[]=\"This file extension not allowed\";\n}\nif($file_size > 2097152){\n$errors[]=\"File size must be under 2 Mb\";\n}\nif(empty($errors)==true){\nmove_uploaded_file($file_tmp,\"CV/\".$file_name);\necho \"Success\";\n}else{\nprint_r($errors);\n}\n}\n?>\n<html>\n<body>\n<h1>Curriculum Vitae</h1>\n<form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\n<input type=\"file\" name=\"CV\" />\n<input type=\"submit\"/>\n</form>\n</body>\n</html>\n(f) Identify four steps that take place during the processing of this PHP code. [4]",
+  "parent_context": "PHPsearchengineexample;webcrawler/index/rankpipeline;PHPfileuploadcodeallowspdf/doc/docx,size<=2097152bytes.",
+  "assets": [
+    {
+      "kind": "source_page",
+      "description": "Full exactPHPsource andHTMLform;source-only language",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-14.png",
+      "source_pdf_page": 14,
+      "visually_verified": true
+    },
+    {
+      "kind": "source_page",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-12.png",
+      "source_pdf_page": 12,
+      "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+    },
+    {
+      "kind": "source_page",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-13.png",
+      "source_pdf_page": 13,
+      "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+    }
+  ],
+  "assessed_concepts": [
+    "Identify: Identify four processingsteps in thePHPcode."
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-043",
+    "filename": "Computer_science_paper_2_TZ3_HL_markscheme.pdf",
+    "pdf_pages": [
+      22
+    ],
+    "question_reference": "10(f)",
+    "marking_summary": "Readmetadata,extension/sizechecks,errors,saveacceptedfile/report.",
+    "source_issues": []
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "mapping_target": "adapted_practice_only",
+      "syllabus_code": "B2.1.2",
+      "scope_evidence": "• Writing of programs that accurately identify and extract substrings from given strings, demonstrating the ability to perform various manipulations, such as altering, concatenating or replacing",
+      "rationale": "Retains extension/threshold/conditionalerror reasoning;Python stringprocessing/selection replacesPHPspecificfileuploadAPI;no binaryfile-I/O scopeadded.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "mapping_target": "adapted_practice_only",
+      "syllabus_code": "B2.3.2",
+      "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+      "rationale": "Retains extension/threshold/conditionalerror reasoning;Python stringprocessing/selection replacesPHPspecificfileuploadAPI;no binaryfile-I/O scopeadded.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+    "marks": "Printed allocation transcribed.",
+    "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+    "official_answer_status": "See source markscheme record"
+  },
+  "original_text_manual_synopsis": "Identify four processingsteps in thePHPcode.",
+  "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+  "source_page_evidence": [
+    {
+      "pdf_page": 14,
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-014.txt"
+    }
+  ],
+  "source_context_page_evidence": [
+    {
+      "pdf_page": 12,
+      "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-12.png",
+      "kind": "complete_original_page_raster",
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-012.txt"
+    },
+    {
+      "pdf_page": 13,
+      "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-13.png",
+      "kind": "complete_original_page_raster",
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-013.txt"
+    },
+    {
+      "pdf_page": 14,
+      "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-14.png",
+      "kind": "complete_original_page_raster",
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-014.txt"
+    }
+  ],
+  "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+  "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2_TZ3_HL.pdf",
+  "source_issues": [],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC042-Q10-f"
+  ]
+}

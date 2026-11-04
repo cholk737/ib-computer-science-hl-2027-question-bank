@@ -1,0 +1,53 @@
+{
+  "question_id": "P-SRC033-Q04-c",
+  "source_question_ids": [
+    "H-SRC033-Q04-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Describe how new departmental transaction events can be added to an integrated, time-variant warehouse without erasing earlier history.",
+  "syllabus_codes": [
+    "A3.4.2"
+  ],
+  "theme": "A",
+  "level": "HL-only",
+  "marks": 4,
+  "command_term": "Describe",
+  "difficulty": "medium",
+  "adaptation_rationale": "Retain integration/time variance; clarify append-only events rather than overwriting warehouse history. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "solution": "Capture new events with source/time identifiers, transform inconsistent field formats into common definitions, append the standardized events, and retain previous time-stamped records for historical queries.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Captures new source events."
+    },
+    {
+      "marks": 1,
+      "criterion": "Transforms to consistent integrated format."
+    },
+    {
+      "marks": 1,
+      "criterion": "Includes source/time identifiers."
+    },
+    {
+      "marks": 1,
+      "criterion": "Appends while retaining historical records."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 4,
+    "code_execution": "No executable code required; explicit answer/trace checked manually."
+  },
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "assets": [],
+  "record_path": "question-bank/records/P-SRC033-Q04-c.json",
+  "question_path": "question-bank/questions/P-SRC033-Q04-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC033-Q04-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

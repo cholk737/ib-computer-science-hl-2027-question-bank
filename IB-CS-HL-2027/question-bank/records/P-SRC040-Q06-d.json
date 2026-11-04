@@ -1,0 +1,57 @@
+{
+  "question_id": "P-SRC040-Q06-d",
+  "source_question_ids": [
+    "H-SRC040-Q06-d"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A delivery robot uses a trained neural-network detector to locate objects in multiple camera frames and output 3D boxes. It must react quickly even when its network connection fails. Evaluate the processing and memory hardware needed, considering an onboard GPU and a remote cloud service.",
+  "syllabus_codes": [
+    "A4.1.2"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 5,
+  "command_term": "Evaluate",
+  "difficulty": "high",
+  "adaptation_rationale": "Make ML deployment explicit; evaluate detector workload, not the inexpensive box geometry alone. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "solution": "An onboard GPU can parallelize model inference on many pixels, supporting low latency without a network round trip. Memory must hold model parameters, image/frame buffers and intermediate activations; insufficient capacity causes delays or limits resolution. Cloud hardware can provide greater capacity/scalability but introduces communication delay and connection dependence. Onboard acceleration with sufficient memory is preferable for the safety-critical live response, subject to robot power/heat/cost limits; cloud processing can support nonurgent training or analysis.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Relates high-throughput parallel ML inference to onboard GPU processing."
+    },
+    {
+      "marks": 1,
+      "criterion": "Identifies model/frame/intermediate data memory needs."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains inadequate memory or processing affects timely detection."
+    },
+    {
+      "marks": 1,
+      "criterion": "Weighs cloud capacity against latency/connection dependence."
+    },
+    {
+      "marks": 1,
+      "criterion": "Gives a justified onboard/cloud deployment judgement with a relevant power, cost or heat trade-off."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 5,
+    "code_execution": "No executable code required; explicit answer/trace checked manually."
+  },
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "assets": [],
+  "record_path": "question-bank/records/P-SRC040-Q06-d.json",
+  "question_path": "question-bank/questions/P-SRC040-Q06-d.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC040-Q06-d.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

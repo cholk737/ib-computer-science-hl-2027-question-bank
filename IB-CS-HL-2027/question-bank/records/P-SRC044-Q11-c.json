@@ -1,0 +1,66 @@
+{
+  "question_id": "P-SRC044-Q11-c",
+  "source_question_ids": [
+    "H-SRC044-Q11-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "producers contains objects with name and products. Each product has title and sold. Producer names are unique and titles are unique within one producer. Construct mark_sold(producers, producer_name, title), marking only that product sold and returning True; return False when absent.",
+  "syllabus_codes": [
+    "B2.2.2",
+    "B2.3.2",
+    "B2.3.3",
+    "B2.3.4"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 6,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "One solution:\ndef mark_sold(producers, producer_name, title):\n    for producer in producers:\n        if producer.name == producer_name:\n            for product in producer.products:\n                if product.title == title:\n                    product.sold = True\n                    return True\n    return False",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Traverses producer list."
+    },
+    {
+      "marks": 1,
+      "criterion": "Matches producer_name."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses selected producer’s products."
+    },
+    {
+      "marks": 1,
+      "criterion": "Matches title."
+    },
+    {
+      "marks": 1,
+      "criterion": "Sets sold=True on matched object."
+    },
+    {
+      "marks": 1,
+      "criterion": "Stops with True, otherwise returns False without changing unrelated products."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed matching title and absent producer; unrelated object remains unchanged.",
+    "source_comparison": [
+      25
+    ],
+    "test_code": "def mark_sold(producers, producer_name, title):\n    for producer in producers:\n        if producer.name == producer_name:\n            for product in producer.products:\n                if product.title == title:\n                    product.sold = True\n                    return True\n    return False\nfrom types import SimpleNamespace as O\np=O(name='A',products=[O(title='X',sold=False),O(title='Y',sold=False)])\nassert mark_sold([p],'A','Y') is True and [x.sold for x in p.products]==[False,True]\nassert mark_sold([p],'B','X') is False and p.products[0].sold is False",
+    "result_file": ""
+  },
+  "code": "def mark_sold(producers, producer_name, title):\n    for producer in producers:\n        if producer.name == producer_name:\n            for product in producer.products:\n                if product.title == title:\n                    product.sold = True\n                    return True\n    return False",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC044-Q11-c.json",
+  "question_path": "question-bank/questions/P-SRC044-Q11-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC044-Q11-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

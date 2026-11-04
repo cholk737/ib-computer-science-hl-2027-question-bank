@@ -1,0 +1,46 @@
+{
+  "question_id": "P-SRC040-Q10-b",
+  "source_question_ids": [
+    "H-SRC040-Q10-b"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct method change_status(self, decision). Set self.status to \"won\" if decision is \"F\" and to \"lost\" if it is \"A\". Leave status unchanged for \"N\".",
+  "syllabus_codes": [
+    "B2.3.2"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 2,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Existing-object selection logic, not class creation/constructor evidence. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "solution": "def change_status(self, decision):\n    if decision == \"F\":\n        self.status = \"won\"\n    elif decision == \"A\":\n        self.status = \"lost\"",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Correct F branch sets won."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct A branch sets lost, with N unchanged."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 2,
+    "code_execution": "Specific executable boundary and behaviour tests passed; see agents/chunk-2/agent-3-papers-c/technical_checks.json and verify_practice.py."
+  },
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "assets": [],
+  "code": "def change_status(self, decision):\n    if decision == \"F\":\n        self.status = \"won\"\n    elif decision == \"A\":\n        self.status = \"lost\"",
+  "record_path": "question-bank/records/P-SRC040-Q10-b.json",
+  "question_path": "question-bank/questions/P-SRC040-Q10-b.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC040-Q10-b.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

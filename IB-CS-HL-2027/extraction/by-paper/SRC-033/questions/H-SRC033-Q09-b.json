@@ -1,0 +1,88 @@
+{
+  "source_question_id": "H-SRC033-Q09-b",
+  "source_id": "SRC-033",
+  "source_filename": "Computer_science_paper_2__HL (2).pdf",
+  "year": "2020",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "TZ0",
+  "option": "C",
+  "question": "9",
+  "subquestion": "b",
+  "source_pdf_pages": [
+    12
+  ],
+  "source_printed_pages": [
+    "11"
+  ],
+  "original_marks": 4,
+  "command_term": "Explain",
+  "original_text": "(b) Explain why these two validation checks occur on different computer systems. [4]",
+  "parent_context": "9. Pugh University has a website that allows computer science students to enter their name and\ncustomize the web pages.\nConsider the section of HTML and CSS code shown below.\nFile name: index.html\n< >\n!DOCTYPE html\n< >\nhtml\n< >\nbody\n< >\nscript\nfunction setVar(){\n=\nvar subject document.getElementById(\"kippers\").value;\n=\ndocument.getElementById(\"subj\").innerHTML subject;\n}\n< >\n/script\n< > < >\nh2 My First Page /h2\n< > < = >< > < >\np Welcome to the span id \"subj\" /span Faculty /p\n< = = >\ninput type \"text\" id \"kippers\"/\n< = > < >\nbutton onclick \"setVar();\"/ clickme /button\n< >\n/body\n< >\n/html\n(a) (i) State the output of the file in the web browser. [2]\nindex.html\n(ii) Describe the processing that takes place when the user inputs “Pugh” into the\ntext box and then uses the button. [3]\nclickme\nWhen a student enrolls, they must enter their name on a web page. Before being added to\nthe database, the system should check that the name typed is not blank and that it has not\nalready been added to the database.\n(b) Explain why these two validation checks occur on different computer systems. [4]\nConsider the following URL:\nhttps://www.follettibstore.com\n(c) Explain how website certificates are used to authenticate a user’s browser through\nsecure protocol communications like HTTPS. [3]\nThe common gateway interface (CGI) offers a standard protocol for web servers.\n(d) Describe the working of the common gateway interface (CGI). [4]\nPugh University uses cloud computing services, such as Google Docs or Office 365.\n(e) Describe how cloud computing is different to a client–server architecture. [4]\n(Option C continues on the following page)\nTurn over\nN20/4/COMSC/HP2/ENG/TZ0/XX\n– 12 – 8820 – 7012\n(Option C continued)\n",
+  "assets": [
+    {
+      "kind": "source_page_render",
+      "description": "Full source page inspected; includes all question context, source code/figures where present.",
+      "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-033/renders/page-12.png",
+      "source_pdf_page": 12,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Compare and contrast networking models.",
+    "Describe common network countermeasures. (HL only)"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-036",
+    "filename": "Computer_science_paper_2__HL_markscheme (2).pdf",
+    "pdf_pages": [
+      16
+    ],
+    "question_reference": "9(b)",
+    "marking_summary": "Clientpresencecheckforfeedback;serverlookupbecauseDBonserver.",
+    "source_issues": []
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "A2.2.3",
+      "scope_evidence": "• Client-server and peer-to-peer models\n• The respective benefits and drawbacks of client-server and peer-to-peer models\n• Real-world applications may include web browsing, email services, online banking, file sharing, VoIP services, blockchain.",
+      "rationale": "Keep client/server allocation reasoning,repair implication client-onlyvalidation is sufficient.",
+      "theme": "A",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "A2.4.3",
+      "scope_evidence": "• Content security policies, complex password policies, DDoS mitigation tools, email filtering solutions, encrypted protocols, input validation (filtering, whitelisting), intrusion detection systems (IDS), intrusion prevention systems (IPS), multifactor authentication (MFA), secure socket layer (SSL) certificate, transport layer security (TLS) certificate, update software, VPNs\n• The importance of regular security testing and employee training\n• Wireless security measures may include media access controllers (MAC), whitelists and blacklists.",
+      "rationale": "Keep client/server allocation reasoning,repair implication client-onlyvalidation is sufficient.",
+      "theme": "A",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "transcribed from original PDF and compared with rendered page",
+    "source_marks": "checked against printed allocation and official MS",
+    "visual_review": "full question page inspected",
+    "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+  },
+  "original_text_synopsis": "Explain why name-presence and database-duplicate checks occur on different computer systems.",
+  "context_synopsis": "UniversitywebsiteHTML/JavaScript sets spantextfrom textbox;client/servervalidation;HTTPS certificate;CGI;cloudSaaS. ExactcodeinPDF12.",
+  "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+  "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+  "raw_source_page_transcriptions": [
+    "agents/chunk-2/agent-3-papers-c/papers/SRC-033/transcription/pdf-page-012.txt"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC033-Q09-b"
+  ]
+}

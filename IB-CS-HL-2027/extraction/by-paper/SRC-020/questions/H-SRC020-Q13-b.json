@@ -34,7 +34,9 @@
       18
     ],
     "question_reference": "Q13 b",
-    "marking_summary": "Each active call needs a stack frame, so deep recursion uses memory and may exceed the call-depth limit. Repeated calls add overhead, and a poorly chosen branching recurrence may repeat the same subproblems.",
+    "marking_summary": "Exact original MS leaf excerpt: Award [4 max] Award [1] for a disadvantage and [1] for the elaboration, x2. recursion is memory intensive; because memory (call stack) is used to store all the intermediate arguments and return values/ could lead to stack overflow (if there is a large amount of data); recursion can be slow; if not implemented correctly/if too many recursive calls occur; difficult to think of the logic of a recursive function/ complexity of the paradigm; hard to construct/ analyse /understand the code;",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [4 max]\nAward [1] for a disadvantage and [1] for the elaboration, x2.\nrecursion is memory intensive;\nbecause memory (call stack) is used to store all the intermediate arguments and\nreturn values/ could lead to stack overflow (if there is a large amount of data);\nrecursion can be slow;\nif not implemented correctly/if too many recursive calls occur;\ndifficult to think of the logic of a recursive function/ complexity of the paradigm;\nhard to construct/ analyse /understand the code;",
     "source_issues": [],
     "source_marking_evidence": "– 18 – M23/4/COMSC/HP1/ENG/TZ2/XX/M \n13. (a) Award [4 max] \n The working may be differently represented. If only the final result (5) is shown, then award \n only one mark. \nfunc(5) \n= func(4) +  func(3)      ; \n= func(3) +  func(2) +  func(2) +  func(1) =   func(3)  + 2 * func(2) + 1  ;  \n= func(2) +  func(1) +  2 (func(1) +  func(0) )+ 1 =  func(2) +1 + 2+1    ;  \n= func(1) +  func(0) + 4  = 1  +0 +  4  =5      ; \n(b) Award [4 max]\nAward [1] for a disadvantage and [1] for the elaboration, x2.\nrecursion is memory intensive;\nbecause memory (call stack) is used to store all the intermediate arguments and\nreturn values/ could lead to stack overflow (if there is a large amount of data);\nrecursion can be slow;\nif not implemented correctly/if too many recursive calls occur;\ndifficult to think of the logic of a recursive function/ complexity of the paradigm;\nhard to construct/ analyse /understand the code;\n(c) Award [2 max]\nisEmpty() returns a Boolean value True if the stack size is 0, else it returns False/ checks if\nstack is empty or not;\nit is used/called in conditions in if/while statements/ it is called before an attempt is made to\nremove the value from the stack;\nto prevent performing operations on an empty stack/ to prevent stack underflow error;"
   },
@@ -43,7 +45,7 @@
     {
       "syllabus_code": "B2.4.4",
       "scope_evidence": "• The fundamentals of recursion and its advantages and limitations\n• The utility of recursion in solving problems that can be broken down into smaller, similar sub-problems\n• Recursive algorithms, including but not limited to quicksort\n• The limitations of recursion, including complexity and memory usage\n• Situations that best suit the use of recursion, including fractal image creation, traversing binary trees, sorting algorithms",
-      "rationale": "Outline two possible disadvantages of a recursive solution compared with an equivalent loop assesses Explain the fundamental concept of recursion and its applications in programming. (HL only)",
+      "rationale": "Original and adapted within-scope skill: Outline two possible disadvantages of a recursive solution compared with an equivalent loop; guidance target: Explain the fundamental concept of recursion and its applications in programming. (HL only)",
       "theme": "B",
       "level": "HL-only",
       "confidence": "high",

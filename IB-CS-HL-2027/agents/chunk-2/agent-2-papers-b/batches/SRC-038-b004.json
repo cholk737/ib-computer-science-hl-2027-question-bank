@@ -1,0 +1,765 @@
+{
+  "source_id": "SRC-038",
+  "batch_id": "SRC-038-b004",
+  "source_questions": [
+    {
+      "source_question_id": "H-SRC038-Q05-d",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "B",
+      "question": 5,
+      "subquestion": "d",
+      "source_pdf_pages": [
+        10
+      ],
+      "source_printed_pages": [
+        "9"
+      ],
+      "original_marks": 6,
+      "command_term": "Construct",
+      "original_text": "Construct an algorithm in pseudocode that uses the follow-the-number strategy before outputting each element in the array CHILDREN.",
+      "parent_context": "– 8 – 8825 – 6405\nOption B — Modelling and simulation\n5. Ten children play a game in which all of them or none of them win a prize. The rules of the \ngame are as follows:\n\ty 10 children are assigned a unique number from 0 to 9.\n\ty A cupboard contains 10 boxes, each numbered from 0 to 9.\n\ty 10 sheets of paper are numbered from 0 to 9.\n\ty One piece of paper is put into each box in random order (see Figure 4).\nFigure 4: 10 boxes, each containing a sheet of paper with a number from 0 to 9\nBox 0 1 2 3 4 5 6 7 8 9\nPaper 9 8 2 1 7 6 4 3 5 0\nEach child is allowed to open 5 boxes to look for their own number. You can assume they will \nnot open the same box twice.\nChild number 0 goes first and opens 5 of the 10 boxes.\n(a) (i)   State the probability of child 0 finding their number in the 5 boxes they opened.\nYour answer can be a formula, fraction, or decimal. [1]\n(ii) State the probability of all 10 children finding their number.\nYour answer can be a formula, fraction, or decimal. [1]\nThe children all get a prize if all 10 of them find their number within 5 attempts. They use the \nfollow-the-number strategy:\n1: Each child first opens the box labelled with their own number.\n2: If this box contains their number, they are successful.\n3: If unsuccessful, the child opens the box shown on the piece of paper.\n4: The child repeats steps 2 to 3 until 5 boxes are opened.\nExample 1:  Child 0 opens box 0, seeing 9 on the paper. They then open box 9 and see \ntheir number. They are successful.\nExample 2:  Child 1 opens box 1, seeing 8 on the paper. They then open box 8, seeing \n5 on the paper. Then they open box 5, then box 6, then box 4. They are \nnot successful.\n(b) State the order sequence for child 3, who opens box 3 in Figure 4. [1]\n(Option B continues on the following page)\n– 9 – 8825 – 6405\nTurn over\n(Option B, question 5 continued)\nA one-dimensional Boolean array, CHILDREN, is created and initialized so that all elements \nare False.\nA one-dimensional integer array, BOX, is created and initialized so that BOX contains 0, 1, 2, \n3, 4, 5, 6, 7, 8, 9.\nA function, random.shuffle(BOX), shuffles the BOX array randomly to change the sequence.\nFor example, the new sequence might be: 9, 8, 2, 1, 7, 6, 4, 3, 5, 0.\nThus, BOX[5] = 6\nThe children use the follow-the-number strategy shown previously.\nEach time a child is successful, the corresponding element in the array CHILDREN is set \nto True. If a child is unsuccessful, the corresponding element in the array CHILDREN  \nis unchanged.\n(c) Outline two reasons why this problem would be difficult to simulate using a spreadsheet. [4]\n(d) Construct an algorithm in pseudocode that uses the follow-the-number strategy before \noutputting each element in the array CHILDREN. [6]\nIf all 10 cells in the CHILDREN array are set to True, the children all win a prize.\nTo calculate the percentage of times all the children will win a prize, the pseudocode \nalgorithm in part (d) needs to be run 10 000 times.\n(e) Construct an algorithm in pseudocode that outputs, as a percentage, the number of \ntimes the children all win a prize. [4]\n(Option B continues on page 11)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-09.png",
+          "source_pdf_page": 9,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-10.png",
+          "source_pdf_page": 10,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Construct an algorithm in pseudocode that uses the follow-the-number strategy before outputting each element in the array CHILDREN.",
+        "links is a permutation of indices 0 to n-1"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          16
+        ],
+        "question_reference": "Q5 d",
+        "marking_summary": "Exact original MS leaf excerpt: Award [6 max] Award [1] for using the shuffle function outside the loop; Award [1] looping 10 times; Award [1] setting a variable to the loop index (LOOK = N); Award [1] looping 5 times; Award [1] test setting children to True if found; Award [1] else setting the variable LOOK to the paper number found; Award [1] for outputting CHILDREN[N] within the correct loop; Note: MP1 is not required by the question but it will be awarded if included. Example answer 1: random.shuffle(BOX) loop N from 0 to 9 LOOK = N loop A from 0 to 4 if N = BOX[LOOK]: CHILDREN[N] = True else: LOOK = BOX[LOOK] end if end loop output CHILDREN[N] end loop Example answer 2: random.shuffle(BOX) loop N from 0 to 9 LOOK = N ATTEMPT = 0 while ATTEMPT < 5 if N = BOX[LOOK]: CHILDREN[N] = True ATTEMPT = 5 else: LOOK = BOX[LOOK] ATTEMPT = ATTEMPT + 1 end if end loop output CHILDREN[N] end loop",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [6 max]\nAward [1] for using the shuffle function outside the loop;\nAward [1] looping 10 times;\nAward [1] setting a variable to the loop index (LOOK = N);\nAward [1] looping 5 times;\nAward [1] test setting children to True if found;\nAward [1] else setting the variable LOOK to the paper number found;\nAward [1] for outputting CHILDREN[N] within the correct loop;\nNote: MP1 is not required by the question but it will be awarded if included.\nExample answer 1:\nrandom.shuffle(BOX)\nloop N from 0 to 9\n    LOOK = N \n    loop A from 0 to 4 \nif N = BOX[LOOK]: \nCHILDREN[N] = True \nelse: \nLOOK = BOX[LOOK] \nend if \n    end loop \n    output CHILDREN[N] \nend loop \nExample answer 2: \nrandom.shuffle(BOX) \nloop N from 0 to 9 \n    LOOK = N \n    ATTEMPT = 0 \n    while ATTEMPT < 5 \nif N = BOX[LOOK]: \nCHILDREN[N] = True \nATTEMPT = 5 \nelse: \nLOOK = BOX[LOOK] \nATTEMPT = ATTEMPT + 1 \nend if \n    end loop \n    output CHILDREN[N] \nend loop",
+        "source_issues": [],
+        "source_marking_evidence": "– 16 – 8825 – 6405M \n(d) Award [6 max]\nAward [1] for using the shuffle function outside the loop;\nAward [1] looping 10 times;\nAward [1] setting a variable to the loop index (LOOK = N);\nAward [1] looping 5 times;\nAward [1] test setting children to True if found;\nAward [1] else setting the variable LOOK to the paper number found;\nAward [1] for outputting CHILDREN[N] within the correct loop;\nNote: MP1 is not required by the question but it will be awarded if included.\nExample answer 1:\nrandom.shuffle(BOX)\nloop N from 0 to 9\n    LOOK = N \n    loop A from 0 to 4 \nif N = BOX[LOOK]: \nCHILDREN[N] = True \nelse: \nLOOK = BOX[LOOK] \nend if \n    end loop \n    output CHILDREN[N] \nend loop \nExample answer 2: \nrandom.shuffle(BOX) \nloop N from 0 to 9 \n    LOOK = N \n    ATTEMPT = 0 \n    while ATTEMPT < 5 \nif N = BOX[LOOK]: \nCHILDREN[N] = True \nATTEMPT = 5 \nelse: \nLOOK = BOX[LOOK] \nATTEMPT = ATTEMPT + 1 \nend if \n    end loop \n    output CHILDREN[N] \nend loop "
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Adapted target only: links is a permutation of indices 0 to n-1; guidance target: Construct programs that apply arrays and Lists. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Adapted target only: links is a permutation of indices 0 to n-1; guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "Adapted target only: links is a permutation of indices 0 to n-1; guidance target: Construct programs that utilize looping structures to perform repeated actions. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Executed self-loops, longer cycle failure and exact-limit success."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q05-d"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q05-e",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "B",
+      "question": 5,
+      "subquestion": "e",
+      "source_pdf_pages": [
+        10
+      ],
+      "source_printed_pages": [
+        "9"
+      ],
+      "original_marks": 4,
+      "command_term": "Construct",
+      "original_text": "Construct an algorithm in pseudocode that outputs, as a percentage, the number of times the children all win a prize.",
+      "parent_context": "– 8 – 8825 – 6405\nOption B — Modelling and simulation\n5. Ten children play a game in which all of them or none of them win a prize. The rules of the \ngame are as follows:\n\ty 10 children are assigned a unique number from 0 to 9.\n\ty A cupboard contains 10 boxes, each numbered from 0 to 9.\n\ty 10 sheets of paper are numbered from 0 to 9.\n\ty One piece of paper is put into each box in random order (see Figure 4).\nFigure 4: 10 boxes, each containing a sheet of paper with a number from 0 to 9\nBox 0 1 2 3 4 5 6 7 8 9\nPaper 9 8 2 1 7 6 4 3 5 0\nEach child is allowed to open 5 boxes to look for their own number. You can assume they will \nnot open the same box twice.\nChild number 0 goes first and opens 5 of the 10 boxes.\n(a) (i)   State the probability of child 0 finding their number in the 5 boxes they opened.\nYour answer can be a formula, fraction, or decimal. [1]\n(ii) State the probability of all 10 children finding their number.\nYour answer can be a formula, fraction, or decimal. [1]\nThe children all get a prize if all 10 of them find their number within 5 attempts. They use the \nfollow-the-number strategy:\n1: Each child first opens the box labelled with their own number.\n2: If this box contains their number, they are successful.\n3: If unsuccessful, the child opens the box shown on the piece of paper.\n4: The child repeats steps 2 to 3 until 5 boxes are opened.\nExample 1:  Child 0 opens box 0, seeing 9 on the paper. They then open box 9 and see \ntheir number. They are successful.\nExample 2:  Child 1 opens box 1, seeing 8 on the paper. They then open box 8, seeing \n5 on the paper. Then they open box 5, then box 6, then box 4. They are \nnot successful.\n(b) State the order sequence for child 3, who opens box 3 in Figure 4. [1]\n(Option B continues on the following page)\n– 9 – 8825 – 6405\nTurn over\n(Option B, question 5 continued)\nA one-dimensional Boolean array, CHILDREN, is created and initialized so that all elements \nare False.\nA one-dimensional integer array, BOX, is created and initialized so that BOX contains 0, 1, 2, \n3, 4, 5, 6, 7, 8, 9.\nA function, random.shuffle(BOX), shuffles the BOX array randomly to change the sequence.\nFor example, the new sequence might be: 9, 8, 2, 1, 7, 6, 4, 3, 5, 0.\nThus, BOX[5] = 6\nThe children use the follow-the-number strategy shown previously.\nEach time a child is successful, the corresponding element in the array CHILDREN is set \nto True. If a child is unsuccessful, the corresponding element in the array CHILDREN  \nis unchanged.\n(c) Outline two reasons why this problem would be difficult to simulate using a spreadsheet. [4]\n(d) Construct an algorithm in pseudocode that uses the follow-the-number strategy before \noutputting each element in the array CHILDREN. [6]\nIf all 10 cells in the CHILDREN array are set to True, the children all win a prize.\nTo calculate the percentage of times all the children will win a prize, the pseudocode \nalgorithm in part (d) needs to be run 10 000 times.\n(e) Construct an algorithm in pseudocode that outputs, as a percentage, the number of \ntimes the children all win a prize. [4]\n(Option B continues on page 11)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-09.png",
+          "source_pdf_page": 9,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-10.png",
+          "source_pdf_page": 10,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Construct an algorithm in pseudocode that outputs, as a percentage, the number of times the children all win a prize.",
+        "Construct success_percent(make_links,follow_all,trials)"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          17
+        ],
+        "question_reference": "Q5 e",
+        "marking_summary": "Exact original MS leaf excerpt: Award [4] max Award [1] for initialising COUNT; Award [1] for looping 1000 times; Award [1] for resetting CHILDREN array to False; Award [1] for copying the code from Q5d) ; / Award [1] for loop through CHILDREN array; Award [1] for if statement setting PRIZE to False; Award [1] for incrementing COUNT when PRIZE is True; Award [1] for correctly outputting the percentage (which may be wrong numerically); Example answer: COUNT = 0 loop N from 0 to 999 loop M from 0 to 9 CHILDREN[M] = False end loop ----------------------------- // copied from 5d) random.shuffle(BOX) loop N from 0 to 9 LOOK = N loop A from 0 to 4 if N = BOX[LOOK]: CHILDREN[N] = True else: LOOK = BOX[LOOK] end if end loop end loop ----------------------------- PRIZE = True loop N from 0 to 9 if CHILDREN[N] == False: PRIZE = False end if end loop if PRIZE = True: COUNT = COUNT + 1 end if end loop output COUNT/100 + \"%\" Note:  … [full leaf evidence retained]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [4] max\nAward [1] for initialising COUNT;\nAward [1] for looping 1000 times;\nAward [1] for resetting CHILDREN array to False;\nAward [1] for copying the code from Q5d)\n   ;                             /\nAward [1] for loop through CHILDREN array;\nAward [1] for if statement setting PRIZE to False;\nAward [1] for incrementing COUNT when PRIZE is True;\nAward [1] for correctly outputting the percentage (which may be wrong numerically);\nExample answer:\nCOUNT = 0\nloop N from 0 to 999\n    loop M from 0 to 9 \nCHILDREN[M] = False \n    end loop \n----------------------------- // copied from 5d) \n    random.shuffle(BOX) \n    loop N from 0 to 9 \n    LOOK = N \n    loop A from 0 to 4 \n if N = BOX[LOOK]: \n    CHILDREN[N] = True \n    else: \n LOOK = BOX[LOOK] \n    end if \n end loop \n    end loop \n----------------------------- \n    PRIZE = True \n    loop N from 0 to 9 \nif CHILDREN[N] == False: \nPRIZE = False \nend if \n    end loop \n    if PRIZE = True: \nCOUNT = COUNT + 1 \n    end if \nend loop \noutput COUNT/100 + \"%\" \nNote: Candidates may refer to Q5d for the code between the broken lines, but that is \nnot award MP4.",
+        "source_issues": [
+          "Original prompt specifies10000 repetitions; MS example loops1000 and uses inconsistent percentage divisor. Adaptation uses explicit trials parameter and100*wins/trials."
+        ],
+        "source_marking_evidence": "– 17 – 8825 – 6405M \n(e) Award [4] max\nAward [1] for initialising COUNT;\nAward [1] for looping 1000 times;\nAward [1] for resetting CHILDREN array to False;\nAward [1] for copying the code from Q5d)\n   ;                             /\nAward [1] for loop through CHILDREN array;\nAward [1] for if statement setting PRIZE to False;\nAward [1] for incrementing COUNT when PRIZE is True;\nAward [1] for correctly outputting the percentage (which may be wrong numerically);\nExample answer:\nCOUNT = 0\nloop N from 0 to 999\n    loop M from 0 to 9 \nCHILDREN[M] = False \n    end loop \n----------------------------- // copied from 5d) \n    random.shuffle(BOX) \n    loop N from 0 to 9 \n    LOOK = N \n    loop A from 0 to 4 \n if N = BOX[LOOK]: \n    CHILDREN[N] = True \n    else: \n LOOK = BOX[LOOK] \n    end if \n end loop \n    end loop \n----------------------------- \n    PRIZE = True \n    loop N from 0 to 9 \nif CHILDREN[N] == False: \nPRIZE = False \nend if \n    end loop \n    if PRIZE = True: \nCOUNT = COUNT + 1 \n    end if \nend loop \noutput COUNT/100 + \"%\" \nNote: Candidates may refer to Q5d for the code between the broken lines, but that is \nnot award MP4.  "
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Adapted target only: Construct success_percent(make_links,follow_all,trials); guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "Adapted target only: Construct success_percent(make_links,follow_all,trials); guidance target: Construct programs that utilize looping structures to perform repeated actions. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.4",
+          "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+          "rationale": "Adapted target only: Construct success_percent(make_links,follow_all,trials); guidance target: Construct functions and modularization. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Deterministic two-trial test gives50%; all-failed/successful formula reviewed."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q05-e"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q06-a",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "B",
+      "question": 6,
+      "subquestion": "a",
+      "source_pdf_pages": [
+        12
+      ],
+      "source_printed_pages": [
+        "11"
+      ],
+      "original_marks": 1,
+      "command_term": "Identify",
+      "original_text": "Identify one system that can be modelled.",
+      "parent_context": "– 11 – 8825 – 6405\nTurn over\n(Option B continued)\n6. Computer models play a crucial role in developing self-driving cars.\n(a) Identify one system that can be modelled. [1]\nIn addition to computer models, the development of self-driving cars relies heavily on \nsimulations to test and refine their decision-making algorithms.\n(b) Identify one traffic condition variable for a self-driving simulation. [1]\nTraffic condition is a suitable grouping for collections of data items relating to self-driving cars.\n(c) Outline two other suitable groupings for data items relating to self-driving cars. [4]\nA mathematical model and a computer simulation have been developed to represent self-\ndriving cars in real-world traffic conditions.\n(d) Compare and contrast the use of a mathematical model and a simulation. [4]\nTest-case scenarios are employed to evaluate a simulation. For example, self-driving cars \ncan be tested for sensor failure.\n(e) Outline one test-case scenario for sensor failure. [2]\nOrganizations and drivers have voiced concerns about the use of a simulation to test self-\ndriving cars.\n(f) Explain one concern about simulating self-driving cars in real-world scenarios. [4]\n(Option B continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-12.png",
+          "source_pdf_page": 12,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Identify one system that can be modelled.",
+        "Old modelling/simulation definitions, variables, data groups, model comparisons or sensor-failure simulation methodology are not individual 2027 requirements."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          18
+        ],
+        "question_reference": "Q6 a",
+        "marking_summary": "Exact original MS leaf excerpt: Award [1] max Aircraft Flight Dynamics; Building Design; Climate System; Ecosystem; Engineering Design; Epidemiological Spread of Diseases; Financial Planning; Games; Human Cardiovascular System; Manufacturing Processes; Population Growth; Sensor Fusion; Simultaneous Localisation and Mapping Models; Supply Chain Network; Urban Traffic Flow; Accept any suitable system even if it doesn’t relate to self-driving vehicles.",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [1] max\nAircraft Flight Dynamics; \nBuilding Design; \nClimate System; \nEcosystem; \nEngineering Design; \nEpidemiological Spread of Diseases; \nFinancial Planning; \nGames; \nHuman Cardiovascular System; \nManufacturing Processes; \nPopulation Growth; \nSensor Fusion; \nSimultaneous Localisation and Mapping Models; \nSupply Chain Network; \nUrban Traffic Flow; \nAccept any suitable system even if it doesn’t relate to self-driving vehicles.",
+        "source_issues": [],
+        "source_marking_evidence": "– 18 – 8825 – 6405M \n6. (a)\t Award [1] max\nAircraft Flight Dynamics; \nBuilding Design; \nClimate System; \nEcosystem; \nEngineering Design; \nEpidemiological Spread of Diseases; \nFinancial Planning; \nGames; \nHuman Cardiovascular System; \nManufacturing Processes; \nPopulation Growth; \nSensor Fusion; \nSimultaneous Localisation and Mapping Models; \nSupply Chain Network; \nUrban Traffic Flow; \nAccept any suitable system even if it doesn’t relate to self-driving vehicles. \n(b) Award [1] max\nTraffic density / vehicle number per unit area;\nVehicle type / cars, trucks, motorcycles;\nVehicle speeds / speed variations;\nTraffic flow patterns / congestion, quiet times;\nIntersection dynamics / traffic light timings, turning right of way;\nPedestrian traffic / jaywalking, crosswalks;\nRoadway design / number of lanes, one-way systems;\nDriver behaviour / aggressive, cautious;\nTraffic incidents / accidents, breakdowns;\nEnvironmental impacts / weather, events;\nAccept any reasonable variable affecting to traffic conditions."
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Old modelling/simulation definitions, variables, data groups, model comparisons or sensor-failure simulation methodology are not individual 2027 requirements.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": []
+    },
+    {
+      "source_question_id": "H-SRC038-Q06-b",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "B",
+      "question": 6,
+      "subquestion": "b",
+      "source_pdf_pages": [
+        12
+      ],
+      "source_printed_pages": [
+        "11"
+      ],
+      "original_marks": 1,
+      "command_term": "Identify",
+      "original_text": "Identify one traffic condition variable for a self-driving simulation.",
+      "parent_context": "– 11 – 8825 – 6405\nTurn over\n(Option B continued)\n6. Computer models play a crucial role in developing self-driving cars.\n(a) Identify one system that can be modelled. [1]\nIn addition to computer models, the development of self-driving cars relies heavily on \nsimulations to test and refine their decision-making algorithms.\n(b) Identify one traffic condition variable for a self-driving simulation. [1]\nTraffic condition is a suitable grouping for collections of data items relating to self-driving cars.\n(c) Outline two other suitable groupings for data items relating to self-driving cars. [4]\nA mathematical model and a computer simulation have been developed to represent self-\ndriving cars in real-world traffic conditions.\n(d) Compare and contrast the use of a mathematical model and a simulation. [4]\nTest-case scenarios are employed to evaluate a simulation. For example, self-driving cars \ncan be tested for sensor failure.\n(e) Outline one test-case scenario for sensor failure. [2]\nOrganizations and drivers have voiced concerns about the use of a simulation to test self-\ndriving cars.\n(f) Explain one concern about simulating self-driving cars in real-world scenarios. [4]\n(Option B continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-12.png",
+          "source_pdf_page": 12,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Identify one traffic condition variable for a self-driving simulation.",
+        "Old modelling/simulation definitions, variables, data groups, model comparisons or sensor-failure simulation methodology are not individual 2027 requirements."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          18
+        ],
+        "question_reference": "Q6 b",
+        "marking_summary": "Exact original MS leaf excerpt: Award [1] max Traffic density / vehicle number per unit area; Vehicle type / cars, trucks, motorcycles; Vehicle speeds / speed variations; Traffic flow patterns / congestion, quiet times; Intersection dynamics / traffic light timings, turning right of way; Pedestrian traffic / jaywalking, crosswalks; Roadway design / number of lanes, one-way systems; Driver behaviour / aggressive, cautious; Traffic incidents / accidents, breakdowns; Environmental impacts / weather, events; Accept any reasonable variable affecting to traffic conditions.",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [1] max\nTraffic density / vehicle number per unit area;\nVehicle type / cars, trucks, motorcycles;\nVehicle speeds / speed variations;\nTraffic flow patterns / congestion, quiet times;\nIntersection dynamics / traffic light timings, turning right of way;\nPedestrian traffic / jaywalking, crosswalks;\nRoadway design / number of lanes, one-way systems;\nDriver behaviour / aggressive, cautious;\nTraffic incidents / accidents, breakdowns;\nEnvironmental impacts / weather, events;\nAccept any reasonable variable affecting to traffic conditions.",
+        "source_issues": [],
+        "source_marking_evidence": "– 18 – 8825 – 6405M \n6. (a)\t Award [1] max\nAircraft Flight Dynamics; \nBuilding Design; \nClimate System; \nEcosystem; \nEngineering Design; \nEpidemiological Spread of Diseases; \nFinancial Planning; \nGames; \nHuman Cardiovascular System; \nManufacturing Processes; \nPopulation Growth; \nSensor Fusion; \nSimultaneous Localisation and Mapping Models; \nSupply Chain Network; \nUrban Traffic Flow; \nAccept any suitable system even if it doesn’t relate to self-driving vehicles. \n(b) Award [1] max\nTraffic density / vehicle number per unit area;\nVehicle type / cars, trucks, motorcycles;\nVehicle speeds / speed variations;\nTraffic flow patterns / congestion, quiet times;\nIntersection dynamics / traffic light timings, turning right of way;\nPedestrian traffic / jaywalking, crosswalks;\nRoadway design / number of lanes, one-way systems;\nDriver behaviour / aggressive, cautious;\nTraffic incidents / accidents, breakdowns;\nEnvironmental impacts / weather, events;\nAccept any reasonable variable affecting to traffic conditions."
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Old modelling/simulation definitions, variables, data groups, model comparisons or sensor-failure simulation methodology are not individual 2027 requirements.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": []
+    },
+    {
+      "source_question_id": "H-SRC038-Q06-c",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "B",
+      "question": 6,
+      "subquestion": "c",
+      "source_pdf_pages": [
+        12
+      ],
+      "source_printed_pages": [
+        "11"
+      ],
+      "original_marks": 4,
+      "command_term": "Outline",
+      "original_text": "Outline two other suitable groupings for data items relating to self-driving cars.",
+      "parent_context": "– 11 – 8825 – 6405\nTurn over\n(Option B continued)\n6. Computer models play a crucial role in developing self-driving cars.\n(a) Identify one system that can be modelled. [1]\nIn addition to computer models, the development of self-driving cars relies heavily on \nsimulations to test and refine their decision-making algorithms.\n(b) Identify one traffic condition variable for a self-driving simulation. [1]\nTraffic condition is a suitable grouping for collections of data items relating to self-driving cars.\n(c) Outline two other suitable groupings for data items relating to self-driving cars. [4]\nA mathematical model and a computer simulation have been developed to represent self-\ndriving cars in real-world traffic conditions.\n(d) Compare and contrast the use of a mathematical model and a simulation. [4]\nTest-case scenarios are employed to evaluate a simulation. For example, self-driving cars \ncan be tested for sensor failure.\n(e) Outline one test-case scenario for sensor failure. [2]\nOrganizations and drivers have voiced concerns about the use of a simulation to test self-\ndriving cars.\n(f) Explain one concern about simulating self-driving cars in real-world scenarios. [4]\n(Option B continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-12.png",
+          "source_pdf_page": 12,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline two other suitable groupings for data items relating to self-driving cars.",
+        "Old modelling/simulation definitions, variables, data groups, model comparisons or sensor-failure simulation methodology are not individual 2027 requirements."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          19
+        ],
+        "question_reference": "Q6 c",
+        "marking_summary": "Exact original MS leaf excerpt: Award [4] max Award [1] for group and [1] for example or expansion Mark as [2] + [2] This list is an example. Other groupings may be accepted. Vehicle Dynamics/Data related to the movement of the AV; e.g. Speed, acceleration, braking force, steering angle; Sensor data; e.g. LIDAR point clouds, camera images, radar signals, ultrasonic sensor readings; Environmental Conditions; Weather (e.g., temperature, precipitation, visibility); Lighting (e.g. day, night, fog); Road surface (e.g. dry, wet, icy); Vehicle communication/Data flow between AV and external entities; e.g. traffic lights, other AVs, GPS; Control system/Data related to the AVs internal decision processes; e.g. object detection, lane changing, etc.; Human interaction/passenger preferences; e.g., route, temperature, music; Performance diagnostics/data to assess performance; e.g. error logs, battery status, fuel efficiency, temper … [full leaf evidence retained]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [4] max\nAward [1] for group and [1] for example or expansion\nMark as [2] + [2]\nThis list is an example. Other groupings may be accepted.\nVehicle Dynamics/Data related to the movement of the AV;\ne.g. Speed, acceleration, braking force, steering angle;\nSensor data; \ne.g. LIDAR point clouds, camera images, radar signals, ultrasonic sensor readings;\nEnvironmental Conditions; \nWeather (e.g., temperature, precipitation, visibility); \nLighting (e.g. day, night, fog); \nRoad surface (e.g. dry, wet, icy); \nVehicle communication/Data flow between AV and external entities; \ne.g. traffic lights, other AVs, GPS;\nControl system/Data related to the AVs internal decision processes; \ne.g. object detection, lane changing, etc.;\nHuman interaction/passenger preferences; \ne.g., route, temperature, music;\nPerformance diagnostics/data to assess performance; \ne.g. error logs, battery status, fuel efficiency, temperatures;\nSafety and emergency response data; \ne.g. Collision warnings, emergency braking instances, airbag deployment data;\nRegulatory and Compliance Data; \ne.g. Compliance with traffic laws, data privacy adherence;",
+        "source_issues": [],
+        "source_marking_evidence": "– 19 – 8825 – 6405M \n(c) Award [4] max\nAward [1] for group and [1] for example or expansion\nMark as [2] + [2]\nThis list is an example. Other groupings may be accepted.\nVehicle Dynamics/Data related to the movement of the AV;\ne.g. Speed, acceleration, braking force, steering angle;\nSensor data; \ne.g. LIDAR point clouds, camera images, radar signals, ultrasonic sensor readings;\nEnvironmental Conditions; \nWeather (e.g., temperature, precipitation, visibility); \nLighting (e.g. day, night, fog); \nRoad surface (e.g. dry, wet, icy); \nVehicle communication/Data flow between AV and external entities; \ne.g. traffic lights, other AVs, GPS;\nControl system/Data related to the AVs internal decision processes; \ne.g. object detection, lane changing, etc.;\nHuman interaction/passenger preferences; \ne.g., route, temperature, music;\nPerformance diagnostics/data to assess performance; \ne.g. error logs, battery status, fuel efficiency, temperatures;\nSafety and emergency response data; \ne.g. Collision warnings, emergency braking instances, airbag deployment data;\nRegulatory and Compliance Data; \ne.g. Compliance with traffic laws, data privacy adherence;"
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Old modelling/simulation definitions, variables, data groups, model comparisons or sensor-failure simulation methodology are not individual 2027 requirements.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": []
+    },
+    {
+      "source_question_id": "H-SRC038-Q06-d",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "B",
+      "question": 6,
+      "subquestion": "d",
+      "source_pdf_pages": [
+        12
+      ],
+      "source_printed_pages": [
+        "11"
+      ],
+      "original_marks": 4,
+      "command_term": "Compare",
+      "original_text": "Compare and contrast the use of a mathematical model and a simulation.",
+      "parent_context": "– 11 – 8825 – 6405\nTurn over\n(Option B continued)\n6. Computer models play a crucial role in developing self-driving cars.\n(a) Identify one system that can be modelled. [1]\nIn addition to computer models, the development of self-driving cars relies heavily on \nsimulations to test and refine their decision-making algorithms.\n(b) Identify one traffic condition variable for a self-driving simulation. [1]\nTraffic condition is a suitable grouping for collections of data items relating to self-driving cars.\n(c) Outline two other suitable groupings for data items relating to self-driving cars. [4]\nA mathematical model and a computer simulation have been developed to represent self-\ndriving cars in real-world traffic conditions.\n(d) Compare and contrast the use of a mathematical model and a simulation. [4]\nTest-case scenarios are employed to evaluate a simulation. For example, self-driving cars \ncan be tested for sensor failure.\n(e) Outline one test-case scenario for sensor failure. [2]\nOrganizations and drivers have voiced concerns about the use of a simulation to test self-\ndriving cars.\n(f) Explain one concern about simulating self-driving cars in real-world scenarios. [4]\n(Option B continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-12.png",
+          "source_pdf_page": 12,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Compare and contrast the use of a mathematical model and a simulation.",
+        "Old modelling/simulation definitions, variables, data groups, model comparisons or sensor-failure simulation methodology are not individual 2027 requirements."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          20
+        ],
+        "question_reference": "Q6 d",
+        "marking_summary": "Exact original MS leaf excerpt: Award [4] max Award [2] max for similarities, [1] mark per similarity Award [2] max for differences, [1] mark for each approach Similarities Purpose: Both approaches are used to understand and predict the behaviour of self- driving cars; Data: Both approaches utilise data to inform their processes; Complexity: Both would be extremely complex (incorporating hundreds or thousands of variables); Testing: Both require extensive testing to ensure accuracy; Differences Foundation: The model provides the theoretical foundation; while the simulation applies this theory to replicate real-world scenarios; Data: Models use data to establish relationships between variables; while simulations use data to create realistic scenarios to be tested; Purpose: models to develop algorithms that drive AVs; while simulations test and validate the mathematical model; Approach: Models are more abstract; while si … [full leaf evidence retained]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [4] max\nAward [2] max for similarities, [1] mark per similarity \nAward [2] max for differences, [1] mark for each approach \nSimilarities \nPurpose: Both approaches are used to understand and predict the behaviour of self-\ndriving cars; \nData: Both approaches utilise data to inform their processes; \nComplexity: Both would be extremely complex (incorporating hundreds or thousands of \nvariables); \nTesting: Both require extensive testing to ensure accuracy; \nDifferences \nFoundation:  \nThe model provides the theoretical foundation; \nwhile the simulation applies this theory to replicate real-world scenarios; \nData:  \nModels use data to establish relationships between variables;  \nwhile simulations use data to create realistic scenarios to be tested; \nPurpose:  \nmodels to develop algorithms that drive AVs;  \nwhile simulations test and validate the mathematical model; \nApproach:  \nModels are more abstract; \nwhile simulations are more practical; \nFocus:  \nModels Involves deriving and solving mathematical relationships;  \nwhile simulations create a virtual world and focuses on performance and outcomes; \nTesting:  \nmodels are tested to validate theoretical accuracy and reliability; \nsimulations to verify expected behaviour under conditions;",
+        "source_issues": [],
+        "source_marking_evidence": "– 20 – 8825 – 6405M \n(d) Award [4] max\nAward [2] max for similarities, [1] mark per similarity \nAward [2] max for differences, [1] mark for each approach \nSimilarities \nPurpose: Both approaches are used to understand and predict the behaviour of self-\ndriving cars; \nData: Both approaches utilise data to inform their processes; \nComplexity: Both would be extremely complex (incorporating hundreds or thousands of \nvariables); \nTesting: Both require extensive testing to ensure accuracy; \nDifferences \nFoundation:  \nThe model provides the theoretical foundation; \nwhile the simulation applies this theory to replicate real-world scenarios; \nData:  \nModels use data to establish relationships between variables;  \nwhile simulations use data to create realistic scenarios to be tested; \nPurpose:  \nmodels to develop algorithms that drive AVs;  \nwhile simulations test and validate the mathematical model; \nApproach:  \nModels are more abstract; \nwhile simulations are more practical; \nFocus:  \nModels Involves deriving and solving mathematical relationships;  \nwhile simulations create a virtual world and focuses on performance and outcomes; \nTesting:  \nmodels are tested to validate theoretical accuracy and reliability; \nsimulations to verify expected behaviour under conditions; "
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Old modelling/simulation definitions, variables, data groups, model comparisons or sensor-failure simulation methodology are not individual 2027 requirements.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": []
+    },
+    {
+      "source_question_id": "H-SRC038-Q06-e",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "B",
+      "question": 6,
+      "subquestion": "e",
+      "source_pdf_pages": [
+        12
+      ],
+      "source_printed_pages": [
+        "11"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "Outline one test-case scenario for sensor failure.",
+      "parent_context": "– 11 – 8825 – 6405\nTurn over\n(Option B continued)\n6. Computer models play a crucial role in developing self-driving cars.\n(a) Identify one system that can be modelled. [1]\nIn addition to computer models, the development of self-driving cars relies heavily on \nsimulations to test and refine their decision-making algorithms.\n(b) Identify one traffic condition variable for a self-driving simulation. [1]\nTraffic condition is a suitable grouping for collections of data items relating to self-driving cars.\n(c) Outline two other suitable groupings for data items relating to self-driving cars. [4]\nA mathematical model and a computer simulation have been developed to represent self-\ndriving cars in real-world traffic conditions.\n(d) Compare and contrast the use of a mathematical model and a simulation. [4]\nTest-case scenarios are employed to evaluate a simulation. For example, self-driving cars \ncan be tested for sensor failure.\n(e) Outline one test-case scenario for sensor failure. [2]\nOrganizations and drivers have voiced concerns about the use of a simulation to test self-\ndriving cars.\n(f) Explain one concern about simulating self-driving cars in real-world scenarios. [4]\n(Option B continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-12.png",
+          "source_pdf_page": 12,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline one test-case scenario for sensor failure.",
+        "Old modelling/simulation definitions, variables, data groups, model comparisons or sensor-failure simulation methodology are not individual 2027 requirements."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          21
+        ],
+        "question_reference": "Q6 e",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2] max Award [1] for a reasonable scenario and [1] for an amplification/example. Systematically run through scenarios where each sensor fails; To determine what would happen in that situation; Run through varying degrees of failure for a sensor; Intermittent, degraded performance (e.g. blurry camera); Determine whether a sensor is critical or not; Decide what to do based on each sensor; Determine whether sensors have failover sensors; For example, if LIDAR fails, could RADAR be used; Test failures in controlled environments; For example, a closed test track; Monitor vehicle response; Is the failure reported immediately or too late to avoid an accident; Note: Accept other reasonable test case scenarios related to sensor failure.",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2] max\nAward [1] for a reasonable scenario and [1] for an amplification/example.\nSystematically run through scenarios where each sensor fails;\nTo determine what would happen in that situation;\nRun through varying degrees of failure for a sensor; \nIntermittent, degraded performance (e.g. blurry camera); \nDetermine whether a sensor is critical or not; \nDecide what to do based on each sensor; \nDetermine whether sensors have failover sensors; \nFor example, if LIDAR fails, could RADAR be used; \nTest failures in controlled environments; \nFor example, a closed test track; \nMonitor vehicle response; \nIs the failure reported immediately or too late to avoid an accident; \nNote: Accept other reasonable test case scenarios related to sensor failure.",
+        "source_issues": [],
+        "source_marking_evidence": "– 21 – 8825 – 6405M \n(e) Award [2] max\nAward [1] for a reasonable scenario and [1] for an amplification/example.\nSystematically run through scenarios where each sensor fails;\nTo determine what would happen in that situation;\nRun through varying degrees of failure for a sensor; \nIntermittent, degraded performance (e.g. blurry camera); \nDetermine whether a sensor is critical or not; \nDecide what to do based on each sensor; \nDetermine whether sensors have failover sensors; \nFor example, if LIDAR fails, could RADAR be used; \nTest failures in controlled environments; \nFor example, a closed test track; \nMonitor vehicle response; \nIs the failure reported immediately or too late to avoid an accident; \nNote: Accept other reasonable test case scenarios related to sensor failure. \n(f) Award [4] max\nAward [1] for identifying, [1] for concern, [1] for expansion,\nand [1] for consequence\nLimited realism\nThe simulation of AVs cannot perfectly replicate the complexity of real-life;\nAV algorithms might be overly optimised for specific conditions (overfitting);\nIgnoring factors like human behaviour / unique environmental conditions;\nLeading to less effective performance in the real world;\nEthical and Legal Considerations\nA simulation cannot replicate the unpredictability nature of traffic;\nSimulating all potential ethical scenarios is impractical /\nEthical issues (like the trolley problem) may be overlooked;\nAVs released into the real world may cause fatalities;\nPotentially leading to legal consequences / providing a sense of security that isn’t real;\nComputational Resources and Cost\nDetailed modelling requires specialist hardware / sophisticated software;\nThe cost of computational resources to simulate AVs is high;\nWhich may prove to be prohibitive;\nAnd it might compromise quality/ safety;\nNote: Accept other reasonable concerns."
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Old modelling/simulation definitions, variables, data groups, model comparisons or sensor-failure simulation methodology are not individual 2027 requirements.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": []
+    },
+    {
+      "source_question_id": "H-SRC038-Q06-f",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "B",
+      "question": 6,
+      "subquestion": "f",
+      "source_pdf_pages": [
+        12
+      ],
+      "source_printed_pages": [
+        "11"
+      ],
+      "original_marks": 4,
+      "command_term": "Explain",
+      "original_text": "Explain one concern about simulating self-driving cars in real-world scenarios.",
+      "parent_context": "– 11 – 8825 – 6405\nTurn over\n(Option B continued)\n6. Computer models play a crucial role in developing self-driving cars.\n(a) Identify one system that can be modelled. [1]\nIn addition to computer models, the development of self-driving cars relies heavily on \nsimulations to test and refine their decision-making algorithms.\n(b) Identify one traffic condition variable for a self-driving simulation. [1]\nTraffic condition is a suitable grouping for collections of data items relating to self-driving cars.\n(c) Outline two other suitable groupings for data items relating to self-driving cars. [4]\nA mathematical model and a computer simulation have been developed to represent self-\ndriving cars in real-world traffic conditions.\n(d) Compare and contrast the use of a mathematical model and a simulation. [4]\nTest-case scenarios are employed to evaluate a simulation. For example, self-driving cars \ncan be tested for sensor failure.\n(e) Outline one test-case scenario for sensor failure. [2]\nOrganizations and drivers have voiced concerns about the use of a simulation to test self-\ndriving cars.\n(f) Explain one concern about simulating self-driving cars in real-world scenarios. [4]\n(Option B continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-12.png",
+          "source_pdf_page": 12,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Explain one concern about simulating self-driving cars in real-world scenarios.",
+        "Explain one safety concern when an ML-controlled vehicle tested on a narrow training set is deployed on public roads"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          21
+        ],
+        "question_reference": "Q6 f",
+        "marking_summary": "Exact original MS leaf excerpt: Award [4] max Award [1] for identifying, [1] for concern, [1] for expansion, and [1] for consequence Limited realism The simulation of AVs cannot perfectly replicate the complexity of real-life; AV algorithms might be overly optimised for specific conditions (overfitting); Ignoring factors like human behaviour / unique environmental conditions; Leading to less effective performance in the real world; Ethical and Legal Considerations A simulation cannot replicate the unpredictability nature of traffic; Simulating all potential ethical scenarios is impractical / Ethical issues (like the trolley problem) may be overlooked; AVs released into the real world may cause fatalities; Potentially leading to legal consequences / providing a sense of security that isn’t real; Computational Resources and Cost Detailed modelling requires specialist hardware / sophisticated software; The cost of computa … [full leaf evidence retained]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [4] max\nAward [1] for identifying, [1] for concern, [1] for expansion,\nand [1] for consequence\nLimited realism\nThe simulation of AVs cannot perfectly replicate the complexity of real-life;\nAV algorithms might be overly optimised for specific conditions (overfitting);\nIgnoring factors like human behaviour / unique environmental conditions;\nLeading to less effective performance in the real world;\nEthical and Legal Considerations\nA simulation cannot replicate the unpredictability nature of traffic;\nSimulating all potential ethical scenarios is impractical /\nEthical issues (like the trolley problem) may be overlooked;\nAVs released into the real world may cause fatalities;\nPotentially leading to legal consequences / providing a sense of security that isn’t real;\nComputational Resources and Cost\nDetailed modelling requires specialist hardware / sophisticated software;\nThe cost of computational resources to simulate AVs is high;\nWhich may prove to be prohibitive;\nAnd it might compromise quality/ safety;\nNote: Accept other reasonable concerns.",
+        "source_issues": [],
+        "source_marking_evidence": "– 21 – 8825 – 6405M \n(e) Award [2] max\nAward [1] for a reasonable scenario and [1] for an amplification/example.\nSystematically run through scenarios where each sensor fails;\nTo determine what would happen in that situation;\nRun through varying degrees of failure for a sensor; \nIntermittent, degraded performance (e.g. blurry camera); \nDetermine whether a sensor is critical or not; \nDecide what to do based on each sensor; \nDetermine whether sensors have failover sensors; \nFor example, if LIDAR fails, could RADAR be used; \nTest failures in controlled environments; \nFor example, a closed test track; \nMonitor vehicle response; \nIs the failure reported immediately or too late to avoid an accident; \nNote: Accept other reasonable test case scenarios related to sensor failure. \n(f) Award [4] max\nAward [1] for identifying, [1] for concern, [1] for expansion,\nand [1] for consequence\nLimited realism\nThe simulation of AVs cannot perfectly replicate the complexity of real-life;\nAV algorithms might be overly optimised for specific conditions (overfitting);\nIgnoring factors like human behaviour / unique environmental conditions;\nLeading to less effective performance in the real world;\nEthical and Legal Considerations\nA simulation cannot replicate the unpredictability nature of traffic;\nSimulating all potential ethical scenarios is impractical /\nEthical issues (like the trolley problem) may be overlooked;\nAVs released into the real world may cause fatalities;\nPotentially leading to legal consequences / providing a sense of security that isn’t real;\nComputational Resources and Cost\nDetailed modelling requires specialist hardware / sophisticated software;\nThe cost of computational resources to simulate AVs is high;\nWhich may prove to be prohibitive;\nAnd it might compromise quality/ safety;\nNote: Accept other reasonable concerns."
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "A4.4.1",
+          "scope_evidence": "• Ethical issues may include accountability, algorithmic fairness, bias, consent, environmental impact, privacy, security, societal impact, transparency.\n• The challenges posed by biases in training data\n• The ethics of using machine learning in online communication may include concerns about misinformation, bias, online harassment, anonymity, privacy.",
+          "rationale": "Adapted target only: Explain one safety concern when an ML-controlled vehicle tested on a narrow training set is deployed on public roads; guidance target: Discuss the ethical implications of machine learning in real-world scenarios. Adaptation: Retains deployment-safety concern through explicit ethical implications of ML; no simulation-system taxonomy.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q06-f"
+      ]
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC038-Q05-d",
+      "source_question_ids": [
+        "H-SRC038-Q05-d"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "links is a permutation of indices 0 to n-1. For each target, begin at index target and inspect at most limit entries, moving to the index stored in the current entry. Construct follow_all(links, limit) in Python returning a Boolean list: True where that target is found. limit is positive.",
+      "syllabus_codes": [
+        "B2.2.2",
+        "B2.3.2",
+        "B2.3.3"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 6,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "One solution:\ndef follow_all(links, limit):\n    success = [False] * len(links)\n    for target in range(len(links)):\n        index = target\n        for attempt in range(limit):\n            value = links[index]\n            if value == target:\n                success[target] = True\n                break\n            index = value\n    return success",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Initializes a False result for each target."
+        },
+        {
+          "marks": 1,
+          "criterion": "Processes each target with a fresh starting index."
+        },
+        {
+          "marks": 1,
+          "criterion": "Limits inspections correctly."
+        },
+        {
+          "marks": 1,
+          "criterion": "Compares current value with target."
+        },
+        {
+          "marks": 1,
+          "criterion": "Marks success and stops appropriately."
+        },
+        {
+          "marks": 1,
+          "criterion": "Follows stored index on failure and returns all results."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Executed self-loops, longer cycle failure and exact-limit success.",
+        "source_comparison": [
+          16
+        ],
+        "test_code": "def follow_all(links, limit):\n    success = [False] * len(links)\n    for target in range(len(links)):\n        index = target\n        for attempt in range(limit):\n            value = links[index]\n            if value == target:\n                success[target] = True\n                break\n            index = value\n    return success\nassert follow_all([0,1,2],1)==[True,True,True]\nassert follow_all([1,2,0],2)==[False]*3\nassert follow_all([1,2,0],3)==[True]*3",
+        "result_file": ""
+      },
+      "code": "def follow_all(links, limit):\n    success = [False] * len(links)\n    for target in range(len(links)):\n        index = target\n        for attempt in range(limit):\n            value = links[index]\n            if value == target:\n                success[target] = True\n                break\n            index = value\n    return success",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q05-e",
+      "source_question_ids": [
+        "H-SRC038-Q05-e"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct success_percent(make_links, follow_all, trials). trials is a positive integer. make_links() returns a fresh permutation of ten indices; follow_all(links, 5) returns ten success Booleans. Return the percentage of trials in which every Boolean is True. No probability derivation is needed.",
+      "syllabus_codes": [
+        "B2.3.2",
+        "B2.3.3",
+        "B2.3.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 4,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "One solution:\ndef success_percent(make_links, follow_all, trials):\n    wins = 0\n    for _ in range(trials):\n        results = follow_all(make_links(), 5)\n        won = True\n        for result in results:\n            if not result:\n                won = False\n        if won:\n            wins += 1\n    return 100 * wins / trials",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Repeats trials with fresh results."
+        },
+        {
+          "marks": 1,
+          "criterion": "Determines whether every result is True."
+        },
+        {
+          "marks": 1,
+          "criterion": "Counts only wholly successful trials."
+        },
+        {
+          "marks": 1,
+          "criterion": "Returns 100*wins/trials."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Deterministic two-trial test gives50%; all-failed/successful formula reviewed.",
+        "source_comparison": [
+          17
+        ],
+        "test_code": "def success_percent(make_links, follow_all, trials):\n    wins = 0\n    for _ in range(trials):\n        results = follow_all(make_links(), 5)\n        won = True\n        for result in results:\n            if not result:\n                won = False\n        if won:\n            wins += 1\n    return 100 * wins / trials\nseq=iter([[True]*10,[True]*9+[False]])\nassert success_percent(lambda: [],lambda a,b:next(seq),2)==50.0",
+        "result_file": ""
+      },
+      "code": "def success_percent(make_links, follow_all, trials):\n    wins = 0\n    for _ in range(trials):\n        results = follow_all(make_links(), 5)\n        won = True\n        for result in results:\n            if not result:\n                won = False\n        if won:\n            wins += 1\n    return 100 * wins / trials",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q06-f",
+      "source_question_ids": [
+        "H-SRC038-Q06-f"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Explain one safety concern when an ML-controlled vehicle tested on a narrow training set is deployed on public roads.",
+      "syllabus_codes": [
+        "A4.4.1"
+      ],
+      "theme": "A",
+      "level": "SL/HL common",
+      "marks": 4,
+      "command_term": "Explain",
+      "difficulty": "medium",
+      "adaptation_rationale": "Retains deployment-safety concern through explicit ethical implications of ML; no simulation-system taxonomy.",
+      "solution": "Unfamiliar weather or pedestrians may differ from training examples, causing unreliable predictions. An incorrect braking/steering decision can injure people. Evaluation on diverse conditions and a safe fallback are therefore needed before deployment; success on familiar examples alone is insufficient.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Identifies unrepresentative training/input mismatch."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains prediction/error consequence."
+        },
+        {
+          "marks": 1,
+          "criterion": "Develops concrete harm to road users."
+        },
+        {
+          "marks": 1,
+          "criterion": "Appropriate evaluation/safeguard linked to risk."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          21
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    }
+  ]
+}

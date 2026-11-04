@@ -1,0 +1,422 @@
+{
+  "papers": {
+    "SRC-001": {
+      "source_leaves": 33,
+      "practice_questions": 27,
+      "counts": {
+        "B": 9,
+        "A": 18,
+        "C": 6
+      },
+      "marks": 100,
+      "option_marks": {},
+      "batches": 5,
+      "source_transcription": "manual_raster_authoritative"
+    },
+    "SRC-005": {
+      "source_leaves": 35,
+      "practice_questions": 28,
+      "counts": {
+        "A": 22,
+        "C": 7,
+        "B": 6
+      },
+      "marks": 100,
+      "option_marks": {},
+      "batches": 5,
+      "source_transcription": "verbatim_marked_intervals"
+    },
+    "SRC-008": {
+      "source_leaves": 34,
+      "practice_questions": 28,
+      "counts": {
+        "B": 8,
+        "A": 20,
+        "C": 6
+      },
+      "marks": 100,
+      "option_marks": {},
+      "batches": 5,
+      "source_transcription": "verbatim_marked_intervals"
+    },
+    "SRC-018": {
+      "source_leaves": 37,
+      "practice_questions": 28,
+      "counts": {
+        "B": 9,
+        "A": 19,
+        "C": 9
+      },
+      "marks": 100,
+      "option_marks": {},
+      "batches": 5,
+      "source_transcription": "verbatim_marked_intervals"
+    },
+    "SRC-024": {
+      "source_leaves": 26,
+      "practice_questions": 18,
+      "counts": {
+        "C": 8,
+        "B": 7,
+        "A": 11
+      },
+      "marks": 70,
+      "option_marks": {},
+      "batches": 4,
+      "source_transcription": "verbatim_marked_intervals"
+    },
+    "SRC-030": {
+      "source_leaves": 30,
+      "practice_questions": 22,
+      "counts": {
+        "C": 7,
+        "A": 11,
+        "B": 12
+      },
+      "marks": 100,
+      "option_marks": {},
+      "batches": 4,
+      "source_transcription": "verbatim_marked_intervals"
+    },
+    "SRC-034": {
+      "source_leaves": 87,
+      "practice_questions": 60,
+      "counts": {
+        "A": 25,
+        "B": 35,
+        "C": 27
+      },
+      "marks": 260,
+      "option_marks": {
+        "A": 65,
+        "B": 65,
+        "C": 65,
+        "D": 65
+      },
+      "batches": 12,
+      "source_transcription": "verbatim_marked_intervals"
+    },
+    "SRC-042": {
+      "source_leaves": 87,
+      "practice_questions": 61,
+      "counts": {
+        "A": 29,
+        "B": 32,
+        "C": 26
+      },
+      "marks": 260,
+      "option_marks": {
+        "A": 65,
+        "B": 65,
+        "C": 65,
+        "D": 65
+      },
+      "batches": 12,
+      "source_transcription": "verbatim_marked_intervals"
+    }
+  },
+  "sql": {
+    "P-SRC034-Q01-e": {
+      "sql": "SELECT b.FirstName,b.Surname,i.InvoiceDate FROM Buyer AS b JOIN Invoice AS i ON b.BuyerID=i.BuyerID WHERE b.FirstName='Mira' AND b.Surname='Shah';",
+      "result": [
+        [
+          "Mira",
+          "Shah",
+          "2026-01-02"
+        ]
+      ],
+      "passed": true
+    },
+    "P-SRC042-Q01-d": {
+      "sql": "SELECT e.FirstName,e.Surname,r.Grade FROM Employee AS e JOIN Role AS r ON e.RoleID=r.RoleID WHERE e.Surname='Patel' AND r.Grade=8;",
+      "result": [
+        [
+          "Nila",
+          "Patel",
+          8
+        ]
+      ],
+      "passed": true
+    }
+  },
+  "python": [
+    {
+      "question_id": "P-SRC001-Q14-b",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": false
+    },
+    {
+      "question_id": "P-SRC001-Q14-c",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    },
+    {
+      "question_id": "P-SRC001-Q15-b",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    },
+    {
+      "question_id": "P-SRC001-Q15-c",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    },
+    {
+      "question_id": "P-SRC005-Q09",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": false
+    },
+    {
+      "question_id": "P-SRC005-Q14-b",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    },
+    {
+      "question_id": "P-SRC005-Q14-c",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    },
+    {
+      "question_id": "P-SRC008-Q08",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": false
+    },
+    {
+      "question_id": "P-SRC008-Q13-b",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    },
+    {
+      "question_id": "P-SRC008-Q13-c",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": false
+    },
+    {
+      "question_id": "P-SRC008-Q13-d",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": false
+    },
+    {
+      "question_id": "P-SRC018-Q13-a",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": false
+    },
+    {
+      "question_id": "P-SRC018-Q13-d",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    },
+    {
+      "question_id": "P-SRC018-Q14-a",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    },
+    {
+      "question_id": "P-SRC018-Q14-b",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    },
+    {
+      "question_id": "P-SRC018-Q14-c",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    },
+    {
+      "question_id": "P-SRC024-Q05",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": false
+    },
+    {
+      "question_id": "P-SRC024-Q13-b-ii",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    },
+    {
+      "question_id": "P-SRC024-Q13-c",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    },
+    {
+      "question_id": "P-SRC030-Q12-a",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": false
+    },
+    {
+      "question_id": "P-SRC030-Q12-c",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    },
+    {
+      "question_id": "P-SRC030-Q13-b",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    },
+    {
+      "question_id": "P-SRC030-Q13-c",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    },
+    {
+      "question_id": "P-SRC034-Q05-c",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    },
+    {
+      "question_id": "P-SRC034-Q05-d-i",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    },
+    {
+      "question_id": "P-SRC034-Q06-a",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    },
+    {
+      "question_id": "P-SRC034-Q06-b",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    },
+    {
+      "question_id": "P-SRC034-Q06-c",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    },
+    {
+      "question_id": "P-SRC034-Q15-a",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    },
+    {
+      "question_id": "P-SRC034-Q15-d",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    },
+    {
+      "question_id": "P-SRC034-Q16-b",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    },
+    {
+      "question_id": "P-SRC034-Q17-b",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": false
+    },
+    {
+      "question_id": "P-SRC034-Q17-c",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    },
+    {
+      "question_id": "P-SRC042-Q05-f",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    },
+    {
+      "question_id": "P-SRC042-Q10-f",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": false
+    },
+    {
+      "question_id": "P-SRC042-Q15-c",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    },
+    {
+      "question_id": "P-SRC042-Q16-b",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    },
+    {
+      "question_id": "P-SRC042-Q16-c",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    },
+    {
+      "question_id": "P-SRC042-Q17-c-ii",
+      "code_and_tests_passed": true,
+      "separate_solution_tested": true
+    }
+  ],
+  "source_hashes": {
+    "SRC-001": {
+      "unchanged": true,
+      "sha256": "2e345d525fbed6f1681feadac7ef63a8e5ea7a149a1197cbe00fb480702c05a0"
+    },
+    "SRC-005": {
+      "unchanged": true,
+      "sha256": "1db1f9652f7c11da3f18340c58f8f7b8c76d86a0c8d29aded754822359b44afa"
+    },
+    "SRC-011": {
+      "unchanged": true,
+      "sha256": "552f6eb70495176b338ac4a2e69a9036dd5cb809c7255ca3ae3303aedf1b4709"
+    },
+    "SRC-008": {
+      "unchanged": true,
+      "sha256": "e4012232e89e2b3a420e6384d36ae4d1461ff6b9918176853008e1800e64aae6"
+    },
+    "SRC-014": {
+      "unchanged": true,
+      "sha256": "5b828d2c1b7b250c810aa035cae90b230db84713f068486a599643a6a1fe64c2"
+    },
+    "SRC-018": {
+      "unchanged": true,
+      "sha256": "ed9c15f50d74a264a014b4082b0562462af685e5ffb3ba8043e1ec69effe5c3b"
+    },
+    "SRC-019": {
+      "unchanged": true,
+      "sha256": "cb0264dab0f9e3ead0fafeb287cfab659a785b44b99edb62399e4a2f2a5de3d5"
+    },
+    "SRC-024": {
+      "unchanged": true,
+      "sha256": "a2686444f552503308690db0b2b97eadd214f2805e370c0d59656e95aeb1301a"
+    },
+    "SRC-025": {
+      "unchanged": true,
+      "sha256": "05e24a5a5dab82f133cd3710713518f73817227ab41aaaca900ae8ff0ec319ce"
+    },
+    "SRC-030": {
+      "unchanged": true,
+      "sha256": "c97bb8a27ce03d380b365af7e14c55a7928588bcc3fd88867cbde97bf82fb1c7"
+    },
+    "SRC-031": {
+      "unchanged": true,
+      "sha256": "09fd17e665a4371a900667646f8e06585720e72ce4247b0e3d9780af45eb6858"
+    },
+    "SRC-034": {
+      "unchanged": true,
+      "sha256": "de250902946c21b80ff8d9ab87e9f88d4818281421ae82d8179d7dc729b2d999"
+    },
+    "SRC-037": {
+      "unchanged": true,
+      "sha256": "5ca3936433a5c9c24384c2b4ed56ac894e4d36308d9c8113dd10ec1cce4fd9d7"
+    },
+    "SRC-042": {
+      "unchanged": true,
+      "sha256": "b3c21856dd42c81cc161df0b5f484bddea2b54232365d9b003109eb6407f26b0"
+    },
+    "SRC-043": {
+      "unchanged": true,
+      "sha256": "181b5fd3d094cd2522975cda7684bd22b2af718856792132394e8289d8c2ca8e"
+    }
+  },
+  "problems": [],
+  "constructor_snippets": [
+    "P-SRC042-Q14-c",
+    "P-SRC034-Q14-e"
+  ],
+  "totals": {
+    "source_leaves": 369,
+    "local_practice_questions": 272,
+    "counts": {
+      "B": 118,
+      "A": 155,
+      "C": 96
+    },
+    "source_marks": 1090,
+    "batches": 52,
+    "reused_conversions": 1,
+    "python_programs": 39
+  },
+  "all_practice_mark_sums_correct": true,
+  "all_record_ids_unique": true,
+  "all_source_assets_exist": true
+}

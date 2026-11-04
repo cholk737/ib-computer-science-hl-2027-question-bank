@@ -1,0 +1,38 @@
+{
+  "question_id": "P-SRC038-Q14-c",
+  "unofficial": true,
+  "marks": 4,
+  "solution": "One solution:\ndef selected_names(advisers):\n    names = []\n    for adviser in advisers:\n        if adviser.area == \"housing\" and adviser.completed > 24:\n            names.append(adviser.name)\n    return names",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Traverses all advisers."
+    },
+    {
+      "marks": 1,
+      "criterion": "Checks housing area."
+    },
+    {
+      "marks": 1,
+      "criterion": "Checks completed>24 together with area."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns only matching names in order."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed strict boundary and nonmatching category.",
+    "source_comparison": [
+      40
+    ],
+    "test_code": "def selected_names(advisers):\n    names = []\n    for adviser in advisers:\n        if adviser.area == \"housing\" and adviser.completed > 24:\n            names.append(adviser.name)\n    return names\nfrom types import SimpleNamespace as O\nassert selected_names([O(area='housing',completed=24,name='a'),O(area='housing',completed=25,name='b'),O(area='other',completed=40,name='c')])==['b']",
+    "result_file": ""
+  },
+  "code": "def selected_names(advisers):\n    names = []\n    for adviser in advisers:\n        if adviser.area == \"housing\" and adviser.completed > 24:\n            names.append(adviser.name)\n    return names",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

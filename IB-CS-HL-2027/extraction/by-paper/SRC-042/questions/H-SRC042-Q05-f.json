@@ -1,0 +1,140 @@
+{
+  "original_assessment_context": "Naurumeandailymaximumtemperaturegraph1970–2020;24hourlytemperaturemeasurementsperday,parallelTIME/TEMP;day07:00..18:59,night19:00..06:59.",
+  "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+  "source_question_id": "H-SRC042-Q05-f",
+  "source_id": "SRC-042",
+  "source_filename": "Computer_science_paper_2_TZ3_HL.pdf",
+  "year": "2025",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "TZ3 (filename; numerical cover code)",
+  "option": "B",
+  "question": "5",
+  "subquestion": "f",
+  "source_pdf_pages": [
+    8
+  ],
+  "source_printed_pages": [
+    "7"
+  ],
+  "original_marks": 8,
+  "command_term": "Construct",
+  "original_text": "[Source PDF page 7]\n(Option B continues on the following page)\n\n[Source PDF page 8]\n(Option B, question 5 continued)\nThe temperature data is downloaded every day and collated into a master file.\nThe data from the master file is loaded into a suitable array for that 24-hour period.\nThe following statistics are calculated:\ny Maximum temperature\ny Minimum temperature\ny Mean temperature\nAs Nauru is very close to the equator, the length of the day changes very little throughout\nthe year. For the purposes of part (f), the lengths of its day and night are:\ny Day: 07:00 to 18:59 inclusive (12 hours)\ny Night: 19:00 to 06:59 inclusive (12 hours)\n(f) Construct a pseudocode algorithm to calculate the:\ny maximum temperature\ny minimum temperature\ny mean temperature\ny mean night-time temperature.\nAssume the arrays for the time of day of the reading and hourly temperature readings\nhave already been set up and populated as parallel 1D arrays. [8]",
+  "parent_context": "Naurumeandailymaximumtemperaturegraph1970–2020;24hourlytemperaturemeasurementsperday,parallelTIME/TEMP;day07:00..18:59,night19:00..06:59.",
+  "assets": [
+    {
+      "kind": "source_page",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-06.png",
+      "source_pdf_page": 6,
+      "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+    },
+    {
+      "kind": "source_page",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-07.png",
+      "source_pdf_page": 7,
+      "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+    },
+    {
+      "kind": "source_page",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-08.png",
+      "source_pdf_page": 8,
+      "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+    }
+  ],
+  "assessed_concepts": [
+    "Construct: Construct pseudocode for maximum,minimum,mean andmean nighttime temperature."
+  ],
+  "difficulty": "high",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-043",
+    "filename": "Computer_science_paper_2_TZ3_HL_markscheme.pdf",
+    "pdf_pages": [
+      14
+    ],
+    "question_reference": "5(f)",
+    "marking_summary": "Trackextrema,total,nighttotal;sourceimpossiblenightANDcondition/variablenamemismatch.",
+    "source_issues": [
+      "SRC-043 PDF p14 uses a cross-midnight condition TIME >= 19:00 AND TIME < 07:00, which is impossible, and inconsistent NIGHT_TOTAL/TOTAL_NIGHT names. The adapted hour-based answer uses OR and counts the included observations before division; boundary, negative and constant-value cases are tested."
+    ]
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "mapping_target": "adapted_practice_only",
+      "syllabus_code": "B2.2.2",
+      "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+      "rationale": "Retains multistatistic parallel-list traversal;repairs sourcecross-midnightcondition withOR,countsnightobservations,anduses safeextrema initialization.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "mapping_target": "adapted_practice_only",
+      "syllabus_code": "B2.3.2",
+      "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+      "rationale": "Retains multistatistic parallel-list traversal;repairs sourcecross-midnightcondition withOR,countsnightobservations,anduses safeextrema initialization.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "mapping_target": "adapted_practice_only",
+      "syllabus_code": "B2.3.3",
+      "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+      "rationale": "Retains multistatistic parallel-list traversal;repairs sourcecross-midnightcondition withOR,countsnightobservations,anduses safeextrema initialization.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+    "marks": "Printed allocation transcribed.",
+    "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+    "official_answer_status": "See source markscheme record"
+  },
+  "original_text_manual_synopsis": "Construct pseudocode for maximum,minimum,mean andmean nighttime temperature.",
+  "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+  "source_page_evidence": [
+    {
+      "pdf_page": 8,
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-008.txt"
+    }
+  ],
+  "source_context_page_evidence": [
+    {
+      "pdf_page": 6,
+      "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-06.png",
+      "kind": "complete_original_page_raster",
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-006.txt"
+    },
+    {
+      "pdf_page": 7,
+      "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-07.png",
+      "kind": "complete_original_page_raster",
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-007.txt"
+    },
+    {
+      "pdf_page": 8,
+      "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-08.png",
+      "kind": "complete_original_page_raster",
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-008.txt"
+    }
+  ],
+  "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+  "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2_TZ3_HL.pdf",
+  "source_issues": [
+    "SRC-043 PDF p14 uses a cross-midnight condition TIME >= 19:00 AND TIME < 07:00, which is impossible, and inconsistent NIGHT_TOTAL/TOTAL_NIGHT names. The adapted hour-based answer uses OR and counts the included observations before division; boundary, negative and constant-value cases are tested."
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC042-Q05-f"
+  ]
+}

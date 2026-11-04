@@ -1,0 +1,19 @@
+{
+  "question_id": "P-SRC022-Q10-b-ii",
+  "source_question_ids": [
+    "H-SRC022-Q10-b-ii"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "For a positive integer n, state a formula for the total number of print calls made by echo(n).\n\ndef echo(n):\n    print(n)\n    if n > 0:\n        echo(n - 1)\n        print(n)",
+  "syllabus_codes": [
+    "B2.4.5"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 1,
+  "command_term": "State",
+  "difficulty": "medium",
+  "adaptation_rationale": "Simple linear recursion output count. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "assets": []
+}

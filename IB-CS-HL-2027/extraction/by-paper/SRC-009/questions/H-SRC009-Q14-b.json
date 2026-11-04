@@ -34,7 +34,9 @@
       15
     ],
     "question_reference": "Q14 b",
-    "marking_summary": "Set current=head. While current is not None, compare its code with the target; return/report found on equality, otherwise follow current.next. If current becomes None, report absent.",
+    "marking_summary": "Exact original MS leaf excerpt: Award [5 max] Temporary pointer should be used; and initially set to point to the beginning of the list; loop through the list; follow the internal pointers; compare the name in the node pointed to by the temporary pointer with the searched name; If they are same (the name is found) then stop searching; If the end of the list is reached / temporary pointer equals null then the searched name is not on the list;",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [5 max]\nTemporary pointer should be used;\nand initially set to point to the beginning of the list;\nloop through the list;\nfollow the internal pointers;\ncompare the name in the node pointed to by the temporary pointer with the searched name;\nIf they are same (the name is found) then stop searching;\nIf the end of the list is reached / temporary pointer equals null then the searched name is not\non the list;",
     "source_issues": [],
     "source_marking_evidence": "– 15 – 8824 – 6904M \n14. (a) Award [4 max] \nAward [1] for an advantage and [1] mark for an expansion, x2. \nNames can be inserted/deleted quickly/easy just by manipulating the pointers/ by updating \nthe address; \nwithout resorting/shuffling (as in an array);  \nBetter use of memory/ the number of names (size of the list) is not fixed (as in an array); \nso, no wasted space / linked list can shrink and grow at the runtime (by deallocating or \nallocating memory);  \nNo need for an initial size/ predetermined size in linked list (as in an array); \nwhich allocate space that may or may not be fully in use; \n(b) Award [5 max]\nTemporary pointer should be used;\nand initially set to point to the beginning of the list;\nloop through the list;\nfollow the internal pointers;\ncompare the name in the node pointed to by the temporary pointer with the searched name;\nIf they are same (the name is found) then stop searching;\nIf the end of the list is reached / temporary pointer equals null then the searched name is not\non the list;\n(c) (i) Award [4 max] \nDouble linked list DLL has two external pointers, one pointer points to the first element \nof the DLL, and other points to the last element in the DLL; \nEach node consists of a data field(s); \nand two pointers (for example, called NEXT and PREV); \nEach node is linked with its next node (using its pointer NEXT) and previous node \n(using its pointer PREV); \nThe NEXT pointer of the last node is null (to mark the end of the list - forward traversal) \nand the PREV pointer of the first node is null (to mark the end of list - backward \ntraversal); \n Note: Accept diagrams. \n(ii) Award [2 max]\nStoring the browsing history which allow going forward and backwards in browsing\nhistory;\nA music player which has next and previous buttons;\nIn LRU caching/ cache that is employed in cases which uses most/least recently\naccessed items/ examples like in the case of android phone home screen to save the\nmost recently used apps;\nAn application that has a ‘Most Recently Used’ element / for example, list of file names;\nIn games, to represent anything that requires an order in a game / A DLL can be used\nto represent a deck of cards;\nUndo-Redo functionality (for example, in word processing);\nNote: Accept any application where front and back navigation is required. "
   },
@@ -43,7 +45,7 @@
     {
       "syllabus_code": "B4.1.3",
       "scope_evidence": "• The basic operations on a linked list, such as insertion, deletion, traversal, search",
-      "rationale": "Explain how to search a singly linked list for a specified product code and report failure if absent assesses Construct and apply linked lists: singly, doubly and circular.",
+      "rationale": "Original and adapted within-scope skill: Explain how to search a singly linked list for a specified product code and report failure if absent; guidance target: Construct and apply linked lists: singly, doubly and circular.",
       "theme": "B",
       "level": "HL-only",
       "confidence": "high",
@@ -58,8 +60,9 @@
     "visual": "No visual required by this leaf.",
     "technical": "Independently reasoned and compared with available source marking points."
   },
-  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "adaptation_reuse_question_id": "",
   "practice_question_ids": [
     "P-SRC009-Q14-b"
-  ]
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
 }

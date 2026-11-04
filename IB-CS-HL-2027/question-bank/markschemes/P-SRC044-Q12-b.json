@@ -1,0 +1,42 @@
+{
+  "question_id": "P-SRC044-Q12-b",
+  "unofficial": true,
+  "marks": 5,
+  "solution": "One solution:\ndef top_five(products):\n    ordered = products[:]\n    for i in range(len(ordered)-1):\n        best = i\n        for j in range(i+1, len(ordered)):\n            if ordered[j].price > ordered[best].price:\n                best = j\n        ordered[i], ordered[best] = ordered[best], ordered[i]\n    return ordered[:5]",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Copies list and returns first five objects."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct outer pass and best-index initialization."
+    },
+    {
+      "marks": 1,
+      "criterion": "Scans remaining suffix with correct bounds."
+    },
+    {
+      "marks": 1,
+      "criterion": "Selects greatest price."
+    },
+    {
+      "marks": 1,
+      "criterion": "Swaps selected object into position, producing descending order."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed ties,exact five and original-list preservation.",
+    "source_comparison": [
+      26
+    ],
+    "test_code": "def top_five(products):\n    ordered = products[:]\n    for i in range(len(ordered)-1):\n        best = i\n        for j in range(i+1, len(ordered)):\n            if ordered[j].price > ordered[best].price:\n                best = j\n        ordered[i], ordered[best] = ordered[best], ordered[i]\n    return ordered[:5]\nfrom types import SimpleNamespace as O\nxs=[O(price=v) for v in [2,9,4,9,1,7]]\nr=top_five(xs)\nassert [p.price for p in r]==[9,9,7,4,2] and [p.price for p in xs]==[2,9,4,9,1,7]\nassert len(top_five([O(price=1) for _ in range(5)]))==5",
+    "result_file": ""
+  },
+  "code": "def top_five(products):\n    ordered = products[:]\n    for i in range(len(ordered)-1):\n        best = i\n        for j in range(i+1, len(ordered)):\n            if ordered[j].price > ordered[best].price:\n                best = j\n        ordered[i], ordered[best] = ordered[best], ordered[i]\n    return ordered[:5]",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

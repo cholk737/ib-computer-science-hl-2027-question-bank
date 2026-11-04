@@ -1,0 +1,60 @@
+{
+  "question_id": "P-SRC032-Q08-d",
+  "source_question_ids": [
+    "H-SRC032-Q08-d"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Explain how supervised classification can support a voice-command interface and why a new command may still be misinterpreted.",
+  "syllabus_codes": [
+    "A4.1.1",
+    "A4.3.2"
+  ],
+  "theme": "A",
+  "level": "HL-only",
+  "marks": 5,
+  "command_term": "Explain",
+  "difficulty": "medium",
+  "adaptation_rationale": "Avoids unsupported detailed NLP advances or a guarantee of understanding; retains scoped ML classification application.",
+  "solution": "Train with labelled examples of command features and intended actions. The trained classifier uses learned patterns to assign a category to new input. Variation in accents, noise or phrasing may differ from training examples, so confidence checks and safe fallback behaviour are needed rather than assuming every spoken request is understood.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Labelled examples/actions."
+    },
+    {
+      "marks": 1,
+      "criterion": "Feature-pattern learning."
+    },
+    {
+      "marks": 1,
+      "criterion": "Prediction for new input."
+    },
+    {
+      "marks": 1,
+      "criterion": "Training/input difference explains error."
+    },
+    {
+      "marks": 1,
+      "criterion": "Appropriate safe fallback/evaluation detail."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      15
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC032-Q08-d.json",
+  "question_path": "question-bank/questions/P-SRC032-Q08-d.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC032-Q08-d.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

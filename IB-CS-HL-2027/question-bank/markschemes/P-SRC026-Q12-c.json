@@ -41,5 +41,6 @@
     "result_file": ""
   },
   "code": "def retain_extremes(stack):\n    first = stack.pop()\n    smallest = largest = first\n    while not stack.isEmpty():\n        value = stack.pop()\n        if value < smallest:\n            smallest = value\n        if value > largest:\n            largest = value\n    stack.push(largest)\n    stack.push(smallest)",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

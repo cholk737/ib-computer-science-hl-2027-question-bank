@@ -1,0 +1,51 @@
+{
+  "question_id": "P-SRC032-Q15-f",
+  "unofficial": true,
+  "marks": 7,
+  "solution": "One solution:\ndef select_three(entries, budget):\n    ordered = house_sort(entries)\n    eligible = []\n    for item in ordered:\n        if item.price <= budget:\n            eligible.append(item)\n    return eligible[-3:]",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Accepts entries and budget."
+    },
+    {
+      "marks": 1,
+      "criterion": "Calls supplied sort helper."
+    },
+    {
+      "marks": 1,
+      "criterion": "Creates eligible/result list."
+    },
+    {
+      "marks": 1,
+      "criterion": "Visits ordered objects."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct price<=budget filter."
+    },
+    {
+      "marks": 1,
+      "criterion": "Selects the last three eligible objects."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns those objects in ascending order."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed budgetboundary andhighest-three selection,notlowestthree.",
+    "source_comparison": [
+      31,
+      32
+    ],
+    "test_code": "def house_sort(entries):\n    result = [item for item in entries if item is not None]\n    for end in range(len(result)-1, 0, -1):\n        for i in range(end):\n            if result[i].price > result[i+1].price:\n                result[i], result[i+1] = result[i+1], result[i]\n    return result\ndef select_three(entries, budget):\n    ordered = house_sort(entries)\n    eligible = []\n    for item in ordered:\n        if item.price <= budget:\n            eligible.append(item)\n    return eligible[-3:]\nfrom types import SimpleNamespace as N\ne=[N(price=x) for x in [8,2,9,4,6]]\nassert [x.price for x in select_three(e,8)]==[4,6,8]\nassert [x.price for x in select_three(e,6)]==[2,4,6]",
+    "result_file": ""
+  },
+  "code": "def select_three(entries, budget):\n    ordered = house_sort(entries)\n    eligible = []\n    for item in ordered:\n        if item.price <= budget:\n            eligible.append(item)\n    return eligible[-3:]",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

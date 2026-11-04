@@ -1,0 +1,49 @@
+{
+  "question_id": "P-SRC040-Q03-d",
+  "source_question_ids": [
+    "H-SRC040-Q03-d"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Describe how a decision-tree classifier could use historical records labelled \"disease detected\" or \"not detected\" to predict a category for a new patient. Input features include measured symptoms and age group.",
+  "syllabus_codes": [
+    "A4.3.2"
+  ],
+  "theme": "A",
+  "level": "HL-only",
+  "marks": 3,
+  "command_term": "Describe",
+  "difficulty": "medium",
+  "adaptation_rationale": "Narrow broad mining to explicitly scoped decision-tree classification with labelled examples. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "solution": "Train the tree on labelled examples to choose feature-based splits associated with the categories. Apply the new patient’s feature values through the learned branches to a leaf that predicts one of the two categories. The prediction needs validation and is not a certainty.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Uses historical feature values with supplied category labels."
+    },
+    {
+      "marks": 1,
+      "criterion": "Learns decision-tree feature splits from these examples."
+    },
+    {
+      "marks": 1,
+      "criterion": "Applies new features through the tree to predict a discrete category."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 3,
+    "code_execution": "No executable code required; explicit answer/trace checked manually."
+  },
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "assets": [],
+  "record_path": "question-bank/records/P-SRC040-Q03-d.json",
+  "question_path": "question-bank/questions/P-SRC040-Q03-d.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC040-Q03-d.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

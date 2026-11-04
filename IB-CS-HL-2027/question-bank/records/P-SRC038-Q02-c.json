@@ -1,0 +1,47 @@
+{
+  "question_id": "P-SRC038-Q02-c",
+  "source_question_ids": [
+    "H-SRC038-Q02-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "READING rows (DeviceName, SensorID, Kind) are (\"Orchid\", \"S4\", \"heat\"), (\"Cedar\", \"S2\", \"heat\"), (\"Maple\", \"S4\", \"heat\"), (\"Ash\", \"S4\", \"light\"). State the rows returned by SELECT DeviceName FROM READING WHERE Kind='heat' AND SensorID='S4';.",
+  "syllabus_codes": [
+    "A3.3.2"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 2,
+  "command_term": "State",
+  "difficulty": "medium",
+  "adaptation_rationale": "Retains SQL selection/result tracing; the task supplies a complete query rather than claiming a two-table construction exercise.",
+  "solution": "Orchid and Maple, in either order.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Orchid."
+    },
+    {
+      "marks": 1,
+      "criterion": "Maple, with no extra rows."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      7
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC038-Q02-c.json",
+  "question_path": "question-bank/questions/P-SRC038-Q02-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC038-Q02-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

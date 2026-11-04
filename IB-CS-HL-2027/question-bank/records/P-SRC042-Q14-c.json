@@ -1,0 +1,50 @@
+{
+  "question_id": "P-SRC042-Q14-c",
+  "source_question_ids": [
+    "H-SRC042-Q14-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Producer has constructor __init__(self, name, region). Construct Python code creating a Producer for \"Aster Works\" in \"North\" and assign it to supplier.",
+  "syllabus_codes": [
+    "B3.1.4"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 3,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Retains constructor invocation/argument/state reasoning; Python replaces Java typed declaration/new syntax.",
+  "solution": "supplier=Producer(\"Aster Works\",\"North\")",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Uses supplier as the assignment target."
+    },
+    {
+      "marks": 1,
+      "criterion": "Calls the Producer class to create an instance."
+    },
+    {
+      "marks": 1,
+      "criterion": "Passes \"Aster Works\" and \"North\" in the required order."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "No executable code required; manual technical check."
+  },
+  "code": "",
+  "test_code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC042-Q14-c.json",
+  "question_path": "question-bank/questions/P-SRC042-Q14-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC042-Q14-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

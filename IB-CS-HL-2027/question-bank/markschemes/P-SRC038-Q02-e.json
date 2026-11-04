@@ -1,0 +1,42 @@
+{
+  "question_id": "P-SRC038-Q02-e",
+  "unofficial": true,
+  "marks": 5,
+  "solution": "VISITOR(VisitorID PK, VisitorName); GUIDE(GuideID PK, GuideName, Specialism); ROUTE(RouteID PK, RouteName, Fee); BOOKING(BookingID PK, VisitorID FK, GuideID FK, RouteID FK, VisitTime).",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "VISITOR with correct key and attributes."
+    },
+    {
+      "marks": 1,
+      "criterion": "GUIDE with correct key and attributes."
+    },
+    {
+      "marks": 1,
+      "criterion": "ROUTE with correct key and attributes."
+    },
+    {
+      "marks": 1,
+      "criterion": "BOOKING with key, VisitTime and references."
+    },
+    {
+      "marks": 1,
+      "criterion": "Foreign keys identified; no transitive names/fees retained in BOOKING."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      8
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

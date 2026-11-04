@@ -1,0 +1,51 @@
+{
+  "question_id": "P-SRC044-Q02-d",
+  "source_question_ids": [
+    "H-SRC044-Q02-d"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A program accepts a day number only if1<=day<=31. Explain why passing that test does not prove that the entered day equals the value on an original form, and describe an additional check.",
+  "syllabus_codes": [
+    "B2.3.2"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 3,
+  "command_term": "Explain",
+  "difficulty": "medium",
+  "adaptation_rationale": "Retains validation-versus-verification reasoning in a supplied programming selection context; no broad database-validation taxonomy is claimed.",
+  "solution": "The range test rejects impossible numbers but accepts a mistyped value such as12 instead of 21. Compare the entered value with the original form or use independently repeated entry and resolve differences. Rule conformity and faithful transcription are different checks.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Range test checks permitted values, not intended source value."
+    },
+    {
+      "marks": 1,
+      "criterion": "Concrete in-range transcription error."
+    },
+    {
+      "marks": 1,
+      "criterion": "Appropriate source comparison/double-entry check."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      8
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC044-Q02-d.json",
+  "question_path": "question-bank/questions/P-SRC044-Q02-d.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC044-Q02-d.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

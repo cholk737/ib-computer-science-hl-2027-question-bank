@@ -1,0 +1,197 @@
+{
+  "checks": [
+    {
+      "question_id": "P-SRC034-Q01-e",
+      "dialect": "SQLite",
+      "query": "SELECT b.FirstName,b.Surname,i.InvoiceDate FROM Buyer AS b JOIN Invoice AS i ON b.BuyerID=i.BuyerID WHERE b.FirstName='Mira' AND b.Surname='Shah';",
+      "actual": [
+        [
+          "Mira",
+          "Shah",
+          "2027-01-01"
+        ],
+        [
+          "Mira",
+          "Shah",
+          "2027-02-01"
+        ]
+      ],
+      "expected": [
+        [
+          "Mira",
+          "Shah",
+          "2027-01-01"
+        ],
+        [
+          "Mira",
+          "Shah",
+          "2027-02-01"
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "question_id": "P-SRC032-Q01-d",
+      "dialect": "SQLite",
+      "query": "SELECT m.Surname FROM Member m JOIN Loan l ON m.MemberID=l.MemberID\nWHERE l.DateOut='2027-03-01' AND l.DateRet='2027-03-05';",
+      "actual": [
+        [
+          "Adams"
+        ]
+      ],
+      "expected": [
+        [
+          "Adams"
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "question_id": "P-SRC002-Q02-c",
+      "dialect": "SQLite",
+      "query": "SELECT c.ClientName, c.ContactNumber\nFROM Client AS c JOIN Job AS j ON c.ClientID=j.ClientID\nWHERE j.LeadName='Mira Sen' AND j.Priority='High';",
+      "actual": [
+        [
+          "Aster",
+          "123"
+        ],
+        [
+          "Aster",
+          "123"
+        ]
+      ],
+      "expected": [
+        [
+          "Aster",
+          "123"
+        ],
+        [
+          "Aster",
+          "123"
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "question_id": "P-SRC033-Q03-b",
+      "dialect": "SQLite",
+      "query": "SELECT P.SupplierID,P.ProductName FROM Product P JOIN Stock S ON P.ProductID=S.ProductID WHERE S.Quantity BETWEEN 25 AND 35 AND P.Description LIKE'%fruity%';",
+      "actual": [
+        [
+          10,
+          "A"
+        ],
+        [
+          11,
+          "B"
+        ]
+      ],
+      "expected": [
+        [
+          10,
+          "A"
+        ],
+        [
+          11,
+          "B"
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "question_id": "P-SRC042-Q01-d",
+      "dialect": "SQLite",
+      "query": "SELECT e.FirstName,e.Surname,r.Grade FROM Employee AS e JOIN Role AS r ON e.RoleID=r.RoleID WHERE e.Surname='Patel' AND r.Grade=8;",
+      "actual": [
+        [
+          "Ravi",
+          "Patel",
+          8
+        ]
+      ],
+      "expected": [
+        [
+          "Ravi",
+          "Patel",
+          8
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "question_id": "P-SRC044-Q01-d",
+      "dialect": "SQLite",
+      "query": "SELECT e.FirstName,e.Surname,r.Grade FROM Employee e JOIN Role r ON e.RoleID=r.RoleID WHERE e.Surname='Chen' AND r.Grade=8;",
+      "actual": [
+        [
+          "Ada",
+          "Chen",
+          8
+        ]
+      ],
+      "expected": [
+        [
+          "Ada",
+          "Chen",
+          8
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "question_id": "P-SRC038-Q02-d",
+      "dialect": "SQLite",
+      "query": "SELECT r.DeviceID FROM Reading r JOIN Technician t ON r.TechID=t.TechID WHERE t.Name='R. Kim' AND r.RecordedAt >= '2027-05-12 00:00' AND r.RecordedAt < '2027-05-13 00:00';",
+      "actual": [
+        [
+          "A"
+        ],
+        [
+          "B"
+        ]
+      ],
+      "expected": [
+        [
+          "A"
+        ],
+        [
+          "B"
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "question_id": "P-SRC040-Q02-d",
+      "dialect": "SQLite",
+      "query": "SELECT O.DeviceID FROM Observation O JOIN Technician T ON O.TechnicianID=T.TechnicianID WHERE T.Name='Ari Singh' AND O.RecordedAt >= '2026-05-12 00:00:00' AND O.RecordedAt < '2026-05-13 00:00:00';",
+      "actual": [
+        [
+          "A"
+        ],
+        [
+          "B"
+        ]
+      ],
+      "expected": [
+        [
+          "A"
+        ],
+        [
+          "B"
+        ]
+      ],
+      "pass": true
+    },
+    {
+      "question_id": "P-SRC038-Q09-e-i",
+      "dialect": "SQLite",
+      "actual": {
+        "stored_average": 3.0,
+        "fresh_average": 3.6666666666666665
+      },
+      "pass": true
+    }
+  ],
+  "all_pass": true,
+  "limits": "These questions use portable SELECT/JOIN/WHERE/BETWEEN/LIKE. Data tests discriminate correct join, multiple filter conditions, duplicate retention and inclusive range endpoints. Other dialect syntax is not assumed."
+}

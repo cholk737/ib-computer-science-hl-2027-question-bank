@@ -1,0 +1,21 @@
+{
+  "question_id": "P-SRC028-Q05",
+  "source_question_ids": [
+    "H-SRC028-Q05"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct a trace table showing n, a, s, r after each loop iteration and the final output. Include the initial state, with a undefined before the loop.\n\nn = 4\ns = 0\nr = 0\nwhile n > 0:\n    a = n % 3\n    if a == 0:\n        s -= n\n    elif a == 1:\n        s += n\n    else:\n        s += 1\n    r += s\n    n -= 1\nprint(r)",
+  "syllabus_codes": [
+    "B2.1.4",
+    "B2.3.2",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 6,
+  "command_term": "Construct",
+  "difficulty": "high",
+  "adaptation_rationale": "Nested-selection accumulated trace translated into Python; preserves dependent-state difficulty. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "assets": []
+}

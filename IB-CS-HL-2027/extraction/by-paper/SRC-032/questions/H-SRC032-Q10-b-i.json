@@ -1,0 +1,64 @@
+{
+  "source_question_id": "H-SRC032-Q10-b-i",
+  "source_id": "SRC-032",
+  "source_filename": "Computer_science_paper_2__HL (1).pdf",
+  "year": "2023",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "TZ0 (markscheme)",
+  "option": "C",
+  "question": 10,
+  "subquestion": "b-i",
+  "source_pdf_pages": [
+    11
+  ],
+  "source_printed_pages": [
+    "10"
+  ],
+  "original_marks": 2,
+  "command_term": "Identify",
+  "original_text": "Identify two techniques used in search engine optimization.",
+  "parent_context": "– 10 – 2223 – 7012\n(Option C continued)\n10. Below is a fragment of the code from a web page.\n$sql = \"INSERT INTO GuestsTable (FirstName,Surname,Email,Cellphone)\nVALUES('Sonia','Smith','sonia@smith.com','+61231456789')\";\nif ($conn->query($sql) === TRUE) {\n    echo \"New record created successfully\";\n} else {\n    Echo \"Error.\".$sql.\"<br>\".$conn->error;\n}\n(a) (i)  Describe the process outlined in the code fragment above. [3]\n(ii) Describe how the common gateway interface (CGI) enables the execution of \nscripts on a server. [3]\nIt is possible to increase the visibility of a website using search engine optimization.\n(b) (i)  Identify two techniques used in search engine optimization. [2]\n(ii) Explain why incoming and outgoing links are significant factors in search results. [4]\nSearch engines frequently undertake web-indexing.\n(c) Describe how a web crawler would index a webpage. [3]\nA limitation of commonly used search engines is that they can only access part of the web. \nThey are unable to access the deep web.\n(d) Suggest why the problem of not being able to access the deep web could increasingly \nbecome a problem for search engines. [4]\n(Option C continues on the following page)",
+  "assets": [
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source context,code,tables and diagrams retained; relevant visual elements inspected.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-11.png",
+      "source_pdf_page": 11,
+      "visually_verified": false
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Identify two techniques used in search engine optimization.",
+    "CGI,search-engine optimization,indexing and deep-web access are obsolete2027 option content."
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-035",
+    "filename": "Computer_science_paper_2__HL_markscheme (1).pdf",
+    "pdf_pages": [
+      18
+    ],
+    "question_reference": "Q10 b-i",
+    "marking_summary": "Exact original MS leaf excerpt: Award [2 max] Use of appropriate metatags; Examples could include – keywords and description; Develop search friendly URLS; Use ALT attributes to provide keywords for images; Refresh and update the content of the pages regularly; Outlink to authority websites Have clean HTML; Keyword stuffing; Link farms; Cloaking; Link-baiting; Guest blogging - Ability of the page to adapt to mobile devices – use of techniques like boot strap; Note: Do not accept white hat / black hat optimization",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [2 max] \nUse of appropriate metatags; Examples could include – keywords and description; \nDevelop search friendly URLS; \nUse ALT attributes to provide keywords for images; \nRefresh and update the content of the pages regularly; \nOutlink to authority websites \nHave clean HTML; \nKeyword stuffing; \nLink farms; \nCloaking; \nLink-baiting; \nGuest blogging -  \nAbility of the page to adapt to mobile devices – use of techniques like boot strap; \nNote: Do not accept white hat / black hat optimization",
+    "source_issues": [],
+    "source_marking_evidence": "– 18 – M23/4/COMSC/HP2/ENG/TZ0/XX/M \n10. (a) (i) Award [3 max] \nInsert the Values into the named fields;  \nIn the GuestsTable; \nIf able to connect to the server reply with success message; \nif unable to connect reply with error message; \nNote: accept insertion of the record for 3rd/4th marking point. \n(ii) Award [3 max]\nWeb Client sends a request to server;\nWebServer executes the script in a CGI software;\nWebserver returns the results of the executed script to the client;\nExecutes the script at time of request and creates the HTML rendered out by\nwebserver;\nUsed to create dynamic web pages;\n(b) (i) Award [2 max] \nUse of appropriate metatags; Examples could include – keywords and description; \nDevelop search friendly URLS; \nUse ALT attributes to provide keywords for images; \nRefresh and update the content of the pages regularly; \nOutlink to authority websites \nHave clean HTML; \nKeyword stuffing; \nLink farms; \nCloaking; \nLink-baiting; \nGuest blogging -  \nAbility of the page to adapt to mobile devices – use of techniques like boot strap; \nNote: Do not accept white hat / black hat optimization \n(ii) Award [4 max]\nBoth page rank and HITS use links to calculate ranking in a search;\nIn page rank the number of incoming and outgoing links is used as a measure of the\npage;\nWhen one page links to another it effectively votes for the page its linking to;\nThe Authors rank is used as a measure of importance of the link;\nIn HITS the quality and number of the links called the Authority and Hub Values are key\nmetrics;\nThe importance of links leads to black hat techniques like link farming, blog comment\nlinks;\n(c) Award [3 max]\nStart from Seeds (or known URLs) – initial pages to be visited;\nIndex/make copy of the page, download some of the content (may use robots.txt and\nsitemap) (amount is search engine dependent);\nFind links on the page; and then visit links (could be breadth first or depth first);\nReturn result using criteria to provide ranking value/weight;"
+  },
+  "relevance_status": "C",
+  "mappings": [],
+  "exclusion_reason": "CGI,search-engine optimization,indexing and deep-web access are obsolete2027 option content.",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

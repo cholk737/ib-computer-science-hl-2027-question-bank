@@ -1,0 +1,726 @@
+{
+  "source_id": "SRC-038",
+  "batch_id": "SRC-038-b006",
+  "source_questions": [
+    {
+      "source_question_id": "H-SRC038-Q08-d-i",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "B",
+      "question": 8,
+      "subquestion": "d-i",
+      "source_pdf_pages": [
+        16
+      ],
+      "source_printed_pages": [
+        "15"
+      ],
+      "original_marks": 1,
+      "command_term": "Identify",
+      "original_text": "Identify a noun in this instruction.",
+      "parent_context": "– 15 – 8825 – 6405\nTurn over\n(Option B continued)\n8. A genetic algorithm will be used to develop a self-driving car’s antenna to communicate with \ntraffic lights and other vehicles.\n(a) Describe the steps a genetic algorithm would use to develop an antenna for a self-\ndriving car. [3]\nSome aspects of self-driving cars are designed using neural networks.\n(b) Sketch a simple block diagram, with labels, of a neural network. [2]\nSelf-driving cars use computer vision to identify objects.\n(c) Outline two differences in the way supervised and unsupervised learning are used to \nidentify objects. [4]\nSelf-driving cars communicate to their passengers using natural language processing and \nvoice recognition.\nFor example, a passenger could say, “Take me home via the scenic route,” and the natural \nlanguage processing should correctly interpret this instruction.\n(d) (i)   Identify a noun in this instruction. [1]\n(ii) Explain the semantics of this instruction. [4]\nThe passenger could also use natural language to check the grammar of messages sent \nfrom the self-driving car. The model would suggest and include missing words.\nFor example, “I late. Don’t wait me,” might be interpreted as, “I am late. Don’t wait for me.”\n(e) Compare voice recognition with natural language grammar checking using neural \nnetwork modelling. [6]\nEnd of Option B",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-16.png",
+          "source_pdf_page": 16,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Identify a noun in this instruction.",
+        "Identifying grammatical nouns or explaining linguistic semantics is not a required 2027 CS learning statement."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          25
+        ],
+        "question_reference": "Q8 d-i",
+        "marking_summary": "Exact original MS leaf excerpt: Award [1] max Award [1] for either answer Route; Home;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [1] max\nAward [1] for either answer \nRoute; \nHome;",
+        "source_issues": [],
+        "source_marking_evidence": "– 25 – 8825 – 6405M \n(d) (i) \t Award [1] max\nAward [1] for either answer \nRoute; \nHome; \n(ii) Award [4] max\nAward [1] for point\nSemantics is used to identify the intent of the speaker;\nBased on contextual understanding;\nExample, awareness that ‘home’ is the place of residence;\nUses cultural or situational awareness to grasp the meaning;\nThe passenger wants a slight detour through a picturesque route;\n(e) Award [6] max\nAward [2] for each comparison\nArchitectural complexity:\nVoice recognition uses a combination of NN types (e.g. CNN for audio extraction,\nRNNs/LSTMs/transformer for speech sequencing;\nwhereas Grammar checking uses advanced NLP/Transformers;\nData Processing:\nVoice recognition uses audio data / Voice requires audio to text conversion;\nwhereas grammar checking uses text data;\nPreprocessing:\nVoice Recognition uses preprocessing for noise reduction and normalization of audio\nsignals;\nwhereas text includes tokenization, part-of-speech tagging, and parsing for syntactic\nanalysis.\nTraining Data:\nVoice Recognition requires diverse datasets (accent, background noises) of spoken\nlanguage;\nwhereas grammar checking requires large text corpora, with grammatically correct and\nincorrect sentences\nFeature extraction:\nVoice recognition converts sound waves into spectrograms or MFCCs;\nwhereas grammar checking converts words into vectors;\nSequential Processing:\nBoth tasks rely heavily on sequential data processing;\nBoth detect anomalies in Sequence Patterns;\nReal-Time Processing:\nVoice recognition requires real-time whereas grammar checking is less time-sensitive;\nBoth update the models based on user interactions/Both use continuous learning\nmechanisms;"
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Identifying grammatical nouns or explaining linguistic semantics is not a required 2027 CS learning statement.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": []
+    },
+    {
+      "source_question_id": "H-SRC038-Q08-d-ii",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "B",
+      "question": 8,
+      "subquestion": "d-ii",
+      "source_pdf_pages": [
+        16
+      ],
+      "source_printed_pages": [
+        "15"
+      ],
+      "original_marks": 4,
+      "command_term": "Explain",
+      "original_text": "Explain the semantics of this instruction.",
+      "parent_context": "– 15 – 8825 – 6405\nTurn over\n(Option B continued)\n8. A genetic algorithm will be used to develop a self-driving car’s antenna to communicate with \ntraffic lights and other vehicles.\n(a) Describe the steps a genetic algorithm would use to develop an antenna for a self-\ndriving car. [3]\nSome aspects of self-driving cars are designed using neural networks.\n(b) Sketch a simple block diagram, with labels, of a neural network. [2]\nSelf-driving cars use computer vision to identify objects.\n(c) Outline two differences in the way supervised and unsupervised learning are used to \nidentify objects. [4]\nSelf-driving cars communicate to their passengers using natural language processing and \nvoice recognition.\nFor example, a passenger could say, “Take me home via the scenic route,” and the natural \nlanguage processing should correctly interpret this instruction.\n(d) (i)   Identify a noun in this instruction. [1]\n(ii) Explain the semantics of this instruction. [4]\nThe passenger could also use natural language to check the grammar of messages sent \nfrom the self-driving car. The model would suggest and include missing words.\nFor example, “I late. Don’t wait me,” might be interpreted as, “I am late. Don’t wait for me.”\n(e) Compare voice recognition with natural language grammar checking using neural \nnetwork modelling. [6]\nEnd of Option B",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-16.png",
+          "source_pdf_page": 16,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Explain the semantics of this instruction.",
+        "Identifying grammatical nouns or explaining linguistic semantics is not a required 2027 CS learning statement."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          25
+        ],
+        "question_reference": "Q8 d-ii",
+        "marking_summary": "Exact original MS leaf excerpt: Award [4] max Award [1] for point Semantics is used to identify the intent of the speaker; Based on contextual understanding; Example, awareness that ‘home’ is the place of residence; Uses cultural or situational awareness to grasp the meaning; The passenger wants a slight detour through a picturesque route;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [4] max\nAward [1] for point\nSemantics is used to identify the intent of the speaker;\nBased on contextual understanding;\nExample, awareness that ‘home’ is the place of residence;\nUses cultural or situational awareness to grasp the meaning;\nThe passenger wants a slight detour through a picturesque route;",
+        "source_issues": [],
+        "source_marking_evidence": "– 25 – 8825 – 6405M \n(d) (i) \t Award [1] max\nAward [1] for either answer \nRoute; \nHome; \n(ii) Award [4] max\nAward [1] for point\nSemantics is used to identify the intent of the speaker;\nBased on contextual understanding;\nExample, awareness that ‘home’ is the place of residence;\nUses cultural or situational awareness to grasp the meaning;\nThe passenger wants a slight detour through a picturesque route;\n(e) Award [6] max\nAward [2] for each comparison\nArchitectural complexity:\nVoice recognition uses a combination of NN types (e.g. CNN for audio extraction,\nRNNs/LSTMs/transformer for speech sequencing;\nwhereas Grammar checking uses advanced NLP/Transformers;\nData Processing:\nVoice recognition uses audio data / Voice requires audio to text conversion;\nwhereas grammar checking uses text data;\nPreprocessing:\nVoice Recognition uses preprocessing for noise reduction and normalization of audio\nsignals;\nwhereas text includes tokenization, part-of-speech tagging, and parsing for syntactic\nanalysis.\nTraining Data:\nVoice Recognition requires diverse datasets (accent, background noises) of spoken\nlanguage;\nwhereas grammar checking requires large text corpora, with grammatically correct and\nincorrect sentences\nFeature extraction:\nVoice recognition converts sound waves into spectrograms or MFCCs;\nwhereas grammar checking converts words into vectors;\nSequential Processing:\nBoth tasks rely heavily on sequential data processing;\nBoth detect anomalies in Sequence Patterns;\nReal-Time Processing:\nVoice recognition requires real-time whereas grammar checking is less time-sensitive;\nBoth update the models based on user interactions/Both use continuous learning\nmechanisms;"
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Identifying grammatical nouns or explaining linguistic semantics is not a required 2027 CS learning statement.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": []
+    },
+    {
+      "source_question_id": "H-SRC038-Q08-e",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "B",
+      "question": 8,
+      "subquestion": "e",
+      "source_pdf_pages": [
+        16
+      ],
+      "source_printed_pages": [
+        "15"
+      ],
+      "original_marks": 6,
+      "command_term": "Compare",
+      "original_text": "Compare voice recognition with natural language grammar checking using neural network modelling.",
+      "parent_context": "– 15 – 8825 – 6405\nTurn over\n(Option B continued)\n8. A genetic algorithm will be used to develop a self-driving car’s antenna to communicate with \ntraffic lights and other vehicles.\n(a) Describe the steps a genetic algorithm would use to develop an antenna for a self-\ndriving car. [3]\nSome aspects of self-driving cars are designed using neural networks.\n(b) Sketch a simple block diagram, with labels, of a neural network. [2]\nSelf-driving cars use computer vision to identify objects.\n(c) Outline two differences in the way supervised and unsupervised learning are used to \nidentify objects. [4]\nSelf-driving cars communicate to their passengers using natural language processing and \nvoice recognition.\nFor example, a passenger could say, “Take me home via the scenic route,” and the natural \nlanguage processing should correctly interpret this instruction.\n(d) (i)   Identify a noun in this instruction. [1]\n(ii) Explain the semantics of this instruction. [4]\nThe passenger could also use natural language to check the grammar of messages sent \nfrom the self-driving car. The model would suggest and include missing words.\nFor example, “I late. Don’t wait me,” might be interpreted as, “I am late. Don’t wait for me.”\n(e) Compare voice recognition with natural language grammar checking using neural \nnetwork modelling. [6]\nEnd of Option B",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-16.png",
+          "source_pdf_page": 16,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Compare voice recognition with natural language grammar checking using neural network modelling.",
+        "Compare two ANN applications: recognizing a spoken command from audio features and proposing a missing word from a sentence"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          25,
+          26
+        ],
+        "question_reference": "Q8 e",
+        "marking_summary": "Exact original MS leaf excerpt: Award [6] max Award [2] for each comparison Architectural complexity: Voice recognition uses a combination of NN types (e.g. CNN for audio extraction, RNNs/LSTMs/transformer for speech sequencing; whereas Grammar checking uses advanced NLP/Transformers; Data Processing: Voice recognition uses audio data / Voice requires audio to text conversion; whereas grammar checking uses text data; Preprocessing: Voice Recognition uses preprocessing for noise reduction and normalization of audio signals; whereas text includes tokenization, part-of-speech tagging, and parsing for syntactic analysis. Training Data: Voice Recognition requires diverse datasets (accent, background noises) of spoken language; whereas grammar checking requires large text corpora, with grammatically correct and incorrect sentences Feature extraction: Voice recognition converts sound waves into spectrograms or MFCCs; whereas  … [full leaf evidence retained]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [6] max\nAward [2] for each comparison\nArchitectural complexity:\nVoice recognition uses a combination of NN types (e.g. CNN for audio extraction,\nRNNs/LSTMs/transformer for speech sequencing;\nwhereas Grammar checking uses advanced NLP/Transformers;\nData Processing:\nVoice recognition uses audio data / Voice requires audio to text conversion;\nwhereas grammar checking uses text data;\nPreprocessing:\nVoice Recognition uses preprocessing for noise reduction and normalization of audio\nsignals;\nwhereas text includes tokenization, part-of-speech tagging, and parsing for syntactic\nanalysis.\nTraining Data:\nVoice Recognition requires diverse datasets (accent, background noises) of spoken\nlanguage;\nwhereas grammar checking requires large text corpora, with grammatically correct and\nincorrect sentences\nFeature extraction:\nVoice recognition converts sound waves into spectrograms or MFCCs;\nwhereas grammar checking converts words into vectors;\nSequential Processing:\nBoth tasks rely heavily on sequential data processing;\nBoth detect anomalies in Sequence Patterns;\nReal-Time Processing:\nVoice recognition requires real-time whereas grammar checking is less time-sensitive;\nBoth update the models based on user interactions/Both use continuous learning\nmechanisms;\n\nPost-Processing:  \nPost-processing with voice recognition includes language modeling to improve word \nchoice and fluency; \nwhereas grammar checking involves not just identifying errors but also suggesting \ncorrections. \nComputational Resources:  \nBoth are resource intensive; \nVoice recognition requires significant computational resources for real-time processing \nof audio data; \nwhereas grammar checking focuses on linguistic analysis; \nTypes of Errors:  \nErrors in voice recognition stem from misinterpretation of sounds or speech nuances; \nIn grammar checking, errors are related to the misuse of language rules; \n\nOption C — Web science",
+        "source_issues": [],
+        "source_marking_evidence": "– 25 – 8825 – 6405M \n(d) (i) \t Award [1] max\nAward [1] for either answer \nRoute; \nHome; \n(ii) Award [4] max\nAward [1] for point\nSemantics is used to identify the intent of the speaker;\nBased on contextual understanding;\nExample, awareness that ‘home’ is the place of residence;\nUses cultural or situational awareness to grasp the meaning;\nThe passenger wants a slight detour through a picturesque route;\n(e) Award [6] max\nAward [2] for each comparison\nArchitectural complexity:\nVoice recognition uses a combination of NN types (e.g. CNN for audio extraction,\nRNNs/LSTMs/transformer for speech sequencing;\nwhereas Grammar checking uses advanced NLP/Transformers;\nData Processing:\nVoice recognition uses audio data / Voice requires audio to text conversion;\nwhereas grammar checking uses text data;\nPreprocessing:\nVoice Recognition uses preprocessing for noise reduction and normalization of audio\nsignals;\nwhereas text includes tokenization, part-of-speech tagging, and parsing for syntactic\nanalysis.\nTraining Data:\nVoice Recognition requires diverse datasets (accent, background noises) of spoken\nlanguage;\nwhereas grammar checking requires large text corpora, with grammatically correct and\nincorrect sentences\nFeature extraction:\nVoice recognition converts sound waves into spectrograms or MFCCs;\nwhereas grammar checking converts words into vectors;\nSequential Processing:\nBoth tasks rely heavily on sequential data processing;\nBoth detect anomalies in Sequence Patterns;\nReal-Time Processing:\nVoice recognition requires real-time whereas grammar checking is less time-sensitive;\nBoth update the models based on user interactions/Both use continuous learning\nmechanisms;\n– 26 – 8825 – 6405M \nPost-Processing:  \nPost-processing with voice recognition includes language modeling to improve word \nchoice and fluency; \nwhereas grammar checking involves not just identifying errors but also suggesting \ncorrections. \nComputational Resources:  \nBoth are resource intensive; \nVoice recognition requires significant computational resources for real-time processing \nof audio data; \nwhereas grammar checking focuses on linguistic analysis; \nTypes of Errors:  \nErrors in voice recognition stem from misinterpretation of sounds or speech nuances; \nIn grammar checking, errors are related to the misuse of language rules; "
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "A4.3.8",
+          "scope_evidence": "• An artificial neural network (ANN) to simulate interconnected nodes or “neurons” to process and learn from input data, enabling tasks such as classification, regression and pattern recognition\n• Sketch of a single perceptron, highlighting its input, weights, bias, activation function and output\n• Sketch of a multi-layer perceptron (MLP) encompassing the input layer, one or more hidden layers and the output layer.",
+          "rationale": "Adapted target only: Compare two ANN applications: recognizing a spoken command from audio features and proposing a missing word from a sentence; guidance target: Outline the structure and function of ANNs and how multi-layer networks are used to model complex patterns in data sets. Adaptation: Retains comparison of neural pattern-recognition applications; removes advanced NLP architecture, linguistic semantics and unsupported universal real-time/continuous-learning claims.",
+          "theme": "A",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q08-e"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q09-a-i",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "C",
+      "question": 9,
+      "subquestion": "a-i",
+      "source_pdf_pages": [
+        17
+      ],
+      "source_printed_pages": [
+        "16"
+      ],
+      "original_marks": 1,
+      "command_term": "State",
+      "original_text": "State the protocol in the company’s website URL.",
+      "parent_context": "– 16 – 8825 – 6405\nOption C — Web science\n9. Hardware4Hotels is a company that provides services to hotels, such as carrying out \nelectrical repairs, decorating, and plumbing.\nThe URL for the company’s website is http://hardware4hotels.example.com\n(a) (i)   State the protocol in the company’s website URL. [1]\n(ii) State the domain name in the company’s website URL. [1]\n(b) Outline the importance of protocols when browsing websites. [2]\n(c) Identify two components of a webpage. [2]\nThe website for Hardware4Hotels has been designed so it can receive feedback from its \ncustomers. After the work has been completed, the customer is asked to submit a score from \n1 to 5 for the service provided (see Figure 8).\nFigure 8: The Hardware4Hotels feedback webpage\nH\nhttp://hardware4hotels.example.com\nHardware4Hotels\nspecialist hotel maintenance contractors\nPlease rate the following job:\nUser: 09876 (Peter Achison)\nWork category: interior decoration\nSubmit\nHome  About  Services  Case studies  Careers  Contact\n(d) Describe the role of the common gateway interface (CGI) on the Hardware4Hotels \nwebsite. [2]\n(Option C continues on the following page)\n– 17 – 8825 – 6405\nTurn over\n(Option C, question 9 continued)\nThe following is part of the code that is run on the server when a customer (the user) \nsubmits a rating.\n<?php\n$work_category = $_POST[\"work_category\"];\n$rating = $_POST[\"rating\"];\n$conn = mysqli_connect(\"localhost\", $username, $password, \"sales\");\n$sql = \"SELECT AVG(rating) as averageRating FROM ratings WHERE work_\ncategory = '$work_category'\";\n$result = mysqli_query($conn, $sql);\n$row = mysqli_fetch_assoc($result);\n$averageRating = $row[\"averageRating\"];\n$sql = \"INSERT INTO ratings (work_category, rating) VALUES ('$work_\ncategory', $rating)\";\nmysqli_query($conn, $sql);\nif ($rating >= $averageRating) {\n    echo \"Thank you for the good review.\";\n} else {\n    echo \"Sorry, we will try to do better next time.\";\n}\nmysqli_close($conn);\n?>\n(e) (i)   Describe the processing that takes place when this code is executed. [4]\n(ii) Outline one advantage of executing this code on a server rather than in  \nthe browser. [3]\n(Option C continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-17.png",
+          "source_pdf_page": 17,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-18.png",
+          "source_pdf_page": 18,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: State the protocol in the company’s website URL.",
+        "State the protocol identified by the prefix http:// in a web address"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          27
+        ],
+        "question_reference": "Q9 a-i",
+        "marking_summary": "Exact original MS leaf excerpt: Award [1 max] http; Hypertext transfer protocol;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [1 max]\nhttp; \nHypertext transfer protocol;",
+        "source_issues": [],
+        "source_marking_evidence": "– 27 – 8825 – 6405M \nOption C — Web science \n9. (a) (i) Award [1 max]\nhttp; \nHypertext transfer protocol; \n(ii) Award [1 max]\nhardware4hotels.com;\nhardware4hotels.example.com\nNote: Do not accept www.hardware4hotels.com\n(b) Award [ 1+1, max 2 ]\nprotocols ensure standardised communication;\nensuring interoperability/consistency in data exchange / allowing [software/hardware]\nproducts to be compatible with others;\nprotocols ensure reliable/ordered data transfer;\nby establishing rules for data transmission / ensuring integrity of the data;\nprotocols ensure reliable/ordered data transfer;\nby handling error detection/correction / by negotiating data transfer speeds etc;\nprotocols ensure security of the data;\nby encrypting the data to be transmitted;\n(c) Award [2 max]\nVisual Components:\nButton; Image; Hyperlink; Text content; Video; Audio elements; Navigation bar;\nDropdown menus; Tables; Lists; Sliders; Banners; Footer; Forms; Input fields;\nCheckboxes; Radio buttons; Typography (headings, paragraphs); Graphs and charts;\nModal windows; Pop-ups; Icons.\nTechnical components:\nHTML; JavaScript; CSS; Header; Form; Title tag; Meta tags; Script tags; Stylesheets;\nframes; Div elements; Span elements; Canvas; SVG (Scalable Vector Graphics); API\ncalls; AJAX (Asynchronous JavaScript and XML); WebSockets; PHP scripts; Server-\nside scripts; Database connectivity; Session storage; Cookies; XML; JSON;\nFrameworks (e.g., React, Angular); Libraries (e.g., jQuery).\nNote: Allow both visual or technical components. Accept any other component.\n(d) Award [2 max]\nallows data/parameters passed from the HTML page to a program (eg.\nrating/name/job category);\nredirects output from a program back to the web browser;\nallows a programs/scripts/logic to be applied to the data to generate output;\nallows access to data sources such as databases to store/retrieve data;\nallows the website to communicate with server-side programs to process the\ncustomer’s feedback;"
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "A2.1.4",
+          "scope_evidence": "• Protocols: transmission control protocol (TCP), user datagram protocol (UDP), hypertext transfer protocol (HTTP), hypertext transfer protocol secure (HTTPS), dynamic host configuration protocol (DHCP)",
+          "rationale": "Original and adapted within-scope skill: State the protocol identified by the prefix http:// in a web address; guidance target: Describe the network protocols used for transport and application.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q09-a-i"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q09-a-ii",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "C",
+      "question": 9,
+      "subquestion": "a-ii",
+      "source_pdf_pages": [
+        17
+      ],
+      "source_printed_pages": [
+        "16"
+      ],
+      "original_marks": 1,
+      "command_term": "State",
+      "original_text": "State the domain name in the company’s website URL.",
+      "parent_context": "– 16 – 8825 – 6405\nOption C — Web science\n9. Hardware4Hotels is a company that provides services to hotels, such as carrying out \nelectrical repairs, decorating, and plumbing.\nThe URL for the company’s website is http://hardware4hotels.example.com\n(a) (i)   State the protocol in the company’s website URL. [1]\n(ii) State the domain name in the company’s website URL. [1]\n(b) Outline the importance of protocols when browsing websites. [2]\n(c) Identify two components of a webpage. [2]\nThe website for Hardware4Hotels has been designed so it can receive feedback from its \ncustomers. After the work has been completed, the customer is asked to submit a score from \n1 to 5 for the service provided (see Figure 8).\nFigure 8: The Hardware4Hotels feedback webpage\nH\nhttp://hardware4hotels.example.com\nHardware4Hotels\nspecialist hotel maintenance contractors\nPlease rate the following job:\nUser: 09876 (Peter Achison)\nWork category: interior decoration\nSubmit\nHome  About  Services  Case studies  Careers  Contact\n(d) Describe the role of the common gateway interface (CGI) on the Hardware4Hotels \nwebsite. [2]\n(Option C continues on the following page)\n– 17 – 8825 – 6405\nTurn over\n(Option C, question 9 continued)\nThe following is part of the code that is run on the server when a customer (the user) \nsubmits a rating.\n<?php\n$work_category = $_POST[\"work_category\"];\n$rating = $_POST[\"rating\"];\n$conn = mysqli_connect(\"localhost\", $username, $password, \"sales\");\n$sql = \"SELECT AVG(rating) as averageRating FROM ratings WHERE work_\ncategory = '$work_category'\";\n$result = mysqli_query($conn, $sql);\n$row = mysqli_fetch_assoc($result);\n$averageRating = $row[\"averageRating\"];\n$sql = \"INSERT INTO ratings (work_category, rating) VALUES ('$work_\ncategory', $rating)\";\nmysqli_query($conn, $sql);\nif ($rating >= $averageRating) {\n    echo \"Thank you for the good review.\";\n} else {\n    echo \"Sorry, we will try to do better next time.\";\n}\nmysqli_close($conn);\n?>\n(e) (i)   Describe the processing that takes place when this code is executed. [4]\n(ii) Outline one advantage of executing this code on a server rather than in  \nthe browser. [3]\n(Option C continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-17.png",
+          "source_pdf_page": 17,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-18.png",
+          "source_pdf_page": 18,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: State the domain name in the company’s website URL.",
+        "Extracting the domain-name component from a URL is not itself the guide’s required explanation of DNS operation."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          27
+        ],
+        "question_reference": "Q9 a-ii",
+        "marking_summary": "Exact original MS leaf excerpt: Award [1 max] hardware4hotels.com; hardware4hotels.example.com Note: Do not accept www.hardware4hotels.com",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [1 max]\nhardware4hotels.com;\nhardware4hotels.example.com\nNote: Do not accept www.hardware4hotels.com",
+        "source_issues": [],
+        "source_marking_evidence": "– 27 – 8825 – 6405M \nOption C — Web science \n9. (a) (i) Award [1 max]\nhttp; \nHypertext transfer protocol; \n(ii) Award [1 max]\nhardware4hotels.com;\nhardware4hotels.example.com\nNote: Do not accept www.hardware4hotels.com\n(b) Award [ 1+1, max 2 ]\nprotocols ensure standardised communication;\nensuring interoperability/consistency in data exchange / allowing [software/hardware]\nproducts to be compatible with others;\nprotocols ensure reliable/ordered data transfer;\nby establishing rules for data transmission / ensuring integrity of the data;\nprotocols ensure reliable/ordered data transfer;\nby handling error detection/correction / by negotiating data transfer speeds etc;\nprotocols ensure security of the data;\nby encrypting the data to be transmitted;\n(c) Award [2 max]\nVisual Components:\nButton; Image; Hyperlink; Text content; Video; Audio elements; Navigation bar;\nDropdown menus; Tables; Lists; Sliders; Banners; Footer; Forms; Input fields;\nCheckboxes; Radio buttons; Typography (headings, paragraphs); Graphs and charts;\nModal windows; Pop-ups; Icons.\nTechnical components:\nHTML; JavaScript; CSS; Header; Form; Title tag; Meta tags; Script tags; Stylesheets;\nframes; Div elements; Span elements; Canvas; SVG (Scalable Vector Graphics); API\ncalls; AJAX (Asynchronous JavaScript and XML); WebSockets; PHP scripts; Server-\nside scripts; Database connectivity; Session storage; Cookies; XML; JSON;\nFrameworks (e.g., React, Angular); Libraries (e.g., jQuery).\nNote: Allow both visual or technical components. Accept any other component.\n(d) Award [2 max]\nallows data/parameters passed from the HTML page to a program (eg.\nrating/name/job category);\nredirects output from a program back to the web browser;\nallows a programs/scripts/logic to be applied to the data to generate output;\nallows access to data sources such as databases to store/retrieve data;\nallows the website to communicate with server-side programs to process the\ncustomer’s feedback;"
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Extracting the domain-name component from a URL is not itself the guide’s required explanation of DNS operation.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": []
+    },
+    {
+      "source_question_id": "H-SRC038-Q09-b",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "C",
+      "question": 9,
+      "subquestion": "b",
+      "source_pdf_pages": [
+        17
+      ],
+      "source_printed_pages": [
+        "16"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "Outline the importance of protocols when browsing websites.",
+      "parent_context": "– 16 – 8825 – 6405\nOption C — Web science\n9. Hardware4Hotels is a company that provides services to hotels, such as carrying out \nelectrical repairs, decorating, and plumbing.\nThe URL for the company’s website is http://hardware4hotels.example.com\n(a) (i)   State the protocol in the company’s website URL. [1]\n(ii) State the domain name in the company’s website URL. [1]\n(b) Outline the importance of protocols when browsing websites. [2]\n(c) Identify two components of a webpage. [2]\nThe website for Hardware4Hotels has been designed so it can receive feedback from its \ncustomers. After the work has been completed, the customer is asked to submit a score from \n1 to 5 for the service provided (see Figure 8).\nFigure 8: The Hardware4Hotels feedback webpage\nH\nhttp://hardware4hotels.example.com\nHardware4Hotels\nspecialist hotel maintenance contractors\nPlease rate the following job:\nUser: 09876 (Peter Achison)\nWork category: interior decoration\nSubmit\nHome  About  Services  Case studies  Careers  Contact\n(d) Describe the role of the common gateway interface (CGI) on the Hardware4Hotels \nwebsite. [2]\n(Option C continues on the following page)\n– 17 – 8825 – 6405\nTurn over\n(Option C, question 9 continued)\nThe following is part of the code that is run on the server when a customer (the user) \nsubmits a rating.\n<?php\n$work_category = $_POST[\"work_category\"];\n$rating = $_POST[\"rating\"];\n$conn = mysqli_connect(\"localhost\", $username, $password, \"sales\");\n$sql = \"SELECT AVG(rating) as averageRating FROM ratings WHERE work_\ncategory = '$work_category'\";\n$result = mysqli_query($conn, $sql);\n$row = mysqli_fetch_assoc($result);\n$averageRating = $row[\"averageRating\"];\n$sql = \"INSERT INTO ratings (work_category, rating) VALUES ('$work_\ncategory', $rating)\";\nmysqli_query($conn, $sql);\nif ($rating >= $averageRating) {\n    echo \"Thank you for the good review.\";\n} else {\n    echo \"Sorry, we will try to do better next time.\";\n}\nmysqli_close($conn);\n?>\n(e) (i)   Describe the processing that takes place when this code is executed. [4]\n(ii) Outline one advantage of executing this code on a server rather than in  \nthe browser. [3]\n(Option C continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-17.png",
+          "source_pdf_page": 17,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-18.png",
+          "source_pdf_page": 18,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline the importance of protocols when browsing websites.",
+        "Outline why agreed communication protocols help a browser and web server from different vendors exchange data"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          27
+        ],
+        "question_reference": "Q9 b",
+        "marking_summary": "Exact original MS leaf excerpt: Award [ 1+1, max 2 ] protocols ensure standardised communication; ensuring interoperability/consistency in data exchange / allowing [software/hardware] products to be compatible with others; protocols ensure reliable/ordered data transfer; by establishing rules for data transmission / ensuring integrity of the data; protocols ensure reliable/ordered data transfer; by handling error detection/correction / by negotiating data transfer speeds etc; protocols ensure security of the data; by encrypting the data to be transmitted;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [ 1+1, max 2 ]\nprotocols ensure standardised communication;\nensuring interoperability/consistency in data exchange / allowing [software/hardware]\nproducts to be compatible with others;\nprotocols ensure reliable/ordered data transfer;\nby establishing rules for data transmission / ensuring integrity of the data;\nprotocols ensure reliable/ordered data transfer;\nby handling error detection/correction / by negotiating data transfer speeds etc;\nprotocols ensure security of the data;\nby encrypting the data to be transmitted;",
+        "source_issues": [],
+        "source_marking_evidence": "– 27 – 8825 – 6405M \nOption C — Web science \n9. (a) (i) Award [1 max]\nhttp; \nHypertext transfer protocol; \n(ii) Award [1 max]\nhardware4hotels.com;\nhardware4hotels.example.com\nNote: Do not accept www.hardware4hotels.com\n(b) Award [ 1+1, max 2 ]\nprotocols ensure standardised communication;\nensuring interoperability/consistency in data exchange / allowing [software/hardware]\nproducts to be compatible with others;\nprotocols ensure reliable/ordered data transfer;\nby establishing rules for data transmission / ensuring integrity of the data;\nprotocols ensure reliable/ordered data transfer;\nby handling error detection/correction / by negotiating data transfer speeds etc;\nprotocols ensure security of the data;\nby encrypting the data to be transmitted;\n(c) Award [2 max]\nVisual Components:\nButton; Image; Hyperlink; Text content; Video; Audio elements; Navigation bar;\nDropdown menus; Tables; Lists; Sliders; Banners; Footer; Forms; Input fields;\nCheckboxes; Radio buttons; Typography (headings, paragraphs); Graphs and charts;\nModal windows; Pop-ups; Icons.\nTechnical components:\nHTML; JavaScript; CSS; Header; Form; Title tag; Meta tags; Script tags; Stylesheets;\nframes; Div elements; Span elements; Canvas; SVG (Scalable Vector Graphics); API\ncalls; AJAX (Asynchronous JavaScript and XML); WebSockets; PHP scripts; Server-\nside scripts; Database connectivity; Session storage; Cookies; XML; JSON;\nFrameworks (e.g., React, Angular); Libraries (e.g., jQuery).\nNote: Allow both visual or technical components. Accept any other component.\n(d) Award [2 max]\nallows data/parameters passed from the HTML page to a program (eg.\nrating/name/job category);\nredirects output from a program back to the web browser;\nallows a programs/scripts/logic to be applied to the data to generate output;\nallows access to data sources such as databases to store/retrieve data;\nallows the website to communicate with server-side programs to process the\ncustomer’s feedback;"
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "A2.1.4",
+          "scope_evidence": "• Protocols: transmission control protocol (TCP), user datagram protocol (UDP), hypertext transfer protocol (HTTP), hypertext transfer protocol secure (HTTPS), dynamic host configuration protocol (DHCP)",
+          "rationale": "Original and adapted within-scope skill: Outline why agreed communication protocols help a browser and web server from different vendors exchange data; guidance target: Describe the network protocols used for transport and application.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q09-b"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q09-c",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "C",
+      "question": 9,
+      "subquestion": "c",
+      "source_pdf_pages": [
+        17
+      ],
+      "source_printed_pages": [
+        "16"
+      ],
+      "original_marks": 2,
+      "command_term": "Identify",
+      "original_text": "Identify two components of a webpage.",
+      "parent_context": "– 16 – 8825 – 6405\nOption C — Web science\n9. Hardware4Hotels is a company that provides services to hotels, such as carrying out \nelectrical repairs, decorating, and plumbing.\nThe URL for the company’s website is http://hardware4hotels.example.com\n(a) (i)   State the protocol in the company’s website URL. [1]\n(ii) State the domain name in the company’s website URL. [1]\n(b) Outline the importance of protocols when browsing websites. [2]\n(c) Identify two components of a webpage. [2]\nThe website for Hardware4Hotels has been designed so it can receive feedback from its \ncustomers. After the work has been completed, the customer is asked to submit a score from \n1 to 5 for the service provided (see Figure 8).\nFigure 8: The Hardware4Hotels feedback webpage\nH\nhttp://hardware4hotels.example.com\nHardware4Hotels\nspecialist hotel maintenance contractors\nPlease rate the following job:\nUser: 09876 (Peter Achison)\nWork category: interior decoration\nSubmit\nHome  About  Services  Case studies  Careers  Contact\n(d) Describe the role of the common gateway interface (CGI) on the Hardware4Hotels \nwebsite. [2]\n(Option C continues on the following page)\n– 17 – 8825 – 6405\nTurn over\n(Option C, question 9 continued)\nThe following is part of the code that is run on the server when a customer (the user) \nsubmits a rating.\n<?php\n$work_category = $_POST[\"work_category\"];\n$rating = $_POST[\"rating\"];\n$conn = mysqli_connect(\"localhost\", $username, $password, \"sales\");\n$sql = \"SELECT AVG(rating) as averageRating FROM ratings WHERE work_\ncategory = '$work_category'\";\n$result = mysqli_query($conn, $sql);\n$row = mysqli_fetch_assoc($result);\n$averageRating = $row[\"averageRating\"];\n$sql = \"INSERT INTO ratings (work_category, rating) VALUES ('$work_\ncategory', $rating)\";\nmysqli_query($conn, $sql);\nif ($rating >= $averageRating) {\n    echo \"Thank you for the good review.\";\n} else {\n    echo \"Sorry, we will try to do better next time.\";\n}\nmysqli_close($conn);\n?>\n(e) (i)   Describe the processing that takes place when this code is executed. [4]\n(ii) Outline one advantage of executing this code on a server rather than in  \nthe browser. [3]\n(Option C continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-17.png",
+          "source_pdf_page": 17,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-18.png",
+          "source_pdf_page": 18,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Identify two components of a webpage.",
+        "Listing web-page visual/HTML components is not an individual 2027 syllabus requirement."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          27
+        ],
+        "question_reference": "Q9 c",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max] Visual Components: Button; Image; Hyperlink; Text content; Video; Audio elements; Navigation bar; Dropdown menus; Tables; Lists; Sliders; Banners; Footer; Forms; Input fields; Checkboxes; Radio buttons; Typography (headings, paragraphs); Graphs and charts; Modal windows; Pop-ups; Icons. Technical components: HTML; JavaScript; CSS; Header; Form; Title tag; Meta tags; Script tags; Stylesheets; frames; Div elements; Span elements; Canvas; SVG (Scalable Vector Graphics); API calls; AJAX (Asynchronous JavaScript and XML); WebSockets; PHP scripts; Server- side scripts; Database connectivity; Session storage; Cookies; XML; JSON; Frameworks (e.g., React, Angular); Libraries (e.g., jQuery). Note: Allow both visual or technical components. Accept any other component.",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]\nVisual Components:\nButton; Image; Hyperlink; Text content; Video; Audio elements; Navigation bar;\nDropdown menus; Tables; Lists; Sliders; Banners; Footer; Forms; Input fields;\nCheckboxes; Radio buttons; Typography (headings, paragraphs); Graphs and charts;\nModal windows; Pop-ups; Icons.\nTechnical components:\nHTML; JavaScript; CSS; Header; Form; Title tag; Meta tags; Script tags; Stylesheets;\nframes; Div elements; Span elements; Canvas; SVG (Scalable Vector Graphics); API\ncalls; AJAX (Asynchronous JavaScript and XML); WebSockets; PHP scripts; Server-\nside scripts; Database connectivity; Session storage; Cookies; XML; JSON;\nFrameworks (e.g., React, Angular); Libraries (e.g., jQuery).\nNote: Allow both visual or technical components. Accept any other component.",
+        "source_issues": [],
+        "source_marking_evidence": "– 27 – 8825 – 6405M \nOption C — Web science \n9. (a) (i) Award [1 max]\nhttp; \nHypertext transfer protocol; \n(ii) Award [1 max]\nhardware4hotels.com;\nhardware4hotels.example.com\nNote: Do not accept www.hardware4hotels.com\n(b) Award [ 1+1, max 2 ]\nprotocols ensure standardised communication;\nensuring interoperability/consistency in data exchange / allowing [software/hardware]\nproducts to be compatible with others;\nprotocols ensure reliable/ordered data transfer;\nby establishing rules for data transmission / ensuring integrity of the data;\nprotocols ensure reliable/ordered data transfer;\nby handling error detection/correction / by negotiating data transfer speeds etc;\nprotocols ensure security of the data;\nby encrypting the data to be transmitted;\n(c) Award [2 max]\nVisual Components:\nButton; Image; Hyperlink; Text content; Video; Audio elements; Navigation bar;\nDropdown menus; Tables; Lists; Sliders; Banners; Footer; Forms; Input fields;\nCheckboxes; Radio buttons; Typography (headings, paragraphs); Graphs and charts;\nModal windows; Pop-ups; Icons.\nTechnical components:\nHTML; JavaScript; CSS; Header; Form; Title tag; Meta tags; Script tags; Stylesheets;\nframes; Div elements; Span elements; Canvas; SVG (Scalable Vector Graphics); API\ncalls; AJAX (Asynchronous JavaScript and XML); WebSockets; PHP scripts; Server-\nside scripts; Database connectivity; Session storage; Cookies; XML; JSON;\nFrameworks (e.g., React, Angular); Libraries (e.g., jQuery).\nNote: Allow both visual or technical components. Accept any other component.\n(d) Award [2 max]\nallows data/parameters passed from the HTML page to a program (eg.\nrating/name/job category);\nredirects output from a program back to the web browser;\nallows a programs/scripts/logic to be applied to the data to generate output;\nallows access to data sources such as databases to store/retrieve data;\nallows the website to communicate with server-side programs to process the\ncustomer’s feedback;"
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Listing web-page visual/HTML components is not an individual 2027 syllabus requirement.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": []
+    },
+    {
+      "source_question_id": "H-SRC038-Q09-d",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "C",
+      "question": 9,
+      "subquestion": "d",
+      "source_pdf_pages": [
+        17
+      ],
+      "source_printed_pages": [
+        "16"
+      ],
+      "original_marks": 2,
+      "command_term": "Describe",
+      "original_text": "Describe the role of the common gateway interface (CGI) on the Hardware4Hotels website.",
+      "parent_context": "– 16 – 8825 – 6405\nOption C — Web science\n9. Hardware4Hotels is a company that provides services to hotels, such as carrying out \nelectrical repairs, decorating, and plumbing.\nThe URL for the company’s website is http://hardware4hotels.example.com\n(a) (i)   State the protocol in the company’s website URL. [1]\n(ii) State the domain name in the company’s website URL. [1]\n(b) Outline the importance of protocols when browsing websites. [2]\n(c) Identify two components of a webpage. [2]\nThe website for Hardware4Hotels has been designed so it can receive feedback from its \ncustomers. After the work has been completed, the customer is asked to submit a score from \n1 to 5 for the service provided (see Figure 8).\nFigure 8: The Hardware4Hotels feedback webpage\nH\nhttp://hardware4hotels.example.com\nHardware4Hotels\nspecialist hotel maintenance contractors\nPlease rate the following job:\nUser: 09876 (Peter Achison)\nWork category: interior decoration\nSubmit\nHome  About  Services  Case studies  Careers  Contact\n(d) Describe the role of the common gateway interface (CGI) on the Hardware4Hotels \nwebsite. [2]\n(Option C continues on the following page)\n– 17 – 8825 – 6405\nTurn over\n(Option C, question 9 continued)\nThe following is part of the code that is run on the server when a customer (the user) \nsubmits a rating.\n<?php\n$work_category = $_POST[\"work_category\"];\n$rating = $_POST[\"rating\"];\n$conn = mysqli_connect(\"localhost\", $username, $password, \"sales\");\n$sql = \"SELECT AVG(rating) as averageRating FROM ratings WHERE work_\ncategory = '$work_category'\";\n$result = mysqli_query($conn, $sql);\n$row = mysqli_fetch_assoc($result);\n$averageRating = $row[\"averageRating\"];\n$sql = \"INSERT INTO ratings (work_category, rating) VALUES ('$work_\ncategory', $rating)\";\nmysqli_query($conn, $sql);\nif ($rating >= $averageRating) {\n    echo \"Thank you for the good review.\";\n} else {\n    echo \"Sorry, we will try to do better next time.\";\n}\nmysqli_close($conn);\n?>\n(e) (i)   Describe the processing that takes place when this code is executed. [4]\n(ii) Outline one advantage of executing this code on a server rather than in  \nthe browser. [3]\n(Option C continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-17.png",
+          "source_pdf_page": 17,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-18.png",
+          "source_pdf_page": 18,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Describe the role of the common gateway interface (CGI) on the Hardware4Hotels website.",
+        "CGI implementation mechanisms are not required in the 2027 guide."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          27
+        ],
+        "question_reference": "Q9 d",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max] allows data/parameters passed from the HTML page to a program (eg. rating/name/job category); redirects output from a program back to the web browser; allows a programs/scripts/logic to be applied to the data to generate output; allows access to data sources such as databases to store/retrieve data; allows the website to communicate with server-side programs to process the customer’s feedback;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]\nallows data/parameters passed from the HTML page to a program (eg.\nrating/name/job category);\nredirects output from a program back to the web browser;\nallows a programs/scripts/logic to be applied to the data to generate output;\nallows access to data sources such as databases to store/retrieve data;\nallows the website to communicate with server-side programs to process the\ncustomer’s feedback;",
+        "source_issues": [],
+        "source_marking_evidence": "– 27 – 8825 – 6405M \nOption C — Web science \n9. (a) (i) Award [1 max]\nhttp; \nHypertext transfer protocol; \n(ii) Award [1 max]\nhardware4hotels.com;\nhardware4hotels.example.com\nNote: Do not accept www.hardware4hotels.com\n(b) Award [ 1+1, max 2 ]\nprotocols ensure standardised communication;\nensuring interoperability/consistency in data exchange / allowing [software/hardware]\nproducts to be compatible with others;\nprotocols ensure reliable/ordered data transfer;\nby establishing rules for data transmission / ensuring integrity of the data;\nprotocols ensure reliable/ordered data transfer;\nby handling error detection/correction / by negotiating data transfer speeds etc;\nprotocols ensure security of the data;\nby encrypting the data to be transmitted;\n(c) Award [2 max]\nVisual Components:\nButton; Image; Hyperlink; Text content; Video; Audio elements; Navigation bar;\nDropdown menus; Tables; Lists; Sliders; Banners; Footer; Forms; Input fields;\nCheckboxes; Radio buttons; Typography (headings, paragraphs); Graphs and charts;\nModal windows; Pop-ups; Icons.\nTechnical components:\nHTML; JavaScript; CSS; Header; Form; Title tag; Meta tags; Script tags; Stylesheets;\nframes; Div elements; Span elements; Canvas; SVG (Scalable Vector Graphics); API\ncalls; AJAX (Asynchronous JavaScript and XML); WebSockets; PHP scripts; Server-\nside scripts; Database connectivity; Session storage; Cookies; XML; JSON;\nFrameworks (e.g., React, Angular); Libraries (e.g., jQuery).\nNote: Allow both visual or technical components. Accept any other component.\n(d) Award [2 max]\nallows data/parameters passed from the HTML page to a program (eg.\nrating/name/job category);\nredirects output from a program back to the web browser;\nallows a programs/scripts/logic to be applied to the data to generate output;\nallows access to data sources such as databases to store/retrieve data;\nallows the website to communicate with server-side programs to process the\ncustomer’s feedback;"
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "CGI implementation mechanisms are not required in the 2027 guide.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": []
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC038-Q08-e",
+      "source_question_ids": [
+        "H-SRC038-Q08-e"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Compare two ANN applications: recognizing a spoken command from audio features and proposing a missing word from a sentence. Refer to their inputs, outputs and one shared limitation. No detailed language-model architecture is required.",
+      "syllabus_codes": [
+        "A4.3.8"
+      ],
+      "theme": "A",
+      "level": "HL-only",
+      "marks": 6,
+      "command_term": "Compare",
+      "difficulty": "medium",
+      "adaptation_rationale": "Retains comparison of neural pattern-recognition applications; removes advanced NLP architecture, linguistic semantics and unsupported universal real-time/continuous-learning claims.",
+      "solution": "The speech system takes audio-derived features, whereas the missing-word system takes a representation of written context. Their outputs are a recognized command/category and a proposed word respectively. Both learn complex patterns from training data; biased or unrepresentative examples can produce incorrect predictions, so an output should not be treated as guaranteed understanding.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Audio-feature input."
+        },
+        {
+          "marks": 1,
+          "criterion": "Written-context input, explicitly compared."
+        },
+        {
+          "marks": 1,
+          "criterion": "Recognized command/category output."
+        },
+        {
+          "marks": 1,
+          "criterion": "Proposed-word output, explicitly compared."
+        },
+        {
+          "marks": 1,
+          "criterion": "Shared learned-pattern/data limitation."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains wrong prediction/need for checking."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          25,
+          26
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q09-a-i",
+      "source_question_ids": [
+        "H-SRC038-Q09-a-i"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "State the protocol identified by the prefix http:// in a web address.",
+      "syllabus_codes": [
+        "A2.1.4"
+      ],
+      "theme": "A",
+      "level": "SL/HL common",
+      "marks": 1,
+      "command_term": "State",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "HTTP (Hypertext Transfer Protocol).",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "HTTP or full name."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          27
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q09-b",
+      "source_question_ids": [
+        "H-SRC038-Q09-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline why agreed communication protocols help a browser and web server from different vendors exchange data.",
+      "syllabus_codes": [
+        "A2.1.4"
+      ],
+      "theme": "A",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "They define common message formats and interaction rules. Both systems can interpret the same requests and responses, supporting interoperability.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Common communication formats/rules."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains interoperable interpretation/exchange."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          27
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    }
+  ]
+}

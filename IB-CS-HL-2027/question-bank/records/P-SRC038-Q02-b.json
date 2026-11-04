@@ -1,0 +1,47 @@
+{
+  "question_id": "P-SRC038-Q02-b",
+  "source_question_ids": [
+    "H-SRC038-Q02-b"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "READING(DeviceID, SensorID, Timestamp, DeviceName, Value) has the composite key (DeviceID, SensorID, Timestamp). DeviceID alone determines DeviceName. Outline why the relation violates 2NF.",
+  "syllabus_codes": [
+    "A3.2.5"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 2,
+  "command_term": "Outline",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "DeviceName depends on only DeviceID, a proper subset of the composite key. This partial dependency of a non-key attribute violates 2NF.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Identifies DeviceName depending on DeviceID only."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains partial dependency on part of the composite key."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      7
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC038-Q02-b.json",
+  "question_path": "question-bank/questions/P-SRC038-Q02-b.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC038-Q02-b.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

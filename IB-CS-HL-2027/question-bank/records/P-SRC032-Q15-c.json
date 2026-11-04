@@ -1,0 +1,44 @@
+{
+  "question_id": "P-SRC032-Q15-c",
+  "source_question_ids": [
+    "H-SRC032-Q15-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "State the intended task of this Python function,assuming entries contains objects with city and address attributes.\ndef visit(entries, city):\n    for item in entries:\n        if item.city == city:\n            print(item.address)",
+  "syllabus_codes": [
+    "B2.1.1",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 1,
+  "command_term": "State",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "Print the address of every entry whose city equals the supplied city.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "All matching addresses printed."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed two matching entries separated by a nonmatch,and empty list; output captured.",
+    "source_comparison": [
+      28
+    ],
+    "test_code": "def visit(entries, city):\n    for item in entries:\n        if item.city == city:\n            print(item.address)\nfrom types import SimpleNamespace as N\nimport contextlib,io\nout=io.StringIO()\nwith contextlib.redirect_stdout(out):\n visit([N(city='Bay',address='A'),N(city='Hill',address='B'),N(city='Bay',address='C')],'Bay')\nassert out.getvalue()=='A\\nC\\n'\nout=io.StringIO()\nwith contextlib.redirect_stdout(out):visit([],'Bay')\nassert out.getvalue()==''\n",
+    "result_file": ""
+  },
+  "code": "def visit(entries, city):\n    for item in entries:\n        if item.city == city:\n            print(item.address)",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC032-Q15-c.json",
+  "question_path": "question-bank/questions/P-SRC032-Q15-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC032-Q15-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

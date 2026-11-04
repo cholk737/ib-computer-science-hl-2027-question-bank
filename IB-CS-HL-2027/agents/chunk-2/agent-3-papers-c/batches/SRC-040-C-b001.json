@@ -1,0 +1,1001 @@
+{
+  "source_id": "SRC-040",
+  "batch_id": "SRC-040-C-b001",
+  "source_questions": [
+    {
+      "source_question_id": "H-SRC040-Q07-a-i",
+      "source_id": "SRC-040",
+      "source_filename": "Computer_science_paper_2_SL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "C",
+      "question": "7",
+      "subquestion": "a-i",
+      "source_pdf_pages": [
+        15
+      ],
+      "source_printed_pages": [
+        "14"
+      ],
+      "original_marks": 1,
+      "command_term": "State",
+      "original_text": "(i) S tate the protocol in the company’s website URL. [1]",
+      "parent_context": "7. Hardware4Hotels is a company that provides services to hotels, such as carrying out\nelectrical repairs, decorating, and plumbing.\nThe URL for the company’s website is http://hardware4hotels.example.com\n(a) (i) S tate the protocol in the company’s website URL. [1]\n(ii) State the domain name in the company’s website URL. [1]\n(b) Outline the importance of protocols when browsing websites. [2]\n(c) Identify two components of a webpage. [2]\nThe website for Hardware4Hotels has been designed so it can receive feedback from its\ncustomers. After the work has been completed, the customer is asked to submit a score from\n1 to 5 for the service provided (see Figure 8).\nFigure 8: The Hardware4Hotels feedback webpage\nhttp://hardware4hotels.example.com\nHardware4Hotels\nH\nspecialist hotel maintenance contractors\nHome About Services Case studies Careers Contact\nPlease rate the following job:\nUser: 09876 (Peter Achison)\nWork category: interior decoration\nSubmit\n(d) Describe the role of the common gateway interface (CGI) on the Hardware4Hotels\nwebsite. [2]\n(Option C continues on the following page)\n– 15 – 8825 – 6408\n(Option C, question 7 continued)\nThe following is part of the code that is run on the server when a customer (the user)\nsubmits a rating.\n<?php\n$work_category = $_POST[\"work_category\"];\n$rating = $_POST[\"rating\"];\n$conn = mysqli_connect(\"localhost\", $username, $password, \"sales\");\n$sql = \"SELECT AVG(rating) as averageRating FROM ratings WHERE work_\ncategory = '$work_category'\";\n$result = mysqli_query($conn, $sql);\n$row = mysqli_fetch_assoc($result);\n$averageRating = $row[\"averageRating\"];\n$sql = \"INSERT INTO ratings (work_category, rating) VALUES ('$work_\ncategory', $rating)\";\nmysqli_query($conn, $sql);\nif ($rating >= $averageRating) {\necho \"Thank you for the good review.\";\n} else {\necho \"Sorry, we will try to do better next time.\";\n}\nmysqli_close($conn);\n?>\n(e) (i) Describe the processing that takes place when this code is executed. [4]\n(ii) Outline one advantage of executing this code on a server rather than in\nthe browser. [3]\n(Option C continues on the following page)\nTurn over\n– 16 – 8825 – 6408\n(Option C continued)\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-15.png",
+          "source_pdf_page": 15,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_render",
+          "description": "Shared full source question context, table,code or figure inspected.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-16.png",
+          "source_pdf_page": 16,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Describe the network protocols used for transport and application."
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-041",
+        "filename": "Computer_science_paper_2_SL_markscheme.pdf",
+        "pdf_pages": [
+          20
+        ],
+        "question_reference": "7(a-i)",
+        "marking_summary": "HTTP.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "A2.1.4",
+          "scope_evidence": "• Protocols: transmission control protocol (TCP), user datagram protocol (UDP), hypertext transfer protocol (HTTP), hypertext transfer protocol secure (HTTPS), dynamic host configuration protocol (DHCP)",
+          "rationale": "HTTP application protocol explicitly scoped.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "State protocol in URL.",
+      "context_synopsis": "Website URL http://hardware4hotels.example.com, feedback form and PHP server processing in PDF15–16; full source code preserved separately.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-015.txt"
+      ],
+      "context_pdf_pages": [
+        16
+      ],
+      "mark_allocation_pdf_page": 15,
+      "context_printed_pages": [
+        "15"
+      ],
+      "raw_context_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-016.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC040-Q07-a-ii",
+      "source_id": "SRC-040",
+      "source_filename": "Computer_science_paper_2_SL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "C",
+      "question": "7",
+      "subquestion": "a-ii",
+      "source_pdf_pages": [
+        15
+      ],
+      "source_printed_pages": [
+        "14"
+      ],
+      "original_marks": 1,
+      "command_term": "State",
+      "original_text": "(ii) State the domain name in the company’s website URL. [1]",
+      "parent_context": "7. Hardware4Hotels is a company that provides services to hotels, such as carrying out\nelectrical repairs, decorating, and plumbing.\nThe URL for the company’s website is http://hardware4hotels.example.com\n(a) (i) S tate the protocol in the company’s website URL. [1]\n(ii) State the domain name in the company’s website URL. [1]\n(b) Outline the importance of protocols when browsing websites. [2]\n(c) Identify two components of a webpage. [2]\nThe website for Hardware4Hotels has been designed so it can receive feedback from its\ncustomers. After the work has been completed, the customer is asked to submit a score from\n1 to 5 for the service provided (see Figure 8).\nFigure 8: The Hardware4Hotels feedback webpage\nhttp://hardware4hotels.example.com\nHardware4Hotels\nH\nspecialist hotel maintenance contractors\nHome About Services Case studies Careers Contact\nPlease rate the following job:\nUser: 09876 (Peter Achison)\nWork category: interior decoration\nSubmit\n(d) Describe the role of the common gateway interface (CGI) on the Hardware4Hotels\nwebsite. [2]\n(Option C continues on the following page)\n– 15 – 8825 – 6408\n(Option C, question 7 continued)\nThe following is part of the code that is run on the server when a customer (the user)\nsubmits a rating.\n<?php\n$work_category = $_POST[\"work_category\"];\n$rating = $_POST[\"rating\"];\n$conn = mysqli_connect(\"localhost\", $username, $password, \"sales\");\n$sql = \"SELECT AVG(rating) as averageRating FROM ratings WHERE work_\ncategory = '$work_category'\";\n$result = mysqli_query($conn, $sql);\n$row = mysqli_fetch_assoc($result);\n$averageRating = $row[\"averageRating\"];\n$sql = \"INSERT INTO ratings (work_category, rating) VALUES ('$work_\ncategory', $rating)\";\nmysqli_query($conn, $sql);\nif ($rating >= $averageRating) {\necho \"Thank you for the good review.\";\n} else {\necho \"Sorry, we will try to do better next time.\";\n}\nmysqli_close($conn);\n?>\n(e) (i) Describe the processing that takes place when this code is executed. [4]\n(ii) Outline one advantage of executing this code on a server rather than in\nthe browser. [3]\n(Option C continues on the following page)\nTurn over\n– 16 – 8825 – 6408\n(Option C continued)\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-15.png",
+          "source_pdf_page": 15,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_render",
+          "description": "Shared full source question context, table,code or figure inspected.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-16.png",
+          "source_pdf_page": 16,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Describe the function of servers. (HL only)"
+      ],
+      "difficulty": "low",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-041",
+        "filename": "Computer_science_paper_2_SL_markscheme.pdf",
+        "pdf_pages": [
+          20
+        ],
+        "question_reference": "7(a-ii)",
+        "marking_summary": "hardware4hotels.example.com; an inaccurate alternative also accepted in source MS.",
+        "source_issues": [
+          "Source MS also accepts hardware4hotels.com, which is not the hostname in the supplied URL; not imported."
+        ]
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "A2.2.2",
+          "scope_evidence": "• Types of servers: domain name server (DNS), dynamic host configuration protocol (DHCP), file server, mail server, proxy server, web server\n• Factors to consider must include function, scalability, reliability and security.",
+          "rationale": "Use the hostname as the name submitted to a DNS service, an explicit server role.",
+          "theme": "A",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [
+        "Source MS also accepts hardware4hotels.com, which is not the hostname in the supplied URL; not imported."
+      ],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "State domain name in URL.",
+      "context_synopsis": "Website URL http://hardware4hotels.example.com, feedback form and PHP server processing in PDF15–16; full source code preserved separately.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-015.txt"
+      ],
+      "context_pdf_pages": [
+        16
+      ],
+      "mark_allocation_pdf_page": 15,
+      "context_printed_pages": [
+        "15"
+      ],
+      "raw_context_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-016.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC040-Q07-b",
+      "source_id": "SRC-040",
+      "source_filename": "Computer_science_paper_2_SL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "C",
+      "question": "7",
+      "subquestion": "b",
+      "source_pdf_pages": [
+        15
+      ],
+      "source_printed_pages": [
+        "14"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "(b) Outline the importance of protocols when browsing websites. [2]",
+      "parent_context": "7. Hardware4Hotels is a company that provides services to hotels, such as carrying out\nelectrical repairs, decorating, and plumbing.\nThe URL for the company’s website is http://hardware4hotels.example.com\n(a) (i) S tate the protocol in the company’s website URL. [1]\n(ii) State the domain name in the company’s website URL. [1]\n(b) Outline the importance of protocols when browsing websites. [2]\n(c) Identify two components of a webpage. [2]\nThe website for Hardware4Hotels has been designed so it can receive feedback from its\ncustomers. After the work has been completed, the customer is asked to submit a score from\n1 to 5 for the service provided (see Figure 8).\nFigure 8: The Hardware4Hotels feedback webpage\nhttp://hardware4hotels.example.com\nHardware4Hotels\nH\nspecialist hotel maintenance contractors\nHome About Services Case studies Careers Contact\nPlease rate the following job:\nUser: 09876 (Peter Achison)\nWork category: interior decoration\nSubmit\n(d) Describe the role of the common gateway interface (CGI) on the Hardware4Hotels\nwebsite. [2]\n(Option C continues on the following page)\n– 15 – 8825 – 6408\n(Option C, question 7 continued)\nThe following is part of the code that is run on the server when a customer (the user)\nsubmits a rating.\n<?php\n$work_category = $_POST[\"work_category\"];\n$rating = $_POST[\"rating\"];\n$conn = mysqli_connect(\"localhost\", $username, $password, \"sales\");\n$sql = \"SELECT AVG(rating) as averageRating FROM ratings WHERE work_\ncategory = '$work_category'\";\n$result = mysqli_query($conn, $sql);\n$row = mysqli_fetch_assoc($result);\n$averageRating = $row[\"averageRating\"];\n$sql = \"INSERT INTO ratings (work_category, rating) VALUES ('$work_\ncategory', $rating)\";\nmysqli_query($conn, $sql);\nif ($rating >= $averageRating) {\necho \"Thank you for the good review.\";\n} else {\necho \"Sorry, we will try to do better next time.\";\n}\nmysqli_close($conn);\n?>\n(e) (i) Describe the processing that takes place when this code is executed. [4]\n(ii) Outline one advantage of executing this code on a server rather than in\nthe browser. [3]\n(Option C continues on the following page)\nTurn over\n– 16 – 8825 – 6408\n(Option C continued)\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-15.png",
+          "source_pdf_page": 15,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_render",
+          "description": "Shared full source question context, table,code or figure inspected.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-16.png",
+          "source_pdf_page": 16,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Describe the network protocols used for transport and application."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-041",
+        "filename": "Computer_science_paper_2_SL_markscheme.pdf",
+        "pdf_pages": [
+          20
+        ],
+        "question_reference": "7(b)",
+        "marking_summary": "Agreed communication rules enable compatible browser-server exchange.",
+        "source_issues": []
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "A2.1.4",
+          "scope_evidence": "• Protocols: transmission control protocol (TCP), user datagram protocol (UDP), hypertext transfer protocol (HTTP), hypertext transfer protocol secure (HTTPS), dynamic host configuration protocol (DHCP)",
+          "rationale": "Protocol purpose and HTTP explicitly scoped.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Outline importance of protocols for browsing.",
+      "context_synopsis": "Website URL http://hardware4hotels.example.com, feedback form and PHP server processing in PDF15–16; full source code preserved separately.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-015.txt"
+      ],
+      "context_pdf_pages": [
+        16
+      ],
+      "mark_allocation_pdf_page": 15,
+      "context_printed_pages": [
+        "15"
+      ],
+      "raw_context_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-016.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC040-Q07-c",
+      "source_id": "SRC-040",
+      "source_filename": "Computer_science_paper_2_SL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "C",
+      "question": "7",
+      "subquestion": "c",
+      "source_pdf_pages": [
+        15
+      ],
+      "source_printed_pages": [
+        "14"
+      ],
+      "original_marks": 2,
+      "command_term": "Identify",
+      "original_text": "(c) Identify two components of a webpage. [2]",
+      "parent_context": "7. Hardware4Hotels is a company that provides services to hotels, such as carrying out\nelectrical repairs, decorating, and plumbing.\nThe URL for the company’s website is http://hardware4hotels.example.com\n(a) (i) S tate the protocol in the company’s website URL. [1]\n(ii) State the domain name in the company’s website URL. [1]\n(b) Outline the importance of protocols when browsing websites. [2]\n(c) Identify two components of a webpage. [2]\nThe website for Hardware4Hotels has been designed so it can receive feedback from its\ncustomers. After the work has been completed, the customer is asked to submit a score from\n1 to 5 for the service provided (see Figure 8).\nFigure 8: The Hardware4Hotels feedback webpage\nhttp://hardware4hotels.example.com\nHardware4Hotels\nH\nspecialist hotel maintenance contractors\nHome About Services Case studies Careers Contact\nPlease rate the following job:\nUser: 09876 (Peter Achison)\nWork category: interior decoration\nSubmit\n(d) Describe the role of the common gateway interface (CGI) on the Hardware4Hotels\nwebsite. [2]\n(Option C continues on the following page)\n– 15 – 8825 – 6408\n(Option C, question 7 continued)\nThe following is part of the code that is run on the server when a customer (the user)\nsubmits a rating.\n<?php\n$work_category = $_POST[\"work_category\"];\n$rating = $_POST[\"rating\"];\n$conn = mysqli_connect(\"localhost\", $username, $password, \"sales\");\n$sql = \"SELECT AVG(rating) as averageRating FROM ratings WHERE work_\ncategory = '$work_category'\";\n$result = mysqli_query($conn, $sql);\n$row = mysqli_fetch_assoc($result);\n$averageRating = $row[\"averageRating\"];\n$sql = \"INSERT INTO ratings (work_category, rating) VALUES ('$work_\ncategory', $rating)\";\nmysqli_query($conn, $sql);\nif ($rating >= $averageRating) {\necho \"Thank you for the good review.\";\n} else {\necho \"Sorry, we will try to do better next time.\";\n}\nmysqli_close($conn);\n?>\n(e) (i) Describe the processing that takes place when this code is executed. [4]\n(ii) Outline one advantage of executing this code on a server rather than in\nthe browser. [3]\n(Option C continues on the following page)\nTurn over\n– 16 – 8825 – 6408\n(Option C continued)\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-15.png",
+          "source_pdf_page": 15,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_render",
+          "description": "Shared full source question context, table,code or figure inspected.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-16.png",
+          "source_pdf_page": 16,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Webpage component recall is not a 2027 learning statement."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-041",
+        "filename": "Computer_science_paper_2_SL_markscheme.pdf",
+        "pdf_pages": [
+          20
+        ],
+        "question_reference": "7(c)",
+        "marking_summary": "Text,images,links,video etc.",
+        "source_issues": []
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Webpage component recall is not a 2027 learning statement.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Identify two webpage components.",
+      "context_synopsis": "Website URL http://hardware4hotels.example.com, feedback form and PHP server processing in PDF15–16; full source code preserved separately.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-015.txt"
+      ],
+      "context_pdf_pages": [
+        16
+      ],
+      "mark_allocation_pdf_page": 15,
+      "context_printed_pages": [
+        "15"
+      ],
+      "raw_context_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-016.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC040-Q07-d",
+      "source_id": "SRC-040",
+      "source_filename": "Computer_science_paper_2_SL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "C",
+      "question": "7",
+      "subquestion": "d",
+      "source_pdf_pages": [
+        15
+      ],
+      "source_printed_pages": [
+        "14"
+      ],
+      "original_marks": 2,
+      "command_term": "Describe",
+      "original_text": "(d) Describe the role of the common gateway interface (CGI) on the Hardware4Hotels\nwebsite. [2]",
+      "parent_context": "7. Hardware4Hotels is a company that provides services to hotels, such as carrying out\nelectrical repairs, decorating, and plumbing.\nThe URL for the company’s website is http://hardware4hotels.example.com\n(a) (i) S tate the protocol in the company’s website URL. [1]\n(ii) State the domain name in the company’s website URL. [1]\n(b) Outline the importance of protocols when browsing websites. [2]\n(c) Identify two components of a webpage. [2]\nThe website for Hardware4Hotels has been designed so it can receive feedback from its\ncustomers. After the work has been completed, the customer is asked to submit a score from\n1 to 5 for the service provided (see Figure 8).\nFigure 8: The Hardware4Hotels feedback webpage\nhttp://hardware4hotels.example.com\nHardware4Hotels\nH\nspecialist hotel maintenance contractors\nHome About Services Case studies Careers Contact\nPlease rate the following job:\nUser: 09876 (Peter Achison)\nWork category: interior decoration\nSubmit\n(d) Describe the role of the common gateway interface (CGI) on the Hardware4Hotels\nwebsite. [2]\n(Option C continues on the following page)\n– 15 – 8825 – 6408\n(Option C, question 7 continued)\nThe following is part of the code that is run on the server when a customer (the user)\nsubmits a rating.\n<?php\n$work_category = $_POST[\"work_category\"];\n$rating = $_POST[\"rating\"];\n$conn = mysqli_connect(\"localhost\", $username, $password, \"sales\");\n$sql = \"SELECT AVG(rating) as averageRating FROM ratings WHERE work_\ncategory = '$work_category'\";\n$result = mysqli_query($conn, $sql);\n$row = mysqli_fetch_assoc($result);\n$averageRating = $row[\"averageRating\"];\n$sql = \"INSERT INTO ratings (work_category, rating) VALUES ('$work_\ncategory', $rating)\";\nmysqli_query($conn, $sql);\nif ($rating >= $averageRating) {\necho \"Thank you for the good review.\";\n} else {\necho \"Sorry, we will try to do better next time.\";\n}\nmysqli_close($conn);\n?>\n(e) (i) Describe the processing that takes place when this code is executed. [4]\n(ii) Outline one advantage of executing this code on a server rather than in\nthe browser. [3]\n(Option C continues on the following page)\nTurn over\n– 16 – 8825 – 6408\n(Option C continued)\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-15.png",
+          "source_pdf_page": 15,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_render",
+          "description": "Shared full source question context, table,code or figure inspected.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-16.png",
+          "source_pdf_page": 16,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "CGI implementation is not part of the 2027 network-server role objective."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-041",
+        "filename": "Computer_science_paper_2_SL_markscheme.pdf",
+        "pdf_pages": [
+          20
+        ],
+        "question_reference": "7(d)",
+        "marking_summary": "Interface passes form/request data to server program and returns generated response.",
+        "source_issues": []
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "CGI implementation is not part of the 2027 network-server role objective.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Describe CGI role.",
+      "context_synopsis": "Website URL http://hardware4hotels.example.com, feedback form and PHP server processing in PDF15–16; full source code preserved separately.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-015.txt"
+      ],
+      "context_pdf_pages": [
+        16
+      ],
+      "mark_allocation_pdf_page": 15,
+      "context_printed_pages": [
+        "15"
+      ],
+      "raw_context_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-016.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC040-Q07-e-i",
+      "source_id": "SRC-040",
+      "source_filename": "Computer_science_paper_2_SL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "C",
+      "question": "7",
+      "subquestion": "e-i",
+      "source_pdf_pages": [
+        16
+      ],
+      "source_printed_pages": [
+        "15"
+      ],
+      "original_marks": 4,
+      "command_term": "Describe",
+      "original_text": "(i) Describe the processing that takes place when this code is executed. [4]",
+      "parent_context": "7. Hardware4Hotels is a company that provides services to hotels, such as carrying out\nelectrical repairs, decorating, and plumbing.\nThe URL for the company’s website is http://hardware4hotels.example.com\n(a) (i) S tate the protocol in the company’s website URL. [1]\n(ii) State the domain name in the company’s website URL. [1]\n(b) Outline the importance of protocols when browsing websites. [2]\n(c) Identify two components of a webpage. [2]\nThe website for Hardware4Hotels has been designed so it can receive feedback from its\ncustomers. After the work has been completed, the customer is asked to submit a score from\n1 to 5 for the service provided (see Figure 8).\nFigure 8: The Hardware4Hotels feedback webpage\nhttp://hardware4hotels.example.com\nHardware4Hotels\nH\nspecialist hotel maintenance contractors\nHome About Services Case studies Careers Contact\nPlease rate the following job:\nUser: 09876 (Peter Achison)\nWork category: interior decoration\nSubmit\n(d) Describe the role of the common gateway interface (CGI) on the Hardware4Hotels\nwebsite. [2]\n(Option C continues on the following page)\n– 15 – 8825 – 6408\n(Option C, question 7 continued)\nThe following is part of the code that is run on the server when a customer (the user)\nsubmits a rating.\n<?php\n$work_category = $_POST[\"work_category\"];\n$rating = $_POST[\"rating\"];\n$conn = mysqli_connect(\"localhost\", $username, $password, \"sales\");\n$sql = \"SELECT AVG(rating) as averageRating FROM ratings WHERE work_\ncategory = '$work_category'\";\n$result = mysqli_query($conn, $sql);\n$row = mysqli_fetch_assoc($result);\n$averageRating = $row[\"averageRating\"];\n$sql = \"INSERT INTO ratings (work_category, rating) VALUES ('$work_\ncategory', $rating)\";\nmysqli_query($conn, $sql);\nif ($rating >= $averageRating) {\necho \"Thank you for the good review.\";\n} else {\necho \"Sorry, we will try to do better next time.\";\n}\nmysqli_close($conn);\n?>\n(e) (i) Describe the processing that takes place when this code is executed. [4]\n(ii) Outline one advantage of executing this code on a server rather than in\nthe browser. [3]\n(Option C continues on the following page)\nTurn over\n– 16 – 8825 – 6408\n(Option C continued)\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-16.png",
+          "source_pdf_page": 16,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_render",
+          "description": "Shared full source question context, table,code or figure inspected.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-15.png",
+          "source_pdf_page": 15,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Construct programs that implement the correct sequence of code instructions to meet program objectives.",
+        "Construct programs utilizing appropriate selection structures."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-041",
+        "filename": "Computer_science_paper_2_SL_markscheme.pdf",
+        "pdf_pages": [
+          21
+        ],
+        "question_reference": "7(e-i)",
+        "marking_summary": "Receive fields,read previous mean,insert new score,compare and output response,close connection.",
+        "source_issues": [
+          "Source PHP constructs SQL by interpolating submitted values and does not handle an empty previous result set; adaptation uses supplied nonempty Python list and does not reproduce unsafe SQL."
+        ]
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.3.1",
+          "scope_evidence": "• The impact of instruction order on program functionality\n• Ways to avoid errors, such as infinite loops, deadlock, incorrect output",
+          "rationale": "Convert server-language code to a self-contained Python trace preserving the significant pre-insertion average and branch sequence.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Convert server-language code to a self-contained Python trace preserving the significant pre-insertion average and branch sequence.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [
+        "Source PHP constructs SQL by interpolating submitted values and does not handle an empty previous result set; adaptation uses supplied nonempty Python list and does not reproduce unsafe SQL."
+      ],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Describe PHP feedback processing.",
+      "context_synopsis": "Website URL http://hardware4hotels.example.com, feedback form and PHP server processing in PDF15–16; full source code preserved separately.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-016.txt"
+      ],
+      "context_pdf_pages": [
+        15
+      ],
+      "mark_allocation_pdf_page": 16,
+      "context_printed_pages": [
+        "14"
+      ],
+      "raw_context_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-015.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC040-Q07-e-ii",
+      "source_id": "SRC-040",
+      "source_filename": "Computer_science_paper_2_SL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "C",
+      "question": "7",
+      "subquestion": "e-ii",
+      "source_pdf_pages": [
+        16
+      ],
+      "source_printed_pages": [
+        "15"
+      ],
+      "original_marks": 3,
+      "command_term": "Outline",
+      "original_text": "(ii) Outline one advantage of executing this code on a server rather than in\nthe browser. [3]",
+      "parent_context": "7. Hardware4Hotels is a company that provides services to hotels, such as carrying out\nelectrical repairs, decorating, and plumbing.\nThe URL for the company’s website is http://hardware4hotels.example.com\n(a) (i) S tate the protocol in the company’s website URL. [1]\n(ii) State the domain name in the company’s website URL. [1]\n(b) Outline the importance of protocols when browsing websites. [2]\n(c) Identify two components of a webpage. [2]\nThe website for Hardware4Hotels has been designed so it can receive feedback from its\ncustomers. After the work has been completed, the customer is asked to submit a score from\n1 to 5 for the service provided (see Figure 8).\nFigure 8: The Hardware4Hotels feedback webpage\nhttp://hardware4hotels.example.com\nHardware4Hotels\nH\nspecialist hotel maintenance contractors\nHome About Services Case studies Careers Contact\nPlease rate the following job:\nUser: 09876 (Peter Achison)\nWork category: interior decoration\nSubmit\n(d) Describe the role of the common gateway interface (CGI) on the Hardware4Hotels\nwebsite. [2]\n(Option C continues on the following page)\n– 15 – 8825 – 6408\n(Option C, question 7 continued)\nThe following is part of the code that is run on the server when a customer (the user)\nsubmits a rating.\n<?php\n$work_category = $_POST[\"work_category\"];\n$rating = $_POST[\"rating\"];\n$conn = mysqli_connect(\"localhost\", $username, $password, \"sales\");\n$sql = \"SELECT AVG(rating) as averageRating FROM ratings WHERE work_\ncategory = '$work_category'\";\n$result = mysqli_query($conn, $sql);\n$row = mysqli_fetch_assoc($result);\n$averageRating = $row[\"averageRating\"];\n$sql = \"INSERT INTO ratings (work_category, rating) VALUES ('$work_\ncategory', $rating)\";\nmysqli_query($conn, $sql);\nif ($rating >= $averageRating) {\necho \"Thank you for the good review.\";\n} else {\necho \"Sorry, we will try to do better next time.\";\n}\nmysqli_close($conn);\n?>\n(e) (i) Describe the processing that takes place when this code is executed. [4]\n(ii) Outline one advantage of executing this code on a server rather than in\nthe browser. [3]\n(Option C continues on the following page)\nTurn over\n– 16 – 8825 – 6408\n(Option C continued)\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-16.png",
+          "source_pdf_page": 16,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_render",
+          "description": "Shared full source question context, table,code or figure inspected.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-15.png",
+          "source_pdf_page": 15,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Describe the function of servers. (HL only)",
+        "Compare and contrast networking models."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-041",
+        "filename": "Computer_science_paper_2_SL_markscheme.pdf",
+        "pdf_pages": [
+          21
+        ],
+        "question_reference": "7(e-ii)",
+        "marking_summary": "Keep database connection/credentials server-side and centralize access.",
+        "source_issues": []
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "A2.2.2",
+          "scope_evidence": "• Types of servers: domain name server (DNS), dynamic host configuration protocol (DHCP), file server, mail server, proxy server, web server\n• Factors to consider must include function, scalability, reliability and security.",
+          "rationale": "Retain client/server roles and protected central data access without claiming server code is automatically secure.",
+          "theme": "A",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "A2.2.3",
+          "scope_evidence": "• Client-server and peer-to-peer models\n• The respective benefits and drawbacks of client-server and peer-to-peer models\n• Real-world applications may include web browsing, email services, online banking, file sharing, VoIP services, blockchain.",
+          "rationale": "Retain client/server roles and protected central data access without claiming server code is automatically secure.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Outline advantage of server execution over browser.",
+      "context_synopsis": "Website URL http://hardware4hotels.example.com, feedback form and PHP server processing in PDF15–16; full source code preserved separately.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-016.txt"
+      ],
+      "context_pdf_pages": [
+        15
+      ],
+      "mark_allocation_pdf_page": 16,
+      "context_printed_pages": [
+        "14"
+      ],
+      "raw_context_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-015.txt"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC040-Q08-a",
+      "source_id": "SRC-040",
+      "source_filename": "Computer_science_paper_2_SL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "C",
+      "question": "8",
+      "subquestion": "a",
+      "source_pdf_pages": [
+        17
+      ],
+      "source_printed_pages": [
+        "16"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "(a) Outline why Figure 9 shows that there are 248 000 results when there are actually\nfewer web pages about One2Seven Academy. [2]",
+      "parent_context": "8. MYP students at One2Seven Academy used a search engine to find information about\ntheir school.\nFigure 9 shows the outcome of their search.\nFigure 9: Number of results from a search for One2Seven Academy\none2seven academy\nAll Images Video News\nAbout 248000 results (0.39 seconds)\n(a) Outline why Figure 9 shows that there are 248 000 results when there are actually\nfewer web pages about One2Seven Academy. [2]\n(b) Describe one principle used by the PageRank algorithm as it searches for web pages\nabout One2Seven Academy. [3]\nThe webmaster at One2Seven Academy is considering increasing the number of meta tags\nincluded in the website.\n(c) Identify two other ways in which the webmaster could improve the ranking of the\nOne2Seven Academy website. [2]\n(d) Explain the relationship between the data in a meta tag and how it is accessed by a\nweb crawler. [3]\n(e) Discuss whether the webmaster of One2Seven Academy should use white hat search\nengine optimization techniques or black hat search engine optimization techniques. [5]\n(f) Identify two challenges that search engines face as the web continues to evolve. [2]\n(Option C continues on the following page)\n– 17 – 8825 – 6408\n(Option C continued)\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-17.png",
+          "source_pdf_page": 17,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Search-result estimation is outside explicit 2027 requirements."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-041",
+        "filename": "Computer_science_paper_2_SL_markscheme.pdf",
+        "pdf_pages": [
+          22
+        ],
+        "question_reference": "8(a)",
+        "marking_summary": "Estimates,duplicate/related pages,indexing.",
+        "source_issues": []
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Search-result estimation is outside explicit 2027 requirements.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Outline inflated result estimates.",
+      "context_synopsis": "Search-engine results,PageRank,SEO,meta tags,crawlers and evolving-web challenges in PDF17.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-017.txt"
+      ],
+      "context_pdf_pages": [],
+      "mark_allocation_pdf_page": 17,
+      "context_printed_pages": [],
+      "raw_context_page_transcriptions": []
+    },
+    {
+      "source_question_id": "H-SRC040-Q08-b",
+      "source_id": "SRC-040",
+      "source_filename": "Computer_science_paper_2_SL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "C",
+      "question": "8",
+      "subquestion": "b",
+      "source_pdf_pages": [
+        17
+      ],
+      "source_printed_pages": [
+        "16"
+      ],
+      "original_marks": 3,
+      "command_term": "Describe",
+      "original_text": "(b) Describe one principle used by the PageRank algorithm as it searches for web pages\nabout One2Seven Academy. [3]",
+      "parent_context": "8. MYP students at One2Seven Academy used a search engine to find information about\ntheir school.\nFigure 9 shows the outcome of their search.\nFigure 9: Number of results from a search for One2Seven Academy\none2seven academy\nAll Images Video News\nAbout 248000 results (0.39 seconds)\n(a) Outline why Figure 9 shows that there are 248 000 results when there are actually\nfewer web pages about One2Seven Academy. [2]\n(b) Describe one principle used by the PageRank algorithm as it searches for web pages\nabout One2Seven Academy. [3]\nThe webmaster at One2Seven Academy is considering increasing the number of meta tags\nincluded in the website.\n(c) Identify two other ways in which the webmaster could improve the ranking of the\nOne2Seven Academy website. [2]\n(d) Explain the relationship between the data in a meta tag and how it is accessed by a\nweb crawler. [3]\n(e) Discuss whether the webmaster of One2Seven Academy should use white hat search\nengine optimization techniques or black hat search engine optimization techniques. [5]\n(f) Identify two challenges that search engines face as the web continues to evolve. [2]\n(Option C continues on the following page)\n– 17 – 8825 – 6408\n(Option C continued)\n",
+      "assets": [
+        {
+          "kind": "source_page_render",
+          "description": "Full source page inspected; includes all question context, source code/figures where present.",
+          "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-040/renders/page-17.png",
+          "source_pdf_page": 17,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "PageRank/link-graph ranking is not a required 2027 algorithm."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-041",
+        "filename": "Computer_science_paper_2_SL_markscheme.pdf",
+        "pdf_pages": [
+          22
+        ],
+        "question_reference": "8(b)",
+        "marking_summary": "Link importance/authority weighting.",
+        "source_issues": []
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "PageRank/link-graph ranking is not a required 2027 algorithm.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "transcribed from original PDF and compared with rendered page",
+        "source_marks": "checked against printed allocation and official MS",
+        "visual_review": "full question page inspected",
+        "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+      },
+      "original_text_synopsis": "Describe PageRank principle.",
+      "context_synopsis": "Search-engine results,PageRank,SEO,meta tags,crawlers and evolving-web challenges in PDF17.",
+      "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+      "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+      "raw_source_page_transcriptions": [
+        "agents/chunk-2/agent-3-papers-c/papers/SRC-040/transcription/pdf-page-017.txt"
+      ],
+      "context_pdf_pages": [],
+      "mark_allocation_pdf_page": 17,
+      "context_printed_pages": [],
+      "raw_context_page_transcriptions": []
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC040-Q07-a-i",
+      "source_question_ids": [
+        "H-SRC040-Q07-a-i"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "State the application protocol used by the address http://repairs.example.net.",
+      "syllabus_codes": [
+        "A2.1.4"
+      ],
+      "theme": "A",
+      "level": "SL/HL common",
+      "marks": 1,
+      "command_term": "State",
+      "difficulty": "low",
+      "adaptation_rationale": "HTTP application protocol explicitly scoped. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "HTTP.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "HTTP."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 1,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC040-Q07-a-ii",
+      "source_question_ids": [
+        "H-SRC040-Q07-a-ii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "A browser needs an IP address for the host in http://repairs.example.net/jobs. State the hostname it asks a DNS server to resolve.",
+      "syllabus_codes": [
+        "A2.2.2"
+      ],
+      "theme": "A",
+      "level": "HL-only",
+      "marks": 1,
+      "command_term": "State",
+      "difficulty": "low",
+      "adaptation_rationale": "Use the hostname as the name submitted to a DNS service, an explicit server role. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "repairs.example.net.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "repairs.example.net, without protocol/path."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 1,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC040-Q07-b",
+      "source_question_ids": [
+        "H-SRC040-Q07-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline why a browser and web server must both follow HTTP rules when exchanging a web page.",
+      "syllabus_codes": [
+        "A2.1.4"
+      ],
+      "theme": "A",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Protocol purpose and HTTP explicitly scoped. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "Agreed request/response formats and meanings allow the server to interpret the request and the browser to interpret the response; different implementations can interoperate.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Agreed formats/rules for request and response."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains compatible interpretation/interoperability between browser and server."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 2,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    },
+    {
+      "question_id": "P-SRC040-Q07-e-i",
+      "source_question_ids": [
+        "H-SRC040-Q07-e-i"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Describe the effect of feedback(scores,3) for scores=[2,4,5], including the mean used, final list and return value.\n\ndef feedback(previous, rating):\n    old_mean = sum(previous) / len(previous)\n    previous.append(rating)\n    if rating >= old_mean:\n        return \"Thanks\"\n    return \"Review needed\"",
+      "syllabus_codes": [
+        "B2.3.1",
+        "B2.3.2"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 4,
+      "command_term": "Describe",
+      "difficulty": "medium",
+      "adaptation_rationale": "Convert server-language code to a self-contained Python trace preserving the significant pre-insertion average and branch sequence. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "The old mean is 11/3. The function appends 3, giving [2,4,5,3]. Since 3<11/3 it returns \"Review needed\". The comparison uses the pre-append mean, not the mean of four scores.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Computes old mean 11/3."
+        },
+        {
+          "marks": 1,
+          "criterion": "Appends rating to give [2,4,5,3]."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct comparison of 3 against old mean."
+        },
+        {
+          "marks": 1,
+          "criterion": "Returns Review needed and recognizes mean was calculated before insertion."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 4,
+        "code_execution": "Specific executable boundary and behaviour tests passed; see agents/chunk-2/agent-3-papers-c/technical_checks.json and verify_practice.py."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": [],
+      "code": "def feedback(previous, rating):\n    old_mean = sum(previous) / len(previous)\n    previous.append(rating)\n    if rating >= old_mean:\n        return \"Thanks\"\n    return \"Review needed\""
+    },
+    {
+      "question_id": "P-SRC040-Q07-e-ii",
+      "source_question_ids": [
+        "H-SRC040-Q07-e-ii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline a security advantage of letting a web server access a central ratings database rather than sending database credentials to every browser. Explain the roles of browser and server.",
+      "syllabus_codes": [
+        "A2.2.2",
+        "A2.2.3"
+      ],
+      "theme": "A",
+      "level": "mixed common/HL",
+      "marks": 3,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Retain client/server roles and protected central data access without claiming server code is automatically secure. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "The browser sends a limited request to the server; server-side code uses credentials retained on the server to perform permitted database operations. Users do not receive unrestricted database credentials, reducing credential exposure, although authentication and safe query handling are still needed.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Browser requests service rather than receiving database credentials."
+        },
+        {
+          "marks": 1,
+          "criterion": "Server performs permitted central database operations with credentials held server-side."
+        },
+        {
+          "marks": 1,
+          "criterion": "Links this division to reduced exposure/unauthorized direct database access; no absolute security claim."
+        }
+      ],
+      "acceptable_alternatives": [
+        "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+      ],
+      "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+        "mark_sum": 3,
+        "code_execution": "No executable code required; explicit answer/trace checked manually."
+      },
+      "markscheme_status": "preliminary_unofficial_verified_by_author",
+      "assets": []
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "question_id": "P-SRC044-Q10-c",
+  "unofficial": true,
+  "marks": 3,
+  "solution": "maker = Producer(\"Sana Ali\", \"Kenya\")",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Assigns created object to maker."
+    },
+    {
+      "marks": 1,
+      "criterion": "Calls Producer with valid Python syntax."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct name and region arguments in order."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Object instantiated and initialized state asserted.",
+    "source_comparison": [
+      22
+    ],
+    "test_code": "class Producer:\n    def __init__(self, name, region):\n        self.name = name\n        self.region = region\n        self.products = []\nmaker=Producer(\"Sana Ali\",\"Kenya\")\nassert (maker.name,maker.region,maker.products)==(\"Sana Ali\",\"Kenya\",[])",
+    "result_file": ""
+  },
+  "code": "class Producer:\n    def __init__(self, name, region):\n        self.name = name\n        self.region = region\n        self.products = []\nmaker = Producer(\"Sana Ali\", \"Kenya\")",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

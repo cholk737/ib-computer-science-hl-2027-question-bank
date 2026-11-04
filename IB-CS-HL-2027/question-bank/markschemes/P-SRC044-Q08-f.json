@@ -1,0 +1,38 @@
+{
+  "question_id": "P-SRC044-Q08-f",
+  "unofficial": true,
+  "marks": 4,
+  "solution": "Normalize the extension to lowercase and test permitted types. Add type error for disallowed types. Test size and add a size error if over1000000. Return accepted only when no errors exist; otherwise return the accumulated errors, so both errors appear when both checks fail.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Case-normalized permitted-extension check."
+    },
+    {
+      "marks": 1,
+      "criterion": "Size threshold check."
+    },
+    {
+      "marks": 1,
+      "criterion": "Independent tests accumulate both errors."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct accepted-versus-error-list return behaviour."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed exact boundary,uppercase extension and dual-error cases.",
+    "source_comparison": [
+      18
+    ],
+    "test_code": "def check_upload(extension, size):\n    errors = []\n    if extension.lower() not in [\"txt\", \"csv\"]:\n        errors.append(\"type\")\n    if size > 1000000:\n        errors.append(\"size\")\n    if errors == []:\n        return \"accepted\"\n    return errors\nassert check_upload(\"CSV\",1000000)==\"accepted\"\nassert check_upload(\"exe\",1000001)==[\"type\",\"size\"]\nassert check_upload(\"txt\",1000001)==[\"size\"]",
+    "result_file": ""
+  },
+  "code": "def check_upload(extension, size):\n    errors = []\n    if extension.lower() not in [\"txt\", \"csv\"]:\n        errors.append(\"type\")\n    if size > 1000000:\n        errors.append(\"size\")\n    if errors == []:\n        return \"accepted\"\n    return errors",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

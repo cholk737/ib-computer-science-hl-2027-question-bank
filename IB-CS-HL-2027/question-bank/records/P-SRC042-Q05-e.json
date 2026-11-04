@@ -1,0 +1,59 @@
+{
+  "question_id": "P-SRC042-Q05-e",
+  "source_question_ids": [
+    "H-SRC042-Q05-e"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Describe, without code, how a program could store six timed pressure readings in two parallel lists so that each reading’s time can be recovered.",
+  "syllabus_codes": [
+    "B2.2.2",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 5,
+  "command_term": "Describe",
+  "difficulty": "high",
+  "adaptation_rationale": "Original application rewritten to be self-contained; assessed reasoning retained within cited 2027 scope.",
+  "solution": "Create a list of times and a list of pressure values.; Use the same index to represent one observation in both lists.; Repeat input for all six observations.; Store each entered time and pressure at the matching positions.; When retrieving a pressure value, use its index to retrieve the associated time.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Create a list of times and a list of pressure values."
+    },
+    {
+      "marks": 1,
+      "criterion": "Use the same index to represent one observation in both lists."
+    },
+    {
+      "marks": 1,
+      "criterion": "Repeat input for all six observations."
+    },
+    {
+      "marks": 1,
+      "criterion": "Store each entered time and pressure at the matching positions."
+    },
+    {
+      "marks": 1,
+      "criterion": "When retrieving a pressure value, use its index to retrieve the associated time."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "No executable code required; manual technical check."
+  },
+  "code": "",
+  "test_code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC042-Q05-e.json",
+  "question_path": "question-bank/questions/P-SRC042-Q05-e.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC042-Q05-e.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

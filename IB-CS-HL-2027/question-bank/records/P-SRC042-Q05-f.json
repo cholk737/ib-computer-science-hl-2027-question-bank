@@ -1,0 +1,72 @@
+{
+  "question_id": "P-SRC042-Q05-f",
+  "source_question_ids": [
+    "H-SRC042-Q05-f"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct day_summary(hours, temperatures) in Python. Both parallel lists contain 24 observations, one per hour 0..23. Define night as 20:00 through 05:59 inclusive. Return(maximum, minimum, overall mean, night mean). Use explicit comparisons and accumulation, not min, max or sum.",
+  "syllabus_codes": [
+    "B2.2.2",
+    "B2.3.2",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 8,
+  "command_term": "Construct",
+  "difficulty": "high",
+  "adaptation_rationale": "Retains multi statistic parallel-list traversal; repairs source cross-midnight condition with OR, counts night observations, and uses safe extrema initialization.",
+  "solution": "def day_summary(hours,temperatures):\n    low=high=temperatures[0]\n    total=night_total=0\n    night_count=0\n    for i in range(len(hours)):\n        value=temperatures[i]\n        total+=value\n        if value<low:\n            low=value\n        if value>high:\n            high=value\n        if hours[i]>=20 or hours[i]<6:\n            night_total+=value\n            night_count+=1\n    return high,low,total/len(temperatures),night_total/night_count",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes extrema from an actual temperature."
+    },
+    {
+      "marks": 1,
+      "criterion": "Initializes total, night total and night count."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses every matched hour/temperature exactly once."
+    },
+    {
+      "marks": 1,
+      "criterion": "Updates minimum correctly."
+    },
+    {
+      "marks": 1,
+      "criterion": "Updates maximum independently."
+    },
+    {
+      "marks": 1,
+      "criterion": "Identifies night using hour>=20 OR hour<6."
+    },
+    {
+      "marks": 1,
+      "criterion": "Accumulates the night values and counts exactly those observations."
+    },
+    {
+      "marks": 1,
+      "criterion": "Calculates both means with true division and returns all four results after traversal."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "Executable checks saved under checks/ where applicable."
+  },
+  "code": "def day_summary(hours,temperatures):\n    low=high=temperatures[0]\n    total=night_total=0\n    night_count=0\n    for i in range(len(hours)):\n        value=temperatures[i]\n        total+=value\n        if value<low:\n            low=value\n        if value>high:\n            high=value\n        if hours[i]>=20 or hours[i]<6:\n            night_total+=value\n            night_count+=1\n    return high,low,total/len(temperatures),night_total/night_count",
+  "test_code": "assert day_summary(list(range(24)),list(range(24)))==(23,0,11.5,10.1)\nassert day_summary(list(range(24)),[-4]*24)==(-4,-4,-4,-4)",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC042-Q05-f.json",
+  "question_path": "question-bank/questions/P-SRC042-Q05-f.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC042-Q05-f.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

@@ -103,8 +103,57 @@ for path in sorted((O/'batches').glob('*.json')):
     removed=ns['remove_target'](stack,target,Stack)
     assert removed is next(x for x in items if x.identifier==target)
     assert [x.identifier for x in stack.data]==[x.identifier for x in items if x.identifier!=target]
+  if 'outcomes' in ns:
+   assert ns['outcomes'](list(range(10)))==[True]*10
+   assert ns['outcomes'](list(range(1,10))+[0])==[False]*10
+   assert ns['outcomes']([9,8,2,1,7,6,4,3,5,0])==[True,False,True,False,False,False,False,False,False,True]
+   # Independent oracle: a child succeeds iff its permutation-cycle length <=5.
+   for perm in itertools.permutations(range(6)):
+    box=list(perm)+list(range(6,10));expected=[]
+    for child in range(10):
+     index=box[child];length=1
+     while index!=child:index=box[index];length+=1
+     expected.append(length<=5)
+    assert ns['outcomes'](box)==expected
+  if 'win_percentage' in ns:
+   assert ns['win_percentage'](lambda:list(range(10)),10)==100
+   assert ns['win_percentage'](lambda:list(range(1,10))+[0],10)==0
+   calls=[]
+   def alternating():
+    calls.append(1)
+    return list(range(10)) if len(calls)%2 else list(range(1,10))+[0]
+   assert ns['win_percentage'](alternating,100)==50 and len(calls)==100
+  if 'classify_distance' in ns:
+   assert [ns['classify_distance'](x) for x in [0,.999,1,1.001]]==['In','In','Out','Out']
+  if 'estimate_ratio' in ns:
+   for labels in [['In'],['Out'],['In','Out'],['In']*3+['Out']]:
+    assert ns['estimate_ratio'](labels)==4*labels.count('In')/len(labels)
+  if 'feedback' in ns:
+   for rating,expected in [(3,'Review needed'),(4,'Thanks'),(5,'Thanks')]:
+    scores=[2,4,6];assert ns['feedback'](scores,rating)==expected and scores==[2,4,6,rating]
+   scores=[2,4,5];assert ns['feedback'](scores,3)=='Review needed' and scores==[2,4,5,3]
+  if 'change_status' in ns:
+   for decision,expected in [('F','won'),('A','lost'),('N','open')]:
+    obj=SimpleNamespace(status='open');ns['change_status'](obj,decision);assert obj.status==expected
+  if 'selected_names' in ns:
+   data=[SimpleNamespace(role=r,name=n,completed=c) for r,n,c in [('civil','A',30),('company','B',40),('civil','C',31),('civil','D',80)]]
+   assert ns['selected_names']([])==[] and ns['selected_names'](data)==['C','D']
+  if 'count_delayed' in ns:
+   projects=[None]+[SimpleNamespace(days=d,decision=r) for d,r in [(45,'N'),(46,'N'),(80,'F'),(90,'A'),(99,'N')]]
+   staff=[SimpleNamespace(identifier='X',projects=[]),SimpleNamespace(identifier='Y',projects=projects)]
+   assert [ns['count_delayed'](staff,k) for k in ['X','Y','Z']]==[0,2,0]
+  if 'count_roles' in ns:
+   for roles in [[],['civil'],['company'],['civil','company','other','civil']]:
+    staff=[SimpleNamespace(role=r) for r in roles]
+    assert ns['count_roles'](staff)==(roles.count('civil'),roles.count('company'))
+   bad=next(v['question_text'].split('\n\n',1)[1] for v in b['practice_questions'] if v['question_id']==p['question_id'])
+   try:exec(bad,{'staff':[]});assert False,'Expected undefined count_b error'
+   except NameError:pass
+  if 'collect_clients' in ns:
+   project=lambda d,c:SimpleNamespace(decision=d,client=c)
+   staff=[SimpleNamespace(role='civil',projects=[project('A','skip')]),SimpleNamespace(role='company',projects=[None,project('A','one'),project('F','skip'),project('N','skip'),project('A','one')]),SimpleNamespace(role='company',projects=[project('A','two')])]
+   assert ns['collect_clients']([])==[] and ns['collect_clients'](staff)==['one','one','two']
   results.append({'question_id':p['question_id'],'code_compiles':True,'specific_edge_tests':'passed'})
-(O/'technical_checks.json').write_text(json.dumps(results,indent=2))
 print('Code and marking checks passed:',len(results))
 
 # SQL is stored as a query answer rather than as Python code.
@@ -114,4 +163,17 @@ for f in (O/'batches').glob('SRC-033-*.json'):
    db=sqlite3.connect(':memory:');db.executescript("CREATE TABLE Product(ProductID,SupplierID,ProductName,Description);CREATE TABLE Stock(ProductID,Quantity);INSERT INTO Product VALUES(1,'S','A','fruity'),(2,'T','B','fruity'),(3,'U','C','fruity'),(4,'V','D','fruity'),(5,'W','E','dry');INSERT INTO Stock VALUES(1,25),(2,35),(3,24),(4,36),(5,30);")
    assert db.execute(p['solution']).fetchall()==[('S','A'),('T','B')]
    db.close()
+   results.append({'question_id':p['question_id'],'language':'SQL','specific_edge_tests':'SQLite two-table join, inclusive boundaries25/35 and excluded24/36; passed'})
+for f in (O/'batches').glob('SRC-040-*.json'):
+ for p in json.loads(f.read_text())['practice_questions']:
+  if p['question_id']=='P-SRC040-Q02-c':
+   db=sqlite3.connect(':memory:');db.executescript('CREATE TABLE Technician(TechnicianID,Name);CREATE TABLE Observation(DeviceID,TechnicianID,Kind);INSERT INTO Technician VALUES(7,"Ari"),(8,"Bo");INSERT INTO Observation VALUES(10,7,"voltage"),(11,7,"temperature"),(12,8,"voltage"),(13,7,"voltage");')
+   sql=p['question_text'].split('\n\n',1)[1];assert set(db.execute(sql).fetchall())=={(10,),(13,)};db.close()
+   results.append({'question_id':p['question_id'],'language':'SQL','specific_edge_tests':'Exact joined query output set10,13; passed'})
+  if p['question_id']=='P-SRC040-Q02-d':
+   db=sqlite3.connect(':memory:');db.executescript('CREATE TABLE Technician(TechnicianID,Name);CREATE TABLE Observation(DeviceID,TechnicianID,RecordedAt);INSERT INTO Technician VALUES(1,"Ari Singh"),(2,"Bo");')
+   db.executemany('INSERT INTO Observation VALUES(?,?,?)',[(10,1,'2026-05-11 23:59:59'),(11,1,'2026-05-12 00:00:00'),(12,1,'2026-05-12 12:30:00'),(13,1,'2026-05-12 23:59:59'),(14,1,'2026-05-13 00:00:00'),(15,2,'2026-05-12 12:00:00')])
+   assert set(db.execute(p['solution']).fetchall())=={(11,),(12,),(13,)};db.close()
+   results.append({'question_id':p['question_id'],'language':'SQL','specific_edge_tests':'Full-day inclusive midnight/exclusive next day,adjacent days and other technician; passed'})
+(O/'technical_checks.json').write_text(json.dumps(results,indent=2)+'\n')
 print('SQL boundary/join query check passed')

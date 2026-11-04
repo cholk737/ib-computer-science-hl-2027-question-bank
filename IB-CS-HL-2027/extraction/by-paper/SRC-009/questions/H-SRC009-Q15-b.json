@@ -49,7 +49,9 @@
       17
     ],
     "question_reference": "Q15 b",
-    "marking_summary": "One solution:\ndef show_absent(counts):\n    found = False\n    for value in range(10):\n        if counts[value] == 0:\n            print(value)\n            found = True\n    if not found:\n        print(\"All present\")",
+    "marking_summary": "Exact original MS leaf excerpt: Award [5 max] Award [1] for using a flag Award [1] for a correct loop (for, while, loop until) Award [1] for the correct condition in if statement and changing the flag (if needed) Award [1] for outputting all numbers that do not appear in MAT Award [1] for checking the flag (if statement) after the loop Award [1] for outputting an appropriate message F=0 loop K from 0 to 9 //accept 9 or COUNT.length-1 if COUNT[K]=0 then F = 1 output(K) end if end loop if F = 0 then output (‘all the numbers from 0 to 9 are present ‘) end if",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [5 max]\nAward [1] for using a flag\nAward [1] for a correct loop (for, while, loop until)\nAward [1] for the correct condition in if statement and changing the flag (if needed)\nAward [1] for outputting all numbers that do not appear in MAT\nAward [1] for checking the flag (if statement) after the loop\nAward [1] for outputting an appropriate message\nF=0 \nloop K from 0 to 9 //accept 9 or COUNT.length-1 \nif COUNT[K]=0 \nthen \nF = 1 \noutput(K) \nend if \nend loop \nif F = 0 \nthen output (‘all the numbers from 0 to 9 are present ‘) \nend if",
     "source_issues": [],
     "source_marking_evidence": "– 17 – 8824 – 6904M \n(b) Award [5 max]\nAward [1] for using a flag\nAward [1] for a correct loop (for, while, loop until)\nAward [1] for the correct condition in if statement and changing the flag (if needed)\nAward [1] for outputting all numbers that do not appear in MAT\nAward [1] for checking the flag (if statement) after the loop\nAward [1] for outputting an appropriate message\nF=0 \nloop K from 0 to 9 //accept 9 or COUNT.length-1 \nif COUNT[K]=0 \nthen \nF = 1 \noutput(K) \nend if \nend loop \nif F = 0 \nthen output (‘all the numbers from 0 to 9 are present ‘) \nend if \n(c) Award [6 max]\nExample 1: \nAward [1] for initializing HV \nAward [1] for a correct loop \nAward [1] for comparing COUNT[K] with HV \nAward [1] for changing the value of HV (if needed) \nAward [1] for the second loop (loop after the first one) \nAward [1] for checking if HV is equal to COUNT[K] \nAward [1] for outputting values that occur most frequently \n//searches for the highest value in the COUNT array \nHV=0    // or HV = COUNT[0] \nloop K from 0 to 9 \n    if COUNT[K] > HV \nthen HV = COUNT[K] \nend if   \nend loop \n//outputs the mode(s) \nloop K from 0 to 9 \n    if COUNT[K] = HV \nthen output(K) \n    end if \nend loop "
   },
@@ -58,7 +60,7 @@
     {
       "syllabus_code": "B2.2.2",
       "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
-      "rationale": "Construct show_absent(counts) in Python assesses Construct programs that apply arrays and Lists.",
+      "rationale": "Adapted target only: Construct show_absent(counts) in Python; guidance target: Construct programs that apply arrays and Lists. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
       "theme": "B",
       "level": "SL/HL common",
       "confidence": "high",
@@ -67,7 +69,7 @@
     {
       "syllabus_code": "B2.3.2",
       "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
-      "rationale": "Construct show_absent(counts) in Python assesses Construct programs utilizing appropriate selection structures.",
+      "rationale": "Adapted target only: Construct show_absent(counts) in Python; guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
       "theme": "B",
       "level": "SL/HL common",
       "confidence": "high",
@@ -76,7 +78,7 @@
     {
       "syllabus_code": "B2.3.3",
       "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
-      "rationale": "Construct show_absent(counts) in Python assesses Construct programs that utilize looping structures to perform repeated actions.",
+      "rationale": "Adapted target only: Construct show_absent(counts) in Python; guidance target: Construct programs that utilize looping structures to perform repeated actions. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
       "theme": "B",
       "level": "SL/HL common",
       "confidence": "high",
@@ -88,11 +90,12 @@
   "verification": {
     "source_text": "Read complete source page and matched leaf/mark to original PDF.",
     "markscheme": "Read cited MS page(s).",
-    "visual": "No visual required by this leaf.",
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
     "technical": "Output checked for counts with only8 absent and all present."
   },
-  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "adaptation_reuse_question_id": "",
   "practice_question_ids": [
     "P-SRC009-Q15-b"
-  ]
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
 }

@@ -1,0 +1,90 @@
+{
+  "source_question_id": "H-SRC038-Q14-d-ii",
+  "source_id": "SRC-038",
+  "source_filename": "Computer_science_paper_2_HL.pdf",
+  "year": "2025",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "not stated",
+  "option": "D",
+  "question": 14,
+  "subquestion": "d-ii",
+  "source_pdf_pages": [
+    25
+  ],
+  "source_printed_pages": [
+    "24"
+  ],
+  "original_marks": 2,
+  "command_term": "Construct",
+  "original_text": "Construct the method signature for countDelayedCases in which the method takes a lawyer’s ID as a parameter and returns the total number of delayed cases that the lawyer has.",
+  "parent_context": "– 22 – 8825 – 6405\nOption D — Object-oriented programming\n14. A law firm has 20 lawyers. They can be categorized into three groups: civil lawyers, criminal \nlawyers, and company lawyers.\nA lawyer can have a maximum of 15 cases at a time.\nThe following shows part of the code for the Lawyer class, which keeps details of a lawyer:\npublic class Lawyer\n{\n    private int lawyerID;       // id of the lawyer\n    private String lawyerName;\n    private String lawyerType;  // category of lawyer\n    private int lawyerRank;     // 0 or 1, default is 0\n    private int casesWon;       // total number of cases won by the lawyer\n    private Case lawyerCases[] = new Case[15]; // lawyer’s array of cases\n    public Lawyer(int lawyerID, String lawyerName, String lawyerType, \nCase[] lawyerCases)\n    {\n        this.lawyerID = lawyerID;\n        this.lawyerName = lawyerName;\n        this.lawyerType = lawyerType;\n        this.lawyerRank = 0;\n        this.casesWon = 0;\n        this.lawyerCases = lawyerCases;\n    }\n    public String getlawyerName()\n    {\n        return lawyerName;\n    }\n    public String getlawyerType()\n    {\n        return lawyerType;\n    }\n    public int getlawyerRank() \n    {\n        return lawyerRank;\n    }\n    public void setlawyerRank(int lawyerRank)\n    {\n        this.lawyerRank = lawyerRank;\n    }\n    // all accessor and mutator methods are present but not shown\n} // end of Lawyer class\n(Option D continues on the following page)\n– 23 – 8825 – 6405\nTurn over\n(Option D, question 14 continued)\nThe following shows part of the code for the Case class, which keeps details of a case:\npublic class Case\n{\n    private int caseId;        // unique id of the case\n    private String caseClient; // name of the client\n    private String caseTitle;  // e.g. 'property dispute', 'tax evasion' etc\n    private int daysFromStart; // number of days elapsed from start of case\n    private char judgmentGiven; // 'N'=no, 'F'=favorable, 'A'=against\n    private String caseStatus;  // open/ won/ lost\n    public Case(int caseID, String caseClient, String casesTitle)  \n    { \n        this.caseId = caseId;  \n        this.caseClient = caseClient; \n        this.casesTitle = casesTitle; \n        this.daysFromStart = 0; \n        this.judgmentGiven = 'N'; \n        this.caseStatus = \"open\"; \n    }\n    public void setCaseStatus(String caseStatus)\n    {\n        this.caseStatus = caseStatus;\n    }\n    // all accessor and mutator methods are present but not shown\n    public void changeCaseStatus(char judgmentGiven)\n    {\n        /*Code missing*/\n    }\n} // end of Case class\n(Option D continues on the following page)\n– 24 – 8825 – 6405\n(Option D, question 14 continued)\nThe LawFirmManagement class has a main method and other methods to generate the \ninformation required. The following shows part of the code for the LawFirmManagement class:\npublic class LawFirmManagement\n{\n    private static Lawyer[] allLawyers = new Lawyer[20];\n    // array of lawyers\n    private static TraineeLawyer[] allTrainees = new \nTraineeLawyer[30]; // array of lawyer trainees\n    public static void main(String []args)\n    {\n        /*Code missing*/\n    }\n    public static void displayLawyerNames()\n    {\n        /*Code missing*/\n    }\n    public static void updateLawyerRank(int[][]casesWon)\n    {\n        /*Code missing*/\n    }\n} // end of LawFirmManagement class\n(a) State the purpose of a constructor method. [1]\n(b) Describe how the changeCaseStatus(char judgmentGiven) method given in the \nCase class would change the case status. [2]\n(c) Construct the method displayLawyerNames() in the LawFirmManagement class.\nThe method should display the names of all civil lawyers who have won more than \n30 cases. [4]\n(d) (i)   State the purpose of a return statement. [1]\nIf the number of days since the start of a case is more than 45 and no judgment has \nbeen given, it is considered a delayed case. Assume that a method exists that updates \ndays elapsed.\n(ii) Construct the method signature for countDelayedCases in which the method \ntakes a lawyer’s ID as a parameter and returns the total number of delayed \ncases that the lawyer has. [2]\n(iii) Construct the complete code for the method countDelayedCases constructed \nin part (d)(ii). [5]\n(Option D continues on the following page)",
+  "assets": [
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-23.png",
+      "source_pdf_page": 23,
+      "visually_verified": true
+    },
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-24.png",
+      "source_pdf_page": 24,
+      "visually_verified": true
+    },
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-25.png",
+      "source_pdf_page": 25,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Construct the method signature for countDelayedCases in which the method takes a lawyer’s ID as a parameter and returns the total number of delayed cases that the lawyer has.",
+    "Construct a Python function header for count_overdue that receives adviser_id and advisers, with optional type hints indicating an integer result"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-039",
+    "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+    "pdf_pages": [
+      40
+    ],
+    "question_reference": "Q14 d-ii",
+    "marking_summary": "Exact original MS leaf excerpt: Award [2 max] Award [1] for correct return type ‘int’ (as intended in the question); Award [1] for correct int parameter; Example: (public) int countDelayedCases(int id) Note: Award [2] for a signature with or without the access specifier and the return type.",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [2 max]\nAward [1] for correct return type ‘int’ (as intended in the question); \nAward [1] for correct int parameter; \nExample: (public) int countDelayedCases(int id)\nNote: Award [2] for a signature with or without the access specifier and the return type.",
+    "source_issues": [],
+    "source_marking_evidence": "– 40 – 8825 – 6405M \nOption D — Object-oriented programming \n14. (a) Award [1 max]\na constructor is a (special) method used to initialize objects; \ncreates an instance of a class; \nassigns values to the instance variables;  \n(b) Award [2 max]\nAward [1] for checking the parameter’s (judgementGiven) value;\nAward [1] for changing the value of caseStatus to “won” if the judgementGiven is ‘F’;\nAward [1] for changing the value of caseStatus to “lost” if the judgementGiven is ‘A’;\nNote: Allow either calling the setCaseStatus() or directly accessing the caseStatus to\nchange the status of the case.\n(c) Award [4 max]\nAward [1] for a correct loop to navigate through allLawyers[];\nAward [1] for correctly checking lawyerType is “civil” (accept both .equals() or “==”);\nAward [1] for correctly checking casesWon >30, (accept >=31);\nAward [1] for correctly displaying the lawyer’s name;\nExample Answer :\npublic static void displayLawyerNames()\n{\n    for(int i=0; i<20; i++) \n    {  \nif((allLawyers[i].getLawyerType().equals(\"civil\"))&& \n(allLawyers[i].getCasesWon()>30)) \nSystem.out.println(allLawyers[i].getLawyerName()); \n    } \n} \nNote: Allow writing “civil” in any case. \n(d) (i) Award [1 max]\na return statement is used to send a value back (to the calling method when the execution \nof a method is complete);  \na return statement transfers the program control back to the calling method;  \n(ii) Award [2 max]\nAward [1] for correct return type ‘int’ (as intended in the question); \nAward [1] for correct int parameter; \nExample: (public) int countDelayedCases(int id)\nNote: Award [2] for a signature with or without the access specifier and the return type. "
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B2.3.4",
+      "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+      "rationale": "Adapted target only: Construct a Python function header for count_overdue that receives adviser_id and advisers, with optional type hints indicating an integer result; guidance target: Construct functions and modularization. Adaptation: Replaces Java return-type signature with Python function interface; annotations are optional, not invented requirements.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC038-Q14-d-ii"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

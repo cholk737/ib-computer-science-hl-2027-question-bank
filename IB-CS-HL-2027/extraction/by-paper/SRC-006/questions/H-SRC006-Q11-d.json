@@ -23,7 +23,7 @@
   "assets": [],
   "assessed_concepts": [
     "Original source task: Discuss the advantages and disadvantages of using GPS in transportation systems.",
-    "A transit operator records vehicle locations and links journeys to drivers"
+    "A transit operator trains an ML scheduling model on vehicle locations linked to drivers"
   ],
   "difficulty": "medium",
   "markscheme": {
@@ -34,16 +34,18 @@
       12
     ],
     "question_reference": "Q11 d",
-    "marking_summary": "Histories may reveal delays and improve scheduling, making service more reliable. However, identifiable histories enable monitoring of drivers beyond what is necessary. Retention limits and purpose restrictions can preserve operational benefits while reducing privacy intrusion.",
+    "marking_summary": "Exact original MS leaf excerpt: Award [4 max] Safer transit; Trains are tracked and in case of emergency the location can be reached at the earliest and emergency services provided; More favourable view of transit/helps passenger to get punctuality status of the train/; GPS can provide worldwide three-dimensional positions (24 hours a day) (in any type of weather); Sometimes it is too difficult to ensure reliable positioning; Objects, such as buildings, overpasses, and other obstructions (that shield the antenna from a satellite) can potentially weaken a satellite's signal; Privacy issues; Knowing the absolute position of anything, anytime, anywhere; Mark as 2 and 2.",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [4 max]\nSafer transit;\nTrains are tracked and in case of emergency the location can be reached at the earliest and\nemergency services provided;\nMore favourable view of transit/helps passenger to get punctuality status of the train/;\nGPS can provide worldwide three-dimensional positions (24 hours a day) (in any type of\nweather);\nSometimes it is too difficult to ensure reliable positioning;\nObjects, such as buildings, overpasses, and other obstructions (that shield the antenna from\na satellite) can potentially weaken a satellite's signal;\nPrivacy issues;\nKnowing the absolute position of anything, anytime, anywhere;\nMark as 2 and 2.",
     "source_issues": [],
     "source_marking_evidence": "– 12 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \n(d) Award [4 max]\nSafer transit;\nTrains are tracked and in case of emergency the location can be reached at the earliest and\nemergency services provided;\nMore favourable view of transit/helps passenger to get punctuality status of the train/;\nGPS can provide worldwide three-dimensional positions (24 hours a day) (in any type of\nweather);\nSometimes it is too difficult to ensure reliable positioning;\nObjects, such as buildings, overpasses, and other obstructions (that shield the antenna from\na satellite) can potentially weaken a satellite's signal;\nPrivacy issues;\nKnowing the absolute position of anything, anytime, anywhere;\nMark as 2 and 2.\n12. (a) Award [3 max] \nAward [1] for the node containing number 20 is pointed to by the pointer 'head'; \nAward [1] for the diagram showing only two nodes and all the correct links; \nAward [1] for the last node containing number 5; \n(b) Award [2 max]\nThe last node is identified by its next/link pointer;\nwhich contains the address of the node at the beginning of the list / is equal to the pointer\n“head “;\n"
   },
   "relevance_status": "B",
   "mappings": [
     {
-      "syllabus_code": "A4.4.2",
-      "scope_evidence": "• The importance of continually reassessing ethical guidelines as technology advances\n• The potential implications of emerging technologies such as quantum computing, augmented reality, virtual reality and the pervasive use of AI on society, individual rights, privacy and equity",
-      "rationale": "A transit operator records vehicle locations and links journeys to drivers assesses Discuss ethical aspects of the increasing integration of computer technologies into daily life.",
+      "syllabus_code": "A4.4.1",
+      "scope_evidence": "• Ethical issues may include accountability, algorithmic fairness, bias, consent, environmental impact, privacy, security, societal impact, transparency.\n• The challenges posed by biases in training data\n• The ethics of using machine learning in online communication may include concerns about misinformation, bias, online harassment, anonymity, privacy.",
+      "rationale": "Adapted target only: A transit operator trains an ML scheduling model on vehicle locations linked to drivers; guidance target: Discuss the ethical implications of machine learning in real-world scenarios. Adaptation: Retains tracking-data ethics while explicitly supplying ML training context; only adapted A4.4.1 coverage is claimed.",
       "theme": "A",
       "level": "SL/HL common",
       "confidence": "high",
@@ -58,8 +60,9 @@
     "visual": "No visual required by this leaf.",
     "technical": "Independently reasoned and compared with available source marking points."
   },
-  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "adaptation_reuse_question_id": "",
   "practice_question_ids": [
     "P-SRC006-Q11-d"
-  ]
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
 }

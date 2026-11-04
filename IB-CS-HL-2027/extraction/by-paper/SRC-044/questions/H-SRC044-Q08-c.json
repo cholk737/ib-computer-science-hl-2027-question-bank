@@ -1,0 +1,71 @@
+{
+  "source_question_id": "H-SRC044-Q08-c",
+  "source_id": "SRC-044",
+  "source_filename": "Computer_science_paper_2_TZ3_SL (1).pdf",
+  "year": "2025",
+  "session": "May",
+  "source_level": "SL",
+  "paper": "2",
+  "zone": "TZ3 (filename; numerical cover code)",
+  "option": "C",
+  "question": 8,
+  "subquestion": "c",
+  "source_pdf_pages": [
+    13
+  ],
+  "source_printed_pages": [
+    "12"
+  ],
+  "original_marks": 2,
+  "command_term": "Outline",
+  "original_text": "Outline why keywords are important for web indexing.",
+  "parent_context": "– 12 – 2225    – 6423\n(Option C continued)\n8. Alexia and Jay are researching the web development language PHP.\nThey type the phrase “PHP” directly into a web browser (see Figure 6).\nFigure 6: “PHP” typed into a web browser and redirected to a search engine\nphp\nNewsAll Images Video\nAbout 12 260 000 000 results (0.36 seconds)\nhttps://one2seven.org/search?q=php\nThe web browser redirects them to a popular search engine, which executes a search.\n(a) Define the term search engine. [1]\nThe operation of a search engine can be divided into three steps (see Figure 7).\nFigure 7: The three steps in the operation of a search engine\nCrawling Indexing Ranking\n(b) Describe how a web crawler functions. [2]\n(c) Outline why keywords are important for web indexing. [2]\n(d) Discuss whether an organization should use black hat search engine optimization \n(SEO) techniques to improve the ranking of its website. [6]\nSearch engines return a very large number of results, but many of the web pages are \nnot useful. The search needs to be refined.\nAlexia and Jay’s teacher recommended that they use an online database that accesses \nthe deep web.\n(e) Distinguish between the surface web and the deep web. [2]\n(Option C continues on the following page)\n– 13 – 2225 – 6423\nTurn over\n(Option C, question 8 continued)\nOne of the online databases provides Alexia and Jay with the following code:\n<?php\n    if(isset($_FILES['CV'])){\n        $errors= array();\n        $file_name = $_FILES['CV']['name'];\n        $file_size =$_FILES['CV']['size'];\n        $file_tmp =$_FILES['CV']['tmp_name'];\n        $file_type=$_FILES['CV']['type'];\n        $file_ext=strtolower(end(explode('.',$_FILES['CV']['name'])));\n        $extensions= array(\"pdf\",\"doc\",\"docx\");\n        if(in_array($file_ext,$extensions)=== false){\n            $errors[]=\"This file extension not allowed\";\n        }\n        if($file_size > 2097152){\n            $errors[]=\"File size must be under 2 Mb\";\n        }\n        if(empty($errors)==true){\n            move_uploaded_file($file_tmp,\"CV/\".$file_name);\n            echo \"Success\";\n        }else{\n            print_r($errors);\n        }\n    }\n?>\n<html>\n<body>\n    <h1>Curriculum Vitae</h1>\n    <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\n        <input type=\"file\" name=\"CV\" />\n        <input type=\"submit\"/>\n    </form>\n</body>\n</html>\n(f) Identify four steps that take place during the processing of this PHP code. [4]\nThe PHP code is processed on the server.\n(g) Explain why an organization would choose to use server-side processing rather than \nclient-side processing when delivering content to the client. [3]\n(Option C continues on page 15)",
+  "assets": [
+    {
+      "kind": "source_page_evidence",
+      "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-13.png",
+      "source_pdf_page": 13,
+      "visually_verified": true
+    },
+    {
+      "kind": "source_page_evidence",
+      "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-14.png",
+      "source_pdf_page": 14,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Outline why keywords are important for web indexing.",
+    "Search engines,crawlers,indexing,SEO and surface/deep-web terminology are old web-science content outside individual2027 requirements."
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-046",
+    "filename": "Computer_science_paper_2_TZ3_SL_markscheme.pdf",
+    "pdf_pages": [
+      16
+    ],
+    "question_reference": "Q8 c",
+    "marking_summary": "Exact original MS leaf excerpt: Award [2 max] Web crawlers look for keywords from the meta keywords/ tags; in the meta description, title and potentially the URL of the page; Then determine how many times the keywords appear in the body of the page; and then the ranking algorithm uses this as part of the ranking process. Keywords are important for web indexing Support SEO (Search Engine Optimization): Strategically using keywords enhances visibility and helps websites attract more traffic from search engines.",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [2 max]\nWeb crawlers look for keywords from the meta keywords/ tags; \nin the meta description, title and potentially the URL of the page; \nThen determine how many times the keywords appear in the body of the page; \nand then the ranking algorithm uses this as part of the ranking process. Keywords are important \nfor web indexing \nSupport SEO (Search Engine Optimization): Strategically using keywords enhances visibility \n and helps websites attract more traffic from search engines.",
+    "source_issues": [],
+    "source_marking_evidence": "– 16 – 2225 – 6423M \n8. (a) Award [1 max] \na software system/program/application that searches the world wide web or a database; \nfor keywords that match the user's specification; \nand filters, such as date, usage rights, size, currency, etc. if used; \n(b) Award [2 max]\nNote: Web crawler is also called a bot or spider \nstart at “seed”, this could also be a designated starting page: \nreview and categorise web pages based on criteria for information searched for; \nlooks for keywords, content, hyperlinks, metatags etc; \nfollows hyperlinks from page to page; \ncan move through a site depth-first or breadth-first; \nreview can be stopped by rules set in sites robots.txt file; \noften copies part or all of the content of visited page: \nthe crawler continues this cycle, constantly updating the index with new or changed content. \n(c) Award [2 max]\nWeb crawlers look for keywords from the meta keywords/ tags; \nin the meta description, title and potentially the URL of the page; \nThen determine how many times the keywords appear in the body of the page; \nand then the ranking algorithm uses this as part of the ranking process. Keywords are important \nfor web indexing \nSupport SEO (Search Engine Optimization): Strategically using keywords enhances visibility \n and helps websites attract more traffic from search engines. "
+  },
+  "relevance_status": "C",
+  "mappings": [],
+  "exclusion_reason": "Search engines,crawlers,indexing,SEO and surface/deep-web terminology are old web-science content outside individual2027 requirements.",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

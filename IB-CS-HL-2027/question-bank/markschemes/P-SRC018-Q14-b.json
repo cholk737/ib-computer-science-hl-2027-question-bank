@@ -32,5 +32,6 @@
   },
   "code": "def repeated_in_row(grid,r):\n    a,b,c=grid[r]\n    if a==b or a==c:\n        return a\n    if b==c:\n        return b\n    return 0",
   "test_code": "import itertools\nfor row in itertools.product(range(1,4),repeat=3):\n expected=next((x for x in row if row.count(x)>1),0)\n assert repeated_in_row([row],0)==expected",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

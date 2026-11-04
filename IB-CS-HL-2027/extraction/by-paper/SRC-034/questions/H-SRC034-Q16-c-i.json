@@ -1,0 +1,92 @@
+{
+  "original_assessment_context": "Monster cardgame;Monster class has static type constants and instance name,health,strength,type;WaterMonster/FireMonster inherit Monster;Arena stores10 Monster references plusmonsterCount. Full Java source retained in source page evidence.",
+  "source_scope_note": "Original assessed concept classified directly or excluded with reason.",
+  "source_question_id": "H-SRC034-Q16-c-i",
+  "source_id": "SRC-034",
+  "source_filename": "Computer_science_paper_2__HL.pdf",
+  "year": "2023",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "not stated",
+  "option": "D",
+  "question": "16",
+  "subquestion": "c-i",
+  "source_pdf_pages": [
+    22
+  ],
+  "source_printed_pages": [
+    "21"
+  ],
+  "original_marks": 2,
+  "command_term": "Define",
+  "original_text": "[Source PDF page 22]\nremoveMonster(Monster M)\nMonsters have three special abilities that may be used on other monsters:\ny The ability “Heal”, which can be used on another monster\ny An ability specific to the monster type (eg, all water-type monsters have the ability\n“Put out fire”)\ny An ability specific to the monster (eg, only instances of Squishy have the ability “Clean”).\nThe methods , and\nability1(Monster defender) ability2(Monster defender)\nwill be created to enable the monsters to perform their\nability3(Monster defender)\nabilities. A class for each individual monster card, eg “Squishy”, will be created.\n(c) (i) Define the term inheritance. [2]",
+  "parent_context": "Monster cardgame;Monster class has static type constants and instance name,health,strength,type;WaterMonster/FireMonster inherit Monster;Arena stores10 Monster references plusmonsterCount. Full Java source retained in source page evidence.",
+  "assets": [
+    {
+      "kind": "source_page",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-22.png",
+      "source_pdf_page": 22,
+      "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+    }
+  ],
+  "assessed_concepts": [
+    "Define: Define inheritance."
+  ],
+  "difficulty": "low",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-037",
+    "filename": "Computer_science_paper_2__HL_markscheme.pdf",
+    "pdf_pages": [
+      32
+    ],
+    "question_reference": "16(c-i)",
+    "marking_summary": "Derivedclassbasedonexistingparent,reuses/extendsfeatures;sourceaccessmodifieroverclaimsnotcopied.",
+    "source_issues": []
+  },
+  "relevance_status": "A",
+  "mappings": [
+    {
+      "mapping_target": "original_and_adapted",
+      "syllabus_code": "B3.2.1",
+      "scope_evidence": "• How inheritance enables a hierarchical relationship between parent and child classes\n• Extending existing classes, utilizing inheritance to reuse and extend functionalities\n• The impact of inheritance on access to parent class members with different access modifiers (private, public, protected, default)",
+      "rationale": "The assessed skill is explicitly named in the cited statement and its guidance; mapping does not credit unassessed scenario topics.",
+      "theme": "B",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+    "marks": "Printed allocation transcribed.",
+    "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+    "official_answer_status": "See source markscheme record"
+  },
+  "original_text_manual_synopsis": "Define inheritance.",
+  "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+  "source_page_evidence": [
+    {
+      "pdf_page": 22,
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-022.txt"
+    }
+  ],
+  "source_context_page_evidence": [
+    {
+      "pdf_page": 22,
+      "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-22.png",
+      "kind": "complete_original_page_raster",
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-022.txt"
+    }
+  ],
+  "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+  "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2__HL.pdf",
+  "source_issues": [],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC034-Q16-c-i"
+  ]
+}

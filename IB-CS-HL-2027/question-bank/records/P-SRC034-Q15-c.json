@@ -1,0 +1,47 @@
+{
+  "question_id": "P-SRC034-Q15-c",
+  "source_question_ids": [
+    "H-SRC034-Q15-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct a UML class-relationship diagram for ChilledItem, Item and Shop. ChilledItem is a subclass of Item. Shop stores references to Items that exist independently and may be moved to another Shop; omit attributes/methods.",
+  "syllabus_codes": [
+    "B3.1.2",
+    "B3.2.4"
+  ],
+  "theme": "B",
+  "level": "HL-only/SL/HL common",
+  "marks": 2,
+  "command_term": "Construct",
+  "difficulty": "low",
+  "adaptation_rationale": "Retains relationship diagram; explicit independent life time makes aggregation unambiguous.",
+  "solution": "ChilledItem --|> Item; Shop o-- Item.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Generalization arrow with hollow triangle pointing from ChilledItem toward Item."
+    },
+    {
+      "marks": 1,
+      "criterion": "Aggregation relationship with hollow diamond at Shop linking to Item."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "No executable code required; manual technical check."
+  },
+  "code": "",
+  "test_code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC034-Q15-c.json",
+  "question_path": "question-bank/questions/P-SRC034-Q15-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC034-Q15-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

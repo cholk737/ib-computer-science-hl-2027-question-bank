@@ -1,0 +1,21 @@
+{
+  "question_id": "P-SRC042-Q05-f",
+  "source_question_ids": [
+    "H-SRC042-Q05-f"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct day_summary(hours, temperatures) in Python. Both parallel lists contain 24 observations, one per hour 0..23. Define night as 20:00 through 05:59 inclusive. Return(maximum, minimum, overall mean, night mean). Use explicit comparisons and accumulation, not min, max or sum.",
+  "syllabus_codes": [
+    "B2.2.2",
+    "B2.3.2",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 8,
+  "command_term": "Construct",
+  "difficulty": "high",
+  "adaptation_rationale": "Retains multi statistic parallel-list traversal; repairs source cross-midnight condition with OR, counts night observations, and uses safe extrema initialization.",
+  "assets": []
+}

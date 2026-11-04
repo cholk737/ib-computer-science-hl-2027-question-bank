@@ -1,0 +1,790 @@
+{
+  "source_id": "SRC-044",
+  "batch_id": "SRC-044-b008",
+  "source_questions": [
+    {
+      "source_question_id": "H-SRC044-Q11-c",
+      "source_id": "SRC-044",
+      "source_filename": "Computer_science_paper_2_TZ3_SL (1).pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "D",
+      "question": 11,
+      "subquestion": "c",
+      "source_pdf_pages": [
+        19
+      ],
+      "source_printed_pages": [
+        "18"
+      ],
+      "original_marks": 6,
+      "command_term": "Construct",
+      "original_text": "Construct a method, Sold(String artistName, String artworkTitle), that will loop through the array theArtists array and set the isSold variable to true. You can assume the artwork exists in theArtworks array.",
+      "parent_context": "– 16 – 2225 – 6423\nOption D — Object-oriented programming\n10. An art shop sells the work of several artists. Each artist has many artworks for sale. A system \nis designed to manage artworks, sales and customers.\nThe following shows part of the code for the two classes, Artist and Artwork:\npublic class Artist {\n    private String artistName;      // name of the artist\n    private String artistLocation;  // current location of the artist\n    private int noOfArtworks;       // number of works of art the artist has \n                                    // stored in the array theArtworks\n    private Artwork [] theArtworks; // details of the works of art produced \n                                    // by the artist\n    public Artist(String artistName, String artistLocation){\n        this.artistName = artistName;\n        this.artistLocation = artistLocation;\n        noOfArtworks = 0;\n        theArtworks = new Artwork [100]; // an artist has a maximum of 100\n                                         // artworks\n    }\n    public String getName() {\n        return artistName;\n    }\n    public String getLocation() {\n        return artistLocation;\n    }\n    public Artwork getArtwork(int x) {\n        return theArtworks[x];\n    }\n    public void addArtwork(Artwork x) {\n        theArtworks[noOfArtworks] = x;\n        noOfArtworks = noOfArtworks + 1;\n    }\n    public double commissionToPay() {\n        // code missing\n    }\n \n    public Artwork[] sortArt() {\n        // code missing\n    }\n} // end of class Artist\n(Option D continues on the following page)\n– 17 – 2225 – 6423\nTurn over\n(Option D, question 10 continued)\npublic class Artwork {\n    private String artworkTitle; // name of the artwork\n    private int artworkPrice;    // price of artwork\n    private boolean isSold;      // if the artwork has been sold or not\n    public Artwork(String artworkTitle, int artworkPrice) {\n        this.artworkTitle = artworkTitle;\n        this.artworkPrice = artworkPrice;\n        isSold = false; // default value is not sold\n    }\n    public String getArtworkTitle(){\n        return artworkTitle;\n    }\n    public void isSold(){\n        isSold = true;\n    }\n} // end of class Artwork\n(a) State the relationship between the Artist class and Artwork class. [1]\n(b) Outline what is meant by instantiation of an object. [2]\n(c) Construct the code required to instantiate the artist “Thomas Lucas” from “Ireland”. [3]\n(d) With reference to the Artist and Artwork classes, outline the use of the \nmodifier private. [2]\n(e) Outline two advantages of modularity in program development. [4]\n(f) Construct a UML diagram to represent the Artist class. [3]\n(Option D continues on the following page)\n– 18 – 2225 – 6423\n(Option D continued)\n11. The owner of the art shop would like the artworks separated into three different categories: \npaintings, sculptures, and performances.\nThree classes, Painting, Sculpture, and Performance, are created for the three different \ncategories of artwork.\nThe variable typeOfPaint belongs to Painting. It holds the name of the type of paint used.\nThe variable weight belongs to Sculpture. It holds the weight of a sculpture.\nThe variable needForSound belongs to Performance. It states whether sound is needed for \nthe performance.\nThe other variables are common to all three classes.\n(a) State a suitable data type for:\n(i) the variable typeOfPaint; [1]\n(ii) the variable weight; [1]\n(iii) the variable needForSound. [1]\n(b) (i)   Outline two advantages of using inheritance. [4]\n(ii) Explain how inheritance could be used to develop the three classes described \n(Painting, Sculpture, and Performance). [3]\nAn array of type Artist has been declared in the main class, and objects are added using \nthe following code:\ntheArtists[0] = new Artist(\"Nishan Nathan\", \"Italy\");\ntheArtists[1] = new Artist(\"Saskia Anna\", \"Egypt\");\ntheArtists[2] = new Artist(\"Kate Matherson\", \"USA\");\nThe variable isSold in the Artwork object needs to be set to true when an artwork has \nbeen sold.\n(c) Construct a method, Sold(String artistName, String artworkTitle), that will \nloop through the array theArtists array and set the isSold variable to true.\nYou can assume the artwork exists in theArtworks array. [6]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-17.png",
+          "source_pdf_page": 17,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-18.png",
+          "source_pdf_page": 18,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-19.png",
+          "source_pdf_page": 19,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Construct a method, Sold(String artistName, String artworkTitle), that will loop through the array theArtists array and set the isSold variable to true. You can assume the artwork exists in theArtworks array.",
+        "producers contains objects with name and products"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-046",
+        "filename": "Computer_science_paper_2_TZ3_SL_markscheme.pdf",
+        "pdf_pages": [
+          25
+        ],
+        "question_reference": "Q11 c",
+        "marking_summary": "Exact original MS leaf excerpt: Award [6 max] Award [1] for using a boolean flag or similar variable to stop either of the loops; Award [1] for correct outer loop to run through the theArtists array; Award [1] for correctly finding the required Artist; Award [1] for correct inner loop to run through the theArtworks array; Award [1] for an attempt to search for the artwork; Award [1] for correct use of appropriate accessors and .equals(); // accept ‘==’ Award [1] for an attempt to set the isSold; Award [1] for correctly calling issold(); Example 1: public void Sold( String artistName, String artworkTitle) { for (int i = 0; i < theArtists.length; i++) { if(theArtists[i].getName().equals(artistName)) { for (int x = 0; x < theArtists[i].getnoOfArtworks(); x++) { if(theArtists[i].getArtwork(x).getArtworkTitle().equals( artworkTitle)) { theArtists[i].getArtwork(x).isSold(); } } } } } Example 2: public void Sold(String artist … [full leaf evidence retained]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [6 max]\nAward [1] for using a boolean flag or similar variable to stop either of the loops;\nAward [1] for correct outer loop to run through the theArtists array;\nAward [1] for correctly finding the required Artist;\nAward [1] for correct inner loop to run through the theArtworks array;\nAward [1] for an attempt to search for the artwork;\nAward [1] for correct use of appropriate accessors and .equals(); // accept ‘==’\nAward [1] for an attempt to set the isSold;\nAward [1] for correctly calling issold();\nExample 1:\npublic void Sold( String artistName, String artworkTitle)\n{\nfor (int i = 0; i < theArtists.length; i++) \n{ \nif(theArtists[i].getName().equals(artistName)) \n{ \nfor (int x = 0; x < theArtists[i].getnoOfArtworks(); x++) \n{ \nif(theArtists[i].getArtwork(x).getArtworkTitle().equals( artworkTitle)) \n{ \ntheArtists[i].getArtwork(x).isSold(); \n} \n} \n} \n} \n} \n Example 2: \npublic void Sold(String artistName, String artworkTitle) \n{ \nboolean found=false; \nint i=0; \nwhile(i<theArtists.length && found ==false) \n{ \nif(theArtists[i].getName().equals(artistName)) \n{ \nint j=0; \nwhile(j<theArtists[i].getnoOfArtworks() && found == false) \n{ \nif(theArtists[i].getArtwork(j).getArtworkTitle().equals( \nartworkTitle)) \n{ \ntheArtists[i].getArtwork(j).isSold(); \nfound=true; \n} \nj++; \n} \n} \ni++; \n} \n} \nNote: Accept any name for getnoOfArtworks()as long as it returns\nnoOfArtworks.",
+        "source_issues": [],
+        "source_marking_evidence": "– 25 – 2225 – 6423M \n(c) Award [6 max]\nAward [1] for using a boolean flag or similar variable to stop either of the loops;\nAward [1] for correct outer loop to run through the theArtists array;\nAward [1] for correctly finding the required Artist;\nAward [1] for correct inner loop to run through the theArtworks array;\nAward [1] for an attempt to search for the artwork;\nAward [1] for correct use of appropriate accessors and .equals(); // accept ‘==’\nAward [1] for an attempt to set the isSold;\nAward [1] for correctly calling issold();\nExample 1:\npublic void Sold( String artistName, String artworkTitle)\n{\nfor (int i = 0; i < theArtists.length; i++) \n{ \nif(theArtists[i].getName().equals(artistName)) \n{ \nfor (int x = 0; x < theArtists[i].getnoOfArtworks(); x++) \n{ \nif(theArtists[i].getArtwork(x).getArtworkTitle().equals( artworkTitle)) \n{ \ntheArtists[i].getArtwork(x).isSold(); \n} \n} \n} \n} \n} \n Example 2: \npublic void Sold(String artistName, String artworkTitle) \n{ \nboolean found=false; \nint i=0; \nwhile(i<theArtists.length && found ==false) \n{ \nif(theArtists[i].getName().equals(artistName)) \n{ \nint j=0; \nwhile(j<theArtists[i].getnoOfArtworks() && found == false) \n{ \nif(theArtists[i].getArtwork(j).getArtworkTitle().equals( \nartworkTitle)) \n{ \ntheArtists[i].getArtwork(j).isSold(); \nfound=true; \n} \nj++; \n} \n} \ni++; \n} \n} \nNote: Accept any name for getnoOfArtworks()as long as it returns\nnoOfArtworks. "
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Adapted target only: producers contains objects with name and products; guidance target: Construct programs that apply arrays and Lists. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Adapted target only: producers contains objects with name and products; guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "Adapted target only: producers contains objects with name and products; guidance target: Construct programs that utilize looping structures to perform repeated actions. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.4",
+          "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+          "rationale": "Adapted target only: producers contains objects with name and products; guidance target: Construct functions and modularization. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Executed matching title and absent producer; unrelated object remains unchanged."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC044-Q11-c"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC044-Q12-a",
+      "source_id": "SRC-044",
+      "source_filename": "Computer_science_paper_2_TZ3_SL (1).pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "D",
+      "question": 12,
+      "subquestion": "a",
+      "source_pdf_pages": [
+        20
+      ],
+      "source_printed_pages": [
+        "19"
+      ],
+      "original_marks": 1,
+      "command_term": "State",
+      "original_text": "State the initial value of noOfArtworks for an artist.",
+      "parent_context": "– 16 – 2225 – 6423\nOption D — Object-oriented programming\n10. An art shop sells the work of several artists. Each artist has many artworks for sale. A system \nis designed to manage artworks, sales and customers.\nThe following shows part of the code for the two classes, Artist and Artwork:\npublic class Artist {\n    private String artistName;      // name of the artist\n    private String artistLocation;  // current location of the artist\n    private int noOfArtworks;       // number of works of art the artist has \n                                    // stored in the array theArtworks\n    private Artwork [] theArtworks; // details of the works of art produced \n                                    // by the artist\n    public Artist(String artistName, String artistLocation){\n        this.artistName = artistName;\n        this.artistLocation = artistLocation;\n        noOfArtworks = 0;\n        theArtworks = new Artwork [100]; // an artist has a maximum of 100\n                                         // artworks\n    }\n    public String getName() {\n        return artistName;\n    }\n    public String getLocation() {\n        return artistLocation;\n    }\n    public Artwork getArtwork(int x) {\n        return theArtworks[x];\n    }\n    public void addArtwork(Artwork x) {\n        theArtworks[noOfArtworks] = x;\n        noOfArtworks = noOfArtworks + 1;\n    }\n    public double commissionToPay() {\n        // code missing\n    }\n \n    public Artwork[] sortArt() {\n        // code missing\n    }\n} // end of class Artist\n(Option D continues on the following page)\n– 17 – 2225 – 6423\nTurn over\n(Option D, question 10 continued)\npublic class Artwork {\n    private String artworkTitle; // name of the artwork\n    private int artworkPrice;    // price of artwork\n    private boolean isSold;      // if the artwork has been sold or not\n    public Artwork(String artworkTitle, int artworkPrice) {\n        this.artworkTitle = artworkTitle;\n        this.artworkPrice = artworkPrice;\n        isSold = false; // default value is not sold\n    }\n    public String getArtworkTitle(){\n        return artworkTitle;\n    }\n    public void isSold(){\n        isSold = true;\n    }\n} // end of class Artwork\n(a) State the relationship between the Artist class and Artwork class. [1]\n(b) Outline what is meant by instantiation of an object. [2]\n(c) Construct the code required to instantiate the artist “Thomas Lucas” from “Ireland”. [3]\n(d) With reference to the Artist and Artwork classes, outline the use of the \nmodifier private. [2]\n(e) Outline two advantages of modularity in program development. [4]\n(f) Construct a UML diagram to represent the Artist class. [3]\n(Option D continues on the following page)\n– 19 – 2225 – 6423\n(Option D continued)\n12. The system, which is designed to manage artworks, sales and customers, should have \nmethods to find artworks that match a specific request made by a customer.\nFor example, a customer may want to find all artworks by Sebastián Müller.\n(a) State the initial value of noOfArtworks for an artist. [1]\n(b) Construct the method sortArt() in the Artist class that will find the five most \nexpensive artworks for a given artist.\nYou must make use of the selection sort algorithm. [5]\nArtists must pay a 15 % commission to the shop for each of their artworks sold there.\nThe method commissionToPay calculates the commission to be paid by an artist on all \nsold artworks.\n(c) Construct the method commissionToPay that will calculate and return the amount \nof commission to be paid by the artist to the shop. [6]\n(d) Outline why Unicode enables internationalization. [2]\nEnd of Option D\n ",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-17.png",
+          "source_pdf_page": 17,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-18.png",
+          "source_pdf_page": 18,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-20.png",
+          "source_pdf_page": 20,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: State the initial value of noOfArtworks for an artist.",
+        "State the value of count after the initializer executes self"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-046",
+        "filename": "Computer_science_paper_2_TZ3_SL_markscheme.pdf",
+        "pdf_pages": [
+          26
+        ],
+        "question_reference": "Q12 a",
+        "marking_summary": "Exact original MS leaf excerpt: Award [1 max] 0;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [1 max]\n0;",
+        "source_issues": [],
+        "source_marking_evidence": "– 26 – 2225 – 6423M \n12. (a) Award [1 max]\n0; \n(b) Award [5 max]\nAward [1] for correctly creating a temporary and returning an array of Artwork type;\nAward [1] for correct initialising and updating of max_index;\nAward [1] for correct outer loop up to < noOfArtworks-1 (or up to 5 times);\nAward [1] for correct inner loop;\nAward [1] for correct comparison of price;\nAward [1] for correct implementation of swap;\nAward [1] for transferring the five most expensive artworks to the temporary array;\nNote: Award only MP1, MP7, and another [1] for implementing a different sorting algorithm. If\nno sorting used then only MP1 and MP3/MP7 to be awarded.\npublic Artwork [] sortArt()\n{ \nfor (int i = 0; i < noOfArtworks-1; i++) \n{ \nint max_index = i;  \nfor (int j = i+1; j < noOfArtworks; j++) // accept j=i; \n{  \n  \nif(theArtworks[j].getArtworkPrice() > \ntheArtworks[max_index].getArtworkPrice()) \n{  \n max_index = j; \n} \n } \nArtwork temp = theArtworks[max_index];  \ntheArtworks[max_index] = theArtworks[i]; \ntheArtworks[i] = temp;  \n}   \nArtwork [] expensive = new Artwork[5]; \nfor (int i = 0; i < 5; i++)  \n{  \nexpensive[i] = theArtworks[i];  \n } \nreturn expensive; \n} \nNote: Accept  < theArtworks.length-1 for the outer loop. However, a condition must be \nplaced inside the loop to check for the null values in the theArtworks[] to avoid the \nNullPointerException. Allow any name for the getter getArtworkPrice() as long as it returns the \nartworkPrice."
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.1.1",
+          "scope_evidence": "• Data types: Boolean value, char, decimal, integer, string",
+          "rationale": "Adapted target only: State the value of count after the initializer executes self; guidance target: Construct and trace programs using a range of global and local variables of various data types. Adaptation: Simple initialized-variable trace; does not claim that tracing an existing assignment assesses constructing a class.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC044-Q12-a"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC044-Q12-b",
+      "source_id": "SRC-044",
+      "source_filename": "Computer_science_paper_2_TZ3_SL (1).pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "D",
+      "question": 12,
+      "subquestion": "b",
+      "source_pdf_pages": [
+        20
+      ],
+      "source_printed_pages": [
+        "19"
+      ],
+      "original_marks": 5,
+      "command_term": "Construct",
+      "original_text": "Construct the method sortArt() in the Artist class that will find the five most expensive artworks for a given artist. You must make use of the selection sort algorithm.",
+      "parent_context": "– 16 – 2225 – 6423\nOption D — Object-oriented programming\n10. An art shop sells the work of several artists. Each artist has many artworks for sale. A system \nis designed to manage artworks, sales and customers.\nThe following shows part of the code for the two classes, Artist and Artwork:\npublic class Artist {\n    private String artistName;      // name of the artist\n    private String artistLocation;  // current location of the artist\n    private int noOfArtworks;       // number of works of art the artist has \n                                    // stored in the array theArtworks\n    private Artwork [] theArtworks; // details of the works of art produced \n                                    // by the artist\n    public Artist(String artistName, String artistLocation){\n        this.artistName = artistName;\n        this.artistLocation = artistLocation;\n        noOfArtworks = 0;\n        theArtworks = new Artwork [100]; // an artist has a maximum of 100\n                                         // artworks\n    }\n    public String getName() {\n        return artistName;\n    }\n    public String getLocation() {\n        return artistLocation;\n    }\n    public Artwork getArtwork(int x) {\n        return theArtworks[x];\n    }\n    public void addArtwork(Artwork x) {\n        theArtworks[noOfArtworks] = x;\n        noOfArtworks = noOfArtworks + 1;\n    }\n    public double commissionToPay() {\n        // code missing\n    }\n \n    public Artwork[] sortArt() {\n        // code missing\n    }\n} // end of class Artist\n(Option D continues on the following page)\n– 17 – 2225 – 6423\nTurn over\n(Option D, question 10 continued)\npublic class Artwork {\n    private String artworkTitle; // name of the artwork\n    private int artworkPrice;    // price of artwork\n    private boolean isSold;      // if the artwork has been sold or not\n    public Artwork(String artworkTitle, int artworkPrice) {\n        this.artworkTitle = artworkTitle;\n        this.artworkPrice = artworkPrice;\n        isSold = false; // default value is not sold\n    }\n    public String getArtworkTitle(){\n        return artworkTitle;\n    }\n    public void isSold(){\n        isSold = true;\n    }\n} // end of class Artwork\n(a) State the relationship between the Artist class and Artwork class. [1]\n(b) Outline what is meant by instantiation of an object. [2]\n(c) Construct the code required to instantiate the artist “Thomas Lucas” from “Ireland”. [3]\n(d) With reference to the Artist and Artwork classes, outline the use of the \nmodifier private. [2]\n(e) Outline two advantages of modularity in program development. [4]\n(f) Construct a UML diagram to represent the Artist class. [3]\n(Option D continues on the following page)\n– 19 – 2225 – 6423\n(Option D continued)\n12. The system, which is designed to manage artworks, sales and customers, should have \nmethods to find artworks that match a specific request made by a customer.\nFor example, a customer may want to find all artworks by Sebastián Müller.\n(a) State the initial value of noOfArtworks for an artist. [1]\n(b) Construct the method sortArt() in the Artist class that will find the five most \nexpensive artworks for a given artist.\nYou must make use of the selection sort algorithm. [5]\nArtists must pay a 15 % commission to the shop for each of their artworks sold there.\nThe method commissionToPay calculates the commission to be paid by an artist on all \nsold artworks.\n(c) Construct the method commissionToPay that will calculate and return the amount \nof commission to be paid by the artist to the shop. [6]\n(d) Outline why Unicode enables internationalization. [2]\nEnd of Option D\n ",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-17.png",
+          "source_pdf_page": 17,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-18.png",
+          "source_pdf_page": 18,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-20.png",
+          "source_pdf_page": 20,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Construct the method sortArt() in the Artist class that will find the five most expensive artworks for a given artist. You must make use of the selection sort algorithm.",
+        "Construct top_five(products),returning the five most expensive Product objects in descending price order"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-046",
+        "filename": "Computer_science_paper_2_TZ3_SL_markscheme.pdf",
+        "pdf_pages": [
+          26
+        ],
+        "question_reference": "Q12 b",
+        "marking_summary": "Exact original MS leaf excerpt: Award [5 max] Award [1] for correctly creating a temporary and returning an array of Artwork type; Award [1] for correct initialising and updating of max_index; Award [1] for correct outer loop up to < noOfArtworks-1 (or up to 5 times); Award [1] for correct inner loop; Award [1] for correct comparison of price; Award [1] for correct implementation of swap; Award [1] for transferring the five most expensive artworks to the temporary array; Note: Award only MP1, MP7, and another [1] for implementing a different sorting algorithm. If no sorting used then only MP1 and MP3/MP7 to be awarded. public Artwork [] sortArt() { for (int i = 0; i < noOfArtworks-1; i++) { int max_index = i; for (int j = i+1; j < noOfArtworks; j++) // accept j=i; { if(theArtworks[j].getArtworkPrice() > theArtworks[max_index].getArtworkPrice()) { max_index = j; } } Artwork temp = theArtworks[max_index]; theArtworks[max … [full leaf evidence retained]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [5 max]\nAward [1] for correctly creating a temporary and returning an array of Artwork type;\nAward [1] for correct initialising and updating of max_index;\nAward [1] for correct outer loop up to < noOfArtworks-1 (or up to 5 times);\nAward [1] for correct inner loop;\nAward [1] for correct comparison of price;\nAward [1] for correct implementation of swap;\nAward [1] for transferring the five most expensive artworks to the temporary array;\nNote: Award only MP1, MP7, and another [1] for implementing a different sorting algorithm. If\nno sorting used then only MP1 and MP3/MP7 to be awarded.\npublic Artwork [] sortArt()\n{ \nfor (int i = 0; i < noOfArtworks-1; i++) \n{ \nint max_index = i;  \nfor (int j = i+1; j < noOfArtworks; j++) // accept j=i; \n{  \n  \nif(theArtworks[j].getArtworkPrice() > \ntheArtworks[max_index].getArtworkPrice()) \n{  \n max_index = j; \n} \n } \nArtwork temp = theArtworks[max_index];  \ntheArtworks[max_index] = theArtworks[i]; \ntheArtworks[i] = temp;  \n}   \nArtwork [] expensive = new Artwork[5]; \nfor (int i = 0; i < 5; i++)  \n{  \nexpensive[i] = theArtworks[i];  \n } \nreturn expensive; \n} \nNote: Accept  < theArtworks.length-1 for the outer loop. However, a condition must be \nplaced inside the loop to check for the null values in the theArtworks[] to avoid the \nNullPointerException. Allow any name for the getter getArtworkPrice() as long as it returns the \nartworkPrice.",
+        "source_issues": [],
+        "source_marking_evidence": "– 26 – 2225 – 6423M \n12. (a) Award [1 max]\n0; \n(b) Award [5 max]\nAward [1] for correctly creating a temporary and returning an array of Artwork type;\nAward [1] for correct initialising and updating of max_index;\nAward [1] for correct outer loop up to < noOfArtworks-1 (or up to 5 times);\nAward [1] for correct inner loop;\nAward [1] for correct comparison of price;\nAward [1] for correct implementation of swap;\nAward [1] for transferring the five most expensive artworks to the temporary array;\nNote: Award only MP1, MP7, and another [1] for implementing a different sorting algorithm. If\nno sorting used then only MP1 and MP3/MP7 to be awarded.\npublic Artwork [] sortArt()\n{ \nfor (int i = 0; i < noOfArtworks-1; i++) \n{ \nint max_index = i;  \nfor (int j = i+1; j < noOfArtworks; j++) // accept j=i; \n{  \n  \nif(theArtworks[j].getArtworkPrice() > \ntheArtworks[max_index].getArtworkPrice()) \n{  \n max_index = j; \n} \n } \nArtwork temp = theArtworks[max_index];  \ntheArtworks[max_index] = theArtworks[i]; \ntheArtworks[i] = temp;  \n}   \nArtwork [] expensive = new Artwork[5]; \nfor (int i = 0; i < 5; i++)  \n{  \nexpensive[i] = theArtworks[i];  \n } \nreturn expensive; \n} \nNote: Accept  < theArtworks.length-1 for the outer loop. However, a condition must be \nplaced inside the loop to check for the null values in the theArtworks[] to avoid the \nNullPointerException. Allow any name for the getter getArtworkPrice() as long as it returns the \nartworkPrice."
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.4.3",
+          "scope_evidence": "• The time and space complexities of each algorithm, denoted by their respective Big O notations\n• The advantages and disadvantages of each algorithm in terms of efficiency across various data sets",
+          "rationale": "Adapted target only: Construct top_five(products),returning the five most expensive Product objects in descending price order; guidance target: Construct and trace algorithms to implement bubble sort and selection sort, evaluating their time and space complexities. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Adapted target only: Construct top_five(products),returning the five most expensive Product objects in descending price order; guidance target: Construct programs that apply arrays and Lists. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Executed ties,exact five and original-list preservation."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC044-Q12-b"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC044-Q12-c",
+      "source_id": "SRC-044",
+      "source_filename": "Computer_science_paper_2_TZ3_SL (1).pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "D",
+      "question": 12,
+      "subquestion": "c",
+      "source_pdf_pages": [
+        20
+      ],
+      "source_printed_pages": [
+        "19"
+      ],
+      "original_marks": 6,
+      "command_term": "Construct",
+      "original_text": "Construct the method commissionToPay that will calculate and return the amount of commission to be paid by the artist to the shop.",
+      "parent_context": "– 16 – 2225 – 6423\nOption D — Object-oriented programming\n10. An art shop sells the work of several artists. Each artist has many artworks for sale. A system \nis designed to manage artworks, sales and customers.\nThe following shows part of the code for the two classes, Artist and Artwork:\npublic class Artist {\n    private String artistName;      // name of the artist\n    private String artistLocation;  // current location of the artist\n    private int noOfArtworks;       // number of works of art the artist has \n                                    // stored in the array theArtworks\n    private Artwork [] theArtworks; // details of the works of art produced \n                                    // by the artist\n    public Artist(String artistName, String artistLocation){\n        this.artistName = artistName;\n        this.artistLocation = artistLocation;\n        noOfArtworks = 0;\n        theArtworks = new Artwork [100]; // an artist has a maximum of 100\n                                         // artworks\n    }\n    public String getName() {\n        return artistName;\n    }\n    public String getLocation() {\n        return artistLocation;\n    }\n    public Artwork getArtwork(int x) {\n        return theArtworks[x];\n    }\n    public void addArtwork(Artwork x) {\n        theArtworks[noOfArtworks] = x;\n        noOfArtworks = noOfArtworks + 1;\n    }\n    public double commissionToPay() {\n        // code missing\n    }\n \n    public Artwork[] sortArt() {\n        // code missing\n    }\n} // end of class Artist\n(Option D continues on the following page)\n– 17 – 2225 – 6423\nTurn over\n(Option D, question 10 continued)\npublic class Artwork {\n    private String artworkTitle; // name of the artwork\n    private int artworkPrice;    // price of artwork\n    private boolean isSold;      // if the artwork has been sold or not\n    public Artwork(String artworkTitle, int artworkPrice) {\n        this.artworkTitle = artworkTitle;\n        this.artworkPrice = artworkPrice;\n        isSold = false; // default value is not sold\n    }\n    public String getArtworkTitle(){\n        return artworkTitle;\n    }\n    public void isSold(){\n        isSold = true;\n    }\n} // end of class Artwork\n(a) State the relationship between the Artist class and Artwork class. [1]\n(b) Outline what is meant by instantiation of an object. [2]\n(c) Construct the code required to instantiate the artist “Thomas Lucas” from “Ireland”. [3]\n(d) With reference to the Artist and Artwork classes, outline the use of the \nmodifier private. [2]\n(e) Outline two advantages of modularity in program development. [4]\n(f) Construct a UML diagram to represent the Artist class. [3]\n(Option D continues on the following page)\n– 19 – 2225 – 6423\n(Option D continued)\n12. The system, which is designed to manage artworks, sales and customers, should have \nmethods to find artworks that match a specific request made by a customer.\nFor example, a customer may want to find all artworks by Sebastián Müller.\n(a) State the initial value of noOfArtworks for an artist. [1]\n(b) Construct the method sortArt() in the Artist class that will find the five most \nexpensive artworks for a given artist.\nYou must make use of the selection sort algorithm. [5]\nArtists must pay a 15 % commission to the shop for each of their artworks sold there.\nThe method commissionToPay calculates the commission to be paid by an artist on all \nsold artworks.\n(c) Construct the method commissionToPay that will calculate and return the amount \nof commission to be paid by the artist to the shop. [6]\n(d) Outline why Unicode enables internationalization. [2]\nEnd of Option D\n ",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-17.png",
+          "source_pdf_page": 17,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-18.png",
+          "source_pdf_page": 18,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-20.png",
+          "source_pdf_page": 20,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Construct the method commissionToPay that will calculate and return the amount of commission to be paid by the artist to the shop.",
+        "Construct commission(products)"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-046",
+        "filename": "Computer_science_paper_2_TZ3_SL_markscheme.pdf",
+        "pdf_pages": [
+          27
+        ],
+        "question_reference": "Q12 c",
+        "marking_summary": "Original commission is15% of all sold-artwork prices.",
+        "summary_kind": "author_paraphrase_of_original",
+        "source_marking_leaf_evidence": "Award [6 max]\nAward [1] for looping through the Artwork array up to noOfArtworks;\nAward [1] for an attempt to check if the artwork is sold;\nAward [1] for correctly using the accessor getIsSold();\nAward [1] for correctly accessing the price of the sold artwork;\nAward [1] for correctly calculating the total (summing of the prices for all the sold artwork);\nAward [1] for correctly calculating and returning the commission;\npublic double commissionToPay() \n{ \ndouble total = 0;  \ndouble commission = 0; \n for (int i = 0; i < noOfArtworks; i++) \n{ \n if (theArtworks[i].getIsSold()==true) \n { \n total = total + theArtworks[i].getArtworkPrice(); \n // accept other name for the accessor \n } \n } \ncommission = total * 0.15; \nreturn commission; \n} \nNote: Accept any name for getters getIsSold() and getArtworkPrice() as long as they \nreturn isSold and artworkPrice.",
+        "source_issues": [],
+        "source_marking_evidence": "– 27 – 2225 – 6423M \n(c) Award [6 max]\nAward [1] for looping through the Artwork array up to noOfArtworks;\nAward [1] for an attempt to check if the artwork is sold;\nAward [1] for correctly using the accessor getIsSold();\nAward [1] for correctly accessing the price of the sold artwork;\nAward [1] for correctly calculating the total (summing of the prices for all the sold artwork);\nAward [1] for correctly calculating and returning the commission;\npublic double commissionToPay() \n{ \ndouble total = 0;  \ndouble commission = 0; \n for (int i = 0; i < noOfArtworks; i++) \n{ \n if (theArtworks[i].getIsSold()==true) \n { \n total = total + theArtworks[i].getArtworkPrice(); \n // accept other name for the accessor \n } \n } \ncommission = total * 0.15; \nreturn commission; \n} \nNote: Accept any name for getters getIsSold() and getArtworkPrice() as long as they \nreturn isSold and artworkPrice.  \n(d) Award [2 max]\nAward [1] for -\nhas 216 (about 64,000) characters / has more bits/bytes (in compare to ASCII); \nprovides a standard encoding language and methods; \nAward [1] for - \nwhich enables characters from different alphabets/languages to be used/stored (promoting \ninternationalization); \nmaking it easier to use without language barriers (promoting internationalization);  "
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Adapted target only: Construct commission(products); guidance target: Construct programs that apply arrays and Lists. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.1",
+          "scope_evidence": "• The impact of instruction order on program functionality\n• Ways to avoid errors, such as infinite loops, deadlock, incorrect output",
+          "rationale": "Adapted target only: Construct commission(products); guidance target: Construct programs that implement the correct sequence of code instructions to meet program objectives. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Adapted target only: Construct commission(products); guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "Adapted target only: Construct commission(products); guidance target: Construct programs that utilize looping structures to perform repeated actions. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.4",
+          "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+          "rationale": "Adapted target only: Construct commission(products); guidance target: Construct functions and modularization. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Executed mixed sold/unsold and empty cases."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC044-Q12-c"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC044-Q12-d",
+      "source_id": "SRC-044",
+      "source_filename": "Computer_science_paper_2_TZ3_SL (1).pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "D",
+      "question": 12,
+      "subquestion": "d",
+      "source_pdf_pages": [
+        20
+      ],
+      "source_printed_pages": [
+        "19"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "Outline why Unicode enables internationalization.",
+      "parent_context": "– 16 – 2225 – 6423\nOption D — Object-oriented programming\n10. An art shop sells the work of several artists. Each artist has many artworks for sale. A system \nis designed to manage artworks, sales and customers.\nThe following shows part of the code for the two classes, Artist and Artwork:\npublic class Artist {\n    private String artistName;      // name of the artist\n    private String artistLocation;  // current location of the artist\n    private int noOfArtworks;       // number of works of art the artist has \n                                    // stored in the array theArtworks\n    private Artwork [] theArtworks; // details of the works of art produced \n                                    // by the artist\n    public Artist(String artistName, String artistLocation){\n        this.artistName = artistName;\n        this.artistLocation = artistLocation;\n        noOfArtworks = 0;\n        theArtworks = new Artwork [100]; // an artist has a maximum of 100\n                                         // artworks\n    }\n    public String getName() {\n        return artistName;\n    }\n    public String getLocation() {\n        return artistLocation;\n    }\n    public Artwork getArtwork(int x) {\n        return theArtworks[x];\n    }\n    public void addArtwork(Artwork x) {\n        theArtworks[noOfArtworks] = x;\n        noOfArtworks = noOfArtworks + 1;\n    }\n    public double commissionToPay() {\n        // code missing\n    }\n \n    public Artwork[] sortArt() {\n        // code missing\n    }\n} // end of class Artist\n(Option D continues on the following page)\n– 17 – 2225 – 6423\nTurn over\n(Option D, question 10 continued)\npublic class Artwork {\n    private String artworkTitle; // name of the artwork\n    private int artworkPrice;    // price of artwork\n    private boolean isSold;      // if the artwork has been sold or not\n    public Artwork(String artworkTitle, int artworkPrice) {\n        this.artworkTitle = artworkTitle;\n        this.artworkPrice = artworkPrice;\n        isSold = false; // default value is not sold\n    }\n    public String getArtworkTitle(){\n        return artworkTitle;\n    }\n    public void isSold(){\n        isSold = true;\n    }\n} // end of class Artwork\n(a) State the relationship between the Artist class and Artwork class. [1]\n(b) Outline what is meant by instantiation of an object. [2]\n(c) Construct the code required to instantiate the artist “Thomas Lucas” from “Ireland”. [3]\n(d) With reference to the Artist and Artwork classes, outline the use of the \nmodifier private. [2]\n(e) Outline two advantages of modularity in program development. [4]\n(f) Construct a UML diagram to represent the Artist class. [3]\n(Option D continues on the following page)\n– 19 – 2225 – 6423\n(Option D continued)\n12. The system, which is designed to manage artworks, sales and customers, should have \nmethods to find artworks that match a specific request made by a customer.\nFor example, a customer may want to find all artworks by Sebastián Müller.\n(a) State the initial value of noOfArtworks for an artist. [1]\n(b) Construct the method sortArt() in the Artist class that will find the five most \nexpensive artworks for a given artist.\nYou must make use of the selection sort algorithm. [5]\nArtists must pay a 15 % commission to the shop for each of their artworks sold there.\nThe method commissionToPay calculates the commission to be paid by an artist on all \nsold artworks.\n(c) Construct the method commissionToPay that will calculate and return the amount \nof commission to be paid by the artist to the shop. [6]\n(d) Outline why Unicode enables internationalization. [2]\nEnd of Option D\n ",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-17.png",
+          "source_pdf_page": 17,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-18.png",
+          "source_pdf_page": 18,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-20.png",
+          "source_pdf_page": 20,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline why Unicode enables internationalization.",
+        "Outline why a character representation supporting many writing systems is useful in a database of international customer names"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-046",
+        "filename": "Computer_science_paper_2_TZ3_SL_markscheme.pdf",
+        "pdf_pages": [
+          27
+        ],
+        "question_reference": "Q12 d",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max] Award [1] for - has 216 (about 64,000) characters / has more bits/bytes (in compare to ASCII); provides a standard encoding language and methods; Award [1] for - which enables characters from different alphabets/languages to be used/stored (promoting internationalization); making it easier to use without language barriers (promoting internationalization);",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]\nAward [1] for -\nhas 216 (about 64,000) characters / has more bits/bytes (in compare to ASCII); \nprovides a standard encoding language and methods; \nAward [1] for - \nwhich enables characters from different alphabets/languages to be used/stored (promoting \ninternationalization); \nmaking it easier to use without language barriers (promoting internationalization);",
+        "source_issues": [
+          "MS describes Unicode as2^16/about64000 characters; Unicode is not universally16bit or limited to that repertoire. No such claim is copied."
+        ],
+        "source_marking_evidence": "– 27 – 2225 – 6423M \n(c) Award [6 max]\nAward [1] for looping through the Artwork array up to noOfArtworks;\nAward [1] for an attempt to check if the artwork is sold;\nAward [1] for correctly using the accessor getIsSold();\nAward [1] for correctly accessing the price of the sold artwork;\nAward [1] for correctly calculating the total (summing of the prices for all the sold artwork);\nAward [1] for correctly calculating and returning the commission;\npublic double commissionToPay() \n{ \ndouble total = 0;  \ndouble commission = 0; \n for (int i = 0; i < noOfArtworks; i++) \n{ \n if (theArtworks[i].getIsSold()==true) \n { \n total = total + theArtworks[i].getArtworkPrice(); \n // accept other name for the accessor \n } \n } \ncommission = total * 0.15; \nreturn commission; \n} \nNote: Accept any name for getters getIsSold() and getArtworkPrice() as long as they \nreturn isSold and artworkPrice.  \n(d) Award [2 max]\nAward [1] for -\nhas 216 (about 64,000) characters / has more bits/bytes (in compare to ASCII); \nprovides a standard encoding language and methods; \nAward [1] for - \nwhich enables characters from different alphabets/languages to be used/stored (promoting \ninternationalization); \nmaking it easier to use without language barriers (promoting internationalization);  "
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "A1.2.2",
+          "scope_evidence": "• The fundamentals of binary encoding and the impact on data storage and retrieval\n• The mechanisms by which data such as integers, strings, characters, images, audio and video are stored in binary form",
+          "rationale": "Adapted target only: Outline why a character representation supporting many writing systems is useful in a database of international customer names; guidance target: Explain how binary is used to store data. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC044-Q12-d"
+      ]
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC044-Q11-c",
+      "source_question_ids": [
+        "H-SRC044-Q11-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "producers contains objects with name and products. Each product has title and sold. Producer names are unique and titles are unique within one producer. Construct mark_sold(producers, producer_name, title), marking only that product sold and returning True; return False when absent.",
+      "syllabus_codes": [
+        "B2.2.2",
+        "B2.3.2",
+        "B2.3.3",
+        "B2.3.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 6,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "One solution:\ndef mark_sold(producers, producer_name, title):\n    for producer in producers:\n        if producer.name == producer_name:\n            for product in producer.products:\n                if product.title == title:\n                    product.sold = True\n                    return True\n    return False",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Traverses producer list."
+        },
+        {
+          "marks": 1,
+          "criterion": "Matches producer_name."
+        },
+        {
+          "marks": 1,
+          "criterion": "Traverses selected producer’s products."
+        },
+        {
+          "marks": 1,
+          "criterion": "Matches title."
+        },
+        {
+          "marks": 1,
+          "criterion": "Sets sold=True on matched object."
+        },
+        {
+          "marks": 1,
+          "criterion": "Stops with True, otherwise returns False without changing unrelated products."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Executed matching title and absent producer; unrelated object remains unchanged.",
+        "source_comparison": [
+          25
+        ],
+        "test_code": "def mark_sold(producers, producer_name, title):\n    for producer in producers:\n        if producer.name == producer_name:\n            for product in producer.products:\n                if product.title == title:\n                    product.sold = True\n                    return True\n    return False\nfrom types import SimpleNamespace as O\np=O(name='A',products=[O(title='X',sold=False),O(title='Y',sold=False)])\nassert mark_sold([p],'A','Y') is True and [x.sold for x in p.products]==[False,True]\nassert mark_sold([p],'B','X') is False and p.products[0].sold is False",
+        "result_file": ""
+      },
+      "code": "def mark_sold(producers, producer_name, title):\n    for producer in producers:\n        if producer.name == producer_name:\n            for product in producer.products:\n                if product.title == title:\n                    product.sold = True\n                    return True\n    return False",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC044-Q12-a",
+      "source_question_ids": [
+        "H-SRC044-Q12-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "State the value of count after the initializer executes self.count=0 for a new object.",
+      "syllabus_codes": [
+        "B2.1.1"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 1,
+      "command_term": "State",
+      "difficulty": "medium",
+      "adaptation_rationale": "Simple initialized-variable trace; does not claim that tracing an existing assignment assesses constructing a class.",
+      "solution": "0.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "0."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          26
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC044-Q12-b",
+      "source_question_ids": [
+        "H-SRC044-Q12-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct top_five(products), returning the five most expensive Product objects in descending price order. There are at least five objects, each with price. Implement selection sort yourself rather than using a sorting built-in; leave the original list order unchanged. Equal-price order may be arbitrary.",
+      "syllabus_codes": [
+        "B2.4.3",
+        "B2.2.2"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 5,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "One solution:\ndef top_five(products):\n    ordered = products[:]\n    for i in range(len(ordered)-1):\n        best = i\n        for j in range(i+1, len(ordered)):\n            if ordered[j].price > ordered[best].price:\n                best = j\n        ordered[i], ordered[best] = ordered[best], ordered[i]\n    return ordered[:5]",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Copies list and returns first five objects."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct outer pass and best-index initialization."
+        },
+        {
+          "marks": 1,
+          "criterion": "Scans remaining suffix with correct bounds."
+        },
+        {
+          "marks": 1,
+          "criterion": "Selects greatest price."
+        },
+        {
+          "marks": 1,
+          "criterion": "Swaps selected object into position, producing descending order."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Executed ties,exact five and original-list preservation.",
+        "source_comparison": [
+          26
+        ],
+        "test_code": "def top_five(products):\n    ordered = products[:]\n    for i in range(len(ordered)-1):\n        best = i\n        for j in range(i+1, len(ordered)):\n            if ordered[j].price > ordered[best].price:\n                best = j\n        ordered[i], ordered[best] = ordered[best], ordered[i]\n    return ordered[:5]\nfrom types import SimpleNamespace as O\nxs=[O(price=v) for v in [2,9,4,9,1,7]]\nr=top_five(xs)\nassert [p.price for p in r]==[9,9,7,4,2] and [p.price for p in xs]==[2,9,4,9,1,7]\nassert len(top_five([O(price=1) for _ in range(5)]))==5",
+        "result_file": ""
+      },
+      "code": "def top_five(products):\n    ordered = products[:]\n    for i in range(len(ordered)-1):\n        best = i\n        for j in range(i+1, len(ordered)):\n            if ordered[j].price > ordered[best].price:\n                best = j\n        ordered[i], ordered[best] = ordered[best], ordered[i]\n    return ordered[:5]",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC044-Q12-c",
+      "source_question_ids": [
+        "H-SRC044-Q12-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct commission(products). Each product has price and sold. Return12% of the sum of prices of sold products only. products can be empty.",
+      "syllabus_codes": [
+        "B2.2.2",
+        "B2.3.1",
+        "B2.3.2",
+        "B2.3.3",
+        "B2.3.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 6,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "One solution:\ndef commission(products):\n    total = 0\n    for product in products:\n        if product.sold:\n            total += product.price\n    return total * 0.12",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Initializes total0."
+        },
+        {
+          "marks": 1,
+          "criterion": "Traverses all products."
+        },
+        {
+          "marks": 1,
+          "criterion": "Tests sold status."
+        },
+        {
+          "marks": 1,
+          "criterion": "Adds each sold product price once."
+        },
+        {
+          "marks": 1,
+          "criterion": "Computes12% of correct total."
+        },
+        {
+          "marks": 1,
+          "criterion": "Returns result, including0 for empty/no sales."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Executed mixed sold/unsold and empty cases.",
+        "source_comparison": [
+          27
+        ],
+        "test_code": "def commission(products):\n    total = 0\n    for product in products:\n        if product.sold:\n            total += product.price\n    return total * 0.12\nfrom types import SimpleNamespace as O\nassert commission([O(price=100,sold=True),O(price=200,sold=False),O(price=50,sold=True)])==18\nassert commission([])==0",
+        "result_file": ""
+      },
+      "code": "def commission(products):\n    total = 0\n    for product in products:\n        if product.sold:\n            total += product.price\n    return total * 0.12",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC044-Q12-d",
+      "source_question_ids": [
+        "H-SRC044-Q12-d"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline why a character representation supporting many writing systems is useful in a database of international customer names.",
+      "syllabus_codes": [
+        "A1.2.2"
+      ],
+      "theme": "A",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "It can represent characters and accents from different languages within an agreed encoding, so names need not be lost or replaced by a restricted alphabet.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Many scripts/accents represented in a consistent encoding."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains accurate international names/interchange."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          27
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "question_id": "P-SRC038-Q08-e",
+  "source_question_ids": [
+    "H-SRC038-Q08-e"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Compare two ANN applications: recognizing a spoken command from audio features and proposing a missing word from a sentence. Refer to their inputs, outputs and one shared limitation. No detailed language-model architecture is required.",
+  "syllabus_codes": [
+    "A4.3.8"
+  ],
+  "theme": "A",
+  "level": "HL-only",
+  "marks": 6,
+  "command_term": "Compare",
+  "difficulty": "medium",
+  "adaptation_rationale": "Retains comparison of neural pattern-recognition applications; removes advanced NLP architecture, linguistic semantics and unsupported universal real-time/continuous-learning claims.",
+  "solution": "The speech system takes audio-derived features, whereas the missing-word system takes a representation of written context. Their outputs are a recognized command/category and a proposed word respectively. Both learn complex patterns from training data; biased or unrepresentative examples can produce incorrect predictions, so an output should not be treated as guaranteed understanding.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Audio-feature input."
+    },
+    {
+      "marks": 1,
+      "criterion": "Written-context input, explicitly compared."
+    },
+    {
+      "marks": 1,
+      "criterion": "Recognized command/category output."
+    },
+    {
+      "marks": 1,
+      "criterion": "Proposed-word output, explicitly compared."
+    },
+    {
+      "marks": 1,
+      "criterion": "Shared learned-pattern/data limitation."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains wrong prediction/need for checking."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      25,
+      26
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC038-Q08-e.json",
+  "question_path": "question-bank/questions/P-SRC038-Q08-e.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC038-Q08-e.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

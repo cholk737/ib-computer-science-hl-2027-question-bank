@@ -1,0 +1,49 @@
+{
+  "question_id": "P-SRC007-Q11",
+  "source_question_ids": [
+    "H-SRC007-Q11"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Sketch a BST with root40 whose inorder traversal is 10,20,30,40,50,60,70 and whose left and right subtrees each have height1.",
+  "syllabus_codes": [
+    "B4.1.4"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 3,
+  "command_term": "Sketch",
+  "difficulty": "medium",
+  "adaptation_rationale": "Replace arbitrary mirrored binary-tree ordering with explicitly defined BST convention, preserving finite tree construction. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "solution": "Root40; left20 with 10/30; right60 with 50/70.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Correct root40."
+    },
+    {
+      "marks": 1,
+      "criterion": "Left subtree20 with children10,30."
+    },
+    {
+      "marks": 1,
+      "criterion": "Right subtree60 with children50,70."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 3,
+    "code_execution": "No executable code required; explicit answer/trace checked manually."
+  },
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "assets": [],
+  "record_path": "question-bank/records/P-SRC007-Q11.json",
+  "question_path": "question-bank/questions/P-SRC007-Q11.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC007-Q11.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

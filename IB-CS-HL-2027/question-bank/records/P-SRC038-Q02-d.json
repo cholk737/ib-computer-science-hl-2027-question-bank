@@ -1,0 +1,55 @@
+{
+  "question_id": "P-SRC038-Q02-d",
+  "source_question_ids": [
+    "H-SRC038-Q02-d"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "READING(DeviceID, TechID, RecordedAt) and TECHNICIAN(TechID, Name) use ISO date-time strings. Construct SQL listing device IDs read by R. Kim at any time on 12 May 2027.",
+  "syllabus_codes": [
+    "A3.3.2"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 4,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "One solution:\nSELECT r.DeviceID FROM Reading r JOIN Technician t ON r.TechID=t.TechID WHERE t.Name='R. Kim' AND r.RecordedAt >= '2027-05-12 00:00' AND r.RecordedAt < '2027-05-13 00:00';",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Selects DeviceID."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct two-table join on TechID."
+    },
+    {
+      "marks": 1,
+      "criterion": "Filters technician name."
+    },
+    {
+      "marks": 1,
+      "criterion": "Includes the whole specified day and excludes other days."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "SQLite test includes start, last minute and next-day exclusion.",
+    "source_comparison": [
+      7
+    ],
+    "test_code": "import sqlite3\nc=sqlite3.connect(':memory:');c.executescript(\"CREATE TABLE Reading(DeviceID,TechID,RecordedAt);CREATE TABLE Technician(TechID,Name);INSERT INTO Technician VALUES(1,'R. Kim'),(2,'J. Hall');INSERT INTO Reading VALUES('a',1,'2027-05-12 00:00'),('b',1,'2027-05-12 23:59'),('c',1,'2027-05-13 00:00'),('d',2,'2027-05-12 11:00');\")\nassert c.execute(\"SELECT r.DeviceID FROM Reading r JOIN Technician t ON r.TechID=t.TechID WHERE t.Name='R. Kim' AND r.RecordedAt >= '2027-05-12 00:00' AND r.RecordedAt < '2027-05-13 00:00'\").fetchall()==[('a',),('b',)]",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC038-Q02-d.json",
+  "question_path": "question-bank/questions/P-SRC038-Q02-d.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC038-Q02-d.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

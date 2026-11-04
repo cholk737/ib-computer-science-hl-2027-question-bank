@@ -659,8 +659,8 @@
       "marks": 4,
       "command_term": "Construct",
       "difficulty": "medium",
-      "adaptation_rationale": "Constructing standard-gate diagram fromexpression explicit. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
-      "solution": "P→NOT;R→NOT;Q and NOT R→AND;NOT P and AND output→OR→Z.",
+      "adaptation_rationale": "Constructing standard-gate diagram from expression explicit. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "P→NOT; R→NOT; Q and NOT R→AND; NOT P and AND output→OR→Z.",
       "marking_points": [
         {
           "marks": 1,
@@ -711,7 +711,7 @@
       "command_term": "Construct",
       "difficulty": "high",
       "adaptation_rationale": "Nested-selection accumulated trace translated into Python; preserves dependent-state difficulty. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
-      "solution": "Initial n4, s0, r0, a undefined;after iterations(n, a, s, r):(3,1,4,4),(2,0,1,5),(1,2,2,7),(0,1,3,10). Output10.",
+      "solution": "Initial n4, s0, r0, a undefined; after iterations(n, a, s, r):(3,1,4,4),(2,0,1,5),(1,2,2,7),(0,1,3,10). Output10.",
       "marking_points": [
         {
           "marks": 1,
@@ -746,7 +746,7 @@
       "verification": {
         "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
         "mark_sum": 6,
-        "code_execution": "Executed with trace instrumentation,all state rows and stdout10 verified."
+        "code_execution": "Specific executable boundary and behaviour tests passed; see agents/chunk-2/agent-3-papers-c/technical_checks.json and verify_practice.py."
       },
       "markscheme_status": "preliminary_unofficial_verified_by_author",
       "assets": [],
@@ -800,7 +800,7 @@
       ],
       "derivation_status": "adapted_unofficial",
       "unofficial": true,
-      "question_text": "State the hexadecimal representation of the12-bit integer101001111100.",
+      "question_text": "State the hexadecimal representation of the 12-bit integer 101001111100.",
       "syllabus_codes": [
         "A1.2.1"
       ],

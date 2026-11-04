@@ -34,7 +34,9 @@
       18
     ],
     "question_reference": "Q13 d",
-    "marking_summary": "Find low=min(a,b) and high=max(a,b). Add segment_time[k] for k from low+1 through high inclusive. Equal indices give an empty sum of zero.",
+    "marking_summary": "Exact original MS leaf excerpt: Award [3 max] Determine positions/indexes/subscripts of both bus stations in array ROUTE_X_NAMES; Calculate the sum of the elements of array ROUTE_X_TIMES (calculate the number of minutes as the sum of the array elements); Between (lower +1) index and higher index;",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [3 max]\nDetermine positions/indexes/subscripts of both bus stations in array ROUTE_X_NAMES;\nCalculate the sum of the elements of array   ROUTE_X_TIMES (calculate the number of\nminutes as the sum of the array elements);\nBetween (lower +1) index and higher index;",
     "source_issues": [],
     "source_marking_evidence": "– 18 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \nExample 3: \nNote: Award marks if algorithm is presented in a Java/Python/Javascript/any other program \nrather than IB pseudocode.  \nFor example, please see the following Javascript program \nfunction findStation(station) \n{ var found = false; \n  var i = 0; \n  do \n  { found = (ROUTE_X_NAMES[i] == station); \nif (!found) i = i + 1; \n  } while (!found && i < 10); \n  if (found) return i; \n  else \n  { output(\"No such bus station as \"+station); \nreturn -1; \n  } \n} \nvar station1 = input(); \nvar station2 = input(); \noutput(\"Finding the distance between \"+station1+\" and \"+station2); \nvar station1index = findStation(station1); \nvar station2index = findStation(station2); \nif (station1index >=0 && station2index >= 0) \n   { if (station1index >= station2index) \noutput(\"Distance \"+ROUTE_X_DISTANCES[station1index][station2index]); \n   else \noutput (\"Distance = \"+ROUTE_X_DISTANCES[station2index][station1index]); \n   } \n(d) Award [3 max]\nDetermine positions/indexes/subscripts of both bus stations in array ROUTE_X_NAMES;\nCalculate the sum of the elements of array   ROUTE_X_TIMES (calculate the number of\nminutes as the sum of the array elements);\nBetween (lower +1) index and higher index;"
   },
@@ -43,7 +45,7 @@
     {
       "syllabus_code": "B2.2.2",
       "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
-      "rationale": "In a route list, segment_time[k] is the time from stop k-1 to stop k, and segment_time[0]=0 assesses Construct programs that apply arrays and Lists.",
+      "rationale": "Adapted target only: In a route list, segment_time[k] is the time from stop k-1 to stop k, and segment_time[0]=0; guidance target: Construct programs that apply arrays and Lists. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
       "theme": "B",
       "level": "SL/HL common",
       "confidence": "high",
@@ -52,7 +54,7 @@
     {
       "syllabus_code": "B2.3.3",
       "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
-      "rationale": "In a route list, segment_time[k] is the time from stop k-1 to stop k, and segment_time[0]=0 assesses Construct programs that utilize looping structures to perform repeated actions.",
+      "rationale": "Adapted target only: In a route list, segment_time[k] is the time from stop k-1 to stop k, and segment_time[0]=0; guidance target: Construct programs that utilize looping structures to perform repeated actions. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
       "theme": "B",
       "level": "SL/HL common",
       "confidence": "high",
@@ -67,8 +69,9 @@
     "visual": "No visual required by this leaf.",
     "technical": "Independently reasoned and compared with available source marking points."
   },
-  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "adaptation_reuse_question_id": "",
   "practice_question_ids": [
     "P-SRC006-Q13-d"
-  ]
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
 }

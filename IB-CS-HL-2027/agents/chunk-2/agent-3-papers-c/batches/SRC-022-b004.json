@@ -654,7 +654,7 @@
       "command_term": "Outline",
       "difficulty": "medium",
       "adaptation_rationale": "Lossy/lossless compression characteristics explicit. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
-      "solution": "Lossy methods discard detail, which cannot be exactly restored;lossless methods may achieve little reduction on already compressed data, so file size may remain large.",
+      "solution": "Lossy methods discard detail, which cannot be exactly restored; lossless methods may achieve little reduction on already compressed data, so file size may remain large.",
       "marking_points": [
         {
           "marks": 1,
@@ -702,20 +702,20 @@
       "marks": 3,
       "command_term": "Describe",
       "difficulty": "medium",
-      "adaptation_rationale": "Binary representation of images explicit;bit-depth reasoning relates available codes to shades. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
-      "solution": "8bitsprovide256possiblecodes;this limits available colours/shades, and rounding nearby original colours to the palette can produce visible banding/loss of gradient detail.",
+      "adaptation_rationale": "Binary representation of images explicit; bit-depth reasoning relates available codes to shades. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "solution": "8 bits provide256 possible codes; this limits available colours/shades, and rounding nearby original colours to the palette can produce visible banding/loss of gradient detail.",
       "marking_points": [
         {
           "marks": 1,
-          "criterion": "2^8=256possiblecolourcodes."
+          "criterion": "2^8 = 256 possible colour codes."
         },
         {
           "marks": 1,
-          "criterion": "Limited distinct shades relative to original."
+          "criterion": "Limited distinct shades relative to the original."
         },
         {
           "marks": 1,
-          "criterion": "Explains banding/rounding/lost smooth gradient."
+          "criterion": "Explains banding, rounding or loss of a smooth gradient."
         }
       ],
       "acceptable_alternatives": [
@@ -749,7 +749,7 @@
       "command_term": "Explain",
       "difficulty": "medium",
       "adaptation_rationale": "Focus precise specified memory/storage bottlenecks rather than generic gaming peripherals. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
-      "solution": "Add RAM so active model data fits and reduces paging;replace HDD with SSD to speed file I/O and remaining page access.",
+      "solution": "Add RAM so active model data fits and reduces paging; replace HDD with SSD to speed file I/O and remaining page access.",
       "marking_points": [
         {
           "marks": 1,
@@ -757,7 +757,7 @@
         },
         {
           "marks": 1,
-          "criterion": "Links less paging to improved active workload performance."
+          "criterion": "Links less paging to improved active-workload performance."
         },
         {
           "marks": 1,
@@ -765,7 +765,7 @@
         },
         {
           "marks": 1,
-          "criterion": "Links faster secondary access to loads/pageI/O."
+          "criterion": "Links faster secondary access to loading files or page input/output."
         }
       ],
       "acceptable_alternatives": [
@@ -798,7 +798,7 @@
       "command_term": "List",
       "difficulty": "medium",
       "adaptation_rationale": "Runtime allocation/resizing and trade offs explicit. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
-      "solution": "Its length can change at runtime;additional storage can be allocated as needed;resizing may require allocation/copying and thus additional processing.",
+      "solution": "Its length can change at runtime; additional storage can be allocated as needed; resizing may require allocation/copying and thus additional processing.",
       "marking_points": [
         {
           "marks": 1,
@@ -843,7 +843,7 @@
       "command_term": "Describe",
       "difficulty": "medium",
       "adaptation_rationale": "Circular type explicit must include. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
-      "solution": "Each node contains data and a next reference;last node points back to the first rather than None;an external head/current reference provides entry to the cycle.",
+      "solution": "Each node contains data and a next reference; last node points back to the first rather than None; an external head/current reference provides entry to the cycle.",
       "marking_points": [
         {
           "marks": 1,
@@ -887,7 +887,7 @@
       "marks": 2,
       "command_term": "State",
       "difficulty": "medium",
-      "adaptation_rationale": "Evaluate circular type in contexts;examples not fixed mandatory list. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "adaptation_rationale": "Evaluate circular type in contexts; examples not fixed mandatory list. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
       "solution": "Round-robin process scheduling and cycling through players in a game.",
       "marking_points": [
         {

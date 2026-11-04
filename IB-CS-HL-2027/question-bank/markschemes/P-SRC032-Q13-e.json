@@ -1,0 +1,32 @@
+{
+  "question_id": "P-SRC032-Q13-e",
+  "unofficial": true,
+  "marks": 2,
+  "solution": "A class attribute belongs to the class and can be shared/accessed through it. Each instance attribute is stored as part of a particular object’s state, so individual objects can hold different values.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Class-level/shared association."
+    },
+    {
+      "marks": 1,
+      "criterion": "Instance-specific state distinction."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [
+    "Assigning self.count may create an instance attribute that shadows the class attribute."
+  ],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      24
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

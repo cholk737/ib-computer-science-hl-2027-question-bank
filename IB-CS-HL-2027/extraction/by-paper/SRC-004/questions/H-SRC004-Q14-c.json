@@ -1,0 +1,104 @@
+{
+  "source_question_id": "H-SRC004-Q14-c",
+  "source_id": "SRC-004",
+  "source_filename": "Computer_science_paper_1__HL (1).pdf",
+  "year": "2023",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "1",
+  "zone": "not stated",
+  "option": "",
+  "question": "14",
+  "subquestion": "c",
+  "source_pdf_pages": [
+    8
+  ],
+  "source_printed_pages": [
+    "7"
+  ],
+  "original_marks": 10,
+  "command_term": "Construct",
+  "original_text": "(c) Construct an algorithm in pseudocode to output the name and the final score for\nevery competitor. [10]",
+  "parent_context": "14. There are 20 gymnasts who took part in a gymnastics competition.\nCompetitors were assessed by 8 judges who each awarded a score in a range from 0–10.\nThe judges were numbered 0–7. The competitors’ names are stored in the one-dimensional\narray , and their scores are stored in the two-dimensional array (see Figure 1).\nNAMES SCORES\nFigure 1: Data held in the array and the array\nNAMES SCORES\nNAMES SCORES\n[0] [1] [2] [3] [4] [5] [6] [7]\nEvans, Lina 7.9 6.7 7.2 7.5 7.5 7.4 7.2 6.9\n[0] [0]\nTann, Mary 9.3 9.6 9.1 9.1 8.9 9.1 10.0 9.1\n[1] [1]\nBush, Lilly 7.2 7.9 6.9 6.9 6.9 6.9 6.9 7.2\n[2] [2]\nKeon, Lea 5.9 5.6 5.9 5.8 5.9 5.5 5.9 5.9\n[3] [3]\nFox, Tea 7.2 6.9 6.9 7.9 6.9 6.9 6.9 6.9\n[4] [4]\nLobar, Tanya 8.2 7.9 8.2 8.2 8.2 8.2 7.9 8.2\n[5] [5]\n… …\nLee, Mae 8.2 8.0 6.9 6.9 8.1 6.9 7.9 8.2\n[18] [18]\nBurton, Sarah 6.9 6.7 6.9 7.9 6.9 7.2 6.8 6.9\n[19] [19]\nFor example, the score that Judge 4 awarded to Mary Tann ( ) is 8.9 and can be\nNAMES[1]\nfound in .\nSCORES[1][4]\n(a) State the judge who awarded the highest score to the competitor Tea Fox. [1]\nThe highest attainable score in gymnastics is 10.0 .\n(b) Construct an algorithm that determines and outputs the number of times the highest\nattainable score was awarded in this competition. [4]\nA competitor’s final score is calculated by ignoring the highest and the lowest mark awarded\nand averaging the remaining marks.\nFor example, the highest mark awarded to Lilly Bush was 7.9, and the lowest mark was 6.9,\nso her final score was (7.2 + 6.9 + 6.9 + 6.9 + 6.9 + 7.2) / 6.\n(c) Construct an algorithm in pseudocode to output the name and the final score for\nevery competitor. [10]",
+  "assets": [
+    {
+      "kind": "source_page_render",
+      "description": "Full source page inspected; includes all question context, source code/figures where present.",
+      "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-004/renders/page-8.png",
+      "source_pdf_page": 8,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Construct programs that apply arrays and Lists.",
+    "Construct programs that utilize looping structures to perform repeated actions.",
+    "Construct programs utilizing appropriate selection structures."
+  ],
+  "difficulty": "high",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-010",
+    "filename": "Computer_science_paper_1__HL_markscheme (1).pdf",
+    "pdf_pages": [
+      16,
+      17,
+      18
+    ],
+    "question_reference": "14(c)",
+    "marking_summary": "Process all competitors,initialize extrema/sum,scan scores,remove exactly one max/min,divide6,output paired names.",
+    "source_issues": [
+      "Source MS uses MARKS while paper uses SCORES; adapted variables made consistent. Source sorting sample loop bound requires independent verification; adaptation uses independently executed linear scan."
+    ]
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B2.2.2",
+      "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+      "rationale": "Preserve nested traversal/extrema/mean challenge in Python; makes conditions/data domain explicit.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B2.3.3",
+      "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+      "rationale": "Preserve nested traversal/extrema/mean challenge in Python; makes conditions/data domain explicit.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B2.3.2",
+      "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+      "rationale": "Preserve nested traversal/extrema/mean challenge in Python; makes conditions/data domain explicit.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [
+    "Source MS uses MARKS while paper uses SCORES; adapted variables made consistent. Source sorting sample loop bound requires independent verification; adaptation uses independently executed linear scan."
+  ],
+  "verification": {
+    "source_text": "transcribed from original PDF and compared with rendered page",
+    "source_marks": "checked against printed allocation and official MS",
+    "visual_review": "full question page inspected",
+    "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+  },
+  "original_text_synopsis": "Construct an algorithm in pseudocode to output the name and the final score for every competitor.",
+  "context_synopsis": "20 gymnasts;8 judges numbered0–7;NAMES one-dimensional and SCORES20x8. Exact original Figure1 preserved in rendered source page8. Final score drops one highest and one lowest and averages other6.",
+  "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+  "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+  "raw_source_page_transcriptions": [
+    "agents/chunk-2/agent-3-papers-c/papers/SRC-004/transcription/pdf-page-008.txt"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC004-Q14-c"
+  ]
+}

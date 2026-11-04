@@ -1,0 +1,51 @@
+{
+  "question_id": "P-SRC038-Q04-e",
+  "source_question_ids": [
+    "H-SRC038-Q04-e"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Explain why combining different branch records in a data warehouse requires consistent identifiers and formats.",
+  "syllabus_codes": [
+    "A3.4.2"
+  ],
+  "theme": "A",
+  "level": "HL-only",
+  "marks": 3,
+  "command_term": "Explain",
+  "difficulty": "medium",
+  "adaptation_rationale": "Retains warehouse integration reasoning; detailed ETL stages/strategies are outside the assessed requirement.",
+  "solution": "Sources may use different codes or date formats for equivalent facts. Aligning them gives integrated data that can be compared and aggregated correctly; otherwise the same visitor/site may be counted separately or dates misinterpreted.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Recognizes incompatible source representations."
+    },
+    {
+      "marks": 1,
+      "criterion": "Standardization enables integrated comparison/aggregation."
+    },
+    {
+      "marks": 1,
+      "criterion": "Concrete consequence of inconsistent identifiers/formats."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      14
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC038-Q04-e.json",
+  "question_path": "question-bank/questions/P-SRC038-Q04-e.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC038-Q04-e.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

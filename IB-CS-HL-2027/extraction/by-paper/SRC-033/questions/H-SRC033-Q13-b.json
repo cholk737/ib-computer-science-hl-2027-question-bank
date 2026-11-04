@@ -1,0 +1,88 @@
+{
+  "source_question_id": "H-SRC033-Q13-b",
+  "source_id": "SRC-033",
+  "source_filename": "Computer_science_paper_2__HL (2).pdf",
+  "year": "2020",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "TZ0",
+  "option": "D",
+  "question": "13",
+  "subquestion": "b",
+  "source_pdf_pages": [
+    15,
+    16
+  ],
+  "source_printed_pages": [
+    "14",
+    "15"
+  ],
+  "original_marks": 3,
+  "command_term": "Describe",
+  "original_text": "(b) Describe the relationship between the classes and . [3]",
+  "parent_context": "13. A company provides car parking services in large cities and needs a computer system to\nkeep track of the number of vehicles using its parking areas.\nWhen a vehicle arrives, its registration plate is recorded on the system and it is allocated a\nnumber that identifies where it should park. When the vehicle leaves, that space is made\navailable for other vehicles to use.\nVehicles are identified by their unique registration plate, which is an alphanumeric code of\neight characters (eg ). This is clearly displayed on the vehicle.\nX1234567\nA programmer created the classes and to model the above situation.\nParkingArea Vehicle\npublic class ParkingArea {\nprivate Vehicle vehicles[];\nprivate String name;\nParkingArea(String name, int capacity) {\n=\nthis.name name;\n> =\nif (capacity 300) capacity 300;\n=\nthis.vehicles new Vehicle[capacity];\n}\nString getName() {\nreturn name;\n}\npublic int getCapacity() {\nreturn vehicles.length;\n}\npublic int findVehicle(String reg) {\n//find where the vehicle is located in the array and\n//return the index not yet written\n}\n}\n(Option D continues on the following page)\nN20/4/COMSC/HP2/ENG/TZ0/XX\n– 15 – 8820 – 7012\n(Option D, question 13 continued)\npublic class Vehicle {\nprivate String registration;\nprivate byte colour;\nprivate boolean broken;\n=\npublic final static byte BLACK 1;\n=\npublic final static byte WHITE 2;\n=\npublic final static byte BLUE 3;\n=\npublic final static byte RED 4;\n=\npublic final static byte GREEN 5;\n=\nprivate final static double ADMIN_FEE 3;\npublic Vehicle() {}\npublic Vehicle(String registration) {\n=\nthis.registration registration;\n}\npublic Vehicle(String registration, byte colour) {\n=\nthis.registration registration;\n=\nthis.colour colour;\n}\npublic void setBroken(boolean broken) {\n=\nthis.broken broken;\n}\npublic void setColour(byte colour) {\n=\nthis.colour colour;\n}\npublic boolean getBroken() {\nreturn broken;\n}\npublic String getRegistration() {\nreturn registration;\n}\npublic double pay(int hours) {\n// code to return admin fee - only if applicable\n}\n}\n(a) Outline one effect of using the modifier when declaring a variable. [2]\nstatic\n(b) Describe the relationship between the classes and . [3]\nVehicle ParkingArea\n(c) Outline why it is necessary to use the keyword in the method of the\nthis setBroken\nclass. [2]\nVehicle\n(d) (i) Construct code to create an instance of the class that has a registration\nVehicle\nof . [2]\nX1234567\n(ii) Construct code that sets the colour of the object created in part (i) as black. [2]\n(Option D continues on the following page)\nTurn over\nN20/4/COMSC/HP2/ENG/TZ0/XX\n– 16 – 8820 – 7012\n(Option D continued)\n",
+  "assets": [
+    {
+      "kind": "source_page_render",
+      "description": "Full source page inspected; includes all question context, source code/figures where present.",
+      "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-033/renders/page-16.png",
+      "source_pdf_page": 16,
+      "visually_verified": true
+    },
+    {
+      "kind": "source_page_render",
+      "description": "Shared full source question context, table,code or figure inspected.",
+      "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-033/renders/page-15.png",
+      "source_pdf_page": 15,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Explain the role of composition and aggregation in class relationships."
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-036",
+    "filename": "Computer_science_paper_2__HL_markscheme (2).pdf",
+    "pdf_pages": [
+      22
+    ],
+    "question_reference": "13(b)",
+    "marking_summary": "Has-a/aggregation;0…300 vehicles;compositionalsoaccepted.",
+    "source_issues": []
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B3.2.4",
+      "scope_evidence": "• How to design objects by leveraging smaller component objects through composition and aggregation\n• That aggregation implies that the subcomponents can function independently of the aggregating class, while in composition, the subcomponents are tightly coupled and cannot exist outside the aggregating class",
+      "rationale": "Specify lifetime independence to remove source aggregation/composition ambiguity.",
+      "theme": "B",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "transcribed from original PDF and compared with rendered page",
+    "source_marks": "checked against printed allocation and official MS",
+    "visual_review": "full question page inspected",
+    "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+  },
+  "original_text_synopsis": "Describe Vehicle–ParkingArea relationship.",
+  "context_synopsis": "ParkingAreahasVehicle[]capacitymax300;Vehicleprivatefieldsregistration,colour,broken;staticcolourconstants;constructors,setBroken,setColour,getRegistration;exactJavacodePDF15–16.",
+  "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+  "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+  "raw_source_page_transcriptions": [
+    "agents/chunk-2/agent-3-papers-c/papers/SRC-033/transcription/pdf-page-015.txt",
+    "agents/chunk-2/agent-3-papers-c/papers/SRC-033/transcription/pdf-page-016.txt"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC033-Q13-b"
+  ]
+}

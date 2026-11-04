@@ -1,0 +1,47 @@
+{
+  "question_id": "P-SRC034-Q06-a",
+  "source_question_ids": [
+    "H-SRC034-Q06-a"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct factorial(n) in Python for a nonnegative integer n, using a loop. factorial(0)=1.",
+  "syllabus_codes": [
+    "B2.3.3",
+    "B2.3.4"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 2,
+  "command_term": "Construct",
+  "difficulty": "low",
+  "adaptation_rationale": "Factorial as supplied algorithm context, not new mathematics requirement; iterative Python construction.",
+  "solution": "def factorial(n):\n    value=1\n    for k in range(2,n+1):\n        value*=k\n    return value",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes accumulator 1 and returns it."
+    },
+    {
+      "marks": 1,
+      "criterion": "Multiplies by each required integer throughn without losing the 0!case."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "Executable checks saved under checks/ where applicable."
+  },
+  "code": "def factorial(n):\n    value=1\n    for k in range(2,n+1):\n        value*=k\n    return value",
+  "test_code": "assert factorial(0)==1\nassert factorial(5)==120",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC034-Q06-a.json",
+  "question_path": "question-bank/questions/P-SRC034-Q06-a.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC034-Q06-a.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

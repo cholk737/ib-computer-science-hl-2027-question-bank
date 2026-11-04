@@ -1,0 +1,29 @@
+{
+  "question_id": "P-SRC034-Q17-b",
+  "unofficial": true,
+  "marks": 2,
+  "solution": "return table[attacker.kind-1][defender.kind-1]",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Uses attacker.kind-1 as row index."
+    },
+    {
+      "marks": 1,
+      "criterion": "Uses defender.kind-1 as column index:return table[attacker.kind-1][defender.kind-1]."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "Executable checks saved under checks/ where applicable."
+  },
+  "code": "def adjustment_for(attacker,defender):\n    table=[[0,-2,3],[-5,0,4],[6,-1,0]]\n    return table[attacker.kind-1][defender.kind-1]",
+  "test_code": "from types import SimpleNamespace\nassert adjustment_for(SimpleNamespace(kind=1),SimpleNamespace(kind=3))==3\nassert adjustment_for(SimpleNamespace(kind=3),SimpleNamespace(kind=1))==6",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

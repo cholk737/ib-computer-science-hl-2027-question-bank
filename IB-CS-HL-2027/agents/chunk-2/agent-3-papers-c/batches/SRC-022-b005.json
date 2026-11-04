@@ -536,7 +536,7 @@
       "command_term": "Identify",
       "difficulty": "medium",
       "adaptation_rationale": "Fundamental stack queue operations explicit. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
-      "solution": "Stack removes most recent item;queue removes earliest item.Stack push/pop at top;queue enqueues at rear and dequeues at front.",
+      "solution": "Stack removes most recent item; queue removes earliest item.Stack push/pop at top; queue enqueues at rear and dequeues at front.",
       "marking_points": [
         {
           "marks": 1,
@@ -610,7 +610,7 @@
       "verification": {
         "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
         "mark_sum": 5,
-        "code_execution": "Executedstubstack/queueswithboundaryA,M,N,Z andemptyinput;stackemptiedandqueueorderverified."
+        "code_execution": "Specific executable boundary and behaviour tests passed; see agents/chunk-2/agent-3-papers-c/technical_checks.json and verify_practice.py."
       },
       "markscheme_status": "preliminary_unofficial_verified_by_author",
       "assets": [],
@@ -637,7 +637,7 @@
       "marking_points": [
         {
           "marks": 1,
-          "criterion": "Correct4,8,6."
+          "criterion": "Correct 4,8,6."
         }
       ],
       "acceptable_alternatives": [
@@ -670,7 +670,7 @@
       "command_term": "Describe",
       "difficulty": "medium",
       "adaptation_rationale": "2Dindexrelationshipwithinlistalgorithms. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
-      "solution": "Compare r and c;if the row equals the column, the element is on main diagonal;otherwise it is not.",
+      "solution": "Compare r and c; if the row equals the column, the element is on main diagonal; otherwise it is not.",
       "marking_points": [
         {
           "marks": 1,
@@ -678,7 +678,7 @@
         },
         {
           "marks": 1,
-          "criterion": "Usesr==cascriterion."
+          "criterion": "Uses r == c as the main-diagonal criterion."
         }
       ],
       "acceptable_alternatives": [
@@ -712,12 +712,12 @@
       "marks": 7,
       "command_term": "Construct",
       "difficulty": "high",
-      "adaptation_rationale": "Preserveindex-bound reasoning and early return in Python. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+      "adaptation_rationale": "Preserve index-bound reasoning and early return in Python. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
       "solution": "def is_upper(mat):\n    n = len(mat)\n    for row in range(n):\n        for col in range(row):\n            if mat[row][col] != 0:\n                return False\n    return True",
       "marking_points": [
         {
           "marks": 1,
-          "criterion": "Getsn/handles matrix size."
+          "criterion": "Gets n / handles matrix size."
         },
         {
           "marks": 1,
@@ -752,7 +752,7 @@
       "verification": {
         "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
         "mark_sum": 7,
-        "code_execution": "Exhaustivelycomparedall2x2binarymatrices withpredicate;empty,singleton,3x3andnegativeoffdiagonalcaseschecked."
+        "code_execution": "Specific executable boundary and behaviour tests passed; see agents/chunk-2/agent-3-papers-c/technical_checks.json and verify_practice.py."
       },
       "markscheme_status": "preliminary_unofficial_verified_by_author",
       "assets": [],
@@ -807,7 +807,7 @@
       "verification": {
         "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
         "mark_sum": 5,
-        "code_execution": "Executedwithstubhelperbooleansforallfourcombinations;correctlabelsverified."
+        "code_execution": "Specific executable boundary and behaviour tests passed; see agents/chunk-2/agent-3-papers-c/technical_checks.json and verify_practice.py."
       },
       "markscheme_status": "preliminary_unofficial_verified_by_author",
       "assets": [],

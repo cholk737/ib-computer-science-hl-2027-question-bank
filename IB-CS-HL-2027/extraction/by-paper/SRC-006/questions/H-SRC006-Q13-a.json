@@ -43,6 +43,8 @@
     ],
     "question_reference": "Q13 a",
     "marking_summary": "Official source value5.9 kilometres.",
+    "summary_kind": "author_paraphrase_of_original",
+    "source_marking_leaf_evidence": "Award [1 max]\n5.9;",
     "source_issues": [],
     "source_marking_evidence": "– 15 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \n13. (a) Award [1 max]\n5.9; \n(b) Award [5 max]\nAward [1] for correct outer/row loop\nAward [1] for correct inner/column loop\nAward [1] for use of a flag\nAward [1] for checking whether all elements on and above the main diagonal are zero\nAward [1] for checking all elements below the main diagonal (they all should be positive\nnumbers)\nAward [1] for outputting the appropriate message\nExample 1:\nVALID=True\nloop R from 0 to 9\n   loop C from 0 to 9 \nif R>C and ROUTE_X_DISTANCES[R][C]<=0 \nthen VALID=False \nend if \nif R<=C and ROUTE_X_DISTANCES[R][C]!=0 \nthen VALID=False \nend if \nend loop \nend loop \nif VALID  \n  then output('VALID') \n  else output('INVALID') \nend if \nExample 2: \nFLAG=1 \nloop R from 1 to 9 \nloop C from 0 to R-1 \nif ROUTE_X_DISTANCES[R][C]<=0 \nthen FLAG=0 \nend if \nend loop \nend loop \nloop R from 0 to 9 \nloop C= from R to 9 \nif ROUTE_X_DISTANCES[R][C]!=0 \nthen FLAG=0 \nend if \nend loop \nend loop \nif FLAG ==1 \n  then output('IT IS VALID') \n  else output('IT IS NOT VALID') \nend if"
   },
@@ -51,7 +53,7 @@
     {
       "syllabus_code": "B2.2.2",
       "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
-      "rationale": "A lower-triangular distance list d stores d[2][0]=7 assesses Construct programs that apply arrays and Lists.",
+      "rationale": "Adapted target only: A lower-triangular distance list d stores d[2][0]=7; guidance target: Construct programs that apply arrays and Lists. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
       "theme": "B",
       "level": "SL/HL common",
       "confidence": "high",
@@ -66,8 +68,9 @@
     "visual": "Full original route table visually read.",
     "technical": "Independently reasoned and compared with available source marking points."
   },
-  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "adaptation_reuse_question_id": "",
   "practice_question_ids": [
     "P-SRC006-Q13-a"
-  ]
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
 }

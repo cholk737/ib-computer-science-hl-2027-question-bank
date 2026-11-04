@@ -47,6 +47,8 @@
         ],
         "question_reference": "Q13 a",
         "marking_summary": "Official source value5.9 kilometres.",
+        "summary_kind": "author_paraphrase_of_original",
+        "source_marking_leaf_evidence": "Award [1 max]\n5.9;",
         "source_issues": [],
         "source_marking_evidence": "– 15 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \n13. (a) Award [1 max]\n5.9; \n(b) Award [5 max]\nAward [1] for correct outer/row loop\nAward [1] for correct inner/column loop\nAward [1] for use of a flag\nAward [1] for checking whether all elements on and above the main diagonal are zero\nAward [1] for checking all elements below the main diagonal (they all should be positive\nnumbers)\nAward [1] for outputting the appropriate message\nExample 1:\nVALID=True\nloop R from 0 to 9\n   loop C from 0 to 9 \nif R>C and ROUTE_X_DISTANCES[R][C]<=0 \nthen VALID=False \nend if \nif R<=C and ROUTE_X_DISTANCES[R][C]!=0 \nthen VALID=False \nend if \nend loop \nend loop \nif VALID  \n  then output('VALID') \n  else output('INVALID') \nend if \nExample 2: \nFLAG=1 \nloop R from 1 to 9 \nloop C from 0 to R-1 \nif ROUTE_X_DISTANCES[R][C]<=0 \nthen FLAG=0 \nend if \nend loop \nend loop \nloop R from 0 to 9 \nloop C= from R to 9 \nif ROUTE_X_DISTANCES[R][C]!=0 \nthen FLAG=0 \nend if \nend loop \nend loop \nif FLAG ==1 \n  then output('IT IS VALID') \n  else output('IT IS NOT VALID') \nend if"
       },
@@ -55,7 +57,7 @@
         {
           "syllabus_code": "B2.2.2",
           "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
-          "rationale": "A lower-triangular distance list d stores d[2][0]=7 assesses Construct programs that apply arrays and Lists.",
+          "rationale": "Adapted target only: A lower-triangular distance list d stores d[2][0]=7; guidance target: Construct programs that apply arrays and Lists. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -69,7 +71,11 @@
         "markscheme": "Read cited MS page(s).",
         "visual": "Full original route table visually read.",
         "technical": "Independently reasoned and compared with available source marking points."
-      }
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC006-Q13-a"
+      ]
     },
     {
       "source_question_id": "H-SRC006-Q13-b",
@@ -123,7 +129,9 @@
           16
         ],
         "question_reference": "Q13 b",
-        "marking_summary": "One valid solution:\ndef valid_distances(d):\n    for r in range(len(d)):\n        for c in range(len(d)):\n            if r <= c and d[r][c] != 0:\n                return False\n            if r > c and d[r][c] <= 0:\n                return False\n    return True",
+        "marking_summary": "Exact original MS leaf excerpt: Award [5 max] Award [1] for correct outer/row loop Award [1] for correct inner/column loop Award [1] for use of a flag Award [1] for checking whether all elements on and above the main diagonal are zero Award [1] for checking all elements below the main diagonal (they all should be positive numbers) Award [1] for outputting the appropriate message Example 1: VALID=True loop R from 0 to 9 loop C from 0 to 9 if R>C and ROUTE_X_DISTANCES[R][C]<=0 then VALID=False end if if R<=C and ROUTE_X_DISTANCES[R][C]!=0 then VALID=False end if end loop end loop if VALID then output('VALID') else output('INVALID') end if Example 2: FLAG=1 loop R from 1 to 9 loop C from 0 to R-1 if ROUTE_X_DISTANCES[R][C]<=0 then FLAG=0 end if end loop end loop loop R from 0 to 9 loop C= from R to 9 if ROUTE_X_DISTANCES[R][C]!=0 then FLAG=0 end if end loop end loop if FLAG ==1 then output('IT IS VALID') else output('IT I … [full leaf evidence retained]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [5 max]\nAward [1] for correct outer/row loop\nAward [1] for correct inner/column loop\nAward [1] for use of a flag\nAward [1] for checking whether all elements on and above the main diagonal are zero\nAward [1] for checking all elements below the main diagonal (they all should be positive\nnumbers)\nAward [1] for outputting the appropriate message\nExample 1:\nVALID=True\nloop R from 0 to 9\n   loop C from 0 to 9 \nif R>C and ROUTE_X_DISTANCES[R][C]<=0 \nthen VALID=False \nend if \nif R<=C and ROUTE_X_DISTANCES[R][C]!=0 \nthen VALID=False \nend if \nend loop \nend loop \nif VALID  \n  then output('VALID') \n  else output('INVALID') \nend if \nExample 2: \nFLAG=1 \nloop R from 1 to 9 \nloop C from 0 to R-1 \nif ROUTE_X_DISTANCES[R][C]<=0 \nthen FLAG=0 \nend if \nend loop \nend loop \nloop R from 0 to 9 \nloop C= from R to 9 \nif ROUTE_X_DISTANCES[R][C]!=0 \nthen FLAG=0 \nend if \nend loop \nend loop \nif FLAG ==1 \n  then output('IT IS VALID') \n  else output('IT IS NOT VALID') \nend if\n\nExample 3: \nNote: Marks should also be awarded if a candidate wrote the algorithm in \nJava/Python/Javascript. \nAward [1] for correct outer/row loop \nAward [1] for correct inner/column loop \nAward [1] for stopping as soon as an incorrect value is found \nAward [1] for checking whether elements on and above the main diagonal are zero \nAward [1] for checking elements below the main diagonal (they all should be positive \nnumbers) \nAward [1] for outputting the appropriate message \nfunction check() \n{ for (var i=0; i<10; i++) \n  { for (var j=0; j<10; j++) \n{ if (i>j) \n{ if (ROUTE_X_DISTANCES[i][j] <= 0.0) return \"invalid\"; \n} \nelse if (ROUTE_X_DISTANCES[i][j] != 0.0 ) return \"invalid\"; \n} \n  } \n  return \"valid\"; \n} \noutput(\"ROUTE_X_DISTANCES is \"+check());",
         "source_issues": [],
         "source_marking_evidence": "– 15 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \n13. (a) Award [1 max]\n5.9; \n(b) Award [5 max]\nAward [1] for correct outer/row loop\nAward [1] for correct inner/column loop\nAward [1] for use of a flag\nAward [1] for checking whether all elements on and above the main diagonal are zero\nAward [1] for checking all elements below the main diagonal (they all should be positive\nnumbers)\nAward [1] for outputting the appropriate message\nExample 1:\nVALID=True\nloop R from 0 to 9\n   loop C from 0 to 9 \nif R>C and ROUTE_X_DISTANCES[R][C]<=0 \nthen VALID=False \nend if \nif R<=C and ROUTE_X_DISTANCES[R][C]!=0 \nthen VALID=False \nend if \nend loop \nend loop \nif VALID  \n  then output('VALID') \n  else output('INVALID') \nend if \nExample 2: \nFLAG=1 \nloop R from 1 to 9 \nloop C from 0 to R-1 \nif ROUTE_X_DISTANCES[R][C]<=0 \nthen FLAG=0 \nend if \nend loop \nend loop \nloop R from 0 to 9 \nloop C= from R to 9 \nif ROUTE_X_DISTANCES[R][C]!=0 \nthen FLAG=0 \nend if \nend loop \nend loop \nif FLAG ==1 \n  then output('IT IS VALID') \n  else output('IT IS NOT VALID') \nend if\n– 16 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \nExample 3: \nNote: Marks should also be awarded if a candidate wrote the algorithm in \nJava/Python/Javascript. \nAward [1] for correct outer/row loop \nAward [1] for correct inner/column loop \nAward [1] for stopping as soon as an incorrect value is found \nAward [1] for checking whether elements on and above the main diagonal are zero \nAward [1] for checking elements below the main diagonal (they all should be positive \nnumbers) \nAward [1] for outputting the appropriate message \nfunction check() \n{ for (var i=0; i<10; i++) \n  { for (var j=0; j<10; j++) \n{ if (i>j) \n{ if (ROUTE_X_DISTANCES[i][j] <= 0.0) return \"invalid\"; \n} \nelse if (ROUTE_X_DISTANCES[i][j] != 0.0 ) return \"invalid\"; \n} \n  } \n  return \"valid\"; \n} \noutput(\"ROUTE_X_DISTANCES is \"+check()); "
       },
@@ -132,7 +140,7 @@
         {
           "syllabus_code": "B2.2.2",
           "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
-          "rationale": "Construct a Python function valid_distances(d) for a nonempty square numeric nested list assesses Construct programs that apply arrays and Lists.",
+          "rationale": "Adapted target only: Construct a Python function valid_distances(d) for a nonempty square numeric nested list; guidance target: Construct programs that apply arrays and Lists. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -141,7 +149,7 @@
         {
           "syllabus_code": "B2.3.2",
           "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
-          "rationale": "Construct a Python function valid_distances(d) for a nonempty square numeric nested list assesses Construct programs utilizing appropriate selection structures.",
+          "rationale": "Adapted target only: Construct a Python function valid_distances(d) for a nonempty square numeric nested list; guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -150,7 +158,7 @@
         {
           "syllabus_code": "B2.3.3",
           "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
-          "rationale": "Construct a Python function valid_distances(d) for a nonempty square numeric nested list assesses Construct programs that utilize looping structures to perform repeated actions.",
+          "rationale": "Adapted target only: Construct a Python function valid_distances(d) for a nonempty square numeric nested list; guidance target: Construct programs that utilize looping structures to perform repeated actions. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -162,9 +170,13 @@
       "verification": {
         "source_text": "Read complete source page and matched leaf/mark to original PDF.",
         "markscheme": "Read cited MS page(s).",
-        "visual": "No visual required by this leaf.",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
         "technical": "Executed valid3x3, wrong upper entry, zero lower entry and1x1 cases."
-      }
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC006-Q13-b"
+      ]
     },
     {
       "source_question_id": "H-SRC006-Q13-c",
@@ -218,7 +230,9 @@
           18
         ],
         "question_reference": "Q13 c",
-        "marking_summary": "One valid solution:\ndef distance(names, d, a, b):\n    ia = ib = -1\n    for i in range(len(names)):\n        if names[i] == a: ia = i\n        if names[i] == b: ib = i\n    if ia == -1 or ib == -1:\n        return None\n    if ia < ib:\n        ia, ib = ib, ia\n    return d[ia][ib]",
+        "marking_summary": "Exact original MS leaf excerpt: Award [6 max] Award [1] for all variables correctly declared and initialized; Award [1] for looping through the array ROUTE_X_NAMES; Award [1] for determining positions of the first name in the array; Award [1] for determining positions of the second name in the array; Award [1] for outputting a message if one or other not present; Award [1] for a comparison of positions to find largest; Award [1] for the correct output of distance from ROUTE_X_DISTANCES; Example 1: NAME1=input() NAME2=input() POS1=-1 POS2=-1 K=0 loop while K<=9 and (POS1==-1 or POS2==-1) if ROUTE_X_NAMES [K].equals(NAME1) //accept '==' instead of equals() then POS1=K end if if ROUTE_X_NAMES [K].equals(NAME2) then POS2=K end if K=K+1 end while if POS1==-1 OR POS2==-1 then output('stations are not found') else if POS1 > POS2 then output(ROUTE_X_DISTANCES [POS1][POS2]) else output(ROUTE_X_DISTANCES [POS2][POS1]) end if end … [full leaf evidence retained]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [6 max]\nAward [1] for all variables correctly declared and initialized;\nAward [1] for looping through the array ROUTE_X_NAMES;\nAward [1] for determining positions of the first name in the array;\nAward [1] for determining positions of the second name in the array;\nAward [1] for outputting a message if one or other not present;\nAward [1] for a comparison of positions to find largest;\nAward [1] for the correct output of distance from ROUTE_X_DISTANCES;\nExample 1: \nNAME1=input() \nNAME2=input() \nPOS1=-1 \nPOS2=-1 \nK=0 \nloop while  K<=9 and (POS1==-1 or POS2==-1) \nif ROUTE_X_NAMES [K].equals(NAME1) //accept '==' instead of equals() \nthen POS1=K \nend if \nif ROUTE_X_NAMES [K].equals(NAME2) \nthen POS2=K \nend if \nK=K+1 \nend while \nif POS1==-1 OR POS2==-1 \n   then output('stations are not found') \n   else \nif POS1 > POS2 \nthen output(ROUTE_X_DISTANCES [POS1][POS2]) \nelse output(ROUTE_X_DISTANCES [POS2][POS1]) \nend if \nend if \nExample 2: \nST1=input() \nST2=input() \nPS1=-1 \nPS2=-1 \nloop K from 0 to 9 \nif ROUTE_X_NAMES [K]==ST1 \nthen PS1=K \nend if \nif ROUTE_X_NAMES [K]==ST2 \nthen PS2=K \nend if \nend loop \nif PS1!=-1 AND PS2!=-1 \n  then   if PS1 < PS2 \nthen T=PS1 \nPS1=PS2 \nPS2=T \nend if  \noutput(ROUTE_X_DISTANCES [PS1][PS2]) \n   else \noutput('stations not found') \nend if \n\nExample 3: \nNote: Award marks if algorithm is presented in a Java/Python/Javascript/any other program \nrather than IB pseudocode.  \nFor example, please see the following Javascript program \nfunction findStation(station) \n{ var found = false; \n  var i = 0; \n  do \n  { found = (ROUTE_X_NAMES[i] == station); \nif (!found) i = i + 1; \n  } while (!found && i < 10); \n  if (found) return i; \n  else \n  { output(\"No such bus station as \"+station); \nreturn -1; \n  } \n} \nvar station1 = input(); \nvar station2 = input(); \noutput(\"Finding the distance between \"+station1+\" and \"+station2); \nvar station1index = findStation(station1); \nvar station2index = findStation(station2); \nif (station1index >=0 && station2index >= 0) \n   { if (station1index >= station2index) \noutput(\"Distance \"+ROUTE_X_DISTANCES[station1index][station2index]); \n   else \noutput (\"Distance = \"+ROUTE_X_DISTANCES[station2index][station1index]); \n   }",
         "source_issues": [],
         "source_marking_evidence": "– 17 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \n(c) Award [6 max]\nAward [1] for all variables correctly declared and initialized;\nAward [1] for looping through the array ROUTE_X_NAMES;\nAward [1] for determining positions of the first name in the array;\nAward [1] for determining positions of the second name in the array;\nAward [1] for outputting a message if one or other not present;\nAward [1] for a comparison of positions to find largest;\nAward [1] for the correct output of distance from ROUTE_X_DISTANCES;\nExample 1: \nNAME1=input() \nNAME2=input() \nPOS1=-1 \nPOS2=-1 \nK=0 \nloop while  K<=9 and (POS1==-1 or POS2==-1) \nif ROUTE_X_NAMES [K].equals(NAME1) //accept '==' instead of equals() \nthen POS1=K \nend if \nif ROUTE_X_NAMES [K].equals(NAME2) \nthen POS2=K \nend if \nK=K+1 \nend while \nif POS1==-1 OR POS2==-1 \n   then output('stations are not found') \n   else \nif POS1 > POS2 \nthen output(ROUTE_X_DISTANCES [POS1][POS2]) \nelse output(ROUTE_X_DISTANCES [POS2][POS1]) \nend if \nend if \nExample 2: \nST1=input() \nST2=input() \nPS1=-1 \nPS2=-1 \nloop K from 0 to 9 \nif ROUTE_X_NAMES [K]==ST1 \nthen PS1=K \nend if \nif ROUTE_X_NAMES [K]==ST2 \nthen PS2=K \nend if \nend loop \nif PS1!=-1 AND PS2!=-1 \n  then   if PS1 < PS2 \nthen T=PS1 \nPS1=PS2 \nPS2=T \nend if  \noutput(ROUTE_X_DISTANCES [PS1][PS2]) \n   else \noutput('stations not found') \nend if \n– 18 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \nExample 3: \nNote: Award marks if algorithm is presented in a Java/Python/Javascript/any other program \nrather than IB pseudocode.  \nFor example, please see the following Javascript program \nfunction findStation(station) \n{ var found = false; \n  var i = 0; \n  do \n  { found = (ROUTE_X_NAMES[i] == station); \nif (!found) i = i + 1; \n  } while (!found && i < 10); \n  if (found) return i; \n  else \n  { output(\"No such bus station as \"+station); \nreturn -1; \n  } \n} \nvar station1 = input(); \nvar station2 = input(); \noutput(\"Finding the distance between \"+station1+\" and \"+station2); \nvar station1index = findStation(station1); \nvar station2index = findStation(station2); \nif (station1index >=0 && station2index >= 0) \n   { if (station1index >= station2index) \noutput(\"Distance \"+ROUTE_X_DISTANCES[station1index][station2index]); \n   else \noutput (\"Distance = \"+ROUTE_X_DISTANCES[station2index][station1index]); \n   } \n(d) Award [3 max]\nDetermine positions/indexes/subscripts of both bus stations in array ROUTE_X_NAMES;\nCalculate the sum of the elements of array   ROUTE_X_TIMES (calculate the number of\nminutes as the sum of the array elements);\nBetween (lower +1) index and higher index;"
       },
@@ -227,7 +241,7 @@
         {
           "syllabus_code": "B2.2.2",
           "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
-          "rationale": "Construct a Python function distance(names,d,a,b) assesses Construct programs that apply arrays and Lists.",
+          "rationale": "Adapted target only: Construct a Python function distance(names,d,a,b); guidance target: Construct programs that apply arrays and Lists. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -236,7 +250,7 @@
         {
           "syllabus_code": "B2.3.2",
           "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
-          "rationale": "Construct a Python function distance(names,d,a,b) assesses Construct programs utilizing appropriate selection structures.",
+          "rationale": "Adapted target only: Construct a Python function distance(names,d,a,b); guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -245,7 +259,7 @@
         {
           "syllabus_code": "B2.3.3",
           "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
-          "rationale": "Construct a Python function distance(names,d,a,b) assesses Construct programs that utilize looping structures to perform repeated actions.",
+          "rationale": "Adapted target only: Construct a Python function distance(names,d,a,b); guidance target: Construct programs that utilize looping structures to perform repeated actions. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -254,7 +268,7 @@
         {
           "syllabus_code": "B2.4.2",
           "scope_evidence": "• The differences in efficiency between different methods of linear and binary search\n• Use of search technique based on efficiency requirements—for example, searching a database for a sorted/indexed list of names to find a phone number, versus searching by the number to identify the name",
-          "rationale": "Construct a Python function distance(names,d,a,b) assesses Construct and trace algorithms to implement a linear search and a binary search for data retrieval.",
+          "rationale": "Adapted target only: Construct a Python function distance(names,d,a,b); guidance target: Construct and trace algorithms to implement a linear search and a binary search for data retrieval. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -266,9 +280,13 @@
       "verification": {
         "source_text": "Read complete source page and matched leaf/mark to original PDF.",
         "markscheme": "Read cited MS page(s).",
-        "visual": "No visual required by this leaf.",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
         "technical": "Executed both input orders, same location, missing first/second names."
-      }
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC006-Q13-c"
+      ]
     },
     {
       "source_question_id": "H-SRC006-Q13-d",
@@ -306,7 +324,9 @@
           18
         ],
         "question_reference": "Q13 d",
-        "marking_summary": "Find low=min(a,b) and high=max(a,b). Add segment_time[k] for k from low+1 through high inclusive. Equal indices give an empty sum of zero.",
+        "marking_summary": "Exact original MS leaf excerpt: Award [3 max] Determine positions/indexes/subscripts of both bus stations in array ROUTE_X_NAMES; Calculate the sum of the elements of array ROUTE_X_TIMES (calculate the number of minutes as the sum of the array elements); Between (lower +1) index and higher index;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [3 max]\nDetermine positions/indexes/subscripts of both bus stations in array ROUTE_X_NAMES;\nCalculate the sum of the elements of array   ROUTE_X_TIMES (calculate the number of\nminutes as the sum of the array elements);\nBetween (lower +1) index and higher index;",
         "source_issues": [],
         "source_marking_evidence": "– 18 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \nExample 3: \nNote: Award marks if algorithm is presented in a Java/Python/Javascript/any other program \nrather than IB pseudocode.  \nFor example, please see the following Javascript program \nfunction findStation(station) \n{ var found = false; \n  var i = 0; \n  do \n  { found = (ROUTE_X_NAMES[i] == station); \nif (!found) i = i + 1; \n  } while (!found && i < 10); \n  if (found) return i; \n  else \n  { output(\"No such bus station as \"+station); \nreturn -1; \n  } \n} \nvar station1 = input(); \nvar station2 = input(); \noutput(\"Finding the distance between \"+station1+\" and \"+station2); \nvar station1index = findStation(station1); \nvar station2index = findStation(station2); \nif (station1index >=0 && station2index >= 0) \n   { if (station1index >= station2index) \noutput(\"Distance \"+ROUTE_X_DISTANCES[station1index][station2index]); \n   else \noutput (\"Distance = \"+ROUTE_X_DISTANCES[station2index][station1index]); \n   } \n(d) Award [3 max]\nDetermine positions/indexes/subscripts of both bus stations in array ROUTE_X_NAMES;\nCalculate the sum of the elements of array   ROUTE_X_TIMES (calculate the number of\nminutes as the sum of the array elements);\nBetween (lower +1) index and higher index;"
       },
@@ -315,7 +335,7 @@
         {
           "syllabus_code": "B2.2.2",
           "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
-          "rationale": "In a route list, segment_time[k] is the time from stop k-1 to stop k, and segment_time[0]=0 assesses Construct programs that apply arrays and Lists.",
+          "rationale": "Adapted target only: In a route list, segment_time[k] is the time from stop k-1 to stop k, and segment_time[0]=0; guidance target: Construct programs that apply arrays and Lists. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -324,7 +344,7 @@
         {
           "syllabus_code": "B2.3.3",
           "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
-          "rationale": "In a route list, segment_time[k] is the time from stop k-1 to stop k, and segment_time[0]=0 assesses Construct programs that utilize looping structures to perform repeated actions.",
+          "rationale": "Adapted target only: In a route list, segment_time[k] is the time from stop k-1 to stop k, and segment_time[0]=0; guidance target: Construct programs that utilize looping structures to perform repeated actions. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -338,7 +358,11 @@
         "markscheme": "Read cited MS page(s).",
         "visual": "No visual required by this leaf.",
         "technical": "Independently reasoned and compared with available source marking points."
-      }
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC006-Q13-d"
+      ]
     }
   ],
   "practice_questions": [
@@ -349,14 +373,14 @@
       ],
       "derivation_status": "adapted_unofficial",
       "unofficial": true,
-      "question_text": "A lower-triangular distance list d stores d[2][0]=7.4, d[2][1]=2.1 and d[1][0]=5.3. Indices0,1,2 represent Elm,Oak,Pine. State the distance between Elm and Pine.",
+      "question_text": "A lower-triangular distance list d stores d[2][0]=7.4, d[2][1]=2.1 and d[1][0]=5.3. Indices0, 1, 2 represent Elm, Oak, Pine. State the distance between Elm and Pine.",
       "syllabus_codes": [
         "B2.2.2"
       ],
       "theme": "B",
       "level": "SL/HL common",
       "marks": 1,
-      "command_term": "State",
+      "command_term": "List",
       "difficulty": "medium",
       "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
       "solution": "7.4",
@@ -446,7 +470,7 @@
       ],
       "derivation_status": "adapted_unofficial",
       "unofficial": true,
-      "question_text": "Construct a Python function distance(names,d,a,b). names contains unique location names. Square d stores distances only below its main diagonal, with zeros on the diagonal. Return the distance between a and b, or None if either name is absent.",
+      "question_text": "Construct a Python function distance(names, d, a, b). names contains unique location names. Square d stores distances only below its main diagonal, with zeros on the diagonal. Return the distance between a and b, or None if either name is absent.",
       "syllabus_codes": [
         "B2.2.2",
         "B2.3.2",
@@ -517,10 +541,10 @@
       "theme": "B",
       "level": "SL/HL common",
       "marks": 3,
-      "command_term": "Explain",
+      "command_term": "List",
       "difficulty": "medium",
       "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
-      "solution": "Find low=min(a,b) and high=max(a,b). Add segment_time[k] for k from low+1 through high inclusive. Equal indices give an empty sum of zero.",
+      "solution": "Find low=min(a, b) and high=max(a, b). Add segment_time[k] for k from low+1 through high inclusive. Equal indices give an empty sum of zero.",
       "marking_points": [
         {
           "marks": 1,

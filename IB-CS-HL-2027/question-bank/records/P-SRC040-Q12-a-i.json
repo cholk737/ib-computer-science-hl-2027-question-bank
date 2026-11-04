@@ -1,0 +1,50 @@
+{
+  "question_id": "P-SRC040-Q12-a-i",
+  "source_question_ids": [
+    "H-SRC040-Q12-a-i"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Identify three corrections needed in this Python code to count civil and company staff. staff is a list of objects with role.\n\nx = 0\ncount_a = 0\nwhile x > len(staff):\n    if staff[x].role == \"civil\":\n        count_a += 1\n    elif staff[x].role == \"company\":\n        count_b += 1\nprint(count_a, count_b)",
+  "syllabus_codes": [
+    "B2.1.4"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 3,
+  "command_term": "Identify",
+  "difficulty": "medium",
+  "adaptation_rationale": "Retain debugging using Python and finite manual trace; tests exercise corrected code. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "solution": "Use x<len(staff), initialize count_b=0 before the loop, and increment x inside the loop after processing each item.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Correct loop condition x<len(staff)."
+    },
+    {
+      "marks": 1,
+      "criterion": "Initialize count_b before use."
+    },
+    {
+      "marks": 1,
+      "criterion": "Increment x once per iteration to progress and terminate."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 3,
+    "code_execution": "Specific executable boundary and behaviour tests passed; see agents/chunk-2/agent-3-papers-c/technical_checks.json and verify_practice.py."
+  },
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "assets": [],
+  "code": "def count_roles(staff):\n    x = 0\n    count_a = 0\n    count_b = 0\n    while x < len(staff):\n        if staff[x].role == \"civil\":\n            count_a += 1\n        elif staff[x].role == \"company\":\n            count_b += 1\n        x += 1\n    return count_a, count_b",
+  "record_path": "question-bank/records/P-SRC040-Q12-a-i.json",
+  "question_path": "question-bank/questions/P-SRC040-Q12-a-i.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC040-Q12-a-i.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

@@ -1,0 +1,45 @@
+{
+  "question_id": "P-SRC042-Q16-c",
+  "unofficial": true,
+  "marks": 6,
+  "solution": "def total_fee(products):\n    total=0\n    for product in products:\n        if product.sold:\n            total+=product.price\n    return total*0.12",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes a numeric total."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses every product once."
+    },
+    {
+      "marks": 1,
+      "criterion": "Checks that product.sold is True."
+    },
+    {
+      "marks": 1,
+      "criterion": "Uses the price of each sold product."
+    },
+    {
+      "marks": 1,
+      "criterion": "Accumulates only those sold prices."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns total multiplied by 0.12 after the loop."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "Executable checks saved under checks/ where applicable."
+  },
+  "code": "def total_fee(products):\n    total=0\n    for product in products:\n        if product.sold:\n            total+=product.price\n    return total*0.12",
+  "test_code": "from types import SimpleNamespace\nps=[SimpleNamespace(sold=True,price=100),SimpleNamespace(sold=False,price=900),SimpleNamespace(sold=True,price=200)]\nassert total_fee(ps)==36\nassert total_fee([])==0",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

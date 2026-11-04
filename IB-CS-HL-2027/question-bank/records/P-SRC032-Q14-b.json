@@ -1,0 +1,51 @@
+{
+  "question_id": "P-SRC032-Q14-b",
+  "source_question_ids": [
+    "H-SRC032-Q14-b"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Explain how using an Account.withdraw(amount) interface rather than editing its balance everywhere can help preserve valid state.",
+  "syllabus_codes": [
+    "B3.1.5"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 3,
+  "command_term": "Explain",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "The class can validate each withdrawal and enforce an invariant, such as rejecting an amount that exceeds the available balance. Clients use the same rule through the interface, reducing inconsistent direct updates.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Validation/constraint centralized."
+    },
+    {
+      "marks": 1,
+      "criterion": "Concrete invariant/example."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains consistency across callers."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      26
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC032-Q14-b.json",
+  "question_path": "question-bank/questions/P-SRC032-Q14-b.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC032-Q14-b.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

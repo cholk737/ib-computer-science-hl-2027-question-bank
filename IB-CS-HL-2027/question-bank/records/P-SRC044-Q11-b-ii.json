@@ -1,0 +1,51 @@
+{
+  "question_id": "P-SRC044-Q11-b-ii",
+  "source_question_ids": [
+    "H-SRC044-Q11-b-ii"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Explain a class hierarchy for Book, Model and AudioProduct, which share title and price but respectively add page_count, material and duration.",
+  "syllabus_codes": [
+    "B3.2.1"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 3,
+  "command_term": "Explain",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "Product defines shared title and price and common operations. Book, Model and AudioProduct inherit Product and add their own specific attribute. Objects are created using the appropriate specialized class, retaining the shared interface/state.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Product superclass holds common fields/behaviour."
+    },
+    {
+      "marks": 1,
+      "criterion": "Three subclasses inherit and add correct specialized fields."
+    },
+    {
+      "marks": 1,
+      "criterion": "Appropriate specialized instances retain/reuse common design."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      24
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC044-Q11-b-ii.json",
+  "question_path": "question-bank/questions/P-SRC044-Q11-b-ii.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC044-Q11-b-ii.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

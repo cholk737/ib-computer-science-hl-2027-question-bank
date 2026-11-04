@@ -1,0 +1,1019 @@
+{
+  "source_id": "SRC-038",
+  "batch_id": "SRC-038-b011",
+  "source_questions": [
+    {
+      "source_question_id": "H-SRC038-Q15-d",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": 15,
+      "subquestion": "d",
+      "source_pdf_pages": [
+        26
+      ],
+      "source_printed_pages": [
+        "25"
+      ],
+      "original_marks": 1,
+      "command_term": "Define",
+      "original_text": "Define the term parent object.",
+      "parent_context": "– 25 – 8825 – 6405\nTurn over\n(Option D continued)\n15. The law firm employs trainee lawyers who work under senior lawyers for one year and then \nsit an examination. On successful completion, they become full lawyers.\nThe TraineeLawyer class has been created. A trainee lawyer is a lawyer with two additional \nattributes: joining date and exam status.\n(a) (i)   Identify a suitable data type for each additional attribute in the TraineeLawyer \nclass. [2]\n(ii) Construct a detailed class diagram including attributes, methods, and relationship.\nThe diagram must include the Lawyer class and the TraineeLawyer class. [4]\n(b) (i)   State the relationship between the TraineeLawyer class and the Lawyer class. [1]\n(ii) State the relationship between the Lawyer class and the Case class. [1]\n(iii) Describe the difference between the two relationships stated in part (b)(i) and \npart (b)(ii). [4]\n(c) Outline what is meant by the term encapsulation. [2]\n(d) Define the term parent object. [1]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-26.png",
+          "source_pdf_page": 26,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Define the term parent object.",
+        "Define superclass in an inheritance relationship"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          43
+        ],
+        "question_reference": "Q15 d",
+        "marking_summary": "Exact original MS leaf excerpt: Award [1 max] a parent object holds properties and behaviours (to be) inherited/extended by the child objects;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [1 max]\na parent object holds properties and behaviours (to be) inherited/extended by the child objects;",
+        "source_issues": [],
+        "source_marking_evidence": "– 43 – 8825 – 6405M \n(c) Award [2 max]\nEncapsulation means putting/wrapping variables and method into one single unit;\nthe variables of the class are private / hidden from other classes;\nvariables can be accessed only through public members;\n(d) Award [1 max]\na parent object holds properties and behaviours (to be) inherited/extended by the child objects;"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B3.2.1",
+          "scope_evidence": "• How inheritance enables a hierarchical relationship between parent and child classes\n• Extending existing classes, utilizing inheritance to reuse and extend functionalities\n• The impact of inheritance on access to parent class members with different access modifiers (private, public, protected, default)",
+          "rationale": "Adapted target only: Define superclass in an inheritance relationship; guidance target: Explain and apply the concept of inheritance in OOP to promote code reusability. Adaptation: Repairs source parent-object terminology to superclass; classes, not ordinary parent instances, define inherited behaviour.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q15-d"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q16-a-i",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": 16,
+      "subquestion": "a-i",
+      "source_pdf_pages": [
+        27
+      ],
+      "source_printed_pages": [
+        "26"
+      ],
+      "original_marks": 3,
+      "command_term": "Identify",
+      "original_text": "The following code fragment has been written to count and output the number of civil lawyers and company lawyers that the law firm has: int x = 0; int countA = 0; while (x > 20) { if(allLawyers[x].getLawyerType().equals(\"civil\")) countA++; else if(allLawyers[x].getLawyerType().equals(\"company\")) countB++; } System.out.println(\"civil: \"+ countA + \"company: \" + countB); Identify three reasons why this code does not work as expected.",
+      "parent_context": "– 26 – 8825 – 6405\n(Option D continued)\n16. (a)  (i)   The following code fragment has been written to count and output the number of \ncivil lawyers and company lawyers that the law firm has:\nint x = 0;\nint countA = 0;\nwhile (x > 20)\n{\n    if(allLawyers[x].getLawyerType().equals(\"civil\"))\n        countA++;\n    else if(allLawyers[x].getLawyerType().equals(\"company\"))\n        countB++;\n}\nSystem.out.println(\"civil: \"+ countA + \"company: \" + countB);\nIdentify three reasons why this code does not work as expected. [3]\n(ii) Construct a method, displayClientName(), to display all client names of \ncompany lawyers where a judgment has been passed on the case. Assume that \nthere will always be at least one such client. The method must:\n\ty search the allLaywers[] array for lawyerType is “company”\n\ty search the lawyerCases[] array for judgmentGiven is “A”\n\ty output the client’s name. [7]\nThe law firm is considering the use of open source software as part of its software \ndevelopment process.\n(b) Discuss the impact of the open source movement on the software industry. [5]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-27.png",
+          "source_pdf_page": 27,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: The following code fragment has been written to count and output the number of civil lawyers and company lawyers that the law firm has: int x = 0; int countA = 0; while (x > 20) { if(allLawyers[x].getLawyerType().equals(\"civil\")) countA++; else if(allLawyers[x].getLawyerType().equals(\"company\")) countB++; } System.out.println(\"civil: \"+ countA + \"company: \" + countB); Identify three reasons why this code does not work as expected.",
+        "The following Python is meant to count housing and finance advisers"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          44
+        ],
+        "question_reference": "Q16 a-i",
+        "marking_summary": "Exact original MS leaf excerpt: Award [3 max] Award [1] for condition in the while loop is incorrect / condition should be while (x<20) / the body of while loop never executes; Award [1] for variable x is not being incremented within the while loop; Award [1] for variable countB has not been declared / compile time error – unknown variable countB ;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [3 max]\nAward [1]  for condition in the while loop is incorrect / condition should be while (x<20) / \nthe body of while loop never executes;  \nAward [1]   for variable x is not being incremented within the while loop;  \nAward [1]  for variable countB has not been declared / compile time error – unknown \nvariable countB ;",
+        "source_issues": [],
+        "source_marking_evidence": "– 44 – 8825 – 6405M \n16. (a) (i) Award [3 max]\nAward [1]  for condition in the while loop is incorrect / condition should be while (x<20) / \nthe body of while loop never executes;  \nAward [1]   for variable x is not being incremented within the while loop;  \nAward [1]  for variable countB has not been declared / compile time error – unknown \nvariable countB ;  \n(ii) Award [7 max]\nAward [1] for correct outer loop to navigate through allLawyers[];\nAward [1] for correctly checking lawyerType is “company”;\nAward [1] for correct inner loop to navigate all cases in lawyerCases[] including a ‘null’\ncheck;\nAward [1] for accessing the lawyerCases[] correctly;\nAward [1] for an attempt to check if judgementGiven is ‘A’;\nAward [1] for correctly checking if judgementGiven is ‘A’;\nAward [1] for an attempt to output the name of the client of the case;\nAward [1] for correctly outputting the name of the client;\npublic static void displayClientNames()\n{\n  for(int i=0; i<20; i++) \n  {  \n if(allLawyers[i].getLawyerType().equals(\"company\")) \n     { \n for(int j=0; j<15; j++) \n {   \n  \nif((allLawyers[i].getLawyerCases()[j]!= null) \n  { \n  Case C = allLawyers[i].getLawyerCases()[j]; \n  if(C.getJudgementGiven()=='A'))  \n  {  \n   String cName = C.getCaseClient(); \n   System.out.println(cName);  \n  } \n  } \n  } \n  } \n } \n} \n(b) Award [5 max]\nAward [2] positives, [2] negatives, and [1] for an informed conclusion\nPositives -\nIt is a collaborative and transparent approach;\nIt has made software more accessible, anyone can see it and use it;\nSoftware is more affordable/ cost effective solutions are possible;\nSoftware is flexible/ can be tailored to specific needs and hence quality is better;\nNegatives -\nThere are risks as open source may not use best security practices;\nLeads to license violations and propriety issues;\nConclusion - any valid conclusion based on the discussion;"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.1.4",
+          "scope_evidence": "• Debugging techniques may include trace tables, breakpoint debugging, print statements and step-by-step code execution.",
+          "rationale": "Adapted target only: The following Python is meant to count housing and finance advisers; guidance target: Construct and use common debugging techniques. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Manual control-flow trace: initial0>nonnegative length isFalse; repaired loop tested in aggregate checks."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q16-a-i"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q16-a-ii",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": 16,
+      "subquestion": "a-ii",
+      "source_pdf_pages": [
+        27
+      ],
+      "source_printed_pages": [
+        "26"
+      ],
+      "original_marks": 7,
+      "command_term": "Construct",
+      "original_text": "Construct a method, displayClientName(), to display all client names of company lawyers where a judgment has been passed on the case. Assume that there will always be at least one such client. The method must: y search the allLaywers[] array for lawyerType is “company” y search the lawyerCases[] array for judgmentGiven is “A” y output the client’s name.",
+      "parent_context": "– 26 – 8825 – 6405\n(Option D continued)\n16. (a)  (i)   The following code fragment has been written to count and output the number of \ncivil lawyers and company lawyers that the law firm has:\nint x = 0;\nint countA = 0;\nwhile (x > 20)\n{\n    if(allLawyers[x].getLawyerType().equals(\"civil\"))\n        countA++;\n    else if(allLawyers[x].getLawyerType().equals(\"company\"))\n        countB++;\n}\nSystem.out.println(\"civil: \"+ countA + \"company: \" + countB);\nIdentify three reasons why this code does not work as expected. [3]\n(ii) Construct a method, displayClientName(), to display all client names of \ncompany lawyers where a judgment has been passed on the case. Assume that \nthere will always be at least one such client. The method must:\n\ty search the allLaywers[] array for lawyerType is “company”\n\ty search the lawyerCases[] array for judgmentGiven is “A”\n\ty output the client’s name. [7]\nThe law firm is considering the use of open source software as part of its software \ndevelopment process.\n(b) Discuss the impact of the open source movement on the software industry. [5]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-27.png",
+          "source_pdf_page": 27,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Construct a method, displayClientName(), to display all client names of company lawyers where a judgment has been passed on the case. Assume that there will always be at least one such client. The method must: y search the allLaywers[] array for lawyerType is “company” y search the lawyerCases[] array for judgmentGiven is “A” y output the client’s name.",
+        "Each adviser has area and tickets"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          44
+        ],
+        "question_reference": "Q16 a-ii",
+        "marking_summary": "Exact original MS leaf excerpt: Award [7 max] Award [1] for correct outer loop to navigate through allLawyers[]; Award [1] for correctly checking lawyerType is “company”; Award [1] for correct inner loop to navigate all cases in lawyerCases[] including a ‘null’ check; Award [1] for accessing the lawyerCases[] correctly; Award [1] for an attempt to check if judgementGiven is ‘A’; Award [1] for correctly checking if judgementGiven is ‘A’; Award [1] for an attempt to output the name of the client of the case; Award [1] for correctly outputting the name of the client; public static void displayClientNames() { for(int i=0; i<20; i++) { if(allLawyers[i].getLawyerType().equals(\"company\")) { for(int j=0; j<15; j++) { if((allLawyers[i].getLawyerCases()[j]!= null) { Case C = allLawyers[i].getLawyerCases()[j]; if(C.getJudgementGiven()=='A')) { String cName = C.getCaseClient(); System.out.println(cName); } } } } } }",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [7 max]\nAward [1] for correct outer loop to navigate through allLawyers[];\nAward [1] for correctly checking lawyerType is “company”;\nAward [1] for correct inner loop to navigate all cases in lawyerCases[] including a ‘null’\ncheck;\nAward [1] for accessing the lawyerCases[] correctly;\nAward [1] for an attempt to check if judgementGiven is ‘A’;\nAward [1] for correctly checking if judgementGiven is ‘A’;\nAward [1] for an attempt to output the name of the client of the case;\nAward [1] for correctly outputting the name of the client;\npublic static void displayClientNames()\n{\n  for(int i=0; i<20; i++) \n  {  \n if(allLawyers[i].getLawyerType().equals(\"company\")) \n     { \n for(int j=0; j<15; j++) \n {   \n  \nif((allLawyers[i].getLawyerCases()[j]!= null) \n  { \n  Case C = allLawyers[i].getLawyerCases()[j]; \n  if(C.getJudgementGiven()=='A'))  \n  {  \n   String cName = C.getCaseClient(); \n   System.out.println(cName);  \n  } \n  } \n  } \n  } \n } \n}",
+        "source_issues": [
+          "Source prose says judgement passed while specific bullet/MS require judgement A (against). Adaptation explicitly asks failure only."
+        ],
+        "source_marking_evidence": "– 44 – 8825 – 6405M \n16. (a) (i) Award [3 max]\nAward [1]  for condition in the while loop is incorrect / condition should be while (x<20) / \nthe body of while loop never executes;  \nAward [1]   for variable x is not being incremented within the while loop;  \nAward [1]  for variable countB has not been declared / compile time error – unknown \nvariable countB ;  \n(ii) Award [7 max]\nAward [1] for correct outer loop to navigate through allLawyers[];\nAward [1] for correctly checking lawyerType is “company”;\nAward [1] for correct inner loop to navigate all cases in lawyerCases[] including a ‘null’\ncheck;\nAward [1] for accessing the lawyerCases[] correctly;\nAward [1] for an attempt to check if judgementGiven is ‘A’;\nAward [1] for correctly checking if judgementGiven is ‘A’;\nAward [1] for an attempt to output the name of the client of the case;\nAward [1] for correctly outputting the name of the client;\npublic static void displayClientNames()\n{\n  for(int i=0; i<20; i++) \n  {  \n if(allLawyers[i].getLawyerType().equals(\"company\")) \n     { \n for(int j=0; j<15; j++) \n {   \n  \nif((allLawyers[i].getLawyerCases()[j]!= null) \n  { \n  Case C = allLawyers[i].getLawyerCases()[j]; \n  if(C.getJudgementGiven()=='A'))  \n  {  \n   String cName = C.getCaseClient(); \n   System.out.println(cName);  \n  } \n  } \n  } \n  } \n } \n} \n(b) Award [5 max]\nAward [2] positives, [2] negatives, and [1] for an informed conclusion\nPositives -\nIt is a collaborative and transparent approach;\nIt has made software more accessible, anyone can see it and use it;\nSoftware is more affordable/ cost effective solutions are possible;\nSoftware is flexible/ can be tailored to specific needs and hence quality is better;\nNegatives -\nThere are risks as open source may not use best security practices;\nLeads to license violations and propriety issues;\nConclusion - any valid conclusion based on the discussion;"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Adapted target only: Each adviser has area and tickets; guidance target: Construct programs that apply arrays and Lists. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Adapted target only: Each adviser has area and tickets; guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "Adapted target only: Each adviser has area and tickets; guidance target: Construct programs that utilize looping structures to perform repeated actions. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.4",
+          "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
+          "rationale": "Adapted target only: Each adviser has area and tickets; guidance target: Construct functions and modularization. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Executed None,opposite result and wrong-adviser-area cases."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q16-a-ii"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q16-b",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": 16,
+      "subquestion": "b",
+      "source_pdf_pages": [
+        27
+      ],
+      "source_printed_pages": [
+        "26"
+      ],
+      "original_marks": 5,
+      "command_term": "Discuss",
+      "original_text": "Discuss the impact of the open source movement on the software industry.",
+      "parent_context": "– 26 – 8825 – 6405\n(Option D continued)\n16. (a)  (i)   The following code fragment has been written to count and output the number of \ncivil lawyers and company lawyers that the law firm has:\nint x = 0;\nint countA = 0;\nwhile (x > 20)\n{\n    if(allLawyers[x].getLawyerType().equals(\"civil\"))\n        countA++;\n    else if(allLawyers[x].getLawyerType().equals(\"company\"))\n        countB++;\n}\nSystem.out.println(\"civil: \"+ countA + \"company: \" + countB);\nIdentify three reasons why this code does not work as expected. [3]\n(ii) Construct a method, displayClientName(), to display all client names of \ncompany lawyers where a judgment has been passed on the case. Assume that \nthere will always be at least one such client. The method must:\n\ty search the allLaywers[] array for lawyerType is “company”\n\ty search the lawyerCases[] array for judgmentGiven is “A”\n\ty output the client’s name. [7]\nThe law firm is considering the use of open source software as part of its software \ndevelopment process.\n(b) Discuss the impact of the open source movement on the software industry. [5]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-27.png",
+          "source_pdf_page": 27,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Discuss the impact of the open source movement on the software industry.",
+        "General open-source movement impacts are not an individual 2027 syllabus requirement."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          44
+        ],
+        "question_reference": "Q16 b",
+        "marking_summary": "Exact original MS leaf excerpt: Award [5 max] Award [2] positives, [2] negatives, and [1] for an informed conclusion Positives - It is a collaborative and transparent approach; It has made software more accessible, anyone can see it and use it; Software is more affordable/ cost effective solutions are possible; Software is flexible/ can be tailored to specific needs and hence quality is better; Negatives - There are risks as open source may not use best security practices; Leads to license violations and propriety issues; Conclusion - any valid conclusion based on the discussion;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [5 max]\nAward [2] positives, [2] negatives, and [1] for an informed conclusion\nPositives -\nIt is a collaborative and transparent approach;\nIt has made software more accessible, anyone can see it and use it;\nSoftware is more affordable/ cost effective solutions are possible;\nSoftware is flexible/ can be tailored to specific needs and hence quality is better;\nNegatives -\nThere are risks as open source may not use best security practices;\nLeads to license violations and propriety issues;\nConclusion - any valid conclusion based on the discussion;",
+        "source_issues": [],
+        "source_marking_evidence": "– 44 – 8825 – 6405M \n16. (a) (i) Award [3 max]\nAward [1]  for condition in the while loop is incorrect / condition should be while (x<20) / \nthe body of while loop never executes;  \nAward [1]   for variable x is not being incremented within the while loop;  \nAward [1]  for variable countB has not been declared / compile time error – unknown \nvariable countB ;  \n(ii) Award [7 max]\nAward [1] for correct outer loop to navigate through allLawyers[];\nAward [1] for correctly checking lawyerType is “company”;\nAward [1] for correct inner loop to navigate all cases in lawyerCases[] including a ‘null’\ncheck;\nAward [1] for accessing the lawyerCases[] correctly;\nAward [1] for an attempt to check if judgementGiven is ‘A’;\nAward [1] for correctly checking if judgementGiven is ‘A’;\nAward [1] for an attempt to output the name of the client of the case;\nAward [1] for correctly outputting the name of the client;\npublic static void displayClientNames()\n{\n  for(int i=0; i<20; i++) \n  {  \n if(allLawyers[i].getLawyerType().equals(\"company\")) \n     { \n for(int j=0; j<15; j++) \n {   \n  \nif((allLawyers[i].getLawyerCases()[j]!= null) \n  { \n  Case C = allLawyers[i].getLawyerCases()[j]; \n  if(C.getJudgementGiven()=='A'))  \n  {  \n   String cName = C.getCaseClient(); \n   System.out.println(cName);  \n  } \n  } \n  } \n  } \n } \n} \n(b) Award [5 max]\nAward [2] positives, [2] negatives, and [1] for an informed conclusion\nPositives -\nIt is a collaborative and transparent approach;\nIt has made software more accessible, anyone can see it and use it;\nSoftware is more affordable/ cost effective solutions are possible;\nSoftware is flexible/ can be tailored to specific needs and hence quality is better;\nNegatives -\nThere are risks as open source may not use best security practices;\nLeads to license violations and propriety issues;\nConclusion - any valid conclusion based on the discussion;"
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "General open-source movement impacts are not an individual 2027 syllabus requirement.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": []
+    },
+    {
+      "source_question_id": "H-SRC038-Q17-a",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": 17,
+      "subquestion": "a",
+      "source_pdf_pages": [
+        28
+      ],
+      "source_printed_pages": [
+        "27"
+      ],
+      "original_marks": 7,
+      "command_term": "Construct",
+      "original_text": "Construct the method updateLawyerRank(int[][]casesWon) to update lawyerRank for all the lawyers in the firm. The method returns a suitable message if no lawyer’s rank changes to 1.",
+      "parent_context": "– 27 – 8825 – 6405\nTurn over\n(Option D continued)\n17. A lawyer’s rank depends on the number of cases they have won.\nThe information about the number of cases won by each lawyer in the last four years is \nstored in a 2D array, casesWon, as shown in Figure 11. Rows represent the number of \ncases won by a lawyer, and columns represent the year.\nFigure 11: An excerpt from the 2D array, casesWon\nYear\n2024 2023 2022 2021\nLawyerID\n1 7 5 8 2\n2 3 6 7 7\n3 1 9 8 2\n4 0 2 2 1\n5 8 6 5 1\n... ... ... ... ...\n20 ... ... ... ...\nA lawyer’s rank is set to 1 only if the number of cases won by the lawyer in any two \nconsecutive years is greater than 6.\nFor example: The rank for lawyer 1 will remain 0, whereas the rank for lawyer 2 will be set to 1 \nas the number of cases they won is greater than 6 in both 2022 and 2021.\n(a) Construct the method updateLawyerRank(int[][]casesWon) to update lawyerRank \nfor all the lawyers in the firm. The method returns a suitable message if no lawyer’s rank \nchanges to 1. [7]\nThe law firm can have more than one criminal lawyer. A criminal lawyer gets only  \ncriminal cases.\n(b) Identify the steps required to create an ArrayList of criminal cases that the \nlaw firm currently has and store all criminal cases to this array list. [3]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-28.png",
+          "source_pdf_page": 28,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Construct the method updateLawyerRank(int[][]casesWon) to update lawyerRank for all the lawyers in the firm. The method returns a suitable message if no lawyer’s rank changes to 1.",
+        "completed is an n-by-4 list of yearly totals, and row i belongs to advisers[i]"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          45
+        ],
+        "question_reference": "Q17 a",
+        "marking_summary": "Exact original MS leaf excerpt: Award [7 max] Award [1] for declaring an appropriate ‘flag’ variable; Award [1] for correct loop(s) to traverse casesWon 2D array; Award [1] for an attempt to check the current and the successive year > 6; Award [1] for correctly checking the current and the successive year > 6; Award [1] for correctly calling setLawyerRank() with correct parameter; Award [1] for correctly changing the value of ‘flag’ when lawyer rank is set to 1; Award [1] for correctly outputting / returning a message if ‘flag’ is false or otherwise; Example answer 1: public static void updateLawyerRank(int [][] casesWon) { boolean flag = false; for(int i=0; i<20; i++) { for(int j=0; j<3; j++) { if(casesWon[i][j]>6 && casesWon[i][j+1]>6) { allLawyers[i].setLawyerRank(1); flag=true; } } } if(flag==false) System.out.println(\"No lawyer rank was changed to 1\"); } Example answer 2: public static void updateLawyerRank(int [] … [full leaf evidence retained]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [7 max]\nAward [1] for declaring an appropriate ‘flag’ variable;  \nAward [1] for correct  loop(s) to traverse casesWon 2D array;   \nAward [1] for an attempt to check the current and the successive year > 6; \nAward [1] for correctly checking the current and the successive year > 6; \nAward [1] for correctly calling setLawyerRank() with correct parameter;   \nAward [1] for correctly changing the value of ‘flag’ when lawyer rank is set to 1;   \nAward [1] for correctly outputting / returning a message if ‘flag’ is false or otherwise; \nExample answer 1: \npublic static void updateLawyerRank(int [][] casesWon) \n{  \n   boolean flag = false;  \n   for(int i=0; i<20; i++) \n   {  \nfor(int j=0; j<3; j++) \n{  \nif(casesWon[i][j]>6 && casesWon[i][j+1]>6) \n{  \nallLawyers[i].setLawyerRank(1); \nflag=true;  \n} \n} \n    } \nif(flag==false) \nSystem.out.println(\"No lawyer rank was changed to 1\"); \n } \nExample answer 2: \npublic static void updateLawyerRank(int [][] casesWon) \n{\n    boolean flag = false;\n    for(int i = 0; i < 20; i++)\n    {\nif  (casesWon[i][0] > 6 && casesWon[i][1] > 6 ||\ncasesWon[i][1] > 6 && casesWon[i][2] > 6 ||\ncasesWon[i][2] > 6 && casesWon[i][3] > 6) \n{\nallLawyers[i].setLawyerRank(1);\nflag = true;\n}\n    }\n    if (!flag)\nSystem.out.println(\"No lawyer rank was changed to 1\");\n}",
+        "source_issues": [
+          "Original message refers to a change but MS flag tracks qualification,even if already rank1. Adaptation explicitly tracks actual changes."
+        ],
+        "source_marking_evidence": "– 45 – 8825 – 6405M \n17. (a) Award [7 max]\nAward [1] for declaring an appropriate ‘flag’ variable;  \nAward [1] for correct  loop(s) to traverse casesWon 2D array;   \nAward [1] for an attempt to check the current and the successive year > 6; \nAward [1] for correctly checking the current and the successive year > 6; \nAward [1] for correctly calling setLawyerRank() with correct parameter;   \nAward [1] for correctly changing the value of ‘flag’ when lawyer rank is set to 1;   \nAward [1] for correctly outputting / returning a message if ‘flag’ is false or otherwise; \nExample answer 1: \npublic static void updateLawyerRank(int [][] casesWon) \n{  \n   boolean flag = false;  \n   for(int i=0; i<20; i++) \n   {  \nfor(int j=0; j<3; j++) \n{  \nif(casesWon[i][j]>6 && casesWon[i][j+1]>6) \n{  \nallLawyers[i].setLawyerRank(1); \nflag=true;  \n} \n} \n    } \nif(flag==false) \nSystem.out.println(\"No lawyer rank was changed to 1\"); \n } \nExample answer 2: \npublic static void updateLawyerRank(int [][] casesWon) \n{\n    boolean flag = false;\n    for(int i = 0; i < 20; i++)\n    {\nif  (casesWon[i][0] > 6 && casesWon[i][1] > 6 ||\ncasesWon[i][1] > 6 && casesWon[i][2] > 6 ||\ncasesWon[i][2] > 6 && casesWon[i][3] > 6) \n{\nallLawyers[i].setLawyerRank(1);\nflag = true;\n}\n    }\n    if (!flag)\nSystem.out.println(\"No lawyer rank was changed to 1\");\n}\n(b) Award [3 max]\ndeclare an ArrayList (criminalCases)of Case (to store all criminal cases);\nloop through allLawyers[] (from start to end);\nif lawyerType is equal to  “criminal”;\nloop through lawyerCases[] (from start to end);\ncheck for ‘null’ in lawyerCases[];\nadd each case to the ArrayList of criminal cases;"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Adapted target only: completed is an n-by-4 list of yearly totals, and row i belongs to advisers[i]; guidance target: Construct programs that apply arrays and Lists. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.2",
+          "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "rationale": "Adapted target only: completed is an n-by-4 list of yearly totals, and row i belongs to advisers[i]; guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "Adapted target only: completed is an n-by-4 list of yearly totals, and row i belongs to advisers[i]; guidance target: Construct programs that utilize looping structures to perform repeated actions. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Executed nonadjacent highs,adjacent qualification,strict boundary and already-ranked repeat."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q17-a"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q17-b",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": 17,
+      "subquestion": "b",
+      "source_pdf_pages": [
+        28
+      ],
+      "source_printed_pages": [
+        "27"
+      ],
+      "original_marks": 3,
+      "command_term": "Identify",
+      "original_text": "Identify the steps required to create an ArrayList of criminal cases that the law firm currently has and store all criminal cases to this array list.",
+      "parent_context": "– 27 – 8825 – 6405\nTurn over\n(Option D continued)\n17. A lawyer’s rank depends on the number of cases they have won.\nThe information about the number of cases won by each lawyer in the last four years is \nstored in a 2D array, casesWon, as shown in Figure 11. Rows represent the number of \ncases won by a lawyer, and columns represent the year.\nFigure 11: An excerpt from the 2D array, casesWon\nYear\n2024 2023 2022 2021\nLawyerID\n1 7 5 8 2\n2 3 6 7 7\n3 1 9 8 2\n4 0 2 2 1\n5 8 6 5 1\n... ... ... ... ...\n20 ... ... ... ...\nA lawyer’s rank is set to 1 only if the number of cases won by the lawyer in any two \nconsecutive years is greater than 6.\nFor example: The rank for lawyer 1 will remain 0, whereas the rank for lawyer 2 will be set to 1 \nas the number of cases they won is greater than 6 in both 2022 and 2021.\n(a) Construct the method updateLawyerRank(int[][]casesWon) to update lawyerRank \nfor all the lawyers in the firm. The method returns a suitable message if no lawyer’s rank \nchanges to 1. [7]\nThe law firm can have more than one criminal lawyer. A criminal lawyer gets only  \ncriminal cases.\n(b) Identify the steps required to create an ArrayList of criminal cases that the \nlaw firm currently has and store all criminal cases to this array list. [3]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-28.png",
+          "source_pdf_page": 28,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Identify the steps required to create an ArrayList of criminal cases that the law firm currently has and store all criminal cases to this array list.",
+        "Without writing code, outline steps to collect every non-None ticket belonging to finance advisers into one Python list"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          45
+        ],
+        "question_reference": "Q17 b",
+        "marking_summary": "Exact original MS leaf excerpt: Award [3 max] declare an ArrayList (criminalCases)of Case (to store all criminal cases); loop through allLawyers[] (from start to end); if lawyerType is equal to “criminal”; loop through lawyerCases[] (from start to end); check for ‘null’ in lawyerCases[]; add each case to the ArrayList of criminal cases;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [3 max]\ndeclare an ArrayList (criminalCases)of Case (to store all criminal cases);\nloop through allLawyers[] (from start to end);\nif lawyerType is equal to  “criminal”;\nloop through lawyerCases[] (from start to end);\ncheck for ‘null’ in lawyerCases[];\nadd each case to the ArrayList of criminal cases;",
+        "source_issues": [],
+        "source_marking_evidence": "– 45 – 8825 – 6405M \n17. (a) Award [7 max]\nAward [1] for declaring an appropriate ‘flag’ variable;  \nAward [1] for correct  loop(s) to traverse casesWon 2D array;   \nAward [1] for an attempt to check the current and the successive year > 6; \nAward [1] for correctly checking the current and the successive year > 6; \nAward [1] for correctly calling setLawyerRank() with correct parameter;   \nAward [1] for correctly changing the value of ‘flag’ when lawyer rank is set to 1;   \nAward [1] for correctly outputting / returning a message if ‘flag’ is false or otherwise; \nExample answer 1: \npublic static void updateLawyerRank(int [][] casesWon) \n{  \n   boolean flag = false;  \n   for(int i=0; i<20; i++) \n   {  \nfor(int j=0; j<3; j++) \n{  \nif(casesWon[i][j]>6 && casesWon[i][j+1]>6) \n{  \nallLawyers[i].setLawyerRank(1); \nflag=true;  \n} \n} \n    } \nif(flag==false) \nSystem.out.println(\"No lawyer rank was changed to 1\"); \n } \nExample answer 2: \npublic static void updateLawyerRank(int [][] casesWon) \n{\n    boolean flag = false;\n    for(int i = 0; i < 20; i++)\n    {\nif  (casesWon[i][0] > 6 && casesWon[i][1] > 6 ||\ncasesWon[i][1] > 6 && casesWon[i][2] > 6 ||\ncasesWon[i][2] > 6 && casesWon[i][3] > 6) \n{\nallLawyers[i].setLawyerRank(1);\nflag = true;\n}\n    }\n    if (!flag)\nSystem.out.println(\"No lawyer rank was changed to 1\");\n}\n(b) Award [3 max]\ndeclare an ArrayList (criminalCases)of Case (to store all criminal cases);\nloop through allLawyers[] (from start to end);\nif lawyerType is equal to  “criminal”;\nloop through lawyerCases[] (from start to end);\ncheck for ‘null’ in lawyerCases[];\nadd each case to the ArrayList of criminal cases;"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Adapted target only: Without writing code, outline steps to collect every non-None ticket belonging to finance advisers into one Python list; guidance target: Construct programs that apply arrays and Lists. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B2.3.3",
+          "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "rationale": "Adapted target only: Without writing code, outline steps to collect every non-None ticket belonging to finance advisers into one Python list; guidance target: Construct programs that utilize looping structures to perform repeated actions. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q17-b"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q18-a-i",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": 18,
+      "subquestion": "a-i",
+      "source_pdf_pages": [
+        29
+      ],
+      "source_printed_pages": [
+        "28"
+      ],
+      "original_marks": 2,
+      "command_term": "State",
+      "original_text": "State two advantages of using a binary tree rather than a static array.",
+      "parent_context": "– 27 – 8825 – 6405\nTurn over\n(Option D continued)\n17. A lawyer’s rank depends on the number of cases they have won.\nThe information about the number of cases won by each lawyer in the last four years is \nstored in a 2D array, casesWon, as shown in Figure 11. Rows represent the number of \ncases won by a lawyer, and columns represent the year.\nFigure 11: An excerpt from the 2D array, casesWon\nYear\n2024 2023 2022 2021\nLawyerID\n1 7 5 8 2\n2 3 6 7 7\n3 1 9 8 2\n4 0 2 2 1\n5 8 6 5 1\n... ... ... ... ...\n20 ... ... ... ...\nA lawyer’s rank is set to 1 only if the number of cases won by the lawyer in any two \nconsecutive years is greater than 6.\nFor example: The rank for lawyer 1 will remain 0, whereas the rank for lawyer 2 will be set to 1 \nas the number of cases they won is greater than 6 in both 2022 and 2021.\n(a) Construct the method updateLawyerRank(int[][]casesWon) to update lawyerRank \nfor all the lawyers in the firm. The method returns a suitable message if no lawyer’s rank \nchanges to 1. [7]\nThe law firm can have more than one criminal lawyer. A criminal lawyer gets only  \ncriminal cases.\n(b) Identify the steps required to create an ArrayList of criminal cases that the \nlaw firm currently has and store all criminal cases to this array list. [3]\n(Option D continues on the following page)\n– 28 – 8825 – 6405\n(Option D continued)\n18. (a)  (i)   State two advantages of using a binary tree rather than a static array. [2]\n(ii) Outline one disadvantage of using a binary tree. [2]\nConsider the following recursive algorithm:\npublic static int aMethod(int [][]arr, int k, int n)\n{\n    if (n < 3)\n        return arr[k][n] + aMethod(arr,k,n+1);\n    else\n        return arr[k][3];\n}\n(b) Determine the value returned by aMethod(casesWon,4,0).\ncasesWon is the array shown in Figure 11.\nAll recursive calls must be shown in your working. [3]\n(c) State two reasons why the algorithm in part (b) is considered a recursive algorithm. [2]\n(d) Define the term object reference. [1]\nEnd of Option D\n ",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-28.png",
+          "source_pdf_page": 28,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-29.png",
+          "source_pdf_page": 29,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: State two advantages of using a binary tree rather than a static array.",
+        "State two advantages of a balanced BST over an unsorted fixed-capacity array for a changing collection of uniquely keyed records"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          46
+        ],
+        "question_reference": "Q18 a-i",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max] a binary tree can grow and shrink dynamically, while an array has a fixed size; a binary tree is more memory efficient than an array; a binary tree allows faster searching than an array; a binary tree does not require contiguous memory, unlike an array; a binary tree supports ordered data storage (giving efficient retrieval); a binary tree avoids shifting elements when inserting or deleting, unlike an array; Note: Candidates are not expected to refer to arrays while stating the advantages. Accept other correct advantages.",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]\na binary tree can grow and shrink dynamically, while an array has a fixed size; \na binary tree is more memory efficient than an array; \na binary tree allows faster searching than an array; \na binary tree does not require contiguous memory, unlike an array; \na binary tree supports ordered data storage (giving efficient retrieval); \na binary tree avoids shifting elements when inserting or deleting, unlike an array; \nNote: Candidates are not expected to refer to arrays while stating the advantages. Accept \nother correct advantages.",
+        "source_issues": [],
+        "source_marking_evidence": "– 46 – 8825 – 6405M \n18. (a) (i) Award [2 max]\na binary tree can grow and shrink dynamically, while an array has a fixed size; \na binary tree is more memory efficient than an array; \na binary tree allows faster searching than an array; \na binary tree does not require contiguous memory, unlike an array; \na binary tree supports ordered data storage (giving efficient retrieval); \na binary tree avoids shifting elements when inserting or deleting, unlike an array; \nNote: Candidates are not expected to refer to arrays while stating the advantages. Accept \nother correct advantages.  \n(ii) Award [2 max]\nMemory usage -\nbinary tree uses more memory;\neach node stores extra pointers (left/right child);\nAccessing -\ndirect access is not possible;\naccess must start from the root and move through left/right pointers, making the retrieval\nSlower;\nOperation -\ndeleting an element in a binary tree is complex;\nthe tree must be restructured by reassigning left and right child pointers;\nMaintenance overhead -\ntree operations require careful pointer management;\nincreasing algorithmic complexity compared to simple index-based access in arrays;\n(b) Award [3 max]\nAward [2] for showing correct recursive calls + [1] for correct final answer ;\nAward only [1] if one error in calling otherwise award [0];\nWorking #1:\n8 + aMethod(casesWon,4,1)\n8 + 6 + aMethod(casesWon,4,2)\n8 + 6 + 5+ aMethod(casesWon,4,3)\n8 + 6 + 5+ 1\n8+ 6+5+1= 20\nWorking #2:\naMethod(casesWon,4,0) = 8 + aMethod(casesWon,4,1)\naMethod(casesWon,4,1) = 6 + aMethod(casesWon,4,2)\naMethod(casesWon,4,2) = 5+ aMethod(casesWon,4,3)\naMethod(casesWon,4,0) = 8 + 6 + 5+ 1=20\nNote: The working may be differently presented but the recursive calls must be correct.\n(c) Award [2 max]\nthe method calls itself from within the method;\nthe method has a base case (to stop the recursion);\nit passes an updated parameter at each successive call (that moves towards the base case);\n(d) Award [1 max]\na pointer/address/location (reference) to an instance of a class;\na variable that stores the memory address of an object;\na variable that refers to an object (not the actual object but the address);"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B4.1.4",
+          "scope_evidence": "• How binary search trees (BSTs) are used for data organization\n• Insert, delete, traverse and searching nodes in a BST\n• Sketching a BST as a tree diagram",
+          "rationale": "Adapted target only: State two advantages of a balanced BST over an unsorted fixed-capacity array for a changing collection of uniquely keyed records; guidance target: Explain the structures and properties of BSTs. Adaptation: Restricts source generic binary tree to a balanced BST and states the array is unsorted; avoids false claims that all binary trees guarantee efficient searching.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q18-a-i"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q18-a-ii",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": 18,
+      "subquestion": "a-ii",
+      "source_pdf_pages": [
+        29
+      ],
+      "source_printed_pages": [
+        "28"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "Outline one disadvantage of using a binary tree.",
+      "parent_context": "– 27 – 8825 – 6405\nTurn over\n(Option D continued)\n17. A lawyer’s rank depends on the number of cases they have won.\nThe information about the number of cases won by each lawyer in the last four years is \nstored in a 2D array, casesWon, as shown in Figure 11. Rows represent the number of \ncases won by a lawyer, and columns represent the year.\nFigure 11: An excerpt from the 2D array, casesWon\nYear\n2024 2023 2022 2021\nLawyerID\n1 7 5 8 2\n2 3 6 7 7\n3 1 9 8 2\n4 0 2 2 1\n5 8 6 5 1\n... ... ... ... ...\n20 ... ... ... ...\nA lawyer’s rank is set to 1 only if the number of cases won by the lawyer in any two \nconsecutive years is greater than 6.\nFor example: The rank for lawyer 1 will remain 0, whereas the rank for lawyer 2 will be set to 1 \nas the number of cases they won is greater than 6 in both 2022 and 2021.\n(a) Construct the method updateLawyerRank(int[][]casesWon) to update lawyerRank \nfor all the lawyers in the firm. The method returns a suitable message if no lawyer’s rank \nchanges to 1. [7]\nThe law firm can have more than one criminal lawyer. A criminal lawyer gets only  \ncriminal cases.\n(b) Identify the steps required to create an ArrayList of criminal cases that the \nlaw firm currently has and store all criminal cases to this array list. [3]\n(Option D continues on the following page)\n– 28 – 8825 – 6405\n(Option D continued)\n18. (a)  (i)   State two advantages of using a binary tree rather than a static array. [2]\n(ii) Outline one disadvantage of using a binary tree. [2]\nConsider the following recursive algorithm:\npublic static int aMethod(int [][]arr, int k, int n)\n{\n    if (n < 3)\n        return arr[k][n] + aMethod(arr,k,n+1);\n    else\n        return arr[k][3];\n}\n(b) Determine the value returned by aMethod(casesWon,4,0).\ncasesWon is the array shown in Figure 11.\nAll recursive calls must be shown in your working. [3]\n(c) State two reasons why the algorithm in part (b) is considered a recursive algorithm. [2]\n(d) Define the term object reference. [1]\nEnd of Option D\n ",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-28.png",
+          "source_pdf_page": 28,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-29.png",
+          "source_pdf_page": 29,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline one disadvantage of using a binary tree.",
+        "Outline one performance limitation of a BST when its insertions create a chain"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          46
+        ],
+        "question_reference": "Q18 a-ii",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max] Memory usage - binary tree uses more memory; each node stores extra pointers (left/right child); Accessing - direct access is not possible; access must start from the root and move through left/right pointers, making the retrieval Slower; Operation - deleting an element in a binary tree is complex; the tree must be restructured by reassigning left and right child pointers; Maintenance overhead - tree operations require careful pointer management; increasing algorithmic complexity compared to simple index-based access in arrays;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]\nMemory usage -\nbinary tree uses more memory;\neach node stores extra pointers (left/right child);\nAccessing -\ndirect access is not possible;\naccess must start from the root and move through left/right pointers, making the retrieval\nSlower;\nOperation -\ndeleting an element in a binary tree is complex;\nthe tree must be restructured by reassigning left and right child pointers;\nMaintenance overhead -\ntree operations require careful pointer management;\nincreasing algorithmic complexity compared to simple index-based access in arrays;",
+        "source_issues": [],
+        "source_marking_evidence": "– 46 – 8825 – 6405M \n18. (a) (i) Award [2 max]\na binary tree can grow and shrink dynamically, while an array has a fixed size; \na binary tree is more memory efficient than an array; \na binary tree allows faster searching than an array; \na binary tree does not require contiguous memory, unlike an array; \na binary tree supports ordered data storage (giving efficient retrieval); \na binary tree avoids shifting elements when inserting or deleting, unlike an array; \nNote: Candidates are not expected to refer to arrays while stating the advantages. Accept \nother correct advantages.  \n(ii) Award [2 max]\nMemory usage -\nbinary tree uses more memory;\neach node stores extra pointers (left/right child);\nAccessing -\ndirect access is not possible;\naccess must start from the root and move through left/right pointers, making the retrieval\nSlower;\nOperation -\ndeleting an element in a binary tree is complex;\nthe tree must be restructured by reassigning left and right child pointers;\nMaintenance overhead -\ntree operations require careful pointer management;\nincreasing algorithmic complexity compared to simple index-based access in arrays;\n(b) Award [3 max]\nAward [2] for showing correct recursive calls + [1] for correct final answer ;\nAward only [1] if one error in calling otherwise award [0];\nWorking #1:\n8 + aMethod(casesWon,4,1)\n8 + 6 + aMethod(casesWon,4,2)\n8 + 6 + 5+ aMethod(casesWon,4,3)\n8 + 6 + 5+ 1\n8+ 6+5+1= 20\nWorking #2:\naMethod(casesWon,4,0) = 8 + aMethod(casesWon,4,1)\naMethod(casesWon,4,1) = 6 + aMethod(casesWon,4,2)\naMethod(casesWon,4,2) = 5+ aMethod(casesWon,4,3)\naMethod(casesWon,4,0) = 8 + 6 + 5+ 1=20\nNote: The working may be differently presented but the recursive calls must be correct.\n(c) Award [2 max]\nthe method calls itself from within the method;\nthe method has a base case (to stop the recursion);\nit passes an updated parameter at each successive call (that moves towards the base case);\n(d) Award [1 max]\na pointer/address/location (reference) to an instance of a class;\na variable that stores the memory address of an object;\na variable that refers to an object (not the actual object but the address);"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B4.1.4",
+          "scope_evidence": "• How binary search trees (BSTs) are used for data organization\n• Insert, delete, traverse and searching nodes in a BST\n• Sketching a BST as a tree diagram",
+          "rationale": "Adapted target only: Outline one performance limitation of a BST when its insertions create a chain; guidance target: Explain the structures and properties of BSTs. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q18-a-ii"
+      ]
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC038-Q15-d",
+      "source_question_ids": [
+        "H-SRC038-Q15-d"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Define superclass in an inheritance relationship.",
+      "syllabus_codes": [
+        "B3.2.1"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 1,
+      "command_term": "Define",
+      "difficulty": "medium",
+      "adaptation_rationale": "Repairs source parent-object terminology to superclass; classes, not ordinary parent instances, define inherited behaviour.",
+      "solution": "A class whose attributes/behaviour are inherited or extended by a subclass.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Parent class from which subclass inherits."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          43
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q16-a-i",
+      "source_question_ids": [
+        "H-SRC038-Q16-a-i"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "The following Python is meant to count housing and finance advisers. Identify three faults and their corrections.\ni = 0\nhousing = 0\nwhile i > len(advisers):\n    if advisers[i].area == \"housing\":\n        housing += 1\n    elif advisers[i].area == \"finance\":\n        finance += 1\nprint(housing, finance)",
+      "syllabus_codes": [
+        "B2.1.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 3,
+      "command_term": "Identify",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "The while condition should be i<len(advisers); initialize finance=0 before use; increment i inside the loop. As written the loop does not run and the final finance reference is undefined.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Incorrect loop condition, corrected to i<len(advisers)."
+        },
+        {
+          "marks": 1,
+          "criterion": "Missing finance initialization, corrected."
+        },
+        {
+          "marks": 1,
+          "criterion": "Missing i increment, corrected."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Manual control-flow trace: initial0>nonnegative length isFalse; repaired loop tested in aggregate checks.",
+        "source_comparison": [
+          44
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q16-a-ii",
+      "source_question_ids": [
+        "H-SRC038-Q16-a-ii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Each adviser has area and tickets. Each ticket entry is None or an object with result and client. Construct failed_clients(advisers) returning client names for tickets whose result is exactly \"failure\", belonging to finance advisers. Preserve traversal order and allow duplicate names for separate tickets.",
+      "syllabus_codes": [
+        "B2.2.2",
+        "B2.3.2",
+        "B2.3.3",
+        "B2.3.4"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 7,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "One solution:\ndef failed_clients(advisers):\n    names = []\n    for adviser in advisers:\n        if adviser.area == \"finance\":\n            for ticket in adviser.tickets:\n                if ticket is not None:\n                    if ticket.result == \"failure\":\n                        names.append(ticket.client)\n    return names",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Creates output collection."
+        },
+        {
+          "marks": 1,
+          "criterion": "Traverses advisers."
+        },
+        {
+          "marks": 1,
+          "criterion": "Filters finance advisers."
+        },
+        {
+          "marks": 1,
+          "criterion": "Traverses each selected ticket list."
+        },
+        {
+          "marks": 1,
+          "criterion": "Safely skips None."
+        },
+        {
+          "marks": 1,
+          "criterion": "Tests exactly failure result."
+        },
+        {
+          "marks": 1,
+          "criterion": "Collects correct client names and returns list."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Executed None,opposite result and wrong-adviser-area cases.",
+        "source_comparison": [
+          44
+        ],
+        "test_code": "def failed_clients(advisers):\n    names = []\n    for adviser in advisers:\n        if adviser.area == \"finance\":\n            for ticket in adviser.tickets:\n                if ticket is not None:\n                    if ticket.result == \"failure\":\n                        names.append(ticket.client)\n    return names\nfrom types import SimpleNamespace as O\nassert failed_clients([O(area='finance',tickets=[None,O(result='failure',client='A'),O(result='success',client='B')]),O(area='housing',tickets=[O(result='failure',client='C')])])==['A']",
+        "result_file": ""
+      },
+      "code": "def failed_clients(advisers):\n    names = []\n    for adviser in advisers:\n        if adviser.area == \"finance\":\n            for ticket in adviser.tickets:\n                if ticket is not None:\n                    if ticket.result == \"failure\":\n                        names.append(ticket.client)\n    return names",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q17-a",
+      "source_question_ids": [
+        "H-SRC038-Q17-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "completed is an n-by-4 list of yearly totals, and row i belongs to advisers[i]. An adviser qualifies for rank 1 if some adjacent pair of years each has more than 6 completed requests. Construct update_ranks(advisers, completed). Change qualifying ranks to 1, leave all others unchanged, and return \"No rank changed to 1\" only when no rank actually changes; otherwise return \"Rank updated\".",
+      "syllabus_codes": [
+        "B2.2.2",
+        "B2.3.2",
+        "B2.3.3"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 7,
+      "command_term": "List",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "One solution:\ndef update_ranks(advisers, completed):\n    changed = False\n    for i in range(len(advisers)):\n        qualifies = False\n        for year in range(3):\n            if completed[i][year] > 6 and completed[i][year+1] > 6:\n                qualifies = True\n        if qualifies and advisers[i].rank != 1:\n            advisers[i].rank = 1\n            changed = True\n    if not changed:\n        return \"No rank changed to 1\"\n    return \"Rank updated\"",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Tracks whether a rank actually changed."
+        },
+        {
+          "marks": 1,
+          "criterion": "Processes every corresponding row/adviser."
+        },
+        {
+          "marks": 1,
+          "criterion": "Checks only valid adjacent pairs0–1, 1–2, 2–3."
+        },
+        {
+          "marks": 1,
+          "criterion": "Both values must individually exceed6."
+        },
+        {
+          "marks": 1,
+          "criterion": "Sets qualifying adviser rank to 1."
+        },
+        {
+          "marks": 1,
+          "criterion": "Distinguishes already-rank 1 from a new change."
+        },
+        {
+          "marks": 1,
+          "criterion": "Returns correct message from change flag."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Executed nonadjacent highs,adjacent qualification,strict boundary and already-ranked repeat.",
+        "source_comparison": [
+          45
+        ],
+        "test_code": "def update_ranks(advisers, completed):\n    changed = False\n    for i in range(len(advisers)):\n        qualifies = False\n        for year in range(3):\n            if completed[i][year] > 6 and completed[i][year+1] > 6:\n                qualifies = True\n        if qualifies and advisers[i].rank != 1:\n            advisers[i].rank = 1\n            changed = True\n    if not changed:\n        return \"No rank changed to 1\"\n    return \"Rank updated\"\nfrom types import SimpleNamespace as O\nx=[O(rank=0),O(rank=0),O(rank=1),O(rank=0)]\nassert update_ranks(x,[[7,1,7,1],[1,7,8,1],[8,8,1,1],[6,7,6,7]])=='Rank updated'\nassert [a.rank for a in x]==[0,1,1,0]\nassert update_ranks(x,[[7,1,7,1],[1,7,8,1],[8,8,1,1],[6,7,6,7]])=='No rank changed to 1' ",
+        "result_file": ""
+      },
+      "code": "def update_ranks(advisers, completed):\n    changed = False\n    for i in range(len(advisers)):\n        qualifies = False\n        for year in range(3):\n            if completed[i][year] > 6 and completed[i][year+1] > 6:\n                qualifies = True\n        if qualifies and advisers[i].rank != 1:\n            advisers[i].rank = 1\n            changed = True\n    if not changed:\n        return \"No rank changed to 1\"\n    return \"Rank updated\"",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q17-b",
+      "source_question_ids": [
+        "H-SRC038-Q17-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Without writing code, outline steps to collect every non-None ticket belonging to finance advisers into one Python list. Each adviser has area and tickets.",
+      "syllabus_codes": [
+        "B2.2.2",
+        "B2.3.3"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 3,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Create an empty list. Traverse advisers and select those whose area is finance. Traverse their ticket lists, skip None entries, and append each ticket object to the result.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Create an empty result and traverse advisers."
+        },
+        {
+          "marks": 1,
+          "criterion": "Filter finance advisers and traverse tickets."
+        },
+        {
+          "marks": 1,
+          "criterion": "Skip None and append each qualifying ticket."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          45
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q18-a-i",
+      "source_question_ids": [
+        "H-SRC038-Q18-a-i"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "State two advantages of a balanced BST over an unsorted fixed-capacity array for a changing collection of uniquely keyed records.",
+      "syllabus_codes": [
+        "B4.1.4"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 2,
+      "command_term": "State",
+      "difficulty": "medium",
+      "adaptation_rationale": "Restricts source generic binary tree to a balanced BST and states the array is unsorted; avoids false claims that all binary trees guarantee efficient searching.",
+      "solution": "A balanced BST supports logarithmic key-search paths rather than an unsorted linear scan. Nodes can be added without choosing one fixed array capacity in advance.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Correct balanced-search advantage with comparison."
+        },
+        {
+          "marks": 1,
+          "criterion": "Dynamic node growth rather than fixed capacity."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          46
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q18-a-ii",
+      "source_question_ids": [
+        "H-SRC038-Q18-a-ii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline one performance limitation of a BST when its insertions create a chain.",
+      "syllabus_codes": [
+        "B4.1.4"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Its height can grow to n, so finding a key may require a linear number of comparisons rather than the short path of a balanced tree.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Chain/unbalanced height near n."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains linear worst-case search."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          46
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    }
+  ]
+}

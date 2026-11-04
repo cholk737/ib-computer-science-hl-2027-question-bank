@@ -1,0 +1,19 @@
+{
+  "question_id": "P-SRC004-Q09-b",
+  "source_question_ids": [
+    "H-SRC004-Q09-b"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Outline what digit_total computes for a nonnegative integer n.\n\ndef digit_total(n):\n    if n > 0:\n        return n % 10 + digit_total(n // 10)\n    return 0",
+  "syllabus_codes": [
+    "B2.4.4"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 2,
+  "command_term": "Outline",
+  "difficulty": "medium",
+  "adaptation_rationale": "Reason about the purpose of a recursive algorithm; same supported non-branching process. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "assets": []
+}

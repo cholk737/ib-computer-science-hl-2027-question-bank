@@ -1,0 +1,19 @@
+{
+  "question_id": "P-SRC038-Q18-b",
+  "source_question_ids": [
+    "H-SRC038-Q18-b"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Determine row_total([[9,8,7,6],[1,4,2,3]],1,0), showing every recursive call and the return calculation. Indices are zero-based.\ndef row_total(grid, row, col):\n    if col == len(grid[row]) - 1:\n        return grid[row][col]\n    return grid[row][col] + row_total(grid, row, col+1)",
+  "syllabus_codes": [
+    "B2.4.5"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 3,
+  "command_term": "Determine",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "assets": []
+}

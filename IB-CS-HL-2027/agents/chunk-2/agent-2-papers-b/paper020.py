@@ -44,6 +44,25 @@ c1='''def total_values(readings):
         for value in row:
             total += value
     return total'''
+
+for entry in E:
+ if entry['key']=='13:d':
+  entry['test_code']=entry['code']+"""
+class Stack:
+ def __init__(self,values):self.values=values[:]
+ def pop(self):return self.values.pop()
+ def push(self,value):self.values.append(value)
+ def isEmpty(self):return not self.values
+class Queue:
+ def __init__(self):self.values=[]
+ def enqueue(self,value):self.values.append(value)
+ def dequeue(self):return self.values.pop(0)
+ def isEmpty(self):return not self.values
+for values in [[],[9],[1,2,3]]:
+ s=Stack(values);q=Queue();reverse_stack(s,q)
+ assert s.values==values[::-1] and q.isEmpty()
+"""
+  entry['check']='Executed empty,singleton and three-element stacks with FIFO queue harness.'
 add('14:a',['B2.2.2','B2.3.3'],'Construct a Python function total_values(readings) that totals all values in a rectangular nested list. To assess traversal, do not use sum.','One solution:\n'+c1,[(1,'Traverses rows.'),(1,'Traverses each row’s values.'),(1,'Initializes,accumulates andreturns correct total.')],[20],status='B',new_command='Construct',code=c1,check='Executed matrix total andemptyrows.',test_code=c1+'\nassert total_values([[2,4],[1,5]])==12\nassert total_values([[]])==0')
 c2='''def repeated_value(readings, r):
     a, b, c = readings[r]

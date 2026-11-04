@@ -1,0 +1,51 @@
+{
+  "question_id": "P-SRC044-Q10-c",
+  "source_question_ids": [
+    "H-SRC044-Q10-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Using the supplied class,construct a Python statement that creates a Producer for Sana Ali in Kenya and stores the object in maker.\nclass Producer:\n    def __init__(self, name, region):\n        self.name = name\n        self.region = region\n        self.products = []",
+  "syllabus_codes": [
+    "B3.1.4"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 3,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "maker = Producer(\"Sana Ali\", \"Kenya\")",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Assigns created object to maker."
+    },
+    {
+      "marks": 1,
+      "criterion": "Calls Producer with valid Python syntax."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct name and region arguments in order."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Object instantiated and initialized state asserted.",
+    "source_comparison": [
+      22
+    ],
+    "test_code": "class Producer:\n    def __init__(self, name, region):\n        self.name = name\n        self.region = region\n        self.products = []\nmaker=Producer(\"Sana Ali\",\"Kenya\")\nassert (maker.name,maker.region,maker.products)==(\"Sana Ali\",\"Kenya\",[])",
+    "result_file": ""
+  },
+  "code": "class Producer:\n    def __init__(self, name, region):\n        self.name = name\n        self.region = region\n        self.products = []\nmaker = Producer(\"Sana Ali\", \"Kenya\")",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC044-Q10-c.json",
+  "question_path": "question-bank/questions/P-SRC044-Q10-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC044-Q10-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

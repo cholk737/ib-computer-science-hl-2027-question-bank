@@ -6,7 +6,7 @@
   "marking_points": [
     {
       "marks": 1,
-      "criterion": "Allocates16 flags."
+      "criterion": "Allocates 16 flags."
     },
     {
       "marks": 1,
@@ -52,5 +52,6 @@
     "result_file": ""
   },
   "code": "def correctly_completed(grid):\n    flags = [False] * 16\n    for row in grid:\n        for value in row:\n            flags[value - 1] = True\n    for flag in flags:\n        if not flag:\n            return False\n    return True",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

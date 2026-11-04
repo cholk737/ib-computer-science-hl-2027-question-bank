@@ -1,0 +1,59 @@
+{
+  "question_id": "P-SRC033-Q05-d",
+  "source_question_ids": [
+    "H-SRC033-Q05-d"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct Python function net_profit(profit, months). months is a supplied positive integer number of months charged. A 400000 loan incurs simple interest of 1% of the original principal each month, and land tax is 500 per month. Return profit after deducting interest and tax.",
+  "syllabus_codes": [
+    "B2.3.4",
+    "B2.3.1"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 5,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Remove date/spreadsheet APIs beyond required types; retain modular cost calculation with supplied charged-month count. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "solution": "def net_profit(profit, months):\n    interest = 400000 * 0.01 * months\n    tax = 500 * months\n    costs = interest + tax\n    return profit - costs",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Function accepts supplied profit/months."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct monthly interest on original principal."
+    },
+    {
+      "marks": 1,
+      "criterion": "Multiplies interest by charged months."
+    },
+    {
+      "marks": 1,
+      "criterion": "Adds correctly calculated land tax."
+    },
+    {
+      "marks": 1,
+      "criterion": "Deducts combined costs and returns net profit."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 5,
+    "code_execution": "Specific executable boundary and behaviour tests passed; see agents/chunk-2/agent-3-papers-c/technical_checks.json and verify_practice.py."
+  },
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "assets": [],
+  "code": "def net_profit(profit, months):\n    interest = 400000 * 0.01 * months\n    tax = 500 * months\n    costs = interest + tax\n    return profit - costs",
+  "record_path": "question-bank/records/P-SRC033-Q05-d.json",
+  "question_path": "question-bank/questions/P-SRC033-Q05-d.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC033-Q05-d.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

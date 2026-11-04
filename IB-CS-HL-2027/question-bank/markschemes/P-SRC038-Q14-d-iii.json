@@ -1,0 +1,42 @@
+{
+  "question_id": "P-SRC038-Q14-d-iii",
+  "unofficial": true,
+  "marks": 5,
+  "solution": "One solution:\ndef count_overdue(adviser_id, advisers):\n    count = 0\n    for adviser in advisers:\n        if adviser.id == adviser_id:\n            for ticket in adviser.tickets:\n                if ticket is not None and ticket.days > 30 and ticket.status == \"open\":\n                    count += 1\n    return count",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes and returns count."
+    },
+    {
+      "marks": 1,
+      "criterion": "Finds matching adviser ID."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses that adviser’s tickets."
+    },
+    {
+      "marks": 1,
+      "criterion": "Safely ignores None and tests days>30."
+    },
+    {
+      "marks": 1,
+      "criterion": "Tests open status and increments only matching tickets."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed missing ID,None,age boundary and status combinations.",
+    "source_comparison": [
+      41
+    ],
+    "test_code": "def count_overdue(adviser_id, advisers):\n    count = 0\n    for adviser in advisers:\n        if adviser.id == adviser_id:\n            for ticket in adviser.tickets:\n                if ticket is not None and ticket.days > 30 and ticket.status == \"open\":\n                    count += 1\n    return count\nfrom types import SimpleNamespace as O\np=O(id=7,tickets=[None,O(days=30,status='open'),O(days=31,status='closed'),O(days=31,status='open')])\nassert count_overdue(7,[p])==1 and count_overdue(8,[p])==0",
+    "result_file": ""
+  },
+  "code": "def count_overdue(adviser_id, advisers):\n    count = 0\n    for adviser in advisers:\n        if adviser.id == adviser_id:\n            for ticket in adviser.tickets:\n                if ticket is not None and ticket.days > 30 and ticket.status == \"open\":\n                    count += 1\n    return count",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

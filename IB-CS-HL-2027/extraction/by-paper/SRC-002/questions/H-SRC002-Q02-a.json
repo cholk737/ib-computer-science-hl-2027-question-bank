@@ -17,7 +17,7 @@
     "4"
   ],
   "original_marks": 2,
-  "command_term": "See original prompt",
+  "command_term": "Suggest",
   "original_text": "Suggest a primary key for the PROJECT table.",
   "parent_context": "-4-\n2226-4429\n(Option A continued)\n2. A software company has a manager who oversees several projects. Each project is\ndeveloped for a specific client.\nA record of a project is placed in a PROJECT table:\nPROJECT\n(ManagerID,\nClientID, ProjectID, ProjectName, StartDate,\nEndDate, Priority)\n(a)\nSuggest a primary key for the PROJECT table.\n[2]\nThe Priority field stores only two pieces of data: High or Low.\n(b) Outline an appropriate data type for the Priority field.\n[2]\nThe PROJECT table is shown in Figure 1, the MANAGER table is shown in Figure 2, and\nthe CLIENT table is shown in Figure 3.\nFigure 1: The PROJECT table\nManagerID\nClientiD\nProjectiD\nProjectName\nStartDate\nEndDate\nPriority\nM123\nC001\n1\nAl bot\n2024-01-01\n2025-12-31\nHigh\nM456\nC002\n2\nWebsite\n2024-02-01\n2025-08-31\nLow\nM123\nC003\nData analysis\n2024-03-01\n2025-11-30\nLow\nM789\nC004\n4\nCybersecurity\n2024-04-01\n2025-09-30\nHigh\nFigure 2: The MANAGER table\nManagerID\nManagerName\nPhoneNumber\nEmploymentDate\nM123\nSehee Choi\n0107930361\n2023-04-12\nM456\nErrol Blake\n0105940577\n2022-01-29\nM789\nFaye Yang\n0109839399\n2023-12-18\n(Option A continues on the following page)\n-5-\n2226-4429\n(Option A, question 2 continued)\nFigure 3: The CLIENT table\nClientID\nClientName\nContactNumber\nIndustry\nC001\nTech Innovators\n0123456789\nTechnology\nC002\nWeb Solutions\n0987654321\nWeb development\nC003\nData Insights\n0234567890\nData analysis\nC004\nSecure Corp\n0345678901\nCybersecurity\n(c)\nConstruct a query to find ClientName and ContactNumber for projects managed by\nSehee Choi that are High priority.\n(5]\nThe database table (Figure 4) includes the professional development details of programmers.\nFigure 4: The database table showing the professional\ndevelopment details of programmers\nID\nProgrammer\nLevel\nQualification\nCompany\nCourseDate\nComplete\nCost\n1\nJana Jain\nSenior\nOracle-certified,\nCyberSafe\n2024-01-29\nYes\n2000\nJava\n2\nKev McClure\nSenior\nAzure Al engineer\nUniCode\n2024-02-05\nYes\n3000\n3\nColin Sinclair\nJunior\nCertified data\nDataCamp\n2024-03-11\nNo\n2500\nscientist\n4\nDave Lees\nJunior\nCISSP\nCyberSafe\n2024-04-21\nYes\n2200\ncertification\n1\nJana Jain\nSenior\nAzure Al engineer\nUniCode\n2024-05-28\nNo\n3200\n2\nKev McClure\nSenior\nOracle-certified,\nDataCamp\n2024-06-01\nNo\n2000\nJava\nA000\nConstruct the database in 3rd normal form (3NF) for the entities shown in Figure 4.\nYou should use the following notation:\nTABLE (Key, Fieldl, Field2,..)\n[5]\n(Option A continues on the following page)",
   "assets": [
@@ -47,7 +47,9 @@
     "filename": "",
     "pdf_pages": [],
     "question_reference": "Q2 a",
-    "marking_summary": "BuildID: it uniquely identifies each build, whereas a lead or client may be associated with several builds.",
+    "marking_summary": "No uploaded official MS; independently solved unofficial criteria are stored in the practice record.",
+    "summary_kind": "missing_official_MS",
+    "source_marking_leaf_evidence": "",
     "source_issues": [],
     "source_marking_evidence": ""
   },
@@ -56,7 +58,7 @@
     {
       "syllabus_code": "A3.2.4",
       "scope_evidence": "• The relationship between tables using primary keys, foreign keys, composite keys and concatenated keys\n• The importance of well-defined tables in ensuring data integrity",
-      "rationale": "The table BUILD(BuildID, LeadID, ClientID, Title, Deadline) stores one row per uniquely numbered build assesses Construct tables for relational databases.",
+      "rationale": "Original and adapted within-scope skill: The table BUILD(BuildID, LeadID, ClientID, Title, Deadline) stores one row per uniquely numbered build; guidance target: Construct tables for relational databases.",
       "theme": "A",
       "level": "SL/HL common",
       "confidence": "high",

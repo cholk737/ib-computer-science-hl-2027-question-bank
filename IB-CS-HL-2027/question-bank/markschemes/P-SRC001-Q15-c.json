@@ -44,5 +44,6 @@
   },
   "code": "def total_receipts(bookings):\n    total = 0\n    for row in bookings:\n        for kind in row:\n            if kind == \"S\":\n                total += 18\n            elif kind == \"D\":\n                total += 9\n            elif kind == \"C\":\n                total += 4\n    return total",
   "test_code": "assert total_receipts([[\"S\",\"D\",\"C\",\"X\"],[\"C\",\"S\",\"X\",\"D\"]])==62\nassert total_receipts([])==0\nassert total_receipts([[\"X\",\"X\"]])==0",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

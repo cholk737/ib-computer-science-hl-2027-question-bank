@@ -22,7 +22,20 @@
   "command_term": "Construct",
   "original_text": "[Source PDF page 9]\nFalse\nThe subprogram accepts an integer, , and returns the sum of all proper\nsumPD(N) N(N>1)\ndivisors of . For example, returns 15 (1 + 2 + 4 + 8 = 15).\nN sumPD(16)\n(b) Construct an algorithm in pseudocode for the subprogram . [3]\nsumPD(N)",
   "parent_context": "N>1; sum proper divisors; sumPD16=15.",
-  "assets": [],
+  "assets": [
+    {
+      "kind": "source_page",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-005-page-09.png",
+      "source_pdf_page": 9,
+      "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+    },
+    {
+      "kind": "source_page",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-005-page-10.png",
+      "source_pdf_page": 10,
+      "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+    }
+  ],
   "assessed_concepts": [
     "Construct: Construct an algorithm in pseudocode for the subprogram sumPD(N)."
   ],
@@ -36,7 +49,9 @@
     ],
     "question_reference": "14(b)",
     "marking_summary": "Initialize sum,loop eligible divisors,add when remainder0; old sqrt-bound alternative without paired factor is a sourceMS weakness.",
-    "source_issues": []
+    "source_issues": [
+      "SRC-011 PDF p15: the suggested square-root bound is invalid for the shown simple proper-divisor accumulator without adding paired factors. The unofficial solution traverses all candidates below n and is tested."
+    ]
   },
   "relevance_status": "B",
   "mappings": [
@@ -86,6 +101,25 @@
       "pdf_page": 9,
       "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-005/page-009.txt"
     }
+  ],
+  "source_context_page_evidence": [
+    {
+      "pdf_page": 9,
+      "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-005-page-09.png",
+      "kind": "complete_original_page_raster",
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-005/page-009.txt"
+    },
+    {
+      "pdf_page": 10,
+      "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-005-page-10.png",
+      "kind": "complete_original_page_raster",
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-005/page-010.txt"
+    }
+  ],
+  "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+  "complete_original_document_path": "sources/historical-papers/Computer_science_paper_1__HL (2).pdf",
+  "source_issues": [
+    "SRC-011 PDF p15: the suggested square-root bound is invalid for the shown simple proper-divisor accumulator without adding paired factors. The unofficial solution traverses all candidates below n and is tested."
   ],
   "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
   "practice_question_ids": [

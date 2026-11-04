@@ -1,0 +1,55 @@
+{
+  "question_id": "P-SRC032-Q01-d",
+  "source_question_ids": [
+    "H-SRC032-Q01-d"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "MEMBER(MemberID, Surname) and LOAN(LoanID, MemberID, DateOut, DateRet) store loans. Construct SQL listing surnames of members whose loan began 2027-03-01 and ended 2027-03-05. Dates are ISO strings.",
+  "syllabus_codes": [
+    "A3.3.2"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 4,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "One solution:\nSELECT m.Surname FROM Member m JOIN Loan l ON m.MemberID=l.MemberID\nWHERE l.DateOut='2027-03-01' AND l.DateRet='2027-03-05';",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Selects surname."
+    },
+    {
+      "marks": 1,
+      "criterion": "Uses both tables."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct MemberID join."
+    },
+    {
+      "marks": 1,
+      "criterion": "Both dates correctly filtered with AND."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "SQLite query executed on matching and nonmatching loans.",
+    "source_comparison": [
+      4
+    ],
+    "test_code": "import sqlite3\nc=sqlite3.connect(':memory:');c.executescript(\"CREATE TABLE Member(MemberID,Surname);CREATE TABLE Loan(LoanID,MemberID,DateOut,DateRet);INSERT INTO Member VALUES(1,'Ng'),(2,'Patel');INSERT INTO Loan VALUES(1,1,'2027-03-01','2027-03-05'),(2,2,'2027-03-02','2027-03-05');\")\nassert c.execute(\"SELECT m.Surname FROM Member m JOIN Loan l ON m.MemberID=l.MemberID WHERE l.DateOut='2027-03-01' AND l.DateRet='2027-03-05'\").fetchall()==[('Ng',)]",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC032-Q01-d.json",
+  "question_path": "question-bank/questions/P-SRC032-Q01-d.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC032-Q01-d.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

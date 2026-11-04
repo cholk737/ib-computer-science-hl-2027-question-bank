@@ -18,7 +18,7 @@
     },
     {
       "marks": 1,
-      "criterion": "Divides by total and multiplies by100."
+      "criterion": "Divides by total and multiplies by 100."
     }
   ],
   "acceptable_alternatives": [],
@@ -31,5 +31,6 @@
     "result_file": ""
   },
   "code": "def high_percentage(scores):\n    count = 0\n    for score in scores:\n        if 91 <= score <= 100:\n            count += 1\n    return count / len(scores) * 100",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

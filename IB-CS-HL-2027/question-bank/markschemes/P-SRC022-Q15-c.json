@@ -1,0 +1,49 @@
+{
+  "question_id": "P-SRC022-Q15-c",
+  "unofficial": true,
+  "marks": 7,
+  "solution": "def is_upper(mat):\n    n = len(mat)\n    for row in range(n):\n        for col in range(row):\n            if mat[row][col] != 0:\n                return False\n    return True",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Gets n / handles matrix size."
+    },
+    {
+      "marks": 1,
+      "criterion": "Outer loop covers all rows."
+    },
+    {
+      "marks": 1,
+      "criterion": "Inner loop covers columns strictly below diagonal."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct mat[row][col]access."
+    },
+    {
+      "marks": 1,
+      "criterion": "Tests nonzero."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns False when violation found."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns True only after all required entries checked."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 7,
+    "code_execution": "Specific executable boundary and behaviour tests passed; see agents/chunk-2/agent-3-papers-c/technical_checks.json and verify_practice.py."
+  },
+  "code": "def is_upper(mat):\n    n = len(mat)\n    for row in range(n):\n        for col in range(row):\n            if mat[row][col] != 0:\n                return False\n    return True",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

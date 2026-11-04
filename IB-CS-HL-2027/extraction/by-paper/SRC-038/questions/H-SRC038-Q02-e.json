@@ -1,0 +1,83 @@
+{
+  "source_question_id": "H-SRC038-Q02-e",
+  "source_id": "SRC-038",
+  "source_filename": "Computer_science_paper_2_HL.pdf",
+  "year": "2025",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "not stated",
+  "option": "A",
+  "question": 2,
+  "subquestion": "e",
+  "source_pdf_pages": [
+    6
+  ],
+  "source_printed_pages": [
+    "5"
+  ],
+  "original_marks": 5,
+  "command_term": "Construct",
+  "original_text": "Construct the database in 3rd normal form (3NF) for the entities shown in Figure 3. You should use the following notation: TABLE (KEY, FIELD1, FIELD2,…)",
+  "parent_context": "– 4 – 8825 – 6405\n(Option A continued)\n2. When a patient visits the dental clinic, a dentist may carry out a number of tests. Each record \nof a test is placed in a TEST table:\nTEST (PatientID, NurseID, DateTime, TestType, PatientName, Notes)\nThis table uses a composite primary key of PatientID, NurseID, and DateTime.\n(a) Outline why DateTime has been included as part of the composite primary key. [2]\n(b) Outline why the TEST table is not in second normal form (2NF). [2]\nThe TEST table is shown in Figure 1, and the NURSE table is shown in Figure 2.\nFigure 1: The TEST table\nPatientID NurseID DateTime TestType PatientName Notes\n5 BM2385 2024/11/17 09:05 Oral X-ray Simon Moore Tooth fracture\n54 JF2227 2024/11/17 09:05 Dental scan Ciara Alinac Implant planning\n78 BM2385 2024/11/19 09:45 Oral X-ray Scottie Ngatai Tooth decay\n23 JF2227 2024/11/19 09:35 Dental scan William Hartley Assessment\n30 AS2590 2024/11/19 10:15 Oral X-ray Emma Lee Impacted teeth\n29 JF2227 2024/11/20 11:20 Dental scan Lena Lee Assessment\nFigure 2: The NURSE table\nNurseID NurseName Nationality PhoneNumber StartDate\nBM2385 Billy McCoy Scottish 0102930308 2022/04/17\nAS2590 Anya Svetlana Russian 0102940209 2023/01/29\nJF2227 James Fernley English 0102839305 2019/06/18\n(c) State the output from the following query:\nSELECT PatientName FROM TEST \nWHERE TestType = \"Oral X-ray\" \nAND NurseID = \"BM2385\"; [2]\n(d) Construct a query to find patients who had a test carried out by the nurse \nAnya Svetlana at any time on 19 November 2024. [4]\n(Option A continues on the following page)\n– 5 – 8825 – 6405\nTurn over\n(Option A, question 2 continued)\nFigure 3 is an extract showing patients’ appointments with dentists and the cost of \ntheir treatments.\nFigure 3: Extract showing patients’ appointments with \ndentists and the cost of their treatments\nPatientID PatientName Dentist Specialties VisitDateTime Treatment Cost\n1 Zixin Yang Dr Kim\nDr Kim\nOrthodontics\nOrthodontics\n2024/12/01 09:00\n2024/12/08 09:30\nBraces fitting\nBraces adjust\n300\n100\n2 Charlie Algie Dr Ali\nDr Ali\nPeriodontics\nPeriodontics\n2024/11/29 10:00\n2024/11/30 10:00\nGum cleaning\nGum surgery\n180\n500\n3 Eve Armstrong Dr Ito\nDr Ito\nGeneral\nGeneral\n2024/09/01 14:00\n2024/09/02 14:00\nCavity filling\nWhitening\n120\n250\n4 Chan Oh Dr Ito\nDr Ito\nGeneral\nGeneral\n2024/09/05 11:00\n2024/09/12 11:30\nCavity filling\nCleaning\n120\n90\n5 Simon Moore Dr Kim\nDr Kim\nOrthodontics\nOrthodontics\n2024/12/02 10:00\n2024/12/09 11:00\nBraces fitting\nBraces adjust\n300\n100\n(e) Construct the database in 3rd normal form (3NF) for the entities shown in Figure 3.\nYou should use the following notation:\nTABLE (KEY, FIELD1, FIELD2,…) [5]\n(Option A continues on the following page)",
+  "assets": [
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-05.png",
+      "source_pdf_page": 5,
+      "visually_verified": true
+    },
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-06.png",
+      "source_pdf_page": 6,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Construct the database in 3rd normal form (3NF) for the entities shown in Figure 3. You should use the following notation: TABLE (KEY, FIELD1, FIELD2,…)",
+    "A booking relation contains VisitorID,VisitorName,GuideID,GuideName,Specialism,VisitTime,RouteID,RouteName,Fee"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-039",
+    "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+    "pdf_pages": [
+      8
+    ],
+    "question_reference": "Q2 e",
+    "marking_summary": "Exact original MS leaf excerpt: Award [5 max] Award [1] for 3 tables with correct fields (ignore PK and FK); Award [1] for PATIENT table, key, and correct fields; Award [1] for DENTIST table, key, and correct fields; Award [1] for TREATMENT table, key, and correct fields; Award [1] for APPOINTMENT table, key, and VisitDate field; Award [1] for at least two correct foreign keys in APPOINTMENT; PATIENT (PatientID, PatientName) APPOINTMENT (AppointmentID, PatientIDfk, DentistIDfk, VisitDate, TreatmentIDfk, Cost) DENTIST (DentistID, Dentist, Specialties) TREATMENT (TreatmentID, Treatment, [Cost]) Alternative without IDs in DENTIST and TREATMENT PATIENT (PatientID, PatientName) APPOINTMENT (AppointmentID, PatientIDfk, Dentistfk, VisitDate, Treatmentfk) DENTIST (Dentist, Specialties) TREATMENT (Treatment, Fee) Alternative with 3 table: PATIENT (PatientID, PatientName) DENTIST (DentistID, Dentist, Specialties) APPOINTMENT (Ap … [full leaf evidence retained]",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [5 max]\nAward [1] for 3 tables with correct fields (ignore PK and FK);\nAward [1] for PATIENT table, key, and correct fields;\nAward [1] for DENTIST table, key, and correct fields;\nAward [1] for TREATMENT table, key, and correct fields;\nAward [1] for APPOINTMENT table, key, and VisitDate field;\nAward [1] for at least two correct foreign keys in APPOINTMENT;\nPATIENT (PatientID, PatientName)\nAPPOINTMENT (AppointmentID, PatientIDfk, DentistIDfk, VisitDate, TreatmentIDfk, Cost)\nDENTIST (DentistID, Dentist, Specialties)\nTREATMENT (TreatmentID, Treatment, [Cost])\nAlternative without IDs in DENTIST and TREATMENT\nPATIENT (PatientID, PatientName)\nAPPOINTMENT (AppointmentID, PatientIDfk, Dentistfk, VisitDate, Treatmentfk)\nDENTIST (Dentist, Specialties)\nTREATMENT (Treatment, Fee)\nAlternative with 3 table:\nPATIENT (PatientID, PatientName)\nDENTIST (DentistID, Dentist, Specialties)\nAPPOINTMENT (AppointmentID, PatientID, DentistID, VisitDate, Treatment, Cost)\nNote:\nAward the mark for FK if not explicitly indicated but the name matches the PK\nAccept a suitable composite key in the Appointment table.\nCost can be included in APPOINTMENT and/or TREATMENT.",
+    "source_issues": [],
+    "source_marking_evidence": "– 8 – 8825 – 6405M \n(e) Award [5 max]\nAward [1] for 3 tables with correct fields (ignore PK and FK);\nAward [1] for PATIENT table, key, and correct fields;\nAward [1] for DENTIST table, key, and correct fields;\nAward [1] for TREATMENT table, key, and correct fields;\nAward [1] for APPOINTMENT table, key, and VisitDate field;\nAward [1] for at least two correct foreign keys in APPOINTMENT;\nPATIENT (PatientID, PatientName)\nAPPOINTMENT (AppointmentID, PatientIDfk, DentistIDfk, VisitDate, TreatmentIDfk, Cost)\nDENTIST (DentistID, Dentist, Specialties)\nTREATMENT (TreatmentID, Treatment, [Cost])\nAlternative without IDs in DENTIST and TREATMENT\nPATIENT (PatientID, PatientName)\nAPPOINTMENT (AppointmentID, PatientIDfk, Dentistfk, VisitDate, Treatmentfk)\nDENTIST (Dentist, Specialties)\nTREATMENT (Treatment, Fee)\nAlternative with 3 table:\nPATIENT (PatientID, PatientName)\nDENTIST (DentistID, Dentist, Specialties)\nAPPOINTMENT (AppointmentID, PatientID, DentistID, VisitDate, Treatment, Cost)\nNote:\nAward the mark for FK if not explicitly indicated but the name matches the PK\nAccept a suitable composite key in the Appointment table.\nCost can be included in APPOINTMENT and/or TREATMENT."
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "A3.2.6",
+      "scope_evidence": "• Examples may include library management, hospital management, e-commerce platforms, school management, employee management, inventory management, police crime reporting",
+      "rationale": "Adapted target only: A booking relation contains VisitorID,VisitorName,GuideID,GuideName,Specialism,VisitTime,RouteID,RouteName,Fee; guidance target: Construct a database normalized to 3NF for a range of real-world scenarios. Adaptation: Supplies explicit functional dependencies and unique booking identifier, resolving source ambiguity about treatment cost and specialties.",
+      "theme": "A",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC038-Q02-e"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

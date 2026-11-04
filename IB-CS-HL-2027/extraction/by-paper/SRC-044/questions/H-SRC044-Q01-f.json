@@ -1,0 +1,85 @@
+{
+  "source_question_id": "H-SRC044-Q01-f",
+  "source_id": "SRC-044",
+  "source_filename": "Computer_science_paper_2_TZ3_SL (1).pdf",
+  "year": "2025",
+  "session": "May",
+  "source_level": "SL",
+  "paper": "2",
+  "zone": "TZ3 (filename; numerical cover code)",
+  "option": "A",
+  "question": 1,
+  "subquestion": "f",
+  "source_pdf_pages": [
+    3
+  ],
+  "source_printed_pages": [
+    "2"
+  ],
+  "original_marks": 6,
+  "command_term": "Explain",
+  "original_text": "Explain two ways in which the database administrator can ensure the privacy of the hospital’s staff data.",
+  "parent_context": "– 2 – 2225 – 6423\nOption A — Databases\n1. Alpha Hospital is situated in a large city and has over 1000 staff. It stores its data in a \nrelational database.\nSome of the tables in this relational database contain data about the hospital staff, their roles, \nand the hospital departments.\nStaff roles include doctor, nurse, pharmacist, radiologist, and support staff. Staff can only \nhold one role.\nDepartments include Accident and Emergency, Critical Care, Medical, General Surgery, \nOrthopaedics, and Ophthalmology. Staff can work in several departments.\nThe ROLE table, STAFF table, and DEPARTMENT table are shown in Figure 1.\nFigure 1: Diagrammatic relationship for the ROLE table, \nSTAFF table and DEPARTMENT table\nROLE STAFF DEPARTMENT\nRoleID StaffID DepartmentID\nPayGrade RoleID ManagerID\nDepartmentID Building\nFirstName\nSurname\nDateOfBirth\n(a) (i)   State the primary key in the STAFF table. [1]\n(ii) State a foreign key in the STAFF table. [1]\n(b) Describe the relationships between the three tables in Figure 1. [2]\n(c) Outline what a query is used for in a database. [2]\n(d) Identify the steps to create a query to list the staff with the surname Waters who are on \npay grade 17. The query must display only FirstName, Surname, and PayGrade. [4]\n(e) Outline why an integer is an appropriate data type for the PayGrade field. [2]\n(f) Explain two ways in which the database administrator can ensure the privacy of the \nhospital’s staff data. [6]\n(Option A continues on the following page)",
+  "assets": [
+    {
+      "kind": "source_page_evidence",
+      "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-03.png",
+      "source_pdf_page": 3,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Explain two ways in which the database administrator can ensure the privacy of the hospital’s staff data.",
+    "Explain two ways to restrict disclosure of employee salary data in a relational database"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-046",
+    "filename": "Computer_science_paper_2_TZ3_SL_markscheme.pdf",
+    "pdf_pages": [
+      6
+    ],
+    "question_reference": "Q1 f",
+    "marking_summary": "Exact original MS leaf excerpt: Award [6 max] Award [3 max] x [2] Award [1] identifying the method Award [1] for explaining how privacy is ensured using this method Award [1] for application of the method to hospital staff data (accept other suitable examples) By separating sensitive data (paygrade and possibly age/DoB) into a separate table; Minimum number of people have access to sensitive data; And only using the unique identifiers of the staff as a reference point; The use of different levels of access /authorization; Meaning the minimum number of people have access to this data; For example, password protect/lock/restrict access to Role table; Encrypting the stored data in the database (or specific columns in tables); The data is scrambled/converted to cipher text (and cannot be understood without a key); For example, only the employees with the key can decrypt the data; Data anonymisation/masking/obfuscation; Thi … [full leaf evidence retained]",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [6 max]\nAward [3 max] x [2]\nAward [1] identifying the method\nAward [1] for explaining how privacy is ensured using this method\nAward [1] for application of the method to hospital staff data (accept other suitable examples)\nBy separating sensitive data (paygrade and possibly age/DoB) into a separate table;\nMinimum number of people have access to sensitive data;\nAnd only using the unique identifiers of the staff as a reference point;\nThe use of different levels of access /authorization;\nMeaning the minimum number of people have access to this data;\nFor example, password protect/lock/restrict access to Role table;\nEncrypting the stored data in the database (or specific columns in tables);\nThe data is scrambled/converted to cipher text (and cannot be understood without a key);\nFor example, only the employees with the key can decrypt the data;\nData anonymisation/masking/obfuscation;\nThis removes or transforms Personally Identifiable Information (PII) in the data;\nFor example, suppressing certain characters in the staff pay Grade etc;\nDatabase views can be used to limit data access;\nBy exposing only specific columns or rows from a table;\nFor example a view can be created for a dept manager to see the data of staff in their dept only;",
+    "source_issues": [],
+    "source_marking_evidence": "– 6 – 2225 – 6423M \n(f) Award [6 max]\nAward [3 max] x [2]\nAward [1] identifying the method\nAward [1] for explaining how privacy is ensured using this method\nAward [1] for application of the method to hospital staff data (accept other suitable examples)\nBy separating sensitive data (paygrade and possibly age/DoB) into a separate table;\nMinimum number of people have access to sensitive data;\nAnd only using the unique identifiers of the staff as a reference point;\nThe use of different levels of access /authorization;\nMeaning the minimum number of people have access to this data;\nFor example, password protect/lock/restrict access to Role table;\nEncrypting the stored data in the database (or specific columns in tables);\nThe data is scrambled/converted to cipher text (and cannot be understood without a key);\nFor example, only the employees with the key can decrypt the data;\nData anonymisation/masking/obfuscation;\nThis removes or transforms Personally Identifiable Information (PII) in the data;\nFor example, suppressing certain characters in the staff pay Grade etc;\nDatabase views can be used to limit data access;\nBy exposing only specific columns or rows from a table;\nFor example a view can be created for a dept manager to see the data of staff in their dept only;"
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "A3.1.1",
+      "scope_evidence": "• Features: composite keys, foreign keys, primary keys, relationships, tables\n• Benefits of databases: community support, concurrency control, data consistency, data integrity, data retrieval, reduced data duplication, reduced redundancy, reliable transaction processing, scalability, security features\n• Limitations of databases: “big data” scalability issues, design complexity, hierarchical data handling, rigid schema, object-relational impedance mismatch, unstructured data handling",
+      "rationale": "Adapted target only: Explain two ways to restrict disclosure of employee salary data in a relational database; guidance target: Explain the features, benefits and limitations of a relational database. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+      "theme": "A",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "A3.3.5",
+      "scope_evidence": "• Virtual views and materialized (snapshot) views\n• Hiding data complexity, data consistency, independence, performance, query simplification, read-only data or updatable data, security",
+      "rationale": "Adapted target only: Explain two ways to restrict disclosure of employee salary data in a relational database; guidance target: Describe different database views. (HL only) Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+      "theme": "A",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC044-Q01-f"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

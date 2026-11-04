@@ -1,0 +1,59 @@
+{
+  "question_id": "P-SRC038-Q02-e",
+  "source_question_ids": [
+    "H-SRC038-Q02-e"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A booking relation contains VisitorID, VisitorName, GuideID, GuideName, Specialism, VisitTime, RouteID, RouteName, Fee. VisitorID determines VisitorName; GuideID determines GuideName and Specialism; RouteID determines RouteName and Fee. Each booking has a unique BookingID and exactly one visitor, guide and route. Construct a 3NF schema, labelling primary and foreign keys.",
+  "syllabus_codes": [
+    "A3.2.6"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 5,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Supplies explicit functional dependencies and unique booking identifier, resolving source ambiguity about treatment cost and specialties.",
+  "solution": "VISITOR(VisitorID PK, VisitorName); GUIDE(GuideID PK, GuideName, Specialism); ROUTE(RouteID PK, RouteName, Fee); BOOKING(BookingID PK, VisitorID FK, GuideID FK, RouteID FK, VisitTime).",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "VISITOR with correct key and attributes."
+    },
+    {
+      "marks": 1,
+      "criterion": "GUIDE with correct key and attributes."
+    },
+    {
+      "marks": 1,
+      "criterion": "ROUTE with correct key and attributes."
+    },
+    {
+      "marks": 1,
+      "criterion": "BOOKING with key, VisitTime and references."
+    },
+    {
+      "marks": 1,
+      "criterion": "Foreign keys identified; no transitive names/fees retained in BOOKING."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      8
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC038-Q02-e.json",
+  "question_path": "question-bank/questions/P-SRC038-Q02-e.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC038-Q02-e.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

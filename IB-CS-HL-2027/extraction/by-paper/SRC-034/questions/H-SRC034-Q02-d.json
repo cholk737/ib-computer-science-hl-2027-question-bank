@@ -1,0 +1,104 @@
+{
+  "original_assessment_context": "Concurrent reads/edits of shift record.",
+  "source_scope_note": "Original assessed concept classified directly or excluded with reason.",
+  "source_question_id": "H-SRC034-Q02-d",
+  "source_id": "SRC-034",
+  "source_filename": "Computer_science_paper_2__HL.pdf",
+  "year": "2023",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "not stated",
+  "option": "A",
+  "question": "2",
+  "subquestion": "d",
+  "source_pdf_pages": [
+    4
+  ],
+  "source_printed_pages": [
+    "3"
+  ],
+  "original_marks": 4,
+  "command_term": "Explain",
+  "original_text": "[Source PDF page 4]\nThe shift manager sometimes changes the employees’ work hours in the database during\ntheir shift. Employees can access the work hours and confirm their availability.\n(d) Explain how data integrity can be maintained if an employee tries to access their work\nhours while the shift manager is editing them. [4]",
+  "parent_context": "Concurrent reads/edits of shift record.",
+  "assets": [
+    {
+      "kind": "source_page",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-03.png",
+      "source_pdf_page": 3,
+      "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+    },
+    {
+      "kind": "source_page",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-04.png",
+      "source_pdf_page": 4,
+      "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+    }
+  ],
+  "assessed_concepts": [
+    "Explain: Explain how data integrity can be maintained if an employee tries to access their work hours while the shift manager is editing them."
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-037",
+    "filename": "Computer_science_paper_2__HL_markscheme.pdf",
+    "pdf_pages": [
+      5
+    ],
+    "question_reference": "2(d)",
+    "marking_summary": "Lock record or use coherent version;isolate edit until completed.",
+    "source_issues": []
+  },
+  "relevance_status": "A",
+  "mappings": [
+    {
+      "mapping_target": "original_and_adapted",
+      "syllabus_code": "A3.3.6",
+      "scope_evidence": "• The role of atomicity, consistency, isolation and durability (ACID) to ensure reliable processing of transactions\n• Transaction control language (TCL) commands: BEGIN TRANSACTION, COMMIT, ROLLBACK",
+      "rationale": "The assessed skill is explicitly named in the cited statement and its guidance; mapping does not credit unassessed scenario topics.",
+      "theme": "A",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+    "marks": "Printed allocation transcribed.",
+    "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+    "official_answer_status": "See source markscheme record"
+  },
+  "original_text_manual_synopsis": "Explain how data integrity can be maintained if an employee tries to access their work hours while the shift manager is editing them.",
+  "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+  "source_page_evidence": [
+    {
+      "pdf_page": 4,
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-004.txt"
+    }
+  ],
+  "source_context_page_evidence": [
+    {
+      "pdf_page": 3,
+      "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-03.png",
+      "kind": "complete_original_page_raster",
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-003.txt"
+    },
+    {
+      "pdf_page": 4,
+      "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-04.png",
+      "kind": "complete_original_page_raster",
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-004.txt"
+    }
+  ],
+  "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+  "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2__HL.pdf",
+  "source_issues": [],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC034-Q02-d"
+  ]
+}

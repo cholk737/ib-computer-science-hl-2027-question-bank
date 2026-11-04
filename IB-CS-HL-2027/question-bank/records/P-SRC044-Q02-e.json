@@ -1,0 +1,47 @@
+{
+  "question_id": "P-SRC044-Q02-e",
+  "source_question_ids": [
+    "H-SRC044-Q02-e"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Outline how a transaction can avoid leaving only half of an account transfer in a database when an update fails.",
+  "syllabus_codes": [
+    "A3.3.6"
+  ],
+  "theme": "A",
+  "level": "HL-only",
+  "marks": 2,
+  "command_term": "Outline",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "Treat the debit and credit as one transaction. Commit both if successful; otherwise roll back the uncommitted changes so neither half remains.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Both updates form one all-or-nothing transaction."
+    },
+    {
+      "marks": 1,
+      "criterion": "Commit both or roll back failed partial updates."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      8
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC044-Q02-e.json",
+  "question_path": "question-bank/questions/P-SRC044-Q02-e.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC044-Q02-e.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

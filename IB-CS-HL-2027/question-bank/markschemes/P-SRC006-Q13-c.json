@@ -42,5 +42,6 @@
     "result_file": ""
   },
   "code": "def distance(names, d, a, b):\n    ia = ib = -1\n    for i in range(len(names)):\n        if names[i] == a: ia = i\n        if names[i] == b: ib = i\n    if ia == -1 or ib == -1:\n        return None\n    if ia < ib:\n        ia, ib = ib, ia\n    return d[ia][ib]",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

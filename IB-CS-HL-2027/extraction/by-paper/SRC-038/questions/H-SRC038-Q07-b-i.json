@@ -1,0 +1,83 @@
+{
+  "source_question_id": "H-SRC038-Q07-b-i",
+  "source_id": "SRC-038",
+  "source_filename": "Computer_science_paper_2_HL.pdf",
+  "year": "2025",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "not stated",
+  "option": "B",
+  "question": 7,
+  "subquestion": "b-i",
+  "source_pdf_pages": [
+    14
+  ],
+  "source_printed_pages": [
+    "13"
+  ],
+  "original_marks": 1,
+  "command_term": "State",
+  "original_text": "State a formula to calculate the distance for cell C2.",
+  "parent_context": "– 12 – 8825 – 6405\n(Option B continued)\n7. The Monte Carlo estimation of pi (π) is achieved by randomly generating points within a \nsquare and counting how many fall within an inscribed circle (see Figure 5).\nFigure 5: 2D visualization of the Monte Carlo estimation of π\n−1 0 1\n−1\n0\n1\n(a) Outline the appropriateness of using a 2D visualization for the Monte Carlo estimation  \nof π. [2]\nA spreadsheet model can be created to simulate the Monte Carlo method for the estimation  \nof π.\nThe =RAND() spreadsheet function is used in columns x-cord and y-cord (see Figure 6) to \ngenerate a random decimal between 0 and 1.\nThe distance column uses Pythagoras’ theorem to calculate distance, where a is x-cord and \nb is y-cord:\nca b/g32/g1422\nThe In or Out column is determined using an IF statement. When distance is less than 1, “In” \nis shown. When distance is 1 or more, “Out” is shown.\n(Option B continues on the following page)\n– 13 – 8825    – 6405\nTurn over\n(Option B, question 7 continued)\nFigure 6: The four columns needed in the simulation of \nthe Monte Carlo method for the estimation of π\nA B C D E\n1 x-cord y-cord distance In or Out\n2 0.9709594 0.03075972 0.97144651 In\n3 0.47929644 0.46729567 0.66939549 In\n(b) (i)  State a formula to calculate the distance for cell C2. [1]\n(ii) State a formula to show In or Out for cell D2. [1]\nThe formulae in row 2, columns A, B, C, and D, are automatically filled down to row 5001.\nA range of 5000 numbers will be sufficient to give a good approximation of π.\nTo give an approximation for π, a formula should be entered in cell E2.\nThe formula will calculate the ratio of points inside the circle (the number of “In” occurrences) \nrelative to the total points (total number of rows) and multiply the result by 4.\n(c) State a formula to be entered in cell E2. [3]\nBounding boxes in the context of self-driving cars are 3D geometric shapes encapsulating \nsurrounding objects that are memory and processor intensive (see Figure 7).\nFigure 7: 3D visualization of a bounding box\n(d) Evaluate the processing power and memory requirements needed to calculate the 3D \nbounding boxes for self-driving cars. [5]\n(Option B continues on page 15)",
+  "assets": [
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-13.png",
+      "source_pdf_page": 13,
+      "visually_verified": true
+    },
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-14.png",
+      "source_pdf_page": 14,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: State a formula to calculate the distance for cell C2.",
+    "State a Python assignment computing d from x and y using the supplied formula d = square root of (x squared + y squared)"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-039",
+    "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+    "pdf_pages": [
+      22
+    ],
+    "question_reference": "Q7 b-i",
+    "marking_summary": "Original spreadsheet formula SQRT(A2^2+B2^2).",
+    "summary_kind": "author_paraphrase_of_original",
+    "source_marking_leaf_evidence": "Award [1] max\n=SQRT(A2^2 + B2^2)\n \n// must be exact",
+    "source_issues": [],
+    "source_marking_evidence": "– 22 – 8825 – 6405M \n7. (a)\t Award [2] max\nThe Monte Carlo method for estimating π relies on a 2D geometric shape; \nA 2D visualization represents these shapes and the random points within them; \nThe concept of plotting points within a square can be clearly demonstrated in two \ndimensions; \nThe visualisation intuitively helps understanding the underlying principle of the method; \nThe visualisation can be represented by a scatter diagram; \nA 2D chart widely available in spreadsheet software; \nThe Monte Carlo method relies on random x and y coordinates; \nThe foundation for 2D charts (like scatter diagrams); \n(b) (i)\t Award [1] max\n=SQRT(A2^2 + B2^2)\n \n// must be exact \n(ii) Award [1] max\n=IF(C2<=1, \"In\",\"Out\")\n// Accept C2 < 1\n(c) Award [1] for COUNTIF with “In”\nAward [1] for COUNTIF with correct range\nAward [1] for dividing by 5000 * 4\n=COUNTIF(D2:D5001,\"In\") / COUNTA(D2:D5001)*4\nAlternative\n=COUNTIF(D2:D5001,\"In\") / 5000*4\nAwards full marks if students correctly use more than one formula/cell."
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B2.3.1",
+      "scope_evidence": "• The impact of instruction order on program functionality\n• Ways to avoid errors, such as infinite loops, deadlock, incorrect output",
+      "rationale": "Adapted target only: State a Python assignment computing d from x and y using the supplied formula d = square root of (x squared + y squared); guidance target: Construct programs that implement the correct sequence of code instructions to meet program objectives. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC038-Q07-b-i"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

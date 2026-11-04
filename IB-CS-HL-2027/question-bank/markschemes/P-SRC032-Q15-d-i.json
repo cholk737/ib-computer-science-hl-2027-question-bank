@@ -1,0 +1,30 @@
+{
+  "question_id": "P-SRC032-Q15-d-i",
+  "unofficial": true,
+  "marks": 2,
+  "solution": "The loop eventually binds item to None. Accessing item.city then raises AttributeError because None has no city attribute.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "None entry accessed."
+    },
+    {
+      "marks": 1,
+      "criterion": "AttributeError on missing attribute."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed nullable-entry failure.",
+    "source_comparison": [
+      28
+    ],
+    "test_code": "def visit(entries, city):\n    for item in entries:\n        if item.city == city:\n            print(item.address)\ntry:\n visit([None],\"Bay\")\n raise AssertionError(\"missing AttributeError\")\nexcept AttributeError:pass",
+    "result_file": ""
+  },
+  "code": "def visit(entries, city):\n    for item in entries:\n        if item.city == city:\n            print(item.address)",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

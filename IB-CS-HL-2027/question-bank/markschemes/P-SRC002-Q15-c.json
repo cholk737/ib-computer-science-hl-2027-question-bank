@@ -26,7 +26,7 @@
     },
     {
       "marks": 1,
-      "criterion": "Returns complete result,including empty list when no match."
+      "criterion": "Returns complete result, including empty list when no match."
     }
   ],
   "acceptable_alternatives": [],
@@ -39,5 +39,6 @@
     "result_file": ""
   },
   "code": "def bookings_on(self, day):\n    result = []\n    for i in range(self.used):\n        booking = self.bookings[i]\n        if booking.start_day == day:\n            result.append(booking)\n    return result",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

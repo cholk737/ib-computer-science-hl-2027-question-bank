@@ -1,0 +1,45 @@
+{
+  "question_id": "P-SRC033-Q14-a",
+  "unofficial": true,
+  "marks": 6,
+  "solution": "def add_asset(self, asset):\n    for i in range(len(self.slots)):\n        if self.slots[i] is None:\n            self.slots[i] = asset\n            return i\n    return -1",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Traverses slots from index 0."
+    },
+    {
+      "marks": 1,
+      "criterion": "Uses valid list bounds."
+    },
+    {
+      "marks": 1,
+      "criterion": "Tests for None."
+    },
+    {
+      "marks": 1,
+      "criterion": "Stores asset at first empty position."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns that position immediately."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns -1 only if no slot available."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 6,
+    "code_execution": "Specific executable boundary and behaviour tests passed; see agents/chunk-2/agent-3-papers-c/technical_checks.json and verify_practice.py."
+  },
+  "code": "def add_asset(self, asset):\n    for i in range(len(self.slots)):\n        if self.slots[i] is None:\n            self.slots[i] = asset\n            return i\n    return -1",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

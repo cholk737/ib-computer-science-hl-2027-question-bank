@@ -1,0 +1,61 @@
+{
+  "question_id": "P-SRC038-Q07-d",
+  "source_question_ids": [
+    "H-SRC038-Q07-d"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Evaluate the processing and memory needs of an ML camera system that detects many moving objects in a live image stream.",
+  "syllabus_codes": [
+    "A1.1.2",
+    "A1.1.4",
+    "A4.1.2"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 5,
+  "command_term": "Evaluate",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "A GPU can process many similar image operations in parallel, improving throughput. RAM holds frames, model data and intermediate results; larger frames/more objects increase working data. Powerful hardware costs energy and money, while insufficient throughput increases delay and stale decisions. Choose enough GPU/RAM for measured frame-rate and latency requirements rather than assuming a simple box overlay means the whole detection task is cheap.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "GPU parallel processing benefit."
+    },
+    {
+      "marks": 1,
+      "criterion": "Concrete live-image workload explanation."
+    },
+    {
+      "marks": 1,
+      "criterion": "RAM working-data role."
+    },
+    {
+      "marks": 1,
+      "criterion": "Develops capacity/latency/cost trade-off."
+    },
+    {
+      "marks": 1,
+      "criterion": "Supported contextual hardware judgment."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      23
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC038-Q07-d.json",
+  "question_path": "question-bank/questions/P-SRC038-Q07-d.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC038-Q07-d.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

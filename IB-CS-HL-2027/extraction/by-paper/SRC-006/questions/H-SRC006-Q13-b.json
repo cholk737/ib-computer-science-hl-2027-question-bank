@@ -50,7 +50,9 @@
       16
     ],
     "question_reference": "Q13 b",
-    "marking_summary": "One valid solution:\ndef valid_distances(d):\n    for r in range(len(d)):\n        for c in range(len(d)):\n            if r <= c and d[r][c] != 0:\n                return False\n            if r > c and d[r][c] <= 0:\n                return False\n    return True",
+    "marking_summary": "Exact original MS leaf excerpt: Award [5 max] Award [1] for correct outer/row loop Award [1] for correct inner/column loop Award [1] for use of a flag Award [1] for checking whether all elements on and above the main diagonal are zero Award [1] for checking all elements below the main diagonal (they all should be positive numbers) Award [1] for outputting the appropriate message Example 1: VALID=True loop R from 0 to 9 loop C from 0 to 9 if R>C and ROUTE_X_DISTANCES[R][C]<=0 then VALID=False end if if R<=C and ROUTE_X_DISTANCES[R][C]!=0 then VALID=False end if end loop end loop if VALID then output('VALID') else output('INVALID') end if Example 2: FLAG=1 loop R from 1 to 9 loop C from 0 to R-1 if ROUTE_X_DISTANCES[R][C]<=0 then FLAG=0 end if end loop end loop loop R from 0 to 9 loop C= from R to 9 if ROUTE_X_DISTANCES[R][C]!=0 then FLAG=0 end if end loop end loop if FLAG ==1 then output('IT IS VALID') else output('IT I … [full leaf evidence retained]",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [5 max]\nAward [1] for correct outer/row loop\nAward [1] for correct inner/column loop\nAward [1] for use of a flag\nAward [1] for checking whether all elements on and above the main diagonal are zero\nAward [1] for checking all elements below the main diagonal (they all should be positive\nnumbers)\nAward [1] for outputting the appropriate message\nExample 1:\nVALID=True\nloop R from 0 to 9\n   loop C from 0 to 9 \nif R>C and ROUTE_X_DISTANCES[R][C]<=0 \nthen VALID=False \nend if \nif R<=C and ROUTE_X_DISTANCES[R][C]!=0 \nthen VALID=False \nend if \nend loop \nend loop \nif VALID  \n  then output('VALID') \n  else output('INVALID') \nend if \nExample 2: \nFLAG=1 \nloop R from 1 to 9 \nloop C from 0 to R-1 \nif ROUTE_X_DISTANCES[R][C]<=0 \nthen FLAG=0 \nend if \nend loop \nend loop \nloop R from 0 to 9 \nloop C= from R to 9 \nif ROUTE_X_DISTANCES[R][C]!=0 \nthen FLAG=0 \nend if \nend loop \nend loop \nif FLAG ==1 \n  then output('IT IS VALID') \n  else output('IT IS NOT VALID') \nend if\n\nExample 3: \nNote: Marks should also be awarded if a candidate wrote the algorithm in \nJava/Python/Javascript. \nAward [1] for correct outer/row loop \nAward [1] for correct inner/column loop \nAward [1] for stopping as soon as an incorrect value is found \nAward [1] for checking whether elements on and above the main diagonal are zero \nAward [1] for checking elements below the main diagonal (they all should be positive \nnumbers) \nAward [1] for outputting the appropriate message \nfunction check() \n{ for (var i=0; i<10; i++) \n  { for (var j=0; j<10; j++) \n{ if (i>j) \n{ if (ROUTE_X_DISTANCES[i][j] <= 0.0) return \"invalid\"; \n} \nelse if (ROUTE_X_DISTANCES[i][j] != 0.0 ) return \"invalid\"; \n} \n  } \n  return \"valid\"; \n} \noutput(\"ROUTE_X_DISTANCES is \"+check());",
     "source_issues": [],
     "source_marking_evidence": "– 15 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \n13. (a) Award [1 max]\n5.9; \n(b) Award [5 max]\nAward [1] for correct outer/row loop\nAward [1] for correct inner/column loop\nAward [1] for use of a flag\nAward [1] for checking whether all elements on and above the main diagonal are zero\nAward [1] for checking all elements below the main diagonal (they all should be positive\nnumbers)\nAward [1] for outputting the appropriate message\nExample 1:\nVALID=True\nloop R from 0 to 9\n   loop C from 0 to 9 \nif R>C and ROUTE_X_DISTANCES[R][C]<=0 \nthen VALID=False \nend if \nif R<=C and ROUTE_X_DISTANCES[R][C]!=0 \nthen VALID=False \nend if \nend loop \nend loop \nif VALID  \n  then output('VALID') \n  else output('INVALID') \nend if \nExample 2: \nFLAG=1 \nloop R from 1 to 9 \nloop C from 0 to R-1 \nif ROUTE_X_DISTANCES[R][C]<=0 \nthen FLAG=0 \nend if \nend loop \nend loop \nloop R from 0 to 9 \nloop C= from R to 9 \nif ROUTE_X_DISTANCES[R][C]!=0 \nthen FLAG=0 \nend if \nend loop \nend loop \nif FLAG ==1 \n  then output('IT IS VALID') \n  else output('IT IS NOT VALID') \nend if\n– 16 – N21/4/COMSC/HP1/ENG/TZ0/XX/M \nExample 3: \nNote: Marks should also be awarded if a candidate wrote the algorithm in \nJava/Python/Javascript. \nAward [1] for correct outer/row loop \nAward [1] for correct inner/column loop \nAward [1] for stopping as soon as an incorrect value is found \nAward [1] for checking whether elements on and above the main diagonal are zero \nAward [1] for checking elements below the main diagonal (they all should be positive \nnumbers) \nAward [1] for outputting the appropriate message \nfunction check() \n{ for (var i=0; i<10; i++) \n  { for (var j=0; j<10; j++) \n{ if (i>j) \n{ if (ROUTE_X_DISTANCES[i][j] <= 0.0) return \"invalid\"; \n} \nelse if (ROUTE_X_DISTANCES[i][j] != 0.0 ) return \"invalid\"; \n} \n  } \n  return \"valid\"; \n} \noutput(\"ROUTE_X_DISTANCES is \"+check()); "
   },
@@ -59,7 +61,7 @@
     {
       "syllabus_code": "B2.2.2",
       "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
-      "rationale": "Construct a Python function valid_distances(d) for a nonempty square numeric nested list assesses Construct programs that apply arrays and Lists.",
+      "rationale": "Adapted target only: Construct a Python function valid_distances(d) for a nonempty square numeric nested list; guidance target: Construct programs that apply arrays and Lists. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
       "theme": "B",
       "level": "SL/HL common",
       "confidence": "high",
@@ -68,7 +70,7 @@
     {
       "syllabus_code": "B2.3.2",
       "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
-      "rationale": "Construct a Python function valid_distances(d) for a nonempty square numeric nested list assesses Construct programs utilizing appropriate selection structures.",
+      "rationale": "Adapted target only: Construct a Python function valid_distances(d) for a nonempty square numeric nested list; guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
       "theme": "B",
       "level": "SL/HL common",
       "confidence": "high",
@@ -77,7 +79,7 @@
     {
       "syllabus_code": "B2.3.3",
       "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
-      "rationale": "Construct a Python function valid_distances(d) for a nonempty square numeric nested list assesses Construct programs that utilize looping structures to perform repeated actions.",
+      "rationale": "Adapted target only: Construct a Python function valid_distances(d) for a nonempty square numeric nested list; guidance target: Construct programs that utilize looping structures to perform repeated actions. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
       "theme": "B",
       "level": "SL/HL common",
       "confidence": "high",
@@ -89,11 +91,12 @@
   "verification": {
     "source_text": "Read complete source page and matched leaf/mark to original PDF.",
     "markscheme": "Read cited MS page(s).",
-    "visual": "No visual required by this leaf.",
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
     "technical": "Executed valid3x3, wrong upper entry, zero lower entry and1x1 cases."
   },
-  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "adaptation_reuse_question_id": "",
   "practice_question_ids": [
     "P-SRC006-Q13-b"
-  ]
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
 }

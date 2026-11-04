@@ -1,0 +1,55 @@
+{
+  "question_id": "P-SRC032-Q16-d",
+  "source_question_ids": [
+    "H-SRC032-Q16-d"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Without writing code, outline how to split a singly linked list into attended and absent lists according to each node’s Boolean attended field. Move the existing nodes, preserve order in each result, and leave the original list empty.",
+  "syllabus_codes": [
+    "B4.1.3"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 4,
+  "command_term": "Outline",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "Create two empty result lists with head/tail references. Traverse the original list, saving the next reference before detaching a node. Append that node to the appropriate result tail according to attended. Advance using the saved reference and finally clear the original head.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes two result lists."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses every original node and saves next."
+    },
+    {
+      "marks": 1,
+      "criterion": "Chooses correct result from attended."
+    },
+    {
+      "marks": 1,
+      "criterion": "Relinks/detaches safely, preserves order and clears original head."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      34
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC032-Q16-d.json",
+  "question_path": "question-bank/questions/P-SRC032-Q16-d.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC032-Q16-d.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

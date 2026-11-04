@@ -1,0 +1,48 @@
+{
+  "question_id": "P-SRC032-Q15-b",
+  "source_question_ids": [
+    "H-SRC032-Q15-b"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A function receives a string parameter text and executes text=\"Updated\". Describe why the caller’s name variable is unchanged, and how the caller can receive the new string.",
+  "syllabus_codes": [
+    "B2.1.1",
+    "B2.3.4"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 2,
+  "command_term": "Describe",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "The assignment rebinds the function’s local parameter rather than the caller’s variable. Return the new string and assign it in the caller, for example name=update(name).",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Local rebinding does not change caller binding."
+    },
+    {
+      "marks": 1,
+      "criterion": "Return value assigned by caller."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      28
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC032-Q15-b.json",
+  "question_path": "question-bank/questions/P-SRC032-Q15-b.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC032-Q15-b.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

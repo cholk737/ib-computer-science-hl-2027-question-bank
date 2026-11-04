@@ -1,0 +1,66 @@
+{
+  "question_id": "P-SRC044-Q01-f",
+  "source_question_ids": [
+    "H-SRC044-Q01-f"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Explain two ways to restrict disclosure of employee salary data in a relational database. Develop each in the context of team managers and payroll staff.",
+  "syllabus_codes": [
+    "A3.1.1",
+    "A3.3.5"
+  ],
+  "theme": "A",
+  "level": "HL-only",
+  "marks": 6,
+  "command_term": "Explain",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "Use role-based access so payroll staff can access salary records while other users lack those permissions; this limits unnecessary exposure. Provide managers a restricted view containing only their team’s permitted columns and rows, hiding bank details and other teams’ salaries while allowing their defined task.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Appropriate access permissions."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains restriction to authorized payroll role."
+    },
+    {
+      "marks": 1,
+      "criterion": "Concrete reduced salary exposure."
+    },
+    {
+      "marks": 1,
+      "criterion": "Restricted view."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains row/column subset for managers."
+    },
+    {
+      "marks": 1,
+      "criterion": "Concrete protected bank/other-team data."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Accept a distinct developed encryption safeguard with correct key/access reasoning; do not count the same permissions point twice."
+  ],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      6
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC044-Q01-f.json",
+  "question_path": "question-bank/questions/P-SRC044-Q01-f.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC044-Q01-f.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

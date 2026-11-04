@@ -1,0 +1,20 @@
+{
+  "question_id": "P-SRC038-Q09-e-i",
+  "source_question_ids": [
+    "H-SRC038-Q09-e-i"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "FEEDBACK(Category, Score) initially contains (\"repair\", 2), (\"repair\", 4), (\"paint\", 5). A service first runs SELECT AVG(Score) FROM FEEDBACK WHERE Category='repair'; and stores its result, then INSERT INTO FEEDBACK(Category, Score) VALUES('repair', 5);. Describe the stored result and the effect of the INSERT, explaining whether the stored result includes the new row.",
+  "syllabus_codes": [
+    "A3.3.3",
+    "A3.3.4"
+  ],
+  "theme": "A",
+  "level": "HL-only",
+  "marks": 4,
+  "command_term": "Describe",
+  "difficulty": "medium",
+  "adaptation_rationale": "Retains original aggregate-before-insertion reasoning; removes PHP/CGI mechanics and evaluates explicit SQL effects.",
+  "assets": []
+}

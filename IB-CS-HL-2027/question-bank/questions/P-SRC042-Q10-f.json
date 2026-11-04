@@ -1,0 +1,20 @@
+{
+  "question_id": "P-SRC042-Q10-f",
+  "source_question_ids": [
+    "H-SRC042-Q10-f"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "State the returned value of check_upload below for each call: (i)check_upload(\"A.TXT\", 1024),(ii)check_upload(\"a.pdf\", 900),(iii)check_upload(\"b.csv\", 1025),(iv)check_upload(\"c.exe\", 2000).\n\ndef check_upload(name,size):\n    errors=[]\n    extension=name.rsplit(\".\",1)[-1].lower()\n    if extension not in [\"csv\",\"txt\"]:\n        errors.append(\"type\")\n    if size > 1024:\n        errors.append(\"size\")\n    if not errors:\n        return \"Accepted\"\n    return errors",
+  "syllabus_codes": [
+    "B2.1.2",
+    "B2.3.2"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 4,
+  "command_term": "State",
+  "difficulty": "medium",
+  "adaptation_rationale": "Retains extension/threshold/conditional error reasoning; Python string processing/selection replacesPHPspecificfileuploadAPI; no binary file-I/O scope added.",
+  "assets": []
+}

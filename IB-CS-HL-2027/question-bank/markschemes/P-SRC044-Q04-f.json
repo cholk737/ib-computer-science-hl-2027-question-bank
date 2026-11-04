@@ -1,0 +1,54 @@
+{
+  "question_id": "P-SRC044-Q04-f",
+  "unofficial": true,
+  "marks": 8,
+  "solution": "One solution:\ndef day_stats(hours, readings):\n    low = high = readings[0]\n    total = night_total = 0\n    night_count = 0\n    for i in range(len(readings)):\n        value = readings[i]\n        total += value\n        if value < low:\n            low = value\n        if value > high:\n            high = value\n        if hours[i] >= 19 or hours[i] < 7:\n            night_total += value\n            night_count += 1\n    return high, low, total / len(readings), night_total / night_count",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes extrema from valid reading."
+    },
+    {
+      "marks": 1,
+      "criterion": "Initializes totals and night count."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses all corresponding readings/hours."
+    },
+    {
+      "marks": 1,
+      "criterion": "Accumulates total."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct minimum update."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct maximum update."
+    },
+    {
+      "marks": 1,
+      "criterion": "Night condition uses >=19 OR <7 and accumulates correct subset."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns extrema and correct means after traversal."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed hourly sequence/night-wrap and all-negative equal values.",
+    "source_comparison": [
+      12
+    ],
+    "test_code": "def day_stats(hours, readings):\n    low = high = readings[0]\n    total = night_total = 0\n    night_count = 0\n    for i in range(len(readings)):\n        value = readings[i]\n        total += value\n        if value < low:\n            low = value\n        if value > high:\n            high = value\n        if hours[i] >= 19 or hours[i] < 7:\n            night_total += value\n            night_count += 1\n    return high, low, total / len(readings), night_total / night_count\nr=day_stats(list(range(24)),list(range(24)))\nassert r[:3]==(23,0,11.5) and r[3]==10.5\nassert day_stats(list(range(24)),[-4]*24)==(-4,-4,-4.0,-4.0)",
+    "result_file": ""
+  },
+  "code": "def day_stats(hours, readings):\n    low = high = readings[0]\n    total = night_total = 0\n    night_count = 0\n    for i in range(len(readings)):\n        value = readings[i]\n        total += value\n        if value < low:\n            low = value\n        if value > high:\n            high = value\n        if hours[i] >= 19 or hours[i] < 7:\n            night_total += value\n            night_count += 1\n    return high, low, total / len(readings), night_total / night_count",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

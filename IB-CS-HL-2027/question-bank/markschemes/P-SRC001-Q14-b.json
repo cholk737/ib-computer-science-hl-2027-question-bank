@@ -36,5 +36,6 @@
   },
   "code": "def suffix_product(k, values):\n    if k < 2:\n        return 1\n    return values[k] * suffix_product(k - 1, values)",
   "test_code": "assert suffix_product(4,[8,3,2,5,4]) == 40\nassert suffix_product(1,[8,3]) == 1",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

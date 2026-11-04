@@ -39,6 +39,8 @@
         ],
         "question_reference": "Q12 a",
         "marking_summary": "Original recfn(5) returns3 with alternating +odd/-even unwind.",
+        "summary_kind": "author_paraphrase_of_original",
+        "source_marking_leaf_evidence": "Award max [5]. \nAward [1] for each correct recursive call shown, x5. \nAward [1] for the correct result. \nX = recfn(5) = recfn(4) + 5 ; \n  = recfn(3) - 4 + 5  =   recfn(3) + 1 ; \n  = recfn(2) + 3 - 4 + 5 = recfn(2) + 4 ; \n  = recfn(1)  - 2 + 3 - 4 + 5 =  recfn(1)   + 2  ; \n  = recfn(0)  + 1  - 2 + 3 - 4 + 5  = recfn(0)  + 3 ; \n  = 0 + 1 - 2 + 3 - 4 + 5 = 0 + 3 = 3 ; \nNote: The working may be shown differently.",
         "source_issues": [],
         "source_marking_evidence": "– 19 – 2225 – 6414M \n12. (a) Award max [5]. \nAward [1] for each correct recursive call shown, x5. \nAward [1] for the correct result. \nX = recfn(5) = recfn(4) + 5 ; \n  = recfn(3) - 4 + 5  =   recfn(3) + 1 ; \n  = recfn(2) + 3 - 4 + 5 = recfn(2) + 4 ; \n  = recfn(1)  - 2 + 3 - 4 + 5 =  recfn(1)   + 2  ; \n  = recfn(0)  + 1  - 2 + 3 - 4 + 5  = recfn(0)  + 3 ; \n  = 0 + 1 - 2 + 3 - 4 + 5 = 0 + 3 = 3 ; \nNote: The working may be shown differently. \n(b) Award max [4].\nAward [1] for name and [1] for description of operation, x2.\nPush; \nAdd an element to the top of a stack; \nPop; \nRemove an element from the top of a stack; \nIsEmpty; \nCheck if the stack contains no elements/ returns True when a stack is empty, returns False \notherwise; \nIsFull; \nCheck if the stack has reached maximum capacity/ returns True when a stack is full, returns \nFalse otherwise; "
       },
@@ -47,7 +49,7 @@
         {
           "syllabus_code": "B2.4.5",
           "scope_evidence": "• Simple, non-branching recursive algorithms in programming only",
-          "rationale": "Trace balance(6), showing the returned value for each n from0 through6 assesses Construct and trace recursive algorithms in a programming language. (HL only)",
+          "rationale": "Adapted target only: Trace balance(6), showing the returned value for each n from0 through6; guidance target: Construct and trace recursive algorithms in a programming language. (HL only) Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "HL-only",
           "confidence": "high",
@@ -103,7 +105,9 @@
           19
         ],
         "question_reference": "Q12 b",
-        "marking_summary": "push adds a new item at the top. peek returns the top item without removing it.",
+        "marking_summary": "Exact original MS leaf excerpt: Award max [4]. Award [1] for name and [1] for description of operation, x2. Push; Add an element to the top of a stack; Pop; Remove an element from the top of a stack; IsEmpty; Check if the stack contains no elements/ returns True when a stack is empty, returns False otherwise; IsFull; Check if the stack has reached maximum capacity/ returns True when a stack is full, returns False otherwise;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award max [4].\nAward [1] for name and [1] for description of operation, x2.\nPush; \nAdd an element to the top of a stack; \nPop; \nRemove an element from the top of a stack; \nIsEmpty; \nCheck if the stack contains no elements/ returns True when a stack is empty, returns False \notherwise; \nIsFull; \nCheck if the stack has reached maximum capacity/ returns True when a stack is full, returns \nFalse otherwise;",
         "source_issues": [],
         "source_marking_evidence": "– 19 – 2225 – 6414M \n12. (a) Award max [5]. \nAward [1] for each correct recursive call shown, x5. \nAward [1] for the correct result. \nX = recfn(5) = recfn(4) + 5 ; \n  = recfn(3) - 4 + 5  =   recfn(3) + 1 ; \n  = recfn(2) + 3 - 4 + 5 = recfn(2) + 4 ; \n  = recfn(1)  - 2 + 3 - 4 + 5 =  recfn(1)   + 2  ; \n  = recfn(0)  + 1  - 2 + 3 - 4 + 5  = recfn(0)  + 3 ; \n  = 0 + 1 - 2 + 3 - 4 + 5 = 0 + 3 = 3 ; \nNote: The working may be shown differently. \n(b) Award max [4].\nAward [1] for name and [1] for description of operation, x2.\nPush; \nAdd an element to the top of a stack; \nPop; \nRemove an element from the top of a stack; \nIsEmpty; \nCheck if the stack contains no elements/ returns True when a stack is empty, returns False \notherwise; \nIsFull; \nCheck if the stack has reached maximum capacity/ returns True when a stack is full, returns \nFalse otherwise; "
       },
@@ -112,7 +116,7 @@
         {
           "syllabus_code": "B2.2.3",
           "scope_evidence": "• Must include fundamental operations such as push, pop, peek and isEmpty\n• How stack operations impact both performance and memory usage\n• An appropriate stack for a specific problem",
-          "rationale": "Describe push and peek for a stack assesses Explain the concept of a stack as a “last in, first out” (LIFO) data structure.",
+          "rationale": "Original and adapted within-scope skill: Describe push and peek for a stack; guidance target: Explain the concept of a stack as a “last in, first out” (LIFO) data structure.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -176,7 +180,9 @@
           20
         ],
         "question_reference": "Q12 c",
-        "marking_summary": "One solution:\ndef retain_extremes(stack):\n    first = stack.pop()\n    smallest = largest = first\n    while not stack.isEmpty():\n        value = stack.pop()\n        if value < smallest:\n            smallest = value\n        if value > largest:\n            largest = value\n    stack.push(largest)\n    stack.push(smallest)",
+        "marking_summary": "Exact original MS leaf excerpt: Award max [6]. Award [1] for correct initialization (before the loop) Award [1] for correct loop through the NUMBERS stack using isEmpty() Award [1] for taking an element from the top of the NUMBERS stack using pop()(within the loop) Award [1] for changing the value of SMALLEST if needed Award [1] for changing the value of LARGEST if needed Award [1] for placing SMALLEST and LARGEST on the stack NUMBERS using push() (after the loop) Award [1] for the order of push operations: first push LARGEST onto the stack then SMALLEST (so that SMALLEST will be on the top of stack NUMBERS) Example 1: X = NUMBERS.pop() SMALLEST = X LARGEST = X // OR // initialization // SMALEST= 999999999999 (any very large number) // LARGEST= -999999999999 (negative number!) loop while not NUMBERS.isEmpty() //searching for the smallest and largest value X=NUMBERS.pop() if X <= SMALLEST then SMALLEST = X else if X >=  … [full leaf evidence retained]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award max [6].\nAward [1] for correct initialization (before the loop)\nAward [1] for correct loop through the NUMBERS stack using isEmpty()\nAward [1] for taking an element from the top of the NUMBERS stack using pop()(within the loop)\nAward [1] for changing the value of SMALLEST if needed\nAward [1] for changing the value of LARGEST if needed\nAward [1] for placing SMALLEST and LARGEST on the stack NUMBERS using push() (after the\nloop)\nAward [1] for the order of push operations: first push LARGEST onto the stack then SMALLEST\n(so that SMALLEST will be on the top of stack NUMBERS)\nExample 1: \nX = NUMBERS.pop()\nSMALLEST = X\nLARGEST = X   \n//  OR \n//   initialization \n//   SMALEST= 999999999999 (any very large number) \n//   LARGEST= -999999999999 (negative number!) \nloop while not NUMBERS.isEmpty() \n//searching for the smallest and largest value \nX=NUMBERS.pop() \nif X <= SMALLEST \nthen SMALLEST = X \nelse if X >= LARGEST \nthen LARGEST = X \nend if \nend if  \nend loop \nNUMBERS.push(LARGEST) \nNUMBERS.push(SMALLEST) \nExample 2: \nSMALLEST = NUMBERS.peek()   //initialization\nLARGEST = SMALLEST\nloop while NUMBERS.isEmpty()= false \n//searching for the smallest and largest value \nX=NUMBERS.pop() \nif X < SMALLEST \nthen SMALLEST = X \nend if \nif X > LARGEST \nthen LARGEST = X \nend if \nend loop  \nNUMBERS.push( LARGEST) \nNUMBERS.push(SMALLEST)",
         "source_issues": [],
         "source_marking_evidence": "– 20 – 2225 – 6414M \n(c) Award max [6].\nAward [1] for correct initialization (before the loop)\nAward [1] for correct loop through the NUMBERS stack using isEmpty()\nAward [1] for taking an element from the top of the NUMBERS stack using pop()(within the loop)\nAward [1] for changing the value of SMALLEST if needed\nAward [1] for changing the value of LARGEST if needed\nAward [1] for placing SMALLEST and LARGEST on the stack NUMBERS using push() (after the\nloop)\nAward [1] for the order of push operations: first push LARGEST onto the stack then SMALLEST\n(so that SMALLEST will be on the top of stack NUMBERS)\nExample 1: \nX = NUMBERS.pop()\nSMALLEST = X\nLARGEST = X   \n//  OR \n//   initialization \n//   SMALEST= 999999999999 (any very large number) \n//   LARGEST= -999999999999 (negative number!) \nloop while not NUMBERS.isEmpty() \n//searching for the smallest and largest value \nX=NUMBERS.pop() \nif X <= SMALLEST \nthen SMALLEST = X \nelse if X >= LARGEST \nthen LARGEST = X \nend if \nend if  \nend loop \nNUMBERS.push(LARGEST) \nNUMBERS.push(SMALLEST) \nExample 2: \nSMALLEST = NUMBERS.peek()   //initialization\nLARGEST = SMALLEST\nloop while NUMBERS.isEmpty()= false \n//searching for the smallest and largest value \nX=NUMBERS.pop() \nif X < SMALLEST \nthen SMALLEST = X \nend if \nif X > LARGEST \nthen LARGEST = X \nend if \nend loop  \nNUMBERS.push( LARGEST) \nNUMBERS.push(SMALLEST) "
       },
@@ -185,7 +191,7 @@
         {
           "syllabus_code": "B2.2.3",
           "scope_evidence": "• Must include fundamental operations such as push, pop, peek and isEmpty\n• How stack operations impact both performance and memory usage\n• An appropriate stack for a specific problem",
-          "rationale": "Construct retain_extremes(stack) in Python for a nonempty numeric stack assesses Explain the concept of a stack as a “last in, first out” (LIFO) data structure.",
+          "rationale": "Adapted target only: Construct retain_extremes(stack) in Python for a nonempty numeric stack; guidance target: Explain the concept of a stack as a “last in, first out” (LIFO) data structure. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -194,7 +200,7 @@
         {
           "syllabus_code": "B2.3.2",
           "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
-          "rationale": "Construct retain_extremes(stack) in Python for a nonempty numeric stack assesses Construct programs utilizing appropriate selection structures.",
+          "rationale": "Adapted target only: Construct retain_extremes(stack) in Python for a nonempty numeric stack; guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -203,7 +209,7 @@
         {
           "syllabus_code": "B2.3.3",
           "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
-          "rationale": "Construct retain_extremes(stack) in Python for a nonempty numeric stack assesses Construct programs that utilize looping structures to perform repeated actions.",
+          "rationale": "Adapted target only: Construct retain_extremes(stack) in Python for a nonempty numeric stack; guidance target: Construct programs that utilize looping structures to perform repeated actions. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -215,7 +221,7 @@
       "verification": {
         "source_text": "Read complete source page and matched leaf/mark to original PDF.",
         "markscheme": "Read cited MS page(s).",
-        "visual": "No visual required by this leaf.",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
         "technical": "Executed mixed negative/positive,all-negative,singleton,equal-value cases with stack harness."
       },
       "adaptation_reuse_question_id": "",
@@ -242,7 +248,7 @@
         "6"
       ],
       "original_marks": 3,
-      "command_term": "See original prompt",
+      "command_term": "List",
       "original_text": "List three advantages of using sub-programs in this situation.",
       "parent_context": "– 6 – 2225 – 6414\n13. A team of four high-school students decided to create a computer program for younger \nstudents to help them learn to count and recognize whole numbers from 1 to 25.\nA table partially completed with numbers from 1 to 25 is given to a younger student. The table \nconsists of five rows and five columns (see Figure 2). The younger student must enter the \nremaining numbers. Each number from 1 to 25 should be entered only once.\nFigure 2: Example table partially filled with numbers\n24 1\n7 14\n4 6 22\n10 21 3\n11 25 9\nEach of the four students is responsible for creating several sub-programs that will be \nincluded in the program.\n(a) List three advantages of using sub-programs in this situation. [3]\n(This question continues on the following page)",
       "assets": [],
@@ -259,7 +265,9 @@
           21
         ],
         "question_reference": "Q13 a",
-        "marking_summary": "Reuse of validation logic; independent debugging/testing; localized maintenance of one task.",
+        "marking_summary": "Exact original MS leaf excerpt: Award max [3]. The (difficult) program is divided into several easier parts (sub-programs); The program is better organized/ easier to understand /reduced size of code (due to several sub-programs calls)/ no duplication of code; Sub-programs hide implementation details; Sub-programs keep specific tasks self-contained; Each of the sub-programs could be written independently; Each of the sub-programs is debugged/tested independently; Different parts of the program can be written at the same time/concurrently; Sub-programs speed up the development process (as different students can work on different subprogram at the same time); Each sub-program could be used many times in this program (and in other programs); The maintenance/modification/change of the program will be easier/faster (because only a sub-program could be changed/modified as needed);",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award max [3]. \nThe (difficult) program is divided into several easier parts (sub-programs); \nThe program is better organized/ easier to understand /reduced size of code (due to several \nsub-programs calls)/ no duplication of code; \n  Sub-programs hide implementation details; \nSub-programs keep specific tasks self-contained; \n Each of the sub-programs could be written independently; \nEach of the sub-programs is debugged/tested independently; \nDifferent parts of the program can be written at the same time/concurrently; \nSub-programs speed up the development process (as different students can work  \non different subprogram at the same time); \nEach sub-program could be used many times in this program (and in other programs); \n The maintenance/modification/change of the program will be easier/faster \n (because only a sub-program could be changed/modified as needed);",
         "source_issues": [],
         "source_marking_evidence": "– 21 – 2225 – 6414M \n13. (a) Award max [3]. \nThe (difficult) program is divided into several easier parts (sub-programs); \nThe program is better organized/ easier to understand /reduced size of code (due to several \nsub-programs calls)/ no duplication of code; \n  Sub-programs hide implementation details; \nSub-programs keep specific tasks self-contained; \n Each of the sub-programs could be written independently; \nEach of the sub-programs is debugged/tested independently; \nDifferent parts of the program can be written at the same time/concurrently; \nSub-programs speed up the development process (as different students can work  \non different subprogram at the same time); \nEach sub-program could be used many times in this program (and in other programs); \n The maintenance/modification/change of the program will be easier/faster \n (because only a sub-program could be changed/modified as needed); \n(b) Award max [4].\nAward [1] for a correct while loop \nAward [1] for a correct condition /validation check \nAward [1] for input within the while loop (input repeated until input validated) \nAward [1] for outputting appropriate messages \nAward [1] for return statement; \nExample 1: \ninputInRange()\nK=input('Enter a number: ') \nloop while (K < 1) or (K > 25) \noutput ('The number is not in the range 1 to 25. ') \n   output(' Please try again! ')  \nK=input('Enter a number: ') \nend loop \noutput('Your number is valid. ') \nreturn K \nend inputInRange() \nExample 2: \ninputInRange() \nF=true \nloop while F \noutput('Enter a number') \ninput(K) \nif(K < 1) or (K > 25) \nthen \n   output ('The number is invalid. ') \noutput( 'Please try again! ') \nelse \nF=false  \nend if \nend loop \noutput('Your number is valid. ') \nreturn K \nend inputInRange() "
       },
@@ -268,7 +276,7 @@
         {
           "syllabus_code": "B2.3.4",
           "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
-          "rationale": "List three benefits of dividing a quiz program into functions with clear inputs and outputs assesses Construct functions and modularization.",
+          "rationale": "Original and adapted within-scope skill: List three benefits of dividing a quiz program into functions with clear inputs and outputs; guidance target: Construct functions and modularization.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -325,7 +333,9 @@
           22
         ],
         "question_reference": "Q13 b",
-        "marking_summary": "One solution:\ndef read_in_range(read_integer):\n    while True:\n        value = read_integer()\n        if 1 <= value <= 16:\n            print(\"Accepted\")\n            return value\n        print(\"Enter an integer from 1 to 16\")",
+        "marking_summary": "Exact original MS leaf excerpt: Award max [4]. Award [1] for a correct while loop Award [1] for a correct condition /validation check Award [1] for input within the while loop (input repeated until input validated) Award [1] for outputting appropriate messages Award [1] for return statement; Example 1: inputInRange() K=input('Enter a number: ') loop while (K < 1) or (K > 25) output ('The number is not in the range 1 to 25. ') output(' Please try again! ') K=input('Enter a number: ') end loop output('Your number is valid. ') return K end inputInRange() Example 2: inputInRange() F=true loop while F output('Enter a number') input(K) if(K < 1) or (K > 25) then output ('The number is invalid. ') output( 'Please try again! ') else F=false end if end loop output('Your number is valid. ') return K end inputInRange() Example 3: inputInRange() loop while True K=input('Enter a number: ') if(K >= 1) and (K <= 25) then output('Your … [full leaf evidence retained]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award max [4].\nAward [1] for a correct while loop \nAward [1] for a correct condition /validation check \nAward [1] for input within the while loop (input repeated until input validated) \nAward [1] for outputting appropriate messages \nAward [1] for return statement; \nExample 1: \ninputInRange()\nK=input('Enter a number: ') \nloop while (K < 1) or (K > 25) \noutput ('The number is not in the range 1 to 25. ') \n   output(' Please try again! ')  \nK=input('Enter a number: ') \nend loop \noutput('Your number is valid. ') \nreturn K \nend inputInRange() \nExample 2: \ninputInRange() \nF=true \nloop while F \noutput('Enter a number') \ninput(K) \nif(K < 1) or (K > 25) \nthen \n   output ('The number is invalid. ') \noutput( 'Please try again! ') \nelse \nF=false  \nend if \nend loop \noutput('Your number is valid. ') \nreturn K \nend inputInRange() \n\nExample 3: \ninputInRange() \nloop while True \nK=input('Enter a number: ') \nif(K >= 1) and (K <= 25) \nthen \noutput('Your number is valid. ') \nreturn K  \nelse \noutput('The number is not in the range1 to 25. ') \noutput('Please try again! ') \nend if \nend loop \nend inputInRange()",
         "source_issues": [],
         "source_marking_evidence": "– 21 – 2225 – 6414M \n13. (a) Award max [3]. \nThe (difficult) program is divided into several easier parts (sub-programs); \nThe program is better organized/ easier to understand /reduced size of code (due to several \nsub-programs calls)/ no duplication of code; \n  Sub-programs hide implementation details; \nSub-programs keep specific tasks self-contained; \n Each of the sub-programs could be written independently; \nEach of the sub-programs is debugged/tested independently; \nDifferent parts of the program can be written at the same time/concurrently; \nSub-programs speed up the development process (as different students can work  \non different subprogram at the same time); \nEach sub-program could be used many times in this program (and in other programs); \n The maintenance/modification/change of the program will be easier/faster \n (because only a sub-program could be changed/modified as needed); \n(b) Award max [4].\nAward [1] for a correct while loop \nAward [1] for a correct condition /validation check \nAward [1] for input within the while loop (input repeated until input validated) \nAward [1] for outputting appropriate messages \nAward [1] for return statement; \nExample 1: \ninputInRange()\nK=input('Enter a number: ') \nloop while (K < 1) or (K > 25) \noutput ('The number is not in the range 1 to 25. ') \n   output(' Please try again! ')  \nK=input('Enter a number: ') \nend loop \noutput('Your number is valid. ') \nreturn K \nend inputInRange() \nExample 2: \ninputInRange() \nF=true \nloop while F \noutput('Enter a number') \ninput(K) \nif(K < 1) or (K > 25) \nthen \n   output ('The number is invalid. ') \noutput( 'Please try again! ') \nelse \nF=false  \nend if \nend loop \noutput('Your number is valid. ') \nreturn K \nend inputInRange() \n– 22 – 2225 – 6414M \nExample 3: \ninputInRange() \nloop while True \nK=input('Enter a number: ') \nif(K >= 1) and (K <= 25) \nthen \noutput('Your number is valid. ') \nreturn K  \nelse \noutput('The number is not in the range1 to 25. ') \noutput('Please try again! ') \nend if \nend loop \nend inputInRange() "
       },
@@ -334,7 +344,7 @@
         {
           "syllabus_code": "B2.3.2",
           "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
-          "rationale": "Construct read_in_range(read_integer) in Python assesses Construct programs utilizing appropriate selection structures.",
+          "rationale": "Adapted target only: Construct read_in_range(read_integer) in Python; guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -343,7 +353,7 @@
         {
           "syllabus_code": "B2.3.3",
           "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
-          "rationale": "Construct read_in_range(read_integer) in Python assesses Construct programs that utilize looping structures to perform repeated actions.",
+          "rationale": "Adapted target only: Construct read_in_range(read_integer) in Python; guidance target: Construct programs that utilize looping structures to perform repeated actions. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -352,7 +362,7 @@
         {
           "syllabus_code": "B2.3.4",
           "scope_evidence": "• Functions to define reusable blocks of code with different inputs\n• Modularization to create well-structured, reusable and maintainable code\n• The principles of scope (local versus global)\n• The benefits of code modularization, applying this concept to various programming scenarios",
-          "rationale": "Construct read_in_range(read_integer) in Python assesses Construct functions and modularization.",
+          "rationale": "Adapted target only: Construct read_in_range(read_integer) in Python; guidance target: Construct functions and modularization. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -426,7 +436,9 @@
           26
         ],
         "question_reference": "Q13 c",
-        "marking_summary": "One solution:\ndef correctly_completed(grid):\n    flags = [False] * 16\n    for row in grid:\n        for value in row:\n            flags[value - 1] = True\n    for flag in flags:\n        if not flag:\n            return False\n    return True\nSince there are exactly16 entries, seeing all16 possible values implies there are no duplicates.",
+        "marking_summary": "Exact original MS leaf excerpt: Award max [8] Example 1: Award max [2] for initializing the FLAGS array. Award [1] for correct loop and [1] for correct assignment statement. Award max [4] for matching up the values in the MAT array with indexes in the FLAGS array and assigning values to elements of the FLAGS array. Award [1] for correct row loop, [1] for correct column loop, [1] for calculating index, [1] for assignment statement. Award max [4] for inspecting all elements in the FLAGS array and displaying appropriate messages. Award [1] for use of flag, [1] for correct loop through the array FLAGS, [1] for correct condition, [1] for correct flag test and appropriate output (after the loop) Note: The subprogram heading and return statement may not appear. isCorrectlyCompleted (MAT) // the FLAGS array holds 25 zeros indexed from 0 to 24 // initializing the FLAGS array loop K from 0 to 24 FLAGS[K] = 0 end loop // matching … [full leaf evidence retained]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award max [8]\nExample 1: \nAward max [2] for initializing the FLAGS array. Award [1] for correct loop and [1] for correct \nassignment statement. \nAward max [4] for matching up the values in the MAT array with indexes in the FLAGS array \nand assigning values to elements of the FLAGS array. Award [1] for correct row loop, [1] for \ncorrect column loop, [1] for calculating index, [1] for assignment statement.  \nAward max [4] for inspecting all elements in the FLAGS array and displaying appropriate \nmessages. Award [1] for use of flag, [1] for correct loop through the array FLAGS, [1] for correct \ncondition, [1] for correct flag test and appropriate output (after the loop) \nNote: The subprogram heading and return statement may not appear. \nisCorrectlyCompleted (MAT) \n// the FLAGS array holds 25 zeros indexed from 0 to 24 \n// initializing the FLAGS array \nloop K from 0 to 24 \nFLAGS[K] = 0 \nend loop \n  // matching up the values in the MAT array with  \n  //indexes in the FLAGS array \n  // and assigning values to elements of the FLAGS array \n  loop R from 0 to 4     // 4 or MAT.length-1 \nloop C from 0 to 4 \nINDEX = MAT[R][C]-1 \nFLAGS [INDEX] = 1 \nend loop \nend loop \n//inspecting all elements in the FLAGS array \n//and displaying appropriate messages \n F = true  //searching for 0s in the FLAG array \nloop K from 0 to 24  // 24 or FLAGS.length-1 \nif FLAGS [K] = 0 \n  then F = false \nend if \n end loop \n if F     // F==true \nthen \n output('the table has been correctly completed ') \n else  \n  output('the table has not been correctly completed ') \nend if \nreturn \nend isCorrectlyCompleted \n\nAlternative pseudocode for ‘initializing the FLAGS array’: \nAward [2] for \n FLAGS = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0] \nAlternative pseudocode for the part “inspecting all elements in the FLAGS array and displaying \nappropriate messages” \nk=0 \nloop while k <=24 DO \nif FLAGS[k] == 0 \nthen  output('the table has not been completed correctly') \n return \nendif \nk = k+1 \nendloop \noutput('the table has been completed correctly') \n\nExample 2: \n Award max [8] \nAward max [2] for initializing the FLAGS array. Award [1] for correct loop and [1] for correct \nassignment statement.  \nAward max [4] for matching up the values in the MAT array with indexes in the FLAGS array \nand assigning values to elements of the FLAGS array. Award [1] for correct row loop, [1] for \ncorrect column loop, [1] for calculating index, [1] for assignment statement.   \nAward max [4] for inspecting all elements in the FLAGS array and displaying appropriate \nmessages. Award [1] for initializing counter, [1] for correct loop through the array FLAGS, [1] for \nincreasing counter (if needed), [1] for correct test and appropriate output (after the loop) \n// the FLAGS array indexed from 0 to 24 \n// initializing the FLAGS array \nloop K from 0 to 24 \nFLAGS [K] = 0 \nend loop \n// matching up the values in the MAT array with  \n//indexes in the FLAGS array \n// and assigning values to elements of the FLAGS array \nloop R from 0 to 4 \nloop C from 0 to 4 \nFLAGS [MAT[R][C]-1] = 1 \nend loop \nend loop \n//inspecting all elements in the FLAGS array (counting 1s) \n//and displaying appropriate messages \nCOUNTER = 0  //counting 1s in the FLAG array \nloop I from 0 to 24 \n if FLAGS [I]== 1 \n   then COUNTER = COUNTER + 1 \n end if \nend loop \nif COUNTER == 25     // all 1s in the FLAGS array \nthen output('the table has been completed correctly ') \n  else output('the table has not been completed correctly ') \nend if \n\nExample 3 (alternative): \n Award max [8]. \nAward max [2] for initializing the FLAGS array: [1] for correct loop and [1] for assignment \nstatement. \nAward max [6] for matching up the values in the MAT array with indexes in the FLAGS array, \nassigning values to elements of the FLAGS array and for terminating the algorithm early: \n[1] for correct row loop\n[1] for correct column loop\n[1] for calculating correctly index in the FLAGS array (index is MAT[R][C]-1)\n[1] for checking if the value of the FLAGS element at that index is 1\n[1] for outputting that the table has not been filled in correctly (within the inner loop)\n[1] for terminating early the execution of the algorithm (return within the inner loop)\n[1] for assignment FLAGS [MAT[R][C]-1] = 1 (if the FLAGS element at that index is 0)\n[1] for output after the nested loops (outputting that the table has been filled in correctly)\n// the FLAGS array holds 25 values indexed from 0 to 24 \n// initializing the FLAGS array \nloop K from 0 to 24 \n   FLAGS [K] = 0 \nend loop \n// matching up the values in the MAT array with  \n// indexes in the FLAGS array \n// and assigning values to elements of the FLAGS array \n// this algorithm outputs message and terminates immediately  \n// in case that a number (MAT[R][C]-1) appears for the second \n// time in the FLAGS array (when FLAGS [MAT[R][C]-1] == 1) \nloop R from 0 to 4 \n  loop C from 0 to 4 \nif FLAGS [MAT[R][C]-1] == 1 \n then \noutput('the table has not been completed correctly ') \nreturn \nelse \nFLAGS [MAT[R][C]-1] = 1 \nendif \n  end loop \nend loop \n// MAT completed correctly, displaying an appropriate message \noutput('the table has been completed correctly ')",
         "source_issues": [
           "Source description omits explicit value-to-zero-based-index subtraction; MS correctly uses value-1. Adapted prompt makes it explicit."
         ],
@@ -437,7 +449,7 @@
         {
           "syllabus_code": "B2.2.2",
           "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
-          "rationale": "A4×4 grid contains16 integer entries, each from1 to16 assesses Construct programs that apply arrays and Lists.",
+          "rationale": "Adapted target only: A4×4 grid contains16 integer entries, each from1 to16; guidance target: Construct programs that apply arrays and Lists. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -446,7 +458,7 @@
         {
           "syllabus_code": "B2.3.2",
           "scope_evidence": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions\n• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
-          "rationale": "A4×4 grid contains16 integer entries, each from1 to16 assesses Construct programs utilizing appropriate selection structures.",
+          "rationale": "Adapted target only: A4×4 grid contains16 integer entries, each from1 to16; guidance target: Construct programs utilizing appropriate selection structures. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -455,7 +467,7 @@
         {
           "syllabus_code": "B2.3.3",
           "scope_evidence": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type\n• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
-          "rationale": "A4×4 grid contains16 integer entries, each from1 to16 assesses Construct programs that utilize looping structures to perform repeated actions.",
+          "rationale": "Adapted target only: A4×4 grid contains16 integer entries, each from1 to16; guidance target: Construct programs that utilize looping structures to perform repeated actions. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
           "theme": "B",
           "level": "SL/HL common",
           "confidence": "high",
@@ -467,7 +479,7 @@
       "verification": {
         "source_text": "Read complete source page and matched leaf/mark to original PDF.",
         "markscheme": "Read cited MS page(s).",
-        "visual": "No visual required by this leaf.",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
         "technical": "Executed permutation,duplicate/missing value cases; correctness relies on stated16 entries/range."
       },
       "adaptation_reuse_question_id": "",
@@ -494,7 +506,7 @@
       "command_term": "Trace",
       "difficulty": "medium",
       "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
-      "solution": "Values for n=0,1,2,3,4,5,6 are0,1,-1,2,-2,3,-3. Therefore balance(6)=-3.",
+      "solution": "Values for n=0, 1, 2, 3, 4, 5, 6 are 0, 1, -1, 2, -2, 3, -3. Therefore balance(6)=-3.",
       "marking_points": [
         {
           "marks": 1,
@@ -502,11 +514,11 @@
         },
         {
           "marks": 1,
-          "criterion": "n1→1,n2→-1."
+          "criterion": "n1→1, n2→-1."
         },
         {
           "marks": 1,
-          "criterion": "n3→2,n4→-2."
+          "criterion": "n3→2, n4→-2."
         },
         {
           "marks": 1,
@@ -590,7 +602,7 @@
       ],
       "derivation_status": "adapted_unofficial",
       "unofficial": true,
-      "question_text": "Construct retain_extremes(stack) in Python for a nonempty numeric stack. Replace its contents with exactly two entries: maximum at the bottom and minimum at the top. If all values are equal, store that value twice. Use only pop,push,isEmpty to access the stack.",
+      "question_text": "Construct retain_extremes(stack) in Python for a nonempty numeric stack. Replace its contents with exactly two entries: maximum at the bottom and minimum at the top. If all values are equal, store that value twice. Use only pop, push, isEmpty to access the stack.",
       "syllabus_codes": [
         "B2.2.3",
         "B2.3.2",
@@ -698,7 +710,7 @@
       ],
       "derivation_status": "adapted_unofficial",
       "unofficial": true,
-      "question_text": "Construct read_in_range(read_integer) in Python. Calling read_integer() returns an integer entered by the user. Repeatedly request a value until it lies from1 to16 inclusive; print an appropriate rejection or acceptance message and return the valid value.",
+      "question_text": "Construct read_in_range(read_integer) in Python. Calling read_integer() returns an integer entered by the user. Repeatedly request a value until it lies from 1 to 16 inclusive; print an appropriate rejection or acceptance message and return the valid value.",
       "syllabus_codes": [
         "B2.3.2",
         "B2.3.3",
@@ -752,7 +764,7 @@
       ],
       "derivation_status": "adapted_unofficial",
       "unofficial": true,
-      "question_text": "A4×4 grid contains16 integer entries, each from1 to16. Construct correctly_completed(grid) in Python to return True exactly when every integer1 to16 occurs once. Use a16-element flags list initialized False, mark each encountered value at index value-1, then inspect all flags.",
+      "question_text": "A 4×4 grid contains 16 integer entries, each from 1 to 16. Construct correctly_completed(grid) in Python to return True exactly when every integer1 to 16 occurs once. Use a 16-element flags list initialized False, mark each encountered value at index value-1, then inspect all flags.",
       "syllabus_codes": [
         "B2.2.2",
         "B2.3.2",
@@ -768,7 +780,7 @@
       "marking_points": [
         {
           "marks": 1,
-          "criterion": "Allocates16 flags."
+          "criterion": "Allocates 16 flags."
         },
         {
           "marks": 1,

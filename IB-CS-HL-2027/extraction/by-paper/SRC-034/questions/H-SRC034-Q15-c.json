@@ -1,0 +1,126 @@
+{
+  "original_assessment_context": "Monster cardgame;Monster class has static type constants and instance name,health,strength,type;WaterMonster/FireMonster inherit Monster;Arena stores10 Monster references plusmonsterCount. Full Java source retained in source page evidence.",
+  "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+  "source_question_id": "H-SRC034-Q15-c",
+  "source_id": "SRC-034",
+  "source_filename": "Computer_science_paper_2__HL.pdf",
+  "year": "2023",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "not stated",
+  "option": "D",
+  "question": "15",
+  "subquestion": "c",
+  "source_pdf_pages": [
+    22
+  ],
+  "source_printed_pages": [
+    "21"
+  ],
+  "original_marks": 2,
+  "command_term": "Construct",
+  "original_text": "[Source PDF page 21]\nFireMonster\nThe programmer has created a class named to model the place in which the\nArena\nmonsters will battle.\npublic class Arena {\npublic Monster[] monsters = new Monster[10];\nint monsterCount = 0; //the number of monsters currently\nin array\npublic void addMonster(Monster M) {\n// to be written\n}\npublic void removeMonster(Monster M) {\n//to be written\n}\npublic void doOneOnOneBattle(Monster A, Monster B) {\nwhile (A.health > 0 && B.health > 0) {\ngameLog(A.attack(B));\ngameLog(B.attack(A));\n}\nif (A.health > B.health) {\noutput(A.name + \" WINS!\");\nremoveMonster(B);\n} else if (B.health > A.health) {\noutput(B.name + \" WINS!\");\nremoveMonster(A);\n} else {\noutput(\"IT IS A DRAW!\");\n}\n}\npublic static void output(String message) {\nSystem.out.println(message);\n}\n}\n(Option D continues on the following page)\n\n[Source PDF page 22]\n(Option D, question 15 continued)\n(c) Construct a simple UML class diagram showing the relationships between ,\nFireMonster\nand . You do not need to include variables and methods. [2]\nMonster Arena",
+  "parent_context": "Monster cardgame;Monster class has static type constants and instance name,health,strength,type;WaterMonster/FireMonster inherit Monster;Arena stores10 Monster references plusmonsterCount. Full Java source retained in source page evidence.",
+  "assets": [
+    {
+      "kind": "source_page",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-20.png",
+      "source_pdf_page": 20,
+      "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+    },
+    {
+      "kind": "source_page",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-21.png",
+      "source_pdf_page": 21,
+      "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+    },
+    {
+      "kind": "source_page",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-22.png",
+      "source_pdf_page": 22,
+      "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+    }
+  ],
+  "assessed_concepts": [
+    "Construct: Construct UML diagram showing FireMonster,Monster andArena relationships;omitfields/methods."
+  ],
+  "difficulty": "low",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-037",
+    "filename": "Computer_science_paper_2__HL_markscheme.pdf",
+    "pdf_pages": [
+      28
+    ],
+    "question_reference": "15(c)",
+    "marking_summary": "Inheritancechildtoparent;ArenahasMonstersaggregation.",
+    "source_issues": []
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "mapping_target": "adapted_practice_only",
+      "syllabus_code": "B3.1.2",
+      "scope_evidence": "• Classes and their methods, based on application requirements\n• The use of unified modelling language (UML) class diagrams to represent class relationships, attributes and methods, to aid effective software design and planning",
+      "rationale": "Retains relationshipdiagram;explicitindependentlifetime makesaggregation unambiguous.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "mapping_target": "adapted_practice_only",
+      "syllabus_code": "B3.2.4",
+      "scope_evidence": "• How to design objects by leveraging smaller component objects through composition and aggregation\n• That aggregation implies that the subcomponents can function independently of the aggregating class, while in composition, the subcomponents are tightly coupled and cannot exist outside the aggregating class",
+      "rationale": "Retains relationshipdiagram;explicitindependentlifetime makesaggregation unambiguous.",
+      "theme": "B",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+    "marks": "Printed allocation transcribed.",
+    "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+    "official_answer_status": "See source markscheme record"
+  },
+  "original_text_manual_synopsis": "Construct UML diagram showing FireMonster,Monster andArena relationships;omitfields/methods.",
+  "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+  "source_page_evidence": [
+    {
+      "pdf_page": 22,
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-022.txt"
+    }
+  ],
+  "source_context_page_evidence": [
+    {
+      "pdf_page": 20,
+      "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-20.png",
+      "kind": "complete_original_page_raster",
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-020.txt"
+    },
+    {
+      "pdf_page": 21,
+      "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-21.png",
+      "kind": "complete_original_page_raster",
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-021.txt"
+    },
+    {
+      "pdf_page": 22,
+      "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-22.png",
+      "kind": "complete_original_page_raster",
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-022.txt"
+    }
+  ],
+  "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+  "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2__HL.pdf",
+  "source_issues": [],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC034-Q15-c"
+  ]
+}

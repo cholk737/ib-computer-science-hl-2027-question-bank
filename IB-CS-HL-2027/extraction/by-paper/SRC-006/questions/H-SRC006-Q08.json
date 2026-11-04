@@ -34,7 +34,9 @@
       6
     ],
     "question_reference": "Q8 ",
-    "marking_summary": "The OS uses the printer driver to communicate with the device. It queues or schedules requests so programs share the printer in an orderly way, preventing their output from being interleaved incorrectly.",
+    "marking_summary": "Exact original MS leaf excerpt: Award [3 max] OS keeps tracks of all peripheral devices (the I/O controller) / decides which process gets the device when and for how much time / allocates and de-allocates devices; OS works with device drivers and the basic input/output system (BIOS) to perform hardware tasks / the necessary drivers (for every peripheral) are built into the OS and/or when a new peripheral is added software / device driver provided by a hardware maker is installed into the operating system (to tell the computer's OS how to work with the peripheral/hardware) (because without a device driver the OS would not be able to communicate with this peripheral device); A device driver translates the OS's instructions into a language (analogue signals) that the device can understand; There are various types of device drivers for peripherals (such as keyboards, mice, disk drives, controllers, printers, graphics cards … [full leaf evidence retained]",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [3 max]\nOS keeps tracks of all peripheral devices (the I/O controller) / decides which process gets the \ndevice when and for how much time / allocates and de-allocates devices; \nOS works with device drivers and the basic input/output system (BIOS) to perform hardware tasks \n / the necessary drivers (for every peripheral) are built into the OS and/or when a new peripheral is \nadded software / device driver provided by a hardware maker is installed into the operating system \n(to tell the computer's OS how to work with the peripheral/hardware) (because without a device \ndriver the OS would not be able to communicate with this peripheral device); \nA device driver translates the OS's instructions into a language (analogue signals) that the device \ncan understand; \nThere are various types of device drivers for peripherals (such as keyboards, mice, disk drives, \ncontrollers, printers, graphics cards, ports, etc.); \nDevice drivers run in the OS kernel space (in the part of the OS that directly interacts with the \nphysical structure of the system) (and implement functions such as open, close, read, write); \nThe running application/user's program can make a call to device driver functions which provide an \ninterface between user space and kernel space; \nExample answer: \nAn OS manages peripherals via their respective drivers; \nFor example, sound card drivers;  \nare necessary so the OS knows exactly how to translate the 1s and 0s (that comprise the MP3 file) \ninto audio signals; \nthat the sound card can output to headphones / speakers; \n\nSection B",
     "source_issues": [
       "Original MS describes driver instructions as analogue signals; that is not a general property of device drivers and is not repeated."
     ],
@@ -45,7 +47,7 @@
     {
       "syllabus_code": "A1.3.2",
       "scope_evidence": "• Maintaining system integrity while running operating systems’ background operations\n• Memory management, file system, device management, scheduling, security, accounting, graphical user interface (GUI), virtualization, networking",
-      "rationale": "Explain how an operating system manages access by two running programs to the same printer assesses Describe the functions of an operating system.",
+      "rationale": "Original and adapted within-scope skill: Explain how an operating system manages access by two running programs to the same printer; guidance target: Describe the functions of an operating system.",
       "theme": "A",
       "level": "SL/HL common",
       "confidence": "high",
@@ -60,8 +62,9 @@
     "visual": "No visual required by this leaf.",
     "technical": "Independently reasoned and compared with available source marking points."
   },
-  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "adaptation_reuse_question_id": "",
   "practice_question_ids": [
     "P-SRC006-Q08"
-  ]
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
 }

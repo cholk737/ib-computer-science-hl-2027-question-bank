@@ -1,0 +1,63 @@
+{
+  "question_id": "P-SRC044-Q05-c",
+  "source_question_ids": [
+    "H-SRC044-Q05-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Evaluate testing a trained ML flood-warning model only on examples used during training, compared with using held-out representative cases.",
+  "syllabus_codes": [
+    "A4.3.3"
+  ],
+  "theme": "A",
+  "level": "HL-only",
+  "marks": 6,
+  "command_term": "Evaluate",
+  "difficulty": "medium",
+  "adaptation_rationale": "Retains validation-with-known-results reasoning through explicit ML dataset splitting/evaluation,not general simulation testing.",
+  "solution": "Training-only scores can be optimistic because the model may fit those particular examples. Held-out cases test prediction on unseen data and better reveal overfitting. They should represent relevant conditions and include difficult cases; a small or unrepresentative test set still gives uncertain evidence. Prefer a separate representative test set, review appropriate performance measures and investigate errors before deployment.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Training-only results can be optimistic."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains memorization/overfitting."
+    },
+    {
+      "marks": 1,
+      "criterion": "Held-out cases test generalization."
+    },
+    {
+      "marks": 1,
+      "criterion": "Representative/difficult cases improve relevance."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains remaining sampling/coverage limitation."
+    },
+    {
+      "marks": 1,
+      "criterion": "Supported evaluation/recommendation."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      13
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC044-Q05-c.json",
+  "question_path": "question-bank/questions/P-SRC044-Q05-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC044-Q05-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

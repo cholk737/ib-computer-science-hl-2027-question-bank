@@ -1,0 +1,55 @@
+{
+  "question_id": "P-SRC004-Q14-b",
+  "source_question_ids": [
+    "H-SRC004-Q14-b"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A robotics event records judges’ integer scores from 0 to 12 in a 2D list scores. Construct a Python function returning the total number of 12s across all rows.",
+  "syllabus_codes": [
+    "B2.2.2",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 4,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Nested array processing converted to general Python 2D lists. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "solution": "def count_full(scores):\n    total = 0\n    for row in scores:\n        for value in row:\n            if value == 12:\n                total += 1\n    return total",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes count0."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses every row and every element."
+    },
+    {
+      "marks": 1,
+      "criterion": "Tests each value==12."
+    },
+    {
+      "marks": 1,
+      "criterion": "Increments correctly and returns final count."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 4,
+    "code_execution": "Specific executable boundary and behaviour tests passed; see agents/chunk-2/agent-3-papers-c/technical_checks.json and verify_practice.py."
+  },
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "assets": [],
+  "code": "def count_full(scores):\n    total = 0\n    for row in scores:\n        for value in row:\n            if value == 12:\n                total += 1\n    return total",
+  "record_path": "question-bank/records/P-SRC004-Q14-b.json",
+  "question_path": "question-bank/questions/P-SRC004-Q14-b.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC004-Q14-b.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

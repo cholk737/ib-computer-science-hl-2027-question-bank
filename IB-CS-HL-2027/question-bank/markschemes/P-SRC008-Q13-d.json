@@ -24,5 +24,6 @@
   },
   "code": "def lower_sum(a,r):\n    if r == 0:\n        return 0\n    return a[r][r-1] + lower_sum(a,r-1)",
   "test_code": "assert lower_sum([[1,2],[4,5]],0)==0\nassert lower_sum([[1,2],[4,5]],1)==4",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

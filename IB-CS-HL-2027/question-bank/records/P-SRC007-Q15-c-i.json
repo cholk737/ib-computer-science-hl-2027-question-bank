@@ -1,0 +1,45 @@
+{
+  "question_id": "P-SRC007-Q15-c-i",
+  "source_question_ids": [
+    "H-SRC007-Q15-c-i"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Compare memory needs of a laptop running one small ML model for one user with a cloud server simultaneously training many large models.",
+  "syllabus_codes": [
+    "A4.1.2"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 2,
+  "command_term": "Compare",
+  "difficulty": "medium",
+  "adaptation_rationale": "Retain workload-based memory reasoning in explicitly scoped ML deployment scenarios. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "solution": "Server requires more RAM for concurrent training data/model states; laptop needs enough for its smaller single model/inference workload.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Relates server memory to concurrent large training states/data."
+    },
+    {
+      "marks": 1,
+      "criterion": "Contrasts limited single model laptop workload without universal hardware category rule."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 2,
+    "code_execution": "No executable code required; explicit answer/trace checked manually."
+  },
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "assets": [],
+  "record_path": "question-bank/records/P-SRC007-Q15-c-i.json",
+  "question_path": "question-bank/questions/P-SRC007-Q15-c-i.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC007-Q15-c-i.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

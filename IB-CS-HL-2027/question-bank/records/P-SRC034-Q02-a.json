@@ -1,0 +1,50 @@
+{
+  "question_id": "P-SRC034-Q02-a",
+  "source_question_ids": [
+    "H-SRC034-Q02-a"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "An invoice line stores Quantity, PriceEach and LineTotal=Quantity×PriceEach. Explain why storing LineTotal can create a consistency problem.",
+  "syllabus_codes": [
+    "A3.2.5"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 3,
+  "command_term": "Explain",
+  "difficulty": "medium",
+  "adaptation_rationale": "Original application rewritten to be self-contained; assessed reasoning retained within cited 2027 scope.",
+  "solution": "LineTotal can be calculated from the other two stored values.; If either input changes but LineTotal is not updated, the row contains contradictory values.; Calculating it when needed avoids that redundant update obligation.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "LineTotal can be calculated from the other two stored values."
+    },
+    {
+      "marks": 1,
+      "criterion": "If either input changes but LineTotal is not updated, the row contains contradictory values."
+    },
+    {
+      "marks": 1,
+      "criterion": "Calculating it when needed avoids that redundant update obligation."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "No executable code required; manual technical check."
+  },
+  "code": "",
+  "test_code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC034-Q02-a.json",
+  "question_path": "question-bank/questions/P-SRC034-Q02-a.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC034-Q02-a.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

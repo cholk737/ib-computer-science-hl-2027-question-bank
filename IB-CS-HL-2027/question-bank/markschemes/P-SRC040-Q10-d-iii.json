@@ -1,0 +1,41 @@
+{
+  "question_id": "P-SRC040-Q10-d-iii",
+  "unofficial": true,
+  "marks": 5,
+  "solution": "def count_delayed(staff_members, staff_id):\n    count = 0\n    for person in staff_members:\n        if person.identifier == staff_id:\n            for project in person.projects:\n                if project is not None and project.days > 45 and project.decision == \"N\":\n                    count += 1\n            return count\n    return 0",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Finds the matching staff identifier."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses its projects and ignores None safely."
+    },
+    {
+      "marks": 1,
+      "criterion": "Tests strictly days>45."
+    },
+    {
+      "marks": 1,
+      "criterion": "Requires decision N and increments once per qualifying project."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns the correct total, including 0 for absent/no qualifying staff."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 5,
+    "code_execution": "Specific executable boundary and behaviour tests passed; see agents/chunk-2/agent-3-papers-c/technical_checks.json and verify_practice.py."
+  },
+  "code": "def count_delayed(staff_members, staff_id):\n    count = 0\n    for person in staff_members:\n        if person.identifier == staff_id:\n            for project in person.projects:\n                if project is not None and project.days > 45 and project.decision == \"N\":\n                    count += 1\n            return count\n    return 0",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

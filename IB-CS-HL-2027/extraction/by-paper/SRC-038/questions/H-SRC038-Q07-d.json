@@ -1,0 +1,101 @@
+{
+  "source_question_id": "H-SRC038-Q07-d",
+  "source_id": "SRC-038",
+  "source_filename": "Computer_science_paper_2_HL.pdf",
+  "year": "2025",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "not stated",
+  "option": "B",
+  "question": 7,
+  "subquestion": "d",
+  "source_pdf_pages": [
+    14
+  ],
+  "source_printed_pages": [
+    "13"
+  ],
+  "original_marks": 5,
+  "command_term": "Evaluate",
+  "original_text": "Evaluate the processing power and memory requirements needed to calculate the 3D bounding boxes for self-driving cars.",
+  "parent_context": "– 12 – 8825 – 6405\n(Option B continued)\n7. The Monte Carlo estimation of pi (π) is achieved by randomly generating points within a \nsquare and counting how many fall within an inscribed circle (see Figure 5).\nFigure 5: 2D visualization of the Monte Carlo estimation of π\n−1 0 1\n−1\n0\n1\n(a) Outline the appropriateness of using a 2D visualization for the Monte Carlo estimation  \nof π. [2]\nA spreadsheet model can be created to simulate the Monte Carlo method for the estimation  \nof π.\nThe =RAND() spreadsheet function is used in columns x-cord and y-cord (see Figure 6) to \ngenerate a random decimal between 0 and 1.\nThe distance column uses Pythagoras’ theorem to calculate distance, where a is x-cord and \nb is y-cord:\nca b/g32/g1422\nThe In or Out column is determined using an IF statement. When distance is less than 1, “In” \nis shown. When distance is 1 or more, “Out” is shown.\n(Option B continues on the following page)\n– 13 – 8825    – 6405\nTurn over\n(Option B, question 7 continued)\nFigure 6: The four columns needed in the simulation of \nthe Monte Carlo method for the estimation of π\nA B C D E\n1 x-cord y-cord distance In or Out\n2 0.9709594 0.03075972 0.97144651 In\n3 0.47929644 0.46729567 0.66939549 In\n(b) (i)  State a formula to calculate the distance for cell C2. [1]\n(ii) State a formula to show In or Out for cell D2. [1]\nThe formulae in row 2, columns A, B, C, and D, are automatically filled down to row 5001.\nA range of 5000 numbers will be sufficient to give a good approximation of π.\nTo give an approximation for π, a formula should be entered in cell E2.\nThe formula will calculate the ratio of points inside the circle (the number of “In” occurrences) \nrelative to the total points (total number of rows) and multiply the result by 4.\n(c) State a formula to be entered in cell E2. [3]\nBounding boxes in the context of self-driving cars are 3D geometric shapes encapsulating \nsurrounding objects that are memory and processor intensive (see Figure 7).\nFigure 7: 3D visualization of a bounding box\n(d) Evaluate the processing power and memory requirements needed to calculate the 3D \nbounding boxes for self-driving cars. [5]\n(Option B continues on page 15)",
+  "assets": [
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-13.png",
+      "source_pdf_page": 13,
+      "visually_verified": true
+    },
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-14.png",
+      "source_pdf_page": 14,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Evaluate the processing power and memory requirements needed to calculate the 3D bounding boxes for self-driving cars.",
+    "Evaluate the processing and memory needs of an ML camera system that detects many moving objects in a live image stream"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-039",
+    "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+    "pdf_pages": [
+      23
+    ],
+    "question_reference": "Q7 d",
+    "marking_summary": "Exact original MS leaf excerpt: Award [5] max Award [2] for strengths, [2] for weaknesses, [1] for a reasoned conclusion Strengths Wireframe use less processor/memory intensive than scanline/ray traced/rendered; Thousands of bounding boxes processed per second; No need to render lighting, shadows, or textures / less overhead than 3D imaging; No need for detailed rendering; weaknesses Constant streaming of changing real time data; Many objects in every data frame have bounding box; Precision of bounding boxes must be very high; Machine learning algorithms (CNNs) that detect the bounding boxes are computationally intensive; High danger situation is time dependent/processing every few thousands of a second; Conclusion Bounding boxes, while seemingly simple wireframe representations, require a substantial amount of memory and processing power; AVs need advanced graphic processing units (GPUs) installed to cope with the hig … [full leaf evidence retained]",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [5] max\nAward [2] for strengths, [2] for weaknesses, [1] for a reasoned conclusion\nStrengths\nWireframe use less processor/memory intensive than scanline/ray traced/rendered;\nThousands of bounding boxes processed per second;\nNo need to render lighting, shadows, or textures / less overhead than 3D imaging;\nNo need for detailed rendering;\nweaknesses\nConstant streaming of changing real time data;\nMany objects in every data frame have bounding box;\nPrecision of bounding boxes must be very high;\nMachine learning algorithms (CNNs) that detect the bounding boxes are\ncomputationally intensive;\nHigh danger situation is time dependent/processing every few thousands of a second;\nConclusion\nBounding boxes, while seemingly simple wireframe representations, require a\nsubstantial amount of memory and processing power;\nAVs need advanced graphic processing units (GPUs) installed to cope with the high\nprocessing demands.",
+    "source_issues": [],
+    "source_marking_evidence": "– 23 – 8825 – 6405M \n(d) Award [5] max\nAward [2] for strengths, [2] for weaknesses, [1] for a reasoned conclusion\nStrengths\nWireframe use less processor/memory intensive than scanline/ray traced/rendered;\nThousands of bounding boxes processed per second;\nNo need to render lighting, shadows, or textures / less overhead than 3D imaging;\nNo need for detailed rendering;\nweaknesses\nConstant streaming of changing real time data;\nMany objects in every data frame have bounding box;\nPrecision of bounding boxes must be very high;\nMachine learning algorithms (CNNs) that detect the bounding boxes are\ncomputationally intensive;\nHigh danger situation is time dependent/processing every few thousands of a second;\nConclusion\nBounding boxes, while seemingly simple wireframe representations, require a\nsubstantial amount of memory and processing power;\nAVs need advanced graphic processing units (GPUs) installed to cope with the high\nprocessing demands."
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "A1.1.2",
+      "scope_evidence": "• The architecture that allows graphics processing units (GPUs) to handle specific tasks and makes them suitable for complex computations\n• Real-world scenarios may include video games, artificial intelligence (AI), large simulations and other applications that require graphics rendering and machine learning.",
+      "rationale": "Adapted target only: Evaluate the processing and memory needs of an ML camera system that detects many moving objects in a live image stream; guidance target: Describe the role of a GPU. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+      "theme": "A",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "A1.1.4",
+      "scope_evidence": "• Random-access memory (RAM), read only memory (ROM), cache (L1, L2, L3), registers\n• The interaction of the CPU with different types of memory to optimize performance\n• The relevance of the terms “cache miss” and “cache hit”",
+      "rationale": "Adapted target only: Evaluate the processing and memory needs of an ML camera system that detects many moving objects in a live image stream; guidance target: Explain the purposes of different types of primary memory. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+      "theme": "A",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "A4.1.2",
+      "scope_evidence": "• The hardware configurations for different machine learning scenarios, considering factors such as processing, storage and scalability\n• Hardware configurations for machine learning ranging from standard laptops to advanced infrastructure\n• Advanced infrastructure must include application-specific integrated circuits (ASICs), edge devices, field-programmable gate arrays (FPGAs), GPUs, tensor processing units (TPUs), cloud-based platforms, high-performance computing (HPC) centres.",
+      "rationale": "Adapted target only: Evaluate the processing and memory needs of an ML camera system that detects many moving objects in a live image stream; guidance target: Describe the hardware requirements for various scenarios where machine learning is deployed. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+      "theme": "A",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC038-Q07-d"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

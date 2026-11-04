@@ -1,0 +1,42 @@
+{
+  "question_id": "P-SRC038-Q07-d",
+  "unofficial": true,
+  "marks": 5,
+  "solution": "A GPU can process many similar image operations in parallel, improving throughput. RAM holds frames, model data and intermediate results; larger frames/more objects increase working data. Powerful hardware costs energy and money, while insufficient throughput increases delay and stale decisions. Choose enough GPU/RAM for measured frame-rate and latency requirements rather than assuming a simple box overlay means the whole detection task is cheap.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "GPU parallel processing benefit."
+    },
+    {
+      "marks": 1,
+      "criterion": "Concrete live-image workload explanation."
+    },
+    {
+      "marks": 1,
+      "criterion": "RAM working-data role."
+    },
+    {
+      "marks": 1,
+      "criterion": "Develops capacity/latency/cost trade-off."
+    },
+    {
+      "marks": 1,
+      "criterion": "Supported contextual hardware judgment."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      23
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

@@ -1,0 +1,19 @@
+{
+  "question_id": "P-SRC004-Q09-a",
+  "source_question_ids": [
+    "H-SRC004-Q09-a"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Trace digit_total(3407), showing calls and returned additions. Assume a nonnegative integer.\n\ndef digit_total(n):\n    if n > 0:\n        return n % 10 + digit_total(n // 10)\n    return 0",
+  "syllabus_codes": [
+    "B2.4.5"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 4,
+  "command_term": "Trace",
+  "difficulty": "medium",
+  "adaptation_rationale": "Single non-branching recursion is explicitly allowed; pseudocode converted to Python. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "assets": []
+}

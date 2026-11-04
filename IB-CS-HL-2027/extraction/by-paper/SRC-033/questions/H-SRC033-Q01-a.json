@@ -1,0 +1,78 @@
+{
+  "source_question_id": "H-SRC033-Q01-a",
+  "source_id": "SRC-033",
+  "source_filename": "Computer_science_paper_2__HL (2).pdf",
+  "year": "2020",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "TZ0",
+  "option": "A",
+  "question": "1",
+  "subquestion": "a",
+  "source_pdf_pages": [
+    3
+  ],
+  "source_printed_pages": [
+    "2"
+  ],
+  "original_marks": 2,
+  "command_term": "Construct",
+  "original_text": "(a) Construct the entity-relationship diagram (ERD) that shows the relationship between\nthe individual, their driving license, and their vehicle(s). [2]",
+  "parent_context": "1. The Driving Licensing Agency stores information about individuals who hold a driving license\nand/or own vehicles.\nThe following rules apply:\ny Each individual may only hold one driving license.\ny Each individual may own more than one vehicle.\ny Each vehicle may be owned by one individual only.\n(a) Construct the entity-relationship diagram (ERD) that shows the relationship between\nthe individual, their driving license, and their vehicle(s). [2]\nWhen an individual applies for a driving license, they have to complete a license application form.\nThe following is an extract from that form:\nFigure 1: Extract from driving license application form\nSurname\nFirst name(s)\nMr Mrs Miss Ms\nOther title Male Female\nDay Month Year\nDate of birth\n(b) Explain why Date of birth has been separated into three fields. [3]\nThe data in the form shown above is stored in the Person table. The license application form\nalso requires an individual’s medical information. This is stored in a table called PersonMedical.\nThe following extract is a sample of the medical questions that are asked.\nFigure 2: A sample of the medical questions asked on the license application form\nHave you ever had any of the\nNo Yes\nfollowing conditions?\nIf you have answered “Yes”, please tick all the appropriates boxes.\nEpilepsy\nFits or blackouts\nRepeated attacks of sudden disabling giddiness\nDiabetes controlled by insulin\n(Option A continues on the following page)\nN20/4/COMSC/HP2/ENG/TZ0/XX\n– 3 – 8820 – 7012\n(Option A, question 1 continued)\n(c) Explain two reasons why medical information should not be stored in the Person table. [6]\n(d) Outline two issues caused by storing redundant data. [4]\n(e) Outline two situations where data stored by the Driving Licensing Agency may need to\nbe open to interrogation by other parties. [4]\n",
+  "assets": [
+    {
+      "kind": "source_page_render",
+      "description": "Full source page inspected; includes all question context, source code/figures where present.",
+      "path": "agents/chunk-2/agent-3-papers-c/papers/SRC-033/renders/page-03.png",
+      "source_pdf_page": 3,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Construct ERDs."
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-036",
+    "filename": "Computer_science_paper_2__HL_markscheme (2).pdf",
+    "pdf_pages": [
+      4
+    ],
+    "question_reference": "1(a)",
+    "marking_summary": "Individual-license1:1;individual-vehicle1:many.",
+    "source_issues": []
+  },
+  "relevance_status": "A",
+  "mappings": [
+    {
+      "syllabus_code": "A3.2.2",
+      "scope_evidence": "• The significance of entity relationship diagrams (ERDs) in crafting organized, efficient database designs tailored for specific applications\n• The relationships between different data entities within a database\n• The roles of cardinality and modality in defining relationships in ERDs",
+      "rationale": "ERD cardinality/modality explicitly scoped.",
+      "theme": "A",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "transcribed from original PDF and compared with rendered page",
+    "source_marks": "checked against printed allocation and official MS",
+    "visual_review": "full question page inspected",
+    "mapping": "full exact statement and guidance reviewed; old syllabus headings not treated as new requirements"
+  },
+  "original_text_synopsis": "Construct the ERD showing individual,driving license,and vehicles.",
+  "context_synopsis": "Licensing agency:each individual zero/one license and zero/many vehicles;each vehicle one individual. Person and PersonMedical tables store identity and medical conditions. Form/table images in sourcePDF3.",
+  "original_text_status": "verbatim_leaf_from_pdf_text_layer; page_render_is_visual_authority",
+  "parent_context_status": "complete_original_question_block_from_pdf_text_layer",
+  "raw_source_page_transcriptions": [
+    "agents/chunk-2/agent-3-papers-c/papers/SRC-033/transcription/pdf-page-003.txt"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC033-Q01-a"
+  ]
+}

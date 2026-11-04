@@ -1,0 +1,41 @@
+{
+  "question_id": "P-SRC022-Q14-c-ii",
+  "unofficial": true,
+  "marks": 5,
+  "solution": "def route(stack, early, late):\n    while not stack.isEmpty():\n        name = stack.pop()\n        if \"A\" <= name[0] <= \"M\":\n            early.enqueue(name)\n        else:\n            late.enqueue(name)",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Loops until stack empty."
+    },
+    {
+      "marks": 1,
+      "criterion": "Pops one item per iteration."
+    },
+    {
+      "marks": 1,
+      "criterion": "Extracts first character and tests A…M correctly."
+    },
+    {
+      "marks": 1,
+      "criterion": "Enqueues whole correct name into early."
+    },
+    {
+      "marks": 1,
+      "criterion": "Otherwise enqueues into late without losing order."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 5,
+    "code_execution": "Specific executable boundary and behaviour tests passed; see agents/chunk-2/agent-3-papers-c/technical_checks.json and verify_practice.py."
+  },
+  "code": "def route(stack, early, late):\n    while not stack.isEmpty():\n        name = stack.pop()\n        if \"A\" <= name[0] <= \"M\":\n            early.enqueue(name)\n        else:\n            late.enqueue(name)",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

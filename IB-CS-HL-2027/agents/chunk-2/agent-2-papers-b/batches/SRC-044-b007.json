@@ -1,0 +1,1065 @@
+{
+  "source_id": "SRC-044",
+  "batch_id": "SRC-044-b007",
+  "source_questions": [
+    {
+      "source_question_id": "H-SRC044-Q10-d",
+      "source_id": "SRC-044",
+      "source_filename": "Computer_science_paper_2_TZ3_SL (1).pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "D",
+      "question": 10,
+      "subquestion": "d",
+      "source_pdf_pages": [
+        18
+      ],
+      "source_printed_pages": [
+        "17"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "With reference to the Artist and Artwork classes, outline the use of the modifier private.",
+      "parent_context": "– 16 – 2225 – 6423\nOption D — Object-oriented programming\n10. An art shop sells the work of several artists. Each artist has many artworks for sale. A system \nis designed to manage artworks, sales and customers.\nThe following shows part of the code for the two classes, Artist and Artwork:\npublic class Artist {\n    private String artistName;      // name of the artist\n    private String artistLocation;  // current location of the artist\n    private int noOfArtworks;       // number of works of art the artist has \n                                    // stored in the array theArtworks\n    private Artwork [] theArtworks; // details of the works of art produced \n                                    // by the artist\n    public Artist(String artistName, String artistLocation){\n        this.artistName = artistName;\n        this.artistLocation = artistLocation;\n        noOfArtworks = 0;\n        theArtworks = new Artwork [100]; // an artist has a maximum of 100\n                                         // artworks\n    }\n    public String getName() {\n        return artistName;\n    }\n    public String getLocation() {\n        return artistLocation;\n    }\n    public Artwork getArtwork(int x) {\n        return theArtworks[x];\n    }\n    public void addArtwork(Artwork x) {\n        theArtworks[noOfArtworks] = x;\n        noOfArtworks = noOfArtworks + 1;\n    }\n    public double commissionToPay() {\n        // code missing\n    }\n \n    public Artwork[] sortArt() {\n        // code missing\n    }\n} // end of class Artist\n(Option D continues on the following page)\n– 17 – 2225 – 6423\nTurn over\n(Option D, question 10 continued)\npublic class Artwork {\n    private String artworkTitle; // name of the artwork\n    private int artworkPrice;    // price of artwork\n    private boolean isSold;      // if the artwork has been sold or not\n    public Artwork(String artworkTitle, int artworkPrice) {\n        this.artworkTitle = artworkTitle;\n        this.artworkPrice = artworkPrice;\n        isSold = false; // default value is not sold\n    }\n    public String getArtworkTitle(){\n        return artworkTitle;\n    }\n    public void isSold(){\n        isSold = true;\n    }\n} // end of class Artwork\n(a) State the relationship between the Artist class and Artwork class. [1]\n(b) Outline what is meant by instantiation of an object. [2]\n(c) Construct the code required to instantiate the artist “Thomas Lucas” from “Ireland”. [3]\n(d) With reference to the Artist and Artwork classes, outline the use of the \nmodifier private. [2]\n(e) Outline two advantages of modularity in program development. [4]\n(f) Construct a UML diagram to represent the Artist class. [3]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-17.png",
+          "source_pdf_page": 17,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-18.png",
+          "source_pdf_page": 18,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: With reference to the Artist and Artwork classes, outline the use of the modifier private.",
+        "Outline how information hiding can control changes to a Product object’s price"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-046",
+        "filename": "Computer_science_paper_2_TZ3_SL_markscheme.pdf",
+        "pdf_pages": [
+          22
+        ],
+        "question_reference": "Q10 d",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max] Award [1] mark for - private attributes can't be accessed outside the class / private attributes need accessor/mutator methods to be accessed/modified; Award [1] mark for - using the reference from the Artist/Artwork class. Note: A candidate can score both marks in one sentence. Example - The attribute artworkTitle in the Artwork class can only be accessed by using the appropriate accessor method in the Artist class.",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]\nAward [1] mark for -\nprivate attributes can't be accessed outside the class / private attributes need accessor/mutator \nmethods to be accessed/modified;  \nAward [1] mark for -   \nusing the reference from the Artist/Artwork class. \nNote: A candidate can score both marks in one sentence.   \nExample - The attribute artworkTitle in the Artwork class can only be accessed by using \nthe appropriate accessor method in the Artist class.",
+        "source_issues": [],
+        "source_marking_evidence": "– 22 – 2225 – 6423M \nOption D – Object-oriented programming \n10. (a) Award [1 max]\naggregation; \nhas a;   \nNote: As long as the relationship is clearer, award mark. \n(b) Award [2 max]\ninstantiation is the process of creating a new object of the class;\ninvolves calling the constructor of the class; \nobject’s attributes are initialized / object gets memory during instantiation; \n(c) Award [3 max]\nAward [1] for Artist A  // (accept any name)\nAward [1] for new Artist()\nAward [1] for correct arguments \"Thomas Lucas\", \"Ireland\";\nArtist A = new Artist (\"Thomas Lucas\", \"Ireland\");\n(d) Award [2 max]\nAward [1] mark for -\nprivate attributes can't be accessed outside the class / private attributes need accessor/mutator \nmethods to be accessed/modified;  \nAward [1] mark for -   \nusing the reference from the Artist/Artwork class. \nNote: A candidate can score both marks in one sentence.   \nExample - The attribute artworkTitle in the Artwork class can only be accessed by using \nthe appropriate accessor method in the Artist class.  \n(e) Award [4 max]\nEasier / faster to debug; \nbecause there are far fewer mistakes in the smaller/individual modules; \nSpeedier / faster completion of the project; \nbecause different teams work on different modules (simultaneously); \nCollaborative / qualitative development; \nas different teams work on different modules at the same time / teams (programmers) with \nexpertise work on specific modules; \nFacilitates reusability of the code; \nas the existing modules can be reused across other modules; \nImproves code readability / organisation; \nsmaller manageable modules leading to better logical organization; \nReduces the coupling effect; \nleading to easier/faster maintenance of module not affecting others; \nMark as [2] and [2] \nNote: Do not allow mixing the points from different clusters. Do not allow easier/faster without \nany further description in context of modularity. "
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B3.1.5",
+          "scope_evidence": "• The principles of encapsulation and information hiding\n• Apply access modifiers such as private and public\n• Controlling access to class members\n• The importance of limiting access to maintain the integrity and security of an object's state",
+          "rationale": "Adapted target only: Outline how information hiding can control changes to a Product object’s price; guidance target: Explain and apply the concepts of encapsulation and information hiding in OOP. Adaptation: Preserves private-access reasoning with a Python-appropriate controlled interface; naming conventions alone are not claimed to enforce security.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC044-Q10-d"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC044-Q10-e",
+      "source_id": "SRC-044",
+      "source_filename": "Computer_science_paper_2_TZ3_SL (1).pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "D",
+      "question": 10,
+      "subquestion": "e",
+      "source_pdf_pages": [
+        18
+      ],
+      "source_printed_pages": [
+        "17"
+      ],
+      "original_marks": 4,
+      "command_term": "Outline",
+      "original_text": "Outline two advantages of modularity in program development.",
+      "parent_context": "– 16 – 2225 – 6423\nOption D — Object-oriented programming\n10. An art shop sells the work of several artists. Each artist has many artworks for sale. A system \nis designed to manage artworks, sales and customers.\nThe following shows part of the code for the two classes, Artist and Artwork:\npublic class Artist {\n    private String artistName;      // name of the artist\n    private String artistLocation;  // current location of the artist\n    private int noOfArtworks;       // number of works of art the artist has \n                                    // stored in the array theArtworks\n    private Artwork [] theArtworks; // details of the works of art produced \n                                    // by the artist\n    public Artist(String artistName, String artistLocation){\n        this.artistName = artistName;\n        this.artistLocation = artistLocation;\n        noOfArtworks = 0;\n        theArtworks = new Artwork [100]; // an artist has a maximum of 100\n                                         // artworks\n    }\n    public String getName() {\n        return artistName;\n    }\n    public String getLocation() {\n        return artistLocation;\n    }\n    public Artwork getArtwork(int x) {\n        return theArtworks[x];\n    }\n    public void addArtwork(Artwork x) {\n        theArtworks[noOfArtworks] = x;\n        noOfArtworks = noOfArtworks + 1;\n    }\n    public double commissionToPay() {\n        // code missing\n    }\n \n    public Artwork[] sortArt() {\n        // code missing\n    }\n} // end of class Artist\n(Option D continues on the following page)\n– 17 – 2225 – 6423\nTurn over\n(Option D, question 10 continued)\npublic class Artwork {\n    private String artworkTitle; // name of the artwork\n    private int artworkPrice;    // price of artwork\n    private boolean isSold;      // if the artwork has been sold or not\n    public Artwork(String artworkTitle, int artworkPrice) {\n        this.artworkTitle = artworkTitle;\n        this.artworkPrice = artworkPrice;\n        isSold = false; // default value is not sold\n    }\n    public String getArtworkTitle(){\n        return artworkTitle;\n    }\n    public void isSold(){\n        isSold = true;\n    }\n} // end of class Artwork\n(a) State the relationship between the Artist class and Artwork class. [1]\n(b) Outline what is meant by instantiation of an object. [2]\n(c) Construct the code required to instantiate the artist “Thomas Lucas” from “Ireland”. [3]\n(d) With reference to the Artist and Artwork classes, outline the use of the \nmodifier private. [2]\n(e) Outline two advantages of modularity in program development. [4]\n(f) Construct a UML diagram to represent the Artist class. [3]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-17.png",
+          "source_pdf_page": 17,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-18.png",
+          "source_pdf_page": 18,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline two advantages of modularity in program development.",
+        "Outline two benefits of decomposing a sales program into functions for input,calculation and reporting"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-046",
+        "filename": "Computer_science_paper_2_TZ3_SL_markscheme.pdf",
+        "pdf_pages": [
+          22
+        ],
+        "question_reference": "Q10 e",
+        "marking_summary": "Exact original MS leaf excerpt: Award [4 max] Easier / faster to debug; because there are far fewer mistakes in the smaller/individual modules; Speedier / faster completion of the project; because different teams work on different modules (simultaneously); Collaborative / qualitative development; as different teams work on different modules at the same time / teams (programmers) with expertise work on specific modules; Facilitates reusability of the code; as the existing modules can be reused across other modules; Improves code readability / organisation; smaller manageable modules leading to better logical organization; Reduces the coupling effect; leading to easier/faster maintenance of module not affecting others; Mark as [2] and [2] Note: Do not allow mixing the points from different clusters. Do not allow easier/faster without any further description in context of modularity.",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [4 max]\nEasier / faster to debug; \nbecause there are far fewer mistakes in the smaller/individual modules; \nSpeedier / faster completion of the project; \nbecause different teams work on different modules (simultaneously); \nCollaborative / qualitative development; \nas different teams work on different modules at the same time / teams (programmers) with \nexpertise work on specific modules; \nFacilitates reusability of the code; \nas the existing modules can be reused across other modules; \nImproves code readability / organisation; \nsmaller manageable modules leading to better logical organization; \nReduces the coupling effect; \nleading to easier/faster maintenance of module not affecting others; \nMark as [2] and [2] \nNote: Do not allow mixing the points from different clusters. Do not allow easier/faster without \nany further description in context of modularity.",
+        "source_issues": [],
+        "source_marking_evidence": "– 22 – 2225 – 6423M \nOption D – Object-oriented programming \n10. (a) Award [1 max]\naggregation; \nhas a;   \nNote: As long as the relationship is clearer, award mark. \n(b) Award [2 max]\ninstantiation is the process of creating a new object of the class;\ninvolves calling the constructor of the class; \nobject’s attributes are initialized / object gets memory during instantiation; \n(c) Award [3 max]\nAward [1] for Artist A  // (accept any name)\nAward [1] for new Artist()\nAward [1] for correct arguments \"Thomas Lucas\", \"Ireland\";\nArtist A = new Artist (\"Thomas Lucas\", \"Ireland\");\n(d) Award [2 max]\nAward [1] mark for -\nprivate attributes can't be accessed outside the class / private attributes need accessor/mutator \nmethods to be accessed/modified;  \nAward [1] mark for -   \nusing the reference from the Artist/Artwork class. \nNote: A candidate can score both marks in one sentence.   \nExample - The attribute artworkTitle in the Artwork class can only be accessed by using \nthe appropriate accessor method in the Artist class.  \n(e) Award [4 max]\nEasier / faster to debug; \nbecause there are far fewer mistakes in the smaller/individual modules; \nSpeedier / faster completion of the project; \nbecause different teams work on different modules (simultaneously); \nCollaborative / qualitative development; \nas different teams work on different modules at the same time / teams (programmers) with \nexpertise work on specific modules; \nFacilitates reusability of the code; \nas the existing modules can be reused across other modules; \nImproves code readability / organisation; \nsmaller manageable modules leading to better logical organization; \nReduces the coupling effect; \nleading to easier/faster maintenance of module not affecting others; \nMark as [2] and [2] \nNote: Do not allow mixing the points from different clusters. Do not allow easier/faster without \nany further description in context of modularity. "
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B1.1.2",
+          "scope_evidence": "• Abstraction, algorithmic design, decomposition, pattern recognition",
+          "rationale": "Adapted target only: Outline two benefits of decomposing a sales program into functions for input,calculation and reporting; guidance target: Describe the fundamental concepts of computational thinking. Adaptation: Explicitly assesses decomposition from computational thinking rather than an unsupported broad modularity slogan.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "B1.1.3",
+          "scope_evidence": "• Computational thinking does not necessarily involve programming—it is a toolkit of available techniques for problem-solving.\n• Real-world examples may include software development, data analysis, machine learning, database design, network security.",
+          "rationale": "Adapted target only: Outline two benefits of decomposing a sales program into functions for input,calculation and reporting; guidance target: Explain how applying computational thinking to fundamental concepts is used to approach and solve problems in computer science. Adaptation: Explicitly assesses decomposition from computational thinking rather than an unsupported broad modularity slogan.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC044-Q10-e"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC044-Q10-f",
+      "source_id": "SRC-044",
+      "source_filename": "Computer_science_paper_2_TZ3_SL (1).pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "D",
+      "question": 10,
+      "subquestion": "f",
+      "source_pdf_pages": [
+        18
+      ],
+      "source_printed_pages": [
+        "17"
+      ],
+      "original_marks": 3,
+      "command_term": "Construct",
+      "original_text": "Construct a UML diagram to represent the Artist class.",
+      "parent_context": "– 16 – 2225 – 6423\nOption D — Object-oriented programming\n10. An art shop sells the work of several artists. Each artist has many artworks for sale. A system \nis designed to manage artworks, sales and customers.\nThe following shows part of the code for the two classes, Artist and Artwork:\npublic class Artist {\n    private String artistName;      // name of the artist\n    private String artistLocation;  // current location of the artist\n    private int noOfArtworks;       // number of works of art the artist has \n                                    // stored in the array theArtworks\n    private Artwork [] theArtworks; // details of the works of art produced \n                                    // by the artist\n    public Artist(String artistName, String artistLocation){\n        this.artistName = artistName;\n        this.artistLocation = artistLocation;\n        noOfArtworks = 0;\n        theArtworks = new Artwork [100]; // an artist has a maximum of 100\n                                         // artworks\n    }\n    public String getName() {\n        return artistName;\n    }\n    public String getLocation() {\n        return artistLocation;\n    }\n    public Artwork getArtwork(int x) {\n        return theArtworks[x];\n    }\n    public void addArtwork(Artwork x) {\n        theArtworks[noOfArtworks] = x;\n        noOfArtworks = noOfArtworks + 1;\n    }\n    public double commissionToPay() {\n        // code missing\n    }\n \n    public Artwork[] sortArt() {\n        // code missing\n    }\n} // end of class Artist\n(Option D continues on the following page)\n– 17 – 2225 – 6423\nTurn over\n(Option D, question 10 continued)\npublic class Artwork {\n    private String artworkTitle; // name of the artwork\n    private int artworkPrice;    // price of artwork\n    private boolean isSold;      // if the artwork has been sold or not\n    public Artwork(String artworkTitle, int artworkPrice) {\n        this.artworkTitle = artworkTitle;\n        this.artworkPrice = artworkPrice;\n        isSold = false; // default value is not sold\n    }\n    public String getArtworkTitle(){\n        return artworkTitle;\n    }\n    public void isSold(){\n        isSold = true;\n    }\n} // end of class Artwork\n(a) State the relationship between the Artist class and Artwork class. [1]\n(b) Outline what is meant by instantiation of an object. [2]\n(c) Construct the code required to instantiate the artist “Thomas Lucas” from “Ireland”. [3]\n(d) With reference to the Artist and Artwork classes, outline the use of the \nmodifier private. [2]\n(e) Outline two advantages of modularity in program development. [4]\n(f) Construct a UML diagram to represent the Artist class. [3]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-17.png",
+          "source_pdf_page": 17,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-18.png",
+          "source_pdf_page": 18,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Construct a UML diagram to represent the Artist class.",
+        "Construct a UML class box for Producer"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-046",
+        "filename": "Computer_science_paper_2_TZ3_SL_markscheme.pdf",
+        "pdf_pages": [
+          23
+        ],
+        "question_reference": "Q10 f",
+        "marking_summary": "Exact original MS leaf excerpt: Award [3 max] Award [1] for three boxes and correct class name; Award [1] for correct attributes and methods (at least one method (constructor / accessor / mutator / other methods); Award [1] for correct symbols ‘-’ and ‘+’ (accept ‘private’/’public’); Artist - artistName:String - artistLocation:string - noOfArtworks:int - theArtworks[]:Artwork + getName( ) : String + getLocation( ) : String + getArtwork( x : int) : Artwork + addArtwork(x : Artwork): void + commissionToPay( ) : double + toString( ) : String",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [3 max]\nAward [1] for three boxes and correct class name;\nAward [1] for correct attributes and methods (at least one method (constructor / accessor\n/ mutator / other methods);\nAward [1] for correct symbols ‘-’ and ‘+’ (accept ‘private’/’public’);\nArtist \n- artistName:String\n- artistLocation:string\n- noOfArtworks:int\n- theArtworks[]:Artwork\n+ getName( ) : String\n+ getLocation( ) : String\n+ getArtwork( x : int) : Artwork\n+ addArtwork(x : Artwork): void\n+ commissionToPay( ) : double\n+ toString( ) : String",
+        "source_issues": [],
+        "source_marking_evidence": "– 23 – 2225 – 6423M \n(f) Award [3 max]\nAward [1] for three boxes and correct class name;\nAward [1] for correct attributes and methods (at least one method (constructor / accessor\n/ mutator / other methods);\nAward [1] for correct symbols ‘-’ and ‘+’ (accept ‘private’/’public’);\nArtist \n- artistName:String\n- artistLocation:string\n- noOfArtworks:int\n- theArtworks[]:Artwork\n+ getName( ) : String\n+ getLocation( ) : String\n+ getArtwork( x : int) : Artwork\n+ addArtwork(x : Artwork): void\n+ commissionToPay( ) : double\n+ toString( ) : String"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B3.1.2",
+          "scope_evidence": "• Classes and their methods, based on application requirements\n• The use of unified modelling language (UML) class diagrams to represent class relationships, attributes and methods, to aid effective software design and planning",
+          "rationale": "Adapted target only: Construct a UML class box for Producer; guidance target: Construct a design of classes, their methods and behaviour. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC044-Q10-f"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC044-Q11-a-i",
+      "source_id": "SRC-044",
+      "source_filename": "Computer_science_paper_2_TZ3_SL (1).pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "D",
+      "question": 11,
+      "subquestion": "a-i",
+      "source_pdf_pages": [
+        19
+      ],
+      "source_printed_pages": [
+        "18"
+      ],
+      "original_marks": 1,
+      "command_term": "State",
+      "original_text": "the variable typeOfPaint;",
+      "parent_context": "– 16 – 2225 – 6423\nOption D — Object-oriented programming\n10. An art shop sells the work of several artists. Each artist has many artworks for sale. A system \nis designed to manage artworks, sales and customers.\nThe following shows part of the code for the two classes, Artist and Artwork:\npublic class Artist {\n    private String artistName;      // name of the artist\n    private String artistLocation;  // current location of the artist\n    private int noOfArtworks;       // number of works of art the artist has \n                                    // stored in the array theArtworks\n    private Artwork [] theArtworks; // details of the works of art produced \n                                    // by the artist\n    public Artist(String artistName, String artistLocation){\n        this.artistName = artistName;\n        this.artistLocation = artistLocation;\n        noOfArtworks = 0;\n        theArtworks = new Artwork [100]; // an artist has a maximum of 100\n                                         // artworks\n    }\n    public String getName() {\n        return artistName;\n    }\n    public String getLocation() {\n        return artistLocation;\n    }\n    public Artwork getArtwork(int x) {\n        return theArtworks[x];\n    }\n    public void addArtwork(Artwork x) {\n        theArtworks[noOfArtworks] = x;\n        noOfArtworks = noOfArtworks + 1;\n    }\n    public double commissionToPay() {\n        // code missing\n    }\n \n    public Artwork[] sortArt() {\n        // code missing\n    }\n} // end of class Artist\n(Option D continues on the following page)\n– 17 – 2225 – 6423\nTurn over\n(Option D, question 10 continued)\npublic class Artwork {\n    private String artworkTitle; // name of the artwork\n    private int artworkPrice;    // price of artwork\n    private boolean isSold;      // if the artwork has been sold or not\n    public Artwork(String artworkTitle, int artworkPrice) {\n        this.artworkTitle = artworkTitle;\n        this.artworkPrice = artworkPrice;\n        isSold = false; // default value is not sold\n    }\n    public String getArtworkTitle(){\n        return artworkTitle;\n    }\n    public void isSold(){\n        isSold = true;\n    }\n} // end of class Artwork\n(a) State the relationship between the Artist class and Artwork class. [1]\n(b) Outline what is meant by instantiation of an object. [2]\n(c) Construct the code required to instantiate the artist “Thomas Lucas” from “Ireland”. [3]\n(d) With reference to the Artist and Artwork classes, outline the use of the \nmodifier private. [2]\n(e) Outline two advantages of modularity in program development. [4]\n(f) Construct a UML diagram to represent the Artist class. [3]\n(Option D continues on the following page)\n– 18 – 2225 – 6423\n(Option D continued)\n11. The owner of the art shop would like the artworks separated into three different categories: \npaintings, sculptures, and performances.\nThree classes, Painting, Sculpture, and Performance, are created for the three different \ncategories of artwork.\nThe variable typeOfPaint belongs to Painting. It holds the name of the type of paint used.\nThe variable weight belongs to Sculpture. It holds the weight of a sculpture.\nThe variable needForSound belongs to Performance. It states whether sound is needed for \nthe performance.\nThe other variables are common to all three classes.\n(a) State a suitable data type for:\n(i) the variable typeOfPaint; [1]\n(ii) the variable weight; [1]\n(iii) the variable needForSound. [1]\n(b) (i)   Outline two advantages of using inheritance. [4]\n(ii) Explain how inheritance could be used to develop the three classes described \n(Painting, Sculpture, and Performance). [3]\nAn array of type Artist has been declared in the main class, and objects are added using \nthe following code:\ntheArtists[0] = new Artist(\"Nishan Nathan\", \"Italy\");\ntheArtists[1] = new Artist(\"Saskia Anna\", \"Egypt\");\ntheArtists[2] = new Artist(\"Kate Matherson\", \"USA\");\nThe variable isSold in the Artwork object needs to be set to true when an artwork has \nbeen sold.\n(c) Construct a method, Sold(String artistName, String artworkTitle), that will \nloop through the array theArtists array and set the isSold variable to true.\nYou can assume the artwork exists in theArtworks array. [6]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-17.png",
+          "source_pdf_page": 17,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-18.png",
+          "source_pdf_page": 18,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-19.png",
+          "source_pdf_page": 19,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: the variable typeOfPaint;",
+        "State a suitable Python type for material_name,which stores a material’s name"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-046",
+        "filename": "Computer_science_paper_2_TZ3_SL_markscheme.pdf",
+        "pdf_pages": [
+          24
+        ],
+        "question_reference": "Q11 a-i",
+        "marking_summary": "Exact original MS leaf excerpt: Award [1] String",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [1]\nString",
+        "source_issues": [],
+        "source_marking_evidence": "– 24 – 2225 – 6423M \n11. (a) (i)  Award [1]\nString \n(ii)  Award [1]\nint;\nfloat;\ndouble;\n(iii) Award [1]\nboolean;\nNote: Award the mark as long as the data type is stated correctly.\n(b) (i)  Award [4 max]\nAward [1] for each advantage and [1] for expanding it \nReuse of code; \nthrough inheritance sub classes can use methods of the superclass / less code needs to be \nwritten / saves time in coding; \nCode flexibility/extensibility; \nextending the parent’s action and data, without redefining them (polymorphism); \nchild class redefines the base class methods (Overriding); \nto provide a different functionality to existing method of the parent class; \nEasy to debug; \nAs the existing code (base class methods) are already tested / less code needs to be \ndebugged; \nEasier to maintain; \nas the changes in the parent class are automatically reflected in the child class; \nMark as [2] and [2] \n(ii) Award [3 max]\nAll the of the common attributes related to the art works could be in a superclass\n(Artwork);\nSpecific attributes related to the different types of artwork could be added to the sub\nclasses       (Painting/Sculpture/Performance);\nWhen instantiating an artwork the specific artwork would be chosen rather than “Artwork”;\nNote: Reponse must refer to Artwork as base class and Painting / Sculpture / Performance as\nsubclass, to achieve the full marks."
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.1.1",
+          "scope_evidence": "• Data types: Boolean value, char, decimal, integer, string",
+          "rationale": "Adapted target only: State a suitable Python type for material_name,which stores a material’s name; guidance target: Construct and trace programs using a range of global and local variables of various data types. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC044-Q11-a-i"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC044-Q11-a-ii",
+      "source_id": "SRC-044",
+      "source_filename": "Computer_science_paper_2_TZ3_SL (1).pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "D",
+      "question": 11,
+      "subquestion": "a-ii",
+      "source_pdf_pages": [
+        19
+      ],
+      "source_printed_pages": [
+        "18"
+      ],
+      "original_marks": 1,
+      "command_term": "State",
+      "original_text": "the variable weight;",
+      "parent_context": "– 16 – 2225 – 6423\nOption D — Object-oriented programming\n10. An art shop sells the work of several artists. Each artist has many artworks for sale. A system \nis designed to manage artworks, sales and customers.\nThe following shows part of the code for the two classes, Artist and Artwork:\npublic class Artist {\n    private String artistName;      // name of the artist\n    private String artistLocation;  // current location of the artist\n    private int noOfArtworks;       // number of works of art the artist has \n                                    // stored in the array theArtworks\n    private Artwork [] theArtworks; // details of the works of art produced \n                                    // by the artist\n    public Artist(String artistName, String artistLocation){\n        this.artistName = artistName;\n        this.artistLocation = artistLocation;\n        noOfArtworks = 0;\n        theArtworks = new Artwork [100]; // an artist has a maximum of 100\n                                         // artworks\n    }\n    public String getName() {\n        return artistName;\n    }\n    public String getLocation() {\n        return artistLocation;\n    }\n    public Artwork getArtwork(int x) {\n        return theArtworks[x];\n    }\n    public void addArtwork(Artwork x) {\n        theArtworks[noOfArtworks] = x;\n        noOfArtworks = noOfArtworks + 1;\n    }\n    public double commissionToPay() {\n        // code missing\n    }\n \n    public Artwork[] sortArt() {\n        // code missing\n    }\n} // end of class Artist\n(Option D continues on the following page)\n– 17 – 2225 – 6423\nTurn over\n(Option D, question 10 continued)\npublic class Artwork {\n    private String artworkTitle; // name of the artwork\n    private int artworkPrice;    // price of artwork\n    private boolean isSold;      // if the artwork has been sold or not\n    public Artwork(String artworkTitle, int artworkPrice) {\n        this.artworkTitle = artworkTitle;\n        this.artworkPrice = artworkPrice;\n        isSold = false; // default value is not sold\n    }\n    public String getArtworkTitle(){\n        return artworkTitle;\n    }\n    public void isSold(){\n        isSold = true;\n    }\n} // end of class Artwork\n(a) State the relationship between the Artist class and Artwork class. [1]\n(b) Outline what is meant by instantiation of an object. [2]\n(c) Construct the code required to instantiate the artist “Thomas Lucas” from “Ireland”. [3]\n(d) With reference to the Artist and Artwork classes, outline the use of the \nmodifier private. [2]\n(e) Outline two advantages of modularity in program development. [4]\n(f) Construct a UML diagram to represent the Artist class. [3]\n(Option D continues on the following page)\n– 18 – 2225 – 6423\n(Option D continued)\n11. The owner of the art shop would like the artworks separated into three different categories: \npaintings, sculptures, and performances.\nThree classes, Painting, Sculpture, and Performance, are created for the three different \ncategories of artwork.\nThe variable typeOfPaint belongs to Painting. It holds the name of the type of paint used.\nThe variable weight belongs to Sculpture. It holds the weight of a sculpture.\nThe variable needForSound belongs to Performance. It states whether sound is needed for \nthe performance.\nThe other variables are common to all three classes.\n(a) State a suitable data type for:\n(i) the variable typeOfPaint; [1]\n(ii) the variable weight; [1]\n(iii) the variable needForSound. [1]\n(b) (i)   Outline two advantages of using inheritance. [4]\n(ii) Explain how inheritance could be used to develop the three classes described \n(Painting, Sculpture, and Performance). [3]\nAn array of type Artist has been declared in the main class, and objects are added using \nthe following code:\ntheArtists[0] = new Artist(\"Nishan Nathan\", \"Italy\");\ntheArtists[1] = new Artist(\"Saskia Anna\", \"Egypt\");\ntheArtists[2] = new Artist(\"Kate Matherson\", \"USA\");\nThe variable isSold in the Artwork object needs to be set to true when an artwork has \nbeen sold.\n(c) Construct a method, Sold(String artistName, String artworkTitle), that will \nloop through the array theArtists array and set the isSold variable to true.\nYou can assume the artwork exists in theArtworks array. [6]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-17.png",
+          "source_pdf_page": 17,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-18.png",
+          "source_pdf_page": 18,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-19.png",
+          "source_pdf_page": 19,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: the variable weight;",
+        "State a suitable Python type for mass_kg,which can include a fractional number of kilograms"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-046",
+        "filename": "Computer_science_paper_2_TZ3_SL_markscheme.pdf",
+        "pdf_pages": [
+          24
+        ],
+        "question_reference": "Q11 a-ii",
+        "marking_summary": "Exact original MS leaf excerpt: Award [1] int; float; double;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [1]\nint;\nfloat;\ndouble;",
+        "source_issues": [],
+        "source_marking_evidence": "– 24 – 2225 – 6423M \n11. (a) (i)  Award [1]\nString \n(ii)  Award [1]\nint;\nfloat;\ndouble;\n(iii) Award [1]\nboolean;\nNote: Award the mark as long as the data type is stated correctly.\n(b) (i)  Award [4 max]\nAward [1] for each advantage and [1] for expanding it \nReuse of code; \nthrough inheritance sub classes can use methods of the superclass / less code needs to be \nwritten / saves time in coding; \nCode flexibility/extensibility; \nextending the parent’s action and data, without redefining them (polymorphism); \nchild class redefines the base class methods (Overriding); \nto provide a different functionality to existing method of the parent class; \nEasy to debug; \nAs the existing code (base class methods) are already tested / less code needs to be \ndebugged; \nEasier to maintain; \nas the changes in the parent class are automatically reflected in the child class; \nMark as [2] and [2] \n(ii) Award [3 max]\nAll the of the common attributes related to the art works could be in a superclass\n(Artwork);\nSpecific attributes related to the different types of artwork could be added to the sub\nclasses       (Painting/Sculpture/Performance);\nWhen instantiating an artwork the specific artwork would be chosen rather than “Artwork”;\nNote: Reponse must refer to Artwork as base class and Painting / Sculpture / Performance as\nsubclass, to achieve the full marks."
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.1.1",
+          "scope_evidence": "• Data types: Boolean value, char, decimal, integer, string",
+          "rationale": "Adapted target only: State a suitable Python type for mass_kg,which can include a fractional number of kilograms; guidance target: Construct and trace programs using a range of global and local variables of various data types. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC044-Q11-a-ii"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC044-Q11-a-iii",
+      "source_id": "SRC-044",
+      "source_filename": "Computer_science_paper_2_TZ3_SL (1).pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "D",
+      "question": 11,
+      "subquestion": "a-iii",
+      "source_pdf_pages": [
+        19
+      ],
+      "source_printed_pages": [
+        "18"
+      ],
+      "original_marks": 1,
+      "command_term": "State",
+      "original_text": "the variable needForSound.",
+      "parent_context": "– 16 – 2225 – 6423\nOption D — Object-oriented programming\n10. An art shop sells the work of several artists. Each artist has many artworks for sale. A system \nis designed to manage artworks, sales and customers.\nThe following shows part of the code for the two classes, Artist and Artwork:\npublic class Artist {\n    private String artistName;      // name of the artist\n    private String artistLocation;  // current location of the artist\n    private int noOfArtworks;       // number of works of art the artist has \n                                    // stored in the array theArtworks\n    private Artwork [] theArtworks; // details of the works of art produced \n                                    // by the artist\n    public Artist(String artistName, String artistLocation){\n        this.artistName = artistName;\n        this.artistLocation = artistLocation;\n        noOfArtworks = 0;\n        theArtworks = new Artwork [100]; // an artist has a maximum of 100\n                                         // artworks\n    }\n    public String getName() {\n        return artistName;\n    }\n    public String getLocation() {\n        return artistLocation;\n    }\n    public Artwork getArtwork(int x) {\n        return theArtworks[x];\n    }\n    public void addArtwork(Artwork x) {\n        theArtworks[noOfArtworks] = x;\n        noOfArtworks = noOfArtworks + 1;\n    }\n    public double commissionToPay() {\n        // code missing\n    }\n \n    public Artwork[] sortArt() {\n        // code missing\n    }\n} // end of class Artist\n(Option D continues on the following page)\n– 17 – 2225 – 6423\nTurn over\n(Option D, question 10 continued)\npublic class Artwork {\n    private String artworkTitle; // name of the artwork\n    private int artworkPrice;    // price of artwork\n    private boolean isSold;      // if the artwork has been sold or not\n    public Artwork(String artworkTitle, int artworkPrice) {\n        this.artworkTitle = artworkTitle;\n        this.artworkPrice = artworkPrice;\n        isSold = false; // default value is not sold\n    }\n    public String getArtworkTitle(){\n        return artworkTitle;\n    }\n    public void isSold(){\n        isSold = true;\n    }\n} // end of class Artwork\n(a) State the relationship between the Artist class and Artwork class. [1]\n(b) Outline what is meant by instantiation of an object. [2]\n(c) Construct the code required to instantiate the artist “Thomas Lucas” from “Ireland”. [3]\n(d) With reference to the Artist and Artwork classes, outline the use of the \nmodifier private. [2]\n(e) Outline two advantages of modularity in program development. [4]\n(f) Construct a UML diagram to represent the Artist class. [3]\n(Option D continues on the following page)\n– 18 – 2225 – 6423\n(Option D continued)\n11. The owner of the art shop would like the artworks separated into three different categories: \npaintings, sculptures, and performances.\nThree classes, Painting, Sculpture, and Performance, are created for the three different \ncategories of artwork.\nThe variable typeOfPaint belongs to Painting. It holds the name of the type of paint used.\nThe variable weight belongs to Sculpture. It holds the weight of a sculpture.\nThe variable needForSound belongs to Performance. It states whether sound is needed for \nthe performance.\nThe other variables are common to all three classes.\n(a) State a suitable data type for:\n(i) the variable typeOfPaint; [1]\n(ii) the variable weight; [1]\n(iii) the variable needForSound. [1]\n(b) (i)   Outline two advantages of using inheritance. [4]\n(ii) Explain how inheritance could be used to develop the three classes described \n(Painting, Sculpture, and Performance). [3]\nAn array of type Artist has been declared in the main class, and objects are added using \nthe following code:\ntheArtists[0] = new Artist(\"Nishan Nathan\", \"Italy\");\ntheArtists[1] = new Artist(\"Saskia Anna\", \"Egypt\");\ntheArtists[2] = new Artist(\"Kate Matherson\", \"USA\");\nThe variable isSold in the Artwork object needs to be set to true when an artwork has \nbeen sold.\n(c) Construct a method, Sold(String artistName, String artworkTitle), that will \nloop through the array theArtists array and set the isSold variable to true.\nYou can assume the artwork exists in theArtworks array. [6]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-17.png",
+          "source_pdf_page": 17,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-18.png",
+          "source_pdf_page": 18,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-19.png",
+          "source_pdf_page": 19,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: the variable needForSound.",
+        "State a suitable Python type for needs_power,which stores either True or False"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-046",
+        "filename": "Computer_science_paper_2_TZ3_SL_markscheme.pdf",
+        "pdf_pages": [
+          24
+        ],
+        "question_reference": "Q11 a-iii",
+        "marking_summary": "Exact original MS leaf excerpt: Award [1] boolean; Note: Award the mark as long as the data type is stated correctly.",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [1]\nboolean;\nNote: Award the mark as long as the data type is stated correctly.",
+        "source_issues": [],
+        "source_marking_evidence": "– 24 – 2225 – 6423M \n11. (a) (i)  Award [1]\nString \n(ii)  Award [1]\nint;\nfloat;\ndouble;\n(iii) Award [1]\nboolean;\nNote: Award the mark as long as the data type is stated correctly.\n(b) (i)  Award [4 max]\nAward [1] for each advantage and [1] for expanding it \nReuse of code; \nthrough inheritance sub classes can use methods of the superclass / less code needs to be \nwritten / saves time in coding; \nCode flexibility/extensibility; \nextending the parent’s action and data, without redefining them (polymorphism); \nchild class redefines the base class methods (Overriding); \nto provide a different functionality to existing method of the parent class; \nEasy to debug; \nAs the existing code (base class methods) are already tested / less code needs to be \ndebugged; \nEasier to maintain; \nas the changes in the parent class are automatically reflected in the child class; \nMark as [2] and [2] \n(ii) Award [3 max]\nAll the of the common attributes related to the art works could be in a superclass\n(Artwork);\nSpecific attributes related to the different types of artwork could be added to the sub\nclasses       (Painting/Sculpture/Performance);\nWhen instantiating an artwork the specific artwork would be chosen rather than “Artwork”;\nNote: Reponse must refer to Artwork as base class and Painting / Sculpture / Performance as\nsubclass, to achieve the full marks."
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.1.1",
+          "scope_evidence": "• Data types: Boolean value, char, decimal, integer, string",
+          "rationale": "Adapted target only: State a suitable Python type for needs_power,which stores either True or False; guidance target: Construct and trace programs using a range of global and local variables of various data types. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC044-Q11-a-iii"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC044-Q11-b-i",
+      "source_id": "SRC-044",
+      "source_filename": "Computer_science_paper_2_TZ3_SL (1).pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "D",
+      "question": 11,
+      "subquestion": "b-i",
+      "source_pdf_pages": [
+        19
+      ],
+      "source_printed_pages": [
+        "18"
+      ],
+      "original_marks": 4,
+      "command_term": "Outline",
+      "original_text": "Outline two advantages of using inheritance.",
+      "parent_context": "– 16 – 2225 – 6423\nOption D — Object-oriented programming\n10. An art shop sells the work of several artists. Each artist has many artworks for sale. A system \nis designed to manage artworks, sales and customers.\nThe following shows part of the code for the two classes, Artist and Artwork:\npublic class Artist {\n    private String artistName;      // name of the artist\n    private String artistLocation;  // current location of the artist\n    private int noOfArtworks;       // number of works of art the artist has \n                                    // stored in the array theArtworks\n    private Artwork [] theArtworks; // details of the works of art produced \n                                    // by the artist\n    public Artist(String artistName, String artistLocation){\n        this.artistName = artistName;\n        this.artistLocation = artistLocation;\n        noOfArtworks = 0;\n        theArtworks = new Artwork [100]; // an artist has a maximum of 100\n                                         // artworks\n    }\n    public String getName() {\n        return artistName;\n    }\n    public String getLocation() {\n        return artistLocation;\n    }\n    public Artwork getArtwork(int x) {\n        return theArtworks[x];\n    }\n    public void addArtwork(Artwork x) {\n        theArtworks[noOfArtworks] = x;\n        noOfArtworks = noOfArtworks + 1;\n    }\n    public double commissionToPay() {\n        // code missing\n    }\n \n    public Artwork[] sortArt() {\n        // code missing\n    }\n} // end of class Artist\n(Option D continues on the following page)\n– 17 – 2225 – 6423\nTurn over\n(Option D, question 10 continued)\npublic class Artwork {\n    private String artworkTitle; // name of the artwork\n    private int artworkPrice;    // price of artwork\n    private boolean isSold;      // if the artwork has been sold or not\n    public Artwork(String artworkTitle, int artworkPrice) {\n        this.artworkTitle = artworkTitle;\n        this.artworkPrice = artworkPrice;\n        isSold = false; // default value is not sold\n    }\n    public String getArtworkTitle(){\n        return artworkTitle;\n    }\n    public void isSold(){\n        isSold = true;\n    }\n} // end of class Artwork\n(a) State the relationship between the Artist class and Artwork class. [1]\n(b) Outline what is meant by instantiation of an object. [2]\n(c) Construct the code required to instantiate the artist “Thomas Lucas” from “Ireland”. [3]\n(d) With reference to the Artist and Artwork classes, outline the use of the \nmodifier private. [2]\n(e) Outline two advantages of modularity in program development. [4]\n(f) Construct a UML diagram to represent the Artist class. [3]\n(Option D continues on the following page)\n– 18 – 2225 – 6423\n(Option D continued)\n11. The owner of the art shop would like the artworks separated into three different categories: \npaintings, sculptures, and performances.\nThree classes, Painting, Sculpture, and Performance, are created for the three different \ncategories of artwork.\nThe variable typeOfPaint belongs to Painting. It holds the name of the type of paint used.\nThe variable weight belongs to Sculpture. It holds the weight of a sculpture.\nThe variable needForSound belongs to Performance. It states whether sound is needed for \nthe performance.\nThe other variables are common to all three classes.\n(a) State a suitable data type for:\n(i) the variable typeOfPaint; [1]\n(ii) the variable weight; [1]\n(iii) the variable needForSound. [1]\n(b) (i)   Outline two advantages of using inheritance. [4]\n(ii) Explain how inheritance could be used to develop the three classes described \n(Painting, Sculpture, and Performance). [3]\nAn array of type Artist has been declared in the main class, and objects are added using \nthe following code:\ntheArtists[0] = new Artist(\"Nishan Nathan\", \"Italy\");\ntheArtists[1] = new Artist(\"Saskia Anna\", \"Egypt\");\ntheArtists[2] = new Artist(\"Kate Matherson\", \"USA\");\nThe variable isSold in the Artwork object needs to be set to true when an artwork has \nbeen sold.\n(c) Construct a method, Sold(String artistName, String artworkTitle), that will \nloop through the array theArtists array and set the isSold variable to true.\nYou can assume the artwork exists in theArtworks array. [6]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-17.png",
+          "source_pdf_page": 17,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-18.png",
+          "source_pdf_page": 18,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-19.png",
+          "source_pdf_page": 19,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline two advantages of using inheritance.",
+        "Outline two advantages of using inheritance for related Product types"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-046",
+        "filename": "Computer_science_paper_2_TZ3_SL_markscheme.pdf",
+        "pdf_pages": [
+          24
+        ],
+        "question_reference": "Q11 b-i",
+        "marking_summary": "Exact original MS leaf excerpt: Award [4 max] Award [1] for each advantage and [1] for expanding it Reuse of code; through inheritance sub classes can use methods of the superclass / less code needs to be written / saves time in coding; Code flexibility/extensibility; extending the parent’s action and data, without redefining them (polymorphism); child class redefines the base class methods (Overriding); to provide a different functionality to existing method of the parent class; Easy to debug; As the existing code (base class methods) are already tested / less code needs to be debugged; Easier to maintain; as the changes in the parent class are automatically reflected in the child class; Mark as [2] and [2]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [4 max]\nAward [1] for each advantage and [1] for expanding it \nReuse of code; \nthrough inheritance sub classes can use methods of the superclass / less code needs to be \nwritten / saves time in coding; \nCode flexibility/extensibility; \nextending the parent’s action and data, without redefining them (polymorphism); \nchild class redefines the base class methods (Overriding); \nto provide a different functionality to existing method of the parent class; \nEasy to debug; \nAs the existing code (base class methods) are already tested / less code needs to be \ndebugged; \nEasier to maintain; \nas the changes in the parent class are automatically reflected in the child class; \nMark as [2] and [2]",
+        "source_issues": [],
+        "source_marking_evidence": "– 24 – 2225 – 6423M \n11. (a) (i)  Award [1]\nString \n(ii)  Award [1]\nint;\nfloat;\ndouble;\n(iii) Award [1]\nboolean;\nNote: Award the mark as long as the data type is stated correctly.\n(b) (i)  Award [4 max]\nAward [1] for each advantage and [1] for expanding it \nReuse of code; \nthrough inheritance sub classes can use methods of the superclass / less code needs to be \nwritten / saves time in coding; \nCode flexibility/extensibility; \nextending the parent’s action and data, without redefining them (polymorphism); \nchild class redefines the base class methods (Overriding); \nto provide a different functionality to existing method of the parent class; \nEasy to debug; \nAs the existing code (base class methods) are already tested / less code needs to be \ndebugged; \nEasier to maintain; \nas the changes in the parent class are automatically reflected in the child class; \nMark as [2] and [2] \n(ii) Award [3 max]\nAll the of the common attributes related to the art works could be in a superclass\n(Artwork);\nSpecific attributes related to the different types of artwork could be added to the sub\nclasses       (Painting/Sculpture/Performance);\nWhen instantiating an artwork the specific artwork would be chosen rather than “Artwork”;\nNote: Reponse must refer to Artwork as base class and Painting / Sculpture / Performance as\nsubclass, to achieve the full marks."
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B3.2.1",
+          "scope_evidence": "• How inheritance enables a hierarchical relationship between parent and child classes\n• Extending existing classes, utilizing inheritance to reuse and extend functionalities\n• The impact of inheritance on access to parent class members with different access modifiers (private, public, protected, default)",
+          "rationale": "Original and adapted within-scope skill: Outline two advantages of using inheritance for related Product types; guidance target: Explain and apply the concept of inheritance in OOP to promote code reusability.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC044-Q11-b-i"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC044-Q11-b-ii",
+      "source_id": "SRC-044",
+      "source_filename": "Computer_science_paper_2_TZ3_SL (1).pdf",
+      "year": "2025",
+      "session": "May",
+      "source_level": "SL",
+      "paper": "2",
+      "zone": "TZ3 (filename; numerical cover code)",
+      "option": "D",
+      "question": 11,
+      "subquestion": "b-ii",
+      "source_pdf_pages": [
+        19
+      ],
+      "source_printed_pages": [
+        "18"
+      ],
+      "original_marks": 3,
+      "command_term": "Explain",
+      "original_text": "Explain how inheritance could be used to develop the three classes described (Painting, Sculpture, and Performance).",
+      "parent_context": "– 16 – 2225 – 6423\nOption D — Object-oriented programming\n10. An art shop sells the work of several artists. Each artist has many artworks for sale. A system \nis designed to manage artworks, sales and customers.\nThe following shows part of the code for the two classes, Artist and Artwork:\npublic class Artist {\n    private String artistName;      // name of the artist\n    private String artistLocation;  // current location of the artist\n    private int noOfArtworks;       // number of works of art the artist has \n                                    // stored in the array theArtworks\n    private Artwork [] theArtworks; // details of the works of art produced \n                                    // by the artist\n    public Artist(String artistName, String artistLocation){\n        this.artistName = artistName;\n        this.artistLocation = artistLocation;\n        noOfArtworks = 0;\n        theArtworks = new Artwork [100]; // an artist has a maximum of 100\n                                         // artworks\n    }\n    public String getName() {\n        return artistName;\n    }\n    public String getLocation() {\n        return artistLocation;\n    }\n    public Artwork getArtwork(int x) {\n        return theArtworks[x];\n    }\n    public void addArtwork(Artwork x) {\n        theArtworks[noOfArtworks] = x;\n        noOfArtworks = noOfArtworks + 1;\n    }\n    public double commissionToPay() {\n        // code missing\n    }\n \n    public Artwork[] sortArt() {\n        // code missing\n    }\n} // end of class Artist\n(Option D continues on the following page)\n– 17 – 2225 – 6423\nTurn over\n(Option D, question 10 continued)\npublic class Artwork {\n    private String artworkTitle; // name of the artwork\n    private int artworkPrice;    // price of artwork\n    private boolean isSold;      // if the artwork has been sold or not\n    public Artwork(String artworkTitle, int artworkPrice) {\n        this.artworkTitle = artworkTitle;\n        this.artworkPrice = artworkPrice;\n        isSold = false; // default value is not sold\n    }\n    public String getArtworkTitle(){\n        return artworkTitle;\n    }\n    public void isSold(){\n        isSold = true;\n    }\n} // end of class Artwork\n(a) State the relationship between the Artist class and Artwork class. [1]\n(b) Outline what is meant by instantiation of an object. [2]\n(c) Construct the code required to instantiate the artist “Thomas Lucas” from “Ireland”. [3]\n(d) With reference to the Artist and Artwork classes, outline the use of the \nmodifier private. [2]\n(e) Outline two advantages of modularity in program development. [4]\n(f) Construct a UML diagram to represent the Artist class. [3]\n(Option D continues on the following page)\n– 18 – 2225 – 6423\n(Option D continued)\n11. The owner of the art shop would like the artworks separated into three different categories: \npaintings, sculptures, and performances.\nThree classes, Painting, Sculpture, and Performance, are created for the three different \ncategories of artwork.\nThe variable typeOfPaint belongs to Painting. It holds the name of the type of paint used.\nThe variable weight belongs to Sculpture. It holds the weight of a sculpture.\nThe variable needForSound belongs to Performance. It states whether sound is needed for \nthe performance.\nThe other variables are common to all three classes.\n(a) State a suitable data type for:\n(i) the variable typeOfPaint; [1]\n(ii) the variable weight; [1]\n(iii) the variable needForSound. [1]\n(b) (i)   Outline two advantages of using inheritance. [4]\n(ii) Explain how inheritance could be used to develop the three classes described \n(Painting, Sculpture, and Performance). [3]\nAn array of type Artist has been declared in the main class, and objects are added using \nthe following code:\ntheArtists[0] = new Artist(\"Nishan Nathan\", \"Italy\");\ntheArtists[1] = new Artist(\"Saskia Anna\", \"Egypt\");\ntheArtists[2] = new Artist(\"Kate Matherson\", \"USA\");\nThe variable isSold in the Artwork object needs to be set to true when an artwork has \nbeen sold.\n(c) Construct a method, Sold(String artistName, String artworkTitle), that will \nloop through the array theArtists array and set the isSold variable to true.\nYou can assume the artwork exists in theArtworks array. [6]\n(Option D continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-17.png",
+          "source_pdf_page": 17,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-18.png",
+          "source_pdf_page": 18,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-19.png",
+          "source_pdf_page": 19,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Explain how inheritance could be used to develop the three classes described (Painting, Sculpture, and Performance).",
+        "Explain a class hierarchy for Book,Model and AudioProduct,which share title and price but respectively add page_count,material and duration"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-046",
+        "filename": "Computer_science_paper_2_TZ3_SL_markscheme.pdf",
+        "pdf_pages": [
+          24
+        ],
+        "question_reference": "Q11 b-ii",
+        "marking_summary": "Exact original MS leaf excerpt: Award [3 max] All the of the common attributes related to the art works could be in a superclass (Artwork); Specific attributes related to the different types of artwork could be added to the sub classes (Painting/Sculpture/Performance); When instantiating an artwork the specific artwork would be chosen rather than “Artwork”; Note: Reponse must refer to Artwork as base class and Painting / Sculpture / Performance as subclass, to achieve the full marks.",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [3 max]\nAll the of the common attributes related to the art works could be in a superclass\n(Artwork);\nSpecific attributes related to the different types of artwork could be added to the sub\nclasses       (Painting/Sculpture/Performance);\nWhen instantiating an artwork the specific artwork would be chosen rather than “Artwork”;\nNote: Reponse must refer to Artwork as base class and Painting / Sculpture / Performance as\nsubclass, to achieve the full marks.",
+        "source_issues": [],
+        "source_marking_evidence": "– 24 – 2225 – 6423M \n11. (a) (i)  Award [1]\nString \n(ii)  Award [1]\nint;\nfloat;\ndouble;\n(iii) Award [1]\nboolean;\nNote: Award the mark as long as the data type is stated correctly.\n(b) (i)  Award [4 max]\nAward [1] for each advantage and [1] for expanding it \nReuse of code; \nthrough inheritance sub classes can use methods of the superclass / less code needs to be \nwritten / saves time in coding; \nCode flexibility/extensibility; \nextending the parent’s action and data, without redefining them (polymorphism); \nchild class redefines the base class methods (Overriding); \nto provide a different functionality to existing method of the parent class; \nEasy to debug; \nAs the existing code (base class methods) are already tested / less code needs to be \ndebugged; \nEasier to maintain; \nas the changes in the parent class are automatically reflected in the child class; \nMark as [2] and [2] \n(ii) Award [3 max]\nAll the of the common attributes related to the art works could be in a superclass\n(Artwork);\nSpecific attributes related to the different types of artwork could be added to the sub\nclasses       (Painting/Sculpture/Performance);\nWhen instantiating an artwork the specific artwork would be chosen rather than “Artwork”;\nNote: Reponse must refer to Artwork as base class and Painting / Sculpture / Performance as\nsubclass, to achieve the full marks."
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B3.2.1",
+          "scope_evidence": "• How inheritance enables a hierarchical relationship between parent and child classes\n• Extending existing classes, utilizing inheritance to reuse and extend functionalities\n• The impact of inheritance on access to parent class members with different access modifiers (private, public, protected, default)",
+          "rationale": "Adapted target only: Explain a class hierarchy for Book,Model and AudioProduct,which share title and price but respectively add page_count,material and duration; guidance target: Explain and apply the concept of inheritance in OOP to promote code reusability. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC044-Q11-b-ii"
+      ]
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC044-Q10-d",
+      "source_question_ids": [
+        "H-SRC044-Q10-d"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline how information hiding can control changes to a Product object’s price.",
+      "syllabus_codes": [
+        "B3.1.5"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Preserves private-access reasoning with a Python-appropriate controlled interface; naming conventions alone are not claimed to enforce security.",
+      "solution": "Keep price behind a controlled class interface instead of allowing arbitrary external changes. A set_price method can reject negative values before updating state.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Limits direct external access to price."
+        },
+        {
+          "marks": 1,
+          "criterion": "Controlled/validating method preserves valid state."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          22
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC044-Q10-e",
+      "source_question_ids": [
+        "H-SRC044-Q10-e"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline two benefits of decomposing a sales program into functions for input, calculation and reporting.",
+      "syllabus_codes": [
+        "B1.1.2",
+        "B1.1.3"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 4,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Explicitly assesses decomposition from computational thinking rather than an unsupported broad modularity slogan.",
+      "solution": "Each function can be tested separately with a small clear responsibility, helping isolate defects. Independent functions with agreed interfaces can be reused or developed by different programmers, so changes are easier to manage without rewriting the whole program.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Separate small responsibilities/testing benefit."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains fault isolation."
+        },
+        {
+          "marks": 1,
+          "criterion": "Distinct reuse/parallel-development/maintenance benefit."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains agreed interface/local change consequence."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          22
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC044-Q10-f",
+      "source_question_ids": [
+        "H-SRC044-Q10-f"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Construct a UML class box for Producer. It has private name:str, region:str and products:list, plus public get_name():str and add_product(product). Use visibility notation.",
+      "syllabus_codes": [
+        "B3.1.2"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 3,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Three compartments headed Producer; attributes -name:str, -region:str, -products:list; operations +get_name():str, +add_product(product).",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Named class with three compartments."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct attributes and methods."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct private/public visibility notation."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          23
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC044-Q11-a-i",
+      "source_question_ids": [
+        "H-SRC044-Q11-a-i"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "State a suitable Python type for material_name, which stores a material’s name.",
+      "syllabus_codes": [
+        "B2.1.1"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 1,
+      "command_term": "State",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "str.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "str/string."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          24
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC044-Q11-a-ii",
+      "source_question_ids": [
+        "H-SRC044-Q11-a-ii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "State a suitable Python type for mass_kg, which can include a fractional number of kilograms.",
+      "syllabus_codes": [
+        "B2.1.1"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 1,
+      "command_term": "State",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "float.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "float or justified decimal numeric representation."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          24
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC044-Q11-a-iii",
+      "source_question_ids": [
+        "H-SRC044-Q11-a-iii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "State a suitable Python type for needs_power, which stores either True or False.",
+      "syllabus_codes": [
+        "B2.1.1"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 1,
+      "command_term": "State",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "bool.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "bool/Boolean."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          24
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC044-Q11-b-i",
+      "source_question_ids": [
+        "H-SRC044-Q11-b-i"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline two advantages of using inheritance for related Product types.",
+      "syllabus_codes": [
+        "B3.2.1"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 4,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Common fields/methods can be defined once in Product and reused by subclasses, reducing duplication. A correction to shared inherited behaviour can then benefit those subclasses without separately patching many copies, improving maintenance consistency.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Common code reused through parent."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains reduced repeated implementation."
+        },
+        {
+          "marks": 1,
+          "criterion": "Shared changes benefit subclasses."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains consistent/easier maintenance."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          24
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC044-Q11-b-ii",
+      "source_question_ids": [
+        "H-SRC044-Q11-b-ii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Explain a class hierarchy for Book, Model and AudioProduct, which share title and price but respectively add page_count, material and duration.",
+      "syllabus_codes": [
+        "B3.2.1"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 3,
+      "command_term": "Explain",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Product defines shared title and price and common operations. Book, Model and AudioProduct inherit Product and add their own specific attribute. Objects are created using the appropriate specialized class, retaining the shared interface/state.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Product superclass holds common fields/behaviour."
+        },
+        {
+          "marks": 1,
+          "criterion": "Three subclasses inherit and add correct specialized fields."
+        },
+        {
+          "marks": 1,
+          "criterion": "Appropriate specialized instances retain/reuse common design."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          24
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    }
+  ]
+}

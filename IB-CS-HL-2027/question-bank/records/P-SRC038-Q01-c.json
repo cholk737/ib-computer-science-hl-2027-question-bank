@@ -1,0 +1,51 @@
+{
+  "question_id": "P-SRC038-Q01-c",
+  "source_question_ids": [
+    "H-SRC038-Q01-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A transaction transfers an item from store A to store B by decreasing A’s count and increasing B’s count. Describe the database state before the transaction, during its updates, and after a successful COMMIT.",
+  "syllabus_codes": [
+    "A3.3.6"
+  ],
+  "theme": "A",
+  "level": "HL-only",
+  "marks": 3,
+  "command_term": "Describe",
+  "difficulty": "medium",
+  "adaptation_rationale": "Uses the explicit 2027 commit/transaction scope rather than requiring an old named transaction-state taxonomy.",
+  "solution": "Before it begins, both counts satisfy the inventory rules. During the transaction, one update may have occurred while the other is pending; those partial changes must not be treated as a completed transfer. COMMIT makes both changes durable together, leaving a consistent inventory total.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initially consistent counts."
+    },
+    {
+      "marks": 1,
+      "criterion": "Intermediate partial updates are not a completed transfer."
+    },
+    {
+      "marks": 1,
+      "criterion": "Commit preserves both updates and restores the required consistent total."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      6
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC038-Q01-c.json",
+  "question_path": "question-bank/questions/P-SRC038-Q01-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC038-Q01-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

@@ -23,8 +23,15 @@ def add(q,sub,page,marks,command,text,context,codes,status,prompt='',points=None
 def pts(*items):return [dict(marks=m,criterion=t) for m,t in items]
 def save_batches(sid,complete=False,expected_total=None,candidate_total=None,notes=''):
  records=DATA[sid];paths=[]
- for i in range(0,len(records),8):
-  chunk=records[i:i+8];name=f'{sid}-b{i//8+1:03}.json';path=O/'batches'/name;path.parent.mkdir(exist_ok=True)
+ byid={a['source_question_id']:(a,b) for a,b in records};groups=[];seen=set();lastnum=0
+ for prior in sorted((O/'batches').glob(sid+'-b*.json')):
+  lastnum=max(lastnum,int(prior.stem.rsplit('b',1)[1]));old=json.loads(prior.read_text());ids=[a['source_question_id'] for a in old['source_questions']]
+  if all(x in byid for x in ids):groups.append((prior.name,[byid[x] for x in ids]));seen.update(ids)
+ remaining=[(a,b) for a,b in records if a['source_question_id'] not in seen]
+ for i in range(0,len(remaining),8):
+  lastnum+=1;groups.append((f'{sid}-b{lastnum:03}.json',remaining[i:i+8]))
+ for name,chunk in groups:
+  path=O/'batches'/name;path.parent.mkdir(exist_ok=True)
   obj=dict(source_id=sid,batch_id=name[:-5],source_questions=[a for a,b in chunk],practice_questions=[b for a,b in chunk if b]);tmp=path.with_suffix('.tmp');tmp.write_text(json.dumps(obj,ensure_ascii=False,indent=2));tmp.replace(path);paths.append(name)
  d=O/'papers'/sid;d.mkdir(parents=True,exist_ok=True)
  tree=[dict(id=a['source_question_id'],question=a['question'],subquestion=a['subquestion'],marks=a['original_marks'],pdf_pages=a['source_pdf_pages']) for a,b in records]

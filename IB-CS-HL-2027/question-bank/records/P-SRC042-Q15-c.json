@@ -1,0 +1,64 @@
+{
+  "question_id": "P-SRC042-Q15-c",
+  "source_question_ids": [
+    "H-SRC042-Q15-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct mark_sold(producers, producer_name, title) in Python. Each producer has name and products; each product has title and method mark_sold(). Names/titles identify exactly one existing product. Search for that product, call its method once, and stop.",
+  "syllabus_codes": [
+    "B2.2.2",
+    "B2.3.2",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 6,
+  "command_term": "Construct",
+  "difficulty": "high",
+  "adaptation_rationale": "Retains nested object-list search and field access; no class construction coverage claimed for an existing object-method task.",
+  "solution": "def mark_sold(producers,producer_name,title):\n    for producer in producers:\n        if producer.name == producer_name:\n            for product in producer.products:\n                if product.title == title:\n                    product.mark_sold()\n                    return",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Traverses producer objects."
+    },
+    {
+      "marks": 1,
+      "criterion": "Matches producer.name with producer_name."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses only that producer’s product list."
+    },
+    {
+      "marks": 1,
+      "criterion": "Matches product.title with title."
+    },
+    {
+      "marks": 1,
+      "criterion": "Calls mark_sold on the matching product."
+    },
+    {
+      "marks": 1,
+      "criterion": "Stops after that update without marking other products."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "Executable checks saved under checks/ where applicable."
+  },
+  "code": "def mark_sold(producers,producer_name,title):\n    for producer in producers:\n        if producer.name == producer_name:\n            for product in producer.products:\n                if product.title == title:\n                    product.mark_sold()\n                    return",
+  "test_code": "from types import SimpleNamespace\nclass Product:\n def __init__(self,title):self.title=title;self.calls=0\n def mark_sold(self):self.calls+=1\na,b,c=Product(\"A\"),Product(\"B\"),Product(\"C\")\nps=[SimpleNamespace(name=\"One\",products=[a,b]),SimpleNamespace(name=\"Two\",products=[c])]\nmark_sold(ps,\"One\",\"B\");assert [x.calls for x in [a,b,c]]==[0,1,0]",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC042-Q15-c.json",
+  "question_path": "question-bank/questions/P-SRC042-Q15-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC042-Q15-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

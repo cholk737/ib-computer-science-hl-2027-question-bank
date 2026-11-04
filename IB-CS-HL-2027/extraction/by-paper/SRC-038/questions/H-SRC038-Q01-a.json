@@ -1,0 +1,76 @@
+{
+  "source_question_id": "H-SRC038-Q01-a",
+  "source_id": "SRC-038",
+  "source_filename": "Computer_science_paper_2_HL.pdf",
+  "year": "2025",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "not stated",
+  "option": "A",
+  "question": 1,
+  "subquestion": "a",
+  "source_pdf_pages": [
+    4
+  ],
+  "source_printed_pages": [
+    "3"
+  ],
+  "original_marks": 3,
+  "command_term": "Construct",
+  "original_text": "Construct an entity-relationship diagram (ERD) that shows the relationships between clinic, dentist, and nurse.",
+  "parent_context": "– 3 – 8825 – 6405\nTurn over\nOption A — Databases\n1. A dental clinic employs dentists and nurses.\n\ty Many dentists work at a single dental clinic.\n\ty Many nurses work at a single dental clinic.\n\ty A dentist can work with many nurses.\n\ty A nurse can assist many dentists.\n(a) Construct an entity-relationship diagram (ERD) that shows the relationships between \nclinic, dentist, and nurse. [3]\nA dentist adds comments to the clinic’s database using an electronic device rather than using \na paper-based medical record.\n(b) Explain two advantages of storing medical notes in a database. [6]\nA database transaction occurs when a patient pays their bill. To maintain data consistency \nand integrity during the transaction, the database goes through several states.\n(c) Describe the change in database states when a transaction is updated. [3]\nLog files are stored prior to database updates. If the database crashes, the log files are used \nto recover the database.\n(d) Describe the steps used in log recovery when a database crashes. [3]\n(Option A continues on the following page)",
+  "assets": [
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-04.png",
+      "source_pdf_page": 4,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Construct an entity-relationship diagram (ERD) that shows the relationships between clinic, dentist, and nurse.",
+    "A museum has many departments"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-039",
+    "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+    "pdf_pages": [
+      4
+    ],
+    "question_reference": "Q1 a",
+    "marking_summary": "Exact original MS leaf excerpt: Award [3] max Award [1] mark for each correct relationship (valid symbols required); Award [1] mark for the two 1-M relationships with a link table; Award [1] mark for identifying all entities if no relationship mark has been awarded; Note: Accept answers that include a LinkTable to remove many-to-many. Dentist Clinic Nurse work at work at work with Dentist Clinic Nurse work at work at works LinkTable works",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [3] max\nAward [1] mark for each correct relationship (valid symbols required); \nAward [1] mark for the two 1-M relationships with a link table; \nAward [1] mark for identifying all entities if no relationship mark has been awarded; \nNote: Accept answers that include a LinkTable to remove many-to-many. \nDentist \nClinic \nNurse \nwork at\n \n work at\n \nwork with \nDentist \nClinic \nNurse \nwork at\n \n work at\n \nworks\n \n LinkTable \n works",
+    "source_issues": [],
+    "source_marking_evidence": "– 4 – 8825 – 6405M \nOption A — Databases \n1. (a) Award [3] max\nAward [1] mark for each correct relationship (valid symbols required); \nAward [1] mark for the two 1-M relationships with a link table; \nAward [1] mark for identifying all entities if no relationship mark has been awarded; \nNote: Accept answers that include a LinkTable to remove many-to-many. \nDentist \nClinic \nNurse \nwork at\n \n work at\n \nwork with \nDentist \nClinic \nNurse \nwork at\n \n work at\n \nworks\n \n LinkTable \n works\n "
+  },
+  "relevance_status": "A",
+  "mappings": [
+    {
+      "syllabus_code": "A3.2.2",
+      "scope_evidence": "• The significance of entity relationship diagrams (ERDs) in crafting organized, efficient database designs tailored for specific applications\n• The relationships between different data entities within a database\n• The roles of cardinality and modality in defining relationships in ERDs",
+      "rationale": "Original and adapted within-scope skill: A museum has many departments; guidance target: Construct ERDs.",
+      "theme": "A",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC038-Q01-a"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

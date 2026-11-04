@@ -1,0 +1,47 @@
+{
+  "question_id": "P-SRC044-Q09-c",
+  "unofficial": true,
+  "marks": 6,
+  "solution": "Replication supports fault tolerance: a site failure need not make all records unavailable. But every copy needs appropriate access controls; a weakly protected site can expose data, and incomplete deletion can leave personal records elsewhere. Coordinated updates/deletions and checks across replicas are needed to preserve consistency. Replication is useful for availability only when security and update consistency are managed across all sites.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Replication availability/fault-tolerance benefit."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains a site-failure benefit."
+    },
+    {
+      "marks": 1,
+      "criterion": "Multiple copies increase security-management exposure."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains stale undeleted personal-data risk."
+    },
+    {
+      "marks": 1,
+      "criterion": "Coordinated deletion/update consistency requirement."
+    },
+    {
+      "marks": 1,
+      "criterion": "Balanced contextual conclusion."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      19,
+      20
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

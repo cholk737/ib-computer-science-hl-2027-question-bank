@@ -1,0 +1,64 @@
+{
+  "question_id": "P-SRC028-Q05",
+  "source_question_ids": [
+    "H-SRC028-Q05"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct a trace table showing n, a, s, r after each loop iteration and the final output. Include the initial state, with a undefined before the loop.\n\nn = 4\ns = 0\nr = 0\nwhile n > 0:\n    a = n % 3\n    if a == 0:\n        s -= n\n    elif a == 1:\n        s += n\n    else:\n        s += 1\n    r += s\n    n -= 1\nprint(r)",
+  "syllabus_codes": [
+    "B2.1.4",
+    "B2.3.2",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 6,
+  "command_term": "Construct",
+  "difficulty": "high",
+  "adaptation_rationale": "Nested-selection accumulated trace translated into Python; preserves dependent-state difficulty. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "solution": "Initial n4, s0, r0, a undefined; after iterations(n, a, s, r):(3,1,4,4),(2,0,1,5),(1,2,2,7),(0,1,3,10). Output10.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Correct table headings/initial state."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct n progression3,2,1,0."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct a sequence1,0,2,1."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct s sequence4,1,2,3."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct r sequence4,5,7,10."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct final output10."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 6,
+    "code_execution": "Specific executable boundary and behaviour tests passed; see agents/chunk-2/agent-3-papers-c/technical_checks.json and verify_practice.py."
+  },
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "assets": [],
+  "code": "n = 4\ns = 0\nr = 0\nwhile n > 0:\n    a = n % 3\n    if a == 0:\n        s -= n\n    elif a == 1:\n        s += n\n    else:\n        s += 1\n    r += s\n    n -= 1\nprint(r)",
+  "record_path": "question-bank/records/P-SRC028-Q05.json",
+  "question_path": "question-bank/questions/P-SRC028-Q05.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC028-Q05.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

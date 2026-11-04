@@ -1,0 +1,62 @@
+{
+  "question_id": "P-SRC042-Q11-c",
+  "source_question_ids": [
+    "H-SRC042-Q11-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Discuss privacy and consistency considerations when a distributed database replicates confidential employee records across several sites.",
+  "syllabus_codes": [
+    "A3.4.4"
+  ],
+  "theme": "A",
+  "level": "HL-only",
+  "marks": 6,
+  "command_term": "Discuss",
+  "difficulty": "high",
+  "adaptation_rationale": "Retains distributed-copy/privacy reasoning under explicit distributed-database security/consistency/replication; no requirement to analyse particular laws.",
+  "solution": "Replication creates multiple copies that must remain consistent.; Copies can improve availability after a site failure.; Each site/copy must enforce appropriate data-security controls.; A correction/deletion applied at one site must propagate consistently to other replicas.; Additional copies can enlarge the exposure surface if some sites are poorly protected.; Balanced conclusion weighs resilience/access against consistent protection and replica-management requirements.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Replication creates multiple copies that must remain consistent."
+    },
+    {
+      "marks": 1,
+      "criterion": "Copies can improve availability after a site failure."
+    },
+    {
+      "marks": 1,
+      "criterion": "Each site/copy must enforce appropriate data-security controls."
+    },
+    {
+      "marks": 1,
+      "criterion": "A correction/deletion applied at one site must propagate consistently to other replicas."
+    },
+    {
+      "marks": 1,
+      "criterion": "Additional copies can enlarge the exposure surface if some sites are poorly protected."
+    },
+    {
+      "marks": 1,
+      "criterion": "Balanced conclusion weighs resilience/access against consistent protection and replica-management requirements."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "No executable code required; manual technical check."
+  },
+  "code": "",
+  "test_code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC042-Q11-c.json",
+  "question_path": "question-bank/questions/P-SRC042-Q11-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC042-Q11-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

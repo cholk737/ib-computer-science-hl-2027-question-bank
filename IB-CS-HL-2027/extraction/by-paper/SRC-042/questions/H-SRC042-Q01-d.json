@@ -1,0 +1,96 @@
+{
+  "original_assessment_context": "AlphaHospital ROLE(RoleID,PayGrade);STAFF(StaffID,RoleID,DepartmentID,FirstName,Surname,DateOfBirth);DEPARTMENT(DepartmentID,ManagerID,Building). Narrative says staff can work in several departments although single DepartmentID is shown.",
+  "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+  "source_question_id": "H-SRC042-Q01-d",
+  "source_id": "SRC-042",
+  "source_filename": "Computer_science_paper_2_TZ3_HL.pdf",
+  "year": "2025",
+  "session": "May",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "TZ3 (filename; numerical cover code)",
+  "option": "A",
+  "question": "1",
+  "subquestion": "d",
+  "source_pdf_pages": [
+    3
+  ],
+  "source_printed_pages": [
+    "2"
+  ],
+  "original_marks": 4,
+  "command_term": "Identify",
+  "original_text": "[Source PDF page 3]\n(d) Identify the steps to create a query to list the staff with the surname Waters who are on\npay grade 17. The query must display only FirstName, Surname, and PayGrade. [4]",
+  "parent_context": "AlphaHospital ROLE(RoleID,PayGrade);STAFF(StaffID,RoleID,DepartmentID,FirstName,Surname,DateOfBirth);DEPARTMENT(DepartmentID,ManagerID,Building). Narrative says staff can work in several departments although single DepartmentID is shown.",
+  "assets": [
+    {
+      "kind": "source_page",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-03.png",
+      "source_pdf_page": 3,
+      "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+    }
+  ],
+  "assessed_concepts": [
+    "Identify: Identify the steps to create a query listing staff with surnameWaters andpaygrade17;display FirstName,Surname,PayGrade."
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-043",
+    "filename": "Computer_science_paper_2_TZ3_HL_markscheme.pdf",
+    "pdf_pages": [
+      5
+    ],
+    "question_reference": "1(d)",
+    "marking_summary": "Select requestedfields,join STAFF/ROLE byRoleID,applybothfilters;sourceRoles/ROLEtypo.",
+    "source_issues": [
+      "SRC-043 query example inconsistently refers to ROLE/Roles. The unofficial query has consistent schema identifiers and is executed in SQLite."
+    ]
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "mapping_target": "adapted_practice_only",
+      "syllabus_code": "A3.3.2",
+      "scope_evidence": "• Queries must include joins, relational operators, filtering, pattern matching, and ordering data\n• SQL commands: SELECT, DISTINCT, FROM, WHERE, BETWEEN, ORDER BY, GROUP BY, HAVING, ASC, DESC, JOIN, LIKE with % wildcard, AND, OR, NOT (note: Syntax may vary in different database systems)",
+      "rationale": "Retains two-table query construction with new schema/filter andcorrect consistent table names.",
+      "theme": "A",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+    "marks": "Printed allocation transcribed.",
+    "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+    "official_answer_status": "See source markscheme record"
+  },
+  "original_text_manual_synopsis": "Identify the steps to create a query listing staff with surnameWaters andpaygrade17;display FirstName,Surname,PayGrade.",
+  "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+  "source_page_evidence": [
+    {
+      "pdf_page": 3,
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-003.txt"
+    }
+  ],
+  "source_context_page_evidence": [
+    {
+      "pdf_page": 3,
+      "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-042-page-03.png",
+      "kind": "complete_original_page_raster",
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-042/page-003.txt"
+    }
+  ],
+  "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+  "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2_TZ3_HL.pdf",
+  "source_issues": [
+    "SRC-043 query example inconsistently refers to ROLE/Roles. The unofficial query has consistent schema identifiers and is executed in SQLite."
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC042-Q01-d"
+  ]
+}

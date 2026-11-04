@@ -1,0 +1,57 @@
+{
+  "question_id": "P-SRC038-Q14-c",
+  "source_question_ids": [
+    "H-SRC038-Q14-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Every object in advisers has area, name and completed attributes. Construct selected_names(advisers) returning the names of housing advisers who completed more than 24 requests. Preserve list order.",
+  "syllabus_codes": [
+    "B2.2.2",
+    "B2.3.2",
+    "B2.3.3"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 4,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "One solution:\ndef selected_names(advisers):\n    names = []\n    for adviser in advisers:\n        if adviser.area == \"housing\" and adviser.completed > 24:\n            names.append(adviser.name)\n    return names",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Traverses all advisers."
+    },
+    {
+      "marks": 1,
+      "criterion": "Checks housing area."
+    },
+    {
+      "marks": 1,
+      "criterion": "Checks completed>24 together with area."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns only matching names in order."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed strict boundary and nonmatching category.",
+    "source_comparison": [
+      40
+    ],
+    "test_code": "def selected_names(advisers):\n    names = []\n    for adviser in advisers:\n        if adviser.area == \"housing\" and adviser.completed > 24:\n            names.append(adviser.name)\n    return names\nfrom types import SimpleNamespace as O\nassert selected_names([O(area='housing',completed=24,name='a'),O(area='housing',completed=25,name='b'),O(area='other',completed=40,name='c')])==['b']",
+    "result_file": ""
+  },
+  "code": "def selected_names(advisers):\n    names = []\n    for adviser in advisers:\n        if adviser.area == \"housing\" and adviser.completed > 24:\n            names.append(adviser.name)\n    return names",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC038-Q14-c.json",
+  "question_path": "question-bank/questions/P-SRC038-Q14-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC038-Q14-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

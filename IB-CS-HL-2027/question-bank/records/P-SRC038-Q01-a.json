@@ -1,0 +1,51 @@
+{
+  "question_id": "P-SRC038-Q01-a",
+  "source_question_ids": [
+    "H-SRC038-Q01-a"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A museum has many departments. Each curator and each technician belongs to one department. A curator can work with several technicians, and a technician can work with several curators. Construct an ERD showing these three relationships and their cardinalities.",
+  "syllabus_codes": [
+    "A3.2.2"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 3,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "DEPARTMENT 1—many CURATOR; DEPARTMENT 1—many TECHNICIAN; CURATOR many—many TECHNICIAN. A link entity may resolve the last relationship.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Department to curator is one-to-many."
+    },
+    {
+      "marks": 1,
+      "criterion": "Department to technician is one-to-many."
+    },
+    {
+      "marks": 1,
+      "criterion": "Curator to technician is many-to-many, or correct link-entity resolution."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      4
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC038-Q01-a.json",
+  "question_path": "question-bank/questions/P-SRC038-Q01-a.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC038-Q01-a.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

@@ -1,0 +1,48 @@
+{
+  "question_id": "P-SRC038-Q14-b",
+  "source_question_ids": [
+    "H-SRC038-Q14-b"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A Ticket object has status initially \"open\". Describe selection in a method update_status(result) that sets status=\"resolved\" for result=\"success\", status=\"failed\" for result=\"failure\", and leaves it unchanged for other results.",
+  "syllabus_codes": [
+    "B2.3.2",
+    "B2.3.4"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 2,
+  "command_term": "Describe",
+  "difficulty": "medium",
+  "adaptation_rationale": "Retains method/selection reasoning; modifies existing objects and does not claim class-definition coverage.",
+  "solution": "Test result against success and set self.status to resolved; otherwise test failure and set failed. Other results perform no status assignment.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Correct success test and resolved assignment."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct failure test/failed assignment, preserving other cases."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      40
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC038-Q14-b.json",
+  "question_path": "question-bank/questions/P-SRC038-Q14-b.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC038-Q14-b.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

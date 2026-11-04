@@ -1,0 +1,49 @@
+{
+  "question_id": "P-SRC040-Q01-c",
+  "source_question_ids": [
+    "H-SRC040-Q01-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A transaction transfers 20 credits from account X, initially 70, to account Y, initially 30. Describe the database state before the transaction, after a successful commit, and after rollback if the second update fails.",
+  "syllabus_codes": [
+    "A3.3.6"
+  ],
+  "theme": "A",
+  "level": "HL-only",
+  "marks": 3,
+  "command_term": "Describe",
+  "difficulty": "medium",
+  "adaptation_rationale": "Retain consistent transaction, commit and rollback reasoning; do not require an unsupported state-machine taxonomy. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "solution": "Before: X=70 and Y=30, total 100. Commit: X=50 and Y=50, total 100. If the credit to Y fails, rollback must undo the debit so X=70 and Y=30; no partial transfer remains.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Correct original consistent balances."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct committed balances preserving total."
+    },
+    {
+      "marks": 1,
+      "criterion": "Rollback restores both original balances, avoiding a partial transfer."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 3,
+    "code_execution": "No executable code required; explicit answer/trace checked manually."
+  },
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "assets": [],
+  "record_path": "question-bank/records/P-SRC040-Q01-c.json",
+  "question_path": "question-bank/questions/P-SRC040-Q01-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC040-Q01-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

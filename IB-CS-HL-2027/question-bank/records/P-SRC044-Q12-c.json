@@ -1,0 +1,67 @@
+{
+  "question_id": "P-SRC044-Q12-c",
+  "source_question_ids": [
+    "H-SRC044-Q12-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct commission(products). Each product has price and sold. Return12% of the sum of prices of sold products only. products can be empty.",
+  "syllabus_codes": [
+    "B2.2.2",
+    "B2.3.1",
+    "B2.3.2",
+    "B2.3.3",
+    "B2.3.4"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 6,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "One solution:\ndef commission(products):\n    total = 0\n    for product in products:\n        if product.sold:\n            total += product.price\n    return total * 0.12",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Initializes total0."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses all products."
+    },
+    {
+      "marks": 1,
+      "criterion": "Tests sold status."
+    },
+    {
+      "marks": 1,
+      "criterion": "Adds each sold product price once."
+    },
+    {
+      "marks": 1,
+      "criterion": "Computes12% of correct total."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns result, including0 for empty/no sales."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed mixed sold/unsold and empty cases.",
+    "source_comparison": [
+      27
+    ],
+    "test_code": "def commission(products):\n    total = 0\n    for product in products:\n        if product.sold:\n            total += product.price\n    return total * 0.12\nfrom types import SimpleNamespace as O\nassert commission([O(price=100,sold=True),O(price=200,sold=False),O(price=50,sold=True)])==18\nassert commission([])==0",
+    "result_file": ""
+  },
+  "code": "def commission(products):\n    total = 0\n    for product in products:\n        if product.sold:\n            total += product.price\n    return total * 0.12",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC044-Q12-c.json",
+  "question_path": "question-bank/questions/P-SRC044-Q12-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC044-Q12-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

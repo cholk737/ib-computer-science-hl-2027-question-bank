@@ -1,0 +1,20 @@
+{
+  "question_id": "P-SRC044-Q08-f",
+  "source_question_ids": [
+    "H-SRC044-Q08-f"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Identify four processing steps in check_upload below,including the case when both tests fail.\ndef check_upload(extension, size):\n    errors = []\n    if extension.lower() not in [\"txt\", \"csv\"]:\n        errors.append(\"type\")\n    if size > 1000000:\n        errors.append(\"size\")\n    if errors == []:\n        return \"accepted\"\n    return errors",
+  "syllabus_codes": [
+    "B2.1.2",
+    "B2.3.2"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 4,
+  "command_term": "Identify",
+  "difficulty": "medium",
+  "adaptation_rationale": "Retains original file-check/independent-selection reasoning in Python; no PHP upload/HTML/CGI mechanics.",
+  "assets": []
+}

@@ -1,210 +1,922 @@
 [
   {
-    "old": "A repair centre stores clients,jobs and replacement parts. Outline two advantages of a relational database over separate spreadsheets for this information.",
-    "new": "A repair centre stores clients, jobs and replacement parts. Outline two advantages of a relational database over separate spread sheets for this information."
+    "old": "State the primary key of Employee(EmployeeID,RoleID,Name),where EmployeeID uniquely identifies every employee.",
+    "new": "State the primary key of Employee(EmployeeID, RoleID, Name), where EmployeeID uniquely identifies every employee."
   },
   {
-    "old": "A consistent representation avoids interpreting a day as a month or vice versa.; This improves comparison,sorting and data integrity when records are combined.",
-    "new": "A consistent representation avoids interpreting a day as a month or vice versa.; This improves comparison, sorting and data integrity when records are combined."
+    "old": "Role(RoleID,Grade) andEmployee(EmployeeID,RoleID,Name) are linked by employee roles. State the foreign key in Employee.",
+    "new": "Role(RoleID, Grade) and Employee(EmployeeID, RoleID, Name) are linked by employee roles. State the foreign key in Employee."
   },
   {
-    "old": "This improves comparison,sorting and data integrity when records are combined.",
-    "new": "This improves comparison, sorting and data integrity when records are combined."
+    "old": "Each employee has exactly one role andone home department. Each role anddepartment can be associated with many employees. Describe both cardinalities.",
+    "new": "Each employee has exactly one role and one home department. Each role and department can be associated with many employees. Describe both cardinal i ties."
   },
   {
-    "old": "A ticket sale has SaleID and ProductID. Each product may occur only once in a sale,with quantity stored separately. Outline why (SaleID,ProductID) can be a suitable composite primary key.",
-    "new": "A ticket sale has SaleID and ProductID. Each product may occur only once in a sale, with quantity stored separately. Outline why (SaleID, ProductID) can be a suitable composite primary key."
+    "old": "Resolves source contradiction by specifying one home department;doesnot claim single DepartmentID implements many-to-many employment.",
+    "new": "Resolves source contradiction by specifying one home department; does not claim single DepartmentID implements many-to-many employment."
   },
   {
-    "old": "Two joined tables InvoiceLine and Product both contain UnitPrice. Outline why SELECT UnitPrice may fail and how to remove the ambiguity.",
-    "new": "Two joined tables Invoice Line and Product both contain Unit Price. Outline why SELECT Unit Price may fail and how to remove the ambiguity."
+    "old": "Construct SQL using Employee(EmployeeID,RoleID,FirstName,Surname) andRole(RoleID,Grade) to return FirstName,Surname,Grade for employees whose surname is Patel andgrade is8.",
+    "new": "Construct SQL using Employee(EmployeeID, RoleID, FirstName, Surname) and Role(RoleID, Grade) to return FirstName, Surname, Grade for employees whose surname is Patel and grade is 8."
   },
   {
-    "old": "The unqualified column name does not identify which table\u2019s price is required.; Qualify it,e.g.InvoiceLine.UnitPrice,or use a table alias.",
-    "new": "The unqualified column name does not identify which table\u2019s price is required.; Qualify it, e.g.Invoice Line.Unit Price, or use a table alias."
+    "old": "Retains two-table query construction with new schema/filter andcorrect consistent table names.",
+    "new": "Retains two-table query construction with new schema/filter and correct consistent table names."
   },
   {
-    "old": "Qualify it,e.g.InvoiceLine.UnitPrice,or use a table alias.",
-    "new": "Qualify it, e.g.Invoice Line.Unit Price, or use a table alias."
+    "old": "Uses Employee joined withRole.",
+    "new": "Uses Employee joined with Role."
   },
   {
-    "old": "Construct an SQL query using Buyer(BuyerID,FirstName,Surname) and Invoice(InvoiceID,BuyerID,InvoiceDate). Return first name,surname and invoice date for buyer Mira Shah.",
-    "new": "Construct an SQL query using Buyer(BuyerID, First Name, Surname) and Invoice(InvoiceID, BuyerID, Invoice Date). Return first name, surname and invoice date for buyer Mira Shah."
+    "old": "Combines surname andgrade conditions usingAND.",
+    "new": "Combines surname and grade conditions using AND."
   },
   {
-    "old": "Preserves two-table join/filter reasoning;new schema avoids reserved ORDER identifier and source sample\u2019s OrdDate/OrderDate mismatch.",
-    "new": "Preserves two-table join/filter reasoning; new schema avoids reserved ORDER identifier and source sample\u2019s Ord Date/Order Date mismatch."
+    "old": "Permitted grades are whole numbers,so nofractional precision is needed.; An integer type supports consistent numeric comparisons/ordering rather than text ordering.",
+    "new": "Permitted grades are whole numbers, so no fractional precision is needed.; An integer type supports consistent numeric comparisons/ordering rather than text ordering."
   },
   {
-    "old": "SELECT b.FirstName,b.Surname,i.InvoiceDate FROM Buyer AS b JOIN Invoice AS i ON b.BuyerID=i.BuyerID WHERE b.FirstName='Mira' AND b.Surname='Shah';",
-    "new": "SELECT b.First Name, b.Surname, i.Invoice Date FROM Buyer AS b JOIN Invoice AS i ON b.BuyerID=i.BuyerID WHERE b.First Name='Mira' AND b.Surname='Shah';"
+    "old": "Permitted grades are whole numbers,so nofractional precision is needed.",
+    "new": "Permitted grades are whole numbers, so no fractional precision is needed."
   },
   {
-    "old": "Filters both FirstName=Mira and Surname=Shah using AND.",
-    "new": "Filters both First Name=Mira and Surname=Shah using AND."
+    "old": "Explain how database views andaccess permissions can restrict access to confidential payroll information.",
+    "new": "Explain how database views and access permissions can restrict access to confidential payroll information."
   },
   {
-    "old": "An invoice line stores Quantity,PriceEach and LineTotal=Quantity\u00d7PriceEach. Explain why storing LineTotal can create a consistency problem.",
-    "new": "An invoice line stores Quantity, Price Each and Line Total=Quantity\u00d7Price Each. Explain why storing Line Total can create a consistency problem."
+    "old": "Narrows broadprivacy methods to requiredviews/securityfeatures;no statutory data-protection rules inferred.",
+    "new": "Narrows broad privacy methods to required views/security features; no statutory data-protection rules infer red."
   },
   {
-    "old": "LineTotal can be calculated from the other two stored values.; If either input changes but LineTotal is not updated,the row contains contradictory values.; Calculating it when needed avoids that redundant update obligation.",
-    "new": "Line Total can be calculated from the other two stored values.; If either input changes but Line Total is not updated, the row contains contradictory values.; Calculating it when needed avoids that redundant update obligation."
+    "old": "Create a view containing only approved columns/rows.; It can omit salaries orrestrict staff rows toamanager\u2019s department.; Give users access tothatview without unrestricted underlyingtable access.; Assign permissions according tojobroles.; Allow only authorizedpayrollstaff toread/change salaryrecords.; Enforcing thosepermissions at the database prevents ordinaryusers from bypassing presentation-only restrictions.",
+    "new": "Create a view containing only approved columns/rows.; It can omit salaries or restrict staff rows to a manager\u2019s department.; Give users access to that view without unrestricted underlying table access.; Assign permissions according to job roles.; Allow only authorized payroll staff to read/change salary records.; Enforcing those permissions at the database prevents ordinary users from bypassing presentation-only restrictions."
   },
   {
-    "old": "LineTotal can be calculated from the other two stored values.",
-    "new": "Line Total can be calculated from the other two stored values."
+    "old": "It can omit salaries orrestrict staff rows toamanager\u2019s department.",
+    "new": "It can omit salaries or restrict staff rows to a manager\u2019s department."
   },
   {
-    "old": "If either input changes but LineTotal is not updated,the row contains contradictory values.",
-    "new": "If either input changes but Line Total is not updated, the row contains contradictory values."
+    "old": "Give users access tothatview without unrestricted underlyingtable access.",
+    "new": "Give users access to that view without unrestricted underlying table access."
   },
   {
-    "old": "State a suitable data type for a field storing hours worked,including fractional hours.",
-    "new": "State a suitable data type for a field storing hours worked, including fractional hours."
+    "old": "Assign permissions according tojobroles.",
+    "new": "Assign permissions according to job roles."
   },
   {
-    "old": "Retains data-type suitability subset;generic catalogue of validation checks is not imported as database scope.",
-    "new": "Retains data-type suitability subset; generic catalogue of validation checks is not imported as database scope."
+    "old": "Allow only authorizedpayrollstaff toread/change salaryrecords.",
+    "new": "Allow only authorized payroll staff to read/change salary records."
   },
   {
-    "old": "The update is performed within a transaction.; Other users must not see a partially applied update.; A suitable locking/version mechanism presents a consistent record or delays access.; Commit exposes the completed state;rollback restores the previous valid state after failure.",
-    "new": "The update is performed within a transaction.; Other users must not see a partially applied update.; A suitable locking/version mechanism presents a consistent record or delays access.; Commit exposes the completed state; rollback restores the previous valid state after failure."
+    "old": "Enforcing thosepermissions at the database prevents ordinaryusers from bypassing presentation-only restrictions.",
+    "new": "Enforcing those permissions at the database prevents ordinary users from bypassing presentation-only restrictions."
   },
   {
-    "old": "Commit exposes the completed state;rollback restores the previous valid state after failure.",
-    "new": "Commit exposes the completed state; rollback restores the previous valid state after failure."
+    "old": "Describe one distinction between a conceptual database schema andits logical schema.",
+    "new": "Describe one distinction between a conceptual database schema and its logical schema."
   },
   {
-    "old": "Describe what should happen to an uncommitted transaction interrupted by a database failure,using a transfer that debits one account and credits another.",
-    "new": "Describe what should happen to an uncommitted transaction interrupted by a database failure, using a transfer that debits one account and credits another."
+    "old": "Conceptual schema identifies high-level entities andrelationships.; Logical schema specifies detailed tables/attributes/keys andtheir relationships.",
+    "new": "Conceptual schema identifies high-level entities and relationships.; Logical schema specifies detailed tables/attributes/keys and their relationships."
   },
   {
-    "old": "Narrows detailed backup/recovery-method taxonomy to explicit ACID atomicity,durability and rollback.",
-    "new": "Narrows detailed backup/recovery-method taxonomy to explicit ACID atomicity, durability and rollback."
+    "old": "Conceptual schema identifies high-level entities andrelationships.",
+    "new": "Conceptual schema identifies high-level entities and relationships."
   },
   {
-    "old": "Treat both changes as one transaction.; If the transaction was not committed,undo its partial changes.; Restore balances to the consistent pre-transaction state.; A completed committed transfer must remain durable rather than losing one side of the transfer.",
-    "new": "Treat both changes as one transaction.; If the transaction was not committed, undo its partial changes.; Restore balances to the consistent pre-transaction state.; A completed committed transfer must remain durable rather than losing one side of the transfer."
+    "old": "Logical schema specifies detailed tables/attributes/keys andtheir relationships.",
+    "new": "Logical schema specifies detailed tables/attributes/keys and their relationships."
   },
   {
-    "old": "If the transaction was not committed,undo its partial changes.",
-    "new": "If the transaction was not committed, undo its partial changes."
+    "old": "DDL defines orchanges tables,fields,types andconstraints.; For example,CREATE TABLE implements a designed table anditskeys.",
+    "new": "DDL defines or changes tables, fields, types and constraints.; For example, CREATE TABLE implements a designed table and its keys."
   },
   {
-    "old": "Construct an ERD for a fleet where one depot owns many vehicles,each vehicle belongs to one depot,and each vehicle has exactly one current registration record.",
-    "new": "Construct an ERD for a fleet where one depot owns many vehicles, each vehicle belongs to one depot, and each vehicle has exactly one current registration record."
+    "old": "DDL defines orchanges tables,fields,types andconstraints.",
+    "new": "DDL defines or changes tables, fields, types and constraints."
   },
   {
-    "old": "Depot1:manyVehicle relationship,with each Vehicle belonging to one Depot.; Vehicle1:1Registration relationship.",
-    "new": "Depot 1:many Vehicle relationship, with each Vehicle belonging to one Depot.; Vehicle 1:1 Registration relationship."
+    "old": "For example,CREATE TABLE implements a designed table anditskeys.",
+    "new": "For example, CREATE TABLE implements a designed table and its keys."
   },
   {
-    "old": "Depot1:manyVehicle relationship,with each Vehicle belonging to one Depot.",
-    "new": "Depot 1:many Vehicle relationship, with each Vehicle belonging to one Depot."
+    "old": "Explain two benefits of modelling entities andrelationships before creating a relational database.",
+    "new": "Explain two benefits of modelling entities and relationships before creating a relational database."
   },
   {
-    "old": "Vehicle1:1Registration relationship.",
-    "new": "Vehicle 1:1 Registration relationship."
+    "old": "Identifies the necessary entities andtheir attributes.; This helps ensure the database represents required facts without mixing unrelated data.; Shows cardinalities andkeyrelationships.; Those relationships guide foreign-key design andvalid cross-table queries.",
+    "new": "Identifies the necessary entities and their attributes.; This helps ensure the database represents required facts without mixing unrelated data.; Shows cardinal i ties and key relationships.; Those relationships guide foreign-key design and valid cross-table queries."
   },
   {
-    "old": "Construct a3NF schema for these facts. Each asset has AssetID,label andmodel,and one current certificate recording issue date and issuing technician. Each technician has TechID,name andphone. An asset can have many inspections. Each inspection has InspectionID,date,valid-until date,inspecting technician andone standard. A standard has StandardID,title andauthority. Show primary andforeign keys.",
-    "new": "Construct a 3 NF schema for these facts. Each asset has AssetID, label and model, and one current certificate recording issue date and issuing technician. Each technician has TechID, name and phone. An asset can have many inspections. Each inspection has InspectionID, date, valid-until date, inspecting technician and one standard. A standard has StandardID, title and authority. Show primary and foreign keys."
+    "old": "Identifies the necessary entities andtheir attributes.",
+    "new": "Identifies the necessary entities and their attributes."
   },
   {
-    "old": "TECH(TechID PK,Name,Phone);ASSET(AssetID PK,Label,Model);CERTIFICATE(AssetID PK/FK\u2192ASSET,IssueDate,IssuerID FK\u2192TECH);STANDARD(StandardID PK,Title,Authority);INSPECTION(InspectionID PK,AssetID FK\u2192ASSET,InspectorID FK\u2192TECH,StandardID FK\u2192STANDARD,InspectionDate,ValidUntil).",
-    "new": "TECH(TechID PK, Name, Phone); ASSET(AssetID PK, Label, Model); CERTIFICATE(AssetID PK/FK\u2192ASSET, Issue Date, IssuerID FK\u2192TECH); STANDARD(StandardID PK, Title, Authority); INSPECTION(InspectionID PK, AssetID FK\u2192ASSET, InspectorID FK\u2192TECH, StandardID FK\u2192STANDARD, Inspection Date, Valid Until)."
+    "old": "Shows cardinalities andkeyrelationships.",
+    "new": "Shows cardinal i ties and key relationships."
   },
   {
-    "old": "Separate TECH andASSET tables with their own descriptive attributes.",
-    "new": "Separate TECH and ASSET tables with their own descriptive attributes."
+    "old": "Those relationships guide foreign-key design andvalid cross-table queries.",
+    "new": "Those relationships guide foreign-key design and valid cross-table queries."
   },
   {
-    "old": "Separate STANDARD table storing title andauthority once.",
-    "new": "Separate STANDARD table storing title and authority once."
+    "old": "All operations in the transaction commit together.; If any required operation cannot complete,the partial changes are rolled back.",
+    "new": "All operations in the transaction commit together.; If any required operation cannot complete, the partial changes are rolled back."
   },
   {
-    "old": "Correct stable primary keys,including one certificate perasset.",
-    "new": "Correct stable primary keys, including one certificate per asset."
+    "old": "If any required operation cannot complete,the partial changes are rolled back.",
+    "new": "If any required operation cannot complete, the partial changes are rolled back."
   },
   {
-    "old": "Correct certificate\u2192asset andissuer\u2192TECH foreign keys.",
-    "new": "Correct certificate\u2192asset and issuer\u2192TECH foreign keys."
+    "old": "Outline how a foreign-key constraint protects consistency between Invoice andBuyer tables.",
+    "new": "Outline how a foreign-key constraint protects consistency between Invoice and Buyer tables."
   },
   {
-    "old": "Correct inspection\u2192asset,TECH andSTANDARD foreign keys.",
-    "new": "Correct inspection\u2192asset, TECH and STANDARD foreign keys."
+    "old": "A non-null BuyerID in Invoice must reference an existing Buyer record.; The constraint prevents an invoice referring to a nonexistent buyer;delete/update behaviour must follow the configured rule.",
+    "new": "A non-null BuyerID in Invoice must reference an existing Buyer record.; The constraint prevents an invoice referring to a nonexistent buyer; delete/update behaviour must follow the configured rule."
   },
   {
-    "old": "Event dates belong to inspections;no repeated groups or duplicated technician/standard descriptions.",
-    "new": "Event dates belong to inspections; no repeated groups or duplicated technician/standard descriptions."
+    "old": "The constraint prevents an invoice referring to a nonexistent buyer;delete/update behaviour must follow the configured rule.",
+    "new": "The constraint prevents an invoice referring to a nonexistent buyer; delete/update behaviour must follow the configured rule."
   },
   {
-    "old": "Points,for individual locations.; Lines orpolygons,for roads/areas.",
-    "new": "Points, for individual locations.; Lines or polygons, for roads/areas."
+    "old": "Outline why a database can calculate a line total from quantity andunitprice rather than store a secondeditable copy.",
+    "new": "Outline why a database can calculate a line total from quantity and unitprice rather than store a second editable copy."
   },
   {
-    "old": "Points,for individual locations.",
-    "new": "Points, for individual locations."
+    "old": "Retains derivation/redundancy reasoning;doesnotintroduce derived-fieldtaxonomy asmandatorybeyondfunctional-dependencyguidance.",
+    "new": "Retains derivation/redundancy reasoning; does not introduce derived-field taxonomy as mandatory beyond functional-dependency guidance."
   },
   {
-    "old": "Lines orpolygons,for roads/areas.",
-    "new": "Lines or polygons, for roads/areas."
+    "old": "The value is already determined by other stored fields.; Calculating it avoids inconsistent orstale separately stored totals.",
+    "new": "The value is already determined by other stored fields.; Calculating it avoids inconsistent or stale separately stored totals."
   },
   {
-    "old": "Each uniquely identified sensor location has many measurement rows,each measurement belonging to one location. State the relationship cardinality.",
-    "new": "Each uniquely identified sensor location has many measurement rows, each measurement belonging to one location. State the relationship cardinality."
+    "old": "Calculating it avoids inconsistent orstale separately stored totals.",
+    "new": "Calculating it avoids inconsistent or stale separately stored totals."
   },
   {
-    "old": "Replaces underdetermined source linkcardinality with explicit entities and cardinalityconstraint.",
-    "new": "Replaces under determined source link cardinality with explicit entities and cardinality constraint."
+    "old": "Describe an algorithm for age in completed years from birth date andtoday\u2019s date. Assume an ordinary valid birth date anduse the usual birthday convention.",
+    "new": "Describe an algorithm for age in completed years from birth date and today\u2019s date. Assume an ordinary valid birth date and use the usual birthday convention."
   },
   {
-    "old": "Explain how clustering andclassification could each support analysis of emergency-call records containing location,time andincident attributes.",
-    "new": "Explain how clustering and classification could each support analysis of emergency-call records containing location, time and incident attributes."
+    "old": "Repairs sourceanswer\u2019s missingbirthday adjustment;retains arithmetic/conditionalalgorithm reasoning rather than requiring dialect-specific datefunctions.",
+    "new": "Repairs source answer\u2019s missing birthday adjustment; retains arithmetic/conditional algorithm reasoning rather than requiring dialect-specific date functions."
   },
   {
-    "old": "Retains analytical application reasoning;substitutes exact2027required clustering/classification for sourceMS visual-filter examples.",
-    "new": "Retains analytical application reasoning; substitutes exact 2027 required clustering/classification for source MS visual-filter examples."
+    "old": "Subtract birth year fromcurrent year.; Subtract one if this year\u2019s birthday has notyet occurred,comparing month andday.",
+    "new": "Subtract birth year from current year.; Subtract one if this year\u2019s birthday has not yet occurred, comparing month and day."
   },
   {
-    "old": "Clustering groups records with similar features without requiring preassigned class labels.; It can reveal geographically/time-related groups of incidents.; Those groups may inform resource placement but require contextual interpretation.; Classification learns relationships from labelled example incidents.; It predicts a discrete category for a new record,e.g.incident priority.; Predictions must be evaluated against known outcomes rather than treating a map filter as a learned classifier.",
-    "new": "Clustering groups records with similar features without requiring preassigned class labels.; It can reveal geographically/time-related groups of incidents.; Those groups may inform resource placement but require contextual interpretation.; Classification learns relationships from labelled example incidents.; It predicts a discrete category for a new record, e.g.incident priority.; Predictions must be evaluated against known outcomes rather than treating a map filter as a learned classifier."
+    "old": "Subtract birth year fromcurrent year.",
+    "new": "Subtract birth year from current year."
   },
   {
-    "old": "It predicts a discrete category for a new record,e.g.incident priority.",
-    "new": "It predicts a discrete category for a new record, e.g.incident priority."
+    "old": "Subtract one if this year\u2019s birthday has notyet occurred,comparing month andday.",
+    "new": "Subtract one if this year\u2019s birthday has not yet occurred, comparing month and day."
   },
   {
-    "old": "Discuss ethical concerns when a city publishes an AI-generated crime-risk map that influences police deployment.",
-    "new": "Discuss ethical concerns when a city publish es an AI-generated crime-risk map that influences police deployment."
+    "old": "Outline the additional requirement for a1NF table to be in2NF.",
+    "new": "Outline the additional requirement for a 1 NF table to be in 2 NF."
   },
   {
-    "old": "Retains selective-analysis/ethicaljudgment but explicitly ties it torequiredMLfairness,transparency andaccountability.",
-    "new": "Retains selective-analysis/ethical judgment but explicitly ties it torequiredMLfairness, transparency and accountability."
+    "old": "It must already satisfy1NF,including atomic values andno repeatinggroups.; Every non-key attribute must depend on the whole candidatekey,not merely a properpart of acompositekey.",
+    "new": "It must already satisfy 1 NF, including atomic values and no repeating groups.; Every non-key attribute must depend on the whole candidate key, not merely a proper part of a composite key."
   },
   {
-    "old": "Biased historical reporting can produce unfair risk estimates.; Feedback from deployment can reinforce unequal scrutiny of communities.; Transparent labels,uncertainty anddata limitations help users interpret the map.; Accountability andhuman review are needed when decisions affect people.; Balanced conclusion weighs public-safety benefits against fairness/privacy risks in this context.",
-    "new": "Biased historical reporting can produce unfair risk estimates.; Feedback from deployment can reinforce unequal scrutiny of communities.; Transparent labels, uncertainty and data limitations help users interpret the map.; Accountability and human review are needed when decisions affect people.; Balanced conclusion weighs public-safety benefits against fairness/privacy risks in this context."
+    "old": "It must already satisfy1NF,including atomic values andno repeatinggroups.",
+    "new": "It must already satisfy 1 NF, including atomic values and no repeating groups."
   },
   {
-    "old": "Transparent labels,uncertainty anddata limitations help users interpret the map.",
-    "new": "Transparent labels, uncertainty and data limitations help users interpret the map."
+    "old": "Every non-key attribute must depend on the whole candidatekey,not merely a properpart of acompositekey.",
+    "new": "Every non-key attribute must depend on the whole candidate key, not merely a proper part of a composite key."
   },
   {
-    "old": "Accountability andhuman review are needed when decisions affect people.",
-    "new": "Accountability and human review are needed when decisions affect people."
+    "old": "Construct a3NF schema for a therapy centre. Each client has ClientID,name andDOB. Each specialist has SpecialistID andname. A room has RoomID,building androomnumber. Each booking has BookingID,one client,one specialist,one room andstart date/time. Show primary andforeign keys.",
+    "new": "Construct a 3 NF schema for a therapy centre. Each client has ClientID, name and DOB. Each specialist has SpecialistID and name. A room has RoomID, building and room number. Each booking has BookingID, one client, one specialist, one room and start date/time. Show primary and foreign keys."
   },
   {
-    "old": "Establishes an expected pattern/baseline from relevant historical records.; Compares new records with that pattern.; Flags substantial departures,e.g.unusual temperature/smoke combinations,for investigation.; Noise andfalse alarms must be considered;an anomaly alone does not prove a future incident.",
-    "new": "Establishes an expected pattern/baseline from relevant historical records.; Compares new records with that pattern.; Flags substantial departures, e.g.unusual temperature/smoke combinations, for investigation.; Noise and false alarms must be considered; an anomaly alone does not prove a future incident."
+    "old": "CLIENT(ClientID PK,Name,DOB);SPECIALIST(SpecialistID PK,Name);ROOM(RoomID PK,Building,RoomNumber);BOOKING(BookingID PK,ClientID FK\u2192CLIENT,SpecialistID FK\u2192SPECIALIST,RoomID FK\u2192ROOM,StartDateTime).",
+    "new": "CLIENT(ClientID PK, Name, DOB); SPECIALIST(SpecialistID PK, Name); ROOM(RoomID PK, Building, RoomNumber); BOOKING(BookingID PK, ClientID FK\u2192CLIENT, SpecialistID FK\u2192SPECIALIST, RoomID FK\u2192ROOM, StartDateTime)."
   },
   {
-    "old": "Flags substantial departures,e.g.unusual temperature/smoke combinations,for investigation.",
-    "new": "Flags substantial departures, e.g.unusual temperature/smoke combinations, for investigation."
+    "old": "Separate CLIENT with its ownkey andattributes.",
+    "new": "Separate CLIENT with its own key and attributes."
   },
   {
-    "old": "Noise andfalse alarms must be considered;an anomaly alone does not prove a future incident.",
-    "new": "Noise and false alarms must be considered; an anomaly alone does not prove a future incident."
+    "old": "Separate SPECIALIST with its ownkey andattributes.",
+    "new": "Separate SPECIALIST with its own key and attributes."
+  },
+  {
+    "old": "Separate ROOM with its ownkey andlocationattributes.",
+    "new": "Separate ROOM with its own key and location attributes."
+  },
+  {
+    "old": "BOOKING has BookingID primarykey andstartdatetime.",
+    "new": "BOOKING has BookingID primary key and start datetime."
+  },
+  {
+    "old": "BOOKING references CLIENT andSPECIALIST byforeignkeys.",
+    "new": "BOOKING references CLIENT and SPECIALIST by foreign keys."
+  },
+  {
+    "old": "BOOKING references ROOM;descriptive client/specialist/room attributes are notduplicated inbooking.",
+    "new": "BOOKING references ROOM; descriptive client/specialist/room attributes are not duplicated in booking."
+  },
+  {
+    "old": "Identify two non-relational storage approaches explicitly included in the2027guide.",
+    "new": "Identify two non-relational storage approaches explicitly included in the 2027 guide."
+  },
+  {
+    "old": "Retains alternative-approach identification while limiting unsupportedlegacytaxonomies;cloud/in-memory refer to sourceguideapproaches,not exclusive data models.",
+    "new": "Retains alternative-approach identification while limiting unsupported legacy taxonomies; cloud/in-memory refer to source guide approaches, not exclusive data models."
+  },
+  {
+    "old": "NoSQL database.; Spatial,cloud orin-memory database approach.",
+    "new": "NoSQL database.; Spatial, cloud or in-memory database approach."
+  },
+  {
+    "old": "Spatial,cloud orin-memory database approach.",
+    "new": "Spatial, cloud or in-memory database approach."
+  },
+  {
+    "old": "An integrated,subject-oriented repository of data from relevant sources,including historical/time-variant data.; It supports analysis anddecision-making rather than routine operationalupdates.",
+    "new": "An integrated, subject-oriented repository of data from relevant sources, including historical/time-variant data.; It supports analysis and decision-making rather than routine operational updates."
+  },
+  {
+    "old": "An integrated,subject-oriented repository of data from relevant sources,including historical/time-variant data.",
+    "new": "An integrated, subject-oriented repository of data from relevant sources, including historical/time-variant data."
+  },
+  {
+    "old": "It supports analysis anddecision-making rather than routine operationalupdates.",
+    "new": "It supports analysis and decision-making rather than routine operational updates."
+  },
+  {
+    "old": "Explain why data from several hospital systems must be standardized andintegrated before being used together in a warehouse.",
+    "new": "Explain why data from several hospital systems must be standardized and integrated before being used together in a warehouse."
+  },
+  {
+    "old": "Retains required integrated-data objective;doesnotrequire ETLimplementationoracronym asadditionaltechnicalscope.",
+    "new": "Retains required integrated-data objective; does not require ETLimplementationoracronym as additional technical scope."
+  },
+  {
+    "old": "It identifies when a recorded fact/snapshot was valid.; Analysts can compare periods andidentify change over time.",
+    "new": "It identifies when a recorded fact/snapshot was valid.; Analysts can compare periods and identify change over time."
+  },
+  {
+    "old": "Analysts can compare periods andidentify change over time.",
+    "new": "Analysts can compare periods and identify change over time."
+  },
+  {
+    "old": "Describe how new observations can be added to an append-only,time-variant warehouse without erasing historical observations.",
+    "new": "Describe how new observations can be added to an append-only, time-variant warehouse without erasing historical observations."
+  },
+  {
+    "old": "Replaces unsupportedreal-timeingestionmechanisms with explicitappend-only/nonvolatile/time-variantwarehouseproperties.",
+    "new": "Replaces unsupported real-time ingestion mechanisms with explicit append-only/nonvolatile/time-variant warehouse properties."
+  },
+  {
+    "old": "Append each new observation as anew dated/timestamped record.; Retain earlier records so historical states/trends remain available rather than overwriting them.",
+    "new": "Append each new observation as anew dated/time stamped record.; Retain earlier records so historical states/trends remain available rather than overwriting them."
+  },
+  {
+    "old": "Append each new observation as anew dated/timestamped record.",
+    "new": "Append each new observation as anew dated/time stamped record."
+  },
+  {
+    "old": "Compares records against an expected/learned pattern of normal behaviour.; Flags substantial departures for investigation;unusual doesnotautomaticallymean erroneous.",
+    "new": "Compares records against an expected/learned pattern of normal behaviour.; Flags substantial departures for investigation; unusual does not automatically mean erroneous."
+  },
+  {
+    "old": "Flags substantial departures for investigation;unusual doesnotautomaticallymean erroneous.",
+    "new": "Flags substantial departures for investigation; unusual does not automatically mean erroneous."
+  },
+  {
+    "old": "Compare clustering andassociation-rule discovery when analysing a retailer\u2019s transaction data.",
+    "new": "Compare clustering and association-rule discovery when analysing a retailer\u2019s transaction data."
+  },
+  {
+    "old": "Clustering groups similar records/customers according totheirfeatures.; Itsoutput is clusters rather than predefined outcome labels.; Association rules identify attributes/items that often occur together.; Itsoutput is relationships such as purchases of A being associated with B.; Both can explore patterns without preassigned targetclasslabels.; Neither technique alone establishes causation;outputs anduse cases differ,so the choice depends ontheanalyticalgoal.",
+    "new": "Clustering groups similar records/customers according to their features.; Its output is clusters rather than predefined outcome labels.; Association rules identify attributes/items that often occur together.; Its output is relationships such as purchases of A being associated with B.; Both can explore patterns without preassigned target class labels.; Neither technique alone establishes causation; outputs and use cases differ, so the choice depends on the analytical goal."
+  },
+  {
+    "old": "Clustering groups similar records/customers according totheirfeatures.",
+    "new": "Clustering groups similar records/customers according to their features."
+  },
+  {
+    "old": "Itsoutput is clusters rather than predefined outcome labels.",
+    "new": "Its output is clusters rather than predefined outcome labels."
+  },
+  {
+    "old": "Itsoutput is relationships such as purchases of A being associated with B.",
+    "new": "Its output is relationships such as purchases of A being associated with B."
+  },
+  {
+    "old": "Both can explore patterns without preassigned targetclasslabels.",
+    "new": "Both can explore patterns without preassigned target class labels."
+  },
+  {
+    "old": "Neither technique alone establishes causation;outputs anduse cases differ,so the choice depends ontheanalyticalgoal.",
+    "new": "Neither technique alone establishes causation; outputs and use cases differ, so the choice depends on the analytical goal."
+  },
+  {
+    "old": "Retains program-variable identification;clarifies intended aggregate rather than ambiguous climaticstatistic.",
+    "new": "Retains program-variable identification; clarifies intended aggregate rather than ambiguous climatic statistic."
+  },
+  {
+    "old": "Retains sampling-frequency tradeoff within explicitly listed polling eventfrequency/overhead scope.",
+    "new": "Retains sampling-frequency trade off within explicitly listed polling event frequency/overhead scope."
+  },
+  {
+    "old": "Fewer polls reduce processor/communication overhead.; If that interval still detects changes quickly enough for the application,the extra polls provide little useful control benefit.",
+    "new": "Fewer polls reduce processor/communication overhead.; If that interval still detects changes quickly enough for the application, the extra polls provide little useful control benefit."
+  },
+  {
+    "old": "If that interval still detects changes quickly enough for the application,the extra polls provide little useful control benefit.",
+    "new": "If that interval still detects changes quickly enough for the application, the extra polls provide little useful control benefit."
+  },
+  {
+    "old": "Describe,without code,how a program could store six timed pressure readings in two parallel lists so that each reading\u2019s time can be recovered.",
+    "new": "Describe, without code, how a program could store six timed pressure readings in two parallel lists so that each reading\u2019s time can be recovered."
+  },
+  {
+    "old": "Create a list of times and a list of pressurevalues.; Use the same index to represent one observation in both lists.; Repeat input for all six observations.; Store each entered time and pressure at the matching positions.; When retrieving a pressure value,use its index to retrieve the associatedtime.",
+    "new": "Create a list of times and a list of pressure values.; Use the same index to represent one observation in both lists.; Repeat input for all six observations.; Store each entered time and pressure at the matching positions.; When retrieving a pressure value, use its index to retrieve the associated time."
+  },
+  {
+    "old": "Create a list of times and a list of pressurevalues.",
+    "new": "Create a list of times and a list of pressure values."
+  },
+  {
+    "old": "When retrieving a pressure value,use its index to retrieve the associatedtime.",
+    "new": "When retrieving a pressure value, use its index to retrieve the associated time."
+  },
+  {
+    "old": "Construct day_summary(hours,temperatures) inPython. Both parallel lists contain24 observations,one per hour0..23. Define night as20:00 through05:59 inclusive. Return(maximum,minimum,overall mean,night mean). Use explicit comparisons andaccumulation,not min,max orsum.",
+    "new": "Construct day_summary(hours, temperatures) in Python. Both parallel lists contain 24 observations, one per hour 0..23. Define night as 20:00 through 05:59 inclusive. Return(maximum, minimum, overall mean, night mean). Use explicit comparisons and accumulation, not min, max or sum."
+  },
+  {
+    "old": "Retains multistatistic parallel-list traversal;repairs sourcecross-midnightcondition withOR,countsnightobservations,anduses safeextrema initialization.",
+    "new": "Retains multi statistic parallel-list traversal; repairs source cross-midnight condition with OR, counts night observations, and uses safe extrema initialization."
+  },
+  {
+    "old": "Initializes extrema from anactualtemperature.",
+    "new": "Initializes extrema from an actual temperature."
+  },
+  {
+    "old": "Initializes total,nighttotal andnightcount.",
+    "new": "Initializes total, night total and night count."
+  },
+  {
+    "old": "Traverses every matched hour/temperature exactlyonce.",
+    "new": "Traverses every matched hour/temperature exactly once."
+  },
+  {
+    "old": "Accumulates the night values andcounts exactly those observations.",
+    "new": "Accumulates the night values and counts exactly those observations."
+  },
+  {
+    "old": "Calculates both means with true division andreturns all four results after traversal.",
+    "new": "Calculates both means with true division and returns all four results after traversal."
+  },
+  {
+    "old": "Retains rendering/hardware tradeoff while limiting demand toexplicitCPU/GPUdesign,taskdivision,datasharing andcoordinatedexecution.",
+    "new": "Retains rendering/hardware trade off while limiting demand toexplicitCPU/GPU design, task division, data sharing and co ordinated execution."
+  },
+  {
+    "old": "A GPU can execute many suitable rendering operations in parallel.; A CPU remains suitable for sequential/control-heavy work.; Tasks must be divided andcoordinated between theprocessors.; Data transfers/memory access andworkload size affect whether GPU use saves time.; A justified conclusion rejects a universal speedup guarantee andties the choice to the actualworkload.",
+    "new": "A GPU can execute many suitable rendering operations in parallel.; A CPU remains suitable for sequential/control-heavy work.; Tasks must be divided and co ordinated between the processors.; Data transfers/memory access and workload size affect whether GPU use saves time.; A justified conclusion rejects a universal speed up guarantee and ties the choice to the actual workload."
+  },
+  {
+    "old": "Tasks must be divided andcoordinated between theprocessors.",
+    "new": "Tasks must be divided and co ordinated between the processors."
+  },
+  {
+    "old": "Data transfers/memory access andworkload size affect whether GPU use saves time.",
+    "new": "Data transfers/memory access and workload size affect whether GPU use saves time."
+  },
+  {
+    "old": "A justified conclusion rejects a universal speedup guarantee andties the choice to the actualworkload.",
+    "new": "A justified conclusion rejects a universal speed up guarantee and ties the choice to the actual workload."
+  },
+  {
+    "old": "Fitness evaluation.; Selection.; Crossover ormutation.",
+    "new": "Fitness evaluation.; Selection.; Crossover or mutation."
+  },
+  {
+    "old": "Crossover ormutation.",
+    "new": "Crossover or mutation."
+  },
+  {
+    "old": "State two structural components of a multilayer perceptron.",
+    "new": "State two structural components of a multi layer perceptron."
+  },
+  {
+    "old": "Input layer.; Hidden layer(s) oroutput layer.",
+    "new": "Input layer.; Hidden layer(s) or output layer."
+  },
+  {
+    "old": "Hidden layer(s) oroutput layer.",
+    "new": "Hidden layer(s) or output layer."
+  },
+  {
+    "old": "Clarifies game-trainingexample as explicitreinforcementlearning;doesnotmislabelselfplayasunsupervisedlearning orrequireunspecifiedNNtraininginternals.",
+    "new": "Clarifies game-training example as explicit reinforcement learning; does not mislabel self play as unsupervised learning orrequireunspecifiedNNtraininginternals."
+  },
+  {
+    "old": "Observes the currentgame state.; Chooses an action/move according to its policy,allowing exploration.; Receives the new state andreward/outcome from theenvironment.; Uses experience/reward to adjust future decisions/policy.; Seeks greater cumulative reward while balancing exploration andexploitation.",
+    "new": "Observes the current game state.; Chooses an action/move according to its policy, allowing exploration.; Receives the new state and reward/outcome from the environment.; Uses experience/reward to adjust future decisions/policy.; Seeks greater cumulative reward while balancing exploration and exploitation."
+  },
+  {
+    "old": "Observes the currentgame state.",
+    "new": "Observes the current game state."
+  },
+  {
+    "old": "Chooses an action/move according to its policy,allowing exploration.",
+    "new": "Chooses an action/move according to its policy, allowing exploration."
+  },
+  {
+    "old": "Receives the new state andreward/outcome from theenvironment.",
+    "new": "Receives the new state and reward/outcome from the environment."
+  },
+  {
+    "old": "Seeks greater cumulative reward while balancing exploration andexploitation.",
+    "new": "Seeks greater cumulative reward while balancing exploration and exploitation."
+  },
+  {
+    "old": "Explain how supervised andunsupervised learning would differ when analysing player behaviour records.",
+    "new": "Explain how supervised and unsupervised learning would differ when analysing player behaviour records."
+  },
+  {
+    "old": "Supervised learning uses examples with targetlabels/outcomes.; It can learn to predict those labels fornewrecords.; Unsupervised learning uses data without targetclasslabels.; It can discover groups/patterns of similarbehaviour.; Thus predicted outcome categories anddiscovered groups answer differentquestions;unsupervised doesnotmean random ordeeper learning.",
+    "new": "Supervised learning uses examples with target labels/outcomes.; It can learn to predict those labels for new records.; Unsupervised learning uses data without target class labels.; It can discover groups/patterns of similar behaviour.; Thus predicted outcome categories and discovered groups answer different questions; unsupervised does not mean random or deeper learning."
+  },
+  {
+    "old": "Supervised learning uses examples with targetlabels/outcomes.",
+    "new": "Supervised learning uses examples with target labels/outcomes."
+  },
+  {
+    "old": "It can learn to predict those labels fornewrecords.",
+    "new": "It can learn to predict those labels for new records."
+  },
+  {
+    "old": "Unsupervised learning uses data without targetclasslabels.",
+    "new": "Unsupervised learning uses data without target class labels."
+  },
+  {
+    "old": "It can discover groups/patterns of similarbehaviour.",
+    "new": "It can discover groups/patterns of similar behaviour."
+  },
+  {
+    "old": "Thus predicted outcome categories anddiscovered groups answer differentquestions;unsupervised doesnotmean random ordeeper learning.",
+    "new": "Thus predicted outcome categories and discovered groups answer different questions; unsupervised does not mean random or deeper learning."
+  },
+  {
+    "old": "Explain how transfer learning anddata cleaning can help develop a useful ML text classifier from a small task-specific dataset.",
+    "new": "Explain how transfer learning and data cleaning can help develop a useful ML text classifier from a small task-specific dataset."
+  },
+  {
+    "old": "Retains supportedtransfer/dataqualitysubsets;doesnotintroduce transformerattention,NLPembeddings orhistoricalresearchrequirements.",
+    "new": "Retains supported transfer/data quality subsets; does not introduce transformer attention, NLPembeddings or historical research requirements."
+  },
+  {
+    "old": "Transfer learning reuses a model trained on a relatedlarger task/dataset.; Its learned representations provide a starting point rather than learning everything fromscratch.; Adapting it to the target task can reduce the amount of task-specific training required.; Cleaning removes incorrect,duplicate ormislabelled examples that distortlearning.; The adapted model still needs evaluation on relevant data;transfer doesnotguarantee accuracy if the source andtarget differ substantially.",
+    "new": "Transfer learning reuses a model trained on a related larger task/dataset.; Its learned representations provide a starting point rather than learning everything from scratch.; Adapting it to the target task can reduce the amount of task-specific training required.; Cleaning removes incorrect, duplicate or mislabel led examples that distort learning.; The adapted model still needs evaluation on relevant data; transfer does not guarantee accuracy if the source and target differ substantially."
+  },
+  {
+    "old": "Transfer learning reuses a model trained on a relatedlarger task/dataset.",
+    "new": "Transfer learning reuses a model trained on a related larger task/dataset."
+  },
+  {
+    "old": "Its learned representations provide a starting point rather than learning everything fromscratch.",
+    "new": "Its learned representations provide a starting point rather than learning everything from scratch."
+  },
+  {
+    "old": "Cleaning removes incorrect,duplicate ormislabelled examples that distortlearning.",
+    "new": "Cleaning removes incorrect, duplicate or mislabel led examples that distort learning."
+  },
+  {
+    "old": "The adapted model still needs evaluation on relevant data;transfer doesnotguarantee accuracy if the source andtarget differ substantially.",
+    "new": "The adapted model still needs evaluation on relevant data; transfer does not guarantee accuracy if the source and target differ substantially."
+  },
+  {
+    "old": "The internet is interconnected network infrastructure connecting devices/networks.; The web is a service/collection of linked resources accessed over that infrastructure,commonly usingHTTP/HTTPS.",
+    "new": "The internet is interconnected network infrastructure connecting devices/networks.; The web is a service/collection of linked resources accessed over that infrastructure, commonly using HTTP/HTTPS."
+  },
+  {
+    "old": "The web is a service/collection of linked resources accessed over that infrastructure,commonly usingHTTP/HTTPS.",
+    "new": "The web is a service/collection of linked resources accessed over that infrastructure, commonly using HTTP/HTTPS."
+  },
+  {
+    "old": "Explain the client-server interaction when a browser retrieves a webpage usingHTTPS.",
+    "new": "Explain the client-server interaction when a browser retrieves a webpage using HTTPS."
+  },
+  {
+    "old": "Retains protocol/client-server processing;doesnotrequirePHP/HTMLimplementationorbrowserinternals.",
+    "new": "Retains protocol/client-server processing; doesnotrequirePHP/HTMLimplementationorbrowserinternals."
+  },
+  {
+    "old": "The browser acts as client andsends a request to the webserver.; The server returns the requestedresource oranappropriate response.; HTTPS uses TLS toprotect the communication;thebrowser interprets/renders the returnedpage content.",
+    "new": "The browser acts as client and sends a request to the web server.; The server returns the requested resource or an appropriate response.; HTTPS uses TLS to protect the communication; the browser interprets/renders the returned page content."
+  },
+  {
+    "old": "The browser acts as client andsends a request to the webserver.",
+    "new": "The browser acts as client and sends a request to the web server."
+  },
+  {
+    "old": "The server returns the requestedresource oranappropriate response.",
+    "new": "The server returns the requested resource or an appropriate response."
+  },
+  {
+    "old": "HTTPS uses TLS toprotect the communication;thebrowser interprets/renders the returnedpage content.",
+    "new": "HTTPS uses TLS to protect the communication; the browser interprets/renders the returned page content."
+  },
+  {
+    "old": "For check_upload below,state its returned value for each call:(i)check_upload(\"A.TXT\",1024),(ii)check_upload(\"a.pdf\",900),(iii)check_upload(\"b.csv\",1025),(iv)check_upload(\"c.exe\",2000).\n\ndef check_upload(name,size):\n    errors=[]\n    extension=name.rsplit(\".\",1)[-1].lower()\n    if extension not in [\"csv\",\"txt\"]:\n        errors.append(\"type\")\n    if size > 1024:\n        errors.append(\"size\")\n    if not errors:\n        return \"Accepted\"\n    return errors",
+    "new": "For check_upload below, state its returned value for each call:(i)check_upload(\"A.TXT\", 1024),(ii)check_upload(\"a.pdf\", 900),(iii)check_upload(\"b.csv\", 1025),(iv)check_upload(\"c.exe\", 2000).\n\ndef check_upload(name,size):\n    errors=[]\n    extension=name.rsplit(\".\",1)[-1].lower()\n    if extension not in [\"csv\",\"txt\"]:\n        errors.append(\"type\")\n    if size > 1024:\n        errors.append(\"size\")\n    if not errors:\n        return \"Accepted\"\n    return errors"
+  },
+  {
+    "old": "Retains extension/threshold/conditionalerror reasoning;Python stringprocessing/selection replacesPHPspecificfileuploadAPI;no binaryfile-I/O scopeadded.",
+    "new": "Retains extension/threshold/conditional error reasoning; Python string processing/selection replacesPHPspecificfileuploadAPI; no binary file-I/O scope added."
+  },
+  {
+    "old": "(i)\"Accepted\".; (ii)[\"type\"].; (iii)[\"size\"].; (iv)[\"type\",\"size\"] inthat order.",
+    "new": "(i)\"Accepted\".; (ii)[\"type\"].; (iii)[\"size\"].; (iv)[\"type\",\"size\"] in that order."
+  },
+  {
+    "old": "(iv)[\"type\",\"size\"] inthat order.",
+    "new": "(iv)[\"type\",\"size\"] in that order."
+  },
+  {
+    "old": "Explain one benefit andone limitation of processing a shared application\u2019s database requests on a centralserver rather than independently on everyclient.",
+    "new": "Explain one benefit and one limitation of processing a shared application\u2019s database requests on a central server rather than independently on every client."
+  },
+  {
+    "old": "Retains client-serverresource tradeoffs withoutserver-scriptingtaxonomy.",
+    "new": "Retains client-server resource trade offs without server-scripting taxonomy."
+  },
+  {
+    "old": "Server centralizes the authoritative resource/processingrules.; Clients can use the service without each hosting the entire database oritscredentials.; The system depends onserver/network availability;server-side placement alone doesnotguarantee speed orsecurity.",
+    "new": "Server centralizes the authoritative resource/processing rules.; Clients can use the service without each hosting the entire database or its credentials.; The system depends on server/network availability; server-side placement alone does not guarantee speed or security."
+  },
+  {
+    "old": "Server centralizes the authoritative resource/processingrules.",
+    "new": "Server centralizes the authoritative resource/processing rules."
+  },
+  {
+    "old": "Clients can use the service without each hosting the entire database oritscredentials.",
+    "new": "Clients can use the service without each hosting the entire database or its credentials."
+  },
+  {
+    "old": "The system depends onserver/network availability;server-side placement alone doesnotguarantee speed orsecurity.",
+    "new": "The system depends on server/network availability; server-side placement alone does not guarantee speed or security."
+  },
+  {
+    "old": "Outline why losslesscompression is appropriate when an archive must preserve original media data exactly.",
+    "new": "Outline why lossless compression is appropriate when an archive must preserve original media data exactly."
+  },
+  {
+    "old": "It encodes the information without discarding any originaldata.; Decompression reconstructs the original exactly,so no compression-induced informationloss occurs.",
+    "new": "It encodes the information without discarding any original data.; Decompression reconstructs the original exactly, so no compression-induced information loss occurs."
+  },
+  {
+    "old": "It encodes the information without discarding any originaldata.",
+    "new": "It encodes the information without discarding any original data."
+  },
+  {
+    "old": "Decompression reconstructs the original exactly,so no compression-induced informationloss occurs.",
+    "new": "Decompression reconstructs the original exactly, so no compression-induced information loss occurs."
+  },
+  {
+    "old": "Discuss privacy andconsistency considerations when a distributed database replicates confidential employee records across several sites.",
+    "new": "Discuss privacy and consistency considerations when a distributed database replicates confidential employee records across several sites."
+  },
+  {
+    "old": "Retains distributed-copy/privacyreasoning underexplicitdistributed-database security/consistency/replication;no requirementtoanalyseparticularlaws.",
+    "new": "Retains distributed-copy/privacy reasoning under explicit distributed-database security/consistency/replication; no requirement to analyse particular laws."
+  },
+  {
+    "old": "Replication creates multiple copies thatmust remain consistent.; Copies can improve availability after a sitefailure.; Each site/copy must enforce appropriate data-security controls.; A correction/deletion applied at one site mustpropagate consistently toother replicas.; Additional copies can enlarge the exposure surface if some sites are poorly protected.; Balanced conclusion weighs resilience/access against consistent protection andreplica-management requirements.",
+    "new": "Replication creates multiple copies that must remain consistent.; Copies can improve availability after a site failure.; Each site/copy must enforce appropriate data-security controls.; A correction/deletion applied at one site must propagate consistently toother replicas.; Additional copies can enlarge the exposure surface if some sites are poorly protected.; Balanced conclusion weighs resilience/access against consistent protection and replica-management requirements."
+  },
+  {
+    "old": "Replication creates multiple copies thatmust remain consistent.",
+    "new": "Replication creates multiple copies that must remain consistent."
+  },
+  {
+    "old": "Copies can improve availability after a sitefailure.",
+    "new": "Copies can improve availability after a site failure."
+  },
+  {
+    "old": "A correction/deletion applied at one site mustpropagate consistently toother replicas.",
+    "new": "A correction/deletion applied at one site must propagate consistently toother replicas."
+  },
+  {
+    "old": "Balanced conclusion weighs resilience/access against consistent protection andreplica-management requirements.",
+    "new": "Balanced conclusion weighs resilience/access against consistent protection and replica-management requirements."
+  },
+  {
+    "old": "Explain how a small company can deliver a subscription-based schedulingapplication worldwide usingSaaS andcloudinfrastructure.",
+    "new": "Explain how a small company can deliver a subscription-based scheduling application worldwide using SaaS and cloud infrastructure."
+  },
+  {
+    "old": "Retains SaaS/cloudservice reasoning;removesSEO/businesshistory/APIrequirements notspecified2027scope.",
+    "new": "Retains SaaS/cloud service reasoning; removes SEO/business history/APIrequirements not specified 2027 scope."
+  },
+  {
+    "old": "The application is hosted as aservice rather than installed/maintained separately byeverycustomer.; Customers access the software through connectedclientdevices.; Internet connectivity allows remote customers toreach the hostedservice.; Central updates canbe deployed for manyusers withoutdistributing physicalpackages.; Cloudinfrastructure canadjust resources asdemandchanges.; The company retains responsibility forserviceconfiguration/security andpays forresourceuse;globalreach stilldepends onconnectivity andcapacity.",
+    "new": "The application is hosted as a service rather than installed/maintained separately by every customer.; Customers access the software through connected client devices.; Internet connectivity allows remote customers to reach the hosted service.; Central updates can be deployed for many users without distributing physical packages.; Cloud infrastructure can adjust resources as demand changes.; The company retains responsibility for service configuration/security and pays for resource use; global reach still depends on connectivity and capacity."
+  },
+  {
+    "old": "The application is hosted as aservice rather than installed/maintained separately byeverycustomer.",
+    "new": "The application is hosted as a service rather than installed/maintained separately by every customer."
+  },
+  {
+    "old": "Customers access the software through connectedclientdevices.",
+    "new": "Customers access the software through connected client devices."
+  },
+  {
+    "old": "Internet connectivity allows remote customers toreach the hostedservice.",
+    "new": "Internet connectivity allows remote customers to reach the hosted service."
+  },
+  {
+    "old": "Central updates canbe deployed for manyusers withoutdistributing physicalpackages.",
+    "new": "Central updates can be deployed for many users without distributing physical packages."
+  },
+  {
+    "old": "Cloudinfrastructure canadjust resources asdemandchanges.",
+    "new": "Cloud infrastructure can adjust resources as demand changes."
+  },
+  {
+    "old": "The company retains responsibility forserviceconfiguration/security andpays forresourceuse;globalreach stilldepends onconnectivity andcapacity.",
+    "new": "The company retains responsibility for service configuration/security and pays for resource use; global reach still depends on connectivity and capacity."
+  },
+  {
+    "old": "A Producer stores references to Products that can exist independently andcan move between Producers. State the appropriate aggregation/composition relationship.",
+    "new": "A Producer stores references to Products that can exist independently and can move between Producers. State the appropriate aggregation/composition relationship."
+  },
+  {
+    "old": "Retains has-a reasoning andexplicitly establishes independentlifetime;doesnotinfer ownershipfromreferencearrayalone.",
+    "new": "Retains has-a reasoning and explicitly establishes independent life time; does not infer ownership from reference array alone."
+  },
+  {
+    "old": "Producer has constructor __init__(self,name,region). Construct Python code creating a Producer for \"Aster Works\" in \"North\" andassign it to supplier.",
+    "new": "Producer has constructor __init__(self, name, region). Construct Python code creating a Producer for \"Aster Works\" in \"North\" and assign it to supplier."
+  },
+  {
+    "old": "Retains constructor invocation/argument/state reasoning;Python replacesJava typeddeclaration/new syntax.",
+    "new": "Retains constructor invocation/argument/state reasoning; Python replaces Java typed declaration/new syntax."
+  },
+  {
+    "old": "Calls the Producer class tocreate aninstance.",
+    "new": "Calls the Producer class to create an instance."
+  },
+  {
+    "old": "Outline why a Python Producer class might document _products as non-public andprovide controlled methods for changing it.",
+    "new": "Outline why a Python Producer class might document _products as non-public and provide controlled methods for changing it."
+  },
+  {
+    "old": "AccuratePython informationhiding;nofalseprivateaccessenforcement.",
+    "new": "AccuratePython information hiding; no false private access enforcement."
+  },
+  {
+    "old": "Callers are directed to methods that can enforce valid changes rather than altering internal state arbitrarily.; The underscore is a convention,not enforced privacy;the controlled interface supports encapsulation.",
+    "new": "Callers are directed to methods that can enforce valid changes rather than altering internal state arbitrarily.; The underscore is a convention, not enforced privacy; the controlled interface supports encapsulation."
+  },
+  {
+    "old": "The underscore is a convention,not enforced privacy;the controlled interface supports encapsulation.",
+    "new": "The underscore is a convention, not enforced privacy; the controlled interface supports encapsulation."
+  },
+  {
+    "old": "A function can be reused where the same task isneeded.; This avoids duplicating logic andkeeps corrections inoneplace.; Individual functions can be tested independently.; Smaller focused units make faults easier tolocate andchanges easier toisolate.",
+    "new": "A function can be reused where the same task is needed.; This avoids duplicating logic and keeps corrections in one place.; Individual functions can be tested independently.; Smaller focused units make faults easier to locate and changes easier to isolate."
+  },
+  {
+    "old": "A function can be reused where the same task isneeded.",
+    "new": "A function can be reused where the same task is needed."
+  },
+  {
+    "old": "This avoids duplicating logic andkeeps corrections inoneplace.",
+    "new": "This avoids duplicating logic and keeps corrections in one place."
+  },
+  {
+    "old": "Smaller focused units make faults easier tolocate andchanges easier toisolate.",
+    "new": "Smaller focused units make faults easier to locate and changes easier to isolate."
+  },
+  {
+    "old": "Construct a UML class diagram for Producer. It has non-public _name:str,_region:str and_products:list[Product]. Its public methods are add_product(item:Product)->None andtotal_fee()->float. Use conceptual UML visibility markings;Python underscores remain a convention.",
+    "new": "Construct a UML class diagram for Producer. It has non-public _name:str,_region:str and_products:list[Product]. Its public methods are add_product(item:Product)->None andtotal_fee()->float. Use conceptual UML visibility markings; Python underscores remain a convention."
+  },
+  {
+    "old": "Preserves UMLclassrepresentation using providedPython-compatibletypes/signatures;doesnotinclude sourceMSinventedmethod.",
+    "new": "Preserves UMLclassrepresentation using provided Python-compatible types/signatures; does not include sourceMSinventedmethod."
+  },
+  {
+    "old": "Class named Producer with separate name,attribute andmethod compartments.",
+    "new": "Class named Producer with separate name, attribute and method compartments."
+  },
+  {
+    "old": "All three attributes with stated types andnon-public visibility.",
+    "new": "All three attributes with stated types and non-public visibility."
+  },
+  {
+    "old": "Both public methods with parameters/returntypes as specified.",
+    "new": "Both public methods with parameters/return types as specified."
+  },
+  {
+    "old": "State a suitable Python type for a product\u2019s material name,such as \"aluminium\".",
+    "new": "State a suitable Python type for a product\u2019s material name, such as \"aluminium\"."
+  },
+  {
+    "old": "Source datatype selection retained withPython type naming.",
+    "new": "Source data type selection retained with Python type naming."
+  },
+  {
+    "old": "Clarifies fractional measurement;no separateDecimal-library requirement.",
+    "new": "Clarifies fractional measurement; no separate Decimal-library requirement."
+  },
+  {
+    "old": "Retains binary-state datatype reasoning withPython naming.",
+    "new": "Retains binary-state data type reasoning with Python naming."
+  },
+  {
+    "old": "Subclasses reuse common parent behaviour.; This avoids repeating the same implementation ineachtype.; Shared functionality can be maintained centrally in the parent.; Subclasses inherit suitable corrections while specializing only the behaviour that differs.",
+    "new": "Subclasses reuse common parent behaviour.; This avoids repeating the same implementation in each type.; Shared functionality can be maintained centrally in the parent.; Subclasses inherit suitable corrections while specializing only the behaviour that differs."
+  },
+  {
+    "old": "This avoids repeating the same implementation ineachtype.",
+    "new": "This avoids repeating the same implementation in each type."
+  },
+  {
+    "old": "Explain a design using Product as parent of FoodProduct,MachinePart andService. All share title andprice;FoodProduct adds expiry date,MachinePart adds mass,andService adds duration.",
+    "new": "Explain a design using Product as parent of FoodProduct, MachinePart and Service. All share title and price; FoodProduct adds expiry date, MachinePart adds mass, and Service adds duration."
+  },
+  {
+    "old": "Put shared title andprice initialization/behaviour inProduct.; Derive each specialized class fromProduct so those shared features are inherited.; Add the relevant specialized field ineach subclass andinstantiate the appropriate subtype for eachrecord.",
+    "new": "Put shared title and price initialization/behaviour in Product.; Derive each specialized class from Product so those shared features are inherited.; Add the relevant specialized field in each subclass and instantiate the appropriate subtype for each record."
+  },
+  {
+    "old": "Put shared title andprice initialization/behaviour inProduct.",
+    "new": "Put shared title and price initialization/behaviour in Product."
+  },
+  {
+    "old": "Derive each specialized class fromProduct so those shared features are inherited.",
+    "new": "Derive each specialized class from Product so those shared features are inherited."
+  },
+  {
+    "old": "Add the relevant specialized field ineach subclass andinstantiate the appropriate subtype for eachrecord.",
+    "new": "Add the relevant specialized field in each subclass and instantiate the appropriate subtype for each record."
+  },
+  {
+    "old": "Construct mark_sold(producers,producer_name,title) inPython. Each producer has name andproducts;each product has title andmethod mark_sold(). Names/titles identify exactly one existing product. Search for that product,call its method once,andstop.",
+    "new": "Construct mark_sold(producers, producer_name, title) in Python. Each producer has name and products; each product has title and method mark_sold(). Names/titles identify exactly one existing product. Search for that product, call its method once, and stop."
+  },
+  {
+    "old": "Retains nested object-list search andfieldaccess;no classconstruction coverage claimed for anexistingobject-method task.",
+    "new": "Retains nested object-list search and field access; no class construction coverage claimed for an existing object-method task."
+  },
+  {
+    "old": "Traverses only that producer\u2019s productlist.",
+    "new": "Traverses only that producer\u2019s product list."
+  },
+  {
+    "old": "Calls mark_sold on the matchingproduct.",
+    "new": "Calls mark_sold on the matching product."
+  },
+  {
+    "old": "Stops after that update without marking otherproducts.",
+    "new": "Stops after that update without marking other products."
+  },
+  {
+    "old": "A constructor executes self.count=0 andself.products=[]. State the initial count immediately after construction.",
+    "new": "A constructor executes self.count=0 and self.products=[]. State the initial count immediately after construction."
+  },
+  {
+    "old": "Construct top_three(products) inPython. Each product has a price attribute andthe list contains atleastthree products. Return three highest-priced product objects in descending price order,using selection sort. Do not modify the supplied list.",
+    "new": "Construct top_three(products) in Python. Each product has a price attribute and the list contains at least three products. Return three highest-priced product objects in descending price order, using selection sort. Do not modify the supplied list."
+  },
+  {
+    "old": "Retains selectionsort/objects/top-k reasoning;explicitminimumlength avoids sourceunderspecification,Pythoncopyprotectsinput.",
+    "new": "Retains selection sort/objects/top-k reasoning; explicit minimum length avoids source under specification, Python copy protects input."
+  },
+  {
+    "old": "def top_three(products):\n    work=products[:]\n    for i in range(3):\n        best=i\n        for j in range(i+1,len(work)):\n            if work[j].price > work[best].price:\n                best=j\n        work[i],work[best]=work[best],work[i]\n    return work[:3]",
+    "new": "def top_three(products):\n    work=products[:]\n    for i in range(3):\n        best=i\n        for j in range(i+1,len(work)):\n            if work[j].price > work[best].price:\n                best=j\n        work[i], work[best]=work[best], work[i]\n    return work[:3]"
+  },
+  {
+    "old": "Creates a separate working copy andreturns its first three objects.",
+    "new": "Creates a separate working copy and returns its first three objects."
+  },
+  {
+    "old": "Performs three selection passes over positions0..2.",
+    "new": "Performs three selection passes over positions 0..2."
+  },
+  {
+    "old": "Swaps selected object into the current output position,producing descending order.",
+    "new": "Swaps selected object into the current output position, producing descending order."
+  },
+  {
+    "old": "Construct total_fee(products) inPython. Each product has sold:Boolean andprice:numeric. A marketplace charges12% of the combined price of sold products only. Return the total fee;unsold products contribute nothing.",
+    "new": "Construct total_fee(products) in Python. Each product has sold:Boolean and price:numeric. A market place charges 12% of the combined price of sold products only. Return the total fee; unsold products contribute nothing."
+  },
+  {
+    "old": "Retains conditional object-list accumulation andpercentagecalculation;not mapped to object-instantiation.",
+    "new": "Retains conditional object-list accumulation and percentage calculation; not map ped to object-instantiation."
+  },
+  {
+    "old": "Initializes anumeric total.",
+    "new": "Initializes a numeric total."
+  },
+  {
+    "old": "Checks that product.sold isTrue.",
+    "new": "Checks that product.sold is True."
+  },
+  {
+    "old": "Accumulates only those soldprices.",
+    "new": "Accumulates only those sold prices."
+  },
+  {
+    "old": "Returns total multiplied by0.12 after theloop.",
+    "new": "Returns total multiplied by 0.12 after the loop."
+  },
+  {
+    "old": "Provides a standardized repertoire/code-point system covering many writing systems.; Suitable Unicode encodings therefore represent names beyond one restricted local alphabet without replacing their characters.",
+    "new": "Provides a standardized repertoire/code-point system covering many writing systems.; Suitable Unicode en co dings therefore represent names beyond one restricted local alphabet without replacing their characters."
+  },
+  {
+    "old": "Suitable Unicode encodings therefore represent names beyond one restricted local alphabet without replacing their characters.",
+    "new": "Suitable Unicode en co dings therefore represent names beyond one restricted local alphabet without replacing their characters."
+  },
+  {
+    "old": "Narrows legacycollection-library benefits to explicitPythonlistadd/remove/traversal scope.",
+    "new": "Narrows legacy collection-library benefits to explicitPythonlistadd/remove/traversal scope."
+  },
+  {
+    "old": "The list provides an existing removal operation.; The program neednot duplicate its element-shifting/bookkeeping implementation,which simplifies the clientcode.",
+    "new": "The list provides an existing removal operation.; The program need not duplicate its element-shifting/bookkeeping implementation, which simplifies the client code."
+  },
+  {
+    "old": "The program neednot duplicate its element-shifting/bookkeeping implementation,which simplifies the clientcode.",
+    "new": "The program need not duplicate its element-shifting/bookkeeping implementation, which simplifies the client code."
+  },
+  {
+    "old": "Describe,without code,how to insert a new uniquely named client into an alphabetically ordered singly linked list. Include empty-list andhead-insertion cases;preserve existing order.",
+    "new": "Describe, without code, how to insert a new uniquely named client into an alphabetically ordered singly linked list. Include empty-list and head-insertion cases; preserve existing order."
+  },
+  {
+    "old": "Repairs sourcefigure\u2019snot-actually-orderedlist byexplicitlyassuming sortedinput;preserves algorithmic insertionreasoning.",
+    "new": "Repairs source figure\u2019snot-actually-ordered list by explicitly assuming sorted input; preserves algorithmic insertion reasoning."
+  },
+  {
+    "old": "Create the new node containing the clientrecord.; Start current athead with previous unset.; Move through smaller names,keeping previous,until the first larger name orend.; Set new.next tocurrent.; If previous exists,set previous.next tonew;otherwise update head tonew,also handling anemptylist.",
+    "new": "Create the new node containing the client record.; Start current at head with previous unset.; Move through smaller names, keeping previous, until the first larger name or end.; Set new.next to current.; If previous exists, set previous.next to new; otherwise update head to new, also handling an empty list."
+  },
+  {
+    "old": "Create the new node containing the clientrecord.",
+    "new": "Create the new node containing the client record."
+  },
+  {
+    "old": "Start current athead with previous unset.",
+    "new": "Start current at head with previous unset."
+  },
+  {
+    "old": "Move through smaller names,keeping previous,until the first larger name orend.",
+    "new": "Move through smaller names, keeping previous, until the first larger name or end."
+  },
+  {
+    "old": "Set new.next tocurrent.",
+    "new": "Set new.next to current."
+  },
+  {
+    "old": "If previous exists,set previous.next tonew;otherwise update head tonew,also handling anemptylist.",
+    "new": "If previous exists, set previous.next to new; otherwise update head to new, also handling an empty list."
+  },
+  {
+    "old": "Construct count_above(node,limit) inPython for a singly linked list. node is the current node orNone;each node has next andcustomer.budget. Return the number of customers whose budget is strictly greater than limit. Use simple nonbranching recursion.",
+    "new": "Construct count_above(node, limit) in Python for a singly linked list. node is the current node or None; each node has next and customer.budget. Return the number of customers whose budget is strictly greater than limit. Use simple non branching recursion."
+  },
+  {
+    "old": "Retains nonbranching recursive conditionalcount;node traversal avoids importing JavaLinkedList indexedaccess costs/API.",
+    "new": "Retains non branching recursive conditional count; node traversal avoids importing JavaLinkedList indexed access costs/API."
+  },
+  {
+    "old": "Returns0 when node isNone.",
+    "new": "Returns 0 when node is None."
+  },
+  {
+    "old": "Compares the current budget with limit usingstrictgreater-than.",
+    "new": "Compares the current budget with limit using strict greater-than."
+  },
+  {
+    "old": "Adds1 to the recursive result exactly when the budget qualifies.",
+    "new": "Adds 1 to the recursive result exactly when the budget qualifies."
+  },
+  {
+    "old": "Recursive calls retain a frame for each active call.; A very long list can therefore consume large stackspace orhit a recursion limit.; Each recursive call adds call/return overhead.; A simple loop with a counter can perform this traversal without that extra overhead.",
+    "new": "Recursive calls retain a frame for each active call.; A very long list can therefore consume large stack space or hit a recursion limit.; Each recursive call adds call/return overhead.; A simple loop with a counter can perform this traversal without that extra overhead."
+  },
+  {
+    "old": "A very long list can therefore consume large stackspace orhit a recursion limit.",
+    "new": "A very long list can therefore consume large stack space or hit a recursion limit."
   }
 ]

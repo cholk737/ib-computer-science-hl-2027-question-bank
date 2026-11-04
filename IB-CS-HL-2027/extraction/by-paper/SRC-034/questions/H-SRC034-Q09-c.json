@@ -1,0 +1,117 @@
+{
+  "original_assessment_context": "FriendsforDogs adoption webpage with images,textinput,submit;HTTP;PHPserverquery selects dogs bypostedname.",
+  "source_scope_note": "B mappings identify the converted question scope and do not certify all original assessed content as within2027 scope.",
+  "source_question_id": "H-SRC034-Q09-c",
+  "source_id": "SRC-034",
+  "source_filename": "Computer_science_paper_2__HL.pdf",
+  "year": "2023",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "not stated",
+  "option": "C",
+  "question": "9",
+  "subquestion": "c",
+  "source_pdf_pages": [
+    14
+  ],
+  "source_printed_pages": [
+    "13"
+  ],
+  "original_marks": 4,
+  "command_term": "Describe",
+  "original_text": "[Source PDF page 13]\nThe following is an excerpt of the code that enables a dog to be chosen for adoption.\n<p>Please type the name of the dog you like and click on submit</p>\n<input type = \"text\" name = \"dogname\">\n(Option C continues on the following page)\n\n[Source PDF page 14]\n(Option C, question 9 continued)\nPart of the file dogadoption.php is shown:\n<?php\n$dogname = $_POST[\"dogname\"];\n$conn = $mysqli_connect(localhost, $username, $pass,\"dogDB\");\n$sql = \"SELECT dname,image, price FROM Dogs WHERE dname=$dogname\";\n$result = mysqli_query($conn,$sql);\nif (mysqli_num_rows($result) > 0){\nwhile($row= mysqli_fetch_assoc($result)){\necho \"Our \".$row[\"image\"].\" \".$row[\"dogname\"]. \" is for \".\n$row[\"price\"].<br>;\n}\n}\nelse{\necho \"not found\";\n}\nmysqli_close($conn);\n?>\nThe PHP code is executed on the server.\n(c) Describe the processing that takes place when this code is executed. [4]",
+  "parent_context": "FriendsforDogs adoption webpage with images,textinput,submit;HTTP;PHPserverquery selects dogs bypostedname.",
+  "assets": [
+    {
+      "kind": "source_page",
+      "description": "Exact PHP/SQL source;syntax errors preserved only in source",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-14.png",
+      "source_pdf_page": 14,
+      "visually_verified": true
+    },
+    {
+      "kind": "source_page",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-12.png",
+      "source_pdf_page": 12,
+      "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+    },
+    {
+      "kind": "source_page",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-13.png",
+      "source_pdf_page": 13,
+      "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+    }
+  ],
+  "assessed_concepts": [
+    "Describe: Describe the processing that takes place when this code is executed."
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-037",
+    "filename": "Computer_science_paper_2__HL_markscheme.pdf",
+    "pdf_pages": [
+      18
+    ],
+    "question_reference": "9(c)",
+    "marking_summary": "ReceivePOST,connectdatabase,runquery,loopresults,displayor notfound,close.",
+    "source_issues": []
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "mapping_target": "adapted_practice_only",
+      "syllabus_code": "A3.3.2",
+      "scope_evidence": "• Queries must include joins, relational operators, filtering, pattern matching, and ordering data\n• SQL commands: SELECT, DISTINCT, FROM, WHERE, BETWEEN, ORDER BY, GROUP BY, HAVING, ASC, DESC, JOIN, LIKE with % wildcard, AND, OR, NOT (note: Syntax may vary in different database systems)",
+      "rationale": "Retains relationalqueryinterpretation subset;removesPHP-specificprocessing anduses requiredtwo-tableSQLscope.",
+      "theme": "A",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+    "marks": "Printed allocation transcribed.",
+    "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+    "official_answer_status": "See source markscheme record"
+  },
+  "original_text_manual_synopsis": "Describe the processing that takes place when this code is executed.",
+  "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+  "source_page_evidence": [
+    {
+      "pdf_page": 14,
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-014.txt"
+    }
+  ],
+  "source_context_page_evidence": [
+    {
+      "pdf_page": 12,
+      "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-12.png",
+      "kind": "complete_original_page_raster",
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-012.txt"
+    },
+    {
+      "pdf_page": 13,
+      "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-13.png",
+      "kind": "complete_original_page_raster",
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-013.txt"
+    },
+    {
+      "pdf_page": 14,
+      "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-14.png",
+      "kind": "complete_original_page_raster",
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-014.txt"
+    }
+  ],
+  "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+  "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2__HL.pdf",
+  "source_issues": [],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC034-Q09-c"
+  ]
+}

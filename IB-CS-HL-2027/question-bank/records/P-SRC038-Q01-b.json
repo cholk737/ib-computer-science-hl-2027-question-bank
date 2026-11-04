@@ -1,0 +1,65 @@
+{
+  "question_id": "P-SRC038-Q01-b",
+  "source_question_ids": [
+    "H-SRC038-Q01-b"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Explain two benefits of replacing separate paper equipment logs with a shared relational database used by several museum departments. Develop each benefit in this setting.",
+  "syllabus_codes": [
+    "A3.1.1"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 6,
+  "command_term": "Explain",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "Concurrency control lets staff record loans simultaneously while preventing conflicting updates, so separate departments see consistent equipment availability. Queries can retrieve overdue equipment by borrower and date quickly, avoiding manual searches and helping staff recover items before another booking.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Concurrency/shared-access benefit."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains coordinated updates/consistent availability."
+    },
+    {
+      "marks": 1,
+      "criterion": "Concrete scheduling consequence."
+    },
+    {
+      "marks": 1,
+      "criterion": "Efficient filtered retrieval benefit."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains borrower/date query compared with manual search."
+    },
+    {
+      "marks": 1,
+      "criterion": "Concrete equipment-recovery consequence."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Accept two other developed relational-database benefits supported by A3.1.1, with distinct consequences."
+  ],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      5
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC038-Q01-b.json",
+  "question_path": "question-bank/questions/P-SRC038-Q01-b.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC038-Q01-b.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

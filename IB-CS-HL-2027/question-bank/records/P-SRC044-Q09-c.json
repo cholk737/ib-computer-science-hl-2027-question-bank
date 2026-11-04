@@ -1,0 +1,64 @@
+{
+  "question_id": "P-SRC044-Q09-c",
+  "source_question_ids": [
+    "H-SRC044-Q09-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A distributed database replicates personal records across several sites. Discuss the security benefits and risks of replication, and how a deletion request should be handled consistently. No knowledge of a particular privacy law is required.",
+  "syllabus_codes": [
+    "A3.4.4"
+  ],
+  "theme": "A",
+  "level": "HL-only",
+  "marks": 6,
+  "command_term": "Discuss",
+  "difficulty": "medium",
+  "adaptation_rationale": "Retains decentralization/privacy reasoning only through explicit distributed-database replication,data security and consistency; removes web-politics/legal recall.",
+  "solution": "Replication supports fault tolerance: a site failure need not make all records unavailable. But every copy needs appropriate access controls; a weakly protected site can expose data, and incomplete deletion can leave personal records elsewhere. Coordinated updates/deletions and checks across replicas are needed to preserve consistency. Replication is useful for availability only when security and update consistency are managed across all sites.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Replication availability/fault-tolerance benefit."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains a site-failure benefit."
+    },
+    {
+      "marks": 1,
+      "criterion": "Multiple copies increase security-management exposure."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains stale undeleted personal-data risk."
+    },
+    {
+      "marks": 1,
+      "criterion": "Coordinated deletion/update consistency requirement."
+    },
+    {
+      "marks": 1,
+      "criterion": "Balanced contextual conclusion."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      19,
+      20
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC044-Q09-c.json",
+  "question_path": "question-bank/questions/P-SRC044-Q09-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC044-Q09-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

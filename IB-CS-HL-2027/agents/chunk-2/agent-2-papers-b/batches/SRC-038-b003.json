@@ -1,0 +1,835 @@
+{
+  "source_id": "SRC-038",
+  "batch_id": "SRC-038-b003",
+  "source_questions": [
+    {
+      "source_question_id": "H-SRC038-Q04-b",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "A",
+      "question": 4,
+      "subquestion": "b",
+      "source_pdf_pages": [
+        8
+      ],
+      "source_printed_pages": [
+        "7"
+      ],
+      "original_marks": 3,
+      "command_term": "Explain",
+      "original_text": "Explain one reason why data matching is an appropriate method of reviewing patients’ past medical treatments.",
+      "parent_context": "– 7 – 8825 – 6405\nTurn over\n(Option A continued)\n4. A characteristic of an object-oriented database is object hierarchy. This is where objects are \norganized into classes and subclasses.\n(a) (i)   Identify three other characteristics of an object-oriented database. [3]\nA multi-dimensional database could offer significant advantages for analysing the \ndental treatment data of patients.\n(ii) Describe one advantage of having dental treatment data organized  \ninto dimensions. [3]\nThe dental clinic uses data matching to review patients’ past medical treatments.\n(b) Explain one reason why data matching is an appropriate method of reviewing patients’ \npast medical treatments. [3]\nThe dental clinic has decided to use forecasting, a sub-branch of data mining, in its database.\n(c) Outline two research areas to which the dental clinic could apply forecasting. [4]\nThe dental clinic has decided to apply database segmentation to focus on specific  \npatient groups.\n(d) Justify applying database segmentation to focus on specific patient groups. [4]\nThe dental regulatory authority uses a data warehouse to store the treatment data from \nmultiple clinics.\n(e) Explain why the three processes of extract, transform, and load (ETL) need to be \napplied to treatment data. [3]\nEnd of Option A",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-08.png",
+          "source_pdf_page": 8,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Explain one reason why data matching is an appropriate method of reviewing patients’ past medical treatments.",
+        "Explain why matching LOAN"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          12
+        ],
+        "question_reference": "Q4 b",
+        "marking_summary": "Exact original MS leaf excerpt: Award [3] max Award [1] per identifying, [1] for expansion, and [1] for consequence; holistic view of a patient's treatment history; matches data across various sources – such as patient records, treatment logs, and pharmacy records; to see the full scope of a patient's medical background; assist with future diagnosis/treatment; matches treatment data across multiple heathcare providers; consolidating all treatment information; ensuring that new treatments are aligned with past interventions. increases patient safety/helps identify any potential risks; by data matching with other medical data/historical records; avoids treatments that cause negative reactions (e.g. allergies to anaesthetics); data match on the condition; cross-reference treatments with different patients; treatments effective for one patient can be recommended for another patient; accurate Patient Identification/Ensures  … [full leaf evidence retained]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [3] max\nAward [1] per identifying, [1] for expansion, and [1] for consequence;\nholistic view of a patient's treatment history;\nmatches data across various sources – such as patient records, treatment logs, and\npharmacy records;\nto see the full scope of a patient's medical background;\nassist with future diagnosis/treatment;\nmatches treatment data across multiple heathcare providers;\nconsolidating all treatment information;\nensuring that new treatments are aligned with past interventions.\nincreases patient safety/helps identify any potential risks;\nby data matching with other medical data/historical records;\navoids treatments that cause negative reactions (e.g. allergies to anaesthetics);\ndata match on the condition;\ncross-reference treatments with different patients;\ntreatments effective for one patient can be recommended for another patient;\naccurate Patient Identification/Ensures medical records accurately correspond to the\nright patient;\nautomated matching of treatment data with the correct patient avoids diagnosis\nerrors/can be done quickly;\nmanually cross-referencing data is likely to result in mistakes/takes more time;",
+        "source_issues": [],
+        "source_marking_evidence": "– 12 – 8825 – 6405M \n(b) Award [3] max\nAward [1] per identifying, [1] for expansion, and [1] for consequence;\nholistic view of a patient's treatment history;\nmatches data across various sources – such as patient records, treatment logs, and\npharmacy records;\nto see the full scope of a patient's medical background;\nassist with future diagnosis/treatment;\nmatches treatment data across multiple heathcare providers;\nconsolidating all treatment information;\nensuring that new treatments are aligned with past interventions.\nincreases patient safety/helps identify any potential risks;\nby data matching with other medical data/historical records;\navoids treatments that cause negative reactions (e.g. allergies to anaesthetics);\ndata match on the condition;\ncross-reference treatments with different patients;\ntreatments effective for one patient can be recommended for another patient;\naccurate Patient Identification/Ensures medical records accurately correspond to the\nright patient;\nautomated matching of treatment data with the correct patient avoids diagnosis\nerrors/can be done quickly;\nmanually cross-referencing data is likely to result in mistakes/takes more time;"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "A3.1.1",
+          "scope_evidence": "• Features: composite keys, foreign keys, primary keys, relationships, tables\n• Benefits of databases: community support, concurrency control, data consistency, data integrity, data retrieval, reduced data duplication, reduced redundancy, reliable transaction processing, scalability, security features\n• Limitations of databases: “big data” scalability issues, design complexity, hierarchical data handling, rigid schema, object-relational impedance mismatch, unstructured data handling",
+          "rationale": "Adapted target only: Explain why matching LOAN; guidance target: Explain the features, benefits and limitations of a relational database. Adaptation: Retains record-matching reasoning only as an explicit relational key/relationship application; no general data-matching taxonomy.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q04-b"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q04-c",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "A",
+      "question": 4,
+      "subquestion": "c",
+      "source_pdf_pages": [
+        8
+      ],
+      "source_printed_pages": [
+        "7"
+      ],
+      "original_marks": 4,
+      "command_term": "Outline",
+      "original_text": "Outline two research areas to which the dental clinic could apply forecasting.",
+      "parent_context": "– 7 – 8825 – 6405\nTurn over\n(Option A continued)\n4. A characteristic of an object-oriented database is object hierarchy. This is where objects are \norganized into classes and subclasses.\n(a) (i)   Identify three other characteristics of an object-oriented database. [3]\nA multi-dimensional database could offer significant advantages for analysing the \ndental treatment data of patients.\n(ii) Describe one advantage of having dental treatment data organized  \ninto dimensions. [3]\nThe dental clinic uses data matching to review patients’ past medical treatments.\n(b) Explain one reason why data matching is an appropriate method of reviewing patients’ \npast medical treatments. [3]\nThe dental clinic has decided to use forecasting, a sub-branch of data mining, in its database.\n(c) Outline two research areas to which the dental clinic could apply forecasting. [4]\nThe dental clinic has decided to apply database segmentation to focus on specific  \npatient groups.\n(d) Justify applying database segmentation to focus on specific patient groups. [4]\nThe dental regulatory authority uses a data warehouse to store the treatment data from \nmultiple clinics.\n(e) Explain why the three processes of extract, transform, and load (ETL) need to be \napplied to treatment data. [3]\nEnd of Option A",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-08.png",
+          "source_pdf_page": 8,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline two research areas to which the dental clinic could apply forecasting.",
+        "Explain two ways regression-based analysis of historical visitor data could support planning at a museum"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          13
+        ],
+        "question_reference": "Q4 c",
+        "marking_summary": "Exact original MS leaf excerpt: Award [4] max Award [1] per point up to [2] max for each section; dental services demand forecasting; predicts future patient needs for various dental services; aiding in resource planning and staffing; epidemiological Trends; forecasts trends in dental diseases or conditions; assisting in planning for public health and preventive care; financial Forecasting; assists in predicting future financial scenarios for clinics; like revenue streams or expense trends/based on historical data. patient appointments analysis; forecasting patient no-show rates; strategies for reducing these rates/decisions to improve clinic scheduling; staff scheduling; determine the busiest times during the day/week/year; so that an appropriate number of staff can be on duty. Mark as [2] + [2]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [4] max\nAward [1] per point up to [2] max for each section;\ndental services demand forecasting;\npredicts future patient needs for various dental services;\naiding in resource planning and staffing;\nepidemiological Trends;\nforecasts trends in dental diseases or conditions;\nassisting in planning for public health and preventive care;\nfinancial Forecasting;\nassists in predicting future financial scenarios for clinics;\nlike revenue streams or expense trends/based on historical data.\npatient appointments analysis;\nforecasting patient no-show rates;\nstrategies for reducing these rates/decisions to improve clinic scheduling;\nstaff scheduling;\ndetermine the busiest times during the day/week/year;\nso that an appropriate number of staff can be on duty.\nMark as [2] + [2]",
+        "source_issues": [],
+        "source_marking_evidence": "– 13 – 8825 – 6405M \n(c) Award [4] max\nAward [1] per point up to [2] max for each section;\ndental services demand forecasting;\npredicts future patient needs for various dental services;\naiding in resource planning and staffing;\nepidemiological Trends;\nforecasts trends in dental diseases or conditions;\nassisting in planning for public health and preventive care;\nfinancial Forecasting;\nassists in predicting future financial scenarios for clinics;\nlike revenue streams or expense trends/based on historical data.\npatient appointments analysis;\nforecasting patient no-show rates;\nstrategies for reducing these rates/decisions to improve clinic scheduling;\nstaff scheduling;\ndetermine the busiest times during the day/week/year;\nso that an appropriate number of staff can be on duty.\nMark as [2] + [2]\n(d) Award [4] max\nAward [1] per point;\nsegmentation allows patients to be grouped by specific demographics (e.g., by age,\ntreatment type, geographic location);\nidentify common dental issues prevalent in these groups;\nthese insights can inform targeted preventive measures;\ntreatments can be tailored to the unique needs of each group;\nresulting in personalised dental care;\nenhances the accuracy of dental care (due to more specific data from groups);\nsupports efficient use of resource as different groups require different resources;\nimproves planning towards dental issues prevalent in specific demographics;\nleads to cost savings and more efficient operations;"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "A3.4.3",
+          "scope_evidence": "• Data mining techniques must include classification, clustering, regression, association rule discovery, sequential pattern discovery, anomaly detection (note: This links to “A4 Machine learning”).\n• The uses of the techniques in extracting meaningful information from large data sets",
+          "rationale": "Adapted target only: Explain two ways regression-based analysis of historical visitor data could support planning at a museum; guidance target: Explain the role of online analytical processing (OLAP) and data mining for business intelligence. Adaptation: Retains forecasting uses with a named guide-listed mining technique.",
+          "theme": "A",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q04-c"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q04-d",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "A",
+      "question": 4,
+      "subquestion": "d",
+      "source_pdf_pages": [
+        8
+      ],
+      "source_printed_pages": [
+        "7"
+      ],
+      "original_marks": 4,
+      "command_term": "Justify",
+      "original_text": "Justify applying database segmentation to focus on specific patient groups.",
+      "parent_context": "– 7 – 8825 – 6405\nTurn over\n(Option A continued)\n4. A characteristic of an object-oriented database is object hierarchy. This is where objects are \norganized into classes and subclasses.\n(a) (i)   Identify three other characteristics of an object-oriented database. [3]\nA multi-dimensional database could offer significant advantages for analysing the \ndental treatment data of patients.\n(ii) Describe one advantage of having dental treatment data organized  \ninto dimensions. [3]\nThe dental clinic uses data matching to review patients’ past medical treatments.\n(b) Explain one reason why data matching is an appropriate method of reviewing patients’ \npast medical treatments. [3]\nThe dental clinic has decided to use forecasting, a sub-branch of data mining, in its database.\n(c) Outline two research areas to which the dental clinic could apply forecasting. [4]\nThe dental clinic has decided to apply database segmentation to focus on specific  \npatient groups.\n(d) Justify applying database segmentation to focus on specific patient groups. [4]\nThe dental regulatory authority uses a data warehouse to store the treatment data from \nmultiple clinics.\n(e) Explain why the three processes of extract, transform, and load (ETL) need to be \napplied to treatment data. [3]\nEnd of Option A",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-08.png",
+          "source_pdf_page": 8,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Justify applying database segmentation to focus on specific patient groups.",
+        "Describe how unsupervised clustering of visitor records could help a museum plan services, and give one limitation"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          13
+        ],
+        "question_reference": "Q4 d",
+        "marking_summary": "Exact original MS leaf excerpt: Award [4] max Award [1] per point; segmentation allows patients to be grouped by specific demographics (e.g., by age, treatment type, geographic location); identify common dental issues prevalent in these groups; these insights can inform targeted preventive measures; treatments can be tailored to the unique needs of each group; resulting in personalised dental care; enhances the accuracy of dental care (due to more specific data from groups); supports efficient use of resource as different groups require different resources; improves planning towards dental issues prevalent in specific demographics; leads to cost savings and more efficient operations;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [4] max\nAward [1] per point;\nsegmentation allows patients to be grouped by specific demographics (e.g., by age,\ntreatment type, geographic location);\nidentify common dental issues prevalent in these groups;\nthese insights can inform targeted preventive measures;\ntreatments can be tailored to the unique needs of each group;\nresulting in personalised dental care;\nenhances the accuracy of dental care (due to more specific data from groups);\nsupports efficient use of resource as different groups require different resources;\nimproves planning towards dental issues prevalent in specific demographics;\nleads to cost savings and more efficient operations;",
+        "source_issues": [],
+        "source_marking_evidence": "– 13 – 8825 – 6405M \n(c) Award [4] max\nAward [1] per point up to [2] max for each section;\ndental services demand forecasting;\npredicts future patient needs for various dental services;\naiding in resource planning and staffing;\nepidemiological Trends;\nforecasts trends in dental diseases or conditions;\nassisting in planning for public health and preventive care;\nfinancial Forecasting;\nassists in predicting future financial scenarios for clinics;\nlike revenue streams or expense trends/based on historical data.\npatient appointments analysis;\nforecasting patient no-show rates;\nstrategies for reducing these rates/decisions to improve clinic scheduling;\nstaff scheduling;\ndetermine the busiest times during the day/week/year;\nso that an appropriate number of staff can be on duty.\nMark as [2] + [2]\n(d) Award [4] max\nAward [1] per point;\nsegmentation allows patients to be grouped by specific demographics (e.g., by age,\ntreatment type, geographic location);\nidentify common dental issues prevalent in these groups;\nthese insights can inform targeted preventive measures;\ntreatments can be tailored to the unique needs of each group;\nresulting in personalised dental care;\nenhances the accuracy of dental care (due to more specific data from groups);\nsupports efficient use of resource as different groups require different resources;\nimproves planning towards dental issues prevalent in specific demographics;\nleads to cost savings and more efficient operations;"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "A4.3.4",
+          "scope_evidence": "• Clustering techniques in unsupervised learning group data based on feature similarities\n• Real-world applications of clustering may include using purchasing data to segment a customer base.",
+          "rationale": "Adapted target only: Describe how unsupervised clustering of visitor records could help a museum plan services, and give one limitation; guidance target: Describe how clustering techniques in unsupervised learning are used to group data based on similarities in features. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "A",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q04-d"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q04-e",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "A",
+      "question": 4,
+      "subquestion": "e",
+      "source_pdf_pages": [
+        8
+      ],
+      "source_printed_pages": [
+        "7"
+      ],
+      "original_marks": 3,
+      "command_term": "Explain",
+      "original_text": "Explain why the three processes of extract, transform, and load (ETL) need to be applied to treatment data.",
+      "parent_context": "– 7 – 8825 – 6405\nTurn over\n(Option A continued)\n4. A characteristic of an object-oriented database is object hierarchy. This is where objects are \norganized into classes and subclasses.\n(a) (i)   Identify three other characteristics of an object-oriented database. [3]\nA multi-dimensional database could offer significant advantages for analysing the \ndental treatment data of patients.\n(ii) Describe one advantage of having dental treatment data organized  \ninto dimensions. [3]\nThe dental clinic uses data matching to review patients’ past medical treatments.\n(b) Explain one reason why data matching is an appropriate method of reviewing patients’ \npast medical treatments. [3]\nThe dental clinic has decided to use forecasting, a sub-branch of data mining, in its database.\n(c) Outline two research areas to which the dental clinic could apply forecasting. [4]\nThe dental clinic has decided to apply database segmentation to focus on specific  \npatient groups.\n(d) Justify applying database segmentation to focus on specific patient groups. [4]\nThe dental regulatory authority uses a data warehouse to store the treatment data from \nmultiple clinics.\n(e) Explain why the three processes of extract, transform, and load (ETL) need to be \napplied to treatment data. [3]\nEnd of Option A",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-08.png",
+          "source_pdf_page": 8,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Explain why the three processes of extract, transform, and load (ETL) need to be applied to treatment data.",
+        "Explain why combining different branch records in a data warehouse requires consistent identifiers and formats"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          14
+        ],
+        "question_reference": "Q4 e",
+        "marking_summary": "Exact original MS leaf excerpt: Award [3] max Award [1] per point for extraction, [1] for transform, and [1] for load; Extract: identification of the data sources used by the various clinics (e.g., databases, cloud storage, spreadsheets etc); the warehouse will need different extraction processes for the different sources/file formats; retrieving the data either by incremental or full extraction strategies; validating the extraction process to ensure no data was lost; Transform: data warehouse needs data in a consistent format (standard data structure) so transforming data is needed; processes also clean the data, correcting inaccuracies, removing duplicates, and dealing with missing values to ensure data integrity; there may be need to augment data with generated aggregates; Load: transferring the data into appropriate data warehouse schema (e.g. tables, dimensions, and facts). there is need to verify the transfer pro … [full leaf evidence retained]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [3] max\nAward [1] per point for extraction, [1] for transform, and [1] for load;\nExtract:\nidentification of the data sources used by the various clinics (e.g., databases, cloud\nstorage, spreadsheets etc);\nthe warehouse will need different extraction processes for the different sources/file\nformats;\nretrieving the data either by incremental or full extraction strategies;\nvalidating the extraction process to ensure no data was lost;\nTransform:\ndata warehouse needs data in a consistent format (standard data structure) so\ntransforming data is needed;\nprocesses also clean the data, correcting inaccuracies, removing duplicates, and\ndealing with missing values to ensure data integrity;\nthere may be need to augment data with generated aggregates;\nLoad:\ntransferring the data into appropriate data warehouse schema (e.g. tables, dimensions,\nand facts).\nthere is need to verify the transfer process to ensure all expected data was successfully\nwritten to the data warehouse;\n\nOption B — Modelling and simulation",
+        "source_issues": [],
+        "source_marking_evidence": "– 14 – 8825 – 6405M \n(e) Award [3] max\nAward [1] per point for extraction, [1] for transform, and [1] for load;\nExtract:\nidentification of the data sources used by the various clinics (e.g., databases, cloud\nstorage, spreadsheets etc);\nthe warehouse will need different extraction processes for the different sources/file\nformats;\nretrieving the data either by incremental or full extraction strategies;\nvalidating the extraction process to ensure no data was lost;\nTransform:\ndata warehouse needs data in a consistent format (standard data structure) so\ntransforming data is needed;\nprocesses also clean the data, correcting inaccuracies, removing duplicates, and\ndealing with missing values to ensure data integrity;\nthere may be need to augment data with generated aggregates;\nLoad:\ntransferring the data into appropriate data warehouse schema (e.g. tables, dimensions,\nand facts).\nthere is need to verify the transfer process to ensure all expected data was successfully\nwritten to the data warehouse;"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "A3.4.2",
+          "scope_evidence": "• The roles of append-only data, subject-oriented data, integrated data, time-variant data, non-volatile data and data optimized for query performance, to ensure efficient data storage and analysis",
+          "rationale": "Adapted target only: Explain why combining different branch records in a data warehouse requires consistent identifiers and formats; guidance target: Explain the primary objectives of data warehouses in data management and business intelligence. Adaptation: Retains warehouse integration reasoning; detailed ETL stages/strategies are outside the assessed requirement.",
+          "theme": "A",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q04-e"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q05-a-i",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "B",
+      "question": 5,
+      "subquestion": "a-i",
+      "source_pdf_pages": [
+        9
+      ],
+      "source_printed_pages": [
+        "8"
+      ],
+      "original_marks": 1,
+      "command_term": "State",
+      "original_text": "State the probability of child 0 finding their number in the 5 boxes they opened. Your answer can be a formula, fraction, or decimal.",
+      "parent_context": "– 8 – 8825 – 6405\nOption B — Modelling and simulation\n5. Ten children play a game in which all of them or none of them win a prize. The rules of the \ngame are as follows:\n\ty 10 children are assigned a unique number from 0 to 9.\n\ty A cupboard contains 10 boxes, each numbered from 0 to 9.\n\ty 10 sheets of paper are numbered from 0 to 9.\n\ty One piece of paper is put into each box in random order (see Figure 4).\nFigure 4: 10 boxes, each containing a sheet of paper with a number from 0 to 9\nBox 0 1 2 3 4 5 6 7 8 9\nPaper 9 8 2 1 7 6 4 3 5 0\nEach child is allowed to open 5 boxes to look for their own number. You can assume they will \nnot open the same box twice.\nChild number 0 goes first and opens 5 of the 10 boxes.\n(a) (i)   State the probability of child 0 finding their number in the 5 boxes they opened.\nYour answer can be a formula, fraction, or decimal. [1]\n(ii) State the probability of all 10 children finding their number.\nYour answer can be a formula, fraction, or decimal. [1]\nThe children all get a prize if all 10 of them find their number within 5 attempts. They use the \nfollow-the-number strategy:\n1: Each child first opens the box labelled with their own number.\n2: If this box contains their number, they are successful.\n3: If unsuccessful, the child opens the box shown on the piece of paper.\n4: The child repeats steps 2 to 3 until 5 boxes are opened.\nExample 1:  Child 0 opens box 0, seeing 9 on the paper. They then open box 9 and see \ntheir number. They are successful.\nExample 2:  Child 1 opens box 1, seeing 8 on the paper. They then open box 8, seeing \n5 on the paper. Then they open box 5, then box 6, then box 4. They are \nnot successful.\n(b) State the order sequence for child 3, who opens box 3 in Figure 4. [1]\n(Option B continues on the following page)\n– 9 – 8825 – 6405\nTurn over\n(Option B, question 5 continued)\nA one-dimensional Boolean array, CHILDREN, is created and initialized so that all elements \nare False.\nA one-dimensional integer array, BOX, is created and initialized so that BOX contains 0, 1, 2, \n3, 4, 5, 6, 7, 8, 9.\nA function, random.shuffle(BOX), shuffles the BOX array randomly to change the sequence.\nFor example, the new sequence might be: 9, 8, 2, 1, 7, 6, 4, 3, 5, 0.\nThus, BOX[5] = 6\nThe children use the follow-the-number strategy shown previously.\nEach time a child is successful, the corresponding element in the array CHILDREN is set \nto True. If a child is unsuccessful, the corresponding element in the array CHILDREN  \nis unchanged.\n(c) Outline two reasons why this problem would be difficult to simulate using a spreadsheet. [4]\n(d) Construct an algorithm in pseudocode that uses the follow-the-number strategy before \noutputting each element in the array CHILDREN. [6]\nIf all 10 cells in the CHILDREN array are set to True, the children all win a prize.\nTo calculate the percentage of times all the children will win a prize, the pseudocode \nalgorithm in part (d) needs to be run 10 000 times.\n(e) Construct an algorithm in pseudocode that outputs, as a percentage, the number of \ntimes the children all win a prize. [4]\n(Option B continues on page 11)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-09.png",
+          "source_pdf_page": 9,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-10.png",
+          "source_pdf_page": 10,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: State the probability of child 0 finding their number in the 5 boxes they opened. Your answer can be a formula, fraction, or decimal.",
+        "Pure probability calculation for the box game is not an individual 2027 computer-science objective."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          15
+        ],
+        "question_reference": "Q5 a-i",
+        "marking_summary": "Exact original MS leaf excerpt: Award [1] max 5/10 or ½ or 50%;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [1] max\n5/10  or  ½ or 50%;",
+        "source_issues": [],
+        "source_marking_evidence": "– 15 – 8825 – 6405M \nOption B — Modelling and simulation \n5. (a) (i) Award [1] max\n5/10  or  ½ or 50%; \n(ii) Award [1] max\n½ ^10;\n½ **10;\n1/1024;\n0.00977;\nAlternative answer\nif the student assumes that they know that the number was found\nthen this becomes:\n(1/2)(5/9)(5/8)(5/7)(5/6)(1)^5 ;\n(b) Award [1] max\n3 à 1 à 8 à 5 à 6;\n(c) Award [4 max]\nAward [1] for identifying point, [1] for expansion\nMark as [2] + [2]\nIterative and Conditional Logic\nSpreadsheets are not designed for iterative processes that depend on the outcome of\nprevious steps;\nSpreadsheets are not designed  for processes that involve looping and conditional\nchecks.;\nA formula can be used to check the number in another cell;\nbut not to move to the cell specified by the paper;\nShuffling rows or columns\nSpreadsheets can randomise a range of unique numbers;\ne.g. =SORTBY(SEQUENCE(10), RANDARRAY(10));\nBut cannot ensure one-to-one mapping without repeats (i.e. shuffling);\nTracking Each Child's Attempts \nTracking each child’s attempts and outcomes requires many cells; \nThe spreadsheet would become too complex/difficult to follow; \nRunning Multiple Simulations \nRunning 10000 times would require manual repeating; \nOr complex scripting within the spreadsheet; \nEasier to use a programming language; \nLimited Automation \nMacros / scripting are limited; \nthey require programming knowledge; \nThe average spreadsheet user is not a programmer; "
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Pure probability calculation for the box game is not an individual 2027 computer-science objective.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": []
+    },
+    {
+      "source_question_id": "H-SRC038-Q05-a-ii",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "B",
+      "question": 5,
+      "subquestion": "a-ii",
+      "source_pdf_pages": [
+        9
+      ],
+      "source_printed_pages": [
+        "8"
+      ],
+      "original_marks": 1,
+      "command_term": "State",
+      "original_text": "State the probability of all 10 children finding their number. Your answer can be a formula, fraction, or decimal.",
+      "parent_context": "– 8 – 8825 – 6405\nOption B — Modelling and simulation\n5. Ten children play a game in which all of them or none of them win a prize. The rules of the \ngame are as follows:\n\ty 10 children are assigned a unique number from 0 to 9.\n\ty A cupboard contains 10 boxes, each numbered from 0 to 9.\n\ty 10 sheets of paper are numbered from 0 to 9.\n\ty One piece of paper is put into each box in random order (see Figure 4).\nFigure 4: 10 boxes, each containing a sheet of paper with a number from 0 to 9\nBox 0 1 2 3 4 5 6 7 8 9\nPaper 9 8 2 1 7 6 4 3 5 0\nEach child is allowed to open 5 boxes to look for their own number. You can assume they will \nnot open the same box twice.\nChild number 0 goes first and opens 5 of the 10 boxes.\n(a) (i)   State the probability of child 0 finding their number in the 5 boxes they opened.\nYour answer can be a formula, fraction, or decimal. [1]\n(ii) State the probability of all 10 children finding their number.\nYour answer can be a formula, fraction, or decimal. [1]\nThe children all get a prize if all 10 of them find their number within 5 attempts. They use the \nfollow-the-number strategy:\n1: Each child first opens the box labelled with their own number.\n2: If this box contains their number, they are successful.\n3: If unsuccessful, the child opens the box shown on the piece of paper.\n4: The child repeats steps 2 to 3 until 5 boxes are opened.\nExample 1:  Child 0 opens box 0, seeing 9 on the paper. They then open box 9 and see \ntheir number. They are successful.\nExample 2:  Child 1 opens box 1, seeing 8 on the paper. They then open box 8, seeing \n5 on the paper. Then they open box 5, then box 6, then box 4. They are \nnot successful.\n(b) State the order sequence for child 3, who opens box 3 in Figure 4. [1]\n(Option B continues on the following page)\n– 9 – 8825 – 6405\nTurn over\n(Option B, question 5 continued)\nA one-dimensional Boolean array, CHILDREN, is created and initialized so that all elements \nare False.\nA one-dimensional integer array, BOX, is created and initialized so that BOX contains 0, 1, 2, \n3, 4, 5, 6, 7, 8, 9.\nA function, random.shuffle(BOX), shuffles the BOX array randomly to change the sequence.\nFor example, the new sequence might be: 9, 8, 2, 1, 7, 6, 4, 3, 5, 0.\nThus, BOX[5] = 6\nThe children use the follow-the-number strategy shown previously.\nEach time a child is successful, the corresponding element in the array CHILDREN is set \nto True. If a child is unsuccessful, the corresponding element in the array CHILDREN  \nis unchanged.\n(c) Outline two reasons why this problem would be difficult to simulate using a spreadsheet. [4]\n(d) Construct an algorithm in pseudocode that uses the follow-the-number strategy before \noutputting each element in the array CHILDREN. [6]\nIf all 10 cells in the CHILDREN array are set to True, the children all win a prize.\nTo calculate the percentage of times all the children will win a prize, the pseudocode \nalgorithm in part (d) needs to be run 10 000 times.\n(e) Construct an algorithm in pseudocode that outputs, as a percentage, the number of \ntimes the children all win a prize. [4]\n(Option B continues on page 11)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-09.png",
+          "source_pdf_page": 9,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-10.png",
+          "source_pdf_page": 10,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: State the probability of all 10 children finding their number. Your answer can be a formula, fraction, or decimal.",
+        "Pure probability calculation for the box game is not an individual 2027 computer-science objective."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          15
+        ],
+        "question_reference": "Q5 a-ii",
+        "marking_summary": "Exact original MS leaf excerpt: Award [1] max ½ ^10; ½ **10; 1/1024; 0.00977; Alternative answer if the student assumes that they know that the number was found then this becomes: (1/2)(5/9)(5/8)(5/7)(5/6)(1)^5 ;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [1] max\n½ ^10;\n½ **10;\n1/1024;\n0.00977;\nAlternative answer\nif the student assumes that they know that the number was found\nthen this becomes:\n(1/2)(5/9)(5/8)(5/7)(5/6)(1)^5 ;",
+        "source_issues": [],
+        "source_marking_evidence": "– 15 – 8825 – 6405M \nOption B — Modelling and simulation \n5. (a) (i) Award [1] max\n5/10  or  ½ or 50%; \n(ii) Award [1] max\n½ ^10;\n½ **10;\n1/1024;\n0.00977;\nAlternative answer\nif the student assumes that they know that the number was found\nthen this becomes:\n(1/2)(5/9)(5/8)(5/7)(5/6)(1)^5 ;\n(b) Award [1] max\n3 à 1 à 8 à 5 à 6;\n(c) Award [4 max]\nAward [1] for identifying point, [1] for expansion\nMark as [2] + [2]\nIterative and Conditional Logic\nSpreadsheets are not designed for iterative processes that depend on the outcome of\nprevious steps;\nSpreadsheets are not designed  for processes that involve looping and conditional\nchecks.;\nA formula can be used to check the number in another cell;\nbut not to move to the cell specified by the paper;\nShuffling rows or columns\nSpreadsheets can randomise a range of unique numbers;\ne.g. =SORTBY(SEQUENCE(10), RANDARRAY(10));\nBut cannot ensure one-to-one mapping without repeats (i.e. shuffling);\nTracking Each Child's Attempts \nTracking each child’s attempts and outcomes requires many cells; \nThe spreadsheet would become too complex/difficult to follow; \nRunning Multiple Simulations \nRunning 10000 times would require manual repeating; \nOr complex scripting within the spreadsheet; \nEasier to use a programming language; \nLimited Automation \nMacros / scripting are limited; \nthey require programming knowledge; \nThe average spreadsheet user is not a programmer; "
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Pure probability calculation for the box game is not an individual 2027 computer-science objective.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": []
+    },
+    {
+      "source_question_id": "H-SRC038-Q05-b",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "B",
+      "question": 5,
+      "subquestion": "b",
+      "source_pdf_pages": [
+        9
+      ],
+      "source_printed_pages": [
+        "8"
+      ],
+      "original_marks": 1,
+      "command_term": "State",
+      "original_text": "State the order sequence for child 3, who opens box 3 in Figure 4.",
+      "parent_context": "– 8 – 8825 – 6405\nOption B — Modelling and simulation\n5. Ten children play a game in which all of them or none of them win a prize. The rules of the \ngame are as follows:\n\ty 10 children are assigned a unique number from 0 to 9.\n\ty A cupboard contains 10 boxes, each numbered from 0 to 9.\n\ty 10 sheets of paper are numbered from 0 to 9.\n\ty One piece of paper is put into each box in random order (see Figure 4).\nFigure 4: 10 boxes, each containing a sheet of paper with a number from 0 to 9\nBox 0 1 2 3 4 5 6 7 8 9\nPaper 9 8 2 1 7 6 4 3 5 0\nEach child is allowed to open 5 boxes to look for their own number. You can assume they will \nnot open the same box twice.\nChild number 0 goes first and opens 5 of the 10 boxes.\n(a) (i)   State the probability of child 0 finding their number in the 5 boxes they opened.\nYour answer can be a formula, fraction, or decimal. [1]\n(ii) State the probability of all 10 children finding their number.\nYour answer can be a formula, fraction, or decimal. [1]\nThe children all get a prize if all 10 of them find their number within 5 attempts. They use the \nfollow-the-number strategy:\n1: Each child first opens the box labelled with their own number.\n2: If this box contains their number, they are successful.\n3: If unsuccessful, the child opens the box shown on the piece of paper.\n4: The child repeats steps 2 to 3 until 5 boxes are opened.\nExample 1:  Child 0 opens box 0, seeing 9 on the paper. They then open box 9 and see \ntheir number. They are successful.\nExample 2:  Child 1 opens box 1, seeing 8 on the paper. They then open box 8, seeing \n5 on the paper. Then they open box 5, then box 6, then box 4. They are \nnot successful.\n(b) State the order sequence for child 3, who opens box 3 in Figure 4. [1]\n(Option B continues on the following page)\n– 9 – 8825 – 6405\nTurn over\n(Option B, question 5 continued)\nA one-dimensional Boolean array, CHILDREN, is created and initialized so that all elements \nare False.\nA one-dimensional integer array, BOX, is created and initialized so that BOX contains 0, 1, 2, \n3, 4, 5, 6, 7, 8, 9.\nA function, random.shuffle(BOX), shuffles the BOX array randomly to change the sequence.\nFor example, the new sequence might be: 9, 8, 2, 1, 7, 6, 4, 3, 5, 0.\nThus, BOX[5] = 6\nThe children use the follow-the-number strategy shown previously.\nEach time a child is successful, the corresponding element in the array CHILDREN is set \nto True. If a child is unsuccessful, the corresponding element in the array CHILDREN  \nis unchanged.\n(c) Outline two reasons why this problem would be difficult to simulate using a spreadsheet. [4]\n(d) Construct an algorithm in pseudocode that uses the follow-the-number strategy before \noutputting each element in the array CHILDREN. [6]\nIf all 10 cells in the CHILDREN array are set to True, the children all win a prize.\nTo calculate the percentage of times all the children will win a prize, the pseudocode \nalgorithm in part (d) needs to be run 10 000 times.\n(e) Construct an algorithm in pseudocode that outputs, as a percentage, the number of \ntimes the children all win a prize. [4]\n(Option B continues on page 11)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-09.png",
+          "source_pdf_page": 9,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-10.png",
+          "source_pdf_page": 10,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: State the order sequence for child 3, who opens box 3 in Figure 4.",
+        "An index-following search uses links=[4,3,0,2,1]"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          15
+        ],
+        "question_reference": "Q5 b",
+        "marking_summary": "Original sequence for child 3: 3,1,8,5,6.",
+        "summary_kind": "author_paraphrase_of_original",
+        "source_marking_leaf_evidence": "Award [1] max\n3 à 1 à 8 à 5 à 6;",
+        "source_issues": [],
+        "source_marking_evidence": "– 15 – 8825 – 6405M \nOption B — Modelling and simulation \n5. (a) (i) Award [1] max\n5/10  or  ½ or 50%; \n(ii) Award [1] max\n½ ^10;\n½ **10;\n1/1024;\n0.00977;\nAlternative answer\nif the student assumes that they know that the number was found\nthen this becomes:\n(1/2)(5/9)(5/8)(5/7)(5/6)(1)^5 ;\n(b) Award [1] max\n3 à 1 à 8 à 5 à 6;\n(c) Award [4 max]\nAward [1] for identifying point, [1] for expansion\nMark as [2] + [2]\nIterative and Conditional Logic\nSpreadsheets are not designed for iterative processes that depend on the outcome of\nprevious steps;\nSpreadsheets are not designed  for processes that involve looping and conditional\nchecks.;\nA formula can be used to check the number in another cell;\nbut not to move to the cell specified by the paper;\nShuffling rows or columns\nSpreadsheets can randomise a range of unique numbers;\ne.g. =SORTBY(SEQUENCE(10), RANDARRAY(10));\nBut cannot ensure one-to-one mapping without repeats (i.e. shuffling);\nTracking Each Child's Attempts \nTracking each child’s attempts and outcomes requires many cells; \nThe spreadsheet would become too complex/difficult to follow; \nRunning Multiple Simulations \nRunning 10000 times would require manual repeating; \nOr complex scripting within the spreadsheet; \nEasier to use a programming language; \nLimited Automation \nMacros / scripting are limited; \nthey require programming knowledge; \nThe average spreadsheet user is not a programmer; "
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.2.2",
+          "scope_evidence": "• One-dimensional (1D) arrays, two-dimensional (2D) arrays, ArrayLists in Java\n• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python\n• Add, remove and traverse elements in a dynamic list",
+          "rationale": "Adapted target only: An index-following search uses links=[4,3,0,2,1]; guidance target: Construct programs that apply arrays and Lists. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q05-b"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q05-c",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "B",
+      "question": 5,
+      "subquestion": "c",
+      "source_pdf_pages": [
+        10
+      ],
+      "source_printed_pages": [
+        "9"
+      ],
+      "original_marks": 4,
+      "command_term": "Outline",
+      "original_text": "Outline two reasons why this problem would be difficult to simulate using a spreadsheet.",
+      "parent_context": "– 8 – 8825 – 6405\nOption B — Modelling and simulation\n5. Ten children play a game in which all of them or none of them win a prize. The rules of the \ngame are as follows:\n\ty 10 children are assigned a unique number from 0 to 9.\n\ty A cupboard contains 10 boxes, each numbered from 0 to 9.\n\ty 10 sheets of paper are numbered from 0 to 9.\n\ty One piece of paper is put into each box in random order (see Figure 4).\nFigure 4: 10 boxes, each containing a sheet of paper with a number from 0 to 9\nBox 0 1 2 3 4 5 6 7 8 9\nPaper 9 8 2 1 7 6 4 3 5 0\nEach child is allowed to open 5 boxes to look for their own number. You can assume they will \nnot open the same box twice.\nChild number 0 goes first and opens 5 of the 10 boxes.\n(a) (i)   State the probability of child 0 finding their number in the 5 boxes they opened.\nYour answer can be a formula, fraction, or decimal. [1]\n(ii) State the probability of all 10 children finding their number.\nYour answer can be a formula, fraction, or decimal. [1]\nThe children all get a prize if all 10 of them find their number within 5 attempts. They use the \nfollow-the-number strategy:\n1: Each child first opens the box labelled with their own number.\n2: If this box contains their number, they are successful.\n3: If unsuccessful, the child opens the box shown on the piece of paper.\n4: The child repeats steps 2 to 3 until 5 boxes are opened.\nExample 1:  Child 0 opens box 0, seeing 9 on the paper. They then open box 9 and see \ntheir number. They are successful.\nExample 2:  Child 1 opens box 1, seeing 8 on the paper. They then open box 8, seeing \n5 on the paper. Then they open box 5, then box 6, then box 4. They are \nnot successful.\n(b) State the order sequence for child 3, who opens box 3 in Figure 4. [1]\n(Option B continues on the following page)\n– 9 – 8825 – 6405\nTurn over\n(Option B, question 5 continued)\nA one-dimensional Boolean array, CHILDREN, is created and initialized so that all elements \nare False.\nA one-dimensional integer array, BOX, is created and initialized so that BOX contains 0, 1, 2, \n3, 4, 5, 6, 7, 8, 9.\nA function, random.shuffle(BOX), shuffles the BOX array randomly to change the sequence.\nFor example, the new sequence might be: 9, 8, 2, 1, 7, 6, 4, 3, 5, 0.\nThus, BOX[5] = 6\nThe children use the follow-the-number strategy shown previously.\nEach time a child is successful, the corresponding element in the array CHILDREN is set \nto True. If a child is unsuccessful, the corresponding element in the array CHILDREN  \nis unchanged.\n(c) Outline two reasons why this problem would be difficult to simulate using a spreadsheet. [4]\n(d) Construct an algorithm in pseudocode that uses the follow-the-number strategy before \noutputting each element in the array CHILDREN. [6]\nIf all 10 cells in the CHILDREN array are set to True, the children all win a prize.\nTo calculate the percentage of times all the children will win a prize, the pseudocode \nalgorithm in part (d) needs to be run 10 000 times.\n(e) Construct an algorithm in pseudocode that outputs, as a percentage, the number of \ntimes the children all win a prize. [4]\n(Option B continues on page 11)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-09.png",
+          "source_pdf_page": 9,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-10.png",
+          "source_pdf_page": 10,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline two reasons why this problem would be difficult to simulate using a spreadsheet.",
+        "General spreadsheet limitations for simulation are not required by any individual 2027 statement."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          15
+        ],
+        "question_reference": "Q5 c",
+        "marking_summary": "Exact original MS leaf excerpt: Award [4 max] Award [1] for identifying point, [1] for expansion Mark as [2] + [2] Iterative and Conditional Logic Spreadsheets are not designed for iterative processes that depend on the outcome of previous steps; Spreadsheets are not designed for processes that involve looping and conditional checks.; A formula can be used to check the number in another cell; but not to move to the cell specified by the paper; Shuffling rows or columns Spreadsheets can randomise a range of unique numbers; e.g. =SORTBY(SEQUENCE(10), RANDARRAY(10)); But cannot ensure one-to-one mapping without repeats (i.e. shuffling); Tracking Each Child's Attempts Tracking each child’s attempts and outcomes requires many cells; The spreadsheet would become too complex/difficult to follow; Running Multiple Simulations Running 10000 times would require manual repeating; Or complex scripting within the spreadsheet; Easier … [full leaf evidence retained]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [4 max]\nAward [1] for identifying point, [1] for expansion\nMark as [2] + [2]\nIterative and Conditional Logic\nSpreadsheets are not designed for iterative processes that depend on the outcome of\nprevious steps;\nSpreadsheets are not designed  for processes that involve looping and conditional\nchecks.;\nA formula can be used to check the number in another cell;\nbut not to move to the cell specified by the paper;\nShuffling rows or columns\nSpreadsheets can randomise a range of unique numbers;\ne.g. =SORTBY(SEQUENCE(10), RANDARRAY(10));\nBut cannot ensure one-to-one mapping without repeats (i.e. shuffling);\nTracking Each Child's Attempts \nTracking each child’s attempts and outcomes requires many cells; \nThe spreadsheet would become too complex/difficult to follow; \nRunning Multiple Simulations \nRunning 10000 times would require manual repeating; \nOr complex scripting within the spreadsheet; \nEasier to use a programming language; \nLimited Automation \nMacros / scripting are limited; \nthey require programming knowledge; \nThe average spreadsheet user is not a programmer;",
+        "source_issues": [],
+        "source_marking_evidence": "– 15 – 8825 – 6405M \nOption B — Modelling and simulation \n5. (a) (i) Award [1] max\n5/10  or  ½ or 50%; \n(ii) Award [1] max\n½ ^10;\n½ **10;\n1/1024;\n0.00977;\nAlternative answer\nif the student assumes that they know that the number was found\nthen this becomes:\n(1/2)(5/9)(5/8)(5/7)(5/6)(1)^5 ;\n(b) Award [1] max\n3 à 1 à 8 à 5 à 6;\n(c) Award [4 max]\nAward [1] for identifying point, [1] for expansion\nMark as [2] + [2]\nIterative and Conditional Logic\nSpreadsheets are not designed for iterative processes that depend on the outcome of\nprevious steps;\nSpreadsheets are not designed  for processes that involve looping and conditional\nchecks.;\nA formula can be used to check the number in another cell;\nbut not to move to the cell specified by the paper;\nShuffling rows or columns\nSpreadsheets can randomise a range of unique numbers;\ne.g. =SORTBY(SEQUENCE(10), RANDARRAY(10));\nBut cannot ensure one-to-one mapping without repeats (i.e. shuffling);\nTracking Each Child's Attempts \nTracking each child’s attempts and outcomes requires many cells; \nThe spreadsheet would become too complex/difficult to follow; \nRunning Multiple Simulations \nRunning 10000 times would require manual repeating; \nOr complex scripting within the spreadsheet; \nEasier to use a programming language; \nLimited Automation \nMacros / scripting are limited; \nthey require programming knowledge; \nThe average spreadsheet user is not a programmer; "
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "General spreadsheet limitations for simulation are not required by any individual 2027 statement.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": []
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC038-Q04-b",
+      "source_question_ids": [
+        "H-SRC038-Q04-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Explain why matching LOAN.MemberID to MEMBER.MemberID is useful when retrieving a borrower’s outstanding items.",
+      "syllabus_codes": [
+        "A3.1.1"
+      ],
+      "theme": "A",
+      "level": "SL/HL common",
+      "marks": 3,
+      "command_term": "Explain",
+      "difficulty": "medium",
+      "adaptation_rationale": "Retains record-matching reasoning only as an explicit relational key/relationship application; no general data-matching taxonomy.",
+      "solution": "The shared identifier links each loan to the correct member record. Staff can combine member details with related items instead of matching ambiguous names manually, reducing mistaken notices to the wrong person.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Shared key identifies corresponding records."
+        },
+        {
+          "marks": 1,
+          "criterion": "Combines member and loan information."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains avoided ambiguity/error or useful retrieval."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          12
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q04-c",
+      "source_question_ids": [
+        "H-SRC038-Q04-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Explain two ways regression-based analysis of historical visitor data could support planning at a museum.",
+      "syllabus_codes": [
+        "A3.4.3"
+      ],
+      "theme": "A",
+      "level": "HL-only",
+      "marks": 4,
+      "command_term": "Explain",
+      "difficulty": "medium",
+      "adaptation_rationale": "Retains forecasting uses with a named guide-listed mining technique.",
+      "solution": "Predict daily attendance from seasonal and booking features to schedule enough staff. Predict shop revenue from expected attendance and past spending patterns to plan stock and cash requirements; predictions remain estimates under changed conditions.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Suitable attendance prediction."
+        },
+        {
+          "marks": 1,
+          "criterion": "Links predicted quantity to staffing."
+        },
+        {
+          "marks": 1,
+          "criterion": "Distinct continuous revenue/demand prediction."
+        },
+        {
+          "marks": 1,
+          "criterion": "Links it to a planning decision."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          13
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q04-d",
+      "source_question_ids": [
+        "H-SRC038-Q04-d"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Describe how unsupervised clustering of visitor records could help a museum plan services, and give one limitation.",
+      "syllabus_codes": [
+        "A4.3.4"
+      ],
+      "theme": "A",
+      "level": "HL-only",
+      "marks": 4,
+      "command_term": "Describe",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Use features such as visit frequency, group size and interests to form similar groups without preassigned labels. Different groups may suggest family activities or specialist tours. Results depend on selected features and may hide differences within a cluster, so staff should investigate before treating every member alike.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Unlabelled grouping by feature similarity."
+        },
+        {
+          "marks": 1,
+          "criterion": "Appropriate concrete features."
+        },
+        {
+          "marks": 1,
+          "criterion": "Service-planning application."
+        },
+        {
+          "marks": 1,
+          "criterion": "Relevant feature/group-generalization limitation."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          13
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q04-e",
+      "source_question_ids": [
+        "H-SRC038-Q04-e"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Explain why combining different branch records in a data warehouse requires consistent identifiers and formats.",
+      "syllabus_codes": [
+        "A3.4.2"
+      ],
+      "theme": "A",
+      "level": "HL-only",
+      "marks": 3,
+      "command_term": "Explain",
+      "difficulty": "medium",
+      "adaptation_rationale": "Retains warehouse integration reasoning; detailed ETL stages/strategies are outside the assessed requirement.",
+      "solution": "Sources may use different codes or date formats for equivalent facts. Aligning them gives integrated data that can be compared and aggregated correctly; otherwise the same visitor/site may be counted separately or dates misinterpreted.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Recognizes incompatible source representations."
+        },
+        {
+          "marks": 1,
+          "criterion": "Standardization enables integrated comparison/aggregation."
+        },
+        {
+          "marks": 1,
+          "criterion": "Concrete consequence of inconsistent identifiers/formats."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          14
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q05-b",
+      "source_question_ids": [
+        "H-SRC038-Q05-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "An index-following search uses links=[4, 3, 0, 2, 1]. Start at index 1. Inspect links[index], then use that value as the next index. State the first four inspected indices.",
+      "syllabus_codes": [
+        "B2.2.2"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 1,
+      "command_term": "State",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "1, 3, 2, 0.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "All four indices in the correct order."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          15
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    }
+  ]
+}

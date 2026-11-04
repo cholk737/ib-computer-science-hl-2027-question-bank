@@ -1,0 +1,115 @@
+{
+  "original_assessment_context": "Chronological singly linked gameLog headoldest;Turn(timestamp,from,to,damage). rewindTurns(N,rewinder)restoresdamageforrewinderonlywithinlastNtotalturns;logunchanged;example4eventsWindy→Flamey11,Flamey→Windy4,Windy→Flamey1,Flamey→Windy4.",
+  "source_scope_note": "Original assessed concept classified directly or excluded with reason.",
+  "source_question_id": "H-SRC034-Q18-a",
+  "source_id": "SRC-034",
+  "source_filename": "Computer_science_paper_2__HL.pdf",
+  "year": "2023",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "not stated",
+  "option": "D",
+  "question": "18",
+  "subquestion": "a",
+  "source_pdf_pages": [
+    24
+  ],
+  "source_printed_pages": [
+    "23"
+  ],
+  "original_marks": 4,
+  "command_term": "Outline",
+  "original_text": "[Source PDF page 23]\n(Option D continues on the following page)\n\n[Source PDF page 24]\n(Option D continued)\n18. The arena will maintain a linked list of the battles that take place between monsters,\ncalled .\ngameLog\nEach time a player takes a turn and one monster attacks another, a new instance of the\nclass is created and added to the linked list:\nTurn gameLog\npublic class Turn {\nlong timestamp;\nMonster from;\nMonster to;\nint damage;\n}\nThe developer wants to add a method in the class, which restores\nrewindTurns Arena\nhealth points taken from a particular monster during a specified number of turns. This method\ncan be called at any time and will leave the linked list unchanged (see Figure 10).\ngameLog\nFigure 10: The linked list\ngameLog\nTimestamp: 01 Timestamp: 02 Timestamp: 03 Timestamp: 04\nFrom: Windy From: Flamey From: Windy From: Flamey\nH\nTo: Flamey To: Windy To: Flamey To: Windy\nDamage: 11 Damage: 4 Damage: 1 Damage: 4\nThe variable is a reference to a monster named Windy, which is battling another\nrewinder\nmonster, Flamey. The game has had four attacks so far, each of which are entered in the\nlinked list. In this example, the code would restore\ngameLog rewindTurns(2, rewinder)\n4 health points to Windy, and the code would restore 8 health\nrewindTurns(3, rewinder)\npoints to Windy.\n(a) Outline two differences between the use of a linked list and a stack when using the\nmethod. [4]\nrewindTurns",
+  "parent_context": "Chronological singly linked gameLog headoldest;Turn(timestamp,from,to,damage). rewindTurns(N,rewinder)restoresdamageforrewinderonlywithinlastNtotalturns;logunchanged;example4eventsWindy→Flamey11,Flamey→Windy4,Windy→Flamey1,Flamey→Windy4.",
+  "assets": [
+    {
+      "kind": "source_page",
+      "description": "Exactchronologicallinkedlogandrestoreexamples",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-24.png",
+      "source_pdf_page": 24,
+      "visually_verified": true
+    },
+    {
+      "kind": "source_page",
+      "path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-23.png",
+      "source_pdf_page": 23,
+      "description": "Complete original question/context page; preserves diagrams, code, tables and exact typography."
+    }
+  ],
+  "assessed_concepts": [
+    "Outline: Outline two differences between a linked list andstack for rewindTurns."
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-037",
+    "filename": "Computer_science_paper_2__HL_markscheme.pdf",
+    "pdf_pages": [
+      34
+    ],
+    "question_reference": "18(a)",
+    "marking_summary": "LIFOaccessrecentfirstversusheadtraversal;olderstackaccessneedsremoval/restoration,linkedlistnonmutatingread.",
+    "source_issues": []
+  },
+  "relevance_status": "A",
+  "mappings": [
+    {
+      "mapping_target": "original_and_adapted",
+      "syllabus_code": "B4.1.2",
+      "scope_evidence": "• Lists must include singly, doubly, circular\n• Sketch of linked lists and implementation of basic operations diagrammatically, such as insertion, deletion, traversal, search\n• The advantages and disadvantages of using linked lists over other data structures like arrays, particularly in terms of memory utilization and performance",
+      "rationale": "The assessed skill is explicitly named in the cited statement and its guidance; mapping does not credit unassessed scenario topics.",
+      "theme": "B",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "mapping_target": "original_and_adapted",
+      "syllabus_code": "B2.2.3",
+      "scope_evidence": "• Must include fundamental operations such as push, pop, peek and isEmpty\n• How stack operations impact both performance and memory usage\n• An appropriate stack for a specific problem",
+      "rationale": "The assessed skill is explicitly named in the cited statement and its guidance; mapping does not credit unassessed scenario topics.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source": "Complete original text read, exact leaf/marks checked against source PDF; all referenced visual/code pages inspected.",
+    "marks": "Printed allocation transcribed.",
+    "mapping": "Full statement/guidance reviewed; status separates obsolete requirements.",
+    "official_answer_status": "See source markscheme record"
+  },
+  "original_text_manual_synopsis": "Outline two differences between a linked list andstack for rewindTurns.",
+  "transcription_status": "Verbatim PDF text for leaf interval, including any shared context since preceding marked leaf; visual figures retained separately. Header/footer text may remain; no source wording replaced by synopsis.",
+  "source_page_evidence": [
+    {
+      "pdf_page": 24,
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-024.txt"
+    }
+  ],
+  "source_context_page_evidence": [
+    {
+      "pdf_page": 23,
+      "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-23.png",
+      "kind": "complete_original_page_raster",
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-023.txt"
+    },
+    {
+      "pdf_page": 24,
+      "image_path": "agents/chunk-2/agent-1-papers-a/papers/SRC-034-page-24.png",
+      "kind": "complete_original_page_raster",
+      "text_path": "agents/chunk-2/agent-1-papers-a/source-pages/SRC-034/page-024.txt"
+    }
+  ],
+  "parent_context_status": "Manual synopsis; complete exact original shared context, tables and code are linked in source_context_page_evidence and the unchanged source PDF.",
+  "complete_original_document_path": "sources/historical-papers/Computer_science_paper_2__HL.pdf",
+  "source_issues": [],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed",
+  "practice_question_ids": [
+    "P-SRC034-Q18-a"
+  ]
+}

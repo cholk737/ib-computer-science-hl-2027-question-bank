@@ -1,0 +1,80 @@
+{
+  "question_id": "P-SRC004-Q14-c",
+  "source_question_ids": [
+    "H-SRC004-Q14-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A design contest stores entrant names in names and corresponding judge scores in scores. Each row has at least 3 numeric scores. Construct Python function final_scores(names, scores) returning (name, adjusted_mean) pairs. For each row remove exactly one occurrence of its largest and one of its smallest score before averaging. Use explicit loops to calculate totals/extrema rather than sum, min, max or sorting. Assume names and scores have equal length.",
+  "syllabus_codes": [
+    "B2.2.2",
+    "B2.3.3",
+    "B2.3.2"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 10,
+  "command_term": "Construct",
+  "difficulty": "high",
+  "adaptation_rationale": "Preserve nested traversal/extrema/mean challenge in Python; makes conditions/data domain explicit. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "solution": "def final_scores(names, scores):\n    results = []\n    for i in range(len(scores)):\n        row = scores[i]\n        high = low = row[0]\n        total = 0\n        for value in row:\n            total += value\n            if value > high:\n                high = value\n            if value < low:\n                low = value\n        final = (total - high - low) / (len(row) - 2)\n        results.append((names[i], final))\n    return results",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Iterates each entrant."
+    },
+    {
+      "marks": 1,
+      "criterion": "Pairs same indexed name and score row."
+    },
+    {
+      "marks": 1,
+      "criterion": "Initializes row total0."
+    },
+    {
+      "marks": 1,
+      "criterion": "Initializes high/low from row value."
+    },
+    {
+      "marks": 1,
+      "criterion": "Traverses every score."
+    },
+    {
+      "marks": 1,
+      "criterion": "Accumulates total."
+    },
+    {
+      "marks": 1,
+      "criterion": "Updates highest correctly."
+    },
+    {
+      "marks": 1,
+      "criterion": "Updates lowest correctly, including equal-score cases."
+    },
+    {
+      "marks": 1,
+      "criterion": "Subtracts exactly one highest and one lowest and divides by len(row)-2."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns all correct name/result pairs."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 10,
+    "code_execution": "Specific executable boundary and behaviour tests passed; see agents/chunk-2/agent-3-papers-c/technical_checks.json and verify_practice.py."
+  },
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "assets": [],
+  "code": "def final_scores(names, scores):\n    results = []\n    for i in range(len(scores)):\n        row = scores[i]\n        high = low = row[0]\n        total = 0\n        for value in row:\n            total += value\n            if value > high:\n                high = value\n            if value < low:\n                low = value\n        final = (total - high - low) / (len(row) - 2)\n        results.append((names[i], final))\n    return results",
+  "record_path": "question-bank/records/P-SRC004-Q14-c.json",
+  "question_path": "question-bank/questions/P-SRC004-Q14-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC004-Q14-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

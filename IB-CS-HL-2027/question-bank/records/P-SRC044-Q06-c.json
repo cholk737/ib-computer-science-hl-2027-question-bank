@@ -1,0 +1,60 @@
+{
+  "question_id": "P-SRC044-Q06-c",
+  "source_question_ids": [
+    "H-SRC044-Q06-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Discuss processing-time and memory considerations when a live 3D display adds many more objects and higher-resolution textures.",
+  "syllabus_codes": [
+    "A1.1.2",
+    "A1.1.4"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 5,
+  "command_term": "Discuss",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "More objects/pixels increase rendering work and can reduce frame rate unless processing throughput increases. A GPU can perform many similar graphics operations in parallel. Larger textures and working results need more RAM; insufficient capacity may force extra transfers or reduced detail. Choose processing and memory together against the target frame rate and acceptable detail, cost and power use.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "More graphics work increases time/reduces frame rate."
+    },
+    {
+      "marks": 1,
+      "criterion": "GPU parallel-processing benefit."
+    },
+    {
+      "marks": 1,
+      "criterion": "More working textures/data require RAM."
+    },
+    {
+      "marks": 1,
+      "criterion": "Develops memory-capacity/transfer consequence."
+    },
+    {
+      "marks": 1,
+      "criterion": "Balanced contextual hardware recommendation."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      14
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC044-Q06-c.json",
+  "question_path": "question-bank/questions/P-SRC044-Q06-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC044-Q06-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

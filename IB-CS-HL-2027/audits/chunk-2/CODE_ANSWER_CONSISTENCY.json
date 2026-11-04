@@ -1,0 +1,32 @@
+[
+  {
+    "question_id": "P-SRC018-Q14-b",
+    "question": "Each row of samples has exactly three positive integers. Construct repeated_in_row(samples, r) in Python to return the value occurring at least twice in row r, or 0 if all are different.",
+    "code": "def repeated_in_row(grid,r):\n    a,b,c=grid[r]\n    if a==b or a==c:\n        return a\n    if b==c:\n        return b\n    return 0",
+    "solution": "def repeated_in_row(grid,r):\n    a, b, c=grid[r]\n    if a==b or a==c:\n        return a\n    if b==c:\n        return b\n    return 0"
+  },
+  {
+    "question_id": "P-SRC005-Q14-c",
+    "question": "The function proper_sum(n) returns the sum of proper divisors of positive integer n. Construct classify_grid(grid) in Python. Return three lists(low, equal, high) containing each grid value whose proper-divisor sum is respectively less than, equal to, or greater than that value. Preserve row-major order and all repeated values. Do not modify grid; call proper_sum for each value.",
+    "code": "def proper_sum(n):\n    total=0\n    for factor in range(1,n):\n        if n % factor == 0:\n            total += factor\n    return total\n\ndef classify_grid(grid):\n    low,equal,high=[],[],[]\n    for row in grid:\n        for n in row:\n            summed=proper_sum(n)\n            if summed < n:\n                low.append(n)\n            elif summed == n:\n                equal.append(n)\n            else:\n                high.append(n)\n    return low,equal,high",
+    "solution": "def proper_sum(n):\n    total=0\n    for factor in range(1,n):\n        if n % factor == 0:\n            total += factor\n    return total\n\ndef classify_grid(grid):\n    low, equal, high=[],[],[]\n    for row in grid:\n        for n in row:\n            summed=proper_sum(n)\n            if summed < n:\n                low.append(n)\n            elif summed == n:\n                equal.append(n)\n            else:\n                high.append(n)\n    return low,equal,high"
+  },
+  {
+    "question_id": "P-SRC034-Q15-a",
+    "question": "Construct Shop.sell(self, item) in Python. item has public name and stock. self.request_units() returns the positive requested quantity. Subtract that quantity from item.stock, clamp negative stock to 0, and print name plus \"sold out\" if stock is 0; otherwise print name, requested quantity and remaining stock.",
+    "code": "def sell(self,item):\n    requested=self.request_units()\n    item.stock-=requested\n    if item.stock < 0:\n        item.stock=0\n    if item.stock == 0:\n        print(item.name,\"sold out\")\n    else:\n        print(item.name,requested,item.stock)",
+    "solution": "def sell(self,item):\n    requested=self.request_units()\n    item.stock-=requested\n    if item.stock < 0:\n        item.stock=0\n    if item.stock == 0:\n        print(item.name,\"sold out\")\n    else:\n        print(item.name, requested, item.stock)"
+  },
+  {
+    "question_id": "P-SRC033-Q14-d-i",
+    "question": "Construct method pay(self, hours) in class Rental, returning self.ADMIN_FEE for stays of at most5 hours and0 otherwise. Assume hours is a nonnegative integer.",
+    "code": "class Rental:\n    ADMIN_FEE = 4\n    def pay(self, hours):\n        if hours <= 5:\n            return self.ADMIN_FEE\n        return 0",
+    "solution": "def pay(self,hours):\n    return self.ADMIN_FEE if hours <= 5 else 0"
+  },
+  {
+    "question_id": "P-SRC033-Q14-d-ii",
+    "question": "PoweredRental inherits Rental, whose pay(hours)returns any administration fee. Construct an overriding pay(self, hours) method returning the parent fee plus self.HOURLY_FEE*hours.",
+    "code": "class Rental:\n    ADMIN_FEE = 4\n    def pay(self, hours):\n        if hours <= 5:\n            return self.ADMIN_FEE\n        return 0\n\nclass PoweredRental(Rental):\n    HOURLY_FEE = 3\n    def pay(self, hours):\n        return super().pay(hours) + self.HOURLY_FEE * hours",
+    "solution": "def pay(self,hours):\n    return super().pay(hours)+self.HOURLY_FEE*hours"
+  }
+]

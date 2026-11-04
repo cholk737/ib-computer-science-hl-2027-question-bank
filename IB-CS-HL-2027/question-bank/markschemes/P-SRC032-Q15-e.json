@@ -1,0 +1,43 @@
+{
+  "question_id": "P-SRC032-Q15-e",
+  "unofficial": true,
+  "marks": 5,
+  "solution": "One solution:\ndef house_sort(entries):\n    result = [item for item in entries if item is not None]\n    for end in range(len(result)-1, 0, -1):\n        for i in range(end):\n            if result[i].price > result[i+1].price:\n                result[i], result[i+1] = result[i+1], result[i]\n    return result",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Filters/ignores None slots correctly."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct outer pass loop."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct adjacent comparison loop."
+    },
+    {
+      "marks": 1,
+      "criterion": "Compares prices ascending."
+    },
+    {
+      "marks": 1,
+      "criterion": "Swaps whole object references and returns result."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed None filtering,duplicate prices,empty list; objects preserved.",
+    "source_comparison": [
+      29,
+      30
+    ],
+    "test_code": "def house_sort(entries):\n    result = [item for item in entries if item is not None]\n    for end in range(len(result)-1, 0, -1):\n        for i in range(end):\n            if result[i].price > result[i+1].price:\n                result[i], result[i+1] = result[i+1], result[i]\n    return result\nfrom types import SimpleNamespace as N\na,b,c=N(price=5),N(price=2),N(price=5)\nassert house_sort([a,None,b,c])==[b,a,c]\nassert house_sort([])==[]",
+    "result_file": ""
+  },
+  "code": "def house_sort(entries):\n    result = [item for item in entries if item is not None]\n    for end in range(len(result)-1, 0, -1):\n        for i in range(end):\n            if result[i].price > result[i+1].price:\n                result[i], result[i+1] = result[i+1], result[i]\n    return result",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

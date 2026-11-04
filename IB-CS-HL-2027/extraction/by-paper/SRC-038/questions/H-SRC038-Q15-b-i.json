@@ -1,0 +1,76 @@
+{
+  "source_question_id": "H-SRC038-Q15-b-i",
+  "source_id": "SRC-038",
+  "source_filename": "Computer_science_paper_2_HL.pdf",
+  "year": "2025",
+  "session": "November",
+  "source_level": "HL",
+  "paper": "2",
+  "zone": "not stated",
+  "option": "D",
+  "question": 15,
+  "subquestion": "b-i",
+  "source_pdf_pages": [
+    26
+  ],
+  "source_printed_pages": [
+    "25"
+  ],
+  "original_marks": 1,
+  "command_term": "State",
+  "original_text": "State the relationship between the TraineeLawyer class and the Lawyer class.",
+  "parent_context": "– 25 – 8825 – 6405\nTurn over\n(Option D continued)\n15. The law firm employs trainee lawyers who work under senior lawyers for one year and then \nsit an examination. On successful completion, they become full lawyers.\nThe TraineeLawyer class has been created. A trainee lawyer is a lawyer with two additional \nattributes: joining date and exam status.\n(a) (i)   Identify a suitable data type for each additional attribute in the TraineeLawyer \nclass. [2]\n(ii) Construct a detailed class diagram including attributes, methods, and relationship.\nThe diagram must include the Lawyer class and the TraineeLawyer class. [4]\n(b) (i)   State the relationship between the TraineeLawyer class and the Lawyer class. [1]\n(ii) State the relationship between the Lawyer class and the Case class. [1]\n(iii) Describe the difference between the two relationships stated in part (b)(i) and \npart (b)(ii). [4]\n(c) Outline what is meant by the term encapsulation. [2]\n(d) Define the term parent object. [1]\n(Option D continues on the following page)",
+  "assets": [
+    {
+      "kind": "source_page_evidence",
+      "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-26.png",
+      "source_pdf_page": 26,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: State the relationship between the TraineeLawyer class and the Lawyer class.",
+    "State the OOP relationship when TraineeAdviser is a specialized Adviser and reuses its behaviour"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-039",
+    "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+    "pdf_pages": [
+      42
+    ],
+    "question_reference": "Q15 b-i",
+    "marking_summary": "Exact original MS leaf excerpt: Award [1 max] is a (relationship) / super class - sub class/ parent - child/ inheritance;",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [1 max]\nis a (relationship) / super class - sub class/ parent - child/ inheritance;",
+    "source_issues": [],
+    "source_marking_evidence": "– 42 – 8825 – 6405M \n15. (a)    (i) Award [2 max]\nAward [1] for each attribute \nDate of joining:    int / String / Date type ; \nalso accept int for day, int for month, int for year; \nExamPassed:  boolean / char / String / int; \n(ii) Award [4 max]\nAward [1] for correctly representing the relationship;\nAward [1] for both classes having three sections;\nAward [1] for correctly representing the Lawyer class with all attributes and at least one\nmethod;\nAward [1] for correctly representing the TraineeLawyer class with both attributes \nand\nat least one method;\nNote: Allow any valid representation of joiningDate and examStaus. \n(b) (i) Award [1 max]\nis a (relationship) / super class - sub class/ parent - child/ inheritance; \n(ii) Award [1 max]\nhas a (relationship)/ aggregation;\n(iii) Award [4 max as 2 + 2]\nis-a relationship is inheritance;\nhas-a relationship is composition;\nis-a creates a new specialized type by inheriting attributes and methods;\nhas-a does not create a new type and only stores objects as attributes.\nis-a allows extending or overriding behaviour;\nhas-a cannot change the behaviour of the contained objects.\nis-a supports polymorphism (a TraineeLawyer is a Lawyer);\nhas-a does not support polymorphism.\nis-a forms a class hierarchy;\nhas-a forms a whole–part ownership structure.\n"
+  },
+  "relevance_status": "A",
+  "mappings": [
+    {
+      "syllabus_code": "B3.2.1",
+      "scope_evidence": "• How inheritance enables a hierarchical relationship between parent and child classes\n• Extending existing classes, utilizing inheritance to reuse and extend functionalities\n• The impact of inheritance on access to parent class members with different access modifiers (private, public, protected, default)",
+      "rationale": "Original and adapted within-scope skill: State the OOP relationship when TraineeAdviser is a specialized Adviser and reuses its behaviour; guidance target: Explain and apply the concept of inheritance in OOP to promote code reusability.",
+      "theme": "B",
+      "level": "HL-only",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC038-Q15-b-i"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

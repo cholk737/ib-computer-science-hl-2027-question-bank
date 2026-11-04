@@ -2,7 +2,7 @@
   "question_id": "P-SRC008-Q12-b",
   "unofficial": true,
   "marks": 6,
-  "solution": "Only indices 0..4 are available and top tracks the occupied top position.; push checks space, then increments top and stores at buffer[top].; pop checks nonempty, returns buffer[top] and decrements top.; Operations occur at one end, giving LIFO behaviour.; Empty i ff top==-1.; Full i ff top==4; reject another push before writing.",
+  "solution": "Only indices 0..4 are available and top tracks the occupied top position.; push checks space, then increments top and stores at buffer[top].; pop checks nonempty, returns buffer[top] and decrements top.; Operations occur at one end, giving LIFO behaviour.; Empty if and only if top==-1.; Full if and only if top==4; reject another push before writing.",
   "marking_points": [
     {
       "marks": 1,
@@ -22,11 +22,11 @@
     },
     {
       "marks": 1,
-      "criterion": "Empty i ff top==-1."
+      "criterion": "Empty if and only if top==-1."
     },
     {
       "marks": 1,
-      "criterion": "Full i ff top==4; reject another push before writing."
+      "criterion": "Full if and only if top==4; reject another push before writing."
     }
   ],
   "acceptable_alternatives": [
@@ -40,5 +40,6 @@
   },
   "code": "",
   "test_code": "",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

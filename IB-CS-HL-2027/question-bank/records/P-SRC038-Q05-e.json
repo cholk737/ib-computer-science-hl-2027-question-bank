@@ -1,0 +1,57 @@
+{
+  "question_id": "P-SRC038-Q05-e",
+  "source_question_ids": [
+    "H-SRC038-Q05-e"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Construct success_percent(make_links, follow_all, trials). trials is a positive integer. make_links() returns a fresh permutation of ten indices; follow_all(links, 5) returns ten success Booleans. Return the percentage of trials in which every Boolean is True. No probability derivation is needed.",
+  "syllabus_codes": [
+    "B2.3.2",
+    "B2.3.3",
+    "B2.3.4"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 4,
+  "command_term": "Construct",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "One solution:\ndef success_percent(make_links, follow_all, trials):\n    wins = 0\n    for _ in range(trials):\n        results = follow_all(make_links(), 5)\n        won = True\n        for result in results:\n            if not result:\n                won = False\n        if won:\n            wins += 1\n    return 100 * wins / trials",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Repeats trials with fresh results."
+    },
+    {
+      "marks": 1,
+      "criterion": "Determines whether every result is True."
+    },
+    {
+      "marks": 1,
+      "criterion": "Counts only wholly successful trials."
+    },
+    {
+      "marks": 1,
+      "criterion": "Returns 100*wins/trials."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Deterministic two-trial test gives50%; all-failed/successful formula reviewed.",
+    "source_comparison": [
+      17
+    ],
+    "test_code": "def success_percent(make_links, follow_all, trials):\n    wins = 0\n    for _ in range(trials):\n        results = follow_all(make_links(), 5)\n        won = True\n        for result in results:\n            if not result:\n                won = False\n        if won:\n            wins += 1\n    return 100 * wins / trials\nseq=iter([[True]*10,[True]*9+[False]])\nassert success_percent(lambda: [],lambda a,b:next(seq),2)==50.0",
+    "result_file": ""
+  },
+  "code": "def success_percent(make_links, follow_all, trials):\n    wins = 0\n    for _ in range(trials):\n        results = follow_all(make_links(), 5)\n        won = True\n        for result in results:\n            if not result:\n                won = False\n        if won:\n            wins += 1\n    return 100 * wins / trials",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC038-Q05-e.json",
+  "question_path": "question-bank/questions/P-SRC038-Q05-e.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC038-Q05-e.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

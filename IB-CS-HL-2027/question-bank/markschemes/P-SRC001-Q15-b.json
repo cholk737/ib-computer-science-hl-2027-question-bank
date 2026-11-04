@@ -32,5 +32,6 @@
   },
   "code": "def discounted_in_row(bookings, row):\n    count = 0\n    for kind in bookings[row]:\n        if kind == \"D\":\n            count += 1\n    return count",
   "test_code": "assert discounted_in_row([[\"D\",\"X\",\"D\"],[\"S\",\"S\",\"X\"]],0)==2\nassert discounted_in_row([[\"D\",\"X\",\"D\"],[\"S\",\"S\",\"X\"]],1)==0",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

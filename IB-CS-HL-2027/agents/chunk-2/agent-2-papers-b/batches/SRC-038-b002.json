@@ -1,0 +1,891 @@
+{
+  "source_id": "SRC-038",
+  "batch_id": "SRC-038-b002",
+  "source_questions": [
+    {
+      "source_question_id": "H-SRC038-Q02-e",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "A",
+      "question": 2,
+      "subquestion": "e",
+      "source_pdf_pages": [
+        6
+      ],
+      "source_printed_pages": [
+        "5"
+      ],
+      "original_marks": 5,
+      "command_term": "Construct",
+      "original_text": "Construct the database in 3rd normal form (3NF) for the entities shown in Figure 3. You should use the following notation: TABLE (KEY, FIELD1, FIELD2,…)",
+      "parent_context": "– 4 – 8825 – 6405\n(Option A continued)\n2. When a patient visits the dental clinic, a dentist may carry out a number of tests. Each record \nof a test is placed in a TEST table:\nTEST (PatientID, NurseID, DateTime, TestType, PatientName, Notes)\nThis table uses a composite primary key of PatientID, NurseID, and DateTime.\n(a) Outline why DateTime has been included as part of the composite primary key. [2]\n(b) Outline why the TEST table is not in second normal form (2NF). [2]\nThe TEST table is shown in Figure 1, and the NURSE table is shown in Figure 2.\nFigure 1: The TEST table\nPatientID NurseID DateTime TestType PatientName Notes\n5 BM2385 2024/11/17 09:05 Oral X-ray Simon Moore Tooth fracture\n54 JF2227 2024/11/17 09:05 Dental scan Ciara Alinac Implant planning\n78 BM2385 2024/11/19 09:45 Oral X-ray Scottie Ngatai Tooth decay\n23 JF2227 2024/11/19 09:35 Dental scan William Hartley Assessment\n30 AS2590 2024/11/19 10:15 Oral X-ray Emma Lee Impacted teeth\n29 JF2227 2024/11/20 11:20 Dental scan Lena Lee Assessment\nFigure 2: The NURSE table\nNurseID NurseName Nationality PhoneNumber StartDate\nBM2385 Billy McCoy Scottish 0102930308 2022/04/17\nAS2590 Anya Svetlana Russian 0102940209 2023/01/29\nJF2227 James Fernley English 0102839305 2019/06/18\n(c) State the output from the following query:\nSELECT PatientName FROM TEST \nWHERE TestType = \"Oral X-ray\" \nAND NurseID = \"BM2385\"; [2]\n(d) Construct a query to find patients who had a test carried out by the nurse \nAnya Svetlana at any time on 19 November 2024. [4]\n(Option A continues on the following page)\n– 5 – 8825 – 6405\nTurn over\n(Option A, question 2 continued)\nFigure 3 is an extract showing patients’ appointments with dentists and the cost of \ntheir treatments.\nFigure 3: Extract showing patients’ appointments with \ndentists and the cost of their treatments\nPatientID PatientName Dentist Specialties VisitDateTime Treatment Cost\n1 Zixin Yang Dr Kim\nDr Kim\nOrthodontics\nOrthodontics\n2024/12/01 09:00\n2024/12/08 09:30\nBraces fitting\nBraces adjust\n300\n100\n2 Charlie Algie Dr Ali\nDr Ali\nPeriodontics\nPeriodontics\n2024/11/29 10:00\n2024/11/30 10:00\nGum cleaning\nGum surgery\n180\n500\n3 Eve Armstrong Dr Ito\nDr Ito\nGeneral\nGeneral\n2024/09/01 14:00\n2024/09/02 14:00\nCavity filling\nWhitening\n120\n250\n4 Chan Oh Dr Ito\nDr Ito\nGeneral\nGeneral\n2024/09/05 11:00\n2024/09/12 11:30\nCavity filling\nCleaning\n120\n90\n5 Simon Moore Dr Kim\nDr Kim\nOrthodontics\nOrthodontics\n2024/12/02 10:00\n2024/12/09 11:00\nBraces fitting\nBraces adjust\n300\n100\n(e) Construct the database in 3rd normal form (3NF) for the entities shown in Figure 3.\nYou should use the following notation:\nTABLE (KEY, FIELD1, FIELD2,…) [5]\n(Option A continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-05.png",
+          "source_pdf_page": 5,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-06.png",
+          "source_pdf_page": 6,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Construct the database in 3rd normal form (3NF) for the entities shown in Figure 3. You should use the following notation: TABLE (KEY, FIELD1, FIELD2,…)",
+        "A booking relation contains VisitorID,VisitorName,GuideID,GuideName,Specialism,VisitTime,RouteID,RouteName,Fee"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          8
+        ],
+        "question_reference": "Q2 e",
+        "marking_summary": "Exact original MS leaf excerpt: Award [5 max] Award [1] for 3 tables with correct fields (ignore PK and FK); Award [1] for PATIENT table, key, and correct fields; Award [1] for DENTIST table, key, and correct fields; Award [1] for TREATMENT table, key, and correct fields; Award [1] for APPOINTMENT table, key, and VisitDate field; Award [1] for at least two correct foreign keys in APPOINTMENT; PATIENT (PatientID, PatientName) APPOINTMENT (AppointmentID, PatientIDfk, DentistIDfk, VisitDate, TreatmentIDfk, Cost) DENTIST (DentistID, Dentist, Specialties) TREATMENT (TreatmentID, Treatment, [Cost]) Alternative without IDs in DENTIST and TREATMENT PATIENT (PatientID, PatientName) APPOINTMENT (AppointmentID, PatientIDfk, Dentistfk, VisitDate, Treatmentfk) DENTIST (Dentist, Specialties) TREATMENT (Treatment, Fee) Alternative with 3 table: PATIENT (PatientID, PatientName) DENTIST (DentistID, Dentist, Specialties) APPOINTMENT (Ap … [full leaf evidence retained]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [5 max]\nAward [1] for 3 tables with correct fields (ignore PK and FK);\nAward [1] for PATIENT table, key, and correct fields;\nAward [1] for DENTIST table, key, and correct fields;\nAward [1] for TREATMENT table, key, and correct fields;\nAward [1] for APPOINTMENT table, key, and VisitDate field;\nAward [1] for at least two correct foreign keys in APPOINTMENT;\nPATIENT (PatientID, PatientName)\nAPPOINTMENT (AppointmentID, PatientIDfk, DentistIDfk, VisitDate, TreatmentIDfk, Cost)\nDENTIST (DentistID, Dentist, Specialties)\nTREATMENT (TreatmentID, Treatment, [Cost])\nAlternative without IDs in DENTIST and TREATMENT\nPATIENT (PatientID, PatientName)\nAPPOINTMENT (AppointmentID, PatientIDfk, Dentistfk, VisitDate, Treatmentfk)\nDENTIST (Dentist, Specialties)\nTREATMENT (Treatment, Fee)\nAlternative with 3 table:\nPATIENT (PatientID, PatientName)\nDENTIST (DentistID, Dentist, Specialties)\nAPPOINTMENT (AppointmentID, PatientID, DentistID, VisitDate, Treatment, Cost)\nNote:\nAward the mark for FK if not explicitly indicated but the name matches the PK\nAccept a suitable composite key in the Appointment table.\nCost can be included in APPOINTMENT and/or TREATMENT.",
+        "source_issues": [],
+        "source_marking_evidence": "– 8 – 8825 – 6405M \n(e) Award [5 max]\nAward [1] for 3 tables with correct fields (ignore PK and FK);\nAward [1] for PATIENT table, key, and correct fields;\nAward [1] for DENTIST table, key, and correct fields;\nAward [1] for TREATMENT table, key, and correct fields;\nAward [1] for APPOINTMENT table, key, and VisitDate field;\nAward [1] for at least two correct foreign keys in APPOINTMENT;\nPATIENT (PatientID, PatientName)\nAPPOINTMENT (AppointmentID, PatientIDfk, DentistIDfk, VisitDate, TreatmentIDfk, Cost)\nDENTIST (DentistID, Dentist, Specialties)\nTREATMENT (TreatmentID, Treatment, [Cost])\nAlternative without IDs in DENTIST and TREATMENT\nPATIENT (PatientID, PatientName)\nAPPOINTMENT (AppointmentID, PatientIDfk, Dentistfk, VisitDate, Treatmentfk)\nDENTIST (Dentist, Specialties)\nTREATMENT (Treatment, Fee)\nAlternative with 3 table:\nPATIENT (PatientID, PatientName)\nDENTIST (DentistID, Dentist, Specialties)\nAPPOINTMENT (AppointmentID, PatientID, DentistID, VisitDate, Treatment, Cost)\nNote:\nAward the mark for FK if not explicitly indicated but the name matches the PK\nAccept a suitable composite key in the Appointment table.\nCost can be included in APPOINTMENT and/or TREATMENT."
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "A3.2.6",
+          "scope_evidence": "• Examples may include library management, hospital management, e-commerce platforms, school management, employee management, inventory management, police crime reporting",
+          "rationale": "Adapted target only: A booking relation contains VisitorID,VisitorName,GuideID,GuideName,Specialism,VisitTime,RouteID,RouteName,Fee; guidance target: Construct a database normalized to 3NF for a range of real-world scenarios. Adaptation: Supplies explicit functional dependencies and unique booking identifier, resolving source ambiguity about treatment cost and specialties.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q02-e"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q03-a",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "A",
+      "question": 3,
+      "subquestion": "a",
+      "source_pdf_pages": [
+        7
+      ],
+      "source_printed_pages": [
+        "6"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "Outline one strategy for maintaining data integrity.",
+      "parent_context": "– 6 – 8825 – 6405\n(Option A continued)\n3. The database administrator is responsible for maintaining data integrity once the dental \nclinic’s database is operational.\n(a) Outline one strategy for maintaining data integrity. [2]\nThe dental clinic is looking to develop an integrated database system.\n(b) Outline what an integrated database system is. [2]\nThe end-user can interact with the database through a visual query.\n(c) Describe how the end-user might use a visual query to filter data in the database. [3]\nDental clinics can use data mining to predict outbreaks of infectious oral diseases.\n(d) Describe how data mining could be used to predict infectious oral diseases. [3]\nThe dental clinic is planning to allow insurance companies to view its database records.\n(e) Discuss the advantages and disadvantages for the dental clinic of allowing insurance \ncompanies to view its records. [5]\n(Option A continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-07.png",
+          "source_pdf_page": 7,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline one strategy for maintaining data integrity.",
+        "Outline how a foreign-key constraint can preserve integrity when a loan record refers to a museum member"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "question_reference": "Q3 a",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max] Award [1] per point; regularly scheduled backups; ensuring recent data changes are preserved; real-time replication offsite/cloud storage (in addition to local); to combat physical disasters like fire or flood; deploy failover systems; to ensure continuous data availability and integrity, ensure any modelling changes follow normalization rules; eliminating data redundancy (therefore enhance integrity); regular data auditing/keeping logs; to identify integrity issues/unauthorised modifications; regularly check access control/user authentication; control who can view, add, modify, or delete data; deploy error checking routines (e.g. checksum, hash totals); to detect and correct data transmission or storage errors; regularly update and patch software; to protect against vulnerabilities; maintain and upgrade hardware components; to prevent failures. provide training for users e … [full leaf evidence retained]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]\nAward [1] per point; \nregularly scheduled backups; \nensuring recent data changes are preserved; \nreal-time replication offsite/cloud storage (in addition to local); \nto combat physical disasters like fire or flood; \ndeploy failover systems; \nto ensure continuous data availability and integrity, \nensure any modelling changes follow normalization rules; \neliminating data redundancy (therefore enhance integrity); \nregular data auditing/keeping logs; \nto identify integrity issues/unauthorised modifications; \nregularly check access control/user authentication; \ncontrol who can view, add, modify, or delete data; \ndeploy error checking routines (e.g. checksum, hash totals); \nto detect and correct data transmission or storage errors; \nregularly update and patch software; \nto protect against vulnerabilities; \nmaintain and upgrade hardware components; \nto prevent failures. \nprovide training for users \nensuring best practices for data handling; \nregular data cleaning; \nto remove or correct outdated, incomplete, or inaccurate data. \nset data validation rules / enforce database constraints; \nto prevent inappropriate data modifications (insert/update/delete); \nNote: Accept any reasonable data integrity answer.",
+        "source_issues": [],
+        "source_marking_evidence": "– 9 – 8825 – 6405M \n3. (a) Award [2 max]\nAward [1] per point; \nregularly scheduled backups; \nensuring recent data changes are preserved; \nreal-time replication offsite/cloud storage (in addition to local); \nto combat physical disasters like fire or flood; \ndeploy failover systems; \nto ensure continuous data availability and integrity, \nensure any modelling changes follow normalization rules; \neliminating data redundancy (therefore enhance integrity); \nregular data auditing/keeping logs; \nto identify integrity issues/unauthorised modifications; \nregularly check access control/user authentication; \ncontrol who can view, add, modify, or delete data; \ndeploy error checking routines (e.g. checksum, hash totals); \nto detect and correct data transmission or storage errors; \nregularly update and patch software; \nto protect against vulnerabilities; \nmaintain and upgrade hardware components; \nto prevent failures. \nprovide training for users \nensuring best practices for data handling; \nregular data cleaning; \nto remove or correct outdated, incomplete, or inaccurate data. \nset data validation rules / enforce database constraints; \nto prevent inappropriate data modifications (insert/update/delete); \nNote: Accept any reasonable data integrity answer. \n(b) Award [2 max]\nAward [1] per point;\nan integrated database is one that holds data for several applications;\nthe data is standardized and shared (with systems using API);\nExtract, Transfer, Load (ETL) is carried out (for data standardizing).\nan integrated database is one that has multiple sources/databases;\nthe data is converted into a standard structure (using API);\nExtract, Transfer, Load (ETL) is carried out (for data standardizing)."
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "A3.1.1",
+          "scope_evidence": "• Features: composite keys, foreign keys, primary keys, relationships, tables\n• Benefits of databases: community support, concurrency control, data consistency, data integrity, data retrieval, reduced data duplication, reduced redundancy, reliable transaction processing, scalability, security features\n• Limitations of databases: “big data” scalability issues, design complexity, hierarchical data handling, rigid schema, object-relational impedance mismatch, unstructured data handling",
+          "rationale": "Adapted target only: Outline how a foreign-key constraint can preserve integrity when a loan record refers to a museum member; guidance target: Explain the features, benefits and limitations of a relational database. Adaptation: Narrows a broad old integrity-strategy question to relational integrity explicitly within A3.1.1.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q03-a"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q03-b",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "A",
+      "question": 3,
+      "subquestion": "b",
+      "source_pdf_pages": [
+        7
+      ],
+      "source_printed_pages": [
+        "6"
+      ],
+      "original_marks": 2,
+      "command_term": "Outline",
+      "original_text": "Outline what an integrated database system is.",
+      "parent_context": "– 6 – 8825 – 6405\n(Option A continued)\n3. The database administrator is responsible for maintaining data integrity once the dental \nclinic’s database is operational.\n(a) Outline one strategy for maintaining data integrity. [2]\nThe dental clinic is looking to develop an integrated database system.\n(b) Outline what an integrated database system is. [2]\nThe end-user can interact with the database through a visual query.\n(c) Describe how the end-user might use a visual query to filter data in the database. [3]\nDental clinics can use data mining to predict outbreaks of infectious oral diseases.\n(d) Describe how data mining could be used to predict infectious oral diseases. [3]\nThe dental clinic is planning to allow insurance companies to view its database records.\n(e) Discuss the advantages and disadvantages for the dental clinic of allowing insurance \ncompanies to view its records. [5]\n(Option A continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-07.png",
+          "source_pdf_page": 7,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Outline what an integrated database system is.",
+        "Outline what it means for a data warehouse to contain integrated data from several museum branches"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          9
+        ],
+        "question_reference": "Q3 b",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max] Award [1] per point; an integrated database is one that holds data for several applications; the data is standardized and shared (with systems using API); Extract, Transfer, Load (ETL) is carried out (for data standardizing). an integrated database is one that has multiple sources/databases; the data is converted into a standard structure (using API); Extract, Transfer, Load (ETL) is carried out (for data standardizing).",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]\nAward [1] per point;\nan integrated database is one that holds data for several applications;\nthe data is standardized and shared (with systems using API);\nExtract, Transfer, Load (ETL) is carried out (for data standardizing).\nan integrated database is one that has multiple sources/databases;\nthe data is converted into a standard structure (using API);\nExtract, Transfer, Load (ETL) is carried out (for data standardizing).",
+        "source_issues": [],
+        "source_marking_evidence": "– 9 – 8825 – 6405M \n3. (a) Award [2 max]\nAward [1] per point; \nregularly scheduled backups; \nensuring recent data changes are preserved; \nreal-time replication offsite/cloud storage (in addition to local); \nto combat physical disasters like fire or flood; \ndeploy failover systems; \nto ensure continuous data availability and integrity, \nensure any modelling changes follow normalization rules; \neliminating data redundancy (therefore enhance integrity); \nregular data auditing/keeping logs; \nto identify integrity issues/unauthorised modifications; \nregularly check access control/user authentication; \ncontrol who can view, add, modify, or delete data; \ndeploy error checking routines (e.g. checksum, hash totals); \nto detect and correct data transmission or storage errors; \nregularly update and patch software; \nto protect against vulnerabilities; \nmaintain and upgrade hardware components; \nto prevent failures. \nprovide training for users \nensuring best practices for data handling; \nregular data cleaning; \nto remove or correct outdated, incomplete, or inaccurate data. \nset data validation rules / enforce database constraints; \nto prevent inappropriate data modifications (insert/update/delete); \nNote: Accept any reasonable data integrity answer. \n(b) Award [2 max]\nAward [1] per point;\nan integrated database is one that holds data for several applications;\nthe data is standardized and shared (with systems using API);\nExtract, Transfer, Load (ETL) is carried out (for data standardizing).\nan integrated database is one that has multiple sources/databases;\nthe data is converted into a standard structure (using API);\nExtract, Transfer, Load (ETL) is carried out (for data standardizing)."
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "A3.4.2",
+          "scope_evidence": "• The roles of append-only data, subject-oriented data, integrated data, time-variant data, non-volatile data and data optimized for query performance, to ensure efficient data storage and analysis",
+          "rationale": "Adapted target only: Outline what it means for a data warehouse to contain integrated data from several museum branches; guidance target: Explain the primary objectives of data warehouses in data management and business intelligence. Adaptation: Reframes old integrated database terminology as the explicit integrated-data role of warehouses.",
+          "theme": "A",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q03-b"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q03-c",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "A",
+      "question": 3,
+      "subquestion": "c",
+      "source_pdf_pages": [
+        7
+      ],
+      "source_printed_pages": [
+        "6"
+      ],
+      "original_marks": 3,
+      "command_term": "Describe",
+      "original_text": "Describe how the end-user might use a visual query to filter data in the database.",
+      "parent_context": "– 6 – 8825 – 6405\n(Option A continued)\n3. The database administrator is responsible for maintaining data integrity once the dental \nclinic’s database is operational.\n(a) Outline one strategy for maintaining data integrity. [2]\nThe dental clinic is looking to develop an integrated database system.\n(b) Outline what an integrated database system is. [2]\nThe end-user can interact with the database through a visual query.\n(c) Describe how the end-user might use a visual query to filter data in the database. [3]\nDental clinics can use data mining to predict outbreaks of infectious oral diseases.\n(d) Describe how data mining could be used to predict infectious oral diseases. [3]\nThe dental clinic is planning to allow insurance companies to view its database records.\n(e) Discuss the advantages and disadvantages for the dental clinic of allowing insurance \ncompanies to view its records. [5]\n(Option A continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-07.png",
+          "source_pdf_page": 7,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Describe how the end-user might use a visual query to filter data in the database.",
+        "Operating a graphical query-builder interface is not a required individual 2027 learning statement; SQL query construction is assessed separately."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "question_reference": "Q3 c",
+        "marking_summary": "Exact original MS leaf excerpt: Award [3 max] Award [1] per point; select tables from a dropdown list/drag tables into the query builder; choose from a list of fields/check boxes of fields in the column grid; type/select commands/conditions for the criteria; select the execute query button to view results.",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [3 max]\nAward [1] per point;\nselect tables from a dropdown list/drag tables into the query builder;\nchoose from a list of fields/check boxes of fields in the column grid;\ntype/select commands/conditions for the criteria;\nselect the execute query button to view results.",
+        "source_issues": [],
+        "source_marking_evidence": "– 10 – 8825 – 6405M \n(c) Award [3 max]\nAward [1] per point;\nselect tables from a dropdown list/drag tables into the query builder;\nchoose from a list of fields/check boxes of fields in the column grid;\ntype/select commands/conditions for the criteria;\nselect the execute query button to view results.\n(d) Award [3 max]\nAward [1] per point;\nDM scans large volumes of data quickly/integrates data from many sources;\nDM analyses historical patient treatment data which reveals hidden patterns and trends;\nDM uses automated techniques for analysis (association / classification/ link analysis);\nDM can identify anomalies or outliers in the treatment data;\nwhich can be further investigated to establish new trends / faults in treatment;\ncan use data matching to find common traits about one entity;\ncan scan internet data sources (e.g. search engine queries) 24/7 to identify emerging\noutbreaks;\npredictive analysis (e.g. cluster analysis, deviation detection) to detect outbreaks;\nDMs can use geospatial analysis to identify regions with high infection rates;\nNote: Allow a valid scenario-based example of the use of DM;\n(e) Award [5] max\nAward [2] for pros, [2] for cons, [1] for reasonable conclusion\nPros\nFast payment: accelerates the insurance claim process;\nAccurate Billing: Ensures the insurance company is billed correctly, reducing errors and\npotential disputes;\nFraud Prevention: Helps to identify fraudulent claims, protecting the clinic;\nCons\nPrivacy Concerns: Increased risk of sensitive patient data being exposed;\nSecurity Risks: Opening the database increases the vulnerability to cyber-attacks or\ndata breaches;\nMisuse of Data: The insurance company might use the data unethically, such as raising\npremiums based on medical history;\nLegal Challenges: Maintaining compliance with data protection laws;\nNote: Any valid conclusion based on the discussion"
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Operating a graphical query-builder interface is not a required individual 2027 learning statement; SQL query construction is assessed separately.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": []
+    },
+    {
+      "source_question_id": "H-SRC038-Q03-d",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "A",
+      "question": 3,
+      "subquestion": "d",
+      "source_pdf_pages": [
+        7
+      ],
+      "source_printed_pages": [
+        "6"
+      ],
+      "original_marks": 3,
+      "command_term": "Describe",
+      "original_text": "Describe how data mining could be used to predict infectious oral diseases.",
+      "parent_context": "– 6 – 8825 – 6405\n(Option A continued)\n3. The database administrator is responsible for maintaining data integrity once the dental \nclinic’s database is operational.\n(a) Outline one strategy for maintaining data integrity. [2]\nThe dental clinic is looking to develop an integrated database system.\n(b) Outline what an integrated database system is. [2]\nThe end-user can interact with the database through a visual query.\n(c) Describe how the end-user might use a visual query to filter data in the database. [3]\nDental clinics can use data mining to predict outbreaks of infectious oral diseases.\n(d) Describe how data mining could be used to predict infectious oral diseases. [3]\nThe dental clinic is planning to allow insurance companies to view its database records.\n(e) Discuss the advantages and disadvantages for the dental clinic of allowing insurance \ncompanies to view its records. [5]\n(Option A continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-07.png",
+          "source_pdf_page": 7,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Describe how data mining could be used to predict infectious oral diseases.",
+        "Explain how data mining could help a conservation service identify unusual increases in damage reports across many museum sites"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "question_reference": "Q3 d",
+        "marking_summary": "Exact original MS leaf excerpt: Award [3 max] Award [1] per point; DM scans large volumes of data quickly/integrates data from many sources; DM analyses historical patient treatment data which reveals hidden patterns and trends; DM uses automated techniques for analysis (association / classification/ link analysis); DM can identify anomalies or outliers in the treatment data; which can be further investigated to establish new trends / faults in treatment; can use data matching to find common traits about one entity; can scan internet data sources (e.g. search engine queries) 24/7 to identify emerging outbreaks; predictive analysis (e.g. cluster analysis, deviation detection) to detect outbreaks; DMs can use geospatial analysis to identify regions with high infection rates; Note: Allow a valid scenario-based example of the use of DM;",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [3 max]\nAward [1] per point;\nDM scans large volumes of data quickly/integrates data from many sources;\nDM analyses historical patient treatment data which reveals hidden patterns and trends;\nDM uses automated techniques for analysis (association / classification/ link analysis);\nDM can identify anomalies or outliers in the treatment data;\nwhich can be further investigated to establish new trends / faults in treatment;\ncan use data matching to find common traits about one entity;\ncan scan internet data sources (e.g. search engine queries) 24/7 to identify emerging\noutbreaks;\npredictive analysis (e.g. cluster analysis, deviation detection) to detect outbreaks;\nDMs can use geospatial analysis to identify regions with high infection rates;\nNote: Allow a valid scenario-based example of the use of DM;",
+        "source_issues": [],
+        "source_marking_evidence": "– 10 – 8825 – 6405M \n(c) Award [3 max]\nAward [1] per point;\nselect tables from a dropdown list/drag tables into the query builder;\nchoose from a list of fields/check boxes of fields in the column grid;\ntype/select commands/conditions for the criteria;\nselect the execute query button to view results.\n(d) Award [3 max]\nAward [1] per point;\nDM scans large volumes of data quickly/integrates data from many sources;\nDM analyses historical patient treatment data which reveals hidden patterns and trends;\nDM uses automated techniques for analysis (association / classification/ link analysis);\nDM can identify anomalies or outliers in the treatment data;\nwhich can be further investigated to establish new trends / faults in treatment;\ncan use data matching to find common traits about one entity;\ncan scan internet data sources (e.g. search engine queries) 24/7 to identify emerging\noutbreaks;\npredictive analysis (e.g. cluster analysis, deviation detection) to detect outbreaks;\nDMs can use geospatial analysis to identify regions with high infection rates;\nNote: Allow a valid scenario-based example of the use of DM;\n(e) Award [5] max\nAward [2] for pros, [2] for cons, [1] for reasonable conclusion\nPros\nFast payment: accelerates the insurance claim process;\nAccurate Billing: Ensures the insurance company is billed correctly, reducing errors and\npotential disputes;\nFraud Prevention: Helps to identify fraudulent claims, protecting the clinic;\nCons\nPrivacy Concerns: Increased risk of sensitive patient data being exposed;\nSecurity Risks: Opening the database increases the vulnerability to cyber-attacks or\ndata breaches;\nMisuse of Data: The insurance company might use the data unethically, such as raising\npremiums based on medical history;\nLegal Challenges: Maintaining compliance with data protection laws;\nNote: Any valid conclusion based on the discussion"
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "A3.4.3",
+          "scope_evidence": "• Data mining techniques must include classification, clustering, regression, association rule discovery, sequential pattern discovery, anomaly detection (note: This links to “A4 Machine learning”).\n• The uses of the techniques in extracting meaningful information from large data sets",
+          "rationale": "Original and adapted within-scope skill: Explain how data mining could help a conservation service identify unusual increases in damage reports across many museum sites; guidance target: Explain the role of online analytical processing (OLAP) and data mining for business intelligence.",
+          "theme": "A",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q03-d"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q03-e",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "A",
+      "question": 3,
+      "subquestion": "e",
+      "source_pdf_pages": [
+        7
+      ],
+      "source_printed_pages": [
+        "6"
+      ],
+      "original_marks": 5,
+      "command_term": "Discuss",
+      "original_text": "Discuss the advantages and disadvantages for the dental clinic of allowing insurance companies to view its records.",
+      "parent_context": "– 6 – 8825 – 6405\n(Option A continued)\n3. The database administrator is responsible for maintaining data integrity once the dental \nclinic’s database is operational.\n(a) Outline one strategy for maintaining data integrity. [2]\nThe dental clinic is looking to develop an integrated database system.\n(b) Outline what an integrated database system is. [2]\nThe end-user can interact with the database through a visual query.\n(c) Describe how the end-user might use a visual query to filter data in the database. [3]\nDental clinics can use data mining to predict outbreaks of infectious oral diseases.\n(d) Describe how data mining could be used to predict infectious oral diseases. [3]\nThe dental clinic is planning to allow insurance companies to view its database records.\n(e) Discuss the advantages and disadvantages for the dental clinic of allowing insurance \ncompanies to view its records. [5]\n(Option A continues on the following page)",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-07.png",
+          "source_pdf_page": 7,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Discuss the advantages and disadvantages for the dental clinic of allowing insurance companies to view its records.",
+        "A lending database includes private member addresses and loan details"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          10
+        ],
+        "question_reference": "Q3 e",
+        "marking_summary": "Exact original MS leaf excerpt: Award [5] max Award [2] for pros, [2] for cons, [1] for reasonable conclusion Pros Fast payment: accelerates the insurance claim process; Accurate Billing: Ensures the insurance company is billed correctly, reducing errors and potential disputes; Fraud Prevention: Helps to identify fraudulent claims, protecting the clinic; Cons Privacy Concerns: Increased risk of sensitive patient data being exposed; Security Risks: Opening the database increases the vulnerability to cyber-attacks or data breaches; Misuse of Data: The insurance company might use the data unethically, such as raising premiums based on medical history; Legal Challenges: Maintaining compliance with data protection laws; Note: Any valid conclusion based on the discussion",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [5] max\nAward [2] for pros, [2] for cons, [1] for reasonable conclusion\nPros\nFast payment: accelerates the insurance claim process;\nAccurate Billing: Ensures the insurance company is billed correctly, reducing errors and\npotential disputes;\nFraud Prevention: Helps to identify fraudulent claims, protecting the clinic;\nCons\nPrivacy Concerns: Increased risk of sensitive patient data being exposed;\nSecurity Risks: Opening the database increases the vulnerability to cyber-attacks or\ndata breaches;\nMisuse of Data: The insurance company might use the data unethically, such as raising\npremiums based on medical history;\nLegal Challenges: Maintaining compliance with data protection laws;\nNote: Any valid conclusion based on the discussion",
+        "source_issues": [],
+        "source_marking_evidence": "– 10 – 8825 – 6405M \n(c) Award [3 max]\nAward [1] per point;\nselect tables from a dropdown list/drag tables into the query builder;\nchoose from a list of fields/check boxes of fields in the column grid;\ntype/select commands/conditions for the criteria;\nselect the execute query button to view results.\n(d) Award [3 max]\nAward [1] per point;\nDM scans large volumes of data quickly/integrates data from many sources;\nDM analyses historical patient treatment data which reveals hidden patterns and trends;\nDM uses automated techniques for analysis (association / classification/ link analysis);\nDM can identify anomalies or outliers in the treatment data;\nwhich can be further investigated to establish new trends / faults in treatment;\ncan use data matching to find common traits about one entity;\ncan scan internet data sources (e.g. search engine queries) 24/7 to identify emerging\noutbreaks;\npredictive analysis (e.g. cluster analysis, deviation detection) to detect outbreaks;\nDMs can use geospatial analysis to identify regions with high infection rates;\nNote: Allow a valid scenario-based example of the use of DM;\n(e) Award [5] max\nAward [2] for pros, [2] for cons, [1] for reasonable conclusion\nPros\nFast payment: accelerates the insurance claim process;\nAccurate Billing: Ensures the insurance company is billed correctly, reducing errors and\npotential disputes;\nFraud Prevention: Helps to identify fraudulent claims, protecting the clinic;\nCons\nPrivacy Concerns: Increased risk of sensitive patient data being exposed;\nSecurity Risks: Opening the database increases the vulnerability to cyber-attacks or\ndata breaches;\nMisuse of Data: The insurance company might use the data unethically, such as raising\npremiums based on medical history;\nLegal Challenges: Maintaining compliance with data protection laws;\nNote: Any valid conclusion based on the discussion"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "A3.1.1",
+          "scope_evidence": "• Features: composite keys, foreign keys, primary keys, relationships, tables\n• Benefits of databases: community support, concurrency control, data consistency, data integrity, data retrieval, reduced data duplication, reduced redundancy, reliable transaction processing, scalability, security features\n• Limitations of databases: “big data” scalability issues, design complexity, hierarchical data handling, rigid schema, object-relational impedance mismatch, unstructured data handling",
+          "rationale": "Adapted target only: A lending database includes private member addresses and loan details; guidance target: Explain the features, benefits and limitations of a relational database. Adaptation: Retains access-benefit/privacy evaluation but explicitly assesses relational security and views, rather than generic insurance ethics.",
+          "theme": "A",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        },
+        {
+          "syllabus_code": "A3.3.5",
+          "scope_evidence": "• Virtual views and materialized (snapshot) views\n• Hiding data complexity, data consistency, independence, performance, query simplification, read-only data or updatable data, security",
+          "rationale": "Adapted target only: A lending database includes private member addresses and loan details; guidance target: Describe different database views. (HL only) Adaptation: Retains access-benefit/privacy evaluation but explicitly assesses relational security and views, rather than generic insurance ethics.",
+          "theme": "A",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q03-e"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q04-a-i",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "A",
+      "question": 4,
+      "subquestion": "a-i",
+      "source_pdf_pages": [
+        8
+      ],
+      "source_printed_pages": [
+        "7"
+      ],
+      "original_marks": 3,
+      "command_term": "Identify",
+      "original_text": "Identify three other characteristics of an object-oriented database.",
+      "parent_context": "– 7 – 8825 – 6405\nTurn over\n(Option A continued)\n4. A characteristic of an object-oriented database is object hierarchy. This is where objects are \norganized into classes and subclasses.\n(a) (i)   Identify three other characteristics of an object-oriented database. [3]\nA multi-dimensional database could offer significant advantages for analysing the \ndental treatment data of patients.\n(ii) Describe one advantage of having dental treatment data organized  \ninto dimensions. [3]\nThe dental clinic uses data matching to review patients’ past medical treatments.\n(b) Explain one reason why data matching is an appropriate method of reviewing patients’ \npast medical treatments. [3]\nThe dental clinic has decided to use forecasting, a sub-branch of data mining, in its database.\n(c) Outline two research areas to which the dental clinic could apply forecasting. [4]\nThe dental clinic has decided to apply database segmentation to focus on specific  \npatient groups.\n(d) Justify applying database segmentation to focus on specific patient groups. [4]\nThe dental regulatory authority uses a data warehouse to store the treatment data from \nmultiple clinics.\n(e) Explain why the three processes of extract, transform, and load (ETL) need to be \napplied to treatment data. [3]\nEnd of Option A",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-08.png",
+          "source_pdf_page": 8,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Identify three other characteristics of an object-oriented database.",
+        "Object-oriented database-specific identity, persistence and binding features are not among the guide’s required alternative database models."
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          11
+        ],
+        "question_reference": "Q4 a-i",
+        "marking_summary": "Exact original MS leaf excerpt: Award [3] max Award [1] per point; unique Object Identity/each object has a unique identifier; encapsulate data and behaviour (methods); handle complex objects and data structures (e.g. trees, graphs, and networks); polymorphism - instances of their parent class dynamic binding (method calls resolved at runtime); object persistence (unlike objects in OOP); OODBs provide querying capabilities at the object level.",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [3] max\nAward [1] per point; \nunique Object Identity/each object has a unique identifier; \nencapsulate data and behaviour (methods); \nhandle complex objects and data structures (e.g. trees, graphs, and networks); \npolymorphism - instances of their parent class \ndynamic binding (method calls resolved at runtime); \nobject persistence (unlike objects in OOP); \nOODBs provide querying capabilities at the object level.",
+        "source_issues": [],
+        "source_marking_evidence": "– 11 – 8825 – 6405M \n4. (a) (i) Award [3] max\nAward [1] per point; \nunique Object Identity/each object has a unique identifier; \nencapsulate data and behaviour (methods); \nhandle complex objects and data structures (e.g. trees, graphs, and networks); \npolymorphism - instances of their parent class \ndynamic binding (method calls resolved at runtime); \nobject persistence (unlike objects in OOP); \nOODBs provide querying capabilities at the object level. \n(ii) Award [3] max\nAward [1] per point;\nbreaking down data in dimensions enhances analysis;\ne.g. demographics/location/date and time/treatment type;\nprovides valuable insights for better patient care;\nPersonalized Patient Care; \ndimensions (e.g. age, gender, and medical history) provide critical insights into \npatient groups; \nallows the dental clinic to tailor treatments for specific demographics; \nEnables Trend Analysis and Forecasting; \nanalysing dimensions over time, the clinic can identify trends (e.g. \ntreatments/seasonal changes); \nhelps in forecasting future needs (e.g. planning resources); \nImproves Marketing/Service Offerings; \ngreater analysis of demographic profiles; \nenables the clinic to design targeted marketing campaigns; \ndevelop services that cater to the specific needs of their patients; \nSupports Population Health Management; \ntreatment data can be analysed across various dimensions; \nidentifying common dental issues; "
+      },
+      "relevance_status": "C",
+      "mappings": [],
+      "exclusion_reason": "Object-oriented database-specific identity, persistence and binding features are not among the guide’s required alternative database models.",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": []
+    },
+    {
+      "source_question_id": "H-SRC038-Q04-a-ii",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "A",
+      "question": 4,
+      "subquestion": "a-ii",
+      "source_pdf_pages": [
+        8
+      ],
+      "source_printed_pages": [
+        "7"
+      ],
+      "original_marks": 3,
+      "command_term": "Describe",
+      "original_text": "Describe one advantage of having dental treatment data organized into dimensions.",
+      "parent_context": "– 7 – 8825 – 6405\nTurn over\n(Option A continued)\n4. A characteristic of an object-oriented database is object hierarchy. This is where objects are \norganized into classes and subclasses.\n(a) (i)   Identify three other characteristics of an object-oriented database. [3]\nA multi-dimensional database could offer significant advantages for analysing the \ndental treatment data of patients.\n(ii) Describe one advantage of having dental treatment data organized  \ninto dimensions. [3]\nThe dental clinic uses data matching to review patients’ past medical treatments.\n(b) Explain one reason why data matching is an appropriate method of reviewing patients’ \npast medical treatments. [3]\nThe dental clinic has decided to use forecasting, a sub-branch of data mining, in its database.\n(c) Outline two research areas to which the dental clinic could apply forecasting. [4]\nThe dental clinic has decided to apply database segmentation to focus on specific  \npatient groups.\n(d) Justify applying database segmentation to focus on specific patient groups. [4]\nThe dental regulatory authority uses a data warehouse to store the treatment data from \nmultiple clinics.\n(e) Explain why the three processes of extract, transform, and load (ETL) need to be \napplied to treatment data. [3]\nEnd of Option A",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-08.png",
+          "source_pdf_page": 8,
+          "visually_verified": false
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Describe one advantage of having dental treatment data organized into dimensions.",
+        "Explain how OLAP could help a museum examine admission totals by site, visitor category and month"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          11
+        ],
+        "question_reference": "Q4 a-ii",
+        "marking_summary": "Exact original MS leaf excerpt: Award [3] max Award [1] per point; breaking down data in dimensions enhances analysis; e.g. demographics/location/date and time/treatment type; provides valuable insights for better patient care; Personalized Patient Care; dimensions (e.g. age, gender, and medical history) provide critical insights into patient groups; allows the dental clinic to tailor treatments for specific demographics; Enables Trend Analysis and Forecasting; analysing dimensions over time, the clinic can identify trends (e.g. treatments/seasonal changes); helps in forecasting future needs (e.g. planning resources); Improves Marketing/Service Offerings; greater analysis of demographic profiles; enables the clinic to design targeted marketing campaigns; develop services that cater to the specific needs of their patients; Supports Population Health Management; treatment data can be analysed across various dimensions; i … [full leaf evidence retained]",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [3] max\nAward [1] per point;\nbreaking down data in dimensions enhances analysis;\ne.g. demographics/location/date and time/treatment type;\nprovides valuable insights for better patient care;\nPersonalized Patient Care; \ndimensions (e.g. age, gender, and medical history) provide critical insights into \npatient groups; \nallows the dental clinic to tailor treatments for specific demographics; \nEnables Trend Analysis and Forecasting; \nanalysing dimensions over time, the clinic can identify trends (e.g. \ntreatments/seasonal changes); \nhelps in forecasting future needs (e.g. planning resources); \nImproves Marketing/Service Offerings; \ngreater analysis of demographic profiles; \nenables the clinic to design targeted marketing campaigns; \ndevelop services that cater to the specific needs of their patients; \nSupports Population Health Management; \ntreatment data can be analysed across various dimensions; \nidentifying common dental issues;",
+        "source_issues": [],
+        "source_marking_evidence": "– 11 – 8825 – 6405M \n4. (a) (i) Award [3] max\nAward [1] per point; \nunique Object Identity/each object has a unique identifier; \nencapsulate data and behaviour (methods); \nhandle complex objects and data structures (e.g. trees, graphs, and networks); \npolymorphism - instances of their parent class \ndynamic binding (method calls resolved at runtime); \nobject persistence (unlike objects in OOP); \nOODBs provide querying capabilities at the object level. \n(ii) Award [3] max\nAward [1] per point;\nbreaking down data in dimensions enhances analysis;\ne.g. demographics/location/date and time/treatment type;\nprovides valuable insights for better patient care;\nPersonalized Patient Care; \ndimensions (e.g. age, gender, and medical history) provide critical insights into \npatient groups; \nallows the dental clinic to tailor treatments for specific demographics; \nEnables Trend Analysis and Forecasting; \nanalysing dimensions over time, the clinic can identify trends (e.g. \ntreatments/seasonal changes); \nhelps in forecasting future needs (e.g. planning resources); \nImproves Marketing/Service Offerings; \ngreater analysis of demographic profiles; \nenables the clinic to design targeted marketing campaigns; \ndevelop services that cater to the specific needs of their patients; \nSupports Population Health Management; \ntreatment data can be analysed across various dimensions; \nidentifying common dental issues; "
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "A3.4.3",
+          "scope_evidence": "• Data mining techniques must include classification, clustering, regression, association rule discovery, sequential pattern discovery, anomaly detection (note: This links to “A4 Machine learning”).\n• The uses of the techniques in extracting meaningful information from large data sets",
+          "rationale": "Adapted target only: Explain how OLAP could help a museum examine admission totals by site, visitor category and month; guidance target: Explain the role of online analytical processing (OLAP) and data mining for business intelligence. Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "A",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q04-a-ii"
+      ]
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC038-Q02-e",
+      "source_question_ids": [
+        "H-SRC038-Q02-e"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "A booking relation contains VisitorID, VisitorName, GuideID, GuideName, Specialism, VisitTime, RouteID, RouteName, Fee. VisitorID determines VisitorName; GuideID determines GuideName and Specialism; RouteID determines RouteName and Fee. Each booking has a unique BookingID and exactly one visitor, guide and route. Construct a 3NF schema, labelling primary and foreign keys.",
+      "syllabus_codes": [
+        "A3.2.6"
+      ],
+      "theme": "A",
+      "level": "SL/HL common",
+      "marks": 5,
+      "command_term": "Construct",
+      "difficulty": "medium",
+      "adaptation_rationale": "Supplies explicit functional dependencies and unique booking identifier, resolving source ambiguity about treatment cost and specialties.",
+      "solution": "VISITOR(VisitorID PK, VisitorName); GUIDE(GuideID PK, GuideName, Specialism); ROUTE(RouteID PK, RouteName, Fee); BOOKING(BookingID PK, VisitorID FK, GuideID FK, RouteID FK, VisitTime).",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "VISITOR with correct key and attributes."
+        },
+        {
+          "marks": 1,
+          "criterion": "GUIDE with correct key and attributes."
+        },
+        {
+          "marks": 1,
+          "criterion": "ROUTE with correct key and attributes."
+        },
+        {
+          "marks": 1,
+          "criterion": "BOOKING with key, VisitTime and references."
+        },
+        {
+          "marks": 1,
+          "criterion": "Foreign keys identified; no transitive names/fees retained in BOOKING."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          8
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q03-a",
+      "source_question_ids": [
+        "H-SRC038-Q03-a"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline how a foreign-key constraint can preserve integrity when a loan record refers to a museum member.",
+      "syllabus_codes": [
+        "A3.1.1"
+      ],
+      "theme": "A",
+      "level": "SL/HL common",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Narrows a broad old integrity-strategy question to relational integrity explicitly within A3.1.1.",
+      "solution": "It requires the referenced member ID to exist in MEMBER, preventing a loan from referring to a nonexistent member.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Requires an existing referenced member key."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains prevention of orphan/misattributed loan data."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          9
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q03-b",
+      "source_question_ids": [
+        "H-SRC038-Q03-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Outline what it means for a data warehouse to contain integrated data from several museum branches.",
+      "syllabus_codes": [
+        "A3.4.2"
+      ],
+      "theme": "A",
+      "level": "HL-only",
+      "marks": 2,
+      "command_term": "Outline",
+      "difficulty": "medium",
+      "adaptation_rationale": "Reframes old integrated database terminology as the explicit integrated-data role of warehouses.",
+      "solution": "Data from the branches is combined into a unified representation, with compatible identifiers/formats, so analysis can compare records across branches.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Combines multiple sources."
+        },
+        {
+          "marks": 1,
+          "criterion": "Consistent representation supports cross-source analysis."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          9
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q03-d",
+      "source_question_ids": [
+        "H-SRC038-Q03-d"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Explain how data mining could help a conservation service identify unusual increases in damage reports across many museum sites.",
+      "syllabus_codes": [
+        "A3.4.3"
+      ],
+      "theme": "A",
+      "level": "HL-only",
+      "marks": 3,
+      "command_term": "Explain",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Analyse historical reports using anomaly detection to find counts or patterns unlike the usual baseline. Unusual site/time combinations can be flagged for investigation, helping staff discover emerging damage problems that manual inspection of many records could miss.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Analyses historical reports/baseline."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct anomaly-detection use."
+        },
+        {
+          "marks": 1,
+          "criterion": "Explains a concrete flag/investigation benefit."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          10
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q03-e",
+      "source_question_ids": [
+        "H-SRC038-Q03-e"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "A lending database includes private member addresses and loan details. Evaluate giving an external courier unrestricted access compared with a read-only view containing only the delivery fields it needs.",
+      "syllabus_codes": [
+        "A3.1.1",
+        "A3.3.5"
+      ],
+      "theme": "A",
+      "level": "HL-only",
+      "marks": 5,
+      "command_term": "Evaluate",
+      "difficulty": "medium",
+      "adaptation_rationale": "Retains access-benefit/privacy evaluation but explicitly assesses relational security and views, rather than generic insurance ethics.",
+      "solution": "Unrestricted access may make ad hoc queries easy, but reveals unrelated private information and may permit damaging edits. A restricted read-only view supplies the address and dispatch details required for delivery while hiding other records and preventing updates through that interface. View permissions and maintenance are needed; the limited view is preferable for the courier’s defined task.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Relevant unrestricted-access convenience."
+        },
+        {
+          "marks": 1,
+          "criterion": "Concrete excessive-disclosure/edit risk."
+        },
+        {
+          "marks": 1,
+          "criterion": "View supplies only required delivery fields."
+        },
+        {
+          "marks": 1,
+          "criterion": "Read-only/restricted permissions reduce harm, with maintenance limitation."
+        },
+        {
+          "marks": 1,
+          "criterion": "Supported contextual judgment."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          10
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q04-a-ii",
+      "source_question_ids": [
+        "H-SRC038-Q04-a-ii"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Explain how OLAP could help a museum examine admission totals by site, visitor category and month.",
+      "syllabus_codes": [
+        "A3.4.3"
+      ],
+      "theme": "A",
+      "level": "HL-only",
+      "marks": 3,
+      "command_term": "Explain",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "OLAP supports examining aggregated data across these dimensions. Staff can compare sites or focus on one category and time period, revealing seasonal or demographic patterns that inform staffing and exhibition planning.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Multidimensional aggregate analysis."
+        },
+        {
+          "marks": 1,
+          "criterion": "Concrete comparison/filtering across given dimensions."
+        },
+        {
+          "marks": 1,
+          "criterion": "Links findings to a museum decision."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          11
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    }
+  ]
+}

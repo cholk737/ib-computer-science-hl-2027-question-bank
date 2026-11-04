@@ -47,7 +47,9 @@
     "filename": "",
     "pdf_pages": [],
     "question_reference": "Q2 d",
-    "marking_summary": "LEARNER(LearnerID PK,LearnerName,Level); EVENT(EventID PK,CourseTitle,Provider,EventDate,Fee); ENROLMENT(LearnerID PK/FK,EventID PK/FK,Completed). The enrolment key is the pair of IDs.",
+    "marking_summary": "No uploaded official MS; independently solved unofficial criteria are stored in the practice record.",
+    "summary_kind": "missing_official_MS",
+    "source_marking_leaf_evidence": "",
     "source_issues": [],
     "source_marking_evidence": ""
   },
@@ -56,7 +58,7 @@
     {
       "syllabus_code": "A3.2.6",
       "scope_evidence": "• Examples may include library management, hospital management, e-commerce platforms, school management, employee management, inventory management, police crime reporting",
-      "rationale": "A training register has fields LearnerID,LearnerName,Level,EventID,CourseTitle,Provider,EventDate,Fee,Completed assesses Construct a database normalized to 3NF for a range of real-world scenarios.",
+      "rationale": "Adapted target only: A training register has fields LearnerID,LearnerName,Level,EventID,CourseTitle,Provider,EventDate,Fee,Completed; guidance target: Construct a database normalized to 3NF for a range of real-world scenarios. Adaptation: Original table does not state all functional dependencies; supplied dependencies remove ambiguity about event cost and qualification/provider relationships.",
       "theme": "A",
       "level": "SL/HL common",
       "confidence": "high",

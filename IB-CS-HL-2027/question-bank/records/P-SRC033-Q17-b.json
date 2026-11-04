@@ -1,0 +1,54 @@
+{
+  "question_id": "P-SRC033-Q17-b",
+  "source_question_ids": [
+    "H-SRC033-Q17-b"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Compare a stack implemented using a fixed-capacity array with one implemented using a singly linked list whose head is the stack top. Refer to storage and push/pop operations.",
+  "syllabus_codes": [
+    "B2.2.1",
+    "B4.1.2"
+  ],
+  "theme": "B",
+  "level": "mixed common/HL",
+  "marks": 4,
+  "command_term": "Compare",
+  "difficulty": "medium",
+  "adaptation_rationale": "Accurate named-structure comparison; avoid dynamic list generalizations. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
+  "solution": "Array reserves capacity and can become full; linked nodes allocate as needed but need next references. Array push/pop at a tracked top index areO(1); linked head insertion/removal are alsoO(1), without traversing the list.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Fixed reserved capacity/full limit versus dynamic node allocation."
+    },
+    {
+      "marks": 1,
+      "criterion": "Paired memory trade-off: unused array slots versus node-reference overhead."
+    },
+    {
+      "marks": 1,
+      "criterion": "Array tracked-top push/pop constant-time."
+    },
+    {
+      "marks": 1,
+      "criterion": "Linked head push/pop constant-time with correct reference changes."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct answers meeting the same scoped requirement; valid alternative algorithms accepted where they meet any explicit question constraints."
+  ],
+  "partial_credit_notes": "Award each specified criterion independently up to the allocation. Credit correct method after an earlier slip when consistent; do not award the same point twice.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Independently solved; compared relevant source MS points, with obsolete/source-error assertions not imported.",
+    "mark_sum": 4,
+    "code_execution": "No executable code required; explicit answer/trace checked manually."
+  },
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "assets": [],
+  "record_path": "question-bank/records/P-SRC033-Q17-b.json",
+  "question_path": "question-bank/questions/P-SRC033-Q17-b.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC033-Q17-b.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

@@ -1,0 +1,383 @@
+{
+  "source_id": "SRC-038",
+  "batch_id": "SRC-038-b012",
+  "source_questions": [
+    {
+      "source_question_id": "H-SRC038-Q18-b",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": 18,
+      "subquestion": "b",
+      "source_pdf_pages": [
+        29
+      ],
+      "source_printed_pages": [
+        "28"
+      ],
+      "original_marks": 3,
+      "command_term": "Determine",
+      "original_text": "Determine the value returned by aMethod(casesWon,4,0). casesWon is the array shown in Figure 11. All recursive calls must be shown in your working.",
+      "parent_context": "– 27 – 8825 – 6405\nTurn over\n(Option D continued)\n17. A lawyer’s rank depends on the number of cases they have won.\nThe information about the number of cases won by each lawyer in the last four years is \nstored in a 2D array, casesWon, as shown in Figure 11. Rows represent the number of \ncases won by a lawyer, and columns represent the year.\nFigure 11: An excerpt from the 2D array, casesWon\nYear\n2024 2023 2022 2021\nLawyerID\n1 7 5 8 2\n2 3 6 7 7\n3 1 9 8 2\n4 0 2 2 1\n5 8 6 5 1\n... ... ... ... ...\n20 ... ... ... ...\nA lawyer’s rank is set to 1 only if the number of cases won by the lawyer in any two \nconsecutive years is greater than 6.\nFor example: The rank for lawyer 1 will remain 0, whereas the rank for lawyer 2 will be set to 1 \nas the number of cases they won is greater than 6 in both 2022 and 2021.\n(a) Construct the method updateLawyerRank(int[][]casesWon) to update lawyerRank \nfor all the lawyers in the firm. The method returns a suitable message if no lawyer’s rank \nchanges to 1. [7]\nThe law firm can have more than one criminal lawyer. A criminal lawyer gets only  \ncriminal cases.\n(b) Identify the steps required to create an ArrayList of criminal cases that the \nlaw firm currently has and store all criminal cases to this array list. [3]\n(Option D continues on the following page)\n– 28 – 8825 – 6405\n(Option D continued)\n18. (a)  (i)   State two advantages of using a binary tree rather than a static array. [2]\n(ii) Outline one disadvantage of using a binary tree. [2]\nConsider the following recursive algorithm:\npublic static int aMethod(int [][]arr, int k, int n)\n{\n    if (n < 3)\n        return arr[k][n] + aMethod(arr,k,n+1);\n    else\n        return arr[k][3];\n}\n(b) Determine the value returned by aMethod(casesWon,4,0).\ncasesWon is the array shown in Figure 11.\nAll recursive calls must be shown in your working. [3]\n(c) State two reasons why the algorithm in part (b) is considered a recursive algorithm. [2]\n(d) Define the term object reference. [1]\nEnd of Option D\n ",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-28.png",
+          "source_pdf_page": 28,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-29.png",
+          "source_pdf_page": 29,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Determine the value returned by aMethod(casesWon,4,0). casesWon is the array shown in Figure 11. All recursive calls must be shown in your working.",
+        "Determine row_total([[9,8,7,6],[1,4,2,3]],1,0), showing every recursive call and the return calculation"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          46
+        ],
+        "question_reference": "Q18 b",
+        "marking_summary": "Original zero-based row4 contains8,6,5,1; recursive result20.",
+        "summary_kind": "author_paraphrase_of_original",
+        "source_marking_leaf_evidence": "Award [3 max]\nAward [2] for showing correct recursive calls + [1] for correct final answer ;\nAward only [1] if one error in calling otherwise award [0];\nWorking #1:\n8 + aMethod(casesWon,4,1)\n8 + 6 + aMethod(casesWon,4,2)\n8 + 6 + 5+ aMethod(casesWon,4,3)\n8 + 6 + 5+ 1\n8+ 6+5+1= 20\nWorking #2:\naMethod(casesWon,4,0) = 8 + aMethod(casesWon,4,1)\naMethod(casesWon,4,1) = 6 + aMethod(casesWon,4,2)\naMethod(casesWon,4,2) = 5+ aMethod(casesWon,4,3)\naMethod(casesWon,4,0) = 8 + 6 + 5+ 1=20\nNote: The working may be differently presented but the recursive calls must be correct.",
+        "source_issues": [],
+        "source_marking_evidence": "– 46 – 8825 – 6405M \n18. (a) (i) Award [2 max]\na binary tree can grow and shrink dynamically, while an array has a fixed size; \na binary tree is more memory efficient than an array; \na binary tree allows faster searching than an array; \na binary tree does not require contiguous memory, unlike an array; \na binary tree supports ordered data storage (giving efficient retrieval); \na binary tree avoids shifting elements when inserting or deleting, unlike an array; \nNote: Candidates are not expected to refer to arrays while stating the advantages. Accept \nother correct advantages.  \n(ii) Award [2 max]\nMemory usage -\nbinary tree uses more memory;\neach node stores extra pointers (left/right child);\nAccessing -\ndirect access is not possible;\naccess must start from the root and move through left/right pointers, making the retrieval\nSlower;\nOperation -\ndeleting an element in a binary tree is complex;\nthe tree must be restructured by reassigning left and right child pointers;\nMaintenance overhead -\ntree operations require careful pointer management;\nincreasing algorithmic complexity compared to simple index-based access in arrays;\n(b) Award [3 max]\nAward [2] for showing correct recursive calls + [1] for correct final answer ;\nAward only [1] if one error in calling otherwise award [0];\nWorking #1:\n8 + aMethod(casesWon,4,1)\n8 + 6 + aMethod(casesWon,4,2)\n8 + 6 + 5+ aMethod(casesWon,4,3)\n8 + 6 + 5+ 1\n8+ 6+5+1= 20\nWorking #2:\naMethod(casesWon,4,0) = 8 + aMethod(casesWon,4,1)\naMethod(casesWon,4,1) = 6 + aMethod(casesWon,4,2)\naMethod(casesWon,4,2) = 5+ aMethod(casesWon,4,3)\naMethod(casesWon,4,0) = 8 + 6 + 5+ 1=20\nNote: The working may be differently presented but the recursive calls must be correct.\n(c) Award [2 max]\nthe method calls itself from within the method;\nthe method has a base case (to stop the recursion);\nit passes an updated parameter at each successive call (that moves towards the base case);\n(d) Award [1 max]\na pointer/address/location (reference) to an instance of a class;\na variable that stores the memory address of an object;\na variable that refers to an object (not the actual object but the address);"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B2.4.5",
+          "scope_evidence": "• Simple, non-branching recursive algorithms in programming only",
+          "rationale": "Adapted target only: Determine row_total([[9,8,7,6],[1,4,2,3]],1,0), showing every recursive call and the return calculation; guidance target: Construct and trace recursive algorithms in a programming language. (HL only) Adaptation: Python/original wording or scope-specific context conversion; original skill is recorded separately in assessed_concepts.",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Executed multi-element and singleton base case."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q18-b"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q18-c",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": 18,
+      "subquestion": "c",
+      "source_pdf_pages": [
+        29
+      ],
+      "source_printed_pages": [
+        "28"
+      ],
+      "original_marks": 2,
+      "command_term": "State",
+      "original_text": "State two reasons why the algorithm in part (b) is considered a recursive algorithm.",
+      "parent_context": "– 27 – 8825 – 6405\nTurn over\n(Option D continued)\n17. A lawyer’s rank depends on the number of cases they have won.\nThe information about the number of cases won by each lawyer in the last four years is \nstored in a 2D array, casesWon, as shown in Figure 11. Rows represent the number of \ncases won by a lawyer, and columns represent the year.\nFigure 11: An excerpt from the 2D array, casesWon\nYear\n2024 2023 2022 2021\nLawyerID\n1 7 5 8 2\n2 3 6 7 7\n3 1 9 8 2\n4 0 2 2 1\n5 8 6 5 1\n... ... ... ... ...\n20 ... ... ... ...\nA lawyer’s rank is set to 1 only if the number of cases won by the lawyer in any two \nconsecutive years is greater than 6.\nFor example: The rank for lawyer 1 will remain 0, whereas the rank for lawyer 2 will be set to 1 \nas the number of cases they won is greater than 6 in both 2022 and 2021.\n(a) Construct the method updateLawyerRank(int[][]casesWon) to update lawyerRank \nfor all the lawyers in the firm. The method returns a suitable message if no lawyer’s rank \nchanges to 1. [7]\nThe law firm can have more than one criminal lawyer. A criminal lawyer gets only  \ncriminal cases.\n(b) Identify the steps required to create an ArrayList of criminal cases that the \nlaw firm currently has and store all criminal cases to this array list. [3]\n(Option D continues on the following page)\n– 28 – 8825 – 6405\n(Option D continued)\n18. (a)  (i)   State two advantages of using a binary tree rather than a static array. [2]\n(ii) Outline one disadvantage of using a binary tree. [2]\nConsider the following recursive algorithm:\npublic static int aMethod(int [][]arr, int k, int n)\n{\n    if (n < 3)\n        return arr[k][n] + aMethod(arr,k,n+1);\n    else\n        return arr[k][3];\n}\n(b) Determine the value returned by aMethod(casesWon,4,0).\ncasesWon is the array shown in Figure 11.\nAll recursive calls must be shown in your working. [3]\n(c) State two reasons why the algorithm in part (b) is considered a recursive algorithm. [2]\n(d) Define the term object reference. [1]\nEnd of Option D\n ",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-28.png",
+          "source_pdf_page": 28,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-29.png",
+          "source_pdf_page": 29,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: State two reasons why the algorithm in part (b) is considered a recursive algorithm.",
+        "State two features of the following recursive pattern: a function calls itself on the next column until the final column is reached"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          46
+        ],
+        "question_reference": "Q18 c",
+        "marking_summary": "Exact original MS leaf excerpt: Award [2 max] the method calls itself from within the method; the method has a base case (to stop the recursion); it passes an updated parameter at each successive call (that moves towards the base case);",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [2 max]\nthe method calls itself from within the method;\nthe method has a base case (to stop the recursion);\nit passes an updated parameter at each successive call (that moves towards the base case);",
+        "source_issues": [],
+        "source_marking_evidence": "– 46 – 8825 – 6405M \n18. (a) (i) Award [2 max]\na binary tree can grow and shrink dynamically, while an array has a fixed size; \na binary tree is more memory efficient than an array; \na binary tree allows faster searching than an array; \na binary tree does not require contiguous memory, unlike an array; \na binary tree supports ordered data storage (giving efficient retrieval); \na binary tree avoids shifting elements when inserting or deleting, unlike an array; \nNote: Candidates are not expected to refer to arrays while stating the advantages. Accept \nother correct advantages.  \n(ii) Award [2 max]\nMemory usage -\nbinary tree uses more memory;\neach node stores extra pointers (left/right child);\nAccessing -\ndirect access is not possible;\naccess must start from the root and move through left/right pointers, making the retrieval\nSlower;\nOperation -\ndeleting an element in a binary tree is complex;\nthe tree must be restructured by reassigning left and right child pointers;\nMaintenance overhead -\ntree operations require careful pointer management;\nincreasing algorithmic complexity compared to simple index-based access in arrays;\n(b) Award [3 max]\nAward [2] for showing correct recursive calls + [1] for correct final answer ;\nAward only [1] if one error in calling otherwise award [0];\nWorking #1:\n8 + aMethod(casesWon,4,1)\n8 + 6 + aMethod(casesWon,4,2)\n8 + 6 + 5+ aMethod(casesWon,4,3)\n8 + 6 + 5+ 1\n8+ 6+5+1= 20\nWorking #2:\naMethod(casesWon,4,0) = 8 + aMethod(casesWon,4,1)\naMethod(casesWon,4,1) = 6 + aMethod(casesWon,4,2)\naMethod(casesWon,4,2) = 5+ aMethod(casesWon,4,3)\naMethod(casesWon,4,0) = 8 + 6 + 5+ 1=20\nNote: The working may be differently presented but the recursive calls must be correct.\n(c) Award [2 max]\nthe method calls itself from within the method;\nthe method has a base case (to stop the recursion);\nit passes an updated parameter at each successive call (that moves towards the base case);\n(d) Award [1 max]\na pointer/address/location (reference) to an instance of a class;\na variable that stores the memory address of an object;\na variable that refers to an object (not the actual object but the address);"
+      },
+      "relevance_status": "A",
+      "mappings": [
+        {
+          "syllabus_code": "B2.4.4",
+          "scope_evidence": "• The fundamentals of recursion and its advantages and limitations\n• The utility of recursion in solving problems that can be broken down into smaller, similar sub-problems\n• Recursive algorithms, including but not limited to quicksort\n• The limitations of recursion, including complexity and memory usage\n• Situations that best suit the use of recursion, including fractal image creation, traversing binary trees, sorting algorithms",
+          "rationale": "Original and adapted within-scope skill: State two features of the following recursive pattern: a function calls itself on the next column until the final column is reached; guidance target: Explain the fundamental concept of recursion and its applications in programming. (HL only)",
+          "theme": "B",
+          "level": "HL-only",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q18-c"
+      ]
+    },
+    {
+      "source_question_id": "H-SRC038-Q18-d",
+      "source_id": "SRC-038",
+      "source_filename": "Computer_science_paper_2_HL.pdf",
+      "year": "2025",
+      "session": "November",
+      "source_level": "HL",
+      "paper": "2",
+      "zone": "not stated",
+      "option": "D",
+      "question": 18,
+      "subquestion": "d",
+      "source_pdf_pages": [
+        29
+      ],
+      "source_printed_pages": [
+        "28"
+      ],
+      "original_marks": 1,
+      "command_term": "Define",
+      "original_text": "Define the term object reference.",
+      "parent_context": "– 27 – 8825 – 6405\nTurn over\n(Option D continued)\n17. A lawyer’s rank depends on the number of cases they have won.\nThe information about the number of cases won by each lawyer in the last four years is \nstored in a 2D array, casesWon, as shown in Figure 11. Rows represent the number of \ncases won by a lawyer, and columns represent the year.\nFigure 11: An excerpt from the 2D array, casesWon\nYear\n2024 2023 2022 2021\nLawyerID\n1 7 5 8 2\n2 3 6 7 7\n3 1 9 8 2\n4 0 2 2 1\n5 8 6 5 1\n... ... ... ... ...\n20 ... ... ... ...\nA lawyer’s rank is set to 1 only if the number of cases won by the lawyer in any two \nconsecutive years is greater than 6.\nFor example: The rank for lawyer 1 will remain 0, whereas the rank for lawyer 2 will be set to 1 \nas the number of cases they won is greater than 6 in both 2022 and 2021.\n(a) Construct the method updateLawyerRank(int[][]casesWon) to update lawyerRank \nfor all the lawyers in the firm. The method returns a suitable message if no lawyer’s rank \nchanges to 1. [7]\nThe law firm can have more than one criminal lawyer. A criminal lawyer gets only  \ncriminal cases.\n(b) Identify the steps required to create an ArrayList of criminal cases that the \nlaw firm currently has and store all criminal cases to this array list. [3]\n(Option D continues on the following page)\n– 28 – 8825 – 6405\n(Option D continued)\n18. (a)  (i)   State two advantages of using a binary tree rather than a static array. [2]\n(ii) Outline one disadvantage of using a binary tree. [2]\nConsider the following recursive algorithm:\npublic static int aMethod(int [][]arr, int k, int n)\n{\n    if (n < 3)\n        return arr[k][n] + aMethod(arr,k,n+1);\n    else\n        return arr[k][3];\n}\n(b) Determine the value returned by aMethod(casesWon,4,0).\ncasesWon is the array shown in Figure 11.\nAll recursive calls must be shown in your working. [3]\n(c) State two reasons why the algorithm in part (b) is considered a recursive algorithm. [2]\n(d) Define the term object reference. [1]\nEnd of Option D\n ",
+      "assets": [
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-28.png",
+          "source_pdf_page": 28,
+          "visually_verified": true
+        },
+        {
+          "kind": "source_page_evidence",
+          "description": "Full source page retaining tables,figures and code; relevant visual read against page.",
+          "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-038/renders/page-29.png",
+          "source_pdf_page": 29,
+          "visually_verified": true
+        }
+      ],
+      "assessed_concepts": [
+        "Original source task: Define the term object reference.",
+        "Define an object reference in OOP"
+      ],
+      "difficulty": "medium",
+      "markscheme": {
+        "status": "uploaded_official_available",
+        "source_id": "SRC-039",
+        "filename": "Computer_science_paper_2_HL_markscheme.pdf",
+        "pdf_pages": [
+          46
+        ],
+        "question_reference": "Q18 d",
+        "marking_summary": "Exact original MS leaf excerpt: Award [1 max] a pointer/address/location (reference) to an instance of a class; a variable that stores the memory address of an object; a variable that refers to an object (not the actual object but the address);",
+        "summary_kind": "exact_original_leaf_excerpt",
+        "source_marking_leaf_evidence": "Award [1 max]\na pointer/address/location (reference) to an instance of a class;\na variable that stores the memory address of an object;\na variable that refers to an object (not the actual object but the address);",
+        "source_issues": [],
+        "source_marking_evidence": "– 46 – 8825 – 6405M \n18. (a) (i) Award [2 max]\na binary tree can grow and shrink dynamically, while an array has a fixed size; \na binary tree is more memory efficient than an array; \na binary tree allows faster searching than an array; \na binary tree does not require contiguous memory, unlike an array; \na binary tree supports ordered data storage (giving efficient retrieval); \na binary tree avoids shifting elements when inserting or deleting, unlike an array; \nNote: Candidates are not expected to refer to arrays while stating the advantages. Accept \nother correct advantages.  \n(ii) Award [2 max]\nMemory usage -\nbinary tree uses more memory;\neach node stores extra pointers (left/right child);\nAccessing -\ndirect access is not possible;\naccess must start from the root and move through left/right pointers, making the retrieval\nSlower;\nOperation -\ndeleting an element in a binary tree is complex;\nthe tree must be restructured by reassigning left and right child pointers;\nMaintenance overhead -\ntree operations require careful pointer management;\nincreasing algorithmic complexity compared to simple index-based access in arrays;\n(b) Award [3 max]\nAward [2] for showing correct recursive calls + [1] for correct final answer ;\nAward only [1] if one error in calling otherwise award [0];\nWorking #1:\n8 + aMethod(casesWon,4,1)\n8 + 6 + aMethod(casesWon,4,2)\n8 + 6 + 5+ aMethod(casesWon,4,3)\n8 + 6 + 5+ 1\n8+ 6+5+1= 20\nWorking #2:\naMethod(casesWon,4,0) = 8 + aMethod(casesWon,4,1)\naMethod(casesWon,4,1) = 6 + aMethod(casesWon,4,2)\naMethod(casesWon,4,2) = 5+ aMethod(casesWon,4,3)\naMethod(casesWon,4,0) = 8 + 6 + 5+ 1=20\nNote: The working may be differently presented but the recursive calls must be correct.\n(c) Award [2 max]\nthe method calls itself from within the method;\nthe method has a base case (to stop the recursion);\nit passes an updated parameter at each successive call (that moves towards the base case);\n(d) Award [1 max]\na pointer/address/location (reference) to an instance of a class;\na variable that stores the memory address of an object;\na variable that refers to an object (not the actual object but the address);"
+      },
+      "relevance_status": "B",
+      "mappings": [
+        {
+          "syllabus_code": "B3.1.1",
+          "scope_evidence": "• Model real-world entities using OOP concepts: classes, objects, inheritance, encapsulation, polymorphism\n• The advantages and disadvantages of using OOP in various programming scenarios",
+          "rationale": "Adapted target only: Define an object reference in OOP; guidance target: Evaluate the fundamentals of OOP. Adaptation: Uses conceptual object vocabulary; no implementation-specific raw memory-address claim or class-construction coverage.",
+          "theme": "B",
+          "level": "SL/HL common",
+          "confidence": "high",
+          "review_required": false
+        }
+      ],
+      "exclusion_reason": "",
+      "uncertainty_flags": [],
+      "verification": {
+        "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+        "markscheme": "Read cited MS page(s).",
+        "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+        "technical": "Independently reasoned and compared with available source marking points."
+      },
+      "adaptation_reuse_question_id": "",
+      "practice_question_ids": [
+        "P-SRC038-Q18-d"
+      ]
+    }
+  ],
+  "practice_questions": [
+    {
+      "question_id": "P-SRC038-Q18-b",
+      "source_question_ids": [
+        "H-SRC038-Q18-b"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Determine row_total([[9,8,7,6],[1,4,2,3]],1,0), showing every recursive call and the return calculation. Indices are zero-based.\ndef row_total(grid, row, col):\n    if col == len(grid[row]) - 1:\n        return grid[row][col]\n    return grid[row][col] + row_total(grid, row, col+1)",
+      "syllabus_codes": [
+        "B2.4.5"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 3,
+      "command_term": "Determine",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "Calls (row, col)=(1, 0), (1, 1), (1, 2), (1, 3). The base returns 3; successive returns are 2+3=5, 4+5=9, 1+9=10.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Correct calls through columns 0, 1, 2."
+        },
+        {
+          "marks": 1,
+          "criterion": "Correct base at column 3 and unwinding."
+        },
+        {
+          "marks": 1,
+          "criterion": "Final result10."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Executed multi-element and singleton base case.",
+        "source_comparison": [
+          46
+        ],
+        "test_code": "def row_total(grid, row, col):\n    if col == len(grid[row]) - 1:\n        return grid[row][col]\n    return grid[row][col] + row_total(grid, row, col+1)\nassert row_total([[9,8,7,6],[1,4,2,3]],1,0)==10\nassert row_total([[5]],0,0)==5",
+        "result_file": ""
+      },
+      "code": "def row_total(grid, row, col):\n    if col == len(grid[row]) - 1:\n        return grid[row][col]\n    return grid[row][col] + row_total(grid, row, col+1)",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q18-c",
+      "source_question_ids": [
+        "H-SRC038-Q18-c"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "State two features of the following recursive pattern: a function calls itself on the next column until the final column is reached.",
+      "syllabus_codes": [
+        "B2.4.4"
+      ],
+      "theme": "B",
+      "level": "HL-only",
+      "marks": 2,
+      "command_term": "State",
+      "difficulty": "medium",
+      "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+      "solution": "It calls itself on a smaller remaining subproblem, and has a base case at the final column that stops further calls.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Self-call on progressing/smaller subproblem."
+        },
+        {
+          "marks": 1,
+          "criterion": "Stopping base case."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          46
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    },
+    {
+      "question_id": "P-SRC038-Q18-d",
+      "source_question_ids": [
+        "H-SRC038-Q18-d"
+      ],
+      "derivation_status": "adapted_unofficial",
+      "unofficial": true,
+      "question_text": "Define an object reference in OOP.",
+      "syllabus_codes": [
+        "B3.1.1"
+      ],
+      "theme": "B",
+      "level": "SL/HL common",
+      "marks": 1,
+      "command_term": "Define",
+      "difficulty": "medium",
+      "adaptation_rationale": "Uses conceptual object vocabulary; no implementation-specific raw memory-address claim or class-construction coverage.",
+      "solution": "A value that refers to a particular object instance rather than containing a separate copy of that object.",
+      "marking_points": [
+        {
+          "marks": 1,
+          "criterion": "Refers to an object instance."
+        }
+      ],
+      "acceptable_alternatives": [],
+      "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+      "common_errors": [],
+      "verification": {
+        "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+        "source_comparison": [
+          46
+        ],
+        "test_code": "",
+        "result_file": ""
+      },
+      "code": "",
+      "assets": [],
+      "markscheme_status": "preliminary_unofficial_verified_by_author"
+    }
+  ]
+}

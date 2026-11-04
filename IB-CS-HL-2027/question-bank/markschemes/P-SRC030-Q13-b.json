@@ -32,5 +32,6 @@
   },
   "code": "def read_number():\n    while True:\n        value=int(input(\"Enter an integer 1..16: \"))\n        if 1 <= value <= 16:\n            print(\"Accepted\")\n            return value\n        print(\"Outside range; try again\")",
   "test_code": "import builtins,io,contextlib\nseq=iter([\"0\",\"17\",\"16\"]);original=builtins.input\nbuiltins.input=lambda prompt:next(seq)\ntry:\n with contextlib.redirect_stdout(io.StringIO()):assert read_number()==16\nfinally:builtins.input=original",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

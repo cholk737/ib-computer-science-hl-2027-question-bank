@@ -36,5 +36,6 @@
   },
   "code": "def alternating(n):\n    if n == 0:\n        return 2\n    if n % 2 == 0:\n        return alternating(n-1) + n\n    return alternating(n-1) - n",
   "test_code": "assert alternating(4)==4\nassert alternating(0)==2",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }

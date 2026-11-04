@@ -1,0 +1,37 @@
+{
+  "question_id": "P-SRC034-Q02-d",
+  "unofficial": true,
+  "marks": 4,
+  "solution": "The update is performed within a transaction.; Other users must not see a partially applied update.; A suitable locking/version mechanism presents a consistent record or delays access.; Commit exposes the completed state; rollback restores the previous valid state after failure.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "The update is performed within a transaction."
+    },
+    {
+      "marks": 1,
+      "criterion": "Other users must not see a partially applied update."
+    },
+    {
+      "marks": 1,
+      "criterion": "A suitable locking/version mechanism presents a consistent record or delays access."
+    },
+    {
+      "marks": 1,
+      "criterion": "Commit exposes the completed state; rollback restores the previous valid state after failure."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Equivalent technically correct wording or valid implementation earning the specified independent points."
+  ],
+  "partial_credit_notes": "Award each stated point independently up to the total; do not double-credit the same idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete marking points independently reasoned from the defined context and exact 2027 scope.",
+    "code_check": "No executable code required; manual technical check."
+  },
+  "code": "",
+  "test_code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
+}

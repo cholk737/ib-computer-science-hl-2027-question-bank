@@ -1,0 +1,2028 @@
+P-SRC002-Q01-a A3.2.2 Construct 2
+A production studio has editors, productions and supervisors. Each editor belongs to exactly one production; each production has one or more editors. Each supervisor oversees one or more productions; each production has exactly one supervisor. Construct an ERD showing the two relationships and cardinalities.
+ANSWER:SUPERVISOR 1—many PRODUCTION; PRODUCTION 1—many EDITOR. Every production has one supervisor and every editor one production; minimum participation follows the stated one-or-more requirements.
+CRITERIA:[{'marks': 1, 'criterion': 'Correct supervisor–production cardinality/modality.'}, {'marks': 1, 'criterion': 'Correct production–editor cardinality/modality.'}]
+
+P-SRC002-Q01-b A3.1.1 Outline 2
+Outline one benefit of storing recorded document changes in a relational database rather than separate uncoordinated files.
+ANSWER:Centralized related records can be queried consistently, making it possible to retrieve a document’s change history without manually merging separate files.
+CRITERIA:[{'marks': 1, 'criterion': 'Concrete retrieval/consistency/reduced duplication benefit.'}, {'marks': 1, 'criterion': 'Relevant change-history expansion.'}]
+
+P-SRC002-Q01-c A3.3.6 Outline 2
+Two clients read version7 of a database row. One commits a change, creating version8. Outline how comparing the saved version before the second update can prevent a lost update.
+ANSWER:The database compares the second client’s saved version7 with current version8. It rejects or retries the stale update rather than overwriting the newer committed data.
+CRITERIA:[{'marks': 1, 'criterion': 'Detects stale row/version difference.'}, {'marks': 1, 'criterion': 'Prevents overwrite by rejection/retry.'}]
+
+P-SRC002-Q01-d A3.3.6 Explain 5
+Explain how transaction locking can prevent two clerks from overwriting each other’s edits to the same booking record.
+ANSWER:A transaction obtains a suitable exclusive lock before updating the record. A competing writer waits or retries. The first change is committed before the next writer reads and updates the current value. Releasing locks at the appropriate transaction boundary preserves isolation and avoids a lost update.
+CRITERIA:[{'marks': 1, 'criterion': 'Lock before conflicting update.'}, {'marks': 1, 'criterion': 'Other writer waits/retries.'}, {'marks': 1, 'criterion': 'Update operates on current data in an ordered sequence.'}, {'marks': 1, 'criterion': 'Commit/transaction boundary handled.'}, {'marks': 1, 'criterion': 'Explains isolation/lost-update prevention.'}]
+
+P-SRC002-Q01-e-i A3.3.6 Outline 2
+Outline what database consistency means for a transaction that transfers an amount between two accounts.
+ANSWER:Integrity rules remain satisfied before and after a valid transaction; for example, the combined balance is unchanged when the amount is debited from one account and credited to the other.
+CRITERIA:[{'marks': 1, 'criterion': 'Integrity constraints preserved.'}, {'marks': 1, 'criterion': 'Correct contextual invariant/example.'}]
+
+P-SRC002-Q01-e-ii A3.3.6 Describe 3
+Describe how ROLLBACK can restore a consistent state when an unfinished transfer has debited one account but has not credited the other.
+ANSWER:ROLLBACK undoes the uncommitted debit and other changes of that transaction. Both accounts return to their pre-transaction values, avoiding a half-completed transfer.
+CRITERIA:[{'marks': 1, 'criterion': 'Targets uncommitted transaction.'}, {'marks': 1, 'criterion': 'Undoes its changes.'}, {'marks': 1, 'criterion': 'Restores prior consistent balances.'}]
+
+P-SRC002-Q02-a A3.2.4 Suggest 2
+The table BUILD(BuildID, LeadID, ClientID, Title, Deadline) stores one row per uniquely numbered build. Suggest a primary key and justify it.
+ANSWER:BuildID: it uniquely identifies each build, whereas a lead or client may be associated with several builds.
+CRITERIA:[{'marks': 1, 'criterion': 'BuildID.'}, {'marks': 1, 'criterion': 'Explains uniqueness/no unnecessary composite fields.'}]
+
+P-SRC002-Q02-b A3.2.3 Outline 2
+A database field Urgent has only the states yes and no. Outline a suitable data type.
+ANSWER:Boolean, representing the two states as True and False without storing arbitrary text values.
+CRITERIA:[{'marks': 1, 'criterion': 'Boolean.'}, {'marks': 1, 'criterion': 'Explains two-state representation.'}]
+
+P-SRC002-Q02-c A3.3.2 Construct 5
+Tables Client(ClientID, ClientName, ContactNumber) and Job(JobID, ClientID, LeadName, Priority) are provided. Construct SQL to return client names and contact numbers for High-priority jobs led by Mira Sen. Repeated rows are permitted.
+ANSWER:One solution:
+SELECT c.ClientName, c.ContactNumber
+FROM Client AS c JOIN Job AS j ON c.ClientID=j.ClientID
+WHERE j.LeadName='Mira Sen' AND j.Priority='High';
+CRITERIA:[{'marks': 1, 'criterion': 'Selects both required client fields.'}, {'marks': 1, 'criterion': 'Uses Client and Job.'}, {'marks': 1, 'criterion': 'Correct join on ClientID.'}, {'marks': 1, 'criterion': 'Correct lead-name filter.'}, {'marks': 1, 'criterion': 'High-priority filter combined with AND.'}]
+
+P-SRC002-Q02-d A3.2.6 Construct 5
+A training register has fields LearnerID, LearnerName, Level, EventID, CourseTitle, Provider, EventDate, Fee, Completed. LearnerID determines LearnerName and Level; EventID determines CourseTitle, Provider, EventDate and Fee; the pair LearnerID/EventID determines Completed. Construct a 3NF schema, indicating primary and foreign keys.
+ANSWER:LEARNER(LearnerID PK, LearnerName, Level); EVENT(EventID PK, CourseTitle, Provider, EventDate, Fee); ENROLMENT(LearnerID PK/FK, EventID PK/FK, Completed). The enrolment key is the pair of IDs.
+CRITERIA:[{'marks': 1, 'criterion': 'Learner table with correct dependency.'}, {'marks': 1, 'criterion': 'Event table with correct dependency.'}, {'marks': 1, 'criterion': 'Enrolment contains completion status.'}, {'marks': 1, 'criterion': 'Correct composite enrolment key.'}, {'marks': 1, 'criterion': 'Both foreign keys and no partial-key dependencies.'}]
+
+P-SRC002-Q03-a A3.2.1 Outline 2
+Outline the role of a conceptual schema when a clinic plans a new database.
+ANSWER:It identifies the main entities and relationships at a high level, independently of a particular DBMS or physical storage arrangement.
+CRITERIA:[{'marks': 1, 'criterion': 'High-level entities/relationships.'}, {'marks': 1, 'criterion': 'Independent of physical/DBMS implementation.'}]
+
+P-SRC002-Q03-c A3.3.1 Describe 3
+Describe the role of SQL DDL when implementing an agreed relational schema.
+ANSWER:DDL defines tables and columns, assigns data types, and declares constraints such as primary/foreign keys so the database structure enforces the model.
+CRITERIA:[{'marks': 1, 'criterion': 'Creates/changes structures.'}, {'marks': 1, 'criterion': 'Defines columns/types.'}, {'marks': 1, 'criterion': 'Defines keys/constraints.'}]
+
+P-SRC002-Q03-d A3.1.1 List 3
+List three database security tasks that restrict unauthorized access to confidential records.
+ANSWER:Authenticate users; assign least-privilege access permissions; review/revoke inappropriate access rights.
+CRITERIA:[{'marks': 1, 'criterion': 'Authentication.'}, {'marks': 1, 'criterion': 'Permissions/roles.'}, {'marks': 1, 'criterion': 'A distinct appropriate access-review/revocation task.'}]
+
+P-SRC002-Q03-e A3.3.5 Explain 5
+Explain why an organization could give an external auditor a read-only database view containing only the fields needed for an audit.
+ANSWER:A view hides unnecessary details and exposes only relevant records/fields, reducing disclosure of personal data. A read-only view prevents the auditor from changing operational records. It can simplify the query interface while the organization retains control of underlying tables.
+CRITERIA:[{'marks': 1, 'criterion': 'Limited field/row exposure.'}, {'marks': 1, 'criterion': 'Explains privacy/security benefit.'}, {'marks': 1, 'criterion': 'Read-only prevents edits.'}, {'marks': 1, 'criterion': 'Simplifies relevant audit access.'}, {'marks': 1, 'criterion': 'Links controlled view to protected underlying data.'}]
+
+P-SRC002-Q04-a A3.4.3 List 3
+List three ways OLAP can support analysis of a retailer’s historical sales.
+ANSWER:Summarize sales by region; compare sales over time; examine a selected product category in more detail.
+CRITERIA:[{'marks': 1, 'criterion': 'Aggregation by meaningful business dimension.'}, {'marks': 1, 'criterion': 'Time comparison/trend analysis.'}, {'marks': 1, 'criterion': 'More detailed contextual analysis.'}]
+
+P-SRC002-Q04-b A3.4.2 Define 1
+Define a data warehouse.
+ANSWER:An integrated, subject-oriented collection of historical data optimized for analysis and decision support.
+CRITERIA:[{'marks': 1, 'criterion': 'Integrated historical/subject-oriented analytical data store.'}]
+
+P-SRC002-Q04-c A4.2.1 Explain 5
+Explain why inconsistent formats, duplicated observations and missing values should be addressed before a dataset is used to train a prediction model.
+ANSWER:Formats must be made consistent so equivalent values are interpreted alike. Duplicate observations can over-weight repeated cases and should be consolidated or removed. Missing values need a justified treatment, such as imputation or deletion, so they do not distort training or cause invalid processing.
+CRITERIA:[{'marks': 1, 'criterion': 'Consistent-format treatment.'}, {'marks': 1, 'criterion': 'Explains comparability/model effect.'}, {'marks': 1, 'criterion': 'Duplicate handling.'}, {'marks': 1, 'criterion': 'Explains distorted weighting.'}, {'marks': 1, 'criterion': 'Suitable missing-value treatment with relevant purpose.'}]
+
+P-SRC002-Q04-d A4.3.2 Describe 4
+Describe how a supervised decision tree could classify a new software test run as likely to fail or likely to pass.
+ANSWER:Train on labelled past runs with input features and pass/fail outcomes. The tree learns feature-based splits; the new run follows the applicable decisions to a leaf that provides a class prediction. Evaluate on independent labelled examples.
+CRITERIA:[{'marks': 1, 'criterion': 'Labelled training data/outcomes.'}, {'marks': 1, 'criterion': 'Feature-based splits learned.'}, {'marks': 1, 'criterion': 'New record follows branch tests.'}, {'marks': 1, 'criterion': 'Leaf class prediction/appropriate evaluation detail.'}]
+
+P-SRC002-Q04-e A3.4.3 Describe 2
+Describe how anomaly detection could flag unusual code-change records for review without proving that copyright infringement occurred.
+ANSWER:Establish patterns in normal change features; flag records that differ substantially. Those deviations warrant investigation but are not by themselves evidence of ownership or copying.
+CRITERIA:[{'marks': 1, 'criterion': 'Compares records with normal/baseline patterns.'}, {'marks': 1, 'criterion': 'Flags deviations for human review rather than proving infringement.'}]
+
+P-SRC002-Q04-f A4.3.2,A4.3.4 Compare 5
+Compare supervised classification and unsupervised clustering when analysing customer support requests.
+ANSWER:Both use features to organize records. Classification learns from labelled examples to predict predefined categories, such as billing or technical support. Clustering groups similar requests without predefined outcome labels and may reveal previously unrecognized themes; clusters need interpretation.
+CRITERIA:[{'marks': 1, 'criterion': 'Shared feature-based pattern purpose.'}, {'marks': 1, 'criterion': 'Classification uses labelled data.'}, {'marks': 1, 'criterion': 'Predicts predefined categories with example.'}, {'marks': 1, 'criterion': 'Clustering groups similarities without class labels.'}, {'marks': 1, 'criterion': 'Explains discovery/interpretation distinction.'}]
+
+P-SRC002-Q05-a-ii B2.3.1 Construct 2
+A course combines a test out of 50 weighted30% and a project out of 80 weighted70%. Construct a Python assignment to percentage using variables test_score and project_score.
+ANSWER:percentage = (test_score/50)*30 + (project_score/80)*70
+CRITERIA:[{'marks': 1, 'criterion': 'Normalizes both component scores by their maxima.'}, {'marks': 1, 'criterion': 'Applies30/70 weights and combines into percentage.'}]
+
+P-SRC002-Q05-b B2.3.2 Construct 3
+Construct grade(score) in Python for an integer from 35 to 100. Grades are A for 85–100, B for 70–84, C for 60–69, D for 47–59 and E for 35–46.
+ANSWER:One solution:
+def grade(score):
+    if score >= 85: return 'A'
+    if score >= 70: return 'B'
+    if score >= 60: return 'C'
+    if score >= 47: return 'D'
+    return 'E' 
+CRITERIA:[{'marks': 1, 'criterion': 'Correct upper thresholds in a suitable order.'}, {'marks': 1, 'criterion': 'Each band returns the specified grade without overlap.'}, {'marks': 1, 'criterion': 'Correct remaining lowest band.'}]
+
+P-SRC002-Q05-c B2.1.2,B2.1.3 Outline 2
+A Python program evaluates full_name.index(" "). Outline why it raises ValueError when full_name is "Isabella".
+ANSWER:The string contains no space, so index cannot find the requested substring and signals failure with ValueError.
+CRITERIA:[{'marks': 1, 'criterion': 'Requested delimiter/substring absent.'}, {'marks': 1, 'criterion': 'index raises ValueError rather than returning a valid position.'}]
+
+P-SRC002-Q05-d B2.1.3 Construct 3
+Construct first_space_or_false(name) in Python. Return the zero-based index of the first space, or the Boolean False if no space exists. Use try/except to handle the missing-space case.
+ANSWER:One solution:
+def first_space_or_false(name):
+    try:
+        return name.index(' ')
+    except ValueError:
+        return False
+CRITERIA:[{'marks': 1, 'criterion': 'Attempts index lookup in try.'}, {'marks': 1, 'criterion': 'Catches ValueError.'}, {'marks': 1, 'criterion': 'Returns index on success and False on failure.'}]
+
+P-SRC002-Q05-e B2.1.2 Explain 4
+Names contain a first name, zero or more middle names, and a final surname token separated by single spaces. Explain how a program can extract the final surname while ignoring middle names.
+ANSWER:Find the final space, then take the substring after it; if there is no space, the whole string is the only token. Under the stated format, the last token is the surname. Compound surnames would require different metadata or a different format.
+CRITERIA:[{'marks': 1, 'criterion': 'Locates last delimiter rather than first.'}, {'marks': 1, 'criterion': 'Extracts suffix after that delimiter.'}, {'marks': 1, 'criterion': 'Ignores preceding middle-name tokens.'}, {'marks': 1, 'criterion': 'Correct handling of single token or justified format assumption.'}]
+
+P-SRC002-Q06-b B2.2.2,B2.3.3 Construct 3
+Construct scale_scores(scores) in Python. For each score s, calculate (s-20)/(80-20)*(95-30)+30, round to the nearest integer using Python round, and store the result in a new list in the same order.
+ANSWER:One solution:
+def scale_scores(scores):
+    result = []
+    for score in scores:
+        result.append(round((score-20)/(80-20)*(95-30)+30))
+    return result
+CRITERIA:[{'marks': 1, 'criterion': 'Loops over every input score.'}, {'marks': 1, 'criterion': 'Correct supplied calculation and rounding.'}, {'marks': 1, 'criterion': 'Builds/returns corresponding output list in order.'}]
+
+P-SRC002-Q06-d B2.2.2,B2.3.2,B2.3.3 Construct 4
+Construct high_percentage(scores) for a nonempty Python list of numerical scores. Return the percentage of entries between 91 and 100 inclusive.
+ANSWER:One solution:
+def high_percentage(scores):
+    count = 0
+    for score in scores:
+        if 91 <= score <= 100:
+            count += 1
+    return count / len(scores) * 100
+CRITERIA:[{'marks': 1, 'criterion': 'Initializes and traverses count.'}, {'marks': 1, 'criterion': 'Correct inclusive condition.'}, {'marks': 1, 'criterion': 'Counts qualifying entries only.'}, {'marks': 1, 'criterion': 'Divides by total and multiplies by 100.'}]
+
+P-SRC002-Q07-c A1.1.2,A1.1.4 Outline 4
+Outline why a large numerical simulation may need both substantial RAM and a GPU.
+ANSWER:RAM holds a large working state available for processing. A GPU can execute many similar calculations in parallel, which benefits simulations with parallel numerical workloads.
+CRITERIA:[{'marks': 1, 'criterion': 'RAM working-state storage role.'}, {'marks': 1, 'criterion': 'Links capacity to model size.'}, {'marks': 1, 'criterion': 'GPU parallel architecture.'}, {'marks': 1, 'criterion': 'Links it to suitable numerical workload.'}]
+
+P-SRC002-Q07-e A1.2.2 Outline 4
+A chart is stored as an uncompressed raster image. Outline how its pixel dimensions and colour depth affect its storage requirement.
+ANSWER:More pixels require more encoded pixel values. More bits per pixel allow more colours but increase data per pixel; ignoring headers, size is width×height×bits_per_pixel bits.
+CRITERIA:[{'marks': 1, 'criterion': 'More pixels increases storage.'}, {'marks': 1, 'criterion': 'Explains values stored per pixel.'}, {'marks': 1, 'criterion': 'Greater bit depth increases per-pixel storage.'}, {'marks': 1, 'criterion': 'Explains colour/detail tradeoff or correct multiplicative relation.'}]
+
+P-SRC002-Q08-a A4.3.7 Outline 4
+A genetic algorithm chooses locations for delivery depots. An initial population exists and termination is already defined. Outline two other steps used to improve candidate layouts.
+ANSWER:Evaluate each layout with a fitness function reflecting delivery cost/access. Select suitable candidates and combine or mutate their encoded choices to produce varied offspring for the next generation.
+CRITERIA:[{'marks': 1, 'criterion': 'Fitness evaluation.'}, {'marks': 1, 'criterion': 'Contextual fitness measure.'}, {'marks': 1, 'criterion': 'Selection/crossover/mutation step.'}, {'marks': 1, 'criterion': 'Explains improvement/variation of later candidates.'}]
+
+P-SRC002-Q08-b-i A4.1.1 Outline 2
+Outline one benefit of an ML-based support chatbot answering routine questions for a large service.
+ANSWER:It can classify/respond to many routine language requests quickly, letting human staff concentrate on unusual cases.
+CRITERIA:[{'marks': 1, 'criterion': 'Appropriate scalable/rapid NLP assistance benefit.'}, {'marks': 1, 'criterion': 'Relevant service expansion.'}]
+
+P-SRC002-Q08-b-ii A4.4.1 Outline 2
+Outline one risk of relying on an ML chatbot for official guidance.
+ANSWER:It may generate incorrect or biased advice confidently; users may act on that misinformation unless answers are checked or uncertain cases escalated.
+CRITERIA:[{'marks': 1, 'criterion': 'Inaccuracy/bias/misinformation risk.'}, {'marks': 1, 'criterion': 'Explains consequence or need for oversight.'}]
+
+P-SRC002-Q08-d A4.4.1 Evaluate 4
+Evaluate using an ML language system as the sole assessor of student essays.
+ANSWER:It can provide rapid, consistent preliminary scoring across many submissions. However, training bias may disadvantage language varieties and an opaque score can be difficult to challenge; nuanced reasoning may be missed. Human moderation, transparent criteria and testing across student groups are needed, so sole automated assessment is not justified merely by speed.
+CRITERIA:[{'marks': 1, 'criterion': 'Relevant efficiency/consistency benefit.'}, {'marks': 1, 'criterion': 'Specific bias/fairness/meaning limitation.'}, {'marks': 1, 'criterion': 'Developed effect on students/accountability.'}, {'marks': 1, 'criterion': 'Balanced justified conclusion or safeguard.'}]
+
+P-SRC002-Q09-c A2.1.4 Explain 3
+Explain why a browser and server must follow the same HTTP communication rules, and how HTTPS adds protection.
+ANSWER:Shared HTTP message/request-response rules let each side interpret messages correctly. HTTPS protects that exchange with TLS, providing confidentiality/integrity and server authentication through certificates.
+CRITERIA:[{'marks': 1, 'criterion': 'Agreed rules/message format.'}, {'marks': 1, 'criterion': 'Explains interoperable interpretation.'}, {'marks': 1, 'criterion': 'Correct HTTPS/TLS protection purpose.'}]
+
+P-SRC002-Q09-f A2.1.4 Identify 3
+Identify three characteristics of TCP relevant to transferring an application message.
+ANSWER:Connection-oriented communication; ordered byte-stream delivery; retransmission of lost data using acknowledgements.
+CRITERIA:[{'marks': 1, 'criterion': 'Connection oriented.'}, {'marks': 1, 'criterion': 'Ordered byte stream.'}, {'marks': 1, 'criterion': 'Acknowledgement/retransmission reliability.'}]
+
+P-SRC002-Q11-c A2.1.2 Explain 6
+Explain how a federated messaging service with independently operated servers differs from a service controlled by one central provider.
+ANSWER:Accounts/data are hosted across several operators rather than one provider’s infrastructure. Agreed communication lets users exchange messages across servers. This distributes administrative control and may reduce dependence on one operator, but introduces coordination and consistency challenges across nodes. If one server fails, other independent servers may continue local service, but affected accounts and cross-server exchanges can still be disrupted; this is resilience rather than universal availability.
+CRITERIA:[{'marks': 1, 'criterion': 'Independent operators/nodes.'}, {'marks': 1, 'criterion': 'Data/workload distributed.'}, {'marks': 1, 'criterion': 'Cross-server communication.'}, {'marks': 1, 'criterion': 'Reduced single-provider control/dependence.'}, {'marks': 1, 'criterion': 'Develops resilience: failure of one server can leave other independent servers running, although affected accounts or cross-server messages may be unavailable.'}, {'marks': 1, 'criterion': 'Coordination/consistency tradeoff.'}]
+
+P-SRC002-Q11-d A4.4.1 Discuss 4
+Discuss one ethical challenge when an ML content-recommendation service replicates users’ creative work across independently managed servers for its training dataset.
+ANSWER:Replication makes training data available across several servers, but copies may spread beyond the creator’s intended purpose or consent. Attribution or deletion requests may not propagate uniformly. Operators need clear consent, attribution and removal practices; decentralization alone does not resolve creators’ rights.
+CRITERIA:[{'marks': 1, 'criterion': 'Replication/access benefit or relevant context.'}, {'marks': 1, 'criterion': 'Specific consent/attribution/control concern.'}, {'marks': 1, 'criterion': 'Explains distributed coordination consequence.'}, {'marks': 1, 'criterion': 'Balanced ethical conclusion/safeguard.'}]
+
+P-SRC002-Q13-b A2.1.2 Discuss 6
+Discuss one benefit and one limitation of combining measurements from many distributed weather stations instead of depending on one station.
+ANSWER:Many locations provide wider geographical coverage and can reveal local differences. However, uneven sensor quality or network failures may make readings inconsistent or unavailable. Calibration and validation are needed before combining data; more sources do not automatically guarantee accuracy.
+CRITERIA:[{'marks': 1, 'criterion': 'Wider coverage benefit.'}, {'marks': 1, 'criterion': 'Develops local-resolution/value benefit.'}, {'marks': 1, 'criterion': 'Relates benefit to distributed collection.'}, {'marks': 1, 'criterion': 'Sensor/network consistency limitation.'}, {'marks': 1, 'criterion': 'Develops effect on combined results.'}, {'marks': 1, 'criterion': 'Balanced conclusion/appropriate mitigation.'}]
+
+P-SRC002-Q14-a B3.1.1 Describe 3
+Describe the difference between the Reservation class and an individual reservation object in a booking program.
+ANSWER:The class defines the attributes and methods shared by reservations. An object is one concrete instance with its own state, such as one customer’s dates and rate. Many objects can be created from the same definition.
+CRITERIA:[{'marks': 1, 'criterion': 'Class definition/template.'}, {'marks': 1, 'criterion': 'Object instance with own values.'}, {'marks': 1, 'criterion': 'Contextual example or multiple instances distinction.'}]
+
+P-SRC002-Q14-b-i B3.1.4 Construct 3
+A Python class Reservation has constructor __init__(self, rate, priority=False). Construct two calls: one reservation at rate40 using the default priority, and another at rate40 with priorityTrue. Outline why one constructor supports both.
+ANSWER:a = Reservation(40); b = Reservation(40,True). The optional parameter supplies False when omitted and accepts the caller’s value when supplied.
+CRITERIA:[{'marks': 1, 'criterion': 'Correct default-priority constructor call.'}, {'marks': 1, 'criterion': 'Correct explicit-True constructor call.'}, {'marks': 1, 'criterion': 'Explains default versus supplied parameter.'}]
+
+P-SRC002-Q14-b-ii B3.1.4 State 1
+State what happens to the first __init__ definition if a Python class body later defines another method named __init__.
+ANSWER:The later definition replaces the earlier binding for that name; Python does not select between these two definitions by signature.
+CRITERIA:[{'marks': 1, 'criterion': 'Later definition replaces earlier binding.'}]
+
+P-SRC002-Q14-c B3.1.1,B3.1.5 Outline 2
+Outline one benefit of representing a booking date with a DateValue class that validates its fields, rather than unrelated unvalidated variables.
+ANSWER:The class groups the date’s data and validation rules, so callers can reuse a coherent valid-date representation instead of duplicating checks.
+CRITERIA:[{'marks': 1, 'criterion': 'Groups related state/validation.'}, {'marks': 1, 'criterion': 'Explains reuse/integrity benefit.'}]
+
+P-SRC002-Q14-d B3.1.2 Outline 2
+A Reservation.summary() method returns a readable string containing the booking ID, rate and priority. Outline why this method is useful.
+ANSWER:It provides a consistent readable representation for display/logging while keeping the formatting logic within the class.
+CRITERIA:[{'marks': 1, 'criterion': 'Readable display/log representation.'}, {'marks': 1, 'criterion': 'Consistent formatting/modular responsibility.'}]
+
+P-SRC002-Q14-e B2.3.4 Construct 4
+Construct the Python method get_cost(self). The instance attribute rate is the charge per day, and self.get_days() returns the nonnegative rental duration. Return the total charge.
+ANSWER:One solution:
+def get_cost(self):
+    days = self.get_days()
+    return days * self.rate
+CRITERIA:[{'marks': 1, 'criterion': 'Correct method/instance reference.'}, {'marks': 1, 'criterion': 'Calls get_days().'}, {'marks': 1, 'criterion': 'Multiplies duration by rate.'}, {'marks': 1, 'criterion': 'Returns calculated charge.'}]
+
+P-SRC002-Q15-a B3.1.4 Construct 3
+Class Depot has constructor __init__(self, location). Construct a Python statement assigning a new Depot for "North Pier" to variable depot.
+ANSWER:depot = Depot("North Pier")
+CRITERIA:[{'marks': 1, 'criterion': 'Calls Depot constructor.'}, {'marks': 1, 'criterion': 'Correct location string argument.'}, {'marks': 1, 'criterion': 'Stores reference in depot.'}]
+
+P-SRC002-Q15-b B3.1.5 Describe 2
+A Python class names an internal helper _add_booking. Describe what the single underscore communicates and whether it prevents outside calls.
+ANSWER:It signals a non-public implementation convention. Python does not enforce a protected access boundary merely from this underscore; outside code can still call the method.
+CRITERIA:[{'marks': 1, 'criterion': 'Non-public/internal-use convention.'}, {'marks': 1, 'criterion': 'No automatic access enforcement.'}]
+
+P-SRC002-Q15-c B2.2.2,B2.3.2,B2.3.3,B2.3.4 Construct 6
+Construct bookings_on(self, day) in Python. self.bookings is a list whose first self.used entries are booking objects; later entries may be None. Each booking has a start_day string in YYYY-MM-DD format. Return a new list of all active bookings starting on day, in stored order.
+ANSWER:One solution:
+def bookings_on(self, day):
+    result = []
+    for i in range(self.used):
+        booking = self.bookings[i]
+        if booking.start_day == day:
+            result.append(booking)
+    return result
+CRITERIA:[{'marks': 1, 'criterion': 'Initializes output list.'}, {'marks': 1, 'criterion': 'Loops only over active prefix.'}, {'marks': 1, 'criterion': 'Accesses each booking object.'}, {'marks': 1, 'criterion': 'Compares its start_day with day.'}, {'marks': 1, 'criterion': 'Appends matching objects.'}, {'marks': 1, 'criterion': 'Returns complete result, including empty list when no match.'}]
+
+P-SRC002-Q15-d B3.2.4 Outline 4
+A Reservation currently stores only customer_id. A reusable Customer class will now hold customer details independently of reservations. Outline two changes that let reservations refer to Customer objects.
+ANSWER:Add a customer reference attribute to Reservation and accept/store it during initialization. Update methods that need customer details to call that referenced object’s interface. Customers can exist independently and be referenced by several reservations, an aggregation relationship.
+CRITERIA:[{'marks': 1, 'criterion': 'Reference attribute replaces/augments ID as specified.'}, {'marks': 1, 'criterion': 'Constructor accepts/stores Customer object.'}, {'marks': 1, 'criterion': 'Methods use the referenced object’s interface.'}, {'marks': 1, 'criterion': 'Explains independent lifetime/shared references or consistent updating of callers.'}]
+
+P-SRC002-Q16-a-i B2.1.1,B2.2.2 State 1
+Given the following Python setup,state the value of stores[1].location.
+from types import SimpleNamespace as N
+stores = [N(location="West Bay", bookings=[N(customer_id=310,end_day="2027-02-08")]),
+          N(location="Hilltop", bookings=[]),
+          N(location="Canal", bookings=[N(customer_id=520,end_day="2027-04-03"),
+                                       N(customer_id=610,end_day="2027-04-10")])]
+ANSWER:Hilltop
+CRITERIA:[{'marks': 1, 'criterion': 'Correct value Hilltop.'}]
+
+P-SRC002-Q16-a-ii B2.1.1,B2.2.2 State 1
+Given the following Python setup,state the value of stores[0].bookings[0].customer_id.
+from types import SimpleNamespace as N
+stores = [N(location="West Bay", bookings=[N(customer_id=310,end_day="2027-02-08")]),
+          N(location="Hilltop", bookings=[]),
+          N(location="Canal", bookings=[N(customer_id=520,end_day="2027-04-03"),
+                                       N(customer_id=610,end_day="2027-04-10")])]
+ANSWER:310
+CRITERIA:[{'marks': 1, 'criterion': 'Correct value 310.'}]
+
+P-SRC002-Q16-a-iii B2.1.1,B2.2.2 State 1
+Given the following Python setup,state the value of stores[2].bookings[1].end_day.
+from types import SimpleNamespace as N
+stores = [N(location="West Bay", bookings=[N(customer_id=310,end_day="2027-02-08")]),
+          N(location="Hilltop", bookings=[]),
+          N(location="Canal", bookings=[N(customer_id=520,end_day="2027-04-03"),
+                                       N(customer_id=610,end_day="2027-04-10")])]
+ANSWER:2027-04-10
+CRITERIA:[{'marks': 1, 'criterion': 'Correct value 2027-04-10.'}]
+
+P-SRC002-Q16-b A4.4.1 Outline 2
+Outline one ethical issue when an ML fraud-detection application uses customers’ identifiable transaction details as training data.
+ANSWER:The records can reveal sensitive behaviour; developers should restrict collection/access to what is necessary and protect the data from unauthorized disclosure.
+CRITERIA:[{'marks': 1, 'criterion': 'Identifies relevant privacy/confidentiality concern.'}, {'marks': 1, 'criterion': 'Explains consequence or appropriate ethical response.'}]
+
+P-SRC002-Q16-c B2.2.2,B2.3.3,B2.3.4 Construct 5
+Construct total_income(stores) in Python. Each store has a bookings list of active reservation objects; booking.get_cost() returns its charge. Return the sum of all charges across every store.
+ANSWER:One solution:
+def total_income(stores):
+    total = 0
+    for store in stores:
+        for booking in store.bookings:
+            total += booking.get_cost()
+    return total
+CRITERIA:[{'marks': 1, 'criterion': 'Initializes total.'}, {'marks': 1, 'criterion': 'Visits every store.'}, {'marks': 1, 'criterion': 'Visits every booking in the store.'}, {'marks': 1, 'criterion': 'Calls cost method and accumulates charge.'}, {'marks': 1, 'criterion': 'Returns complete total, including zero when empty.'}]
+
+P-SRC002-Q16-d B3.2.3 Explain 3
+Explain why depending on a small abstract interface rather than the internal fields of another class can improve maintainability.
+ANSWER:Client code uses a stable set of operations. The other class can change its internal representation without forcing changes throughout clients, provided the interface remains consistent. This localizes modifications and reduces error risk.
+CRITERIA:[{'marks': 1, 'criterion': 'Stable abstract interface.'}, {'marks': 1, 'criterion': 'Internal representation can change independently.'}, {'marks': 1, 'criterion': 'Explains reduced ripple changes/testing risk.'}]
+
+P-SRC002-Q17-a B4.1.3 Construct 6
+Construct change_preference(head, old, new) in Python. head identifies a singly linked list of nodes with customer and next attributes; the final next is None. Each customer has preferred_shop. Replace old with new for every matching customer and return the number changed. Return0 for an empty list.
+ANSWER:One solution:
+def change_preference(head, old, new):
+    changed = 0
+    current = head
+    while current is not None:
+        if current.customer.preferred_shop == old:
+            current.customer.preferred_shop = new
+            changed += 1
+        current = current.next
+    return changed
+CRITERIA:[{'marks': 1, 'criterion': 'Initializes change count and head traversal.'}, {'marks': 1, 'criterion': 'Correct while/end test.'}, {'marks': 1, 'criterion': 'Compares customer preference with old.'}, {'marks': 1, 'criterion': 'Updates all matching preferences.'}, {'marks': 1, 'criterion': 'Increments count only on match and advances references.'}, {'marks': 1, 'criterion': 'Returns count with correct empty case.'}]
+
+P-SRC002-Q17-b B2.3.4 Outline 4
+Outline two benefits of reusing a tested library function through its documented interface rather than reimplementing it at every call site.
+ANSWER:Reuse reduces repeated development effort. A well-tested shared implementation can reduce duplicated defects and can be replaced centrally through the same interface, although its suitability still needs checking.
+CRITERIA:[{'marks': 1, 'criterion': 'Reduced repeated implementation effort.'}, {'marks': 1, 'criterion': 'Explains time/maintenance effect.'}, {'marks': 1, 'criterion': 'Tested shared implementation/reduced duplicated defects.'}, {'marks': 1, 'criterion': 'Explains reliability or central update benefit without treating all libraries as infallible.'}]
+
+P-SRC002-Q18-a B2.4.4 Outline 2
+Outline one benefit of recursion for a problem that naturally decomposes into a smaller instance of itself.
+ANSWER:The recursive definition expresses the repeated structure directly; the same function handles each smaller case until a base case, which can make the solution clearer.
+CRITERIA:[{'marks': 1, 'criterion': 'Natural repeated subproblem structure.'}, {'marks': 1, 'criterion': 'Explains reuse/clarity with base case.'}]
+
+P-SRC002-Q18-b B2.4.5 Trace 4
+Trace sum_down(4),showing call arguments and returned values.
+def sum_down(n):
+    if n <= 1:
+        return n
+    return n + sum_down(n - 1)
+ANSWER:Calls 4, 3, 2, 1; return values1, 3, 6, 10 while unwinding. Final 10.
+CRITERIA:[{'marks': 1, 'criterion': 'Correct decreasing call sequence.'}, {'marks': 1, 'criterion': 'Base returns 1.'}, {'marks': 1, 'criterion': 'Intermediate returns 3 and 6.'}, {'marks': 1, 'criterion': 'Final 10.'}]
+
+P-SRC002-Q18-c B2.4.5 State 1
+For the following Python function,state the result of sum_down(-3).
+def sum_down(n):
+    if n <= 1:
+        return n
+    return n + sum_down(n - 1)
+ANSWER:-3; the base condition is immediately true.
+CRITERIA:[{'marks': 1, 'criterion': '-3, without an invented recursion error.'}]
+
+P-SRC002-Q18-d B2.3.4 Explain 3
+Explain how replacing a repeated block with a clearly named function can improve the readability of a program.
+ANSWER:The name summarizes the task at each call site, while detailed implementation is grouped in one place. Readers can follow the main flow without repeatedly scanning the same low-level operations.
+CRITERIA:[{'marks': 1, 'criterion': 'Clear function name summarizes task.'}, {'marks': 1, 'criterion': 'Implementation details grouped/hidden.'}, {'marks': 1, 'criterion': 'Explains easier main-flow understanding/reduced repetition.'}]
+
+P-SRC006-Q01 A1.1.4,A1.1.7 State 2
+A field recorder uses RAM while processing audio and an SSD to retain recordings. State two differences between these storage devices.
+ANSWER:RAM is volatile whereas SSD retains data without power. RAM normally offers lower access latency than SSD.
+CRITERIA:[{'marks': 1, 'criterion': 'RAM volatile versus SSD nonvolatile.'}, {'marks': 1, 'criterion': 'RAM lower access latency versus SSD slower access.'}]
+
+P-SRC006-Q02 A1.2.1 State 1
+State the hexadecimal value of the eight-bit code 11010110.
+ANSWER:D6
+CRITERIA:[{'marks': 1, 'criterion': 'D6'}]
+
+P-SRC006-Q03-a B2.4.3 List 2
+A sensor list must be rearranged from its lowest reading to its highest. Outline what a sorting algorithm does.
+ANSWER:It performs a defined sequence of operations to rearrange the existing elements into the required order.
+CRITERIA:[{'marks': 1, 'criterion': 'Defined process rearranges existing items.'}, {'marks': 1, 'criterion': 'Produces required ascending/descending order.'}]
+
+P-SRC006-Q03-b B2.4.3 Outline 2
+Outline one difference between the movements of values in bubble sort and selection sort.
+ANSWER:Bubble sort repeatedly compares and swaps neighbouring values. Selection sort finds the smallest remaining value and swaps it into the next sorted position.
+CRITERIA:[{'marks': 1, 'criterion': 'Bubble swaps adjacent items.'}, {'marks': 1, 'criterion': 'Selection locates a remaining minimum before placing it.'}]
+
+P-SRC006-Q04 B2.3.2 Determine 2
+Given x=4, y=7 and ready=True, determine the value of ((x > 4) != ready) and (y - 2 > 4). Show intermediate Boolean values.
+ANSWER:(False != True) and True = True and True = True.
+CRITERIA:[{'marks': 1, 'criterion': 'First operand evaluates True from False != True.'}, {'marks': 1, 'criterion': 'Second operand True and final True.'}]
+
+P-SRC006-Q05-a B4.1.4 State 1
+State the maximum number of children of one node in a binary search tree.
+ANSWER:Two.
+CRITERIA:[{'marks': 1, 'criterion': 'Two'}]
+
+P-SRC006-Q05-b B4.1.4 Sketch 2
+A BST has root 8, left child 3 and right child 12. Node 12 has left child 10. Sketch the tree after deleting 8, using its inorder successor as replacement.
+ANSWER:Root 10; left child 3; right child 12.
+CRITERIA:[{'marks': 1, 'criterion': 'Root 10.'}, {'marks': 1, 'criterion': '3 is its left child and 12 its right child; no duplicate10.'}]
+
+P-SRC006-Q06 A1.1.8 Explain 3
+Explain why compressing a large diagnostic log can help when it is sent over a connection with limited bandwidth.
+ANSWER:Compression encodes the log using fewer bits. At the same available bit rate, fewer bits take less time to transfer, leaving more capacity for other traffic.
+CRITERIA:[{'marks': 1, 'criterion': 'Fewer transmitted bits/smaller file.'}, {'marks': 1, 'criterion': 'Same bit rate therefore shorter transmission time.'}, {'marks': 1, 'criterion': 'Less link capacity/data allowance consumed.'}]
+
+P-SRC006-Q07-a B2.3.4,B1.1.2 Outline 2
+A program calls calculate_invoice(items) without examining its implementation. Outline how this uses abstraction.
+ANSWER:The function exposes a name, inputs and a result for a specific task. The caller can use that interface while implementation details remain hidden.
+CRITERIA:[{'marks': 1, 'criterion': 'Named interface represents a specific task.'}, {'marks': 1, 'criterion': 'Caller need not know implementation details.'}]
+
+P-SRC006-Q08 A1.3.2 Explain 3
+Explain how an operating system manages access by two running programs to the same printer.
+ANSWER:The OS uses the printer driver to communicate with the device. It queues or schedules requests so programs share the printer in an orderly way, preventing their output from being interleaved incorrectly.
+CRITERIA:[{'marks': 1, 'criterion': 'OS/device driver provides communication interface.'}, {'marks': 1, 'criterion': 'OS queues/schedules competing requests.'}, {'marks': 1, 'criterion': 'Orderly allocation prevents conflicting use/interleaving.'}]
+
+P-SRC006-Q10-a A1.3.2 Outline 4
+A laboratory shares files through an operating system. Outline two OS measures that restrict access to confidential files.
+ANSWER:Assign file permissions so only the research group can read them. Require authenticated user accounts so the OS can apply each user’s permissions rather than granting anonymous access.
+CRITERIA:[{'marks': 1, 'criterion': 'Set user/group permissions.'}, {'marks': 1, 'criterion': 'Explain restricted read/write access.'}, {'marks': 1, 'criterion': 'Authenticate named accounts.'}, {'marks': 1, 'criterion': 'Explain identity enables the OS to enforce permissions.'}]
+
+P-SRC006-Q10-b A2.4.3 Outline 4
+Outline two measures a small design studio can use against unauthorized access and known network software vulnerabilities.
+ANSWER:Use MFA: a stolen password alone is insufficient. Apply security patches: fixes remove known weaknesses before attackers exploit them.
+CRITERIA:[{'marks': 1, 'criterion': 'MFA.'}, {'marks': 1, 'criterion': 'Second factor limits stolen-password misuse.'}, {'marks': 1, 'criterion': 'Install updates/patches.'}, {'marks': 1, 'criterion': 'Closes known exploitable vulnerabilities.'}]
+
+P-SRC006-Q10-d A2.1.1,A2.4.3 Explain 3
+Explain one security benefit of a VPN for an engineer accessing office resources over public Wi-Fi.
+ANSWER:A VPN encrypts traffic between the engineer’s device and the VPN endpoint. Someone observing the Wi-Fi link sees ciphertext, reducing disclosure of office data while it crosses that untrusted link.
+CRITERIA:[{'marks': 1, 'criterion': 'VPN encrypts traffic to its endpoint.'}, {'marks': 1, 'criterion': 'Local observer cannot readily read plaintext.'}, {'marks': 1, 'criterion': 'Relates protection to untrusted public Wi-Fi.'}]
+
+P-SRC006-Q11-b-ii A1.3.6 Outline 2
+Outline how a track sensor and processor can update a station display when a train passes the sensor.
+ANSWER:The sensor produces input indicating passage at a known position. The processor uses that new input to revise the predicted arrival time and sends the result to the display.
+CRITERIA:[{'marks': 1, 'criterion': 'Sensor supplies passage/position input.'}, {'marks': 1, 'criterion': 'Processor updates output from the new sensor data.'}]
+
+P-SRC006-Q11-d A4.4.1 Discuss 4
+A transit operator trains an ML scheduling model on vehicle locations linked to drivers. Discuss one benefit and one ethical risk of keeping detailed location histories.
+ANSWER:Historical patterns may train more accurate delay predictions and improve scheduling, making service more reliable. However, identifiable histories enable monitoring of drivers beyond what is necessary. Retention limits and purpose restrictions can preserve operational benefits while reducing privacy intrusion.
+CRITERIA:[{'marks': 1, 'criterion': 'Concrete service/operational benefit.'}, {'marks': 1, 'criterion': 'Explains effect on people/service.'}, {'marks': 1, 'criterion': 'Concrete privacy or misuse risk.'}, {'marks': 1, 'criterion': 'Balanced contextual conclusion/appropriate safeguard.'}]
+
+P-SRC006-Q12-a B4.1.2,B4.1.3 List 3
+A circular singly linked list is head → 7 → 14 → 21 → head. Insert 4 at the beginning, delete the last node, then delete the first node. Sketch the final list with all links.
+ANSWER:head → 7 → 14 → 7 (the link from 14 returns to the node 7).
+CRITERIA:[{'marks': 1, 'criterion': 'Head points to 7.'}, {'marks': 1, 'criterion': 'Only nodes 7 and 14 remain.'}, {'marks': 1, 'criterion': '7.next=14 and 14.next=head.'}]
+
+P-SRC006-Q12-b B4.1.2 Outline 2
+Outline how to recognize the final node of a nonempty circular singly linked list with an external head reference.
+ANSWER:The final node is the node whose next reference points back to the same node as head; its next reference is not None.
+CRITERIA:[{'marks': 1, 'criterion': 'Inspect next reference.'}, {'marks': 1, 'criterion': 'It equals head (identity), not None.'}]
+
+P-SRC006-Q12-c B4.1.3 Describe 4
+Describe an algorithm to total all values in a nonempty circular singly linked list exactly once.
+ANSWER:Set total=0 and current=head. Add current.value to total, then advance current=current.next. Repeat until current is head again, and report total.
+CRITERIA:[{'marks': 1, 'criterion': 'Initialize total/current.'}, {'marks': 1, 'criterion': 'Add current value.'}, {'marks': 1, 'criterion': 'Advance reference.'}, {'marks': 1, 'criterion': 'Stop on return to head, after processing it once.'}]
+
+P-SRC006-Q12-d B4.1.2 Compare 4
+Compare a static contiguous array and a singly linked list for storing a changing collection of records.
+ANSWER:An array offers constant-time indexed access, whereas a linked list requires traversal. An array reserves fixed capacity; a linked list can grow node by node but stores an extra next reference. Inserting after a known list node can relink references, whereas insertion within an array may require shifting later records.
+CRITERIA:[{'marks': 1, 'criterion': 'Array direct access versus linked traversal.'}, {'marks': 1, 'criterion': 'Fixed reserved capacity versus dynamic nodes.'}, {'marks': 1, 'criterion': 'Linked nodes require reference overhead.'}, {'marks': 1, 'criterion': 'Known-position insertion relinks list versus array shifts.'}]
+
+P-SRC006-Q12-e B2.2.4 Identify 2
+Identify two computing tasks that can appropriately use a FIFO queue.
+ANSWER:A printer job queue and a first-come-first-served service-request queue.
+CRITERIA:[{'marks': 1, 'criterion': 'Printer/spool job queue.'}, {'marks': 1, 'criterion': 'Another distinct appropriate FIFO task.'}]
+
+P-SRC006-Q13-a B2.2.2 List 1
+A lower-triangular distance list d stores d[2][0]=7.4, d[2][1]=2.1 and d[1][0]=5.3. Indices0, 1, 2 represent Elm, Oak, Pine. State the distance between Elm and Pine.
+ANSWER:7.4
+CRITERIA:[{'marks': 1, 'criterion': '7.4'}]
+
+P-SRC006-Q13-b B2.2.2,B2.3.2,B2.3.3 Construct 5
+Construct a Python function valid_distances(d) for a nonempty square numeric nested list. It returns True exactly when all entries on/above the main diagonal are zero and all entries below it are positive.
+ANSWER:One valid solution:
+def valid_distances(d):
+    for r in range(len(d)):
+        for c in range(len(d)):
+            if r <= c and d[r][c] != 0:
+                return False
+            if r > c and d[r][c] <= 0:
+                return False
+    return True
+CRITERIA:[{'marks': 1, 'criterion': 'Visits all rows.'}, {'marks': 1, 'criterion': 'Visits all columns in each row.'}, {'marks': 1, 'criterion': 'Rejects nonzero entries when r<=c.'}, {'marks': 1, 'criterion': 'Rejects nonpositive entries when r>c.'}, {'marks': 1, 'criterion': 'Returns True only after every required check passes.'}]
+
+P-SRC006-Q13-c B2.2.2,B2.3.2,B2.3.3,B2.4.2 Construct 6
+Construct a Python function distance(names, d, a, b). names contains unique location names. Square d stores distances only below its main diagonal, with zeros on the diagonal. Return the distance between a and b, or None if either name is absent.
+ANSWER:One valid solution:
+def distance(names, d, a, b):
+    ia = ib = -1
+    for i in range(len(names)):
+        if names[i] == a: ia = i
+        if names[i] == b: ib = i
+    if ia == -1 or ib == -1:
+        return None
+    if ia < ib:
+        ia, ib = ib, ia
+    return d[ia][ib]
+CRITERIA:[{'marks': 1, 'criterion': 'Initialize/search positions for both names.'}, {'marks': 1, 'criterion': 'Traverse names correctly.'}, {'marks': 1, 'criterion': 'Find both matching indices.'}, {'marks': 1, 'criterion': 'Handle either missing name with None.'}, {'marks': 1, 'criterion': 'Choose larger index as row and smaller as column.'}, {'marks': 1, 'criterion': 'Return correct nested-list entry, including identical-location zero.'}]
+
+P-SRC006-Q13-d B2.2.2,B2.3.3 List 3
+In a route list, segment_time[k] is the time from stop k-1 to stop k, and segment_time[0]=0. Explain how to calculate journey time between two known stop indices a and b in either direction, assuming equal travel time in each direction.
+ANSWER:Find low=min(a, b) and high=max(a, b). Add segment_time[k] for k from low+1 through high inclusive. Equal indices give an empty sum of zero.
+CRITERIA:[{'marks': 1, 'criterion': 'Determine lower/higher stop indices.'}, {'marks': 1, 'criterion': 'Sum relevant segment times.'}, {'marks': 1, 'criterion': 'Uses low+1 through high inclusive; avoids preceding segment.'}]
+
+P-SRC009-Q04 B1.1.4 Outline 2
+Outline why arrows and standard process/decision symbols are used in an algorithm flowchart.
+ANSWER:The symbols distinguish the kinds of operation; arrows show the order/control flow so a reader can follow execution.
+CRITERIA:[{'marks': 1, 'criterion': 'Symbols distinguish processes/decisions/input-output.'}, {'marks': 1, 'criterion': 'Arrows show execution/control sequence.'}]
+
+P-SRC009-Q05 A2.4.1 Describe 3
+Describe how a firewall applies a rule that blocks unsolicited incoming connections to a research computer.
+ANSWER:It inspects incoming traffic against configured rules. Traffic matching the blocked connection rule is rejected; traffic permitted by other rules may pass. This reduces unauthorized network access but does not remove all malicious content in allowed traffic.
+CRITERIA:[{'marks': 1, 'criterion': 'Inspects traffic against rules.'}, {'marks': 1, 'criterion': 'Allows/blocks appropriate packets/connections.'}, {'marks': 1, 'criterion': 'Explains protection and/or limitation accurately.'}]
+
+P-SRC009-Q06 B2.3.4 State 2
+State two benefits of extracting repeated validation code into a function.
+ANSWER:The same tested logic can be reused at several call sites; correcting one function updates all its callers.
+CRITERIA:[{'marks': 1, 'criterion': 'Reuse avoids repeated implementation.'}, {'marks': 1, 'criterion': 'Central maintenance/testing reduces duplicated changes.'}]
+
+P-SRC009-Q07 B2.4.5 Trace 4
+Trace the following Python function for gcd_step(30,18), showing each recursive call and the final return.
+def gcd_step(a, b):
+    if b == 0:
+        return a
+    return gcd_step(b, a % b)
+ANSWER:gcd_step(30, 18) → gcd_step(18, 12) → gcd_step(12, 6) → gcd_step(6, 0) →6.
+CRITERIA:[{'marks': 1, 'criterion': '(18, 12).'}, {'marks': 1, 'criterion': '(12, 6).'}, {'marks': 1, 'criterion': '(6, 0) base call.'}, {'marks': 1, 'criterion': 'Final 6 returned through calls.'}]
+
+P-SRC009-Q08 A1.3.7 Outline 2
+Outline one benefit of using a feedback-controlled robot to apply a repeated coating thickness in a factory.
+ANSWER:A sensor measures the applied thickness and feedback lets the controller adjust the actuator, reducing variation between items.
+CRITERIA:[{'marks': 1, 'criterion': 'More consistent/precise repeated output.'}, {'marks': 1, 'criterion': 'Links benefit to measured feedback/corrective control.'}]
+
+P-SRC009-Q09-a B4.1.4 State 1
+A BST has root 10, left child 5 with children3 and 7, and right child 12. State the postorder traversal.
+ANSWER:3, 7, 5, 12, 10
+CRITERIA:[{'marks': 1, 'criterion': '3, 7, 5, 12, 10'}]
+
+P-SRC009-Q09-b B4.1.4 State 1
+A BST has root 10, left child 5 with children3 and 7, and right child 12. State the inorder traversal.
+ANSWER:3, 5, 7, 10, 12
+CRITERIA:[{'marks': 1, 'criterion': '3, 5, 7, 10, 12'}]
+
+P-SRC009-Q10 B2.2.4 Outline 4
+Outline enqueue and front operations on a FIFO queue.
+ANSWER:Enqueue adds an item at the rear. front returns the item at the front without removing it.
+CRITERIA:[{'marks': 1, 'criterion': 'Names enqueue.'}, {'marks': 1, 'criterion': 'Adds at rear.'}, {'marks': 1, 'criterion': 'Names front/peek.'}, {'marks': 1, 'criterion': 'Reads front without removal.'}]
+
+P-SRC009-Q11-a A1.3.2 State 1
+State one operating-system security measure that protects a stolen laptop’s stored files against reading without its key.
+ANSWER:Full-disk encryption.
+CRITERIA:[{'marks': 1, 'criterion': 'Disk/file encryption.'}]
+
+P-SRC009-Q11-b A1.3.2 Outline 2
+Outline the role of OS memory management when starting an application.
+ANSWER:The OS allocates memory for the process and tracks its use so the application can run without overwriting other processes’ memory.
+CRITERIA:[{'marks': 1, 'criterion': 'Allocates/tracks process memory.'}, {'marks': 1, 'criterion': 'Explains protection/orderly resource use.'}]
+
+P-SRC009-Q11-c A2.3.2 Justify 4
+A portable diagnostic workstation supports both twisted-pair Ethernet and Wi-Fi. Justify providing both for a technician who transfers large files at a fixed desk and moves between rooms.
+ANSWER:Ethernet provides a stable connection and avoids radio interference at the desk. Wi-Fi enables movement without trailing cables and connection where wired ports are unavailable. Thus each link supports a different working condition.
+CRITERIA:[{'marks': 1, 'criterion': 'Appropriate wired advantage.'}, {'marks': 1, 'criterion': 'Links it to desk/large-transfer context without universal speed claim.'}, {'marks': 1, 'criterion': 'Wireless mobility/access advantage.'}, {'marks': 1, 'criterion': 'Links to room-to-room work.'}]
+
+P-SRC009-Q11-d A2.3.3 Describe 2
+Describe two distinct parts of an IP packet used when a file is transmitted across networks.
+ANSWER:The header contains routing/control information such as source and destination IP addresses. The payload carries a portion of the file data.
+CRITERIA:[{'marks': 1, 'criterion': 'Header and correct routing/control role.'}, {'marks': 1, 'criterion': 'Payload and correct data role.'}]
+
+P-SRC009-Q11-e A2.1.4 Outline 6
+Outline a role of each of TCP, HTTPS and DHCP in a networked application.
+ANSWER:TCP provides ordered reliable delivery using acknowledgements/retransmission. HTTPS protects HTTP communication using TLS, reducing disclosure/tampering. DHCP supplies network configuration such as an IP address automatically.
+CRITERIA:[{'marks': 1, 'criterion': 'TCP reliable/ordered transport.'}, {'marks': 1, 'criterion': 'Expansion such as retransmission.'}, {'marks': 1, 'criterion': 'HTTPS encrypted/authenticated HTTP transport.'}, {'marks': 1, 'criterion': 'Expansion confidentiality/integrity purpose.'}, {'marks': 1, 'criterion': 'DHCP automatic address/configuration assignment.'}, {'marks': 1, 'criterion': 'Expansion reduces manual configuration/conflicts through managed leases.'}]
+
+P-SRC009-Q12-a-i B2.3.2 State 1
+State the Boolean operators in the Python condition (level > 4) or (speed > 8 and level + speed < 30).
+ANSWER:or and and.
+CRITERIA:[{'marks': 1, 'criterion': 'Both or and and.'}]
+
+P-SRC009-Q12-a-ii B2.1.1,B2.3.2 State 1
+State the integer literals in the condition (level > 4) or (speed > 8 and level + speed < 30).
+ANSWER:4, 8, 30.
+CRITERIA:[{'marks': 1, 'criterion': 'All three literals4, 8, 30.'}]
+
+P-SRC009-Q12-a-iii B2.3.2 Determine 2
+Determine (level > 4) or (speed > 8 and level + speed < 30) for level=4, speed=12. Show the Boolean substitutions.
+ANSWER:False or (True and True)=True.
+CRITERIA:[{'marks': 1, 'criterion': 'Correct substitutions False, True, True.'}, {'marks': 1, 'criterion': 'Correct final True.'}]
+
+P-SRC009-Q12-b A1.2.4 Construct 4
+A lab alert operates when armed=1 and either smoke=1 or heat=1. Construct its truth table in binary row order for inputs armed, smoke, heat.
+ANSWER:000→0, 001→0, 010→0, 011→0, 100→0, 101→1, 110→1, 111→1.
+CRITERIA:[{'marks': 1, 'criterion': 'Rows000/001 both 0.'}, {'marks': 1, 'criterion': 'Rows010/011 both 0.'}, {'marks': 1, 'criterion': 'Rows100→0 and 101→1.'}, {'marks': 1, 'criterion': 'Rows110/111 both 1.'}]
+
+P-SRC009-Q12-c-i A1.1.1 Identify 1
+Identify the register used to hold a word being transferred between CPU and main memory.
+ANSWER:Memory data register (MDR).
+CRITERIA:[{'marks': 1, 'criterion': 'MDR'}]
+
+P-SRC009-Q12-c-ii A1.1.1 Identify 1
+Identify the CPU component that decodes the instruction held in the instruction register.
+ANSWER:Control unit.
+CRITERIA:[{'marks': 1, 'criterion': 'Control unit/CU'}]
+
+P-SRC009-Q12-c-iii A1.1.1 State 1
+State the CPU component that performs integer arithmetic and logical comparisons.
+ANSWER:Arithmetic logic unit.
+CRITERIA:[{'marks': 1, 'criterion': 'ALU'}]
+
+P-SRC009-Q12-c-iv A1.1.1,A1.1.5 Explain 4
+Explain the roles of the three buses during a CPU memory-read operation.
+ANSWER:The address bus specifies the required memory location. The control bus carries the read command and relevant timing/control signals. The data bus carries the requested word back to the CPU. Together these coordinate transfer between memory and CPU registers.
+CRITERIA:[{'marks': 1, 'criterion': 'Address bus carries selected address.'}, {'marks': 1, 'criterion': 'Control bus carries read/timing signal.'}, {'marks': 1, 'criterion': 'Data bus carries word.'}, {'marks': 1, 'criterion': 'Explains coordinated transfer between CPU/registers and memory.'}]
+
+P-SRC009-Q13-a B2.2.3,A1.3.4 Describe 2
+Describe how a LIFO stack supports returning to interrupted work when nested interrupt handling has completed.
+ANSWER:The saved return information/state for each interruption is pushed. Popping the most recently saved state first resumes the most recently interrupted work in the reverse order of suspension.
+CRITERIA:[{'marks': 1, 'criterion': 'Save return information/state by push.'}, {'marks': 1, 'criterion': 'Pop latest state first to resume in reverse order.'}]
+
+P-SRC009-Q13-c A1.2.2 Outline 2
+Outline why representing an image using a larger pixel grid can retain more spatial detail, assuming an unchanged field of view and adequate source image quality.
+ANSWER:The image is sampled at more positions; smaller features can be represented by separate pixels rather than merging into one.
+CRITERIA:[{'marks': 1, 'criterion': 'More spatial samples/pixels.'}, {'marks': 1, 'criterion': 'Finer features can be separately encoded.'}]
+
+P-SRC009-Q13-d-ii A4.4.1 Outline 2
+Outline one privacy concern if a navigation provider supplies identifiable journey histories for training a commercial ML profiling model.
+ANSWER:The histories reveal a person’s routines or sensitive destinations; others can infer home/work or visits the person expected to keep private.
+CRITERIA:[{'marks': 1, 'criterion': 'Identifies privacy disclosure/profiling concern.'}, {'marks': 1, 'criterion': 'Explains contextual consequence of identifiable journeys.'}]
+
+P-SRC009-Q13-e A1.3.1,A1.3.2 Explain 3
+Explain one reason a portable measuring device may use an OS configured only for its required hardware and tasks.
+ANSWER:The OS can omit unused services, reducing memory and processing overhead. This leaves limited resources available for measurement/control tasks, helping the device meet its performance needs.
+CRITERIA:[{'marks': 1, 'criterion': 'Omits unneeded services/components.'}, {'marks': 1, 'criterion': 'Explains reduced resource demand.'}, {'marks': 1, 'criterion': 'Links to limited device resources/task performance.'}]
+
+P-SRC009-Q14-a B4.1.2 Outline 4
+Outline two advantages of a linked list over a fixed-size array for an ordered register with frequent additions and deletions.
+ANSWER:A node can be inserted/deleted by changing links once the position is known, avoiding shifts of later items. Nodes can be allocated as needed, avoiding a predetermined array capacity.
+CRITERIA:[{'marks': 1, 'criterion': 'Relinking insertion/deletion.'}, {'marks': 1, 'criterion': 'Explains avoiding shifts once located.'}, {'marks': 1, 'criterion': 'Dynamic node allocation.'}, {'marks': 1, 'criterion': 'Explains capacity flexibility without claiming zero memory overhead.'}]
+
+P-SRC009-Q14-b B4.1.3 Explain 5
+Explain how to search a singly linked list for a specified product code and report failure if absent.
+ANSWER:Set current=head. While current is not None, compare its code with the target; return/report found on equality, otherwise follow current.next. If current becomes None, report absent.
+CRITERIA:[{'marks': 1, 'criterion': 'Temporary pointer starts at head.'}, {'marks': 1, 'criterion': 'Loop while node exists.'}, {'marks': 1, 'criterion': 'Compare node data with target.'}, {'marks': 1, 'criterion': 'Stop correctly on match.'}, {'marks': 1, 'criterion': 'Advance and report failure at end.'}]
+
+P-SRC009-Q14-c-i B4.1.2 Describe 4
+Describe the structure of a noncircular doubly linked list, including its boundary links.
+ANSWER:Each node contains data, a next reference and a previous reference. Adjacent nodes link both ways. The first node’s previous reference and the last node’s next reference are None. A head reference identifies the first node; a tail reference may provide direct access to the last.
+CRITERIA:[{'marks': 1, 'criterion': 'Data stored in nodes.'}, {'marks': 1, 'criterion': 'Both next and previous references.'}, {'marks': 1, 'criterion': 'Bidirectional adjacent links.'}, {'marks': 1, 'criterion': 'Correct None boundary links/head identification.'}]
+
+P-SRC009-Q14-c-ii B4.1.2 State 2
+State two computing applications suited to navigation in both directions through a doubly linked list.
+ANSWER:Previous/next navigation in a playlist; backward/forward traversal through document history.
+CRITERIA:[{'marks': 1, 'criterion': 'One suitable bidirectional application.'}, {'marks': 1, 'criterion': 'Second distinct suitable application.'}]
+
+P-SRC009-Q15-a B2.2.2,B2.3.3 Construct 4
+Construct a Python function frequencies(grid) that returns a 10-element count list for all integers in a nonempty nested list grid. Every value is from 0 to 9. To assess traversal, do not use list.count or collections.Counter.
+ANSWER:One solution:
+def frequencies(grid):
+    counts = [0] * 10
+    for row in grid:
+        for value in row:
+            counts[value] += 1
+    return counts
+CRITERIA:[{'marks': 1, 'criterion': 'Initializes ten zero counts.'}, {'marks': 1, 'criterion': 'Visits every row.'}, {'marks': 1, 'criterion': 'Visits every value in each row.'}, {'marks': 1, 'criterion': 'Increments counts[value] and returns final counts.'}]
+
+P-SRC009-Q15-b B2.2.2,B2.3.2,B2.3.3 Construct 5
+Construct show_absent(counts) in Python. counts has length 10; counts[v] is the frequency of digit v. Print every absent digit, or print "All present" if none are absent.
+ANSWER:One solution:
+def show_absent(counts):
+    found = False
+    for value in range(10):
+        if counts[value] == 0:
+            print(value)
+            found = True
+    if not found:
+        print("All present")
+CRITERIA:[{'marks': 1, 'criterion': 'Initialize found flag/equivalent.'}, {'marks': 1, 'criterion': 'Visits all digit indices.'}, {'marks': 1, 'criterion': 'Tests frequency zero.'}, {'marks': 1, 'criterion': 'Prints digit indices, not zero counts.'}, {'marks': 1, 'criterion': 'Prints All present only when no absent digits.'}]
+
+P-SRC009-Q15-c B2.2.2,B2.3.2,B2.3.3 Construct 6
+Construct modes(counts) in Python. counts is a nonempty list of digit frequencies with at least one positive count. Return every digit tied for the greatest frequency. To assess the search, do not call max or sorted.
+ANSWER:One solution:
+def modes(counts):
+    greatest = counts[0]
+    for count in counts:
+        if count > greatest:
+            greatest = count
+    result = []
+    for value in range(len(counts)):
+        if counts[value] == greatest:
+            result.append(value)
+    return result
+CRITERIA:[{'marks': 1, 'criterion': 'Initializes greatest from valid count.'}, {'marks': 1, 'criterion': 'Traverses counts to find greatest.'}, {'marks': 1, 'criterion': 'Correct comparison/update.'}, {'marks': 1, 'criterion': 'Examines all candidate digit indices.'}, {'marks': 1, 'criterion': 'Selects every count equal to greatest.'}, {'marks': 1, 'criterion': 'Returns digit values and handles ties.'}]
+
+P-SRC020-Q02 B2.2.4 Identify 2
+Identify two uses of a FIFO queue in a networked computer service.
+ANSWER:Buffering packets awaiting transmission; holding print jobs in arrival order.
+CRITERIA:[{'marks': 1, 'criterion': 'Packet transmission buffering.'}, {'marks': 1, 'criterion': 'Print-job queue or another distinct correct FIFO task.'}]
+
+P-SRC020-Q03 A1.2.2 Outline 2
+Outline why a shared character encoding is needed when devices exchange multilingual text.
+ANSWER:An agreed mapping between character values and bit sequences lets each device reconstruct the intended characters consistently, including characters from multiple writing systems.
+CRITERIA:[{'marks': 1, 'criterion': 'Consistent agreed character-to-binary mapping.'}, {'marks': 1, 'criterion': 'Correct reconstruction/multilingual representation purpose.'}]
+
+P-SRC020-Q04-a A1.3.4 Define 1
+Define an interrupt in a processor system.
+ANSWER:A signal/event requesting processor attention that may suspend the current execution to invoke a handler.
+CRITERIA:[{'marks': 1, 'criterion': 'Request/event signals CPU attention/handler.'}]
+
+P-SRC020-Q04-b A1.3.4 Describe 3
+Describe how a controller could poll several water-level sensors rather than waiting for interrupts.
+ANSWER:A program periodically checks each sensor in turn, reads its status/value, then repeats after a suitable interval. Polling frequency sets how quickly a change can be detected.
+CRITERIA:[{'marks': 1, 'criterion': 'Controller actively checks sensors.'}, {'marks': 1, 'criterion': 'Repeats at intervals/in turn.'}, {'marks': 1, 'criterion': 'Relates readings/change detection to monitored water levels.'}]
+
+P-SRC020-Q05 A1.2.4 Construct 4
+Construct a truth table for output Z = NOT((A NAND B) OR C). Use row order000 through 111 for A, B, C.
+ANSWER:Outputs:0, 0, 0, 0, 0, 0, 1, 0.
+CRITERIA:[{'marks': 1, 'criterion': 'Rows000/001 correct.'}, {'marks': 1, 'criterion': 'Rows010/011 correct.'}, {'marks': 1, 'criterion': 'Rows100/101 correct.'}, {'marks': 1, 'criterion': 'Rows110/111 correct.'}]
+
+P-SRC020-Q06 B4.1.1 Outline 2
+Outline how an ADT describes a group of stored items without specifying its implementation.
+ANSWER:It defines what values/organization and operations are available, such as insertion or removal, while leaving choices of memory layout and algorithms to the implementation.
+CRITERIA:[{'marks': 1, 'criterion': 'Defines data and supported operations.'}, {'marks': 1, 'criterion': 'Separates interface/behaviour from implementation.'}]
+
+P-SRC020-Q07 A1.1.4 Distinguish 2
+Distinguish RAM from ROM in terms of power loss and ordinary modification of stored data.
+ANSWER:RAM is volatile and permits normal reads/writes during processing. ROM is nonvolatile and is normally read during operation rather than modified by ordinary program writes.
+CRITERIA:[{'marks': 1, 'criterion': 'RAM volatile versus ROM nonvolatile.'}, {'marks': 1, 'criterion': 'RAM ordinary read/write versus ROM normally read-only.'}]
+
+P-SRC020-Q08-a B4.1.4 Identify 1
+A BST has root 8; left child 4 and right child 10. Node4 has left3 and right6; node 6 has right7; node 10 has right11. Identify the leaf values.
+ANSWER:3, 7, 11
+CRITERIA:[{'marks': 1, 'criterion': '3, 7, 11'}]
+
+P-SRC020-Q08-b B4.1.4 State 1
+A BST has root 8; left child 4 and right child 10. Node4 has left3 and right6; node 6 has right7; node 10 has right11. State the preorder traversal.
+ANSWER:8, 4, 3, 6, 7, 10, 11
+CRITERIA:[{'marks': 1, 'criterion': '8, 4, 3, 6, 7, 10, 11'}]
+
+P-SRC020-Q08-c B4.1.4 Sketch 3
+A BST has root 8; left child 4 and right child 10. Node4 has left3 and right6; node 6 has right7; node 10 has right11. Sketch the BST after deleting8, using its inorder successor.
+ANSWER:Root10; left subtree4 with left3 and right6(right7); right child 11.
+CRITERIA:[{'marks': 1, 'criterion': 'Replacement root 10.'}, {'marks': 1, 'criterion': 'Unchanged left subtree rooted4.'}, {'marks': 1, 'criterion': 'Right child 11 with duplicate10 removed.'}]
+
+P-SRC020-Q11-a A2.1.1,A2.4.3 State 2
+State two elements needed for an encrypted VPN link from a remote laptop to an office endpoint.
+ANSWER:VPN client/endpoint software and an agreed encryption/tunnelling protocol.
+CRITERIA:[{'marks': 1, 'criterion': 'VPN endpoint/client component.'}, {'marks': 1, 'criterion': 'Encryption/tunnelling protocol.'}]
+
+P-SRC020-Q11-b A2.3.2 Identify 2
+Identify two transmission-medium factors affecting a network link’s usable transfer performance.
+ANSWER:Available bandwidth; susceptibility to interference.
+CRITERIA:[{'marks': 1, 'criterion': 'Bandwidth.'}, {'marks': 1, 'criterion': 'Interference/attenuation/range or another guide factor.'}]
+
+P-SRC020-Q11-c A1.1.8 Explain 3
+Explain why a telemetry service may compress a large batch of readings before transmission.
+ANSWER:A smaller binary representation contains fewer bits. Fewer bits take less time to transmit at the same bit rate and consume less capacity/data allowance.
+CRITERIA:[{'marks': 1, 'criterion': 'Reduced bit count/file size.'}, {'marks': 1, 'criterion': 'Reduced time at fixed bit rate.'}, {'marks': 1, 'criterion': 'Reduced capacity/data cost.'}]
+
+P-SRC020-Q11-d A2.4.4 Outline 2
+Outline how encryption protects the confidentiality of a transmitted report.
+ANSWER:An encryption algorithm uses a key to transform plaintext into ciphertext. A recipient with the appropriate decryption key can reconstruct the readable report; an interceptor without it cannot readily do so.
+CRITERIA:[{'marks': 1, 'criterion': 'Key-based plaintext→ciphertext transformation.'}, {'marks': 1, 'criterion': 'Appropriate key required to recover content.'}]
+
+P-SRC020-Q11-e A2.4.1 Describe 2
+Describe the role of a firewall between an office LAN and the internet.
+ANSWER:It inspects incoming/outgoing traffic against configured rules, allowing authorized traffic and blocking disallowed connections/packets.
+CRITERIA:[{'marks': 1, 'criterion': 'Inspects network traffic.'}, {'marks': 1, 'criterion': 'Applies allow/block rules.'}]
+
+P-SRC020-Q12-a A1.3.6,A1.3.7 Outline 5
+Outline how a closed-loop controller can keep an aquarium near a chosen temperature using a sensor, processor and heater.
+ANSWER:Store the target. Read the temperature sensor. Compare actual with target. Signal the heater actuator to heat when below the lower threshold and stop above the upper threshold. Continue sampling so the resulting temperature affects later decisions.
+CRITERIA:[{'marks': 1, 'criterion': 'Target temperature.'}, {'marks': 1, 'criterion': 'Sensor input.'}, {'marks': 1, 'criterion': 'Processor comparison.'}, {'marks': 1, 'criterion': 'Correct heater control output.'}, {'marks': 1, 'criterion': 'Repeated feedback cycle.'}]
+
+P-SRC020-Q12-b A1.3.6 Describe 2
+Describe the role of feedback in the aquarium temperature controller.
+ANSWER:The measured temperature after the heater acts is returned as input. Comparing it with the target lets the next heater decision correct the remaining difference rather than applying heat blindly.
+CRITERIA:[{'marks': 1, 'criterion': 'Output effect is measured and returned.'}, {'marks': 1, 'criterion': 'Comparison changes next action to reduce error.'}]
+
+P-SRC020-Q12-c-i A1.3.2 Describe 2
+Describe scheduling as a function of an operating system.
+ANSWER:The OS selects which ready process receives CPU time and allocates a time slice or priority, so competing programs make progress under the chosen policy.
+CRITERIA:[{'marks': 1, 'criterion': 'Selects/allocates CPU time.'}, {'marks': 1, 'criterion': 'Explains management of competing processes.'}]
+
+P-SRC020-Q12-c-ii A1.3.2 Outline 2
+Outline why configuring an OS with only the required device drivers can help a small controller.
+ANSWER:It avoids loading unnecessary components, conserving limited memory/storage for the controller’s actual tasks.
+CRITERIA:[{'marks': 1, 'criterion': 'Avoids unnecessary components.'}, {'marks': 1, 'criterion': 'Conserves limited resources.'}]
+
+P-SRC020-Q12-d A2.1.2 Compare 4
+Compare a single central controller with a distributed set of room controllers managing a building.
+ANSWER:Both process sensor inputs to control room conditions. A central controller simplifies coordinated changes but its failure may affect all rooms. Distributed controllers can continue local operation after another controller fails but require coordination/configuration across several nodes.
+CRITERIA:[{'marks': 1, 'criterion': 'Shared sensing/control purpose.'}, {'marks': 1, 'criterion': 'Central coordination/single point of failure.'}, {'marks': 1, 'criterion': 'Distributed independent local operation.'}, {'marks': 1, 'criterion': 'Distributed coordination complexity or another paired contrast.'}]
+
+P-SRC020-Q13-a B2.4.4,B2.4.5 Trace 4
+Trace total_to(4), showing all calls and the final value.
+def total_to(n):
+    if n <= 0:
+        return 0
+    return n + total_to(n - 1)
+ANSWER:total_to(4)→4+total_to(3)→4+3+total_to(2)→4+3+2+total_to(1)→4+3+2+1+total_to(0)→10.
+CRITERIA:[{'marks': 1, 'criterion': 'Calls reduce n by 1.'}, {'marks': 1, 'criterion': 'Base case n=0 returns 0.'}, {'marks': 1, 'criterion': 'Correct return accumulation.'}, {'marks': 1, 'criterion': 'Final 10.'}]
+
+P-SRC020-Q13-b B2.4.4 Outline 4
+Outline two possible disadvantages of a recursive solution compared with an equivalent loop.
+ANSWER:Each active call needs a stack frame, so deep recursion uses memory and may exceed the call-depth limit. Repeated calls add overhead, and a poorly chosen branching recurrence may repeat the same subproblems.
+CRITERIA:[{'marks': 1, 'criterion': 'Call-stack memory overhead.'}, {'marks': 1, 'criterion': 'Depth/resource failure explained.'}, {'marks': 1, 'criterion': 'Call/repeated-work overhead.'}, {'marks': 1, 'criterion': 'Explains performance impact without claiming all recursion is exponential.'}]
+
+P-SRC020-Q13-c B2.2.3 Outline 2
+Outline what a stack’s isEmpty operation returns and why a pop operation may first check it.
+ANSWER:isEmpty returns True exactly when no items remain. Checking before pop avoids attempting to remove an item from an empty stack.
+CRITERIA:[{'marks': 1, 'criterion': 'Correct Boolean condition.'}, {'marks': 1, 'criterion': 'Avoids empty-stack removal/underflow.'}]
+
+P-SRC020-Q13-d B2.2.3,B2.2.4,B2.3.3 Construct 5
+Construct Python reverse_stack(stack, queue), where queue starts empty. Use only stack.push, stack.pop, stack.isEmpty and queue.enqueue, queue.dequeue, queue.isEmpty to reverse stack in place.
+ANSWER:One solution:
+def reverse_stack(stack, queue):
+    while not stack.isEmpty():
+        queue.enqueue(stack.pop())
+    while not queue.isEmpty():
+        stack.push(queue.dequeue())
+CRITERIA:[{'marks': 1, 'criterion': 'First loop empties stack.'}, {'marks': 1, 'criterion': 'Pop top item.'}, {'marks': 1, 'criterion': 'Enqueue each popped item FIFO.'}, {'marks': 1, 'criterion': 'Second loop empties queue.'}, {'marks': 1, 'criterion': 'Push dequeued items onto original stack.'}]
+
+P-SRC020-Q14-a B2.2.2,B2.3.3 Construct 3
+Construct a Python function total_values(readings) that totals all values in a rectangular nested list. To assess traversal, do not use sum.
+ANSWER:One solution:
+def total_values(readings):
+    total = 0
+    for row in readings:
+        for value in row:
+            total += value
+    return total
+CRITERIA:[{'marks': 1, 'criterion': 'Traverses rows.'}, {'marks': 1, 'criterion': 'Traverses each row’s values.'}, {'marks': 1, 'criterion': 'Initializes, accumulates and returns correct total.'}]
+
+P-SRC020-Q14-b B2.2.2,B2.3.2 Construct 4
+Construct repeated_value(readings, r) in Python. Each row contains exactly three integers from 1 to 6. Return the repeated value if at least two are equal; return0 if all differ.
+ANSWER:One solution:
+def repeated_value(readings, r):
+    a, b, c = readings[r]
+    if a == b or a == c:
+        return a
+    if b == c:
+        return b
+    return 0
+CRITERIA:[{'marks': 1, 'criterion': 'Uses correct row/three values.'}, {'marks': 1, 'criterion': 'Tests first value against both others.'}, {'marks': 1, 'criterion': 'Tests remaining pair.'}, {'marks': 1, 'criterion': 'Returns repeated value or 0 correctly, including all equal.'}]
+
+P-SRC020-Q14-c B2.2.2,B2.3.2,B2.3.3 Construct 8
+Construct greatest_rows(readings) in Python for a nonempty rectangular integer nested list. Return a tuple containing the largest row total and a list of every row index tied for it. Do not use sum or max; the task assesses accumulation and comparison.
+ANSWER:One solution:
+def greatest_rows(readings):
+    best = None
+    winners = []
+    for i in range(len(readings)):
+        total = 0
+        for value in readings[i]:
+            total += value
+        if best is None or total > best:
+            best = total
+            winners = [i]
+        elif total == best:
+            winners.append(i)
+    return best, winners
+CRITERIA:[{'marks': 1, 'criterion': 'Initializes best/winner state.'}, {'marks': 1, 'criterion': 'Visits all rows.'}, {'marks': 1, 'criterion': 'Initializes row total for each row.'}, {'marks': 1, 'criterion': 'Accumulates all values in correct row.'}, {'marks': 1, 'criterion': 'Correct greater-total comparison.'}, {'marks': 1, 'criterion': 'Updates best and replaces winner list on new best.'}, {'marks': 1, 'criterion': 'Appends ties without discarding earlier tied rows.'}, {'marks': 1, 'criterion': 'Returns greatest total and all correct indices.'}]
+
+P-SRC026-Q02-a A1.1.7 Outline 2
+Outline the purpose of an external SSD used to store a photographer’s completed work.
+ANSWER:It retains the image files after power is removed so they can be retrieved later or transported to another computer.
+CRITERIA:[{'marks': 1, 'criterion': 'Persistent/nonvolatile file storage.'}, {'marks': 1, 'criterion': 'Later retrieval/portability in context.'}]
+
+P-SRC026-Q03 A1.1.2,A1.1.4 Outline 4
+Outline how adding RAM and using a suitable GPU can improve a workstation that trains large image models.
+ANSWER:More RAM holds more of the working data available for CPU processing. A GPU can carry out many similar numerical operations in parallel, helping model calculations.
+CRITERIA:[{'marks': 1, 'criterion': 'RAM increase.'}, {'marks': 1, 'criterion': 'Larger working data capacity relevant to processing.'}, {'marks': 1, 'criterion': 'GPU parallel computational architecture.'}, {'marks': 1, 'criterion': 'Links repeated numerical/model operations to its benefit.'}]
+
+P-SRC026-Q05 A1.2.4 Construct 4
+Construct the truth table for X = (NOT A) OR (B AND C) OR (NOT B). Use row order000 through 111 for A, B, C.
+ANSWER:1, 1, 1, 1, 1, 1, 0, 1.
+CRITERIA:[{'marks': 1, 'criterion': 'Rows000/001 both 1.'}, {'marks': 1, 'criterion': 'Rows010/011 both 1.'}, {'marks': 1, 'criterion': 'Rows100/101 both 1.'}, {'marks': 1, 'criterion': 'Rows110→0 and 111→1.'}]
+
+P-SRC026-Q07 A2.2.2 Describe 2
+Describe the role of a DNS server when a user accesses a service using a hostname.
+ANSWER:It resolves the hostname to an associated IP address, enabling the client to address requests to the relevant host. It may answer from cached records or obtain the information through DNS queries.
+CRITERIA:[{'marks': 1, 'criterion': 'Hostname/domain→IP resolution.'}, {'marks': 1, 'criterion': 'Enables addressed connection or valid resolution detail.'}]
+
+P-SRC026-Q08 A2.1.1,A2.4.3 Explain 3
+Explain why a project team may provide a VPN endpoint for staff connecting from home to internal resources.
+ANSWER:An authenticated VPN establishes a protected tunnel to the office network. Encryption reduces disclosure of traffic over the public path, while the endpoint can restrict access to authorized resources.
+CRITERIA:[{'marks': 1, 'criterion': 'Contextual remote internal-resource access.'}, {'marks': 1, 'criterion': 'Encrypted tunnel/appropriate VPN feature.'}, {'marks': 1, 'criterion': 'Explains confidentiality or authenticated access benefit.'}]
+
+P-SRC026-Q09-b A1.1.8 Explain 3
+Explain why a surveyor may compress a large set of image files before archiving and sending them.
+ANSWER:Compression reduces their encoded size, allowing more files in the same storage capacity. At the same network bit rate, fewer bits require less transmission time.
+CRITERIA:[{'marks': 1, 'criterion': 'Reduced encoded file size.'}, {'marks': 1, 'criterion': 'Less storage used.'}, {'marks': 1, 'criterion': 'Reduced transfer time at fixed bit rate.'}]
+
+P-SRC026-Q09-c-ii A2.4.2 Outline 4
+Outline how each of ransomware and phishing can lead to a business losing access to its confidential data.
+ANSWER:Ransomware encrypts files so authorized users cannot read them without recovery/decryption. Phishing can steal a valid login and let an attacker delete, encrypt or exfiltrate data.
+CRITERIA:[{'marks': 1, 'criterion': 'Ransomware encrypts/locks files.'}, {'marks': 1, 'criterion': 'Explains loss of legitimate access.'}, {'marks': 1, 'criterion': 'Phishing tricks user into disclosure/action.'}, {'marks': 1, 'criterion': 'Explains attacker access and resulting data loss.'}]
+
+P-SRC026-Q10-a A1.3.2 Explain 6
+A shared server has administrators, analysts and visitors. Explain how OS account and file-permission controls can give these groups different access.
+ANSWER:Authenticate each user to an account. Assign accounts to role groups. Grant administrators management rights, analysts read/write access only to their project files, and visitors no access to confidential files. The OS checks permissions on file operations, applying least privilege rather than granting every login full access.
+CRITERIA:[{'marks': 1, 'criterion': 'Authenticated user identities.'}, {'marks': 1, 'criterion': 'Role/group membership.'}, {'marks': 1, 'criterion': 'Appropriate administrator rights.'}, {'marks': 1, 'criterion': 'Restricted analyst project rights.'}, {'marks': 1, 'criterion': 'Visitors denied sensitive files.'}, {'marks': 1, 'criterion': 'OS permission enforcement/least-privilege reasoning.'}]
+
+P-SRC026-Q10-b-i A2.3.2 Suggest 2
+Suggest a wired medium for a high-bandwidth inter-building campus link and justify the choice.
+ANSWER:Fibre optic cable: high bandwidth and resistance to electromagnetic interference suit a long inter-building connection.
+CRITERIA:[{'marks': 1, 'criterion': 'Fibre optic cable.'}, {'marks': 1, 'criterion': 'Appropriate contextual bandwidth/range/interference justification.'}]
+
+P-SRC026-Q10-b-ii A2.4.1,A2.4.3 Suggest 4
+Suggest two network-security measures for a college LAN and explain how each reduces a threat.
+ANSWER:A firewall rejects connections that violate access rules. Regular software patching removes known vulnerabilities that attackers might exploit.
+CRITERIA:[{'marks': 1, 'criterion': 'Firewall.'}, {'marks': 1, 'criterion': 'Explains rule-based filtering threat reduction.'}, {'marks': 1, 'criterion': 'Patching/updating.'}, {'marks': 1, 'criterion': 'Explains fixing known vulnerabilities.'}]
+
+P-SRC026-Q10-c A2.4.2 List 3
+List three security threats that users may encounter through organizational email.
+ANSWER:Phishing; malware in attachments/links; account compromise due to weak authentication.
+CRITERIA:[{'marks': 1, 'criterion': 'Phishing.'}, {'marks': 1, 'criterion': 'Malware.'}, {'marks': 1, 'criterion': 'Weak-authentication/account-compromise threat.'}]
+
+P-SRC026-Q11-a-i A1.3.6 Describe 2
+Describe an embedded controller in an automatic door system.
+ANSWER:A processor-based component within the door system reads sensors and runs a specific control algorithm to operate the door actuator.
+CRITERIA:[{'marks': 1, 'criterion': 'Processor/controller inside larger device.'}, {'marks': 1, 'criterion': 'Specific sensor-processing-actuator control task.'}]
+
+P-SRC026-Q11-a-ii A1.3.7 State 2
+State two everyday applications of computer control systems other than traffic signals.
+ANSWER:A thermostat regulating heating; an automatic washing machine.
+CRITERIA:[{'marks': 1, 'criterion': 'One appropriate control application.'}, {'marks': 1, 'criterion': 'Second distinct application.'}]
+
+P-SRC026-Q11-b A2.1.2 Discuss 4
+Discuss replacing independent junction controllers with one networked central traffic controller.
+ANSWER:A central system can coordinate signals to reduce queues across several junctions and simplify updates. However, the central computer or its communication links become critical failure points; loss of communication may disrupt many junctions. Local fallback control can reduce the risk while retaining coordination benefits.
+CRITERIA:[{'marks': 1, 'criterion': 'Central coordination advantage.'}, {'marks': 1, 'criterion': 'Develops effect on traffic/management.'}, {'marks': 1, 'criterion': 'Failure/dependence drawback.'}, {'marks': 1, 'criterion': 'Develops limitation or balanced mitigation.'}]
+
+P-SRC026-Q11-c A1.3.6 List 2
+List two sensors that could provide input when counting vehicles at a junction.
+ANSWER:An inductive-loop sensor and an infrared beam sensor.
+CRITERIA:[{'marks': 1, 'criterion': 'One appropriate vehicle-detection sensor.'}, {'marks': 1, 'criterion': 'Second distinct appropriate sensor.'}]
+
+P-SRC026-Q11-d A1.3.4 Describe 2
+Describe one difference between interrupt-driven input and polling in a control system.
+ANSWER:With interrupts, the device signals when it needs attention; with polling, the processor repeatedly checks device status even when no event has occurred.
+CRITERIA:[{'marks': 1, 'criterion': 'Event/device signals in interrupt approach.'}, {'marks': 1, 'criterion': 'Processor actively/repeatedly checks in polling.'}]
+
+P-SRC026-Q12-a B2.4.5 Trace 5
+Trace balance(6), showing the returned value for each n from0 through6.
+def balance(n):
+    if n <= 0:
+        return 0
+    previous = balance(n - 1)
+    if n % 2 == 0:
+        return previous - n
+    return previous + n
+ANSWER:Values for n=0, 1, 2, 3, 4, 5, 6 are 0, 1, -1, 2, -2, 3, -3. Therefore balance(6)=-3.
+CRITERIA:[{'marks': 1, 'criterion': 'Base value0.'}, {'marks': 1, 'criterion': 'n1→1, n2→-1.'}, {'marks': 1, 'criterion': 'n3→2, n4→-2.'}, {'marks': 1, 'criterion': 'n5→3.'}, {'marks': 1, 'criterion': 'n6→-3 and correct final result.'}]
+
+P-SRC026-Q12-b B2.2.3 Describe 4
+Describe push and peek for a stack.
+ANSWER:push adds a new item at the top. peek returns the top item without removing it.
+CRITERIA:[{'marks': 1, 'criterion': 'push named.'}, {'marks': 1, 'criterion': 'Adds at top.'}, {'marks': 1, 'criterion': 'peek named.'}, {'marks': 1, 'criterion': 'Returns top without removal.'}]
+
+P-SRC026-Q12-c B2.2.3,B2.3.2,B2.3.3 Construct 6
+Construct retain_extremes(stack) in Python for a nonempty numeric stack. Replace its contents with exactly two entries: maximum at the bottom and minimum at the top. If all values are equal, store that value twice. Use only pop, push, isEmpty to access the stack.
+ANSWER:One solution:
+def retain_extremes(stack):
+    first = stack.pop()
+    smallest = largest = first
+    while not stack.isEmpty():
+        value = stack.pop()
+        if value < smallest:
+            smallest = value
+        if value > largest:
+            largest = value
+    stack.push(largest)
+    stack.push(smallest)
+CRITERIA:[{'marks': 1, 'criterion': 'Initialize both extremes from a valid item.'}, {'marks': 1, 'criterion': 'Loop until original stack empty.'}, {'marks': 1, 'criterion': 'Pop each remaining item.'}, {'marks': 1, 'criterion': 'Update minimum correctly.'}, {'marks': 1, 'criterion': 'Update maximum correctly.'}, {'marks': 1, 'criterion': 'Push maximum then minimum, including equal extremes.'}]
+
+P-SRC026-Q13-a B2.3.4 List 3
+List three benefits of dividing a quiz program into functions with clear inputs and outputs.
+ANSWER:Reuse of validation logic; independent debugging/testing; localized maintenance of one task.
+CRITERIA:[{'marks': 1, 'criterion': 'Reuse.'}, {'marks': 1, 'criterion': 'Independent debugging/testing.'}, {'marks': 1, 'criterion': 'Maintainability/modularity or another distinct supported benefit.'}]
+
+P-SRC026-Q13-b B2.3.2,B2.3.3,B2.3.4 Construct 4
+Construct read_in_range(read_integer) in Python. Calling read_integer() returns an integer entered by the user. Repeatedly request a value until it lies from 1 to 16 inclusive; print an appropriate rejection or acceptance message and return the valid value.
+ANSWER:One solution:
+def read_in_range(read_integer):
+    while True:
+        value = read_integer()
+        if 1 <= value <= 16:
+            print("Accepted")
+            return value
+        print("Enter an integer from 1 to 16")
+CRITERIA:[{'marks': 1, 'criterion': 'Repeated input loop.'}, {'marks': 1, 'criterion': 'Correct inclusive range test.'}, {'marks': 1, 'criterion': 'Reject/retry invalid entries with message.'}, {'marks': 1, 'criterion': 'Accept and return valid entry.'}]
+
+P-SRC026-Q13-c B2.2.2,B2.3.2,B2.3.3 Construct 8
+A 4×4 grid contains 16 integer entries, each from 1 to 16. Construct correctly_completed(grid) in Python to return True exactly when every integer1 to 16 occurs once. Use a 16-element flags list initialized False, mark each encountered value at index value-1, then inspect all flags.
+ANSWER:One solution:
+def correctly_completed(grid):
+    flags = [False] * 16
+    for row in grid:
+        for value in row:
+            flags[value - 1] = True
+    for flag in flags:
+        if not flag:
+            return False
+    return True
+Since there are exactly16 entries, seeing all16 possible values implies there are no duplicates.
+CRITERIA:[{'marks': 1, 'criterion': 'Allocates 16 flags.'}, {'marks': 1, 'criterion': 'Initializes every flag False.'}, {'marks': 1, 'criterion': 'Traverses every row.'}, {'marks': 1, 'criterion': 'Traverses every value.'}, {'marks': 1, 'criterion': 'Maps value to value-1.'}, {'marks': 1, 'criterion': 'Marks encountered index True.'}, {'marks': 1, 'criterion': 'Detects any unmarked flag.'}, {'marks': 1, 'criterion': 'Returns True only when all required values occur.'}]
+
+P-SRC032-Q01-a-i A3.1.1 State 1
+Each member can make many loans; each loan belongs to exactly one member. State the MEMBER-to-LOAN relationship.
+ANSWER:One-to-many.
+CRITERIA:[{'marks': 1, 'criterion': 'One-to-many from MEMBER to LOAN.'}]
+
+P-SRC032-Q01-a-ii A3.1.1 State 1
+MEMBER(MemberID, Name), LOAN(LoanID, MemberID, CopyID) and COPY(CopyID, Title) use their first field as primary key. State one primary key.
+ANSWER:MemberID, LoanID or CopyID in its respective table.
+CRITERIA:[{'marks': 1, 'criterion': 'One correct primary key with table context.'}]
+
+P-SRC032-Q01-a-iii A3.1.1 State 1
+In MEMBER(MemberID PK, Name), LOAN(LoanID PK, MemberID FK, CopyID FK), COPY(CopyID PK, Title), state the table containing foreign keys.
+ANSWER:LOAN.
+CRITERIA:[{'marks': 1, 'criterion': 'LOAN.'}]
+
+P-SRC032-Q01-b A3.3.2 State 1
+ITEM has rows (Name, Brand, Year):("Ridge", "Zen", 2020), ("Vale", "Zen", 2021), ("Bay", "Orin", 2021). State the result of SELECT Name FROM ITEM WHERE Brand='Zen' AND Year=2021;.
+ANSWER:Vale.
+CRITERIA:[{'marks': 1, 'criterion': 'Vale only.'}]
+
+P-SRC032-Q01-c B2.1.2,B2.3.2 Outline 4
+Outline two checks a Python input routine can apply to an identifier that must contain exactly three uppercase English letters followed by four decimal digits.
+ANSWER:Check total length is 7 so incomplete/overlong values are rejected. Check positions0–2 are A–Z and positions3–6 are 0–9 so the required format is enforced.
+CRITERIA:[{'marks': 1, 'criterion': 'Length check.'}, {'marks': 1, 'criterion': 'Correct expected length 7 and purpose.'}, {'marks': 1, 'criterion': 'Position/character-format check.'}, {'marks': 1, 'criterion': 'Correct letters/digits pattern and purpose.'}]
+
+P-SRC032-Q01-d A3.3.2 Construct 4
+MEMBER(MemberID, Surname) and LOAN(LoanID, MemberID, DateOut, DateRet) store loans. Construct SQL listing surnames of members whose loan began 2027-03-01 and ended 2027-03-05. Dates are ISO strings.
+ANSWER:One solution:
+SELECT m.Surname FROM Member m JOIN Loan l ON m.MemberID=l.MemberID
+WHERE l.DateOut='2027-03-01' AND l.DateRet='2027-03-05';
+CRITERIA:[{'marks': 1, 'criterion': 'Selects surname.'}, {'marks': 1, 'criterion': 'Uses both tables.'}, {'marks': 1, 'criterion': 'Correct MemberID join.'}, {'marks': 1, 'criterion': 'Both dates correctly filtered with AND.'}]
+
+P-SRC032-Q01-e A3.3.5 Explain 3
+Explain how a virtual database view can simplify access to selected data without storing a separate copy of every displayed result.
+ANSWER:The view stores a query definition. Users query it as a table while the DBMS derives rows from underlying tables. It can hide joins/unneeded fields and reflect changes in base data.
+CRITERIA:[{'marks': 1, 'criterion': 'Query definition/virtual table.'}, {'marks': 1, 'criterion': 'Results derived from base tables.'}, {'marks': 1, 'criterion': 'Simplification/security/up-to-date benefit.'}]
+
+P-SRC032-Q01-f A3.3.1 Explain 3
+Explain how SQL DDL implements the structure of a course-registration data model.
+ANSWER:CREATE TABLE defines tables and typed columns. Primary and foreign key constraints encode identity and relationships. ALTER/DROP can change defined structures when the agreed schema changes.
+CRITERIA:[{'marks': 1, 'criterion': 'Defines tables/columns.'}, {'marks': 1, 'criterion': 'Defines keys/relationships or types.'}, {'marks': 1, 'criterion': 'Appropriate structural-change detail.'}]
+
+P-SRC032-Q01-g A3.1.1 Explain 3
+Explain why consistent member identifiers matter in a library’s loan database.
+ANSWER:Each loan’s member reference must correspond to the intended member record. Inconsistent identifiers can disconnect or misattribute loans, so staff cannot trust who owes an item. Enforced foreign-key and update rules preserve the relationship.
+CRITERIA:[{'marks': 1, 'criterion': 'Consistent cross-table references.'}, {'marks': 1, 'criterion': 'Concrete consequence of inconsistency.'}, {'marks': 1, 'criterion': 'Integrity rule/reliable retrieval explanation.'}]
+
+P-SRC032-Q02-b A3.3.6 Outline 2
+Outline how ROLLBACK helps when an uncommitted transaction has made an incorrect update.
+ANSWER:It undoes that transaction’s uncommitted changes and restores the earlier consistent state.
+CRITERIA:[{'marks': 1, 'criterion': 'Undoes uncommitted transaction changes.'}, {'marks': 1, 'criterion': 'Restores prior consistent state.'}]
+
+P-SRC032-Q02-c A3.3.5 Describe 4
+Describe how two restricted read-only views could let tutors and finance staff see different data from the same underlying student database.
+ANSWER:A tutor view exposes educational fields/rows needed for teaching, while a finance view exposes payment fields. Users receive access to their appropriate view rather than unrestricted base tables, limiting disclosure and preventing edits through those read-only views.
+CRITERIA:[{'marks': 1, 'criterion': 'Tutor-specific subset.'}, {'marks': 1, 'criterion': 'Finance-specific subset.'}, {'marks': 1, 'criterion': 'Restricted access through views/base-table limitation.'}, {'marks': 1, 'criterion': 'Explains privacy/read-only protection.'}]
+
+P-SRC032-Q03-a A3.2.5 Outline 2
+A row contains StudentID=21 and CourseIDs="C1, C2, C3" in one cell. Outline why this representation is not in 1NF.
+ANSWER:The course cell contains a repeating group/multiple values rather than a single atomic course value. Separate rows/relations are needed to represent each enrolment.
+CRITERIA:[{'marks': 1, 'criterion': 'Non-atomic/repeating group identified.'}, {'marks': 1, 'criterion': 'Explains separate course/enrolment representation.'}]
+
+P-SRC032-Q03-b A3.2.6 Construct 8
+A flat relation has StudentID, StudentName, MajorID, MajorName, CourseID, CourseName. A student has one major and many courses; a course has many students. StudentID determines StudentName and MajorID; MajorID determines MajorName; CourseID determines CourseName. Construct a 3NF schema with primary keys and foreign keys.
+ANSWER:STUDENT(StudentID PK, StudentName, MajorID FK); MAJOR(MajorID PK, MajorName); COURSE(CourseID PK, CourseName); ENROLMENT(StudentID PK/FK, CourseID PK/FK). ENROLMENT has a composite key.
+CRITERIA:[{'marks': 1, 'criterion': 'Correct STUDENT attributes.'}, {'marks': 1, 'criterion': 'STUDENT primary key.'}, {'marks': 1, 'criterion': 'Correct MAJOR attributes.'}, {'marks': 1, 'criterion': 'MAJOR primary key.'}, {'marks': 1, 'criterion': 'Correct COURSE attributes.'}, {'marks': 1, 'criterion': 'COURSE primary key.'}, {'marks': 1, 'criterion': 'Correct ENROLMENT with both foreign keys.'}, {'marks': 1, 'criterion': 'Correct composite enrolment key; no transitive major-name dependency.'}]
+
+P-SRC032-Q03-c A3.2.1,A3.2.2,A3.2.4 Explain 5
+Explain how modelling entities, attributes, keys and relationships before implementing a database helps it support its intended use.
+ANSWER:The model identifies what must be stored and which records relate. Suitable keys uniquely identify records and connect tables; cardinalities prevent incorrect relationship assumptions. Reviewing the model can expose omissions or redundancy before they become implementation problems.
+CRITERIA:[{'marks': 1, 'criterion': 'Identifies required entities/attributes.'}, {'marks': 1, 'criterion': 'Ensures necessary data supports purpose.'}, {'marks': 1, 'criterion': 'Keys identify/link records.'}, {'marks': 1, 'criterion': 'Relationships/cardinalities guide valid queries.'}, {'marks': 1, 'criterion': 'Explains avoided omission/redundancy/design error.'}]
+
+P-SRC032-Q04-a A3.4.2 Define 2
+Define a data warehouse and state its main business purpose.
+ANSWER:An integrated, subject-oriented, historical and nonvolatile data store optimized for analysis; it supports management reporting and decision-making.
+CRITERIA:[{'marks': 1, 'criterion': 'Suitable warehouse characteristics.'}, {'marks': 1, 'criterion': 'Analytical/business decision purpose.'}]
+
+P-SRC032-Q04-c A4.2.1 Outline 4
+Outline two cleaning operations needed when customer records from several sources will train a prediction model.
+ANSWER:Standardize equivalent date/category formats so values are comparable. Detect and consolidate duplicate observations so repeated records do not over-weight training.
+CRITERIA:[{'marks': 1, 'criterion': 'Suitable format standardization.'}, {'marks': 1, 'criterion': 'Explains comparable interpretation.'}, {'marks': 1, 'criterion': 'Duplicate handling.'}, {'marks': 1, 'criterion': 'Explains weighting/data quality benefit.'}]
+
+P-SRC032-Q04-d A4.3.4 Discuss 5
+Discuss using unsupervised clustering to group customers with similar purchasing behaviour for a retailer.
+ANSWER:Clusters may reveal groups that respond to different products/offers and help allocate resources. But groups depend on features and similarity choices; superficially similar customers may have different needs, and small clusters may be unstable. Clusters should guide investigation rather than be treated as permanent facts about every person.
+CRITERIA:[{'marks': 1, 'criterion': 'Contextual grouping/targeting benefit.'}, {'marks': 1, 'criterion': 'Develops business use.'}, {'marks': 1, 'criterion': 'Feature/similarity/group limitation.'}, {'marks': 1, 'criterion': 'Develops consequence.'}, {'marks': 1, 'criterion': 'Balanced justified conclusion.'}]
+
+P-SRC032-Q04-e A3.4.3 Explain 5
+Explain how analysing historical supermarket transactions can inform future stocking decisions.
+ANSWER:Classification or regression can estimate demand from historical patterns; association rules can reveal products often bought together. Managers can combine those findings with current conditions to plan stock, while recognizing patterns are not guarantees about future demand.
+CRITERIA:[{'marks': 1, 'criterion': 'Uses historical data/patterns.'}, {'marks': 1, 'criterion': 'Appropriate named mining technique.'}, {'marks': 1, 'criterion': 'Concrete predicted demand/association.'}, {'marks': 1, 'criterion': 'Connects result to stocking decision.'}, {'marks': 1, 'criterion': 'Explains scale/evidence benefit or limitation.'}]
+
+P-SRC032-Q05-b B2.1.1 State 3
+State suitable Python data types for month_name, the number of whole units consumed, and a unit price that may include fractions.
+ANSWER:str, int, float respectively.
+CRITERIA:[{'marks': 1, 'criterion': 'month_name:str.'}, {'marks': 1, 'criterion': 'units:int.'}, {'marks': 1, 'criterion': 'unit_price:float or another justified decimal representation.'}]
+
+P-SRC032-Q05-c B2.3.1,B2.3.4 Construct 5
+Construct monthly_bill(units, days) in Python. Usage costs 0.24 per unit and the standing charge is 0.65 per day. Tax is 8% of the combined charge. days is positive. Return the taxed bill and mean daily units.
+ANSWER:One solution:
+def monthly_bill(units, days):
+    pre_tax = units * 0.24 + days * 0.65
+    return pre_tax * 1.08, units / days
+CRITERIA:[{'marks': 1, 'criterion': 'Receives both units and days.'}, {'marks': 1, 'criterion': 'Computes usage and standing charges.'}, {'marks': 1, 'criterion': 'Applies tax to combined charge.'}, {'marks': 1, 'criterion': 'Computes units/days.'}, {'marks': 1, 'criterion': 'Returns both required results.'}]
+
+P-SRC032-Q05-f B2.2.2,B2.3.2,B2.3.3 Construct 8
+Construct extreme_months(months, usage) in Python for nonempty parallel lists of equal length. Return the month with least usage and the month with greatest usage. On ties, choose the first occurrence. Do not use min, max or sorted; the task assesses a scan.
+ANSWER:One solution:
+def extreme_months(months, usage):
+    low = high = 0
+    for i in range(1, len(usage)):
+        if usage[i] < usage[low]: low = i
+        if usage[i] > usage[high]: high = i
+    return months[low], months[high]
+CRITERIA:[{'marks': 1, 'criterion': 'Initializes low from valid index.'}, {'marks': 1, 'criterion': 'Initializes high from valid index.'}, {'marks': 1, 'criterion': 'Scans remaining entries.'}, {'marks': 1, 'criterion': 'Correct low comparison.'}, {'marks': 1, 'criterion': 'Updates low index.'}, {'marks': 1, 'criterion': 'Correct high comparison/update.'}, {'marks': 1, 'criterion': 'Returns month names using indices.'}, {'marks': 1, 'criterion': 'Correct order and first-tie behaviour.'}]
+
+P-SRC032-Q06-d A4.4.1 Discuss 5
+A public agency proposes training an ML model on identifiable health and income records to allocate services. Discuss whether citizens’ privacy concerns are justified.
+ANSWER:The records may improve predictions and help plan resources. However, secondary use without informed consent or weak access controls can expose sensitive information and discriminate against groups. Data minimization, appropriate consent, secure access and fairness review are needed; useful predictions do not automatically justify unrestricted collection.
+CRITERIA:[{'marks': 1, 'criterion': 'Relevant public-service benefit.'}, {'marks': 1, 'criterion': 'Develops use of data for prediction.'}, {'marks': 1, 'criterion': 'Specific privacy/consent/fairness concern.'}, {'marks': 1, 'criterion': 'Explains consequence/safeguard.'}, {'marks': 1, 'criterion': 'Balanced supported conclusion.'}]
+
+P-SRC032-Q07-c A1.1.2,A1.1.4 Explain 5
+Explain why rendering a complex 3D scene can benefit from a GPU and substantial RAM.
+ANSWER:Many similar pixel/geometry calculations can be processed in parallel on the GPU. RAM holds working geometry, textures and scene data. Insufficient available memory can require more transfers or constrain scene detail, so balanced processing and memory capacity matter.
+CRITERIA:[{'marks': 1, 'criterion': 'GPU parallel computation.'}, {'marks': 1, 'criterion': 'Relates similar graphics operations to architecture.'}, {'marks': 1, 'criterion': 'RAM working-data role.'}, {'marks': 1, 'criterion': 'Explains capacity/data-transfer consequence.'}, {'marks': 1, 'criterion': 'Contextual processing/memory balance.'}]
+
+P-SRC032-Q08-a A4.3.7 Outline 2
+Outline why a genetic algorithm is described as iterative.
+ANSWER:It repeatedly evaluates a population and produces a modified next generation, continuing until its stopping condition is met.
+CRITERIA:[{'marks': 1, 'criterion': 'Repeated generations/population evaluation.'}, {'marks': 1, 'criterion': 'Modification and termination loop.'}]
+
+P-SRC032-Q08-b A4.3.7 Outline 2
+Outline the role of a fitness function when a genetic algorithm optimizes a delivery route.
+ANSWER:It assigns a quality score to a candidate route, such as shorter travel distance with penalties for unmet constraints, so candidates can be selected for later generations.
+CRITERIA:[{'marks': 1, 'criterion': 'Quantitative candidate-quality score.'}, {'marks': 1, 'criterion': 'Contextual selection/optimization purpose.'}]
+
+P-SRC032-Q08-c-i A4.1.1 Outline 2
+Outline one benefit of supervised learning when teaching a system to classify spoken commands into a known set of actions.
+ANSWER:Labelled command/action pairs provide target outputs during training, allowing the model to learn which known action each input should indicate.
+CRITERIA:[{'marks': 1, 'criterion': 'Labelled examples with target actions.'}, {'marks': 1, 'criterion': 'Explains learning known command classes.'}]
+
+P-SRC032-Q08-c-ii A4.3.4 Outline 2
+Outline how unsupervised learning could help explore a large unlabelled set of recorded spoken commands.
+ANSWER:It can group recordings with similar features, helping developers discover recurring patterns without first labelling each recording. The clusters still need interpretation before they can be assigned safe actions.
+CRITERIA:[{'marks': 1, 'criterion': 'Similarity groups from unlabelled data.'}, {'marks': 1, 'criterion': 'Discovery benefit with interpretation caveat.'}]
+
+P-SRC032-Q08-d A4.1.1,A4.3.2 Explain 5
+Explain how supervised classification can support a voice-command interface and why a new command may still be misinterpreted.
+ANSWER:Train with labelled examples of command features and intended actions. The trained classifier uses learned patterns to assign a category to new input. Variation in accents, noise or phrasing may differ from training examples, so confidence checks and safe fallback behaviour are needed rather than assuming every spoken request is understood.
+CRITERIA:[{'marks': 1, 'criterion': 'Labelled examples/actions.'}, {'marks': 1, 'criterion': 'Feature-pattern learning.'}, {'marks': 1, 'criterion': 'Prediction for new input.'}, {'marks': 1, 'criterion': 'Training/input difference explains error.'}, {'marks': 1, 'criterion': 'Appropriate safe fallback/evaluation detail.'}]
+
+P-SRC032-Q08-f A4.1.1 Describe 2
+Describe one use of an ML-based chatbot in a customer-support service.
+ANSWER:It processes natural-language requests and supplies relevant routine guidance or directs the user to an appropriate human support route.
+CRITERIA:[{'marks': 1, 'criterion': 'Natural-language interactive assistance.'}, {'marks': 1, 'criterion': 'Concrete routine-support/routing use.'}]
+
+P-SRC032-Q09-b A2.2.2 Describe 3
+Describe how DNS helps a client contact a named internet service.
+ANSWER:The client requests the IP address associated with the hostname. DNS can answer using a cached record or resolve it through other DNS servers. The client then uses the returned address to contact the host.
+CRITERIA:[{'marks': 1, 'criterion': 'Requests/resolves hostname toIP.'}, {'marks': 1, 'criterion': 'Cache/other DNS resolution detail.'}, {'marks': 1, 'criterion': 'Client uses returned IP to contact host.'}]
+
+P-SRC032-Q09-c A2.1.4,A2.4.4 Identify 2
+Identify two security properties provided by a correctly configured HTTPS connection.
+ANSWER:Confidentiality of transmitted content and integrity protection; server authentication through certificates is another valid property.
+CRITERIA:[{'marks': 1, 'criterion': 'One correct HTTPS security property.'}, {'marks': 1, 'criterion': 'Second distinct property.'}]
+
+P-SRC032-Q09-e A2.1.4 Outline 2
+Outline what connectionless means for UDP transport.
+ANSWER:The sender can send datagrams without first establishing a transport connection/handshake. Each datagram is handled independently rather than as part of a guaranteed reliable ordered stream.
+CRITERIA:[{'marks': 1, 'criterion': 'No connection-establishment handshake.'}, {'marks': 1, 'criterion': 'Independent datagrams/no guaranteed reliable ordered stream.'}]
+
+P-SRC032-Q10-a-i A3.3.3 Describe 3
+Describe the effect of INSERT INTO Guest(FirstName, Surname, Email) VALUES('Mina', 'Rao', 'mina@example.org'); on a suitable SQL table.
+ANSWER:It creates one new row in Guest, assigning the supplied values to the named columns. Existing rows remain unless a constraint error prevents the insertion.
+CRITERIA:[{'marks': 1, 'criterion': 'Inserts a new row.'}, {'marks': 1, 'criterion': 'Correct table/column value association.'}, {'marks': 1, 'criterion': 'Explains successful insertion/constraint qualification without claiming an update to all rows.'}]
+
+P-SRC032-Q11-a A2.2.3 Identify 2
+Identify two characteristics of a peer-to-peer networking model.
+ANSWER:A peer can both request and supply resources; peers communicate/share directly without a mandatory central server for every resource interaction.
+CRITERIA:[{'marks': 1, 'criterion': 'Peers can act as clients and servers.'}, {'marks': 1, 'criterion': 'Direct sharing/decentralized resource provision.'}]
+
+P-SRC032-Q11-b A1.1.8 Evaluate 6
+Evaluate using lossy compression for a music preview and for the exact text of a digital contract.
+ANSWER:For a preview, removing some perceptually less important audio data can reduce size and transfer time, though high compression may produce audible artifacts. Contract text must remain exact; irreversible loss could alter wording, so lossless compression is appropriate. The choice depends on tolerable loss, not simply which file is larger.
+CRITERIA:[{'marks': 1, 'criterion': 'Reduced audio size/time benefit.'}, {'marks': 1, 'criterion': 'Audio quality/artifact tradeoff.'}, {'marks': 1, 'criterion': 'Text requires exact reconstruction.'}, {'marks': 1, 'criterion': 'Loss could change legally/semantically important wording.'}, {'marks': 1, 'criterion': 'Justified lossy audio versus lossless text choice.'}, {'marks': 1, 'criterion': 'Balanced quality/size conclusion.'}]
+
+P-SRC032-Q11-c A1.1.9 Identify 2
+Identify two characteristics of using a cloud-hosted software service rather than installing it solely on a local computer.
+ANSWER:The provider hosts/runs the application on remote infrastructure; users access it over a network, with provider-managed resource availability and potential scaling.
+CRITERIA:[{'marks': 1, 'criterion': 'Remote provider-hosted application.'}, {'marks': 1, 'criterion': 'Network access/provider management/scalability characteristic.'}]
+
+P-SRC032-Q13-a B2.1.1 State 1
+State the Python data type suitable for a whole-number count of available rooms.
+ANSWER:int.
+CRITERIA:[{'marks': 1, 'criterion': 'int.'}]
+
+P-SRC032-Q13-b-i B3.1.2,B2.1.1 State 1
+State a Boolean attribute appropriate for an Accommodation class.
+ANSWER:has_accessible_entrance, storing True or False.
+CRITERIA:[{'marks': 1, 'criterion': 'Appropriate yes/no attribute.'}]
+
+P-SRC032-Q13-b-ii B3.1.2,B2.1.1 State 1
+State an integer attribute appropriate for an Accommodation class.
+ANSWER:number_of_rooms.
+CRITERIA:[{'marks': 1, 'criterion': 'Appropriate whole-number attribute.'}]
+
+P-SRC032-Q13-c-i B3.2.4 State 1
+A Building object stores a reference to an Owner object. The owner exists independently and may be associated with several buildings. State this object relationship.
+ANSWER:Aggregation.
+CRITERIA:[{'marks': 1, 'criterion': 'Aggregation.'}]
+
+P-SRC032-Q13-c-ii B3.2.1 State 1
+Class Cottage extends Accommodation and inherits its attributes and methods. State the relationship between Cottage and Accommodation.
+ANSWER:Inheritance; Cottage is a subclass of Accommodation.
+CRITERIA:[{'marks': 1, 'criterion': 'Inheritance/subclass relationship.'}]
+
+P-SRC032-Q13-d B3.1.1 Distinguish 2
+Distinguish a class from an object using Accommodation as context.
+ANSWER:Accommodation defines common state and behaviour. A particular Accommodation object stores concrete values, such as one address and room count.
+CRITERIA:[{'marks': 1, 'criterion': 'Class definition versus concrete instance.'}, {'marks': 1, 'criterion': 'Contextual attribute/example.'}]
+
+P-SRC032-Q13-e B3.1.3 Outline 2
+Outline the difference between a Python class attribute and an instance attribute when recording a total count.
+ANSWER:A class attribute belongs to the class and can be shared/accessed through it. Each instance attribute is stored as part of a particular object’s state, so individual objects can hold different values.
+CRITERIA:[{'marks': 1, 'criterion': 'Class-level/shared association.'}, {'marks': 1, 'criterion': 'Instance-specific state distinction.'}]
+
+P-SRC032-Q13-f B3.1.3 Outline 2
+All Cottage and Apartment objects call Accommodation.__init__ once. Outline how one shared counter can track their combined number.
+ANSWER:Initialize Accommodation.count=0 at class level and increment Accommodation.count in the shared initializer. Reading Accommodation.count retrieves the combined count without using an instance-specific counter.
+CRITERIA:[{'marks': 1, 'criterion': 'One counter on common class.'}, {'marks': 1, 'criterion': 'Increment that class counter once for each object.'}]
+
+P-SRC032-Q13-g B2.2.2 Construct 3
+Construct a Python assignment creating wishlist as a list of ten empty slots for later object references. Do not instantiate any accommodation objects.
+ANSWER:wishlist = [None] * 10
+CRITERIA:[{'marks': 1, 'criterion': 'Assignment to wishlist.'}, {'marks': 1, 'criterion': 'Creates a Python list.'}, {'marks': 1, 'criterion': 'Exactly ten None slots, no object instances.'}]
+
+P-SRC032-Q14-a B3.1.5 Define 1
+Define encapsulation in OOP.
+ANSWER:Bundling an object’s state with the operations that manage it, using a controlled interface to protect representation details.
+CRITERIA:[{'marks': 1, 'criterion': 'State and managing operations grouped with controlled interface.'}]
+
+P-SRC032-Q14-b B3.1.5 Explain 3
+Explain how using an Account.withdraw(amount) interface rather than editing its balance everywhere can help preserve valid state.
+ANSWER:The class can validate each withdrawal and enforce an invariant, such as rejecting an amount that exceeds the available balance. Clients use the same rule through the interface, reducing inconsistent direct updates.
+CRITERIA:[{'marks': 1, 'criterion': 'Validation/constraint centralized.'}, {'marks': 1, 'criterion': 'Concrete invariant/example.'}, {'marks': 1, 'criterion': 'Explains consistency across callers.'}]
+
+P-SRC032-Q14-c B3.2.1 Explain 3
+Explain one benefit of deriving StudentRoom from Accommodation when both need address and price behaviour.
+ANSWER:StudentRoom can inherit the common attributes/methods instead of duplicating them. It adds its room-specific behaviour, and shared fixes can remain in the superclass, which reduces maintenance duplication.
+CRITERIA:[{'marks': 1, 'criterion': 'Reuses inherited attributes/methods.'}, {'marks': 1, 'criterion': 'Contextual common behaviour.'}, {'marks': 1, 'criterion': 'Explains reduced duplication/maintenance.'}]
+
+P-SRC032-Q14-d A1.2.2 Explain 3
+Explain how a shared Unicode character representation helps a Python application store names written in different scripts.
+ANSWER:Unicode assigns code points to characters across many scripts. An agreed encoding represents them as bytes, so compatible systems can preserve the intended text rather than replacing unsupported characters. Unicode is not universally a fixed16-bit encoding.
+CRITERIA:[{'marks': 1, 'criterion': 'Character repertoire across scripts.'}, {'marks': 1, 'criterion': 'Encoding represents agreed characters in binary.'}, {'marks': 1, 'criterion': 'Explains preserved text/interoperability.'}]
+
+P-SRC032-Q15-a B2.3.4 Define 2
+Define what the name and parameter list specify in a Python function interface.
+ANSWER:The name identifies the callable operation; the parameter list specifies the inputs accepted by that operation.
+CRITERIA:[{'marks': 1, 'criterion': 'Function identifier role.'}, {'marks': 1, 'criterion': 'Parameter/input interface role.'}]
+
+P-SRC032-Q15-b B2.1.1,B2.3.4 Describe 2
+A function receives a string parameter text and executes text="Updated". Describe why the caller’s name variable is unchanged, and how the caller can receive the new string.
+ANSWER:The assignment rebinds the function’s local parameter rather than the caller’s variable. Return the new string and assign it in the caller, for example name=update(name).
+CRITERIA:[{'marks': 1, 'criterion': 'Local rebinding does not change caller binding.'}, {'marks': 1, 'criterion': 'Return value assigned by caller.'}]
+
+P-SRC032-Q15-c B2.1.1,B2.3.3 State 1
+State the intended task of this Python function,assuming entries contains objects with city and address attributes.
+def visit(entries, city):
+    for item in entries:
+        if item.city == city:
+            print(item.address)
+ANSWER:Print the address of every entry whose city equals the supplied city.
+CRITERIA:[{'marks': 1, 'criterion': 'All matching addresses printed.'}]
+
+P-SRC032-Q15-d-i B2.1.3,B2.1.4 Outline 2
+Outline why visit(entries,city) may raise an error if entries includes None.
+def visit(entries, city):
+    for item in entries:
+        if item.city == city:
+            print(item.address)
+ANSWER:The loop eventually binds item to None. Accessing item.city then raises AttributeError because None has no city attribute.
+CRITERIA:[{'marks': 1, 'criterion': 'None entry accessed.'}, {'marks': 1, 'criterion': 'AttributeError on missing attribute.'}]
+
+P-SRC032-Q15-d-ii B2.1.4,B2.3.2 Outline 2
+Outline how to repair visit so it ignores None entries while still printing every matching address.
+ANSWER:Test item is not None before reading its attributes, for example if item is not None and item.city==city. Continue scanning after skipped entries.
+CRITERIA:[{'marks': 1, 'criterion': 'Explicit None guard.'}, {'marks': 1, 'criterion': 'Guard precedes attribute access/continues valid entries.'}]
+
+P-SRC032-Q15-e B2.4.3,B2.2.2 Construct 5
+Construct house_sort(entries) in Python. entries may contain None slots or House objects with numeric price. Return the non-None objects sorted by ascending price using bubble sort. Do not use sorted or list.sort; the task assesses bubble sort.
+ANSWER:One solution:
+def house_sort(entries):
+    result = [item for item in entries if item is not None]
+    for end in range(len(result)-1, 0, -1):
+        for i in range(end):
+            if result[i].price > result[i+1].price:
+                result[i], result[i+1] = result[i+1], result[i]
+    return result
+CRITERIA:[{'marks': 1, 'criterion': 'Filters/ignores None slots correctly.'}, {'marks': 1, 'criterion': 'Correct outer pass loop.'}, {'marks': 1, 'criterion': 'Correct adjacent comparison loop.'}, {'marks': 1, 'criterion': 'Compares prices ascending.'}, {'marks': 1, 'criterion': 'Swaps whole object references and returns result.'}]
+
+P-SRC032-Q15-f B2.2.2,B2.3.2,B2.3.3,B2.3.4 Construct 7
+You are given house_sort(entries), which returns the non-None House objects in ascending price order. Construct select_three(entries, budget) in Python. Return the three highest-priced objects costing no more than budget, in ascending price order. At least three eligible objects exist. Use the supplied helper.
+ANSWER:One solution:
+def select_three(entries, budget):
+    ordered = house_sort(entries)
+    eligible = []
+    for item in ordered:
+        if item.price <= budget:
+            eligible.append(item)
+    return eligible[-3:]
+CRITERIA:[{'marks': 1, 'criterion': 'Accepts entries and budget.'}, {'marks': 1, 'criterion': 'Calls supplied sort helper.'}, {'marks': 1, 'criterion': 'Creates eligible/result list.'}, {'marks': 1, 'criterion': 'Visits ordered objects.'}, {'marks': 1, 'criterion': 'Correct price<=budget filter.'}, {'marks': 1, 'criterion': 'Selects the last three eligible objects.'}, {'marks': 1, 'criterion': 'Returns those objects in ascending order.'}]
+
+P-SRC032-Q16-a B4.1.1 Identify 2
+Identify two defining features of an ADT.
+ANSWER:Its permitted operations/behaviour are specified; the concrete implementation and memory representation are hidden from users of the interface.
+CRITERIA:[{'marks': 1, 'criterion': 'Specified operations/behaviour.'}, {'marks': 1, 'criterion': 'Implementation abstraction.'}]
+
+P-SRC032-Q16-b B3.1.4,B4.1.3 List 3
+A linked-list object waiting has append(node), which adds a node at its tail. Describe waiting.append(ClientNode("Ari Moon", "070123")), where ClientNode constructs a new node from name and phone.
+ANSWER:A new ClientNode is instantiated with the supplied name and phone, and that node is added to the end of waiting.
+CRITERIA:[{'marks': 1, 'criterion': 'New node object created.'}, {'marks': 1, 'criterion': 'Correct attribute values.'}, {'marks': 1, 'criterion': 'Added at tail of waiting.'}]
+
+P-SRC032-Q16-c B4.1.3 Construct 5
+Construct append(self, visitor) in Python for a singly linked list whose head attribute is None when empty. visitor is a new unlinked node. Append it at the end, maintaining None as the last next reference.
+ANSWER:One solution:
+def append(self, visitor):
+    visitor.next = None
+    if self.head is None:
+        self.head = visitor
+    else:
+        current = self.head
+        while current.next is not None:
+            current = current.next
+        current.next = visitor
+CRITERIA:[{'marks': 1, 'criterion': 'Handles empty list.'}, {'marks': 1, 'criterion': 'Assigns new head when empty.'}, {'marks': 1, 'criterion': 'Initializes traversal athead.'}, {'marks': 1, 'criterion': 'Follows links until last node.'}, {'marks': 1, 'criterion': 'Links visitor at tail with correct None boundary.'}]
+
+P-SRC032-Q16-d B4.1.3 Outline 4
+Without writing code, outline how to split a singly linked list into attended and absent lists according to each node’s Boolean attended field. Move the existing nodes, preserve order in each result, and leave the original list empty.
+ANSWER:Create two empty result lists with head/tail references. Traverse the original list, saving the next reference before detaching a node. Append that node to the appropriate result tail according to attended. Advance using the saved reference and finally clear the original head.
+CRITERIA:[{'marks': 1, 'criterion': 'Initializes two result lists.'}, {'marks': 1, 'criterion': 'Traverses every original node and saves next.'}, {'marks': 1, 'criterion': 'Chooses correct result from attended.'}, {'marks': 1, 'criterion': 'Relinks/detaches safely, preserves order and clears original head.'}]
+
+P-SRC032-Q16-e B2.4.2,B2.4.5 Construct 6
+Construct find_owner(contacts, name, low, high) in Python. contacts is a list of Owner objects sorted ascending by unique name. Search the inclusive index interval recursively, returning the matching object or None. Each recursive activation must make at most one further recursive call.
+ANSWER:One solution:
+def find_owner(contacts, name, low, high):
+    if low > high:
+        return None
+    middle = (low + high) // 2
+    owner = contacts[middle]
+    if owner.name == name:
+        return owner
+    if name < owner.name:
+        return find_owner(contacts, name, low, middle - 1)
+    return find_owner(contacts, name, middle + 1, high)
+CRITERIA:[{'marks': 1, 'criterion': 'Absent interval base case returns None.'}, {'marks': 1, 'criterion': 'Correct middle index and access.'}, {'marks': 1, 'criterion': 'Equality returns correct object.'}, {'marks': 1, 'criterion': 'Chooses correct half.'}, {'marks': 1, 'criterion': 'Left recursive boundary excludes middle.'}, {'marks': 1, 'criterion': 'Right recursive boundary excludes middle and returns call result.'}]
+
+P-SRC038-Q01-a A3.2.2 Construct 3
+A museum has many departments. Each curator and each technician belongs to one department. A curator can work with several technicians, and a technician can work with several curators. Construct an ERD showing these three relationships and their cardinalities.
+ANSWER:DEPARTMENT 1—many CURATOR; DEPARTMENT 1—many TECHNICIAN; CURATOR many—many TECHNICIAN. A link entity may resolve the last relationship.
+CRITERIA:[{'marks': 1, 'criterion': 'Department to curator is one-to-many.'}, {'marks': 1, 'criterion': 'Department to technician is one-to-many.'}, {'marks': 1, 'criterion': 'Curator to technician is many-to-many, or correct link-entity resolution.'}]
+
+P-SRC038-Q01-b A3.1.1 Explain 6
+Explain two benefits of replacing separate paper equipment logs with a shared relational database used by several museum departments. Develop each benefit in this setting.
+ANSWER:Concurrency control lets staff record loans simultaneously while preventing conflicting updates, so separate departments see consistent equipment availability. Queries can retrieve overdue equipment by borrower and date quickly, avoiding manual searches and helping staff recover items before another booking.
+CRITERIA:[{'marks': 1, 'criterion': 'Concurrency/shared-access benefit.'}, {'marks': 1, 'criterion': 'Explains coordinated updates/consistent availability.'}, {'marks': 1, 'criterion': 'Concrete scheduling consequence.'}, {'marks': 1, 'criterion': 'Efficient filtered retrieval benefit.'}, {'marks': 1, 'criterion': 'Explains borrower/date query compared with manual search.'}, {'marks': 1, 'criterion': 'Concrete equipment-recovery consequence.'}]
+
+P-SRC038-Q01-c A3.3.6 Describe 3
+A transaction transfers an item from store A to store B by decreasing A’s count and increasing B’s count. Describe the database state before the transaction, during its updates, and after a successful COMMIT.
+ANSWER:Before it begins, both counts satisfy the inventory rules. During the transaction, one update may have occurred while the other is pending; those partial changes must not be treated as a completed transfer. COMMIT makes both changes durable together, leaving a consistent inventory total.
+CRITERIA:[{'marks': 1, 'criterion': 'Initially consistent counts.'}, {'marks': 1, 'criterion': 'Intermediate partial updates are not a completed transfer.'}, {'marks': 1, 'criterion': 'Commit preserves both updates and restores the required consistent total.'}]
+
+P-SRC038-Q01-d A3.3.6 Describe 3
+A transaction has decreased store A’s count but fails before increasing store B’s count. Describe how ROLLBACK should affect the transaction and the inventory total.
+ANSWER:It undoes the uncommitted decrease at A. Neither half of the failed transfer remains, so the counts return to their prior consistent values and no item disappears from the inventory.
+CRITERIA:[{'marks': 1, 'criterion': 'Undoes the uncommitted decrease.'}, {'marks': 1, 'criterion': 'Neither partial transaction update persists.'}, {'marks': 1, 'criterion': 'Prior consistent counts/total restored.'}]
+
+P-SRC038-Q02-a A3.1.1 Outline 2
+MEASUREMENT uses (DeviceID, SensorID, Timestamp) as a composite primary key. Outline why Timestamp may be needed when the same sensor measures the same device repeatedly.
+ANSWER:DeviceID and SensorID repeat for successive measurements. Timestamp distinguishes those events so separate readings can be stored without duplicate keys.
+CRITERIA:[{'marks': 1, 'criterion': 'Device/sensor pair alone can repeat.'}, {'marks': 1, 'criterion': 'Timestamp distinguishes repeated events for uniqueness.'}]
+
+P-SRC038-Q02-b A3.2.5 Outline 2
+READING(DeviceID, SensorID, Timestamp, DeviceName, Value) has the composite key (DeviceID, SensorID, Timestamp). DeviceID alone determines DeviceName. Outline why the relation violates 2NF.
+ANSWER:DeviceName depends on only DeviceID, a proper subset of the composite key. This partial dependency of a non-key attribute violates 2NF.
+CRITERIA:[{'marks': 1, 'criterion': 'Identifies DeviceName depending on DeviceID only.'}, {'marks': 1, 'criterion': 'Explains partial dependency on part of the composite key.'}]
+
+P-SRC038-Q02-c A3.3.2 State 2
+READING rows (DeviceName, SensorID, Kind) are ("Orchid", "S4", "heat"), ("Cedar", "S2", "heat"), ("Maple", "S4", "heat"), ("Ash", "S4", "light"). State the rows returned by SELECT DeviceName FROM READING WHERE Kind='heat' AND SensorID='S4';.
+ANSWER:Orchid and Maple, in either order.
+CRITERIA:[{'marks': 1, 'criterion': 'Orchid.'}, {'marks': 1, 'criterion': 'Maple, with no extra rows.'}]
+
+P-SRC038-Q02-d A3.3.2 Construct 4
+READING(DeviceID, TechID, RecordedAt) and TECHNICIAN(TechID, Name) use ISO date-time strings. Construct SQL listing device IDs read by R. Kim at any time on 12 May 2027.
+ANSWER:One solution:
+SELECT r.DeviceID FROM Reading r JOIN Technician t ON r.TechID=t.TechID WHERE t.Name='R. Kim' AND r.RecordedAt >= '2027-05-12 00:00' AND r.RecordedAt < '2027-05-13 00:00';
+CRITERIA:[{'marks': 1, 'criterion': 'Selects DeviceID.'}, {'marks': 1, 'criterion': 'Correct two-table join on TechID.'}, {'marks': 1, 'criterion': 'Filters technician name.'}, {'marks': 1, 'criterion': 'Includes the whole specified day and excludes other days.'}]
+
+P-SRC038-Q02-e A3.2.6 Construct 5
+A booking relation contains VisitorID, VisitorName, GuideID, GuideName, Specialism, VisitTime, RouteID, RouteName, Fee. VisitorID determines VisitorName; GuideID determines GuideName and Specialism; RouteID determines RouteName and Fee. Each booking has a unique BookingID and exactly one visitor, guide and route. Construct a 3NF schema, labelling primary and foreign keys.
+ANSWER:VISITOR(VisitorID PK, VisitorName); GUIDE(GuideID PK, GuideName, Specialism); ROUTE(RouteID PK, RouteName, Fee); BOOKING(BookingID PK, VisitorID FK, GuideID FK, RouteID FK, VisitTime).
+CRITERIA:[{'marks': 1, 'criterion': 'VISITOR with correct key and attributes.'}, {'marks': 1, 'criterion': 'GUIDE with correct key and attributes.'}, {'marks': 1, 'criterion': 'ROUTE with correct key and attributes.'}, {'marks': 1, 'criterion': 'BOOKING with key, VisitTime and references.'}, {'marks': 1, 'criterion': 'Foreign keys identified; no transitive names/fees retained in BOOKING.'}]
+
+P-SRC038-Q03-a A3.1.1 Outline 2
+Outline how a foreign-key constraint can preserve integrity when a loan record refers to a museum member.
+ANSWER:It requires the referenced member ID to exist in MEMBER, preventing a loan from referring to a nonexistent member.
+CRITERIA:[{'marks': 1, 'criterion': 'Requires an existing referenced member key.'}, {'marks': 1, 'criterion': 'Explains prevention of orphan/misattributed loan data.'}]
+
+P-SRC038-Q03-b A3.4.2 Outline 2
+Outline what it means for a data warehouse to contain integrated data from several museum branches.
+ANSWER:Data from the branches is combined into a unified representation, with compatible identifiers/formats, so analysis can compare records across branches.
+CRITERIA:[{'marks': 1, 'criterion': 'Combines multiple sources.'}, {'marks': 1, 'criterion': 'Consistent representation supports cross-source analysis.'}]
+
+P-SRC038-Q03-d A3.4.3 Explain 3
+Explain how data mining could help a conservation service identify unusual increases in damage reports across many museum sites.
+ANSWER:Analyse historical reports using anomaly detection to find counts or patterns unlike the usual baseline. Unusual site/time combinations can be flagged for investigation, helping staff discover emerging damage problems that manual inspection of many records could miss.
+CRITERIA:[{'marks': 1, 'criterion': 'Analyses historical reports/baseline.'}, {'marks': 1, 'criterion': 'Correct anomaly-detection use.'}, {'marks': 1, 'criterion': 'Explains a concrete flag/investigation benefit.'}]
+
+P-SRC038-Q03-e A3.1.1,A3.3.5 Evaluate 5
+A lending database includes private member addresses and loan details. Evaluate giving an external courier unrestricted access compared with a read-only view containing only the delivery fields it needs.
+ANSWER:Unrestricted access may make ad hoc queries easy, but reveals unrelated private information and may permit damaging edits. A restricted read-only view supplies the address and dispatch details required for delivery while hiding other records and preventing updates through that interface. View permissions and maintenance are needed; the limited view is preferable for the courier’s defined task.
+CRITERIA:[{'marks': 1, 'criterion': 'Relevant unrestricted-access convenience.'}, {'marks': 1, 'criterion': 'Concrete excessive-disclosure/edit risk.'}, {'marks': 1, 'criterion': 'View supplies only required delivery fields.'}, {'marks': 1, 'criterion': 'Read-only/restricted permissions reduce harm, with maintenance limitation.'}, {'marks': 1, 'criterion': 'Supported contextual judgment.'}]
+
+P-SRC038-Q04-a-ii A3.4.3 Explain 3
+Explain how OLAP could help a museum examine admission totals by site, visitor category and month.
+ANSWER:OLAP supports examining aggregated data across these dimensions. Staff can compare sites or focus on one category and time period, revealing seasonal or demographic patterns that inform staffing and exhibition planning.
+CRITERIA:[{'marks': 1, 'criterion': 'Multidimensional aggregate analysis.'}, {'marks': 1, 'criterion': 'Concrete comparison/filtering across given dimensions.'}, {'marks': 1, 'criterion': 'Links findings to a museum decision.'}]
+
+P-SRC038-Q04-b A3.1.1 Explain 3
+Explain why matching LOAN.MemberID to MEMBER.MemberID is useful when retrieving a borrower’s outstanding items.
+ANSWER:The shared identifier links each loan to the correct member record. Staff can combine member details with related items instead of matching ambiguous names manually, reducing mistaken notices to the wrong person.
+CRITERIA:[{'marks': 1, 'criterion': 'Shared key identifies corresponding records.'}, {'marks': 1, 'criterion': 'Combines member and loan information.'}, {'marks': 1, 'criterion': 'Explains avoided ambiguity/error or useful retrieval.'}]
+
+P-SRC038-Q04-c A3.4.3 Explain 4
+Explain two ways regression-based analysis of historical visitor data could support planning at a museum.
+ANSWER:Predict daily attendance from seasonal and booking features to schedule enough staff. Predict shop revenue from expected attendance and past spending patterns to plan stock and cash requirements; predictions remain estimates under changed conditions.
+CRITERIA:[{'marks': 1, 'criterion': 'Suitable attendance prediction.'}, {'marks': 1, 'criterion': 'Links predicted quantity to staffing.'}, {'marks': 1, 'criterion': 'Distinct continuous revenue/demand prediction.'}, {'marks': 1, 'criterion': 'Links it to a planning decision.'}]
+
+P-SRC038-Q04-d A4.3.4 Describe 4
+Describe how unsupervised clustering of visitor records could help a museum plan services, and give one limitation.
+ANSWER:Use features such as visit frequency, group size and interests to form similar groups without preassigned labels. Different groups may suggest family activities or specialist tours. Results depend on selected features and may hide differences within a cluster, so staff should investigate before treating every member alike.
+CRITERIA:[{'marks': 1, 'criterion': 'Unlabelled grouping by feature similarity.'}, {'marks': 1, 'criterion': 'Appropriate concrete features.'}, {'marks': 1, 'criterion': 'Service-planning application.'}, {'marks': 1, 'criterion': 'Relevant feature/group-generalization limitation.'}]
+
+P-SRC038-Q04-e A3.4.2 Explain 3
+Explain why combining different branch records in a data warehouse requires consistent identifiers and formats.
+ANSWER:Sources may use different codes or date formats for equivalent facts. Aligning them gives integrated data that can be compared and aggregated correctly; otherwise the same visitor/site may be counted separately or dates misinterpreted.
+CRITERIA:[{'marks': 1, 'criterion': 'Recognizes incompatible source representations.'}, {'marks': 1, 'criterion': 'Standardization enables integrated comparison/aggregation.'}, {'marks': 1, 'criterion': 'Concrete consequence of inconsistent identifiers/formats.'}]
+
+P-SRC038-Q05-b B2.2.2 State 1
+An index-following search uses links=[4, 3, 0, 2, 1]. Start at index 1. Inspect links[index], then use that value as the next index. State the first four inspected indices.
+ANSWER:1, 3, 2, 0.
+CRITERIA:[{'marks': 1, 'criterion': 'All four indices in the correct order.'}]
+
+P-SRC038-Q05-d B2.2.2,B2.3.2,B2.3.3 Construct 6
+links is a permutation of indices 0 to n-1. For each target, begin at index target and inspect at most limit entries, moving to the index stored in the current entry. Construct follow_all(links, limit) in Python returning a Boolean list: True where that target is found. limit is positive.
+ANSWER:One solution:
+def follow_all(links, limit):
+    success = [False] * len(links)
+    for target in range(len(links)):
+        index = target
+        for attempt in range(limit):
+            value = links[index]
+            if value == target:
+                success[target] = True
+                break
+            index = value
+    return success
+CRITERIA:[{'marks': 1, 'criterion': 'Initializes a False result for each target.'}, {'marks': 1, 'criterion': 'Processes each target with a fresh starting index.'}, {'marks': 1, 'criterion': 'Limits inspections correctly.'}, {'marks': 1, 'criterion': 'Compares current value with target.'}, {'marks': 1, 'criterion': 'Marks success and stops appropriately.'}, {'marks': 1, 'criterion': 'Follows stored index on failure and returns all results.'}]
+
+P-SRC038-Q05-e B2.3.2,B2.3.3,B2.3.4 Construct 4
+Construct success_percent(make_links, follow_all, trials). trials is a positive integer. make_links() returns a fresh permutation of ten indices; follow_all(links, 5) returns ten success Booleans. Return the percentage of trials in which every Boolean is True. No probability derivation is needed.
+ANSWER:One solution:
+def success_percent(make_links, follow_all, trials):
+    wins = 0
+    for _ in range(trials):
+        results = follow_all(make_links(), 5)
+        won = True
+        for result in results:
+            if not result:
+                won = False
+        if won:
+            wins += 1
+    return 100 * wins / trials
+CRITERIA:[{'marks': 1, 'criterion': 'Repeats trials with fresh results.'}, {'marks': 1, 'criterion': 'Determines whether every result is True.'}, {'marks': 1, 'criterion': 'Counts only wholly successful trials.'}, {'marks': 1, 'criterion': 'Returns 100*wins/trials.'}]
+
+P-SRC038-Q06-f A4.4.1 Explain 4
+Explain one safety concern when an ML-controlled vehicle tested on a narrow training set is deployed on public roads.
+ANSWER:Unfamiliar weather or pedestrians may differ from training examples, causing unreliable predictions. An incorrect braking/steering decision can injure people. Evaluation on diverse conditions and a safe fallback are therefore needed before deployment; success on familiar examples alone is insufficient.
+CRITERIA:[{'marks': 1, 'criterion': 'Identifies unrepresentative training/input mismatch.'}, {'marks': 1, 'criterion': 'Explains prediction/error consequence.'}, {'marks': 1, 'criterion': 'Develops concrete harm to road users.'}, {'marks': 1, 'criterion': 'Appropriate evaluation/safeguard linked to risk.'}]
+
+P-SRC038-Q07-b-i B2.3.1 State 1
+State a Python assignment computing d from x and y using the supplied formula d = square root of (x squared + y squared).
+ANSWER:d = (x*x + y*y) ** 0.5
+CRITERIA:[{'marks': 1, 'criterion': 'Correct expression and assignment.'}]
+
+P-SRC038-Q07-b-ii B2.3.2 Construct 1
+Construct Python selection assigning label="inside" when d<1, and label="outside" otherwise.
+ANSWER:if d < 1:
+    label = "inside"
+else:
+    label = "outside"
+CRITERIA:[{'marks': 1, 'criterion': 'Both correct branches including boundary d=1.'}]
+
+P-SRC038-Q07-c B2.2.2,B2.3.2,B2.3.3 List 3
+A nonempty list labels contains "inside" or "outside". A supplied estimation rule is 4 times the number of "inside" entries divided by the total entries. Construct estimate(labels) in Python using a loop to return that value.
+ANSWER:One solution:
+def estimate(labels):
+    count = 0
+    for label in labels:
+        if label == "inside":
+            count += 1
+    return 4 * count / len(labels)
+CRITERIA:[{'marks': 1, 'criterion': 'Scans all labels.'}, {'marks': 1, 'criterion': 'Counts only inside entries.'}, {'marks': 1, 'criterion': 'Returns correct supplied ratio.'}]
+
+P-SRC038-Q07-d A1.1.2,A1.1.4,A4.1.2 Evaluate 5
+Evaluate the processing and memory needs of an ML camera system that detects many moving objects in a live image stream.
+ANSWER:A GPU can process many similar image operations in parallel, improving throughput. RAM holds frames, model data and intermediate results; larger frames/more objects increase working data. Powerful hardware costs energy and money, while insufficient throughput increases delay and stale decisions. Choose enough GPU/RAM for measured frame-rate and latency requirements rather than assuming a simple box overlay means the whole detection task is cheap.
+CRITERIA:[{'marks': 1, 'criterion': 'GPU parallel processing benefit.'}, {'marks': 1, 'criterion': 'Concrete live-image workload explanation.'}, {'marks': 1, 'criterion': 'RAM working-data role.'}, {'marks': 1, 'criterion': 'Develops capacity/latency/cost trade-off.'}, {'marks': 1, 'criterion': 'Supported contextual hardware judgment.'}]
+
+P-SRC038-Q08-a A4.3.7 Describe 3
+Describe a genetic algorithm for improving a compact antenna design against a supplied signal-quality score.
+ANSWER:Create an initial population of candidate designs. Evaluate fitness and select stronger candidates; combine and mutate them to form another generation. Repeat evaluation/variation until a stopping condition is met, retaining a suitable best design.
+CRITERIA:[{'marks': 1, 'criterion': 'Population and fitness evaluation.'}, {'marks': 1, 'criterion': 'Selection plus crossover/mutation.'}, {'marks': 1, 'criterion': 'Repeated generations with termination.'}]
+
+P-SRC038-Q08-b A4.3.8 Sketch 2
+Sketch a labelled multi-layer perceptron with two input nodes, one hidden layer of three nodes and one output node. Show the direction of information flow.
+ANSWER:Two nodes in the input layer connect forwards to three hidden nodes, which connect forwards to one output node. Label all three layers and use arrows from input to hidden to output.
+CRITERIA:[{'marks': 1, 'criterion': 'Correct labelled input/hidden/output layers and node counts.'}, {'marks': 1, 'criterion': 'Forward connections/arrows in the correct direction.'}]
+
+P-SRC038-Q08-c A4.1.1,A4.3.4 Outline 4
+Outline two differences between supervised classification and unsupervised clustering when analysing image features.
+ANSWER:Classification learns from image features paired with known class labels and predicts those defined categories. Clustering receives features without target labels and groups images by similarity; a person must interpret what the groups represent.
+CRITERIA:[{'marks': 1, 'criterion': 'Supervised labelled training.'}, {'marks': 1, 'criterion': 'Unsupervised absence of target labels.'}, {'marks': 1, 'criterion': 'Classification predicts defined categories.'}, {'marks': 1, 'criterion': 'Clustering discovers similarity groups requiring interpretation.'}]
+
+P-SRC038-Q08-e A4.3.8 Compare 6
+Compare two ANN applications: recognizing a spoken command from audio features and proposing a missing word from a sentence. Refer to their inputs, outputs and one shared limitation. No detailed language-model architecture is required.
+ANSWER:The speech system takes audio-derived features, whereas the missing-word system takes a representation of written context. Their outputs are a recognized command/category and a proposed word respectively. Both learn complex patterns from training data; biased or unrepresentative examples can produce incorrect predictions, so an output should not be treated as guaranteed understanding.
+CRITERIA:[{'marks': 1, 'criterion': 'Audio-feature input.'}, {'marks': 1, 'criterion': 'Written-context input, explicitly compared.'}, {'marks': 1, 'criterion': 'Recognized command/category output.'}, {'marks': 1, 'criterion': 'Proposed-word output, explicitly compared.'}, {'marks': 1, 'criterion': 'Shared learned-pattern/data limitation.'}, {'marks': 1, 'criterion': 'Explains wrong prediction/need for checking.'}]
+
+P-SRC038-Q09-a-i A2.1.4 State 1
+State the protocol identified by the prefix http:// in a web address.
+ANSWER:HTTP (Hypertext Transfer Protocol).
+CRITERIA:[{'marks': 1, 'criterion': 'HTTP or full name.'}]
+
+P-SRC038-Q09-b A2.1.4 Outline 2
+Outline why agreed communication protocols help a browser and web server from different vendors exchange data.
+ANSWER:They define common message formats and interaction rules. Both systems can interpret the same requests and responses, supporting interoperability.
+CRITERIA:[{'marks': 1, 'criterion': 'Common communication formats/rules.'}, {'marks': 1, 'criterion': 'Explains interoperable interpretation/exchange.'}]
+
+P-SRC038-Q09-e-i A3.3.3,A3.3.4 Describe 4
+FEEDBACK(Category, Score) initially contains ("repair", 2), ("repair", 4), ("paint", 5). A service first runs SELECT AVG(Score) FROM FEEDBACK WHERE Category='repair'; and stores its result, then INSERT INTO FEEDBACK(Category, Score) VALUES('repair', 5);. Describe the stored result and the effect of the INSERT, explaining whether the stored result includes the new row.
+ANSWER:The stored average is 3 from scores2 and 4. INSERT adds the repair score 5, producing a third repair row. The already stored result remains3 because the SELECT happened before insertion; a fresh average would be11/3.
+CRITERIA:[{'marks': 1, 'criterion': 'Stored average3.'}, {'marks': 1, 'criterion': 'Explains only pre-insert repair rows counted.'}, {'marks': 1, 'criterion': 'Correct new row added.'}, {'marks': 1, 'criterion': 'Stored value unchanged unless the query is rerun.'}]
+
+P-SRC038-Q09-e-ii A2.2.3 Explain 3
+A browser sends a rating request to a central service. Explain one benefit of the server, rather than every client, controlling updates to the shared ratings database.
+ANSWER:The server provides one controlled update service for all clients. It can apply the same validation/access rules before accepting each request, reducing inconsistent or unauthorized updates to the shared records. A client can request a change without receiving unrestricted database credentials.
+CRITERIA:[{'marks': 1, 'criterion': 'Central controlled server service.'}, {'marks': 1, 'criterion': 'Explains consistent validation/access for client requests.'}, {'marks': 1, 'criterion': 'Concrete shared-data/credential protection consequence.'}]
+
+P-SRC038-Q11-c A2.1.2 Explain 3
+Explain how cloud infrastructure can let a service run across several geographical regions instead of one local server.
+ANSWER:The provider supplies network-accessible computing/storage resources in multiple locations. A service can deploy or replicate workloads across them, so a single local site need not host all processing and capacity can be added where demand occurs.
+CRITERIA:[{'marks': 1, 'criterion': 'Remote network-accessible computing/storage.'}, {'marks': 1, 'criterion': 'Multiple locations share/replicate workloads.'}, {'marks': 1, 'criterion': 'Explains reduced single-site dependence or capacity benefit.'}]
+
+P-SRC038-Q11-d A2.1.2 Evaluate 5
+A company can keep all computing on equipment it buys and manages, or rent cloud computing/storage with rapid capacity changes and a provider-managed physical infrastructure. Evaluate the cloud choice for a seasonal service handling confidential records.
+ANSWER:Cloud capacity can expand for seasonal peaks and contract afterwards, avoiding permanent purchase for rare demand. The provider manages physical infrastructure, reducing local maintenance. However, the company depends on connectivity/provider availability and must configure access controls and assess confidentiality obligations. Choose cloud only where those controls and service arrangements meet the records’ needs; elasticity alone does not settle the decision.
+CRITERIA:[{'marks': 1, 'criterion': 'Elastic capacity linked to seasonal demand.'}, {'marks': 1, 'criterion': 'Cost/maintenance benefit developed.'}, {'marks': 1, 'criterion': 'Connectivity/provider dependence.'}, {'marks': 1, 'criterion': 'Confidentiality/access-control responsibility developed.'}, {'marks': 1, 'criterion': 'Supported contextual decision.'}]
+
+P-SRC038-Q13-b A4.4.1 Discuss 6
+Discuss using an ML voice assistant in a home where it can answer questions and control connected devices. Include benefits, risks and a justified recommendation.
+ANSWER:Hands-free requests can help a person with limited mobility and automate routine tasks. But voice recordings may reveal private conversations, and misrecognized commands or biased/inaccurate answers can cause harm. Limit retained data and permissions, require confirmation for consequential actions, and provide a manual fallback. Use it for convenient low-risk assistance where these safeguards are workable, while checking consequential information/actions.
+CRITERIA:[{'marks': 1, 'criterion': 'Concrete accessibility/convenience benefit.'}, {'marks': 1, 'criterion': 'Develops automation/assistance value.'}, {'marks': 1, 'criterion': 'Specific privacy risk.'}, {'marks': 1, 'criterion': 'Distinct error/bias/action risk.'}, {'marks': 1, 'criterion': 'Appropriate safeguards linked to risks.'}, {'marks': 1, 'criterion': 'Reasoned recommendation balancing benefits and risks.'}]
+
+P-SRC038-Q14-a B3.1.4 State 1
+State the role of __init__ when a new Python object is instantiated.
+ANSWER:It initializes the new object’s instance state/attributes from arguments or defaults.
+CRITERIA:[{'marks': 1, 'criterion': 'Initializes the object’s state/attributes.'}]
+
+P-SRC038-Q14-b B2.3.2,B2.3.4 Describe 2
+A Ticket object has status initially "open". Describe selection in a method update_status(result) that sets status="resolved" for result="success", status="failed" for result="failure", and leaves it unchanged for other results.
+ANSWER:Test result against success and set self.status to resolved; otherwise test failure and set failed. Other results perform no status assignment.
+CRITERIA:[{'marks': 1, 'criterion': 'Correct success test and resolved assignment.'}, {'marks': 1, 'criterion': 'Correct failure test/failed assignment, preserving other cases.'}]
+
+P-SRC038-Q14-c B2.2.2,B2.3.2,B2.3.3 Construct 4
+Every object in advisers has area, name and completed attributes. Construct selected_names(advisers) returning the names of housing advisers who completed more than 24 requests. Preserve list order.
+ANSWER:One solution:
+def selected_names(advisers):
+    names = []
+    for adviser in advisers:
+        if adviser.area == "housing" and adviser.completed > 24:
+            names.append(adviser.name)
+    return names
+CRITERIA:[{'marks': 1, 'criterion': 'Traverses all advisers.'}, {'marks': 1, 'criterion': 'Checks housing area.'}, {'marks': 1, 'criterion': 'Checks completed>24 together with area.'}, {'marks': 1, 'criterion': 'Returns only matching names in order.'}]
+
+P-SRC038-Q14-d-i B2.3.4 State 1
+State what return count does in a Python function.
+ANSWER:Ends that function call and supplies the current count value to its caller.
+CRITERIA:[{'marks': 1, 'criterion': 'Returns value to caller, ending call.'}]
+
+P-SRC038-Q14-d-ii B2.3.4 Construct 2
+Construct a Python function header for count_overdue that receives adviser_id and advisers, with optional type hints indicating an integer result. Do not write the body.
+ANSWER:def count_overdue(adviser_id: int, advisers) -> int:
+CRITERIA:[{'marks': 1, 'criterion': 'Correct function name and both parameters.'}, {'marks': 1, 'criterion': 'Syntactically correct header, with optional suitable hints.'}]
+
+P-SRC038-Q14-d-iii B2.2.2,B2.3.2,B2.3.3,B2.3.4 List 5
+Each adviser has id and tickets attributes. tickets is a list of Ticket objects or None. A ticket has days and status; it is overdue only when days>30 and status="open". Adviser IDs are unique. Construct count_overdue(adviser_id, advisers), returning0 if no adviser matches.
+ANSWER:One solution:
+def count_overdue(adviser_id, advisers):
+    count = 0
+    for adviser in advisers:
+        if adviser.id == adviser_id:
+            for ticket in adviser.tickets:
+                if ticket is not None and ticket.days > 30 and ticket.status == "open":
+                    count += 1
+    return count
+CRITERIA:[{'marks': 1, 'criterion': 'Initializes and returns count.'}, {'marks': 1, 'criterion': 'Finds matching adviser ID.'}, {'marks': 1, 'criterion': 'Traverses that adviser’s tickets.'}, {'marks': 1, 'criterion': 'Safely ignores None and tests days>30.'}, {'marks': 1, 'criterion': 'Tests open status and increments only matching tickets.'}]
+
+P-SRC038-Q15-a-i B3.1.2,B2.1.1 Identify 2
+A Trainee class needs joined_on, stored as an ISO date string, and exam_passed, which has only True/False states. Identify suitable Python types.
+ANSWER:str for joined_on; bool for exam_passed.
+CRITERIA:[{'marks': 1, 'criterion': 'str.'}, {'marks': 1, 'criterion': 'bool.'}]
+
+P-SRC038-Q15-a-ii B3.1.2,B3.2.1 Construct 4
+Construct a UML class design for Adviser with id:int, name:str and assign(ticket), and TraineeAdviser that inherits Adviser and adds joined_on:str, exam_passed:bool and record_exam(passed). Show attributes, operations and inheritance.
+ANSWER:Two three-compartment class boxes. Adviser contains id:int, name:str and assign(ticket). TraineeAdviser contains joined_on:str, exam_passed:bool and record_exam(passed). A generalization line with hollow triangle points from TraineeAdviser to Adviser.
+CRITERIA:[{'marks': 1, 'criterion': 'Both classes clearly separate names, attributes and operations.'}, {'marks': 1, 'criterion': 'Adviser attributes/operation correct.'}, {'marks': 1, 'criterion': 'Trainee additions/operation correct.'}, {'marks': 1, 'criterion': 'Correct inheritance direction/notation.'}]
+
+P-SRC038-Q15-b-i B3.2.1 State 1
+State the OOP relationship when TraineeAdviser is a specialized Adviser and reuses its behaviour.
+ANSWER:Inheritance / is-a.
+CRITERIA:[{'marks': 1, 'criterion': 'Inheritance or is-a.'}]
+
+P-SRC038-Q15-b-ii B3.2.4 State 1
+An Adviser stores references to Ticket objects that continue to exist in a central archive after that adviser is removed. State whether this is aggregation or composition.
+ANSWER:Aggregation.
+CRITERIA:[{'marks': 1, 'criterion': 'Aggregation.'}]
+
+P-SRC038-Q15-b-iii B3.2.1,B3.2.4 Describe 4
+Describe two differences between inheritance and aggregation, using TraineeAdviser inheriting Adviser and Adviser holding independently existing Ticket objects.
+ANSWER:Inheritance expresses is-a: a trainee is an adviser and reuses/extends inherited behaviour. Aggregation expresses has-a: an adviser refers to tickets without becoming a ticket; those ticket objects can survive independently when the adviser is removed.
+CRITERIA:[{'marks': 1, 'criterion': 'Inheritance is-a.'}, {'marks': 1, 'criterion': 'Reuses/extends behaviour or subtype explanation.'}, {'marks': 1, 'criterion': 'Aggregation has-a.'}, {'marks': 1, 'criterion': 'Independent component lifetime/contextual explanation.'}]
+
+P-SRC038-Q15-c B3.1.5 Outline 2
+Outline how encapsulation can protect an adviser’s completed-request count from invalid changes.
+ANSWER:Bundle the count and its operations in the class, and control access through methods that validate changes, such as rejecting negative counts instead of allowing unrestricted updates.
+CRITERIA:[{'marks': 1, 'criterion': 'State and behaviour grouped with controlled/hidden access.'}, {'marks': 1, 'criterion': 'Validating interface prevents invalid count changes.'}]
+
+P-SRC038-Q15-d B3.2.1 Define 1
+Define superclass in an inheritance relationship.
+ANSWER:A class whose attributes/behaviour are inherited or extended by a subclass.
+CRITERIA:[{'marks': 1, 'criterion': 'Parent class from which subclass inherits.'}]
+
+P-SRC038-Q16-a-i B2.1.4 Identify 3
+The following Python is meant to count housing and finance advisers. Identify three faults and their corrections.
+i = 0
+housing = 0
+while i > len(advisers):
+    if advisers[i].area == "housing":
+        housing += 1
+    elif advisers[i].area == "finance":
+        finance += 1
+print(housing, finance)
+ANSWER:The while condition should be i<len(advisers); initialize finance=0 before use; increment i inside the loop. As written the loop does not run and the final finance reference is undefined.
+CRITERIA:[{'marks': 1, 'criterion': 'Incorrect loop condition, corrected to i<len(advisers).'}, {'marks': 1, 'criterion': 'Missing finance initialization, corrected.'}, {'marks': 1, 'criterion': 'Missing i increment, corrected.'}]
+
+P-SRC038-Q16-a-ii B2.2.2,B2.3.2,B2.3.3,B2.3.4 Construct 7
+Each adviser has area and tickets. Each ticket entry is None or an object with result and client. Construct failed_clients(advisers) returning client names for tickets whose result is exactly "failure", belonging to finance advisers. Preserve traversal order and allow duplicate names for separate tickets.
+ANSWER:One solution:
+def failed_clients(advisers):
+    names = []
+    for adviser in advisers:
+        if adviser.area == "finance":
+            for ticket in adviser.tickets:
+                if ticket is not None:
+                    if ticket.result == "failure":
+                        names.append(ticket.client)
+    return names
+CRITERIA:[{'marks': 1, 'criterion': 'Creates output collection.'}, {'marks': 1, 'criterion': 'Traverses advisers.'}, {'marks': 1, 'criterion': 'Filters finance advisers.'}, {'marks': 1, 'criterion': 'Traverses each selected ticket list.'}, {'marks': 1, 'criterion': 'Safely skips None.'}, {'marks': 1, 'criterion': 'Tests exactly failure result.'}, {'marks': 1, 'criterion': 'Collects correct client names and returns list.'}]
+
+P-SRC038-Q17-a B2.2.2,B2.3.2,B2.3.3 List 7
+completed is an n-by-4 list of yearly totals, and row i belongs to advisers[i]. An adviser qualifies for rank 1 if some adjacent pair of years each has more than 6 completed requests. Construct update_ranks(advisers, completed). Change qualifying ranks to 1, leave all others unchanged, and return "No rank changed to 1" only when no rank actually changes; otherwise return "Rank updated".
+ANSWER:One solution:
+def update_ranks(advisers, completed):
+    changed = False
+    for i in range(len(advisers)):
+        qualifies = False
+        for year in range(3):
+            if completed[i][year] > 6 and completed[i][year+1] > 6:
+                qualifies = True
+        if qualifies and advisers[i].rank != 1:
+            advisers[i].rank = 1
+            changed = True
+    if not changed:
+        return "No rank changed to 1"
+    return "Rank updated"
+CRITERIA:[{'marks': 1, 'criterion': 'Tracks whether a rank actually changed.'}, {'marks': 1, 'criterion': 'Processes every corresponding row/adviser.'}, {'marks': 1, 'criterion': 'Checks only valid adjacent pairs0–1, 1–2, 2–3.'}, {'marks': 1, 'criterion': 'Both values must individually exceed6.'}, {'marks': 1, 'criterion': 'Sets qualifying adviser rank to 1.'}, {'marks': 1, 'criterion': 'Distinguishes already-rank 1 from a new change.'}, {'marks': 1, 'criterion': 'Returns correct message from change flag.'}]
+
+P-SRC038-Q17-b B2.2.2,B2.3.3 Outline 3
+Without writing code, outline steps to collect every non-None ticket belonging to finance advisers into one Python list. Each adviser has area and tickets.
+ANSWER:Create an empty list. Traverse advisers and select those whose area is finance. Traverse their ticket lists, skip None entries, and append each ticket object to the result.
+CRITERIA:[{'marks': 1, 'criterion': 'Create an empty result and traverse advisers.'}, {'marks': 1, 'criterion': 'Filter finance advisers and traverse tickets.'}, {'marks': 1, 'criterion': 'Skip None and append each qualifying ticket.'}]
+
+P-SRC038-Q18-a-i B4.1.4 State 2
+State two advantages of a balanced BST over an unsorted fixed-capacity array for a changing collection of uniquely keyed records.
+ANSWER:A balanced BST supports logarithmic key-search paths rather than an unsorted linear scan. Nodes can be added without choosing one fixed array capacity in advance.
+CRITERIA:[{'marks': 1, 'criterion': 'Correct balanced-search advantage with comparison.'}, {'marks': 1, 'criterion': 'Dynamic node growth rather than fixed capacity.'}]
+
+P-SRC038-Q18-a-ii B4.1.4 Outline 2
+Outline one performance limitation of a BST when its insertions create a chain.
+ANSWER:Its height can grow to n, so finding a key may require a linear number of comparisons rather than the short path of a balanced tree.
+CRITERIA:[{'marks': 1, 'criterion': 'Chain/unbalanced height near n.'}, {'marks': 1, 'criterion': 'Explains linear worst-case search.'}]
+
+P-SRC038-Q18-b B2.4.5 Determine 3
+Determine row_total([[9,8,7,6],[1,4,2,3]],1,0), showing every recursive call and the return calculation. Indices are zero-based.
+def row_total(grid, row, col):
+    if col == len(grid[row]) - 1:
+        return grid[row][col]
+    return grid[row][col] + row_total(grid, row, col+1)
+ANSWER:Calls (row, col)=(1, 0), (1, 1), (1, 2), (1, 3). The base returns 3; successive returns are 2+3=5, 4+5=9, 1+9=10.
+CRITERIA:[{'marks': 1, 'criterion': 'Correct calls through columns 0, 1, 2.'}, {'marks': 1, 'criterion': 'Correct base at column 3 and unwinding.'}, {'marks': 1, 'criterion': 'Final result10.'}]
+
+P-SRC038-Q18-c B2.4.4 State 2
+State two features of the following recursive pattern: a function calls itself on the next column until the final column is reached.
+ANSWER:It calls itself on a smaller remaining subproblem, and has a base case at the final column that stops further calls.
+CRITERIA:[{'marks': 1, 'criterion': 'Self-call on progressing/smaller subproblem.'}, {'marks': 1, 'criterion': 'Stopping base case.'}]
+
+P-SRC038-Q18-d B3.1.1 Define 1
+Define an object reference in OOP.
+ANSWER:A value that refers to a particular object instance rather than containing a separate copy of that object.
+CRITERIA:[{'marks': 1, 'criterion': 'Refers to an object instance.'}]
+
+P-SRC044-Q01-a-i A3.1.1 Identify 1
+EMPLOYEE(EmployeeID, Name, RoleID) uses EmployeeID to identify each row uniquely. State its primary key.
+ANSWER:EmployeeID.
+CRITERIA:[{'marks': 1, 'criterion': 'EmployeeID.'}]
+
+P-SRC044-Q01-a-ii A3.1.1 State 1
+EMPLOYEE(EmployeeID PK, Name, RoleID FK) refers to ROLE(RoleID PK, Grade). State the foreign key in EMPLOYEE.
+ANSWER:RoleID.
+CRITERIA:[{'marks': 1, 'criterion': 'RoleID.'}]
+
+P-SRC044-Q01-b A3.1.1 Describe 2
+Each employee holds one role; a role can be held by many employees. Employees can work in many branches and each branch has many employees. Describe the ROLE-to-EMPLOYEE and EMPLOYEE-to-BRANCH relationships.
+ANSWER:ROLE to EMPLOYEE is one-to-many. EMPLOYEE to BRANCH is many-to-many, normally represented through a link table.
+CRITERIA:[{'marks': 1, 'criterion': 'Role to employee one-to-many.'}, {'marks': 1, 'criterion': 'Employee to branch many-to-many.'}]
+
+P-SRC044-Q01-c A3.3.2 Outline 2
+Outline how a database query could find employees in a specified pay grade rather than showing every employee record.
+ANSWER:It selects the required fields and applies a condition on the pay grade, returning only matching employee rows.
+CRITERIA:[{'marks': 1, 'criterion': 'Selects required data/fields.'}, {'marks': 1, 'criterion': 'Filters rows using a condition.'}]
+
+P-SRC044-Q01-d A3.3.2 Construct 4
+EMPLOYEE(EmployeeID, FirstName, Surname, RoleID) and ROLE(RoleID, Grade) are related by RoleID. Construct SQL showing only FirstName, Surname and Grade for employees named Chen in grade 8.
+ANSWER:One solution:
+SELECT e.FirstName,e.Surname,r.Grade FROM Employee e JOIN Role r ON e.RoleID=r.RoleID WHERE e.Surname='Chen' AND r.Grade=8;
+CRITERIA:[{'marks': 1, 'criterion': 'Selects exactly three required fields.'}, {'marks': 1, 'criterion': 'Uses both tables.'}, {'marks': 1, 'criterion': 'Correct RoleID join.'}, {'marks': 1, 'criterion': 'Both surname and grade filters with AND.'}]
+
+P-SRC044-Q01-e A3.2.3 Outline 2
+Outline why an integer type is appropriate for a field storing a whole-number pay grade used in numeric sorting.
+ANSWER:Grades are whole numbers, so integers represent the allowed values without fractional parts. Numeric ordering places grade 10 after 9 instead of a character-based order such as10 before 2.
+CRITERIA:[{'marks': 1, 'criterion': 'Whole-number values fit integer.'}, {'marks': 1, 'criterion': 'Appropriate numeric sorting/calculation explanation.'}]
+
+P-SRC044-Q01-f A3.1.1,A3.3.5 Explain 6
+Explain two ways to restrict disclosure of employee salary data in a relational database. Develop each in the context of team managers and payroll staff.
+ANSWER:Use role-based access so payroll staff can access salary records while other users lack those permissions; this limits unnecessary exposure. Provide managers a restricted view containing only their team’s permitted columns and rows, hiding bank details and other teams’ salaries while allowing their defined task.
+CRITERIA:[{'marks': 1, 'criterion': 'Appropriate access permissions.'}, {'marks': 1, 'criterion': 'Explains restriction to authorized payroll role.'}, {'marks': 1, 'criterion': 'Concrete reduced salary exposure.'}, {'marks': 1, 'criterion': 'Restricted view.'}, {'marks': 1, 'criterion': 'Explains row/column subset for managers.'}, {'marks': 1, 'criterion': 'Concrete protected bank/other-team data.'}]
+
+P-SRC044-Q02-a A3.2.1 Describe 2
+Describe the difference between conceptual and logical database schemas.
+ANSWER:A conceptual schema gives a high-level view of entities and relationships. A logical schema specifies their structure in more detail, including attributes and keys, without choosing physical storage implementation.
+CRITERIA:[{'marks': 1, 'criterion': 'High-level conceptual entities/relationships.'}, {'marks': 1, 'criterion': 'More detailed logical attributes/keys/structure.'}]
+
+P-SRC044-Q02-b A3.3.1 Explain 2
+Explain why DDL is needed to implement an agreed database model, giving one suitable command.
+ANSWER:DDL defines the schema in the DBMS. CREATE TABLE can turn a modelled entity and attributes into a table with columns and key constraints.
+CRITERIA:[{'marks': 1, 'criterion': 'Defines/implements schema structure.'}, {'marks': 1, 'criterion': 'Correct command with structural example.'}]
+
+P-SRC044-Q02-c A3.2.1,A3.2.4 Explain 4
+Explain two reasons to model an equipment-loan database before creating its tables.
+ANSWER:Identifying entities and attributes checks that member, equipment and loan data support the required service instead of omitting essential facts. Defining keys and relationships lets each loan identify the correct member/item, supporting valid joins and avoiding ambiguous duplicated names.
+CRITERIA:[{'marks': 1, 'criterion': 'Identifies necessary entities/attributes.'}, {'marks': 1, 'criterion': 'Explains support for intended use/avoided omission.'}, {'marks': 1, 'criterion': 'Defines keys/relationships.'}, {'marks': 1, 'criterion': 'Explains reliable linking/retrieval.'}]
+
+P-SRC044-Q02-d B2.3.2 Explain 3
+A program accepts a day number only if1<=day<=31. Explain why passing that test does not prove that the entered day equals the value on an original form, and describe an additional check.
+ANSWER:The range test rejects impossible numbers but accepts a mistyped value such as12 instead of 21. Compare the entered value with the original form or use independently repeated entry and resolve differences. Rule conformity and faithful transcription are different checks.
+CRITERIA:[{'marks': 1, 'criterion': 'Range test checks permitted values, not intended source value.'}, {'marks': 1, 'criterion': 'Concrete in-range transcription error.'}, {'marks': 1, 'criterion': 'Appropriate source comparison/double-entry check.'}]
+
+P-SRC044-Q02-e A3.3.6 Outline 2
+Outline how a transaction can avoid leaving only half of an account transfer in a database when an update fails.
+ANSWER:Treat the debit and credit as one transaction. Commit both if successful; otherwise roll back the uncommitted changes so neither half remains.
+CRITERIA:[{'marks': 1, 'criterion': 'Both updates form one all-or-nothing transaction.'}, {'marks': 1, 'criterion': 'Commit both or roll back failed partial updates.'}]
+
+P-SRC044-Q02-f A3.1.1 Outline 2
+Outline how primary and foreign keys help keep loan/member data consistent.
+ANSWER:A member primary key uniquely identifies each member. A loan’s foreign key must match a member key, preventing a loan from referring to a nonexistent member.
+CRITERIA:[{'marks': 1, 'criterion': 'Primary key uniqueness/correct cross-table link.'}, {'marks': 1, 'criterion': 'Foreign-key rule prevents invalid references.'}]
+
+P-SRC044-Q03-a-i A3.1.1 Outline 2
+Outline why computing an employee’s current age from stored date of birth can avoid an inconsistency caused by separately storing age.
+ANSWER:A stored age becomes outdated at a birthday even when the date of birth is correct. Calculating it when needed avoids maintaining two dependent values that can disagree.
+CRITERIA:[{'marks': 1, 'criterion': 'Stored age can become outdated/inconsistent.'}, {'marks': 1, 'criterion': 'Calculation avoids redundant dependent values/update need.'}]
+
+P-SRC044-Q03-a-ii B2.3.1,B2.3.2 Describe 2
+Describe how to calculate a person’s completed years of age from birth year/month/day and today’s year/month/day, assuming a valid ordinary date.
+ANSWER:Subtract birth year from current year, then subtract one more if the current month/day is before the birthday this year.
+CRITERIA:[{'marks': 1, 'criterion': 'Year difference.'}, {'marks': 1, 'criterion': 'Adjusts by one before this year’s birthday.'}]
+
+P-SRC044-Q03-b A3.2.5 Outline 2
+Outline the difference between 1NF and 2NF.
+ANSWER:1NF requires atomic field values and no repeating groups. 2NF additionally requires every non-key attribute to depend on the whole candidate key, removing partial-key dependencies.
+CRITERIA:[{'marks': 1, 'criterion': 'Correct1NF atomic/no-repeating-group requirement.'}, {'marks': 1, 'criterion': '2NF includes1NF and removes partial-key dependencies.'}]
+
+P-SRC044-Q03-c A3.2.6 Construct 6
+A booking system stores MemberID, MemberName, GuideID, GuideName, DepartmentID, DepartmentName, BookingID, StartTime. Each guide belongs to one department. MemberID determines MemberName; GuideID determines GuideName and DepartmentID; DepartmentID determines DepartmentName. Each unique BookingID refers to one member and guide at StartTime. Construct a 3NF schema with keys.
+ANSWER:MEMBER(MemberID PK, MemberName); DEPARTMENT(DepartmentID PK, DepartmentName); GUIDE(GuideID PK, GuideName, DepartmentID FK); BOOKING(BookingID PK, MemberID FK, GuideID FK, StartTime).
+CRITERIA:[{'marks': 1, 'criterion': 'MEMBER correct.'}, {'marks': 1, 'criterion': 'DEPARTMENT correct.'}, {'marks': 1, 'criterion': 'GUIDE attributes and primary key.'}, {'marks': 1, 'criterion': 'DepartmentID foreign key in GUIDE.'}, {'marks': 1, 'criterion': 'BOOKING key and StartTime.'}, {'marks': 1, 'criterion': 'MemberID/GuideID foreign keys and no redundant names in BOOKING.'}]
+
+P-SRC044-Q04-d A1.1.4 Outline 2
+A monitoring program retains every reading in RAM. Outline why sampling every hour rather than every minute reduces its working-memory requirement, assuming equal-size records over the same day.
+ANSWER:It stores24 readings rather than 1440, so storage for the reading records is reduced by a factor of 60, leaving more working memory available.
+CRITERIA:[{'marks': 1, 'criterion': 'Fewer retained reading records, 24 versus1440.'}, {'marks': 1, 'criterion': 'Explains proportionately lower RAM use.'}]
+
+P-SRC044-Q04-e B2.2.2,B1.1.2 Describe 5
+Without writing code, describe a procedure to store24 hourly readings in parallel lists hours and readings so that each time is clearly associated with its measurement.
+ANSWER:Create two lists with 24 corresponding positions. For each index 0..23, store that hour in hours[index] and its measured value in readings[index]. Process all 24 indices and keep the same ordering in both lists so index i links the time and reading.
+CRITERIA:[{'marks': 1, 'criterion': 'Two parallel lists/24 positions.'}, {'marks': 1, 'criterion': 'Hours0..23 or equivalent clear times.'}, {'marks': 1, 'criterion': 'Procedure processes every hour.'}, {'marks': 1, 'criterion': 'Stores each measurement at matching index.'}, {'marks': 1, 'criterion': 'Explains preserved index association.'}]
+
+P-SRC044-Q04-f B2.2.2,B2.3.2,B2.3.3 Construct 8
+Construct day_stats(hours, readings) for 24 parallel entries, one for each whole hour0..23. Return maximum, minimum, overall mean and night mean in that order. Night is hours19..23 and 0..6. Use a loop to assess traversal, comparison and accumulation rather than min, max, sum or sorting.
+ANSWER:One solution:
+def day_stats(hours, readings):
+    low = high = readings[0]
+    total = night_total = 0
+    night_count = 0
+    for i in range(len(readings)):
+        value = readings[i]
+        total += value
+        if value < low:
+            low = value
+        if value > high:
+            high = value
+        if hours[i] >= 19 or hours[i] < 7:
+            night_total += value
+            night_count += 1
+    return high, low, total / len(readings), night_total / night_count
+CRITERIA:[{'marks': 1, 'criterion': 'Initializes extrema from valid reading.'}, {'marks': 1, 'criterion': 'Initializes totals and night count.'}, {'marks': 1, 'criterion': 'Traverses all corresponding readings/hours.'}, {'marks': 1, 'criterion': 'Accumulates total.'}, {'marks': 1, 'criterion': 'Correct minimum update.'}, {'marks': 1, 'criterion': 'Correct maximum update.'}, {'marks': 1, 'criterion': 'Night condition uses >=19 OR <7 and accumulates correct subset.'}, {'marks': 1, 'criterion': 'Returns extrema and correct means after traversal.'}]
+
+P-SRC044-Q05-b A4.3.1 Describe 3
+Describe how a linear regression model could use historical temperature measurements to predict sea-level measurements.
+ANSWER:Use temperature as a predictor and sea level as the continuous response, fit a slope/intercept to paired observations, and use the fitted relation to estimate sea level for a specified temperature. Check fit against observed values before trusting predictions.
+CRITERIA:[{'marks': 1, 'criterion': 'Correct predictor and continuous response.'}, {'marks': 1, 'criterion': 'Fits a linear relation/slope and intercept from paired data.'}, {'marks': 1, 'criterion': 'Uses/checks fitted relation for prediction.'}]
+
+P-SRC044-Q05-c A4.3.3 Evaluate 6
+Evaluate testing a trained ML flood-warning model only on examples used during training, compared with using held-out representative cases.
+ANSWER:Training-only scores can be optimistic because the model may fit those particular examples. Held-out cases test prediction on unseen data and better reveal overfitting. They should represent relevant conditions and include difficult cases; a small or unrepresentative test set still gives uncertain evidence. Prefer a separate representative test set, review appropriate performance measures and investigate errors before deployment.
+CRITERIA:[{'marks': 1, 'criterion': 'Training-only results can be optimistic.'}, {'marks': 1, 'criterion': 'Explains memorization/overfitting.'}, {'marks': 1, 'criterion': 'Held-out cases test generalization.'}, {'marks': 1, 'criterion': 'Representative/difficult cases improve relevance.'}, {'marks': 1, 'criterion': 'Explains remaining sampling/coverage limitation.'}, {'marks': 1, 'criterion': 'Supported evaluation/recommendation.'}]
+
+P-SRC044-Q06-b A1.1.4 Outline 2
+Outline why a renderer uses RAM while generating a 3D image from scene data.
+ANSWER:RAM holds currently used geometry, textures and intermediate working results so the processor/GPU can access them during rendering.
+CRITERIA:[{'marks': 1, 'criterion': 'Holds current scene/working data.'}, {'marks': 1, 'criterion': 'Makes data available for processing/rendering.'}]
+
+P-SRC044-Q06-c A1.1.2,A1.1.4 Discuss 5
+Discuss processing-time and memory considerations when a live 3D display adds many more objects and higher-resolution textures.
+ANSWER:More objects/pixels increase rendering work and can reduce frame rate unless processing throughput increases. A GPU can perform many similar graphics operations in parallel. Larger textures and working results need more RAM; insufficient capacity may force extra transfers or reduced detail. Choose processing and memory together against the target frame rate and acceptable detail, cost and power use.
+CRITERIA:[{'marks': 1, 'criterion': 'More graphics work increases time/reduces frame rate.'}, {'marks': 1, 'criterion': 'GPU parallel-processing benefit.'}, {'marks': 1, 'criterion': 'More working textures/data require RAM.'}, {'marks': 1, 'criterion': 'Develops memory-capacity/transfer consequence.'}, {'marks': 1, 'criterion': 'Balanced contextual hardware recommendation.'}]
+
+P-SRC044-Q07-d A2.2.2,A2.2.3 Explain 3
+Explain the client and web-server roles when a browser requests a museum’s opening-times page.
+ANSWER:The browser acts as client and sends a request to the museum’s web server. The server hosts the resource, processes the request and returns the page data. The client then presents the response to the user; the server can serve many separate client requests.
+CRITERIA:[{'marks': 1, 'criterion': 'Browser is requesting client.'}, {'marks': 1, 'criterion': 'Server hosts/provides requested resource.'}, {'marks': 1, 'criterion': 'Response returned for client presentation/multiple clients served.'}]
+
+P-SRC044-Q08-f B2.1.2,B2.3.2 Identify 4
+Identify four processing steps in check_upload below,including the case when both tests fail.
+def check_upload(extension, size):
+    errors = []
+    if extension.lower() not in ["txt", "csv"]:
+        errors.append("type")
+    if size > 1000000:
+        errors.append("size")
+    if errors == []:
+        return "accepted"
+    return errors
+ANSWER:Normalize the extension to lowercase and test permitted types. Add type error for disallowed types. Test size and add a size error if over1000000. Return accepted only when no errors exist; otherwise return the accumulated errors, so both errors appear when both checks fail.
+CRITERIA:[{'marks': 1, 'criterion': 'Case-normalized permitted-extension check.'}, {'marks': 1, 'criterion': 'Size threshold check.'}, {'marks': 1, 'criterion': 'Independent tests accumulate both errors.'}, {'marks': 1, 'criterion': 'Correct accepted-versus-error-list return behaviour.'}]
+
+P-SRC044-Q08-g A2.2.3 Explain 3
+Explain why a client-server service may keep its shared calculation rules on a central server when clients use different devices.
+ANSWER:The server applies one maintained set of rules to every request, so clients do not need separate installations of the full calculation logic. Updating the service can make results consistent across clients, but clients depend on server availability and network access.
+CRITERIA:[{'marks': 1, 'criterion': 'Central server provides shared processing/rules.'}, {'marks': 1, 'criterion': 'Explains consistent updates/results for varied clients.'}, {'marks': 1, 'criterion': 'Develops maintenance/device benefit or server/network dependence.'}]
+
+P-SRC044-Q09-a A1.2.2 Outline 2
+Outline how a lossless binary representation reduces repeated data while allowing exact reconstruction.
+ANSWER:It encodes repeated patterns or common symbols with a shorter reversible representation. Decompression recovers the original sequence exactly, so no original information is discarded.
+CRITERIA:[{'marks': 1, 'criterion': 'Shorter reversible representation of patterns/symbols.'}, {'marks': 1, 'criterion': 'Exact original reconstruction without lost data.'}]
+
+P-SRC044-Q09-c A3.4.4 Discuss 6
+A distributed database replicates personal records across several sites. Discuss the security benefits and risks of replication, and how a deletion request should be handled consistently. No knowledge of a particular privacy law is required.
+ANSWER:Replication supports fault tolerance: a site failure need not make all records unavailable. But every copy needs appropriate access controls; a weakly protected site can expose data, and incomplete deletion can leave personal records elsewhere. Coordinated updates/deletions and checks across replicas are needed to preserve consistency. Replication is useful for availability only when security and update consistency are managed across all sites.
+CRITERIA:[{'marks': 1, 'criterion': 'Replication availability/fault-tolerance benefit.'}, {'marks': 1, 'criterion': 'Explains a site-failure benefit.'}, {'marks': 1, 'criterion': 'Multiple copies increase security-management exposure.'}, {'marks': 1, 'criterion': 'Explains stale undeleted personal-data risk.'}, {'marks': 1, 'criterion': 'Coordinated deletion/update consistency requirement.'}, {'marks': 1, 'criterion': 'Balanced contextual conclusion.'}]
+
+P-SRC044-Q09-d A2.1.2 Explain 6
+Explain three ways cloud infrastructure could help a small subscription-software company serve overseas customers.
+ANSWER:Remote hosted resources can deliver the service over networks without shipping physical installations. Capacity can grow with international demand without purchasing all peak hardware upfront. Provider-managed infrastructure can reduce the small firm’s physical maintenance workload, allowing it to concentrate on maintaining the service, while it remains responsible for its own data/access configuration.
+CRITERIA:[{'marks': 1, 'criterion': 'Network-accessible remotely hosted service.'}, {'marks': 1, 'criterion': 'Explains overseas delivery without physical distribution.'}, {'marks': 1, 'criterion': 'Elastic/rented capacity.'}, {'marks': 1, 'criterion': 'Explains expansion/capital benefit.'}, {'marks': 1, 'criterion': 'Provider-managed physical infrastructure.'}, {'marks': 1, 'criterion': 'Explains small-team maintenance benefit without removing all responsibility.'}]
+
+P-SRC044-Q10-a B3.2.4 State 1
+A Producer object keeps references to Product objects that remain in an archive after the Producer object is deleted. State the class relationship.
+ANSWER:Aggregation / has-a with independent component lifetime.
+CRITERIA:[{'marks': 1, 'criterion': 'Aggregation.'}]
+
+P-SRC044-Q10-b B3.1.4 Outline 2
+Outline what happens when a Python class is instantiated.
+ANSWER:A new object instance is created, and its initializer sets instance attributes from arguments/default values.
+CRITERIA:[{'marks': 1, 'criterion': 'New instance created.'}, {'marks': 1, 'criterion': 'Constructor/initializer sets initial state.'}]
+
+P-SRC044-Q10-c B3.1.4 Construct 3
+Using the supplied class,construct a Python statement that creates a Producer for Sana Ali in Kenya and stores the object in maker.
+class Producer:
+    def __init__(self, name, region):
+        self.name = name
+        self.region = region
+        self.products = []
+ANSWER:maker = Producer("Sana Ali", "Kenya")
+CRITERIA:[{'marks': 1, 'criterion': 'Assigns created object to maker.'}, {'marks': 1, 'criterion': 'Calls Producer with valid Python syntax.'}, {'marks': 1, 'criterion': 'Correct name and region arguments in order.'}]
+
+P-SRC044-Q10-d B3.1.5 Outline 2
+Outline how information hiding can control changes to a Product object’s price.
+ANSWER:Keep price behind a controlled class interface instead of allowing arbitrary external changes. A set_price method can reject negative values before updating state.
+CRITERIA:[{'marks': 1, 'criterion': 'Limits direct external access to price.'}, {'marks': 1, 'criterion': 'Controlled/validating method preserves valid state.'}]
+
+P-SRC044-Q10-e B1.1.2,B1.1.3 Outline 4
+Outline two benefits of decomposing a sales program into functions for input, calculation and reporting.
+ANSWER:Each function can be tested separately with a small clear responsibility, helping isolate defects. Independent functions with agreed interfaces can be reused or developed by different programmers, so changes are easier to manage without rewriting the whole program.
+CRITERIA:[{'marks': 1, 'criterion': 'Separate small responsibilities/testing benefit.'}, {'marks': 1, 'criterion': 'Explains fault isolation.'}, {'marks': 1, 'criterion': 'Distinct reuse/parallel-development/maintenance benefit.'}, {'marks': 1, 'criterion': 'Explains agreed interface/local change consequence.'}]
+
+P-SRC044-Q10-f B3.1.2 Construct 3
+Construct a UML class box for Producer. It has private name:str, region:str and products:list, plus public get_name():str and add_product(product). Use visibility notation.
+ANSWER:Three compartments headed Producer; attributes -name:str, -region:str, -products:list; operations +get_name():str, +add_product(product).
+CRITERIA:[{'marks': 1, 'criterion': 'Named class with three compartments.'}, {'marks': 1, 'criterion': 'Correct attributes and methods.'}, {'marks': 1, 'criterion': 'Correct private/public visibility notation.'}]
+
+P-SRC044-Q11-a-i B2.1.1 State 1
+State a suitable Python type for material_name, which stores a material’s name.
+ANSWER:str.
+CRITERIA:[{'marks': 1, 'criterion': 'str/string.'}]
+
+P-SRC044-Q11-a-ii B2.1.1 State 1
+State a suitable Python type for mass_kg, which can include a fractional number of kilograms.
+ANSWER:float.
+CRITERIA:[{'marks': 1, 'criterion': 'float or justified decimal numeric representation.'}]
+
+P-SRC044-Q11-a-iii B2.1.1 State 1
+State a suitable Python type for needs_power, which stores either True or False.
+ANSWER:bool.
+CRITERIA:[{'marks': 1, 'criterion': 'bool/Boolean.'}]
+
+P-SRC044-Q11-b-i B3.2.1 Outline 4
+Outline two advantages of using inheritance for related Product types.
+ANSWER:Common fields/methods can be defined once in Product and reused by subclasses, reducing duplication. A correction to shared inherited behaviour can then benefit those subclasses without separately patching many copies, improving maintenance consistency.
+CRITERIA:[{'marks': 1, 'criterion': 'Common code reused through parent.'}, {'marks': 1, 'criterion': 'Explains reduced repeated implementation.'}, {'marks': 1, 'criterion': 'Shared changes benefit subclasses.'}, {'marks': 1, 'criterion': 'Explains consistent/easier maintenance.'}]
+
+P-SRC044-Q11-b-ii B3.2.1 Explain 3
+Explain a class hierarchy for Book, Model and AudioProduct, which share title and price but respectively add page_count, material and duration.
+ANSWER:Product defines shared title and price and common operations. Book, Model and AudioProduct inherit Product and add their own specific attribute. Objects are created using the appropriate specialized class, retaining the shared interface/state.
+CRITERIA:[{'marks': 1, 'criterion': 'Product superclass holds common fields/behaviour.'}, {'marks': 1, 'criterion': 'Three subclasses inherit and add correct specialized fields.'}, {'marks': 1, 'criterion': 'Appropriate specialized instances retain/reuse common design.'}]
+
+P-SRC044-Q11-c B2.2.2,B2.3.2,B2.3.3,B2.3.4 Construct 6
+producers contains objects with name and products. Each product has title and sold. Producer names are unique and titles are unique within one producer. Construct mark_sold(producers, producer_name, title), marking only that product sold and returning True; return False when absent.
+ANSWER:One solution:
+def mark_sold(producers, producer_name, title):
+    for producer in producers:
+        if producer.name == producer_name:
+            for product in producer.products:
+                if product.title == title:
+                    product.sold = True
+                    return True
+    return False
+CRITERIA:[{'marks': 1, 'criterion': 'Traverses producer list.'}, {'marks': 1, 'criterion': 'Matches producer_name.'}, {'marks': 1, 'criterion': 'Traverses selected producer’s products.'}, {'marks': 1, 'criterion': 'Matches title.'}, {'marks': 1, 'criterion': 'Sets sold=True on matched object.'}, {'marks': 1, 'criterion': 'Stops with True, otherwise returns False without changing unrelated products.'}]
+
+P-SRC044-Q12-a B2.1.1 State 1
+State the value of count after the initializer executes self.count=0 for a new object.
+ANSWER:0.
+CRITERIA:[{'marks': 1, 'criterion': '0.'}]
+
+P-SRC044-Q12-b B2.4.3,B2.2.2 Construct 5
+Construct top_five(products), returning the five most expensive Product objects in descending price order. There are at least five objects, each with price. Implement selection sort yourself rather than using a sorting built-in; leave the original list order unchanged. Equal-price order may be arbitrary.
+ANSWER:One solution:
+def top_five(products):
+    ordered = products[:]
+    for i in range(len(ordered)-1):
+        best = i
+        for j in range(i+1, len(ordered)):
+            if ordered[j].price > ordered[best].price:
+                best = j
+        ordered[i], ordered[best] = ordered[best], ordered[i]
+    return ordered[:5]
+CRITERIA:[{'marks': 1, 'criterion': 'Copies list and returns first five objects.'}, {'marks': 1, 'criterion': 'Correct outer pass and best-index initialization.'}, {'marks': 1, 'criterion': 'Scans remaining suffix with correct bounds.'}, {'marks': 1, 'criterion': 'Selects greatest price.'}, {'marks': 1, 'criterion': 'Swaps selected object into position, producing descending order.'}]
+
+P-SRC044-Q12-c B2.2.2,B2.3.1,B2.3.2,B2.3.3,B2.3.4 Construct 6
+Construct commission(products). Each product has price and sold. Return12% of the sum of prices of sold products only. products can be empty.
+ANSWER:One solution:
+def commission(products):
+    total = 0
+    for product in products:
+        if product.sold:
+            total += product.price
+    return total * 0.12
+CRITERIA:[{'marks': 1, 'criterion': 'Initializes total0.'}, {'marks': 1, 'criterion': 'Traverses all products.'}, {'marks': 1, 'criterion': 'Tests sold status.'}, {'marks': 1, 'criterion': 'Adds each sold product price once.'}, {'marks': 1, 'criterion': 'Computes12% of correct total.'}, {'marks': 1, 'criterion': 'Returns result, including0 for empty/no sales.'}]
+
+P-SRC044-Q12-d A1.2.2 Outline 2
+Outline why a character representation supporting many writing systems is useful in a database of international customer names.
+ANSWER:It can represent characters and accents from different languages within an agreed encoding, so names need not be lost or replaced by a restricted alphabet.
+CRITERIA:[{'marks': 1, 'criterion': 'Many scripts/accents represented in a consistent encoding.'}, {'marks': 1, 'criterion': 'Explains accurate international names/interchange.'}]

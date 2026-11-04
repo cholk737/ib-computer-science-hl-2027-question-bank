@@ -755,7 +755,7 @@
       ],
       "derivation_status": "adapted_unofficial",
       "unofficial": true,
-      "question_text": "Construct an ERD for members, access cards and borrowed devices. Each member has zero or one card;each card belongs to exactly one member. A member may borrow many devices;each device is currently assigned to zero or one member. Show cardinalities and optionality.",
+      "question_text": "Construct an ERD for members, access cards and borrowed devices. Each member has zero or one card; each card belongs to exactly one member. A member may borrow many devices; each device is currently assigned to zero or one member. Show cardinalities and optionality.",
       "syllabus_codes": [
         "A3.2.2"
       ],
@@ -765,7 +765,7 @@
       "command_term": "Construct",
       "difficulty": "medium",
       "adaptation_rationale": "ERD cardinality/modality explicitly scoped. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
-      "solution": "MEMBER1—0..1CARD;MEMBER0..1—0..manyDEVICE, with card/member and device/member directions labelled as specified.",
+      "solution": "MEMBER1—0..1CARD; MEMBER0..1—0..many DEVICE, with card/member and device/member directions labelled as specified.",
       "marking_points": [
         {
           "marks": 1,
@@ -796,7 +796,7 @@
       ],
       "derivation_status": "adapted_unofficial",
       "unofficial": true,
-      "question_text": "Explain why a database should store birth dates using a suitable date type and an unambiguous input convention, rather than arbitrary text such as03/04/2010.",
+      "question_text": "Explain why a database should store birth dates using a suitable date type and an unambiguous input convention, rather than arbitrary text such as 03/04/2010.",
       "syllabus_codes": [
         "A3.2.3"
       ],
@@ -806,7 +806,7 @@
       "command_term": "Explain",
       "difficulty": "medium",
       "adaptation_rationale": "Retain date consistency reasoning while replacing form-specific separation with proper database datatype selection. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
-      "solution": "Ambiguous text may mean3April or4March;consistent parsing into a date type gives the same intended date and allows meaningful date comparisons rather than text ordering.",
+      "solution": "Ambiguous text may mean3April or 4 March; consistent parsing into a date type gives the same intended date and allows meaningful date comparisons rather than text ordering.",
       "marking_points": [
         {
           "marks": 1,
@@ -909,7 +909,7 @@
       "command_term": "Outline",
       "difficulty": "medium",
       "adaptation_rationale": "Data duplication and dependency concerns explicit. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
-      "solution": "A changed address may be updated in only some copies, creating inconsistent contacts;many repeated addresses consume extra storage and repeated update work.",
+      "solution": "A changed address may be updated in only some copies, creating inconsistent contacts; many repeated addresses consume extra storage and repeated update work.",
       "marking_points": [
         {
           "marks": 1,
@@ -995,7 +995,7 @@
       "command_term": "Outline",
       "difficulty": "medium",
       "adaptation_rationale": "Retain concrete relational data retrieval benefit instead of generic information-system taxonomy. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
-      "solution": "Related event/seat/booking tables store current facts;queries retrieve unsold seats for the selected event to present current availability.",
+      "solution": "Related event/seat/booking tables store current facts; queries retrieve unsold seats for the selected event to present current availability.",
       "marking_points": [
         {
           "marks": 1,
@@ -1081,7 +1081,7 @@
       "command_term": "Explain",
       "difficulty": "medium",
       "adaptation_rationale": "Isolation and reliable transactions explicit. Scenario and wording rewritten; source reasoning retained only within supported 2027 scope.",
-      "solution": "The availability check and reservation update form a transaction;conflicting transactions are serialized or blocked/aborted. The second must recheck after the first commits and cannot confirm an already-booked seat.",
+      "solution": "The availability check and reservation update form a transaction; conflicting transactions are serialized or blocked/aborted. The second must recheck after the first commits and cannot confirm an already-booked seat.",
       "marking_points": [
         {
           "marks": 1,

@@ -56,7 +56,9 @@ add('8:f',['A4.1.1'],'Describe one use of an ML-based chatbot in a customer-supp
 
 def prepare():
  for e in E:
-  q=int(e['key'].split(':')[0]);e['context_pages']=QP[q];e['option']='A' if q<=4 else 'B' if q<=8 else 'C' if q<=12 else 'D'
+  q=int(e['key'].split(':')[0]);e['context_pages']=QP[q];
+  if e['key'] in ['13:b-i','13:b-ii','13:c-i','13:c-ii']:e['command']='State'
+  e['option']='A' if q<=4 else 'B' if q<=8 else 'C' if q<=12 else 'D'
   e['assets']=[dict(kind='source_page_evidence',description='Full source context,code,tables and diagrams retained; relevant visual elements inspected.',path=f'agents/chunk-2/agent-2-papers-b/papers/SRC-032/renders/page-{n:02}.png',source_pdf_page=n,visually_verified=n in [3,4,5,13,14,15,17,19,20]) for n in QP[q]]
  return {x['key']:x for x in extract('SRC-032')}
 def prefix():

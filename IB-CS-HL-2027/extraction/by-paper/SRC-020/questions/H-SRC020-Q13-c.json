@@ -34,7 +34,9 @@
       18
     ],
     "question_reference": "Q13 c",
-    "marking_summary": "isEmpty returns True exactly when no items remain. Checking before pop avoids attempting to remove an item from an empty stack.",
+    "marking_summary": "Exact original MS leaf excerpt: Award [2 max] isEmpty() returns a Boolean value True if the stack size is 0, else it returns False/ checks if stack is empty or not; it is used/called in conditions in if/while statements/ it is called before an attempt is made to remove the value from the stack; to prevent performing operations on an empty stack/ to prevent stack underflow error;",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [2 max]\nisEmpty() returns a Boolean value True if the stack size is 0, else it returns False/ checks if\nstack is empty or not;\nit is used/called in conditions in if/while statements/ it is called before an attempt is made to\nremove the value from the stack;\nto prevent performing operations on an empty stack/ to prevent stack underflow error;",
     "source_issues": [],
     "source_marking_evidence": "– 18 – M23/4/COMSC/HP1/ENG/TZ2/XX/M \n13. (a) Award [4 max] \n The working may be differently represented. If only the final result (5) is shown, then award \n only one mark. \nfunc(5) \n= func(4) +  func(3)      ; \n= func(3) +  func(2) +  func(2) +  func(1) =   func(3)  + 2 * func(2) + 1  ;  \n= func(2) +  func(1) +  2 (func(1) +  func(0) )+ 1 =  func(2) +1 + 2+1    ;  \n= func(1) +  func(0) + 4  = 1  +0 +  4  =5      ; \n(b) Award [4 max]\nAward [1] for a disadvantage and [1] for the elaboration, x2.\nrecursion is memory intensive;\nbecause memory (call stack) is used to store all the intermediate arguments and\nreturn values/ could lead to stack overflow (if there is a large amount of data);\nrecursion can be slow;\nif not implemented correctly/if too many recursive calls occur;\ndifficult to think of the logic of a recursive function/ complexity of the paradigm;\nhard to construct/ analyse /understand the code;\n(c) Award [2 max]\nisEmpty() returns a Boolean value True if the stack size is 0, else it returns False/ checks if\nstack is empty or not;\nit is used/called in conditions in if/while statements/ it is called before an attempt is made to\nremove the value from the stack;\nto prevent performing operations on an empty stack/ to prevent stack underflow error;"
   },
@@ -43,7 +45,7 @@
     {
       "syllabus_code": "B2.2.3",
       "scope_evidence": "• Must include fundamental operations such as push, pop, peek and isEmpty\n• How stack operations impact both performance and memory usage\n• An appropriate stack for a specific problem",
-      "rationale": "Outline what a stack’s isEmpty operation returns and why a pop operation may first check it assesses Explain the concept of a stack as a “last in, first out” (LIFO) data structure.",
+      "rationale": "Original and adapted within-scope skill: Outline what a stack’s isEmpty operation returns and why a pop operation may first check it; guidance target: Explain the concept of a stack as a “last in, first out” (LIFO) data structure.",
       "theme": "B",
       "level": "SL/HL common",
       "confidence": "high",

@@ -1,0 +1,56 @@
+{
+  "question_id": "P-SRC032-Q01-c",
+  "source_question_ids": [
+    "H-SRC032-Q01-c"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "Outline two checks a Python input routine can apply to an identifier that must contain exactly three uppercase English letters followed by four decimal digits.",
+  "syllabus_codes": [
+    "B2.1.2",
+    "B2.3.2"
+  ],
+  "theme": "B",
+  "level": "SL/HL common",
+  "marks": 4,
+  "command_term": "Outline",
+  "difficulty": "medium",
+  "adaptation_rationale": "Retains string-format validation reasoning but does not claim database validation-check taxonomy is a separate2027 requirement; conversion uses programming/string selection context.",
+  "solution": "Check total length is 7 so incomplete/overlong values are rejected. Check positions0–2 are A–Z and positions3–6 are 0–9 so the required format is enforced.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Length check."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct expected length 7 and purpose."
+    },
+    {
+      "marks": 1,
+      "criterion": "Position/character-format check."
+    },
+    {
+      "marks": 1,
+      "criterion": "Correct letters/digits pattern and purpose."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      4
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC032-Q01-c.json",
+  "question_path": "question-bank/questions/P-SRC032-Q01-c.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC032-Q01-c.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

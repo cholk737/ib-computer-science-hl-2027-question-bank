@@ -1,0 +1,92 @@
+{
+  "source_question_id": "H-SRC044-Q10-e",
+  "source_id": "SRC-044",
+  "source_filename": "Computer_science_paper_2_TZ3_SL (1).pdf",
+  "year": "2025",
+  "session": "May",
+  "source_level": "SL",
+  "paper": "2",
+  "zone": "TZ3 (filename; numerical cover code)",
+  "option": "D",
+  "question": 10,
+  "subquestion": "e",
+  "source_pdf_pages": [
+    18
+  ],
+  "source_printed_pages": [
+    "17"
+  ],
+  "original_marks": 4,
+  "command_term": "Outline",
+  "original_text": "Outline two advantages of modularity in program development.",
+  "parent_context": "– 16 – 2225 – 6423\nOption D — Object-oriented programming\n10. An art shop sells the work of several artists. Each artist has many artworks for sale. A system \nis designed to manage artworks, sales and customers.\nThe following shows part of the code for the two classes, Artist and Artwork:\npublic class Artist {\n    private String artistName;      // name of the artist\n    private String artistLocation;  // current location of the artist\n    private int noOfArtworks;       // number of works of art the artist has \n                                    // stored in the array theArtworks\n    private Artwork [] theArtworks; // details of the works of art produced \n                                    // by the artist\n    public Artist(String artistName, String artistLocation){\n        this.artistName = artistName;\n        this.artistLocation = artistLocation;\n        noOfArtworks = 0;\n        theArtworks = new Artwork [100]; // an artist has a maximum of 100\n                                         // artworks\n    }\n    public String getName() {\n        return artistName;\n    }\n    public String getLocation() {\n        return artistLocation;\n    }\n    public Artwork getArtwork(int x) {\n        return theArtworks[x];\n    }\n    public void addArtwork(Artwork x) {\n        theArtworks[noOfArtworks] = x;\n        noOfArtworks = noOfArtworks + 1;\n    }\n    public double commissionToPay() {\n        // code missing\n    }\n \n    public Artwork[] sortArt() {\n        // code missing\n    }\n} // end of class Artist\n(Option D continues on the following page)\n– 17 – 2225 – 6423\nTurn over\n(Option D, question 10 continued)\npublic class Artwork {\n    private String artworkTitle; // name of the artwork\n    private int artworkPrice;    // price of artwork\n    private boolean isSold;      // if the artwork has been sold or not\n    public Artwork(String artworkTitle, int artworkPrice) {\n        this.artworkTitle = artworkTitle;\n        this.artworkPrice = artworkPrice;\n        isSold = false; // default value is not sold\n    }\n    public String getArtworkTitle(){\n        return artworkTitle;\n    }\n    public void isSold(){\n        isSold = true;\n    }\n} // end of class Artwork\n(a) State the relationship between the Artist class and Artwork class. [1]\n(b) Outline what is meant by instantiation of an object. [2]\n(c) Construct the code required to instantiate the artist “Thomas Lucas” from “Ireland”. [3]\n(d) With reference to the Artist and Artwork classes, outline the use of the \nmodifier private. [2]\n(e) Outline two advantages of modularity in program development. [4]\n(f) Construct a UML diagram to represent the Artist class. [3]\n(Option D continues on the following page)",
+  "assets": [
+    {
+      "kind": "source_page_evidence",
+      "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-17.png",
+      "source_pdf_page": 17,
+      "visually_verified": true
+    },
+    {
+      "kind": "source_page_evidence",
+      "description": "Original full page with all contextual figure/table/code content; relevant visuals inspected.",
+      "path": "agents/chunk-2/agent-2-papers-b/papers/SRC-044/renders/page-18.png",
+      "source_pdf_page": 18,
+      "visually_verified": true
+    }
+  ],
+  "assessed_concepts": [
+    "Original source task: Outline two advantages of modularity in program development.",
+    "Outline two benefits of decomposing a sales program into functions for input,calculation and reporting"
+  ],
+  "difficulty": "medium",
+  "markscheme": {
+    "status": "uploaded_official_available",
+    "source_id": "SRC-046",
+    "filename": "Computer_science_paper_2_TZ3_SL_markscheme.pdf",
+    "pdf_pages": [
+      22
+    ],
+    "question_reference": "Q10 e",
+    "marking_summary": "Exact original MS leaf excerpt: Award [4 max] Easier / faster to debug; because there are far fewer mistakes in the smaller/individual modules; Speedier / faster completion of the project; because different teams work on different modules (simultaneously); Collaborative / qualitative development; as different teams work on different modules at the same time / teams (programmers) with expertise work on specific modules; Facilitates reusability of the code; as the existing modules can be reused across other modules; Improves code readability / organisation; smaller manageable modules leading to better logical organization; Reduces the coupling effect; leading to easier/faster maintenance of module not affecting others; Mark as [2] and [2] Note: Do not allow mixing the points from different clusters. Do not allow easier/faster without any further description in context of modularity.",
+    "summary_kind": "exact_original_leaf_excerpt",
+    "source_marking_leaf_evidence": "Award [4 max]\nEasier / faster to debug; \nbecause there are far fewer mistakes in the smaller/individual modules; \nSpeedier / faster completion of the project; \nbecause different teams work on different modules (simultaneously); \nCollaborative / qualitative development; \nas different teams work on different modules at the same time / teams (programmers) with \nexpertise work on specific modules; \nFacilitates reusability of the code; \nas the existing modules can be reused across other modules; \nImproves code readability / organisation; \nsmaller manageable modules leading to better logical organization; \nReduces the coupling effect; \nleading to easier/faster maintenance of module not affecting others; \nMark as [2] and [2] \nNote: Do not allow mixing the points from different clusters. Do not allow easier/faster without \nany further description in context of modularity.",
+    "source_issues": [],
+    "source_marking_evidence": "– 22 – 2225 – 6423M \nOption D – Object-oriented programming \n10. (a) Award [1 max]\naggregation; \nhas a;   \nNote: As long as the relationship is clearer, award mark. \n(b) Award [2 max]\ninstantiation is the process of creating a new object of the class;\ninvolves calling the constructor of the class; \nobject’s attributes are initialized / object gets memory during instantiation; \n(c) Award [3 max]\nAward [1] for Artist A  // (accept any name)\nAward [1] for new Artist()\nAward [1] for correct arguments \"Thomas Lucas\", \"Ireland\";\nArtist A = new Artist (\"Thomas Lucas\", \"Ireland\");\n(d) Award [2 max]\nAward [1] mark for -\nprivate attributes can't be accessed outside the class / private attributes need accessor/mutator \nmethods to be accessed/modified;  \nAward [1] mark for -   \nusing the reference from the Artist/Artwork class. \nNote: A candidate can score both marks in one sentence.   \nExample - The attribute artworkTitle in the Artwork class can only be accessed by using \nthe appropriate accessor method in the Artist class.  \n(e) Award [4 max]\nEasier / faster to debug; \nbecause there are far fewer mistakes in the smaller/individual modules; \nSpeedier / faster completion of the project; \nbecause different teams work on different modules (simultaneously); \nCollaborative / qualitative development; \nas different teams work on different modules at the same time / teams (programmers) with \nexpertise work on specific modules; \nFacilitates reusability of the code; \nas the existing modules can be reused across other modules; \nImproves code readability / organisation; \nsmaller manageable modules leading to better logical organization; \nReduces the coupling effect; \nleading to easier/faster maintenance of module not affecting others; \nMark as [2] and [2] \nNote: Do not allow mixing the points from different clusters. Do not allow easier/faster without \nany further description in context of modularity. "
+  },
+  "relevance_status": "B",
+  "mappings": [
+    {
+      "syllabus_code": "B1.1.2",
+      "scope_evidence": "• Abstraction, algorithmic design, decomposition, pattern recognition",
+      "rationale": "Adapted target only: Outline two benefits of decomposing a sales program into functions for input,calculation and reporting; guidance target: Describe the fundamental concepts of computational thinking. Adaptation: Explicitly assesses decomposition from computational thinking rather than an unsupported broad modularity slogan.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    },
+    {
+      "syllabus_code": "B1.1.3",
+      "scope_evidence": "• Computational thinking does not necessarily involve programming—it is a toolkit of available techniques for problem-solving.\n• Real-world examples may include software development, data analysis, machine learning, database design, network security.",
+      "rationale": "Adapted target only: Outline two benefits of decomposing a sales program into functions for input,calculation and reporting; guidance target: Explain how applying computational thinking to fundamental concepts is used to approach and solve problems in computer science. Adaptation: Explicitly assesses decomposition from computational thinking rather than an unsupported broad modularity slogan.",
+      "theme": "B",
+      "level": "SL/HL common",
+      "confidence": "high",
+      "review_required": false
+    }
+  ],
+  "exclusion_reason": "",
+  "uncertainty_flags": [],
+  "verification": {
+    "source_text": "Read complete source page and matched leaf/mark to original PDF.",
+    "markscheme": "Read cited MS page(s).",
+    "visual": "Relevant source context/code/figures retained in listed assets, with per-asset visual verification.",
+    "technical": "Independently reasoned and compared with available source marking points."
+  },
+  "adaptation_reuse_question_id": "",
+  "practice_question_ids": [
+    "P-SRC044-Q10-e"
+  ],
+  "coordinator_status": "batch_structure_source_marks_and_sample_review_passed"
+}

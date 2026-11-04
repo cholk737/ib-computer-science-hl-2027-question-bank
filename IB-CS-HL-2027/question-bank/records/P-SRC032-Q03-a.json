@@ -1,0 +1,47 @@
+{
+  "question_id": "P-SRC032-Q03-a",
+  "source_question_ids": [
+    "H-SRC032-Q03-a"
+  ],
+  "derivation_status": "adapted_unofficial",
+  "unofficial": true,
+  "question_text": "A row contains StudentID=21 and CourseIDs=\"C1, C2, C3\" in one cell. Outline why this representation is not in 1NF.",
+  "syllabus_codes": [
+    "A3.2.5"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 2,
+  "command_term": "Outline",
+  "difficulty": "medium",
+  "adaptation_rationale": "Rebuilt scenario and response wording while retaining the supported reasoning; source-specific obsolete material excluded.",
+  "solution": "The course cell contains a repeating group/multiple values rather than a single atomic course value. Separate rows/relations are needed to represent each enrolment.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Non-atomic/repeating group identified."
+    },
+    {
+      "marks": 1,
+      "criterion": "Explains separate course/enrolment representation."
+    }
+  ],
+  "acceptable_alternatives": [],
+  "partial_credit_notes": "Award independent criteria up to the stated total; accept equivalent technically correct wording/solutions.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Concrete answer reasoned and checked against full syllabus guidance and available source MS.",
+    "source_comparison": [
+      7
+    ],
+    "test_code": "",
+    "result_file": ""
+  },
+  "code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/P-SRC032-Q03-a.json",
+  "question_path": "question-bank/questions/P-SRC032-Q03-a.json",
+  "markscheme_path": "question-bank/markschemes/P-SRC032-Q03-a.json",
+  "coordinator_status": "batch_checks_and_source_solution_sample_review_passed; preliminary_unofficial"
+}

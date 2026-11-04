@@ -27,5 +27,6 @@
     "result_file": ""
   },
   "code": "def scale_scores(scores):\n    result = []\n    for score in scores:\n        result.append(round((score-20)/(80-20)*(95-30)+30))\n    return result",
-  "markscheme_status": "preliminary_unofficial_verified_by_author"
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "general_policy_reference": "question-bank/markschemes/MARKING_POLICY.md"
 }
