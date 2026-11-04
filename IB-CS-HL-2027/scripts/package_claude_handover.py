@@ -42,6 +42,19 @@ def main():
     head=run('git','rev-parse','HEAD').strip()
     status=run('git','status','--porcelain')
     assert not status,'Commit all content before packaging:\n'+status
+    publication_path=P/'audits/handover/GITHUB_PUBLICATION.json'
+    publication=json.loads(publication_path.read_text()) if publication_path.exists() else {}
+    github_created=publication.get('created') is True and publication.get('private') is True
+    remote_url=publication.get('repository_url') if github_created else None
+    verified_remote_head=None
+    gh_path=os.environ.get('IBCS_GH_PATH')
+    if github_created and gh_path:
+        repository=publication['repository_full_name']
+        live_repo=json.loads(run(gh_path,'api','repos/'+repository,'--jq','{full_name,private,html_url}'))
+        assert live_repo['private'] is True and live_repo['html_url']==remote_url
+        verified_remote_head=run(gh_path,'api','repos/'+repository+'/git/ref/heads/main','--jq','.object.sha').strip()
+        assert verified_remote_head==head,'Push final content before packaging the GitHub handover.'
+    push_completed=github_created and verified_remote_head==head
     tracked=run('git','ls-files','-z').split('\0')
     tracked=[s for s in tracked if s]
     bundle=H/'ib-computer-science-hl-2027-question-bank.bundle'
@@ -96,10 +109,10 @@ def main():
         portability={'git_bundle_clone_restores_head':head,'phase0_commit_and_823_bank_restored':True,'relocated_database_integrity':'ok','incremental_import':imported,'query_checks':['exact stable original ID','set scope code','broad networks topic','pasted official set-operations guidance','student answer separation and explicit answer retrieval'],'source_root_rebased':True,'source_pdf_hashes_checked':48,'all_passed':True,'limits':'Local data/API semantics checked after relocation. No new browser layout approval, whole-corpus independent verification or GitHub push is implied.'}
         db.close()
     put(H/'PORTABILITY_VERIFICATION.json',portability)
-    repo_status={'repository_name_requested':'ib-computer-science-hl-2027-question-bank','local_head':head,'local_history_preserved':True,'phase0_commit':'26aa6de','working_content_committed':True,'github_private_repository_created':False,'remote_url':None,'push_completed':False,'reason':'Authenticated connector lacks repository creation; gh unavailable; browser creation path required login. User-authorized local fallback used.','git_bundle':bundle.name,'git_bundle_sha256':sha(bundle),'git_bundle_verify_passed':True,'git_bundle_clone_passed':True,'git_lfs_used':False,'large_file_limit_note':'Every included required file below90MiB and full data present; no LFS placeholders.'}
+    repo_status={'repository_name_requested':'ib-computer-science-hl-2027-question-bank','local_head':head,'local_history_preserved':True,'phase0_commit':'26aa6de','working_content_committed':True,'github_private_repository_created':github_created,'remote_url':remote_url,'push_completed':push_completed,'verified_remote_main':verified_remote_head,'private_visibility_independently_verified':bool(github_created and gh_path),'reason':'Created using signed-in Chrome; authenticated GitHub API confirmed private visibility and exact remote branch commit.' if push_completed else 'Remote publishing not verified for this archive; use the local snapshot and Git bundle.','git_bundle':bundle.name,'git_bundle_sha256':sha(bundle),'git_bundle_verify_passed':True,'git_bundle_clone_passed':True,'git_lfs_used':False,'large_file_limit_note':'Every included required file below90MiB and full data present; no LFS placeholders.'}
     put(H/'REPOSITORY_STATUS.json',repo_status)
     ignored=run('git','ls-files','--others','--ignored','--exclude-standard','IB-CS-HL-2027').splitlines()
-    package_report={'saved_at':datetime.now(ZoneInfo('Europe/Zurich')).isoformat(),'commit':head,'project_payload_files':len(project_rows),'project_payload_bytes':sum(r['bytes'] for r in project_rows),'sources_included':48,'snapshot_rule':'All committed repository content except wrapper documents, which are included once beside PROJECT_FILES. Working project and root instructions retain relative paths.','excluded_runtime_files':ignored,'other_exclusions':['Git internals/credentials are replaced by a full bundle; no .git/config or auth files copied','Redundant parent upload PDFs: exact available project source copies are included and hash-verified','Caches, .pyc, .tmp, sqlite journal/WAL/SHM, .DS_Store, env credentials; no durable project question/evidence record intentionally omitted'],'unavailable_source_files':['Uploaded official matching markscheme for SRC001','Uploaded official matching markscheme for SRC002'],'remote_publishing_incomplete':True}
+    package_report={'saved_at':datetime.now(ZoneInfo('Europe/Zurich')).isoformat(),'commit':head,'project_payload_files':len(project_rows),'project_payload_bytes':sum(r['bytes'] for r in project_rows),'sources_included':48,'snapshot_rule':'All committed repository content except wrapper documents, which are included once beside PROJECT_FILES. Working project and root instructions retain relative paths.','excluded_runtime_files':ignored,'other_exclusions':['Git internals/credentials are replaced by a full bundle; no .git/config or auth files copied','Redundant parent upload PDFs: exact available project source copies are included and hash-verified','Caches, .pyc, .tmp, sqlite journal/WAL/SHM, .DS_Store, env credentials; no durable project question/evidence record intentionally omitted'],'unavailable_source_files':['Uploaded official matching markscheme for SRC001','Uploaded official matching markscheme for SRC002'],'remote_publishing_incomplete':not push_completed}
     put(H/'PACKAGE_BUILD_REPORT.json',package_report)
     excluded_receipts={'HANDOVER_FILE_MANIFEST.json','ARCHIVE_VERIFICATION.json'}
     wrapper_rows=[]
@@ -120,14 +133,14 @@ def main():
         for r in project_rows:
             data=archive.read('CLAUDE_HANDOVER/'+r['path']);assert hashlib.sha256(data).hexdigest()==r['sha256'] and len(data)==r['bytes']
         for r in wrapper_rows:assert hashlib.sha256(archive.read('CLAUDE_HANDOVER/'+r['path'])).hexdigest()==r['sha256']
-    verification={'archive_filename':DEST.name,'content_commit':head,'project_files_sha256_checked':len(project_rows),'wrapper_files_sha256_checked':len(wrapper_rows),'payload_crc_test_passed':True,'unique_safe_archive_paths':True,'full_git_bundle_included_and_clone_verified':True,'relocated_database_search_and_sources_passed':True,'questions':826,'adapted':823,'original':3,'sources_included':48,'missing_durable_project_files':[],'unavailable_original_sources':['SRC001/SRC002 official matching markschemes were never uploaded'],'known_unfinished_work':'Chunk3 remains incomplete; see CURRENT_PROGRESS and complete code/bullet/record backlog. GitHub creation/push incomplete.','receipt_note':'Payload was verified before appending this receipt. Packaging routine also checks the final expanded ZIP CRC and atomically publishes only on success.'}
+    verification={'archive_filename':DEST.name,'content_commit':head,'project_files_sha256_checked':len(project_rows),'wrapper_files_sha256_checked':len(wrapper_rows),'payload_crc_test_passed':True,'unique_safe_archive_paths':True,'full_git_bundle_included_and_clone_verified':True,'relocated_database_search_and_sources_passed':True,'questions':826,'adapted':823,'original':3,'sources_included':48,'missing_durable_project_files':[],'unavailable_original_sources':['SRC001/SRC002 official matching markschemes were never uploaded'],'github_private_repository_created':github_created,'github_push_verified':push_completed,'known_unfinished_work':'Chunk3 remains incomplete; see CURRENT_PROGRESS and complete code/bullet/record backlog.','receipt_note':'Payload was verified before appending this receipt. Packaging routine also checks the final expanded ZIP CRC and atomically publishes only on success.'}
     put(H/'ARCHIVE_VERIFICATION.json',verification)
     with zipfile.ZipFile(temporary,'a',compression=zipfile.ZIP_DEFLATED,compresslevel=6) as archive:archive.write(H/'ARCHIVE_VERIFICATION.json','CLAUDE_HANDOVER/ARCHIVE_VERIFICATION.json')
     with zipfile.ZipFile(temporary) as archive:assert archive.testzip() is None;assert len(archive.namelist())==len(files)+1
     os.replace(temporary,DEST)
     checksum=sha(DEST);DEST.with_suffix(DEST.suffix+'.sha256').write_text(checksum+'  '+DEST.name+'\n')
     assert not run('git','status','--porcelain'),'Packaging unexpectedly changed committed content.'
-    print(json.dumps({'zip':str(DEST),'bytes':DEST.stat().st_size,'sha256':checksum,'head':head,'archive_members':len(files)+1,'project_files':len(project_rows),'all_package_checks_passed':True,'github_created':False}),flush=True)
+    print(json.dumps({'zip':str(DEST),'bytes':DEST.stat().st_size,'sha256':checksum,'head':head,'archive_members':len(files)+1,'project_files':len(project_rows),'all_package_checks_passed':True,'github_created':github_created,'github_push_verified':push_completed}),flush=True)
 
 
 if __name__=='__main__':main()

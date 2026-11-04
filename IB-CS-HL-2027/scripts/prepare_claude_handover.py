@@ -353,6 +353,9 @@ Older source/PDF extraction verification scripts may additionally need pypdf, pd
 """)
     db.close()
     apply_question_generation_instruction()
+    if (P/'audits/handover/GITHUB_PUBLICATION.json').exists():
+        from sync_github_handover_docs import main as sync_github_handover_docs
+        sync_github_handover_docs()
     print(json.dumps({'handover_markdown_files_created':len(list(H.glob('*.md'))),'structured_backlog_rows':len(backlog),'project_snapshot_status':'not yet copied; packaging follows final commit','counts':{k:counts[k] for k in ['questions','adapted','original','explicit_Python_construction_directives']}}))
 
 

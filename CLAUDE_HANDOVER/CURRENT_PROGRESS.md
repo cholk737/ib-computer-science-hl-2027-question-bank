@@ -1,6 +1,6 @@
 # Current progress — verified saved counts
 
-Saved 2026-11-04T19:29:54.384789+01:00; active **Chunk 3 incomplete**. Chunk1 complete at46e2823; Chunk2 complete atdd5285c. Repository-first preservation commit26aa6de. Last generated checkpoint at document creation: `C3-20261104-193554-099234`; the actual newest ID is in PROJECT_FILES/IB-CS-HL-2027/PROGRESS.md and audits/chunk-3/LATEST_CHECKPOINT.json. REPOSITORY_STATUS.json records actual final local/remote/bundle status; no GitHub URL exists at this stage.
+Saved 2026-11-04T19:29:54.384789+01:00; active **Chunk 3 incomplete**. Chunk1 complete at46e2823; Chunk2 complete atdd5285c. Repository-first preservation commit26aa6de. Last generated checkpoint at document creation: `C3-20261104-193554-099234`; the actual newest ID is in PROJECT_FILES/IB-CS-HL-2027/PROGRESS.md and audits/chunk-3/LATEST_CHECKPOINT.json. REPOSITORY_STATUS.json records actual final local/remote/bundle status; the private repository is https://github.com/ityou3/ib-computer-science-hl-2027-question-bank; read HANDOVER_STEPS.md for transfer instructions.
 
 | Item | Verified saved count/status |
 |---|---:|

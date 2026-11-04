@@ -1,0 +1,5 @@
+# GitHub repository and handover status
+
+Private repository created and initial full project/history push completed: [https://github.com/ityou3/ib-computer-science-hl-2027-question-bank](https://github.com/ityou3/ib-computer-science-hl-2027-question-bank). The first verified pushed commit was `d1526c22e7c260cde5b5c6fabb5258decd4c5975`. Current exact final commit and privacy/push verification are recorded in the generated REPOSITORY_STATUS.json and GitHub branch state; do not substitute this earlier milestone for the latest branch.
+
+Use [HANDOVER_STEPS.md](HANDOVER_STEPS.md) for the simple transfer process. The complete downloadable archive is published under [Releases](https://github.com/ityou3/ib-computer-science-hl-2027-question-bank/releases) after its bundle, contents and relocated database pass verification. Earlier source notes describing unavailable GitHub creation are historical; the signed-in Chrome and GitHub CLI flow subsequently succeeded. No credentials or authentication configuration is included in the handover.

@@ -1,7 +1,14 @@
 # ib-computer-science-hl-2027-question-bank
 
-Private, unofficial IB Computer Science HL2027 question-bank project. Existing Git history preserved. Actual working project: IB-CS-HL-2027/. Start Claude continuation with CLAUDE.md and CLAUDE_HANDOVER/00_READ_FIRST.md. Active Chunk3 incomplete:826 questions, all823 adapted preserved plus3 originals. No examination generation now.
+Private, unofficial IB Computer Science HL2027 question bank and complete Claude handover. **[Start with the handover steps](CLAUDE_HANDOVER/HANDOVER_STEPS.md).**
 
-Canonical search and database are in IB-CS-HL-2027/question-bank/search/ and database.sqlite3. Read that README and CLAUDE_HANDOVER/QUESTION_BANK_GUIDE.md; import with relocated root before serving. Answers and answer-bearing review rationale are separate. Search is working but per-question scope review/semantic breadth/coverage remain unfinished. Author checks do not equal independent C4 approval.
+## Transfer to your other Claude account
 
-This repository contains uploaded source copies and must remain private as requested. No remote URL is claimed; publishing instructions and actual status are in CLAUDE_HANDOVER/REPOSITORY_SETUP.md and REPOSITORY_STATUS.json. The portable ZIP includes the actual project, source files, databases and full Git bundle. Claude works ONE AGENT, sequentially, without subagents. Future Chunk4 verifies all bank records; future Chunk5 repeatedly generates/ranks distinct papers and can author/verify missing bank questions. Neither stage is executed here.
+1. Sign in to GitHub and open [Releases](https://github.com/ityou3/ib-computer-science-hl-2027-question-bank/releases/latest).
+2. Download `IB_CS_HL_2027_COMPLETE_CLAUDE_HANDOVER.zip` under Assets, then unzip it. The archive includes actual project files, database, source PDFs and full Git bundle. The complete working tree is also in this repository.
+3. Open the extracted `CLAUDE_HANDOVER/PROJECT_FILES/` folder in Claude Code with your preferred Claude account. For a Git clone, open the repository root instead.
+4. Paste [RESUME_PROMPT.md](CLAUDE_HANDOVER/RESUME_PROMPT.md). Claude must work as ONE AGENT, preserve existing IDs, continue Chunk3, and **create more original questions**, including genuine Python code-writing tasks. See [QUESTION_GENERATION_INSTRUCTIONS.md](CLAUDE_HANDOVER/QUESTION_GENERATION_INSTRUCTIONS.md).
+
+Current bank:826 full questions, including823 protected adapted questions and3 original Python questions, with separate answers/preliminary criteria. Chunk3 remains incomplete. No examination generation now. Later Chunk4 independently verifies the bank; later Chunk5 repeatedly generates/ranks distinct papers and creates verified new questions when needed. These stages are documented, not executed here.
+
+Working data: `IB-CS-HL-2027/`. Canonical search: `question-bank/search/`; database: `question-bank/database.sqlite3`. Keep the repository private as requested. Author verification is separate from independent Chunk4 verification. Existing Git history is preserved; no token or login files are committed. See the handover guide and exact generated publication/integrity receipts for verification.
