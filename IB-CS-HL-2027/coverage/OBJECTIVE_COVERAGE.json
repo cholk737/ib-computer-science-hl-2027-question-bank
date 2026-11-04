@@ -56,8 +56,8 @@
         "P-SRC001-Q12-b-iii"
       ],
       "difficulty_distribution": {
-        "low": 4,
-        "medium": 6
+        "medium": 6,
+        "low": 4
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -784,8 +784,8 @@
         "P-SRC001-Q12-a-i"
       ],
       "difficulty_distribution": {
-        "medium": 4,
-        "low": 3
+        "low": 3,
+        "medium": 4
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -1644,8 +1644,8 @@
         "P-SRC001-Q12-a-ii"
       ],
       "difficulty_distribution": {
-        "medium": 14,
         "low": 5,
+        "medium": 14,
         "high": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
@@ -1868,8 +1868,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "low": 4,
-        "medium": 7
+        "medium": 7,
+        "low": 4
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -2381,8 +2381,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "medium": 15,
         "high": 4,
+        "medium": 15,
         "low": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
@@ -2871,8 +2871,8 @@
         "P-SRC001-Q11-c-ii"
       ],
       "difficulty_distribution": {
-        "medium": 5,
-        "low": 3
+        "low": 3,
+        "medium": 5
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -3243,8 +3243,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "medium": 8,
-        "low": 8
+        "low": 8,
+        "medium": 8
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -3519,8 +3519,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "medium": 6,
-        "low": 1
+        "low": 1,
+        "medium": 6
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -3917,8 +3917,8 @@
         "P-SRC002-Q03-d"
       ],
       "difficulty_distribution": {
-        "medium": 22,
         "high": 1,
+        "medium": 22,
         "low": 4
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
@@ -4025,8 +4025,8 @@
         "P-SRC002-Q03-a"
       ],
       "difficulty_distribution": {
-        "low": 1,
-        "medium": 5
+        "medium": 5,
+        "low": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -4227,8 +4227,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "low": 3,
-        "medium": 3
+        "medium": 3,
+        "low": 3
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -4314,8 +4314,8 @@
         "P-SRC002-Q02-a"
       ],
       "difficulty_distribution": {
-        "high": 2,
         "medium": 7,
+        "high": 2,
         "low": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
@@ -4556,9 +4556,15 @@
       "missing_or_weak_requirements": [
         "All objective: read-performance/simpler queries versus duplication and consistency/update cost."
       ],
-      "candidate_question_ids": [],
-      "reviewed_question_ids": [],
-      "difficulty_distribution": {},
+      "candidate_question_ids": [
+        "O-C3-A-010"
+      ],
+      "reviewed_question_ids": [
+        "O-C3-A-010"
+      ],
+      "difficulty_distribution": {
+        "high": 1
+      },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
         {
@@ -4578,31 +4584,76 @@
         {
           "scope_bullet_id": "A3.2.7:G01",
           "exact_guidance": "• The advantages and disadvantages of normalizing and denormalizing databases",
-          "status": "no_approved_direct_aspect_evidence_yet",
-          "direct_question_ids": [],
+          "status": "reviewed_aspect_evidence_only",
+          "direct_question_ids": [
+            "O-C3-A-010"
+          ],
           "partial_question_ids": [],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "O-C3-A-010",
+              "code": "A3.2.7",
+              "scope_bullet_id": "A3.2.7:G01",
+              "exact_guidance": "• The advantages and disadvantages of normalizing and denormalizing databases",
+              "assessed_skill": "Evaluate advantages and disadvantages of normalizing and denormalizing.",
+              "relevance": "direct",
+              "evidence": "The prompt and its independent marking criteria require this aspect. No SQL writing required. Normal-form identification is assessed elsewhere (A3.2.x normalization statements).",
+              "coverage_limit": "No SQL writing required. Normal-form identification is assessed elsewhere (A3.2.x normalization statements).",
+              "statement_relevance": "direct",
+              "statement_evidence": "Prompt uses the command term \"Evaluate\" on the scoped content of A3.2.7."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
           "scope_bullet_id": "A3.2.7:G02",
           "exact_guidance": "• Situations where denormalization can enhance performance, particularly in read-intensive applications",
-          "status": "no_approved_direct_aspect_evidence_yet",
-          "direct_question_ids": [],
+          "status": "reviewed_aspect_evidence_only",
+          "direct_question_ids": [
+            "O-C3-A-010"
+          ],
           "partial_question_ids": [],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "O-C3-A-010",
+              "code": "A3.2.7",
+              "scope_bullet_id": "A3.2.7:G02",
+              "exact_guidance": "• Situations where denormalization can enhance performance, particularly in read-intensive applications",
+              "assessed_skill": "Apply denormalization to a read-intensive application for performance.",
+              "relevance": "direct",
+              "evidence": "The prompt and its independent marking criteria require this aspect. No SQL writing required. Normal-form identification is assessed elsewhere (A3.2.x normalization statements).",
+              "coverage_limit": "No SQL writing required. Normal-form identification is assessed elsewhere (A3.2.x normalization statements).",
+              "statement_relevance": "direct",
+              "statement_evidence": "Prompt uses the command term \"Evaluate\" on the scoped content of A3.2.7."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
           "scope_bullet_id": "A3.2.7:G03",
           "exact_guidance": "• The balance between straightforward query structures and the risk of data redundancy in denormalized schemas",
-          "status": "no_approved_direct_aspect_evidence_yet",
-          "direct_question_ids": [],
+          "status": "reviewed_aspect_evidence_only",
+          "direct_question_ids": [
+            "O-C3-A-010"
+          ],
           "partial_question_ids": [],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "O-C3-A-010",
+              "code": "A3.2.7",
+              "scope_bullet_id": "A3.2.7:G03",
+              "exact_guidance": "• The balance between straightforward query structures and the risk of data redundancy in denormalized schemas",
+              "assessed_skill": "Weigh straightforward query structure against redundancy risk.",
+              "relevance": "direct",
+              "evidence": "The prompt and its independent marking criteria require this aspect. No SQL writing required. Normal-form identification is assessed elsewhere (A3.2.x normalization statements).",
+              "coverage_limit": "No SQL writing required. Normal-form identification is assessed elsewhere (A3.2.x normalization statements).",
+              "statement_relevance": "direct",
+              "statement_evidence": "Prompt uses the command term \"Evaluate\" on the scoped content of A3.2.7."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         }
       ],
@@ -4966,8 +5017,8 @@
         "P-SRC002-Q03-e"
       ],
       "difficulty_distribution": {
-        "medium": 6,
-        "high": 1
+        "high": 1,
+        "medium": 6
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -5062,8 +5113,8 @@
         "P-SRC002-Q01-e-ii"
       ],
       "difficulty_distribution": {
-        "low": 3,
-        "medium": 13
+        "medium": 13,
+        "low": 3
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -5341,8 +5392,8 @@
         "P-SRC002-Q04-e"
       ],
       "difficulty_distribution": {
-        "high": 2,
         "medium": 7,
+        "high": 2,
         "low": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
@@ -5444,8 +5495,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "medium": 1,
         "high": 1,
+        "medium": 1,
         "low": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
@@ -5714,8 +5765,8 @@
       ],
       "difficulty_distribution": {
         "high": 1,
-        "low": 1,
-        "medium": 3
+        "medium": 3,
+        "low": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -5811,9 +5862,15 @@
       "missing_or_weak_requirements": [
         "Feature selection purpose and filter/wrapper/embedded methods."
       ],
-      "candidate_question_ids": [],
-      "reviewed_question_ids": [],
-      "difficulty_distribution": {},
+      "candidate_question_ids": [
+        "O-C3-A-011"
+      ],
+      "reviewed_question_ids": [
+        "O-C3-A-011"
+      ],
+      "difficulty_distribution": {
+        "medium": 1
+      },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
         {
@@ -5829,21 +5886,51 @@
         {
           "scope_bullet_id": "A4.2.2:G01",
           "exact_guidance": "• Feature selection to identify and retain the most informative attributes of the data set",
-          "status": "no_approved_direct_aspect_evidence_yet",
-          "direct_question_ids": [],
+          "status": "reviewed_aspect_evidence_only",
+          "direct_question_ids": [
+            "O-C3-A-011"
+          ],
           "partial_question_ids": [],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "O-C3-A-011",
+              "code": "A4.2.2",
+              "scope_bullet_id": "A4.2.2:G01",
+              "exact_guidance": "• Feature selection to identify and retain the most informative attributes of the data set",
+              "assessed_skill": "Describe feature selection retaining the most informative attributes in a scenario.",
+              "relevance": "direct",
+              "evidence": "The prompt and its independent marking criteria require this aspect. No calculation of statistical scores is required. Dimensionality reduction is assessed separately (O-C3-A-012).",
+              "coverage_limit": "No calculation of statistical scores is required. Dimensionality reduction is assessed separately (O-C3-A-012).",
+              "statement_relevance": "direct",
+              "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A4.2.2."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
           "scope_bullet_id": "A4.2.2:G02",
           "exact_guidance": "• Feature selection strategies: filter methods, wrapper methods, embedded methods",
-          "status": "no_approved_direct_aspect_evidence_yet",
-          "direct_question_ids": [],
+          "status": "reviewed_aspect_evidence_only",
+          "direct_question_ids": [
+            "O-C3-A-011"
+          ],
           "partial_question_ids": [],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "O-C3-A-011",
+              "code": "A4.2.2",
+              "scope_bullet_id": "A4.2.2:G02",
+              "exact_guidance": "• Feature selection strategies: filter methods, wrapper methods, embedded methods",
+              "assessed_skill": "Describe filter, wrapper and embedded strategies.",
+              "relevance": "direct",
+              "evidence": "The prompt and its independent marking criteria require this aspect. No calculation of statistical scores is required. Dimensionality reduction is assessed separately (O-C3-A-012).",
+              "coverage_limit": "No calculation of statistical scores is required. Dimensionality reduction is assessed separately (O-C3-A-012).",
+              "statement_relevance": "direct",
+              "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A4.2.2."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         }
       ],
@@ -5871,9 +5958,15 @@
       "missing_or_weak_requirements": [
         "Curse of dimensionality and preserving relevant information with fewer variables; no PCA/LDA."
       ],
-      "candidate_question_ids": [],
-      "reviewed_question_ids": [],
-      "difficulty_distribution": {},
+      "candidate_question_ids": [
+        "O-C3-A-012"
+      ],
+      "reviewed_question_ids": [
+        "O-C3-A-012"
+      ],
+      "difficulty_distribution": {
+        "high": 1
+      },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
         {
@@ -5893,21 +5986,51 @@
         {
           "scope_bullet_id": "A4.2.3:G01",
           "exact_guidance": "• The curse of dimensionality considerations may include overfitting, computational complexity, data sparsity, the effectiveness of distance metrics, data visualization, sample size increases, memory usage.",
-          "status": "no_approved_direct_aspect_evidence_yet",
-          "direct_question_ids": [],
+          "status": "reviewed_aspect_evidence_only",
+          "direct_question_ids": [
+            "O-C3-A-012"
+          ],
           "partial_question_ids": [],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "O-C3-A-012",
+              "code": "A4.2.3",
+              "scope_bullet_id": "A4.2.3:G01",
+              "exact_guidance": "• The curse of dimensionality considerations may include overfitting, computational complexity, data sparsity, the effectiveness of distance metrics, data visualization, sample size increases, memory usage.",
+              "assessed_skill": "Describe curse-of-dimensionality considerations: sparsity, distance metrics, overfitting, computation/memory, sample size.",
+              "relevance": "direct",
+              "evidence": "The prompt and its independent marking criteria require this aspect. PCA and LDA are explicitly beyond scope (guide note G03) and are not assessed.",
+              "coverage_limit": "PCA and LDA are explicitly beyond scope (guide note G03) and are not assessed.",
+              "statement_relevance": "direct",
+              "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A4.2.3."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
           "scope_bullet_id": "A4.2.3:G02",
           "exact_guidance": "• Dimensionality reduction of variables, while preserving the relevant aspects of the data",
-          "status": "no_approved_direct_aspect_evidence_yet",
-          "direct_question_ids": [],
+          "status": "reviewed_aspect_evidence_only",
+          "direct_question_ids": [
+            "O-C3-A-012"
+          ],
           "partial_question_ids": [],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "O-C3-A-012",
+              "code": "A4.2.3",
+              "scope_bullet_id": "A4.2.3:G02",
+              "exact_guidance": "• Dimensionality reduction of variables, while preserving the relevant aspects of the data",
+              "assessed_skill": "Describe reducing variables while preserving relevant aspects of the data.",
+              "relevance": "direct",
+              "evidence": "The prompt and its independent marking criteria require this aspect. PCA and LDA are explicitly beyond scope (guide note G03) and are not assessed.",
+              "coverage_limit": "PCA and LDA are explicitly beyond scope (guide note G03) and are not assessed.",
+              "statement_relevance": "direct",
+              "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A4.2.3."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
@@ -6432,8 +6555,8 @@
         "P-SRC002-Q08-a"
       ],
       "difficulty_distribution": {
-        "medium": 9,
-        "low": 2
+        "low": 2,
+        "medium": 9
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -6523,8 +6646,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "medium": 2,
-        "low": 1
+        "low": 1,
+        "medium": 2
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -6754,8 +6877,8 @@
         "P-SRC002-Q08-d"
       ],
       "difficulty_distribution": {
-        "medium": 11,
-        "high": 2
+        "high": 2,
+        "medium": 11
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -6869,8 +6992,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "medium": 1,
-        "low": 1
+        "low": 1,
+        "medium": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -7471,9 +7594,9 @@
         "P-SRC001-Q10"
       ],
       "difficulty_distribution": {
-        "low": 4,
         "medium": 7,
-        "high": 2
+        "high": 2,
+        "low": 4
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -7544,8 +7667,8 @@
         "P-SRC001-Q15-a"
       ],
       "difficulty_distribution": {
-        "medium": 7,
         "low": 1,
+        "medium": 7,
         "high": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
@@ -7740,9 +7863,9 @@
         "P-SRC002-Q06-d"
       ],
       "difficulty_distribution": {
-        "low": 10,
+        "high": 27,
         "medium": 48,
-        "high": 27
+        "low": 10
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -7964,8 +8087,8 @@
         "P-SRC001-Q04"
       ],
       "difficulty_distribution": {
-        "medium": 12,
         "high": 4,
+        "medium": 12,
         "low": 4
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
@@ -8080,8 +8203,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "medium": 8,
         "low": 3,
+        "medium": 8,
         "high": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
@@ -8316,8 +8439,8 @@
         "P-SRC002-Q06-d"
       ],
       "difficulty_distribution": {
-        "medium": 52,
         "high": 21,
+        "medium": 52,
         "low": 11
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
@@ -8525,8 +8648,8 @@
         "P-SRC002-Q06-d"
       ],
       "difficulty_distribution": {
-        "medium": 45,
         "high": 25,
+        "medium": 45,
         "low": 4
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
@@ -9496,8 +9619,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "medium": 5,
-        "low": 1
+        "low": 1,
+        "medium": 5
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -9811,9 +9934,9 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "high": 1,
+        "low": 1,
         "medium": 2,
-        "low": 1
+        "high": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [

@@ -1,8 +1,8 @@
 # Progress — Chunk 3 active, recovery-first
 
-**Checkpoint C3-20261104-221537-087007 — 04 November 2026 22:15:37 CET (Europe/Zurich).**
+**Checkpoint C3-20261104-221538-425588 — 04 November 2026 22:15:38 CET (Europe/Zurich).**
 
-Original batch 2: saved O-C3-A-007 O-C3-A-008 O-C3-A-009 (author-verified; C4 pending)
+Original batch 2: saved O-C3-A-010 O-C3-A-011 O-C3-A-012 (author-verified; C4 pending)
 
 User authorized Chunk 3 only. Checkpoint after every 2–3 questions, each topic and meaningful milestone. **Do not enter Chunk 4.** Do not enter future chunks; user mentioned a future Chunk 5 but has not authorized it.
 
@@ -10,7 +10,7 @@ User authorized Chunk 3 only. Checkpoint after every 2–3 questions, each topic
 
 - Initial recovery found Chunk 2 final only, no previous Chunk 3 artifacts or live specialists. Previous report: audits/chunk-3/PROGRESS_BEFORE_C3_RECOVERY.md.
 - 48 PDFs inventoried; 23 distinct historical exams processed, 0 remaining; 1,141 source parts; 838 mapped (383 A / 455 B); 303 exclusions; 15 reuse links.
-- Master bank: 835 records, including 12 merged original questions. The 823 historical adapted IDs are preserved.
+- Master bank: 838 records, including 15 merged original questions. The 823 historical adapted IDs are preserved.
 - Specialist first-pass objective audits saved: 112/112. This is review progress, not complete coverage or coordinator approval.
 - Current structural bank check: 0 errors. Historical record changes: 0 (must be explained/reviewed if nonzero).
 - Initial baseline integrity passed 2,473 file hashes and all 823 record schemas/identities/codes/mark totals. See audits/chunk-3/BASELINE_INTEGRITY.json.
@@ -21,14 +21,14 @@ User authorized Chunk 3 only. Checkpoint after every 2–3 questions, each topic
 ```json
 {
   "live_path": "question-bank/database.sqlite3",
-  "snapshot_path": "audits/chunk-3/database-snapshots/e17c04d79b1eacbe5412390858bceaa29e88a9450c7826610b2c5594bfee76e6.sqlite3",
-  "sha256": "e17c04d79b1eacbe5412390858bceaa29e88a9450c7826610b2c5594bfee76e6",
+  "snapshot_path": "audits/chunk-3/database-snapshots/3afa7c77550c31c397b2df874014c57e5fabb06adc09dde540372028daf5a8f7.sqlite3",
+  "sha256": "3afa7c77550c31c397b2df874014c57e5fabb06adc09dde540372028daf5a8f7",
   "integrity_check": "ok",
   "table_counts": {
-    "questions": 835,
-    "answers": 835,
-    "scope_evidence": 141,
-    "verification": 5010,
+    "questions": 838,
+    "answers": 838,
+    "scope_evidence": 148,
+    "verification": 5028,
     "usage_history": 0,
     "selections": 0
   },
@@ -41,7 +41,7 @@ User authorized Chunk 3 only. Checkpoint after every 2–3 questions, each topic
     [
       "answer",
       "verified",
-      72
+      75
     ],
     [
       "assets",
@@ -51,7 +51,7 @@ User authorized Chunk 3 only. Checkpoint after every 2–3 questions, each topic
     [
       "assets",
       "verified",
-      71
+      74
     ],
     [
       "mapping",
@@ -61,7 +61,7 @@ User authorized Chunk 3 only. Checkpoint after every 2–3 questions, each topic
     [
       "mapping",
       "verified",
-      72
+      75
     ],
     [
       "markscheme",
@@ -76,7 +76,7 @@ User authorized Chunk 3 only. Checkpoint after every 2–3 questions, each topic
     [
       "markscheme",
       "verified",
-      59
+      62
     ],
     [
       "provenance",
@@ -86,7 +86,7 @@ User authorized Chunk 3 only. Checkpoint after every 2–3 questions, each topic
     [
       "provenance",
       "verified",
-      55
+      58
     ],
     [
       "technical",
@@ -96,7 +96,7 @@ User authorized Chunk 3 only. Checkpoint after every 2–3 questions, each topic
     [
       "technical",
       "verified",
-      72
+      75
     ]
   ],
   "limits": "Database integrity/schema/import counts do not establish completeness of search features or content verification."
