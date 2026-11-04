@@ -1,0 +1,34 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               – 9 –
+
+
+                          (e)                                           Award [5 max] as follows:
+
+                                                    Award [1] for initial variables correctly set;
+                                                    Award [1] for both loops;
+                                                    Award [1] for checking seat for False;
+                                                    Award [1] for updating row value;
+                                                    Award [1] for resetting tempTotal;
+                                                    Award [1] for printing the correct row;
+
+                                                    public void least(boolean[][]seats)
+                                                    {
+                                                        int falseTotal = 0;
+                                                        int leastRow = 0;
+
+                                                                      for (int x = 0; x < 40; x++)
+                                                                      {
+                                                                                             int tempTotal = 0;
+                                                                                             for (int y = 0; y < 30; y++)
+                                                                                             {
+                                                             if (seats[x][y] == false)       // if(!seats[x][y] )
+                                                                                                                    tempTotal = tempTotal + 1;
+                                                                                             }
+                                                                                             if (tempTotal > falseTotal)
+                                                                                             {
+                                                                                                                    leastRow = x;
+                                                                                                                    falseTotal = tempTotal;
+                                                                                             }
+                                                                      }
+                                                                      System.out.println ("Row with least seats sold is " + leastRow);
+                                                    }
+

@@ -1,0 +1,59 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    – 12                                             –
+
+
+            (d)                                           Award [3] max
+
+                         Award [1] per point
+
+                         Calculate the F1 score as the harmonic mean of precision and recall;
+                         A low F1 score implies inadequate performance of the CNN model;
+                         This may require training adjustments or data rebalancing;
+                         It is an iterative process of adjusting and testing to improve the F1 score.
+
+                         Alternative answer
+                         Produce a confusion matrix (TP, TN, FP, FN);
+                         Calculate precision using TP / (TP + FP);
+                         Calculate recall/sensitivity using TP / (TP + FN);
+                         Calculate F1 score = 2 * (Precision * Recall) / (Precision + Recall).
+
+                         Note to examiners:
+                         TP is true positive (correctly identified cases of pneumonia);
+                         TN is true negative (correctly identified cases without pneumonia);
+                         FP is false positive (wrongly identified cases of having pneumonia);
+                         FN is false negative (cases of pneumonia that were not identified).
+
+            (e)                                           Award [3] max
+
+                         Award [1] for identifying an issue
+
+                         Award [1] for expanding on the issue/stating the context
+
+                         Award [1] for a further evidence                                                                                                                 highlighting the choice of RL over SL
+
+                         RL works well in dynamic environments         where layouts change/hospitals are dynamic
+                         environments (beds move, machinery is moved);
+                         RL involves the cleaner (agent) interacting with the environment (hospital), receiving
+                         continuous feedback based on its actions (movement decisions);
+                         RL allows the robot cleaner to update its learned policy through rewards and punishments;
+                         SL is trained in advance on a static dataset so would struggle to adapt to untrained
+                         layouts/changing environments;
+                         SL requires accurate labelled datasets, which is impractical for every possible situation or
+                         condition in a hospital;
+
+                         Alternative answer:
+                         RL allows for real          -time autonomous learning                                               (without interventions);
+                         The robot (agent) uses RL to interact with the environment making decisions;
+                         The feedback loop in RL (perform action, get reward, update policy) ensures the robot
+                         continuously improves its strategy based on real-time outcomes;
+                         SL is trained before use and does not learn in real-time;
+                         Changes in the environment would require external intervention (retraining);
+                         A dataset with all possible layouts and actions is implausible;
+
+                         Alternative answer:
+                         RL is goal driven/has an ultimate goal of cleanliness;
+                         RL is designed to allow the cleaner to discover an optimal sequence of actions using trial-
+                         and-                                                                  error;
+                         RL, unlike SL, can handle the situation where there are delayed rewards;
+                         SL is not designed to find the best sequence of actions;
+                         SL is designed to predict outcomes based on provided input;
+                         SL is suited to classification and regression tasks, not optimization tasks.

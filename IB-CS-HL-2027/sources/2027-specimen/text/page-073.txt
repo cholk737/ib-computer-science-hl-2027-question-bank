@@ -1,0 +1,49 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    – 11                                             –
+
+
+                 (d)                                           Award [4 max]
+
+                                   Award [1] for calling updatedTicketPrice();
+                                   Award [1] for creating new Passenger object;
+                                   Award [1] for updating                     passengers array;
+                                   Award [1] for incrementing seatsBooked;
+
+                                   public void addPassenger(String name, String email)
+                                   {
+                                               double s = updatedTicketPrice();
+                                               Passenger p = new Passenger(name,email,s);
+                                               passengers[seatsBooked] = p;
+                                               seatsBooked = seatsBooked + 1;
+                                   }
+
+                 (e)                                           Award [5 max]
+
+                                   the name field of each          Passenger                                                                                                                                                                                                            object is used in the sorting process;
+                                   the array is divided into two parts: a sorted subset and an unsorted subset;
+                                   the smallest element is found in the unsorted part of the array and compared to the first
+                                   (leftmost) element in the unsorted set;
+                                   if smaller, the two objects are swapped (and the first element in the unsorted set joins the
+                                   sorted set);
+                                   the two steps above are repeated until the whole array is sorted / there are no more elements
+                                   in the unsorted set;
+
+
+4.                                                           (a)                                           Award [3 max]
+
+                                   The HashMap                                            is set up using pairs of string values;
+                                   representing the airport code and airport name / diagram to show this;
+                                   when the airport code is used as a parameter for the HashMap,                                                         the  matching/corresponding
+                                   value of the airport name will be returned;
+
+                 (b)                                           Award [2 max]
+
+                                   the arrays are combined to form a single set;
+                                   the set will automatically eliminate any duplicates / will only hold unique values;
+
+                 (c)                                                                (i)                                                         Award [1 max]
+
+                                                     false;
+
+                                   (ii)                                                Award [1 max]
+
+                                                     [2,6];

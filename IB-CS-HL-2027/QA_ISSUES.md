@@ -1,0 +1,31 @@
+# QA issues
+
+## Inventory findings
+
+- **C1-SRC-01 — retained duplicate:** SRC-045 is byte-identical to SRC-044 (`Computer_science_paper_2_TZ3_SL.pdf` and its `(1)` alternate). Both originals preserved; process the examination once in Chunk 2.
+- **C1-SRC-02 — image-only sources:** SRC-001, SRC-002 and SRC-047 have no usable text layer. Covers rendered and visually read. Chunk 2 requires page-by-page visual/OCR extraction and checking; no questions extracted in this chunk.
+- **C1-SRC-03 — incomplete scan warning:** SRC-047 (`Nov 2022 CS HL Paper 1.pdf`) contains 8 PDF pages but its cover declares 9. The same exam code 8822-7011 appears in text-readable SRC-005, which has 10 PDF pages including the copyright page. Exact missing scan page remains to be established before historical extraction; use the more complete source after verification.
+- **C1-SRC-04 — missing historical markschemes:** no uploaded matching markschemes identified for SRC-001 (2226-4428, HL Paper 1) or SRC-002 (2226-4429, HL Paper 2). Do not fabricate official criteria or markscheme status later.
+
+## Guide findings
+
+- **C1-SYL-01 — confirmed source code typo:** guide PDF p35 / printed p29 visibly prints `A.1.2.5 Construct logic diagrams.` Store exact `source_code=A.1.2.5` alongside disclosed normalized lookup `A1.2.5`; do not claim the normalized form was printed.
+- **C1-SYL-02 — SQL source spelling:** A3.3.4, PDF40 / printed34, lists `AVERAGE`. Visually confirmed and preserved exactly. Future executable SQL must use verified dialect syntax; this source wording is not proof of a callable aggregate with that spelling.
+- **C1-SYL-03 — typography normalization:** A4.3.1, PDF42 / printed36, prints r². Master restores the superscript after visual check; raw flattened extraction is retained. No missing mathematical text.
+- **C1-SYL-04 — Python implementation calibration:** B3.1.3/B3.1.5/B3.2.1/B3.2.2 use generic OOP wording (access modifiers and static polymorphism). Preserve scope, but implement and mark accurate Python semantics later. B2.4.5 limits code construction/tracing to simple non-branching recursion; B2.4.4 broader conceptual examples do not remove that limit.
+
+## Specimen source findings
+
+All references below are physical pages of `Specimen Papers 2027 - English.pdf`. These are recorded source limitations; required HL inputs are present and readable. Originals are unchanged. No newly authored questions or marking criteria rely on the defective samples.
+
+- **C1-SP-01 — confirmed markscheme code defect:** HL P2 Q12(a), MS PDF84 / component22. Printed `else` aligns with `while`; nonmatching head never advances, and empty input dereferences `None`. Specialist and coordinator independently reproduced bounded nontermination for later/absent targets and the empty-list error. Future answers must be freshly verified; do not copy this code as correct.
+- **C1-SP-02 — confirmed Python semantics caution:** HL P2 Q9(a)(ii), PDF56 / component20 and MS80 / component18. A single underscore is non-public convention, not enforced external access control. Specialist/coordinator tests confirm external access. Future wording/marking must make the convention accurate.
+- **C1-SP-03 — source ambiguity:** HL P2 Q9(b), PDF57 / component21 and MS80 / component18. Composition is asserted using ticket-price dependence, but ownership/lifetime is under-specified. Future scenarios must state those conditions to distinguish composition from aggregation fairly.
+- **C1-SP-04 — unstated-domain limitation:** HL P2 Q11(c)(ii), PDF60 / component24 and MS83 / component21. Recursive sample assumes nonnegative input; original iterative function returns zero for negative integers while the sample does not terminate normally. Independently reproduced. Future prompt must state the intended domain or accept a consistent base case.
+- **C1-SP-05 — execution-model caution:** HL P1 Q1(f), PDF5 / component3 and MS24 / component6. Interpret the compiled/interpreted speed comparison within its educational execution model; do not author universal performance claims across all runtimes/workloads.
+
+## Resolution status at Chunk 1 close
+
+No unresolved omission in the 112-statement syllabus or required HL specimen components. All source irregularities are preserved and documented. Historical scan completeness, OCR needs and missing 2026 markschemes remain future processing constraints, not reasons to fabricate evidence. Source interpretation cautions must be revisited when relevant questions are authored in later authorized chunks.
+
+Verification evidence: `audits/SYLLABUS_INTEGRATION_CHECK.json`, `audits/SPECIMEN_INTEGRATION_CHECK.json` and the three specialist findings. No Chunk 2 work performed.

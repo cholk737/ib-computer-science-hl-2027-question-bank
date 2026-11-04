@@ -1,0 +1,46 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               – 9 –
+
+
+3.                                                           (a)                                           Award [3] max
+
+                                              Award [1] for SELECT DISTINCT or GROUP BY
+
+                                              Award [1] for using LIKE
+
+                                              Award [1] for using the wildcard (any wildcard accepted) and therapy
+
+                                              SELECT DISTINCT PatientName FROM VISITS
+                                              WHERE Treatment LIKE '                                                                                                                                                                                                                                      %therapy%'                                                                                                  ;
+
+                                              Alternative solution using group by:
+
+                                              SELECT PatientName FROM VISITS
+                                              WHERE Treatment LIKE '                                                                                                                                                                                                                                      %therapy%'
+                                              GROUP BY PatientName
+
+                                              Alternative solution using a subquery and group by:
+
+                                              SELECT PatientName
+                                              FROM (
+                                              SELECT PatientName
+                                              FROM VISITS
+                                              WHERE Treatment LIKE '%therapy%'
+                                              ) AS subquery
+                                              GROUP BY PatientName;
+
+                       (b)                                           Award [5] max
+
+                                              Award [1] for the PATIENT table with correct Primary Key
+
+                                              Award [1] for the DOCTOR table with correct Primary Key
+
+                                              Award [1] for PatID foreign key in the VISIT table
+
+                                              Award [1] for DocID foreign key in the VISIT table
+
+                                              Award [1] for VisitID or PatID/DocID/VisitDate composite key in the VISIT table
+                                              PATIENT(PatID,                                                                                                                                                PatientName, PatientDOB)
+
+                                              DOCTOR(DocID, Doctor)
+                                              VISIT(VisitID, PatID, DocID, VistDate, Treatment)
+

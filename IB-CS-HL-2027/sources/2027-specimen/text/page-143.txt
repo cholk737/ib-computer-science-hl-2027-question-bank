@@ -1,0 +1,44 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    – 11                                             –
+
+
+                    (e)                                           Award [5 max]
+
+                                         Award [1] for a correct loop;
+                                         Award [1] for initializing highest;
+                                         Award [1] for the comparison;
+                                         Award [1] for updating highest;
+                                         Award [1] for returning highest;
+
+                                         public double calculateHighest()
+                                         {
+                                             double highest = 0;
+                                             for (int x = 0; x < 12; x++)
+                                             {
+                                                                                       if (this.sales[x] > highest)
+                                                                                                          highest = this.sales[x];
+                                                                }
+                                                        return highest;
+                                         }
+
+                    (f)                                                      Award [5 max]
+
+                                         Award [1] for a loop and                                                                             initialising and                                                                  updating bonus variable;
+                                         Award [1] for a correct comparison using calculateTotal method;
+                                         Award [1] for a correct comparison using calculateHighest method;
+                                         Award [1] for a correct identification of bonus1 and bonus2;
+                                         Award [1] for prints out the id (using getter) and bonus (allow values only);
+
+                                         public void bonus(SalesPerson[] employee)
+                                         {
+                                                        for           (int x = 0; x < 10; x++)
+                                                        {
+                                                                          int bonus = 0;
+                                                                          if (employee[x].calculateTotal() > 300000)
+                                                                                             bonus = bonus + SalesPerson.bonus1;
+                                                                          if (employee[x].calculateHighest() > 20000)
+                                                                                             bonus = bonus + SalesPerson.bonus2;
+                                                                          System.out.println ("ID is " + employee[x].getId());
+                                                                          System.out.println ("Bonus is " + bonus);
+                                                        }
+                                         }
+

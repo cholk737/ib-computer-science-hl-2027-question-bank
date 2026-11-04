@@ -1,0 +1,222 @@
+{
+  "ordinary_example_checks": [
+    {
+      "check": "hexadecimal AC",
+      "actual": "10101100",
+      "expected": "10101100",
+      "passed": true,
+      "source_reference": "P1 Q1b; PDF4/MS23"
+    },
+    {
+      "check": "truth table difference/borrow",
+      "actual": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "expected": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "passed": true,
+      "source_reference": "P1 Q1c; PDF4/MS23"
+    },
+    {
+      "check": "flowchart output N3",
+      "actual": [
+        1,
+        2,
+        3,
+        2,
+        3,
+        3
+      ],
+      "expected": [
+        1,
+        2,
+        3,
+        2,
+        3,
+        3
+      ],
+      "passed": true,
+      "source_reference": "P2 Q7b; PDF50/MS76; flowchart visually checked"
+    },
+    {
+      "check": "stack bottom to top",
+      "actual": [
+        1,
+        2,
+        8,
+        6
+      ],
+      "expected": [
+        1,
+        2,
+        8,
+        6
+      ],
+      "passed": true,
+      "source_reference": "P2 Q7e; PDF53/MS78"
+    },
+    {
+      "check": "nested-loop outputs",
+      "actual": [
+        6,
+        17
+      ],
+      "expected": [
+        6,
+        17
+      ],
+      "passed": true,
+      "source_reference": "P2 Q8d; PDF55/MS79"
+    },
+    {
+      "check": "set membership",
+      "actual": false,
+      "expected": false,
+      "passed": true,
+      "source_reference": "P2 Q10ci; PDF59/MS82"
+    },
+    {
+      "check": "set intersection",
+      "actual": [
+        2,
+        6
+      ],
+      "expected": [
+        2,
+        6
+      ],
+      "passed": true,
+      "source_reference": "P2 Q10cii; PDF59/MS82"
+    },
+    {
+      "check": "iter6",
+      "actual": 21,
+      "expected": 21,
+      "passed": true,
+      "source_reference": "P2 Q11ci; PDF60/MS83"
+    },
+    {
+      "check": "recursive nonnegative sample",
+      "actual": [
+        0,
+        1,
+        21
+      ],
+      "expected": [
+        0,
+        1,
+        21
+      ],
+      "passed": true,
+      "source_reference": "P2 Q11cii; PDF60/MS83"
+    },
+    {
+      "check": "ticket price boundaries",
+      "actual": [
+        100,
+        100,
+        150.0,
+        150.0,
+        300
+      ],
+      "expected": [
+        100,
+        100,
+        150,
+        150,
+        300
+      ],
+      "passed": true,
+      "source_reference": "P2 Q9c; PDF58/MS80"
+    }
+  ],
+  "source_defects_or_limitations": {
+    "SP-01": {
+      "reference": "HL P2 Q12a MS PDF84/component22",
+      "source_code_transcription": "source_find_player_transcription.py",
+      "result": {
+        "matching_head": {
+          "outcome": "returned",
+          "stdout": "10\n"
+        },
+        "matching_second_node": {
+          "outcome": "StepLimit",
+          "message": "100 source-line events without termination",
+          "stdout": ""
+        },
+        "absent_name_nonempty": {
+          "outcome": "StepLimit",
+          "message": "100 source-line events without termination",
+          "stdout": ""
+        },
+        "empty_list": {
+          "outcome": "AttributeError",
+          "message": "'NoneType' object has no attribute 'next'",
+          "stdout": ""
+        }
+      },
+      "finding": "else is aligned with while; temp never advances for a nonmatching head; empty list dereferences None"
+    },
+    "SP-02": {
+      "reference": "HL P2 Q9aii PDF56/component20 and MS80/component18",
+      "result": {
+        "external_read_succeeded": true,
+        "external_write_succeeded": true
+      },
+      "finding": "single underscore expresses non-public convention but does not enforce privacy"
+    },
+    "SP-04": {
+      "reference": "HL P2 Q11cii PDF60/component24 and MS83/component21",
+      "iter_minus_one": 0,
+      "recur_minus_one": "RecursionError",
+      "finding": "official recursive sample assumes nonnegative x; no input domain is stated in question"
+    }
+  }
+}

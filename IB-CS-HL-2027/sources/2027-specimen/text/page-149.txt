@@ -1,0 +1,52 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    – 17                                             –
+
+
+              (e)                                           Award [5 max]
+                             Award [1] for a correct loop;
+                             Award [1] for initializing highest;
+                             Award [1] for the comparison;
+                             Award [1] for updating highest;
+                             Award [1] for returning highest;
+
+                             def calculate_highest(self):
+                                       highest = 0
+                                       for x in range (12):                # ... range (0,12)
+                                                    if self._sales[x] > highest:
+                                                                  highest = self._sales[x]
+                                       return highest
+
+                             def calculate_highest(self):           l
+                                       highest = 0
+                                       for x in range (len(self._sales)):
+                                                    if self._sales[x] > highest:
+                                                                  highest = self._sales[x]
+                                       return highest
+
+                             def calculate_highest(self):
+                                       highest = 0
+                                       for sales_figure in self._sales:
+                                                    if sales_figure > highest:
+                                                                  highest = sales_figure
+                                       return highest
+
+              (f)                                                           Award [5 max]
+
+                             Award [1] for a loop and                                                                             initialising and                                                                  updating bonus variable;
+                             Award [1] for a correct comparison using                     calculate_total method;
+                             Award [1] for a correct comparison using calculate_highest method;
+                             Award [1] for a correct identification of bonus1 and bonus2;
+                             Award [1] for prints out the id (using getter) and bonus (allow values only);
+
+                             def calculate_bonus():
+                                       for x in range(10):        # … range (0,10)    … range
+                             (len(self._sales))
+
+                                                    bonus = 0
+                                                    if employee[x].calculate_total() > 300000:
+                                                                  bonus = bonus + SalesPerson.bonus1
+                                                    if employee[x].calculate_highest() > 20000:
+                                                                  bonus = bonus + SalesPerson.bonus2
+                                                    print (f"Employee {employee[x].get_id()} has bonus ", bonus).
+
+
+

@@ -1,0 +1,46 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               – 8 –
+
+
+               (d)                                           Award [4] max
+
+                              Award [1] per point
+
+                              MAC address learning: A switch learns the device’s MAC address (from the incoming
+                              packet's source address)/a switch maintains a MAC address table;
+                              …and associates the MAC address with the physical port through which the packet entered;
+
+                              Packet examination:                                                destination MAC address is shown in the frame/packet;
+                              …and compared with the switch’s MAC address table to find the port;
+
+                              Selective forwarding: The switch determines the appropriate port to forward the
+                              packet/frame based on its destination MAC address;
+                              If the destination MAC address is unknown the switch broadcasts the packet (frame) to all
+                              ports;
+
+                              Possible candidate response worth full marks
+                              The switch saves the arrival port/sender mac address extracted from packet;
+                              The destination MAC address is extracted from the packet;
+                              And the port is looked up in a table based on the MAC address;
+                              The switch then plots the path to the destination port.
+
+                              Note: either frame or packet is acceptable for candidates’ answers.
+
+               (e)                                           Award [4] max
+
+                              Award [1] for each point from the same section
+
+                              NAT translates private IP addresses of devices within a local network to a public IP address;
+                              External entities see only the public IP address of the network;
+                              NAT makes it more difficult for attackers to directly reach internal systems;
+                              The extra layer of obscurity enhances the security of the network;
+
+                              NAT and firewalls often work together;
+                              Firewall inspects and filters incoming and outgoing traffic based on security rules;
+                              NAT allows network administrators to control how traffic is routed;
+                              NAT can be configured to forward specific types of traffic to specific internal devices;
+
+                              Not only does NAT add an extra layer of security;
+                              NAT enables multiple devices on a local network to share a single public IP address.
+                              Useful given the limited availability of IPv4 addresses;
+                              Enables the network to have more devices than they have IPv4 IP addresses;
+

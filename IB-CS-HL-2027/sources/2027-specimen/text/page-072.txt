@@ -1,0 +1,44 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    – 10                                             –
+
+
+3.                                                           (a)                                           (i)                                                         Award [3 max]
+
+                                                        The                                (Passenger) constructor is called;
+                                                        A new object is created / m          emory is assigned for a new object ...;
+                                                        … identified by the variable                   p1;
+                                                        The                                passengerName, email and ticketPrice variables / all of the variables  are
+                                                        initialized;
+
+                                     (ii)                                                Award [2 max]
+
+                                                        provides greater security for the values stored in these variables/for the code;
+                                                        restricts access to such variables from outside of the class /only allows access through
+                                                        public / getter, setter methods;
+                                                        (helps to) prevents accidental/unintended          changes to the variables (from outside of
+                                                        the                                             class);
+
+                  (b)                                           Award [2 max];
+
+                                     composition;
+                                     The variable          ticketPrice in the                     Passenger class depends upon the                     Flight class;
+
+                  (c)                                             Award [4 max]
+
+                                     Award [1] for calculating the % seats sold;
+                                     Award [1] for all 3 conditions correct;
+                                     Award [1] for if … else structure correct;
+                                     Award [1] for return;
+
+                                     public double updatedTicketPrice()
+                                     {
+                                                  double price;
+                                                  double percentSold =          (seatsBooked*100)/maxPassengers;
+                                                  if (percentSold >= 10 && percentSold <= 50)
+                                                                  price = initialPrice*1.5;
+                                                  else
+                                                                  if (percentSold > 50)
+                                                                                   price = initialPrice*3;
+                                                                  else
+                                                                                   price = initialPrice;
+                                                  return price;
+                                     }

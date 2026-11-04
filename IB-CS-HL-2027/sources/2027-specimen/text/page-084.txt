@@ -1,0 +1,44 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    – 22                                             –
+
+
+12.                                                                                (a)                                           Award [5 max]
+
+                                      Award [1] for making use of a temporary node;
+                                      Award [1] for Boolean;
+                                      Award [1] for list traversal;
+                                      Award [1] for ending traversal if found;
+                                      Award [1] for correct comparison;
+                                      Award [1] for returning the correct values (in both cases);
+
+                                      def find_player(self, name):
+                                                   temp = self.head
+                                                   found  = False
+                                                   while temp != None:
+                                                                    if temp.name == name:
+                                                                                     found = True
+                                                                                     print (temp.score)
+                                                                                     break
+                                                   else:
+                                                                                     temp = temp.next
+                                                   if found == False:
+                                                                    print ("Not found")
+
+                   (b)                                           Award [5 max]
+
+                                      The algorithm will:
+                                      •                                               make a temporary node equal to head;
+                                      •                                               make use of a “previous” node;
+                                      •                                               traverse the linked list (using the temporary node) comparing the score field of each
+                                                     node to the score field of the new node;
+                                      •                                               until the insertion point is found;
+                                      •                                               if insertion is at the beginning, link the new node to the head and make the head equal to
+                                                     the new node;
+                                      •                                               if insertion is at the end, link the previous node to the new node;
+                                      •                                               copy the next pointer of the node previous to the insertion point to the next pointer of the
+                                                     new node;
+                                      •                                               link the previous node to the new node;
+
+                                      Note: Allow the use of diagrams to illustrate any of the above points
+
+
+

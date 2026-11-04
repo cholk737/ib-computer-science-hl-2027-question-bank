@@ -1,0 +1,53 @@
+                                                     –8–
+
+(Option A  continued)
+
+3.    A company employs a number of salespeople to sell its goods.
+
+      Details of the sales made by each employee for a year are stored in the SalesPerson object
+      for that employee.
+
+      At the end of each month, the total sales for each employee are added to the array sales
+      in the SalesPerson object. At the end of the year, the array will contain 12 entries, one for
+      each month of the year.
+
+      Bonuses are paid to employees at the end of each year.
+
+      The SalesPerson class is partially shown:
+
+      public class SalesPerson
+      {
+          static int bonus1 = … ;          // value to be added
+          static int bonus2 = … ;          // value to be added
+          private String id;               // unique id for each employee
+          double[] sales = new double[12]; // sales figures for each month in a year
+
+          public SalesPerson(String id)
+          {
+              this.id = id;
+          }
+
+          public String getId() // returns employee’s id
+          {
+              return this.id;
+          }
+
+          public double calculateTotal() // returns the total sales figure for
+      the year
+          {
+              // code missing
+          }
+
+          public double calculateHighest() // returns highest monthly total in
+      the year
+          {
+               // code missing
+          }
+
+          public void addSales(…) // adds the sales for a month to the salesarray
+          {
+              // code missing
+          }
+      }
+
+(Option A continues on the following page)

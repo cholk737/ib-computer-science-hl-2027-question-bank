@@ -1,0 +1,26 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    – 19                                             –
+
+
+                    (d)                                           Award [4 max]
+
+                                         Award [1] for calling calling updated_ticket_price();
+                                         Award [1] for creating new Passenger object;
+                                         Award [1] for updating passengers list;
+                                         Award [1] for incrementing                     seats_booked;
+
+                                         def add_passenger(self, name, email):
+                                                      s = self.updated_ticket_price()
+                                                      p = Passenger(name, email, s)
+                                                      self.passengers.append(p)
+                                                      self.seats_booked = self.seats_booked + 1
+
+                    (e)                                           Award [5 max]
+
+                                         the name field of each          Passenger                                                                                                                                                                                                            object is used in the sorting process;
+                                         the list is divided into two parts: a sorted subset and an unsorted subset;
+                                         the smallest element is found in the unsorted part of the list and compared to the first
+                                         (leftmost) element in the unsorted set;
+                                         if smaller, the 2 objects are swapped (and the first element in the unsorted set joins the
+                                         sorted set);
+                                         the two steps above are repeated until the whole list is sorted / there are no more elements
+                                         in the unsorted set;

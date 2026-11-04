@@ -1,0 +1,43 @@
+                                                                                                                                                                                      –7–
+
+(Option A, question 2 continued)
+
+                     The following code operates on MAT:
+
+                     int[][] MAT = {{2, 7, 1}, {8, 9 ,0}};
+                     int a = 0;
+                     int b = 0;
+                     for (int row = 0; row < 2; row++)
+                     {
+                         for (int col = 0; col < 3; col++)
+                         {
+                             a = a + 1;
+                             int item = MAT[row][col];
+                             if (item%2 != 0)
+                                 b = b + item;
+                         }
+                     }
+                     System.out.println ("The value of a is : " + a);
+                     System.out.println ("The value of b is : " + b);
+
+                     (d)                  State the output from this code.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [2]
+
+                     The theatre employs a 2D array to indicate the status of each seat for a performance.
+                     trueindicates that the seat has been sold for that performance.                                                                                                                                                                             false indicates that
+                     ithasnot been sold.
+
+                     The 2D array seats is used to represent the seating plan in the theatre. The array
+                     contains40 rows and 30 columns.
+
+                     For example, seats[2][3] = false shows that the seat in row 2, column 3 of the
+                     2Darray,                           seats, has not been sold.
+
+                     After each performance, the sales data is analysed with a program that uses the method
+                     least(). This accepts the 2D array seats and outputs the row for which the lowest
+                     numberof seats were sold.
+
+                     (e)                  Construct the method least().
+
+                                          Assume only one row matches this condition.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [5]
+
+(Option A continues on the following page)

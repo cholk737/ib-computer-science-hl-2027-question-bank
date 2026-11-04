@@ -1,0 +1,40 @@
+                                                    –18–
+
+(Option B continued)
+
+6.    A company employs a number of salespeople to sell its goods.
+
+      Details of the sales made by each employee for a year are stored in the SalesPerson object
+      for that employee.
+
+      At the end of each month, the total sales for each employee are added to the list self._sales
+      in the SalesPerson object. At the end of the year, the list will contain 12entries, one for each
+      month of the year.
+
+      Bonuses are paid to employees at the end of each year.
+
+      The SalesPerson class is partially shown:
+
+      class SalesPerson():
+
+          bonus1 = …        # value to be added
+          bonus2 = …        # value to be added
+
+
+          def __init__(self, id):
+              self.__id = id        # employee id
+              self.__sales = []     # holds the monthly sales figures
+
+          def get_id(self):         # returns employee’s id
+              return self._id
+
+          def calculate_total(…):   # returns the total sales figure for the year
+              # code missing
+
+          def calculate_highest(…): # returns highest monthly total in the year
+              # code missing
+
+          def add_sales(…):         # adds the sales for a month to the sales list
+              # code missing
+
+(Option B continues on the following page)

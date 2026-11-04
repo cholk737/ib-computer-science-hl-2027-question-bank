@@ -1,0 +1,58 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               – 8 –
+
+
+3.                                                           (a)                                           Award [2] max
+
+                                   Award [1] for stating a benefit and [1]           for expansion
+
+                                   Provides data integrity;
+                                   Accurate and reliable data/primary and foreign keys prevent orphan data/enforce
+                                   relationships;
+
+                                   Maintains data consistency;
+                                   Ensures data in one part of the database does not contradict data in another;
+
+                                   Allows data concurrency;
+                                   Multiple users can access data at the same time;
+
+                                   Reduces of data redundancy;
+                                   Uses normalization to ensure data is only stored once;
+
+                                   Allows for complex querying;
+                                   Uses a declarative/industry standard language;
+
+                 (b)                                           Award [1] per point, up to [2]                                 max
+
+                                   Data volume growth (leading to performance issues);
+                                   Increased concurrency (an increase in users may lead to concurrency issues);
+                                   Complexity of queries (more sophisticated analysis use more resources);
+                                   Hardware limitations (single server becomes overloaded);
+                                   Load balancing on multiple servers;
+                                   Inefficient indexing (affecting time to search);
+
+(c)                                                                Award [3] max
+
+                                   Award [1] for SELECT DISTINCT or GROUP BY
+
+                                   Award [1] for using LIKE
+
+                                   Award [1] for using the wildcard (any wildcard accepted) and therapy
+
+                                   SELECT DISTINCT PatientName FROM VISITS
+                                   WHERE Treatment LIKE '                                                                                                                                                                                                                                      %therapy%'                                                                                                  ;
+
+                                   Alternative solution using group by:
+
+                                   SELECT PatientName FROM VISITS
+                                   WHERE Treatment LIKE '                                                                                                                                                                                                                                      %therapy%'
+                                   GROUP BY PatientName
+
+                                   Alternative solution using a subquery and group by:
+
+                                   SELECT PatientName
+                                   FROM (
+                                   SELECT PatientName
+                                   FROM VISITS
+                                   WHERE Treatment LIKE '%therapy%'
+                                   ) AS subquery
+                                   GROUP BY PatientName;

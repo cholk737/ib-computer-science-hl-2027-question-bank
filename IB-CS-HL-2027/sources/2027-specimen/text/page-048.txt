@@ -1,0 +1,48 @@
+                                                                                                                                                                                                                                                              –12–
+
+(Option A  continued)
+
+5.                            An array of names is being added to a binary search tree using a recursive insertion method.
+                              Thetree, after the insertion of the first five names, is shown in                                                                                                                                                                                                                                                                Figure 2.
+
+                                                                               Figure 2: The binary search tree after insertion of the first five names
+
+
+
+                                                                                                                                                                                                                                                                                                          Martin
+
+
+
+                                                                                                                                                                               Jeanne                                                                                                                                                                                                                                              Pedro
+
+
+
+                                                                                      Hwang                                                                                                                                                                              Manuel
+
+
+
+                              (a)                           Sketch the binary search tree after the names “Louis” and “Indie” are inserted into it.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [2]
+
+                              (b)                           Explain why the process of inserting a name into the binary search tree is recursive.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [3]
+
+                              The iterative method iter(int x) is shown:
+
+                              public int iter(int x)
+                              {
+                                  s = 0;
+                                  while (x > 0)
+                                  {
+                                      s = s + x;
+                                      x = x -1;
+                                  }
+                                  return s;
+                              }
+
+                              (c)                           (i)                           State the value returned by the call int result = iter(6);. [1]
+
+                                                            (ii)                          Construct the recursive method recur(int x) that performs the same function
+                                                                                          as the iter(int x) method.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   [4]
+
+                                                            (iii)                         Explain why a run time error might occur in recur() for large values of x. [3]
+
+(Option A continues on the following page)

@@ -1,0 +1,35 @@
+                                                    – 9 –
+
+(Option A, question 3 continued)
+
+      The data of each flight are stored in a Flight object. This includes details of the passengers
+      stored in an array of Passenger objects.
+
+      The Flight class is partially shown:
+
+      public class Flight{
+          public int seatsBooked;   // incremented whenever a ticket is bought
+          public int maxPassengers; // maximum number of passengers for this flight
+          public double initialPrice; // initial price of a ticket on this flight
+          public Passenger[] passengers; // array of Passenger objects
+
+          public Flight(int mp, double ip)
+          {
+              this.seatsBooked = 0;
+              this.maxPassengers = mp;
+              this.initialPrice = ip;
+              this.passengers = new Passenger[maxPassengers];
+          }
+
+          updatedTicketPrice() // code missing
+
+          addPassenger()       // code missing
+
+          selectSort()         // code missing
+      }
+
+      Multiple classes have a variety of relationships, including aggregation and composition.
+
+      (b)   Outline the relationship between the Passenger and Flight classes.                              [2]
+
+(Option A continues on the following page)

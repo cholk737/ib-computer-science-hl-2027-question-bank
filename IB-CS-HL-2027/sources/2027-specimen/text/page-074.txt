@@ -1,0 +1,59 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    – 12                                             –
+
+
+5.                                                           (a)                                           Award [2 max]
+
+                                                award [1] for each correct entry;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        (b)                                           Award [3 max]
+
+                                                The insert method is initially passed the root of the tree as a parameter (where a comparison
+                                                is made);
+                                                Then either the left or right subtree is selected (depending upon the result of the comparison);
+                                                The method is called again, using the root of this subtree as the parameter;
+                                                This is repeated until the insertion point is found (base case) / subtree is null;
+
+                        (c)                                                                (i)                                                         Award [1 max]
+
+                                                                        21;
+
+                                                (ii)                                                Award [4 max]
+
+                                                                        Award [1] for including a recursive call that will lead to the base case;
+                                                                        Award [1] for having a base case;
+                                                                        Award [1] for return + int;
+                                                                        Award [1] for a completely correct algorithm;
+
+                                                                        public int recur(int x)
+                                                                        {
+                                                                                        if (x != 0)
+                                                                                                              return x + recur(x          -1);
+                                                                                        else
+                                                                                                              return x;
+                                                                        }
+
+                                                (iii)                                       Award [3 max]
+
+                                                                        data is stored in the memory / on a stack every time a recursive call is made;
+                                                                        if the value of x           is very large ...;
+                                                                        … the stack may overflow / system may run out of memory;
+

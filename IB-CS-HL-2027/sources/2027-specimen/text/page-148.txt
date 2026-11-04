@@ -1,0 +1,43 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    – 16                                             –
+
+
+6.                                                           (a)                                           Award [4 max]
+
+                                creates / assigns memory to a new instance of the SalesPerson class;
+                                identified by the variable employee1;
+                                initialises id with value “A6457098”;
+                                declares (empty) sales list;
+
+                (b)                                           Award [2 max]
+
+                                bonus1   belongs to the class / it will remain the same for all instances of the class / has the
+                                same memory for all instances;
+                                self_id     belongs to the object/instance / it will be different for each instance / be assigned
+                                different memory for each instance;
+
+                                self._id is declared inside the constructor/ the                    __init__() method;
+                                bonus1 is declared inside the class definition but outside any of the instance methods and
+                                constructor;
+
+                                self.id variable gets created when an instance of the class is;
+                                bonus1 is created when the program begins to execute;
+
+                                changes made to instance variable          self._id through one object will not reflect in another
+                                object; changes made in the class variable          bonus1 will reflect in all objects;
+
+                (c)                                              Award [2 max]
+
+                                provides greater security for the values stored in these variables/for the code;
+                                restricts access to such variables from outside of the class /only allows access through public
+                                / getter, setter methods;
+                                (helps to) prevents accidental/unintended                                                                                                                               changes to the variables (from outside of the class);
+
+                (d)                                           Award [2 max]
+                                Award [1] for parameters;
+                                Award [1] for adding the sales figure to the list;
+
+                                def add_sales(self, amount):
+                                          self._sales.append(amoun                          t)
+
+                                def add_sales(self, amount):
+                                    self._sales = self._sales + [amount]

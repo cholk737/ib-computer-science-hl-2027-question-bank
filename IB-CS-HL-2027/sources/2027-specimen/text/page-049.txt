@@ -1,0 +1,42 @@
+                                                                                                    –13–
+
+(Option A  continued)
+
+6.         A computer game stores the name and score of each player in the nodes of a linked list.
+
+           The linked list makes use of the Node class, in which the data for each node consists of
+           theplayer ’s name and score. This class is shown:
+
+           class Node{
+
+               public String name;
+               public int score;
+               public Node next;
+
+               public Node(String n, int s)
+                   this.name = n;
+                   this.score = s;
+                   this.next = null; // initialize next pointer as null
+           }
+
+           The Node object head will point to the first node in the linked list.
+
+           The driver class contains the method findPlayer().
+
+           This method is passed the name of a player being searched for in the linked list. It will print
+           the player ’s score if the name of the player is found, or a suitable message if not found.
+
+           (a)         Construct the method findPlayer(). [5]
+
+           The driver class will permanently maintain the nodes in the linked list in descending order of
+           score without ever needing to sort them.
+
+           The method addInOrder() will accept a new node as a parameter. This node, which
+           contains the player ’s data, will be inserted into the correct position in the linked list.
+
+           (b)         Without writing code, describe the steps in the method addInOrder().
+
+                       Assume the list is not empty.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               [5]
+
+
+                                                                                End of Option A
