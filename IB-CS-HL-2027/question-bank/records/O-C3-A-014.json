@@ -1,0 +1,54 @@
+{
+  "question_id": "O-C3-A-014",
+  "source_question_ids": [],
+  "derivation_status": "original_unofficial",
+  "unofficial": true,
+  "question_text": "A CNN receives a 32 x 32 single-channel image. No padding is used in any layer, and a kernel or pooling window is only applied where it fits entirely inside its input. The image passes through: a convolutional layer with a 5 x 5 kernel and stride 1; then a 2 x 2 max-pooling layer with stride 2; then a convolutional layer with a 3 x 3 kernel and stride 2. (i) Calculate the width of the output after each of the three layers. (ii) State the effect on the output size, and on the detail captured, of increasing the stride of the first convolutional layer from 1 to 2.",
+  "syllabus_codes": [
+    "A4.3.9"
+  ],
+  "theme": "A",
+  "level": "HL-only",
+  "marks": 4,
+  "command_term": "Calculate",
+  "difficulty": "high",
+  "question_type": "calculation",
+  "adaptation_rationale": "Original question written by Claude (single-agent Chunk 3 continuation, 2026-11-04) for a syllabus statement with no linked question at handover; no historical source question or official marking status claimed.",
+  "solution": "Output width = floor((input - kernel) / stride) + 1. Layer 1: (32 - 5)/1 + 1 = 28, so 28 x 28. Pooling: (28 - 2)/2 + 1 = 14, so 14 x 14. Layer 3: floor((14 - 3)/2) + 1 = 5 + 1 = 6, so 6 x 6. (ii) With stride 2 the first output becomes floor(27/2) + 1 = 14 x 14: the feature map is about half the width (a quarter of the values), so less computation, but fine spatial detail can be lost because the kernel skips positions.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "After the first convolution: 28 (x 28)."
+    },
+    {
+      "marks": 1,
+      "criterion": "After pooling: 14 (x 14)."
+    },
+    {
+      "marks": 1,
+      "criterion": "After the second convolution: 6 (x 6)."
+    },
+    {
+      "marks": 1,
+      "criterion": "Increasing stride reduces the output size (14 x 14) and computation but loses fine spatial detail."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Follow-through for later layers from an earlier error when the method is correct. For (ii) accept \"smaller feature map\" with either reduced computation or reduced detail."
+  ],
+  "partial_credit_notes": "Award each independent point once, up to 4 marks. Accept equivalent correct wording or valid alternative code. Do not double-credit one idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed check in audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json (1129 cases).",
+    "scope": "Padding, channels/depth and parameter counts are not assessed. The size formula is stated in the reference, not required in the prompt."
+  },
+  "code": "",
+  "test_code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/O-C3-A-014.json",
+  "question_path": "question-bank/questions/O-C3-A-014.json",
+  "markscheme_path": "question-bank/markschemes/O-C3-A-014.json",
+  "coordinator_status": "author_content_scope_answer_marking_checks_passed; independent_Chunk4_audit_pending",
+  "independent_verification_status": "pending"
+}

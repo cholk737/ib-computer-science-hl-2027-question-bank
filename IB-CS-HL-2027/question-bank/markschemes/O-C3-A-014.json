@@ -1,0 +1,34 @@
+{
+  "question_id": "O-C3-A-014",
+  "unofficial": true,
+  "solution": "Output width = floor((input - kernel) / stride) + 1. Layer 1: (32 - 5)/1 + 1 = 28, so 28 x 28. Pooling: (28 - 2)/2 + 1 = 14, so 14 x 14. Layer 3: floor((14 - 3)/2) + 1 = 5 + 1 = 6, so 6 x 6. (ii) With stride 2 the first output becomes floor(27/2) + 1 = 14 x 14: the feature map is about half the width (a quarter of the values), so less computation, but fine spatial detail can be lost because the kernel skips positions.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "After the first convolution: 28 (x 28)."
+    },
+    {
+      "marks": 1,
+      "criterion": "After pooling: 14 (x 14)."
+    },
+    {
+      "marks": 1,
+      "criterion": "After the second convolution: 6 (x 6)."
+    },
+    {
+      "marks": 1,
+      "criterion": "Increasing stride reduces the output size (14 x 14) and computation but loses fine spatial detail."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Follow-through for later layers from an earlier error when the method is correct. For (ii) accept \"smaller feature map\" with either reduced computation or reduced detail."
+  ],
+  "partial_credit_notes": "Award each independent point once, up to 4 marks. Accept equivalent correct wording or valid alternative code. Do not double-credit one idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed check in audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json (1129 cases).",
+    "scope": "Padding, channels/depth and parameter counts are not assessed. The size formula is stated in the reference, not required in the prompt."
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}
