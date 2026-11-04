@@ -1,57 +1,40 @@
-# Progress — Chunk 2 complete
+# Progress — Chunk 3 active, recovery-first
 
-**Checkpoint C2-FINAL — 4 November 2026 (Europe/Zurich).** Steps 4–6 finished. **STOP: do not begin Chunk 3 without explicit user authorization.**
+**Checkpoint C3-RECOVERY-000 — 4 November 2026 (Europe/Zurich).** User explicitly authorized Chunk 3 continuation and checkpoints every 2–3 questions. Do not enter Chunk 4; no Chunk 5 exists in this project.
 
-## Verified final counts
+## Immediate disk reconciliation
 
-- 23 distinct historical examinations processed; 0 remaining. All old subject options included.
-- 1,141 marked source subquestions extracted and classified; 3,330 original marks across all options.
-- 838 source subquestions mapped: 383 A directly relevant; 455 B requiring adaptation.
-- 823 converted practice records, each with separate question and preliminary unofficial marking files.
-- 15 source records explicitly reuse existing practice questions; all provenance retained.
-- 303 C obsolete exclusions with reasons; 0 unresolved mappings.
-- 1,418 mapping-index rows, including the 303 explicit exclusion rows; 152 validated batch handoffs.
-- No original gap-filling questions, D historical records, coverage-gap audit or full examination/markscheme PDFs.
+The actual saved project contains **Chunk 2 final only** (verified Git milestone `dd5285c`). No Chunk 3 question, coverage audit, searchable interface, draft exam, or specialist output was found. No live specialist existed at inspection. This is a discrepancy with the user's assumed in-progress Chunk 3, not evidence that any work was lost. Do not invent previous completions. The previous progress report is preserved at `audits/chunk-3/PROGRESS_BEFORE_C3_RECOVERY.md`.
 
-These are record counts, not a claim of complete syllabus coverage. 93 normalized source-leaf text match groups are flagged; variants do not establish additional knowledge coverage.
+## Preserved verified baseline
 
-## Exactly three actual specialist contributions
+- 48 source PDFs inventoried; 23 distinct historical examinations processed; 0 remaining.
+- 1,141 source subquestions; 838 mapped (383 A / 455 B); 303 C exclusions.
+- 823 adapted practice records with separate question, preliminary marking and full provenance JSON; 15 reuse links.
+- 112 official syllabus statements preserved. Chunk 3 objectives checked: **0**; original questions generated/verified: **0/0**. Coverage index has no completed objective audit.
+- Initial file hashes saved in `audits/chunk-3/RECOVERY_INITIAL_MANIFEST.json` (all existing question-bank JSON, bank/mapping/coverage/syllabus indexes). Existing records remain authoritative.
 
-| Specialist | Owned papers | Source leaves | Local practice | Reused source links | C exclusions | Status |
-| --- | ---: | ---: | ---: | ---: | ---: | --- |
-| /root/historical_processor_a | 8 | 369 | 272 | 1 | 96 | Completed; verified and merged |
-| /root/historical_processor_b | 8 | 467 | 331 | 2 | 134 | Completed; verified and merged |
-| /root/historical_processor_c | 7 | 305 | 220 | 12 | 73 | Completed; verified and merged; also bounded read-only A/B audit |
+## Three specialist assignments — launched after initial checkpoint
 
-All three native specialists ran concurrently and contributed durable files under their isolated agents/chunk-2 folders. An initial tool-reported usage interruption was resumed on the user's explicit continuation using the same three identities, without new agents. No shared master was written by a subagent.
+| Agent | Exclusive output directory | Completed this run | Current/next action | Last saved question |
+|---|---|---|---|---|
+| Theme A Coverage & Question Designer | agents/chunk-3/agent-1-theme-a/ | Initialized status; /root/theme_a_coverage running | Audit A1–A4 against full guide scope and existing bank; persist objective-level audit, then bounded gap questions | None |
+| Theme B Coverage & Python Question Designer | agents/chunk-3/agent-2-theme-b/ | /root/theme_b_coverage running | Audit B1–B4 and Python constraints; persist audit, then bounded executed gap questions | None |
+| Searchable Bank Developer & Independent Coverage Auditor | agents/chunk-3/agent-3-bank-audit/ | /root/searchable_bank_audit running | Inspect saved requirements, build local searchable bank and tests; independently audit coverage and plan exam blueprint | None |
 
-## Final outputs
+Coordinator alone writes shared masters and merged question files. Each agent saves its own `STATUS.json`, `findings.md`, objective IDs checked, generated/verified IDs, unfinished work, files changed and exact next action. Save atomically after 2–3 questions and each topic. No subagent Git writes.
 
-- extraction/HISTORICAL_MANIFEST.csv and .json: fixed round-robin ownership and all 23 completion statuses.
-- extraction/HISTORICAL_QUESTION_INDEX.csv; extraction/by-paper/<source>/questions/*.json (1,141 records).
-- mapping/SYLLABUS_MAPPING.csv (1,418 rows).
-- question-bank/QUESTION_BANK.csv (823 rows); questions/, markschemes/ and records/ (823 JSON files each), README and marking policy.
-- extraction/OBSOLETE_QUESTIONS.csv (303 rows).
-- syllabus master and 112 detail records: mechanical bank-ID links updated; exact official scope unchanged. Coverage report index remains empty until authorized Chunk 3 work.
-- audits/chunk-2/CHUNK2_REPORT.md, FINAL_VALIDATION.json, MERGE_STATUS.json, MERGE_LEDGER.json, APPROVED_BATCHES.json, CHECKPOINT_MANIFEST.json.
-- audits/chunk-2 source-mark/code/SQL/answer-code/visual checks, duplicate candidates, source caveats and coordinator revisions.
-- QA_ISSUES.md; three specialist findings, per-paper audits and final receipts. See extraction/README.md and question-bank/README.md for navigation.
+## Remaining Chunk 3 gates
 
-## Verification and limitations
+1. Step 7: audit every individual syllabus statement and important scope bullet; reconcile three independent findings, difficulty and duplicates.
+2. Step 8: write original gap questions, verify content/mapping/answers/mark points and execute applicable Python. Merge validated batches without replacing historical IDs.
+3. Searchable bank: recover feature requirements from saved evidence where present; implement, test and document concrete supported features. Do not declare completion merely because an index exists.
+4. Step 9: verified 80-mark student draft papers; Paper 1 split 56/24 plus unofficial pre-seen case and four challenges; Python Paper 2 includes non-code algorithmic thinking. Render and inspect all pages. No separate markscheme PDFs in Chunk 3.
 
-Every source leaf's mark allocation reconciles: 21 text-readable papers against independent PDF margin extraction, two scanned papers with owner full-page visual review and coordinator resolution of OCR discrepancies. Original/project-copy hashes for all 48 PDFs still agree. All author answers checked; all code/marking/schema/provenance links validated. Coordinator sampled original source content and solutions from all three shards, reviewed scope conflicts and ran 134 saved Python records, six independent oracle families, 93 answer/code comparisons and nine SQLite checks; all pass. Agent C's separate original-source cross-audit also passes both high-risk algorithms.
+## Resume and interruption
 
-Two 2026 papers (SRC001/SRC002) have no uploaded official markschemes; independently authored criteria remain explicitly unofficial/preliminary. Source defects and ambiguous original claims are preserved separately and handled in the adaptations. SRC047's shorter scan omits only a blank page, confirmed; no question content is missing. Final exam-specific independent marking/PDF audit remains Chunk 4.
+Read AGENTS.md, this file, QA_ISSUES.md and initial manifest. Inspect each agent's STATUS.json and actual files; compare last saved IDs before assigning work. Existing Chunk 2 generators must not be rerun. Follow the next unfinished objective/batch in agent status; coordinator must validate before master integration. Chunk 3 remains incomplete until all gates pass. No automatic continuation or live credit information is claimed.
 
-Known repairs include source-vs-synopsis distinction; adapted commands and prose; specific scope/duplicate conflicts; incidental OOP over-mapping; original marking evidence separated from adapted answer fallback; SQL identifier polish regression repaired before approval; SRC040 mark-page provenance separated from context; overnight/trial-count source-code errors corrected and tested. All final batches are hash-snapshotted.
+**Next exact action:** coordinator validates baseline file hashes/schema and establishes repeatable atomic C3 checkpoint/merge validation; three launched specialists continue isolated audits and local bank development. No specialist has yet completed its full assignment.
 
-## Checkpoints and resume
-
-- C1 foundation: commit 46e2823; full ledger PROGRESS_CHUNK_1_ARCHIVE.md.
-- C2 initial/resume/batch/merge history: audits/chunk-2/PROGRESS_HISTORY.md.
-- C2 first Git checkpoint: 51c4340 (437 source parts / 328 practices at that stage).
-- Final Git commit ID/status: audits/chunk-2/GIT_CHECKPOINT.md (saved immediately after final commit).
-
-**Current work is complete. Next action: await the user's explicit Chunk 3 assignment.** On authorization, read AGENTS.md, this file, QA, source inventory, verified syllabus/specimen masters and final bank/mapping indexes; check FINAL_VALIDATION and checkpoint hashes. Do not rerun old extraction/build generators over approved records: some specialist generators require their documented repair/polish passes. Durable checked batches and approved snapshots are the handoff authority. Do not repeat Chunk 2 or create examination PDFs before Chunk 3 is assigned.
-
-No remaining source batch or question is unfinished. No automatic background continuation or account-credit balance is claimed.
+Native identities launched this run: `/root/theme_a_coverage`, `/root/theme_b_coverage`, `/root/searchable_bank_audit`. Each owns its directory above. Current work saved before dispatch; latest granular activity lives in each STATUS.json.

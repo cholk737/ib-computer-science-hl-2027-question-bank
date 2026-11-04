@@ -1,6 +1,6 @@
 # IB Computer Science HL 2027 — unofficial practice-exam project
 
-Fresh project initialized 4 November 2026. Chunks 1 and 2 (Steps 1–6) have been authorized; read PROGRESS.md for the current checkpoint. Chunk 3 is not authorized. All future practice papers and authored marking criteria will be unofficial; no affiliation or endorsement is implied.
+Fresh project initialized 4 November 2026. Chunks 1 and 2 (Steps 1–6) are complete; Chunk 3 is now authorized and active with recovery checkpoints. Read PROGRESS.md for the current checkpoint. All future practice papers and authored marking criteria will be unofficial; no affiliation or endorsement is implied.
 
 ## Find the work
 
