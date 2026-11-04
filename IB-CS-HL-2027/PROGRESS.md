@@ -1,8 +1,8 @@
 # Progress — Chunk 3 active, recovery-first
 
-**Checkpoint C3-20261104-221548-142941 — 04 November 2026 22:15:48 CET (Europe/Zurich).**
+**Checkpoint C3-20261104-221819-269616 — 04 November 2026 22:18:19 CET (Europe/Zurich).**
 
-Original batch 2: saved O-C3-B-008 O-C3-B-009 O-C3-B-010 (author-verified; C4 pending)
+Batch 2 complete: 21 originals, 0 no-link codes, typo routing, docs updated
 
 User authorized Chunk 3 only. Checkpoint after every 2–3 questions, each topic and meaningful milestone. **Do not enter Chunk 4.** Do not enter future chunks; user mentioned a future Chunk 5 but has not authorized it.
 
@@ -21,8 +21,8 @@ User authorized Chunk 3 only. Checkpoint after every 2–3 questions, each topic
 ```json
 {
   "live_path": "question-bank/database.sqlite3",
-  "snapshot_path": "audits/chunk-3/database-snapshots/69ae52a073fe47e567f6427ab3161356126f1dc394bb07f880386a7858a173e9.sqlite3",
-  "sha256": "69ae52a073fe47e567f6427ab3161356126f1dc394bb07f880386a7858a173e9",
+  "snapshot_path": "audits/chunk-3/database-snapshots/3d7df84747c2c1c64d17da2ad33e6091ad26c11d3b03cd0216bde3eeaf5de9f4.sqlite3",
+  "sha256": "3d7df84747c2c1c64d17da2ad33e6091ad26c11d3b03cd0216bde3eeaf5de9f4",
   "integrity_check": "ok",
   "table_counts": {
     "questions": 847,

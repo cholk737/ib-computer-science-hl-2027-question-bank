@@ -1,7 +1,7 @@
 {
-  "checkpoint": "C3-20261104-221548-142941",
-  "saved_at": "2026-11-04T22:15:48.142941+01:00",
-  "note": "Original batch 2: saved O-C3-B-008 O-C3-B-009 O-C3-B-010 (author-verified; C4 pending)",
+  "checkpoint": "C3-20261104-221819-269616",
+  "saved_at": "2026-11-04T22:18:19.269616+01:00",
+  "note": "Batch 2 complete: 21 originals, 0 no-link codes, typo routing, docs updated",
   "baseline_commit": "dd5285c",
   "initial_recovery_commit": "523d2b5",
   "master_bank_records": 847,
@@ -14594,13 +14594,18 @@
     },
     {
       "path": "question-bank/search/bank_db.py",
-      "bytes": 35598,
-      "sha256": "9ad59c6d7676a571475ad738105b52e963ff3e17e5a11239d87bc68f5d6c00ce"
+      "bytes": 36250,
+      "sha256": "3053e7d87b61249fc7a08be0f06c3b5018961d54dbd930a067d13b0b44c7e101"
+    },
+    {
+      "path": "question-bank/search/c3_originals_test_results.json",
+      "bytes": 937,
+      "sha256": "86bf623f188e812e3f0d76611d88c72f72cc49b530e494dc697a85d66fd05dc2"
     },
     {
       "path": "question-bank/search/db_test_results.json",
-      "bytes": 4075,
-      "sha256": "3d659d49d70e673369ee92f2c6c3f04392bc868c0172786011ad9835cb7143a7"
+      "bytes": 4079,
+      "sha256": "9d1530df42965efec7bcf94ce9bca18fe6e7919ce44cc57fc10a090934634dd7"
     },
     {
       "path": "question-bank/search/persistent-web/app.js",
@@ -14619,13 +14624,18 @@
     },
     {
       "path": "question-bank/search/semantic_precision_results.json",
-      "bytes": 923,
-      "sha256": "09402a58cff0a7e4c79b1eeb0fe5de69a83c93163cf5933da0640902c121d3c6"
+      "bytes": 1304,
+      "sha256": "6c6420b9e10b47596e684f888a7fa0d28987c4e5c61eea760a6b8614ab571a2c"
     },
     {
       "path": "question-bank/search/serve_bank.py",
       "bytes": 7058,
       "sha256": "7bef5668e386329805b3b86159611e582837f75a3a5a718e503b41aa8a0d5582"
+    },
+    {
+      "path": "question-bank/search/test_c3_originals.py",
+      "bytes": 3657,
+      "sha256": "98a97f533a7f65980285149559ea2badd0af4ce8bb5be8a320f66c258ce57f0c"
     },
     {
       "path": "question-bank/search/test_db.py",
@@ -14634,8 +14644,8 @@
     },
     {
       "path": "question-bank/search/test_semantic_precision.py",
-      "bytes": 1353,
-      "sha256": "eee1731f97d2b4d0ccb1af1b792db52b781912573f4e7019c25a24b036dc088f"
+      "bytes": 1763,
+      "sha256": "5a3e4c6e238d9705d7b5987b4b8b3e1d579da617f6f91437927515cf7c2927e6"
     },
     {
       "path": "scripts/build_coverage_report.py",
@@ -14770,8 +14780,8 @@
   ],
   "database_snapshot": {
     "live_path": "question-bank/database.sqlite3",
-    "snapshot_path": "audits/chunk-3/database-snapshots/69ae52a073fe47e567f6427ab3161356126f1dc394bb07f880386a7858a173e9.sqlite3",
-    "sha256": "69ae52a073fe47e567f6427ab3161356126f1dc394bb07f880386a7858a173e9",
+    "snapshot_path": "audits/chunk-3/database-snapshots/3d7df84747c2c1c64d17da2ad33e6091ad26c11d3b03cd0216bde3eeaf5de9f4.sqlite3",
+    "sha256": "3d7df84747c2c1c64d17da2ad33e6091ad26c11d3b03cd0216bde3eeaf5de9f4",
     "integrity_check": "ok",
     "table_counts": {
       "questions": 847,

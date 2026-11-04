@@ -178,8 +178,14 @@ def skill_match(request,skill):
     cs=concepts(request)
     return bool(cs and cs.issubset(concepts(skill)))
 
+SOURCE_CODE_VARIANT=re.compile(r'\b([AB])\s*\.\s*(\d)\.(\d)\.(\d+)\b',re.I)
+def normalize_codes(text):
+    """Route printed-source variants such as the guide typo 'A.1.2.5' to the normalized code 'A1.2.5'.
+    Only the query is rewritten; stored evidence keeps the exact printed source code."""
+    return SOURCE_CODE_VARIANT.sub(lambda m:(m.group(1)+m.group(2)+'.'+m.group(3)+'.'+m.group(4)).upper(),str(text or ''))
+
 def requirements(db,query='',code='',scope_text=''):
-    text=scope_text or query;codes=list(dict.fromkeys(([code] if code else [])+re.findall(r'\b[AB]\d\.\d\.\d+\b',text,re.I)));codes=[c.upper() for c in codes];requested=[]
+    query,code,scope_text=normalize_codes(query),normalize_codes(code).strip(),normalize_codes(scope_text);text=scope_text or query;codes=list(dict.fromkeys(([code] if code else [])+re.findall(r'\b[AB]\d\.\d\.\d+\b',text,re.I)));codes=[c.upper() for c in codes];requested=[]
     # Full literal guidance receives a bullet match; concepts inside a bullet remain aspect requests.
     for line in re.split(r'[\n;]+',text):
         clean=re.sub(r'\b[AB]\d\.\d\.\d+\b','',line,flags=re.I).strip(' :•-')
@@ -218,6 +224,7 @@ def detail(db,qid,include_answer=False):
     return q
 
 def search(db,filters):
+    filters=dict(filters);filters.update({k:normalize_codes(filters[k]) for k in ('text','code','scope_text') if filters.get(k)})
     query=str(filters.get('text',''));requested,codes=requirements(db,query,str(filters.get('code','')),str(filters.get('scope_text','')));exact_id=db.execute('SELECT question_id FROM questions WHERE lower(question_id)=lower(?)',(query.strip(),)).fetchone();
     if exact_id and not filters.get('scope_text') and not filters.get('code'):requested=[];codes=[]
     ids={r[0] for r in db.execute('SELECT question_id FROM questions')};content_ids=set();terms=re.findall(r'[a-zA-Z0-9_]+',query)

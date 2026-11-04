@@ -1,0 +1,38 @@
+{
+  "suite": "c3-originals-retrieval",
+  "passed": 5,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "every original searchable by reviewed code and ID; answers hidden by default and complete on request",
+      "count": 24
+    },
+    {
+      "name": "all 13 handover no-link codes now return a reviewed (checked) match",
+      "codes": [
+        "A1.1.6",
+        "A1.3.3",
+        "A2.1.5",
+        "A2.2.1",
+        "A2.3.1",
+        "A2.3.4",
+        "A3.2.7",
+        "A4.2.2",
+        "A4.2.3",
+        "A4.3.9",
+        "B1.1.1",
+        "B3.2.5",
+        "B4.1.6"
+      ]
+    },
+    {
+      "name": "printed source-code typo routes (A.1.2.5, B.4.1.6) equal normalized code results for code/text/scope_text"
+    },
+    {
+      "name": "theme filters with full pagination return each record once, including all originals"
+    },
+    {
+      "name": "question_type filter returns the new Python construction originals"
+    }
+  ]
+}
