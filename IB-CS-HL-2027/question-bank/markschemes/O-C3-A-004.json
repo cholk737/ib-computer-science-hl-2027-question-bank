@@ -1,0 +1,42 @@
+{
+  "question_id": "O-C3-A-004",
+  "unofficial": true,
+  "solution": "FCFS is simple with low overhead, but a long backup at the front of the queue makes every short student request wait (convoy effect), so response times are poor. Round robin gives every process a time slice in turn, so interactive requests get the CPU quickly and fairly, but frequent context switches add overhead and long batch jobs take longer to finish. Priority scheduling can give student requests a higher priority so they run first, but low-priority batch jobs may starve unless their priority is raised over time (ageing). Multilevel queue scheduling places interactive and batch processes in separate queues, each with its own algorithm (e.g. RR for interactive, FCFS for batch) and a priority between queues, so it matches this mixed workload best, although it is more complex to configure and the lower queue can still be starved. Overall, multilevel queue (or priority with ageing) suits this server better than FCFS.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "FCFS: simple/low overhead but short interactive requests wait behind long batch jobs (poor response time / convoy effect)."
+    },
+    {
+      "marks": 1,
+      "criterion": "Round robin: time slices give fair, quick response to interactive requests."
+    },
+    {
+      "marks": 1,
+      "criterion": "Round robin: context-switch overhead and/or longer turnaround for long batch jobs."
+    },
+    {
+      "marks": 1,
+      "criterion": "Priority: interactive requests can be given precedence, but low-priority batch jobs risk starvation (ageing as mitigation)."
+    },
+    {
+      "marks": 1,
+      "criterion": "Multilevel queue: separate queues for interactive and batch processes, each with its own algorithm and inter-queue priority."
+    },
+    {
+      "marks": 1,
+      "criterion": "A comparative judgement for this server (e.g. multilevel queue best fits the mixed workload, at the cost of complexity / possible starvation of the lower queue)."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Accept a table that compares the four approaches against criteria such as response time, fairness, overhead and starvation, provided the points are linked to the scenario."
+  ],
+  "partial_credit_notes": "Award each independent point once, up to 6 marks. Accept equivalent correct wording or valid alternative code. Do not double-credit one idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component.",
+    "scope": "Multilevel feedback queues are not required. No numeric calculation (see O-C3-A-003)."
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

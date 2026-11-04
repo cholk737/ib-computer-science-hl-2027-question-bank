@@ -1,0 +1,38 @@
+{
+  "question_id": "O-C3-A-006",
+  "unofficial": true,
+  "solution": "Reliability: if one computer or its cable fails only that device is affected (star); the partial mesh gives alternative paths between buildings, so a failed central switch or link does not isolate a building, although failure of a building switch still disconnects that building. Transmission speed: each device has a dedicated link to its switch, and the extra mesh links share inter-building traffic, so congestion on the central links is reduced. Scalability: new computers are added by connecting them to a building switch, and a new building can be added as another star connected to the core. Data collisions: switches send frames only to the destination port and each link is dedicated (full duplex), so collisions are effectively avoided. Cost: more switches, cabling and extra mesh links make it more expensive to install and manage than a single star.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Reliability: single device/cable failure is isolated, and mesh links provide alternative paths between buildings (or building switch remains a single point of failure)."
+    },
+    {
+      "marks": 1,
+      "criterion": "Transmission speed: dedicated links to switches and multiple inter-building paths reduce congestion."
+    },
+    {
+      "marks": 1,
+      "criterion": "Scalability: devices/buildings can be added by connecting to a switch / adding another star."
+    },
+    {
+      "marks": 1,
+      "criterion": "Data collisions: switched dedicated (full-duplex) links mean collisions are effectively avoided."
+    },
+    {
+      "marks": 1,
+      "criterion": "Cost: additional switches and redundant mesh cabling increase installation and maintenance cost."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Each factor must be applied to the hybrid campus design; generic definitions alone score at most 2."
+  ],
+  "partial_credit_notes": "Award each independent point once, up to 5 marks. Accept equivalent correct wording or valid alternative code. Do not double-credit one idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component.",
+    "scope": "Small-office application is assessed separately in O-C3-A-007. Bus/ring topologies are not part of the 2027 guidance and are not assessed."
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

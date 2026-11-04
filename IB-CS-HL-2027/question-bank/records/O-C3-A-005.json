@@ -1,0 +1,62 @@
+{
+  "question_id": "O-C3-A-005",
+  "source_question_ids": [],
+  "derivation_status": "original_unofficial",
+  "unofficial": true,
+  "question_text": "A student's web browser sends a request for a web page to a server on another network. Describe the role of each of the four layers of the TCP/IP model in sending this request, and how the layers interact so that the request arrives reliably.",
+  "syllabus_codes": [
+    "A2.1.5"
+  ],
+  "theme": "A",
+  "level": "HL-only",
+  "marks": 6,
+  "command_term": "Describe",
+  "difficulty": "medium",
+  "question_type": "description",
+  "adaptation_rationale": "Original question written by Claude (single-agent Chunk 3 continuation, 2026-11-04) for a syllabus statement with no linked question at handover; no historical source question or official marking status claimed.",
+  "solution": "Application layer: the browser uses an application protocol such as HTTP/HTTPS to create the request message. Transport layer: TCP splits the data into numbered segments, adds port numbers and sequence numbers, and uses acknowledgements and retransmission of lost segments (with checksums) so the receiver can reassemble complete, in-order data. Internet layer: IP places segments into packets with source and destination IP addresses and routers forward them across networks towards the destination. Network interface layer: packets are placed into frames with hardware (MAC) addresses and transmitted as signals over the physical medium (cable/Wi-Fi) on each link. Interaction: each layer encapsulates the data from the layer above by adding its own header and passes it down; at the server the layers remove the headers in reverse (decapsulation) and pass the data up to the web-server application.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Application: creates the request using an application protocol (e.g. HTTP/HTTPS)."
+    },
+    {
+      "marks": 1,
+      "criterion": "Transport: TCP divides data into segments with port numbers and sequence numbers."
+    },
+    {
+      "marks": 1,
+      "criterion": "Transport reliability: acknowledgements, retransmission of lost/corrupted segments and in-order reassembly."
+    },
+    {
+      "marks": 1,
+      "criterion": "Internet: IP adds source/destination IP addresses and packets are routed between networks."
+    },
+    {
+      "marks": 1,
+      "criterion": "Network interface: frames with MAC addresses are transmitted over the physical medium on each link."
+    },
+    {
+      "marks": 1,
+      "criterion": "Interaction: encapsulation down the stack (each layer adds a header) and decapsulation up the stack at the receiver."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Accept \"link layer\" for network interface. Accept checksums as part of reliability. Do not credit sequencing/reliability attributed to IP (internet layer)."
+  ],
+  "partial_credit_notes": "Award each independent point once, up to 6 marks. Accept equivalent correct wording or valid alternative code. Do not double-credit one idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component.",
+    "scope": "Does not compare with the OSI model or require UDP. Specific header formats are not required."
+  },
+  "code": "",
+  "test_code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/O-C3-A-005.json",
+  "question_path": "question-bank/questions/O-C3-A-005.json",
+  "markscheme_path": "question-bank/markschemes/O-C3-A-005.json",
+  "coordinator_status": "author_content_scope_answer_marking_checks_passed; independent_Chunk4_audit_pending",
+  "independent_verification_status": "pending"
+}

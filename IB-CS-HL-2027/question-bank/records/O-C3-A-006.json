@@ -1,0 +1,58 @@
+{
+  "question_id": "O-C3-A-006",
+  "source_question_ids": [],
+  "derivation_status": "original_unofficial",
+  "unofficial": true,
+  "question_text": "A college campus has six buildings, each containing about 200 computers. The network team proposes a hybrid topology: a star network inside each building, with every building switch connected to a central switch, plus extra cables directly linking some of the building switches to each other (a partial mesh). Describe how this hybrid topology would perform in terms of reliability, transmission speed, scalability, data collisions and cost.",
+  "syllabus_codes": [
+    "A2.2.1"
+  ],
+  "theme": "A",
+  "level": "SL/HL common",
+  "marks": 5,
+  "command_term": "Describe",
+  "difficulty": "high",
+  "question_type": "description",
+  "adaptation_rationale": "Original question written by Claude (single-agent Chunk 3 continuation, 2026-11-04) for a syllabus statement with no linked question at handover; no historical source question or official marking status claimed.",
+  "solution": "Reliability: if one computer or its cable fails only that device is affected (star); the partial mesh gives alternative paths between buildings, so a failed central switch or link does not isolate a building, although failure of a building switch still disconnects that building. Transmission speed: each device has a dedicated link to its switch, and the extra mesh links share inter-building traffic, so congestion on the central links is reduced. Scalability: new computers are added by connecting them to a building switch, and a new building can be added as another star connected to the core. Data collisions: switches send frames only to the destination port and each link is dedicated (full duplex), so collisions are effectively avoided. Cost: more switches, cabling and extra mesh links make it more expensive to install and manage than a single star.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Reliability: single device/cable failure is isolated, and mesh links provide alternative paths between buildings (or building switch remains a single point of failure)."
+    },
+    {
+      "marks": 1,
+      "criterion": "Transmission speed: dedicated links to switches and multiple inter-building paths reduce congestion."
+    },
+    {
+      "marks": 1,
+      "criterion": "Scalability: devices/buildings can be added by connecting to a switch / adding another star."
+    },
+    {
+      "marks": 1,
+      "criterion": "Data collisions: switched dedicated (full-duplex) links mean collisions are effectively avoided."
+    },
+    {
+      "marks": 1,
+      "criterion": "Cost: additional switches and redundant mesh cabling increase installation and maintenance cost."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Each factor must be applied to the hybrid campus design; generic definitions alone score at most 2."
+  ],
+  "partial_credit_notes": "Award each independent point once, up to 5 marks. Accept equivalent correct wording or valid alternative code. Do not double-credit one idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component.",
+    "scope": "Small-office application is assessed separately in O-C3-A-007. Bus/ring topologies are not part of the 2027 guidance and are not assessed."
+  },
+  "code": "",
+  "test_code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/O-C3-A-006.json",
+  "question_path": "question-bank/questions/O-C3-A-006.json",
+  "markscheme_path": "question-bank/markschemes/O-C3-A-006.json",
+  "coordinator_status": "author_content_scope_answer_marking_checks_passed; independent_Chunk4_audit_pending",
+  "independent_verification_status": "pending"
+}

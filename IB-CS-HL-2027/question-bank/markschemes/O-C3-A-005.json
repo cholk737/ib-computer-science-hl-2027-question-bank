@@ -1,0 +1,42 @@
+{
+  "question_id": "O-C3-A-005",
+  "unofficial": true,
+  "solution": "Application layer: the browser uses an application protocol such as HTTP/HTTPS to create the request message. Transport layer: TCP splits the data into numbered segments, adds port numbers and sequence numbers, and uses acknowledgements and retransmission of lost segments (with checksums) so the receiver can reassemble complete, in-order data. Internet layer: IP places segments into packets with source and destination IP addresses and routers forward them across networks towards the destination. Network interface layer: packets are placed into frames with hardware (MAC) addresses and transmitted as signals over the physical medium (cable/Wi-Fi) on each link. Interaction: each layer encapsulates the data from the layer above by adding its own header and passes it down; at the server the layers remove the headers in reverse (decapsulation) and pass the data up to the web-server application.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Application: creates the request using an application protocol (e.g. HTTP/HTTPS)."
+    },
+    {
+      "marks": 1,
+      "criterion": "Transport: TCP divides data into segments with port numbers and sequence numbers."
+    },
+    {
+      "marks": 1,
+      "criterion": "Transport reliability: acknowledgements, retransmission of lost/corrupted segments and in-order reassembly."
+    },
+    {
+      "marks": 1,
+      "criterion": "Internet: IP adds source/destination IP addresses and packets are routed between networks."
+    },
+    {
+      "marks": 1,
+      "criterion": "Network interface: frames with MAC addresses are transmitted over the physical medium on each link."
+    },
+    {
+      "marks": 1,
+      "criterion": "Interaction: encapsulation down the stack (each layer adds a header) and decapsulation up the stack at the receiver."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Accept \"link layer\" for network interface. Accept checksums as part of reliability. Do not credit sequencing/reliability attributed to IP (internet layer)."
+  ],
+  "partial_credit_notes": "Award each independent point once, up to 6 marks. Accept equivalent correct wording or valid alternative code. Do not double-credit one idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component.",
+    "scope": "Does not compare with the OSI model or require UDP. Specific header formats are not required."
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

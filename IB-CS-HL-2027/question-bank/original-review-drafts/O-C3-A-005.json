@@ -1,0 +1,67 @@
+{
+  "reviews": [
+    {
+      "question_id": "O-C3-A-005",
+      "record_sha256": "ef5e56ee58afd1be2dd8265b25fabc79a8e8bde922bd00d9cf763346ea044238",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:35.160813+00:00",
+      "question_type": "description",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "6 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "A2.1.5",
+          "scope_bullet_id": "A2.1.5:G01",
+          "exact_guidance": "• Application, transport, internet, network interface",
+          "assessed_skill": "Describe the application, transport, internet and network interface layers in context.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Does not compare with the OSI model or require UDP. Specific header formats are not required.",
+          "coverage_limit": "Does not compare with the OSI model or require UDP. Specific header formats are not required.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A2.1.5."
+        },
+        {
+          "code": "A2.1.5",
+          "scope_bullet_id": "A2.1.5:G02",
+          "exact_guidance": "• The role of each layer and the interaction between these layers to ensure reliable data transmission over a network",
+          "assessed_skill": "Describe layer roles and encapsulation interaction that ensure reliable transmission.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Does not compare with the OSI model or require UDP. Specific header formats are not required.",
+          "coverage_limit": "Does not compare with the OSI model or require UDP. Specific header formats are not required.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A2.1.5."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Does not compare with the OSI model or require UDP. Specific header formats are not required."
+      ],
+      "execution_evidence": "manual"
+    }
+  ]
+}
