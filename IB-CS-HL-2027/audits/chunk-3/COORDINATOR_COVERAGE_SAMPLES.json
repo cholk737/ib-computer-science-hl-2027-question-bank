@@ -1,0 +1,84 @@
+{
+  "checkpoint": "C3-COORD-SAMPLE-001",
+  "method": "Coordinator read exact extracted guide pages and complete actual prompt/solution records, independently of specialist conclusions; mechanical zero-link census independently computed.",
+  "checks": [
+    {
+      "codes": [
+        "B1.1.1"
+      ],
+      "guide_pdf_pages": [
+        44
+      ],
+      "result": "confirmed_gap_in_mapped_bank",
+      "evidence": "Exact guide requires Construct a problem specification. Baseline full-bank code census finds zero mapped records. May-include specification elements are examples, not a universal checklist.",
+      "question_ids": [],
+      "question_hashes": {}
+    },
+    {
+      "codes": [
+        "B1.1.4"
+      ],
+      "guide_pdf_pages": [
+        44
+      ],
+      "result": "confirmed_command_and_representation_gap",
+      "evidence": "Read P-SRC009-Q04 full prompt/solution. It asks reasons for arrows and process/decision symbols, not tracing a supplied flowchart. Source guide specifically requires tracing execution/variables/output with standard symbols. Retain supporting mapping but do not certify statement covered.",
+      "question_ids": [
+        "P-SRC009-Q04"
+      ],
+      "question_hashes": {
+        "P-SRC009-Q04": "b691864f1f4b4ff17d62a983a212603e0e0fcc2b01fee391a15ab049fe2a8bc4"
+      }
+    },
+    {
+      "codes": [
+        "B1.1.2"
+      ],
+      "guide_pdf_pages": [
+        44
+      ],
+      "result": "supports_partial_not_complete",
+      "evidence": "P-SRC044-Q04-e requires non-code algorithmic design with parallel hourly-reading lists; it does not assess recognizing a pattern. The four computational thinking concepts in exact guide cannot be certified from this one link.",
+      "question_ids": [
+        "P-SRC044-Q04-e"
+      ],
+      "question_hashes": {
+        "P-SRC044-Q04-e": "bbf39a39fa77d2c687db4fd5a70934d36964b9fde29283d13ca8997526f84b32"
+      }
+    },
+    {
+      "codes": [
+        "A1.1.6",
+        "A1.3.3"
+      ],
+      "guide_pdf_pages": [
+        35,
+        36
+      ],
+      "result": "confirmed_zero_link_priorities",
+      "evidence": "Direct guide text includes fetch/decode/execute/write-back pipelining and four scheduling approaches respectively. Full bank code census has zero links for both. Does not rule out discoverable unlinked context.",
+      "question_ids": [],
+      "question_hashes": {}
+    },
+    {
+      "codes": [
+        "A1.1.1",
+        "A1.1.5"
+      ],
+      "guide_pdf_pages": [
+        34
+      ],
+      "result": "supports_partial_architecture_and_cycle",
+      "evidence": "P-SRC001-Q12-b-iii assesses read bus roles and P-SRC009-Q12-c-ii identifies CU decoding IR. Correct limited evidence; neither task alone requires a full component relationship diagram or complete fetch/decode/execute trace.",
+      "question_ids": [
+        "P-SRC001-Q12-b-iii",
+        "P-SRC009-Q12-c-ii"
+      ],
+      "question_hashes": {
+        "P-SRC001-Q12-b-iii": "4753c1ee64a1eafaecac6d67c15382442fdd8d320da480730935fd483820229b",
+        "P-SRC009-Q12-c-ii": "669e597ff9100b12899881d373903b06ebdf26020fd13fb64c0fb07af35c6095"
+      }
+    }
+  ],
+  "limits": "Bounded independent samples; not exhaustive re-verification of the 823 historical question contents."
+}

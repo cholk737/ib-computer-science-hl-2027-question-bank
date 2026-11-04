@@ -1,0 +1,59 @@
+{
+  "suite": "local-bank-data-and-core",
+  "passed": 12,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "Unique IDs and rebuilt master record count",
+      "status": "pass"
+    },
+    {
+      "name": "Student question payload excludes answer and test fields",
+      "status": "pass"
+    },
+    {
+      "name": "Provenance contains availability metadata without source answer summaries",
+      "status": "pass"
+    },
+    {
+      "name": "All exact codes valid and public objective metadata present",
+      "status": "pass"
+    },
+    {
+      "name": "Text search finds exact stable ID, case insensitive and trimmed",
+      "status": "pass"
+    },
+    {
+      "name": "All text tokens required; not treated as regex",
+      "status": "pass"
+    },
+    {
+      "name": "Exact code A1.1.1 excludes A1.1.10",
+      "status": "pass"
+    },
+    {
+      "name": "Every theme/topic/level/difficulty filter matches independent predicate",
+      "status": "pass"
+    },
+    {
+      "name": "Combined filters and mark boundaries",
+      "status": "pass"
+    },
+    {
+      "name": "Selection toggles immutably and student export excludes hidden solution",
+      "status": "pass"
+    },
+    {
+      "name": "Every answer ID reconciles with question; marks and unofficial label",
+      "status": "pass"
+    },
+    {
+      "name": "Export whitelist remains safe if question object contains answer properties",
+      "status": "pass"
+    }
+  ],
+  "limitations": [
+    "Not a real browser rendering test; coordinator must inspect and exercise browser UI.",
+    "Core tests validate stored bank data behavior, not scientific correctness of each bank answer."
+  ]
+}

@@ -1,0 +1,883 @@
+{
+  "B1.1.1": {
+    "status": "no_linked_practice",
+    "evidence": [],
+    "bullet_findings": [
+      "No mapped practice requires construction of a problem specification. The listed elements are may-include examples, not a mandatory universal template."
+    ],
+    "gaps": [
+      "Construct a coherent specification from a concrete stakeholder scenario, including constraints, inputs/outputs and evaluable success criteria as appropriate."
+    ],
+    "difficulty_note": "No practice at any difficulty."
+  },
+  "B1.1.2": {
+    "status": "partial_scope_coverage",
+    "evidence": [
+      {
+        "question_id": "P-SRC008-Q06",
+        "assessed_evidence": "Contextual abstraction and relevant detail selection."
+      },
+      {
+        "question_id": "P-SRC040-Q05-c",
+        "assessed_evidence": "Decomposition into sensor processing and motion planning."
+      },
+      {
+        "question_id": "P-SRC044-Q04-e",
+        "assessed_evidence": "Non-code step sequence using parallel lists."
+      }
+    ],
+    "bullet_findings": [
+      "Abstraction and decomposition directly evidenced; algorithm design appears as a procedure; no direct prompt/mark point for pattern recognition in these linked records."
+    ],
+    "gaps": [
+      "Explicit explanation/application of pattern recognition; balanced questioning on all four concepts."
+    ],
+    "difficulty_note": "Linked items mainly medium; a construction/application task is useful."
+  },
+  "B1.1.3": {
+    "status": "partial_scope_coverage",
+    "evidence": [
+      {
+        "question_id": "P-SRC008-Q06",
+        "assessed_evidence": "Abstraction applied to campus route design, without code."
+      },
+      {
+        "question_id": "P-SRC040-Q05-c",
+        "assessed_evidence": "Vehicle control decomposed into meaningful subproblems and inputs."
+      }
+    ],
+    "bullet_findings": [
+      "Non-code computational thinking evidenced.",
+      "Real-world applications include route planning and autonomous control; guide examples are non-exhaustive. No need to force every may-include example."
+    ],
+    "gaps": [
+      "Pattern-recognition-based problem solving in a fresh context; explain how techniques work together, beyond isolated definitions."
+    ],
+    "difficulty_note": "Existing applied medium questions; broader integration remains weak."
+  },
+  "B1.1.4": {
+    "status": "mapping_insufficient_for_command",
+    "evidence": [
+      {
+        "question_id": "P-SRC009-Q04",
+        "assessed_evidence": "Asks why arrows/process/decision symbols are used; does not supply a flowchart or require tracing."
+      }
+    ],
+    "bullet_findings": [
+      "Symbol-purpose explanation exists, but no executable flowchart traced.",
+      "Not all named standard symbols are evidenced; add symbols in a coherent trace rather than a recall checklist.",
+      "No flowchart trace determining variables/output in linked practice."
+    ],
+    "gaps": [
+      "A rendered standard-symbol flowchart with branching/looping and explicit trace/output task."
+    ],
+    "difficulty_note": "One 2-mark explanation does not satisfy Construct/Trace-level practice."
+  },
+  "B2.1.1": {
+    "status": "partial_scope_coverage",
+    "evidence": [
+      {
+        "question_id": "P-SRC032-Q05-b",
+        "assessed_evidence": "str/int/float identification."
+      },
+      {
+        "question_id": "P-SRC038-Q15-a-i",
+        "assessed_evidence": "str and bool identification."
+      },
+      {
+        "question_id": "P-SRC032-Q15-b",
+        "assessed_evidence": "Local parameter rebinding compared with caller name."
+      },
+      {
+        "question_id": "P-SRC008-Q08",
+        "assessed_evidence": "Integer variable trace and arithmetic updates."
+      }
+    ],
+    "bullet_findings": [
+      "Boolean, decimal-valued number, integer and string evident. Python represents a character as length-one str; no task here constructs/traces a complete range of global versus local variables."
+    ],
+    "gaps": [
+      "Explicit global/local scope trace and construction, including Boolean and length-one string variables."
+    ],
+    "difficulty_note": "Many low/medium type-identification items; traces give higher application but scope coverage incomplete."
+  },
+  "B2.1.2": {
+    "status": "partial_scope_coverage",
+    "evidence": [
+      {
+        "question_id": "P-SRC007-Q13-a",
+        "assessed_evidence": "Constructs parsing/splitting and stripping of surnames/firstnames."
+      },
+      {
+        "question_id": "P-SRC002-Q05-e",
+        "assessed_evidence": "Describes last-token substring extraction."
+      },
+      {
+        "question_id": "P-SRC042-Q10-f",
+        "assessed_evidence": "Traces extension extraction and lowercase conversion."
+      }
+    ],
+    "bullet_findings": [
+      "Extraction and normalization evidenced; no selected linked construction requires purposeful substring replacement/concatenation. The examples are manipulations to practise, not an obligation to require all string methods."
+    ],
+    "gaps": [
+      "Construct a string-transformation function beyond splitting, such as replace a delimited field and concatenate reconstructed parts."
+    ],
+    "difficulty_note": "Medium extraction-heavy distribution; richer construction needed."
+  },
+  "B2.1.3": {
+    "status": "partial_scope_coverage",
+    "evidence": [
+      {
+        "question_id": "P-SRC002-Q05-d",
+        "assessed_evidence": "Constructs try/except ValueError for missing substring."
+      },
+      {
+        "question_id": "P-SRC032-Q15-d-i",
+        "assessed_evidence": "Explains AttributeError from None member access."
+      }
+    ],
+    "bullet_findings": [
+      "Unexpected inputs and invalid object assumption present; resource unavailability is absent. A logic error may cause an exception or silently wrong output; do not claim every logic error is caught by except.",
+      "Error handling role shown by safe fallback return.",
+      "try/except evidenced; finally not assessed. Java try/catch is outside selected Python version."
+    ],
+    "gaps": [
+      "Explain unexpected-input and unavailable-resource handling, finally cleanup, and limitations for silent logic errors."
+    ],
+    "difficulty_note": "Only low/medium specific exception cases; no integrated resource scenario."
+  },
+  "B2.1.4": {
+    "status": "substantive_scope_evidenced",
+    "evidence": [
+      {
+        "question_id": "P-SRC001-Q10",
+        "assessed_evidence": "Breakpoint inspection/stepping explanation."
+      },
+      {
+        "question_id": "P-SRC016-Q09-a",
+        "assessed_evidence": "Trace table for digit-processing loop."
+      },
+      {
+        "question_id": "P-SRC024-Q13-b-i",
+        "assessed_evidence": "Diagnoses double increment and wrong-index printing."
+      },
+      {
+        "question_id": "P-SRC024-Q13-b-ii",
+        "assessed_evidence": "Constructs corrected loop."
+      }
+    ],
+    "bullet_findings": [
+      "Trace-table construction, breakpoint use and correction evidenced. Listed debugging techniques are may-include examples, so no claim all possible methods are exhaustive."
+    ],
+    "gaps": [],
+    "difficulty_note": "Low diagnosis through medium traces; useful higher multi-fault correction present elsewhere."
+  },
+  "B2.2.1": {
+    "status": "substantive_scope_evidenced",
+    "evidence": [
+      {
+        "question_id": "P-SRC001-Q14-a",
+        "assessed_evidence": "Resizing/copying delays, spare capacity and transient memory in fixed-budget logger."
+      },
+      {
+        "question_id": "P-SRC008-Q12-d",
+        "assessed_evidence": "Fixed array versus node allocation, capacity waste, links and indexed access."
+      }
+    ],
+    "bullet_findings": [
+      "Memory allocation/resizing mechanisms directly assessed.",
+      "Contextual speed/memory/flexibility trade-offs assessed in varying workloads."
+    ],
+    "gaps": [],
+    "difficulty_note": "Medium comparisons; P-SRC008-Q12-b adds constrained implementation context. No count-based perfect-coverage claim."
+  },
+  "B2.2.2": {
+    "status": "partial_scope_coverage",
+    "evidence": [
+      {
+        "question_id": "P-SRC004-Q14-b",
+        "assessed_evidence": "Constructs nested traversal of a 2D list."
+      },
+      {
+        "question_id": "P-SRC005-Q14-c",
+        "assessed_evidence": "Builds dynamic result lists with append."
+      },
+      {
+        "question_id": "P-SRC034-Q16-b",
+        "assessed_evidence": "Removes from fixed list via shift, not dynamic list resizing."
+      }
+    ],
+    "bullet_findings": [
+      "Java array/ArrayList specifics not required in Python-selected version.",
+      "1D and 2D Python list use evidenced.",
+      "Addition and traversal clear; selected removal operates on a fixed occupied region and does not assess removing from a dynamically resized Python list."
+    ],
+    "gaps": [
+      "Add a dynamic-list removal task preserving order; check empty and repeated-match behavior."
+    ],
+    "difficulty_note": "Broad medium/high construction bank; identified specific removal weakness."
+  },
+  "B2.2.3": {
+    "status": "partial_scope_coverage",
+    "evidence": [
+      {
+        "question_id": "P-SRC008-Q12-b",
+        "assessed_evidence": "Explains fixed-buffer push/pop and empty/full state."
+      },
+      {
+        "question_id": "P-SRC026-Q12-b",
+        "assessed_evidence": "Push/peek semantics."
+      },
+      {
+        "question_id": "P-SRC008-Q12-a",
+        "assessed_evidence": "Appropriate stack uses."
+      }
+    ],
+    "bullet_findings": [
+      "All four required operations evidenced across questions.",
+      "Memory capacity is assessed, but an explicit integrated performance/memory explanation of stack operations is weak in linked set.",
+      "Nested calls/undo are appropriate uses."
+    ],
+    "gaps": [
+      "Explicit implementation-sensitive stack performance and memory reasoning, avoiding universal O(1) claims without implementation conditions."
+    ],
+    "difficulty_note": "Low recall through high constrained algorithm tasks; reasoning on performance is weaker."
+  },
+  "B2.2.4": {
+    "status": "partial_scope_coverage",
+    "evidence": [
+      {
+        "question_id": "P-SRC009-Q10",
+        "assessed_evidence": "Enqueue/front semantics."
+      },
+      {
+        "question_id": "P-SRC018-Q13-d",
+        "assessed_evidence": "Uses dequeue/isEmpty in queue/stack reversal."
+      },
+      {
+        "question_id": "P-SRC007-Q16-a",
+        "assessed_evidence": "FIFO printer suitability."
+      }
+    ],
+    "bullet_findings": [
+      "All four required operations represented across explanations and code interfaces.",
+      "No linked question explicitly evaluates performance/memory of queue operations.",
+      "FIFO uses and priority-inappropriate context present."
+    ],
+    "gaps": [
+      "Contextual queue implementation performance/memory analysis, such as shifting-list versus linked front/rear pointers."
+    ],
+    "difficulty_note": "Low/medium explanations and algorithm tasks; performance gap remains."
+  },
+  "B2.3.1": {
+    "status": "partial_scope_coverage",
+    "evidence": [
+      {
+        "question_id": "P-SRC040-Q07-e-i",
+        "assessed_evidence": "Mean must be computed before append; instruction-order effects traced."
+      },
+      {
+        "question_id": "P-SRC032-Q05-c",
+        "assessed_evidence": "Constructs calculations in correct sequence."
+      },
+      {
+        "question_id": "P-SRC044-Q12-c",
+        "assessed_evidence": "Initializes total before traversal and applies rate after sum."
+      }
+    ],
+    "bullet_findings": [
+      "Instruction ordering explicitly assessed in pre-append mean.",
+      "Avoidance of incorrect output demonstrated; no direct deadlock scenario. The phrase such as is illustrative, not a requirement for operating-system synchronization code."
+    ],
+    "gaps": [
+      "A focused ordering/termination repair task would strengthen causal reasoning; no unsupported threaded deadlock requirement should be invented."
+    ],
+    "difficulty_note": "Medium construction and trace; limited explicit diagnosis in this mapped subset."
+  },
+  "B2.3.2": {
+    "status": "substantive_scope_evidenced",
+    "evidence": [
+      {
+        "question_id": "P-SRC005-Q14-c",
+        "assessed_evidence": "Constructs if/elif/else classification."
+      },
+      {
+        "question_id": "P-SRC022-Q15-d",
+        "assessed_evidence": "Combines Boolean helper results with and."
+      },
+      {
+        "question_id": "P-SRC038-Q14-d-iii",
+        "assessed_evidence": "Combines None guard, numerical and equality tests."
+      },
+      {
+        "question_id": "P-SRC042-Q10-f",
+        "assessed_evidence": "Traces not/membership and independent failure conditions."
+      }
+    ],
+    "bullet_findings": [
+      "Python if/elif/else constructed. Java else-if excluded in selected version.",
+      "Boolean/relational selection appears across applied cases, including compound predicates; not every token requires a separate recall item."
+    ],
+    "gaps": [],
+    "difficulty_note": "Broad applied medium/high bank; select varied tasks rather than repeated name swaps."
+  },
+  "B2.3.3": {
+    "status": "substantive_scope_evidenced",
+    "evidence": [
+      {
+        "question_id": "P-SRC005-Q14-c",
+        "assessed_evidence": "Nested counted traversal with selection."
+      },
+      {
+        "question_id": "P-SRC007-Q14-c",
+        "assessed_evidence": "Conditional input loop terminates after five accepted values."
+      },
+      {
+        "question_id": "P-SRC008-Q08",
+        "assessed_evidence": "While-loop trace with evolving state."
+      }
+    ],
+    "bullet_findings": [
+      "Counted and conditional loops with meaningful stopping conditions evidenced.",
+      "Selection/relational predicates within loops evidenced."
+    ],
+    "gaps": [],
+    "difficulty_note": "Medium traces through high input validation; adequate variety in reviewed evidence."
+  },
+  "B2.3.4": {
+    "status": "partial_scope_coverage",
+    "evidence": [
+      {
+        "question_id": "P-SRC005-Q14-c",
+        "assessed_evidence": "Calls a helper for each grid value."
+      },
+      {
+        "question_id": "P-SRC002-Q17-b",
+        "assessed_evidence": "Tested function interface reuse benefits."
+      },
+      {
+        "question_id": "P-SRC032-Q15-b",
+        "assessed_evidence": "Local parameter rebinding behavior."
+      },
+      {
+        "question_id": "P-SRC042-Q14-e",
+        "assessed_evidence": "Reuse and independent testing/maintenance benefits."
+      }
+    ],
+    "bullet_findings": [
+      "Reusable functions with input parameters evidenced.",
+      "Calling helpers and decomposition evidenced.",
+      "Local binding evidenced, but explicit global-versus-local interaction not directly assessed in selected linked records.",
+      "Applied reuse/debugging/local maintenance benefits assessed."
+    ],
+    "gaps": [
+      "Explicit local/global scope behavior; can be shared target with B2.1.1."
+    ],
+    "difficulty_note": "Many applied medium/high functions; avoid counting every function as explicit scope assessment."
+  },
+  "B2.4.1": {
+    "status": "partial_scope_coverage",
+    "evidence": [
+      {
+        "question_id": "P-SRC033-Q16-b",
+        "assessed_evidence": "Balanced BST O(log n) vs scan O(n); degeneracy qualification."
+      },
+      {
+        "question_id": "P-SRC034-Q06-e",
+        "assessed_evidence": "Factorial growth versus constant hardware speed-up; streaming permutation memory choice."
+      }
+    ],
+    "bullet_findings": [
+      "Time growth classes and memory saving discussed, but no direct calculation of space Big O from supplied code.",
+      "Search/hardware scalability choices evidenced."
+    ],
+    "gaps": [
+      "Calculate both time and auxiliary-space complexity from concrete loop/algorithm code, then justify a choice."
+    ],
+    "difficulty_note": "Only two medium linked tasks; severe breadth/difficulty weakness for new syllabus."
+  },
+  "B2.4.2": {
+    "status": "partial_scope_coverage",
+    "evidence": [
+      {
+        "question_id": "P-SRC001-Q14-c",
+        "assessed_evidence": "Construct iterative binary search including empty list."
+      },
+      {
+        "question_id": "P-SRC006-Q13-c",
+        "assessed_evidence": "Constructs linear scans to find names."
+      },
+      {
+        "question_id": "P-SRC016-Q12-d",
+        "assessed_evidence": "Binary-search parallel list retrieval with absent target."
+      }
+    ],
+    "bullet_findings": [
+      "Construction of both methods present; explicit efficiency comparison not directly required in linked prompts.",
+      "Sorted-name retrieval contexts present; choice based on unsorted data/one-off versus repeated query costs not directly assessed."
+    ],
+    "gaps": [
+      "Trace linear and binary search with comparisons; justify search choice using ordering and efficiency requirements."
+    ],
+    "difficulty_note": "Medium/high construction, little low-level tracing or direct comparative reasoning."
+  },
+  "B2.4.3": {
+    "status": "partial_scope_coverage",
+    "evidence": [
+      {
+        "question_id": "P-SRC007-Q13-b",
+        "assessed_evidence": "Constructs paired bubble sort."
+      },
+      {
+        "question_id": "P-SRC044-Q12-b",
+        "assessed_evidence": "Constructs complete selection sort before selecting five."
+      },
+      {
+        "question_id": "P-SRC006-Q03-b",
+        "assessed_evidence": "Compares local movements of two algorithms."
+      }
+    ],
+    "bullet_findings": [
+      "No linked prompt asks time and auxiliary-space Big O for both algorithms.",
+      "Movement distinction present; efficiency across sorted/reversed/large cases not assessed."
+    ],
+    "gaps": [
+      "Trace passes of bubble and selection sort; evaluate worst/best time with stated early-exit variant, and auxiliary-space costs."
+    ],
+    "difficulty_note": "Construction strong, complexity/evaluation absent in linked tasks."
+  },
+  "B2.4.4": {
+    "status": "partial_scope_coverage",
+    "evidence": [
+      {
+        "question_id": "P-SRC002-Q18-a",
+        "assessed_evidence": "Benefit on naturally self-similar subproblem."
+      },
+      {
+        "question_id": "P-SRC007-Q16-e",
+        "assessed_evidence": "Call-stack memory and return behavior."
+      },
+      {
+        "question_id": "P-SRC018-Q13-b",
+        "assessed_evidence": "Call overhead/resource-limit disadvantages."
+      }
+    ],
+    "bullet_findings": [
+      "Fundamentals, benefit and limitations evidenced.",
+      "Smaller-subproblem decomposition explained.",
+      "No explicit conceptual quicksort explanation in linked practice. Do not construct/trace branching recursion under B2.4.5.",
+      "Memory/call-overhead limitations discussed, but complexity evaluation limited.",
+      "Linked-list recursion used; no direct conceptual comparison of binary-tree/fractal/sorting suitability."
+    ],
+    "gaps": [
+      "Conceptual explanation of quicksort and suitable recursive contexts, with stack-memory/complexity trade-offs."
+    ],
+    "difficulty_note": "Predominantly medium/low explanations and arithmetic traces; applications breadth weak."
+  },
+  "B2.4.5": {
+    "status": "substantive_scope_evidenced",
+    "evidence": [
+      {
+        "question_id": "P-SRC004-Q09-a",
+        "assessed_evidence": "Traces single recursive digit-sum chain."
+      },
+      {
+        "question_id": "P-SRC032-Q16-e",
+        "assessed_evidence": "Constructs recursive binary search; one recursive call on any activation path."
+      },
+      {
+        "question_id": "P-SRC042-Q17-c-ii",
+        "assessed_evidence": "Constructs recursive linked-list counting; one recursive invocation per non-base activation."
+      }
+    ],
+    "bullet_findings": [
+      "Reviewed examples obey simple non-branching recursion: alternatives may choose among calls but do not spawn multiple recursive subproblems in one activation."
+    ],
+    "gaps": [],
+    "difficulty_note": "Several medium traces and construction tasks, including base/absent cases. Source negative-domain defects already repaired in C2."
+  },
+  "B2.5.1": {
+    "status": "no_linked_practice",
+    "evidence": [],
+    "bullet_findings": [
+      "No mapped text-file processing code.",
+      "No mapped read/write/append mode choice.",
+      "No mapped closing/cleanup task.",
+      "Java-specific classes excluded for Python-selected version.",
+      "Python file functions are may-include examples; no mapped use of these or equivalent context-manager operations."
+    ],
+    "gaps": [
+      "Construct text-file code covering read/write/append and reliable closing; use self-contained format and deterministic expected results."
+    ],
+    "difficulty_note": "No practice at any difficulty."
+  },
+  "B3.1.1": {
+    "status": "partial_scope_coverage",
+    "evidence": [
+      {
+        "question_id": "P-SRC002-Q14-a",
+        "assessed_evidence": "Class/object distinction in booking model."
+      },
+      {
+        "question_id": "P-SRC002-Q14-c",
+        "assessed_evidence": "Validated date value benefits."
+      },
+      {
+        "question_id": "P-SRC034-Q15-e",
+        "assessed_evidence": "Reasons OOP may be unsuitable for one-off numeric script."
+      }
+    ],
+    "bullet_findings": [
+      "Class/object and encapsulation modelling evidenced; inheritance/polymorphism appear in other B3 items but no single design evaluation integrates their appropriateness.",
+      "Benefits and disadvantages exist, but limited explicit balanced evaluate command depth."
+    ],
+    "gaps": [
+      "Contextual evaluation choosing OOP for a nontrivial model against simpler procedural design, with justified judgement."
+    ],
+    "difficulty_note": "Mostly low/medium definitions/outlines rather than evaluation."
+  },
+  "B3.1.2": {
+    "status": "substantive_scope_evidenced",
+    "evidence": [
+      {
+        "question_id": "P-SRC038-Q15-a-ii",
+        "assessed_evidence": "UML with classes, typed attributes, methods and inheritance."
+      },
+      {
+        "question_id": "P-SRC042-Q14-f",
+        "assessed_evidence": "Class members and conceptual visibility."
+      },
+      {
+        "question_id": "P-SRC033-Q14-c",
+        "assessed_evidence": "Generalization/aggregation class relationships."
+      }
+    ],
+    "bullet_findings": [
+      "Class state/method requirements translated to designs.",
+      "UML compartments, relationships, attributes and operations directly assessed."
+    ],
+    "gaps": [],
+    "difficulty_note": "Low/medium construction; future tasks could offer more freedom to choose design, without treating that as a missing requirement."
+  },
+  "B3.1.3": {
+    "status": "partial_scope_coverage",
+    "evidence": [
+      {
+        "question_id": "P-SRC032-Q13-e",
+        "assessed_evidence": "Shared class versus per-instance count."
+      },
+      {
+        "question_id": "P-SRC032-Q13-f",
+        "assessed_evidence": "Explicit class counter across subclasses."
+      },
+      {
+        "question_id": "P-SRC033-Q15-a",
+        "assessed_evidence": "Per-depot instance counters justified by independent counts."
+      }
+    ],
+    "bullet_findings": [
+      "Class/static versus instance variables assessed; no static-method versus instance-method question.",
+      "Class-level sharing and when independent instance values are required are evidenced."
+    ],
+    "gaps": [
+      "Distinguish Python @staticmethod from instance method, including access to self and state; trace variable ownership carefully."
+    ],
+    "difficulty_note": "Medium variable-ownership explanations, no methods coverage."
+  },
+  "B3.1.4": {
+    "status": "partial_scope_coverage",
+    "evidence": [
+      {
+        "question_id": "P-SRC002-Q14-b-i",
+        "assessed_evidence": "Instantiate using default/explicit initialization arguments."
+      },
+      {
+        "question_id": "P-SRC033-Q13-d-i",
+        "assessed_evidence": "Constructs Asset instantiation."
+      },
+      {
+        "question_id": "P-SRC038-Q14-a",
+        "assessed_evidence": "Initializer role in object state."
+      }
+    ],
+    "bullet_findings": [
+      "Instantiation construction abundant; complete class definition construction not required by selected linked prompts.",
+      "Constructor initialization role and defaults assessed."
+    ],
+    "gaps": [
+      "Construct a whole small class with initializer, instance attributes and behaviour, then instantiate/use it."
+    ],
+    "difficulty_note": "Mainly low/medium calls and definitions; class authoring weakness."
+  },
+  "B3.1.5": {
+    "status": "partial_scope_coverage",
+    "evidence": [
+      {
+        "question_id": "P-SRC032-Q14-b",
+        "assessed_evidence": "Invariant enforcement via withdraw interface."
+      },
+      {
+        "question_id": "P-SRC002-Q15-b",
+        "assessed_evidence": "Single underscore non-public convention is not enforced privacy."
+      },
+      {
+        "question_id": "P-SRC040-Q11-c",
+        "assessed_evidence": "Controlled state-changing methods rather than direct edits."
+      }
+    ],
+    "bullet_findings": [
+      "Encapsulation and information hiding explanations evidenced.",
+      "Python conventions distinguished from enforcement; conceptual visibility appears in UML, but applied private/public design explanation remains narrower than full guide language.",
+      "Controlled validation interface evidenced.",
+      "Invalid-state prevention explained; avoid claiming underscore or name mangling provides a security boundary."
+    ],
+    "gaps": [
+      "Construct/trace a validating class interface with explicit Python access conventions and public versus internal members."
+    ],
+    "difficulty_note": "Medium explanations; applying/constructing controls weaker than describing them."
+  },
+  "B3.2.1": {
+    "status": "partial_scope_coverage",
+    "evidence": [
+      {
+        "question_id": "P-SRC032-Q14-c",
+        "assessed_evidence": "Shared parent functionality reduces duplicated fixes."
+      },
+      {
+        "question_id": "P-SRC034-Q14-c",
+        "assessed_evidence": "super initializer reuses parent initialization."
+      },
+      {
+        "question_id": "P-SRC033-Q14-d-ii",
+        "assessed_evidence": "Extends inherited pay implementation."
+      }
+    ],
+    "bullet_findings": [
+      "Hierarchical parent/subclass reuse directly assessed.",
+      "Override/extension of parent behavior evidenced.",
+      "No direct inheritance/access-modifier interaction task. Python has no Java-style protected/default access enforcement; do not import it into executable expectations."
+    ],
+    "gaps": [
+      "Explain inherited public/non-public convention/name-mangled member behavior accurately in Python; conceptual comparison only where clearly framed."
+    ],
+    "difficulty_note": "Low definitions through medium extension and high integrated hierarchy explanation; access scope missing."
+  },
+  "B3.2.2": {
+    "status": "partial_scope_coverage",
+    "evidence": [
+      {
+        "question_id": "P-SRC033-Q14-d-ii",
+        "assessed_evidence": "Constructs overriding method calling super."
+      },
+      {
+        "question_id": "P-SRC033-Q14-e",
+        "assessed_evidence": "Common interface with runtime-selected override."
+      },
+      {
+        "question_id": "P-SRC034-Q16-c-ii",
+        "assessed_evidence": "Hierarchy reuses common operations and varies selected behaviour."
+      }
+    ],
+    "bullet_findings": [
+      "Flexibility/reuse by common method interface evidenced.",
+      "Dynamic overriding construction evidenced.",
+      "No direct static-polymorphism coverage. Python duplicate method definitions are replacement, not signature-based overload selection. Do not claim optional arguments produce compile-time dispatch or guaranteed efficiency."
+    ],
+    "gaps": [
+      "Review guide/specimen calibration for static polymorphism; write an explicit conceptual contrast with accurate Python optional-parameter implementation, flag interpretation for coordinator."
+    ],
+    "difficulty_note": "Medium override code/explanation, one high hierarchy task; static form missing."
+  },
+  "B3.2.3": {
+    "status": "partial_scope_coverage",
+    "evidence": [
+      {
+        "question_id": "P-SRC002-Q16-d",
+        "assessed_evidence": "Stable abstract interface hides representation changes."
+      }
+    ],
+    "bullet_findings": [
+      "Modular interface abstraction explained.",
+      "No explicit abstract-class/common-subclass-interface task."
+    ],
+    "gaps": [
+      "Explain abstract class establishing common subclass operations and why client modules depend on that interface."
+    ],
+    "difficulty_note": "Single 3-mark explanation; narrow depth/breadth."
+  },
+  "B3.2.4": {
+    "status": "partial_scope_coverage",
+    "evidence": [
+      {
+        "question_id": "P-SRC002-Q15-d",
+        "assessed_evidence": "Aggregation design via independent Customer reference."
+      },
+      {
+        "question_id": "P-SRC033-Q13-b",
+        "assessed_evidence": "Bicycle lifetime independent of Depot."
+      },
+      {
+        "question_id": "P-SRC038-Q15-b-ii",
+        "assessed_evidence": "Archive tickets survive Adviser removal."
+      }
+    ],
+    "bullet_findings": [
+      "Aggregation used to design object collaboration; no positive composition example.",
+      "Independent aggregation lifetime explicit throughout; tightly owned composition not positively assessed."
+    ],
+    "gaps": [
+      "A clear composition scenario with specified ownership/lifetime, compared with aggregation. Python reference deletion/garbage collection is not equivalent to conceptual domain ownership."
+    ],
+    "difficulty_note": "Many repeated low/medium aggregation items; composition gap despite 12 mapped records."
+  },
+  "B3.2.5": {
+    "status": "no_linked_practice",
+    "evidence": [],
+    "bullet_findings": [
+      "No questions on singleton, factory or observer. Such as indicates key examples without exhaustive technical implementation detail.",
+      "No contextual recurring-problem design-pattern application."
+    ],
+    "gaps": [
+      "Explain purpose and contextual use of singleton, factory and observer without inventing requirements for full pattern-framework code."
+    ],
+    "difficulty_note": "No practice at any difficulty."
+  },
+  "B4.1.1": {
+    "status": "substantive_scope_evidenced",
+    "evidence": [
+      {
+        "question_id": "P-SRC018-Q06",
+        "assessed_evidence": "ADT values/organization and operations separated from implementation."
+      },
+      {
+        "question_id": "P-SRC020-Q06",
+        "assessed_evidence": "High-level behavior versus memory/algorithm choices."
+      }
+    ],
+    "bullet_findings": [
+      "Directly describes data/operation specification and implementation independence."
+    ],
+    "gaps": [],
+    "difficulty_note": "Low/medium short explanations; examples could deepen application without implying source requires a formal ADT specification language."
+  },
+  "B4.1.2": {
+    "status": "partial_scope_coverage",
+    "evidence": [
+      {
+        "question_id": "P-SRC001-Q07",
+        "assessed_evidence": "Doubly linked insertion/deletions with boundary links."
+      },
+      {
+        "question_id": "P-SRC006-Q12-a",
+        "assessed_evidence": "Circular insertion/deletions and final sketch."
+      },
+      {
+        "question_id": "P-SRC007-Q16-b",
+        "assessed_evidence": "Singly linked queue sketch."
+      },
+      {
+        "question_id": "P-SRC006-Q12-d",
+        "assessed_evidence": "Array versus linked memory/access/insertion trade-offs."
+      }
+    ],
+    "bullet_findings": [
+      "All three must-include forms represented.",
+      "Insertion/deletion diagrams clear. Traversal/search are described algorithmically in bank but little direct diagrammatic search/traversal task.",
+      "Benefits/costs of arrays versus nodes with context assessed."
+    ],
+    "gaps": [
+      "Diagrammatic search/traversal task and explicit contextual evaluate judgement, rather than another definition."
+    ],
+    "difficulty_note": "Mostly medium outlines/sketches; scope largely represented but evaluation depth can improve."
+  },
+  "B4.1.3": {
+    "status": "partial_scope_coverage",
+    "evidence": [
+      {
+        "question_id": "P-SRC002-Q17-a",
+        "assessed_evidence": "Constructs singly linked traversal/update with empty case."
+      },
+      {
+        "question_id": "P-SRC032-Q16-c",
+        "assessed_evidence": "Constructs singly linked append with empty case."
+      },
+      {
+        "question_id": "P-SRC001-Q07",
+        "assessed_evidence": "Applies doubly linked operations diagrammatically."
+      },
+      {
+        "question_id": "P-SRC006-Q12-a",
+        "assessed_evidence": "Applies circular operations diagrammatically."
+      },
+      {
+        "question_id": "P-SRC009-Q14-b",
+        "assessed_evidence": "Algorithmic singly linked search with absence."
+      }
+    ],
+    "bullet_findings": [
+      "Basic operations represented, with singly linked construction much stronger than doubly/circular application. The statement does not explicitly require a full Python class implementation of every operation for every list form."
+    ],
+    "gaps": [
+      "Broaden meaningful doubly/circular application (for example safe traversal/empty/singleton deletion), with explicit boundaries."
+    ],
+    "difficulty_note": "Medium/high singly linked tasks dominate; other variants mainly sketches."
+  },
+  "B4.1.4": {
+    "status": "partial_scope_coverage",
+    "evidence": [
+      {
+        "question_id": "P-SRC004-Q05",
+        "assessed_evidence": "Insertion-order BST sketch."
+      },
+      {
+        "question_id": "P-SRC008-Q12-c-ii",
+        "assessed_evidence": "Two-child root deletion using successor."
+      },
+      {
+        "question_id": "P-SRC009-Q09-b",
+        "assessed_evidence": "Inorder traversal."
+      },
+      {
+        "question_id": "P-SRC033-Q16-b",
+        "assessed_evidence": "Search efficiency depends on balance."
+      }
+    ],
+    "bullet_findings": [
+      "Ordering/organization and balance caveat evidenced.",
+      "Insert/delete/traverse directly assessed; search benefit explained but no explicit step-by-step successful/failed search task in inspected linked set.",
+      "Multiple accurate tree-sketch tasks present."
+    ],
+    "gaps": [
+      "Trace BST search including absent key and explain its comparison path; preserve distinct-key rule or specify duplicate handling."
+    ],
+    "difficulty_note": "Low traversal through high insertion explanation; direct search trace weak."
+  },
+  "B4.1.5": {
+    "status": "no_linked_practice",
+    "evidence": [],
+    "bullet_findings": [
+      "No mapped set uniqueness/order question.",
+      "No union/intersection/difference task.",
+      "No membership/add/remove/subset/superset code."
+    ],
+    "gaps": [
+      "Construct and apply Python sets for membership and all named operations; avoid assuming display/iteration order."
+    ],
+    "difficulty_note": "No practice at any difficulty."
+  },
+  "B4.1.6": {
+    "status": "no_linked_practice",
+    "evidence": [],
+    "bullet_findings": [
+      "Related B4.1.1 ADT explanations exist but are not linked here; no implementation mechanics task.",
+      "No hashing, collision-resolution or load-factor practice.",
+      "No underlying set-mechanics practice.",
+      "No mapped Python dict/set use; Java HashMap/HashSet not required for Python-selected version."
+    ],
+    "gaps": [
+      "Explain hash/index function, collisions with a stated strategy, load factor and set membership mechanics; connect Python dict/set interfaces without asserting unsupported internal layout."
+    ],
+    "difficulty_note": "No practice at any difficulty."
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "checkpoint": "A-RECORDS-003",
+  "reviews": [
+    {
+      "question_id": "P-SRC001-Q09",
+      "record_sha256": "c7f9060f01bbd450badd0727cb7c909acdce0e00fd280462e922fcda84b05b40",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:52:11.100164+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.4.1",
+          "scope_bullet_id": "A1.4.1:G01",
+          "exact_guidance": "• The mechanics and use-cases of each translation approach",
+          "assessed_skill": "Identify a compiler from whole-program-before-execution translation mechanics.",
+          "relevance": "partial",
+          "evidence": "One-mark recognition of ahead-of-time compilation; no comparison with interpreter, use-case evaluation, JIT/bytecode or required scenarios."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Within the stated educational model, translating a whole source program before execution identifies a compiler. Does not claim every real runtime uses only one translation approach."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Compiler is the correct1-mark type."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Single1-mark criterion matches State; no marks for unsupported extra runtime assertions."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q09.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• The difference in error detection, translation time, portability and applicability for different translation processes, including just-in-time compilation (JIT) and bytecode interpreters",
+        "• Example scenarios where the translation method should be considered must include rapid development and testing, performance-critical applications and cross-platform development."
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q09.json": "c7f9060f01bbd450badd0727cb7c909acdce0e00fd280462e922fcda84b05b40",
+        "question-bank/questions/P-SRC001-Q09.json": "799baaafbb45c9e21d46134c80422ad64853cac847ed31739920ff7302729e5c",
+        "question-bank/markschemes/P-SRC001-Q09.json": "03f40457d31859bf462cefaeab7d65dba84ea3d01e7d4c979727b9b0cdbf2748",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q09.json": "65a424e4257eee5af8c081ae00317fb1b16a744fa72280cff5d7bf9d88796e67"
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q11-c-i",
+      "record_sha256": "217d8b01d25eb517d9d94438171f35182e078ead2343c8b39fa3e0b7510dab26",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:52:11.101423+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A2.4.2",
+          "scope_bullet_id": "A2.4.2:G01",
+          "exact_guidance": "• Distributed denial of service (DDoS), insecure network protocols, malware, man-in-the-middle (MitM) attacks, phishing attacks, SQL injection, cross-site scripting (XSS), unpatched software, weak authentication, zero-day exploits",
+          "assessed_skill": "List three network vulnerabilities capable of exposing enrolment records.",
+          "relevance": "partial",
+          "evidence": "Only identification of any three exposure-relevant vulnerabilities is assessed; no mechanism explanation and no evidence all ten listed vulnerabilities are tested."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Phishing, unpatched exploitable flaws, SQL injection, data-stealing malware and weak authentication can expose data. The answer examples meet the exposure condition; DDoS alone is not automatically an exposure mechanism."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "The model offers valid named vulnerabilities; three independent exposure-relevant choices are appropriate for List3."
+        },
+        "markscheme": {
+          "status": "issue",
+          "evidence": "Three1-mark slots total3, but SQL injection/malware/weak authentication grouped as alternatives in one slot could under-credit a correct answer consisting of exactly those three distinct vulnerabilities. Award any3 distinct relevant vulnerabilities, not fixed response slots."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q11-c-i.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [
+        "A-C3-MS-003: Accept any3 distinct exposure-relevant vulnerabilities. SQL injection + malware + weak authentication is valid3 but literal current grouped criteria may award only1."
+      ],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q11-c-i.json": "217d8b01d25eb517d9d94438171f35182e078ead2343c8b39fa3e0b7510dab26",
+        "question-bank/questions/P-SRC001-Q11-c-i.json": "d2c0cba1e3101a1abe83fcbfd0254cd6d81459af10a05f30b84dcbf74142d010",
+        "question-bank/markschemes/P-SRC001-Q11-c-i.json": "4e443433024f309202cb114025304e93d7fa1adf10b484ec07209a909cafcc6d",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q11-c-i.json": "9bee914dbf4ee20ec89526fd0b0ef77a79e6ad501b0431e353120eb7ad881658"
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q11-c-ii",
+      "record_sha256": "24dc42ff9dd18761d071e74f2a93efecc504e04905c49a796b880c3812bc5901",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:52:11.102715+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A2.2.2",
+          "scope_bullet_id": "A2.2.2:G01",
+          "exact_guidance": "• Types of servers: domain name server (DNS), dynamic host configuration protocol (DHCP), file server, mail server, proxy server, web server",
+          "assessed_skill": "State the function of a university mail server.",
+          "relevance": "partial",
+          "evidence": "Receiving/storing/forwarding email role directly tested; no DNS/DHCP/file/proxy/web role and no reliability/scalability/security comparison."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "A mail server receives, retains and/or relays messages for mail service users; roles may be divided across components without invalidating this description."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "One concise mail-service function earns the single State mark."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "One1-mark criterion lists valid mail-service operations and permits alternatives; does not require all operations for1 mark."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q11-c-ii.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Factors to consider must include function, scalability, reliability and security."
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q11-c-ii.json": "24dc42ff9dd18761d071e74f2a93efecc504e04905c49a796b880c3812bc5901",
+        "question-bank/questions/P-SRC001-Q11-c-ii.json": "1a772d0d7712b7ecde8101793c00b96d95ba90c2ab536de0063cca402177a862",
+        "question-bank/markschemes/P-SRC001-Q11-c-ii.json": "bdbf739e2f0a8871522788564c3e53d9fc86f22d1566d70772e6ff36b964a79f",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q11-c-ii.json": "ba9df6eb9b5f44fe9d376b76b4ae17e530741d46fe88311cd8135c9a0952ea8c"
+      }
+    }
+  ]
+}

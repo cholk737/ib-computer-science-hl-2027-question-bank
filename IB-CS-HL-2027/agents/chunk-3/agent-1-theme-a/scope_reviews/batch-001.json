@@ -1,0 +1,171 @@
+{
+  "checkpoint": "A-RECORDS-001",
+  "reviews": [
+    {
+      "question_id": "P-SRC001-Q01",
+      "record_sha256": "1970a08a04265cd1fe8eda7b250f07c4ee010d19f510a44296c28c7fdbe4f412",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:50:24.156265+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.1.3",
+          "scope_bullet_id": "A1.1.3:G02",
+          "exact_guidance": "• Differences in their core architecture, processing power, memory access, power efficiency",
+          "assessed_skill": "Identify three relevant CPU/GPU comparison characteristics: architecture/parallelism, workload throughput, memory or power.",
+          "relevance": "partial",
+          "evidence": "Three 1-mark criteria identify dimensions of hardware comparison; the prompt does not require explaining concrete architectural differences or all memory/power properties. It does not assess shared data or coordination."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Core organization, throughput for the defined workload, memory access/bandwidth and energy efficiency are relevant distinguishing characteristics; no universal GPU speed advantage is asserted."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Listed response gives three independent characteristics matching Identify 3 marks; memory bandwidth or power efficiency can supply the third."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Three independently capped 1-mark criteria total 3 and align with identification depth. Equivalent accurate characteristics accepted. No technical scheme defect found."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q01.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Differences in their design philosophies, usage scenarios",
+        "• CPUs and GPUs working together: task division, data sharing, coordinating execution"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q01.json": "1970a08a04265cd1fe8eda7b250f07c4ee010d19f510a44296c28c7fdbe4f412",
+        "question-bank/questions/P-SRC001-Q01.json": "552405986e5f02ba3ea3436223bfabb80fa75197f37136dca4c9238dff031eff",
+        "question-bank/markschemes/P-SRC001-Q01.json": "0f38bb8030ce8d8da9343af787b42036d59de0a7a1533269653c8ee110727e86",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q01.json": "46c059094ec1e7496ac5b351fe839de65fd42032ba789c103244db9e09c530c4"
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q02",
+      "record_sha256": "1ec92299a3e575fd5c5652dd9b04775c480fdf811f3c64c1bff0e4de3b44b74c",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:50:24.157478+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A2.1.1",
+          "scope_bullet_id": "A2.1.1:G01",
+          "exact_guidance": "• Networks: local area network (LAN), wide area network (WAN), personal area network (PAN), virtual private network (VPN)",
+          "assessed_skill": "Identify two resources a LAN can share among workstations.",
+          "relevance": "partial",
+          "evidence": "Prompt tests LAN purpose through shared printer/files. It does not compare LAN/WAN/PAN/VPN nor require their characteristics."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "A LAN can support shared printer access and shared file/storage access via suitable network services."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Printer and files/shared storage are two distinct valid examples; no mechanism explanation is required for Identify 2."
+        },
+        "markscheme": {
+          "status": "issue",
+          "evidence": "Two 1-mark examples total 2. However the general alternatives statement does not explicitly confirm other valid shareable resources such as network applications/internet access; make award-any-two-distinct-valid-resources explicit before declaring comprehensive criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q02.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [
+        "A-C3-MS-001: Expand acceptable alternatives to any two distinct valid LAN-shared resources/services; do not restrict to only printer and files."
+      ],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q02.json": "1ec92299a3e575fd5c5652dd9b04775c480fdf811f3c64c1bff0e4de3b44b74c",
+        "question-bank/questions/P-SRC001-Q02.json": "15a24bd14c35ce27521d12ec42dfa0a80319080241622386da304e774ea9bfd3",
+        "question-bank/markschemes/P-SRC001-Q02.json": "888925b9a0a8cc391aa0909aafb05039882f4b4d36a4dfe113f72e7f54c87375",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q02.json": "df3aaaf7fc1394b29f1df3a897dfd8e0da80793a359b1bb2e6c201b12b736a9d"
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q05",
+      "record_sha256": "e57a74c83d68462a0ce1435088baf5ccb3ea3d95e966afb8f03683c26e8d4110",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:50:24.158115+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.2.2",
+          "scope_bullet_id": "A1.2.2:G01",
+          "exact_guidance": "• The fundamentals of binary encoding and the impact on data storage and retrieval",
+          "assessed_skill": "Explain a fixed bit allocation encoding pixel colour as numeric channel intensities.",
+          "relevance": "partial",
+          "evidence": "Prompt asks how 24 bits can represent a colour; does not test storage/retrieval trade-offs beyond the representation."
+        },
+        {
+          "code": "A1.2.2",
+          "scope_bullet_id": "A1.2.2:G02",
+          "exact_guidance": "• The mechanisms by which data such as integers, strings, characters, images, audio and video are stored in binary form",
+          "assessed_skill": "Describe one image binary-encoding mechanism using three 8-bit RGB components.",
+          "relevance": "partial",
+          "evidence": "Image pixels are directly tested; integer/text/audio/video encoding mechanisms are not. A possible RGB scheme answers can represent; it is not asserted to be the only 24-bit encoding."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "An RGB example allocates 8 bits to each of three intensities, giving 256 values/channel and 24 total bits. Mixing component levels describes the pixel colour representation."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Three solution components address binary values, three channels/8 bits, and combination/256 possibilities. 3×8=24 and 2^8=256 verified arithmetically."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Three independent 1-mark criteria total 3. Treat the response as a possible conventional RGB representation; equivalent technically valid representations remain permitted by the alternatives note. No code or diagram required."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q05.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q05.json": "e57a74c83d68462a0ce1435088baf5ccb3ea3d95e966afb8f03683c26e8d4110",
+        "question-bank/questions/P-SRC001-Q05.json": "0e20f13f0c603f68f347e26f463b544b56b4e0ad2a0f3f4d188fc74206faf889",
+        "question-bank/markschemes/P-SRC001-Q05.json": "5a0e7c6c6e839050a32ffcdd2cb45401f2186029b3c8cd3902a51b5e89b05624",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q05.json": "f9c48038ddcf3bf805dcf612e4224e845683a44e7050c1ba8dd2ba12137be305"
+      }
+    }
+  ]
+}

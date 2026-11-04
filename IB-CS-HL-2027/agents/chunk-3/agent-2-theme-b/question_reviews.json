@@ -1,0 +1,1236 @@
+{
+  "schema_version": 1,
+  "scope_bullet_id_rule": "CODE:GNN means 1-based guidance_paragraphs index in verified syllabus master. Direct relevance certifies the named assessed skill only, not complete coverage of the paragraph or objective.",
+  "reviews": [
+    {
+      "question_id": "P-SRC001-Q03",
+      "mappings": [
+        {
+          "code": "B2.2.3",
+          "guidance_index": 1,
+          "assessed_skill": "State nonempty stack pop semantics",
+          "relevance": "direct",
+          "evidence": "Prompt asks what pop does; solution removes and returns the most recently pushed item.",
+          "coverage_limit": "Only pop semantics, not the other named operations or performance/memory.",
+          "scope_bullet_id": "B2.2.3:G01",
+          "exact_guidance": "• Must include fundamental operations such as push, pop, peek and isEmpty",
+          "statement": "Explain the concept of a stack as a “last in, first out” (LIFO) data structure.",
+          "mapping_verification_status": "verified"
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "Nonempty precondition removes underflow ambiguity.",
+        "One independent correct statement matches one mark."
+      ],
+      "issues": [],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T10:37:10.030691+00:00",
+      "record_sha256": "3538232a43892dfd8b11099a27569aad8f1278213bb5587911071e7cc8315fbc",
+      "record_path": "question-bank/records/P-SRC001-Q03.json",
+      "original_syllabus_codes": [
+        "B2.2.3"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 1,
+        "marking_point_sum": 1,
+        "status": "pass"
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q04",
+      "mappings": [
+        {
+          "code": "B2.2.3",
+          "guidance_index": 1,
+          "assessed_skill": "State isEmpty result for an empty stack",
+          "relevance": "direct",
+          "evidence": "Prompt explicitly empty; solution Boolean True is correct.",
+          "coverage_limit": "Only isEmpty, not every stack operation or efficiency.",
+          "scope_bullet_id": "B2.2.3:G01",
+          "exact_guidance": "• Must include fundamental operations such as push, pop, peek and isEmpty",
+          "statement": "Explain the concept of a stack as a “last in, first out” (LIFO) data structure.",
+          "mapping_verification_status": "verified"
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "Return True is correct for zero items; no programming-language ambiguity.",
+        "One answer criterion for one mark."
+      ],
+      "issues": [],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T10:37:10.031194+00:00",
+      "record_sha256": "670008c771b00cde6b7ff3545e80792150a3fb425440a7ece1b5d148d4d057a4",
+      "record_path": "question-bank/records/P-SRC001-Q04.json",
+      "original_syllabus_codes": [
+        "B2.2.3"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 1,
+        "marking_point_sum": 1,
+        "status": "pass"
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q07",
+      "mappings": [
+        {
+          "code": "B4.1.2",
+          "guidance_index": 1,
+          "assessed_skill": "Recognize/apply doubly linked form",
+          "relevance": "direct",
+          "evidence": "Initial doubly linked chain includes links both ways.",
+          "coverage_limit": "One required list variant only.",
+          "scope_bullet_id": "B4.1.2:G01",
+          "exact_guidance": "• Lists must include singly, doubly, circular",
+          "statement": "Evaluate linked lists.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B4.1.2",
+          "guidance_index": 2,
+          "assessed_skill": "Sketch insertion/deletion reference changes",
+          "relevance": "direct",
+          "evidence": "Delete Omar then Theo, prepend Nia; final forward/back links and null boundaries assessed.",
+          "coverage_limit": "No traversal/search or comparison/evaluation.",
+          "scope_bullet_id": "B4.1.2:G02",
+          "exact_guidance": "• Sketch of linked lists and implementation of basic operations diagrammatically, such as insertion, deletion, traversal, search",
+          "statement": "Evaluate linked lists.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B4.1.3",
+          "guidance_index": 1,
+          "assessed_skill": "Apply insertion/deletion to a doubly linked list",
+          "relevance": "direct",
+          "evidence": "Operations produce Nia,Lena,Priya and bidirectional neighbor links.",
+          "coverage_limit": "Not Python construction; singly/circular variants absent.",
+          "scope_bullet_id": "B4.1.3:G01",
+          "exact_guidance": "• The basic operations on a linked list, such as insertion, deletion, traversal, search",
+          "statement": "Construct and apply linked lists: singly, doubly and circular.",
+          "mapping_verification_status": "verified"
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "issue",
+          "evidence": "needs_editorial_repair; concrete issue recorded in review."
+        },
+        "assets": {
+          "status": "pending",
+          "evidence": "inline_diagram_render_pending"
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "Independent state trace Lena,Omar,Priya,Theo → Lena,Priya,Theo → Lena,Priya → Nia,Lena,Priya.",
+        "Four distinct marking criteria cover data order, forward links, backward links and boundaries, sum four."
+      ],
+      "issues": [
+        {
+          "severity": "low",
+          "dimension": "markscheme",
+          "detail": "Prompt/answer contain split names Pr i ya and Ni a while final marking point uses Priya/Nia. Normalize these identifiers consistently in coordinator-approved editorial repair; no semantic answer change."
+        },
+        {
+          "severity": "low",
+          "dimension": "assets",
+          "detail": "Inline Unicode linked-list diagram needs browser rendering check; no external figure asset is present."
+        }
+      ],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T10:37:10.031504+00:00",
+      "record_sha256": "98197529760c13f65175c6873888a04aef479087b51feba1736b15b390ca377a",
+      "record_path": "question-bank/records/P-SRC001-Q07.json",
+      "original_syllabus_codes": [
+        "B4.1.2",
+        "B4.1.3"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 4,
+        "marking_point_sum": 4,
+        "status": "pass"
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q10",
+      "mappings": [
+        {
+          "code": "B2.1.4",
+          "guidance_index": 1,
+          "assessed_skill": "Explain breakpoint state inspection and stepping",
+          "relevance": "partial",
+          "evidence": "Prompt outlines how breakpoint debugging helps; criteria name pausing and inspection.",
+          "coverage_limit": "Conceptual description supports debugging but does not actually construct/use a debugger or demonstrate a particular debugging session.",
+          "scope_bullet_id": "B2.1.4:G01",
+          "exact_guidance": "• Debugging techniques may include trace tables, breakpoint debugging, print statements and step-by-step code execution.",
+          "statement": "Construct and use common debugging techniques.",
+          "mapping_verification_status": "verified"
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "Pausing at a selected point and inspecting values identifies first divergence from expectation; no promise that breakpoint alone fixes error.",
+        "Two distinct outline points for two marks."
+      ],
+      "issues": [],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T10:37:50.666796+00:00",
+      "record_sha256": "15554df1b21fc674f78d892997321c0c57b9b8cc44860c5134813395a9dffd35",
+      "record_path": "question-bank/records/P-SRC001-Q10.json",
+      "original_syllabus_codes": [
+        "B2.1.4"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 2,
+        "marking_point_sum": 2,
+        "status": "pass"
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q14-a",
+      "mappings": [
+        {
+          "code": "B2.2.1",
+          "guidance_index": 1,
+          "assessed_skill": "Explain dynamic-list resizing and transient allocation costs",
+          "relevance": "direct",
+          "evidence": "Answer describes possible new block/copy during resizing.",
+          "coverage_limit": "Not every implementation must relocate on every growth; conditional wording may is essential.",
+          "scope_bullet_id": "B2.2.1:G01",
+          "exact_guidance": "• The fundamental differences between static and dynamic data structures, including their underlying mechanisms for memory allocation and resizing",
+          "statement": "Compare static and dynamic data structures.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.2.1",
+          "guidance_index": 2,
+          "assessed_skill": "Compare speed/memory trade-offs under RAM and timing constraints",
+          "relevance": "direct",
+          "evidence": "Two disadvantages linked to variable delay and possible RAM-budget excess.",
+          "coverage_limit": "Focus disadvantages of dynamic growth; does not evaluate every static/dynamic scenario.",
+          "scope_bullet_id": "B2.2.1:G02",
+          "exact_guidance": "• The advantages and disadvantages of each type in various scenarios, considering factors such as speed, memory usage, flexibility",
+          "statement": "Compare static and dynamic data structures.",
+          "mapping_verification_status": "verified"
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "Resizing can incur copy/temporary memory but is not asserted on every append.",
+        "Two causal pairs supply four marks without double-counting one fact."
+      ],
+      "issues": [
+        {
+          "severity": "low",
+          "dimension": "editorial",
+          "detail": "pre allocating/meta data spacing should be normalized when coordinator permits; does not change substantive content."
+        }
+      ],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T10:37:50.666944+00:00",
+      "record_sha256": "84327b10b2d7897707e99bc218a76de6b8d5144162a1b1bd41799d53f520df69",
+      "record_path": "question-bank/records/P-SRC001-Q14-a.json",
+      "original_syllabus_codes": [
+        "B2.2.1"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 4,
+        "marking_point_sum": 4,
+        "status": "pass"
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q14-b",
+      "mappings": [
+        {
+          "code": "B2.4.5",
+          "guidance_index": 1,
+          "assessed_skill": "Trace calls and returns of simple non-branching recursive product",
+          "relevance": "direct",
+          "evidence": "Exactly one recursive call per non-base activation, k decreases to base 1; output and unwind values shown.",
+          "coverage_limit": "Only supplied domain/call; no branching recursion or general-purpose validity over arbitrary indices.",
+          "scope_bullet_id": "B2.4.5:G01",
+          "exact_guidance": "• Simple, non-branching recursive algorithms in programming only",
+          "statement": "Construct and trace recursive algorithms in a programming language. (HL only)",
+          "mapping_verification_status": "verified"
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "Actual stored code executed with sys.settrace; calls 4,3,2,1 and returns 1,2,10,40 match all five mark points.",
+        "Independent base-case check k=1 returns 1."
+      ],
+      "execution_evidence": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_006.json",
+      "issues": [],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T10:37:50.667007+00:00",
+      "record_sha256": "9c900e3dd4a6c42edff3c9b18723c377a281af91cf8b7e4bd41a387c6e93770e",
+      "record_path": "question-bank/records/P-SRC001-Q14-b.json",
+      "original_syllabus_codes": [
+        "B2.4.5"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 5,
+        "marking_point_sum": 5,
+        "status": "pass"
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q14-c",
+      "mappings": [
+        {
+          "code": "B2.4.2",
+          "guidance_index": 1,
+          "assessed_skill": "Use binary-search interval halving, without explicit efficiency comparison",
+          "relevance": "supporting",
+          "evidence": "Binary search implementation supplies material for an efficiency comparison, but no complexity/comparison is asked.",
+          "coverage_limit": "Does not directly assess differences in efficiency between linear and binary search.",
+          "scope_bullet_id": "B2.4.2:G01",
+          "exact_guidance": "• The differences in efficiency between different methods of linear and binary search",
+          "statement": "Construct and trace algorithms to implement a linear search and a binary search for data retrieval.",
+          "mapping_verification_status": "verified",
+          "statement_relevance": "direct",
+          "statement_evidence": "Actual prompt requires construction of iterative binary search; this directly assesses the statement construction skill but no efficiency comparison."
+        },
+        {
+          "code": "B2.4.2",
+          "guidance_index": 2,
+          "assessed_skill": "Use a given binary-search choice with sorted input",
+          "relevance": "supporting",
+          "evidence": "Ascending input given, algorithm chosen by prompt.",
+          "coverage_limit": "Does not ask candidate to select or justify a technique based on efficiency.",
+          "scope_bullet_id": "B2.4.2:G02",
+          "exact_guidance": "• Use of search technique based on efficiency requirements—for example, searching a database for a sorted/indexed list of names to find a phone number, versus searching by the number to identify the name",
+          "statement": "Construct and trace algorithms to implement a linear search and a binary search for data retrieval.",
+          "mapping_verification_status": "verified",
+          "statement_relevance": "direct",
+          "statement_evidence": "Actual prompt requires construction of iterative binary search; this directly assesses the statement construction skill but no efficiency comparison."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "Actual code passed exhaustive sorted small arrays including empty, one element, duplicates, present/missing/end targets.",
+        "Six independent criteria cover bounds, termination, middle, equality, branch update and absence return.",
+        "Alternative half-open binary search must be accepted under generic alternatives."
+      ],
+      "execution_evidence": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_009.json",
+      "issues": [],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T12:50:20.502454+00:00",
+      "record_sha256": "be0c8cb622e2704061ae021814f1bddb5d2c7402a04cb2704381e8533890bce8",
+      "record_path": "question-bank/records/P-SRC001-Q14-c.json",
+      "original_syllabus_codes": [
+        "B2.4.2"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 6,
+        "marking_point_sum": 6,
+        "status": "pass"
+      },
+      "revision": 3,
+      "revision_reason": "Explicit statement_relevance/statement_evidence fields for search importer; previous full review preserved.",
+      "previous_revision_path": "agents/chunk-3/agent-2-theme-b/review_history/P-SRC001-Q14-c.rev001.json",
+      "statement_mappings": [
+        {
+          "code": "B2.4.2",
+          "relevance": "direct",
+          "evidence": "Actual prompt requires construction of iterative binary search; this directly assesses the statement construction skill but no efficiency comparison."
+        }
+      ]
+    },
+    {
+      "question_id": "P-SRC001-Q15-a",
+      "mappings": [
+        {
+          "code": "B2.2.1",
+          "guidance_index": 2,
+          "assessed_skill": "Explain suitability of fixed known dimensions",
+          "relevance": "partial",
+          "evidence": "Known seat count avoids needing conceptual growth; answer discusses indexed locations and one logical slot per seat.",
+          "coverage_limit": "No direct comparison to dynamic data structures, no resize/memory-allocation mechanism; cannot count as full static/dynamic comparison.",
+          "scope_bullet_id": "B2.2.1:G02",
+          "exact_guidance": "• The advantages and disadvantages of each type in various scenarios, considering factors such as speed, memory usage, flexibility",
+          "statement": "Compare static and dynamic data structures.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.2.2",
+          "guidance_index": 2,
+          "assessed_skill": "Explain row/column representation in Python list",
+          "relevance": "supporting",
+          "evidence": "A two-dimensional list maps row and seat coordinates.",
+          "coverage_limit": "Question outlines suitability rather than constructs a program using lists.",
+          "scope_bullet_id": "B2.2.2:G02",
+          "exact_guidance": "• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python",
+          "statement": "Construct programs that apply arrays and Lists.",
+          "mapping_verification_status": "verified"
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "12×8 gives 96 logical seat entries; answer does not require fixed physical byte count or claim Python lists cannot resize.",
+        "Row/seat lookup and compact logical booking-state representation are valid two developed reasons."
+      ],
+      "issues": [
+        {
+          "severity": "low",
+          "dimension": "technical",
+          "detail": "Retain logical element wording; do not rephrase as exact physical memory allocation because Python list/object overhead is implementation dependent."
+        }
+      ],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T12:50:20.503244+00:00",
+      "record_sha256": "6ff4a7103292487227b399d10032089510a7ce0d7cf468436d2a40834aaf26af",
+      "record_path": "question-bank/records/P-SRC001-Q15-a.json",
+      "original_syllabus_codes": [
+        "B2.2.1",
+        "B2.2.2"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 4,
+        "marking_point_sum": 4,
+        "status": "pass"
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q15-b",
+      "mappings": [
+        {
+          "code": "B2.2.2",
+          "guidance_index": 2,
+          "assessed_skill": "Access one row of a 2D list and traverse its entries",
+          "relevance": "direct",
+          "evidence": "Solution iterates bookings[row].",
+          "coverage_limit": "No list mutation or dynamic removal.",
+          "scope_bullet_id": "B2.2.2:G02",
+          "exact_guidance": "• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python",
+          "statement": "Construct programs that apply arrays and Lists.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.2.2",
+          "guidance_index": 3,
+          "assessed_skill": "Traverse list elements",
+          "relevance": "direct",
+          "evidence": "Every seat in selected row inspected exactly once.",
+          "coverage_limit": "Does not add/remove elements.",
+          "scope_bullet_id": "B2.2.2:G03",
+          "exact_guidance": "• Add, remove and traverse elements in a dynamic list",
+          "statement": "Construct programs that apply arrays and Lists.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.3.3",
+          "guidance_index": 1,
+          "assessed_skill": "Construct a finite for-each loop over a row",
+          "relevance": "direct",
+          "evidence": "for kind in bookings[row] performs one iteration per item.",
+          "coverage_limit": "Not an explicitly indexed counted loop or pre/post-condition loop; do not return this as evidence of all loop forms.",
+          "scope_bullet_id": "B2.3.3:G01",
+          "exact_guidance": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type",
+          "statement": "Construct programs that utilize looping structures to perform repeated actions.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.3.3",
+          "guidance_index": 2,
+          "assessed_skill": "Conditional counting inside loop",
+          "relevance": "direct",
+          "evidence": "if kind == D increments count only for matching entries.",
+          "coverage_limit": "Only equality predicate, not all Boolean/relational combinations.",
+          "scope_bullet_id": "B2.3.3:G02",
+          "exact_guidance": "• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "statement": "Construct programs that utilize looping structures to perform repeated actions.",
+          "mapping_verification_status": "verified"
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "issue",
+          "evidence": "needs_context_repair; concrete issue recorded in review."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "Actual code passed 364 exhaustive row cases including no matches/all matches and unchanged data.",
+        "Four mark points correctly separate initialization, traversal, selection increment and final return."
+      ],
+      "execution_evidence": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_009.json",
+      "issues": [
+        {
+          "severity": "medium",
+          "dimension": "markscheme",
+          "detail": "Self-contained database prompt should explicitly state bookings is a two-dimensional list of single-character booking codes; row-valid precondition alone refers to implied inherited context. Algorithm/criteria correct given that intended input shape."
+        }
+      ],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T12:50:20.503309+00:00",
+      "record_sha256": "5920ae66d0ea346504b4c4b17b4b155537f267b9d1feec2184e13ddcd54dd028",
+      "record_path": "question-bank/records/P-SRC001-Q15-b.json",
+      "original_syllabus_codes": [
+        "B2.2.2",
+        "B2.3.3"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 4,
+        "marking_point_sum": 4,
+        "status": "pass"
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q15-c",
+      "mappings": [
+        {
+          "code": "B2.2.2",
+          "guidance_index": 2,
+          "assessed_skill": "Construct nested Python list traversal",
+          "relevance": "direct",
+          "evidence": "Entire rectangular2D list is traversed by row and seat.",
+          "coverage_limit": "No direct indexing, mutation or dynamic removal.",
+          "scope_bullet_id": "B2.2.2:G02",
+          "exact_guidance": "• One-dimensional (1D) Lists and two-dimensional (2D) Lists in Python",
+          "statement": "Construct programs that apply arrays and Lists.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.2.2",
+          "guidance_index": 3,
+          "assessed_skill": "Traverse list entries without modifying source",
+          "relevance": "direct",
+          "evidence": "Prompt explicitly preserves bookings; code reads every element.",
+          "coverage_limit": "No add/remove operation required.",
+          "scope_bullet_id": "B2.2.2:G03",
+          "exact_guidance": "• Add, remove and traverse elements in a dynamic list",
+          "statement": "Construct programs that apply arrays and Lists.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.3.2",
+          "guidance_index": 1,
+          "assessed_skill": "Construct mutually exclusive tariff selection",
+          "relevance": "direct",
+          "evidence": "S,D,C values select distinct increments; X deliberately adds zero.",
+          "coverage_limit": "Sample uses if/elif without final else; does not assess every selection form.",
+          "scope_bullet_id": "B2.3.2:G01",
+          "exact_guidance": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions",
+          "statement": "Construct programs utilizing appropriate selection structures.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.3.2",
+          "guidance_index": 2,
+          "assessed_skill": "Equality conditions governing execution",
+          "relevance": "direct",
+          "evidence": "Character-code equality decides each tariff addition.",
+          "coverage_limit": "No compound Boolean operators required.",
+          "scope_bullet_id": "B2.3.2:G02",
+          "exact_guidance": "• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "statement": "Construct programs utilizing appropriate selection structures.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.3.3",
+          "guidance_index": 1,
+          "assessed_skill": "Construct nested finite for-each loops",
+          "relevance": "direct",
+          "evidence": "One pass across rows and inner pass across entries.",
+          "coverage_limit": "Does not demonstrate while/pre-condition/post-condition loop forms or explicit index counting.",
+          "scope_bullet_id": "B2.3.3:G01",
+          "exact_guidance": "• Types of loops, including counted loops and conditional loops, and appropriate use of each type",
+          "statement": "Construct programs that utilize looping structures to perform repeated actions.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.3.3",
+          "guidance_index": 2,
+          "assessed_skill": "Select inside nested loops",
+          "relevance": "direct",
+          "evidence": "Tariff selection occurs in loop body.",
+          "coverage_limit": "Only simple equality decisions.",
+          "scope_bullet_id": "B2.3.3:G02",
+          "exact_guidance": "• Conditional statements within loops, using Boolean and/or relational operators to govern the loop’s execution",
+          "statement": "Construct programs that utilize looping structures to perform repeated actions.",
+          "mapping_verification_status": "verified"
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "257 independent executable cases agree with tariff-dictionary oracle; no input mutation.",
+        "All seven marking points align with initialization,two traversals,three tariffs and final return."
+      ],
+      "execution_evidence": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_012.json",
+      "issues": [
+        {
+          "severity": "low",
+          "dimension": "editorial",
+          "detail": "Normalize split theatre spelling and2 D spacing; tariff semantics clear."
+        }
+      ],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T12:51:44.935756+00:00",
+      "record_sha256": "254f2bad1b90ade954f28e5641fe831cb9e1b884f3ea9680d3ea0be5b952ecce",
+      "record_path": "question-bank/records/P-SRC001-Q15-c.json",
+      "original_syllabus_codes": [
+        "B2.2.2",
+        "B2.3.2",
+        "B2.3.3"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 7,
+        "marking_point_sum": 7,
+        "status": "pass"
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q05-a-ii",
+      "statement_mappings": [
+        {
+          "code": "B2.3.1",
+          "relevance": "partial",
+          "evidence": "Constructs one arithmetic assignment meeting a numeric objective, but no sequence of multiple instructions."
+        }
+      ],
+      "mappings": [
+        {
+          "code": "B2.3.1",
+          "guidance_index": 1,
+          "assessed_skill": "Apply weighted arithmetic in one assignment",
+          "relevance": "supporting",
+          "evidence": "Correct division and weighting meet calculation objective.",
+          "coverage_limit": "Does not ask impact of instruction order; operator precedence is not instruction-sequencing evidence.",
+          "scope_bullet_id": "B2.3.1:G01",
+          "exact_guidance": "• The impact of instruction order on program functionality",
+          "statement": "Construct programs that implement the correct sequence of code instructions to meet program objectives.",
+          "mapping_verification_status": "verified",
+          "statement_relevance": "partial",
+          "statement_evidence": "Constructs one arithmetic assignment meeting a numeric objective, but no sequence of multiple instructions."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "All4131 valid integer component combinations match independent linear-coefficient oracle.",
+        "Normalization criterion and weighted-combination criterion sum two marks; equivalent algebraic assignment accepted."
+      ],
+      "execution_evidence": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_012.json",
+      "issues": [
+        {
+          "severity": "low",
+          "dimension": "mapping",
+          "detail": "Retain as partial statement/supporting guidance match; do not return as checked instruction-order problem."
+        }
+      ],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T12:51:44.935903+00:00",
+      "record_sha256": "73eb2d557ec6d541bc3c614e1cd1c7a5c035bafb784b050df0bc27765a2f16d9",
+      "record_path": "question-bank/records/P-SRC002-Q05-a-ii.json",
+      "original_syllabus_codes": [
+        "B2.3.1"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 2,
+        "marking_point_sum": 2,
+        "status": "pass"
+      },
+      "revision": 2,
+      "revision_reason": "Explicit statement_relevance/statement_evidence fields for search importer; previous full review preserved."
+    },
+    {
+      "question_id": "P-SRC002-Q05-b",
+      "mappings": [
+        {
+          "code": "B2.3.2",
+          "guidance_index": 1,
+          "assessed_skill": "Construct ordered threshold selection for grade bands",
+          "relevance": "direct",
+          "evidence": "Function selects one grade for each disjoint allowed score interval.",
+          "coverage_limit": "Multiple if/early-return solution is valid; does not itself require elif/else syntax.",
+          "scope_bullet_id": "B2.3.2:G01",
+          "exact_guidance": "• Must include: if, else, else if (Java), elif (Python), to execute different code blocks based on specified conditions",
+          "statement": "Construct programs utilizing appropriate selection structures.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.3.2",
+          "guidance_index": 2,
+          "assessed_skill": "Use numerical relational conditions",
+          "relevance": "direct",
+          "evidence": "Descending >= comparisons govern return value.",
+          "coverage_limit": "No AND/OR/NOT required.",
+          "scope_bullet_id": "B2.3.2:G02",
+          "exact_guidance": "• Selection structures with or without Boolean operators (AND, OR, NOT) and/or relational operators (<, <=, >, >=, ==, !=) to control program flow effectively",
+          "statement": "Construct programs utilizing appropriate selection structures.",
+          "mapping_verification_status": "verified"
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "issue",
+          "evidence": "needs_context_repair; concrete issue recorded in review."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "All66 scores35..100 checked against independent disjoint-range oracle; no overlap or omitted boundary.",
+        "Three criteria appropriate to small classification task; accept valid if/elif/else or other equivalent selection."
+      ],
+      "execution_evidence": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_012.json",
+      "issues": [
+        {
+          "severity": "low",
+          "dimension": "markscheme",
+          "detail": "Prompt should explicitly say return the grade string, since criteria demand return and phrase Construct grade(score) alone leaves output mechanism implicit."
+        }
+      ],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T12:51:44.935969+00:00",
+      "record_sha256": "3aa6b088b355869318e1753c3ed655930c76db6565d53f3dca40378c49982946",
+      "record_path": "question-bank/records/P-SRC002-Q05-b.json",
+      "original_syllabus_codes": [
+        "B2.3.2"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 3,
+        "marking_point_sum": 3,
+        "status": "pass"
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q05-c",
+      "mappings": [
+        {
+          "code": "B2.1.2",
+          "guidance_index": 1,
+          "assessed_skill": "Recognize absent substring lookup",
+          "relevance": "supporting",
+          "evidence": "Question asks why searching for a space fails.",
+          "coverage_limit": "No program constructed and no substring extracted/manipulated.",
+          "scope_bullet_id": "B2.1.2:G01",
+          "exact_guidance": "• Writing of programs that accurately identify and extract substrings from given strings, demonstrating the ability to perform various manipulations, such as altering, concatenating or replacing",
+          "statement": "Construct programs that can extract and manipulate substrings.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.1.3",
+          "guidance_index": 1,
+          "assessed_skill": "Explain input-dependent substring lookup exception",
+          "relevance": "direct",
+          "evidence": "Name lacks required delimiter; index signals ValueError.",
+          "coverage_limit": "Only an unexpected-input failure, not resource unavailability or silent logic errors.",
+          "scope_bullet_id": "B2.1.3:G01",
+          "exact_guidance": "• Potential points of failure in a program must include unexpected inputs, resource unavailability, logic errors.",
+          "statement": "Describe how programs use common exception handling techniques.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.1.3",
+          "guidance_index": 2,
+          "assessed_skill": "Describe failure signaling before error handling",
+          "relevance": "supporting",
+          "evidence": "Exception occurrence illustrates why handling may be needed.",
+          "coverage_limit": "No handling role/technique explicitly requested beyond identifying failure.",
+          "scope_bullet_id": "B2.1.3:G02",
+          "exact_guidance": "• The role of exception handling in developing programs",
+          "statement": "Describe how programs use common exception handling techniques.",
+          "mapping_verification_status": "verified"
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "Directly executed Isabella.index(space) and observed ValueError.",
+        "Two mark points separate absent delimiter from raised exception."
+      ],
+      "execution_evidence": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_015.json",
+      "issues": [],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T12:52:35.518300+00:00",
+      "record_sha256": "2f53934efefb47065affb96f46afe65f56b2d7a44bb18ae600e5ed76308445da",
+      "record_path": "question-bank/records/P-SRC002-Q05-c.json",
+      "original_syllabus_codes": [
+        "B2.1.2",
+        "B2.1.3"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 2,
+        "marking_point_sum": 2,
+        "status": "pass"
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q05-d",
+      "mappings": [
+        {
+          "code": "B2.1.3",
+          "guidance_index": 1,
+          "assessed_skill": "Handle missing-delimiter failure on unexpected string input",
+          "relevance": "direct",
+          "evidence": "try catches ValueError from name.index.",
+          "coverage_limit": "Only one failure category.",
+          "scope_bullet_id": "B2.1.3:G01",
+          "exact_guidance": "• Potential points of failure in a program must include unexpected inputs, resource unavailability, logic errors.",
+          "statement": "Describe how programs use common exception handling techniques.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.1.3",
+          "guidance_index": 2,
+          "assessed_skill": "Use handler to return a specified fallback",
+          "relevance": "direct",
+          "evidence": "Successful path returns position; exceptional path returns False.",
+          "coverage_limit": "Role applied, not an essay explanation.",
+          "scope_bullet_id": "B2.1.3:G02",
+          "exact_guidance": "• The role of exception handling in developing programs",
+          "statement": "Describe how programs use common exception handling techniques.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.1.3",
+          "guidance_index": 3,
+          "assessed_skill": "Construct Python try/except",
+          "relevance": "direct",
+          "evidence": "Required try/except explicitly used and exception type specified.",
+          "coverage_limit": "No finally block; does not cover complete required constructs bullet.",
+          "scope_bullet_id": "B2.1.3:G03",
+          "exact_guidance": "• Exception handling constructs that effectively manage errors must include try/catch in Java, and try/except in Python, along with the finally block.",
+          "statement": "Describe how programs use common exception handling techniques.",
+          "mapping_verification_status": "verified"
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "127 exhaustive strings passed; index0 is integer0, not Boolean False; missing delimiter produces Boolean False.",
+        "Separate try placement, ValueError handler and two outcomes make three concrete criteria."
+      ],
+      "execution_evidence": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_015.json",
+      "issues": [
+        {
+          "severity": "low",
+          "dimension": "technical",
+          "detail": "Using False as sentinel alongside valid index0 is allowed by prompt, but client code must distinguish with is False; do not call function result a Boolean-only result."
+        }
+      ],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T12:52:35.518577+00:00",
+      "record_sha256": "ea26d2cb0963e9225db3d0e5fbfc543b755e107720b151f6ad49070f49747805",
+      "record_path": "question-bank/records/P-SRC002-Q05-d.json",
+      "original_syllabus_codes": [
+        "B2.1.3"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 3,
+        "marking_point_sum": 3,
+        "status": "pass"
+      }
+    },
+    {
+      "question_id": "P-SRC002-Q05-e",
+      "mappings": [
+        {
+          "code": "B2.1.2",
+          "guidance_index": 1,
+          "assessed_skill": "Explain extraction after final name delimiter",
+          "relevance": "partial",
+          "evidence": "Explains finding final space and suffix so middle-name tokens are skipped.",
+          "coverage_limit": "Explanation of algorithm, not construction of a program or broader altering/replacing manipulations.",
+          "scope_bullet_id": "B2.1.2:G01",
+          "exact_guidance": "• Writing of programs that accurately identify and extract substrings from given strings, demonstrating the ability to perform various manipulations, such as altering, concatenating or replacing",
+          "statement": "Construct programs that can extract and manipulate substrings.",
+          "mapping_verification_status": "verified"
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "issue",
+          "evidence": "needs_marking_repair; concrete issue recorded in review."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "For first+surname, last space precedes surname; inserting any number of middle tokens does not alter final-token rule.",
+        "Single-token fallback in answer is outside promised first-name-plus-surname format, so cannot be required for credit."
+      ],
+      "issues": [
+        {
+          "severity": "medium",
+          "dimension": "markscheme",
+          "detail": "Fourth criterion says correct single-token handling or justified format assumption although input promises first name and surname. Rewrite criterion to reward explicit explanation that stated format makes final token surname; do not penalize omission of out-of-domain single-token case."
+        }
+      ],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T12:52:35.518871+00:00",
+      "record_sha256": "8f222044d2279d598c287e1fb6d5f009118801c67ee882f25a3f37d11f5e37d7",
+      "record_path": "question-bank/records/P-SRC002-Q05-e.json",
+      "original_syllabus_codes": [
+        "B2.1.2"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 4,
+        "marking_point_sum": 4,
+        "status": "pass"
+      }
+    }
+  ]
+}

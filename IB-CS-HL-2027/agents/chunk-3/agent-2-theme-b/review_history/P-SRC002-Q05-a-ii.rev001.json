@@ -1,0 +1,75 @@
+{
+  "question_id": "P-SRC002-Q05-a-ii",
+  "statement_mappings": [
+    {
+      "code": "B2.3.1",
+      "relevance": "partial",
+      "evidence": "Constructs one arithmetic assignment meeting a numeric objective, but no sequence of multiple instructions."
+    }
+  ],
+  "mappings": [
+    {
+      "code": "B2.3.1",
+      "guidance_index": 1,
+      "assessed_skill": "Apply weighted arithmetic in one assignment",
+      "relevance": "supporting",
+      "evidence": "Correct division and weighting meet calculation objective.",
+      "coverage_limit": "Does not ask impact of instruction order; operator precedence is not instruction-sequencing evidence.",
+      "scope_bullet_id": "B2.3.1:G01",
+      "exact_guidance": "• The impact of instruction order on program functionality",
+      "statement": "Construct programs that implement the correct sequence of code instructions to meet program objectives.",
+      "mapping_verification_status": "verified"
+    }
+  ],
+  "verification": {
+    "mapping": {
+      "status": "verified",
+      "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+    },
+    "technical": {
+      "status": "verified",
+      "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+    },
+    "answer": {
+      "status": "verified",
+      "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+    },
+    "markscheme": {
+      "status": "verified",
+      "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+    },
+    "assets": {
+      "status": "verified",
+      "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+    },
+    "provenance": {
+      "status": "pending",
+      "evidence": "pending_original_source_recheck"
+    }
+  },
+  "checks": [
+    "All4131 valid integer component combinations match independent linear-coefficient oracle.",
+    "Normalization criterion and weighted-combination criterion sum two marks; equivalent algebraic assignment accepted."
+  ],
+  "execution_evidence": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_012.json",
+  "issues": [
+    {
+      "severity": "low",
+      "dimension": "mapping",
+      "detail": "Retain as partial statement/supporting guidance match; do not return as checked instruction-order problem."
+    }
+  ],
+  "reviewer": "/root/theme_b_coverage",
+  "reviewed_at": "2026-11-04T12:51:44.935903+00:00",
+  "record_sha256": "73eb2d557ec6d541bc3c614e1cd1c7a5c035bafb784b050df0bc27765a2f16d9",
+  "record_path": "question-bank/records/P-SRC002-Q05-a-ii.json",
+  "original_syllabus_codes": [
+    "B2.3.1"
+  ],
+  "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+  "mark_total_check": {
+    "question_marks": 2,
+    "marking_point_sum": 2,
+    "status": "pass"
+  }
+}

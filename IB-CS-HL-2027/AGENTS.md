@@ -1,3 +1,5 @@
+> **Later user override (4 November 2026):** Chunk 3 is database/search/coverage infrastructure only. Do not generate examinations, topic tests, PDFs or full examination assembly this chunk. Follow `IB-CS-HL-2027/audits/chunk-3/USER_CHUNK3_SCOPE.md` (or `audits/chunk-3/USER_CHUNK3_SCOPE.md` inside the project) and current PROGRESS.md for the revised completion gates. This supersedes the original Chunk 3 draft-paper requirement below.
+
 # AGENTS.md — IB Computer Science HL 2027 Exam Conversion Project
 
 ## 1. Mission

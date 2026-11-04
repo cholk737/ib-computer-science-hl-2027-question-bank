@@ -1,0 +1,47 @@
+{
+  "question_id": "P-SRC001-Q14-b",
+  "status": "pass",
+  "result": 40,
+  "events": [
+    [
+      "call",
+      4
+    ],
+    [
+      "call",
+      3
+    ],
+    [
+      "call",
+      2
+    ],
+    [
+      "call",
+      1
+    ],
+    [
+      "return",
+      1,
+      1
+    ],
+    [
+      "return",
+      2,
+      2
+    ],
+    [
+      "return",
+      3,
+      10
+    ],
+    [
+      "return",
+      4,
+      40
+    ]
+  ],
+  "additional_checks": [
+    "base case k=1 returns 1"
+  ],
+  "note": "Independent sys.settrace of actual stored Python code, not copied expected function."
+}

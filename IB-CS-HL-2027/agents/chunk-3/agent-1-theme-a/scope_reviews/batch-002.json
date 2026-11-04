@@ -1,0 +1,165 @@
+{
+  "checkpoint": "A-RECORDS-002",
+  "reviews": [
+    {
+      "question_id": "P-SRC001-Q06",
+      "record_sha256": "01de0e40a7f8e2e7305dabfba8ba5d8ee9a2f6e9cbd432e71c4ce5285026290d",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:51:23.444166+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A1.2.4",
+          "scope_bullet_id": "A1.2.4:G02",
+          "exact_guidance": "• Truth tables to determine outputs from inputs for a problem description",
+          "assessed_skill": "Construct every output of a three-input truth table from an alarm problem description.",
+          "relevance": "direct",
+          "evidence": "Prompt requires complete table from exactly-two-one inputs OR numeric value>=6. Exhaustively recomputed all eight rows; this directly assesses the problem-description truth-table guidance, not Karnaugh maps or circuit simplification."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Evaluated all 8 triples independently. Exactly-two criterion selects 011,101,110; value>=6 selects110,111; union gives outputs0,0,0,1,0,1,1,1."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Stored exhaustive check checks/P-SRC001-Q06-truth-check.json passes against all answer rows."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Four 1-mark row-pair criteria total4, cover all8 outputs, give positive partial credit by independent pairs. Prompt row order explicit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q06.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [
+        "• Truth tables to predict the output of simple logic circuits",
+        "• Truth tables and their relationship to a Boolean expression, with inputs and outputs",
+        "• Truth tables derived from logic diagrams to aid the simplification of logical expressions",
+        "• Karnaugh maps and algebraic simplification to simplify output expressions"
+      ],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q06.json": "01de0e40a7f8e2e7305dabfba8ba5d8ee9a2f6e9cbd432e71c4ce5285026290d",
+        "question-bank/questions/P-SRC001-Q06.json": "55d19522ad295b3db0b4e69001157c2b2c9bf38a2d38e030625d71e4e5e2b5ec",
+        "question-bank/markschemes/P-SRC001-Q06.json": "c1044ee06ba23bea03ad1ce6b25e405e325f40e67a23bd9be9285c56f1107fd9",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q06.json": "0589be6705045288031e14d0aa0015dfc79827d0e3dd07548de74977ee7a7a62"
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q08-a",
+      "record_sha256": "9c449b120e44048f5cf7f75cca122147489f78b1a6d154b0c65e4def44ddb89e",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:51:23.444455+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A2.1.4",
+          "scope_bullet_id": "A2.1.4:G01",
+          "exact_guidance": "• Protocols: transmission control protocol (TCP), user datagram protocol (UDP), hypertext transfer protocol (HTTP), hypertext transfer protocol secure (HTTPS), dynamic host configuration protocol (DHCP)",
+          "assessed_skill": "Define the general concept of an agreed communication protocol.",
+          "relevance": "supporting",
+          "evidence": "No named TCP/UDP/HTTP/HTTPS/DHCP role or behaviour is tested. This foundation supports the statement but does not establish direct coverage of any listed protocol."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "A network protocol is an agreed communication-rule set; wording does not confuse protocol with physical medium."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "One concise definition contains rules plus communication context, appropriate Define1."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Single1-mark criterion and equivalent wording allowance match demand."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q08-a.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q08-a.json": "9c449b120e44048f5cf7f75cca122147489f78b1a6d154b0c65e4def44ddb89e",
+        "question-bank/questions/P-SRC001-Q08-a.json": "1867bc3f68bd3cb23490bc04f25f8a82be36082b56b0425b220deefdbe318b97",
+        "question-bank/markschemes/P-SRC001-Q08-a.json": "1f65cd3f631fbd03fab8a980ea85f9fc6b45863df5c09de797d23152a1338693",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q08-a.json": "94dc656f3b8f893e3d251c9827c0107f28cd941c9c62d94b81c34f9c6b564ece"
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q08-b",
+      "record_sha256": "76487d2e4a8cdd1fb404dc9bafb06d7e76dcffb922133b3096bc0198b43fdf70",
+      "reviewer": "/root/theme_a_coverage",
+      "reviewed_at": "2026-11-04T12:51:23.444716+00:00",
+      "review_type": "specialist_first_pass_record_review_not_Chunk4_independent_audit",
+      "mappings": [
+        {
+          "code": "A2.1.4",
+          "scope_bullet_id": "A2.1.4:G01",
+          "exact_guidance": "• Protocols: transmission control protocol (TCP), user datagram protocol (UDP), hypertext transfer protocol (HTTP), hypertext transfer protocol secure (HTTPS), dynamic host configuration protocol (DHCP)",
+          "assessed_skill": "List general communication properties standardized by protocols.",
+          "relevance": "supporting",
+          "evidence": "Message format, timing/order and addressing/error conventions are general protocol aspects. No specific function of the five listed transport/application protocols is tested."
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read full exact statement and all guidance, adapted prompt, marks, complete solution/criteria and source mapping; only actually assessed aspects mapped."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Data formats/encoding, interaction timing/order, addressing and error/acknowledgement behaviour are legitimate protocol-standardized properties."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "The model lists three valid aspects. Alternative legitimate triples also exist; no single protocol must implement every listed function."
+        },
+        "markscheme": {
+          "status": "issue",
+          "evidence": "Three1-mark categories total3, but third merges addressing/routing with error/acknowledgement. A valid answer message format,addressing,error handling could receive only2 under literal buckets. Clarify award any3 distinct valid aspects, without double-crediting synonyms."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "Adapted record is self-contained prose; assets/code lists empty and no missing visual/code stimulus is needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Read linked historical source metadata extraction/by-paper/SRC-001/questions/H-SRC001-Q08-b.json. IDs/pages/source and declared markscheme availability retained. Checked traceability linkage, not a fresh PDF transcription audit. SRC001 has no uploaded official markscheme; adapted criteria are preliminary unofficial."
+        }
+      },
+      "scope_not_assessed": [],
+      "issues": [
+        "A-C3-MS-002: List3 valid protocol aspects must permit e.g. format + addressing + error handling as3 distinct answers; current fixed bucket grouping could cap at2."
+      ],
+      "reviewed_artifact_hashes": {
+        "question-bank/records/P-SRC001-Q08-b.json": "76487d2e4a8cdd1fb404dc9bafb06d7e76dcffb922133b3096bc0198b43fdf70",
+        "question-bank/questions/P-SRC001-Q08-b.json": "443ea4e6c33019d44ea471c3e29295d0a5b02350d4e9d0de0f024e34b1cb707c",
+        "question-bank/markschemes/P-SRC001-Q08-b.json": "9a9c1d29d448bc7b3165ba5f3dd09e684817891128cec8f4e3358295c6a80b3e",
+        "extraction/by-paper/SRC-001/questions/H-SRC001-Q08-b.json": "06b767489f7a65c24d33fe930e855b533fabfdb541b3b779dd02a75728ec7980"
+      }
+    }
+  ]
+}

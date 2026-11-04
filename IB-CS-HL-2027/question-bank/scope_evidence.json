@@ -1,0 +1,490 @@
+{
+  "schema_version": 1,
+  "unofficial": true,
+  "updated_at": "2026-11-04T13:52:20.666761+01:00",
+  "scope_bullet_id_rule": "CODE:GNN is the one-based exact guidance paragraph. Direct relevance certifies the described assessed skill, never every item in the paragraph.",
+  "reviews": [
+    {
+      "question_id": "P-SRC001-Q03",
+      "mappings": [
+        {
+          "code": "B2.2.3",
+          "guidance_index": 1,
+          "assessed_skill": "State nonempty stack pop semantics",
+          "relevance": "direct",
+          "evidence": "Prompt asks what pop does; solution removes and returns the most recently pushed item.",
+          "coverage_limit": "Only pop semantics, not the other named operations or performance/memory.",
+          "scope_bullet_id": "B2.2.3:G01",
+          "exact_guidance": "• Must include fundamental operations such as push, pop, peek and isEmpty",
+          "statement": "Explain the concept of a stack as a “last in, first out” (LIFO) data structure.",
+          "mapping_verification_status": "verified"
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "Nonempty precondition removes underflow ambiguity.",
+        "One independent correct statement matches one mark."
+      ],
+      "issues": [],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T10:37:10.030691+00:00",
+      "record_sha256": "3538232a43892dfd8b11099a27569aad8f1278213bb5587911071e7cc8315fbc",
+      "record_path": "question-bank/records/P-SRC001-Q03.json",
+      "original_syllabus_codes": [
+        "B2.2.3"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 1,
+        "marking_point_sum": 1,
+        "status": "pass"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC001-Q03",
+        "review_sha256": "4ee1d4dcef54a43b75ab3b3d440f4133c940d22457a9aaa6694ca84c06ac9fec",
+        "record_sha256": "3538232a43892dfd8b11099a27569aad8f1278213bb5587911071e7cc8315fbc",
+        "source_path": "agents/chunk-3/agent-2-theme-b/question_reviews.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T13:51:20.311405+01:00",
+        "reason": "Coordinator read complete current prompts/solutions/mark points and exact B2.2.3/B4.1.2/B4.1.3 guidance. Confirmed pop/isEmpty and final Nia-Lena-Priya link trace; direct relevance applies only to named operations. Q07 editorial and asset issues remain explicitly pending; provenance not promoted.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q04",
+      "mappings": [
+        {
+          "code": "B2.2.3",
+          "guidance_index": 1,
+          "assessed_skill": "State isEmpty result for an empty stack",
+          "relevance": "direct",
+          "evidence": "Prompt explicitly empty; solution Boolean True is correct.",
+          "coverage_limit": "Only isEmpty, not every stack operation or efficiency.",
+          "scope_bullet_id": "B2.2.3:G01",
+          "exact_guidance": "• Must include fundamental operations such as push, pop, peek and isEmpty",
+          "statement": "Explain the concept of a stack as a “last in, first out” (LIFO) data structure.",
+          "mapping_verification_status": "verified"
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "Return True is correct for zero items; no programming-language ambiguity.",
+        "One answer criterion for one mark."
+      ],
+      "issues": [],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T10:37:10.031194+00:00",
+      "record_sha256": "670008c771b00cde6b7ff3545e80792150a3fb425440a7ece1b5d148d4d057a4",
+      "record_path": "question-bank/records/P-SRC001-Q04.json",
+      "original_syllabus_codes": [
+        "B2.2.3"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 1,
+        "marking_point_sum": 1,
+        "status": "pass"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC001-Q04",
+        "review_sha256": "18cfd7a1c28b80a5f2a996caa9884d1c8335e7b83a211f85a60862c368a4143e",
+        "record_sha256": "670008c771b00cde6b7ff3545e80792150a3fb425440a7ece1b5d148d4d057a4",
+        "source_path": "agents/chunk-3/agent-2-theme-b/question_reviews.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T13:51:20.311405+01:00",
+        "reason": "Coordinator read complete current prompts/solutions/mark points and exact B2.2.3/B4.1.2/B4.1.3 guidance. Confirmed pop/isEmpty and final Nia-Lena-Priya link trace; direct relevance applies only to named operations. Q07 editorial and asset issues remain explicitly pending; provenance not promoted.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q07",
+      "mappings": [
+        {
+          "code": "B4.1.2",
+          "guidance_index": 1,
+          "assessed_skill": "Recognize/apply doubly linked form",
+          "relevance": "direct",
+          "evidence": "Initial doubly linked chain includes links both ways.",
+          "coverage_limit": "One required list variant only.",
+          "scope_bullet_id": "B4.1.2:G01",
+          "exact_guidance": "• Lists must include singly, doubly, circular",
+          "statement": "Evaluate linked lists.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B4.1.2",
+          "guidance_index": 2,
+          "assessed_skill": "Sketch insertion/deletion reference changes",
+          "relevance": "direct",
+          "evidence": "Delete Omar then Theo, prepend Nia; final forward/back links and null boundaries assessed.",
+          "coverage_limit": "No traversal/search or comparison/evaluation.",
+          "scope_bullet_id": "B4.1.2:G02",
+          "exact_guidance": "• Sketch of linked lists and implementation of basic operations diagrammatically, such as insertion, deletion, traversal, search",
+          "statement": "Evaluate linked lists.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B4.1.3",
+          "guidance_index": 1,
+          "assessed_skill": "Apply insertion/deletion to a doubly linked list",
+          "relevance": "direct",
+          "evidence": "Operations produce Nia,Lena,Priya and bidirectional neighbor links.",
+          "coverage_limit": "Not Python construction; singly/circular variants absent.",
+          "scope_bullet_id": "B4.1.3:G01",
+          "exact_guidance": "• The basic operations on a linked list, such as insertion, deletion, traversal, search",
+          "statement": "Construct and apply linked lists: singly, doubly and circular.",
+          "mapping_verification_status": "verified"
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "issue",
+          "evidence": "needs_editorial_repair; concrete issue recorded in review."
+        },
+        "assets": {
+          "status": "pending",
+          "evidence": "inline_diagram_render_pending"
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "Independent state trace Lena,Omar,Priya,Theo → Lena,Priya,Theo → Lena,Priya → Nia,Lena,Priya.",
+        "Four distinct marking criteria cover data order, forward links, backward links and boundaries, sum four."
+      ],
+      "issues": [
+        {
+          "severity": "low",
+          "dimension": "markscheme",
+          "detail": "Prompt/answer contain split names Pr i ya and Ni a while final marking point uses Priya/Nia. Normalize these identifiers consistently in coordinator-approved editorial repair; no semantic answer change."
+        },
+        {
+          "severity": "low",
+          "dimension": "assets",
+          "detail": "Inline Unicode linked-list diagram needs browser rendering check; no external figure asset is present."
+        }
+      ],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T10:37:10.031504+00:00",
+      "record_sha256": "98197529760c13f65175c6873888a04aef479087b51feba1736b15b390ca377a",
+      "record_path": "question-bank/records/P-SRC001-Q07.json",
+      "original_syllabus_codes": [
+        "B4.1.2",
+        "B4.1.3"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 4,
+        "marking_point_sum": 4,
+        "status": "pass"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC001-Q07",
+        "review_sha256": "a446047d89acd5da5db3568032353c621f0beac076791a8c5c0408dea083974e",
+        "record_sha256": "98197529760c13f65175c6873888a04aef479087b51feba1736b15b390ca377a",
+        "source_path": "agents/chunk-3/agent-2-theme-b/question_reviews.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T13:51:20.311405+01:00",
+        "reason": "Coordinator read complete current prompts/solutions/mark points and exact B2.2.3/B4.1.2/B4.1.3 guidance. Confirmed pop/isEmpty and final Nia-Lena-Priya link trace; direct relevance applies only to named operations. Q07 editorial and asset issues remain explicitly pending; provenance not promoted.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q10",
+      "mappings": [
+        {
+          "code": "B2.1.4",
+          "guidance_index": 1,
+          "assessed_skill": "Explain breakpoint state inspection and stepping",
+          "relevance": "partial",
+          "evidence": "Prompt outlines how breakpoint debugging helps; criteria name pausing and inspection.",
+          "coverage_limit": "Conceptual description supports debugging but does not actually construct/use a debugger or demonstrate a particular debugging session.",
+          "scope_bullet_id": "B2.1.4:G01",
+          "exact_guidance": "• Debugging techniques may include trace tables, breakpoint debugging, print statements and step-by-step code execution.",
+          "statement": "Construct and use common debugging techniques.",
+          "mapping_verification_status": "verified"
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "Pausing at a selected point and inspecting values identifies first divergence from expectation; no promise that breakpoint alone fixes error.",
+        "Two distinct outline points for two marks."
+      ],
+      "issues": [],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T10:37:50.666796+00:00",
+      "record_sha256": "15554df1b21fc674f78d892997321c0c57b9b8cc44860c5134813395a9dffd35",
+      "record_path": "question-bank/records/P-SRC001-Q10.json",
+      "original_syllabus_codes": [
+        "B2.1.4"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 2,
+        "marking_point_sum": 2,
+        "status": "pass"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC001-Q10",
+        "review_sha256": "2b2cee55ce343bd5c3324e8a9a9f347f626be4c802d800de6b8dbf2ad0cae687",
+        "record_sha256": "15554df1b21fc674f78d892997321c0c57b9b8cc44860c5134813395a9dffd35",
+        "source_path": "agents/chunk-3/agent-2-theme-b/question_reviews.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T13:52:20.666761+01:00",
+        "reason": "Coordinator compared actual prompts, complete criteria and exact guide B2.1.4/B2.2.1/B2.4.5 guidance; independently traced and executed suffix_product (40 and base1); confirmed conditional memory-resizing costs and breakpoint purposes. Scope limits and pending original-source provenance remain.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q14-a",
+      "mappings": [
+        {
+          "code": "B2.2.1",
+          "guidance_index": 1,
+          "assessed_skill": "Explain dynamic-list resizing and transient allocation costs",
+          "relevance": "direct",
+          "evidence": "Answer describes possible new block/copy during resizing.",
+          "coverage_limit": "Not every implementation must relocate on every growth; conditional wording may is essential.",
+          "scope_bullet_id": "B2.2.1:G01",
+          "exact_guidance": "• The fundamental differences between static and dynamic data structures, including their underlying mechanisms for memory allocation and resizing",
+          "statement": "Compare static and dynamic data structures.",
+          "mapping_verification_status": "verified"
+        },
+        {
+          "code": "B2.2.1",
+          "guidance_index": 2,
+          "assessed_skill": "Compare speed/memory trade-offs under RAM and timing constraints",
+          "relevance": "direct",
+          "evidence": "Two disadvantages linked to variable delay and possible RAM-budget excess.",
+          "coverage_limit": "Focus disadvantages of dynamic growth; does not evaluate every static/dynamic scenario.",
+          "scope_bullet_id": "B2.2.1:G02",
+          "exact_guidance": "• The advantages and disadvantages of each type in various scenarios, considering factors such as speed, memory usage, flexibility",
+          "statement": "Compare static and dynamic data structures.",
+          "mapping_verification_status": "verified"
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "Resizing can incur copy/temporary memory but is not asserted on every append.",
+        "Two causal pairs supply four marks without double-counting one fact."
+      ],
+      "issues": [
+        {
+          "severity": "low",
+          "dimension": "editorial",
+          "detail": "pre allocating/meta data spacing should be normalized when coordinator permits; does not change substantive content."
+        }
+      ],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T10:37:50.666944+00:00",
+      "record_sha256": "84327b10b2d7897707e99bc218a76de6b8d5144162a1b1bd41799d53f520df69",
+      "record_path": "question-bank/records/P-SRC001-Q14-a.json",
+      "original_syllabus_codes": [
+        "B2.2.1"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 4,
+        "marking_point_sum": 4,
+        "status": "pass"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC001-Q14-a",
+        "review_sha256": "e99f39bfd24e7e32e74164c93d45edc21e2409f5709516f45d555be0a21ab34c",
+        "record_sha256": "84327b10b2d7897707e99bc218a76de6b8d5144162a1b1bd41799d53f520df69",
+        "source_path": "agents/chunk-3/agent-2-theme-b/question_reviews.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T13:52:20.666761+01:00",
+        "reason": "Coordinator compared actual prompts, complete criteria and exact guide B2.1.4/B2.2.1/B2.4.5 guidance; independently traced and executed suffix_product (40 and base1); confirmed conditional memory-resizing costs and breakpoint purposes. Scope limits and pending original-source provenance remain.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "P-SRC001-Q14-b",
+      "mappings": [
+        {
+          "code": "B2.4.5",
+          "guidance_index": 1,
+          "assessed_skill": "Trace calls and returns of simple non-branching recursive product",
+          "relevance": "direct",
+          "evidence": "Exactly one recursive call per non-base activation, k decreases to base 1; output and unwind values shown.",
+          "coverage_limit": "Only supplied domain/call; no branching recursion or general-purpose validity over arbitrary indices.",
+          "scope_bullet_id": "B2.4.5:G01",
+          "exact_guidance": "• Simple, non-branching recursive algorithms in programming only",
+          "statement": "Construct and trace recursive algorithms in a programming language. (HL only)",
+          "mapping_verification_status": "verified"
+        }
+      ],
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+        },
+        "provenance": {
+          "status": "pending",
+          "evidence": "pending_original_source_recheck"
+        }
+      },
+      "checks": [
+        "Actual stored code executed with sys.settrace; calls 4,3,2,1 and returns 1,2,10,40 match all five mark points.",
+        "Independent base-case check k=1 returns 1."
+      ],
+      "execution_evidence": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_006.json",
+      "issues": [],
+      "reviewer": "/root/theme_b_coverage",
+      "reviewed_at": "2026-11-04T10:37:50.667007+00:00",
+      "record_sha256": "9c900e3dd4a6c42edff3c9b18723c377a281af91cf8b7e4bd41a387c6e93770e",
+      "record_path": "question-bank/records/P-SRC001-Q14-b.json",
+      "original_syllabus_codes": [
+        "B2.4.5"
+      ],
+      "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+      "mark_total_check": {
+        "question_marks": 5,
+        "marking_point_sum": 5,
+        "status": "pass"
+      },
+      "coordinator_review": {
+        "question_id": "P-SRC001-Q14-b",
+        "review_sha256": "d80cec8772cadfc369bcab61150d62676107af697efa36ba7f715e285282e5d2",
+        "record_sha256": "9c900e3dd4a6c42edff3c9b18723c377a281af91cf8b7e4bd41a387c6e93770e",
+        "source_path": "agents/chunk-3/agent-2-theme-b/question_reviews.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T13:52:20.666761+01:00",
+        "reason": "Coordinator compared actual prompts, complete criteria and exact guide B2.1.4/B2.2.1/B2.4.5 guidance; independently traced and executed suffix_product (40 and base1); confirmed conditional memory-resizing costs and breakpoint purposes. Scope limits and pending original-source provenance remain.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    }
+  ],
+  "verification_limits": "Only coordinator-approved, current-record specialist reviews are merged. Other bank records retain legacy status and are pending detailed C3 scope verification. C4 independent verification remains separate."
+}

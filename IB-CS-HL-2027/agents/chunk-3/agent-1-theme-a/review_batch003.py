@@ -1,0 +1,12 @@
+from checkpoint_reviews import *
+R3=[]
+R3.append(review('P-SRC001-Q09',[
+ m('A1.4.1',1,'Identify a compiler from whole-program-before-execution translation mechanics.','partial','One-mark recognition of ahead-of-time compilation; no comparison with interpreter, use-case evaluation, JIT/bytecode or required scenarios.'),
+], 'Within the stated educational model, translating a whole source program before execution identifies a compiler. Does not claim every real runtime uses only one translation approach.', 'Compiler is the correct1-mark type.', 'Single1-mark criterion matches State; no marks for unsupported extra runtime assertions.'))
+R3.append(review('P-SRC001-Q11-c-i',[
+ m('A2.4.2',1,'List three network vulnerabilities capable of exposing enrolment records.','partial','Only identification of any three exposure-relevant vulnerabilities is assessed; no mechanism explanation and no evidence all ten listed vulnerabilities are tested.'),
+], 'Phishing, unpatched exploitable flaws, SQL injection, data-stealing malware and weak authentication can expose data. The answer examples meet the exposure condition; DDoS alone is not automatically an exposure mechanism.', 'The model offers valid named vulnerabilities; three independent exposure-relevant choices are appropriate for List3.', 'Three1-mark slots total3, but SQL injection/malware/weak authentication grouped as alternatives in one slot could under-credit a correct answer consisting of exactly those three distinct vulnerabilities. Award any3 distinct relevant vulnerabilities, not fixed response slots.', ['A-C3-MS-003: Accept any3 distinct exposure-relevant vulnerabilities. SQL injection + malware + weak authentication is valid3 but literal current grouped criteria may award only1.']))
+R3.append(review('P-SRC001-Q11-c-ii',[
+ m('A2.2.2',1,'State the function of a university mail server.','partial','Receiving/storing/forwarding email role directly tested; no DNS/DHCP/file/proxy/web role and no reliability/scalability/security comparison.'),
+], 'A mail server receives, retains and/or relays messages for mail service users; roles may be divided across components without invalidating this description.', 'One concise mail-service function earns the single State mark.', 'One1-mark criterion lists valid mail-service operations and permits alternatives; does not require all operations for1 mark.'))
+save_batch(R3,3,'Review P-SRC001-Q11-c-iv, P-SRC001-Q12-a-i and P-SRC001-Q12-a-ii; save batch-004.', ['review_batch003.py'])

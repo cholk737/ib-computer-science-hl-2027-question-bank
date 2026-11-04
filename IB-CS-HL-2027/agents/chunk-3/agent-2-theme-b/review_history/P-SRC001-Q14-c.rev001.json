@@ -1,0 +1,75 @@
+{
+  "question_id": "P-SRC001-Q14-c",
+  "mappings": [
+    {
+      "code": "B2.4.2",
+      "guidance_index": 1,
+      "assessed_skill": "Construct iterative binary search over ordered integers",
+      "relevance": "direct",
+      "evidence": "Prompt explicitly requires binary search and forbids library lookup; equality and interval-halving solution directly implement algorithm.",
+      "coverage_limit": "Does not compare linear/binary efficiency or trace both methods; efficiency guidance only partly addressed.",
+      "scope_bullet_id": "B2.4.2:G01",
+      "exact_guidance": "• The differences in efficiency between different methods of linear and binary search",
+      "statement": "Construct and trace algorithms to implement a linear search and a binary search for data retrieval.",
+      "mapping_verification_status": "verified"
+    },
+    {
+      "code": "B2.4.2",
+      "guidance_index": 2,
+      "assessed_skill": "Use sorted input precondition for search",
+      "relevance": "partial",
+      "evidence": "Ascending input given, algorithm chosen by prompt.",
+      "coverage_limit": "Candidate does not justify choosing search based on efficiency; suitability supporting context only.",
+      "scope_bullet_id": "B2.4.2:G02",
+      "exact_guidance": "• Use of search technique based on efficiency requirements—for example, searching a database for a sorted/indexed list of names to find a phone number, versus searching by the number to identify the name",
+      "statement": "Construct and trace algorithms to implement a linear search and a binary search for data retrieval.",
+      "mapping_verification_status": "verified"
+    }
+  ],
+  "verification": {
+    "mapping": {
+      "status": "verified",
+      "evidence": "Actual prompt and full exact scope compared; see individual mappings and coverage limits."
+    },
+    "technical": {
+      "status": "verified",
+      "evidence": "Current specialist manually checked actual technical content against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+    },
+    "answer": {
+      "status": "verified",
+      "evidence": "Current specialist manually checked actual answer against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+    },
+    "markscheme": {
+      "status": "verified",
+      "evidence": "Current specialist manually checked actual marking criteria against prompt and guide scope; concrete checks recorded in this review. This is not Chunk 4 independent audit."
+    },
+    "assets": {
+      "status": "verified",
+      "evidence": "No external asset or visual-only information required; self-contained text prompt inspected."
+    },
+    "provenance": {
+      "status": "pending",
+      "evidence": "pending_original_source_recheck"
+    }
+  },
+  "checks": [
+    "Actual code passed exhaustive sorted small arrays including empty, one element, duplicates, present/missing/end targets.",
+    "Six independent criteria cover bounds, termination, middle, equality, branch update and absence return.",
+    "Alternative half-open binary search must be accepted under generic alternatives."
+  ],
+  "execution_evidence": "agents/chunk-3/agent-2-theme-b/checks/check_b_record_009.json",
+  "issues": [],
+  "reviewer": "/root/theme_b_coverage",
+  "reviewed_at": "2026-11-04T12:50:20.502454+00:00",
+  "record_sha256": "be0c8cb622e2704061ae021814f1bddb5d2c7402a04cb2704381e8533890bce8",
+  "record_path": "question-bank/records/P-SRC001-Q14-c.json",
+  "original_syllabus_codes": [
+    "B2.4.2"
+  ],
+  "review_scope": "Actual prompt and full mapped guidance, answer and all marking points read. Verification dimensions apply only where stated; no original-PDF source recheck implied.",
+  "mark_total_check": {
+    "question_marks": 6,
+    "marking_point_sum": 6,
+    "status": "pass"
+  }
+}

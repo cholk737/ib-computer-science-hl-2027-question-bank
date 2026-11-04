@@ -1,0 +1,49 @@
+{
+  "specialist": "/root/searchable_bank_audit",
+  "checkpoint": "C3-A3-003-DB-IMPORT",
+  "completed": [
+    "Read saved progress and specimen analysis; confirmed 823-question baseline schemas",
+    "Built 823-question/112-scope local UI with separated lazy answer dataset",
+    "11 functional data/filter/export tests pass; app syntax check passes",
+    "12 data/filter/export tests pass; provenance source links resolve and source-answer summaries removed",
+    "Persistent SQLite import: all 823 stable question IDs, 112 objectives, exact guidance bullets, separate answer table, 6 pending verification dimensions per question, duplicate candidates and schema for usage/selections",
+    "Second incremental import unchanged=823; SQLite integrity_check=ok"
+  ],
+  "current": "Review backend semantics, add HTTP API and dynamic UI, tests",
+  "files": [
+    "test_bank.js",
+    "question_bank.sqlite3",
+    "build_bank.py",
+    "bank_db.py",
+    "findings.md",
+    "STATUS.json",
+    "test_results.json",
+    "web/index.html",
+    "web/bank-core.js",
+    "web/questions.js",
+    "web/build_manifest.json",
+    "web/style.css",
+    "web/answers.js",
+    "web/app.js",
+    "__pycache__/bank_db.cpython-313.pyc"
+  ],
+  "checked_objective_ids": [],
+  "generated_question_ids": [],
+  "last_saved_question_id": null,
+  "unfinished": [
+    "Persistent DB incremental import/search/API/tests",
+    "Per-question independently verified bullet evidence (coordinator merge)",
+    "Advanced conceptual scope search and additional filters",
+    "Browser QA"
+  ],
+  "integration_pending": [
+    "Coordinator installation and rebuilt data after new questions merge"
+  ],
+  "exact_next_action": "Implement endpoint server and dynamic UI against saved SQLite; test preserved IDs, scope evidence validation and representative search.",
+  "verification_limits": "DB legacy import deliberately leaves all 6 per-question review dimensions pending until approved evidence is supplied. No reviewed matches imported yet.",
+  "cancelled": [
+    "Exam blueprint",
+    "Practice case concept",
+    "All exam/topic-test/PDF assembly this Chunk 3"
+  ]
+}

@@ -1,0 +1,4085 @@
+{
+  "schema_version": 1,
+  "author": "/root/theme_a_coverage",
+  "unofficial": true,
+  "scope": "Theme A; exact guidance compared to actual adapted prompt/solution evidence; no claim of whole-syllabus completion from linked counts.",
+  "method": "Human review of exact source guidance and selected actual prompt/solution evidence per objective. All linked candidates enumerated, but exhaustive per-record marking QA is not claimed. A gap is recorded conservatively as not established by reviewed evidence; unmapped candidate discovery can change it. May-include lists remain non-exhaustive.",
+  "objectives": [
+    {
+      "code": "A1.1.1",
+      "statement": "Describe the functions and interactions of the main CPU components.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        34
+      ],
+      "guidance_paragraphs": [
+        "• Units: arithmetic logic unit (ALU), control unit (CU)",
+        "• Registers: instruction register (IR), program counter (PC), memory address register (MAR), memory data register (MDR), accumulator (AC)",
+        "• Buses: address, data, control",
+        "• Processors: single core processor, multi-core processor, co-processors",
+        "• A diagrammatic representation of the relationship between the specified CPU components"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC001-Q12-b-i",
+        "P-SRC001-Q12-b-iii",
+        "P-SRC004-Q03",
+        "P-SRC009-Q12-c-i",
+        "P-SRC009-Q12-c-ii",
+        "P-SRC009-Q12-c-iii",
+        "P-SRC009-Q12-c-iv",
+        "P-SRC022-Q02",
+        "P-SRC024-Q08",
+        "P-SRC030-Q03"
+      ],
+      "linked_count": 10,
+      "difficulty_counts": {
+        "low": 4,
+        "medium": 6
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC001-Q12-b-iii",
+          "finding": "Explicit address/data/control bus roles on memory read."
+        },
+        {
+          "question_id": "P-SRC009-Q12-c-ii",
+          "finding": "CU decode recall."
+        },
+        {
+          "question_id": "P-SRC009-Q12-c-iii",
+          "finding": "ALU arithmetic/logic recall."
+        },
+        {
+          "question_id": "P-SRC030-Q03",
+          "finding": "Parallel independent tasks with more suitable CPU cores."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Units: arithmetic logic unit (ALU), control unit (CU)",
+          "finding": "ALU/CU functions assessed; interactions narrower than complete architecture."
+        },
+        {
+          "guidance": "• Registers: instruction register (IR), program counter (PC), memory address register (MAR), memory data register (MDR), accumulator (AC)",
+          "finding": "MDR assessed repeatedly; PC, MAR, IR and accumulator functions not established by selected evidence."
+        },
+        {
+          "guidance": "• Buses: address, data, control",
+          "finding": "All three buses explicitly assessed on a read."
+        },
+        {
+          "guidance": "• Processors: single core processor, multi-core processor, co-processors",
+          "finding": "Multiple cores partly assessed; single-core/co-processor distinction not established."
+        },
+        {
+          "guidance": "• A diagrammatic representation of the relationship between the specified CPU components",
+          "finding": "No linked reviewed task asks a CPU relationship diagram."
+        }
+      ],
+      "remaining_gaps": [
+        "CPU register interactions and diagrammatic architecture; single/multi/co-processor distinctions."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A1.1.2",
+      "statement": "Describe the role of a GPU.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        34
+      ],
+      "guidance_paragraphs": [
+        "• The architecture that allows graphics processing units (GPUs) to handle specific tasks and makes them suitable for complex computations",
+        "• Real-world scenarios may include video games, artificial intelligence (AI), large simulations and other applications that require graphics rendering and machine learning."
+      ],
+      "linked_candidate_ids": [
+        "P-SRC002-Q07-c",
+        "P-SRC026-Q03",
+        "P-SRC032-Q07-c",
+        "P-SRC038-Q07-d",
+        "P-SRC044-Q06-c"
+      ],
+      "linked_count": 5,
+      "difficulty_counts": {
+        "medium": 5
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC032-Q07-c",
+          "finding": "Parallel pixel/geometry work and working scene data."
+        },
+        {
+          "question_id": "P-SRC038-Q07-d",
+          "finding": "Live image analysis throughput, latency, RAM and energy/cost trade-off."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• The architecture that allows graphics processing units (GPUs) to handle specific tasks and makes them suitable for complex computations",
+          "finding": "Parallel operations assessed; description of many simpler cores could be more explicit."
+        },
+        {
+          "guidance": "• Real-world scenarios may include video games, artificial intelligence (AI), large simulations and other applications that require graphics rendering and machine learning.",
+          "finding": "Rendering, simulation and ML contexts represented; may-include examples are not a mandatory exhaustive checklist."
+        }
+      ],
+      "remaining_gaps": [
+        "Strengthen explicit GPU architectural explanation; retain contextual medium/high demand."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A1.1.3",
+      "statement": "Explain the differences between the CPU and the GPU. (HL only)",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        34
+      ],
+      "guidance_paragraphs": [
+        "• Differences in their design philosophies, usage scenarios",
+        "• Differences in their core architecture, processing power, memory access, power efficiency",
+        "• CPUs and GPUs working together: task division, data sharing, coordinating execution"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC001-Q01",
+        "P-SRC042-Q07-c"
+      ],
+      "linked_count": 2,
+      "difficulty_counts": {
+        "medium": 1,
+        "high": 1
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC001-Q01",
+          "finding": "Identifies architecture/throughput/memory/power distinguishing characteristics; shallow demand."
+        },
+        {
+          "question_id": "P-SRC042-Q07-c",
+          "finding": "Sequential CPU versus parallel GPU, coordination and transfer cost evaluated."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Differences in their design philosophies, usage scenarios",
+          "finding": "Usage/philosophy partly assessed through sequential/parallel tasks."
+        },
+        {
+          "guidance": "• Differences in their core architecture, processing power, memory access, power efficiency",
+          "finding": "Architecture and performance partly assessed; concrete memory-access/power-efficiency comparison not developed."
+        },
+        {
+          "guidance": "• CPUs and GPUs working together: task division, data sharing, coordinating execution",
+          "finding": "Task division/coordination and transfers assessed; explicit data-sharing detail limited."
+        }
+      ],
+      "remaining_gaps": [
+        "Applied CPU/GPU architecture, memory access and power-efficiency explanation."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A1.1.4",
+      "statement": "Explain the purposes of different types of primary memory.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        34
+      ],
+      "guidance_paragraphs": [
+        "• Random-access memory (RAM), read only memory (ROM), cache (L1, L2, L3), registers",
+        "• The interaction of the CPU with different types of memory to optimize performance",
+        "• The relevance of the terms “cache miss” and “cache hit”"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC001-Q12-a-i",
+        "P-SRC001-Q12-b-ii",
+        "P-SRC002-Q07-c",
+        "P-SRC004-Q12-b",
+        "P-SRC005-Q07",
+        "P-SRC006-Q01",
+        "P-SRC008-Q02",
+        "P-SRC018-Q07",
+        "P-SRC020-Q07",
+        "P-SRC022-Q13-e",
+        "P-SRC026-Q03",
+        "P-SRC030-Q03",
+        "P-SRC032-Q07-c",
+        "P-SRC038-Q07-d",
+        "P-SRC044-Q04-d",
+        "P-SRC044-Q06-b",
+        "P-SRC044-Q06-c"
+      ],
+      "linked_count": 17,
+      "difficulty_counts": {
+        "medium": 16,
+        "low": 1
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC018-Q07",
+          "finding": "RAM/ROM purpose and volatility."
+        },
+        {
+          "question_id": "P-SRC001-Q12-b-ii",
+          "finding": "Cache hits reduce RAM waits."
+        },
+        {
+          "question_id": "P-SRC005-Q07",
+          "finding": "Working-set/cache size and hit-rate reasoning."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Random-access memory (RAM), read only memory (ROM), cache (L1, L2, L3), registers",
+          "finding": "RAM/ROM and generic cache assessed; L1/L2/L3 and register purposes not separately established."
+        },
+        {
+          "guidance": "• The interaction of the CPU with different types of memory to optimize performance",
+          "finding": "Cache-to-RAM interaction assessed."
+        },
+        {
+          "guidance": "• The relevance of the terms “cache miss” and “cache hit”",
+          "finding": "Hit assessed; miss consequence implicit rather than explicit term/use."
+        }
+      ],
+      "remaining_gaps": [
+        "L1/L2/L3 hierarchy, registers, explicit cache miss."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A1.1.5",
+      "statement": "Describe the fetch, decode and execute cycle.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        34
+      ],
+      "guidance_paragraphs": [
+        "• The basic operations a CPU performs to execute a single instruction in machine language",
+        "• The interaction between memory and registers via the three buses: address, data, control"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC001-Q12-b-iii",
+        "P-SRC009-Q12-c-iv"
+      ],
+      "linked_count": 2,
+      "difficulty_counts": {
+        "medium": 2
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC001-Q12-b-iii",
+          "finding": "Memory-read bus mechanism only."
+        },
+        {
+          "question_id": "P-SRC009-Q12-c-iv",
+          "finding": "Equivalent memory-read bus mechanism; not full execution cycle."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• The basic operations a CPU performs to execute a single instruction in machine language",
+          "finding": "Full fetch/decode/execute sequence not assessed by these mapped tasks."
+        },
+        {
+          "guidance": "• The interaction between memory and registers via the three buses: address, data, control",
+          "finding": "Read buses assessed, but register transfers and decode/execute progression missing."
+        }
+      ],
+      "remaining_gaps": [
+        "Construct/describe complete FDE with PC/MAR/MDR/IR and buses."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A1.1.6",
+      "statement": "Describe the process of pipelining in multi-core architectures. (HL only)",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        35
+      ],
+      "guidance_paragraphs": [
+        "• The instructions fetch, decode, execute",
+        "• Write-back stages to improve the overall system performance in multi-core architectures",
+        "• Overview of how cores in multi-core processors work independently and in parallel"
+      ],
+      "linked_candidate_ids": [],
+      "linked_count": 0,
+      "difficulty_counts": {},
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "no_mapped_practice",
+      "reviewed_evidence": [],
+      "bullet_findings": [
+        {
+          "guidance": "• The instructions fetch, decode, execute",
+          "finding": "No mapped practice."
+        },
+        {
+          "guidance": "• Write-back stages to improve the overall system performance in multi-core architectures",
+          "finding": "No mapped practice."
+        },
+        {
+          "guidance": "• Overview of how cores in multi-core processors work independently and in parallel",
+          "finding": "No mapped practice."
+        }
+      ],
+      "remaining_gaps": [
+        "Entire objective: staged instruction overlap including write-back; distinguish independent parallel cores."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A1.1.7",
+      "statement": "Describe internal and external types of secondary memory storage.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        35
+      ],
+      "guidance_paragraphs": [
+        "• Internal hard drives: solid state drive (SSD), hard disk drive (HDD), embedded multimedia cards (eMMCs)",
+        "• External hard drives: SSD, HDD, optical drives, flash drives, memory cards, network attached storage (NAS)",
+        "• The scenarios in which the various types of drive are used"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC001-Q12-a-i",
+        "P-SRC006-Q01",
+        "P-SRC008-Q01",
+        "P-SRC022-Q13-b",
+        "P-SRC022-Q13-e",
+        "P-SRC026-Q02-a",
+        "P-SRC030-Q02-a"
+      ],
+      "linked_count": 7,
+      "difficulty_counts": {
+        "medium": 4,
+        "low": 3
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC026-Q02-a",
+          "finding": "External SSD persistence/use."
+        },
+        {
+          "question_id": "P-SRC022-Q13-e",
+          "finding": "HDD-to-SSD upgrade reasoning."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Internal hard drives: solid state drive (SSD), hard disk drive (HDD), embedded multimedia cards (eMMCs)",
+          "finding": "SSD/HDD partly assessed; eMMC absent in reviewed evidence."
+        },
+        {
+          "guidance": "• External hard drives: SSD, HDD, optical drives, flash drives, memory cards, network attached storage (NAS)",
+          "finding": "External SSD use assessed; optical/flash/memory card/NAS distinctions not established."
+        },
+        {
+          "guidance": "• The scenarios in which the various types of drive are used",
+          "finding": "A few SSD/HDD contexts; wider device choice requires practice."
+        }
+      ],
+      "remaining_gaps": [
+        "Internal eMMC and external optical/flash/card/NAS purpose/scenario comparisons."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A1.1.8",
+      "statement": "Describe the concept of compression.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        35
+      ],
+      "guidance_paragraphs": [
+        "• The differences between lossy compression methods and lossless compression methods",
+        "• Run-length encoding and transform coding"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC004-Q11-e-i",
+        "P-SRC006-Q06",
+        "P-SRC018-Q11-c",
+        "P-SRC020-Q11-c",
+        "P-SRC022-Q13-c",
+        "P-SRC026-Q09-b",
+        "P-SRC028-Q09-b",
+        "P-SRC028-Q09-c-ii",
+        "P-SRC030-Q09-b",
+        "P-SRC032-Q11-b",
+        "P-SRC034-Q09-e",
+        "P-SRC042-Q11-a"
+      ],
+      "linked_count": 12,
+      "difficulty_counts": {
+        "medium": 11,
+        "low": 1
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC004-Q11-e-i",
+          "finding": "Lossless exact reconstruction and variable compressibility."
+        },
+        {
+          "question_id": "P-SRC022-Q13-c",
+          "finding": "Lossy irreversible detail loss versus limited lossless reduction."
+        },
+        {
+          "question_id": "P-SRC032-Q11-b",
+          "finding": "Contextual lossy audio preview versus exact contract text."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• The differences between lossy compression methods and lossless compression methods",
+          "finding": "Lossy/lossless differences and suitability established."
+        },
+        {
+          "guidance": "• Run-length encoding and transform coding",
+          "finding": "RLE and transform coding not established in reviewed linked evidence."
+        }
+      ],
+      "remaining_gaps": [
+        "Run-length encoding and conceptual transform coding, without inventing numerical transform requirements."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A1.1.9",
+      "statement": "Describe the different types of services in cloud computing.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        35
+      ],
+      "guidance_paragraphs": [
+        "• Services: software as a service (SaaS), platform as a service (PaaS), infrastructure as a service (IaaS)",
+        "• The differences between the approaches of SaaS, PaaS, and IaaS in various real-world scenarios, recognizing that different degrees of control and flexibility influence resource management and resource availability"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC032-Q11-c",
+        "P-SRC033-Q09-e",
+        "P-SRC042-Q11-d"
+      ],
+      "linked_count": 3,
+      "difficulty_counts": {
+        "medium": 2,
+        "high": 1
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC033-Q09-e",
+          "finding": "SaaS management versus local client/server."
+        },
+        {
+          "question_id": "P-SRC042-Q11-d",
+          "finding": "Hosted subscription service and cloud scaling."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Services: software as a service (SaaS), platform as a service (PaaS), infrastructure as a service (IaaS)",
+          "finding": "SaaS assessed; PaaS/IaaS not established."
+        },
+        {
+          "guidance": "• The differences between the approaches of SaaS, PaaS, and IaaS in various real-world scenarios, recognizing that different degrees of control and flexibility influence resource management and resource availability",
+          "finding": "SaaS control/availability comparison assessed; three-way service responsibilities missing."
+        }
+      ],
+      "remaining_gaps": [
+        "PaaS versus IaaS versus SaaS resource control/flexibility in clear contexts."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A1.2.1",
+      "statement": "Describe the principal methods of representing data.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        35
+      ],
+      "guidance_paragraphs": [
+        "• The representation of integers in binary and hexadecimal",
+        "• Conversion of binary and hexadecimal integers to decimal, and vice versa",
+        "• Conversion of integers from binary to hexadecimal, and vice versa"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC005-Q05-a",
+        "P-SRC006-Q02",
+        "P-SRC007-Q05",
+        "P-SRC008-Q03-a",
+        "P-SRC022-Q04-a",
+        "P-SRC022-Q04-b",
+        "P-SRC024-Q04-a",
+        "P-SRC024-Q04-b",
+        "P-SRC024-Q04-c",
+        "P-SRC028-Q08-a"
+      ],
+      "linked_count": 10,
+      "difficulty_counts": {
+        "low": 9,
+        "medium": 1
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC007-Q05",
+          "finding": "Hexadecimal D6 to decimal 214."
+        },
+        {
+          "question_id": "P-SRC006-Q02",
+          "finding": "Binary to hex D6."
+        },
+        {
+          "question_id": "P-SRC022-Q04-a",
+          "finding": "Hex B4 to 8-bit binary."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• The representation of integers in binary and hexadecimal",
+          "finding": "Binary/hex integer representations assessed."
+        },
+        {
+          "guidance": "• Conversion of binary and hexadecimal integers to decimal, and vice versa",
+          "finding": "Hex-to-decimal assessed; binary-to-decimal and decimal-to-binary/hex not established."
+        },
+        {
+          "guidance": "• Conversion of integers from binary to hexadecimal, and vice versa",
+          "finding": "Both binary/hex conversion directions assessed."
+        }
+      ],
+      "remaining_gaps": [
+        "Decimal-to-binary, decimal-to-hex and binary-to-decimal conversions."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A1.2.2",
+      "statement": "Explain how binary is used to store data.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        35
+      ],
+      "guidance_paragraphs": [
+        "• The fundamentals of binary encoding and the impact on data storage and retrieval",
+        "• The mechanisms by which data such as integers, strings, characters, images, audio and video are stored in binary form"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC001-Q05",
+        "P-SRC002-Q07-e",
+        "P-SRC005-Q05-a",
+        "P-SRC005-Q05-b",
+        "P-SRC008-Q03-b",
+        "P-SRC008-Q03-c",
+        "P-SRC008-Q11-a-i",
+        "P-SRC009-Q13-c",
+        "P-SRC018-Q03",
+        "P-SRC020-Q03",
+        "P-SRC022-Q13-d",
+        "P-SRC028-Q08-b",
+        "P-SRC032-Q14-d",
+        "P-SRC034-Q07-b-ii",
+        "P-SRC042-Q16-d",
+        "P-SRC044-Q09-a",
+        "P-SRC044-Q12-d"
+      ],
+      "linked_count": 17,
+      "difficulty_counts": {
+        "medium": 8,
+        "low": 9
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC001-Q05",
+          "finding": "RGB 24-bit channel encoding."
+        },
+        {
+          "question_id": "P-SRC032-Q14-d",
+          "finding": "Unicode code points and agreed byte encoding."
+        },
+        {
+          "question_id": "P-SRC002-Q07-e",
+          "finding": "Raster size = pixel count × bit depth."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• The fundamentals of binary encoding and the impact on data storage and retrieval",
+          "finding": "Binary storage/size and agreed encoding partly assessed."
+        },
+        {
+          "guidance": "• The mechanisms by which data such as integers, strings, characters, images, audio and video are stored in binary form",
+          "finding": "Images/characters/strings assessed; integer representation elsewhere; audio and video encoding mechanisms not established."
+        }
+      ],
+      "remaining_gaps": [
+        "Binary sampling/quantization of audio; video frames and encoded sound; retrieval interpretation."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A1.2.3",
+      "statement": "Describe the purpose and use of logic gates.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        35
+      ],
+      "guidance_paragraphs": [
+        "• The purpose and use of logic gates",
+        "• The functions and applications of logic gates in computer systems",
+        "• The role of logic gates in binary computing",
+        "• Boolean operators: AND, OR, NOT, NAND, NOR, XOR, XNOR"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC004-Q02",
+        "P-SRC005-Q03"
+      ],
+      "linked_count": 2,
+      "difficulty_counts": {
+        "low": 2
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC004-Q02",
+          "finding": "NAND output rule."
+        },
+        {
+          "question_id": "P-SRC005-Q03",
+          "finding": "XOR output rule."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• The purpose and use of logic gates",
+          "finding": "Two gate definitions; systematic purpose/application incomplete."
+        },
+        {
+          "guidance": "• The functions and applications of logic gates in computer systems",
+          "finding": "Alarm NAND context given; wider system applications missing."
+        },
+        {
+          "guidance": "• The role of logic gates in binary computing",
+          "finding": "Binary Boolean processing partly assessed."
+        },
+        {
+          "guidance": "• Boolean operators: AND, OR, NOT, NAND, NOR, XOR, XNOR",
+          "finding": "NAND/XOR definitions only; other gates appear incidentally in A1.2.4/5 but linked coverage not exhaustive."
+        }
+      ],
+      "remaining_gaps": [
+        "AND/OR/NOT/NOR/XNOR functions and binary computing applications; connect cross-objective evidence cautiously."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A1.2.4",
+      "statement": "Construct and analyse truth tables.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        35
+      ],
+      "guidance_paragraphs": [
+        "• Truth tables to predict the output of simple logic circuits",
+        "• Truth tables to determine outputs from inputs for a problem description",
+        "• Truth tables and their relationship to a Boolean expression, with inputs and outputs",
+        "• Truth tables derived from logic diagrams to aid the simplification of logical expressions",
+        "• Karnaugh maps and algebraic simplification to simplify output expressions"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC001-Q06",
+        "P-SRC008-Q04",
+        "P-SRC009-Q12-b",
+        "P-SRC016-Q05",
+        "P-SRC018-Q05",
+        "P-SRC020-Q05",
+        "P-SRC022-Q08",
+        "P-SRC026-Q05",
+        "P-SRC030-Q05"
+      ],
+      "linked_count": 9,
+      "difficulty_counts": {
+        "medium": 9
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC008-Q04",
+          "finding": "Truth table with three intermediate Boolean columns."
+        },
+        {
+          "question_id": "P-SRC009-Q12-b",
+          "finding": "Context-to-truth-table alarm."
+        },
+        {
+          "question_id": "P-SRC018-Q05",
+          "finding": "NAND/NOR nested expression table."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Truth tables to predict the output of simple logic circuits",
+          "finding": "Expression tables assessed; actual source diagram as stimulus not established."
+        },
+        {
+          "guidance": "• Truth tables to determine outputs from inputs for a problem description",
+          "finding": "Problem-description truth tables assessed."
+        },
+        {
+          "guidance": "• Truth tables and their relationship to a Boolean expression, with inputs and outputs",
+          "finding": "Boolean expression to all inputs/outputs assessed."
+        },
+        {
+          "guidance": "• Truth tables derived from logic diagrams to aid the simplification of logical expressions",
+          "finding": "Diagram-derived simplification not established."
+        },
+        {
+          "guidance": "• Karnaugh maps and algebraic simplification to simplify output expressions",
+          "finding": "Karnaugh maps and algebraic simplification not established."
+        }
+      ],
+      "remaining_gaps": [
+        "Karnaugh map and Boolean algebra simplification; diagram-to-table reasoning."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A1.2.5",
+      "statement": "Construct logic diagrams.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        35
+      ],
+      "guidance_paragraphs": [
+        "• Logic diagrams to demonstrate how logic gates are connected and interact in a circuit.",
+        "• Use of standard gate symbols for AND, OR, NOT, NAND, NOR, XOR and XNOR gates",
+        "• Inputs processed diagrammatically to produce outputs",
+        "• Combinations of these gates to perform more complex logical operations",
+        "• Boolean algebra rules to simplify complex logic diagrams and expressions"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC007-Q03",
+        "P-SRC024-Q06",
+        "P-SRC028-Q04"
+      ],
+      "linked_count": 3,
+      "difficulty_counts": {
+        "medium": 3
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC007-Q03",
+          "finding": "XNOR diagram or XOR followed by NOT."
+        },
+        {
+          "question_id": "P-SRC024-Q06",
+          "finding": "NOT/AND/OR multi-gate diagram."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Logic diagrams to demonstrate how logic gates are connected and interact in a circuit.",
+          "finding": "Connections/interactions assessed."
+        },
+        {
+          "guidance": "• Use of standard gate symbols for AND, OR, NOT, NAND, NOR, XOR and XNOR gates",
+          "finding": "AND/OR/NOT/XNOR assessed; NAND/NOR symbols and some variants not established."
+        },
+        {
+          "guidance": "• Inputs processed diagrammatically to produce outputs",
+          "finding": "Input-to-output diagram construction assessed."
+        },
+        {
+          "guidance": "• Combinations of these gates to perform more complex logical operations",
+          "finding": "Combinations assessed."
+        },
+        {
+          "guidance": "• Boolean algebra rules to simplify complex logic diagrams and expressions",
+          "finding": "Algebraic simplification not established."
+        }
+      ],
+      "remaining_gaps": [
+        "Algebraic circuit simplification and remaining standard gate symbols."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A1.3.1",
+      "statement": "Describe the role of operating systems.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        36
+      ],
+      "guidance_paragraphs": [
+        "• Operating systems abstract hardware complexities to manage system resources"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC007-Q15-b",
+        "P-SRC009-Q13-e"
+      ],
+      "linked_count": 2,
+      "difficulty_counts": {
+        "medium": 2
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "substantial_evidence",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC007-Q15-b",
+          "finding": "File-system interface hides low-level disk commands."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Operating systems abstract hardware complexities to manage system resources",
+          "finding": "Concrete hardware abstraction through OS/drivers assessed; resource-role examples add breadth."
+        }
+      ],
+      "remaining_gaps": [],
+      "next_action": "Retain evidence; evaluate final question selection and difficulty balance."
+    },
+    {
+      "code": "A1.3.2",
+      "statement": "Describe the functions of an operating system.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        36
+      ],
+      "guidance_paragraphs": [
+        "• Maintaining system integrity while running operating systems’ background operations",
+        "• Memory management, file system, device management, scheduling, security, accounting, graphical user interface (GUI), virtualization, networking"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC001-Q12-a-ii",
+        "P-SRC004-Q06",
+        "P-SRC005-Q12-c-i",
+        "P-SRC006-Q08",
+        "P-SRC006-Q10-a",
+        "P-SRC007-Q09",
+        "P-SRC007-Q15-a",
+        "P-SRC008-Q11-b",
+        "P-SRC009-Q11-a",
+        "P-SRC009-Q11-b",
+        "P-SRC009-Q13-e",
+        "P-SRC018-Q12-c-i",
+        "P-SRC018-Q12-c-ii",
+        "P-SRC020-Q12-c-i",
+        "P-SRC020-Q12-c-ii",
+        "P-SRC022-Q07",
+        "P-SRC024-Q10",
+        "P-SRC026-Q10-a",
+        "P-SRC028-Q10-a",
+        "P-SRC030-Q10-a"
+      ],
+      "linked_count": 20,
+      "difficulty_counts": {
+        "medium": 14,
+        "low": 5,
+        "high": 1
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC001-Q12-a-ii",
+          "finding": "RAM allocation/protection maintains integrity."
+        },
+        {
+          "question_id": "P-SRC006-Q08",
+          "finding": "Printer driver/queue device sharing."
+        },
+        {
+          "question_id": "P-SRC018-Q12-c-ii",
+          "finding": "Background service CPU/RAM overhead."
+        },
+        {
+          "question_id": "P-SRC024-Q10",
+          "finding": "Virtual machines testing OS environments."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Maintaining system integrity while running operating systems’ background operations",
+          "finding": "Integrity/background operations assessed."
+        },
+        {
+          "guidance": "• Memory management, file system, device management, scheduling, security, accounting, graphical user interface (GUI), virtualization, networking",
+          "finding": "Memory, device, scheduling, security, virtualization assessed; file permissions partly cover file-system function, but accounting/GUI/networking description not established."
+        }
+      ],
+      "remaining_gaps": [
+        "Accounting, GUI, networking and fuller file system functions; avoid treating name-list questions as depth."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A1.3.3",
+      "statement": "Compare different approaches to scheduling.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        36
+      ],
+      "guidance_paragraphs": [
+        "• Managing the execution of processes by allocating CPU time to optimize system performance",
+        "• First-come first-served, round robin, multilevel queue scheduling, priority scheduling"
+      ],
+      "linked_candidate_ids": [],
+      "linked_count": 0,
+      "difficulty_counts": {},
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "no_mapped_practice",
+      "reviewed_evidence": [],
+      "bullet_findings": [
+        {
+          "guidance": "• Managing the execution of processes by allocating CPU time to optimize system performance",
+          "finding": "No mapped practice."
+        },
+        {
+          "guidance": "• First-come first-served, round robin, multilevel queue scheduling, priority scheduling",
+          "finding": "No mapped practice."
+        }
+      ],
+      "remaining_gaps": [
+        "Entire objective: compare FCFS, round robin, multilevel queue and priority scheduling."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A1.3.4",
+      "statement": "Evaluate the use of polling and interrupt handling.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        36
+      ],
+      "guidance_paragraphs": [
+        "• Event frequency, CPU processing overheads, power source (battery or mains), event predictability, controlled latency, security concerns",
+        "• Real-world scenarios may include keyboard and mouse inputs, network communications, disk input/output operations, embedded systems, real-time systems."
+      ],
+      "linked_candidate_ids": [
+        "P-SRC004-Q12-c-i",
+        "P-SRC004-Q12-c-ii",
+        "P-SRC005-Q12-c-ii",
+        "P-SRC009-Q13-a",
+        "P-SRC018-Q04-a",
+        "P-SRC018-Q04-b",
+        "P-SRC020-Q04-a",
+        "P-SRC020-Q04-b",
+        "P-SRC026-Q11-d",
+        "P-SRC030-Q11-d",
+        "P-SRC042-Q05-d"
+      ],
+      "linked_count": 11,
+      "difficulty_counts": {
+        "medium": 7,
+        "low": 4
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC020-Q04-b",
+          "finding": "Polling sequence and latency tied to frequency."
+        },
+        {
+          "question_id": "P-SRC026-Q11-d",
+          "finding": "Polling/interrupt mechanism comparison."
+        },
+        {
+          "question_id": "P-SRC042-Q05-d",
+          "finding": "Polling frequency versus unnecessary overhead."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Event frequency, CPU processing overheads, power source (battery or mains), event predictability, controlled latency, security concerns",
+          "finding": "Latency/overhead partly assessed; power source, predictable events, security and balanced evaluation not established."
+        },
+        {
+          "guidance": "• Real-world scenarios may include keyboard and mouse inputs, network communications, disk input/output operations, embedded systems, real-time systems.",
+          "finding": "Control sensor examples assessed; may-include applications need not all appear."
+        }
+      ],
+      "remaining_gaps": [
+        "A contextual evaluation balancing battery/overhead, latency/predictability and interrupt storms/security."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A1.3.5",
+      "statement": "Explain the role of the operating system in managing multitasking and resource allocation. (HL only)",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        36
+      ],
+      "guidance_paragraphs": [
+        "• The challenges of multitasking and resource allocation, including task scheduling, resource contention and deadlock"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC004-Q08-a",
+        "P-SRC004-Q08-b",
+        "P-SRC008-Q11-b"
+      ],
+      "linked_count": 3,
+      "difficulty_counts": {
+        "medium": 2,
+        "low": 1
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC004-Q08-a",
+          "finding": "Single-core time sharing distinct from simultaneous execution."
+        },
+        {
+          "question_id": "P-SRC008-Q11-b",
+          "finding": "Scheduling and RAM allocation/protection."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• The challenges of multitasking and resource allocation, including task scheduling, resource contention and deadlock",
+          "finding": "Scheduling/resource sharing assessed; contention and deadlock reasoning not established."
+        }
+      ],
+      "remaining_gaps": [
+        "Resource contention and deadlock with clear processes/resources."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A1.3.6",
+      "statement": "Describe the use of the control system components. (HL only)",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        36
+      ],
+      "guidance_paragraphs": [
+        "• The input, process, output, and feedback mechanism (open-loop, closed-loop)",
+        "• Controller, sensors, actuators, transducers and control algorithm"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC001-Q13-a-i",
+        "P-SRC001-Q13-a-ii",
+        "P-SRC004-Q12-a-i",
+        "P-SRC004-Q12-a-ii",
+        "P-SRC004-Q12-c-ii",
+        "P-SRC005-Q12-b",
+        "P-SRC006-Q11-b-ii",
+        "P-SRC007-Q15-d",
+        "P-SRC007-Q15-e",
+        "P-SRC008-Q11-c",
+        "P-SRC018-Q12-a",
+        "P-SRC018-Q12-b",
+        "P-SRC020-Q12-a",
+        "P-SRC020-Q12-b",
+        "P-SRC022-Q09",
+        "P-SRC026-Q11-a-i",
+        "P-SRC026-Q11-c",
+        "P-SRC030-Q11-a-i",
+        "P-SRC030-Q11-c",
+        "P-SRC034-Q13-a",
+        "P-SRC040-Q05-e"
+      ],
+      "linked_count": 21,
+      "difficulty_counts": {
+        "low": 6,
+        "medium": 13,
+        "high": 2
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC008-Q11-c",
+          "finding": "Full closed-loop water-heating input/process/output/feedback."
+        },
+        {
+          "question_id": "P-SRC020-Q12-b",
+          "finding": "Feedback is new measured result returned to controller."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• The input, process, output, and feedback mechanism (open-loop, closed-loop)",
+          "finding": "Closed loop assessed; open-loop comparison not established."
+        },
+        {
+          "guidance": "• Controller, sensors, actuators, transducers and control algorithm",
+          "finding": "Controller/sensor/actuator/algorithm assessed; transducer conversion role needs explicit description."
+        }
+      ],
+      "remaining_gaps": [
+        "Open-loop versus closed-loop and transducer role."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A1.3.7",
+      "statement": "Explain the use of control systems in a range of real-world applications. (HL only)",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        36
+      ],
+      "guidance_paragraphs": [
+        "• Examples may include autonomous vehicles, home thermostats, automatic elevator controllers, automatic washing machines, traffic signal control systems, irrigation control systems, home security systems, automatic doors."
+      ],
+      "linked_candidate_ids": [
+        "P-SRC001-Q13-a-ii",
+        "P-SRC004-Q12-d-i",
+        "P-SRC005-Q12-a",
+        "P-SRC005-Q12-b",
+        "P-SRC005-Q12-d",
+        "P-SRC007-Q15-e",
+        "P-SRC007-Q15-f",
+        "P-SRC008-Q11-c",
+        "P-SRC009-Q08",
+        "P-SRC018-Q12-a",
+        "P-SRC020-Q12-a",
+        "P-SRC022-Q09",
+        "P-SRC026-Q11-a-ii",
+        "P-SRC030-Q11-a-ii",
+        "P-SRC030-Q11-b",
+        "P-SRC033-Q12-d",
+        "P-SRC034-Q13-a",
+        "P-SRC040-Q05-e"
+      ],
+      "linked_count": 18,
+      "difficulty_counts": {
+        "medium": 15,
+        "high": 2,
+        "low": 1
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "substantial_evidence",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC005-Q12-a",
+          "finding": "Lighting and heating control reasoning."
+        },
+        {
+          "question_id": "P-SRC030-Q11-b",
+          "finding": "Central/distributed traffic control contextual trade-offs."
+        },
+        {
+          "question_id": "P-SRC040-Q05-e",
+          "finding": "Robot sensor failure safe brake response."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Examples may include autonomous vehicles, home thermostats, automatic elevator controllers, automatic washing machines, traffic signal control systems, irrigation control systems, home security systems, automatic doors.",
+          "finding": "Multiple applied contexts: heating/irrigation/doors/traffic/robotics; may-include list is non-exhaustive and does not require every named example."
+        }
+      ],
+      "remaining_gaps": [],
+      "next_action": "Retain evidence; evaluate final question selection and difficulty balance."
+    },
+    {
+      "code": "A1.4.1",
+      "statement": "Evaluate the translation processes of interpreters and compilers.",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        36
+      ],
+      "guidance_paragraphs": [
+        "• The mechanics and use-cases of each translation approach",
+        "• The difference in error detection, translation time, portability and applicability for different translation processes, including just-in-time compilation (JIT) and bytecode interpreters",
+        "• Example scenarios where the translation method should be considered must include rapid development and testing, performance-critical applications and cross-platform development."
+      ],
+      "linked_candidate_ids": [
+        "P-SRC001-Q09",
+        "P-SRC005-Q01"
+      ],
+      "linked_count": 2,
+      "difficulty_counts": {
+        "low": 2
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC001-Q09",
+          "finding": "Whole-program compiler identification only."
+        },
+        {
+          "question_id": "P-SRC005-Q01",
+          "finding": "Need for CPU-executable translation only."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• The mechanics and use-cases of each translation approach",
+          "finding": "Mechanics/use-case evaluation absent."
+        },
+        {
+          "guidance": "• The difference in error detection, translation time, portability and applicability for different translation processes, including just-in-time compilation (JIT) and bytecode interpreters",
+          "finding": "Error detection/time/portability/JIT/bytecode not established."
+        },
+        {
+          "guidance": "• Example scenarios where the translation method should be considered must include rapid development and testing, performance-critical applications and cross-platform development.",
+          "finding": "None of all three must-include contexts is evaluated."
+        }
+      ],
+      "remaining_gaps": [
+        "Interpreter/compiler/JIT/bytecode mechanics and trade-offs; rapid testing, performance-critical and cross-platform cases."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A2.1.1",
+      "statement": "Describe the purpose and characteristics of networks.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        37
+      ],
+      "guidance_paragraphs": [
+        "• Networks: local area network (LAN), wide area network (WAN), personal area network (PAN), virtual private network (VPN)"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC001-Q02",
+        "P-SRC004-Q10-d",
+        "P-SRC005-Q10-d",
+        "P-SRC006-Q10-d",
+        "P-SRC007-Q12-d",
+        "P-SRC008-Q10-a",
+        "P-SRC018-Q11-a",
+        "P-SRC020-Q11-a",
+        "P-SRC022-Q11-d",
+        "P-SRC024-Q11-d",
+        "P-SRC026-Q08",
+        "P-SRC028-Q02",
+        "P-SRC030-Q08"
+      ],
+      "linked_count": 13,
+      "difficulty_counts": {
+        "low": 2,
+        "medium": 11
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC008-Q10-a",
+          "finding": "LAN file/peripheral sharing."
+        },
+        {
+          "question_id": "P-SRC022-Q11-d",
+          "finding": "VPN encrypted tunnel and authorized internal access."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Networks: local area network (LAN), wide area network (WAN), personal area network (PAN), virtual private network (VPN)",
+          "finding": "LAN and VPN meaningful practice; WAN/PAN characteristics not established."
+        }
+      ],
+      "remaining_gaps": [
+        "WAN versus LAN/PAN scope and purpose."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A2.1.2",
+      "statement": "Describe the purpose, benefits and limitations of modern digital infrastructures.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        37
+      ],
+      "guidance_paragraphs": [
+        "• Modern digital infrastructure: the internet, cloud computing, distributed systems, edge computing, mobile networks",
+        "• Examples where specific networks are used may include the worldwide web (WWW), cryptocurrency blockchains, smart traffic lights, a school."
+      ],
+      "linked_candidate_ids": [
+        "P-SRC002-Q11-c",
+        "P-SRC002-Q13-b",
+        "P-SRC018-Q12-d",
+        "P-SRC020-Q12-d",
+        "P-SRC022-Q12-c",
+        "P-SRC024-Q12-c",
+        "P-SRC026-Q11-b",
+        "P-SRC028-Q09-c-i",
+        "P-SRC030-Q11-b",
+        "P-SRC033-Q10-a",
+        "P-SRC034-Q11-c",
+        "P-SRC034-Q11-d",
+        "P-SRC038-Q11-c",
+        "P-SRC038-Q11-d",
+        "P-SRC040-Q09-b",
+        "P-SRC040-Q09-c",
+        "P-SRC040-Q09-d",
+        "P-SRC042-Q09-a",
+        "P-SRC042-Q11-d",
+        "P-SRC044-Q09-d"
+      ],
+      "linked_count": 20,
+      "difficulty_counts": {
+        "medium": 15,
+        "high": 4,
+        "low": 1
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC002-Q11-c",
+          "finding": "Federated server resilience and coordination."
+        },
+        {
+          "question_id": "P-SRC034-Q11-d",
+          "finding": "Cloud availability conditional on configuration/connectivity."
+        },
+        {
+          "question_id": "P-SRC040-Q09-b",
+          "finding": "Cellular coverage supports mobile cloud use."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Modern digital infrastructure: the internet, cloud computing, distributed systems, edge computing, mobile networks",
+          "finding": "Internet/cloud/distributed/mobile addressed; edge computing purpose/trade-offs not established."
+        },
+        {
+          "guidance": "• Examples where specific networks are used may include the worldwide web (WWW), cryptocurrency blockchains, smart traffic lights, a school.",
+          "finding": "WWW/traffic/campus examples used; may-include contexts not a fixed exhaustive list."
+        }
+      ],
+      "remaining_gaps": [
+        "Edge computation versus remote cloud benefits/limitations."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A2.1.3",
+      "statement": "Describe the function of network devices.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        37
+      ],
+      "guidance_paragraphs": [
+        "• Gateways, hardware firewalls, modems, network interface cards, routers, switches, wireless access points",
+        "• How devices map to the layers of the TCP/IP model"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC005-Q10-a",
+        "P-SRC007-Q12-a",
+        "P-SRC008-Q10-b-i",
+        "P-SRC008-Q10-b-ii",
+        "P-SRC022-Q11-a",
+        "P-SRC024-Q11-a"
+      ],
+      "linked_count": 6,
+      "difficulty_counts": {
+        "low": 4,
+        "medium": 2
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC007-Q12-a",
+          "finding": "WAP bridges LAN and NIC sends/receives frames."
+        },
+        {
+          "question_id": "P-SRC008-Q10-b-i",
+          "finding": "Router forwards between IP networks."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Gateways, hardware firewalls, modems, network interface cards, routers, switches, wireless access points",
+          "finding": "NIC/router/WAP assessed; gateway/firewall/modem/switch functions need fuller evidence."
+        },
+        {
+          "guidance": "• How devices map to the layers of the TCP/IP model",
+          "finding": "TCP/IP device-to-layer mapping not established."
+        }
+      ],
+      "remaining_gaps": [
+        "Gateway/modem/switch functions and appropriate TCP/IP layer mapping (devices may span layers)."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A2.1.4",
+      "statement": "Describe the network protocols used for transport and application.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        37
+      ],
+      "guidance_paragraphs": [
+        "• Protocols: transmission control protocol (TCP), user datagram protocol (UDP), hypertext transfer protocol (HTTP), hypertext transfer protocol secure (HTTPS), dynamic host configuration protocol (DHCP)"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC001-Q08-a",
+        "P-SRC001-Q08-b",
+        "P-SRC002-Q09-c",
+        "P-SRC002-Q09-f",
+        "P-SRC008-Q10-c",
+        "P-SRC009-Q11-e",
+        "P-SRC032-Q09-c",
+        "P-SRC032-Q09-e",
+        "P-SRC034-Q09-b",
+        "P-SRC038-Q09-a-i",
+        "P-SRC038-Q09-b",
+        "P-SRC040-Q07-a-i",
+        "P-SRC040-Q07-b",
+        "P-SRC042-Q09-d"
+      ],
+      "linked_count": 14,
+      "difficulty_counts": {
+        "low": 4,
+        "medium": 10
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "substantial_evidence",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC009-Q11-e",
+          "finding": "TCP reliable delivery; HTTPS protection; DHCP configuration."
+        },
+        {
+          "question_id": "P-SRC032-Q09-e",
+          "finding": "UDP connectionless independent datagrams."
+        },
+        {
+          "question_id": "P-SRC034-Q09-b",
+          "finding": "HTTP request/response and unencrypted default."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Protocols: transmission control protocol (TCP), user datagram protocol (UDP), hypertext transfer protocol (HTTP), hypertext transfer protocol secure (HTTPS), dynamic host configuration protocol (DHCP)",
+          "finding": "All named protocols have concrete purpose/behaviour practice; comparison/application depth uneven, especially UDP and DHCP."
+        }
+      ],
+      "remaining_gaps": [
+        "Contextual protocol-choice question could strengthen UDP/TCP trade-offs."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A2.1.5",
+      "statement": "Describe the function of the TCP/IP model. (HL only)",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        37
+      ],
+      "guidance_paragraphs": [
+        "• Application, transport, internet, network interface",
+        "• The role of each layer and the interaction between these layers to ensure reliable data transmission over a network"
+      ],
+      "linked_candidate_ids": [],
+      "linked_count": 0,
+      "difficulty_counts": {},
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "no_mapped_practice",
+      "reviewed_evidence": [],
+      "bullet_findings": [
+        {
+          "guidance": "• Application, transport, internet, network interface",
+          "finding": "No mapped practice."
+        },
+        {
+          "guidance": "• The role of each layer and the interaction between these layers to ensure reliable data transmission over a network",
+          "finding": "No mapped practice."
+        }
+      ],
+      "remaining_gaps": [
+        "All four layers and their interaction; do not imply all transport choices guarantee reliable delivery."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A2.2.1",
+      "statement": "Describe the functions and practical applications of network topologies.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        37
+      ],
+      "guidance_paragraphs": [
+        "• Network topologies: star, mesh, hybrid",
+        "• Factors to consider must include reliability, transmission speed, scalability, data collisions, cost.",
+        "• Examples may include home and small office settings, where reliability is paramount, and the use of networks in larger settings (e.g. corporations, government departments, college campuses)."
+      ],
+      "linked_candidate_ids": [],
+      "linked_count": 0,
+      "difficulty_counts": {},
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "no_mapped_practice",
+      "reviewed_evidence": [],
+      "bullet_findings": [
+        {
+          "guidance": "• Network topologies: star, mesh, hybrid",
+          "finding": "No mapped practice."
+        },
+        {
+          "guidance": "• Factors to consider must include reliability, transmission speed, scalability, data collisions, cost.",
+          "finding": "No mapped practice for all five must-include factors."
+        },
+        {
+          "guidance": "• Examples may include home and small office settings, where reliability is paramount, and the use of networks in larger settings (e.g. corporations, government departments, college campuses).",
+          "finding": "No mapped practice; application list remains non-exhaustive."
+        }
+      ],
+      "remaining_gaps": [
+        "Star/mesh/hybrid and reliability/speed/scalability/collisions/cost."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A2.2.2",
+      "statement": "Describe the function of servers. (HL only)",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        37
+      ],
+      "guidance_paragraphs": [
+        "• Types of servers: domain name server (DNS), dynamic host configuration protocol (DHCP), file server, mail server, proxy server, web server",
+        "• Factors to consider must include function, scalability, reliability and security."
+      ],
+      "linked_candidate_ids": [
+        "P-SRC001-Q11-c-ii",
+        "P-SRC026-Q07",
+        "P-SRC028-Q07",
+        "P-SRC030-Q07",
+        "P-SRC032-Q09-b",
+        "P-SRC040-Q07-a-ii",
+        "P-SRC040-Q07-e-ii",
+        "P-SRC044-Q07-d"
+      ],
+      "linked_count": 8,
+      "difficulty_counts": {
+        "low": 3,
+        "medium": 5
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC026-Q07",
+          "finding": "DNS name-to-address lookup."
+        },
+        {
+          "question_id": "P-SRC001-Q11-c-ii",
+          "finding": "Mail server role."
+        },
+        {
+          "question_id": "P-SRC040-Q07-e-ii",
+          "finding": "Web-server database credential security."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Types of servers: domain name server (DNS), dynamic host configuration protocol (DHCP), file server, mail server, proxy server, web server",
+          "finding": "DNS/mail/web roles assessed; DHCP/file/proxy roles not directly established by this mapped set."
+        },
+        {
+          "guidance": "• Factors to consider must include function, scalability, reliability and security.",
+          "finding": "Security partly assessed; scalability/reliability comparison of servers incomplete."
+        }
+      ],
+      "remaining_gaps": [
+        "DHCP/file/proxy server roles and all four must-include considerations."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A2.2.3",
+      "statement": "Compare and contrast networking models.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        37
+      ],
+      "guidance_paragraphs": [
+        "• Client-server and peer-to-peer models",
+        "• The respective benefits and drawbacks of client-server and peer-to-peer models",
+        "• Real-world applications may include web browsing, email services, online banking, file sharing, VoIP services, blockchain."
+      ],
+      "linked_candidate_ids": [
+        "P-SRC007-Q01",
+        "P-SRC018-Q01",
+        "P-SRC032-Q11-a",
+        "P-SRC033-Q09-b",
+        "P-SRC033-Q09-e",
+        "P-SRC034-Q09-d",
+        "P-SRC034-Q11-a",
+        "P-SRC038-Q09-e-ii",
+        "P-SRC040-Q07-e-ii",
+        "P-SRC042-Q09-d",
+        "P-SRC042-Q10-g",
+        "P-SRC044-Q07-d",
+        "P-SRC044-Q08-g"
+      ],
+      "linked_count": 13,
+      "difficulty_counts": {
+        "low": 4,
+        "medium": 9
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC032-Q11-a",
+          "finding": "P2P peers request and supply resources."
+        },
+        {
+          "question_id": "P-SRC042-Q10-g",
+          "finding": "Central rules/credential control versus service dependency."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Client-server and peer-to-peer models",
+          "finding": "Both model roles assessed."
+        },
+        {
+          "guidance": "• The respective benefits and drawbacks of client-server and peer-to-peer models",
+          "finding": "Client/server benefits/limitations assessed; direct P2P contrast and drawbacks incomplete."
+        },
+        {
+          "guidance": "• Real-world applications may include web browsing, email services, online banking, file sharing, VoIP services, blockchain.",
+          "finding": "Several client/server contexts; list is non-exhaustive."
+        }
+      ],
+      "remaining_gaps": [
+        "Compare P2P versus client/server control, reliability, cost and suitability in same scenario."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A2.2.4",
+      "statement": "Explain the concepts and applications of network segmentation.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        37
+      ],
+      "guidance_paragraphs": [
+        "• Segmentation for network performance and security, to reduce congestion, to manage network resources efficiently",
+        "• Network segmentation must include the uses and roles of segmenting, subnetting and virtual local area networks (VLANs)."
+      ],
+      "linked_candidate_ids": [
+        "P-SRC030-Q10-a"
+      ],
+      "linked_count": 1,
+      "difficulty_counts": {
+        "high": 1
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC030-Q10-a",
+          "finding": "School VLAN/subnet separation and inter-segment security rules."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Segmentation for network performance and security, to reduce congestion, to manage network resources efficiently",
+          "finding": "Security application assessed; congestion/resource efficiency not explained."
+        },
+        {
+          "guidance": "• Network segmentation must include the uses and roles of segmenting, subnetting and virtual local area networks (VLANs).",
+          "finding": "Subnet/VLAN labels and purpose assessed, but segmenting versus subnetting versus VLAN roles need distinction."
+        }
+      ],
+      "remaining_gaps": [
+        "Segmentation performance and resource management; explain subnet/VLAN relationship without assuming VLAN alone enforces authorization."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A2.3.1",
+      "statement": "Describe different types of IP addressing.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        37,
+        38
+      ],
+      "guidance_paragraphs": [
+        "• The distinction between IPv4 and IPv6 addressing",
+        "• The differences between public IP addresses and private IP addresses, and between static IP addresses and dynamic IP addresses",
+        "• The role of network address translation (NAT) to minimize the use of IP addresses and to facilitate communication between private internal networks and the public internet"
+      ],
+      "linked_candidate_ids": [],
+      "linked_count": 0,
+      "difficulty_counts": {},
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "no_mapped_practice",
+      "reviewed_evidence": [],
+      "bullet_findings": [
+        {
+          "guidance": "• The distinction between IPv4 and IPv6 addressing",
+          "finding": "No mapped practice."
+        },
+        {
+          "guidance": "• The differences between public IP addresses and private IP addresses, and between static IP addresses and dynamic IP addresses",
+          "finding": "No mapped practice."
+        },
+        {
+          "guidance": "• The role of network address translation (NAT) to minimize the use of IP addresses and to facilitate communication between private internal networks and the public internet",
+          "finding": "No mapped practice."
+        }
+      ],
+      "remaining_gaps": [
+        "IPv4/IPv6; public/private; static/dynamic; NAT conservation and communication."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A2.3.2",
+      "statement": "Compare types of media for data transmission.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        38
+      ],
+      "guidance_paragraphs": [
+        "• Wired transmission via fibre optic cables and twisted pair cables; wireless transmission",
+        "• The advantages and disadvantages of these three types of data transmission",
+        "• Factors to consider must include bandwidth, complexity of installation, cost, range, susceptibility to interference, attenuation, reliability, security."
+      ],
+      "linked_candidate_ids": [
+        "P-SRC004-Q10-e",
+        "P-SRC005-Q04-b",
+        "P-SRC005-Q10-b",
+        "P-SRC005-Q10-c",
+        "P-SRC007-Q06",
+        "P-SRC007-Q12-b",
+        "P-SRC009-Q11-c",
+        "P-SRC018-Q11-b",
+        "P-SRC020-Q11-b",
+        "P-SRC022-Q03",
+        "P-SRC022-Q11-b",
+        "P-SRC024-Q09",
+        "P-SRC024-Q11-b",
+        "P-SRC026-Q10-b-i",
+        "P-SRC028-Q10-b-i",
+        "P-SRC030-Q10-b-i"
+      ],
+      "linked_count": 16,
+      "difficulty_counts": {
+        "medium": 8,
+        "low": 8
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC005-Q10-b",
+          "finding": "Fibre reliability versus wireless in interference."
+        },
+        {
+          "question_id": "P-SRC009-Q11-c",
+          "finding": "Twisted pair desk link versus mobile Wi-Fi."
+        },
+        {
+          "question_id": "P-SRC004-Q10-e",
+          "finding": "Attenuation lowers effective throughput at coverage edge."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Wired transmission via fibre optic cables and twisted pair cables; wireless transmission",
+          "finding": "All three media appear."
+        },
+        {
+          "guidance": "• The advantages and disadvantages of these three types of data transmission",
+          "finding": "Several benefits/drawbacks contextualized; full three-way comparison not established."
+        },
+        {
+          "guidance": "• Factors to consider must include bandwidth, complexity of installation, cost, range, susceptibility to interference, attenuation, reliability, security.",
+          "finding": "Bandwidth/range/interference/attenuation/reliability/security supported; installation complexity and cost underdeveloped."
+        }
+      ],
+      "remaining_gaps": [
+        "Cost/installation complexity and balanced three-medium comparison."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A2.3.3",
+      "statement": "Explain how packet switching is used to send data across a network.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        38
+      ],
+      "guidance_paragraphs": [
+        "• The process of segmenting data into packets with a routing header attached, and independently transmitting control information, allowing the data to be reassembled at the destination",
+        "• The role that switches and routers play in packet switching"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC004-Q04",
+        "P-SRC005-Q10-e",
+        "P-SRC009-Q11-d"
+      ],
+      "linked_count": 3,
+      "difficulty_counts": {
+        "low": 1,
+        "medium": 2
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC005-Q10-e",
+          "finding": "Packets/headers/forwarding/reassembly."
+        },
+        {
+          "question_id": "P-SRC009-Q11-d",
+          "finding": "Header versus payload."
+        },
+        {
+          "question_id": "P-SRC004-Q04",
+          "finding": "Claims IP packet fields include sequence number; flag native-IP versus transport sequencing ambiguity."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• The process of segmenting data into packets with a routing header attached, and independently transmitting control information, allowing the data to be reassembled at the destination",
+          "finding": "Basic segmentation/header/reassembly assessed; generic control data should not be confused with fields present in every IP header."
+        },
+        {
+          "guidance": "• The role that switches and routers play in packet switching",
+          "finding": "Switch/router forwarding named, but distinct local switch versus inter-network router operation not developed."
+        }
+      ],
+      "remaining_gaps": [
+        "Clarify switching/routing roles and sequencing at appropriate protocol level; coordinator review P-SRC004-Q04."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A2.3.4",
+      "statement": "Explain how static routing and dynamic routing move data across local area networks. (HL only)",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        38
+      ],
+      "guidance_paragraphs": [
+        "• The process of static routing, and its advantages and disadvantages",
+        "• The process of dynamic routing, and its advantages and disadvantages (explanation of a specific routing protocol is not required)",
+        "• Factors to consider must include configuration, maintenance, complexity, resource usage, convergence, scalability, network size."
+      ],
+      "linked_candidate_ids": [],
+      "linked_count": 0,
+      "difficulty_counts": {},
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "no_mapped_practice",
+      "reviewed_evidence": [],
+      "bullet_findings": [
+        {
+          "guidance": "• The process of static routing, and its advantages and disadvantages",
+          "finding": "No mapped practice."
+        },
+        {
+          "guidance": "• The process of dynamic routing, and its advantages and disadvantages (explanation of a specific routing protocol is not required)",
+          "finding": "No mapped practice; specific routing protocol is explicitly not required."
+        },
+        {
+          "guidance": "• Factors to consider must include configuration, maintenance, complexity, resource usage, convergence, scalability, network size.",
+          "finding": "No mapped practice for all seven must-include factors."
+        }
+      ],
+      "remaining_gaps": [
+        "Static/dynamic routing process and trade-offs across configuration/maintenance/complexity/resources/convergence/scalability/network size."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A2.4.1",
+      "statement": "Discuss the effectiveness of firewalls at protecting a network.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        38
+      ],
+      "guidance_paragraphs": [
+        "• The function of firewalls in inspecting and filtering incoming and outgoing traffic based on whitelists, blacklists and rules",
+        "• The strengths and limitations of firewalls",
+        "• The role of NAT to enhance network security"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC009-Q05",
+        "P-SRC018-Q11-e",
+        "P-SRC020-Q11-e",
+        "P-SRC026-Q10-b-ii",
+        "P-SRC028-Q10-b-ii",
+        "P-SRC030-Q10-b-ii",
+        "P-SRC033-Q11-c"
+      ],
+      "linked_count": 7,
+      "difficulty_counts": {
+        "medium": 6,
+        "low": 1
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC018-Q11-e",
+          "finding": "Allow/block rule inspection incoming/outgoing."
+        },
+        {
+          "question_id": "P-SRC033-Q11-c",
+          "finding": "Filtering reduces exposure but cannot fix application flaw."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• The function of firewalls in inspecting and filtering incoming and outgoing traffic based on whitelists, blacklists and rules",
+          "finding": "Traffic filtering rules/allowlists/blocklists assessed."
+        },
+        {
+          "guidance": "• The strengths and limitations of firewalls",
+          "finding": "Strengths/limits partly assessed; discussion-depth comparison limited."
+        },
+        {
+          "guidance": "• The role of NAT to enhance network security",
+          "finding": "NAT security role not established."
+        }
+      ],
+      "remaining_gaps": [
+        "NAT hides internal address layout but is not encryption/full firewall protection; balanced effectiveness evaluation."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A2.4.2",
+      "statement": "Describe common network vulnerabilities. (HL only)",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        38
+      ],
+      "guidance_paragraphs": [
+        "• Distributed denial of service (DDoS), insecure network protocols, malware, man-in-the-middle (MitM) attacks, phishing attacks, SQL injection, cross-site scripting (XSS), unpatched software, weak authentication, zero-day exploits"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC001-Q11-c-i",
+        "P-SRC004-Q10-b-i",
+        "P-SRC022-Q06",
+        "P-SRC026-Q09-c-ii",
+        "P-SRC026-Q10-c",
+        "P-SRC028-Q09-c-ii",
+        "P-SRC028-Q10-c",
+        "P-SRC030-Q09-c-ii",
+        "P-SRC030-Q10-c",
+        "P-SRC033-Q11-c",
+        "P-SRC034-Q11-b"
+      ],
+      "linked_count": 11,
+      "difficulty_counts": {
+        "medium": 9,
+        "low": 2
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC001-Q11-c-i",
+          "finding": "Identifies phishing/patching/SQL injection/malware/weak authentication."
+        },
+        {
+          "question_id": "P-SRC030-Q09-c-ii",
+          "finding": "Ransomware and SQL injection effects."
+        },
+        {
+          "question_id": "P-SRC033-Q11-c",
+          "finding": "Unpatched exposed service."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Distributed denial of service (DDoS), insecure network protocols, malware, man-in-the-middle (MitM) attacks, phishing attacks, SQL injection, cross-site scripting (XSS), unpatched software, weak authentication, zero-day exploits",
+          "finding": "Malware/phishing/SQL injection/unpatched/weak authentication represented; DDoS, insecure protocols, MitM, XSS and zero-day explanations not established."
+        }
+      ],
+      "remaining_gaps": [
+        "DDoS, insecure protocols, MitM, XSS and zero-day mechanisms; deeper than identification."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A2.4.3",
+      "statement": "Describe common network countermeasures. (HL only)",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        38
+      ],
+      "guidance_paragraphs": [
+        "• Content security policies, complex password policies, DDoS mitigation tools, email filtering solutions, encrypted protocols, input validation (filtering, whitelisting), intrusion detection systems (IDS), intrusion prevention systems (IPS), multifactor authentication (MFA), secure socket layer (SSL) certificate, transport layer security (TLS) certificate, update software, VPNs",
+        "• The importance of regular security testing and employee training",
+        "• Wireless security measures may include media access controllers (MAC), whitelists and blacklists."
+      ],
+      "linked_candidate_ids": [
+        "P-SRC004-Q10-a",
+        "P-SRC004-Q10-b-ii",
+        "P-SRC004-Q10-d",
+        "P-SRC005-Q10-d",
+        "P-SRC006-Q10-b",
+        "P-SRC006-Q10-d",
+        "P-SRC007-Q04-a",
+        "P-SRC007-Q12-c",
+        "P-SRC007-Q12-e",
+        "P-SRC008-Q10-e",
+        "P-SRC018-Q11-a",
+        "P-SRC020-Q11-a",
+        "P-SRC022-Q11-c",
+        "P-SRC022-Q11-d",
+        "P-SRC024-Q11-c",
+        "P-SRC024-Q11-d",
+        "P-SRC026-Q08",
+        "P-SRC026-Q10-b-ii",
+        "P-SRC028-Q02",
+        "P-SRC028-Q10-a",
+        "P-SRC028-Q10-b-ii",
+        "P-SRC030-Q08",
+        "P-SRC030-Q10-b-ii",
+        "P-SRC033-Q09-b",
+        "P-SRC034-Q11-b"
+      ],
+      "linked_count": 25,
+      "difficulty_counts": {
+        "medium": 23,
+        "low": 2
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC004-Q10-a",
+          "finding": "MFA protection after password theft."
+        },
+        {
+          "question_id": "P-SRC004-Q10-b-ii",
+          "finding": "Patch known vulnerability."
+        },
+        {
+          "question_id": "P-SRC024-Q11-c",
+          "finding": "TLS/VPN protected transport endpoints."
+        },
+        {
+          "question_id": "P-SRC008-Q10-e",
+          "finding": "MAC allowlist spoofing and maintenance limits."
+        },
+        {
+          "question_id": "P-SRC033-Q09-b",
+          "finding": "Server input validation cannot trust clients."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Content security policies, complex password policies, DDoS mitigation tools, email filtering solutions, encrypted protocols, input validation (filtering, whitelisting), intrusion detection systems (IDS), intrusion prevention systems (IPS), multifactor authentication (MFA), secure socket layer (SSL) certificate, transport layer security (TLS) certificate, update software, VPNs",
+          "finding": "MFA/updates/encrypted protocols/VPN/validation partly assessed; CSP/password policy/DDoS tools/email filters/IDS/IPS/certificate detail gaps."
+        },
+        {
+          "guidance": "• The importance of regular security testing and employee training",
+          "finding": "Regular testing and employee training not established."
+        },
+        {
+          "guidance": "• Wireless security measures may include media access controllers (MAC), whitelists and blacklists.",
+          "finding": "MAC allowlist evaluated; optional examples not all compulsory."
+        }
+      ],
+      "remaining_gaps": [
+        "CSP, password policies, DDoS mitigation, email filters, IDS/IPS, certificates, regular testing/training."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A2.4.4",
+      "statement": "Describe the process of encryption and digital certificates.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        38
+      ],
+      "guidance_paragraphs": [
+        "• The difference between symmetric and asymmetric cryptography",
+        "• The role of digital certificates in establishing secure network connections",
+        "• The use of public and private keys in asymmetric cryptography",
+        "• The significance of encryption key management"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC001-Q11-c-iv",
+        "P-SRC007-Q12-c",
+        "P-SRC008-Q10-d",
+        "P-SRC018-Q11-d",
+        "P-SRC020-Q11-d",
+        "P-SRC022-Q11-c",
+        "P-SRC024-Q11-c",
+        "P-SRC032-Q09-c",
+        "P-SRC033-Q09-c"
+      ],
+      "linked_count": 9,
+      "difficulty_counts": {
+        "medium": 7,
+        "low": 2
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC020-Q11-d",
+          "finding": "Plaintext/key/ciphertext basic confidentiality."
+        },
+        {
+          "question_id": "P-SRC033-Q09-c",
+          "finding": "Certificate binds identity/public key with trust/name/validity checks."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• The difference between symmetric and asymmetric cryptography",
+          "finding": "Symmetric/asymmetric contrast not established."
+        },
+        {
+          "guidance": "• The role of digital certificates in establishing secure network connections",
+          "finding": "Digital certificate authentication assessed."
+        },
+        {
+          "guidance": "• The use of public and private keys in asymmetric cryptography",
+          "finding": "Certificate mentions public key but public/private key operations not developed."
+        },
+        {
+          "guidance": "• The significance of encryption key management",
+          "finding": "Key-management significance not established."
+        }
+      ],
+      "remaining_gaps": [
+        "Symmetric/asymmetric usage, public/private key confidentiality/authentication roles and key protection/distribution/revocation."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A3.1.1",
+      "statement": "Explain the features, benefits and limitations of a relational database.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        39
+      ],
+      "guidance_paragraphs": [
+        "• Features: composite keys, foreign keys, primary keys, relationships, tables",
+        "• Benefits of databases: community support, concurrency control, data consistency, data integrity, data retrieval, reduced data duplication, reduced redundancy, reliable transaction processing, scalability, security features",
+        "• Limitations of databases: “big data” scalability issues, design complexity, hierarchical data handling, rigid schema, object-relational impedance mismatch, unstructured data handling"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC002-Q01-b",
+        "P-SRC002-Q03-d",
+        "P-SRC032-Q01-a-i",
+        "P-SRC032-Q01-a-ii",
+        "P-SRC032-Q01-a-iii",
+        "P-SRC032-Q01-g",
+        "P-SRC033-Q02-b",
+        "P-SRC033-Q03-a",
+        "P-SRC034-Q01-a",
+        "P-SRC034-Q01-c",
+        "P-SRC038-Q01-b",
+        "P-SRC038-Q02-a",
+        "P-SRC038-Q03-a",
+        "P-SRC038-Q03-e",
+        "P-SRC038-Q04-b",
+        "P-SRC040-Q01-b",
+        "P-SRC040-Q03-b",
+        "P-SRC042-Q01-a-i",
+        "P-SRC042-Q01-a-ii",
+        "P-SRC042-Q01-f",
+        "P-SRC042-Q02-f",
+        "P-SRC044-Q01-a-i",
+        "P-SRC044-Q01-a-ii",
+        "P-SRC044-Q01-b",
+        "P-SRC044-Q01-f",
+        "P-SRC044-Q02-f",
+        "P-SRC044-Q03-a-i"
+      ],
+      "linked_count": 27,
+      "difficulty_counts": {
+        "medium": 22,
+        "low": 4,
+        "high": 1
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC034-Q01-c",
+          "finding": "Composite key uniqueness justification."
+        },
+        {
+          "question_id": "P-SRC038-Q01-b",
+          "finding": "Concurrent shared records and retrieval benefits."
+        },
+        {
+          "question_id": "P-SRC042-Q02-f",
+          "finding": "Foreign-key integrity."
+        },
+        {
+          "question_id": "P-SRC040-Q03-b",
+          "finding": "Reduced duplicated customer data."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Features: composite keys, foreign keys, primary keys, relationships, tables",
+          "finding": "Tables/keys/relationships well represented."
+        },
+        {
+          "guidance": "• Benefits of databases: community support, concurrency control, data consistency, data integrity, data retrieval, reduced data duplication, reduced redundancy, reliable transaction processing, scalability, security features",
+          "finding": "Integrity/retrieval/redundancy/security/concurrency supported; community support/scalability/reliable transactions uneven (ACID cross-code evidence exists)."
+        },
+        {
+          "guidance": "• Limitations of databases: “big data” scalability issues, design complexity, hierarchical data handling, rigid schema, object-relational impedance mismatch, unstructured data handling",
+          "finding": "Named relational limitations not established by linked practice."
+        }
+      ],
+      "remaining_gaps": [
+        "Rigid schemas, hierarchical/unstructured data, object-relational mismatch, big-data scaling/design complexity; less represented benefits."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A3.2.1",
+      "statement": "Describe database schemas.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        39
+      ],
+      "guidance_paragraphs": [
+        "• Conceptual schema, logical schema, physical schema",
+        "• Abstract definitions of the data structure and organization of the data at different levels"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC002-Q03-a",
+        "P-SRC032-Q03-c",
+        "P-SRC042-Q02-a",
+        "P-SRC042-Q02-c",
+        "P-SRC044-Q02-a",
+        "P-SRC044-Q02-c"
+      ],
+      "linked_count": 6,
+      "difficulty_counts": {
+        "medium": 5,
+        "low": 1
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC044-Q02-a",
+          "finding": "Conceptual versus logical schemas."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Conceptual schema, logical schema, physical schema",
+          "finding": "Conceptual/logical assessed; physical schema absent in reviewed evidence."
+        },
+        {
+          "guidance": "• Abstract definitions of the data structure and organization of the data at different levels",
+          "finding": "Two abstraction levels compared; physical implementation layer needs explanation."
+        }
+      ],
+      "remaining_gaps": [
+        "Physical schema and distinction among all three levels."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A3.2.2",
+      "statement": "Construct ERDs.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        39
+      ],
+      "guidance_paragraphs": [
+        "• The significance of entity relationship diagrams (ERDs) in crafting organized, efficient database designs tailored for specific applications",
+        "• The relationships between different data entities within a database",
+        "• The roles of cardinality and modality in defining relationships in ERDs"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC002-Q01-a",
+        "P-SRC032-Q03-c",
+        "P-SRC033-Q01-a",
+        "P-SRC034-Q03-a",
+        "P-SRC034-Q04-b",
+        "P-SRC038-Q01-a",
+        "P-SRC040-Q01-a",
+        "P-SRC042-Q01-b",
+        "P-SRC042-Q02-c"
+      ],
+      "linked_count": 9,
+      "difficulty_counts": {
+        "medium": 6,
+        "low": 3
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "substantial_evidence",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC002-Q01-a",
+          "finding": "Constructs mandatory relationships."
+        },
+        {
+          "question_id": "P-SRC033-Q01-a",
+          "finding": "Constructs zero-or-one and zero-or-many optional relationships."
+        },
+        {
+          "question_id": "P-SRC040-Q01-a",
+          "finding": "Many-to-many construction."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• The significance of entity relationship diagrams (ERDs) in crafting organized, efficient database designs tailored for specific applications",
+          "finding": "ERD design utility supported by related modelling tasks."
+        },
+        {
+          "guidance": "• The relationships between different data entities within a database",
+          "finding": "One/many/many-to-many construction represented."
+        },
+        {
+          "guidance": "• The roles of cardinality and modality in defining relationships in ERDs",
+          "finding": "Cardinality and optional participation explicitly assessed."
+        }
+      ],
+      "remaining_gaps": [],
+      "next_action": "Retain evidence; evaluate final question selection and difficulty balance."
+    },
+    {
+      "code": "A3.2.3",
+      "statement": "Outline the different data types used in relational databases.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        39
+      ],
+      "guidance_paragraphs": [
+        "• The importance of data type consistency",
+        "• The potential effects of choosing the wrong data type"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC002-Q02-b",
+        "P-SRC033-Q01-b",
+        "P-SRC034-Q01-b",
+        "P-SRC034-Q02-c-i",
+        "P-SRC042-Q01-e",
+        "P-SRC044-Q01-e"
+      ],
+      "linked_count": 6,
+      "difficulty_counts": {
+        "medium": 3,
+        "low": 3
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "substantial_evidence",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC033-Q01-b",
+          "finding": "Date type, consistent interpretation and meaningful comparisons."
+        },
+        {
+          "question_id": "P-SRC034-Q02-c-i",
+          "finding": "Fractional numerical data type."
+        },
+        {
+          "question_id": "P-SRC042-Q01-e",
+          "finding": "Integer numeric ordering versus text."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• The importance of data type consistency",
+          "finding": "Types and consistent comparisons represented."
+        },
+        {
+          "guidance": "• The potential effects of choosing the wrong data type",
+          "finding": "Wrong date/text/numeric choices and effects assessed."
+        }
+      ],
+      "remaining_gaps": [],
+      "next_action": "Retain evidence; evaluate final question selection and difficulty balance."
+    },
+    {
+      "code": "A3.2.4",
+      "statement": "Construct tables for relational databases.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        39
+      ],
+      "guidance_paragraphs": [
+        "• The relationship between tables using primary keys, foreign keys, composite keys and concatenated keys",
+        "• The importance of well-defined tables in ensuring data integrity"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC002-Q02-a",
+        "P-SRC032-Q03-c",
+        "P-SRC033-Q03-e",
+        "P-SRC034-Q01-c",
+        "P-SRC034-Q03-c",
+        "P-SRC040-Q02-a",
+        "P-SRC040-Q03-a",
+        "P-SRC042-Q02-f",
+        "P-SRC042-Q03-c",
+        "P-SRC044-Q02-c"
+      ],
+      "linked_count": 10,
+      "difficulty_counts": {
+        "medium": 7,
+        "high": 2,
+        "low": 1
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC034-Q03-c",
+          "finding": "Constructs keyed multi-table schema."
+        },
+        {
+          "question_id": "P-SRC034-Q01-c",
+          "finding": "Composite key uniqueness."
+        },
+        {
+          "question_id": "P-SRC040-Q03-a",
+          "finding": "Foreign-key integrity."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• The relationship between tables using primary keys, foreign keys, composite keys and concatenated keys",
+          "finding": "Primary/foreign/composite key constructions supported; concatenated key representation not explicit."
+        },
+        {
+          "guidance": "• The importance of well-defined tables in ensuring data integrity",
+          "finding": "Integrity through suitable keys and constraints assessed."
+        }
+      ],
+      "remaining_gaps": [
+        "Explicit composite-versus-concatenated key representation if required by local teaching interpretation; avoid inventing concatenation requirements beyond guide."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A3.2.5",
+      "statement": "Explain the difference between normal forms.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        39
+      ],
+      "guidance_paragraphs": [
+        "• First normal form (1NF), second normal form (2NF), third normal form (3NF)",
+        "• The terms atomicity, unique identification, functional dependencies, partial-key dependencies, non-key/transitive dependencies",
+        "• Normalization issues can encompass data duplication, missing data, and a range of dependency concerns, including data dependencies, composite key dependencies, transitive dependencies, and multi-valued dependencies."
+      ],
+      "linked_candidate_ids": [
+        "P-SRC032-Q03-a",
+        "P-SRC033-Q01-c",
+        "P-SRC033-Q01-d",
+        "P-SRC033-Q03-c-ii",
+        "P-SRC034-Q02-a",
+        "P-SRC038-Q02-b",
+        "P-SRC040-Q02-b",
+        "P-SRC042-Q03-a-i",
+        "P-SRC042-Q03-b",
+        "P-SRC044-Q03-b"
+      ],
+      "linked_count": 10,
+      "difficulty_counts": {
+        "medium": 8,
+        "low": 2
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC032-Q03-a",
+          "finding": "Repeating group violates 1NF."
+        },
+        {
+          "question_id": "P-SRC038-Q02-b",
+          "finding": "Partial dependency violates 2NF."
+        },
+        {
+          "question_id": "P-SRC044-Q03-b",
+          "finding": "1NF versus 2NF."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• First normal form (1NF), second normal form (2NF), third normal form (3NF)",
+          "finding": "1NF/2NF explicit; 3NF distinction mostly implicit in construction tasks."
+        },
+        {
+          "guidance": "• The terms atomicity, unique identification, functional dependencies, partial-key dependencies, non-key/transitive dependencies",
+          "finding": "Atomicity/partial-key/uniqueness assessed; explicit transitive dependency explanation not established."
+        },
+        {
+          "guidance": "• Normalization issues can encompass data duplication, missing data, and a range of dependency concerns, including data dependencies, composite key dependencies, transitive dependencies, and multi-valued dependencies.",
+          "finding": "Duplication/update problems represented; missing-data and multi-valued-dependency issues not established. Do not infer formal 4NF requirement."
+        }
+      ],
+      "remaining_gaps": [
+        "Explicit 3NF/transitive dependency comparison; insertion/deletion anomalies and carefully scoped multi-valued issue."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A3.2.6",
+      "statement": "Construct a database normalized to 3NF for a range of real-world scenarios.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        39,
+        40
+      ],
+      "guidance_paragraphs": [
+        "• Examples may include library management, hospital management, e-commerce platforms, school management, employee management, inventory management, police crime reporting"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC002-Q02-d",
+        "P-SRC032-Q03-b",
+        "P-SRC033-Q03-d",
+        "P-SRC034-Q03-c",
+        "P-SRC038-Q02-e",
+        "P-SRC040-Q02-e",
+        "P-SRC042-Q03-c",
+        "P-SRC044-Q03-c"
+      ],
+      "linked_count": 8,
+      "difficulty_counts": {
+        "medium": 4,
+        "high": 4
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "substantial_evidence",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC032-Q03-b",
+          "finding": "Constructs 3NF removing partial/transitive dependencies."
+        },
+        {
+          "question_id": "P-SRC034-Q03-c",
+          "finding": "Asset inspection multi-entity 3NF."
+        },
+        {
+          "question_id": "P-SRC044-Q03-c",
+          "finding": "Bookings with guide-department dependency."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Examples may include library management, hospital management, e-commerce platforms, school management, employee management, inventory management, police crime reporting",
+          "finding": "Multiple supported real-world scenarios assessed; may-include list is not exhaustive or a requirement to instantiate all seven examples."
+        }
+      ],
+      "remaining_gaps": [],
+      "next_action": "Retain evidence; evaluate final question selection and difficulty balance."
+    },
+    {
+      "code": "A3.2.7",
+      "statement": "Evaluate the need for denormalizing databases.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        40
+      ],
+      "guidance_paragraphs": [
+        "• The advantages and disadvantages of normalizing and denormalizing databases",
+        "• Situations where denormalization can enhance performance, particularly in read-intensive applications",
+        "• The balance between straightforward query structures and the risk of data redundancy in denormalized schemas"
+      ],
+      "linked_candidate_ids": [],
+      "linked_count": 0,
+      "difficulty_counts": {},
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "no_mapped_practice",
+      "reviewed_evidence": [],
+      "bullet_findings": [
+        {
+          "guidance": "• The advantages and disadvantages of normalizing and denormalizing databases",
+          "finding": "No mapped practice."
+        },
+        {
+          "guidance": "• Situations where denormalization can enhance performance, particularly in read-intensive applications",
+          "finding": "No mapped practice."
+        },
+        {
+          "guidance": "• The balance between straightforward query structures and the risk of data redundancy in denormalized schemas",
+          "finding": "No mapped practice."
+        }
+      ],
+      "remaining_gaps": [
+        "All objective: read-performance/simpler queries versus duplication and consistency/update cost."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A3.3.1",
+      "statement": "Outline the differences between data language types within SQL.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        40
+      ],
+      "guidance_paragraphs": [
+        "• Data language types must include data definition language (DDL) and data manipulation language (DML)",
+        "• SQL statements to define data structures or to manipulate data"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC002-Q03-c",
+        "P-SRC032-Q01-f",
+        "P-SRC042-Q02-b",
+        "P-SRC044-Q02-b"
+      ],
+      "linked_count": 4,
+      "difficulty_counts": {
+        "medium": 3,
+        "low": 1
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC032-Q01-f",
+          "finding": "DDL structures/constraints with CREATE/ALTER/DROP."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Data language types must include data definition language (DDL) and data manipulation language (DML)",
+          "finding": "DDL assessed; explicit DDL/DML contrast missing from these links."
+        },
+        {
+          "guidance": "• SQL statements to define data structures or to manipulate data",
+          "finding": "Definition operations assessed; insert/update/delete evidence lives under A3.3.3 and could be cross-linked after review."
+        }
+      ],
+      "remaining_gaps": [
+        "DDL versus DML comparison with suitable commands, not DDL explanation alone."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A3.3.2",
+      "statement": "Construct queries between two tables in SQL.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        40
+      ],
+      "guidance_paragraphs": [
+        "• Queries must include joins, relational operators, filtering, pattern matching, and ordering data",
+        "• SQL commands: SELECT, DISTINCT, FROM, WHERE, BETWEEN, ORDER BY, GROUP BY, HAVING, ASC, DESC, JOIN, LIKE with % wildcard, AND, OR, NOT (note: Syntax may vary in different database systems)"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC002-Q02-c",
+        "P-SRC032-Q01-b",
+        "P-SRC032-Q01-d",
+        "P-SRC033-Q03-b",
+        "P-SRC034-Q01-d",
+        "P-SRC034-Q01-e",
+        "P-SRC034-Q09-c",
+        "P-SRC038-Q02-c",
+        "P-SRC038-Q02-d",
+        "P-SRC040-Q02-c",
+        "P-SRC040-Q02-d",
+        "P-SRC042-Q01-c",
+        "P-SRC042-Q01-d",
+        "P-SRC044-Q01-c",
+        "P-SRC044-Q01-d"
+      ],
+      "linked_count": 15,
+      "difficulty_counts": {
+        "medium": 13,
+        "low": 2
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC033-Q03-b",
+          "finding": "JOIN, BETWEEN, LIKE wildcard and filtering."
+        },
+        {
+          "question_id": "P-SRC034-Q09-c",
+          "finding": "ORDER BY DESC explanation."
+        },
+        {
+          "question_id": "P-SRC040-Q02-d",
+          "finding": "Two-table date-range construction."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Queries must include joins, relational operators, filtering, pattern matching, and ordering data",
+          "finding": "Joins/filtering/pattern matching constructed; ordering only interpreted in selected evidence."
+        },
+        {
+          "guidance": "• SQL commands: SELECT, DISTINCT, FROM, WHERE, BETWEEN, ORDER BY, GROUP BY, HAVING, ASC, DESC, JOIN, LIKE with % wildcard, AND, OR, NOT (note: Syntax may vary in different database systems)",
+          "finding": "SELECT/FROM/WHERE/BETWEEN/JOIN/LIKE/AND and relational operators supported; DISTINCT/GROUP BY/HAVING/ASC/OR/NOT construction not established."
+        }
+      ],
+      "remaining_gaps": [
+        "Construct queries with ordering and missing listed commands, especially grouping/HAVING/DISTINCT."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A3.3.3",
+      "statement": "Explain how SQL can be used to update data in a database.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        40
+      ],
+      "guidance_paragraphs": [
+        "• Insert new records (INSERT INTO), modify data (UPDATE SET), remove data (DELETE)",
+        "• The performance implications of updating data in indexed columns, and how indexes might need to be rebuilt or reorganized following significant data modifications"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC032-Q10-a-i",
+        "P-SRC038-Q09-e-i"
+      ],
+      "linked_count": 2,
+      "difficulty_counts": {
+        "medium": 2
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC032-Q10-a-i",
+          "finding": "INSERT effect."
+        },
+        {
+          "question_id": "P-SRC038-Q09-e-i",
+          "finding": "INSERT after SELECT does not update already computed result."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Insert new records (INSERT INTO), modify data (UPDATE SET), remove data (DELETE)",
+          "finding": "INSERT assessed; UPDATE SET/DELETE absent in mapped practice."
+        },
+        {
+          "guidance": "• The performance implications of updating data in indexed columns, and how indexes might need to be rebuilt or reorganized following significant data modifications",
+          "finding": "Indexed-update performance/rebuild/reorganization not established."
+        }
+      ],
+      "remaining_gaps": [
+        "UPDATE/DELETE conditions and index maintenance overhead."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A3.3.4",
+      "statement": "Construct calculations within a database using SQL’s aggregate functions. (HL only)",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        40
+      ],
+      "guidance_paragraphs": [
+        "• Aggregate functions on grouped data to aid reporting and decision-making",
+        "• Aggregate commands: AVERAGE, COUNT, MAX, MIN, SUM"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC038-Q09-e-i"
+      ],
+      "linked_count": 1,
+      "difficulty_counts": {
+        "medium": 1
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC038-Q09-e-i",
+          "finding": "Interprets AVG filtered by category, not aggregate query construction."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Aggregate functions on grouped data to aid reporting and decision-making",
+          "finding": "No grouped aggregate construction established."
+        },
+        {
+          "guidance": "• Aggregate commands: AVERAGE, COUNT, MAX, MIN, SUM",
+          "finding": "Only average interpreted; COUNT/MAX/MIN/SUM construction missing. Source AVERAGE spelling preserved in master, executable SQL uses dialect-correct AVG."
+        }
+      ],
+      "remaining_gaps": [
+        "Grouped aggregate construction using all five functions in suitable tasks; verify SQL execution."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A3.3.5",
+      "statement": "Describe different database views. (HL only)",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        40
+      ],
+      "guidance_paragraphs": [
+        "• Virtual views and materialized (snapshot) views",
+        "• Hiding data complexity, data consistency, independence, performance, query simplification, read-only data or updatable data, security"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC002-Q03-e",
+        "P-SRC032-Q01-e",
+        "P-SRC032-Q02-c",
+        "P-SRC033-Q01-c",
+        "P-SRC038-Q03-e",
+        "P-SRC042-Q01-f",
+        "P-SRC044-Q01-f"
+      ],
+      "linked_count": 7,
+      "difficulty_counts": {
+        "medium": 6,
+        "high": 1
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC032-Q01-e",
+          "finding": "Virtual view query definition without separate stored result."
+        },
+        {
+          "question_id": "P-SRC038-Q03-e",
+          "finding": "Restricted read-only view security/utility."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Virtual views and materialized (snapshot) views",
+          "finding": "Virtual view assessed; materialized snapshot distinction missing."
+        },
+        {
+          "guidance": "• Hiding data complexity, data consistency, independence, performance, query simplification, read-only data or updatable data, security",
+          "finding": "Security/simplification/read-only coverage substantial; freshness/performance/independence/updatability less developed."
+        }
+      ],
+      "remaining_gaps": [
+        "Virtual versus materialized view freshness/performance and update behaviour."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A3.3.6",
+      "statement": "Describe how transactions maintain data integrity in a database. (HL only)",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        40
+      ],
+      "guidance_paragraphs": [
+        "• The role of atomicity, consistency, isolation and durability (ACID) to ensure reliable processing of transactions",
+        "• Transaction control language (TCL) commands: BEGIN TRANSACTION, COMMIT, ROLLBACK"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC002-Q01-c",
+        "P-SRC002-Q01-d",
+        "P-SRC002-Q01-e-i",
+        "P-SRC002-Q01-e-ii",
+        "P-SRC032-Q02-b",
+        "P-SRC033-Q02-a",
+        "P-SRC033-Q02-c",
+        "P-SRC033-Q02-d",
+        "P-SRC034-Q02-b",
+        "P-SRC034-Q02-d",
+        "P-SRC034-Q02-e",
+        "P-SRC038-Q01-c",
+        "P-SRC038-Q01-d",
+        "P-SRC040-Q01-c",
+        "P-SRC042-Q02-e",
+        "P-SRC044-Q02-e"
+      ],
+      "linked_count": 16,
+      "difficulty_counts": {
+        "medium": 13,
+        "low": 3
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "substantial_evidence",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC002-Q01-e-i",
+          "finding": "Consistency transfer invariant."
+        },
+        {
+          "question_id": "P-SRC033-Q02-c",
+          "finding": "Durability after crash."
+        },
+        {
+          "question_id": "P-SRC033-Q02-d",
+          "finding": "Isolation for last-seat booking."
+        },
+        {
+          "question_id": "P-SRC042-Q02-e",
+          "finding": "All-or-none atomicity."
+        },
+        {
+          "question_id": "P-SRC040-Q01-c",
+          "finding": "Commit/rollback transfer states."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• The role of atomicity, consistency, isolation and durability (ACID) to ensure reliable processing of transactions",
+          "finding": "All ACID aspects represented with contextual reasoning."
+        },
+        {
+          "guidance": "• Transaction control language (TCL) commands: BEGIN TRANSACTION, COMMIT, ROLLBACK",
+          "finding": "COMMIT/ROLLBACK effects assessed; BEGIN TRANSACTION explicitly constructing a boundary is not established."
+        }
+      ],
+      "remaining_gaps": [
+        "Explicit BEGIN TRANSACTION with commit/rollback boundary sequence."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A3.4.1",
+      "statement": "Outline the different types of databases as approaches to storing data.",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        40
+      ],
+      "guidance_paragraphs": [
+        "• Databases models: NoSQL, cloud, spatial, in-memory",
+        "• Examples of the use of the database model in real-world scenarios may include e-commerce platforms, geographic information systems (GIS), managed services, real-time analytics, social media platforms, SaaS."
+      ],
+      "linked_candidate_ids": [
+        "P-SRC034-Q04-a-i",
+        "P-SRC034-Q04-a-ii",
+        "P-SRC042-Q04-a"
+      ],
+      "linked_count": 3,
+      "difficulty_counts": {
+        "low": 3
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC034-Q04-a-i",
+          "finding": "Spatial coordinates/geometries queried."
+        },
+        {
+          "question_id": "P-SRC042-Q04-a",
+          "finding": "Names alternative database models only."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Databases models: NoSQL, cloud, spatial, in-memory",
+          "finding": "Spatial description supported; naming NoSQL/cloud/in-memory is not explanation of approach."
+        },
+        {
+          "guidance": "• Examples of the use of the database model in real-world scenarios may include e-commerce platforms, geographic information systems (GIS), managed services, real-time analytics, social media platforms, SaaS.",
+          "finding": "Spatial infrastructure context; other may-include contexts not a mandatory exhaustive list."
+        }
+      ],
+      "remaining_gaps": [
+        "NoSQL/cloud/in-memory purpose and appropriate real-world choice."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A3.4.2",
+      "statement": "Explain the primary objectives of data warehouses in data management and business intelligence.",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        40
+      ],
+      "guidance_paragraphs": [
+        "• The roles of append-only data, subject-oriented data, integrated data, time-variant data, non-volatile data and data optimized for query performance, to ensure efficient data storage and analysis"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC002-Q04-b",
+        "P-SRC032-Q04-a",
+        "P-SRC033-Q04-a",
+        "P-SRC033-Q04-b",
+        "P-SRC033-Q04-c",
+        "P-SRC038-Q03-b",
+        "P-SRC038-Q04-e",
+        "P-SRC042-Q04-b",
+        "P-SRC042-Q04-c",
+        "P-SRC042-Q04-d",
+        "P-SRC042-Q04-e"
+      ],
+      "linked_count": 11,
+      "difficulty_counts": {
+        "medium": 8,
+        "low": 3
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "substantial_evidence",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC033-Q04-c",
+          "finding": "Append standardized events while preserving time-stamped history."
+        },
+        {
+          "question_id": "P-SRC032-Q04-a",
+          "finding": "Integrated subject-oriented historical/nonvolatile analytical store."
+        },
+        {
+          "question_id": "P-SRC042-Q04-c",
+          "finding": "Standardization across sources."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• The roles of append-only data, subject-oriented data, integrated data, time-variant data, non-volatile data and data optimized for query performance, to ensure efficient data storage and analysis",
+          "finding": "All named warehouse characteristics represented across evidence, but subject orientation/nonvolatility/query optimization often recalled rather than explained in context."
+        }
+      ],
+      "remaining_gaps": [
+        "Applied reasons for subject orientation, nonvolatile history and query-oriented design."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A3.4.3",
+      "statement": "Explain the role of online analytical processing (OLAP) and data mining for business intelligence.",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        40,
+        41
+      ],
+      "guidance_paragraphs": [
+        "• Data mining techniques must include classification, clustering, regression, association rule discovery, sequential pattern discovery, anomaly detection (note: This links to “A4 Machine learning”).",
+        "• The uses of the techniques in extracting meaningful information from large data sets"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC002-Q04-a",
+        "P-SRC002-Q04-e",
+        "P-SRC032-Q04-e",
+        "P-SRC034-Q04-c",
+        "P-SRC034-Q04-e",
+        "P-SRC038-Q03-d",
+        "P-SRC038-Q04-a-ii",
+        "P-SRC038-Q04-c",
+        "P-SRC042-Q04-f",
+        "P-SRC042-Q04-g"
+      ],
+      "linked_count": 10,
+      "difficulty_counts": {
+        "medium": 7,
+        "high": 2,
+        "low": 1
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC038-Q04-a-ii",
+          "finding": "OLAP analysis across site/category/month."
+        },
+        {
+          "question_id": "P-SRC042-Q04-g",
+          "finding": "Clustering versus association rules."
+        },
+        {
+          "question_id": "P-SRC034-Q04-c",
+          "finding": "Classification versus clustering."
+        },
+        {
+          "question_id": "P-SRC038-Q04-c",
+          "finding": "Regression planning."
+        },
+        {
+          "question_id": "P-SRC034-Q04-e",
+          "finding": "Anomaly baseline, false alarms and interpretation."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Data mining techniques must include classification, clustering, regression, association rule discovery, sequential pattern discovery, anomaly detection (note: This links to “A4 Machine learning”).",
+          "finding": "Five of six named techniques supported; sequential pattern discovery not established."
+        },
+        {
+          "guidance": "• The uses of the techniques in extracting meaningful information from large data sets",
+          "finding": "Concrete information extraction/business decisions represented, with caution that pattern does not establish cause."
+        }
+      ],
+      "remaining_gaps": [
+        "Sequential pattern discovery (ordered events) versus co-occurrence association; applied BI purpose."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A3.4.4",
+      "statement": "Describe the features of distributed databases.",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        41
+      ],
+      "guidance_paragraphs": [
+        "• The need to maintain data consistency in a distributed database",
+        "• The role of ACID to ensure reliable processing of transactions in distributed databases",
+        "• Features of distributed databases: concurrency control, data consistency, data partitioning, data security, distribution transparency, fault tolerance, global query processing, location transparency, replication, scalability"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC024-Q02",
+        "P-SRC042-Q11-c",
+        "P-SRC044-Q09-c"
+      ],
+      "linked_count": 3,
+      "difficulty_counts": {
+        "low": 1,
+        "high": 1,
+        "medium": 1
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC024-Q02",
+          "finding": "Replica failover."
+        },
+        {
+          "question_id": "P-SRC042-Q11-c",
+          "finding": "Replica consistency/privacy/resilience."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• The need to maintain data consistency in a distributed database",
+          "finding": "Replica update/delete consistency assessed."
+        },
+        {
+          "guidance": "• The role of ACID to ensure reliable processing of transactions in distributed databases",
+          "finding": "Distributed ACID reliability not established by these links."
+        },
+        {
+          "guidance": "• Features of distributed databases: concurrency control, data consistency, data partitioning, data security, distribution transparency, fault tolerance, global query processing, location transparency, replication, scalability",
+          "finding": "Replication/fault tolerance/security/consistency supported; partitioning/transparency/global queries/scalability/concurrency incomplete."
+        }
+      ],
+      "remaining_gaps": [
+        "Distributed transaction ACID plus partitioning, location/distribution transparency, global query and scalability."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A4.1.1",
+      "statement": "Describe the types of machine learning and their applications in the real world.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        41
+      ],
+      "guidance_paragraphs": [
+        "• The different approaches to machine learning algorithms and their unique characteristics",
+        "• Deep learning (DL), reinforcement learning (RL), supervised learning, transfer learning (TL), unsupervised learning (UL)",
+        "• Real-world applications of machine learning may include market basket analysis, medical imaging diagnostics, natural language processing, object detection and classification, robotics navigation, sentiment analysis."
+      ],
+      "linked_candidate_ids": [
+        "P-SRC002-Q08-b-i",
+        "P-SRC032-Q08-c-i",
+        "P-SRC032-Q08-d",
+        "P-SRC032-Q08-f",
+        "P-SRC033-Q08-d",
+        "P-SRC038-Q08-c",
+        "P-SRC042-Q08-d",
+        "P-SRC042-Q08-e"
+      ],
+      "linked_count": 8,
+      "difficulty_counts": {
+        "medium": 6,
+        "high": 2
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC038-Q08-c",
+          "finding": "Supervised labelled classification versus unsupervised groups."
+        },
+        {
+          "question_id": "P-SRC042-Q08-e",
+          "finding": "Transfer learning reuse/adaptation and limits."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• The different approaches to machine learning algorithms and their unique characteristics",
+          "finding": "Supervised/unsupervised/transfer described; deep/RL types not explicit here (RL direct evidence under A4.3.6)."
+        },
+        {
+          "guidance": "• Deep learning (DL), reinforcement learning (RL), supervised learning, transfer learning (TL), unsupervised learning (UL)",
+          "finding": "Supervised/UL/TL supported; DL missing and RL requires reviewed cross-code link."
+        },
+        {
+          "guidance": "• Real-world applications of machine learning may include market basket analysis, medical imaging diagnostics, natural language processing, object detection and classification, robotics navigation, sentiment analysis.",
+          "finding": "Language/image contexts represented; may-include list not exhaustive."
+        }
+      ],
+      "remaining_gaps": [
+        "Deep learning characteristics and relation to other approaches; link RL evidence after per-record review."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A4.1.2",
+      "statement": "Describe the hardware requirements for various scenarios where machine learning is deployed.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        41
+      ],
+      "guidance_paragraphs": [
+        "• The hardware configurations for different machine learning scenarios, considering factors such as processing, storage and scalability",
+        "• Hardware configurations for machine learning ranging from standard laptops to advanced infrastructure",
+        "• Advanced infrastructure must include application-specific integrated circuits (ASICs), edge devices, field-programmable gate arrays (FPGAs), GPUs, tensor processing units (TPUs), cloud-based platforms, high-performance computing (HPC) centres."
+      ],
+      "linked_candidate_ids": [
+        "P-SRC007-Q15-c-i",
+        "P-SRC007-Q15-c-ii",
+        "P-SRC038-Q07-d",
+        "P-SRC040-Q06-d"
+      ],
+      "linked_count": 4,
+      "difficulty_counts": {
+        "medium": 3,
+        "high": 1
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC007-Q15-c-i",
+          "finding": "Small laptop model versus many large training jobs RAM."
+        },
+        {
+          "question_id": "P-SRC040-Q06-d",
+          "finding": "Onboard GPU versus remote cloud latency/network/scalability trade-offs."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• The hardware configurations for different machine learning scenarios, considering factors such as processing, storage and scalability",
+          "finding": "Processing/storage/scalability partly assessed (RAM versus persistent storage should be distinguished)."
+        },
+        {
+          "guidance": "• Hardware configurations for machine learning ranging from standard laptops to advanced infrastructure",
+          "finding": "Laptop versus advanced training deployment assessed."
+        },
+        {
+          "guidance": "• Advanced infrastructure must include application-specific integrated circuits (ASICs), edge devices, field-programmable gate arrays (FPGAs), GPUs, tensor processing units (TPUs), cloud-based platforms, high-performance computing (HPC) centres.",
+          "finding": "GPU/edge/cloud represented; ASIC/FPGA/TPU/HPC explicit must-include infrastructure not established."
+        }
+      ],
+      "remaining_gaps": [
+        "ASIC/FPGA/TPU/HPC roles and suitability, persistent storage, advanced infrastructure breadth."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A4.2.1",
+      "statement": "Describe the significance of data cleaning.",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        41,
+        42
+      ],
+      "guidance_paragraphs": [
+        "• The impact of data quality on model performance",
+        "• Techniques for handling outliers, removing or consolidating duplicate data, identifying incorrect data, filtering irrelevant data, transforming improperly formatted data, and imputation, deletion or predictive modelling for missing data",
+        "• Normalization and standardization as crucial preprocessing steps"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC002-Q04-c",
+        "P-SRC032-Q04-c",
+        "P-SRC033-Q06-b",
+        "P-SRC034-Q08-f",
+        "P-SRC042-Q08-e"
+      ],
+      "linked_count": 5,
+      "difficulty_counts": {
+        "medium": 3,
+        "low": 1,
+        "high": 1
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC002-Q04-c",
+          "finding": "Formats, duplicates, missing-value imputation/deletion."
+        },
+        {
+          "question_id": "P-SRC034-Q08-f",
+          "finding": "Incorrect supervised pairs harm learning."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• The impact of data quality on model performance",
+          "finding": "Data quality/performance assessed."
+        },
+        {
+          "guidance": "• Techniques for handling outliers, removing or consolidating duplicate data, identifying incorrect data, filtering irrelevant data, transforming improperly formatted data, and imputation, deletion or predictive modelling for missing data",
+          "finding": "Formats/duplicates/incorrect/missing data partly supported; outliers/irrelevant data/predictive missing-value treatment not established."
+        },
+        {
+          "guidance": "• Normalization and standardization as crucial preprocessing steps",
+          "finding": "Numeric normalization/standardization not established; standardizing date formats is not sufficient evidence of scaling."
+        }
+      ],
+      "remaining_gaps": [
+        "Outliers/irrelevant data; predictive imputation; numeric normalization versus standardization."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A4.2.2",
+      "statement": "Describe the role of feature selection.",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        42
+      ],
+      "guidance_paragraphs": [
+        "• Feature selection to identify and retain the most informative attributes of the data set",
+        "• Feature selection strategies: filter methods, wrapper methods, embedded methods"
+      ],
+      "linked_candidate_ids": [],
+      "linked_count": 0,
+      "difficulty_counts": {},
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "no_mapped_practice",
+      "reviewed_evidence": [],
+      "bullet_findings": [
+        {
+          "guidance": "• Feature selection to identify and retain the most informative attributes of the data set",
+          "finding": "No mapped practice."
+        },
+        {
+          "guidance": "• Feature selection strategies: filter methods, wrapper methods, embedded methods",
+          "finding": "No mapped practice."
+        }
+      ],
+      "remaining_gaps": [
+        "Feature selection purpose and filter/wrapper/embedded methods."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A4.2.3",
+      "statement": "Describe the importance of dimensionality reduction.",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        42
+      ],
+      "guidance_paragraphs": [
+        "• The curse of dimensionality considerations may include overfitting, computational complexity, data sparsity, the effectiveness of distance metrics, data visualization, sample size increases, memory usage.",
+        "• Dimensionality reduction of variables, while preserving the relevant aspects of the data",
+        "Note: Statistical techniques such as principal component analysis (PCA) and linear discriminant analysis (LDA) are beyond the scope of this course."
+      ],
+      "linked_candidate_ids": [],
+      "linked_count": 0,
+      "difficulty_counts": {},
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "no_mapped_practice",
+      "reviewed_evidence": [],
+      "bullet_findings": [
+        {
+          "guidance": "• The curse of dimensionality considerations may include overfitting, computational complexity, data sparsity, the effectiveness of distance metrics, data visualization, sample size increases, memory usage.",
+          "finding": "No mapped practice; listed considerations are may-include, not exhaustive required implementations."
+        },
+        {
+          "guidance": "• Dimensionality reduction of variables, while preserving the relevant aspects of the data",
+          "finding": "No mapped practice."
+        },
+        {
+          "guidance": "Note: Statistical techniques such as principal component analysis (PCA) and linear discriminant analysis (LDA) are beyond the scope of this course.",
+          "finding": "PCA and LDA explicitly beyond scope; preserve exclusion in future questions."
+        }
+      ],
+      "remaining_gaps": [
+        "Curse of dimensionality and preserving relevant information with fewer variables; no PCA/LDA."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A4.3.1",
+      "statement": "Explain how linear regression is used to predict continuous outcomes.",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        42
+      ],
+      "guidance_paragraphs": [
+        "• The relationship between the independent (predictor) and dependent (response) variables",
+        "• The significance of the slope and intercept in the regression equation",
+        "• How well the model fits the data—often assessed using measures like r²."
+      ],
+      "linked_candidate_ids": [
+        "P-SRC044-Q05-b"
+      ],
+      "linked_count": 1,
+      "difficulty_counts": {
+        "medium": 1
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC044-Q05-b",
+          "finding": "Predictor/continuous response and fitted slope/intercept named."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• The relationship between the independent (predictor) and dependent (response) variables",
+          "finding": "Predictor/response roles assessed."
+        },
+        {
+          "guidance": "• The significance of the slope and intercept in the regression equation",
+          "finding": "Slope/intercept named, not independently interpreted."
+        },
+        {
+          "guidance": "• How well the model fits the data—often assessed using measures like r².",
+          "finding": "Fit check generic; r² not explicitly assessed."
+        }
+      ],
+      "remaining_gaps": [
+        "Interpret slope/intercept and fitted predictions; meaning of r² without adding unsupported derivation requirements."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A4.3.2",
+      "statement": "Explain how classifications techniques in supervised learning are used to predict discrete categorical outcomes.",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        42
+      ],
+      "guidance_paragraphs": [
+        "• K-Nearest Neighbours (K-NN) and decision trees algorithms to categorize new data points, based on patterns learned from existing labelled data",
+        "• Real-world applications of K-NN may include collaborative filtering recommendation systems.",
+        "• Real-world applications of decision trees may include medical diagnosis based on a patient’s symptoms."
+      ],
+      "linked_candidate_ids": [
+        "P-SRC002-Q04-d",
+        "P-SRC002-Q04-f",
+        "P-SRC032-Q08-d",
+        "P-SRC033-Q04-d",
+        "P-SRC040-Q03-d"
+      ],
+      "linked_count": 5,
+      "difficulty_counts": {
+        "medium": 5
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC002-Q04-d",
+          "finding": "Decision tree learned feature splits and leaf category."
+        },
+        {
+          "question_id": "P-SRC040-Q03-d",
+          "finding": "Labelled medical classification tree."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• K-Nearest Neighbours (K-NN) and decision trees algorithms to categorize new data points, based on patterns learned from existing labelled data",
+          "finding": "Decision tree supported; K-NN not established."
+        },
+        {
+          "guidance": "• Real-world applications of K-NN may include collaborative filtering recommendation systems.",
+          "finding": "K-NN example optional, but K-NN algorithm itself required above and missing."
+        },
+        {
+          "guidance": "• Real-world applications of decision trees may include medical diagnosis based on a patient’s symptoms.",
+          "finding": "Decision-tree medical context represented; example is non-exhaustive."
+        }
+      ],
+      "remaining_gaps": [
+        "K-NN neighbour-based categorical classification and suitable application."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A4.3.3",
+      "statement": "Explain the role of hyperparameter tuning when evaluating supervised learning algorithms.",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        42
+      ],
+      "guidance_paragraphs": [
+        "• Accuracy, precision, recall and F1 score as evaluation metrics",
+        "• The role of hyperparameter tuning on model performance",
+        "• Overfitting and underfitting when training algorithms"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC040-Q05-f",
+        "P-SRC044-Q05-c"
+      ],
+      "linked_count": 2,
+      "difficulty_counts": {
+        "medium": 2
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC040-Q05-f",
+          "finding": "Training/generalization gap and representative held-out evaluation."
+        },
+        {
+          "question_id": "P-SRC044-Q05-c",
+          "finding": "Held-out test versus training-only optimism."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Accuracy, precision, recall and F1 score as evaluation metrics",
+          "finding": "Accuracy mentioned; precision/recall/F1 not directly assessed."
+        },
+        {
+          "guidance": "• The role of hyperparameter tuning on model performance",
+          "finding": "Tuning appears in solution fallback but prompt does not directly test hyperparameter selection/validation."
+        },
+        {
+          "guidance": "• Overfitting and underfitting when training algorithms",
+          "finding": "Overfitting assessed; underfitting not established."
+        }
+      ],
+      "remaining_gaps": [
+        "Actual tuning with validation evidence; accuracy/precision/recall/F1; underfitting contrast."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A4.3.4",
+      "statement": "Describe how clustering techniques in unsupervised learning are used to group data based on similarities in features.",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        42
+      ],
+      "guidance_paragraphs": [
+        "• Clustering techniques in unsupervised learning group data based on feature similarities",
+        "• Real-world applications of clustering may include using purchasing data to segment a customer base."
+      ],
+      "linked_candidate_ids": [
+        "P-SRC002-Q04-f",
+        "P-SRC032-Q04-d",
+        "P-SRC032-Q08-c-ii",
+        "P-SRC033-Q04-d",
+        "P-SRC038-Q04-d",
+        "P-SRC038-Q08-c",
+        "P-SRC042-Q04-g"
+      ],
+      "linked_count": 7,
+      "difficulty_counts": {
+        "medium": 6,
+        "high": 1
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "substantial_evidence",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC038-Q04-d",
+          "finding": "Similar unlabelled features cluster visitor groups, interpretation limits."
+        },
+        {
+          "question_id": "P-SRC032-Q04-d",
+          "finding": "Purchasing segmentation and feature/cluster limitations."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Clustering techniques in unsupervised learning group data based on feature similarities",
+          "finding": "Grouping by feature similarity explicitly assessed."
+        },
+        {
+          "guidance": "• Real-world applications of clustering may include using purchasing data to segment a customer base.",
+          "finding": "Customer segmentation real-world application present; optional list not exhaustive."
+        }
+      ],
+      "remaining_gaps": [],
+      "next_action": "Retain evidence; evaluate final question selection and difficulty balance."
+    },
+    {
+      "code": "A4.3.5",
+      "statement": "Describe how learning techniques using the association rule are used to uncover relations between different attributes in large data sets.",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        42
+      ],
+      "guidance_paragraphs": [
+        "• Mining techniques using the association rule and interpretation of the results for a given scenario",
+        "For example, in crime analysis, the techniques may reveal that areas with high rates of vandalism also often experience incidents of theft, assisting law enforcement in predictive policing and resource allocation."
+      ],
+      "linked_candidate_ids": [
+        "P-SRC042-Q04-g"
+      ],
+      "linked_count": 1,
+      "difficulty_counts": {
+        "high": 1
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC042-Q04-g",
+          "finding": "Association co-occurrence differs from grouping; no causality claim."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Mining techniques using the association rule and interpretation of the results for a given scenario",
+          "finding": "Association rule interpretation and scenario suitability partly assessed."
+        },
+        {
+          "guidance": "For example, in crime analysis, the techniques may reveal that areas with high rates of vandalism also often experience incidents of theft, assisting law enforcement in predictive policing and resource allocation.",
+          "finding": "Retail transactions supported; illustrative crime example does not mandate a crime-specific question."
+        }
+      ],
+      "remaining_gaps": [
+        "Interpret a concrete discovered rule in a scenario; no unsupported support/confidence formula obligation inferred."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A4.3.6",
+      "statement": "Describe how an agent learns to make decisions by interacting with its environment in reinforcement learning.",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        42
+      ],
+      "guidance_paragraphs": [
+        "• The principle of cumulative reward and the foundational concepts of agent–environment interaction, encompassing actions, states, rewards and policies",
+        "• The exploration versus exploitation trade-off as a core concept in reinforcement learning"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC033-Q08-c",
+        "P-SRC042-Q08-c"
+      ],
+      "linked_count": 2,
+      "difficulty_counts": {
+        "medium": 1,
+        "high": 1
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "substantial_evidence",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC033-Q08-c",
+          "finding": "Agent/state/action/reward/policy/cumulative reward and explore/exploit in navigation."
+        },
+        {
+          "question_id": "P-SRC042-Q08-c",
+          "finding": "Game interaction, policy adjustment, cumulative reward."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• The principle of cumulative reward and the foundational concepts of agent–environment interaction, encompassing actions, states, rewards and policies",
+          "finding": "Full named agent/environment concepts assessed."
+        },
+        {
+          "guidance": "• The exploration versus exploitation trade-off as a core concept in reinforcement learning",
+          "finding": "Explore/exploit trade-off represented."
+        }
+      ],
+      "remaining_gaps": [],
+      "next_action": "Retain evidence; evaluate final question selection and difficulty balance."
+    },
+    {
+      "code": "A4.3.7",
+      "statement": "Describe the application of genetic algorithms in various real-world situations.",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        42,
+        43
+      ],
+      "guidance_paragraphs": [
+        "• For example: population, fitness function, selection, crossover, mutation, evaluation, termination",
+        "• A real-world application of genetic algorithms is seen in optimization problems, such as route planning (e.g. the “travelling salesperson problem”)."
+      ],
+      "linked_candidate_ids": [
+        "P-SRC002-Q08-a",
+        "P-SRC032-Q08-a",
+        "P-SRC032-Q08-b",
+        "P-SRC033-Q08-a",
+        "P-SRC033-Q08-b",
+        "P-SRC034-Q08-a-i",
+        "P-SRC034-Q08-a-ii",
+        "P-SRC034-Q08-b",
+        "P-SRC034-Q08-c",
+        "P-SRC038-Q08-a",
+        "P-SRC042-Q08-a"
+      ],
+      "linked_count": 11,
+      "difficulty_counts": {
+        "medium": 9,
+        "low": 2
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "substantial_evidence",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC033-Q08-b",
+          "finding": "Full population/evaluate/select/crossover/mutate/terminate sequence."
+        },
+        {
+          "question_id": "P-SRC032-Q08-b",
+          "finding": "Delivery route fitness."
+        },
+        {
+          "question_id": "P-SRC034-Q08-c",
+          "finding": "Crossover may violate route/layout uniqueness."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• For example: population, fitness function, selection, crossover, mutation, evaluation, termination",
+          "finding": "All example process concepts assessed across tasks."
+        },
+        {
+          "guidance": "• A real-world application of genetic algorithms is seen in optimization problems, such as route planning (e.g. the “travelling salesperson problem”).",
+          "finding": "Optimization/route planning context assessed; illustrative examples do not demand a specialized TSP solver."
+        }
+      ],
+      "remaining_gaps": [],
+      "next_action": "Retain evidence; evaluate final question selection and difficulty balance."
+    },
+    {
+      "code": "A4.3.8",
+      "statement": "Outline the structure and function of ANNs and how multi-layer networks are used to model complex patterns in data sets.",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        43
+      ],
+      "guidance_paragraphs": [
+        "• An artificial neural network (ANN) to simulate interconnected nodes or “neurons” to process and learn from input data, enabling tasks such as classification, regression and pattern recognition",
+        "• Sketch of a single perceptron, highlighting its input, weights, bias, activation function and output",
+        "• Sketch of a multi-layer perceptron (MLP) encompassing the input layer, one or more hidden layers and the output layer."
+      ],
+      "linked_candidate_ids": [
+        "P-SRC038-Q08-b",
+        "P-SRC038-Q08-e",
+        "P-SRC042-Q08-b"
+      ],
+      "linked_count": 3,
+      "difficulty_counts": {
+        "medium": 2,
+        "low": 1
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC038-Q08-b",
+          "finding": "Sketches input/hidden/output nodes and forward flow."
+        },
+        {
+          "question_id": "P-SRC038-Q08-e",
+          "finding": "Input/output and learned pattern applications."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• An artificial neural network (ANN) to simulate interconnected nodes or “neurons” to process and learn from input data, enabling tasks such as classification, regression and pattern recognition",
+          "finding": "Application and learned patterns assessed; processing/learning mechanism thin."
+        },
+        {
+          "guidance": "• Sketch of a single perceptron, highlighting its input, weights, bias, activation function and output",
+          "finding": "Single perceptron input/weight/bias/activation/output sketch missing."
+        },
+        {
+          "guidance": "• Sketch of a multi-layer perceptron (MLP) encompassing the input layer, one or more hidden layers and the output layer.",
+          "finding": "MLP sketch represented."
+        }
+      ],
+      "remaining_gaps": [
+        "Single perceptron annotated structure and function of weights/bias/activation; multilayer complex pattern explanation."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A4.3.9",
+      "statement": "Describe how CNNs are designed to adaptively learn spatial hierarchies of features in images.",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        43
+      ],
+      "guidance_paragraphs": [
+        "• Convolutional neural network (CNN) basic architecture: input layer, convolutional layers, activation functions, pooling layers, fully connected layers, output layer",
+        "• The effect of the number of layers, kernel size and stride, activation function selection, and the loss function on how CNNs process input data and classify images"
+      ],
+      "linked_candidate_ids": [],
+      "linked_count": 0,
+      "difficulty_counts": {},
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "no_mapped_practice",
+      "reviewed_evidence": [],
+      "bullet_findings": [
+        {
+          "guidance": "• Convolutional neural network (CNN) basic architecture: input layer, convolutional layers, activation functions, pooling layers, fully connected layers, output layer",
+          "finding": "No mapped practice."
+        },
+        {
+          "guidance": "• The effect of the number of layers, kernel size and stride, activation function selection, and the loss function on how CNNs process input data and classify images",
+          "finding": "No mapped practice."
+        }
+      ],
+      "remaining_gaps": [
+        "CNN hierarchy/layer roles; kernel size/stride/layer count/activation/loss conceptual effects."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A4.3.10",
+      "statement": "Explain the importance of model selection and comparison in machine learning.",
+      "level": "HL-only",
+      "guide_pdf_pages": [
+        43
+      ],
+      "guidance_paragraphs": [
+        "• How different algorithms can yield different results depending on the data and type of problem",
+        "• The reasons for selecting specific machine learning models over others, considering factors like the nature of the problem, its complexity and desired outcomes",
+        "• The variability in algorithm performance based on the data’s characteristics"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC033-Q06-b"
+      ],
+      "linked_count": 1,
+      "difficulty_counts": {
+        "medium": 1
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC033-Q06-b",
+          "finding": "One model unreliable under poor/shifted data; no actual model comparison or selection."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• How different algorithms can yield different results depending on the data and type of problem",
+          "finding": "No direct comparison of different algorithms."
+        },
+        {
+          "guidance": "• The reasons for selecting specific machine learning models over others, considering factors like the nature of the problem, its complexity and desired outcomes",
+          "finding": "No supported reasons for selecting one model over another."
+        },
+        {
+          "guidance": "• The variability in algorithm performance based on the data’s characteristics",
+          "finding": "Data-characteristic performance variation partly supported only."
+        }
+      ],
+      "remaining_gaps": [
+        "Actual comparison/selection based on problem type, complexity, outcomes and representative performance."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A4.4.1",
+      "statement": "Discuss the ethical implications of machine learning in real-world scenarios.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        43
+      ],
+      "guidance_paragraphs": [
+        "• Ethical issues may include accountability, algorithmic fairness, bias, consent, environmental impact, privacy, security, societal impact, transparency.",
+        "• The challenges posed by biases in training data",
+        "• The ethics of using machine learning in online communication may include concerns about misinformation, bias, online harassment, anonymity, privacy."
+      ],
+      "linked_candidate_ids": [
+        "P-SRC002-Q08-b-ii",
+        "P-SRC002-Q08-d",
+        "P-SRC002-Q11-d",
+        "P-SRC002-Q16-b",
+        "P-SRC004-Q11-d",
+        "P-SRC004-Q12-d-ii",
+        "P-SRC006-Q11-d",
+        "P-SRC009-Q13-d-ii",
+        "P-SRC032-Q06-d",
+        "P-SRC033-Q06-c",
+        "P-SRC034-Q04-d",
+        "P-SRC038-Q06-f",
+        "P-SRC038-Q13-b"
+      ],
+      "linked_count": 13,
+      "difficulty_counts": {
+        "medium": 11,
+        "high": 2
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "substantial_evidence",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC002-Q08-d",
+          "finding": "Automated essay-assessment fairness/transparency/human moderation."
+        },
+        {
+          "question_id": "P-SRC034-Q04-d",
+          "finding": "Biased crime data feedback and accountability."
+        },
+        {
+          "question_id": "P-SRC004-Q11-d",
+          "finding": "Synthetic image misinformation."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• Ethical issues may include accountability, algorithmic fairness, bias, consent, environmental impact, privacy, security, societal impact, transparency.",
+          "finding": "Several optional ethical issues covered; environmental impact/security less represented but optional list not exhaustive."
+        },
+        {
+          "guidance": "• The challenges posed by biases in training data",
+          "finding": "Training bias harms and review represented."
+        },
+        {
+          "guidance": "• The ethics of using machine learning in online communication may include concerns about misinformation, bias, online harassment, anonymity, privacy.",
+          "finding": "Misinformation/privacy represented; online ethical list non-exhaustive."
+        }
+      ],
+      "remaining_gaps": [
+        "Broaden discussion variation if feasible; no claim every may-include example compulsory."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    },
+    {
+      "code": "A4.4.2",
+      "statement": "Discuss ethical aspects of the increasing integration of computer technologies into daily life.",
+      "level": "SL/HL common",
+      "guide_pdf_pages": [
+        43
+      ],
+      "guidance_paragraphs": [
+        "• The importance of continually reassessing ethical guidelines as technology advances",
+        "• The potential implications of emerging technologies such as quantum computing, augmented reality, virtual reality and the pervasive use of AI on society, individual rights, privacy and equity"
+      ],
+      "linked_candidate_ids": [
+        "P-SRC005-Q04-a",
+        "P-SRC008-Q09-d"
+      ],
+      "linked_count": 2,
+      "difficulty_counts": {
+        "low": 1,
+        "medium": 1
+      },
+      "review_status": "manual_scope_and_evidence_reviewed",
+      "coverage_status": "partial",
+      "reviewed_evidence": [
+        {
+          "question_id": "P-SRC008-Q09-d",
+          "finding": "AI screening jobs, rights, fairness and accountability."
+        },
+        {
+          "question_id": "P-SRC005-Q04-a",
+          "finding": "Online gallery consent/privacy concern, lower depth."
+        }
+      ],
+      "bullet_findings": [
+        {
+          "guidance": "• The importance of continually reassessing ethical guidelines as technology advances",
+          "finding": "Continual guideline reassessment as capabilities advance not established."
+        },
+        {
+          "guidance": "• The potential implications of emerging technologies such as quantum computing, augmented reality, virtual reality and the pervasive use of AI on society, individual rights, privacy and equity",
+          "finding": "AI impacts partly assessed; quantum/AR/VR implications not established; wording says such as so avoid inventing implementation requirements."
+        }
+      ],
+      "remaining_gaps": [
+        "Discuss need to revisit guidance over time and emerging technology rights/privacy/equity impacts."
+      ],
+      "next_action": "Design substantive questions for remaining gaps; independent coordinator review of findings before master integration."
+    }
+  ],
+  "checked_codes": [
+    "A1.1.1",
+    "A1.1.2",
+    "A1.1.3",
+    "A1.1.4",
+    "A1.1.5",
+    "A1.1.6",
+    "A1.1.7",
+    "A1.1.8",
+    "A1.1.9",
+    "A1.2.1",
+    "A1.2.2",
+    "A1.2.3",
+    "A1.2.4",
+    "A1.2.5",
+    "A1.3.1",
+    "A1.3.2",
+    "A1.3.3",
+    "A1.3.4",
+    "A1.3.5",
+    "A1.3.6",
+    "A1.3.7",
+    "A1.4.1",
+    "A2.1.1",
+    "A2.1.2",
+    "A2.1.3",
+    "A2.1.4",
+    "A2.1.5",
+    "A2.2.1",
+    "A2.2.2",
+    "A2.2.3",
+    "A2.2.4",
+    "A2.3.1",
+    "A2.3.2",
+    "A2.3.3",
+    "A2.3.4",
+    "A2.4.1",
+    "A2.4.2",
+    "A2.4.3",
+    "A2.4.4",
+    "A3.1.1",
+    "A3.2.1",
+    "A3.2.2",
+    "A3.2.3",
+    "A3.2.4",
+    "A3.2.5",
+    "A3.2.6",
+    "A3.2.7",
+    "A3.3.1",
+    "A3.3.2",
+    "A3.3.3",
+    "A3.3.4",
+    "A3.3.5",
+    "A3.3.6",
+    "A3.4.1",
+    "A3.4.2",
+    "A3.4.3",
+    "A3.4.4",
+    "A4.1.1",
+    "A4.1.2",
+    "A4.2.1",
+    "A4.2.2",
+    "A4.2.3",
+    "A4.3.1",
+    "A4.3.2",
+    "A4.3.3",
+    "A4.3.4",
+    "A4.3.5",
+    "A4.3.6",
+    "A4.3.7",
+    "A4.3.8",
+    "A4.3.9",
+    "A4.3.10",
+    "A4.4.1",
+    "A4.4.2"
+  ],
+  "checkpoint": "A-AUDIT-FIRST-PASS",
+  "completion_limit": "All 74 objectives have first-pass human evidence/gap review; this does not certify full per-question review of the bank. Per-record scope review remains separately tracked and incomplete."
+}
