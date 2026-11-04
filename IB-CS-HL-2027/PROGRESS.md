@@ -1,8 +1,8 @@
 # Progress — Chunk 3 active, recovery-first
 
-**Checkpoint C3-20261104-193554-099234 — 04 November 2026 19:35:54 CET (Europe/Zurich).**
+**Checkpoint C3-20261104-221525-116397 — 04 November 2026 22:15:25 CET (Europe/Zurich).**
 
-HANDOVER CONTENT READY; Phase2 generation stopped.826 questions (823 protected adapted+3 originals),826 answers/criteria,63 imported reviews/117 links;154 historical reviews saved,94 saved reviews pending integration,669 historical reviews unsaved.23 functional+10 precision tests pass. Complete single-agent Claude docs and271-row backlog prepared. Next commit all content, create/verify full Git bundle and portable ZIP, then STOP; no Chunk4/5 execution.
+Original batch 2: saved O-C3-A-001 O-C3-A-002 O-C3-A-003 (author-verified; C4 pending)
 
 User authorized Chunk 3 only. Checkpoint after every 2–3 questions, each topic and meaningful milestone. **Do not enter Chunk 4.** Do not enter future chunks; user mentioned a future Chunk 5 but has not authorized it.
 
@@ -10,7 +10,7 @@ User authorized Chunk 3 only. Checkpoint after every 2–3 questions, each topic
 
 - Initial recovery found Chunk 2 final only, no previous Chunk 3 artifacts or live specialists. Previous report: audits/chunk-3/PROGRESS_BEFORE_C3_RECOVERY.md.
 - 48 PDFs inventoried; 23 distinct historical exams processed, 0 remaining; 1,141 source parts; 838 mapped (383 A / 455 B); 303 exclusions; 15 reuse links.
-- Master bank: 826 records, including 3 merged original questions. The 823 historical adapted IDs are preserved.
+- Master bank: 829 records, including 6 merged original questions. The 823 historical adapted IDs are preserved.
 - Specialist first-pass objective audits saved: 112/112. This is review progress, not complete coverage or coordinator approval.
 - Current structural bank check: 0 errors. Historical record changes: 0 (must be explained/reviewed if nonzero).
 - Initial baseline integrity passed 2,473 file hashes and all 823 record schemas/identities/codes/mark totals. See audits/chunk-3/BASELINE_INTEGRITY.json.
@@ -21,14 +21,14 @@ User authorized Chunk 3 only. Checkpoint after every 2–3 questions, each topic
 ```json
 {
   "live_path": "question-bank/database.sqlite3",
-  "snapshot_path": "audits/chunk-3/database-snapshots/a9f96c16c4168d05b1ee1bfaf61a363f104eab0efb48ef594115581a0814a1d0.sqlite3",
-  "sha256": "a9f96c16c4168d05b1ee1bfaf61a363f104eab0efb48ef594115581a0814a1d0",
+  "snapshot_path": "audits/chunk-3/database-snapshots/b4c772940fc4a265cd54cfdfa71f9ceac64b1fefc3998001888881409425ba07.sqlite3",
+  "sha256": "b4c772940fc4a265cd54cfdfa71f9ceac64b1fefc3998001888881409425ba07",
   "integrity_check": "ok",
   "table_counts": {
-    "questions": 826,
-    "answers": 826,
-    "scope_evidence": 117,
-    "verification": 4956,
+    "questions": 829,
+    "answers": 829,
+    "scope_evidence": 125,
+    "verification": 4974,
     "usage_history": 0,
     "selections": 0
   },
@@ -41,7 +41,7 @@ User authorized Chunk 3 only. Checkpoint after every 2–3 questions, each topic
     [
       "answer",
       "verified",
-      63
+      66
     ],
     [
       "assets",
@@ -51,7 +51,7 @@ User authorized Chunk 3 only. Checkpoint after every 2–3 questions, each topic
     [
       "assets",
       "verified",
-      62
+      65
     ],
     [
       "mapping",
@@ -61,7 +61,7 @@ User authorized Chunk 3 only. Checkpoint after every 2–3 questions, each topic
     [
       "mapping",
       "verified",
-      63
+      66
     ],
     [
       "markscheme",
@@ -76,7 +76,7 @@ User authorized Chunk 3 only. Checkpoint after every 2–3 questions, each topic
     [
       "markscheme",
       "verified",
-      50
+      53
     ],
     [
       "provenance",
@@ -86,7 +86,7 @@ User authorized Chunk 3 only. Checkpoint after every 2–3 questions, each topic
     [
       "provenance",
       "verified",
-      46
+      49
     ],
     [
       "technical",
@@ -96,7 +96,7 @@ User authorized Chunk 3 only. Checkpoint after every 2–3 questions, each topic
     [
       "technical",
       "verified",
-      63
+      66
     ]
   ],
   "limits": "Database integrity/schema/import counts do not establish completeness of search features or content verification."
@@ -950,15 +950,3 @@ Run `python3 scripts/checkpoint_chunk3.py --note "concrete saved milestone and n
 Last verified Git milestones: C2 `dd5285c`; initial C3 recovery `523d2b5`. Additional saved Git milestones, if any: audits/chunk-3/GIT_CHECKPOINT.md.
 
 **Chunk 3 is incomplete. No automatic continuation or account-credit balance is claimed.**
-
-## Handover instruction update — additional questions required
-
-User explicitly requested that the receiving bot be instructed to create more questions. Added standalone QUESTION_GENERATION_INSTRUCTIONS.md in the handover and working project; made it mandatory in both CLAUDE.md entry points, resume prompt, first-read/next-action files and Chunk3/5 instructions. Work in short scope-review → genuine authoring → verification → database integration cycles; the826 questions are not a final cap. Include genuine Python construction where applicable. Single-agent rule and no-examination Chunk3 boundary remain. No additional questions were generated by this documentation update; bank remains826 (823 adapted+3 original). Updated Git bundle, project snapshot and ZIP must be rebuilt before delivery.
-
-
-## GitHub publication and clear transfer instructions
-
-Created private repository https://github.com/ityou3/ib-computer-science-hl-2027-question-bank in signed-in Chrome. GitHub CLI authenticated using system keyring; initial full-history push of d1526c2 completed and the GitHub branch SHA was independently checked. No credentials/config are in the project. Added HANDOVER_STEPS.md and current GitHub status docs. Next commit/push these changes, rebuild archive with live private/main-commit checks, publish the verified ZIP as a private release asset, and verify the remote contents/download. Bank stays826 questions; no further authoring or later chunk execution.
-
-
-The final private push/commit/archive state is verified live by the packaging routine and recorded in CLAUDE_HANDOVER/REPOSITORY_STATUS.json; release upload status is recorded separately in GITHUB_RELEASE_STATUS.json after publication. Earlier packaging TODOs are historical once those receipts pass. Claude's next content task remains the saved Chunk3 review/gap-question backlog described in CURRENT_PROGRESS and HANDOVER_STEPS, using one agent.

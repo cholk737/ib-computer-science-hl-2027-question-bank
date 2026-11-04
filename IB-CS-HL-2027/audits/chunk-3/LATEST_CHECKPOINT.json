@@ -1,11 +1,11 @@
 {
-  "checkpoint": "C3-20261104-193554-099234",
-  "saved_at": "2026-11-04T19:35:54.099234+01:00",
-  "note": "HANDOVER CONTENT READY; Phase2 generation stopped.826 questions (823 protected adapted+3 originals),826 answers/criteria,63 imported reviews/117 links;154 historical reviews saved,94 saved reviews pending integration,669 historical reviews unsaved.23 functional+10 precision tests pass. Complete single-agent Claude docs and271-row backlog prepared. Next commit all content, create/verify full Git bundle and portable ZIP, then STOP; no Chunk4/5 execution.",
+  "checkpoint": "C3-20261104-221525-116397",
+  "saved_at": "2026-11-04T22:15:25.116397+01:00",
+  "note": "Original batch 2: saved O-C3-A-001 O-C3-A-002 O-C3-A-003 (author-verified; C4 pending)",
   "baseline_commit": "dd5285c",
   "initial_recovery_commit": "523d2b5",
-  "master_bank_records": 826,
-  "original_master_records": 3,
+  "master_bank_records": 829,
+  "original_master_records": 6,
   "specialist_objectives_checked": [
     "A1.1.1",
     "A1.1.2",
@@ -943,11 +943,6 @@
   ],
   "saved_files": [
     {
-      "path": "agents/chunk-3/.DS_Store",
-      "bytes": 6148,
-      "sha256": "b47f8061723c52986df28f4ea82b05be6d9a88e687fed06686c961a36b8826f0"
-    },
-    {
       "path": "agents/chunk-3/.gitkeep",
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -1719,18 +1714,13 @@
     },
     {
       "path": "coverage/COVERAGE_REPORT.csv",
-      "bytes": 275371,
-      "sha256": "e91d51dec5b0d9a0d78bbfcca3d19466da255188466fbefc8dcdc058ef5ea848"
+      "bytes": 282405,
+      "sha256": "6a9737be10a3360b462f26d96dfde1679e21c898acf84419dd9d8f48f958ce1b"
     },
     {
       "path": "coverage/OBJECTIVE_COVERAGE.json",
-      "bytes": 532329,
-      "sha256": "a859fefa84bc1a84acffb36f49fdb17e73be85d7292cac06503bccf0476a1edd"
-    },
-    {
-      "path": "exams/.DS_Store",
-      "bytes": 6148,
-      "sha256": "66a4ff077335adfba4425c6a11bc5a3d5ce308262baf5a94498782865d5d25cb"
+      "bytes": 540572,
+      "sha256": "da365ebec8483f4b220ea11dcdf0515ae715eb4012b9eb1ca6e2e0b50ed98e25"
     },
     {
       "path": "exams/paper-1/.gitkeep",
@@ -1743,14 +1733,9 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
-      "path": "question-bank/.DS_Store",
-      "bytes": 6148,
-      "sha256": "695bf8348b34fc66c01b914012be6e071d71de1f715e0dc2a77f2690e506df9e"
-    },
-    {
       "path": "question-bank/QUESTION_BANK.csv",
-      "bytes": 694053,
-      "sha256": "7f5139c3ff31d1d2188c9d012862ac3a6f58a45987563770afc2b66db47f62ba"
+      "bytes": 696426,
+      "sha256": "0b57d1f08b70eea1533c913584f2cf033d680d3140b2c62d1eccd1605603bc74"
     },
     {
       "path": "question-bank/README.md",
@@ -1766,6 +1751,21 @@
       "path": "question-bank/markschemes/MARKING_POLICY.md",
       "bytes": 1681,
       "sha256": "f1a31b124f3710e0ea6299c104619fce5f7a2c911179f1b88f9b9022e712f8b5"
+    },
+    {
+      "path": "question-bank/markschemes/O-C3-A-001.json",
+      "bytes": 2422,
+      "sha256": "84b7abb5bd3b226d524821824b393901f44916dbbc4a979bc4f98c19c7fcfdbd"
+    },
+    {
+      "path": "question-bank/markschemes/O-C3-A-002.json",
+      "bytes": 1325,
+      "sha256": "ecda8264d2e7a199e9f8b88e158f3f905beaa9e28e9f31878230fc0be1365dbb"
+    },
+    {
+      "path": "question-bank/markschemes/O-C3-A-003.json",
+      "bytes": 1478,
+      "sha256": "bca96ff4e99a4445bc4aff9aebf39de5086b32021935d204d81f766b4ad85ad9"
     },
     {
       "path": "question-bank/markschemes/O-C3-B-001.json",
@@ -5898,6 +5898,21 @@
       "sha256": "b841bd582e603fcc92439e6826eed45101fca97135eb8a87f88289bbd2d702c3"
     },
     {
+      "path": "question-bank/original-review-drafts/O-C3-A-001.json",
+      "bytes": 4758,
+      "sha256": "a350e45c96cbf0ac78a57a90ba48e2ce12492c6ca4ec832d37be8327c9625ba4"
+    },
+    {
+      "path": "question-bank/original-review-drafts/O-C3-A-002.json",
+      "bytes": 4504,
+      "sha256": "dc6cd4cbf26d0d3f3a129904fa87708eac63fb2a987bbc682aaa685489d363bf"
+    },
+    {
+      "path": "question-bank/original-review-drafts/O-C3-A-003.json",
+      "bytes": 3752,
+      "sha256": "9c56883abeb842ac087258fc3c66947026ae2b99ef3de8f080711f6057a54603"
+    },
+    {
       "path": "question-bank/original-review-drafts/O-C3-B-001.json",
       "bytes": 5688,
       "sha256": "3fa51a99c4a8f1c7752cd66d7eb8c00967860154f2c0158a51ed58d40f4dc103"
@@ -5916,6 +5931,21 @@
       "path": "question-bank/questions/.gitkeep",
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "question-bank/questions/O-C3-A-001.json",
+      "bytes": 642,
+      "sha256": "1e1dcb476c8b1b4ce2ba935c96daa503669fabd6faf18933ed9fd6559692166e"
+    },
+    {
+      "path": "question-bank/questions/O-C3-A-002.json",
+      "bytes": 867,
+      "sha256": "6f64900c1671a11a60936484e6560102a0d27a489556258ce4e67cab2a007bce"
+    },
+    {
+      "path": "question-bank/questions/O-C3-A-003.json",
+      "bytes": 846,
+      "sha256": "da3fa3b1abffce3e65160f21c215b283e97f5d15fa5de04033d0da393266068a"
     },
     {
       "path": "question-bank/questions/O-C3-B-001.json",
@@ -10046,6 +10076,21 @@
       "path": "question-bank/questions/P-SRC044-Q12-d.json",
       "bytes": 628,
       "sha256": "f089bb1cb45083e4884b6fde6b25492cdc1175b35dc554998e9cf2bfd6aac97a"
+    },
+    {
+      "path": "question-bank/records/O-C3-A-001.json",
+      "bytes": 3613,
+      "sha256": "2f001a5a342ab546583da23a63547b2f82c22f204de60c27cba37d7b98292739"
+    },
+    {
+      "path": "question-bank/records/O-C3-A-002.json",
+      "bytes": 2741,
+      "sha256": "201a26f344272e43998eee25810a6376fae78c5338bd2c0559046213e14134f1"
+    },
+    {
+      "path": "question-bank/records/O-C3-A-003.json",
+      "bytes": 2873,
+      "sha256": "72e2c4fd5afde34cf743b897cff2f938edcbbef3b2b4c0ffa135c95e55f438ac"
     },
     {
       "path": "question-bank/records/O-C3-B-001.json",
@@ -14179,8 +14224,8 @@
     },
     {
       "path": "question-bank/scope_evidence.json",
-      "bytes": 300978,
-      "sha256": "cced12088d12ca2033497f16cbdb7a1ac780235df467cf6d5ccf0a8b5b0eb8ed"
+      "bytes": 315996,
+      "sha256": "0afd34428b1c5187745f0d6ce21f5f590d685b1ec2cd9b0796b189aba37639fa"
     },
     {
       "path": "question-bank/search/README.md",
@@ -14194,8 +14239,8 @@
     },
     {
       "path": "question-bank/search/db_test_results.json",
-      "bytes": 4077,
-      "sha256": "433d88d955fd5e2c6c58743449862789e630491628f7ccc3906e2b70991b6651"
+      "bytes": 4075,
+      "sha256": "3d659d49d70e673369ee92f2c6c3f04392bc868c0172786011ad9835cb7143a7"
     },
     {
       "path": "question-bank/search/persistent-web/app.js",
@@ -14238,6 +14283,11 @@
       "sha256": "303b281cfb1d959ed26fb32113f4799dcc5600b659a21f41550af9ef8c49635c"
     },
     {
+      "path": "scripts/c3_original_batch2_definitions.py",
+      "bytes": 56658,
+      "sha256": "82f9126cea5516f577660cefab904fb539b4d262ca2b82279fa6c038d806566c"
+    },
+    {
       "path": "scripts/check_chunk2_answer_code.py",
       "bytes": 2211,
       "sha256": "a83fa82f99d29eea2d1efae97392265137f4a98cd9b318437161e34443844aa3"
@@ -14261,6 +14311,11 @@
       "path": "scripts/collect_chunk3_review_state.py",
       "bytes": 4722,
       "sha256": "1f640d7d9426304e47a4bf571166a4df0a86c8012990970163381e675272dc04"
+    },
+    {
+      "path": "scripts/create_c3_original_batch2.py",
+      "bytes": 15589,
+      "sha256": "592fa10726c34beea5a52617f8077d9b92b197c80c3787b2185832aca219b2a2"
     },
     {
       "path": "scripts/create_handover_gap_batch.py",
@@ -14309,13 +14364,13 @@
     },
     {
       "path": "scripts/package_claude_handover.py",
-      "bytes": 10532,
-      "sha256": "6073f2076a41232050fd603d992e81fe39b73c0fe6125283e4cfae199e3c14f4"
+      "bytes": 11849,
+      "sha256": "34ba422d818bca39caecf8b9abb78f5c013d21a41f2037dad031c6553319591e"
     },
     {
       "path": "scripts/prepare_claude_handover.py",
-      "bytes": 47528,
-      "sha256": "efb0c59bc51cd3451384f57da154860d8d6a9b447815d0c90b6be74051eaa60b"
+      "bytes": 54079,
+      "sha256": "8c92f39647ff812fe459683d337ccbad43e9a915f3abb88ed1df3c65b91a9022"
     },
     {
       "path": "scripts/reconcile_chunk2_marks.py",
@@ -14326,6 +14381,11 @@
       "path": "scripts/review_chunk2.py",
       "bytes": 5471,
       "sha256": "fe6d718b421ff6fcfe63bc5184329d0f9d3f0d2336164263d8ec8ae1bb009bf5"
+    },
+    {
+      "path": "scripts/sync_github_handover_docs.py",
+      "bytes": 10827,
+      "sha256": "6b2b52dc871d6d91549f9ada65f051c0f982bfdac96d560b5804ad6db708ee6c"
     },
     {
       "path": "scripts/validate_checkpoint.py",
@@ -14350,14 +14410,14 @@
   ],
   "database_snapshot": {
     "live_path": "question-bank/database.sqlite3",
-    "snapshot_path": "audits/chunk-3/database-snapshots/a9f96c16c4168d05b1ee1bfaf61a363f104eab0efb48ef594115581a0814a1d0.sqlite3",
-    "sha256": "a9f96c16c4168d05b1ee1bfaf61a363f104eab0efb48ef594115581a0814a1d0",
+    "snapshot_path": "audits/chunk-3/database-snapshots/b4c772940fc4a265cd54cfdfa71f9ceac64b1fefc3998001888881409425ba07.sqlite3",
+    "sha256": "b4c772940fc4a265cd54cfdfa71f9ceac64b1fefc3998001888881409425ba07",
     "integrity_check": "ok",
     "table_counts": {
-      "questions": 826,
-      "answers": 826,
-      "scope_evidence": 117,
-      "verification": 4956,
+      "questions": 829,
+      "answers": 829,
+      "scope_evidence": 125,
+      "verification": 4974,
       "usage_history": 0,
       "selections": 0
     },
@@ -14370,7 +14430,7 @@
       [
         "answer",
         "verified",
-        63
+        66
       ],
       [
         "assets",
@@ -14380,7 +14440,7 @@
       [
         "assets",
         "verified",
-        62
+        65
       ],
       [
         "mapping",
@@ -14390,7 +14450,7 @@
       [
         "mapping",
         "verified",
-        63
+        66
       ],
       [
         "markscheme",
@@ -14405,7 +14465,7 @@
       [
         "markscheme",
         "verified",
-        50
+        53
       ],
       [
         "provenance",
@@ -14415,7 +14475,7 @@
       [
         "provenance",
         "verified",
-        46
+        49
       ],
       [
         "technical",
@@ -14425,7 +14485,7 @@
       [
         "technical",
         "verified",
-        63
+        66
       ]
     ],
     "limits": "Database integrity/schema/import counts do not establish completeness of search features or content verification."

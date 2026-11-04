@@ -1,0 +1,50 @@
+{
+  "question_id": "O-C3-A-002",
+  "source_question_ids": [],
+  "derivation_status": "original_unofficial",
+  "unofficial": true,
+  "question_text": "Every instruction passes through four stages: fetch, decode, execute and write-back. Each stage takes exactly one clock cycle and there are no stalls. Calculate the number of clock cycles needed: (i) to complete 10 instructions on one core with no pipelining, where an instruction starts only after the previous one has finished; (ii) to complete 10 instructions on one core with a four-stage pipeline; (iii) to complete 40 independent instructions shared equally between four pipelined cores that run in parallel.",
+  "syllabus_codes": [
+    "A1.1.6"
+  ],
+  "theme": "A",
+  "level": "HL-only",
+  "marks": 3,
+  "command_term": "Calculate",
+  "difficulty": "medium",
+  "question_type": "calculation",
+  "adaptation_rationale": "Original question written by Claude (single-agent Chunk 3 continuation, 2026-11-04) for a syllabus statement with no linked question at handover; no historical source question or official marking status claimed.",
+  "solution": "(i) 10 x 4 = 40 cycles. (ii) 4 cycles for the first instruction, then 1 more for each of the remaining 9: 4 + 9 = 13 cycles. (iii) each core completes 10 instructions in 13 cycles and the cores run at the same time, so 13 cycles.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "(i) 40 cycles."
+    },
+    {
+      "marks": 1,
+      "criterion": "(ii) 13 cycles (4 + 10 - 1)."
+    },
+    {
+      "marks": 1,
+      "criterion": "(iii) 13 cycles, recognising that the four cores each complete 10 instructions simultaneously."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Follow-through in (iii) from an incorrect (ii) if the parallel reasoning (same time as one core with 10 instructions) is correct."
+  ],
+  "partial_credit_notes": "Award each independent point once, up to 3 marks. Accept equivalent correct wording or valid alternative code. Do not double-credit one idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed check in audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json (52 cases).",
+    "scope": "Idealised model: no hazards, stalls, memory delays or scheduling overhead. Complements O-C3-A-001 descriptive coverage."
+  },
+  "code": "",
+  "test_code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/O-C3-A-002.json",
+  "question_path": "question-bank/questions/O-C3-A-002.json",
+  "markscheme_path": "question-bank/markschemes/O-C3-A-002.json",
+  "coordinator_status": "author_content_scope_answer_marking_checks_passed; independent_Chunk4_audit_pending",
+  "independent_verification_status": "pending"
+}

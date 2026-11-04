@@ -1,0 +1,34 @@
+{
+  "question_id": "O-C3-A-003",
+  "unofficial": true,
+  "solution": "(i) FCFS: P1 runs 0-8, P2 8-12, P3 12-14. Waiting times 0, 8, 12; average 20/3 = 6.67 ms. (ii) RR: P1 0-2, P2 2-4, P3 4-6 (finishes), P1 6-8, P2 8-10 (finishes), P1 10-14 (finishes at 14). Waiting times P1 14-8 = 6, P2 10-4 = 6, P3 6-2 = 4; average 16/3 = 5.33 ms.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "FCFS individual waiting times 0, 8 and 12 ms (or completion times 8, 12, 14)."
+    },
+    {
+      "marks": 1,
+      "criterion": "FCFS average 6.67 ms (20/3)."
+    },
+    {
+      "marks": 1,
+      "criterion": "RR completion times P3 = 6, P2 = 10, P1 = 14 ms shown by a valid timeline."
+    },
+    {
+      "marks": 1,
+      "criterion": "RR average waiting time 5.33 ms (16/3)."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Accept 6.7 / 5.3 or exact fractions. Award average marks on follow-through from stated individual times."
+  ],
+  "partial_credit_notes": "Award each independent point once, up to 4 marks. Accept equivalent correct wording or valid alternative code. Do not double-credit one idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed check in audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json (2 cases).",
+    "scope": "Does not cover multilevel queue or priority scheduling; see O-C3-A-004. Context-switch overhead deliberately ignored and stated."
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

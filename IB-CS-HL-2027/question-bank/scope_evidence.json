@@ -1,9 +1,250 @@
 {
   "schema_version": 1,
   "unofficial": true,
-  "updated_at": "2026-11-04T19:21:26.736031+01:00",
+  "updated_at": "2026-11-04T22:15:24.526382+01:00",
   "scope_bullet_id_rule": "CODE:GNN is the one-based exact guidance paragraph. Direct relevance certifies the described assessed skill, never every item in the paragraph.",
   "reviews": [
+    {
+      "question_id": "O-C3-A-001",
+      "record_sha256": "2f001a5a342ab546583da23a63547b2f82c22f204de60c27cba37d7b98292739",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:24.454665+00:00",
+      "question_type": "description",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "4 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "A1.1.6",
+          "scope_bullet_id": "A1.1.6:G01",
+          "exact_guidance": "• The instructions fetch, decode, execute",
+          "assessed_skill": "Describe overlapping fetch/decode/execute stages in a pipeline.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Does not assess pipeline hazards, branch prediction or cache coherence (not required by the guidance). Speed-up figure is an idealised upper bound.",
+          "coverage_limit": "Does not assess pipeline hazards, branch prediction or cache coherence (not required by the guidance). Speed-up figure is an idealised upper bound.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A1.1.6."
+        },
+        {
+          "code": "A1.1.6",
+          "scope_bullet_id": "A1.1.6:G02",
+          "exact_guidance": "• Write-back stages to improve the overall system performance in multi-core architectures",
+          "assessed_skill": "Describe write-back completing one instruction per cycle and the throughput benefit in a multi-core system.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Does not assess pipeline hazards, branch prediction or cache coherence (not required by the guidance). Speed-up figure is an idealised upper bound.",
+          "coverage_limit": "Does not assess pipeline hazards, branch prediction or cache coherence (not required by the guidance). Speed-up figure is an idealised upper bound.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A1.1.6."
+        },
+        {
+          "code": "A1.1.6",
+          "scope_bullet_id": "A1.1.6:G03",
+          "exact_guidance": "• Overview of how cores in multi-core processors work independently and in parallel",
+          "assessed_skill": "Describe cores executing independent instruction streams in parallel.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Does not assess pipeline hazards, branch prediction or cache coherence (not required by the guidance). Speed-up figure is an idealised upper bound.",
+          "coverage_limit": "Does not assess pipeline hazards, branch prediction or cache coherence (not required by the guidance). Speed-up figure is an idealised upper bound.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A1.1.6."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Does not assess pipeline hazards, branch prediction or cache coherence (not required by the guidance). Speed-up figure is an idealised upper bound."
+      ],
+      "execution_evidence": "manual",
+      "coordinator_review": {
+        "question_id": "O-C3-A-001",
+        "review_sha256": "c90922e55ab881cdd419e5dbaad6b2048226306bd94b659fd0f7bd5b99197fda",
+        "record_sha256": "2f001a5a342ab546583da23a63547b2f82c22f204de60c27cba37d7b98292739",
+        "source_path": "question-bank/original-review-drafts/O-C3-A-001.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T22:15:24.526382+01:00",
+        "reason": "Author read full A1.1.6/A1.3.3 statements and guidance; executed pipeline and scheduling simulations; criteria sum to marks.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "O-C3-A-002",
+      "record_sha256": "201a26f344272e43998eee25810a6376fae78c5338bd2c0559046213e14134f1",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:24.455967+00:00",
+      "question_type": "calculation",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Executed check in audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json (52 cases)."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "3 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "A1.1.6",
+          "scope_bullet_id": "A1.1.6:G01",
+          "exact_guidance": "• The instructions fetch, decode, execute",
+          "assessed_skill": "Apply staged overlap of fetch/decode/execute to count cycles.",
+          "relevance": "partial",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Idealised model: no hazards, stalls, memory delays or scheduling overhead. Complements O-C3-A-001 descriptive coverage.",
+          "coverage_limit": "Idealised model: no hazards, stalls, memory delays or scheduling overhead. Complements O-C3-A-001 descriptive coverage.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Calculate\" on the scoped content of A1.1.6."
+        },
+        {
+          "code": "A1.1.6",
+          "scope_bullet_id": "A1.1.6:G02",
+          "exact_guidance": "• Write-back stages to improve the overall system performance in multi-core architectures",
+          "assessed_skill": "Quantify the pipelining throughput gain against non-pipelined execution.",
+          "relevance": "partial",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Idealised model: no hazards, stalls, memory delays or scheduling overhead. Complements O-C3-A-001 descriptive coverage.",
+          "coverage_limit": "Idealised model: no hazards, stalls, memory delays or scheduling overhead. Complements O-C3-A-001 descriptive coverage.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Calculate\" on the scoped content of A1.1.6."
+        },
+        {
+          "code": "A1.1.6",
+          "scope_bullet_id": "A1.1.6:G03",
+          "exact_guidance": "• Overview of how cores in multi-core processors work independently and in parallel",
+          "assessed_skill": "Apply independent parallel cores to divide a workload.",
+          "relevance": "partial",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Idealised model: no hazards, stalls, memory delays or scheduling overhead. Complements O-C3-A-001 descriptive coverage.",
+          "coverage_limit": "Idealised model: no hazards, stalls, memory delays or scheduling overhead. Complements O-C3-A-001 descriptive coverage.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Calculate\" on the scoped content of A1.1.6."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Idealised model: no hazards, stalls, memory delays or scheduling overhead. Complements O-C3-A-001 descriptive coverage."
+      ],
+      "execution_evidence": "audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json",
+      "coordinator_review": {
+        "question_id": "O-C3-A-002",
+        "review_sha256": "fe39da1a32e0d5250701e595878f300a783f3cf2eda8e61bc9d1c765c08d49f3",
+        "record_sha256": "201a26f344272e43998eee25810a6376fae78c5338bd2c0559046213e14134f1",
+        "source_path": "question-bank/original-review-drafts/O-C3-A-002.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T22:15:24.526382+01:00",
+        "reason": "Author read full A1.1.6/A1.3.3 statements and guidance; executed pipeline and scheduling simulations; criteria sum to marks.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "O-C3-A-003",
+      "record_sha256": "72e2c4fd5afde34cf743b897cff2f938edcbbef3b2b4c0ffa135c95e55f438ac",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:24.456447+00:00",
+      "question_type": "calculation",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Executed check in audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json (2 cases)."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "4 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "A1.3.3",
+          "scope_bullet_id": "A1.3.3:G01",
+          "exact_guidance": "• Managing the execution of processes by allocating CPU time to optimize system performance",
+          "assessed_skill": "Calculate how allocation of CPU time changes waiting time (system performance).",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Does not cover multilevel queue or priority scheduling; see O-C3-A-004. Context-switch overhead deliberately ignored and stated.",
+          "coverage_limit": "Does not cover multilevel queue or priority scheduling; see O-C3-A-004. Context-switch overhead deliberately ignored and stated.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Calculate\" on the scoped content of A1.3.3."
+        },
+        {
+          "code": "A1.3.3",
+          "scope_bullet_id": "A1.3.3:G02",
+          "exact_guidance": "• First-come first-served, round robin, multilevel queue scheduling, priority scheduling",
+          "assessed_skill": "Apply first-come first-served and round robin scheduling.",
+          "relevance": "partial",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Does not cover multilevel queue or priority scheduling; see O-C3-A-004. Context-switch overhead deliberately ignored and stated.",
+          "coverage_limit": "Does not cover multilevel queue or priority scheduling; see O-C3-A-004. Context-switch overhead deliberately ignored and stated.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Calculate\" on the scoped content of A1.3.3."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Does not cover multilevel queue or priority scheduling; see O-C3-A-004. Context-switch overhead deliberately ignored and stated."
+      ],
+      "execution_evidence": "audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json",
+      "coordinator_review": {
+        "question_id": "O-C3-A-003",
+        "review_sha256": "86d6c39c69c27a087cdc45c9d8e0b26dba0f20eb1071474a412dab16cd7252a5",
+        "record_sha256": "72e2c4fd5afde34cf743b897cff2f938edcbbef3b2b4c0ffa135c95e55f438ac",
+        "source_path": "question-bank/original-review-drafts/O-C3-A-003.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T22:15:24.526382+01:00",
+        "reason": "Author read full A1.1.6/A1.3.3 statements and guidance; executed pipeline and scheduling simulations; criteria sum to marks.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
     {
       "question_id": "O-C3-B-001",
       "record_sha256": "ec9fd1df865720827f41444d7fc9219212d5e488bc1159e720af2be08054b027",

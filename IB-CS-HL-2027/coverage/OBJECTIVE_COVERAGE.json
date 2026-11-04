@@ -602,9 +602,17 @@
       "missing_or_weak_requirements": [
         "Entire objective: staged instruction overlap including write-back; distinguish independent parallel cores."
       ],
-      "candidate_question_ids": [],
-      "reviewed_question_ids": [],
-      "difficulty_distribution": {},
+      "candidate_question_ids": [
+        "O-C3-A-001",
+        "O-C3-A-002"
+      ],
+      "reviewed_question_ids": [
+        "O-C3-A-001",
+        "O-C3-A-002"
+      ],
+      "difficulty_distribution": {
+        "medium": 2
+      },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
         {
@@ -624,31 +632,118 @@
         {
           "scope_bullet_id": "A1.1.6:G01",
           "exact_guidance": "• The instructions fetch, decode, execute",
-          "status": "no_approved_direct_aspect_evidence_yet",
-          "direct_question_ids": [],
-          "partial_question_ids": [],
+          "status": "reviewed_aspect_evidence_only",
+          "direct_question_ids": [
+            "O-C3-A-001"
+          ],
+          "partial_question_ids": [
+            "O-C3-A-002"
+          ],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "O-C3-A-001",
+              "code": "A1.1.6",
+              "scope_bullet_id": "A1.1.6:G01",
+              "exact_guidance": "• The instructions fetch, decode, execute",
+              "assessed_skill": "Describe overlapping fetch/decode/execute stages in a pipeline.",
+              "relevance": "direct",
+              "evidence": "The prompt and its independent marking criteria require this aspect. Does not assess pipeline hazards, branch prediction or cache coherence (not required by the guidance). Speed-up figure is an idealised upper bound.",
+              "coverage_limit": "Does not assess pipeline hazards, branch prediction or cache coherence (not required by the guidance). Speed-up figure is an idealised upper bound.",
+              "statement_relevance": "direct",
+              "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A1.1.6."
+            },
+            {
+              "question_id": "O-C3-A-002",
+              "code": "A1.1.6",
+              "scope_bullet_id": "A1.1.6:G01",
+              "exact_guidance": "• The instructions fetch, decode, execute",
+              "assessed_skill": "Apply staged overlap of fetch/decode/execute to count cycles.",
+              "relevance": "partial",
+              "evidence": "The prompt and its independent marking criteria require this aspect. Idealised model: no hazards, stalls, memory delays or scheduling overhead. Complements O-C3-A-001 descriptive coverage.",
+              "coverage_limit": "Idealised model: no hazards, stalls, memory delays or scheduling overhead. Complements O-C3-A-001 descriptive coverage.",
+              "statement_relevance": "direct",
+              "statement_evidence": "Prompt uses the command term \"Calculate\" on the scoped content of A1.1.6."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
           "scope_bullet_id": "A1.1.6:G02",
           "exact_guidance": "• Write-back stages to improve the overall system performance in multi-core architectures",
-          "status": "no_approved_direct_aspect_evidence_yet",
-          "direct_question_ids": [],
-          "partial_question_ids": [],
+          "status": "reviewed_aspect_evidence_only",
+          "direct_question_ids": [
+            "O-C3-A-001"
+          ],
+          "partial_question_ids": [
+            "O-C3-A-002"
+          ],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "O-C3-A-001",
+              "code": "A1.1.6",
+              "scope_bullet_id": "A1.1.6:G02",
+              "exact_guidance": "• Write-back stages to improve the overall system performance in multi-core architectures",
+              "assessed_skill": "Describe write-back completing one instruction per cycle and the throughput benefit in a multi-core system.",
+              "relevance": "direct",
+              "evidence": "The prompt and its independent marking criteria require this aspect. Does not assess pipeline hazards, branch prediction or cache coherence (not required by the guidance). Speed-up figure is an idealised upper bound.",
+              "coverage_limit": "Does not assess pipeline hazards, branch prediction or cache coherence (not required by the guidance). Speed-up figure is an idealised upper bound.",
+              "statement_relevance": "direct",
+              "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A1.1.6."
+            },
+            {
+              "question_id": "O-C3-A-002",
+              "code": "A1.1.6",
+              "scope_bullet_id": "A1.1.6:G02",
+              "exact_guidance": "• Write-back stages to improve the overall system performance in multi-core architectures",
+              "assessed_skill": "Quantify the pipelining throughput gain against non-pipelined execution.",
+              "relevance": "partial",
+              "evidence": "The prompt and its independent marking criteria require this aspect. Idealised model: no hazards, stalls, memory delays or scheduling overhead. Complements O-C3-A-001 descriptive coverage.",
+              "coverage_limit": "Idealised model: no hazards, stalls, memory delays or scheduling overhead. Complements O-C3-A-001 descriptive coverage.",
+              "statement_relevance": "direct",
+              "statement_evidence": "Prompt uses the command term \"Calculate\" on the scoped content of A1.1.6."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
           "scope_bullet_id": "A1.1.6:G03",
           "exact_guidance": "• Overview of how cores in multi-core processors work independently and in parallel",
-          "status": "no_approved_direct_aspect_evidence_yet",
-          "direct_question_ids": [],
-          "partial_question_ids": [],
+          "status": "reviewed_aspect_evidence_only",
+          "direct_question_ids": [
+            "O-C3-A-001"
+          ],
+          "partial_question_ids": [
+            "O-C3-A-002"
+          ],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "O-C3-A-001",
+              "code": "A1.1.6",
+              "scope_bullet_id": "A1.1.6:G03",
+              "exact_guidance": "• Overview of how cores in multi-core processors work independently and in parallel",
+              "assessed_skill": "Describe cores executing independent instruction streams in parallel.",
+              "relevance": "direct",
+              "evidence": "The prompt and its independent marking criteria require this aspect. Does not assess pipeline hazards, branch prediction or cache coherence (not required by the guidance). Speed-up figure is an idealised upper bound.",
+              "coverage_limit": "Does not assess pipeline hazards, branch prediction or cache coherence (not required by the guidance). Speed-up figure is an idealised upper bound.",
+              "statement_relevance": "direct",
+              "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A1.1.6."
+            },
+            {
+              "question_id": "O-C3-A-002",
+              "code": "A1.1.6",
+              "scope_bullet_id": "A1.1.6:G03",
+              "exact_guidance": "• Overview of how cores in multi-core processors work independently and in parallel",
+              "assessed_skill": "Apply independent parallel cores to divide a workload.",
+              "relevance": "partial",
+              "evidence": "The prompt and its independent marking criteria require this aspect. Idealised model: no hazards, stalls, memory delays or scheduling overhead. Complements O-C3-A-001 descriptive coverage.",
+              "coverage_limit": "Idealised model: no hazards, stalls, memory delays or scheduling overhead. Complements O-C3-A-001 descriptive coverage.",
+              "statement_relevance": "direct",
+              "statement_evidence": "Prompt uses the command term \"Calculate\" on the scoped content of A1.1.6."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         }
       ],
@@ -689,8 +784,8 @@
         "P-SRC001-Q12-a-i"
       ],
       "difficulty_distribution": {
-        "medium": 4,
-        "low": 3
+        "low": 3,
+        "medium": 4
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -1550,8 +1645,8 @@
       ],
       "difficulty_distribution": {
         "medium": 14,
-        "high": 1,
-        "low": 5
+        "low": 5,
+        "high": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -1633,9 +1728,15 @@
       "missing_or_weak_requirements": [
         "Entire objective: compare FCFS, round robin, multilevel queue and priority scheduling."
       ],
-      "candidate_question_ids": [],
-      "reviewed_question_ids": [],
-      "difficulty_distribution": {},
+      "candidate_question_ids": [
+        "O-C3-A-003"
+      ],
+      "reviewed_question_ids": [
+        "O-C3-A-003"
+      ],
+      "difficulty_distribution": {
+        "medium": 1
+      },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
         {
@@ -1651,21 +1752,51 @@
         {
           "scope_bullet_id": "A1.3.3:G01",
           "exact_guidance": "• Managing the execution of processes by allocating CPU time to optimize system performance",
-          "status": "no_approved_direct_aspect_evidence_yet",
-          "direct_question_ids": [],
+          "status": "reviewed_aspect_evidence_only",
+          "direct_question_ids": [
+            "O-C3-A-003"
+          ],
           "partial_question_ids": [],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "O-C3-A-003",
+              "code": "A1.3.3",
+              "scope_bullet_id": "A1.3.3:G01",
+              "exact_guidance": "• Managing the execution of processes by allocating CPU time to optimize system performance",
+              "assessed_skill": "Calculate how allocation of CPU time changes waiting time (system performance).",
+              "relevance": "direct",
+              "evidence": "The prompt and its independent marking criteria require this aspect. Does not cover multilevel queue or priority scheduling; see O-C3-A-004. Context-switch overhead deliberately ignored and stated.",
+              "coverage_limit": "Does not cover multilevel queue or priority scheduling; see O-C3-A-004. Context-switch overhead deliberately ignored and stated.",
+              "statement_relevance": "direct",
+              "statement_evidence": "Prompt uses the command term \"Calculate\" on the scoped content of A1.3.3."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         },
         {
           "scope_bullet_id": "A1.3.3:G02",
           "exact_guidance": "• First-come first-served, round robin, multilevel queue scheduling, priority scheduling",
-          "status": "no_approved_direct_aspect_evidence_yet",
+          "status": "reviewed_aspect_evidence_only",
           "direct_question_ids": [],
-          "partial_question_ids": [],
+          "partial_question_ids": [
+            "O-C3-A-003"
+          ],
           "supporting_question_ids": [],
-          "reviewed_assessed_skills": [],
+          "reviewed_assessed_skills": [
+            {
+              "question_id": "O-C3-A-003",
+              "code": "A1.3.3",
+              "scope_bullet_id": "A1.3.3:G02",
+              "exact_guidance": "• First-come first-served, round robin, multilevel queue scheduling, priority scheduling",
+              "assessed_skill": "Apply first-come first-served and round robin scheduling.",
+              "relevance": "partial",
+              "evidence": "The prompt and its independent marking criteria require this aspect. Does not cover multilevel queue or priority scheduling; see O-C3-A-004. Context-switch overhead deliberately ignored and stated.",
+              "coverage_limit": "Does not cover multilevel queue or priority scheduling; see O-C3-A-004. Context-switch overhead deliberately ignored and stated.",
+              "statement_relevance": "direct",
+              "statement_evidence": "Prompt uses the command term \"Calculate\" on the scoped content of A1.3.3."
+            }
+          ],
           "coverage_limit": "Full paragraph coverage is not certified. Unreviewed candidates and residual first-pass gaps require further checking."
         }
       ],
@@ -1707,8 +1838,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "medium": 7,
-        "low": 4
+        "low": 4,
+        "medium": 7
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -1846,8 +1977,8 @@
       ],
       "difficulty_distribution": {
         "medium": 13,
-        "high": 2,
-        "low": 6
+        "low": 6,
+        "high": 2
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -1971,8 +2102,8 @@
       ],
       "difficulty_distribution": {
         "medium": 15,
-        "low": 1,
-        "high": 2
+        "high": 2,
+        "low": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -2221,8 +2352,8 @@
       "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 15,
-        "low": 1,
-        "high": 4
+        "high": 4,
+        "low": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -2580,8 +2711,8 @@
         "P-SRC001-Q11-c-ii"
       ],
       "difficulty_distribution": {
-        "low": 3,
-        "medium": 5
+        "medium": 5,
+        "low": 3
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -2901,8 +3032,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "medium": 8,
-        "low": 8
+        "low": 8,
+        "medium": 8
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -3524,8 +3655,8 @@
         "P-SRC002-Q03-d"
       ],
       "difficulty_distribution": {
-        "low": 4,
         "medium": 22,
+        "low": 4,
         "high": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
@@ -3834,8 +3965,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "low": 3,
-        "medium": 3
+        "medium": 3,
+        "low": 3
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -4020,8 +4151,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "medium": 8,
-        "low": 2
+        "low": 2,
+        "medium": 8
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -4105,8 +4236,8 @@
         "P-SRC002-Q02-d"
       ],
       "difficulty_distribution": {
-        "high": 4,
-        "medium": 4
+        "medium": 4,
+        "high": 4
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -4669,8 +4800,8 @@
         "P-SRC002-Q01-e-ii"
       ],
       "difficulty_distribution": {
-        "medium": 13,
-        "low": 3
+        "low": 3,
+        "medium": 13
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -5051,8 +5182,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "low": 1,
         "high": 1,
+        "low": 1,
         "medium": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
@@ -5140,8 +5271,8 @@
         "P-SRC002-Q08-b-i"
       ],
       "difficulty_distribution": {
-        "medium": 6,
-        "high": 2
+        "high": 2,
+        "medium": 6
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -5234,8 +5365,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "high": 1,
-        "medium": 3
+        "medium": 3,
+        "high": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -5826,8 +5957,8 @@
         "P-SRC002-Q04-f"
       ],
       "difficulty_distribution": {
-        "medium": 6,
-        "high": 1
+        "high": 1,
+        "medium": 6
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -5964,8 +6095,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "high": 1,
-        "medium": 1
+        "medium": 1,
+        "high": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -6039,8 +6170,8 @@
         "P-SRC002-Q08-a"
       ],
       "difficulty_distribution": {
-        "medium": 9,
-        "low": 2
+        "low": 2,
+        "medium": 9
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -6476,8 +6607,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "low": 1,
-        "medium": 1
+        "medium": 1,
+        "low": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-1-theme-a/coverage_audit.json",
       "specialist_findings": [
@@ -6634,8 +6765,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "medium": 3,
-        "low": 1
+        "low": 1,
+        "medium": 3
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -6785,8 +6916,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "medium": 17,
         "low": 7,
+        "medium": 17,
         "high": 2
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
@@ -7152,8 +7283,8 @@
       ],
       "difficulty_distribution": {
         "medium": 7,
-        "low": 1,
-        "high": 1
+        "high": 1,
+        "low": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -7347,9 +7478,9 @@
         "P-SRC002-Q06-d"
       ],
       "difficulty_distribution": {
-        "low": 10,
         "medium": 48,
-        "high": 27
+        "high": 27,
+        "low": 10
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -7572,8 +7703,8 @@
       ],
       "difficulty_distribution": {
         "medium": 12,
-        "low": 4,
-        "high": 4
+        "high": 4,
+        "low": 4
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -7687,8 +7818,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "low": 3,
         "medium": 8,
+        "low": 3,
         "high": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
@@ -7924,8 +8055,8 @@
       ],
       "difficulty_distribution": {
         "medium": 52,
-        "low": 11,
-        "high": 21
+        "high": 21,
+        "low": 11
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -8331,8 +8462,8 @@
       "reviewed_question_ids": [],
       "difficulty_distribution": {
         "medium": 31,
-        "high": 2,
-        "low": 3
+        "low": 3,
+        "high": 2
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -8575,8 +8706,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "high": 3,
         "medium": 4,
+        "high": 3,
         "low": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
@@ -8753,8 +8884,8 @@
       ],
       "difficulty_distribution": {
         "medium": 12,
-        "high": 3,
-        "low": 2
+        "low": 2,
+        "high": 3
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -9040,8 +9171,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "medium": 9,
-        "low": 1
+        "low": 1,
+        "medium": 9
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -9243,8 +9374,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "low": 3,
-        "medium": 7
+        "medium": 7,
+        "low": 3
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -9418,8 +9549,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "medium": 2,
         "high": 1,
+        "medium": 2,
         "low": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
@@ -9556,8 +9687,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "medium": 9,
-        "low": 3
+        "low": 3,
+        "medium": 9
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -9666,8 +9797,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "medium": 2,
-        "low": 1
+        "low": 1,
+        "medium": 2
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -9846,8 +9977,8 @@
         "P-SRC001-Q07"
       ],
       "difficulty_distribution": {
-        "high": 3,
-        "medium": 10
+        "medium": 10,
+        "high": 3
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
       "specialist_findings": [
@@ -9933,8 +10064,8 @@
       ],
       "reviewed_question_ids": [],
       "difficulty_distribution": {
-        "medium": 17,
         "low": 4,
+        "medium": 17,
         "high": 1
       },
       "specialist_audit_path": "agents/chunk-3/agent-2-theme-b/coverage_audit.json",
