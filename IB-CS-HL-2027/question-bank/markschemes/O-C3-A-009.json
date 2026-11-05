@@ -1,0 +1,42 @@
+{
+  "question_id": "O-C3-A-009",
+  "unofficial": true,
+  "solution": "With static routing an administrator manually enters fixed routes into each router's routing table. At the branch there is only one path, so a single default route is quick to configure, simple and predictable, and no routing protocol is running, so no CPU, memory or bandwidth is used for routing updates. Static routes do not adapt: if a link fails or the network changes, every affected router must be reconfigured by hand, so maintenance grows rapidly with network size and static routing scales poorly to 40 routers. With dynamic routing, routers run a routing protocol, exchange information with neighbouring routers and build and update their routing tables automatically, choosing the best available path. When a head-office link fails, the routers converge on new routes through the redundant links without manual intervention, and new departments are learned automatically, so it scales to large, changing networks. The cost is that dynamic routing uses router CPU, memory and bandwidth for updates, is more complex to configure and troubleshoot, and routes may be inconsistent until convergence completes.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Static routing: routes manually configured and fixed in routing tables."
+    },
+    {
+      "marks": 1,
+      "criterion": "Branch suitability: one path/small network, so simple configuration, predictable and no protocol resource usage (CPU/memory/bandwidth)."
+    },
+    {
+      "marks": 1,
+      "criterion": "Static drawback: does not adapt to failures/changes; manual maintenance grows with network size, so poor scalability."
+    },
+    {
+      "marks": 1,
+      "criterion": "Dynamic routing: routers exchange routing information and update tables automatically, selecting best paths."
+    },
+    {
+      "marks": 1,
+      "criterion": "Head-office suitability: convergence on new routes via redundant links after a failure, and scales to a large/growing network."
+    },
+    {
+      "marks": 1,
+      "criterion": "Dynamic drawback: resource usage for updates, greater complexity, and inconsistency during convergence."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Naming a protocol (e.g. RIP, OSPF) is not required and earns no extra credit. Accept \"default route\" as an example of static configuration."
+  ],
+  "partial_credit_notes": "Award each independent point once, up to 6 marks. Accept equivalent correct wording or valid alternative code. Do not double-credit one idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component.",
+    "scope": "Specific routing protocol mechanics are excluded by the guide and not assessed."
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

@@ -1,0 +1,67 @@
+{
+  "reviews": [
+    {
+      "question_id": "O-C3-A-014",
+      "record_sha256": "4be870a64b490bc84994162f939cff88ca20cb61901129fc493f0830af8c7c5f",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:44.778591+00:00",
+      "question_type": "calculation",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Executed check in audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json (1129 cases)."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "4 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "A4.3.9",
+          "scope_bullet_id": "A4.3.9:G01",
+          "exact_guidance": "• Convolutional neural network (CNN) basic architecture: input layer, convolutional layers, activation functions, pooling layers, fully connected layers, output layer",
+          "assessed_skill": "Apply convolutional and pooling layers to an input.",
+          "relevance": "partial",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Padding, channels/depth and parameter counts are not assessed. The size formula is stated in the reference, not required in the prompt.",
+          "coverage_limit": "Padding, channels/depth and parameter counts are not assessed. The size formula is stated in the reference, not required in the prompt.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Calculate\" on the scoped content of A4.3.9."
+        },
+        {
+          "code": "A4.3.9",
+          "scope_bullet_id": "A4.3.9:G02",
+          "exact_guidance": "• The effect of the number of layers, kernel size and stride, activation function selection, and the loss function on how CNNs process input data and classify images",
+          "assessed_skill": "Apply the effect of kernel size and stride on how input is processed.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Padding, channels/depth and parameter counts are not assessed. The size formula is stated in the reference, not required in the prompt.",
+          "coverage_limit": "Padding, channels/depth and parameter counts are not assessed. The size formula is stated in the reference, not required in the prompt.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Calculate\" on the scoped content of A4.3.9."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Padding, channels/depth and parameter counts are not assessed. The size formula is stated in the reference, not required in the prompt."
+      ],
+      "execution_evidence": "audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json"
+    }
+  ]
+}

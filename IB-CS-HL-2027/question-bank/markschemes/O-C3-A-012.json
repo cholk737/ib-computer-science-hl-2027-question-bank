@@ -1,0 +1,38 @@
+{
+  "question_id": "O-C3-A-012",
+  "unofficial": true,
+  "solution": "With 4096 dimensions but only 500 samples, the data is extremely sparse: the number of samples needed to cover the feature space grows very rapidly as dimensions increase (curse of dimensionality). In high dimensions distances between all pairs of points become similar, so the nearest neighbours found by k-NN become less meaningful and accuracy falls. With far more features than samples the model can fit noise in irrelevant pixels and overfit. Every distance calculation involves 4096 values for each of the 500 stored images, increasing computation time and memory usage. Dimensionality reduction reduces the number of variables (for example by reducing image resolution or removing uninformative background pixels) while preserving the relevant aspects of the leaf shape, which makes distances more meaningful, reduces overfitting and computation, and can allow the data to be visualized.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Data sparsity: 500 samples are too few to cover 4096 dimensions (sample size needed grows with dimensions)."
+    },
+    {
+      "marks": 1,
+      "criterion": "Distance metrics become less effective in high dimensions, weakening k-NN neighbour selection."
+    },
+    {
+      "marks": 1,
+      "criterion": "Overfitting risk when features greatly outnumber samples."
+    },
+    {
+      "marks": 1,
+      "criterion": "Computational complexity and/or memory usage of 4096-feature distance calculations."
+    },
+    {
+      "marks": 1,
+      "criterion": "Dimensionality reduction reduces the variables while preserving relevant information (with a suitable in-scope example or benefit such as visualization)."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Do not require or credit PCA/LDA mechanics (beyond the 2027 scope); naming them is not penalised but earns no extra mark."
+  ],
+  "partial_credit_notes": "Award each independent point once, up to 5 marks. Accept equivalent correct wording or valid alternative code. Do not double-credit one idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component.",
+    "scope": "PCA and LDA are explicitly beyond scope (guide note G03) and are not assessed."
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

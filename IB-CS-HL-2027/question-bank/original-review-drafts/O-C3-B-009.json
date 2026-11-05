@@ -1,0 +1,67 @@
+{
+  "reviews": [
+    {
+      "question_id": "O-C3-B-009",
+      "record_sha256": "12420196b076aadf660a8977176f4b4cab5a9c37a3582015f098e0c4b1bbeaea",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:47.572540+00:00",
+      "question_type": "trace",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Executed check in audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json (3 cases)."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "6 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "B4.1.6",
+          "scope_bullet_id": "B4.1.6:G02",
+          "exact_guidance": "• The underlying mechanics of hash tables, including hashing functions, collision resolution strategies and load factors",
+          "assessed_skill": "Trace a hashing function, linear probing and chaining collision resolution and the load factor.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Integer keys only; string hashing is constructed in O-C3-B-008.",
+          "coverage_limit": "Integer keys only; string hashing is constructed in O-C3-B-008.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Trace\" on the scoped content of B4.1.6."
+        },
+        {
+          "code": "B4.1.6",
+          "scope_bullet_id": "B4.1.6:G01",
+          "exact_guidance": "• High-level description of data structures and their associated operations and purpose",
+          "assessed_skill": "Explain the purpose of operations on a hash table ADT.",
+          "relevance": "supporting",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Integer keys only; string hashing is constructed in O-C3-B-008.",
+          "coverage_limit": "Integer keys only; string hashing is constructed in O-C3-B-008.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Trace\" on the scoped content of B4.1.6."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Integer keys only; string hashing is constructed in O-C3-B-008."
+      ],
+      "execution_evidence": "audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json"
+    }
+  ]
+}

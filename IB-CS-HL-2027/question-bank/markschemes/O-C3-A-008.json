@@ -1,0 +1,42 @@
+{
+  "question_id": "O-C3-A-008",
+  "unofficial": true,
+  "solution": "Addresses such as 192.168.1.23 are private addresses: they are only unique within the café network and are not routed on the internet. The router's ISP-supplied address is a public address that is globally unique and routable on the internet. Customer phones receive dynamic addresses, assigned automatically (DHCP) for a period and reused when customers leave. The printer has a static address that is fixed (manually configured or reserved) so that the till can always find it. NAT on the router replaces the private source address (and port) of outgoing packets with its public address, records the mapping, and translates replies back, so many devices share one public address and IPv4 addresses are conserved. IPv4 addresses are 32-bit (written as four decimal numbers) giving about 4.3 billion addresses, which are running out; IPv6 addresses are 128-bit (written in hexadecimal groups separated by colons), giving vastly more addresses and reducing the need for NAT.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Private addresses (e.g. 192.168.x.x) are unique only within the local network and not routable on the internet."
+    },
+    {
+      "marks": 1,
+      "criterion": "The router's ISP address is public: globally unique and used on the internet."
+    },
+    {
+      "marks": 1,
+      "criterion": "Phones get dynamic addresses assigned automatically (e.g. by DHCP) and reused."
+    },
+    {
+      "marks": 1,
+      "criterion": "The printer uses a static (fixed) address so it can always be located."
+    },
+    {
+      "marks": 1,
+      "criterion": "NAT translates between private addresses and the shared public address (with a mapping table), conserving public addresses."
+    },
+    {
+      "marks": 1,
+      "criterion": "IPv4 is 32-bit (limited ~4.3 billion addresses) whereas IPv6 is 128-bit with a far larger address space."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Accept \"DHCP reservation\" as a way of giving the printer a static address. Accept notation differences (dotted decimal vs hexadecimal/colons) as part of the IPv4/IPv6 point only when address size is also correct."
+  ],
+  "partial_credit_notes": "Award each independent point once, up to 6 marks. Accept equivalent correct wording or valid alternative code. Do not double-credit one idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component.",
+    "scope": "Subnetting, address classes and specific private ranges beyond the scenario are not required."
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

@@ -1,0 +1,46 @@
+{
+  "question_id": "O-C3-B-006",
+  "unofficial": true,
+  "solution": "class WeatherStation:\n    def __init__(self):\n        self._observers = []\n        self.temperature = None\n\n    def subscribe(self, observer):\n        if observer not in self._observers:\n            self._observers.append(observer)\n\n    def unsubscribe(self, observer):\n        if observer in self._observers:\n            self._observers.remove(observer)\n\n    def set_temperature(self, value):\n        self.temperature = value\n        for observer in self._observers:\n            observer.update(value)\n\n\nclass Display:\n    def __init__(self):\n        self.readings = []\n\n    def update(self, value):\n        self.readings.append(value)",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "WeatherStation constructor initialises _observers to an empty list and temperature to None."
+    },
+    {
+      "marks": 1,
+      "criterion": "subscribe adds an observer only if it is not already subscribed."
+    },
+    {
+      "marks": 1,
+      "criterion": "unsubscribe removes a subscribed observer and safely ignores one that is not subscribed."
+    },
+    {
+      "marks": 1,
+      "criterion": "set_temperature stores the new value."
+    },
+    {
+      "marks": 1,
+      "criterion": "set_temperature calls update(value) on every subscribed observer, in subscription order."
+    },
+    {
+      "marks": 1,
+      "criterion": "Display constructor initialises readings to an empty list."
+    },
+    {
+      "marks": 1,
+      "criterion": "Display.update appends the value to readings."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Accept try/except ValueError for safe removal. Accept iterating over a copy of the list. Minor syntax slips do not lose a mark if intent is unambiguous."
+  ],
+  "partial_credit_notes": "Award each independent point once, up to 7 marks. Accept equivalent correct wording or valid alternative code. Do not double-credit one idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Executed check in audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json (9 cases).",
+    "scope": "Singleton construction not assessed; Python has no enforced private access, so \"private by convention\" is stated."
+  },
+  "code": "class WeatherStation:\n    def __init__(self):\n        self._observers = []\n        self.temperature = None\n\n    def subscribe(self, observer):\n        if observer not in self._observers:\n            self._observers.append(observer)\n\n    def unsubscribe(self, observer):\n        if observer in self._observers:\n            self._observers.remove(observer)\n\n    def set_temperature(self, value):\n        self.temperature = value\n        for observer in self._observers:\n            observer.update(value)\n\n\nclass Display:\n    def __init__(self):\n        self.readings = []\n\n    def update(self, value):\n        self.readings.append(value)",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

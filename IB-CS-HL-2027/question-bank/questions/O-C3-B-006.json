@@ -1,0 +1,17 @@
+{
+  "question_id": "O-C3-B-006",
+  "source_question_ids": [],
+  "derivation_status": "original_unofficial",
+  "unofficial": true,
+  "question_text": "Use the observer design pattern. Construct two Python classes. (a) WeatherStation has a private-by-convention list _observers and an attribute temperature, initially None. It has methods subscribe(observer), which adds the observer unless it is already subscribed; unsubscribe(observer), which removes it if present and does nothing otherwise; and set_temperature(value), which stores the value and then calls update(value) on every subscribed observer in the order they subscribed. (b) Display has an attribute readings, initially an empty list, and a method update(value) that appends value to readings. You do not need to write any other code.",
+  "syllabus_codes": [
+    "B3.2.5"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 7,
+  "command_term": "Construct",
+  "difficulty": "high",
+  "question_type": "Python code construction",
+  "assets": []
+}

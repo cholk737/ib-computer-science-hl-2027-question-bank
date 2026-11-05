@@ -1,0 +1,42 @@
+{
+  "question_id": "O-C3-B-005",
+  "unofficial": true,
+  "solution": "(i) Singleton: the class allows only one instance to be created and provides a single global access point (e.g. get_instance()) that always returns it, so all modules share the same settings and cannot create conflicting copies. (ii) Factory: a factory function/method takes the type name and returns an object of the matching class, so the code that reads level files does not need to know the concrete classes; new enemy types are added in one place. (iii) Observer: the player (subject) keeps a list of observer objects and, when health changes, notifies each by calling a common method (e.g. update); observers can subscribe or unsubscribe without the player depending on their concrete classes, keeping them loosely coupled.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "(i) Singleton identified."
+    },
+    {
+      "marks": 1,
+      "criterion": "(i) Explained: one instance with a single access point shared by all parts of the program."
+    },
+    {
+      "marks": 1,
+      "criterion": "(ii) Factory identified."
+    },
+    {
+      "marks": 1,
+      "criterion": "(ii) Explained: creates the correct subclass object from the type string, hiding concrete classes from the caller / central place to add types."
+    },
+    {
+      "marks": 1,
+      "criterion": "(iii) Observer identified."
+    },
+    {
+      "marks": 1,
+      "criterion": "(iii) Explained: subject maintains a list of observers and notifies each on change; loosely coupled subscribe/unsubscribe."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Accept \"factory method\" or \"simple factory\". Explanation marks may be awarded only for the correct pattern."
+  ],
+  "partial_credit_notes": "Award each independent point once, up to 6 marks. Accept equivalent correct wording or valid alternative code. Do not double-credit one idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component.",
+    "scope": "Implementation is assessed separately in O-C3-B-006 (observer) and O-C3-B-007 (factory)."
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

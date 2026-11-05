@@ -1,0 +1,62 @@
+{
+  "question_id": "O-C3-B-005",
+  "source_question_ids": [],
+  "derivation_status": "original_unofficial",
+  "unofficial": true,
+  "question_text": "A team is developing a Python game. (i) Only one object should control the game settings (volume, difficulty), and every part of the program must use that same object. (ii) Enemies of several types (Goblin, Dragon, Bat) must be created from level files that contain only the type name as a string. (iii) When the player's health changes, the health bar, the sound system and the achievement tracker must all update. For each situation, identify a suitable design pattern and explain how it solves the problem.",
+  "syllabus_codes": [
+    "B3.2.5"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 6,
+  "command_term": "Explain",
+  "difficulty": "medium",
+  "question_type": "explanation",
+  "adaptation_rationale": "Original question written by Claude (single-agent Chunk 3 continuation, 2026-11-04) for a syllabus statement with no linked question at handover; no historical source question or official marking status claimed.",
+  "solution": "(i) Singleton: the class allows only one instance to be created and provides a single global access point (e.g. get_instance()) that always returns it, so all modules share the same settings and cannot create conflicting copies. (ii) Factory: a factory function/method takes the type name and returns an object of the matching class, so the code that reads level files does not need to know the concrete classes; new enemy types are added in one place. (iii) Observer: the player (subject) keeps a list of observer objects and, when health changes, notifies each by calling a common method (e.g. update); observers can subscribe or unsubscribe without the player depending on their concrete classes, keeping them loosely coupled.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "(i) Singleton identified."
+    },
+    {
+      "marks": 1,
+      "criterion": "(i) Explained: one instance with a single access point shared by all parts of the program."
+    },
+    {
+      "marks": 1,
+      "criterion": "(ii) Factory identified."
+    },
+    {
+      "marks": 1,
+      "criterion": "(ii) Explained: creates the correct subclass object from the type string, hiding concrete classes from the caller / central place to add types."
+    },
+    {
+      "marks": 1,
+      "criterion": "(iii) Observer identified."
+    },
+    {
+      "marks": 1,
+      "criterion": "(iii) Explained: subject maintains a list of observers and notifies each on change; loosely coupled subscribe/unsubscribe."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Accept \"factory method\" or \"simple factory\". Explanation marks may be awarded only for the correct pattern."
+  ],
+  "partial_credit_notes": "Award each independent point once, up to 6 marks. Accept equivalent correct wording or valid alternative code. Do not double-credit one idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component.",
+    "scope": "Implementation is assessed separately in O-C3-B-006 (observer) and O-C3-B-007 (factory)."
+  },
+  "code": "",
+  "test_code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/O-C3-B-005.json",
+  "question_path": "question-bank/questions/O-C3-B-005.json",
+  "markscheme_path": "question-bank/markschemes/O-C3-B-005.json",
+  "coordinator_status": "author_content_scope_answer_marking_checks_passed; independent_Chunk4_audit_pending",
+  "independent_verification_status": "pending"
+}

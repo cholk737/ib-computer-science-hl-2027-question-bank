@@ -1,0 +1,62 @@
+{
+  "question_id": "O-C3-A-011",
+  "source_question_ids": [],
+  "derivation_status": "original_unofficial",
+  "unofficial": true,
+  "question_text": "A school wants to train a machine learning model to predict whether a student will pass a final examination. The data set has 40 attributes per student, including attendance percentage, average homework mark, minutes of homework per week, hours of homework per week, previous examination grade, student ID number and favourite colour. Describe the role of feature selection for this data set, and describe how filter, wrapper and embedded methods could be used to select the features.",
+  "syllabus_codes": [
+    "A4.2.2"
+  ],
+  "theme": "A",
+  "level": "HL-only",
+  "marks": 6,
+  "command_term": "Describe",
+  "difficulty": "medium",
+  "question_type": "description",
+  "adaptation_rationale": "Original question written by Claude (single-agent Chunk 3 continuation, 2026-11-04) for a syllabus statement with no linked question at handover; no historical source question or official marking status claimed.",
+  "solution": "Feature selection identifies and keeps the most informative attributes and removes irrelevant ones such as student ID number and favourite colour, and redundant ones such as minutes and hours of homework, which carry the same information. This reduces overfitting, so the model generalizes better, reduces training time and memory, and makes the model easier to interpret. A filter method scores each feature on its own using a statistical measure, such as its correlation with pass/fail, and keeps the highest-scoring features; it is fast and independent of the model but ignores interactions between features. A wrapper method repeatedly trains and evaluates the actual model on different subsets of features (for example adding or removing one feature at a time) and keeps the subset with the best validation performance; it is accurate for that model but computationally expensive. An embedded method selects features as part of training, for example a decision tree only splitting on useful attributes, or regularization reducing the weights of unhelpful features to zero.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Role: retain the most informative attributes and remove irrelevant ones (e.g. student ID, favourite colour)."
+    },
+    {
+      "marks": 1,
+      "criterion": "Removes redundant features (e.g. minutes and hours of homework)."
+    },
+    {
+      "marks": 1,
+      "criterion": "Benefit: reduced overfitting / better generalization, lower computation, or improved interpretability."
+    },
+    {
+      "marks": 1,
+      "criterion": "Filter: ranks features individually by a statistical measure (e.g. correlation) independently of the model; fast but ignores interactions."
+    },
+    {
+      "marks": 1,
+      "criterion": "Wrapper: trains/evaluates the model on different feature subsets and keeps the best; accurate but expensive."
+    },
+    {
+      "marks": 1,
+      "criterion": "Embedded: selection happens during model training (e.g. decision tree splits, regularization)."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Accept any valid statistical measure for filter methods (e.g. correlation, information gain, chi-squared) without requiring its formula."
+  ],
+  "partial_credit_notes": "Award each independent point once, up to 6 marks. Accept equivalent correct wording or valid alternative code. Do not double-credit one idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component.",
+    "scope": "No calculation of statistical scores is required. Dimensionality reduction is assessed separately (O-C3-A-012)."
+  },
+  "code": "",
+  "test_code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/O-C3-A-011.json",
+  "question_path": "question-bank/questions/O-C3-A-011.json",
+  "markscheme_path": "question-bank/markschemes/O-C3-A-011.json",
+  "coordinator_status": "author_content_scope_answer_marking_checks_passed; independent_Chunk4_audit_pending",
+  "independent_verification_status": "pending"
+}

@@ -1,0 +1,54 @@
+{
+  "question_id": "O-C3-B-010",
+  "source_question_ids": [],
+  "derivation_status": "original_unofficial",
+  "unofficial": true,
+  "question_text": "A program checks whether each of 100 000 usernames has already been taken. One version stores the taken usernames in a Python list and uses \"name in taken_list\"; another stores them in a Python set and uses \"name in taken_set\". Explain how the underlying mechanics of a Python set make the second version faster, and why Python allows strings, but not lists, to be elements of a set.",
+  "syllabus_codes": [
+    "B4.1.6"
+  ],
+  "theme": "B",
+  "level": "HL-only",
+  "marks": 4,
+  "command_term": "Explain",
+  "difficulty": "medium",
+  "question_type": "explanation",
+  "adaptation_rationale": "Original question written by Claude (single-agent Chunk 3 continuation, 2026-11-04) for a syllabus statement with no linked question at handover; no historical source question or official marking status claimed.",
+  "solution": "A list membership test compares the name with the elements one by one (linear search), which is O(n). A Python set is implemented as a hash table: the name is passed through a hash function that gives the index of the slot where it would be stored, so only that slot (and any colliding entries) needs to be checked, giving O(1) average-case lookup. The same hashing means a value already present is found when adding, so duplicates are not stored. Elements must be hashable, meaning their hash value must never change: strings are immutable, so their hash is fixed, but a list could be changed after insertion, which would change its hash and leave it in the wrong slot, so lists are not allowed.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "List membership is a linear search, O(n) comparisons."
+    },
+    {
+      "marks": 1,
+      "criterion": "A set uses a hash function to compute the storage location (hash table)."
+    },
+    {
+      "marks": 1,
+      "criterion": "So lookup checks only that location/collisions, average O(1), independent of the number of usernames."
+    },
+    {
+      "marks": 1,
+      "criterion": "Elements must be hashable/immutable: a mutable list could change its hash after insertion and be stored in the wrong place; strings are immutable."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Accept reference to Java HashSet with equivalent mechanics. Accept \"constant time on average\" for O(1)."
+  ],
+  "partial_credit_notes": "Award each independent point once, up to 4 marks. Accept equivalent correct wording or valid alternative code. Do not double-credit one idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component.",
+    "scope": "Collision resolution details and load factor are assessed in O-C3-B-008/009."
+  },
+  "code": "",
+  "test_code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/O-C3-B-010.json",
+  "question_path": "question-bank/questions/O-C3-B-010.json",
+  "markscheme_path": "question-bank/markschemes/O-C3-B-010.json",
+  "coordinator_status": "author_content_scope_answer_marking_checks_passed; independent_Chunk4_audit_pending",
+  "independent_verification_status": "pending"
+}

@@ -1,9 +1,1108 @@
 {
   "schema_version": 1,
   "unofficial": true,
-  "updated_at": "2026-11-04T19:21:26.736031+01:00",
+  "updated_at": "2026-11-04T22:15:47.645019+01:00",
   "scope_bullet_id_rule": "CODE:GNN is the one-based exact guidance paragraph. Direct relevance certifies the described assessed skill, never every item in the paragraph.",
   "reviews": [
+    {
+      "question_id": "O-C3-A-001",
+      "record_sha256": "2f001a5a342ab546583da23a63547b2f82c22f204de60c27cba37d7b98292739",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:24.454665+00:00",
+      "question_type": "description",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "4 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "A1.1.6",
+          "scope_bullet_id": "A1.1.6:G01",
+          "exact_guidance": "• The instructions fetch, decode, execute",
+          "assessed_skill": "Describe overlapping fetch/decode/execute stages in a pipeline.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Does not assess pipeline hazards, branch prediction or cache coherence (not required by the guidance). Speed-up figure is an idealised upper bound.",
+          "coverage_limit": "Does not assess pipeline hazards, branch prediction or cache coherence (not required by the guidance). Speed-up figure is an idealised upper bound.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A1.1.6."
+        },
+        {
+          "code": "A1.1.6",
+          "scope_bullet_id": "A1.1.6:G02",
+          "exact_guidance": "• Write-back stages to improve the overall system performance in multi-core architectures",
+          "assessed_skill": "Describe write-back completing one instruction per cycle and the throughput benefit in a multi-core system.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Does not assess pipeline hazards, branch prediction or cache coherence (not required by the guidance). Speed-up figure is an idealised upper bound.",
+          "coverage_limit": "Does not assess pipeline hazards, branch prediction or cache coherence (not required by the guidance). Speed-up figure is an idealised upper bound.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A1.1.6."
+        },
+        {
+          "code": "A1.1.6",
+          "scope_bullet_id": "A1.1.6:G03",
+          "exact_guidance": "• Overview of how cores in multi-core processors work independently and in parallel",
+          "assessed_skill": "Describe cores executing independent instruction streams in parallel.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Does not assess pipeline hazards, branch prediction or cache coherence (not required by the guidance). Speed-up figure is an idealised upper bound.",
+          "coverage_limit": "Does not assess pipeline hazards, branch prediction or cache coherence (not required by the guidance). Speed-up figure is an idealised upper bound.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A1.1.6."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Does not assess pipeline hazards, branch prediction or cache coherence (not required by the guidance). Speed-up figure is an idealised upper bound."
+      ],
+      "execution_evidence": "manual",
+      "coordinator_review": {
+        "question_id": "O-C3-A-001",
+        "review_sha256": "c90922e55ab881cdd419e5dbaad6b2048226306bd94b659fd0f7bd5b99197fda",
+        "record_sha256": "2f001a5a342ab546583da23a63547b2f82c22f204de60c27cba37d7b98292739",
+        "source_path": "question-bank/original-review-drafts/O-C3-A-001.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T22:15:24.526382+01:00",
+        "reason": "Author read full A1.1.6/A1.3.3 statements and guidance; executed pipeline and scheduling simulations; criteria sum to marks.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "O-C3-A-002",
+      "record_sha256": "201a26f344272e43998eee25810a6376fae78c5338bd2c0559046213e14134f1",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:24.455967+00:00",
+      "question_type": "calculation",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Executed check in audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json (52 cases)."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "3 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "A1.1.6",
+          "scope_bullet_id": "A1.1.6:G01",
+          "exact_guidance": "• The instructions fetch, decode, execute",
+          "assessed_skill": "Apply staged overlap of fetch/decode/execute to count cycles.",
+          "relevance": "partial",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Idealised model: no hazards, stalls, memory delays or scheduling overhead. Complements O-C3-A-001 descriptive coverage.",
+          "coverage_limit": "Idealised model: no hazards, stalls, memory delays or scheduling overhead. Complements O-C3-A-001 descriptive coverage.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Calculate\" on the scoped content of A1.1.6."
+        },
+        {
+          "code": "A1.1.6",
+          "scope_bullet_id": "A1.1.6:G02",
+          "exact_guidance": "• Write-back stages to improve the overall system performance in multi-core architectures",
+          "assessed_skill": "Quantify the pipelining throughput gain against non-pipelined execution.",
+          "relevance": "partial",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Idealised model: no hazards, stalls, memory delays or scheduling overhead. Complements O-C3-A-001 descriptive coverage.",
+          "coverage_limit": "Idealised model: no hazards, stalls, memory delays or scheduling overhead. Complements O-C3-A-001 descriptive coverage.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Calculate\" on the scoped content of A1.1.6."
+        },
+        {
+          "code": "A1.1.6",
+          "scope_bullet_id": "A1.1.6:G03",
+          "exact_guidance": "• Overview of how cores in multi-core processors work independently and in parallel",
+          "assessed_skill": "Apply independent parallel cores to divide a workload.",
+          "relevance": "partial",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Idealised model: no hazards, stalls, memory delays or scheduling overhead. Complements O-C3-A-001 descriptive coverage.",
+          "coverage_limit": "Idealised model: no hazards, stalls, memory delays or scheduling overhead. Complements O-C3-A-001 descriptive coverage.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Calculate\" on the scoped content of A1.1.6."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Idealised model: no hazards, stalls, memory delays or scheduling overhead. Complements O-C3-A-001 descriptive coverage."
+      ],
+      "execution_evidence": "audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json",
+      "coordinator_review": {
+        "question_id": "O-C3-A-002",
+        "review_sha256": "fe39da1a32e0d5250701e595878f300a783f3cf2eda8e61bc9d1c765c08d49f3",
+        "record_sha256": "201a26f344272e43998eee25810a6376fae78c5338bd2c0559046213e14134f1",
+        "source_path": "question-bank/original-review-drafts/O-C3-A-002.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T22:15:24.526382+01:00",
+        "reason": "Author read full A1.1.6/A1.3.3 statements and guidance; executed pipeline and scheduling simulations; criteria sum to marks.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "O-C3-A-003",
+      "record_sha256": "72e2c4fd5afde34cf743b897cff2f938edcbbef3b2b4c0ffa135c95e55f438ac",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:24.456447+00:00",
+      "question_type": "calculation",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Executed check in audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json (2 cases)."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "4 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "A1.3.3",
+          "scope_bullet_id": "A1.3.3:G01",
+          "exact_guidance": "• Managing the execution of processes by allocating CPU time to optimize system performance",
+          "assessed_skill": "Calculate how allocation of CPU time changes waiting time (system performance).",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Does not cover multilevel queue or priority scheduling; see O-C3-A-004. Context-switch overhead deliberately ignored and stated.",
+          "coverage_limit": "Does not cover multilevel queue or priority scheduling; see O-C3-A-004. Context-switch overhead deliberately ignored and stated.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Calculate\" on the scoped content of A1.3.3."
+        },
+        {
+          "code": "A1.3.3",
+          "scope_bullet_id": "A1.3.3:G02",
+          "exact_guidance": "• First-come first-served, round robin, multilevel queue scheduling, priority scheduling",
+          "assessed_skill": "Apply first-come first-served and round robin scheduling.",
+          "relevance": "partial",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Does not cover multilevel queue or priority scheduling; see O-C3-A-004. Context-switch overhead deliberately ignored and stated.",
+          "coverage_limit": "Does not cover multilevel queue or priority scheduling; see O-C3-A-004. Context-switch overhead deliberately ignored and stated.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Calculate\" on the scoped content of A1.3.3."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Does not cover multilevel queue or priority scheduling; see O-C3-A-004. Context-switch overhead deliberately ignored and stated."
+      ],
+      "execution_evidence": "audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json",
+      "coordinator_review": {
+        "question_id": "O-C3-A-003",
+        "review_sha256": "86d6c39c69c27a087cdc45c9d8e0b26dba0f20eb1071474a412dab16cd7252a5",
+        "record_sha256": "72e2c4fd5afde34cf743b897cff2f938edcbbef3b2b4c0ffa135c95e55f438ac",
+        "source_path": "question-bank/original-review-drafts/O-C3-A-003.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T22:15:24.526382+01:00",
+        "reason": "Author read full A1.1.6/A1.3.3 statements and guidance; executed pipeline and scheduling simulations; criteria sum to marks.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "O-C3-A-004",
+      "record_sha256": "fda421a7b2a12c5452bd4efad3db604a5342e68d119c6b37c4ed222369d68e3e",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:35.160292+00:00",
+      "question_type": "comparison",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "6 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "A1.3.3",
+          "scope_bullet_id": "A1.3.3:G01",
+          "exact_guidance": "• Managing the execution of processes by allocating CPU time to optimize system performance",
+          "assessed_skill": "Compare how scheduling approaches allocate CPU time and affect performance for a mixed workload.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Multilevel feedback queues are not required. No numeric calculation (see O-C3-A-003).",
+          "coverage_limit": "Multilevel feedback queues are not required. No numeric calculation (see O-C3-A-003).",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Compare\" on the scoped content of A1.3.3."
+        },
+        {
+          "code": "A1.3.3",
+          "scope_bullet_id": "A1.3.3:G02",
+          "exact_guidance": "• First-come first-served, round robin, multilevel queue scheduling, priority scheduling",
+          "assessed_skill": "Compare FCFS, round robin, multilevel queue and priority scheduling.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Multilevel feedback queues are not required. No numeric calculation (see O-C3-A-003).",
+          "coverage_limit": "Multilevel feedback queues are not required. No numeric calculation (see O-C3-A-003).",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Compare\" on the scoped content of A1.3.3."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Multilevel feedback queues are not required. No numeric calculation (see O-C3-A-003)."
+      ],
+      "execution_evidence": "manual",
+      "coordinator_review": {
+        "question_id": "O-C3-A-004",
+        "review_sha256": "f0eca3608459e59f68900750cfbf733af5eb1095c2f750a4d17c93cd3dca05be",
+        "record_sha256": "fda421a7b2a12c5452bd4efad3db604a5342e68d119c6b37c4ed222369d68e3e",
+        "source_path": "question-bank/original-review-drafts/O-C3-A-004.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T22:15:35.243028+01:00",
+        "reason": "Author read full A1.3.3/A2.1.5/A2.2.1 statements and guidance; criteria checked against each factor/layer; no duplicates found in bank text search.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "O-C3-A-005",
+      "record_sha256": "ef5e56ee58afd1be2dd8265b25fabc79a8e8bde922bd00d9cf763346ea044238",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:35.160813+00:00",
+      "question_type": "description",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "6 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "A2.1.5",
+          "scope_bullet_id": "A2.1.5:G01",
+          "exact_guidance": "• Application, transport, internet, network interface",
+          "assessed_skill": "Describe the application, transport, internet and network interface layers in context.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Does not compare with the OSI model or require UDP. Specific header formats are not required.",
+          "coverage_limit": "Does not compare with the OSI model or require UDP. Specific header formats are not required.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A2.1.5."
+        },
+        {
+          "code": "A2.1.5",
+          "scope_bullet_id": "A2.1.5:G02",
+          "exact_guidance": "• The role of each layer and the interaction between these layers to ensure reliable data transmission over a network",
+          "assessed_skill": "Describe layer roles and encapsulation interaction that ensure reliable transmission.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Does not compare with the OSI model or require UDP. Specific header formats are not required.",
+          "coverage_limit": "Does not compare with the OSI model or require UDP. Specific header formats are not required.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A2.1.5."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Does not compare with the OSI model or require UDP. Specific header formats are not required."
+      ],
+      "execution_evidence": "manual",
+      "coordinator_review": {
+        "question_id": "O-C3-A-005",
+        "review_sha256": "f987296501491a052b0173eb4fe634532e17ce2ab187c5e5346c157d45a887a8",
+        "record_sha256": "ef5e56ee58afd1be2dd8265b25fabc79a8e8bde922bd00d9cf763346ea044238",
+        "source_path": "question-bank/original-review-drafts/O-C3-A-005.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T22:15:35.243028+01:00",
+        "reason": "Author read full A1.3.3/A2.1.5/A2.2.1 statements and guidance; criteria checked against each factor/layer; no duplicates found in bank text search.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "O-C3-A-006",
+      "record_sha256": "2bbf3bab544e2d9c6473287975cb50f790c15a85536883bfae0c73b11bda11e2",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:35.161257+00:00",
+      "question_type": "description",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "5 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "A2.2.1",
+          "scope_bullet_id": "A2.2.1:G01",
+          "exact_guidance": "• Network topologies: star, mesh, hybrid",
+          "assessed_skill": "Describe star, mesh and hybrid topologies in a large-setting application.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Small-office application is assessed separately in O-C3-A-007. Bus/ring topologies are not part of the 2027 guidance and are not assessed.",
+          "coverage_limit": "Small-office application is assessed separately in O-C3-A-007. Bus/ring topologies are not part of the 2027 guidance and are not assessed.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A2.2.1."
+        },
+        {
+          "code": "A2.2.1",
+          "scope_bullet_id": "A2.2.1:G02",
+          "exact_guidance": "• Factors to consider must include reliability, transmission speed, scalability, data collisions, cost.",
+          "assessed_skill": "Apply reliability, transmission speed, scalability, data collisions and cost.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Small-office application is assessed separately in O-C3-A-007. Bus/ring topologies are not part of the 2027 guidance and are not assessed.",
+          "coverage_limit": "Small-office application is assessed separately in O-C3-A-007. Bus/ring topologies are not part of the 2027 guidance and are not assessed.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A2.2.1."
+        },
+        {
+          "code": "A2.2.1",
+          "scope_bullet_id": "A2.2.1:G03",
+          "exact_guidance": "• Examples may include home and small office settings, where reliability is paramount, and the use of networks in larger settings (e.g. corporations, government departments, college campuses).",
+          "assessed_skill": "Apply topology choice to a larger setting (college campus).",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Small-office application is assessed separately in O-C3-A-007. Bus/ring topologies are not part of the 2027 guidance and are not assessed.",
+          "coverage_limit": "Small-office application is assessed separately in O-C3-A-007. Bus/ring topologies are not part of the 2027 guidance and are not assessed.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A2.2.1."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Small-office application is assessed separately in O-C3-A-007. Bus/ring topologies are not part of the 2027 guidance and are not assessed."
+      ],
+      "execution_evidence": "manual",
+      "coordinator_review": {
+        "question_id": "O-C3-A-006",
+        "review_sha256": "126ba4fff6f65b3215332d0deba3c6d9fde75210ba704de16c84818eeab1461a",
+        "record_sha256": "2bbf3bab544e2d9c6473287975cb50f790c15a85536883bfae0c73b11bda11e2",
+        "source_path": "question-bank/original-review-drafts/O-C3-A-006.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T22:15:35.243028+01:00",
+        "reason": "Author read full A1.3.3/A2.1.5/A2.2.1 statements and guidance; criteria checked against each factor/layer; no duplicates found in bank text search.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "O-C3-A-007",
+      "record_sha256": "9f62dbf1a82a784ec012ca791117a57ccaad0f12ec81383b576571dc265b4428",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:36.415878+00:00",
+      "question_type": "comparison",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "4 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "A2.2.1",
+          "scope_bullet_id": "A2.2.1:G01",
+          "exact_guidance": "• Network topologies: star, mesh, hybrid",
+          "assessed_skill": "Compare star and full mesh topologies.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Data collisions and transmission speed are assessed in O-C3-A-006 rather than here.",
+          "coverage_limit": "Data collisions and transmission speed are assessed in O-C3-A-006 rather than here.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Compare\" on the scoped content of A2.2.1."
+        },
+        {
+          "code": "A2.2.1",
+          "scope_bullet_id": "A2.2.1:G02",
+          "exact_guidance": "• Factors to consider must include reliability, transmission speed, scalability, data collisions, cost.",
+          "assessed_skill": "Apply reliability and cost (and scalability) to a small setting.",
+          "relevance": "partial",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Data collisions and transmission speed are assessed in O-C3-A-006 rather than here.",
+          "coverage_limit": "Data collisions and transmission speed are assessed in O-C3-A-006 rather than here.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Compare\" on the scoped content of A2.2.1."
+        },
+        {
+          "code": "A2.2.1",
+          "scope_bullet_id": "A2.2.1:G03",
+          "exact_guidance": "• Examples may include home and small office settings, where reliability is paramount, and the use of networks in larger settings (e.g. corporations, government departments, college campuses).",
+          "assessed_skill": "Apply topology choice to a small office where reliability is paramount.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Data collisions and transmission speed are assessed in O-C3-A-006 rather than here.",
+          "coverage_limit": "Data collisions and transmission speed are assessed in O-C3-A-006 rather than here.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Compare\" on the scoped content of A2.2.1."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Data collisions and transmission speed are assessed in O-C3-A-006 rather than here."
+      ],
+      "execution_evidence": "manual",
+      "coordinator_review": {
+        "question_id": "O-C3-A-007",
+        "review_sha256": "29633d563a890f888f77469c470aa00c3f2b748e09b6e8ab308b70c75e2b7fbd",
+        "record_sha256": "9f62dbf1a82a784ec012ca791117a57ccaad0f12ec81383b576571dc265b4428",
+        "source_path": "question-bank/original-review-drafts/O-C3-A-007.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T22:15:36.505115+01:00",
+        "reason": "Author read full A2.2.1/A2.3.1/A2.3.4 statements and guidance, including must-include factors; criteria map each required factor.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "O-C3-A-008",
+      "record_sha256": "4cba28e3cf79526a0696f87a53ef1a5fb430afdcd725a30abcdcc5fd091d760e",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:36.416705+00:00",
+      "question_type": "description",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "6 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "A2.3.1",
+          "scope_bullet_id": "A2.3.1:G01",
+          "exact_guidance": "• The distinction between IPv4 and IPv6 addressing",
+          "assessed_skill": "Distinguish IPv4 and IPv6 addressing.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Subnetting, address classes and specific private ranges beyond the scenario are not required.",
+          "coverage_limit": "Subnetting, address classes and specific private ranges beyond the scenario are not required.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A2.3.1."
+        },
+        {
+          "code": "A2.3.1",
+          "scope_bullet_id": "A2.3.1:G02",
+          "exact_guidance": "• The differences between public IP addresses and private IP addresses, and between static IP addresses and dynamic IP addresses",
+          "assessed_skill": "Distinguish public/private and static/dynamic IP addresses in context.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Subnetting, address classes and specific private ranges beyond the scenario are not required.",
+          "coverage_limit": "Subnetting, address classes and specific private ranges beyond the scenario are not required.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A2.3.1."
+        },
+        {
+          "code": "A2.3.1",
+          "scope_bullet_id": "A2.3.1:G03",
+          "exact_guidance": "• The role of network address translation (NAT) to minimize the use of IP addresses and to facilitate communication between private internal networks and the public internet",
+          "assessed_skill": "Describe the role of NAT for private networks and the public internet.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Subnetting, address classes and specific private ranges beyond the scenario are not required.",
+          "coverage_limit": "Subnetting, address classes and specific private ranges beyond the scenario are not required.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A2.3.1."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Subnetting, address classes and specific private ranges beyond the scenario are not required."
+      ],
+      "execution_evidence": "manual",
+      "coordinator_review": {
+        "question_id": "O-C3-A-008",
+        "review_sha256": "9093f847bce0bbd68f561086ac8a0a854f029b0dcf15736dc7a5be65a6bdc71f",
+        "record_sha256": "4cba28e3cf79526a0696f87a53ef1a5fb430afdcd725a30abcdcc5fd091d760e",
+        "source_path": "question-bank/original-review-drafts/O-C3-A-008.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T22:15:36.505115+01:00",
+        "reason": "Author read full A2.2.1/A2.3.1/A2.3.4 statements and guidance, including must-include factors; criteria map each required factor.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "O-C3-A-009",
+      "record_sha256": "83664f8a2142e65d6a34a617c3d431912fc54d3b133f0c86651031277a1c1d49",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:36.417180+00:00",
+      "question_type": "explanation",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "6 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "A2.3.4",
+          "scope_bullet_id": "A2.3.4:G01",
+          "exact_guidance": "• The process of static routing, and its advantages and disadvantages",
+          "assessed_skill": "Explain the static routing process and its advantages and disadvantages.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Specific routing protocol mechanics are excluded by the guide and not assessed.",
+          "coverage_limit": "Specific routing protocol mechanics are excluded by the guide and not assessed.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Explain\" on the scoped content of A2.3.4."
+        },
+        {
+          "code": "A2.3.4",
+          "scope_bullet_id": "A2.3.4:G02",
+          "exact_guidance": "• The process of dynamic routing, and its advantages and disadvantages (explanation of a specific routing protocol is not required)",
+          "assessed_skill": "Explain the dynamic routing process and its advantages and disadvantages.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Specific routing protocol mechanics are excluded by the guide and not assessed.",
+          "coverage_limit": "Specific routing protocol mechanics are excluded by the guide and not assessed.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Explain\" on the scoped content of A2.3.4."
+        },
+        {
+          "code": "A2.3.4",
+          "scope_bullet_id": "A2.3.4:G03",
+          "exact_guidance": "• Factors to consider must include configuration, maintenance, complexity, resource usage, convergence, scalability, network size.",
+          "assessed_skill": "Apply configuration, maintenance, complexity, resource usage, convergence, scalability and network size.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Specific routing protocol mechanics are excluded by the guide and not assessed.",
+          "coverage_limit": "Specific routing protocol mechanics are excluded by the guide and not assessed.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Explain\" on the scoped content of A2.3.4."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Specific routing protocol mechanics are excluded by the guide and not assessed."
+      ],
+      "execution_evidence": "manual",
+      "coordinator_review": {
+        "question_id": "O-C3-A-009",
+        "review_sha256": "2986f0605952c461ed71eaf1d4e04e3d45a85dc33926268edba9b3e35273aa38",
+        "record_sha256": "83664f8a2142e65d6a34a617c3d431912fc54d3b133f0c86651031277a1c1d49",
+        "source_path": "question-bank/original-review-drafts/O-C3-A-009.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T22:15:36.505115+01:00",
+        "reason": "Author read full A2.2.1/A2.3.1/A2.3.4 statements and guidance, including must-include factors; criteria map each required factor.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "O-C3-A-010",
+      "record_sha256": "35db5af11761eab7dd4d05a917abf4e9236f7e6440c6e33b2f99b3a42f7d5db4",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:37.842241+00:00",
+      "question_type": "evaluation",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "6 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "A3.2.7",
+          "scope_bullet_id": "A3.2.7:G01",
+          "exact_guidance": "• The advantages and disadvantages of normalizing and denormalizing databases",
+          "assessed_skill": "Evaluate advantages and disadvantages of normalizing and denormalizing.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. No SQL writing required. Normal-form identification is assessed elsewhere (A3.2.x normalization statements).",
+          "coverage_limit": "No SQL writing required. Normal-form identification is assessed elsewhere (A3.2.x normalization statements).",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Evaluate\" on the scoped content of A3.2.7."
+        },
+        {
+          "code": "A3.2.7",
+          "scope_bullet_id": "A3.2.7:G02",
+          "exact_guidance": "• Situations where denormalization can enhance performance, particularly in read-intensive applications",
+          "assessed_skill": "Apply denormalization to a read-intensive application for performance.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. No SQL writing required. Normal-form identification is assessed elsewhere (A3.2.x normalization statements).",
+          "coverage_limit": "No SQL writing required. Normal-form identification is assessed elsewhere (A3.2.x normalization statements).",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Evaluate\" on the scoped content of A3.2.7."
+        },
+        {
+          "code": "A3.2.7",
+          "scope_bullet_id": "A3.2.7:G03",
+          "exact_guidance": "• The balance between straightforward query structures and the risk of data redundancy in denormalized schemas",
+          "assessed_skill": "Weigh straightforward query structure against redundancy risk.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. No SQL writing required. Normal-form identification is assessed elsewhere (A3.2.x normalization statements).",
+          "coverage_limit": "No SQL writing required. Normal-form identification is assessed elsewhere (A3.2.x normalization statements).",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Evaluate\" on the scoped content of A3.2.7."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "No SQL writing required. Normal-form identification is assessed elsewhere (A3.2.x normalization statements)."
+      ],
+      "execution_evidence": "manual",
+      "coordinator_review": {
+        "question_id": "O-C3-A-010",
+        "review_sha256": "108e36b6b4cd1a18930281970cddf76a2a7ce89292dc9b8bd199cfaaed95b0d7",
+        "record_sha256": "35db5af11761eab7dd4d05a917abf4e9236f7e6440c6e33b2f99b3a42f7d5db4",
+        "source_path": "question-bank/original-review-drafts/O-C3-A-010.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T22:15:37.911357+01:00",
+        "reason": "Author read full A3.2.7/A4.2.2/A4.2.3 statements and guidance; PCA/LDA exclusion respected; criteria checked.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "O-C3-A-011",
+      "record_sha256": "c619d8feff1dfe3982680ad7c51c398aa6a807ac90857ec2074103c62b881fb9",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:37.842823+00:00",
+      "question_type": "description",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "6 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "A4.2.2",
+          "scope_bullet_id": "A4.2.2:G01",
+          "exact_guidance": "• Feature selection to identify and retain the most informative attributes of the data set",
+          "assessed_skill": "Describe feature selection retaining the most informative attributes in a scenario.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. No calculation of statistical scores is required. Dimensionality reduction is assessed separately (O-C3-A-012).",
+          "coverage_limit": "No calculation of statistical scores is required. Dimensionality reduction is assessed separately (O-C3-A-012).",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A4.2.2."
+        },
+        {
+          "code": "A4.2.2",
+          "scope_bullet_id": "A4.2.2:G02",
+          "exact_guidance": "• Feature selection strategies: filter methods, wrapper methods, embedded methods",
+          "assessed_skill": "Describe filter, wrapper and embedded strategies.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. No calculation of statistical scores is required. Dimensionality reduction is assessed separately (O-C3-A-012).",
+          "coverage_limit": "No calculation of statistical scores is required. Dimensionality reduction is assessed separately (O-C3-A-012).",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A4.2.2."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "No calculation of statistical scores is required. Dimensionality reduction is assessed separately (O-C3-A-012)."
+      ],
+      "execution_evidence": "manual",
+      "coordinator_review": {
+        "question_id": "O-C3-A-011",
+        "review_sha256": "e97d5acccd4447e73b55071c38db313d733228fe01e18c8963a9d60410b6143e",
+        "record_sha256": "c619d8feff1dfe3982680ad7c51c398aa6a807ac90857ec2074103c62b881fb9",
+        "source_path": "question-bank/original-review-drafts/O-C3-A-011.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T22:15:37.911357+01:00",
+        "reason": "Author read full A3.2.7/A4.2.2/A4.2.3 statements and guidance; PCA/LDA exclusion respected; criteria checked.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "O-C3-A-012",
+      "record_sha256": "4f0c5f7cc14750e6304f50f3b511e2e1fe382f5a6f415fc7108188119b3c3357",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:37.843316+00:00",
+      "question_type": "description",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "5 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "A4.2.3",
+          "scope_bullet_id": "A4.2.3:G01",
+          "exact_guidance": "• The curse of dimensionality considerations may include overfitting, computational complexity, data sparsity, the effectiveness of distance metrics, data visualization, sample size increases, memory usage.",
+          "assessed_skill": "Describe curse-of-dimensionality considerations: sparsity, distance metrics, overfitting, computation/memory, sample size.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. PCA and LDA are explicitly beyond scope (guide note G03) and are not assessed.",
+          "coverage_limit": "PCA and LDA are explicitly beyond scope (guide note G03) and are not assessed.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A4.2.3."
+        },
+        {
+          "code": "A4.2.3",
+          "scope_bullet_id": "A4.2.3:G02",
+          "exact_guidance": "• Dimensionality reduction of variables, while preserving the relevant aspects of the data",
+          "assessed_skill": "Describe reducing variables while preserving relevant aspects of the data.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. PCA and LDA are explicitly beyond scope (guide note G03) and are not assessed.",
+          "coverage_limit": "PCA and LDA are explicitly beyond scope (guide note G03) and are not assessed.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A4.2.3."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "PCA and LDA are explicitly beyond scope (guide note G03) and are not assessed."
+      ],
+      "execution_evidence": "manual",
+      "coordinator_review": {
+        "question_id": "O-C3-A-012",
+        "review_sha256": "8383a8bba49f76c15a7e44469161d30ee8913a6694df3a500730f7a264ffcee0",
+        "record_sha256": "4f0c5f7cc14750e6304f50f3b511e2e1fe382f5a6f415fc7108188119b3c3357",
+        "source_path": "question-bank/original-review-drafts/O-C3-A-012.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T22:15:37.911357+01:00",
+        "reason": "Author read full A3.2.7/A4.2.2/A4.2.3 statements and guidance; PCA/LDA exclusion respected; criteria checked.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "O-C3-A-013",
+      "record_sha256": "809317e692581fe102a6cd2bd6da02eb3cfa12ab82585c1d04bc2992fe62023b",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:44.778005+00:00",
+      "question_type": "description",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "6 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "A4.3.9",
+          "scope_bullet_id": "A4.3.9:G01",
+          "exact_guidance": "• Convolutional neural network (CNN) basic architecture: input layer, convolutional layers, activation functions, pooling layers, fully connected layers, output layer",
+          "assessed_skill": "Describe the CNN basic architecture from input to output layer.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Kernel size and stride effects are calculated in O-C3-A-014. Backpropagation mathematics is not required.",
+          "coverage_limit": "Kernel size and stride effects are calculated in O-C3-A-014. Backpropagation mathematics is not required.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A4.3.9."
+        },
+        {
+          "code": "A4.3.9",
+          "scope_bullet_id": "A4.3.9:G02",
+          "exact_guidance": "• The effect of the number of layers, kernel size and stride, activation function selection, and the loss function on how CNNs process input data and classify images",
+          "assessed_skill": "Describe the effect of number of layers, activation function and loss function on learning.",
+          "relevance": "partial",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Kernel size and stride effects are calculated in O-C3-A-014. Backpropagation mathematics is not required.",
+          "coverage_limit": "Kernel size and stride effects are calculated in O-C3-A-014. Backpropagation mathematics is not required.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Describe\" on the scoped content of A4.3.9."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Kernel size and stride effects are calculated in O-C3-A-014. Backpropagation mathematics is not required."
+      ],
+      "execution_evidence": "manual",
+      "coordinator_review": {
+        "question_id": "O-C3-A-013",
+        "review_sha256": "e376b33b7962677c848cc4af317cc346ce45149272b4fe4c1d8108302c4832bd",
+        "record_sha256": "809317e692581fe102a6cd2bd6da02eb3cfa12ab82585c1d04bc2992fe62023b",
+        "source_path": "question-bank/original-review-drafts/O-C3-A-013.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T22:15:44.846418+01:00",
+        "reason": "Author read full A4.3.9/B1.1.1 statements and guidance; CNN sizes verified by sliding-window simulation; spec elements map G01.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "O-C3-A-014",
+      "record_sha256": "4be870a64b490bc84994162f939cff88ca20cb61901129fc493f0830af8c7c5f",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:44.778591+00:00",
+      "question_type": "calculation",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Executed check in audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json (1129 cases)."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "4 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "A4.3.9",
+          "scope_bullet_id": "A4.3.9:G01",
+          "exact_guidance": "• Convolutional neural network (CNN) basic architecture: input layer, convolutional layers, activation functions, pooling layers, fully connected layers, output layer",
+          "assessed_skill": "Apply convolutional and pooling layers to an input.",
+          "relevance": "partial",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Padding, channels/depth and parameter counts are not assessed. The size formula is stated in the reference, not required in the prompt.",
+          "coverage_limit": "Padding, channels/depth and parameter counts are not assessed. The size formula is stated in the reference, not required in the prompt.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Calculate\" on the scoped content of A4.3.9."
+        },
+        {
+          "code": "A4.3.9",
+          "scope_bullet_id": "A4.3.9:G02",
+          "exact_guidance": "• The effect of the number of layers, kernel size and stride, activation function selection, and the loss function on how CNNs process input data and classify images",
+          "assessed_skill": "Apply the effect of kernel size and stride on how input is processed.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Padding, channels/depth and parameter counts are not assessed. The size formula is stated in the reference, not required in the prompt.",
+          "coverage_limit": "Padding, channels/depth and parameter counts are not assessed. The size formula is stated in the reference, not required in the prompt.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Calculate\" on the scoped content of A4.3.9."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Padding, channels/depth and parameter counts are not assessed. The size formula is stated in the reference, not required in the prompt."
+      ],
+      "execution_evidence": "audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json",
+      "coordinator_review": {
+        "question_id": "O-C3-A-014",
+        "review_sha256": "e514bd271620aecbabae49ec5b2039227bed33804dbc6f6be1d3138ae9712ff8",
+        "record_sha256": "4be870a64b490bc84994162f939cff88ca20cb61901129fc493f0830af8c7c5f",
+        "source_path": "question-bank/original-review-drafts/O-C3-A-014.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T22:15:44.846418+01:00",
+        "reason": "Author read full A4.3.9/B1.1.1 statements and guidance; CNN sizes verified by sliding-window simulation; spec elements map G01.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
     {
       "question_id": "O-C3-B-001",
       "record_sha256": "ec9fd1df865720827f41444d7fc9219212d5e488bc1159e720af2be08054b027",
@@ -242,6 +1341,528 @@
         "coordinator": "/root",
         "reviewed_at": "2026-11-04T19:21:26.736031+01:00",
         "reason": "Coordinator authored from exact zero-linked B2.5.1/B4.1.5 scope; checked complete prompts/6-mark criteria/alternatives and executed exact references across5 file fixtures/closing checks,256 set-comparison and4096 mutable-update/subset cases. Original author verification only; independent Chunk4 audit pending.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "O-C3-B-004",
+      "record_sha256": "31be53085b7eb531de4ba1b2176206f17134af1cf289196354d510574314d7fc",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:44.778999+00:00",
+      "question_type": "problem specification construction",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "6 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "B1.1.1",
+          "scope_bullet_id": "B1.1.1:G01",
+          "exact_guidance": "• The specification of a problem may include a problem statement, constraints and limitations, objectives and goals, input specifications, output specifications, evaluation criteria.",
+          "assessed_skill": "Construct a full problem specification: statement, constraints, objectives, inputs, outputs, evaluation criteria.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. No code is required. Algorithm design and testing are assessed in other B1/B2 statements.",
+          "coverage_limit": "No code is required. Algorithm design and testing are assessed in other B1/B2 statements.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Construct\" on the scoped content of B1.1.1."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "No code is required. Algorithm design and testing are assessed in other B1/B2 statements."
+      ],
+      "execution_evidence": "manual",
+      "coordinator_review": {
+        "question_id": "O-C3-B-004",
+        "review_sha256": "b1db5ac3a71e0204c2edfdfd82fa39f5d86759f2a360da26b91e1ca64f0c3fbf",
+        "record_sha256": "31be53085b7eb531de4ba1b2176206f17134af1cf289196354d510574314d7fc",
+        "source_path": "question-bank/original-review-drafts/O-C3-B-004.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T22:15:44.846418+01:00",
+        "reason": "Author read full A4.3.9/B1.1.1 statements and guidance; CNN sizes verified by sliding-window simulation; spec elements map G01.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "O-C3-B-005",
+      "record_sha256": "bfc70aab6153c2e93104d611eec60a9f63f2274ab43a216a19abaf042ab95ce3",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:46.189926+00:00",
+      "question_type": "explanation",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "6 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "B3.2.5",
+          "scope_bullet_id": "B3.2.5:G01",
+          "exact_guidance": "• The key design patterns such as singleton, factory and observer",
+          "assessed_skill": "Explain singleton, factory and observer patterns.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Implementation is assessed separately in O-C3-B-006 (observer) and O-C3-B-007 (factory).",
+          "coverage_limit": "Implementation is assessed separately in O-C3-B-006 (observer) and O-C3-B-007 (factory).",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Explain\" on the scoped content of B3.2.5."
+        },
+        {
+          "code": "B3.2.5",
+          "scope_bullet_id": "B3.2.5:G02",
+          "exact_guidance": "• The application of design patterns in solving recurring programming challenges",
+          "assessed_skill": "Apply design patterns to recurring programming challenges in context.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Implementation is assessed separately in O-C3-B-006 (observer) and O-C3-B-007 (factory).",
+          "coverage_limit": "Implementation is assessed separately in O-C3-B-006 (observer) and O-C3-B-007 (factory).",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Explain\" on the scoped content of B3.2.5."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Implementation is assessed separately in O-C3-B-006 (observer) and O-C3-B-007 (factory)."
+      ],
+      "execution_evidence": "manual",
+      "coordinator_review": {
+        "question_id": "O-C3-B-005",
+        "review_sha256": "0a086dba581628386f0fbe2ec082201f8a7ad1a663b80663bf0b377c71015238",
+        "record_sha256": "bfc70aab6153c2e93104d611eec60a9f63f2274ab43a216a19abaf042ab95ce3",
+        "source_path": "question-bank/original-review-drafts/O-C3-B-005.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T22:15:46.271719+01:00",
+        "reason": "Author read full B3.2.5 statement and guidance; observer and factory references executed against edge-case checks.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "O-C3-B-006",
+      "record_sha256": "eeab4f1bb132cd7cb68f1eea0af0c3dea48cae26e8e41538143533aee4074c28",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:46.190657+00:00",
+      "question_type": "Python code construction",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Executed check in audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json (9 cases)."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "7 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "B3.2.5",
+          "scope_bullet_id": "B3.2.5:G01",
+          "exact_guidance": "• The key design patterns such as singleton, factory and observer",
+          "assessed_skill": "Construct the observer pattern (subject maintaining and notifying observers).",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Singleton construction not assessed; Python has no enforced private access, so \"private by convention\" is stated.",
+          "coverage_limit": "Singleton construction not assessed; Python has no enforced private access, so \"private by convention\" is stated.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Construct\" on the scoped content of B3.2.5."
+        },
+        {
+          "code": "B3.2.5",
+          "scope_bullet_id": "B3.2.5:G02",
+          "exact_guidance": "• The application of design patterns in solving recurring programming challenges",
+          "assessed_skill": "Apply the observer pattern to a recurring update-notification problem.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Singleton construction not assessed; Python has no enforced private access, so \"private by convention\" is stated.",
+          "coverage_limit": "Singleton construction not assessed; Python has no enforced private access, so \"private by convention\" is stated.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Construct\" on the scoped content of B3.2.5."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Singleton construction not assessed; Python has no enforced private access, so \"private by convention\" is stated."
+      ],
+      "execution_evidence": "audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json",
+      "coordinator_review": {
+        "question_id": "O-C3-B-006",
+        "review_sha256": "d05dc28964b11d2e9d088e34625fc203876d9ac67b4103e63d61190e562eb383",
+        "record_sha256": "eeab4f1bb132cd7cb68f1eea0af0c3dea48cae26e8e41538143533aee4074c28",
+        "source_path": "question-bank/original-review-drafts/O-C3-B-006.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T22:15:46.271719+01:00",
+        "reason": "Author read full B3.2.5 statement and guidance; observer and factory references executed against edge-case checks.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "O-C3-B-007",
+      "record_sha256": "4ca61a822b7b50fa67e1ab035a49f6a00f966b6854d3b57cc548c6abe3460abd",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:46.191083+00:00",
+      "question_type": "Python code construction",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Executed check in audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json (6 cases)."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "5 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "B3.2.5",
+          "scope_bullet_id": "B3.2.5:G01",
+          "exact_guidance": "• The key design patterns such as singleton, factory and observer",
+          "assessed_skill": "Construct a factory that hides concrete class selection from the caller.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Inheritance is provided, not assessed. Does not assess singleton or observer.",
+          "coverage_limit": "Inheritance is provided, not assessed. Does not assess singleton or observer.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Construct\" on the scoped content of B3.2.5."
+        },
+        {
+          "code": "B3.2.5",
+          "scope_bullet_id": "B3.2.5:G02",
+          "exact_guidance": "• The application of design patterns in solving recurring programming challenges",
+          "assessed_skill": "Apply the factory pattern to object creation from data.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Inheritance is provided, not assessed. Does not assess singleton or observer.",
+          "coverage_limit": "Inheritance is provided, not assessed. Does not assess singleton or observer.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Construct\" on the scoped content of B3.2.5."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Inheritance is provided, not assessed. Does not assess singleton or observer."
+      ],
+      "execution_evidence": "audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json",
+      "coordinator_review": {
+        "question_id": "O-C3-B-007",
+        "review_sha256": "7108401100f298405f8f39f9b0625487134f73289adf96e98e7066aa0779f7ff",
+        "record_sha256": "4ca61a822b7b50fa67e1ab035a49f6a00f966b6854d3b57cc548c6abe3460abd",
+        "source_path": "question-bank/original-review-drafts/O-C3-B-007.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T22:15:46.271719+01:00",
+        "reason": "Author read full B3.2.5 statement and guidance; observer and factory references executed against edge-case checks.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "O-C3-B-008",
+      "record_sha256": "48113bb3f92eda369e4ee4bb60611382b91ee547685ba122846381a5471e6e88",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:47.571741+00:00",
+      "question_type": "Python code construction",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Executed check in audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json (20245 cases)."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "8 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "B4.1.6",
+          "scope_bullet_id": "B4.1.6:G01",
+          "exact_guidance": "• High-level description of data structures and their associated operations and purpose",
+          "assessed_skill": "Construct a hash table ADT with put/get operations.",
+          "relevance": "partial",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Deletion (tombstones), resizing/rehashing and separate chaining are not constructed; chaining is traced in O-C3-B-009. The dict/set ban is a task-specific algorithm restriction, not a general built-in ban.",
+          "coverage_limit": "Deletion (tombstones), resizing/rehashing and separate chaining are not constructed; chaining is traced in O-C3-B-009. The dict/set ban is a task-specific algorithm restriction, not a general built-in ban.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Construct\" on the scoped content of B4.1.6."
+        },
+        {
+          "code": "B4.1.6",
+          "scope_bullet_id": "B4.1.6:G02",
+          "exact_guidance": "• The underlying mechanics of hash tables, including hashing functions, collision resolution strategies and load factors",
+          "assessed_skill": "Construct a hashing function, linear-probing collision resolution and load factor.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Deletion (tombstones), resizing/rehashing and separate chaining are not constructed; chaining is traced in O-C3-B-009. The dict/set ban is a task-specific algorithm restriction, not a general built-in ban.",
+          "coverage_limit": "Deletion (tombstones), resizing/rehashing and separate chaining are not constructed; chaining is traced in O-C3-B-009. The dict/set ban is a task-specific algorithm restriction, not a general built-in ban.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Construct\" on the scoped content of B4.1.6."
+        },
+        {
+          "code": "B4.1.6",
+          "scope_bullet_id": "B4.1.6:G04",
+          "exact_guidance": "• HashMap and HashSet in Java; dict and set in Python",
+          "assessed_skill": "Relate the implemented mechanics to Python dict behaviour (key lookup/replacement).",
+          "relevance": "supporting",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Deletion (tombstones), resizing/rehashing and separate chaining are not constructed; chaining is traced in O-C3-B-009. The dict/set ban is a task-specific algorithm restriction, not a general built-in ban.",
+          "coverage_limit": "Deletion (tombstones), resizing/rehashing and separate chaining are not constructed; chaining is traced in O-C3-B-009. The dict/set ban is a task-specific algorithm restriction, not a general built-in ban.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Construct\" on the scoped content of B4.1.6."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Deletion (tombstones), resizing/rehashing and separate chaining are not constructed; chaining is traced in O-C3-B-009. The dict/set ban is a task-specific algorithm restriction, not a general built-in ban."
+      ],
+      "execution_evidence": "audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json",
+      "coordinator_review": {
+        "question_id": "O-C3-B-008",
+        "review_sha256": "5c68160fe17c512b85d77ba49773eb5df4b97b8630474fd8608f87264c259e83",
+        "record_sha256": "48113bb3f92eda369e4ee4bb60611382b91ee547685ba122846381a5471e6e88",
+        "source_path": "question-bank/original-review-drafts/O-C3-B-008.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T22:15:47.645019+01:00",
+        "reason": "Author read full B4.1.6 statement and guidance; hash table reference executed against dict oracle (20k+ randomized cases incl. wrap-around, replacement, full table); trace re-derived by simulation.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "O-C3-B-009",
+      "record_sha256": "12420196b076aadf660a8977176f4b4cab5a9c37a3582015f098e0c4b1bbeaea",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:47.572540+00:00",
+      "question_type": "trace",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Executed check in audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json (3 cases)."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "6 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "B4.1.6",
+          "scope_bullet_id": "B4.1.6:G02",
+          "exact_guidance": "• The underlying mechanics of hash tables, including hashing functions, collision resolution strategies and load factors",
+          "assessed_skill": "Trace a hashing function, linear probing and chaining collision resolution and the load factor.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Integer keys only; string hashing is constructed in O-C3-B-008.",
+          "coverage_limit": "Integer keys only; string hashing is constructed in O-C3-B-008.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Trace\" on the scoped content of B4.1.6."
+        },
+        {
+          "code": "B4.1.6",
+          "scope_bullet_id": "B4.1.6:G01",
+          "exact_guidance": "• High-level description of data structures and their associated operations and purpose",
+          "assessed_skill": "Explain the purpose of operations on a hash table ADT.",
+          "relevance": "supporting",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Integer keys only; string hashing is constructed in O-C3-B-008.",
+          "coverage_limit": "Integer keys only; string hashing is constructed in O-C3-B-008.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Trace\" on the scoped content of B4.1.6."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Integer keys only; string hashing is constructed in O-C3-B-008."
+      ],
+      "execution_evidence": "audits/chunk-3/ORIGINAL_BATCH2_CHECKS.json",
+      "coordinator_review": {
+        "question_id": "O-C3-B-009",
+        "review_sha256": "024f968dc095631965464ed70b31414ff4fbc7dc3f8e611aa46cd0cc80f25b73",
+        "record_sha256": "12420196b076aadf660a8977176f4b4cab5a9c37a3582015f098e0c4b1bbeaea",
+        "source_path": "question-bank/original-review-drafts/O-C3-B-009.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T22:15:47.645019+01:00",
+        "reason": "Author read full B4.1.6 statement and guidance; hash table reference executed against dict oracle (20k+ randomized cases incl. wrap-around, replacement, full table); trace re-derived by simulation.",
+        "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
+      }
+    },
+    {
+      "question_id": "O-C3-B-010",
+      "record_sha256": "fe8655efa317bda422fc3150de18d076b0d9526b40a39c5c21a7017a1960571e",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:47.573078+00:00",
+      "question_type": "explanation",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "4 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "B4.1.6",
+          "scope_bullet_id": "B4.1.6:G03",
+          "exact_guidance": "• The underlying mechanics of sets to store and manage data",
+          "assessed_skill": "Explain the underlying mechanics of sets for storing and managing data.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Collision resolution details and load factor are assessed in O-C3-B-008/009.",
+          "coverage_limit": "Collision resolution details and load factor are assessed in O-C3-B-008/009.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Explain\" on the scoped content of B4.1.6."
+        },
+        {
+          "code": "B4.1.6",
+          "scope_bullet_id": "B4.1.6:G04",
+          "exact_guidance": "• HashMap and HashSet in Java; dict and set in Python",
+          "assessed_skill": "Explain Python set behaviour (hashing, uniqueness, hashable elements).",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Collision resolution details and load factor are assessed in O-C3-B-008/009.",
+          "coverage_limit": "Collision resolution details and load factor are assessed in O-C3-B-008/009.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Explain\" on the scoped content of B4.1.6."
+        },
+        {
+          "code": "B4.1.6",
+          "scope_bullet_id": "B4.1.6:G02",
+          "exact_guidance": "• The underlying mechanics of hash tables, including hashing functions, collision resolution strategies and load factors",
+          "assessed_skill": "Explain hashing functions as the basis of set lookup.",
+          "relevance": "partial",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Collision resolution details and load factor are assessed in O-C3-B-008/009.",
+          "coverage_limit": "Collision resolution details and load factor are assessed in O-C3-B-008/009.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Explain\" on the scoped content of B4.1.6."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Collision resolution details and load factor are assessed in O-C3-B-008/009."
+      ],
+      "execution_evidence": "manual",
+      "coordinator_review": {
+        "question_id": "O-C3-B-010",
+        "review_sha256": "7fc3a967185a608d21ed8da8e1f3f07b6b473494dbf595520d57e47fc7644855",
+        "record_sha256": "fe8655efa317bda422fc3150de18d076b0d9526b40a39c5c21a7017a1960571e",
+        "source_path": "question-bank/original-review-drafts/O-C3-B-010.json",
+        "coordinator": "/root",
+        "reviewed_at": "2026-11-04T22:15:47.645019+01:00",
+        "reason": "Author read full B4.1.6 statement and guidance; hash table reference executed against dict oracle (20k+ randomized cases incl. wrap-around, replacement, full table); trace re-derived by simulation.",
         "limits": "Coordinator checked the concrete evidence; this is not the later independent Chunk 4 audit."
       }
     },

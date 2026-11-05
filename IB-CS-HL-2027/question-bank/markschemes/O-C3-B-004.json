@@ -1,0 +1,42 @@
+{
+  "question_id": "O-C3-B-004",
+  "unofficial": true,
+  "solution": "Problem statement: library staff need to calculate fines for late books quickly and consistently. Constraints/limitations: written in Python; runs on the existing desktop; ready before next term; maximum fine 5.00 CHF per book; 14-day loan period. Objectives: calculate the correct fine for any return; reduce staff calculation errors and time. Inputs: barcode (string, e.g. 8 digits), borrowed date and returned date (valid dates, returned not earlier than borrowed). Outputs: number of days late (0 if on time) and fine in CHF to two decimal places; an error message for invalid input. Evaluation criteria: correct fines for test cases such as returned on day 14 (0.00), day 15 (0.20) and day 50 (capped at 5.00); invalid dates rejected; result shown within one second.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Problem statement identifying the library staff need in context."
+    },
+    {
+      "marks": 1,
+      "criterion": "At least two constraints/limitations from the scenario (e.g. Python, existing computer, deadline, fine cap/loan period as rules)."
+    },
+    {
+      "marks": 1,
+      "criterion": "An objective/goal of the program (e.g. accurate, consistent fines; saving staff time)."
+    },
+    {
+      "marks": 1,
+      "criterion": "Input specification naming barcode, borrowed date and returned date with type/format or validity rule."
+    },
+    {
+      "marks": 1,
+      "criterion": "Output specification: days late and fine (formatted CHF) and/or error message."
+    },
+    {
+      "marks": 1,
+      "criterion": "Measurable evaluation criteria (e.g. boundary test cases 14/15 days, cap at 5.00, invalid input rejected)."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Accept any reasonable format (headings, table or bullet list). Accept justified assumptions (e.g. barcode length) when stated. Each element must be specific to the library scenario to gain the mark."
+  ],
+  "partial_credit_notes": "Award each independent point once, up to 6 marks. Accept equivalent correct wording or valid alternative code. Do not double-credit one idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component.",
+    "scope": "No code is required. Algorithm design and testing are assessed in other B1/B2 statements."
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

@@ -1,0 +1,62 @@
+{
+  "question_id": "O-C3-A-013",
+  "source_question_ids": [],
+  "derivation_status": "original_unofficial",
+  "unofficial": true,
+  "question_text": "A convolutional neural network (CNN) is trained to classify 28 x 28 pixel greyscale images of handwritten digits into the ten classes 0 to 9. Describe how the layers of the CNN allow it to learn a spatial hierarchy of features, from the input image to the final classification.",
+  "syllabus_codes": [
+    "A4.3.9"
+  ],
+  "theme": "A",
+  "level": "HL-only",
+  "marks": 6,
+  "command_term": "Describe",
+  "difficulty": "high",
+  "question_type": "description",
+  "adaptation_rationale": "Original question written by Claude (single-agent Chunk 3 continuation, 2026-11-04) for a syllabus statement with no linked question at handover; no historical source question or official marking status claimed.",
+  "solution": "The input layer holds the 28 x 28 pixel values. Each convolutional layer slides small kernels (filters) across its input, producing feature maps that respond to local patterns such as edges; the kernel weights are learned. An activation function such as ReLU is applied to the feature maps, introducing non-linearity so complex patterns can be represented. Pooling layers (e.g. max pooling) reduce the spatial size of the feature maps, keeping the strongest responses, reducing computation and making detection less sensitive to small shifts. Stacking several convolution and pooling layers lets later layers combine simple features (edges) into more complex ones (curves, loops, strokes) and then whole digit shapes — a spatial hierarchy. Fully connected layers combine these high-level features, and the output layer has ten nodes (e.g. softmax) giving a probability for each digit. During training a loss function (e.g. cross-entropy) measures the error and the kernel and connection weights are adjusted to reduce it, so the features are learned adaptively.",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Convolutional layers: kernels slide across the image producing feature maps of local patterns (e.g. edges)."
+    },
+    {
+      "marks": 1,
+      "criterion": "Activation function (e.g. ReLU) introduces non-linearity."
+    },
+    {
+      "marks": 1,
+      "criterion": "Pooling layers reduce spatial size/computation while keeping important features (some shift tolerance)."
+    },
+    {
+      "marks": 1,
+      "criterion": "Stacked layers combine low-level features into higher-level features (hierarchy: edges to shapes to digits)."
+    },
+    {
+      "marks": 1,
+      "criterion": "Fully connected layers and an output layer with ten nodes giving class probabilities."
+    },
+    {
+      "marks": 1,
+      "criterion": "Loss function measures error and training adjusts kernel weights, so features are learned adaptively."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Accept any valid named activation (ReLU, sigmoid, tanh) and loss function. The input-layer point is assumed and not separately credited."
+  ],
+  "partial_credit_notes": "Award each independent point once, up to 6 marks. Accept equivalent correct wording or valid alternative code. Do not double-credit one idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component.",
+    "scope": "Kernel size and stride effects are calculated in O-C3-A-014. Backpropagation mathematics is not required."
+  },
+  "code": "",
+  "test_code": "",
+  "assets": [],
+  "markscheme_status": "preliminary_unofficial_verified_by_author",
+  "record_path": "question-bank/records/O-C3-A-013.json",
+  "question_path": "question-bank/questions/O-C3-A-013.json",
+  "markscheme_path": "question-bank/markschemes/O-C3-A-013.json",
+  "coordinator_status": "author_content_scope_answer_marking_checks_passed; independent_Chunk4_audit_pending",
+  "independent_verification_status": "pending"
+}

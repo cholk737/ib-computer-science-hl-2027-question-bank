@@ -1,0 +1,42 @@
+{
+  "question_id": "O-C3-A-010",
+  "unofficial": true,
+  "solution": "In the normalized design each fact is stored once, so there is no redundant data and no update anomalies: renaming a genre changes one row. However, every page view needs a join between Book and Genre and an aggregation (AVG) over Review, so two million complex queries a day use substantial processing and slow responses. After denormalizing, the page can be produced from a single row of Book with a straightforward query, which is much faster for this read-intensive workload. The cost is redundancy: GenreName is repeated for every book in a genre, using more storage, and renaming a genre must update many Book rows, risking inconsistency if one is missed. AverageRating must be recalculated whenever a review is added, adding write overhead and the risk of stale values. Because reads vastly outnumber writes and genre changes are rare, the denormalization is justified, provided updates are controlled (e.g. done in a transaction or by a trigger).",
+  "marking_points": [
+    {
+      "marks": 1,
+      "criterion": "Normalized: data stored once, avoiding redundancy and update anomalies/maintaining consistency."
+    },
+    {
+      "marks": 1,
+      "criterion": "Normalized cost here: joins and AVG aggregation on every one of the very frequent page reads."
+    },
+    {
+      "marks": 1,
+      "criterion": "Denormalized: simpler single-table query and faster reads for a read-intensive application."
+    },
+    {
+      "marks": 1,
+      "criterion": "Redundancy: GenreName duplicated across many rows (storage), with renaming requiring many updates / risk of inconsistency."
+    },
+    {
+      "marks": 1,
+      "criterion": "AverageRating needs recalculation on each new review (write overhead / stale-data risk)."
+    },
+    {
+      "marks": 1,
+      "criterion": "Reasoned conclusion weighing read volume against infrequent writes (e.g. justified if updates are controlled)."
+    }
+  ],
+  "acceptable_alternatives": [
+    "Accept a conclusion against the proposal if it is justified by the scenario (e.g. preferring caching). Award the conclusion mark only when it follows from weighed points."
+  ],
+  "partial_credit_notes": "Award each independent point once, up to 6 marks. Accept equivalent correct wording or valid alternative code. Do not double-credit one idea.",
+  "common_errors": [],
+  "verification": {
+    "technical": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component.",
+    "scope": "No SQL writing required. Normal-form identification is assessed elsewhere (A3.2.x normalization statements)."
+  },
+  "code": "",
+  "markscheme_status": "preliminary_unofficial_verified_by_author"
+}

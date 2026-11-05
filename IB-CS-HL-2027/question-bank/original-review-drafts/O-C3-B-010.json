@@ -1,0 +1,78 @@
+{
+  "reviews": [
+    {
+      "question_id": "O-C3-B-010",
+      "record_sha256": "fe8655efa317bda422fc3150de18d076b0d9526b40a39c5c21a7017a1960571e",
+      "reviewer": "Claude (single-agent Chunk 3 continuation, 2026-11-04)",
+      "reviewed_at": "2026-11-04T21:15:47.573078+00:00",
+      "question_type": "explanation",
+      "review_scope": "Author review of a new original question; independent Chunk 4 review pending.",
+      "verification": {
+        "mapping": {
+          "status": "verified",
+          "evidence": "Read the complete exact statement and every guidance paragraph; mapped only the assessed aspects; omitted scope stated in coverage_limit."
+        },
+        "technical": {
+          "status": "verified",
+          "evidence": "Manual author check of every criterion against the exact statement and all guidance paragraphs; no executable component."
+        },
+        "answer": {
+          "status": "verified",
+          "evidence": "Full reference answer matches the criteria and the stated domain; student question file contains no answer."
+        },
+        "markscheme": {
+          "status": "verified",
+          "evidence": "4 independent one-mark criteria sum to the question total; alternatives and partial credit recorded; preliminary unofficial author criteria."
+        },
+        "assets": {
+          "status": "verified",
+          "evidence": "All required context, code stimulus and data are contained in the prompt text; no diagram or external file needed."
+        },
+        "provenance": {
+          "status": "verified",
+          "evidence": "Original authorship recorded; no historical source IDs; the official guide is cited only as scope evidence."
+        }
+      },
+      "mappings": [
+        {
+          "code": "B4.1.6",
+          "scope_bullet_id": "B4.1.6:G03",
+          "exact_guidance": "• The underlying mechanics of sets to store and manage data",
+          "assessed_skill": "Explain the underlying mechanics of sets for storing and managing data.",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Collision resolution details and load factor are assessed in O-C3-B-008/009.",
+          "coverage_limit": "Collision resolution details and load factor are assessed in O-C3-B-008/009.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Explain\" on the scoped content of B4.1.6."
+        },
+        {
+          "code": "B4.1.6",
+          "scope_bullet_id": "B4.1.6:G04",
+          "exact_guidance": "• HashMap and HashSet in Java; dict and set in Python",
+          "assessed_skill": "Explain Python set behaviour (hashing, uniqueness, hashable elements).",
+          "relevance": "direct",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Collision resolution details and load factor are assessed in O-C3-B-008/009.",
+          "coverage_limit": "Collision resolution details and load factor are assessed in O-C3-B-008/009.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Explain\" on the scoped content of B4.1.6."
+        },
+        {
+          "code": "B4.1.6",
+          "scope_bullet_id": "B4.1.6:G02",
+          "exact_guidance": "• The underlying mechanics of hash tables, including hashing functions, collision resolution strategies and load factors",
+          "assessed_skill": "Explain hashing functions as the basis of set lookup.",
+          "relevance": "partial",
+          "evidence": "The prompt and its independent marking criteria require this aspect. Collision resolution details and load factor are assessed in O-C3-B-008/009.",
+          "coverage_limit": "Collision resolution details and load factor are assessed in O-C3-B-008/009.",
+          "statement_relevance": "direct",
+          "statement_evidence": "Prompt uses the command term \"Explain\" on the scoped content of B4.1.6."
+        }
+      ],
+      "issues": [],
+      "scope_not_assessed": [
+        "Collision resolution details and load factor are assessed in O-C3-B-008/009."
+      ],
+      "execution_evidence": "manual"
+    }
+  ]
+}

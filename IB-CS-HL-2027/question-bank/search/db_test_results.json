@@ -6,12 +6,12 @@
     {
       "name": "All 823 full prompts/IDs preserved, separate answers, DB integrity",
       "status": "pass",
-      "seconds": 0.167
+      "seconds": 0.161
     },
     {
       "name": "Import never promotes code links or legacy metadata into verified matches",
       "status": "pass",
-      "seconds": 0.114
+      "seconds": 0.117
     },
     {
       "name": "Stale or missing record hash rejected without scope promotion",
@@ -26,32 +26,32 @@
     {
       "name": "Reviewed aspect direct; full bullet and unmatched post-condition remain incomplete",
       "status": "pass",
-      "seconds": 0.032
+      "seconds": 0.034
     },
     {
       "name": "Partial evidence never becomes direct",
       "status": "pass",
-      "seconds": 0.016
+      "seconds": 0.021
     },
     {
       "name": "Supporting evidence excluded from reviewed-direct/partial search",
       "status": "pass",
-      "seconds": 0.017
+      "seconds": 0.023
     },
     {
       "name": "Broad topic and all requested filters; mixed-theme inclusion normalized",
       "status": "pass",
-      "seconds": 0.359
+      "seconds": 0.366
     },
     {
       "name": "Pagination retrieves every genuine baseline record exactly once",
       "status": "pass",
-      "seconds": 1.362
+      "seconds": 1.373
     },
     {
       "name": "Exact stable-ID retrieval narrows to one; unknown keyword does not return all",
       "status": "pass",
-      "seconds": 0.007
+      "seconds": 0.008
     },
     {
       "name": "Literal changed guidance and one bad mapping reject whole review with zero promotion",
@@ -61,37 +61,37 @@
     {
       "name": "Unchanged review import idempotent; revised review replaces stale broad matches",
       "status": "pass",
-      "seconds": 0.018
+      "seconds": 0.022
     },
     {
       "name": "Authoritative snapshot withdrawal revokes links/source checks and preserves independent manual check",
       "status": "pass",
-      "seconds": 0.003
+      "seconds": 0.009
     },
     {
       "name": "Public question/search omit answer-bearing reviewer rationale until explicit reveal",
       "status": "pass",
-      "seconds": 0.02
+      "seconds": 0.017
     },
     {
       "name": "Exact guidance keeps qualifiers; explicit statement assessment distinct from supporting bullet",
       "status": "pass",
-      "seconds": 0.042
+      "seconds": 0.039
     },
     {
       "name": "Reviewed explicit question type filters persist and revoke with withdrawn approval",
       "status": "pass",
-      "seconds": 0.21
+      "seconds": 0.107
     },
     {
       "name": "Approved new code/theme/topic joins detail/filters without rewriting legacy code metadata",
       "status": "pass",
-      "seconds": 0.007
+      "seconds": 0.008
     },
     {
       "name": "Independent mapping objection immediately removes checked relevance without rewriting question",
       "status": "pass",
-      "seconds": 0.045
+      "seconds": 0.036
     },
     {
       "name": "Persistent reproducible retrieval selection has IDs/query/hashes, student export omits answers",
@@ -101,22 +101,22 @@
     {
       "name": "No-change import preserves per-dimension verification, usage and selection history",
       "status": "pass",
-      "seconds": 0.213
+      "seconds": 0.141
     },
     {
       "name": "Individual verification dimension update is independent and audit-trailed",
       "status": "pass",
-      "seconds": 0.001
+      "seconds": 0.003
     },
     {
       "name": "Incremental original addition preserves all IDs/history and unknown provenance stays empty",
       "status": "pass",
-      "seconds": 0.179
+      "seconds": 0.163
     },
     {
       "name": "Changed content invalidates old reviews but preserves usage and selection snapshots",
       "status": "pass",
-      "seconds": 0.162
+      "seconds": 0.142
     }
   ],
   "isolation": "Temporary project copy/database; synthetic review fixtures were never imported into live bank.",
